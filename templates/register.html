@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Register — Aircraft Museum Tracker{% endblock %}
+
+{% block content %}
+<div class="auth-container">
+    <div class="auth-card card">
+        <div class="auth-header">
+            <i class="fa-solid fa-user-plus"></i>
+            <h1>Create Account</h1>
+            <p class="subtitle">Register to manage aircraft and museum data</p>
+        </div>
+
+        <form method="POST" class="auth-form">
+            <div class="form-group">
+                <label for="username">Username *</label>
+                <input type="text" id="username" name="username" required autofocus placeholder="Choose a username">
+            </div>
+            <div class="form-group">
+                <label for="email">Email (optional)</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+                <label for="password">Password *</label>
+                <input type="password" id="password" name="password" required placeholder="Choose a strong password">
+            </div>
+            <div class="form-group">
+                <label for="password2">Confirm Password *</label>
+                <input type="password" id="password2" name="password2" required placeholder="Re-enter your password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+                <i class="fa-solid fa-user-plus"></i> Create Account
+            </button>
+        </form>
+
+        <div class="auth-footer">
+            <p>Already have an account? <a href="/login">Sign in</a></p>
+        </div>
+    </div>
+</div>
+{% endblock %}

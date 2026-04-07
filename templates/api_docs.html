@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+{% block title %}API Documentation — Aircraft Museum Tracker{% endblock %}
+{% block nav_docs %}active{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1><i class="fa-solid fa-book"></i> REST API Documentation</h1>
+    <p class="subtitle">Programmatic access to aircraft and museum data</p>
+</div>
+
+<!-- Auth section -->
+<div class="card">
+    <h2><i class="fa-solid fa-shield-halved"></i> Authentication</h2>
+    <p class="doc-text">The API uses <strong>Bearer token</strong> authentication. Include your API key in the <code>Authorization</code> header:</p>
+    <pre><code>Authorization: Bearer amt_your_api_key_here</code></pre>
+    <p class="doc-text">There are three permission levels:</p>
+    <div class="perm-grid">
+        <div class="perm-card">
+            <span class="badge status-in_storage">read</span>
+            <p>Search aircraft, museums, proximity lookups. All public endpoints work without a key too.</p>
+        </div>
+        <div class="perm-card">
+            <span class="badge status-on_display">readwrite</span>
+            <p>Everything in <em>read</em>, plus create and update aircraft, museums, and exhibit links.</p>
+        </div>
+        <div class="perm-card">
+            <span class="badge status-under_restoration">admin</span>
+            <p>Everything in <em>readwrite</em>, plus delete records.</p>
+        </div>
+    </div>
+    <p class="doc-text">To get an API key, <a href="/login">log in</a> and visit the <a href="/admin/api-keys">API Keys</a> page.</p>
+</div>
+
+<!-- Endpoints -->
+<div class="card">
+    <h2><i class="fa-solid fa-route"></i> Endpoints</h2>
+
+    <div class="endpoint-group">
+        <h3>Aircraft</h3>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method get">GET</span>
+                <code>/api/v1/aircraft/search</code>
+                <span class="badge status-in_storage">public</span>
+            </div>
+            <p>Search aircraft by tail number, model, variant, name, manufacturer, or alias (e.g. "B29", "Superfortress").</p>
+            <table class="param-table">
+                <tr><td><code>q</code></td><td>Search query (optional)</td></tr>
+                <tr><td><code>page</code></td><td>Page number (default 1)</td></tr>
+                <tr><td><code>per_page</code></td><td>Results per page (default 20, max 100)</td></tr>
+            </table>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method get">GET</span>
+                <code>/api/v1/aircraft/{id}</code>
+                <span class="badge status-in_storage">public</span>
+            </div>
+            <p>Get aircraft details with all museum locations.</p>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method post">POST</span>
+                <code>/api/v1/aircraft</code>
+                <span class="badge status-on_display">readwrite</span>
+            </div>
+            <p>Create a new aircraft. Send JSON body with <code>manufacturer</code> (required), <code>model</code> (required), and optional fields: <code>variant</code>, <code>tail_number</code>, <code>name</code>, <code>year_built</code>, <code>description</code>, <code>aliases</code> (array of strings), <code>aircraft_type</code> (fixed_wing | rotary_wing | lighter_than_air | spacecraft), <code>wing_type</code> (monoplane | biplane | triplane), <code>military_civilian</code> (military | civilian), <code>museum_id</code> + <code>display_status</code> to assign to a museum on creation.</p>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method put">PUT</span>
+                <code>/api/v1/aircraft/{id}</code>
+                <span class="badge status-on_display">readwrite</span>
+            </div>
+            <p>Update an aircraft record. Send JSON body with any fields to update.</p>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method delete">DELETE</span>
+                <code>/api/v1/aircraft/{id}</code>
+                <span class="badge status-under_restoration">admin</span>
+            </div>
+            <p>Delete an aircraft and all its exhibit links.</p>
+        </div>
+    </div>
+
+    <div class="endpoint-group">
+        <h3>Museums</h3>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method get">GET</span>
+                <code>/api/v1/museums/search</code>
+                <span class="badge status-in_storage">public</span>
+            </div>
+            <p>Search museums by name, city, state/province, or country. Optionally filter by region or country.</p>
+            <table class="param-table">
+                <tr><td><code>q</code></td><td>Search query (optional)</td></tr>
+                <tr><td><code>region</code></td><td>Filter by region: North America, Europe, Asia-Pacific, Middle East, South America, Africa, Oceania</td></tr>
+                <tr><td><code>country</code></td><td>Filter by country name</td></tr>
+                <tr><td><code>state</code></td><td>Filter by state/province name</td></tr>
+                <tr><td><code>page</code></td><td>Page number</td></tr>
+                <tr><td><code>per_page</code></td><td>Results per page (max 100)</td></tr>
+            </table>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method get">GET</span>
+                <code>/api/v1/museums/{id}</code>
+                <span class="badge status-in_storage">public</span>
+            </div>
+            <p>Get museum details with its full aircraft collection.</p>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method get">GET</span>
+                <code>/api/v1/museums/regions</code>
+                <span class="badge status-in_storage">public</span>
+            </div>
+            <p>List all regions with museum counts.</p>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method get">GET</span>
+                <code>/api/v1/museums/countries</code>
+                <span class="badge status-in_storage">public</span>
+            </div>
+            <p>List all countries with museum counts.</p>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method post">POST</span>
+                <code>/api/v1/museums</code>
+                <span class="badge status-on_display">readwrite</span>
+            </div>
+            <p>Create a new museum. Required fields: <code>name</code>, <code>city</code>, <code>country</code>, <code>region</code>. Optional: <code>state_province</code>, <code>postal_code</code>, <code>address</code>, <code>website</code>, <code>latitude</code>, <code>longitude</code>.</p>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method put">PUT</span>
+                <code>/api/v1/museums/{id}</code>
+                <span class="badge status-on_display">readwrite</span>
+            </div>
+            <p>Update a museum record.</p>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method delete">DELETE</span>
+                <code>/api/v1/museums/{id}</code>
+                <span class="badge status-under_restoration">admin</span>
+            </div>
+            <p>Delete a museum and all its exhibit links.</p>
+        </div>
+    </div>
+
+    <div class="endpoint-group">
+        <h3>Exhibits (Aircraft-Museum Links)</h3>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method post">POST</span>
+                <code>/api/v1/exhibits</code>
+                <span class="badge status-on_display">readwrite</span>
+            </div>
+            <p>Link an aircraft to a museum. Required: <code>aircraft_id</code>, <code>museum_id</code>. Optional: <code>display_status</code> (on_display, in_storage, on_loan, under_restoration), <code>notes</code>.</p>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method put">PUT</span>
+                <code>/api/v1/exhibits/{id}</code>
+                <span class="badge status-on_display">readwrite</span>
+            </div>
+            <p>Update exhibit status or notes.</p>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method delete">DELETE</span>
+                <code>/api/v1/exhibits/{id}</code>
+                <span class="badge status-under_restoration">admin</span>
+            </div>
+            <p>Remove an exhibit link.</p>
+        </div>
+    </div>
+
+    <div class="endpoint-group">
+        <h3>Proximity</h3>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method get">GET</span>
+                <code>/api/v1/nearest</code>
+                <span class="badge status-in_storage">public</span>
+            </div>
+            <p>Find the nearest museum(s) displaying a specific aircraft, measured from a zip/postal code or city. Supports alias search (e.g. "B29", "Superfortress"). Museums without coordinates are returned separately.</p>
+            <table class="param-table">
+                <tr><td><code>aircraft</code></td><td>Search term for aircraft — matches model, name, tail, or alias (required)</td></tr>
+                <tr><td><code>location</code></td><td>Zip/postal code or city name (required)</td></tr>
+                <tr><td><code>museum</code></td><td>Filter by museum name (optional)</td></tr>
+                <tr><td><code>limit</code></td><td>Max results (default 5, max 25)</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="endpoint-group">
+        <h3>Statistics</h3>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method get">GET</span>
+                <code>/api/v1/stats</code>
+                <span class="badge status-in_storage">public</span>
+            </div>
+            <p>Get counts of aircraft, museums, exhibit links, and countries.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

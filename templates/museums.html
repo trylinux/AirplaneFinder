@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% block title %}Museums — Aircraft Museum Tracker{% endblock %}
+{% block nav_museums %}active{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Museum Directory</h1>
+    <p class="subtitle">Browse aviation museums worldwide by name, country, or region</p>
+</div>
+
+<div class="card">
+    <div class="search-bar">
+        <input type="text" id="museum-search" placeholder="Search museums by name, city, country..." autocomplete="off">
+        <button id="museum-search-btn" class="btn btn-primary">
+            <i class="fa-solid fa-magnifying-glass"></i> Search
+        </button>
+    </div>
+
+    <div class="filter-row">
+        <label for="region-filter">Filter by Region:</label>
+        <select id="region-filter" class="select-input">
+            <option value="">All Regions</option>
+        </select>
+    </div>
+</div>
+
+<div id="museum-results" class="results-container"></div>
+
+<!-- Museum Detail Modal -->
+<div id="museum-modal" class="modal" style="display:none;">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+        <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+        <div id="museum-modal-body"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+$(function() {
+    var currentPage = 1;
+
+    // Load regions
+    $.getJSON('/api/museums/regions', function(data) {
+        data.forEach(function(r) {
+            $('#region-filter').append(
+                '<option value="' + escHtml(r.region) + '">' +
+                escHtml(r.region) + ' (' + r.count + ')</option>'
+            );
+        });
+    });
+
+    function searchMuseums(page) {
+        var q = $('#museum-search').val().trim();
+        var region = $('#region-filter').val();
+        currentPage = page || 1;
+
+        $.getJSON('/api/museums/search', {q: q, region: region, page: currentPage}, function(data) {
+            renderMuseumResults(data.results, data.total, '#museum-results', data.page, data.pages);
+        });
+    }
+
+    searchMuseums(1);
+
+    $('#museum-search-btn').on('click', function() { searchMuseums(1); });
+    $('#museum-search').on('keypress', function(e) { if (e.which === 13) searchMuseums(1); });
+    $('#region-filter').on('change', function() { searchMuseums(1); });
+
+    $(document).on('click', '.page-btn', function() {
+        searchMuseums($(this).data('page'));
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+
+    // Museum detail
+    $(document).on('click', '.museum-row', function() {
+        var id = $(this).data('id');
+        $.getJSON('/api/museums/' + id, function(data) {
+            renderMuseumDetail(data);
+        });
+    });
+
+    function renderMuseumDetail(data) {
+        var m = data.museum;
+        var locationParts = [m.city];
+        if (m.state_province) locationParts.push(m.state_province);
+        if (m.postal_code) locationParts.push(m.postal_code);
+        var locationStr = locationParts.join(', ');
+
+        var html = '<div class="detail-header">' +
+            '<h2>' + escHtml(m.name) + '</h2>' +
+            '<p class="detail-name">' + escHtml(locationStr) + '</p>' +
+            '<p class="detail-name">' + escHtml(m.country) + '</p>' +
+        '</div>' +
+        '<div class="detail-grid">' +
+            '<div class="detail-field"><span class="detail-label">Region</span><span class="detail-value">' + escHtml(m.region) + '</span></div>' +
+            (m.address ? '<div class="detail-field"><span class="detail-label">Address</span><span class="detail-value">' + escHtml(m.address) + '</span></div>' : '') +
+            (m.website ? '<div class="detail-field"><span class="detail-label">Website</span><span class="detail-value"><a href="' + escHtml(m.website) + '" target="_blank">' + escHtml(m.website) + '</a></span></div>' : '') +
+            (m.latitude != null ? '<div class="detail-field"><span class="detail-label">Coordinates</span><span class="detail-value">' + m.latitude + ', ' + m.longitude + '</span></div>' : '') +
+        '</div>';
+
+        if (data.aircraft && data.aircraft.length > 0) {
+            html += '<h3 class="detail-section-title"><i class="fa-solid fa-jet-fighter"></i> Aircraft Collection (' + data.aircraft.length + ')</h3>';
+            html += '<div class="detail-aircraft-list">';
+            data.aircraft.forEach(function(a) {
+                var statusClass = 'status-' + a.display_status;
+                html += '<div class="detail-aircraft-item">' +
+                    '<span class="aircraft-designation">' + escHtml(a.full_designation || a.model) + '</span>' +
+                    (a.name ? '<span class="aircraft-name"> — ' + escHtml(a.name) + '</span>' : '') +
+                    (a.tail_number ? '<span class="aircraft-tail"> (' + escHtml(a.tail_number) + ')</span>' : '') +
+                    ' <span class="badge ' + statusClass + '">' + a.display_status.replace(/_/g, ' ') + '</span>' +
+                '</div>';
+            });
+            html += '</div>';
+        } else {
+            html += '<p class="no-results">No aircraft currently tracked at this museum.</p>';
+        }
+
+        $('#museum-modal-body').html(html);
+        $('#museum-modal').fadeIn(200);
+    }
+
+    $('.modal-backdrop, .modal-close').on('click', function() {
+        $('#museum-modal').fadeOut(200);
+    });
+    $(document).on('keydown', function(e) {
+        if (e.key === 'Escape') $('#museum-modal').fadeOut(200);
+    });
+});
+</script>
+{% endblock %}

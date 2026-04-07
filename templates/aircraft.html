@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% block title %}Aircraft — Aircraft Museum Tracker{% endblock %}
+{% block nav_aircraft %}active{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Aircraft Directory</h1>
+    <p class="subtitle">Search by tail number, model, variant, or name</p>
+</div>
+
+<div class="card">
+    <div class="search-bar">
+        <input type="text" id="aircraft-search" placeholder="e.g. C-130J, 44-27297, Enola Gay, SR-71..." autocomplete="off">
+        <button id="aircraft-search-btn" class="btn btn-primary">
+            <i class="fa-solid fa-magnifying-glass"></i> Search
+        </button>
+    </div>
+
+    <div class="filter-chips" id="variant-examples">
+        <span class="chip-label">Try:</span>
+        <button class="chip" data-q="C-130">C-130</button>
+        <button class="chip" data-q="F-16">F-16</button>
+        <button class="chip" data-q="B-17">B-17</button>
+        <button class="chip" data-q="SR-71">SR-71</button>
+        <button class="chip" data-q="P-51">P-51</button>
+    </div>
+</div>
+
+<div id="aircraft-results" class="results-container"></div>
+
+<!-- Aircraft Detail Modal -->
+<div id="aircraft-modal" class="modal" style="display:none;">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+        <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+        <div id="aircraft-modal-body"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+$(function() {
+    var currentPage = 1;
+
+    function searchAircraft(page) {
+        var q = $('#aircraft-search').val().trim();
+        currentPage = page || 1;
+        $.getJSON('/api/aircraft/search', {q: q, page: currentPage}, function(data) {
+            renderAircraftResults(data.results, data.total, '#aircraft-results', data.page, data.pages);
+        });
+    }
+
+    // Initial load - show all
+    searchAircraft(1);
+
+    $('#aircraft-search-btn').on('click', function() { searchAircraft(1); });
+    $('#aircraft-search').on('keypress', function(e) { if (e.which === 13) searchAircraft(1); });
+
+    // Chip filters
+    $('.chip').on('click', function() {
+        $('#aircraft-search').val($(this).data('q'));
+        searchAircraft(1);
+    });
+
+    // Pagination
+    $(document).on('click', '.page-btn', function() {
+        searchAircraft($(this).data('page'));
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+
+    // Aircraft detail modal
+    $(document).on('click', '.aircraft-row', function() {
+        var id = $(this).data('id');
+        $.getJSON('/api/aircraft/' + id, function(data) {
+            renderAircraftDetail(data);
+        });
+    });
+
+    function renderAircraftDetail(data) {
+        var a = data.aircraft;
+        var html = '<div class="detail-header">' +
+            '<h2>' + escHtml(a.full_designation || a.model) + '</h2>' +
+            (a.name ? '<p class="detail-name">' + escHtml(a.name) + '</p>' : '') +
+        '</div>' +
+        '<div class="detail-grid">' +
+            '<div class="detail-field"><span class="detail-label">Manufacturer</span><span class="detail-value">' + escHtml(a.manufacturer) + '</span></div>' +
+            '<div class="detail-field"><span class="detail-label">Model</span><span class="detail-value">' + escHtml(a.model) + '</span></div>' +
+            (a.variant ? '<div class="detail-field"><span class="detail-label">Variant</span><span class="detail-value">' + escHtml(a.variant) + '</span></div>' : '') +
+            (a.tail_number ? '<div class="detail-field"><span class="detail-label">Tail Number</span><span class="detail-value">' + escHtml(a.tail_number) + '</span></div>' : '') +
+            (a.year_built ? '<div class="detail-field"><span class="detail-label">Year Built</span><span class="detail-value">' + a.year_built + '</span></div>' : '') +
+        '</div>' +
+        (a.description ? '<div class="detail-description"><p>' + escHtml(a.description) + '</p></div>' : '');
+
+        if (data.museums && data.museums.length > 0) {
+            html += '<h3 class="detail-section-title"><i class="fa-solid fa-building-columns"></i> On Display At</h3>';
+            html += '<div class="detail-museum-list">';
+            data.museums.forEach(function(m) {
+                var statusClass = 'status-' + m.display_status;
+                html += '<div class="detail-museum-item">' +
+                    '<div class="detail-museum-name">' + escHtml(m.name) + '</div>' +
+                    '<div class="detail-museum-loc">' + escHtml(m.city + ', ' + m.state) + '</div>' +
+                    '<span class="badge ' + statusClass + '">' + m.display_status.replace(/_/g, ' ') + '</span>' +
+                    (m.website ? ' <a href="' + escHtml(m.website) + '" target="_blank" class="btn-link"><i class="fa-solid fa-external-link-alt"></i></a>' : '') +
+                '</div>';
+            });
+            html += '</div>';
+        } else {
+            html += '<p class="no-results">Not currently on display at any tracked museum.</p>';
+        }
+
+        $('#aircraft-modal-body').html(html);
+        $('#aircraft-modal').fadeIn(200);
+    }
+
+    // Close modal
+    $('.modal-backdrop, .modal-close').on('click', function() {
+        $('#aircraft-modal').fadeOut(200);
+    });
+    $(document).on('keydown', function(e) {
+        if (e.key === 'Escape') $('#aircraft-modal').fadeOut(200);
+    });
+});
+</script>
+{% endblock %}

@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% block title %}API Keys — Aircraft Museum Tracker{% endblock %}
+{% block nav_admin %}active{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1><i class="fa-solid fa-key"></i> API Keys</h1>
+    <p class="subtitle">Manage API keys for programmatic access to the REST API</p>
+</div>
+
+<div class="card">
+    <h2>Generate New Key</h2>
+    <form id="form-new-key" class="admin-form">
+        <div class="form-row">
+            <div class="form-group">
+                <label>Label</label>
+                <input type="text" name="label" placeholder="e.g. my-script, ci-pipeline" value="default">
+            </div>
+            <div class="form-group">
+                <label>Permissions</label>
+                <select name="permissions">
+                    <option value="read">Read Only</option>
+                    <option value="readwrite" selected>Read + Write</option>
+                    {% if current_user.is_admin %}
+                    <option value="admin">Admin (full access)</option>
+                    {% endif %}
+                </select>
+            </div>
+            <div class="form-group form-group-btn">
+                <button type="submit" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Generate</button>
+            </div>
+        </div>
+    </form>
+
+    <div id="new-key-result" style="display:none;" class="new-key-box">
+        <div class="alert alert-success">
+            <i class="fa-solid fa-circle-check"></i> Key generated! Copy it now — <strong>you won't see it again</strong>.
+        </div>
+        <div class="key-display">
+            <code id="new-key-value"></code>
+            <button class="btn btn-secondary btn-sm" id="copy-key-btn"><i class="fa-solid fa-copy"></i> Copy</button>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h2>Your API Keys</h2>
+    <div id="keys-list"></div>
+</div>
+
+<div class="card">
+    <h2>Usage Examples</h2>
+    <div class="code-examples">
+        <h3>Reading data (any permission level)</h3>
+        <pre><code>curl -H "Authorization: Bearer amt_YOUR_KEY_HERE" \
+     http://localhost:5000/api/v1/aircraft/search?q=C-130</code></pre>
+
+        <h3>Creating a record (readwrite or admin)</h3>
+        <pre><code>curl -X POST -H "Authorization: Bearer amt_YOUR_KEY_HERE" \
+     -H "Content-Type: application/json" \
+     -d '{"manufacturer":"Boeing","model":"B-52","variant":"H"}' \
+     http://localhost:5000/api/v1/aircraft</code></pre>
+
+        <h3>Deleting a record (admin only)</h3>
+        <pre><code>curl -X DELETE -H "Authorization: Bearer amt_YOUR_KEY_HERE" \
+     http://localhost:5000/api/v1/aircraft/42</code></pre>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+$(function() {
+    function loadKeys() {
+        $.getJSON('/api/v1/keys', function(keys) {
+            if (!keys.length) {
+                $('#keys-list').html('<p class="no-results">No API keys yet. Generate one above.</p>');
+                return;
+            }
+            var html = '<table class="result-table"><thead><tr><th>ID</th><th>Label</th><th>Permissions</th><th>Created</th><th>Last Used</th><th>Actions</th></tr></thead><tbody>';
+            keys.forEach(function(k) {
+                var permClass = k.permissions === 'admin' ? 'status-under_restoration' :
+                                k.permissions === 'readwrite' ? 'status-on_display' : 'status-in_storage';
+                html += '<tr>' +
+                    '<td>' + k.id + '</td>' +
+                    '<td>' + escHtml(k.label) + '</td>' +
+                    '<td><span class="badge ' + permClass + '">' + k.permissions + '</span></td>' +
+                    '<td>' + (k.created_at ? k.created_at.slice(0,10) : '—') + '</td>' +
+                    '<td>' + (k.last_used ? k.last_used.slice(0,10) : 'never') + '</td>' +
+                    '<td><button class="btn btn-danger btn-sm revoke-btn" data-id="' + k.id + '"><i class="fa-solid fa-ban"></i> Revoke</button></td>' +
+                '</tr>';
+            });
+            html += '</tbody></table>';
+            $('#keys-list').html(html);
+        });
+    }
+    loadKeys();
+
+    // Generate key
+    $('#form-new-key').on('submit', function(e) {
+        e.preventDefault();
+        var data = {};
+        $(this).serializeArray().forEach(function(i) { data[i.name] = i.value; });
+        $.ajax({
+            url: '/api/v1/keys', method: 'POST',
+            contentType: 'application/json', data: JSON.stringify(data),
+            success: function(resp) {
+                $('#new-key-value').text(resp.key);
+                $('#new-key-result').show();
+                loadKeys();
+            },
+            error: function(xhr) {
+                alert(xhr.responseJSON ? xhr.responseJSON.error : 'Failed to generate key.');
+            }
+        });
+    });
+
+    // Copy key
+    $('#copy-key-btn').on('click', function() {
+        var key = $('#new-key-value').text();
+        navigator.clipboard.writeText(key).then(function() {
+            $('#copy-key-btn').html('<i class="fa-solid fa-check"></i> Copied!');
+            setTimeout(function() { $('#copy-key-btn').html('<i class="fa-solid fa-copy"></i> Copy'); }, 2000);
+        });
+    });
+
+    // Revoke key
+    $(document).on('click', '.revoke-btn', function() {
+        var id = $(this).data('id');
+        if (!confirm('Revoke API key #' + id + '? This cannot be undone.')) return;
+        $.ajax({
+            url: '/api/v1/keys/' + id, method: 'DELETE',
+            success: function() { loadKeys(); },
+            error: function(xhr) { alert(xhr.responseJSON ? xhr.responseJSON.error : 'Failed.'); }
+        });
+    });
+});
+</script>
+{% endblock %}
