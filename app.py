@@ -765,4 +765,8 @@ def _resolve_location(location_str):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run(
+        host=Config.SERVER_HOST,
+        port=Config.SERVER_PORT,
+        debug=Config.SERVER_DEBUG,
+    )

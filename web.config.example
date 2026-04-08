@@ -1,0 +1,19 @@
+# Aircraft Museum Tracker — Web Configuration
+# Copy this file to web.config and adjust values for your environment.
+# web.config is gitignored and will not be committed.
+
+[server]
+host = 0.0.0.0
+port = 5000
+debug = true
+
+[database]
+host = 127.0.0.1
+port = 3306
+user = amt_user
+password = change_me
+database = airplane_museum_tracker
+
+[app]
+secret_key = change-me-in-production
+results_per_page = 20
