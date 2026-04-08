@@ -212,7 +212,8 @@ $(function() {
                 var statusClass = 'status-' + a.display_status;
                 html += '<div class="detail-aircraft-item">' +
                     '<span class="aircraft-designation">' + escHtml(a.full_designation || a.model) + '</span>' +
-                    (a.name ? '<span class="aircraft-name"> — ' + escHtml(a.name) + '</span>' : '') +
+                    (a.model_name ? '<span class="aircraft-name"> ' + escHtml(a.model_name) + '</span>' : '') +
+                    (a.aircraft_name ? '<span class="aircraft-name"> "' + escHtml(a.aircraft_name) + '"</span>' : '') +
                     (a.tail_number ? '<span class="aircraft-tail"> (' + escHtml(a.tail_number) + ')</span>' : '') +
                     ' <span class="badge ' + statusClass + '">' + a.display_status.replace(/_/g, ' ') + '</span>' +
                 '</div>';

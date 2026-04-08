@@ -140,7 +140,8 @@ class Aircraft(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     tail_number = db.Column(db.String(20))
-    name = db.Column(db.String(200))
+    model_name = db.Column(db.String(200))       # type common name: "Cobra", "Hercules"
+    aircraft_name = db.Column(db.String(200))     # individual name: "Daisy Duke", "Bockscar"
     manufacturer = db.Column(db.String(100), nullable=False)
     model = db.Column(db.String(50), nullable=False)
     variant = db.Column(db.String(50))
@@ -164,7 +165,8 @@ class Aircraft(db.Model):
         return {
             "id": self.id,
             "tail_number": self.tail_number,
-            "name": self.name,
+            "model_name": self.model_name,
+            "aircraft_name": self.aircraft_name,
             "manufacturer": self.manufacturer,
             "model": self.model,
             "variant": self.variant,

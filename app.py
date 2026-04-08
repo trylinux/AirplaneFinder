@@ -210,7 +210,8 @@ def _build_aircraft_filter(q):
     ).subquery()
     return or_(
         Aircraft.tail_number.ilike(like),
-        Aircraft.name.ilike(like),
+        Aircraft.model_name.ilike(like),
+        Aircraft.aircraft_name.ilike(like),
         Aircraft.model.ilike(like),
         Aircraft.variant.ilike(like),
         db.func.concat(Aircraft.model, db.func.ifnull(db.func.concat('-', Aircraft.variant), '')).ilike(like),
@@ -478,7 +479,8 @@ def api_create_aircraft():
 
     aircraft = Aircraft(
         tail_number=data.get("tail_number"),
-        name=data.get("name"),
+        model_name=data.get("model_name"),
+        aircraft_name=data.get("aircraft_name"),
         manufacturer=data["manufacturer"],
         model=data["model"],
         variant=data.get("variant"),
@@ -519,7 +521,8 @@ def api_update_aircraft(aircraft_id):
     """Update an existing aircraft record. Include 'aliases' array to replace all aliases."""
     aircraft = Aircraft.query.get_or_404(aircraft_id)
     data = request.get_json() or {}
-    for field in ["tail_number", "name", "manufacturer", "model", "variant",
+    for field in ["tail_number", "model_name", "aircraft_name",
+                   "manufacturer", "model", "variant",
                    "aircraft_type", "wing_type", "military_civilian",
                    "year_built", "description"]:
         if field in data:

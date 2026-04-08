@@ -16,7 +16,7 @@ function renderAircraftResults(results, total, container, page, pages) {
     var html = '<div class="results-meta"><span>' + total + ' aircraft found</span></div>';
 
     html += '<table class="result-table"><thead><tr>' +
-        '<th>Designation</th><th>Name</th><th>Tail #</th><th>Manufacturer</th><th>Type</th><th>Mil/Civ</th><th>Year</th>' +
+        '<th>Designation</th><th>Model Name</th><th>Aircraft Name</th><th>Tail #</th><th>Manufacturer</th><th>Type</th><th>Mil/Civ</th><th>Year</th>' +
     '</tr></thead><tbody>';
 
     results.forEach(function(a) {
@@ -24,7 +24,8 @@ function renderAircraftResults(results, total, container, page, pages) {
         var milCiv = a.military_civilian || 'military';
         html += '<tr class="aircraft-row" data-id="' + a.id + '">' +
             '<td><strong>' + escHtml(a.full_designation || a.model) + '</strong></td>' +
-            '<td>' + escHtml(a.name || '—') + '</td>' +
+            '<td>' + escHtml(a.model_name || '—') + '</td>' +
+            '<td>' + escHtml(a.aircraft_name || '—') + '</td>' +
             '<td>' + escHtml(a.tail_number || '—') + '</td>' +
             '<td>' + escHtml(a.manufacturer) + '</td>' +
             '<td>' + escHtml(typeLabel) + '</td>' +

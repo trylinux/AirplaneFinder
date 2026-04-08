@@ -170,7 +170,8 @@ $(function() {
                     '<p class="prox-location-text">' + escHtml(r.museum.city + (r.museum.state_province ? ', ' + r.museum.state_province : '') + ' — ' + r.museum.country) + '</p>' +
                     '<p class="prox-aircraft-text"><i class="fa-solid fa-plane"></i> ' +
                         escHtml(r.aircraft.full_designation || r.aircraft.model) +
-                        (r.aircraft.name ? ' — ' + escHtml(r.aircraft.name) : '') +
+                        (r.aircraft.model_name ? ' ' + escHtml(r.aircraft.model_name) : '') +
+                        (r.aircraft.aircraft_name ? ' "' + escHtml(r.aircraft.aircraft_name) + '"' : '') +
                     '</p>' +
                     '<span class="badge ' + statusClass + '">' + statusLabel + '</span>' +
                     (r.museum.website ? ' <a href="' + escHtml(r.museum.website) + '" target="_blank" class="btn-link"><i class="fa-solid fa-external-link-alt"></i> Website</a>' : '') +
@@ -189,7 +190,8 @@ $(function() {
                         '<p class="prox-location-text">' + escHtml(r.museum.city + ' — ' + r.museum.country) + '</p>' +
                         '<p class="prox-aircraft-text"><i class="fa-solid fa-plane"></i> ' +
                             escHtml(r.aircraft.full_designation || r.aircraft.model) +
-                            (r.aircraft.name ? ' — ' + escHtml(r.aircraft.name) : '') +
+                            (r.aircraft.model_name ? ' ' + escHtml(r.aircraft.model_name) : '') +
+                            (r.aircraft.aircraft_name ? ' "' + escHtml(r.aircraft.aircraft_name) + '"' : '') +
                         '</p>' +
                     '</div>' +
                 '</div>';

@@ -65,10 +65,11 @@ CREATE TABLE IF NOT EXISTS museums (
 CREATE TABLE IF NOT EXISTS aircraft (
     id              INT AUTO_INCREMENT PRIMARY KEY,
     tail_number     VARCHAR(20)  DEFAULT NULL,
-    name            VARCHAR(200) DEFAULT NULL,     -- e.g. "Bockscar", "Memphis Belle"
+    model_name      VARCHAR(200) DEFAULT NULL,     -- type/model common name, e.g. "Cobra", "Hercules"
+    aircraft_name   VARCHAR(200) DEFAULT NULL,     -- individual aircraft name, e.g. "Daisy Duke", "Bockscar"
     manufacturer    VARCHAR(100) NOT NULL,
-    model           VARCHAR(50)  NOT NULL,         -- base model, e.g. "C-130"
-    variant         VARCHAR(50)  DEFAULT NULL,     -- e.g. "J", "H", "J-30"
+    model           VARCHAR(50)  NOT NULL,         -- base designation, e.g. "AH-1", "C-130"
+    variant         VARCHAR(50)  DEFAULT NULL,     -- e.g. "D", "J", "H"
     full_designation VARCHAR(100) GENERATED ALWAYS
                      AS (CONCAT(model, IFNULL(CONCAT('-', variant), ''))) STORED,
     aircraft_type   ENUM('fixed_wing','rotary_wing','lighter_than_air','spacecraft')
@@ -83,7 +84,7 @@ CREATE TABLE IF NOT EXISTS aircraft (
     INDEX idx_model      (model),
     INDEX idx_variant    (variant),
     INDEX idx_full_desig (full_designation),
-    FULLTEXT idx_ft_search (name, model, variant, tail_number, manufacturer)
+    FULLTEXT idx_ft_search (model_name, aircraft_name, model, variant, tail_number, manufacturer)
 ) ENGINE=InnoDB;
 
 -- ─────────────────────────────────────────────

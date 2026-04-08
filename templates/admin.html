@@ -84,8 +84,12 @@
                     <input type="text" name="tail_number" placeholder="e.g. 55-0014">
                 </div>
                 <div class="form-group">
-                    <label>Name</label>
-                    <input type="text" name="name" placeholder="e.g. Memphis Belle">
+                    <label>Model Name</label>
+                    <input type="text" name="model_name" placeholder="e.g. Cobra, Hercules, Mustang">
+                </div>
+                <div class="form-group">
+                    <label>Aircraft Name</label>
+                    <input type="text" name="aircraft_name" placeholder="e.g. Daisy Duke, Bockscar">
                 </div>
                 <div class="form-group">
                     <label>Year Built</label>
@@ -278,7 +282,7 @@ $(function() {
             var html = '';
             if (!data.results.length) { html = '<p class="no-results">No aircraft found.</p>'; }
             else {
-                html = '<table class="result-table"><thead><tr><th>ID</th><th>Designation</th><th>Name</th><th>Tail #</th><th>Manufacturer</th><th>Type</th><th>Mil/Civ</th><th>Aliases</th><th>Actions</th></tr></thead><tbody>';
+                html = '<table class="result-table"><thead><tr><th>ID</th><th>Designation</th><th>Model Name</th><th>Aircraft Name</th><th>Tail #</th><th>Manufacturer</th><th>Type</th><th>Mil/Civ</th><th>Aliases</th><th>Actions</th></tr></thead><tbody>';
                 data.results.forEach(function(a) {
                     var aliasStr = (a.aliases && a.aliases.length) ? escHtml(a.aliases.join(', ')) : '—';
                     var typeLabel = (a.aircraft_type || 'fixed_wing').replace(/_/g, ' ');
@@ -286,7 +290,8 @@ $(function() {
                     html += '<tr>' +
                         '<td>' + a.id + '</td>' +
                         '<td><strong>' + escHtml(a.full_designation || a.model) + '</strong></td>' +
-                        '<td>' + escHtml(a.name || '—') + '</td>' +
+                        '<td>' + escHtml(a.model_name || '—') + '</td>' +
+                        '<td>' + escHtml(a.aircraft_name || '—') + '</td>' +
                         '<td>' + escHtml(a.tail_number || '—') + '</td>' +
                         '<td>' + escHtml(a.manufacturer) + '</td>' +
                         '<td>' + escHtml(typeLabel) + '</td>' +
@@ -357,14 +362,18 @@ $(function() {
                     if (q) {
                         rows = rows.filter(function(r) {
                             return (r.aircraft.full_designation || '').toLowerCase().indexOf(q) >= 0 ||
-                                   (r.aircraft.name || '').toLowerCase().indexOf(q) >= 0 ||
+                                   (r.aircraft.model_name || '').toLowerCase().indexOf(q) >= 0 ||
+                                   (r.aircraft.aircraft_name || '').toLowerCase().indexOf(q) >= 0 ||
                                    (r.museum.name || '').toLowerCase().indexOf(q) >= 0;
                         });
                     }
                     rows.forEach(function(r) {
                         var statusClass = 'status-' + (r.museum.display_status || 'on_display');
+                        var acLabel = escHtml(r.aircraft.full_designation || r.aircraft.model);
+                        if (r.aircraft.model_name) acLabel += ' ' + escHtml(r.aircraft.model_name);
+                        if (r.aircraft.aircraft_name) acLabel += ' "' + escHtml(r.aircraft.aircraft_name) + '"';
                         html += '<tr>' +
-                            '<td>' + escHtml(r.aircraft.full_designation || r.aircraft.model) + (r.aircraft.name ? ' — ' + escHtml(r.aircraft.name) : '') + '</td>' +
+                            '<td>' + acLabel + '</td>' +
                             '<td>' + escHtml(r.museum.name) + '</td>' +
                             '<td><span class="badge ' + statusClass + '">' + (r.museum.display_status || 'on_display').replace(/_/g,' ') + '</span></td>' +
                             '<td>—</td>' +
@@ -396,7 +405,8 @@ $(function() {
                 {name:'model', label:'Model', val: a.model, req: true},
                 {name:'variant', label:'Variant', val: a.variant || ''},
                 {name:'tail_number', label:'Tail Number', val: a.tail_number || ''},
-                {name:'name', label:'Name', val: a.name || ''},
+                {name:'model_name', label:'Model Name', val: a.model_name || ''},
+                {name:'aircraft_name', label:'Aircraft Name', val: a.aircraft_name || ''},
                 {name:'year_built', label:'Year Built', val: a.year_built || '', type:'number'},
                 {name:'aircraft_type', label:'Aircraft Type', val: a.aircraft_type || 'fixed_wing', select: [
                     {v:'fixed_wing', l:'Fixed Wing'}, {v:'rotary_wing', l:'Rotary Wing'},
