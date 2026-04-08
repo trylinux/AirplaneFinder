@@ -230,7 +230,7 @@ def api_aircraft_search():
     query = Aircraft.query
     if q:
         query = query.filter(_build_aircraft_filter(q))
-    query = query.order_by(Aircraft.model, Aircraft.variant, Aircraft.name)
+    query = query.order_by(Aircraft.model, Aircraft.variant, Aircraft.model_name)
     p = query.paginate(page=page, per_page=per_page, error_out=False)
     return jsonify({"results": [a.to_dict() for a in p.items], "total": p.total, "page": p.page, "pages": p.pages})
 
