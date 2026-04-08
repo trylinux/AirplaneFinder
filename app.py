@@ -365,6 +365,51 @@ def api_nearest_museum():
     return jsonify(response)
 
 
+@app.route("/api/v1/museums/nearby")
+def api_nearby_museums():
+    """Find museums nearest to a given location.
+
+    Parameters:
+        location (required) — zip/postal code or city name.
+        region   (optional) — filter by museum region.
+        limit    (optional) — max results (default 10, max 50).
+    """
+    location = request.args.get("location", "").strip()
+    region = request.args.get("region", "").strip()
+    limit = min(request.args.get("limit", 10, type=int), 50)
+
+    if not location:
+        return jsonify({"error": "The 'location' parameter is required."}), 400
+
+    lat, lon = _resolve_location(location)
+    if lat is None:
+        return jsonify({"error": f"Could not resolve location: {location}"}), 404
+
+    query = Museum.query
+    if region:
+        query = query.filter(Museum.region == region)
+
+    museums = query.all()
+
+    results = []
+    no_coords = []
+    for m in museums:
+        if m.has_coordinates:
+            dist = haversine(lat, lon, float(m.latitude), float(m.longitude))
+            results.append({"distance_miles": round(dist, 1), "museum": m.to_dict()})
+        else:
+            no_coords.append({"museum": m.to_dict(), "note": "Distance unavailable — coordinates not on file."})
+
+    results.sort(key=lambda x: x["distance_miles"])
+    response = {
+        "origin": {"location": location, "latitude": lat, "longitude": lon},
+        "results": results[:limit],
+    }
+    if no_coords:
+        response["no_coordinates"] = no_coords
+    return jsonify(response)
+
+
 @app.route("/api/v1/stats")
 def api_stats():
     """Dashboard statistics."""
@@ -401,6 +446,10 @@ def museum_regions_compat():
 @app.route("/api/nearest")
 def nearest_compat():
     return api_nearest_museum()
+
+@app.route("/api/museums/nearby")
+def nearby_museums_compat():
+    return api_nearby_museums()
 
 @app.route("/api/stats")
 def stats_compat():

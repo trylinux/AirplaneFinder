@@ -8,7 +8,38 @@
     <p class="subtitle">Browse aviation museums worldwide by name, country, or region</p>
 </div>
 
+<!-- Proximity Search -->
+<div class="card proximity-card">
+    <h2><i class="fa-solid fa-location-crosshairs"></i> Find Nearby Museums</h2>
+    <p class="card-subtitle">Enter your location to discover the closest aviation museums.</p>
+
+    <div class="proximity-form">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="museum-prox-location">Your Location (zip or city)</label>
+                <input type="text" id="museum-prox-location" placeholder="e.g. 92591, Dayton, London" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="museum-prox-region">Region (optional)</label>
+                <select id="museum-prox-region" class="select-input">
+                    <option value="">All Regions</option>
+                </select>
+            </div>
+            <div class="form-group form-group-btn">
+                <button id="museum-prox-search" class="btn btn-primary">
+                    <i class="fa-solid fa-magnifying-glass"></i> Search
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="museum-prox-results" class="prox-results" style="display:none;"></div>
+    <div id="museum-prox-error" class="alert alert-error" style="display:none;"></div>
+</div>
+
+<!-- Name / Region Search -->
 <div class="card">
+    <h2><i class="fa-solid fa-search"></i> Browse Museums</h2>
     <div class="search-bar">
         <input type="text" id="museum-search" placeholder="Search museums by name, city, country..." autocomplete="off">
         <button id="museum-search-btn" class="btn btn-primary">
@@ -41,16 +72,91 @@
 $(function() {
     var currentPage = 1;
 
-    // Load regions
+    // Load regions into both dropdowns
     $.getJSON('/api/museums/regions', function(data) {
         data.forEach(function(r) {
-            $('#region-filter').append(
-                '<option value="' + escHtml(r.region) + '">' +
-                escHtml(r.region) + ' (' + r.count + ')</option>'
-            );
+            var opt = '<option value="' + escHtml(r.region) + '">' +
+                escHtml(r.region) + ' (' + r.count + ')</option>';
+            $('#region-filter').append(opt);
+            $('#museum-prox-region').append(opt);
         });
     });
 
+    // ── Proximity search ──
+    function doMuseumProximity() {
+        var location = $('#museum-prox-location').val().trim();
+        if (!location) {
+            $('#museum-prox-error').text('Please enter a zip code or city name.').show();
+            $('#museum-prox-results').hide();
+            return;
+        }
+        var region = $('#museum-prox-region').val();
+        var params = {location: location, limit: 15};
+        if (region) params.region = region;
+
+        $('#museum-prox-error').hide();
+        $('#museum-prox-results').html('<p class="loading-text">Searching...</p>').show();
+
+        $.getJSON('/api/v1/museums/nearby', params, function(data) {
+            if (!data.results || data.results.length === 0) {
+                $('#museum-prox-results').html('<p class="no-results">No museums found near that location.</p>');
+                return;
+            }
+
+            var html = '<div class="prox-origin">Showing museums nearest to <strong>' +
+                       escHtml(data.origin.location) + '</strong></div>';
+            html += '<div class="prox-list">';
+
+            data.results.forEach(function(r) {
+                var m = r.museum;
+                var loc = m.city;
+                if (m.state_province) loc += ', ' + m.state_province;
+                html += '<div class="prox-item museum-prox-row" data-id="' + m.id + '">' +
+                    '<div class="prox-distance"><span class="dist-num">' + r.distance_miles + '</span><span class="dist-unit">miles</span></div>' +
+                    '<div class="prox-info">' +
+                        '<h4>' + escHtml(m.name) + '</h4>' +
+                        '<p class="prox-location-text">' + escHtml(loc + ' — ' + m.country) + '</p>' +
+                        '<span class="badge status-on_display">' + escHtml(m.region) + '</span>' +
+                        (m.website ? ' <a href="' + escHtml(m.website) + '" target="_blank" class="btn-link"><i class="fa-solid fa-external-link-alt"></i> Website</a>' : '') +
+                    '</div>' +
+                '</div>';
+            });
+
+            if (data.no_coordinates && data.no_coordinates.length > 0) {
+                html += '<div class="prox-no-coords"><h4>Other museums (distance unavailable):</h4>';
+                data.no_coordinates.forEach(function(r) {
+                    var m = r.museum;
+                    html += '<div class="prox-item museum-prox-row" data-id="' + m.id + '">' +
+                        '<div class="prox-distance"><span class="dist-num">?</span><span class="dist-unit">miles</span></div>' +
+                        '<div class="prox-info">' +
+                            '<h4>' + escHtml(m.name) + '</h4>' +
+                            '<p class="prox-location-text">' + escHtml(m.city + ' — ' + m.country) + '</p>' +
+                        '</div>' +
+                    '</div>';
+                });
+                html += '</div>';
+            }
+
+            html += '</div>';
+            $('#museum-prox-results').html(html).show();
+            $('#museum-prox-error').hide();
+        }).fail(function(xhr) {
+            var msg = (xhr.responseJSON && xhr.responseJSON.error) ? xhr.responseJSON.error : 'Search failed.';
+            $('#museum-prox-error').text(msg).show();
+            $('#museum-prox-results').hide();
+        });
+    }
+
+    $('#museum-prox-search').on('click', doMuseumProximity);
+    $('#museum-prox-location').on('keypress', function(e) { if (e.which === 13) doMuseumProximity(); });
+
+    // Click on proximity result opens museum detail
+    $(document).on('click', '.museum-prox-row', function() {
+        var id = $(this).data('id');
+        $.getJSON('/api/museums/' + id, function(data) { renderMuseumDetail(data); });
+    });
+
+    // ── Name / region search ──
     function searchMuseums(page) {
         var q = $('#museum-search').val().trim();
         var region = $('#region-filter').val();
