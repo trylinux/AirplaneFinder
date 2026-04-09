@@ -16,12 +16,13 @@ function renderAircraftResults(results, total, container, page, pages) {
     var html = '<div class="results-meta"><span>' + total + ' aircraft found</span></div>';
 
     html += '<table class="result-table"><thead><tr>' +
-        '<th>Designation</th><th>Model Name</th><th>Aircraft Name</th><th>Tail #</th><th>Manufacturer</th><th>Type</th><th>Mil/Civ</th><th>Year</th>' +
+        '<th>Designation</th><th>Model Name</th><th>Aircraft Name</th><th>Tail #</th><th>Manufacturer</th><th>Type</th><th>Mil/Civ</th><th>Role</th><th>Year</th>' +
     '</tr></thead><tbody>';
 
     results.forEach(function(a) {
         var typeLabel = (a.aircraft_type || 'fixed_wing').replace(/_/g, ' ');
         var milCiv = a.military_civilian || 'military';
+        var roleLabel = (a.role_type || '—').replace(/_/g, ' ');
         html += '<tr class="aircraft-row" data-id="' + a.id + '">' +
             '<td><strong>' + escHtml(a.full_designation || a.model) + '</strong></td>' +
             '<td>' + escHtml(a.model_name || '—') + '</td>' +
@@ -30,6 +31,7 @@ function renderAircraftResults(results, total, container, page, pages) {
             '<td>' + escHtml(a.manufacturer) + '</td>' +
             '<td>' + escHtml(typeLabel) + '</td>' +
             '<td><span class="badge status-' + milCiv + '">' + milCiv + '</span></td>' +
+            '<td>' + escHtml(roleLabel) + '</td>' +
             '<td>' + (a.year_built || '—') + '</td>' +
         '</tr>';
     });

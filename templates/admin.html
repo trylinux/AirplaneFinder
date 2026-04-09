@@ -115,9 +115,15 @@
                 </div>
                 <div class="form-group">
                     <label>Military / Civilian *</label>
-                    <select name="military_civilian" required>
+                    <select name="military_civilian" required class="mil-civ-select">
                         <option value="military">Military</option>
                         <option value="civilian">Civilian</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Type</label>
+                    <select name="role_type" class="role-type-select">
+                        <option value="">— Select —</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -266,7 +272,53 @@
 
 {% block scripts %}
 <script>
+// ── Role type options keyed by military/civilian ──
+var ROLE_OPTIONS = {
+    military: [
+        {v:'', l:'— Select —'},
+        {v:'bomber', l:'Bomber'},
+        {v:'transport', l:'Transport'},
+        {v:'recon', l:'Recon'},
+        {v:'electronic_warfare', l:'Electronic Warfare'},
+        {v:'fighter', l:'Fighter'},
+        {v:'tanker', l:'Tanker'},
+        {v:'search_rescue', l:'Search & Rescue'},
+        {v:'ground_attack', l:'Ground Attack'}
+    ],
+    civilian: [
+        {v:'', l:'— Select —'},
+        {v:'commercial_transport', l:'Commercial Transport'},
+        {v:'freighter', l:'Freighter'},
+        {v:'private', l:'Private'},
+        {v:'experimental', l:'Experimental'},
+        {v:'space', l:'Space'},
+        {v:'other', l:'Other'}
+    ]
+};
+
+function getRoleOptions(milCiv) {
+    return ROLE_OPTIONS[milCiv] || ROLE_OPTIONS['military'];
+}
+
+function updateRoleDropdown($milCivSelect, currentVal) {
+    var milCiv = $milCivSelect.val();
+    var $roleSelect = $milCivSelect.closest('.form-grid, .admin-form, form').find('.role-type-select');
+    var opts = getRoleOptions(milCiv);
+    $roleSelect.empty();
+    opts.forEach(function(o) {
+        $roleSelect.append('<option value="' + o.v + '"' + (o.v === currentVal ? ' selected' : '') + '>' + escHtml(o.l) + '</option>');
+    });
+}
+
 $(function() {
+    // ── Wire up mil/civ → role_type dependency (create form + edit modal) ──
+    $(document).on('change', '.mil-civ-select', function() {
+        updateRoleDropdown($(this), '');
+    });
+
+    // Initialize the create form role dropdown on page load
+    updateRoleDropdown($('#form-aircraft .mil-civ-select'), '');
+
     // ── Tab switching ──
     $('.tab-btn').on('click', function() {
         $('.tab-btn').removeClass('active');
@@ -282,11 +334,12 @@ $(function() {
             var html = '';
             if (!data.results.length) { html = '<p class="no-results">No aircraft found.</p>'; }
             else {
-                html = '<table class="result-table"><thead><tr><th>ID</th><th>Designation</th><th>Model Name</th><th>Aircraft Name</th><th>Tail #</th><th>Manufacturer</th><th>Type</th><th>Mil/Civ</th><th>Aliases</th><th>Actions</th></tr></thead><tbody>';
+                html = '<table class="result-table"><thead><tr><th>ID</th><th>Designation</th><th>Model Name</th><th>Aircraft Name</th><th>Tail #</th><th>Manufacturer</th><th>Type</th><th>Mil/Civ</th><th>Role</th><th>Aliases</th><th>Actions</th></tr></thead><tbody>';
                 data.results.forEach(function(a) {
                     var aliasStr = (a.aliases && a.aliases.length) ? escHtml(a.aliases.join(', ')) : '—';
                     var typeLabel = (a.aircraft_type || 'fixed_wing').replace(/_/g, ' ');
                     var milCiv = (a.military_civilian || 'military');
+                    var roleLabel = (a.role_type || '—').replace(/_/g, ' ');
                     html += '<tr>' +
                         '<td>' + a.id + '</td>' +
                         '<td><strong>' + escHtml(a.full_designation || a.model) + '</strong></td>' +
@@ -296,6 +349,7 @@ $(function() {
                         '<td>' + escHtml(a.manufacturer) + '</td>' +
                         '<td>' + escHtml(typeLabel) + '</td>' +
                         '<td><span class="badge status-' + milCiv + '">' + milCiv + '</span></td>' +
+                        '<td>' + escHtml(roleLabel) + '</td>' +
                         '<td>' + aliasStr + '</td>' +
                         '<td><button class="btn-icon edit-aircraft-btn" data-id="' + a.id + '" title="Edit"><i class="fa-solid fa-pen"></i></button></td>' +
                     '</tr>';
@@ -418,7 +472,9 @@ $(function() {
                 ]},
                 {name:'military_civilian', label:'Military / Civilian', val: a.military_civilian || 'military', select: [
                     {v:'military', l:'Military'}, {v:'civilian', l:'Civilian'}
-                ]},
+                ], cssClass: 'mil-civ-select'},
+                {name:'role_type', label:'Type', val: a.role_type || '', select:
+                    getRoleOptions(a.military_civilian || 'military'), cssClass: 'role-type-select'},
                 {name:'aliases', label:'Aliases (comma-separated)', val: (a.aliases || []).join(', ')},
                 {name:'description', label:'Description', val: a.description || '', textarea: true},
             ];
@@ -459,7 +515,8 @@ $(function() {
             if (f.textarea) {
                 html += '<textarea name="' + f.name + '" rows="3">' + escHtml(f.val) + '</textarea>';
             } else if (f.select) {
-                html += '<select name="' + f.name + '"' + (f.req ? ' required' : '') + '>';
+                var cls = f.cssClass ? ' class="' + f.cssClass + '"' : '';
+                html += '<select name="' + f.name + '"' + (f.req ? ' required' : '') + cls + '>';
                 f.select.forEach(function(opt) {
                     html += '<option value="' + opt.v + '"' + (opt.v === f.val ? ' selected' : '') + '>' + escHtml(opt.l) + '</option>';
                 });

@@ -148,6 +148,7 @@ class Aircraft(db.Model):
     aircraft_type = db.Column(db.String(20), nullable=False, default="fixed_wing")
     wing_type = db.Column(db.String(20))          # monoplane, biplane, triplane
     military_civilian = db.Column(db.String(10), nullable=False, default="military")
+    role_type = db.Column(db.String(30))             # bomber, transport, fighter, etc.
     year_built = db.Column(db.Integer)
     description = db.Column(db.Text)
 
@@ -174,6 +175,7 @@ class Aircraft(db.Model):
             "aircraft_type": self.aircraft_type,
             "wing_type": self.wing_type,
             "military_civilian": self.military_civilian,
+            "role_type": self.role_type,
             "year_built": self.year_built,
             "description": self.description,
             "aliases": [a.alias for a in self.aliases],

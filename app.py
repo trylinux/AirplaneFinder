@@ -487,6 +487,7 @@ def api_create_aircraft():
         aircraft_type=data.get("aircraft_type", "fixed_wing"),
         wing_type=data.get("wing_type") or None,
         military_civilian=data.get("military_civilian", "military"),
+        role_type=data.get("role_type") or None,
         year_built=data.get("year_built"),
         description=data.get("description"),
     )
@@ -523,7 +524,7 @@ def api_update_aircraft(aircraft_id):
     data = request.get_json() or {}
     for field in ["tail_number", "model_name", "aircraft_name",
                    "manufacturer", "model", "variant",
-                   "aircraft_type", "wing_type", "military_civilian",
+                   "aircraft_type", "wing_type", "military_civilian", "role_type",
                    "year_built", "description"]:
         if field in data:
             val = data[field] if data[field] else None  # treat empty string as None
