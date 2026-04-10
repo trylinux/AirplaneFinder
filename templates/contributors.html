@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}Contributors — Aircraft Museum Tracker{% endblock %}
+{% block nav_contributors %}active{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1><i class="fa-solid fa-ranking-star"></i> Contributors</h1>
+    <p class="subtitle">Users who have added and updated aircraft, museums, and exhibits</p>
+</div>
+
+<div class="card">
+    <div id="contributors-container">
+        <p style="color:#888;"><i class="fa-solid fa-spinner fa-spin"></i> Loading...</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function escHtml(s) { return $('<span>').text(s || '').html(); }
+
+$(function() {
+    $.getJSON('/api/v1/contributors', function(data) {
+        if (!data.length) {
+            $('#contributors-container').html('<p class="no-results">No contributions yet.</p>');
+            return;
+        }
+
+        var html = '<table class="result-table"><thead><tr>' +
+            '<th style="width:60px;text-align:center;">#</th>' +
+            '<th>User</th><th>Role</th>' +
+            '<th style="text-align:center;">Contributions</th>' +
+            '</tr></thead><tbody>';
+
+        data.forEach(function(u, i) {
+            var rank = i + 1;
+            var medal = '';
+            if (rank === 1) medal = '<i class="fa-solid fa-trophy" style="color:#ffd700;font-size:1.2em;"></i>';
+            else if (rank === 2) medal = '<i class="fa-solid fa-medal" style="color:#c0c0c0;font-size:1.1em;"></i>';
+            else if (rank === 3) medal = '<i class="fa-solid fa-medal" style="color:#cd7f32;font-size:1.1em;"></i>';
+            else medal = rank;
+
+            var roleBadge = u.role === 'admin' ? 'status-on_display' : (u.role === 'manager' ? 'status-on_loan' : 'status-in_storage');
+
+            // Simple bar chart
+            var maxContrib = data[0].contributions;
+            var pct = Math.round((u.contributions / maxContrib) * 100);
+
+            html += '<tr>' +
+                '<td style="text-align:center;">' + medal + '</td>' +
+                '<td><strong>' + escHtml(u.username) + '</strong></td>' +
+                '<td><span class="badge ' + roleBadge + '">' + u.role + '</span></td>' +
+                '<td style="min-width:200px;">' +
+                    '<div style="display:flex;align-items:center;gap:10px;">' +
+                        '<div style="flex:1;background:#1a1a2e;border-radius:4px;height:20px;overflow:hidden;">' +
+                            '<div style="width:' + pct + '%;height:100%;background:linear-gradient(90deg,#4caf50,#8bc34a);border-radius:4px;"></div>' +
+                        '</div>' +
+                        '<strong>' + u.contributions + '</strong>' +
+                    '</div>' +
+                '</td>' +
+            '</tr>';
+        });
+
+        html += '</tbody></table>';
+        $('#contributors-container').html(html);
+    });
+});
+</script>
+{% endblock %}

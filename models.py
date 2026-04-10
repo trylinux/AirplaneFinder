@@ -25,6 +25,10 @@ class User(UserMixin, db.Model):
     role = db.Column(db.String(20), nullable=False, default="viewer")  # admin, manager, viewer
     is_active_user = db.Column("is_active", db.Boolean, default=True)
     last_login = db.Column(db.DateTime, nullable=True)
+    last_login_ip = db.Column(db.String(45), nullable=True)     # IPv4 or IPv6
+    last_logout = db.Column(db.DateTime, nullable=True)
+    contribution_count = db.Column(db.Integer, default=0, nullable=False)
+    created_at = db.Column(db.DateTime, server_default=db.func.now())
 
     api_keys = db.relationship("ApiKey", back_populates="user", lazy="dynamic")
     museum_assignments = db.relationship("UserMuseumAssignment", back_populates="user", cascade="all, delete-orphan", lazy="joined")
@@ -79,6 +83,10 @@ class User(UserMixin, db.Model):
             "is_admin": self.is_admin,
             "is_active": self.is_active,
             "last_login": self.last_login.isoformat() if self.last_login else None,
+            "last_login_ip": self.last_login_ip,
+            "last_logout": self.last_logout.isoformat() if self.last_logout else None,
+            "contribution_count": self.contribution_count,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
             "assigned_museums": [a.museum_id for a in self.museum_assignments],
             "assigned_countries": [a.country for a in self.country_assignments],
             "api_keys": [k.to_dict() for k in self.api_keys if k.is_active],

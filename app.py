@@ -161,6 +161,13 @@ def _get_effective_user():
     return getattr(g, "api_user", current_user if current_user.is_authenticated else None)
 
 
+def _increment_contribution():
+    """Bump the contribution counter for the effective user."""
+    user = _get_effective_user()
+    if user:
+        user.contribution_count = (user.contribution_count or 0) + 1
+
+
 def _user_can_write_museum(museum_id):
     """Check if the current user has write access to a museum (by ID)."""
     user = _get_effective_user()
@@ -209,9 +216,10 @@ def login_page():
 
         if user and user.check_password(password) and user.is_active:
             user.last_login = datetime.now(timezone.utc)
+            user.last_login_ip = request.headers.get("X-Forwarded-For", request.remote_addr)
             db.session.commit()
             login_user(user, remember=True)
-            auth_log.info(f"LOGIN_SUCCESS user={username} ip={request.remote_addr}")
+            auth_log.info(f"LOGIN_SUCCESS user={username} ip={user.last_login_ip}")
             next_url = request.args.get("next") or url_for("admin_page")
             return redirect(next_url)
 
@@ -224,6 +232,8 @@ def login_page():
 @app.route("/logout")
 @login_required
 def logout():
+    current_user.last_logout = datetime.now(timezone.utc)
+    db.session.commit()
     auth_log.info(f"LOGOUT user={current_user.username} ip={request.remote_addr}")
     logout_user()
     return redirect(url_for("index"))
@@ -282,10 +292,36 @@ def admin_page():
     return render_template("admin.html")
 
 
+@app.route("/admin/users")
+@admin_required
+def admin_users_page():
+    return render_template("users.html")
+
+
 @app.route("/admin/api-keys")
 @login_required
 def api_keys_page():
     return render_template("api_keys.html")
+
+
+# ══════════════════════════════════════════════
+# Public: contributions leaderboard
+# ══════════════════════════════════════════════
+
+@app.route("/contributors")
+def contributors_page():
+    return render_template("contributors.html")
+
+
+@app.route("/api/v1/contributors")
+def api_contributors():
+    """Public endpoint: list users with contribution counts, sorted by most contributions."""
+    users = User.query.filter(User.contribution_count > 0).order_by(User.contribution_count.desc()).all()
+    return jsonify([{
+        "username": u.username,
+        "role": u.role,
+        "contributions": u.contribution_count,
+    } for u in users])
 
 
 # ══════════════════════════════════════════════
@@ -608,6 +644,7 @@ def api_create_aircraft():
             )
             db.session.add(link)
 
+    _increment_contribution()
     db.session.commit()
     user = _get_effective_user()
     change_log.info(f"AIRCRAFT_CREATE id={aircraft.id} model={aircraft.model} by={user.username}")
@@ -634,6 +671,7 @@ def api_update_aircraft(aircraft_id):
             alias_str = alias_str.strip()
             if alias_str:
                 db.session.add(AircraftAlias(aircraft_id=aircraft_id, alias=alias_str))
+    _increment_contribution()
     db.session.commit()
     user = _get_effective_user()
     change_log.info(f"AIRCRAFT_UPDATE id={aircraft_id} by={user.username}")
@@ -646,6 +684,7 @@ def api_delete_aircraft(aircraft_id):
     """Delete an aircraft record (admin only)."""
     aircraft = Aircraft.query.get_or_404(aircraft_id)
     db.session.delete(aircraft)
+    _increment_contribution()
     db.session.commit()
     user = _get_effective_user()
     change_log.info(f"AIRCRAFT_DELETE id={aircraft_id} by={user.username}")
@@ -681,6 +720,7 @@ def api_create_museum():
         longitude=data.get("longitude"),
     )
     db.session.add(museum)
+    _increment_contribution()
     db.session.commit()
     user = _get_effective_user()
     change_log.info(f"MUSEUM_CREATE id={museum.id} name={museum.name} by={user.username}")
@@ -703,6 +743,7 @@ def api_update_museum(museum_id):
                    "address", "website", "latitude", "longitude"]:
         if field in data:
             setattr(museum, field, data[field])
+    _increment_contribution()
     db.session.commit()
     change_log.info(f"MUSEUM_UPDATE id={museum_id} by={user.username}")
     return jsonify(museum.to_dict())
@@ -714,6 +755,7 @@ def api_delete_museum(museum_id):
     """Delete a museum record (admin only)."""
     museum = Museum.query.get_or_404(museum_id)
     db.session.delete(museum)
+    _increment_contribution()
     db.session.commit()
     user = _get_effective_user()
     change_log.info(f"MUSEUM_DELETE id={museum_id} by={user.username}")
@@ -744,6 +786,7 @@ def api_create_exhibit():
         notes=data.get("notes"),
     )
     db.session.add(link)
+    _increment_contribution()
     db.session.commit()
     user = _get_effective_user()
     change_log.info(f"EXHIBIT_CREATE aircraft={data['aircraft_id']} museum={data['museum_id']} by={user.username}")
@@ -764,6 +807,7 @@ def api_update_exhibit(link_id):
     for field in ["display_status", "notes"]:
         if field in data:
             setattr(link, field, data[field])
+    _increment_contribution()
     db.session.commit()
     user = _get_effective_user()
     change_log.info(f"EXHIBIT_UPDATE id={link_id} by={user.username}")
@@ -776,6 +820,7 @@ def api_delete_exhibit(link_id):
     """Remove an exhibit link (admin only)."""
     link = AircraftMuseum.query.get_or_404(link_id)
     db.session.delete(link)
+    _increment_contribution()
     db.session.commit()
     user = _get_effective_user()
     change_log.info(f"EXHIBIT_DELETE id={link_id} by={user.username}")

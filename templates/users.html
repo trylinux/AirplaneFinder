@@ -1,0 +1,440 @@
+{% extends "base.html" %}
+{% block title %}User Management — Aircraft Museum Tracker{% endblock %}
+{% block nav_admin %}active{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div class="page-header-row">
+        <div>
+            <h1><i class="fa-solid fa-users-gear"></i> User Management</h1>
+            <p class="subtitle">Create, edit, and manage all user accounts</p>
+        </div>
+        <a href="/admin" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i> Back to Admin</a>
+    </div>
+</div>
+
+<!-- Tab Navigation -->
+<div class="tab-nav">
+    <button class="tab-btn active" data-tab="tab-all-users">All Users</button>
+    <button class="tab-btn" data-tab="tab-create-user"><i class="fa-solid fa-user-plus"></i> New User</button>
+</div>
+
+<!-- ─── All Users ─── -->
+<div class="tab-panel active" id="tab-all-users">
+    <div class="card">
+        <div id="user-list-container">
+            <p style="color:#888;"><i class="fa-solid fa-spinner fa-spin"></i> Loading users...</p>
+        </div>
+    </div>
+</div>
+
+<!-- ─── Create User ─── -->
+<div class="tab-panel" id="tab-create-user">
+    <div class="card">
+        <h2><i class="fa-solid fa-user-plus"></i> Create New User</h2>
+        <form id="form-create-user" class="admin-form">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Username *</label>
+                    <input type="text" name="username" required placeholder="e.g. jsmith">
+                </div>
+                <div class="form-group">
+                    <label>Password *</label>
+                    <input type="password" name="password" required placeholder="Minimum 6 characters">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="user@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Role *</label>
+                    <select name="role" required>
+                        <option value="viewer">Viewer (read only)</option>
+                        <option value="manager" selected>Manager (scoped CRUD)</option>
+                        <option value="admin">Admin (full access)</option>
+                    </select>
+                </div>
+                <div class="form-group form-group-wide">
+                    <label>Assign to Museums</label>
+                    <select name="assigned_museums" id="user-museum-assign" multiple style="min-height:120px;"></select>
+                    <small style="color:#888;">Hold Ctrl/Cmd to select multiple. Leave empty + assign countries for country-wide access.</small>
+                </div>
+                <div class="form-group form-group-wide">
+                    <label>Assign to Countries (comma-separated)</label>
+                    <input type="text" name="assigned_countries" placeholder="e.g. United States, United Kingdom">
+                    <small style="color:#888;">User will have access to ALL museums in these countries.</small>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-user-plus"></i> Create User</button>
+        </form>
+        <div id="msg-user" class="form-message" style="display:none;"></div>
+    </div>
+</div>
+
+<!-- ─── Edit User Modal ─── -->
+<div id="user-modal" class="modal" style="display:none;">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content" style="max-width:720px;">
+        <button class="modal-close" id="close-user-modal"><i class="fa-solid fa-xmark"></i></button>
+        <h2 id="user-modal-title">Edit User</h2>
+        <div id="user-modal-body"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+var _allMuseums = [];
+var _editUserId = 0;
+
+function escHtml(s) { return $('<span>').text(s || '').html(); }
+
+function formatTime(iso) {
+    if (!iso) return '<span style="color:#555;">—</span>';
+    var d = new Date(iso);
+    var now = new Date();
+    var diff = Math.floor((now - d) / 1000);
+    var relative = '';
+    if (diff < 60) relative = 'just now';
+    else if (diff < 3600) relative = Math.floor(diff / 60) + 'm ago';
+    else if (diff < 86400) relative = Math.floor(diff / 3600) + 'h ago';
+    else if (diff < 604800) relative = Math.floor(diff / 86400) + 'd ago';
+    else relative = d.toLocaleDateString();
+    return '<span title="' + d.toLocaleString() + '">' + relative + '</span>';
+}
+
+function loadMuseumList(cb) {
+    $.getJSON('/api/v1/museums/search', {per_page: 500}, function(data) {
+        _allMuseums = data.results || [];
+        if (cb) cb(_allMuseums);
+    });
+}
+
+function populateMuseumSelect() {
+    var sel = $('#user-museum-assign');
+    sel.empty();
+    _allMuseums.forEach(function(m) {
+        sel.append('<option value="' + m.id + '">' + escHtml(m.name + ' (' + m.city + ')') + '</option>');
+    });
+}
+
+// ══════════════════════════════════════════════
+// User list
+// ══════════════════════════════════════════════
+
+function loadUserList() {
+    $.getJSON('/api/v1/users', function(users) {
+        if (!users.length) {
+            $('#user-list-container').html('<p class="no-results">No users found.</p>');
+            return;
+        }
+
+        var html = '<table class="result-table"><thead><tr>' +
+            '<th>User</th><th>Role</th><th>Status</th>' +
+            '<th>Last Login</th><th>Login IP</th><th>Last Logout</th>' +
+            '<th>Scope</th><th>Contributions</th><th>Actions</th>' +
+            '</tr></thead><tbody>';
+
+        users.forEach(function(u) {
+            var roleBadge = u.role === 'admin' ? 'status-on_display' : (u.role === 'manager' ? 'status-on_loan' : 'status-in_storage');
+            var statusColor = u.is_active ? '#4caf50' : '#f44336';
+            var statusIcon = u.is_active ? 'fa-circle-check' : 'fa-circle-xmark';
+            var statusText = u.is_active ? 'Active' : 'Disabled';
+
+            // Scope
+            var museumCount = (u.assigned_museums || []).length;
+            var countryList = (u.assigned_countries || []).join(', ') || '';
+            var scopeParts = [];
+            if (u.role === 'admin') { scopeParts.push('<span style="color:#4caf50;">All</span>'); }
+            else {
+                if (museumCount > 0) scopeParts.push(museumCount + ' museum' + (museumCount > 1 ? 's' : ''));
+                if (countryList) scopeParts.push(escHtml(countryList));
+            }
+            var scopeStr = scopeParts.length ? scopeParts.join(', ') : '<span style="color:#555;">None</span>';
+
+            // Actions
+            var isSelf = (u.id === {{ current_user.id }});
+            var toggleTitle = u.is_active ? 'Disable' : 'Enable';
+            var toggleIcon = u.is_active ? 'fa-user-slash' : 'fa-user-check';
+            var toggleColor = u.is_active ? '#ff9800' : '#4caf50';
+
+            html += '<tr>' +
+                '<td><strong>' + escHtml(u.username) + '</strong>' +
+                    (u.email ? '<br><span style="color:#888;font-size:0.8em;">' + escHtml(u.email) + '</span>' : '') + '</td>' +
+                '<td><span class="badge ' + roleBadge + '">' + u.role + '</span></td>' +
+                '<td><i class="fa-solid ' + statusIcon + '" style="color:' + statusColor + ';"></i> ' + statusText + '</td>' +
+                '<td>' + formatTime(u.last_login) + '</td>' +
+                '<td><code style="font-size:0.8em;">' + escHtml(u.last_login_ip || '—') + '</code></td>' +
+                '<td>' + formatTime(u.last_logout) + '</td>' +
+                '<td style="font-size:0.85em;">' + scopeStr + '</td>' +
+                '<td style="text-align:center;"><strong>' + (u.contribution_count || 0) + '</strong></td>' +
+                '<td><div style="display:flex;gap:4px;">' +
+                    '<button class="btn-icon toggle-user-btn" data-id="' + u.id + '" data-active="' + u.is_active + '" title="' + toggleTitle + '"' + (isSelf ? ' disabled style="opacity:0.3;"' : '') + '>' +
+                        '<i class="fa-solid ' + toggleIcon + '" style="color:' + toggleColor + ';"></i></button>' +
+                    '<button class="btn-icon edit-user-btn" data-id="' + u.id + '" title="Edit"><i class="fa-solid fa-pen-to-square"></i></button>' +
+                    '<button class="btn-icon delete-user-btn" data-id="' + u.id + '" data-name="' + escHtml(u.username) + '" title="Delete"' + (isSelf ? ' disabled style="opacity:0.3;"' : '') + '>' +
+                        '<i class="fa-solid fa-trash" style="color:#f44336;"></i></button>' +
+                '</div></td>' +
+            '</tr>';
+        });
+
+        html += '</tbody></table>';
+        $('#user-list-container').html(html);
+    });
+}
+
+// ══════════════════════════════════════════════
+// Inline actions
+// ══════════════════════════════════════════════
+
+$(document).on('click', '.toggle-user-btn', function() {
+    var id = $(this).data('id');
+    var active = $(this).data('active');
+    var action = active ? 'disable' : 'enable';
+    if (!confirm('Are you sure you want to ' + action + ' this user?')) return;
+    $.ajax({
+        url: '/api/v1/users/' + id, method: 'PATCH', contentType: 'application/json',
+        data: JSON.stringify({is_active: !active}),
+        success: function() { loadUserList(); },
+        error: function(xhr) { alert(xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText); }
+    });
+});
+
+$(document).on('click', '.delete-user-btn', function() {
+    var id = $(this).data('id');
+    var name = $(this).data('name');
+    if (!confirm('Permanently delete "' + name + '"? This removes all their keys, assignments, and data.')) return;
+    $.ajax({
+        url: '/api/v1/users/' + id, method: 'DELETE',
+        success: function() { loadUserList(); },
+        error: function(xhr) { alert(xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText); }
+    });
+});
+
+// ══════════════════════════════════════════════
+// Edit user modal
+// ══════════════════════════════════════════════
+
+function openEditModal(userId) {
+    _editUserId = userId;
+    $.getJSON('/api/v1/users/' + userId, function(u) {
+        $('#user-modal-title').html('<i class="fa-solid fa-user-gear"></i> ' + escHtml(u.username));
+
+        // Museum checkboxes
+        var museumCb = '';
+        var assignedIds = u.assigned_museums || [];
+        _allMuseums.forEach(function(m) {
+            var chk = assignedIds.indexOf(m.id) >= 0 ? ' checked' : '';
+            museumCb += '<label style="display:block;margin:2px 0;font-weight:normal;">' +
+                '<input type="checkbox" class="user-museum-cb" value="' + m.id + '"' + chk + '> ' +
+                escHtml(m.name) + ' (' + escHtml(m.city) + ')</label>';
+        });
+
+        var html = '<form id="edit-user-form" class="admin-form">';
+
+        // Info section
+        html += '<h3 style="margin:0 0 12px;border-bottom:1px solid #333;padding-bottom:6px;">Account</h3>';
+        html += '<div class="form-grid">';
+        html += '<div class="form-group"><label>Email</label><input type="text" name="email" value="' + escHtml(u.email || '') + '"></div>';
+        html += '<div class="form-group"><label>Role</label><select name="role">' +
+            '<option value="viewer"' + (u.role==='viewer'?' selected':'') + '>Viewer</option>' +
+            '<option value="manager"' + (u.role==='manager'?' selected':'') + '>Manager</option>' +
+            '<option value="admin"' + (u.role==='admin'?' selected':'') + '>Admin</option></select></div>';
+        html += '<div class="form-group"><label>Status</label><select name="is_active">' +
+            '<option value="true"' + (u.is_active?' selected':'') + '>Active</option>' +
+            '<option value="false"' + (!u.is_active?' selected':'') + '>Disabled</option></select></div>';
+        html += '<div class="form-group"><label>New Password</label><input type="password" name="password" placeholder="Leave blank to keep"></div>';
+        html += '<div class="form-group"><label>Countries</label><input type="text" name="assigned_countries" value="' + escHtml((u.assigned_countries||[]).join(', ')) + '"></div>';
+        html += '<div class="form-group"><label>Last Login</label><input disabled value="' + (u.last_login ? new Date(u.last_login).toLocaleString() : '—') + '"></div>';
+        html += '<div class="form-group"><label>Login IP</label><input disabled value="' + escHtml(u.last_login_ip || '—') + '"></div>';
+        html += '<div class="form-group"><label>Last Logout</label><input disabled value="' + (u.last_logout ? new Date(u.last_logout).toLocaleString() : '—') + '"></div>';
+        html += '<div class="form-group"><label>Contributions</label><input disabled value="' + (u.contribution_count || 0) + '"></div>';
+        html += '<div class="form-group"><label>Created</label><input disabled value="' + (u.created_at ? new Date(u.created_at).toLocaleString() : '—') + '"></div>';
+        html += '</div>';
+
+        // Museums
+        html += '<div class="form-group form-group-wide" style="margin-top:12px;"><label>Assigned Museums</label>' +
+            '<div style="max-height:180px;overflow-y:auto;border:1px solid #333;padding:8px;border-radius:4px;">' +
+            (museumCb || '<em style="color:#888;">No museums in database</em>') + '</div></div>';
+
+        // API Keys
+        var keys = u.api_keys || [];
+        html += '<h3 style="margin:20px 0 12px;border-bottom:1px solid #333;padding-bottom:6px;"><i class="fa-solid fa-key"></i> API Keys</h3>';
+        if (keys.length) {
+            html += '<table class="result-table" style="font-size:0.85rem;"><thead><tr><th>Key</th><th>Label</th><th>Perms</th><th>Created</th><th>Last Used</th><th></th></tr></thead><tbody>';
+            keys.forEach(function(k) {
+                var permClass = k.permissions === 'admin' ? 'status-on_display' : (k.permissions === 'readwrite' ? 'status-on_loan' : 'status-in_storage');
+                html += '<tr>' +
+                    '<td><code style="font-size:0.85em;background:#1a1a2e;padding:2px 5px;border-radius:3px;">' + escHtml(k.key_prefix || 'amt_????…') + '</code></td>' +
+                    '<td>' + escHtml(k.label) + '</td>' +
+                    '<td><span class="badge ' + permClass + '">' + k.permissions + '</span></td>' +
+                    '<td>' + (k.created_at ? k.created_at.substring(0,10) : '—') + '</td>' +
+                    '<td>' + (k.last_used ? k.last_used.substring(0,10) : 'never') + '</td>' +
+                    '<td><button type="button" class="btn-icon revoke-key-btn" data-key-id="' + k.id + '" title="Revoke"><i class="fa-solid fa-xmark" style="color:#f44336;"></i></button></td>' +
+                '</tr>';
+            });
+            html += '</tbody></table>';
+        } else {
+            html += '<p style="color:#888;">No active API keys.</p>';
+        }
+
+        // New key inline form
+        var permOpts = '';
+        if (u.role === 'admin') permOpts = '<option value="admin">Admin</option><option value="readwrite">Read/Write</option><option value="read">Read</option>';
+        else if (u.role === 'manager') permOpts = '<option value="readwrite">Read/Write</option><option value="read">Read</option>';
+        else permOpts = '<option value="read">Read</option>';
+        html += '<div style="display:flex;gap:8px;align-items:end;margin-top:10px;">' +
+            '<input type="text" id="new-key-label" placeholder="Key label" style="flex:1;">' +
+            '<select id="new-key-perms" style="width:130px;">' + permOpts + '</select>' +
+            '<button type="button" class="btn btn-primary" id="create-key-btn" data-user-id="' + u.id + '" style="white-space:nowrap;"><i class="fa-solid fa-plus"></i> New Key</button>' +
+        '</div>';
+        html += '<div id="new-key-result" style="margin-top:8px;"></div>';
+
+        // Save button
+        html += '<div style="margin-top:20px;border-top:1px solid #333;padding-top:16px;">' +
+            '<button type="submit" class="btn btn-primary"><i class="fa-solid fa-save"></i> Save Changes</button></div>';
+        html += '</form>';
+        html += '<div id="edit-user-msg" style="margin-top:8px;"></div>';
+
+        $('#user-modal-body').html(html);
+        $('#user-modal').fadeIn(200);
+    });
+}
+
+$(document).on('click', '.edit-user-btn', function() {
+    openEditModal($(this).data('id'));
+});
+
+// Close modal
+$('#close-user-modal, #user-modal .modal-backdrop').on('click', function() { $('#user-modal').fadeOut(200); });
+$(document).on('keydown', function(e) { if (e.key === 'Escape') $('#user-modal').fadeOut(200); });
+
+// Save user form
+$(document).on('submit', '#edit-user-form', function(e) {
+    e.preventDefault();
+    var data = {};
+    $(this).serializeArray().forEach(function(item) {
+        if (item.name === 'password' && !item.value) return;
+        data[item.name] = item.value;
+    });
+    data.is_active = (data.is_active === 'true');
+    data.assigned_museums = [];
+    $('.user-museum-cb:checked').each(function() { data.assigned_museums.push(parseInt($(this).val())); });
+    data.assigned_countries = data.assigned_countries ? data.assigned_countries.split(',').map(function(s){return s.trim();}).filter(Boolean) : [];
+
+    $.ajax({
+        url: '/api/v1/users/' + _editUserId, method: 'PATCH', contentType: 'application/json',
+        data: JSON.stringify(data),
+        success: function() {
+            $('#edit-user-msg').html('<div class="alert alert-success"><i class="fa-solid fa-circle-check"></i> Saved.</div>');
+            setTimeout(function(){ $('#edit-user-msg').empty(); }, 3000);
+            loadUserList();
+        },
+        error: function(xhr) {
+            $('#edit-user-msg').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText) + '</div>');
+        }
+    });
+});
+
+// Create API key
+$(document).on('click', '#create-key-btn', function() {
+    var userId = $(this).data('user-id');
+    var label = $('#new-key-label').val().trim() || 'default';
+    var perms = $('#new-key-perms').val();
+    $.ajax({
+        url: '/api/v1/users/' + userId + '/keys', method: 'POST', contentType: 'application/json',
+        data: JSON.stringify({label: label, permissions: perms}),
+        success: function(resp) {
+            $('#new-key-result').html(
+                '<div style="background:#1a2a1a;border:2px solid #4caf50;border-radius:8px;padding:12px;">' +
+                '<p style="color:#ff9800;margin:0 0 8px;"><i class="fa-solid fa-triangle-exclamation"></i> <strong>Copy now — never shown again.</strong></p>' +
+                '<div style="display:flex;gap:8px;align-items:center;">' +
+                    '<code style="flex:1;font-size:1em;user-select:all;word-break:break-all;background:#0d1117;padding:8px;border-radius:4px;border:1px solid #333;">' + escHtml(resp.key) + '</code>' +
+                    '<button type="button" class="btn btn-primary copy-key-btn" data-key="' + escHtml(resp.key) + '"><i class="fa-solid fa-copy"></i> Copy</button>' +
+                '</div></div>'
+            );
+            $('#new-key-label').val('');
+            setTimeout(function(){ openEditModal(userId); }, 1500);
+            loadUserList();
+        },
+        error: function(xhr) {
+            $('#new-key-result').html('<div class="alert alert-error">' + (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText) + '</div>');
+        }
+    });
+});
+
+// Revoke key
+$(document).on('click', '.revoke-key-btn', function() {
+    var keyId = $(this).data('key-id');
+    if (!confirm('Revoke this API key?')) return;
+    $.ajax({
+        url: '/api/v1/keys/' + keyId, method: 'DELETE',
+        success: function() { if (_editUserId) openEditModal(_editUserId); loadUserList(); },
+        error: function(xhr) { alert(xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText); }
+    });
+});
+
+// Copy key
+$(document).on('click', '.copy-key-btn', function() {
+    var key = $(this).data('key'), $btn = $(this);
+    navigator.clipboard.writeText(key).then(function() {
+        $btn.html('<i class="fa-solid fa-check"></i> Copied!');
+        setTimeout(function(){ $btn.html('<i class="fa-solid fa-copy"></i> Copy'); }, 2000);
+    });
+});
+
+// ══════════════════════════════════════════════
+// Create user
+// ══════════════════════════════════════════════
+
+$('#form-create-user').on('submit', function(e) {
+    e.preventDefault();
+    var data = {};
+    $(this).serializeArray().forEach(function(item) { if (item.value) data[item.name] = item.value; });
+    var sel = $('#user-museum-assign').val();
+    if (sel && sel.length) data.assigned_museums = sel.map(function(v){ return parseInt(v); });
+    if (data.assigned_countries) data.assigned_countries = data.assigned_countries.split(',').map(function(s){return s.trim();}).filter(Boolean);
+
+    $.ajax({
+        url: '/api/v1/users', method: 'POST', contentType: 'application/json',
+        data: JSON.stringify(data),
+        success: function(resp) {
+            var msg = '<div class="alert alert-success"><i class="fa-solid fa-circle-check"></i> User <strong>' + escHtml(resp.username) + '</strong> created.</div>';
+            if (resp.generated_api_key) {
+                msg += '<div style="background:#1a2a1a;border:2px solid #4caf50;border-radius:8px;padding:16px;margin-top:12px;">' +
+                    '<div style="margin-bottom:10px;"><i class="fa-solid fa-key" style="color:#ffc107;"></i> <strong>API Key for ' + escHtml(resp.username) + '</strong></div>' +
+                    '<p style="color:#ff9800;margin:0 0 10px;"><i class="fa-solid fa-triangle-exclamation"></i> Copy and share with the user. <strong>Never shown again.</strong></p>' +
+                    '<div style="display:flex;gap:8px;align-items:center;">' +
+                        '<code style="flex:1;font-size:1.05em;user-select:all;word-break:break-all;background:#0d1117;padding:10px;border-radius:4px;border:1px solid #333;">' + escHtml(resp.generated_api_key) + '</code>' +
+                        '<button type="button" class="btn btn-primary copy-key-btn" data-key="' + escHtml(resp.generated_api_key) + '"><i class="fa-solid fa-copy"></i> Copy</button>' +
+                    '</div></div>';
+            }
+            $('#msg-user').html(msg).show();
+            $('#form-create-user')[0].reset();
+            loadUserList();
+        },
+        error: function(xhr) {
+            $('#msg-user').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText) + '</div>').show();
+        }
+    });
+});
+
+// ══════════════════════════════════════════════
+// Tab switching + init
+// ══════════════════════════════════════════════
+
+$('.tab-btn').on('click', function() {
+    $('.tab-btn').removeClass('active');
+    $(this).addClass('active');
+    $('.tab-panel').removeClass('active');
+    $('#' + $(this).data('tab')).addClass('active');
+});
+
+$(function() {
+    loadMuseumList(function() {
+        populateMuseumSelect();
+        loadUserList();
+    });
+});
+</script>
+{% endblock %}

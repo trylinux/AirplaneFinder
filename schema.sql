@@ -17,6 +17,9 @@ CREATE TABLE IF NOT EXISTS users (
     role            ENUM('admin','manager','viewer') NOT NULL DEFAULT 'viewer',
     is_active       BOOLEAN      DEFAULT TRUE,
     last_login      TIMESTAMP    NULL DEFAULT NULL,
+    last_login_ip   VARCHAR(45)  DEFAULT NULL,
+    last_logout     TIMESTAMP    NULL DEFAULT NULL,
+    contribution_count INT       DEFAULT 0 NOT NULL,
     created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
