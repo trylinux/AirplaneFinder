@@ -3,9 +3,12 @@
 Features:
   - Flask-Login session auth for the web admin panel
   - Bearer-token (API key) auth for the JSON REST API
+  - Role-based access: admin, manager, viewer
+  - Scoped CRUD: users see only their assigned museums/countries
   - Full CRUD on aircraft, museums, and exhibit links
   - Public read-only search + proximity endpoints
   - International museum support (optional coordinates)
+  - Structured logging: auth, changes, access
 """
 
 from datetime import datetime, timezone
@@ -13,7 +16,7 @@ from functools import wraps
 
 from flask import (
     Flask, render_template, request, jsonify,
-    redirect, url_for, flash, abort,
+    redirect, url_for, flash, abort, g,
 )
 from flask_login import (
     LoginManager, login_user, logout_user,
@@ -24,9 +27,11 @@ from sqlalchemy import or_, func
 from models import (
     db, User, ApiKey,
     Museum, Aircraft, AircraftAlias, AircraftMuseum, ZipCode, haversine,
+    UserMuseumAssignment, UserCountryAssignment,
 )
 from geocoder import resolve_location
 from config import Config
+from logger import auth_log, change_log, access_log
 
 
 # ══════════════════════════════════════════════
@@ -51,6 +56,38 @@ def create_app():
 
 
 app = create_app()
+
+
+# ══════════════════════════════════════════════
+# Request logging middleware
+# ══════════════════════════════════════════════
+
+@app.before_request
+def _log_request():
+    """Stash request start time; identify user for logging."""
+    g.request_start = datetime.now(timezone.utc)
+    g.log_user = "anonymous"
+    if current_user.is_authenticated:
+        g.log_user = current_user.username
+
+
+@app.after_request
+def _log_response(response):
+    """Log every request to the appropriate log file."""
+    user = getattr(g, "log_user", "anonymous")
+    method = request.method
+    path = request.path
+    status = response.status_code
+    ip = request.remote_addr
+
+    line = f"{ip} {user} {method} {path} → {status}"
+
+    if method == "GET":
+        access_log.info(line)
+    elif method in ("POST", "PUT", "PATCH", "DELETE"):
+        change_log.info(line)
+
+    return response
 
 
 # ══════════════════════════════════════════════
@@ -83,10 +120,16 @@ def api_auth_required(min_permission="read"):
         def wrapper(*args, **kwargs):
             user, api_key = _get_api_user()
 
-            # Fallback: logged-in web session counts as admin
+            # Fallback: logged-in web session
             if user is None and current_user.is_authenticated:
                 user = current_user
-                perm_level = 2  # web sessions are admin
+                # Map web session role to permission level
+                if user.is_admin:
+                    perm_level = 2
+                elif user.is_manager:
+                    perm_level = 1
+                else:
+                    perm_level = 0
             elif api_key:
                 perm_level = levels.get(api_key.permissions, 0)
             else:
@@ -95,9 +138,40 @@ def api_auth_required(min_permission="read"):
             if perm_level < levels.get(min_permission, 0):
                 return jsonify({"error": f"Insufficient permissions. Requires '{min_permission}'."}), 403
 
+            # Store the resolved user on g for scope checks
+            g.api_user = user
             return fn(*args, **kwargs)
         return wrapper
     return decorator
+
+
+def admin_required(fn):
+    """Decorator: require admin role (web session only)."""
+    @wraps(fn)
+    @login_required
+    def wrapper(*args, **kwargs):
+        if not current_user.is_admin:
+            abort(403)
+        return fn(*args, **kwargs)
+    return wrapper
+
+
+def _get_effective_user():
+    """Return the authenticated user from either API key or web session."""
+    return getattr(g, "api_user", current_user if current_user.is_authenticated else None)
+
+
+def _user_can_write_museum(museum_id):
+    """Check if the current user has write access to a museum (by ID)."""
+    user = _get_effective_user()
+    if not user:
+        return False
+    if user.is_admin:
+        return True
+    museum = Museum.query.get(museum_id)
+    if not museum:
+        return False
+    return user.can_access_museum(museum)
 
 
 # ══════════════════════════════════════════════
@@ -135,9 +209,11 @@ def login_page():
 
         if user and user.check_password(password) and user.is_active:
             login_user(user, remember=True)
+            auth_log.info(f"LOGIN_SUCCESS user={username} ip={request.remote_addr}")
             next_url = request.args.get("next") or url_for("admin_page")
             return redirect(next_url)
 
+        auth_log.warning(f"LOGIN_FAILED user={username} ip={request.remote_addr}")
         flash("Invalid username or password.", "error")
 
     return render_template("login.html")
@@ -146,6 +222,7 @@ def login_page():
 @app.route("/logout")
 @login_required
 def logout():
+    auth_log.info(f"LOGOUT user={current_user.username} ip={request.remote_addr}")
     logout_user()
     return redirect(url_for("index"))
 
@@ -170,11 +247,13 @@ def register_page():
         else:
             # First user is automatically admin
             is_first = User.query.count() == 0
-            user = User(username=username, email=email, is_admin=is_first)
+            role = "admin" if is_first else "viewer"
+            user = User(username=username, email=email, role=role)
             user.set_password(password)
             db.session.add(user)
             db.session.commit()
             login_user(user)
+            auth_log.info(f"REGISTER user={username} role={role} ip={request.remote_addr}")
             flash("Account created!" + (" You are the first user, so you have admin rights." if is_first else ""), "success")
             return redirect(url_for("admin_page"))
 
@@ -470,12 +549,18 @@ def api_create_aircraft():
 
     Optional: pass ``museum_id`` and ``display_status`` to automatically
     link the aircraft to a museum on creation.
+    Scoped users can only link to museums they have access to.
     """
     data = request.get_json() or {}
     required = ["manufacturer", "model"]
     missing = [f for f in required if not data.get(f)]
     if missing:
         return jsonify({"error": f"Missing required fields: {', '.join(missing)}"}), 400
+
+    # Scope check: if linking to museum, user must have access
+    museum_id = data.get("museum_id")
+    if museum_id and not _user_can_write_museum(int(museum_id)):
+        return jsonify({"error": "You do not have access to that museum."}), 403
 
     aircraft = Aircraft(
         tail_number=data.get("tail_number"),
@@ -501,7 +586,6 @@ def api_create_aircraft():
             db.session.add(AircraftAlias(aircraft_id=aircraft.id, alias=alias_str))
 
     # Optionally link to a museum right away
-    museum_id = data.get("museum_id")
     if museum_id:
         museum = Museum.query.get(museum_id)
         if museum:
@@ -513,6 +597,8 @@ def api_create_aircraft():
             db.session.add(link)
 
     db.session.commit()
+    user = _get_effective_user()
+    change_log.info(f"AIRCRAFT_CREATE id={aircraft.id} model={aircraft.model} by={user.username}")
     return jsonify(aircraft.to_dict()), 201
 
 
@@ -537,6 +623,8 @@ def api_update_aircraft(aircraft_id):
             if alias_str:
                 db.session.add(AircraftAlias(aircraft_id=aircraft_id, alias=alias_str))
     db.session.commit()
+    user = _get_effective_user()
+    change_log.info(f"AIRCRAFT_UPDATE id={aircraft_id} by={user.username}")
     return jsonify(aircraft.to_dict())
 
 
@@ -547,6 +635,8 @@ def api_delete_aircraft(aircraft_id):
     aircraft = Aircraft.query.get_or_404(aircraft_id)
     db.session.delete(aircraft)
     db.session.commit()
+    user = _get_effective_user()
+    change_log.info(f"AIRCRAFT_DELETE id={aircraft_id} by={user.username}")
     return jsonify({"deleted": True, "id": aircraft_id})
 
 
@@ -580,20 +670,29 @@ def api_create_museum():
     )
     db.session.add(museum)
     db.session.commit()
+    user = _get_effective_user()
+    change_log.info(f"MUSEUM_CREATE id={museum.id} name={museum.name} by={user.username}")
     return jsonify(museum.to_dict()), 201
 
 
 @app.route("/api/v1/museums/<int:museum_id>", methods=["PUT", "PATCH"])
 @api_auth_required("readwrite")
 def api_update_museum(museum_id):
-    """Update an existing museum record."""
+    """Update an existing museum record. Scoped users can only edit assigned museums."""
     museum = Museum.query.get_or_404(museum_id)
+
+    # Scope check
+    user = _get_effective_user()
+    if not user.is_admin and not user.can_access_museum(museum):
+        return jsonify({"error": "You do not have access to this museum."}), 403
+
     data = request.get_json() or {}
     for field in ["name", "city", "state_province", "country", "postal_code", "region",
                    "address", "website", "latitude", "longitude"]:
         if field in data:
             setattr(museum, field, data[field])
     db.session.commit()
+    change_log.info(f"MUSEUM_UPDATE id={museum_id} by={user.username}")
     return jsonify(museum.to_dict())
 
 
@@ -604,6 +703,8 @@ def api_delete_museum(museum_id):
     museum = Museum.query.get_or_404(museum_id)
     db.session.delete(museum)
     db.session.commit()
+    user = _get_effective_user()
+    change_log.info(f"MUSEUM_DELETE id={museum_id} by={user.username}")
     return jsonify({"deleted": True, "id": museum_id})
 
 
@@ -612,10 +713,14 @@ def api_delete_museum(museum_id):
 @app.route("/api/v1/exhibits", methods=["POST"])
 @api_auth_required("readwrite")
 def api_create_exhibit():
-    """Link an aircraft to a museum."""
+    """Link an aircraft to a museum. Scoped users can only link to assigned museums."""
     data = request.get_json() or {}
     if not data.get("aircraft_id") or not data.get("museum_id"):
         return jsonify({"error": "Both 'aircraft_id' and 'museum_id' are required."}), 400
+
+    # Scope check
+    if not _user_can_write_museum(int(data["museum_id"])):
+        return jsonify({"error": "You do not have access to that museum."}), 403
 
     Aircraft.query.get_or_404(data["aircraft_id"])
     Museum.query.get_or_404(data["museum_id"])
@@ -628,6 +733,8 @@ def api_create_exhibit():
     )
     db.session.add(link)
     db.session.commit()
+    user = _get_effective_user()
+    change_log.info(f"EXHIBIT_CREATE aircraft={data['aircraft_id']} museum={data['museum_id']} by={user.username}")
     return jsonify(link.to_dict()), 201
 
 
@@ -636,11 +743,18 @@ def api_create_exhibit():
 def api_update_exhibit(link_id):
     """Update an exhibit link (status, notes)."""
     link = AircraftMuseum.query.get_or_404(link_id)
+
+    # Scope check
+    if not _user_can_write_museum(link.museum_id):
+        return jsonify({"error": "You do not have access to this museum."}), 403
+
     data = request.get_json() or {}
     for field in ["display_status", "notes"]:
         if field in data:
             setattr(link, field, data[field])
     db.session.commit()
+    user = _get_effective_user()
+    change_log.info(f"EXHIBIT_UPDATE id={link_id} by={user.username}")
     return jsonify(link.to_dict())
 
 
@@ -651,6 +765,8 @@ def api_delete_exhibit(link_id):
     link = AircraftMuseum.query.get_or_404(link_id)
     db.session.delete(link)
     db.session.commit()
+    user = _get_effective_user()
+    change_log.info(f"EXHIBIT_DELETE id={link_id} by={user.username}")
     return jsonify({"deleted": True, "id": link_id})
 
 
@@ -724,6 +840,7 @@ def api_create_key():
     api_key, raw_key = ApiKey.generate(current_user.id, label=label, permissions=permissions)
     db.session.add(api_key)
     db.session.commit()
+    auth_log.info(f"API_KEY_CREATE user={current_user.username} label={label} perms={permissions}")
     return jsonify({"key": raw_key, "id": api_key.id, "label": label, "permissions": permissions}), 201
 
 
@@ -736,7 +853,125 @@ def api_revoke_key(key_id):
         abort(403)
     api_key.is_active = False
     db.session.commit()
+    auth_log.info(f"API_KEY_REVOKE key_id={key_id} by={current_user.username}")
     return jsonify({"revoked": True, "id": key_id})
+
+
+# ══════════════════════════════════════════════
+# API: User management (admin only)
+# ══════════════════════════════════════════════
+
+@app.route("/api/v1/users", methods=["GET"])
+@login_required
+def api_list_users():
+    """List all users. Admins see all; others see only themselves."""
+    if current_user.is_admin:
+        users = User.query.order_by(User.username).all()
+    else:
+        users = [current_user]
+    return jsonify([u.to_dict() for u in users])
+
+
+@app.route("/api/v1/users", methods=["POST"])
+@admin_required
+def api_create_user():
+    """Create a new user (admin only).
+
+    Required: username, password.
+    Optional: email, role (admin/manager/viewer).
+    """
+    data = request.get_json() or {}
+    username = (data.get("username") or "").strip()
+    password = data.get("password", "")
+    email = (data.get("email") or "").strip() or None
+    role = data.get("role", "viewer")
+
+    if not username or not password:
+        return jsonify({"error": "username and password are required."}), 400
+    if role not in ("admin", "manager", "viewer"):
+        return jsonify({"error": "role must be 'admin', 'manager', or 'viewer'."}), 400
+    if User.query.filter_by(username=username).first():
+        return jsonify({"error": "Username already taken."}), 409
+
+    user = User(username=username, email=email, role=role)
+    user.set_password(password)
+    db.session.add(user)
+    db.session.flush()
+
+    # Assign museums
+    for mid in data.get("assigned_museums", []):
+        museum = Museum.query.get(mid)
+        if museum:
+            db.session.add(UserMuseumAssignment(user_id=user.id, museum_id=mid))
+
+    # Assign countries
+    for country in data.get("assigned_countries", []):
+        if country.strip():
+            db.session.add(UserCountryAssignment(user_id=user.id, country=country.strip()))
+
+    db.session.commit()
+    auth_log.info(f"USER_CREATE user={username} role={role} by={current_user.username}")
+    change_log.info(f"USER_CREATE id={user.id} user={username} role={role} by={current_user.username}")
+    return jsonify(user.to_dict()), 201
+
+
+@app.route("/api/v1/users/<int:user_id>", methods=["GET"])
+@login_required
+def api_user_detail(user_id):
+    """Get user details. Admins can view any user; others can only view themselves."""
+    if not current_user.is_admin and current_user.id != user_id:
+        abort(403)
+    user = User.query.get_or_404(user_id)
+    return jsonify(user.to_dict())
+
+
+@app.route("/api/v1/users/<int:user_id>", methods=["PUT", "PATCH"])
+@admin_required
+def api_update_user(user_id):
+    """Update a user (admin only). Can change role, email, active status, and assignments."""
+    user = User.query.get_or_404(user_id)
+    data = request.get_json() or {}
+
+    if "email" in data:
+        user.email = data["email"] or None
+    if "role" in data and data["role"] in ("admin", "manager", "viewer"):
+        user.role = data["role"]
+    if "is_active" in data:
+        user.is_active_user = bool(data["is_active"])
+    if "password" in data and data["password"]:
+        user.set_password(data["password"])
+
+    # Replace museum assignments
+    if "assigned_museums" in data:
+        UserMuseumAssignment.query.filter_by(user_id=user_id).delete()
+        for mid in data["assigned_museums"]:
+            museum = Museum.query.get(mid)
+            if museum:
+                db.session.add(UserMuseumAssignment(user_id=user_id, museum_id=mid))
+
+    # Replace country assignments
+    if "assigned_countries" in data:
+        UserCountryAssignment.query.filter_by(user_id=user_id).delete()
+        for country in data["assigned_countries"]:
+            if country.strip():
+                db.session.add(UserCountryAssignment(user_id=user_id, country=country.strip()))
+
+    db.session.commit()
+    change_log.info(f"USER_UPDATE id={user_id} by={current_user.username}")
+    return jsonify(user.to_dict())
+
+
+@app.route("/api/v1/users/<int:user_id>", methods=["DELETE"])
+@admin_required
+def api_delete_user(user_id):
+    """Delete a user (admin only). Cannot delete yourself."""
+    if current_user.id == user_id:
+        return jsonify({"error": "Cannot delete your own account."}), 400
+    user = User.query.get_or_404(user_id)
+    db.session.delete(user)
+    db.session.commit()
+    change_log.info(f"USER_DELETE id={user_id} username={user.username} by={current_user.username}")
+    return jsonify({"deleted": True, "id": user_id})
 
 
 # ══════════════════════════════════════════════

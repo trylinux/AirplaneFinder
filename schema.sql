@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS users (
     username        VARCHAR(80)  NOT NULL UNIQUE,
     email           VARCHAR(200) DEFAULT NULL,
     password_hash   VARCHAR(256) NOT NULL,
-    is_admin        BOOLEAN      DEFAULT FALSE,
+    role            ENUM('admin','manager','viewer') NOT NULL DEFAULT 'viewer',
     is_active       BOOLEAN      DEFAULT TRUE,
     created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
@@ -34,6 +34,31 @@ CREATE TABLE IF NOT EXISTS api_keys (
     last_used   TIMESTAMP    NULL DEFAULT NULL,
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
     INDEX idx_key_hash (key_hash)
+) ENGINE=InnoDB;
+
+-- ─────────────────────────────────────────────
+-- User ↔ Museum assignments (scoped access)
+-- ─────────────────────────────────────────────
+CREATE TABLE IF NOT EXISTS user_museum_assignments (
+    id          INT AUTO_INCREMENT PRIMARY KEY,
+    user_id     INT NOT NULL,
+    museum_id   INT NOT NULL,
+    created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id)  REFERENCES users(id)   ON DELETE CASCADE,
+    FOREIGN KEY (museum_id) REFERENCES museums(id) ON DELETE CASCADE,
+    UNIQUE KEY uq_user_museum (user_id, museum_id)
+) ENGINE=InnoDB;
+
+-- ─────────────────────────────────────────────
+-- User ↔ Country assignments (scoped access)
+-- ─────────────────────────────────────────────
+CREATE TABLE IF NOT EXISTS user_country_assignments (
+    id          INT AUTO_INCREMENT PRIMARY KEY,
+    user_id     INT NOT NULL,
+    country     VARCHAR(100) NOT NULL,
+    created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    UNIQUE KEY uq_user_country (user_id, country)
 ) ENGINE=InnoDB;
 
 -- ─────────────────────────────────────────────

@@ -22,10 +22,12 @@ class User(UserMixin, db.Model):
     username = db.Column(db.String(80), unique=True, nullable=False)
     email = db.Column(db.String(200))
     password_hash = db.Column(db.String(256), nullable=False)
-    is_admin = db.Column(db.Boolean, default=False)
+    role = db.Column(db.String(20), nullable=False, default="viewer")  # admin, manager, viewer
     is_active_user = db.Column("is_active", db.Boolean, default=True)
 
     api_keys = db.relationship("ApiKey", back_populates="user", lazy="dynamic")
+    museum_assignments = db.relationship("UserMuseumAssignment", back_populates="user", cascade="all, delete-orphan", lazy="joined")
+    country_assignments = db.relationship("UserCountryAssignment", back_populates="user", cascade="all, delete-orphan", lazy="joined")
 
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
@@ -37,13 +39,68 @@ class User(UserMixin, db.Model):
     def is_active(self):
         return self.is_active_user
 
+    @property
+    def is_admin(self):
+        return self.role == "admin"
+
+    @property
+    def is_manager(self):
+        return self.role in ("admin", "manager")
+
+    def assigned_museum_ids(self):
+        """Return set of museum IDs this user is assigned to."""
+        return {a.museum_id for a in self.museum_assignments}
+
+    def assigned_countries(self):
+        """Return set of country names this user is assigned to."""
+        return {a.country for a in self.country_assignments}
+
+    def can_access_museum(self, museum):
+        """Check if user can access a specific museum (admin=all, others=assigned)."""
+        if self.is_admin:
+            return True
+        museum_ids = self.assigned_museum_ids()
+        countries = self.assigned_countries()
+        if not museum_ids and not countries:
+            return False
+        if museum_ids and museum.id in museum_ids:
+            return True
+        if countries and museum.country in countries:
+            return True
+        return False
+
     def to_dict(self):
         return {
             "id": self.id,
             "username": self.username,
             "email": self.email,
+            "role": self.role,
             "is_admin": self.is_admin,
+            "is_active": self.is_active,
+            "assigned_museums": [a.museum_id for a in self.museum_assignments],
+            "assigned_countries": [a.country for a in self.country_assignments],
         }
+
+
+class UserMuseumAssignment(db.Model):
+    __tablename__ = "user_museum_assignments"
+
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
+    museum_id = db.Column(db.Integer, db.ForeignKey("museums.id"), nullable=False)
+
+    user = db.relationship("User", back_populates="museum_assignments")
+    museum = db.relationship("Museum")
+
+
+class UserCountryAssignment(db.Model):
+    __tablename__ = "user_country_assignments"
+
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
+    country = db.Column(db.String(100), nullable=False)
+
+    user = db.relationship("User", back_populates="country_assignments")
 
 
 class ApiKey(db.Model):

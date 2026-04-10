@@ -17,3 +17,4 @@ database = airplane_museum_tracker
 [app]
 secret_key = change-me-in-production
 results_per_page = 20
+log_dir = logs

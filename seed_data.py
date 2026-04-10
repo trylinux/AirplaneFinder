@@ -1,7 +1,7 @@
 """Seed the database with sample museums, aircraft, zip codes, and a default admin user."""
 
 from app import app
-from models import db, User, ApiKey, Museum, Aircraft, AircraftAlias, AircraftMuseum, ZipCode
+from models import db, User, ApiKey, Museum, Aircraft, AircraftAlias, AircraftMuseum, ZipCode, UserMuseumAssignment, UserCountryAssignment
 
 MUSEUMS = [
     # ── North America ──
@@ -413,11 +413,13 @@ def seed():
         Museum.query.delete()
         ZipCode.query.delete()
         ApiKey.query.delete()
+        UserMuseumAssignment.query.delete()
+        UserCountryAssignment.query.delete()
         User.query.delete()
         db.session.commit()
 
         # ── Create default admin user ──
-        admin = User(username=DEFAULT_ADMIN_USERNAME, email="admin@example.com", is_admin=True)
+        admin = User(username=DEFAULT_ADMIN_USERNAME, email="admin@example.com", role="admin")
         admin.set_password(DEFAULT_ADMIN_PASSWORD)
         db.session.add(admin)
         db.session.flush()
@@ -427,12 +429,39 @@ def seed():
         db.session.add(api_key_obj)
         db.session.flush()
 
+        # ── Create sample users with different roles ──
+        # Manager: assigned to US museums
+        mgr_us = User(username="manager_us", email="manager_us@example.com", role="manager")
+        mgr_us.set_password("manager123")
+        db.session.add(mgr_us)
+        db.session.flush()
+        db.session.add(UserCountryAssignment(user_id=mgr_us.id, country="United States"))
+
+        # Manager: assigned to UK museums
+        mgr_uk = User(username="manager_uk", email="manager_uk@example.com", role="manager")
+        mgr_uk.set_password("manager123")
+        db.session.add(mgr_uk)
+        db.session.flush()
+        db.session.add(UserCountryAssignment(user_id=mgr_uk.id, country="United Kingdom"))
+
+        # Viewer: read-only access
+        viewer = User(username="viewer", email="viewer@example.com", role="viewer")
+        viewer.set_password("viewer123")
+        db.session.add(viewer)
+        db.session.flush()
+
         # ── Insert museums ──
         museum_objs = []
         for m in MUSEUMS:
             obj = Museum(**m)
             db.session.add(obj)
             museum_objs.append(obj)
+        db.session.flush()
+
+        # ── Assign US manager to first 3 US museums specifically ──
+        for i in range(min(3, len(museum_objs))):
+            if museum_objs[i].country == "United States":
+                db.session.add(UserMuseumAssignment(user_id=mgr_us.id, museum_id=museum_objs[i].id))
         db.session.flush()
 
         # ── Insert aircraft ──
@@ -482,15 +511,21 @@ def seed():
         print(f"  Aliases:   {alias_count}")
         print(f"  Exhibits:  {len(LINKS)}")
         print(f"  Geocoding: {len(ZIP_CODES)} cache entries (museum cities)")
+        print(f"  Users:     4 (1 admin, 2 managers, 1 viewer)")
         print()
         print("  Default admin login:")
         print(f"    Username: {DEFAULT_ADMIN_USERNAME}")
         print(f"    Password: {DEFAULT_ADMIN_PASSWORD}")
         print()
+        print("  Sample users:")
+        print("    manager_us / manager123  (manager, US museums)")
+        print("    manager_uk / manager123  (manager, UK museums)")
+        print("    viewer     / viewer123   (viewer, read-only)")
+        print()
         print("  Default admin API key (save this!):")
         print(f"    {raw_key}")
         print()
-        print("  Change the password after first login!")
+        print("  Change all passwords after first login!")
         print("=" * 60)
 
 

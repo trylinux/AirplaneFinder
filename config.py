@@ -41,5 +41,8 @@ class Config:
     )
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
+    # Logging
+    LOG_DIR = _get("app", "log_dir", "LOG_DIR", os.path.join(os.path.dirname(__file__), "logs"))
+
     # Pagination
     RESULTS_PER_PAGE = int(_get("app", "results_per_page", "RESULTS_PER_PAGE", "20"))
