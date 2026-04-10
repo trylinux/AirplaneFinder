@@ -258,11 +258,21 @@
 <!-- ─── Users (Admin Only) ─── -->
 {% if current_user.is_admin %}
 <div class="tab-panel" id="tab-users">
+    <!-- User list card -->
     <div class="card">
-        <h2><i class="fa-solid fa-users"></i> User Management</h2>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+            <h2 style="margin:0;"><i class="fa-solid fa-users"></i> User Management</h2>
+            <button class="btn btn-primary" id="show-create-user-btn"><i class="fa-solid fa-user-plus"></i> New User</button>
+        </div>
         <div id="user-list-container"></div>
-        <hr style="border-color:#333; margin:1.5rem 0;">
-        <h3>Create New User</h3>
+    </div>
+
+    <!-- Create user card (hidden by default) -->
+    <div class="card" id="create-user-card" style="display:none;margin-top:1rem;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+            <h3 style="margin:0;"><i class="fa-solid fa-user-plus"></i> Create New User</h3>
+            <button class="btn-icon" id="hide-create-user-btn" title="Close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
         <form id="form-create-user" class="admin-form">
             <div class="form-grid">
                 <div class="form-group">
@@ -300,6 +310,16 @@
             <button type="submit" class="btn btn-primary"><i class="fa-solid fa-user-plus"></i> Create User</button>
         </form>
         <div id="msg-user" class="form-message" style="display:none;"></div>
+    </div>
+</div>
+
+<!-- ─── User Detail Modal ─── -->
+<div id="user-detail-modal" class="modal" style="display:none;">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content" style="max-width:700px;">
+        <button class="modal-close" id="close-user-modal"><i class="fa-solid fa-xmark"></i></button>
+        <h2 id="user-modal-title">User Details</h2>
+        <div id="user-modal-body"></div>
     </div>
 </div>
 {% endif %}
@@ -511,6 +531,7 @@ $(function() {
     // ══════════════════════════════════════════════
 
     var usersLoaded = false;
+    var _currentUserModalId = 0;
 
     function formatLoginTime(iso) {
         if (!iso) return '<span style="color:#666;">Never</span>';
@@ -524,56 +545,84 @@ $(function() {
         return d.toLocaleDateString();
     }
 
+    // Show/hide create user form
+    $('#show-create-user-btn').on('click', function() {
+        $('#create-user-card').slideDown(200);
+        $(this).hide();
+    });
+    $('#hide-create-user-btn').on('click', function() {
+        $('#create-user-card').slideUp(200);
+        $('#show-create-user-btn').show();
+        $('#msg-user').hide();
+    });
+
     function loadUserList() {
         $.getJSON('/api/v1/users', function(users) {
             if (!users.length) {
                 $('#user-list-container').html('<p class="no-results">No users found.</p>');
                 return;
             }
-            var html = '<table class="result-table"><thead><tr><th>ID</th><th>Username</th><th>Role</th><th>Active</th><th>Last Login</th><th>API Key(s)</th><th>Scope</th><th>Actions</th></tr></thead><tbody>';
+            var html = '<table class="result-table"><thead><tr>' +
+                '<th>User</th><th>Role</th><th>Status</th><th>Last Login</th>' +
+                '<th>API Key(s)</th><th>Scope</th><th>Actions</th>' +
+                '</tr></thead><tbody>';
             users.forEach(function(u) {
                 var roleBadge = u.role === 'admin' ? 'status-on_display' : (u.role === 'manager' ? 'status-on_loan' : 'status-in_storage');
-                var activeIcon = u.is_active ? '<i class="fa-solid fa-circle-check" style="color:#4caf50;"></i>' : '<i class="fa-solid fa-circle-xmark" style="color:#f44336;"></i>';
+                var statusText = u.is_active ? 'Active' : 'Disabled';
+                var statusColor = u.is_active ? '#4caf50' : '#f44336';
+                var statusIcon = u.is_active ? 'fa-circle-check' : 'fa-circle-xmark';
                 var lastLogin = formatLoginTime(u.last_login);
 
-                // Build key details
+                // Key summary
                 var keys = u.api_keys || [];
                 var keyHtml = '';
                 if (keys.length) {
                     keys.forEach(function(k) {
-                        var lastUsed = k.last_used ? formatLoginTime(k.last_used) : 'never';
                         var permClass = k.permissions === 'admin' ? 'status-on_display' : (k.permissions === 'readwrite' ? 'status-on_loan' : 'status-in_storage');
-                        keyHtml += '<div style="margin-bottom:4px;line-height:1.6;">' +
-                            '<code style="font-size:0.85em;background:#1a1a2e;padding:2px 6px;border-radius:3px;">' + escHtml(k.key_prefix || 'amt_????…') + '</code> ' +
-                            '<span class="badge ' + permClass + '" style="font-size:0.75em;">' + k.permissions + '</span> ' +
-                            '<span style="color:#888;font-size:0.8em;">used: ' + lastUsed + '</span>' +
+                        keyHtml += '<div style="margin-bottom:3px;">' +
+                            '<code style="font-size:0.8em;background:#1a1a2e;padding:1px 5px;border-radius:3px;">' + escHtml(k.key_prefix || 'amt_????…') + '</code> ' +
+                            '<span class="badge ' + permClass + '" style="font-size:0.7em;">' + k.permissions + '</span>' +
                         '</div>';
                     });
                 } else {
-                    keyHtml = '<span style="color:#666;">No keys</span>';
+                    keyHtml = '<span style="color:#666;font-size:0.85em;">No keys</span>';
                 }
 
-                // Build scope
+                // Scope summary
                 var museumCount = (u.assigned_museums || []).length;
                 var countryList = (u.assigned_countries || []).join(', ') || '';
                 var scopeParts = [];
-                if (u.role === 'admin') { scopeParts.push('All'); }
+                if (u.role === 'admin') { scopeParts.push('<span style="color:#4caf50;">All access</span>'); }
                 else {
                     if (museumCount > 0) scopeParts.push(museumCount + ' museum' + (museumCount > 1 ? 's' : ''));
-                    if (countryList) scopeParts.push(countryList);
+                    if (countryList) scopeParts.push(escHtml(countryList));
                 }
                 var scopeStr = scopeParts.length ? scopeParts.join(', ') : '<span style="color:#666;">None</span>';
 
+                // Actions: quick toggle + edit + delete
+                var toggleTitle = u.is_active ? 'Disable user' : 'Enable user';
+                var toggleIcon = u.is_active ? 'fa-user-slash' : 'fa-user-check';
+                var toggleColor = u.is_active ? '#ff9800' : '#4caf50';
+                var isSelf = (u.id === {{ current_user.id }});
+
+                var actions = '<div style="display:flex;gap:4px;">' +
+                    '<button class="btn-icon toggle-user-btn" data-id="' + u.id + '" data-active="' + u.is_active + '" title="' + toggleTitle + '"' + (isSelf ? ' disabled style="opacity:0.3;"' : '') + '>' +
+                        '<i class="fa-solid ' + toggleIcon + '" style="color:' + toggleColor + ';"></i></button>' +
+                    '<button class="btn-icon open-user-modal-btn" data-id="' + u.id + '" title="Manage user"><i class="fa-solid fa-pen-to-square"></i></button>' +
+                    '<button class="btn-icon delete-user-btn" data-id="' + u.id + '" data-name="' + escHtml(u.username) + '" title="Delete user"' + (isSelf ? ' disabled style="opacity:0.3;"' : '') + '>' +
+                        '<i class="fa-solid fa-trash" style="color:#f44336;"></i></button>' +
+                '</div>';
+
                 html += '<tr>' +
-                    '<td>' + u.id + '</td>' +
                     '<td><strong>' + escHtml(u.username) + '</strong>' +
-                        (u.email ? '<br><span style="color:#888;font-size:0.85em;">' + escHtml(u.email) + '</span>' : '') + '</td>' +
+                        (u.email ? '<br><span style="color:#888;font-size:0.8em;">' + escHtml(u.email) + '</span>' : '') + '</td>' +
                     '<td><span class="badge ' + roleBadge + '">' + u.role + '</span></td>' +
-                    '<td>' + activeIcon + '</td>' +
+                    '<td><i class="fa-solid ' + statusIcon + '" style="color:' + statusColor + ';"></i> ' +
+                        '<span style="color:' + statusColor + ';">' + statusText + '</span></td>' +
                     '<td>' + lastLogin + '</td>' +
                     '<td>' + keyHtml + '</td>' +
-                    '<td>' + scopeStr + '</td>' +
-                    '<td><button class="btn-icon edit-user-btn" data-id="' + u.id + '" title="Edit"><i class="fa-solid fa-pen"></i></button></td>' +
+                    '<td style="font-size:0.85em;">' + scopeStr + '</td>' +
+                    '<td>' + actions + '</td>' +
                 '</tr>';
             });
             html += '</tbody></table>';
@@ -596,6 +645,37 @@ $(function() {
         }
     });
 
+    // Quick toggle active/disabled
+    $(document).on('click', '.toggle-user-btn', function() {
+        var id = $(this).data('id');
+        var currentlyActive = $(this).data('active');
+        var newState = !currentlyActive;
+        var action = newState ? 'enable' : 'disable';
+        if (!confirm('Are you sure you want to ' + action + ' this user?')) return;
+        $.ajax({
+            url: '/api/v1/users/' + id, method: 'PATCH', contentType: 'application/json',
+            data: JSON.stringify({is_active: newState}),
+            success: function() { loadUserList(); },
+            error: function(xhr) {
+                alert('Failed: ' + (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText));
+            }
+        });
+    });
+
+    // Quick delete user
+    $(document).on('click', '.delete-user-btn', function() {
+        var id = $(this).data('id');
+        var name = $(this).data('name');
+        if (!confirm('Permanently delete user "' + name + '"? This cannot be undone. All their API keys and assignments will be removed.')) return;
+        $.ajax({
+            url: '/api/v1/users/' + id, method: 'DELETE',
+            success: function() { loadUserList(); },
+            error: function(xhr) {
+                alert('Failed: ' + (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText));
+            }
+        });
+    });
+
     // Create user form
     $('#form-create-user').on('submit', function(e) {
         e.preventDefault();
@@ -603,14 +683,10 @@ $(function() {
         $(this).serializeArray().forEach(function(item) {
             if (item.value) data[item.name] = item.value;
         });
-
-        // Handle multi-select museums
         var selectedMuseums = $('#user-museum-assign').val();
         if (selectedMuseums && selectedMuseums.length) {
             data.assigned_museums = selectedMuseums.map(function(v) { return parseInt(v); });
         }
-
-        // Handle comma-separated countries
         if (data.assigned_countries) {
             data.assigned_countries = data.assigned_countries.split(',').map(function(s) { return s.trim(); }).filter(function(s) { return s; });
         }
@@ -630,7 +706,7 @@ $(function() {
                         '</div>' +
                         '<p style="color:#ff9800;margin:0 0 10px 0;"><i class="fa-solid fa-triangle-exclamation"></i> Copy this key and share it with the user. It will <strong>never be shown again</strong>.</p>' +
                         '<div style="display:flex;gap:8px;align-items:center;">' +
-                            '<code id="new-user-key-display" style="flex:1;font-size:1.05em;user-select:all;word-break:break-all;background:#0d1117;padding:10px;border-radius:4px;border:1px solid #333;">' + escHtml(resp.generated_api_key) + '</code>' +
+                            '<code style="flex:1;font-size:1.05em;user-select:all;word-break:break-all;background:#0d1117;padding:10px;border-radius:4px;border:1px solid #333;">' + escHtml(resp.generated_api_key) + '</code>' +
                             '<button type="button" class="btn btn-primary copy-key-btn" data-key="' + escHtml(resp.generated_api_key) + '" style="white-space:nowrap;"><i class="fa-solid fa-copy"></i> Copy</button>' +
                         '</div>' +
                     '</div>';
@@ -645,12 +721,12 @@ $(function() {
         });
     });
 
-    // Edit user modal
-    $(document).on('click', '.edit-user-btn', function() {
-        var id = $(this).data('id');
-        $.getJSON('/api/v1/users/' + id, function(u) {
-            editType = 'user'; editId = id;
-            $('#edit-modal-title').text('Edit User: ' + u.username);
+    // ── User Detail Modal ──
+
+    function openUserModal(userId) {
+        _currentUserModalId = userId;
+        $.getJSON('/api/v1/users/' + userId, function(u) {
+            $('#user-modal-title').html('<i class="fa-solid fa-user-gear"></i> Manage User: ' + escHtml(u.username));
 
             // Build museum checkboxes
             var museumCheckHtml = '';
@@ -660,40 +736,38 @@ $(function() {
                 museumCheckHtml += '<label style="display:block;margin:2px 0;font-weight:normal;"><input type="checkbox" class="user-museum-cb" value="' + m.id + '"' + checked + '> ' + escHtml(m.name) + ' (' + escHtml(m.city) + ')</label>';
             });
 
-            var fields = [
-                {name:'email', label:'Email', val: u.email || ''},
-                {name:'role', label:'Role', val: u.role, select: [
-                    {v:'viewer', l:'Viewer (read only)'}, {v:'manager', l:'Manager (scoped CRUD)'}, {v:'admin', l:'Admin (full access)'}
-                ]},
-                {name:'is_active', label:'Active', val: u.is_active ? 'true' : 'false', select: [
-                    {v:'true', l:'Active'}, {v:'false', l:'Disabled'}
-                ]},
-                {name:'password', label:'New Password (leave blank to keep)', val: ''},
-                {name:'assigned_countries', label:'Countries (comma-separated)', val: (u.assigned_countries || []).join(', ')},
-            ];
-            var html = '<div class="form-grid">';
-            fields.forEach(function(f) {
-                html += '<div class="form-group">';
-                html += '<label>' + f.label + '</label>';
-                if (f.select) {
-                    html += '<select name="' + f.name + '">';
-                    f.select.forEach(function(opt) {
-                        html += '<option value="' + opt.v + '"' + (opt.v === f.val ? ' selected' : '') + '>' + escHtml(opt.l) + '</option>';
-                    });
-                    html += '</select>';
-                } else {
-                    var t = f.name === 'password' ? 'password' : 'text';
-                    html += '<input type="' + t + '" name="' + f.name + '" value="' + escHtml(String(f.val)) + '">';
-                }
-                html += '</div>';
-            });
-            html += '</div>';
-            html += '<div class="form-group form-group-wide"><label>Assigned Museums</label><div style="max-height:200px;overflow-y:auto;border:1px solid #333;padding:8px;border-radius:4px;">' + (museumCheckHtml || '<em>No museums in database</em>') + '</div></div>';
+            var html = '';
 
-            // API Keys section
+            // ── Section 1: User Info ──
+            html += '<div style="margin-bottom:1.5rem;">';
+            html += '<h3 style="margin:0 0 0.75rem 0;border-bottom:1px solid #333;padding-bottom:6px;"><i class="fa-solid fa-id-card"></i> User Info</h3>';
+            html += '<form id="user-modal-form" class="admin-form"><div class="form-grid">';
+            html += '<div class="form-group"><label>Email</label><input type="text" name="email" value="' + escHtml(u.email || '') + '" placeholder="user@example.com"></div>';
+            html += '<div class="form-group"><label>Role</label><select name="role">' +
+                '<option value="viewer"' + (u.role === 'viewer' ? ' selected' : '') + '>Viewer (read only)</option>' +
+                '<option value="manager"' + (u.role === 'manager' ? ' selected' : '') + '>Manager (scoped CRUD)</option>' +
+                '<option value="admin"' + (u.role === 'admin' ? ' selected' : '') + '>Admin (full access)</option>' +
+                '</select></div>';
+            html += '<div class="form-group"><label>Status</label><select name="is_active">' +
+                '<option value="true"' + (u.is_active ? ' selected' : '') + '>Active</option>' +
+                '<option value="false"' + (!u.is_active ? ' selected' : '') + '>Disabled</option>' +
+                '</select></div>';
+            html += '<div class="form-group"><label>New Password</label><input type="password" name="password" placeholder="Leave blank to keep current"></div>';
+            html += '<div class="form-group"><label>Countries (comma-separated)</label><input type="text" name="assigned_countries" value="' + escHtml((u.assigned_countries || []).join(', ')) + '"></div>';
+            html += '<div class="form-group"><label>Last Login</label><input type="text" disabled value="' + (u.last_login ? new Date(u.last_login).toLocaleString() : 'Never') + '"></div>';
+            html += '</div>';
+            html += '<div class="form-group form-group-wide"><label>Assigned Museums</label>' +
+                '<div style="max-height:160px;overflow-y:auto;border:1px solid #333;padding:8px;border-radius:4px;">' +
+                (museumCheckHtml || '<em style="color:#888;">No museums in database</em>') + '</div></div>';
+            html += '<div style="margin-top:12px;"><button type="submit" class="btn btn-primary"><i class="fa-solid fa-save"></i> Save Changes</button></div>';
+            html += '</form>';
+            html += '<div id="user-modal-msg" style="margin-top:8px;"></div>';
+            html += '</div>';
+
+            // ── Section 2: API Keys ──
+            html += '<div style="margin-bottom:1rem;">';
+            html += '<h3 style="margin:0 0 0.75rem 0;border-bottom:1px solid #333;padding-bottom:6px;"><i class="fa-solid fa-key"></i> API Keys</h3>';
             var keys = u.api_keys || [];
-            html += '<div class="form-group form-group-wide" style="margin-top:1rem;">';
-            html += '<label><i class="fa-solid fa-key"></i> API Keys</label>';
             if (keys.length) {
                 html += '<table class="result-table" style="font-size:0.85rem;"><thead><tr><th>Key</th><th>Label</th><th>Permissions</th><th>Created</th><th>Last Used</th><th></th></tr></thead><tbody>';
                 keys.forEach(function(k) {
@@ -713,12 +787,12 @@ $(function() {
             } else {
                 html += '<p style="color:#888;margin:4px 0;">No active API keys.</p>';
             }
-            // Inline create key form
+            // Inline create key
             var permOptions = '';
             if (u.role === 'admin') permOptions = '<option value="admin">Admin</option><option value="readwrite">Read/Write</option><option value="read">Read</option>';
             else if (u.role === 'manager') permOptions = '<option value="readwrite">Read/Write</option><option value="read">Read</option>';
             else permOptions = '<option value="read">Read</option>';
-            html += '<div style="display:flex;gap:8px;align-items:end;margin-top:8px;">' +
+            html += '<div style="display:flex;gap:8px;align-items:end;margin-top:10px;">' +
                 '<input type="text" id="new-key-label" placeholder="Key label" style="flex:1;">' +
                 '<select id="new-key-perms" style="width:140px;">' + permOptions + '</select>' +
                 '<button type="button" class="btn btn-primary" id="create-user-key-btn" data-user-id="' + u.id + '" style="white-space:nowrap;"><i class="fa-solid fa-plus"></i> New Key</button>' +
@@ -726,13 +800,83 @@ $(function() {
             html += '<div id="new-key-result" style="margin-top:8px;"></div>';
             html += '</div>';
 
-            $('#edit-form-fields').html(html);
-            $('#edit-msg').hide();
-            $('#edit-modal').fadeIn(200);
+            // ── Section 3: Danger Zone ──
+            var isSelf = (u.id === {{ current_user.id }});
+            if (!isSelf) {
+                html += '<div style="border:1px solid #f4433655;border-radius:8px;padding:12px;margin-top:1rem;">';
+                html += '<h3 style="margin:0 0 8px 0;color:#f44336;"><i class="fa-solid fa-triangle-exclamation"></i> Danger Zone</h3>';
+                html += '<div style="display:flex;gap:12px;">';
+                html += '<button type="button" class="btn btn-danger" id="modal-delete-user-btn" data-id="' + u.id + '" data-name="' + escHtml(u.username) + '">' +
+                    '<i class="fa-solid fa-trash"></i> Delete User</button>';
+                html += '</div></div>';
+            }
+
+            $('#user-modal-body').html(html);
+            $('#user-detail-modal').fadeIn(200);
+        });
+    }
+
+    $(document).on('click', '.open-user-modal-btn', function() {
+        openUserModal($(this).data('id'));
+    });
+    $('#close-user-modal, #user-detail-modal .modal-backdrop').on('click', function() {
+        $('#user-detail-modal').fadeOut(200);
+    });
+
+    // Save user changes from modal form
+    $(document).on('submit', '#user-modal-form', function(e) {
+        e.preventDefault();
+        var data = {};
+        $(this).serializeArray().forEach(function(item) {
+            if (item.name === 'password' && !item.value) return;
+            data[item.name] = item.value;
+        });
+        // Boolean conversion
+        if ('is_active' in data) data.is_active = (data.is_active === 'true');
+        // Museum assignments from checkboxes
+        data.assigned_museums = [];
+        $('.user-museum-cb:checked').each(function() {
+            data.assigned_museums.push(parseInt($(this).val()));
+        });
+        // Country assignments
+        if (data.assigned_countries) {
+            data.assigned_countries = data.assigned_countries.split(',').map(function(s) { return s.trim(); }).filter(function(s) { return s; });
+        } else {
+            data.assigned_countries = [];
+        }
+
+        $.ajax({
+            url: '/api/v1/users/' + _currentUserModalId, method: 'PATCH', contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function() {
+                $('#user-modal-msg').html('<div class="alert alert-success"><i class="fa-solid fa-circle-check"></i> User updated.</div>');
+                setTimeout(function() { $('#user-modal-msg').empty(); }, 3000);
+                loadUserList();
+            },
+            error: function(xhr) {
+                $('#user-modal-msg').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText) + '</div>');
+            }
         });
     });
 
-    // Create API key for user (inside edit modal)
+    // Delete from modal danger zone
+    $(document).on('click', '#modal-delete-user-btn', function() {
+        var id = $(this).data('id');
+        var name = $(this).data('name');
+        if (!confirm('Permanently delete user "' + name + '"? This cannot be undone.')) return;
+        $.ajax({
+            url: '/api/v1/users/' + id, method: 'DELETE',
+            success: function() {
+                $('#user-detail-modal').fadeOut(200);
+                loadUserList();
+            },
+            error: function(xhr) {
+                alert('Failed: ' + (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText));
+            }
+        });
+    });
+
+    // Create API key for user (inside user modal)
     $(document).on('click', '#create-user-key-btn', function() {
         var userId = $(this).data('user-id');
         var label = $('#new-key-label').val().trim() || 'default';
@@ -751,8 +895,8 @@ $(function() {
                     '</div></div>'
                 );
                 $('#new-key-label').val('');
-                // Refresh the key table in this modal
-                $('.edit-user-btn[data-id="' + editId + '"]').trigger('click');
+                // Refresh modal to show new key in table
+                setTimeout(function() { openUserModal(userId); }, 1500);
                 loadUserList();
             },
             error: function(xhr) {
@@ -764,7 +908,7 @@ $(function() {
         });
     });
 
-    // Revoke API key (inside edit modal)
+    // Revoke API key
     $(document).on('click', '.revoke-key-btn', function() {
         var keyId = $(this).data('key-id');
         if (!confirm('Revoke this API key? It will stop working immediately.')) return;
@@ -772,8 +916,7 @@ $(function() {
             url: '/api/v1/keys/' + keyId,
             method: 'DELETE',
             success: function() {
-                // Re-open the edit modal to refresh key list
-                $('.edit-user-btn[data-id="' + editId + '"]').trigger('click');
+                if (_currentUserModalId) openUserModal(_currentUserModalId);
                 loadUserList();
             },
             error: function(xhr) {
@@ -790,7 +933,6 @@ $(function() {
             $btn.html('<i class="fa-solid fa-check"></i> Copied!');
             setTimeout(function() { $btn.html('<i class="fa-solid fa-copy"></i> Copy'); }, 2000);
         }).catch(function() {
-            // Fallback for older browsers
             var $temp = $('<textarea>').val(key).appendTo('body').select();
             document.execCommand('copy');
             $temp.remove();
@@ -960,7 +1102,12 @@ $(function() {
 
     // Close modal
     $('.modal-backdrop, .modal-close').on('click', function() { $('#edit-modal').fadeOut(200); });
-    $(document).on('keydown', function(e) { if (e.key === 'Escape') $('#edit-modal').fadeOut(200); });
+    $(document).on('keydown', function(e) {
+        if (e.key === 'Escape') {
+            $('#edit-modal').fadeOut(200);
+            $('#user-detail-modal').fadeOut(200);
+        }
+    });
 
     // ── Create forms ──
     function submitForm(formSel, url, msgSel) {
