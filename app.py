@@ -1,4 +1,4 @@
-"""Flask application – Aircraft Museum Tracker.
+"""Flask application – Aircraft Finder.
 
 Features:
   - Flask-Login session auth for the web admin panel

@@ -1,4 +1,4 @@
-# Aircraft Museum Tracker
+# Aircraft Finder
 
 A Flask web application for tracking which aircraft are displayed at which aviation museums worldwide, with proximity search to find the nearest museum with a given aircraft.
 

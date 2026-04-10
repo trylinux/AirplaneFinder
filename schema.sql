@@ -1,4 +1,4 @@
--- Aircraft Museum Tracker - MySQL Schema
+-- Aircraft Finder - MySQL Schema
 -- Run this to set up the database
 
 CREATE DATABASE IF NOT EXISTS airplane_museum_tracker

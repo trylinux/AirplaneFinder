@@ -1,4 +1,4 @@
-"""Structured logging for Aircraft Museum Tracker.
+"""Structured logging for Aircraft Finder.
 
 Three dedicated log files under ``logs/``:
   - **auth.log** — login attempts, logouts, failed auth, API key usage
