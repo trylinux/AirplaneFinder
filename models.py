@@ -79,6 +79,7 @@ class User(UserMixin, db.Model):
             "is_active": self.is_active,
             "assigned_museums": [a.museum_id for a in self.museum_assignments],
             "assigned_countries": [a.country for a in self.country_assignments],
+            "api_keys": [k.to_dict() for k in self.api_keys if k.is_active],
         }
 
 

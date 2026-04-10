@@ -518,10 +518,11 @@ $(function() {
                 $('#user-list-container').html('<p class="no-results">No users found.</p>');
                 return;
             }
-            var html = '<table class="result-table"><thead><tr><th>ID</th><th>Username</th><th>Email</th><th>Role</th><th>Active</th><th>Museums</th><th>Countries</th><th>Actions</th></tr></thead><tbody>';
+            var html = '<table class="result-table"><thead><tr><th>ID</th><th>Username</th><th>Email</th><th>Role</th><th>Active</th><th>Museums</th><th>Countries</th><th>API Keys</th><th>Actions</th></tr></thead><tbody>';
             users.forEach(function(u) {
                 var museumCount = (u.assigned_museums || []).length;
                 var countryList = (u.assigned_countries || []).join(', ') || '—';
+                var keyCount = (u.api_keys || []).length;
                 var roleBadge = u.role === 'admin' ? 'status-on_display' : (u.role === 'manager' ? 'status-on_loan' : 'status-in_storage');
                 var activeIcon = u.is_active ? '<i class="fa-solid fa-circle-check" style="color:#4caf50;"></i>' : '<i class="fa-solid fa-circle-xmark" style="color:#f44336;"></i>';
                 html += '<tr>' +
@@ -532,6 +533,7 @@ $(function() {
                     '<td>' + activeIcon + '</td>' +
                     '<td>' + (museumCount > 0 ? museumCount + ' assigned' : '—') + '</td>' +
                     '<td>' + escHtml(countryList) + '</td>' +
+                    '<td>' + (keyCount > 0 ? keyCount + ' active' : '—') + '</td>' +
                     '<td><button class="btn-icon edit-user-btn" data-id="' + u.id + '" title="Edit"><i class="fa-solid fa-pen"></i></button></td>' +
                 '</tr>';
             });
@@ -632,9 +634,89 @@ $(function() {
             });
             html += '</div>';
             html += '<div class="form-group form-group-wide"><label>Assigned Museums</label><div style="max-height:200px;overflow-y:auto;border:1px solid #333;padding:8px;border-radius:4px;">' + (museumCheckHtml || '<em>No museums in database</em>') + '</div></div>';
+
+            // API Keys section
+            var keys = u.api_keys || [];
+            html += '<div class="form-group form-group-wide" style="margin-top:1rem;">';
+            html += '<label><i class="fa-solid fa-key"></i> API Keys</label>';
+            if (keys.length) {
+                html += '<table class="result-table" style="font-size:0.85rem;"><thead><tr><th>Label</th><th>Permissions</th><th>Created</th><th>Last Used</th><th></th></tr></thead><tbody>';
+                keys.forEach(function(k) {
+                    var created = k.created_at ? k.created_at.substring(0,10) : '—';
+                    var lastUsed = k.last_used ? k.last_used.substring(0,10) : 'never';
+                    html += '<tr>' +
+                        '<td>' + escHtml(k.label) + '</td>' +
+                        '<td><span class="badge status-on_display">' + k.permissions + '</span></td>' +
+                        '<td>' + created + '</td>' +
+                        '<td>' + lastUsed + '</td>' +
+                        '<td><button type="button" class="btn-icon revoke-key-btn" data-key-id="' + k.id + '" title="Revoke"><i class="fa-solid fa-xmark" style="color:#f44336;"></i></button></td>' +
+                    '</tr>';
+                });
+                html += '</tbody></table>';
+            } else {
+                html += '<p style="color:#888;margin:4px 0;">No active API keys.</p>';
+            }
+            // Inline create key form
+            var permOptions = '';
+            if (u.role === 'admin') permOptions = '<option value="admin">Admin</option><option value="readwrite">Read/Write</option><option value="read">Read</option>';
+            else if (u.role === 'manager') permOptions = '<option value="readwrite">Read/Write</option><option value="read">Read</option>';
+            else permOptions = '<option value="read">Read</option>';
+            html += '<div style="display:flex;gap:8px;align-items:end;margin-top:8px;">' +
+                '<input type="text" id="new-key-label" placeholder="Key label" style="flex:1;">' +
+                '<select id="new-key-perms" style="width:140px;">' + permOptions + '</select>' +
+                '<button type="button" class="btn btn-primary" id="create-user-key-btn" data-user-id="' + u.id + '" style="white-space:nowrap;"><i class="fa-solid fa-plus"></i> Create Key</button>' +
+            '</div>';
+            html += '<div id="new-key-result" style="margin-top:8px;"></div>';
+            html += '</div>';
+
             $('#edit-form-fields').html(html);
             $('#edit-msg').hide();
             $('#edit-modal').fadeIn(200);
+        });
+    });
+
+    // Create API key for user (inside edit modal)
+    $(document).on('click', '#create-user-key-btn', function() {
+        var userId = $(this).data('user-id');
+        var label = $('#new-key-label').val().trim() || 'default';
+        var perms = $('#new-key-perms').val();
+        $.ajax({
+            url: '/api/v1/users/' + userId + '/keys',
+            method: 'POST', contentType: 'application/json',
+            data: JSON.stringify({label: label, permissions: perms}),
+            success: function(resp) {
+                $('#new-key-result').html(
+                    '<div class="alert alert-success" style="word-break:break-all;">' +
+                    '<i class="fa-solid fa-circle-check"></i> Key created! <strong>Copy it now — it won\'t be shown again:</strong><br>' +
+                    '<code style="font-size:1.1em;user-select:all;">' + escHtml(resp.key) + '</code></div>'
+                );
+                $('#new-key-label').val('');
+                loadUserList();
+            },
+            error: function(xhr) {
+                $('#new-key-result').html(
+                    '<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' +
+                    (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText) + '</div>'
+                );
+            }
+        });
+    });
+
+    // Revoke API key (inside edit modal)
+    $(document).on('click', '.revoke-key-btn', function() {
+        var keyId = $(this).data('key-id');
+        if (!confirm('Revoke this API key? It will stop working immediately.')) return;
+        $.ajax({
+            url: '/api/v1/keys/' + keyId,
+            method: 'DELETE',
+            success: function() {
+                // Re-open the edit modal to refresh key list
+                $('.edit-user-btn[data-id="' + editId + '"]').trigger('click');
+                loadUserList();
+            },
+            error: function(xhr) {
+                alert('Failed to revoke key: ' + (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText));
+            }
         });
     });
 

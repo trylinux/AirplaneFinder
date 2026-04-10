@@ -857,6 +857,59 @@ def api_revoke_key(key_id):
     return jsonify({"revoked": True, "id": key_id})
 
 
+# ── Admin: manage keys for any user ──
+
+@app.route("/api/v1/users/<int:user_id>/keys", methods=["GET"])
+@admin_required
+def api_list_user_keys(user_id):
+    """List API keys for a specific user (admin only)."""
+    User.query.get_or_404(user_id)
+    keys = ApiKey.query.filter_by(user_id=user_id).all()
+    return jsonify([k.to_dict() for k in keys])
+
+
+@app.route("/api/v1/users/<int:user_id>/keys", methods=["POST"])
+@admin_required
+def api_create_user_key(user_id):
+    """Create an API key for a specific user (admin only).
+
+    The key inherits the user's scope (museum/country assignments).
+    Required: label.
+    Optional: permissions (read/readwrite/admin, default based on user role).
+    """
+    target_user = User.query.get_or_404(user_id)
+    data = request.get_json() or {}
+    label = data.get("label", "default")
+
+    # Default permissions based on user role
+    role_perm_map = {"admin": "admin", "manager": "readwrite", "viewer": "read"}
+    permissions = data.get("permissions", role_perm_map.get(target_user.role, "read"))
+
+    if permissions not in ("read", "readwrite", "admin"):
+        return jsonify({"error": "permissions must be 'read', 'readwrite', or 'admin'."}), 400
+
+    # Don't allow creating admin keys for non-admin users
+    if permissions == "admin" and target_user.role != "admin":
+        return jsonify({"error": "Cannot create admin-level keys for non-admin users."}), 400
+
+    # Don't allow readwrite keys for viewers
+    if permissions == "readwrite" and target_user.role == "viewer":
+        return jsonify({"error": "Cannot create readwrite keys for viewer users."}), 400
+
+    api_key, raw_key = ApiKey.generate(user_id, label=label, permissions=permissions)
+    db.session.add(api_key)
+    db.session.commit()
+    auth_log.info(f"API_KEY_CREATE for_user={target_user.username} label={label} perms={permissions} by={current_user.username}")
+    return jsonify({
+        "key": raw_key,
+        "id": api_key.id,
+        "user_id": user_id,
+        "label": label,
+        "permissions": permissions,
+        "note": f"Key inherits {target_user.username}'s scope ({target_user.role} role).",
+    }), 201
+
+
 # ══════════════════════════════════════════════
 # API: User management (admin only)
 # ══════════════════════════════════════════════
