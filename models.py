@@ -24,6 +24,7 @@ class User(UserMixin, db.Model):
     password_hash = db.Column(db.String(256), nullable=False)
     role = db.Column(db.String(20), nullable=False, default="viewer")  # admin, manager, viewer
     is_active_user = db.Column("is_active", db.Boolean, default=True)
+    last_login = db.Column(db.DateTime, nullable=True)
 
     api_keys = db.relationship("ApiKey", back_populates="user", lazy="dynamic")
     museum_assignments = db.relationship("UserMuseumAssignment", back_populates="user", cascade="all, delete-orphan", lazy="joined")
@@ -77,6 +78,7 @@ class User(UserMixin, db.Model):
             "role": self.role,
             "is_admin": self.is_admin,
             "is_active": self.is_active,
+            "last_login": self.last_login.isoformat() if self.last_login else None,
             "assigned_museums": [a.museum_id for a in self.museum_assignments],
             "assigned_countries": [a.country for a in self.country_assignments],
             "api_keys": [k.to_dict() for k in self.api_keys if k.is_active],

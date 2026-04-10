@@ -436,6 +436,8 @@ def seed():
         db.session.add(mgr_us)
         db.session.flush()
         db.session.add(UserCountryAssignment(user_id=mgr_us.id, country="United States"))
+        mgr_us_key, mgr_us_raw = ApiKey.generate(mgr_us.id, label="auto", permissions="readwrite")
+        db.session.add(mgr_us_key)
 
         # Manager: assigned to UK museums
         mgr_uk = User(username="manager_uk", email="manager_uk@example.com", role="manager")
@@ -443,12 +445,16 @@ def seed():
         db.session.add(mgr_uk)
         db.session.flush()
         db.session.add(UserCountryAssignment(user_id=mgr_uk.id, country="United Kingdom"))
+        mgr_uk_key, mgr_uk_raw = ApiKey.generate(mgr_uk.id, label="auto", permissions="readwrite")
+        db.session.add(mgr_uk_key)
 
         # Viewer: read-only access
         viewer = User(username="viewer", email="viewer@example.com", role="viewer")
         viewer.set_password("viewer123")
         db.session.add(viewer)
         db.session.flush()
+        viewer_key, viewer_raw = ApiKey.generate(viewer.id, label="auto", permissions="read")
+        db.session.add(viewer_key)
 
         # ── Insert museums ──
         museum_objs = []

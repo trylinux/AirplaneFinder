@@ -512,28 +512,54 @@ $(function() {
 
     var usersLoaded = false;
 
+    function formatLoginTime(iso) {
+        if (!iso) return '<span style="color:#666;">Never</span>';
+        var d = new Date(iso);
+        var now = new Date();
+        var diff = Math.floor((now - d) / 1000);
+        if (diff < 60) return 'Just now';
+        if (diff < 3600) return Math.floor(diff / 60) + 'm ago';
+        if (diff < 86400) return Math.floor(diff / 3600) + 'h ago';
+        if (diff < 604800) return Math.floor(diff / 86400) + 'd ago';
+        return d.toLocaleDateString();
+    }
+
     function loadUserList() {
         $.getJSON('/api/v1/users', function(users) {
             if (!users.length) {
                 $('#user-list-container').html('<p class="no-results">No users found.</p>');
                 return;
             }
-            var html = '<table class="result-table"><thead><tr><th>ID</th><th>Username</th><th>Email</th><th>Role</th><th>Active</th><th>Museums</th><th>Countries</th><th>API Keys</th><th>Actions</th></tr></thead><tbody>';
+            var html = '<table class="result-table"><thead><tr><th>ID</th><th>Username</th><th>Email</th><th>Role</th><th>Active</th><th>Last Login</th><th>API Key</th><th>Scope</th><th>Actions</th></tr></thead><tbody>';
             users.forEach(function(u) {
-                var museumCount = (u.assigned_museums || []).length;
-                var countryList = (u.assigned_countries || []).join(', ') || '—';
-                var keyCount = (u.api_keys || []).length;
                 var roleBadge = u.role === 'admin' ? 'status-on_display' : (u.role === 'manager' ? 'status-on_loan' : 'status-in_storage');
                 var activeIcon = u.is_active ? '<i class="fa-solid fa-circle-check" style="color:#4caf50;"></i>' : '<i class="fa-solid fa-circle-xmark" style="color:#f44336;"></i>';
+                var lastLogin = formatLoginTime(u.last_login);
+                var keys = u.api_keys || [];
+                var keyInfo = '—';
+                if (keys.length) {
+                    var k = keys[0];
+                    keyInfo = '<span class="badge status-on_display">' + k.permissions + '</span>';
+                    if (keys.length > 1) keyInfo += ' <span style="color:#888;">+' + (keys.length - 1) + ' more</span>';
+                }
+                var museumCount = (u.assigned_museums || []).length;
+                var countryList = (u.assigned_countries || []).join(', ') || '';
+                var scopeParts = [];
+                if (u.role === 'admin') { scopeParts.push('All'); }
+                else {
+                    if (museumCount > 0) scopeParts.push(museumCount + ' museum' + (museumCount > 1 ? 's' : ''));
+                    if (countryList) scopeParts.push(countryList);
+                }
+                var scopeStr = scopeParts.length ? scopeParts.join(', ') : '<span style="color:#666;">None</span>';
                 html += '<tr>' +
                     '<td>' + u.id + '</td>' +
                     '<td><strong>' + escHtml(u.username) + '</strong></td>' +
                     '<td>' + escHtml(u.email || '—') + '</td>' +
                     '<td><span class="badge ' + roleBadge + '">' + u.role + '</span></td>' +
                     '<td>' + activeIcon + '</td>' +
-                    '<td>' + (museumCount > 0 ? museumCount + ' assigned' : '—') + '</td>' +
-                    '<td>' + escHtml(countryList) + '</td>' +
-                    '<td>' + (keyCount > 0 ? keyCount + ' active' : '—') + '</td>' +
+                    '<td>' + lastLogin + '</td>' +
+                    '<td>' + keyInfo + '</td>' +
+                    '<td>' + scopeStr + '</td>' +
                     '<td><button class="btn-icon edit-user-btn" data-id="' + u.id + '" title="Edit"><i class="fa-solid fa-pen"></i></button></td>' +
                 '</tr>';
             });
@@ -580,7 +606,13 @@ $(function() {
             url: '/api/v1/users', method: 'POST', contentType: 'application/json',
             data: JSON.stringify(data),
             success: function(resp) {
-                $('#msg-user').html('<div class="alert alert-success"><i class="fa-solid fa-circle-check"></i> User created! ID: ' + resp.id + '</div>').show();
+                var msg = '<div class="alert alert-success"><i class="fa-solid fa-circle-check"></i> User <strong>' + escHtml(resp.username) + '</strong> created (ID: ' + resp.id + ')';
+                if (resp.generated_api_key) {
+                    msg += '<br><br><i class="fa-solid fa-key"></i> <strong>API Key — copy now, it won\'t be shown again:</strong><br>' +
+                           '<code style="font-size:1.1em;user-select:all;word-break:break-all;">' + escHtml(resp.generated_api_key) + '</code>';
+                }
+                msg += '</div>';
+                $('#msg-user').html(msg).show();
                 $('#form-create-user')[0].reset();
                 loadUserList();
             },

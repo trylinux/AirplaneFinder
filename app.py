@@ -208,6 +208,8 @@ def login_page():
         user = User.query.filter_by(username=username).first()
 
         if user and user.check_password(password) and user.is_active:
+            user.last_login = datetime.now(timezone.utc)
+            db.session.commit()
             login_user(user, remember=True)
             auth_log.info(f"LOGIN_SUCCESS user={username} ip={request.remote_addr}")
             next_url = request.args.get("next") or url_for("admin_page")
@@ -962,10 +964,18 @@ def api_create_user():
         if country.strip():
             db.session.add(UserCountryAssignment(user_id=user.id, country=country.strip()))
 
+    # Auto-generate an API key based on user role
+    perm_map = {"admin": "admin", "manager": "readwrite", "viewer": "read"}
+    auto_perms = perm_map.get(role, "read")
+    api_key_obj, raw_key = ApiKey.generate(user_id=user.id, label="auto", permissions=auto_perms)
+    db.session.add(api_key_obj)
+
     db.session.commit()
     auth_log.info(f"USER_CREATE user={username} role={role} by={current_user.username}")
     change_log.info(f"USER_CREATE id={user.id} user={username} role={role} by={current_user.username}")
-    return jsonify(user.to_dict()), 201
+    resp = user.to_dict()
+    resp["generated_api_key"] = raw_key
+    return jsonify(resp), 201
 
 
 @app.route("/api/v1/users/<int:user_id>", methods=["GET"])

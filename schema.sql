@@ -16,6 +16,7 @@ CREATE TABLE IF NOT EXISTS users (
     password_hash   VARCHAR(256) NOT NULL,
     role            ENUM('admin','manager','viewer') NOT NULL DEFAULT 'viewer',
     is_active       BOOLEAN      DEFAULT TRUE,
+    last_login      TIMESTAMP    NULL DEFAULT NULL,
     created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
