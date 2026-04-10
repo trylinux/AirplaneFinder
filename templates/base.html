@@ -40,6 +40,9 @@
                     <i class="fa-solid fa-book"></i> API
                 </a>
                 {% if current_user.is_authenticated %}
+                <a href="/account" class="nav-link {% block nav_account %}{% endblock %}">
+                    <i class="fa-solid fa-user"></i> My Account
+                </a>
                 <a href="/admin" class="nav-link {% block nav_admin %}{% endblock %}">
                     <i class="fa-solid fa-gear"></i> Admin
                 </a>

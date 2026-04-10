@@ -530,18 +530,30 @@ $(function() {
                 $('#user-list-container').html('<p class="no-results">No users found.</p>');
                 return;
             }
-            var html = '<table class="result-table"><thead><tr><th>ID</th><th>Username</th><th>Email</th><th>Role</th><th>Active</th><th>Last Login</th><th>API Key</th><th>Scope</th><th>Actions</th></tr></thead><tbody>';
+            var html = '<table class="result-table"><thead><tr><th>ID</th><th>Username</th><th>Role</th><th>Active</th><th>Last Login</th><th>API Key(s)</th><th>Scope</th><th>Actions</th></tr></thead><tbody>';
             users.forEach(function(u) {
                 var roleBadge = u.role === 'admin' ? 'status-on_display' : (u.role === 'manager' ? 'status-on_loan' : 'status-in_storage');
                 var activeIcon = u.is_active ? '<i class="fa-solid fa-circle-check" style="color:#4caf50;"></i>' : '<i class="fa-solid fa-circle-xmark" style="color:#f44336;"></i>';
                 var lastLogin = formatLoginTime(u.last_login);
+
+                // Build key details
                 var keys = u.api_keys || [];
-                var keyInfo = '—';
+                var keyHtml = '';
                 if (keys.length) {
-                    var k = keys[0];
-                    keyInfo = '<span class="badge status-on_display">' + k.permissions + '</span>';
-                    if (keys.length > 1) keyInfo += ' <span style="color:#888;">+' + (keys.length - 1) + ' more</span>';
+                    keys.forEach(function(k) {
+                        var lastUsed = k.last_used ? formatLoginTime(k.last_used) : 'never';
+                        var permClass = k.permissions === 'admin' ? 'status-on_display' : (k.permissions === 'readwrite' ? 'status-on_loan' : 'status-in_storage');
+                        keyHtml += '<div style="margin-bottom:4px;line-height:1.6;">' +
+                            '<code style="font-size:0.85em;background:#1a1a2e;padding:2px 6px;border-radius:3px;">' + escHtml(k.key_prefix || 'amt_????…') + '</code> ' +
+                            '<span class="badge ' + permClass + '" style="font-size:0.75em;">' + k.permissions + '</span> ' +
+                            '<span style="color:#888;font-size:0.8em;">used: ' + lastUsed + '</span>' +
+                        '</div>';
+                    });
+                } else {
+                    keyHtml = '<span style="color:#666;">No keys</span>';
                 }
+
+                // Build scope
                 var museumCount = (u.assigned_museums || []).length;
                 var countryList = (u.assigned_countries || []).join(', ') || '';
                 var scopeParts = [];
@@ -551,14 +563,15 @@ $(function() {
                     if (countryList) scopeParts.push(countryList);
                 }
                 var scopeStr = scopeParts.length ? scopeParts.join(', ') : '<span style="color:#666;">None</span>';
+
                 html += '<tr>' +
                     '<td>' + u.id + '</td>' +
-                    '<td><strong>' + escHtml(u.username) + '</strong></td>' +
-                    '<td>' + escHtml(u.email || '—') + '</td>' +
+                    '<td><strong>' + escHtml(u.username) + '</strong>' +
+                        (u.email ? '<br><span style="color:#888;font-size:0.85em;">' + escHtml(u.email) + '</span>' : '') + '</td>' +
                     '<td><span class="badge ' + roleBadge + '">' + u.role + '</span></td>' +
                     '<td>' + activeIcon + '</td>' +
                     '<td>' + lastLogin + '</td>' +
-                    '<td>' + keyInfo + '</td>' +
+                    '<td>' + keyHtml + '</td>' +
                     '<td>' + scopeStr + '</td>' +
                     '<td><button class="btn-icon edit-user-btn" data-id="' + u.id + '" title="Edit"><i class="fa-solid fa-pen"></i></button></td>' +
                 '</tr>';
@@ -606,12 +619,22 @@ $(function() {
             url: '/api/v1/users', method: 'POST', contentType: 'application/json',
             data: JSON.stringify(data),
             success: function(resp) {
-                var msg = '<div class="alert alert-success"><i class="fa-solid fa-circle-check"></i> User <strong>' + escHtml(resp.username) + '</strong> created (ID: ' + resp.id + ')';
+                var msg = '<div class="alert alert-success">' +
+                    '<i class="fa-solid fa-circle-check"></i> User <strong>' + escHtml(resp.username) + '</strong> created (ID: ' + resp.id + ')' +
+                    '</div>';
                 if (resp.generated_api_key) {
-                    msg += '<br><br><i class="fa-solid fa-key"></i> <strong>API Key — copy now, it won\'t be shown again:</strong><br>' +
-                           '<code style="font-size:1.1em;user-select:all;word-break:break-all;">' + escHtml(resp.generated_api_key) + '</code>';
+                    msg += '<div style="background:#1a2a1a;border:2px solid #4caf50;border-radius:8px;padding:16px;margin-top:12px;">' +
+                        '<div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">' +
+                            '<i class="fa-solid fa-key" style="font-size:1.3em;color:#ffc107;"></i>' +
+                            '<strong style="font-size:1.1em;">API Key for ' + escHtml(resp.username) + '</strong>' +
+                        '</div>' +
+                        '<p style="color:#ff9800;margin:0 0 10px 0;"><i class="fa-solid fa-triangle-exclamation"></i> Copy this key and share it with the user. It will <strong>never be shown again</strong>.</p>' +
+                        '<div style="display:flex;gap:8px;align-items:center;">' +
+                            '<code id="new-user-key-display" style="flex:1;font-size:1.05em;user-select:all;word-break:break-all;background:#0d1117;padding:10px;border-radius:4px;border:1px solid #333;">' + escHtml(resp.generated_api_key) + '</code>' +
+                            '<button type="button" class="btn btn-primary copy-key-btn" data-key="' + escHtml(resp.generated_api_key) + '" style="white-space:nowrap;"><i class="fa-solid fa-copy"></i> Copy</button>' +
+                        '</div>' +
+                    '</div>';
                 }
-                msg += '</div>';
                 $('#msg-user').html(msg).show();
                 $('#form-create-user')[0].reset();
                 loadUserList();
@@ -672,13 +695,15 @@ $(function() {
             html += '<div class="form-group form-group-wide" style="margin-top:1rem;">';
             html += '<label><i class="fa-solid fa-key"></i> API Keys</label>';
             if (keys.length) {
-                html += '<table class="result-table" style="font-size:0.85rem;"><thead><tr><th>Label</th><th>Permissions</th><th>Created</th><th>Last Used</th><th></th></tr></thead><tbody>';
+                html += '<table class="result-table" style="font-size:0.85rem;"><thead><tr><th>Key</th><th>Label</th><th>Permissions</th><th>Created</th><th>Last Used</th><th></th></tr></thead><tbody>';
                 keys.forEach(function(k) {
                     var created = k.created_at ? k.created_at.substring(0,10) : '—';
                     var lastUsed = k.last_used ? k.last_used.substring(0,10) : 'never';
+                    var permClass = k.permissions === 'admin' ? 'status-on_display' : (k.permissions === 'readwrite' ? 'status-on_loan' : 'status-in_storage');
                     html += '<tr>' +
+                        '<td><code style="font-size:0.9em;background:#1a1a2e;padding:2px 6px;border-radius:3px;">' + escHtml(k.key_prefix || 'amt_????…') + '</code></td>' +
                         '<td>' + escHtml(k.label) + '</td>' +
-                        '<td><span class="badge status-on_display">' + k.permissions + '</span></td>' +
+                        '<td><span class="badge ' + permClass + '">' + k.permissions + '</span></td>' +
                         '<td>' + created + '</td>' +
                         '<td>' + lastUsed + '</td>' +
                         '<td><button type="button" class="btn-icon revoke-key-btn" data-key-id="' + k.id + '" title="Revoke"><i class="fa-solid fa-xmark" style="color:#f44336;"></i></button></td>' +
@@ -696,7 +721,7 @@ $(function() {
             html += '<div style="display:flex;gap:8px;align-items:end;margin-top:8px;">' +
                 '<input type="text" id="new-key-label" placeholder="Key label" style="flex:1;">' +
                 '<select id="new-key-perms" style="width:140px;">' + permOptions + '</select>' +
-                '<button type="button" class="btn btn-primary" id="create-user-key-btn" data-user-id="' + u.id + '" style="white-space:nowrap;"><i class="fa-solid fa-plus"></i> Create Key</button>' +
+                '<button type="button" class="btn btn-primary" id="create-user-key-btn" data-user-id="' + u.id + '" style="white-space:nowrap;"><i class="fa-solid fa-plus"></i> New Key</button>' +
             '</div>';
             html += '<div id="new-key-result" style="margin-top:8px;"></div>';
             html += '</div>';
@@ -718,11 +743,16 @@ $(function() {
             data: JSON.stringify({label: label, permissions: perms}),
             success: function(resp) {
                 $('#new-key-result').html(
-                    '<div class="alert alert-success" style="word-break:break-all;">' +
-                    '<i class="fa-solid fa-circle-check"></i> Key created! <strong>Copy it now — it won\'t be shown again:</strong><br>' +
-                    '<code style="font-size:1.1em;user-select:all;">' + escHtml(resp.key) + '</code></div>'
+                    '<div style="background:#1a2a1a;border:2px solid #4caf50;border-radius:8px;padding:12px;margin-top:8px;">' +
+                    '<p style="color:#ff9800;margin:0 0 8px 0;"><i class="fa-solid fa-triangle-exclamation"></i> <strong>Copy this key now — it will never be shown again.</strong></p>' +
+                    '<div style="display:flex;gap:8px;align-items:center;">' +
+                        '<code style="flex:1;font-size:1.05em;user-select:all;word-break:break-all;background:#0d1117;padding:8px;border-radius:4px;border:1px solid #333;">' + escHtml(resp.key) + '</code>' +
+                        '<button type="button" class="btn btn-primary copy-key-btn" data-key="' + escHtml(resp.key) + '" style="white-space:nowrap;"><i class="fa-solid fa-copy"></i> Copy</button>' +
+                    '</div></div>'
                 );
                 $('#new-key-label').val('');
+                // Refresh the key table in this modal
+                $('.edit-user-btn[data-id="' + editId + '"]').trigger('click');
                 loadUserList();
             },
             error: function(xhr) {
@@ -749,6 +779,23 @@ $(function() {
             error: function(xhr) {
                 alert('Failed to revoke key: ' + (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText));
             }
+        });
+    });
+
+    // Copy API key to clipboard
+    $(document).on('click', '.copy-key-btn', function() {
+        var key = $(this).data('key');
+        var $btn = $(this);
+        navigator.clipboard.writeText(key).then(function() {
+            $btn.html('<i class="fa-solid fa-check"></i> Copied!');
+            setTimeout(function() { $btn.html('<i class="fa-solid fa-copy"></i> Copy'); }, 2000);
+        }).catch(function() {
+            // Fallback for older browsers
+            var $temp = $('<textarea>').val(key).appendTo('body').select();
+            document.execCommand('copy');
+            $temp.remove();
+            $btn.html('<i class="fa-solid fa-check"></i> Copied!');
+            setTimeout(function() { $btn.html('<i class="fa-solid fa-copy"></i> Copy'); }, 2000);
         });
     });
 

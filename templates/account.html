@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% block title %}My Account — Aircraft Museum Tracker{% endblock %}
+{% block nav_account %}active{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1><i class="fa-solid fa-user"></i> My Account</h1>
+
+    <div class="form-grid" style="max-width:500px;">
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" value="{{ current_user.username }}" disabled>
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" value="{{ current_user.email or '—' }}" disabled>
+        </div>
+        <div class="form-group">
+            <label>Role</label>
+            <input type="text" value="{{ current_user.role }}" disabled>
+        </div>
+        <div class="form-group">
+            <label>Last Login</label>
+            <input type="text" value="{{ current_user.last_login.strftime('%Y-%m-%d %H:%M UTC') if current_user.last_login else 'Never' }}" disabled>
+        </div>
+    </div>
+</div>
+
+<div class="card" style="margin-top:1.5rem;">
+    <h2><i class="fa-solid fa-key"></i> My API Keys</h2>
+    <p style="color:#aaa;margin-bottom:1rem;">Use these keys to authenticate with the REST API. Include the key in the <code>Authorization: Bearer &lt;key&gt;</code> header.</p>
+
+    <div id="my-keys-container"></div>
+
+    <hr style="border-color:#333;margin:1.5rem 0;">
+    <h3>Generate New Key</h3>
+    <p style="color:#ff9800;margin-bottom:1rem;"><i class="fa-solid fa-triangle-exclamation"></i> The key will only be shown <strong>once</strong>. Copy it immediately.</p>
+    <div style="display:flex;gap:8px;align-items:end;">
+        <div class="form-group" style="flex:1;margin:0;">
+            <label>Label</label>
+            <input type="text" id="self-key-label" placeholder="e.g. my-script, ci-pipeline">
+        </div>
+        <button type="button" class="btn btn-primary" id="self-generate-key" style="white-space:nowrap;height:42px;">
+            <i class="fa-solid fa-plus"></i> Generate Key
+        </button>
+    </div>
+    <div id="self-key-result" style="margin-top:12px;"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function escHtml(s) {
+    return $('<span>').text(s || '').html();
+}
+
+function formatTime(iso) {
+    if (!iso) return '<span style="color:#666;">Never</span>';
+    var d = new Date(iso);
+    return d.toLocaleDateString() + ' ' + d.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+}
+
+function loadMyKeys() {
+    $.getJSON('/api/v1/users/{{ current_user.id }}', function(u) {
+        var keys = u.api_keys || [];
+        if (!keys.length) {
+            $('#my-keys-container').html('<p class="no-results">You have no active API keys. Generate one below.</p>');
+            return;
+        }
+        var html = '<table class="result-table"><thead><tr><th>Key</th><th>Label</th><th>Permissions</th><th>Created</th><th>Last Used</th><th></th></tr></thead><tbody>';
+        keys.forEach(function(k) {
+            var permClass = k.permissions === 'admin' ? 'status-on_display' : (k.permissions === 'readwrite' ? 'status-on_loan' : 'status-in_storage');
+            html += '<tr>' +
+                '<td><code style="font-size:0.9em;background:#1a1a2e;padding:2px 6px;border-radius:3px;">' + escHtml(k.key_prefix || 'amt_????…') + '</code></td>' +
+                '<td>' + escHtml(k.label) + '</td>' +
+                '<td><span class="badge ' + permClass + '">' + k.permissions + '</span></td>' +
+                '<td>' + formatTime(k.created_at) + '</td>' +
+                '<td>' + formatTime(k.last_used) + '</td>' +
+                '<td><button type="button" class="btn-icon self-revoke-btn" data-key-id="' + k.id + '" title="Revoke"><i class="fa-solid fa-xmark" style="color:#f44336;"></i></button></td>' +
+            '</tr>';
+        });
+        html += '</tbody></table>';
+        $('#my-keys-container').html(html);
+    });
+}
+
+$(function() {
+    loadMyKeys();
+
+    // Generate key for self
+    $('#self-generate-key').on('click', function() {
+        var label = $('#self-key-label').val().trim() || 'default';
+        $.ajax({
+            url: '/api/v1/users/{{ current_user.id }}/keys',
+            method: 'POST', contentType: 'application/json',
+            data: JSON.stringify({label: label}),
+            success: function(resp) {
+                $('#self-key-result').html(
+                    '<div style="background:#1a2a1a;border:2px solid #4caf50;border-radius:8px;padding:12px;">' +
+                    '<p style="color:#ff9800;margin:0 0 8px 0;"><i class="fa-solid fa-triangle-exclamation"></i> <strong>Copy this key now — it will never be shown again.</strong></p>' +
+                    '<div style="display:flex;gap:8px;align-items:center;">' +
+                        '<code style="flex:1;font-size:1.05em;user-select:all;word-break:break-all;background:#0d1117;padding:8px;border-radius:4px;border:1px solid #333;">' + escHtml(resp.key) + '</code>' +
+                        '<button type="button" class="btn btn-primary copy-key-btn" data-key="' + escHtml(resp.key) + '" style="white-space:nowrap;"><i class="fa-solid fa-copy"></i> Copy</button>' +
+                    '</div></div>'
+                );
+                $('#self-key-label').val('');
+                loadMyKeys();
+            },
+            error: function(xhr) {
+                $('#self-key-result').html(
+                    '<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' +
+                    (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText) + '</div>'
+                );
+            }
+        });
+    });
+
+    // Copy to clipboard
+    $(document).on('click', '.copy-key-btn', function() {
+        var key = $(this).data('key');
+        var $btn = $(this);
+        navigator.clipboard.writeText(key).then(function() {
+            $btn.html('<i class="fa-solid fa-check"></i> Copied!');
+            setTimeout(function() { $btn.html('<i class="fa-solid fa-copy"></i> Copy'); }, 2000);
+        }).catch(function() {
+            var $temp = $('<textarea>').val(key).appendTo('body').select();
+            document.execCommand('copy');
+            $temp.remove();
+            $btn.html('<i class="fa-solid fa-check"></i> Copied!');
+            setTimeout(function() { $btn.html('<i class="fa-solid fa-copy"></i> Copy'); }, 2000);
+        });
+    });
+
+    // Revoke own key
+    $(document).on('click', '.self-revoke-btn', function() {
+        var keyId = $(this).data('key-id');
+        if (!confirm('Revoke this API key? It will stop working immediately.')) return;
+        $.ajax({
+            url: '/api/v1/keys/' + keyId,
+            method: 'DELETE',
+            success: function() { loadMyKeys(); },
+            error: function(xhr) {
+                alert('Failed to revoke: ' + (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText));
+            }
+        });
+    });
+});
+</script>
+{% endblock %}

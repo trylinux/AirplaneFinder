@@ -28,6 +28,7 @@ CREATE TABLE IF NOT EXISTS api_keys (
     id          INT AUTO_INCREMENT PRIMARY KEY,
     user_id     INT          NOT NULL,
     key_hash    VARCHAR(256) NOT NULL,
+    key_prefix  VARCHAR(16)  DEFAULT NULL,
     label       VARCHAR(100) NOT NULL DEFAULT 'default',
     is_active   BOOLEAN      DEFAULT TRUE,
     permissions VARCHAR(50)  DEFAULT 'read',       -- 'read', 'readwrite', 'admin'

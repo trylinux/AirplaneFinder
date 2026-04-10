@@ -112,6 +112,7 @@ class ApiKey(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
     key_hash = db.Column(db.String(256), nullable=False)
+    key_prefix = db.Column(db.String(16), nullable=True)   # first 12 chars for identification
     label = db.Column(db.String(100), default="default")
     is_active = db.Column(db.Boolean, default=True)
     permissions = db.Column(db.String(50), default="read")  # read, readwrite, admin
@@ -131,6 +132,7 @@ class ApiKey(db.Model):
         obj = cls(
             user_id=user_id,
             key_hash=cls.hash_key(raw_key),
+            key_prefix=raw_key[:12],              # store "amt_XXXXXXXX" for display
             label=label,
             permissions=permissions,
         )
@@ -146,6 +148,7 @@ class ApiKey(db.Model):
         return {
             "id": self.id,
             "user_id": self.user_id,
+            "key_prefix": (self.key_prefix or "amt_????") + "…",
             "label": self.label,
             "permissions": self.permissions,
             "is_active": self.is_active,

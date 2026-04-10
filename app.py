@@ -263,6 +263,16 @@ def register_page():
 
 
 # ══════════════════════════════════════════════
+# User account page (session-protected)
+# ══════════════════════════════════════════════
+
+@app.route("/account")
+@login_required
+def account_page():
+    return render_template("account.html")
+
+
+# ══════════════════════════════════════════════
 # Admin panel (session-protected)
 # ══════════════════════════════════════════════
 
@@ -862,23 +872,26 @@ def api_revoke_key(key_id):
 # ── Admin: manage keys for any user ──
 
 @app.route("/api/v1/users/<int:user_id>/keys", methods=["GET"])
-@admin_required
+@login_required
 def api_list_user_keys(user_id):
-    """List API keys for a specific user (admin only)."""
+    """List API keys for a user. Admins can view any user; users can view their own."""
+    if not current_user.is_admin and current_user.id != user_id:
+        abort(403)
     User.query.get_or_404(user_id)
     keys = ApiKey.query.filter_by(user_id=user_id).all()
     return jsonify([k.to_dict() for k in keys])
 
 
 @app.route("/api/v1/users/<int:user_id>/keys", methods=["POST"])
-@admin_required
+@login_required
 def api_create_user_key(user_id):
-    """Create an API key for a specific user (admin only).
+    """Create an API key for a user. Admins can create for anyone; users can create for themselves.
 
     The key inherits the user's scope (museum/country assignments).
-    Required: label.
-    Optional: permissions (read/readwrite/admin, default based on user role).
+    Optional: label, permissions (read/readwrite/admin, default based on user role).
     """
+    if not current_user.is_admin and current_user.id != user_id:
+        abort(403)
     target_user = User.query.get_or_404(user_id)
     data = request.get_json() or {}
     label = data.get("label", "default")
