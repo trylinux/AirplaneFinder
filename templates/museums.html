@@ -69,6 +69,23 @@
         border: 1px solid rgba(120, 180, 255, .15);
         pointer-events: none;
     }
+    .globe-controls {
+        position: absolute;
+        top: 12px; right: 12px;
+        z-index: 11;
+    }
+    .globe-controls button {
+        background: rgba(10, 20, 40, .85);
+        border: 1px solid rgba(120, 180, 255, .35);
+        color: #dbe7ff;
+        padding: .45rem .75rem;
+        border-radius: 6px;
+        font-size: .8rem;
+        cursor: pointer;
+        transition: background .15s ease, border-color .15s ease;
+    }
+    .globe-controls button:hover { background: rgba(30, 50, 90, .95); border-color: rgba(160, 210, 255, .6); }
+    .globe-controls button.paused { background: rgba(90, 30, 30, .85); border-color: rgba(255, 150, 150, .5); }
     .globe-loading {
         position: absolute; inset: 0;
         display: flex; align-items: center; justify-content: center;
@@ -154,6 +171,11 @@
 
         <div class="globe-wrap" id="globe-wrap">
             <canvas id="globe-canvas"></canvas>
+            <div class="globe-controls">
+                <button id="globe-spin-toggle" title="Pause / resume rotation">
+                    <i class="fa-solid fa-pause"></i> Pause
+                </button>
+            </div>
             <div class="globe-tooltip" id="globe-tooltip"></div>
             <div class="globe-legend"><i class="fa-solid fa-circle" style="color:#fff;font-size:.55em;"></i> Each pin is a museum</div>
             <div class="globe-loading" id="globe-loading"><i class="fa-solid fa-spinner fa-spin"></i>&nbsp;Loading globe…</div>
@@ -520,7 +542,21 @@ $(function() {
         // Drag to rotate
         var dragging = false, lastX = 0, lastY = 0;
         var hovering = false;
+        var spinPaused = false;
         var rotY = 0, rotX = 0.25; // base tilt
+
+        // Pause / resume button
+        var spinBtn = document.getElementById('globe-spin-toggle');
+        spinBtn.addEventListener('click', function() {
+            spinPaused = !spinPaused;
+            if (spinPaused) {
+                spinBtn.innerHTML = '<i class="fa-solid fa-play"></i> Resume';
+                spinBtn.classList.add('paused');
+            } else {
+                spinBtn.innerHTML = '<i class="fa-solid fa-pause"></i> Pause';
+                spinBtn.classList.remove('paused');
+            }
+        });
 
         canvas.addEventListener('pointerenter', function() { hovering = true; });
         canvas.addEventListener('pointerdown', function(e) {
@@ -590,8 +626,8 @@ $(function() {
             requestAnimationFrame(animate);
             var t = clock.getElapsedTime();
 
-            // Auto-rotate unless the user is hovering or dragging (slower than before)
-            if (!dragging && !hovering) rotY += 0.0005;
+            // Auto-rotate unless paused or dragging
+            if (!dragging && !spinPaused) rotY += 0.00025;
 
             globeGroup.rotation.y = rotY;
             globeGroup.rotation.x = rotX;
