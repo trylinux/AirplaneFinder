@@ -519,8 +519,10 @@ $(function() {
 
         // Drag to rotate
         var dragging = false, lastX = 0, lastY = 0;
+        var hovering = false;
         var rotY = 0, rotX = 0.25; // base tilt
 
+        canvas.addEventListener('pointerenter', function() { hovering = true; });
         canvas.addEventListener('pointerdown', function(e) {
             dragging = true; lastX = e.clientX; lastY = e.clientY;
             canvas.setPointerCapture(e.pointerId);
@@ -546,6 +548,7 @@ $(function() {
         });
         canvas.addEventListener('pointerleave', function() {
             dragging = false;
+            hovering = false;
             hovered = null;
             tooltip.classList.remove('show');
         });
@@ -587,8 +590,8 @@ $(function() {
             requestAnimationFrame(animate);
             var t = clock.getElapsedTime();
 
-            // Auto-rotate unless the user is dragging
-            if (!dragging) rotY += 0.0015;
+            // Auto-rotate unless the user is hovering or dragging (slower than before)
+            if (!dragging && !hovering) rotY += 0.0005;
 
             globeGroup.rotation.y = rotY;
             globeGroup.rotation.x = rotX;
