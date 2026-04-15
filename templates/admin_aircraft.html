@@ -45,13 +45,15 @@ var ROLE_OPTIONS = {
         {v:'bomber', l:'Bomber'}, {v:'transport', l:'Transport'},
         {v:'recon', l:'Recon'}, {v:'electronic_warfare', l:'Electronic Warfare'},
         {v:'fighter', l:'Fighter'}, {v:'tanker', l:'Tanker'},
-        {v:'search_rescue', l:'Search & Rescue'}, {v:'ground_attack', l:'Ground Attack'}
+        {v:'search_rescue', l:'Search & Rescue'}, {v:'ground_attack', l:'Ground Attack'},
+        {v:'utility', l:'Utility'}
     ],
     civilian: [
         {v:'', l:'— Select —'},
         {v:'commercial_transport', l:'Commercial Transport'},
         {v:'freighter', l:'Freighter'}, {v:'private', l:'Private'},
-        {v:'experimental', l:'Experimental'}, {v:'space', l:'Space'}, {v:'other', l:'Other'}
+        {v:'experimental', l:'Experimental'}, {v:'utility', l:'Utility'},
+        {v:'space', l:'Space'}, {v:'other', l:'Other'}
     ]
 };
 function getRoleOptions(mc) { return ROLE_OPTIONS[mc] || ROLE_OPTIONS.military; }

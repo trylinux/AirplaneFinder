@@ -108,9 +108,9 @@ CREATE TABLE IF NOT EXISTS aircraft (
     military_civilian ENUM('military','civilian') NOT NULL DEFAULT 'military',
     role_type       VARCHAR(30)  DEFAULT NULL,        -- depends on military_civilian
                     -- Military: bomber, transport, recon, electronic_warfare, fighter,
-                    --           tanker, search_rescue, ground_attack
+                    --           tanker, search_rescue, ground_attack, utility
                     -- Civilian: commercial_transport, freighter, private, experimental,
-                    --           space, other
+                    --           utility, space, other
     year_built      INT          DEFAULT NULL,
     description     TEXT         DEFAULT NULL,
     created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
