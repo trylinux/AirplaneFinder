@@ -460,32 +460,52 @@ $(function() {
         var borderMat = new THREE.LineBasicMaterial({
             color: 0x6fa3e8, transparent: true, opacity: 0.55
         });
+        var stateBorderMat = new THREE.LineBasicMaterial({
+            color: 0x8fb8e8, transparent: true, opacity: 0.45
+        });
         var labelSprites = [];
+        var stateLabelSprites = [];
+        var stateGroup = new THREE.Group();
+        stateGroup.visible = false;
+        globeGroup.add(stateGroup);
 
-        function makeLabelSprite(text) {
+        function makeLabelSprite(text, opts) {
+            opts = opts || {};
+            var fontSize = opts.fontSize || 54;
+            var fontWeight = opts.fontWeight || '600';
+            var color = opts.color || '#dbe7ff';
+            var worldScale = opts.worldScale || 0.00065; // world units per canvas pixel
+            var font = fontWeight + ' ' + fontSize + 'px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+
+            // Measure the text so the canvas never crops long labels
+            var meas = document.createElement('canvas').getContext('2d');
+            meas.font = font;
+            var textW = Math.ceil(meas.measureText(text).width);
+            var padX = 30, padY = 20;
+            var w = textW + padX * 2;
+            var h = fontSize + padY * 2;
+
             var canvas = document.createElement('canvas');
-            canvas.width = 512; canvas.height = 128;
+            canvas.width = w; canvas.height = h;
             var ctx = canvas.getContext('2d');
-            ctx.font = '600 54px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+            ctx.font = font;
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
-            // Subtle dark halo for readability against bright pins / dim sphere
             ctx.shadowColor = 'rgba(0,0,0,0.9)';
             ctx.shadowBlur = 10;
             ctx.fillStyle = 'rgba(0,0,0,0.75)';
-            ctx.fillText(text, canvas.width/2, canvas.height/2);
+            ctx.fillText(text, w/2, h/2);
             ctx.shadowBlur = 0;
-            ctx.fillStyle = '#dbe7ff';
-            ctx.fillText(text, canvas.width/2, canvas.height/2);
+            ctx.fillStyle = color;
+            ctx.fillText(text, w/2, h/2);
+
             var tex = new THREE.CanvasTexture(canvas);
             tex.needsUpdate = true;
             var mat = new THREE.SpriteMaterial({
                 map: tex, transparent: true, depthTest: false, depthWrite: false
             });
             var sprite = new THREE.Sprite(mat);
-            // Scale roughly proportional to text; tweak as needed
-            var w = 0.32, h = w * (canvas.height / canvas.width);
-            sprite.scale.set(w, h, 1);
+            sprite.scale.set(w * worldScale, h * worldScale, 1);
             return sprite;
         }
 
@@ -533,6 +553,43 @@ $(function() {
                     sprite.position.copy(latLonToVec3(cy, cx, R * 1.035));
                     globeGroup.add(sprite);
                     labelSprites.push(sprite);
+                }
+            });
+        }
+
+        function addStatesGeoJSON(geo) {
+            var feats = geo.features || [];
+            feats.forEach(function(feat) {
+                var props = feat.properties || {};
+                var sname = props.name || props.NAME || props.STATE_NAME || '';
+                var g = feat.geometry;
+                if (!g) return;
+                var polys = g.type === 'Polygon' ? [g.coordinates] :
+                            g.type === 'MultiPolygon' ? g.coordinates : [];
+                var all = [];
+                polys.forEach(function(poly) {
+                    poly.forEach(function(ring) {
+                        var pts = ring.map(function(c) {
+                            all.push(c);
+                            return latLonToVec3(c[1], c[0], R * 1.003);
+                        });
+                        if (pts.length > 1) {
+                            var bg = new THREE.BufferGeometry().setFromPoints(pts);
+                            stateGroup.add(new THREE.Line(bg, stateBorderMat));
+                        }
+                    });
+                });
+                if (all.length && sname) {
+                    var cx = 0, cy = 0;
+                    all.forEach(function(c) { cx += c[0]; cy += c[1]; });
+                    cx /= all.length; cy /= all.length;
+                    var sprite = makeLabelSprite(sname, {
+                        fontSize: 36, fontWeight: '500',
+                        color: '#b8d0f5', worldScale: 0.00045
+                    });
+                    sprite.position.copy(latLonToVec3(cy, cx, R * 1.04));
+                    stateGroup.add(sprite);
+                    stateLabelSprites.push(sprite);
                 }
             });
         }
@@ -662,6 +719,11 @@ $(function() {
             $.getJSON('https://cdn.jsdelivr.net/gh/johan/world.geo.json@master/countries.geo.json')
                 .done(function(geo) { addCountriesGeoJSON(geo, countryHasMuseum); })
                 .fail(function() { /* silently skip borders if CDN blocked */ });
+
+            // US state borders + labels (loaded lazily; shown when zoomed in)
+            $.getJSON('https://cdn.jsdelivr.net/gh/PublicaMundi/MappingAPI@master/data/geojson/us-states.json')
+                .done(function(geo) { addStatesGeoJSON(geo); })
+                .fail(function() { /* silently skip states if CDN blocked */ });
         }).fail(function() {
             loadingEl.textContent = 'Failed to load museum data.';
         });
@@ -695,17 +757,34 @@ $(function() {
                 p.material.opacity = opac;
             });
 
+            // Zoom-based detail: show state lines/labels only when close
+            var z = camera.position.z;
+            var stateDetailOn = z < 2.4;
+            stateGroup.visible = stateDetailOn;
+
             // Fade country labels on the far side of the globe
+            var camDir = new THREE.Vector3();
+            camera.getWorldPosition(camDir).normalize();
+            var worldPos = new THREE.Vector3();
             if (labelSprites.length) {
-                var camDir = new THREE.Vector3();
-                camera.getWorldPosition(camDir).normalize();
-                var worldPos = new THREE.Vector3();
+                // Also fade country labels out when zoomed in so state labels can shine
+                var countryZoomFade = Math.max(0, Math.min(1, (z - 2.0) / 0.6));
                 labelSprites.forEach(function(s) {
                     s.getWorldPosition(worldPos);
                     var facing = worldPos.clone().normalize().dot(camDir);
-                    // Visible only when the label's point on the sphere faces the camera
-                    s.material.opacity = Math.max(0, Math.min(1, (facing - 0.15) * 2.2));
-                    s.visible = s.material.opacity > 0.02;
+                    var o = Math.max(0, Math.min(1, (facing - 0.15) * 2.2)) * countryZoomFade;
+                    s.material.opacity = o;
+                    s.visible = o > 0.02;
+                });
+            }
+            if (stateDetailOn && stateLabelSprites.length) {
+                var stateFade = Math.max(0, Math.min(1, (2.4 - z) / 0.5));
+                stateLabelSprites.forEach(function(s) {
+                    s.getWorldPosition(worldPos);
+                    var facing = worldPos.clone().normalize().dot(camDir);
+                    var o = Math.max(0, Math.min(1, (facing - 0.15) * 2.2)) * stateFade;
+                    s.material.opacity = o;
+                    s.visible = o > 0.02;
                 });
             }
 
