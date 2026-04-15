@@ -430,6 +430,87 @@ $(function() {
         });
         var pins = [];
 
+        // Country borders + labels
+        var borderMat = new THREE.LineBasicMaterial({
+            color: 0x6fa3e8, transparent: true, opacity: 0.55
+        });
+        var labelSprites = [];
+
+        function makeLabelSprite(text) {
+            var canvas = document.createElement('canvas');
+            canvas.width = 512; canvas.height = 128;
+            var ctx = canvas.getContext('2d');
+            ctx.font = '600 54px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            // Subtle dark halo for readability against bright pins / dim sphere
+            ctx.shadowColor = 'rgba(0,0,0,0.9)';
+            ctx.shadowBlur = 10;
+            ctx.fillStyle = 'rgba(0,0,0,0.75)';
+            ctx.fillText(text, canvas.width/2, canvas.height/2);
+            ctx.shadowBlur = 0;
+            ctx.fillStyle = '#dbe7ff';
+            ctx.fillText(text, canvas.width/2, canvas.height/2);
+            var tex = new THREE.CanvasTexture(canvas);
+            tex.needsUpdate = true;
+            var mat = new THREE.SpriteMaterial({
+                map: tex, transparent: true, depthTest: false, depthWrite: false
+            });
+            var sprite = new THREE.Sprite(mat);
+            // Scale roughly proportional to text; tweak as needed
+            var w = 0.32, h = w * (canvas.height / canvas.width);
+            sprite.scale.set(w, h, 1);
+            return sprite;
+        }
+
+        function normCountry(s) {
+            return (s || '').toLowerCase().replace(/^the /, '').replace(/\./g, '').trim();
+        }
+
+        function addCountriesGeoJSON(geo, countryHasMuseum) {
+            var feats = geo.features || [];
+            feats.forEach(function(feat) {
+                var props = feat.properties || {};
+                var cname = props.name || props.ADMIN || props.NAME || props.name_long || '';
+                var g = feat.geometry;
+                if (!g) return;
+                var polys = g.type === 'Polygon' ? [g.coordinates] :
+                            g.type === 'MultiPolygon' ? g.coordinates : [];
+                var all = [];
+                polys.forEach(function(poly) {
+                    poly.forEach(function(ring) {
+                        var pts = ring.map(function(c) {
+                            all.push(c);
+                            return latLonToVec3(c[1], c[0], R * 1.002);
+                        });
+                        if (pts.length > 1) {
+                            var bg = new THREE.BufferGeometry().setFromPoints(pts);
+                            globeGroup.add(new THREE.Line(bg, borderMat));
+                        }
+                    });
+                });
+
+                // Label if this country has at least one museum
+                var nc = normCountry(cname);
+                var match = countryHasMuseum[nc];
+                if (!match) {
+                    // Loose match: check if any museum country contains / is contained in this name
+                    for (var k in countryHasMuseum) {
+                        if (k && (k.indexOf(nc) >= 0 || nc.indexOf(k) >= 0)) { match = true; break; }
+                    }
+                }
+                if (match && all.length) {
+                    var cx = 0, cy = 0;
+                    all.forEach(function(c) { cx += c[0]; cy += c[1]; });
+                    cx /= all.length; cy /= all.length;
+                    var sprite = makeLabelSprite(cname);
+                    sprite.position.copy(latLonToVec3(cy, cx, R * 1.035));
+                    globeGroup.add(sprite);
+                    labelSprites.push(sprite);
+                }
+            });
+        }
+
         // Raycaster for hover
         var raycaster = new THREE.Raycaster();
         raycaster.params.Mesh.threshold = 0.02;
@@ -469,9 +550,10 @@ $(function() {
             tooltip.classList.remove('show');
         });
 
-        // ── Fetch museums and place pins ──
+        // ── Fetch museums and place pins, then fetch country geometry ──
         $.getJSON('/api/v1/museums/globe', function(museums) {
             loadingEl.style.display = 'none';
+            var countryHasMuseum = {};
             museums.forEach(function(m) {
                 var pos = latLonToVec3(m.latitude, m.longitude, R * 1.01);
                 var pin = new THREE.Mesh(pinGeom, pinMat.clone());
@@ -479,7 +561,13 @@ $(function() {
                 pin.userData = m;
                 globeGroup.add(pin);
                 pins.push(pin);
+                countryHasMuseum[normCountry(m.country)] = true;
             });
+
+            // Country borders + labels (lightweight world GeoJSON via jsDelivr)
+            $.getJSON('https://cdn.jsdelivr.net/gh/johan/world.geo.json@master/countries.geo.json')
+                .done(function(geo) { addCountriesGeoJSON(geo, countryHasMuseum); })
+                .fail(function() { /* silently skip borders if CDN blocked */ });
         }).fail(function() {
             loadingEl.textContent = 'Failed to load museum data.';
         });
@@ -512,6 +600,20 @@ $(function() {
                 p.scale.setScalar(throb);
                 p.material.opacity = opac;
             });
+
+            // Fade country labels on the far side of the globe
+            if (labelSprites.length) {
+                var camDir = new THREE.Vector3();
+                camera.getWorldPosition(camDir).normalize();
+                var worldPos = new THREE.Vector3();
+                labelSprites.forEach(function(s) {
+                    s.getWorldPosition(worldPos);
+                    var facing = worldPos.clone().normalize().dot(camDir);
+                    // Visible only when the label's point on the sphere faces the camera
+                    s.material.opacity = Math.max(0, Math.min(1, (facing - 0.15) * 2.2));
+                    s.visible = s.material.opacity > 0.02;
+                });
+            }
 
             // Hover detection
             raycaster.setFromCamera(pointer, camera);
