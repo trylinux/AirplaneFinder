@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block title %}Add Museum — Admin — Aircraft Finder{% endblock %}
+{% block nav_admin %}active{% endblock %}
+
+{% set admin_section = 'museums' %}
+
+{% block content %}
+{% include "_admin_nav.html" %}
+
+<div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;">
+        <h2><i class="fa-solid fa-plus"></i> Add New Museum</h2>
+        <a href="/admin/museums" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i> Back to List</a>
+    </div>
+
+    <form id="form-museum" class="admin-form" style="margin-top:1rem;">
+        <div class="form-grid">
+            <div class="form-group form-group-wide"><label>Museum Name *</label>
+                <input type="text" name="name" required placeholder="e.g. National Museum of the US Air Force"></div>
+            <div class="form-group"><label>City *</label>
+                <input type="text" name="city" required placeholder="e.g. Dayton"></div>
+            <div class="form-group"><label>State / Province</label>
+                <input type="text" name="state_province" placeholder="e.g. Ohio, Ontario, Bavaria"></div>
+            <div class="form-group"><label>Country *</label>
+                <input type="text" name="country" required placeholder="e.g. United States" value="United States"></div>
+            <div class="form-group"><label>Postal Code</label>
+                <input type="text" name="postal_code" placeholder="e.g. 45433, SW1A 1AA"></div>
+            <div class="form-group"><label>Region *</label>
+                <select name="region" required>
+                    <option value="">Select region...</option>
+                    <option value="North America">North America</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Asia-Pacific">Asia-Pacific</option>
+                    <option value="Middle East">Middle East</option>
+                    <option value="South America">South America</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
+            </div>
+            <div class="form-group form-group-wide"><label>Address</label>
+                <input type="text" name="address" placeholder="Full street address"></div>
+            <div class="form-group"><label>Website</label>
+                <input type="url" name="website" placeholder="https://..."></div>
+            <div class="form-group"><label>Latitude</label>
+                <input type="number" step="any" name="latitude" placeholder="e.g. 39.7811 (optional)"></div>
+            <div class="form-group"><label>Longitude</label>
+                <input type="number" step="any" name="longitude" placeholder="e.g. -84.1107 (optional)"></div>
+        </div>
+        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add Museum</button>
+    </form>
+    <div id="msg-museum" class="form-message" style="display:none;"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+$(function() {
+    $('#form-museum').on('submit', function(e) {
+        e.preventDefault();
+        var data = {};
+        $(this).serializeArray().forEach(function(item) { if (item.value) data[item.name] = item.value; });
+        if (data.latitude) data.latitude = parseFloat(data.latitude);
+        if (data.longitude) data.longitude = parseFloat(data.longitude);
+        $.ajax({
+            url: '/api/v1/museums', method: 'POST', contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function(resp) {
+                $('#msg-museum').html('<div class="alert alert-success"><i class="fa-solid fa-circle-check"></i> Created! ID: ' + (resp.id || 'OK') + ' — <a href="/admin/museums">view list</a></div>').show();
+                $('#form-museum')[0].reset();
+            },
+            error: function(xhr) {
+                $('#msg-museum').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + (xhr.responseJSON ? JSON.stringify(xhr.responseJSON) : xhr.statusText) + '</div>').show();
+            }
+        });
+    });
+});
+</script>
+{% endblock %}

@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+{% block title %}Add Aircraft — Admin — Aircraft Finder{% endblock %}
+{% block nav_admin %}active{% endblock %}
+
+{% set admin_section = 'aircraft' %}
+
+{% block content %}
+{% include "_admin_nav.html" %}
+
+<div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;">
+        <h2><i class="fa-solid fa-plus"></i> Add New Aircraft</h2>
+        <a href="/admin/aircraft" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i> Back to List</a>
+    </div>
+
+    <form id="form-aircraft" class="admin-form" style="margin-top:1rem;">
+        <div class="form-grid">
+            <div class="form-group"><label>Manufacturer *</label><input type="text" name="manufacturer" required placeholder="e.g. Lockheed Martin"></div>
+            <div class="form-group"><label>Model *</label><input type="text" name="model" required placeholder="e.g. C-130"></div>
+            <div class="form-group"><label>Variant</label><input type="text" name="variant" placeholder="e.g. J, H, J-30"></div>
+            <div class="form-group"><label>Tail Number</label><input type="text" name="tail_number" placeholder="e.g. 55-0014"></div>
+            <div class="form-group"><label>Model Name</label><input type="text" name="model_name" placeholder="e.g. Cobra, Hercules, Mustang"></div>
+            <div class="form-group"><label>Aircraft Name</label><input type="text" name="aircraft_name" placeholder="e.g. Daisy Duke, Bockscar"></div>
+            <div class="form-group"><label>Year Built</label><input type="number" name="year_built" placeholder="e.g. 1965"></div>
+            <div class="form-group"><label>Aircraft Type *</label>
+                <select name="aircraft_type" required>
+                    <option value="fixed_wing">Fixed Wing</option>
+                    <option value="rotary_wing">Rotary Wing</option>
+                    <option value="lighter_than_air">Lighter Than Air</option>
+                    <option value="spacecraft">Spacecraft</option>
+                </select>
+            </div>
+            <div class="form-group"><label>Wing Type</label>
+                <select name="wing_type">
+                    <option value="">— N/A —</option>
+                    <option value="monoplane">Monoplane</option>
+                    <option value="biplane">Biplane</option>
+                    <option value="triplane">Triplane</option>
+                </select>
+            </div>
+            <div class="form-group"><label>Military / Civilian *</label>
+                <select name="military_civilian" required class="mil-civ-select">
+                    <option value="military">Military</option>
+                    <option value="civilian">Civilian</option>
+                </select>
+            </div>
+            <div class="form-group"><label>Role</label>
+                <select name="role_type" class="role-type-select">
+                    <option value="">— Select —</option>
+                </select>
+            </div>
+            <div class="form-group"><label>Assign to Museum</label>
+                <select name="museum_id" id="create-aircraft-museum">
+                    <option value="">— None —</option>
+                </select>
+            </div>
+            <div class="form-group" id="create-aircraft-status-group" style="display:none;">
+                <label>Display Status</label>
+                <select name="display_status">
+                    <option value="on_display">On Display</option>
+                    <option value="in_storage">In Storage</option>
+                    <option value="on_loan">On Loan</option>
+                    <option value="under_restoration">Under Restoration</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group form-group-wide"><label>Aliases (comma-separated alternate names)</label>
+            <input type="text" name="aliases" placeholder="e.g. B29, Superfortress, Super Fort"></div>
+        <div class="form-group form-group-wide"><label>Description</label>
+            <textarea name="description" rows="3" placeholder="Optional notes..."></textarea></div>
+        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add Aircraft</button>
+    </form>
+    <div id="msg-aircraft" class="form-message" style="display:none;"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+var ROLE_OPTIONS = {
+    military: [
+        {v:'', l:'— Select —'},
+        {v:'bomber', l:'Bomber'}, {v:'transport', l:'Transport'},
+        {v:'recon', l:'Recon'}, {v:'electronic_warfare', l:'Electronic Warfare'},
+        {v:'fighter', l:'Fighter'}, {v:'tanker', l:'Tanker'},
+        {v:'search_rescue', l:'Search & Rescue'}, {v:'ground_attack', l:'Ground Attack'}
+    ],
+    civilian: [
+        {v:'', l:'— Select —'},
+        {v:'commercial_transport', l:'Commercial Transport'},
+        {v:'freighter', l:'Freighter'}, {v:'private', l:'Private'},
+        {v:'experimental', l:'Experimental'}, {v:'space', l:'Space'}, {v:'other', l:'Other'}
+    ]
+};
+
+$(function() {
+    function updateRoleDropdown() {
+        var mc = $('.mil-civ-select').val();
+        var opts = ROLE_OPTIONS[mc] || ROLE_OPTIONS.military;
+        var $r = $('.role-type-select');
+        $r.empty();
+        opts.forEach(function(o) { $r.append('<option value="' + o.v + '">' + escHtml(o.l) + '</option>'); });
+    }
+    $(document).on('change', '.mil-civ-select', updateRoleDropdown);
+    updateRoleDropdown();
+
+    // Populate museum dropdown
+    $.getJSON('/api/v1/museums/search', {per_page: 500}, function(data) {
+        var sel = $('#create-aircraft-museum');
+        data.results.forEach(function(m) {
+            sel.append('<option value="' + m.id + '">' + escHtml(m.name + ' (' + m.city + ')') + '</option>');
+        });
+    });
+
+    $('#create-aircraft-museum').on('change', function() {
+        $('#create-aircraft-status-group').toggle(!!$(this).val());
+    });
+
+    $('#form-aircraft').on('submit', function(e) {
+        e.preventDefault();
+        var data = {};
+        $(this).serializeArray().forEach(function(item) { if (item.value) data[item.name] = item.value; });
+        if (data.year_built) data.year_built = parseInt(data.year_built);
+        if (data.museum_id) data.museum_id = parseInt(data.museum_id);
+        if (data.aliases) {
+            data.aliases = data.aliases.split(',').map(function(s) { return s.trim(); }).filter(function(s) { return s; });
+        }
+        $.ajax({
+            url: '/api/v1/aircraft', method: 'POST', contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function(resp) {
+                $('#msg-aircraft').html('<div class="alert alert-success"><i class="fa-solid fa-circle-check"></i> Created! ID: ' + (resp.id || 'OK') + ' — <a href="/admin/aircraft">view list</a></div>').show();
+                $('#form-aircraft')[0].reset();
+                $('#create-aircraft-status-group').hide();
+                updateRoleDropdown();
+            },
+            error: function(xhr) {
+                $('#msg-aircraft').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + (xhr.responseJSON ? JSON.stringify(xhr.responseJSON) : xhr.statusText) + '</div>').show();
+            }
+        });
+    });
+});
+</script>
+{% endblock %}

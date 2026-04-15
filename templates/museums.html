@@ -2,11 +2,96 @@
 {% block title %}Museums — Aircraft Finder{% endblock %}
 {% block nav_museums %}active{% endblock %}
 
+{% block head %}
+<style>
+    /* ── Globe / Discovery view ── */
+    .globe-wrap {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        max-height: 720px;
+        border-radius: var(--radius);
+        overflow: hidden;
+        background:
+            radial-gradient(circle at 50% 45%, #0a1430 0%, #050a1a 60%, #02050f 100%),
+            linear-gradient(rgba(50,80,160,.18) 1px, transparent 1px) 0 0 / 32px 32px,
+            linear-gradient(90deg, rgba(50,80,160,.18) 1px, transparent 1px) 0 0 / 32px 32px;
+        background-color: #02050f;
+        box-shadow: inset 0 0 80px rgba(0,10,40,.7);
+    }
+    .globe-wrap::before {
+        content: "";
+        position: absolute; inset: 0;
+        background-image:
+            linear-gradient(rgba(60,100,200,.10) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(60,100,200,.10) 1px, transparent 1px);
+        background-size: 40px 40px;
+        pointer-events: none;
+    }
+    #globe-canvas {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: block;
+        cursor: grab;
+    }
+    #globe-canvas:active { cursor: grabbing; }
+    .globe-tooltip {
+        position: absolute;
+        pointer-events: none;
+        background: rgba(10, 20, 40, .92);
+        border: 1px solid rgba(120, 180, 255, .4);
+        color: #e2e8f0;
+        padding: .55rem .75rem;
+        border-radius: 8px;
+        font-size: .85rem;
+        line-height: 1.35;
+        box-shadow: 0 6px 24px rgba(0,0,0,.5);
+        transform: translate(-50%, -130%);
+        white-space: nowrap;
+        opacity: 0;
+        transition: opacity .12s ease;
+        z-index: 10;
+    }
+    .globe-tooltip.show { opacity: 1; }
+    .globe-tooltip .t-name { font-weight: 600; color: #fff; }
+    .globe-tooltip .t-loc  { color: #94a3b8; font-size: .75rem; }
+    .globe-tooltip .t-count {
+        color: #60a5fa; font-weight: 600; margin-top: .25rem; display: block;
+    }
+    .globe-legend {
+        position: absolute;
+        bottom: 12px; left: 12px;
+        color: #94a3b8; font-size: .75rem;
+        background: rgba(5, 10, 25, .6);
+        padding: .4rem .65rem;
+        border-radius: 6px;
+        border: 1px solid rgba(120, 180, 255, .15);
+        pointer-events: none;
+    }
+    .globe-loading {
+        position: absolute; inset: 0;
+        display: flex; align-items: center; justify-content: center;
+        color: #94a3b8; font-size: .95rem;
+    }
+</style>
+{% endblock %}
+
 {% block content %}
 <div class="page-header">
-    <h1>Museum Directory</h1>
-    <p class="subtitle">Browse aviation museums worldwide by name, country, or region</p>
+    <h1>Museums</h1>
+    <p class="subtitle">Browse aviation museums worldwide or explore them on an interactive globe</p>
 </div>
+
+<div class="tab-nav">
+    <button class="tab-btn active" data-tab="tab-directory"><i class="fa-solid fa-list"></i> Directory</button>
+    <button class="tab-btn" data-tab="tab-discovery"><i class="fa-solid fa-earth-americas"></i> Discovery</button>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     DIRECTORY TAB
+     ═══════════════════════════════════════════════════ -->
+<div class="tab-panel active" id="tab-directory">
 
 <!-- Proximity Search -->
 <div class="card proximity-card">
@@ -57,6 +142,25 @@
 
 <div id="museum-results" class="results-container"></div>
 
+</div><!-- /tab-directory -->
+
+<!-- ═══════════════════════════════════════════════════
+     DISCOVERY TAB (globe)
+     ═══════════════════════════════════════════════════ -->
+<div class="tab-panel" id="tab-discovery">
+    <div class="card">
+        <h2><i class="fa-solid fa-earth-americas"></i> Global Museum Map</h2>
+        <p class="card-subtitle">Hover over a pin to see how many aircraft are in that museum. Drag to rotate.</p>
+
+        <div class="globe-wrap" id="globe-wrap">
+            <canvas id="globe-canvas"></canvas>
+            <div class="globe-tooltip" id="globe-tooltip"></div>
+            <div class="globe-legend"><i class="fa-solid fa-circle" style="color:#fff;font-size:.55em;"></i> Each pin is a museum</div>
+            <div class="globe-loading" id="globe-loading"><i class="fa-solid fa-spinner fa-spin"></i>&nbsp;Loading globe…</div>
+        </div>
+    </div>
+</div>
+
 <!-- Museum Detail Modal -->
 <div id="museum-modal" class="modal" style="display:none;">
     <div class="modal-backdrop"></div>
@@ -68,8 +172,25 @@
 {% endblock %}
 
 {% block scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 $(function() {
+    /* ────────────────────────────────────────────────
+       TAB SWITCHING
+       ──────────────────────────────────────────────── */
+    var globeInitialized = false;
+    $('.tab-btn').on('click', function() {
+        var tab = $(this).data('tab');
+        $('.tab-btn').removeClass('active');
+        $(this).addClass('active');
+        $('.tab-panel').removeClass('active');
+        $('#' + tab).addClass('active');
+        if (tab === 'tab-discovery' && !globeInitialized) {
+            globeInitialized = true;
+            initGlobe();
+        }
+    });
+
     var currentPage = 1;
 
     // Load regions into both dropdowns
@@ -181,9 +302,7 @@ $(function() {
     // Museum detail
     $(document).on('click', '.museum-row', function() {
         var id = $(this).data('id');
-        $.getJSON('/api/museums/' + id, function(data) {
-            renderMuseumDetail(data);
-        });
+        $.getJSON('/api/museums/' + id, function(data) { renderMuseumDetail(data); });
     });
 
     function renderMuseumDetail(data) {
@@ -233,6 +352,192 @@ $(function() {
     $(document).on('keydown', function(e) {
         if (e.key === 'Escape') $('#museum-modal').fadeOut(200);
     });
+
+    /* ═══════════════════════════════════════════════════
+       GLOBE (Three.js)
+       ═══════════════════════════════════════════════════ */
+    function initGlobe() {
+        var wrap = document.getElementById('globe-wrap');
+        var canvas = document.getElementById('globe-canvas');
+        var tooltip = document.getElementById('globe-tooltip');
+        var loadingEl = document.getElementById('globe-loading');
+
+        var W = wrap.clientWidth, H = wrap.clientHeight;
+
+        // Scene, camera, renderer
+        var scene = new THREE.Scene();
+        var camera = new THREE.PerspectiveCamera(45, W / H, 0.1, 1000);
+        camera.position.z = 3.2;
+
+        var renderer = new THREE.WebGLRenderer({canvas: canvas, antialias: true, alpha: true});
+        renderer.setPixelRatio(window.devicePixelRatio || 1);
+        renderer.setSize(W, H, false);
+        renderer.setClearColor(0x000000, 0);
+
+        // ── Globe group (rotates as a whole) ──
+        var globeGroup = new THREE.Group();
+        scene.add(globeGroup);
+
+        var R = 1;
+
+        // Solid semi-transparent sphere (so pins on the far side are occluded)
+        var surfaceMat = new THREE.MeshBasicMaterial({
+            color: 0x0a1b3a, transparent: true, opacity: 0.92
+        });
+        var surface = new THREE.Mesh(new THREE.SphereGeometry(R * 0.995, 48, 32), surfaceMat);
+        globeGroup.add(surface);
+
+        // Wireframe overlay — latitude/longitude grid in dim blue
+        var wireMat = new THREE.LineBasicMaterial({
+            color: 0x3a6bd8, transparent: true, opacity: 0.35
+        });
+        var wire = new THREE.LineSegments(
+            new THREE.WireframeGeometry(new THREE.SphereGeometry(R, 24, 18)),
+            wireMat
+        );
+        globeGroup.add(wire);
+
+        // Brighter outline (rim glow)
+        var rimMat = new THREE.LineBasicMaterial({
+            color: 0x6ba7ff, transparent: true, opacity: 0.55
+        });
+        var equator = new THREE.LineLoop(
+            new THREE.BufferGeometry().setFromPoints(
+                Array.from({length: 128}, function(_, i) {
+                    var a = (i / 128) * Math.PI * 2;
+                    return new THREE.Vector3(Math.cos(a) * R, 0, Math.sin(a) * R);
+                })
+            ),
+            rimMat
+        );
+        globeGroup.add(equator);
+
+        // ── lat/lon → xyz ──
+        function latLonToVec3(lat, lon, radius) {
+            var phi = (90 - lat) * Math.PI / 180;
+            var theta = (lon + 180) * Math.PI / 180;
+            return new THREE.Vector3(
+                -radius * Math.sin(phi) * Math.cos(theta),
+                 radius * Math.cos(phi),
+                 radius * Math.sin(phi) * Math.sin(theta)
+            );
+        }
+
+        // Shared pin geometry / material
+        var pinGeom = new THREE.SphereGeometry(0.012, 10, 10);
+        var pinMat = new THREE.MeshBasicMaterial({
+            color: 0xffffff, transparent: true, opacity: 0.95
+        });
+        var pins = [];
+
+        // Raycaster for hover
+        var raycaster = new THREE.Raycaster();
+        raycaster.params.Mesh.threshold = 0.02;
+        var pointer = new THREE.Vector2();
+        var hovered = null;
+
+        // Drag to rotate
+        var dragging = false, lastX = 0, lastY = 0;
+        var rotY = 0, rotX = 0.25; // base tilt
+
+        canvas.addEventListener('pointerdown', function(e) {
+            dragging = true; lastX = e.clientX; lastY = e.clientY;
+            canvas.setPointerCapture(e.pointerId);
+        });
+        canvas.addEventListener('pointerup', function(e) {
+            dragging = false;
+            try { canvas.releasePointerCapture(e.pointerId); } catch(_) {}
+        });
+        canvas.addEventListener('pointermove', function(e) {
+            var rect = canvas.getBoundingClientRect();
+            pointer.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+            pointer.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+            if (dragging) {
+                var dx = e.clientX - lastX;
+                var dy = e.clientY - lastY;
+                rotY += dx * 0.005;
+                rotX = Math.max(-1.3, Math.min(1.3, rotX + dy * 0.005));
+                lastX = e.clientX; lastY = e.clientY;
+            }
+            // Tooltip position follows pointer
+            tooltip.style.left = (e.clientX - rect.left) + 'px';
+            tooltip.style.top  = (e.clientY - rect.top) + 'px';
+        });
+        canvas.addEventListener('pointerleave', function() {
+            dragging = false;
+            hovered = null;
+            tooltip.classList.remove('show');
+        });
+
+        // ── Fetch museums and place pins ──
+        $.getJSON('/api/v1/museums/globe', function(museums) {
+            loadingEl.style.display = 'none';
+            museums.forEach(function(m) {
+                var pos = latLonToVec3(m.latitude, m.longitude, R * 1.01);
+                var pin = new THREE.Mesh(pinGeom, pinMat.clone());
+                pin.position.copy(pos);
+                pin.userData = m;
+                globeGroup.add(pin);
+                pins.push(pin);
+            });
+        }).fail(function() {
+            loadingEl.textContent = 'Failed to load museum data.';
+        });
+
+        // ── Resize handler ──
+        function onResize() {
+            W = wrap.clientWidth; H = wrap.clientHeight;
+            camera.aspect = W / H;
+            camera.updateProjectionMatrix();
+            renderer.setSize(W, H, false);
+        }
+        window.addEventListener('resize', onResize);
+
+        // ── Animation loop ──
+        var clock = new THREE.Clock();
+        function animate() {
+            requestAnimationFrame(animate);
+            var t = clock.getElapsedTime();
+
+            // Auto-rotate unless the user is dragging
+            if (!dragging) rotY += 0.0015;
+
+            globeGroup.rotation.y = rotY;
+            globeGroup.rotation.x = rotX;
+
+            // Throb pins: scale oscillates between .85 and 1.6, opacity 0.6 → 1
+            var throb = 0.85 + Math.sin(t * 2.6) * 0.4;
+            var opac  = 0.65 + Math.sin(t * 2.6) * 0.35;
+            pins.forEach(function(p) {
+                p.scale.setScalar(throb);
+                p.material.opacity = opac;
+            });
+
+            // Hover detection
+            raycaster.setFromCamera(pointer, camera);
+            var intersects = raycaster.intersectObjects(pins, false);
+            if (intersects.length) {
+                var m = intersects[0].object.userData;
+                if (hovered !== m.id) {
+                    hovered = m.id;
+                    tooltip.innerHTML =
+                        '<div class="t-name">' + escHtml(m.name) + '</div>' +
+                        '<div class="t-loc">' + escHtml(m.city + ', ' + m.country) + '</div>' +
+                        '<span class="t-count"><i class="fa-solid fa-jet-fighter"></i> ' +
+                        m.aircraft_count + ' aircraft' + (m.aircraft_count === 1 ? '' : '') + '</span>';
+                }
+                tooltip.classList.add('show');
+                canvas.style.cursor = 'pointer';
+            } else {
+                hovered = null;
+                tooltip.classList.remove('show');
+                canvas.style.cursor = dragging ? 'grabbing' : 'grab';
+            }
+
+            renderer.render(scene, camera);
+        }
+        animate();
+    }
 });
 </script>
 {% endblock %}

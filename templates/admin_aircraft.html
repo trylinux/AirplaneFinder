@@ -1,0 +1,201 @@
+{% extends "base.html" %}
+{% block title %}Aircraft — Admin — Aircraft Finder{% endblock %}
+{% block nav_admin %}active{% endblock %}
+
+{% set admin_section = 'aircraft' %}
+
+{% block content %}
+{% include "_admin_nav.html" %}
+
+<div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;">
+        <h2><i class="fa-solid fa-jet-fighter"></i> All Aircraft</h2>
+        <a href="/admin/aircraft/new" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add Aircraft</a>
+    </div>
+    <div class="search-bar" style="margin-top:.75rem;">
+        <input type="text" id="admin-aircraft-search" placeholder="Filter aircraft..." autocomplete="off">
+        <button class="btn btn-primary" id="admin-aircraft-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div id="admin-aircraft-results"></div>
+</div>
+
+<!-- Edit Modal -->
+<div id="edit-modal" class="modal" style="display:none;">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+        <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+        <h2 id="edit-modal-title">Edit Aircraft</h2>
+        <form id="edit-form" class="admin-form">
+            <div id="edit-form-fields"></div>
+            <div class="edit-modal-actions">
+                <button type="submit" class="btn btn-primary"><i class="fa-solid fa-save"></i> Save</button>
+                <button type="button" class="btn btn-danger" id="edit-delete-btn"><i class="fa-solid fa-trash"></i> Delete</button>
+            </div>
+        </form>
+        <div id="edit-msg" class="form-message" style="display:none;"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+var ROLE_OPTIONS = {
+    military: [
+        {v:'', l:'— Select —'},
+        {v:'bomber', l:'Bomber'}, {v:'transport', l:'Transport'},
+        {v:'recon', l:'Recon'}, {v:'electronic_warfare', l:'Electronic Warfare'},
+        {v:'fighter', l:'Fighter'}, {v:'tanker', l:'Tanker'},
+        {v:'search_rescue', l:'Search & Rescue'}, {v:'ground_attack', l:'Ground Attack'}
+    ],
+    civilian: [
+        {v:'', l:'— Select —'},
+        {v:'commercial_transport', l:'Commercial Transport'},
+        {v:'freighter', l:'Freighter'}, {v:'private', l:'Private'},
+        {v:'experimental', l:'Experimental'}, {v:'space', l:'Space'}, {v:'other', l:'Other'}
+    ]
+};
+function getRoleOptions(mc) { return ROLE_OPTIONS[mc] || ROLE_OPTIONS.military; }
+
+$(function() {
+    var editId = 0;
+
+    function loadAircraft() {
+        var q = $('#admin-aircraft-search').val() || '';
+        $.getJSON('/api/v1/aircraft/search', {q: q, per_page: 100}, function(data) {
+            var html = '';
+            if (!data.results.length) { html = '<p class="no-results">No aircraft found.</p>'; }
+            else {
+                html = '<table class="result-table"><thead><tr><th>ID</th><th>Designation</th><th>Model Name</th><th>Aircraft Name</th><th>Tail #</th><th>Manufacturer</th><th>Type</th><th>Mil/Civ</th><th>Role</th><th>Aliases</th><th>Actions</th></tr></thead><tbody>';
+                data.results.forEach(function(a) {
+                    var aliasStr = (a.aliases && a.aliases.length) ? escHtml(a.aliases.join(', ')) : '—';
+                    var typeLabel = (a.aircraft_type || 'fixed_wing').replace(/_/g, ' ');
+                    var milCiv = (a.military_civilian || 'military');
+                    var roleLabel = (a.role_type || '—').replace(/_/g, ' ');
+                    html += '<tr>' +
+                        '<td>' + a.id + '</td>' +
+                        '<td><strong>' + escHtml(a.full_designation || a.model) + '</strong></td>' +
+                        '<td>' + escHtml(a.model_name || '—') + '</td>' +
+                        '<td>' + escHtml(a.aircraft_name || '—') + '</td>' +
+                        '<td>' + escHtml(a.tail_number || '—') + '</td>' +
+                        '<td>' + escHtml(a.manufacturer) + '</td>' +
+                        '<td>' + escHtml(typeLabel) + '</td>' +
+                        '<td><span class="badge status-' + milCiv + '">' + milCiv + '</span></td>' +
+                        '<td>' + escHtml(roleLabel) + '</td>' +
+                        '<td>' + aliasStr + '</td>' +
+                        '<td><button class="btn-icon edit-aircraft-btn" data-id="' + a.id + '" title="Edit"><i class="fa-solid fa-pen"></i></button></td>' +
+                    '</tr>';
+                });
+                html += '</tbody></table>';
+            }
+            $('#admin-aircraft-results').html(html);
+        });
+    }
+    loadAircraft();
+    $('#admin-aircraft-search-btn').on('click', loadAircraft);
+    $('#admin-aircraft-search').on('keypress', function(e) { if (e.which === 13) loadAircraft(); });
+
+    $(document).on('change', '.mil-civ-select', function() {
+        var $role = $(this).closest('form').find('.role-type-select');
+        var opts = getRoleOptions($(this).val());
+        $role.empty();
+        opts.forEach(function(o) { $role.append('<option value="' + o.v + '">' + escHtml(o.l) + '</option>'); });
+    });
+
+    $(document).on('click', '.edit-aircraft-btn', function() {
+        var id = $(this).data('id');
+        $.getJSON('/api/v1/aircraft/' + id, function(data) {
+            var a = data.aircraft;
+            editId = id;
+            $('#edit-modal-title').text('Edit Aircraft #' + id);
+            var fields = [
+                {name:'manufacturer', label:'Manufacturer', val: a.manufacturer, req: true},
+                {name:'model', label:'Model', val: a.model, req: true},
+                {name:'variant', label:'Variant', val: a.variant || ''},
+                {name:'tail_number', label:'Tail Number', val: a.tail_number || ''},
+                {name:'model_name', label:'Model Name', val: a.model_name || ''},
+                {name:'aircraft_name', label:'Aircraft Name', val: a.aircraft_name || ''},
+                {name:'year_built', label:'Year Built', val: a.year_built || '', type:'number'},
+                {name:'aircraft_type', label:'Aircraft Type', val: a.aircraft_type || 'fixed_wing', select: [
+                    {v:'fixed_wing', l:'Fixed Wing'}, {v:'rotary_wing', l:'Rotary Wing'},
+                    {v:'lighter_than_air', l:'Lighter Than Air'}, {v:'spacecraft', l:'Spacecraft'}
+                ]},
+                {name:'wing_type', label:'Wing Type', val: a.wing_type || '', select: [
+                    {v:'', l:'— N/A —'}, {v:'monoplane', l:'Monoplane'},
+                    {v:'biplane', l:'Biplane'}, {v:'triplane', l:'Triplane'}
+                ]},
+                {name:'military_civilian', label:'Military / Civilian', val: a.military_civilian || 'military', select: [
+                    {v:'military', l:'Military'}, {v:'civilian', l:'Civilian'}
+                ], cssClass: 'mil-civ-select'},
+                {name:'role_type', label:'Role', val: a.role_type || '', select:
+                    getRoleOptions(a.military_civilian || 'military'), cssClass: 'role-type-select'},
+                {name:'aliases', label:'Aliases (comma-separated)', val: (a.aliases || []).join(', ')},
+                {name:'description', label:'Description', val: a.description || '', textarea: true},
+            ];
+            renderEditFields(fields);
+            $('#edit-modal').fadeIn(200);
+        });
+    });
+
+    function renderEditFields(fields) {
+        var html = '<div class="form-grid">';
+        fields.forEach(function(f) {
+            var wide = f.textarea ? ' form-group-wide' : '';
+            html += '<div class="form-group' + wide + '">';
+            html += '<label>' + f.label + (f.req ? ' *' : '') + '</label>';
+            if (f.textarea) {
+                html += '<textarea name="' + f.name + '" rows="3">' + escHtml(f.val) + '</textarea>';
+            } else if (f.select) {
+                var cls = f.cssClass ? ' class="' + f.cssClass + '"' : '';
+                html += '<select name="' + f.name + '"' + (f.req ? ' required' : '') + cls + '>';
+                f.select.forEach(function(opt) {
+                    html += '<option value="' + opt.v + '"' + (opt.v === f.val ? ' selected' : '') + '>' + escHtml(opt.l) + '</option>';
+                });
+                html += '</select>';
+            } else {
+                html += '<input type="' + (f.type || 'text') + '" name="' + f.name + '" value="' + escHtml(String(f.val)) + '"' +
+                    (f.req ? ' required' : '') + (f.step ? ' step="' + f.step + '"' : '') + '>';
+            }
+            html += '</div>';
+        });
+        html += '</div>';
+        $('#edit-form-fields').html(html);
+        $('#edit-msg').hide();
+    }
+
+    $('#edit-form').on('submit', function(e) {
+        e.preventDefault();
+        var data = {};
+        $(this).serializeArray().forEach(function(item) { data[item.name] = item.value; });
+        if (data.year_built) data.year_built = parseInt(data.year_built);
+        if ('aliases' in data) {
+            data.aliases = data.aliases.split(',').map(function(s) { return s.trim(); }).filter(function(s) { return s; });
+        }
+        $.ajax({
+            url: '/api/v1/aircraft/' + editId, method: 'PUT', contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function() {
+                $('#edit-msg').html('<div class="alert alert-success"><i class="fa-solid fa-circle-check"></i> Saved!</div>').show();
+                loadAircraft();
+            },
+            error: function(xhr) {
+                $('#edit-msg').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText) + '</div>').show();
+            }
+        });
+    });
+
+    $('#edit-delete-btn').on('click', function() {
+        if (!confirm('Delete this aircraft? This cannot be undone.')) return;
+        $.ajax({
+            url: '/api/v1/aircraft/' + editId, method: 'DELETE',
+            success: function() { $('#edit-modal').fadeOut(200); loadAircraft(); },
+            error: function(xhr) {
+                $('#edit-msg').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText) + '</div>').show();
+            }
+        });
+    });
+
+    $('.modal-backdrop, .modal-close').on('click', function() { $('#edit-modal').fadeOut(200); });
+    $(document).on('keydown', function(e) { if (e.key === 'Escape') $('#edit-modal').fadeOut(200); });
+});
+</script>
+{% endblock %}

@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}Exhibits — Admin — Aircraft Finder{% endblock %}
+{% block nav_admin %}active{% endblock %}
+
+{% set admin_section = 'exhibits' %}
+
+{% block content %}
+{% include "_admin_nav.html" %}
+
+<div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;">
+        <h2><i class="fa-solid fa-link"></i> All Exhibit Links</h2>
+        <a href="/admin/exhibits/new" class="btn btn-primary"><i class="fa-solid fa-plus"></i> New Link</a>
+    </div>
+    <div class="search-bar" style="margin-top:.75rem;">
+        <input type="text" id="admin-exhibit-search" placeholder="Filter by aircraft or museum..." autocomplete="off">
+        <button class="btn btn-primary" id="admin-exhibit-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div id="admin-exhibit-results"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+$(function() {
+    function loadExhibits() {
+        var q = ($('#admin-exhibit-search').val() || '').toLowerCase();
+        $.getJSON('/api/v1/aircraft/search', {per_page: 200}, function(acData) {
+            var html = '<table class="result-table"><thead><tr><th>Aircraft</th><th>Museum</th><th>Status</th></tr></thead><tbody>';
+            var promises = [];
+            acData.results.forEach(function(a) {
+                promises.push($.getJSON('/api/v1/aircraft/' + a.id));
+            });
+            if (!promises.length) {
+                $('#admin-exhibit-results').html('<p class="no-results">No aircraft found.</p>');
+                return;
+            }
+            $.when.apply($, promises).done(function() {
+                var allResults = promises.length === 1 ? [arguments] : Array.from(arguments);
+                var rows = [];
+                allResults.forEach(function(res) {
+                    var d = res[0] || res;
+                    if (d.museums) {
+                        d.museums.forEach(function(m) { rows.push({aircraft: d.aircraft, museum: m}); });
+                    }
+                });
+                if (q) {
+                    rows = rows.filter(function(r) {
+                        return (r.aircraft.full_designation || '').toLowerCase().indexOf(q) >= 0 ||
+                               (r.aircraft.model_name || '').toLowerCase().indexOf(q) >= 0 ||
+                               (r.aircraft.aircraft_name || '').toLowerCase().indexOf(q) >= 0 ||
+                               (r.museum.name || '').toLowerCase().indexOf(q) >= 0;
+                    });
+                }
+                if (!rows.length) {
+                    $('#admin-exhibit-results').html('<p class="no-results">No exhibit links found.</p>');
+                    return;
+                }
+                rows.forEach(function(r) {
+                    var statusClass = 'status-' + (r.museum.display_status || 'on_display');
+                    var acLabel = escHtml(r.aircraft.full_designation || r.aircraft.model);
+                    if (r.aircraft.model_name) acLabel += ' ' + escHtml(r.aircraft.model_name);
+                    if (r.aircraft.aircraft_name) acLabel += ' "' + escHtml(r.aircraft.aircraft_name) + '"';
+                    html += '<tr>' +
+                        '<td>' + acLabel + '</td>' +
+                        '<td>' + escHtml(r.museum.name) + '</td>' +
+                        '<td><span class="badge ' + statusClass + '">' + (r.museum.display_status || 'on_display').replace(/_/g,' ') + '</span></td>' +
+                    '</tr>';
+                });
+                html += '</tbody></table>';
+                $('#admin-exhibit-results').html(html);
+            });
+        });
+    }
+    loadExhibits();
+    $('#admin-exhibit-search-btn').on('click', loadExhibits);
+    $('#admin-exhibit-search').on('keypress', function(e) { if (e.which === 13) loadExhibits(); });
+});
+</script>
+{% endblock %}

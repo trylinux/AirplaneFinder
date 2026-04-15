@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}New Exhibit Link — Admin — Aircraft Finder{% endblock %}
+{% block nav_admin %}active{% endblock %}
+
+{% set admin_section = 'exhibits' %}
+
+{% block content %}
+{% include "_admin_nav.html" %}
+
+<div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;">
+        <h2><i class="fa-solid fa-link"></i> Link Aircraft to Museum</h2>
+        <a href="/admin/exhibits" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i> Back to List</a>
+    </div>
+
+    <form id="form-link" class="admin-form" style="margin-top:1rem;">
+        <div class="form-grid">
+            <div class="form-group"><label>Aircraft ID *</label>
+                <input type="number" name="aircraft_id" required placeholder="Aircraft ID"></div>
+            <div class="form-group"><label>Museum ID *</label>
+                <input type="number" name="museum_id" required placeholder="Museum ID"></div>
+            <div class="form-group"><label>Display Status</label>
+                <select name="display_status">
+                    <option value="on_display">On Display</option>
+                    <option value="in_storage">In Storage</option>
+                    <option value="on_loan">On Loan</option>
+                    <option value="under_restoration">Under Restoration</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group"><label>Notes</label>
+            <textarea name="notes" rows="2" placeholder="Optional notes..."></textarea></div>
+        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-link"></i> Link</button>
+    </form>
+    <div id="msg-link" class="form-message" style="display:none;"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+$(function() {
+    $('#form-link').on('submit', function(e) {
+        e.preventDefault();
+        var data = {};
+        $(this).serializeArray().forEach(function(item) { if (item.value) data[item.name] = item.value; });
+        if (data.aircraft_id) data.aircraft_id = parseInt(data.aircraft_id);
+        if (data.museum_id) data.museum_id = parseInt(data.museum_id);
+        $.ajax({
+            url: '/api/v1/exhibits', method: 'POST', contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function(resp) {
+                $('#msg-link').html('<div class="alert alert-success"><i class="fa-solid fa-circle-check"></i> Linked! — <a href="/admin/exhibits">view list</a></div>').show();
+                $('#form-link')[0].reset();
+            },
+            error: function(xhr) {
+                $('#msg-link').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + (xhr.responseJSON ? JSON.stringify(xhr.responseJSON) : xhr.statusText) + '</div>').show();
+            }
+        });
+    });
+});
+</script>
+{% endblock %}

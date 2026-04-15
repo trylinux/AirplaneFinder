@@ -292,6 +292,42 @@ def admin_page():
     return render_template("admin.html")
 
 
+@app.route("/admin/aircraft")
+@login_required
+def admin_aircraft_page():
+    return render_template("admin_aircraft.html")
+
+
+@app.route("/admin/aircraft/new")
+@login_required
+def admin_aircraft_new_page():
+    return render_template("admin_aircraft_new.html")
+
+
+@app.route("/admin/museums")
+@login_required
+def admin_museums_page():
+    return render_template("admin_museums.html")
+
+
+@app.route("/admin/museums/new")
+@login_required
+def admin_museums_new_page():
+    return render_template("admin_museums_new.html")
+
+
+@app.route("/admin/exhibits")
+@login_required
+def admin_exhibits_page():
+    return render_template("admin_exhibits.html")
+
+
+@app.route("/admin/exhibits/new")
+@login_required
+def admin_exhibits_new_page():
+    return render_template("admin_exhibits_new.html")
+
+
 @app.route("/admin/users")
 @admin_required
 def admin_users_page():
@@ -415,6 +451,39 @@ def api_museum_regions():
     """List all regions with museum counts."""
     rows = db.session.query(Museum.region, func.count(Museum.id)).group_by(Museum.region).all()
     return jsonify([{"region": r, "count": c} for r, c in rows])
+
+
+@app.route("/api/v1/museums/globe")
+def api_museums_globe():
+    """Lightweight endpoint for the 3D globe view.
+
+    Returns only the fields needed to plot each museum as a pin plus the
+    total number of aircraft linked to it. Museums without coordinates are
+    skipped.
+    """
+    rows = (
+        db.session.query(
+            Museum.id, Museum.name, Museum.city, Museum.country,
+            Museum.latitude, Museum.longitude,
+            func.count(AircraftMuseum.id),
+        )
+        .outerjoin(AircraftMuseum, AircraftMuseum.museum_id == Museum.id)
+        .filter(Museum.latitude.isnot(None), Museum.longitude.isnot(None))
+        .group_by(Museum.id)
+        .all()
+    )
+    return jsonify([
+        {
+            "id": mid,
+            "name": name,
+            "city": city,
+            "country": country,
+            "latitude": float(lat),
+            "longitude": float(lon),
+            "aircraft_count": int(count),
+        }
+        for (mid, name, city, country, lat, lon, count) in rows
+    ])
 
 
 @app.route("/api/v1/museums/countries")

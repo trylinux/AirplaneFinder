@@ -2,18 +2,16 @@
 {% block title %}User Management — Aircraft Finder{% endblock %}
 {% block nav_admin %}active{% endblock %}
 
+{% set admin_section = 'users' %}
+
 {% block content %}
-<div class="page-header">
-    <div class="page-header-row">
-        <div>
-            <h1><i class="fa-solid fa-users-gear"></i> User Management</h1>
-            <p class="subtitle">Create, edit, and manage all user accounts</p>
-        </div>
-        <a href="/admin" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i> Back to Admin</a>
-    </div>
+{% include "_admin_nav.html" %}
+
+<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem;">
+    <h2 style="margin:0;"><i class="fa-solid fa-users-gear"></i> User Management</h2>
 </div>
 
-<!-- Tab Navigation -->
+<!-- User sub-tabs: All / New -->
 <div class="tab-nav">
     <button class="tab-btn active" data-tab="tab-all-users">All Users</button>
     <button class="tab-btn" data-tab="tab-create-user"><i class="fa-solid fa-user-plus"></i> New User</button>

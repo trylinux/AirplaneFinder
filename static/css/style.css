@@ -65,7 +65,7 @@ a:hover { text-decoration: underline; }
 .nav-link i { margin-right: .35rem; }
 
 /* ─── Main ───────────────────────────────── */
-.main-content { flex: 1; padding: 2rem 0; }
+.main-content { flex: 1; padding: 3rem 0 2rem; }
 
 .page-header { margin-bottom: 1.75rem; }
 .page-header h1 { font-size: 1.75rem; font-weight: 700; }

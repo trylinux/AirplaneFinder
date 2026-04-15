@@ -2,10 +2,14 @@
 {% block title %}API Keys — Aircraft Finder{% endblock %}
 {% block nav_admin %}active{% endblock %}
 
+{% set admin_section = 'api-keys' %}
+
 {% block content %}
-<div class="page-header">
-    <h1><i class="fa-solid fa-key"></i> API Keys</h1>
-    <p class="subtitle">Manage API keys for programmatic access to the REST API</p>
+{% include "_admin_nav.html" %}
+
+<div style="margin-bottom:1rem;">
+    <h2 style="margin:0;"><i class="fa-solid fa-key"></i> API Keys</h2>
+    <p class="subtitle" style="margin-top:.25rem;">Manage API keys for programmatic access to the REST API</p>
 </div>
 
 <div class="card">
