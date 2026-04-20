@@ -602,7 +602,6 @@ $(function() {
 
         // Drag to rotate
         var dragging = false, lastX = 0, lastY = 0;
-        var hovering = false;
         var spinPaused = false;
         var rotY = 0, rotX = 0.25; // base tilt
 
@@ -628,14 +627,24 @@ $(function() {
             }
         });
 
-        canvas.addEventListener('pointerenter', function() { hovering = true; });
+        var dragStartX = 0, dragStartY = 0, didDrag = false;
         canvas.addEventListener('pointerdown', function(e) {
             dragging = true; lastX = e.clientX; lastY = e.clientY;
+            dragStartX = e.clientX; dragStartY = e.clientY;
+            didDrag = false;
             canvas.setPointerCapture(e.pointerId);
         });
         canvas.addEventListener('pointerup', function(e) {
             dragging = false;
             try { canvas.releasePointerCapture(e.pointerId); } catch(_) {}
+
+            // Click (not drag) on a hovered pin → open museum detail
+            if (!didDrag && hovered !== null) {
+                var museumId = hovered;
+                $.getJSON('/api/museums/' + museumId, function(data) {
+                    renderMuseumDetail(data);
+                });
+            }
         });
         canvas.addEventListener('pointermove', function(e) {
             var rect = canvas.getBoundingClientRect();
@@ -644,6 +653,8 @@ $(function() {
             if (dragging) {
                 var dx = e.clientX - lastX;
                 var dy = e.clientY - lastY;
+                // If the pointer moved more than 4px, it's a drag not a click
+                if (Math.abs(e.clientX - dragStartX) + Math.abs(e.clientY - dragStartY) > 4) didDrag = true;
                 rotY += dx * 0.005;
                 rotX = Math.max(-1.3, Math.min(1.3, rotX + dy * 0.005));
                 lastX = e.clientX; lastY = e.clientY;
@@ -654,7 +665,6 @@ $(function() {
         });
         canvas.addEventListener('pointerleave', function() {
             dragging = false;
-            hovering = false;
             hovered = null;
             tooltip.classList.remove('show');
         });

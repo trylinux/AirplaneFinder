@@ -36,6 +36,7 @@ CREATE TABLE IF NOT EXISTS api_keys (
     is_active   BOOLEAN      DEFAULT TRUE,
     permissions VARCHAR(50)  DEFAULT 'read',       -- 'read', 'readwrite', 'admin'
     created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    expires_at  TIMESTAMP    NULL DEFAULT NULL,    -- NULL = never expires
     last_used   TIMESTAMP    NULL DEFAULT NULL,
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
     INDEX idx_key_hash (key_hash)
@@ -108,7 +109,7 @@ CREATE TABLE IF NOT EXISTS aircraft (
     military_civilian ENUM('military','civilian') NOT NULL DEFAULT 'military',
     role_type       VARCHAR(30)  DEFAULT NULL,        -- depends on military_civilian
                     -- Military: bomber, transport, recon, electronic_warfare, fighter,
-                    --           tanker, search_rescue, ground_attack, utility
+                    --           tanker, search_rescue, ground_attack, utility, test, drone
                     -- Civilian: commercial_transport, freighter, private, experimental,
                     --           utility, space, other
     year_built      INT          DEFAULT NULL,

@@ -57,7 +57,7 @@ def _geopy_lookup(query_str):
         return None, None
 
     try:
-        geolocator = GeopyNominatim(user_agent="aircraft-museum-tracker", timeout=5)
+        geolocator = GeopyNominatim(user_agent="aircraft-finder", timeout=5)
         location = geolocator.geocode(query_str)
         if location:
             return float(location.latitude), float(location.longitude)

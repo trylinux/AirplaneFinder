@@ -11,7 +11,7 @@ Features:
   - Structured logging: auth, changes, access
 """
 
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from functools import wraps
 
 from flask import (
@@ -22,6 +22,9 @@ from flask_login import (
     LoginManager, login_user, logout_user,
     login_required, current_user,
 )
+from flask_wtf.csrf import CSRFProtect, CSRFError
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
 from sqlalchemy import or_, func
 
 from models import (
@@ -38,10 +41,33 @@ from logger import auth_log, change_log, access_log
 # App factory
 # ══════════════════════════════════════════════
 
+csrf = CSRFProtect()
+limiter = Limiter(key_func=get_remote_address, default_limits=[])
+
+
 def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
     db.init_app(app)
+    csrf.init_app(app)
+    limiter.init_app(app)
+
+    @app.before_request
+    def _csrf_skip_bearer():
+        """Exempt requests using Bearer-token auth from CSRF checks.
+
+        External API clients authenticate via Authorization header and don't
+        carry a CSRF cookie.  Session-based AJAX calls from the admin UI
+        include the X-CSRFToken header set up in base.html.
+        """
+        if request.headers.get("Authorization", "").startswith("Bearer "):
+            view = app.view_functions.get(request.endpoint)
+            if view and not getattr(view, "_csrf_exempt", False):
+                view._csrf_exempt = True
+
+    @app.errorhandler(CSRFError)
+    def _handle_csrf_error(e):
+        return jsonify({"error": "CSRF validation failed. Reload the page and try again."}), 400
 
     login_manager = LoginManager()
     login_manager.login_view = "login_page"
@@ -205,6 +231,7 @@ def museums_page():
 # ══════════════════════════════════════════════
 
 @app.route("/login", methods=["GET", "POST"])
+@limiter.limit("5 per minute", methods=["POST"])
 def login_page():
     if current_user.is_authenticated:
         return redirect(url_for("admin_page"))
@@ -240,6 +267,7 @@ def logout():
 
 
 @app.route("/register", methods=["GET", "POST"])
+@limiter.limit("3 per minute", methods=["POST"])
 def register_page():
     if current_user.is_authenticated:
         return redirect(url_for("admin_page"))
@@ -954,7 +982,11 @@ def api_list_keys():
 @app.route("/api/v1/keys", methods=["POST"])
 @login_required
 def api_create_key():
-    """Generate a new API key for the current user."""
+    """Generate a new API key for the current user.
+
+    Optional ``expires_in_days``: set to a positive integer to auto-expire the
+    key after that many days.  Omit or pass ``null`` for a key that never expires.
+    """
     data = request.get_json() or {}
     label = data.get("label", "default")
     permissions = data.get("permissions", "read")
@@ -963,7 +995,18 @@ def api_create_key():
     if permissions == "admin" and not current_user.is_admin:
         return jsonify({"error": "Only admins can create admin-level keys."}), 403
 
-    api_key, raw_key = ApiKey.generate(current_user.id, label=label, permissions=permissions)
+    expires_at = None
+    expires_in = data.get("expires_in_days")
+    if expires_in is not None:
+        try:
+            days = int(expires_in)
+            if days < 1:
+                return jsonify({"error": "expires_in_days must be a positive integer."}), 400
+            expires_at = datetime.now(timezone.utc) + timedelta(days=days)
+        except (ValueError, TypeError):
+            return jsonify({"error": "expires_in_days must be a positive integer."}), 400
+
+    api_key, raw_key = ApiKey.generate(current_user.id, label=label, permissions=permissions, expires_at=expires_at)
     db.session.add(api_key)
     db.session.commit()
     auth_log.info(f"API_KEY_CREATE user={current_user.username} label={label} perms={permissions}")

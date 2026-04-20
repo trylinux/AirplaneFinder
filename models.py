@@ -2,6 +2,7 @@
 
 import secrets
 import hashlib
+from datetime import datetime, timezone
 from math import radians, sin, cos, sqrt, atan2
 
 from flask_sqlalchemy import SQLAlchemy
@@ -125,6 +126,7 @@ class ApiKey(db.Model):
     is_active = db.Column(db.Boolean, default=True)
     permissions = db.Column(db.String(50), default="read")  # read, readwrite, admin
     created_at = db.Column(db.DateTime, server_default=db.func.now())
+    expires_at = db.Column(db.DateTime, nullable=True)        # NULL = never expires
     last_used = db.Column(db.DateTime, nullable=True)
 
     user = db.relationship("User", back_populates="api_keys")
@@ -134,7 +136,7 @@ class ApiKey(db.Model):
         return hashlib.sha256(raw_key.encode()).hexdigest()
 
     @classmethod
-    def generate(cls, user_id, label="default", permissions="read"):
+    def generate(cls, user_id, label="default", permissions="read", expires_at=None):
         """Create a new API key; returns (ApiKey object, raw_key)."""
         raw_key = "amt_" + secrets.token_hex(24)  # 48-char hex + prefix
         obj = cls(
@@ -143,14 +145,26 @@ class ApiKey(db.Model):
             key_prefix=raw_key[:12],              # store "amt_XXXXXXXX" for display
             label=label,
             permissions=permissions,
+            expires_at=expires_at,
         )
         return obj, raw_key
 
+    @property
+    def is_expired(self):
+        """True if the key has an expiry date that has passed."""
+        if self.expires_at is None:
+            return False
+        exp = self.expires_at if self.expires_at.tzinfo else self.expires_at.replace(tzinfo=timezone.utc)
+        return datetime.now(timezone.utc) > exp
+
     @classmethod
     def lookup(cls, raw_key):
-        """Find an active ApiKey by raw key string."""
+        """Find an active, non-expired ApiKey by raw key string."""
         h = cls.hash_key(raw_key)
-        return cls.query.filter_by(key_hash=h, is_active=True).first()
+        key = cls.query.filter_by(key_hash=h, is_active=True).first()
+        if key and key.is_expired:
+            return None
+        return key
 
     def to_dict(self):
         return {
@@ -160,7 +174,9 @@ class ApiKey(db.Model):
             "label": self.label,
             "permissions": self.permissions,
             "is_active": self.is_active,
+            "is_expired": self.is_expired,
             "created_at": self.created_at.isoformat() if self.created_at else None,
+            "expires_at": self.expires_at.isoformat() if self.expires_at else None,
             "last_used": self.last_used.isoformat() if self.last_used else None,
         }
 

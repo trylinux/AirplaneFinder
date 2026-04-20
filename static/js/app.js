@@ -1,3 +1,20 @@
+/* ─── CSRF token setup ────────────────────── */
+
+// Send the CSRF token with every jQuery AJAX request so that
+// session-based POST/PUT/PATCH/DELETE calls pass Flask-WTF validation.
+$(function() {
+    var csrfToken = $('meta[name="csrf-token"]').attr('content');
+    if (csrfToken) {
+        $.ajaxSetup({
+            beforeSend: function(xhr, settings) {
+                if (!/^(GET|HEAD|OPTIONS)$/i.test(settings.type)) {
+                    xhr.setRequestHeader('X-CSRFToken', csrfToken);
+                }
+            }
+        });
+    }
+});
+
 /* ─── Shared utilities ────────────────────── */
 
 function escHtml(str) {
