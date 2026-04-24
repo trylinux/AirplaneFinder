@@ -28,6 +28,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    border-top: 1px solid var(--border);
 }
 
 a { color: var(--accent); text-decoration: none; }
