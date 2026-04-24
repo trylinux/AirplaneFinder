@@ -4,6 +4,42 @@
 
 {% set admin_section = 'aircraft' %}
 
+{% block head %}
+<style>
+    .museum-autocomplete {
+        position: absolute;
+        top: 100%;
+        left: 0; right: 0;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 0 0 var(--radius) var(--radius);
+        max-height: 220px;
+        overflow-y: auto;
+        z-index: 20;
+        box-shadow: 0 8px 24px rgba(0,0,0,.4);
+    }
+    .museum-autocomplete .ac-item {
+        padding: .55rem .75rem;
+        cursor: pointer;
+        border-bottom: 1px solid rgba(255,255,255,.05);
+        font-size: .88rem;
+    }
+    .museum-autocomplete .ac-item:hover,
+    .museum-autocomplete .ac-item.highlighted {
+        background: rgba(100,160,255,.15);
+    }
+    .museum-autocomplete .ac-item .ac-city {
+        color: var(--text-dim);
+        font-size: .78rem;
+    }
+    .museum-autocomplete .ac-new {
+        color: #60a5fa;
+        font-weight: 600;
+        border-top: 1px solid rgba(100,160,255,.2);
+    }
+</style>
+{% endblock %}
+
 {% block content %}
 {% include "_admin_nav.html" %}
 
@@ -49,10 +85,15 @@
                     <option value="">— Select —</option>
                 </select>
             </div>
-            <div class="form-group"><label>Assign to Museum</label>
-                <select name="museum_id" id="create-aircraft-museum">
-                    <option value="">— None —</option>
-                </select>
+            <div class="form-group" style="position:relative;">
+                <label>Assign to Museum</label>
+                <input type="text" id="museum-search-input" placeholder="Search or type a new museum name..." autocomplete="off">
+                <input type="hidden" name="museum_id" id="create-aircraft-museum">
+                <div id="museum-dropdown" class="museum-autocomplete" style="display:none;"></div>
+                <div id="museum-selected" style="display:none;margin-top:.35rem;">
+                    <span class="badge status-on_display" id="museum-selected-name"></span>
+                    <button type="button" class="btn btn-secondary btn-sm" id="museum-clear" style="margin-left:.35rem;"><i class="fa-solid fa-xmark"></i></button>
+                </div>
             </div>
             <div class="form-group" id="create-aircraft-status-group" style="display:none;">
                 <label>Display Status</label>
@@ -64,6 +105,39 @@
                 </select>
             </div>
         </div>
+        <!-- Inline create-museum panel (shown when user types a new museum name) -->
+        <div id="new-museum-panel" class="form-group-wide" style="display:none;border:1px solid rgba(120,180,255,.3);border-radius:8px;padding:1rem;margin-bottom:1rem;background:rgba(10,20,40,.4);">
+            <h3 style="margin:0 0 .75rem;font-size:.95rem;"><i class="fa-solid fa-building-columns"></i> Create New Museum</h3>
+            <div class="form-grid">
+                <div class="form-group"><label>Museum Name *</label>
+                    <input type="text" id="new-museum-name" required></div>
+                <div class="form-group"><label>City *</label>
+                    <input type="text" id="new-museum-city" required placeholder="e.g. Dayton"></div>
+                <div class="form-group"><label>State / Province</label>
+                    <input type="text" id="new-museum-state" placeholder="e.g. Ohio"></div>
+                <div class="form-group"><label>Country *</label>
+                    <input type="text" id="new-museum-country" required placeholder="e.g. United States" value="United States"></div>
+                <div class="form-group"><label>Region *</label>
+                    <select id="new-museum-region" required>
+                        <option value="North America">North America</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Asia">Asia</option>
+                        <option value="South America">South America</option>
+                        <option value="Oceania">Oceania</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Middle East">Middle East</option>
+                    </select>
+                </div>
+                <div class="form-group"><label>Website</label>
+                    <input type="text" id="new-museum-website" placeholder="https://..."></div>
+            </div>
+            <div style="display:flex;gap:.5rem;margin-top:.5rem;">
+                <button type="button" id="new-museum-save" class="btn btn-primary btn-sm"><i class="fa-solid fa-plus"></i> Create & Assign</button>
+                <button type="button" id="new-museum-cancel" class="btn btn-secondary btn-sm">Cancel</button>
+            </div>
+            <div id="new-museum-msg" style="margin-top:.5rem;display:none;"></div>
+        </div>
+
         <div class="form-group form-group-wide"><label>Aliases (comma-separated alternate names)</label>
             <input type="text" name="aliases" placeholder="e.g. B29, Superfortress, Super Fort"></div>
         <div class="form-group form-group-wide"><label>Description</label>
@@ -105,16 +179,139 @@ $(function() {
     $(document).on('change', '.mil-civ-select', updateRoleDropdown);
     updateRoleDropdown();
 
-    // Populate museum dropdown
-    $.getJSON('/api/v1/museums/search', {per_page: 500}, function(data) {
-        var sel = $('#create-aircraft-museum');
-        data.results.forEach(function(m) {
-            sel.append('<option value="' + m.id + '">' + escHtml(m.name + ' (' + m.city + ')') + '</option>');
+    // ── Museum autocomplete + inline create ──
+    var _allMuseums = [];
+    function loadMuseumList() {
+        $.getJSON('/api/v1/museums/search', {per_page: 500}, function(data) {
+            _allMuseums = data.results || [];
         });
+    }
+    loadMuseumList();
+
+    var $mInput = $('#museum-search-input'),
+        $mDrop  = $('#museum-dropdown'),
+        $mHidden = $('#create-aircraft-museum'),
+        $mSel   = $('#museum-selected'),
+        $mSelName = $('#museum-selected-name'),
+        hlIdx   = -1;
+
+    function selectMuseum(id, name) {
+        $mHidden.val(id);
+        $mSelName.text(name);
+        $mSel.show();
+        $mInput.hide();
+        $mDrop.hide();
+        $('#new-museum-panel').hide();
+        $('#create-aircraft-status-group').show();
+    }
+
+    function clearMuseum() {
+        $mHidden.val('');
+        $mSelName.text('');
+        $mSel.hide();
+        $mInput.val('').show().focus();
+        $('#create-aircraft-status-group').hide();
+    }
+
+    $('#museum-clear').on('click', clearMuseum);
+
+    $mInput.on('input', function() {
+        var q = $(this).val().trim().toLowerCase();
+        if (!q) { $mDrop.hide(); return; }
+        var matches = _allMuseums.filter(function(m) {
+            return m.name.toLowerCase().indexOf(q) >= 0 ||
+                   m.city.toLowerCase().indexOf(q) >= 0 ||
+                   (m.country && m.country.toLowerCase().indexOf(q) >= 0);
+        }).slice(0, 10);
+
+        var html = '';
+        matches.forEach(function(m, i) {
+            html += '<div class="ac-item" data-id="' + m.id + '" data-name="' + escHtml(m.name) + ' (' + escHtml(m.city) + ')" data-idx="' + i + '">' +
+                escHtml(m.name) + ' <span class="ac-city">' + escHtml(m.city + ', ' + m.country) + '</span></div>';
+        });
+        // "Create new" option at the bottom
+        html += '<div class="ac-item ac-new" data-action="create"><i class="fa-solid fa-plus"></i> Create "' + escHtml($mInput.val().trim()) + '" as a new museum</div>';
+
+        hlIdx = -1;
+        $mDrop.html(html).show();
     });
 
-    $('#create-aircraft-museum').on('change', function() {
-        $('#create-aircraft-status-group').toggle(!!$(this).val());
+    // Click on autocomplete item
+    $(document).on('click', '.ac-item', function() {
+        if ($(this).data('action') === 'create') {
+            showNewMuseumPanel();
+        } else {
+            selectMuseum($(this).data('id'), $(this).data('name'));
+        }
+    });
+
+    // Keyboard navigation
+    $mInput.on('keydown', function(e) {
+        var $items = $mDrop.find('.ac-item');
+        if (!$items.length) return;
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            hlIdx = Math.min(hlIdx + 1, $items.length - 1);
+            $items.removeClass('highlighted').eq(hlIdx).addClass('highlighted');
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            hlIdx = Math.max(hlIdx - 1, 0);
+            $items.removeClass('highlighted').eq(hlIdx).addClass('highlighted');
+        } else if (e.key === 'Enter') {
+            e.preventDefault();
+            if (hlIdx >= 0) $items.eq(hlIdx).trigger('click');
+        } else if (e.key === 'Escape') {
+            $mDrop.hide();
+        }
+    });
+
+    // Close dropdown when clicking elsewhere
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('#museum-search-input, #museum-dropdown').length) $mDrop.hide();
+    });
+
+    // ── Inline new-museum panel ──
+    function showNewMuseumPanel() {
+        $mDrop.hide();
+        var typed = $mInput.val().trim();
+        $('#new-museum-name').val(typed);
+        $('#new-museum-panel').slideDown(200);
+        $('#new-museum-city').focus();
+    }
+
+    $('#new-museum-cancel').on('click', function() {
+        $('#new-museum-panel').slideUp(200);
+        $mInput.focus();
+    });
+
+    $('#new-museum-save').on('click', function() {
+        var payload = {
+            name: $('#new-museum-name').val().trim(),
+            city: $('#new-museum-city').val().trim(),
+            state_province: $('#new-museum-state').val().trim() || undefined,
+            country: $('#new-museum-country').val().trim(),
+            region: $('#new-museum-region').val(),
+            website: $('#new-museum-website').val().trim() || undefined
+        };
+        if (!payload.name || !payload.city || !payload.country || !payload.region) {
+            $('#new-museum-msg').html('<div class="alert alert-error">Name, city, country, and region are required.</div>').show();
+            return;
+        }
+        $.ajax({
+            url: '/api/v1/museums', method: 'POST', contentType: 'application/json',
+            data: JSON.stringify(payload),
+            success: function(resp) {
+                // Add to local cache and select it
+                _allMuseums.push(resp);
+                selectMuseum(resp.id, resp.name + ' (' + resp.city + ')');
+                $('#new-museum-panel').slideUp(200);
+                $('#new-museum-msg').hide();
+            },
+            error: function(xhr) {
+                $('#new-museum-msg').html('<div class="alert alert-error">' +
+                    (xhr.responseJSON ? JSON.stringify(xhr.responseJSON) : xhr.statusText) + '</div>').show();
+            }
+        });
     });
 
     $('#form-aircraft').on('submit', function(e) {
@@ -132,7 +329,7 @@ $(function() {
             success: function(resp) {
                 $('#msg-aircraft').html('<div class="alert alert-success"><i class="fa-solid fa-circle-check"></i> Created! ID: ' + (resp.id || 'OK') + ' — <a href="/admin/aircraft">view list</a></div>').show();
                 $('#form-aircraft')[0].reset();
-                $('#create-aircraft-status-group').hide();
+                clearMuseum();
                 updateRoleDropdown();
             },
             error: function(xhr) {
