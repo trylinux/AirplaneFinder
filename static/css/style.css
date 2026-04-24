@@ -126,8 +126,25 @@ a:hover { text-decoration: underline; }
     margin-left: var(--sidebar-w);
     display: flex; flex-direction: column;
     min-height: 100vh;
+    /* Safety net: if anything inside (a wide table, a long <pre>, an image
+       without max-width) tries to exceed the content column, clip it here
+       instead of letting it blow out the viewport. Using `clip` avoids
+       creating a scrolling container (which `hidden` would); the wide
+       element itself is expected to provide its own scroll wrapper below. */
+    overflow-x: clip;
 }
 .main-content { flex: 1; padding: 3rem 0 2rem; }
+
+/* Wide-table scroll containers. Admin/data tables can exceed the content
+   column on narrow displays or when they have many columns. Keeping the
+   horizontal scrollbar on the result wrapper means the table scrolls
+   within its card — the page layout (and the sidebar) stay put. */
+[id$="-results"],
+[id$="-list"],
+.results-container {
+    max-width: 100%;
+    overflow-x: auto;
+}
 
 .page-header { margin-bottom: 1.75rem; }
 .page-header h1 { font-size: 1.75rem; font-weight: 700; }

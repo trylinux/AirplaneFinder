@@ -16,7 +16,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- ?v= cache-buster: bump this string whenever style.css changes so browsers
+         pick up the new file without requiring users to hard-refresh. -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=sidebar-2">
     {% block head %}{% endblock %}
 </head>
 <body>
