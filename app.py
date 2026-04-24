@@ -26,6 +26,7 @@ from flask_wtf.csrf import CSRFProtect, CSRFError
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from sqlalchemy import or_, func
+from sqlalchemy.orm import joinedload, selectinload
 
 from models import (
     db, User, ApiKey,
@@ -41,7 +42,27 @@ from logger import auth_log, change_log, access_log
 # App factory
 # ══════════════════════════════════════════════
 
-csrf = CSRFProtect()
+class _BearerAwareCSRF(CSRFProtect):
+    """CSRF protection that skips validation for requests authenticated via
+    Authorization: Bearer header.
+
+    Bearer-token auth is not vulnerable to CSRF because browsers do not attach
+    the header automatically — possession of the token IS the authorization.
+    Session (cookie) requests still go through the full CSRF flow; session AJAX
+    from the admin UI includes the X-CSRFToken header set in base.html.
+
+    The previous implementation mutated the view function's ``__dict__`` to mark
+    it exempt after the first Bearer request, which leaked that exemption to
+    every subsequent caller — including unauthenticated ones.
+    """
+
+    def protect(self):
+        if request.headers.get("Authorization", "").startswith("Bearer "):
+            return
+        return super().protect()
+
+
+csrf = _BearerAwareCSRF()
 limiter = Limiter(key_func=get_remote_address, default_limits=[])
 
 
@@ -51,19 +72,6 @@ def create_app():
     db.init_app(app)
     csrf.init_app(app)
     limiter.init_app(app)
-
-    @app.before_request
-    def _csrf_skip_bearer():
-        """Exempt requests using Bearer-token auth from CSRF checks.
-
-        External API clients authenticate via Authorization header and don't
-        carry a CSRF cookie.  Session-based AJAX calls from the admin UI
-        include the X-CSRFToken header set up in base.html.
-        """
-        if request.headers.get("Authorization", "").startswith("Bearer "):
-            view = app.view_functions.get(request.endpoint)
-            if view and not getattr(view, "_csrf_exempt", False):
-                view._csrf_exempt = True
 
     @app.errorhandler(CSRFError)
     def _handle_csrf_error(e):
@@ -120,6 +128,9 @@ def _log_response(response):
 # API-key authentication decorator
 # ══════════════════════════════════════════════
 
+_LAST_USED_THROTTLE_SECONDS = 60
+
+
 def _get_api_user():
     """Return (User, ApiKey) from the Authorization header, or (None, None)."""
     auth = request.headers.get("Authorization", "")
@@ -127,8 +138,16 @@ def _get_api_user():
         raw_key = auth[7:].strip()
         api_key = ApiKey.lookup(raw_key)
         if api_key:
-            api_key.last_used = datetime.now(timezone.utc)
-            db.session.commit()
+            # Throttle last_used writes: only update if the previous value is
+            # missing or stale. This keeps the auth-check path read-only on hot
+            # traffic instead of committing a row on every request.
+            now = datetime.now(timezone.utc)
+            prev = api_key.last_used
+            if prev is not None and prev.tzinfo is None:
+                prev = prev.replace(tzinfo=timezone.utc)
+            if prev is None or (now - prev).total_seconds() > _LAST_USED_THROTTLE_SECONDS:
+                api_key.last_used = now
+                db.session.commit()
             return api_key.user, api_key
     return None, None
 
@@ -380,12 +399,18 @@ def contributors_page():
 @app.route("/api/v1/contributors")
 def api_contributors():
     """Public endpoint: list users with contribution counts, sorted by most contributions."""
-    users = User.query.filter(User.contribution_count > 0).order_by(User.contribution_count.desc()).all()
-    return jsonify([{
-        "username": u.username,
-        "role": u.role,
-        "contributions": u.contribution_count,
-    } for u in users])
+    # Column-only query: avoids loading full User rows (and their relationships)
+    # just to serialize three fields.
+    rows = (
+        db.session.query(User.username, User.role, User.contribution_count)
+        .filter(User.contribution_count > 0)
+        .order_by(User.contribution_count.desc())
+        .all()
+    )
+    return jsonify([
+        {"username": username, "role": role, "contributions": count}
+        for username, role, count in rows
+    ])
 
 
 # ══════════════════════════════════════════════
@@ -405,7 +430,10 @@ def _build_aircraft_filter(q):
         Aircraft.aircraft_name.ilike(like),
         Aircraft.model.ilike(like),
         Aircraft.variant.ilike(like),
-        db.func.concat(Aircraft.model, db.func.ifnull(db.func.concat('-', Aircraft.variant), '')).ilike(like),
+        # Use the STORED generated column (indexed as idx_full_desig) instead
+        # of computing CONCAT(model, '-', variant) per row, which would defeat
+        # the index and force a full table scan.
+        Aircraft.full_designation.ilike(like),
         Aircraft.manufacturer.ilike(like),
         Aircraft.id.in_(alias_ids),
     )
@@ -430,7 +458,12 @@ def api_aircraft_search():
 def api_aircraft_detail(aircraft_id):
     """Get a single aircraft with its museum locations."""
     aircraft = Aircraft.query.get_or_404(aircraft_id)
-    links = AircraftMuseum.query.filter_by(aircraft_id=aircraft_id).all()
+    links = (
+        AircraftMuseum.query
+        .options(joinedload(AircraftMuseum.museum))
+        .filter_by(aircraft_id=aircraft_id)
+        .all()
+    )
     museums = [{**lnk.museum.to_dict(), "display_status": lnk.display_status, "notes": lnk.notes} for lnk in links]
     return jsonify({"aircraft": aircraft.to_dict(), "museums": museums})
 
@@ -469,7 +502,12 @@ def api_museum_search():
 def api_museum_detail(museum_id):
     """Get a single museum with its aircraft collection."""
     museum = Museum.query.get_or_404(museum_id)
-    links = AircraftMuseum.query.filter_by(museum_id=museum_id).all()
+    links = (
+        AircraftMuseum.query
+        .options(joinedload(AircraftMuseum.aircraft))
+        .filter_by(museum_id=museum_id)
+        .all()
+    )
     aircraft_list = [{**lnk.aircraft.to_dict(), "display_status": lnk.display_status, "notes": lnk.notes} for lnk in links]
     return jsonify({"museum": museum.to_dict(), "aircraft": aircraft_list})
 
@@ -497,7 +535,12 @@ def api_museums_globe():
         )
         .outerjoin(AircraftMuseum, AircraftMuseum.museum_id == Museum.id)
         .filter(Museum.latitude.isnot(None), Museum.longitude.isnot(None))
-        .group_by(Museum.id)
+        # Group by every selected non-aggregate column so this stays valid
+        # under MySQL's ONLY_FULL_GROUP_BY sql_mode (the default in 5.7+).
+        .group_by(
+            Museum.id, Museum.name, Museum.city, Museum.country,
+            Museum.latitude, Museum.longitude,
+        )
         .all()
     )
     return jsonify([
@@ -546,15 +589,20 @@ def api_nearest_museum():
     if not matching:
         return jsonify({"error": f"No aircraft matching '{aircraft_query}' found."}), 404
 
-    links_query = AircraftMuseum.query.filter(AircraftMuseum.aircraft_id.in_([a.id for a in matching]))
+    links_query = (
+        AircraftMuseum.query
+        .options(
+            joinedload(AircraftMuseum.museum),
+            joinedload(AircraftMuseum.aircraft),
+        )
+        .filter(AircraftMuseum.aircraft_id.in_([a.id for a in matching]))
+    )
 
-    # Optional museum name filter
+    # Optional museum name filter — single subquery instead of two round-trips
     if museum_query:
         museum_like = f"%{museum_query}%"
-        museum_ids = [m.id for m in Museum.query.filter(Museum.name.ilike(museum_like)).all()]
-        if not museum_ids:
-            return jsonify({"error": f"No museums matching '{museum_query}' found."}), 404
-        links_query = links_query.filter(AircraftMuseum.museum_id.in_(museum_ids))
+        matching_museum_ids = db.session.query(Museum.id).filter(Museum.name.ilike(museum_like)).subquery()
+        links_query = links_query.filter(AircraftMuseum.museum_id.in_(matching_museum_ids))
 
     links = links_query.all()
     if not links:
@@ -610,20 +658,32 @@ def api_nearby_museums():
     if lat is None:
         return jsonify({"error": f"Could not resolve location: {location}"}), 404
 
-    query = Museum.query
+    # Split the query so coord-less rows are fetched only when they need to be
+    # reported, instead of loading every museum into Python just to filter.
+    base = Museum.query
     if region:
-        query = query.filter(Museum.region == region)
+        base = base.filter(Museum.region == region)
 
-    museums = query.all()
+    with_coords = base.filter(
+        Museum.latitude.isnot(None), Museum.longitude.isnot(None)
+    ).all()
+    without_coords = base.filter(
+        or_(Museum.latitude.is_(None), Museum.longitude.is_(None))
+    ).all()
 
-    results = []
-    no_coords = []
-    for m in museums:
-        if m.has_coordinates:
-            dist = haversine(lat, lon, float(m.latitude), float(m.longitude))
-            results.append({"distance_miles": round(dist, 1), "museum": m.to_dict()})
-        else:
-            no_coords.append({"museum": m.to_dict(), "note": "Distance unavailable — coordinates not on file."})
+    results = [
+        {
+            "distance_miles": round(
+                haversine(lat, lon, float(m.latitude), float(m.longitude)), 1
+            ),
+            "museum": m.to_dict(),
+        }
+        for m in with_coords
+    ]
+    no_coords = [
+        {"museum": m.to_dict(), "note": "Distance unavailable — coordinates not on file."}
+        for m in without_coords
+    ]
 
     results.sort(key=lambda x: x["distance_miles"])
     response = {
@@ -1091,7 +1151,18 @@ def api_create_user_key(user_id):
 def api_list_users():
     """List all users. Admins see all; others see only themselves."""
     if current_user.is_admin:
-        users = User.query.order_by(User.username).all()
+        # Eager-load assignments + api_keys because to_dict() needs them for
+        # every row. Without this we'd fire 3 queries per user.
+        users = (
+            User.query
+            .options(
+                selectinload(User.museum_assignments),
+                selectinload(User.country_assignments),
+                selectinload(User.api_keys),
+            )
+            .order_by(User.username)
+            .all()
+        )
     else:
         users = [current_user]
     return jsonify([u.to_dict() for u in users])

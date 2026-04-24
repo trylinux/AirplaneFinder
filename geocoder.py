@@ -12,6 +12,8 @@ future use so the same query never hits external services twice.
 import math
 import logging
 
+from sqlalchemy import and_ as db_and_
+
 log = logging.getLogger(__name__)
 
 # ── Lazy-load optional libraries ──────────────────────────────
@@ -152,29 +154,31 @@ def resolve_location(location_str, db=None, ZipCode=None):
     # ── Layer 1: Database cache ──
 
     if ZipCode is not None:
-        # Exact postal code match
-        z = ZipCode.query.get(location_str)
-        if z:
-            return float(z.latitude), float(z.longitude)
+        from sqlalchemy import or_
 
-        # City name match
-        z = ZipCode.query.filter(ZipCode.city.ilike(location_str)).first()
-        if z:
-            return float(z.latitude), float(z.longitude)
-
-        # "city, state/country" format
+        # Build one OR query covering every cache-hit shape: exact postal code,
+        # exact city name, and "city, state/country" variants. A single round
+        # trip replaces the three serial queries this used to do.
+        clauses = [
+            ZipCode.zip_code == location_str,
+            ZipCode.city.ilike(location_str),
+        ]
         if "," in location_str:
-            from sqlalchemy import or_
             parts = [p.strip() for p in location_str.split(",")]
-            z = ZipCode.query.filter(
-                ZipCode.city.ilike(parts[0]),
-                or_(
-                    ZipCode.state.ilike(f"%{parts[1]}%"),
-                    ZipCode.country.ilike(f"%{parts[1]}%"),
+            if len(parts) >= 2 and parts[0] and parts[1]:
+                clauses.append(
+                    db_and_(
+                        ZipCode.city.ilike(parts[0]),
+                        or_(
+                            ZipCode.state.ilike(f"%{parts[1]}%"),
+                            ZipCode.country.ilike(f"%{parts[1]}%"),
+                        ),
+                    )
                 )
-            ).first()
-            if z:
-                return float(z.latitude), float(z.longitude)
+
+        z = ZipCode.query.filter(or_(*clauses)).first()
+        if z:
+            return float(z.latitude), float(z.longitude)
 
     # ── Layer 2: pgeocode (offline postal codes) ──
 

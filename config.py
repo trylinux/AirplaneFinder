@@ -41,6 +41,19 @@ class Config:
     )
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
+    # Engine pool: MySQL closes idle connections after wait_timeout (default
+    # 8 hours, but shorter on many managed providers). pool_pre_ping issues a
+    # cheap SELECT 1 before handing a connection to the app so stale
+    # connections are replaced instead of surfacing as OperationalError, and
+    # pool_recycle caps the lifetime of a pooled connection below the server's
+    # timeout.
+    SQLALCHEMY_ENGINE_OPTIONS = {
+        "pool_size": int(_get("database", "pool_size", "DB_POOL_SIZE", "10")),
+        "max_overflow": int(_get("database", "max_overflow", "DB_MAX_OVERFLOW", "20")),
+        "pool_recycle": int(_get("database", "pool_recycle", "DB_POOL_RECYCLE", "1800")),
+        "pool_pre_ping": True,
+    }
+
     # Logging
     LOG_DIR = _get("app", "log_dir", "LOG_DIR", os.path.join(os.path.dirname(__file__), "logs"))
 

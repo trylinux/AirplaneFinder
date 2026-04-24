@@ -7,6 +7,7 @@ from math import radians, sin, cos, sqrt, atan2
 
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin
+from sqlalchemy import Computed
 from werkzeug.security import generate_password_hash, check_password_hash
 
 db = SQLAlchemy()
@@ -31,9 +32,15 @@ class User(UserMixin, db.Model):
     contribution_count = db.Column(db.Integer, default=0, nullable=False)
     created_at = db.Column(db.DateTime, server_default=db.func.now())
 
-    api_keys = db.relationship("ApiKey", back_populates="user", lazy="dynamic")
-    museum_assignments = db.relationship("UserMuseumAssignment", back_populates="user", cascade="all, delete-orphan", lazy="joined")
-    country_assignments = db.relationship("UserCountryAssignment", back_populates="user", cascade="all, delete-orphan", lazy="joined")
+    # Default lazy loading; the only site that walks user.api_keys is
+    # User.to_dict. Everywhere else queries ApiKey directly via its own model.
+    api_keys = db.relationship("ApiKey", back_populates="user")
+    # Default ("select") lazy loading: these were previously lazy="joined", which
+    # meant every User query — including the Flask-Login load_user() call on each
+    # session request — joined both assignment tables even when unused. Callers
+    # that DO need them (admin list views) should use selectinload() explicitly.
+    museum_assignments = db.relationship("UserMuseumAssignment", back_populates="user", cascade="all, delete-orphan")
+    country_assignments = db.relationship("UserCountryAssignment", back_populates="user", cascade="all, delete-orphan")
 
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
@@ -232,6 +239,14 @@ class Aircraft(db.Model):
     manufacturer = db.Column(db.String(100), nullable=False)
     model = db.Column(db.String(50), nullable=False)
     variant = db.Column(db.String(50))
+    # MySQL-side STORED generated column (see schema.sql). Declared via Computed
+    # so SQLAlchemy excludes it from INSERT/UPDATE but lets queries reference it
+    # in filters — letting searches hit idx_full_desig instead of computing
+    # CONCAT(...) on every row.
+    full_designation = db.Column(
+        db.String(100),
+        Computed("CONCAT(model, IFNULL(CONCAT('-', variant), ''))", persisted=True),
+    )
     aircraft_type = db.Column(db.String(20), nullable=False, default="fixed_wing")
     wing_type = db.Column(db.String(20))          # monoplane, biplane, triplane
     military_civilian = db.Column(db.String(10), nullable=False, default="military")
@@ -242,12 +257,9 @@ class Aircraft(db.Model):
     museum_links = db.relationship("AircraftMuseum", back_populates="aircraft", lazy="dynamic")
     aliases = db.relationship("AircraftAlias", back_populates="aircraft", cascade="all, delete-orphan", lazy="joined")
 
-    @property
-    def full_designation(self):
-        """Compute designation in Python — mirrors the MySQL generated column."""
-        if self.variant:
-            return f"{self.model}-{self.variant}"
-        return self.model or ""
+    # Note: full_designation is declared above as a generated column. Loaded
+    # instances have it populated by the database; unflushed new instances see
+    # None, which is acceptable since callers serialize only after commit.
 
     def to_dict(self):
         return {
@@ -258,7 +270,11 @@ class Aircraft(db.Model):
             "manufacturer": self.manufacturer,
             "model": self.model,
             "variant": self.variant,
-            "full_designation": self.full_designation,
+            # Fall back to in-Python computation for unflushed instances where
+            # the DB-generated value hasn't been loaded yet.
+            "full_designation": self.full_designation or (
+                f"{self.model}-{self.variant}" if self.variant else (self.model or "")
+            ),
             "aircraft_type": self.aircraft_type,
             "wing_type": self.wing_type,
             "military_civilian": self.military_civilian,
