@@ -26,9 +26,6 @@ body {
     color: var(--text);
     line-height: 1.6;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    border-top: 1px solid var(--border);
 }
 
 a { color: var(--accent); text-decoration: none; }
@@ -36,37 +33,100 @@ a:hover { text-decoration: underline; }
 
 .container { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
 
-/* ─── Navbar ─────────────────────────────── */
-.navbar {
+/* ─── App shell: sidebar + main ──────────── */
+:root {
+    --sidebar-w: 240px;
+    --topbar-h: 56px;
+}
+
+.app-shell { display: flex; min-height: 100vh; }
+
+/* Hidden checkbox drives the mobile hamburger — no JS needed. */
+.sidebar-toggle { position: absolute; opacity: 0; pointer-events: none; }
+
+/* Mobile-only topbar with the hamburger. Hidden on desktop. */
+.topbar {
+    display: none;
+    position: sticky; top: 0; z-index: 90;
+    align-items: center; justify-content: space-between;
+    height: var(--topbar-h);
+    padding: 0 1rem;
     background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
     border-bottom: 1px solid var(--border);
-    position: sticky; top: 0; z-index: 100;
-    margin-top: 4rem;
-    backdrop-filter: blur(12px);
 }
-.nav-container {
-    max-width: 1100px; margin: 0 auto; padding: 0 1.25rem;
-    display: flex; align-items: center; justify-content: space-between;
-    height: 60px;
-}
-.nav-brand {
+.topbar-brand {
     display: flex; align-items: center; gap: .6rem;
+    font-weight: 700; color: var(--text);
+}
+.topbar-brand i { color: var(--primary); font-size: 1.15rem; }
+.topbar-brand:hover { text-decoration: none; }
+
+.hamburger {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 40px; height: 40px; border-radius: 8px;
+    color: var(--text-dim); cursor: pointer;
+    transition: background .15s, color .15s;
+}
+.hamburger:hover { background: rgba(255,255,255,.06); color: var(--text); }
+.hamburger:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+
+/* ─── Sidebar ────────────────────────────── */
+.sidebar {
+    position: fixed; top: 0; left: 0; bottom: 0;
+    width: var(--sidebar-w);
+    background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+    border-right: 1px solid var(--border);
+    padding: 1.5rem 0;
+    display: flex; flex-direction: column; gap: 1.5rem;
+    overflow-y: auto;
+    z-index: 100;
+}
+.sidebar-brand {
+    display: flex; align-items: center; gap: .6rem;
+    padding: 0 1.25rem;
     font-weight: 700; font-size: 1.15rem; color: var(--text);
 }
-.nav-brand i { color: var(--primary); font-size: 1.3rem; }
-.nav-brand:hover { text-decoration: none; }
+.sidebar-brand i { color: var(--primary); font-size: 1.3rem; }
+.sidebar-brand:hover { text-decoration: none; }
 
-.nav-links { display: flex; gap: .25rem; flex-wrap: wrap; }
-.nav-link {
-    padding: .45rem .9rem; border-radius: 8px;
-    color: var(--text-dim); font-size: .875rem; font-weight: 500;
-    transition: all .15s;
+.sidebar-nav { display: flex; flex-direction: column; gap: 1.25rem; padding: 0 .5rem; }
+
+.nav-section { display: flex; flex-direction: column; gap: .15rem; }
+.nav-section-label {
+    padding: 0 .75rem .25rem;
+    font-size: .7rem; font-weight: 600; letter-spacing: .06em;
+    text-transform: uppercase; color: var(--text-dim);
 }
+
+.nav-link {
+    display: flex; align-items: center; gap: .75rem;
+    padding: .55rem .75rem; border-radius: 8px;
+    color: var(--text-dim); font-size: .9rem; font-weight: 500;
+    transition: color .15s, background .15s, border-color .15s;
+    border-left: 2px solid transparent;
+}
+.nav-link i { width: 1.1rem; text-align: center; font-size: .95rem; }
 .nav-link:hover { color: var(--text); background: rgba(255,255,255,.06); text-decoration: none; }
-.nav-link.active { color: var(--primary); background: rgba(59,130,246,.12); }
-.nav-link i { margin-right: .35rem; }
+.nav-link.active {
+    color: var(--primary);
+    background: rgba(59,130,246,.12);
+    border-left-color: var(--primary);
+}
+
+/* Backdrop behind the sidebar on mobile when expanded */
+.sidebar-backdrop {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,.5); z-index: 95;
+}
 
 /* ─── Main ───────────────────────────────── */
+.app-main {
+    flex: 1; min-width: 0;
+    margin-left: var(--sidebar-w);
+    display: flex; flex-direction: column;
+    min-height: 100vh;
+}
 .main-content { flex: 1; padding: 3rem 0 2rem; }
 
 .page-header { margin-bottom: 1.75rem; }
@@ -416,9 +476,25 @@ pre code {
 }
 
 /* ─── Responsive ─────────────────────────── */
+@media (max-width: 900px) {
+    /* Show the topbar, reveal the hamburger, hide the sidebar off-canvas. */
+    .topbar { display: flex; }
+    .app-main { margin-left: 0; }
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform .22s ease;
+    }
+    /* Mobile: the sidebar is a slide-in panel. It opens when the hidden
+       toggle checkbox is checked (via the hamburger label) and closes when
+       the backdrop is tapped (also labelled to the same checkbox). */
+    .sidebar-toggle:checked ~ .app-shell .sidebar { transform: translateX(0); }
+    .sidebar-toggle:checked ~ .app-shell .sidebar-backdrop { display: block; }
+    /* Hide the in-sidebar brand on mobile since the topbar already shows it. */
+    .sidebar-brand { display: none; }
+    .sidebar { padding-top: 1rem; }
+}
+
 @media (max-width: 700px) {
-    .nav-container { flex-direction: column; height: auto; padding: .75rem 1rem; gap: .5rem; }
-    .nav-links { flex-wrap: wrap; justify-content: center; }
     .form-grid { grid-template-columns: 1fr; }
     .form-row { flex-direction: column; }
     .detail-grid { grid-template-columns: 1fr; }
