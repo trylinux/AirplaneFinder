@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS users (
     username        VARCHAR(80)  NOT NULL UNIQUE,
     email           VARCHAR(200) DEFAULT NULL,
     password_hash   VARCHAR(256) NOT NULL,
-    role            ENUM('admin','manager','viewer') NOT NULL DEFAULT 'viewer',
+    role            ENUM('admin','aircraft_admin','manager','viewer') NOT NULL DEFAULT 'viewer',
     is_active       BOOLEAN      DEFAULT TRUE,
     last_login      TIMESTAMP    NULL DEFAULT NULL,
     last_login_ip   VARCHAR(45)  DEFAULT NULL,

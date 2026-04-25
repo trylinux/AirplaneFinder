@@ -60,11 +60,32 @@ class User(UserMixin, db.Model):
 
     @property
     def is_admin(self):
+        """Strict 'admin' role check. Use this for user-management gates —
+        only true admins should be able to create/edit/delete users."""
         return self.role == "admin"
 
     @property
+    def is_aircraft_admin(self):
+        """Strict 'aircraft_admin' role check. The role gets full CRUD over
+        aircraft/museums/exhibits/templates, but cannot manage users."""
+        return self.role == "aircraft_admin"
+
+    @property
+    def is_data_admin(self):
+        """True if the user can perform admin-level data operations
+        (deletes, etc.) on aircraft, museums, exhibits, or templates.
+
+        Use this — not is_admin — to gate data-delete endpoints, so that
+        the new aircraft_admin role gets the same data privileges without
+        also unlocking user management."""
+        return self.role in ("admin", "aircraft_admin")
+
+    @property
     def is_manager(self):
-        return self.role in ("admin", "manager")
+        """True if the user can create/update data. Includes admin and
+        aircraft_admin since both have at least the manager-level write
+        privileges as a subset of theirs."""
+        return self.role in ("admin", "aircraft_admin", "manager")
 
     def assigned_museum_ids(self):
         """Return set of museum IDs this user is assigned to."""

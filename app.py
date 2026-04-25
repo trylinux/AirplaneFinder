@@ -353,8 +353,12 @@ def api_auth_required(min_permission="read"):
             # Fallback: logged-in web session
             if user is None and current_user.is_authenticated:
                 user = current_user
-                # Map web session role to permission level
-                if user.is_admin:
+                # Map web session role to permission level. The 'admin'
+                # permission level here means "can perform admin-level data
+                # operations" — both 'admin' and 'aircraft_admin' qualify.
+                # User-management endpoints use the separate @admin_required
+                # decorator, which strictly checks is_admin (role == 'admin').
+                if user.is_data_admin:
                     perm_level = 2
                 elif user.is_manager:
                     perm_level = 1
@@ -1557,15 +1561,21 @@ def api_create_user_key(user_id):
     label = data.get("label", "default")
 
     # Default permissions based on user role
-    role_perm_map = {"admin": "admin", "manager": "readwrite", "viewer": "read"}
+    # aircraft_admin gets admin-level keys (full data CRUD); only the strict
+    # 'admin' role gets user-management endpoints, which API keys can't reach
+    # anyway since those use the @admin_required (session) decorator.
+    role_perm_map = {"admin": "admin", "aircraft_admin": "admin",
+                     "manager": "readwrite", "viewer": "read"}
     permissions = data.get("permissions", role_perm_map.get(target_user.role, "read"))
 
     if permissions not in ("read", "readwrite", "admin"):
         return jsonify({"error": "permissions must be 'read', 'readwrite', or 'admin'."}), 400
 
-    # Don't allow creating admin keys for non-admin users
-    if permissions == "admin" and target_user.role != "admin":
-        return jsonify({"error": "Cannot create admin-level keys for non-admin users."}), 400
+    # Don't allow creating admin-level keys for users whose role doesn't
+    # already imply admin-level data access. Both 'admin' and 'aircraft_admin'
+    # qualify (they're the two data-admin roles).
+    if permissions == "admin" and target_user.role not in ("admin", "aircraft_admin"):
+        return jsonify({"error": "Cannot create admin-level keys for users without an admin-level role."}), 400
 
     # Don't allow readwrite keys for viewers
     if permissions == "readwrite" and target_user.role == "viewer":
@@ -1627,8 +1637,8 @@ def api_create_user():
 
     if not username or not password:
         return jsonify({"error": "username and password are required."}), 400
-    if role not in ("admin", "manager", "viewer"):
-        return jsonify({"error": "role must be 'admin', 'manager', or 'viewer'."}), 400
+    if role not in ("admin", "aircraft_admin", "manager", "viewer"):
+        return jsonify({"error": "role must be 'admin', 'aircraft_admin', 'manager', or 'viewer'."}), 400
     pw_error = _validate_password_strength(password)
     if pw_error:
         return jsonify({"error": pw_error}), 400
@@ -1652,7 +1662,8 @@ def api_create_user():
             db.session.add(UserCountryAssignment(user_id=user.id, country=country.strip()))
 
     # Auto-generate an API key based on user role
-    perm_map = {"admin": "admin", "manager": "readwrite", "viewer": "read"}
+    perm_map = {"admin": "admin", "aircraft_admin": "admin",
+                "manager": "readwrite", "viewer": "read"}
     auto_perms = perm_map.get(role, "read")
     api_key_obj, raw_key = ApiKey.generate(user_id=user.id, label="auto", permissions=auto_perms)
     db.session.add(api_key_obj)
@@ -1684,7 +1695,7 @@ def api_update_user(user_id):
 
     if "email" in data:
         user.email = data["email"] or None
-    if "role" in data and data["role"] in ("admin", "manager", "viewer"):
+    if "role" in data and data["role"] in ("admin", "aircraft_admin", "manager", "viewer"):
         user.role = data["role"]
     if "is_active" in data:
         user.is_active_user = bool(data["is_active"])
