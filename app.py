@@ -427,10 +427,12 @@ def api_contributors():
 def _build_aircraft_filter(q):
     """Build an OR filter that matches aircraft by model, name, tail, manufacturer, or alias."""
     like = f"%{q}%"
-    # Subquery: aircraft IDs that match via aliases
+    # Subquery: aircraft IDs that match via aliases. Use scalar_subquery() so
+    # SQLAlchemy 2.x doesn't emit a coercion warning when this is fed into
+    # in_(); the older .subquery() form is deprecated for that use case.
     alias_ids = db.session.query(AircraftAlias.aircraft_id).filter(
         AircraftAlias.alias.ilike(like)
-    ).subquery()
+    ).scalar_subquery()
     return or_(
         Aircraft.tail_number.ilike(like),
         Aircraft.model_name.ilike(like),
@@ -605,10 +607,11 @@ def api_nearest_museum():
         .filter(AircraftMuseum.aircraft_id.in_([a.id for a in matching]))
     )
 
-    # Optional museum name filter — single subquery instead of two round-trips
+    # Optional museum name filter — single subquery instead of two round-trips.
+    # scalar_subquery() so SQLAlchemy 2.x doesn't warn about coercion in IN().
     if museum_query:
         museum_like = f"%{museum_query}%"
-        matching_museum_ids = db.session.query(Museum.id).filter(Museum.name.ilike(museum_like)).subquery()
+        matching_museum_ids = db.session.query(Museum.id).filter(Museum.name.ilike(museum_like)).scalar_subquery()
         links_query = links_query.filter(AircraftMuseum.museum_id.in_(matching_museum_ids))
 
     links = links_query.all()

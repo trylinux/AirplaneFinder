@@ -221,36 +221,52 @@ $(function() {
         });
     });
 
+    // Helper: set a form field's value AND fire a change event so the
+    // browser's internal `validity` flag refreshes. Without the change
+    // event, jQuery .val() updates the DOM .value but Safari (and some
+    // Chromium versions) leave the select's :invalid state stale, so
+    // clicking submit silently fails HTML5 validation and the user sees
+    // "the button doesn't work." This applies to required <select>s.
+    function setField(name, value) {
+        var $f = $('#form-aircraft').find('[name="' + name + '"]');
+        if (!$f.length) return;
+        $f.val(value == null ? '' : value).trigger('change');
+    }
+
     $('#template-picker').on('change', function() {
-        var id = $(this).val();
-        if (!id) return;
-        var t = _templatesById[id];
-        if (!t) return;
+        try {
+            var id = $(this).val();
+            if (!id) return;
+            var t = _templatesById[id];
+            if (!t) return;
 
-        var $form = $('#form-aircraft');
-        // Type-level fields from the template
-        $form.find('[name=manufacturer]').val(t.manufacturer || '');
-        $form.find('[name=model]').val(t.model || '');
-        $form.find('[name=variant]').val(t.variant || '');
-        $form.find('[name=model_name]').val(t.model_name || '');
-        $form.find('[name=aircraft_type]').val(t.aircraft_type || 'fixed_wing');
-        $form.find('[name=wing_type]').val(t.wing_type || '');
-        $form.find('[name=military_civilian]').val(t.military_civilian || 'military');
+            // Type-level fields. Setting military_civilian first matters because
+            // updateRoleDropdown reads .mil-civ-select to decide which role
+            // options to render.
+            setField('manufacturer',      t.manufacturer);
+            setField('model',             t.model);
+            setField('variant',           t.variant);
+            setField('model_name',        t.model_name);
+            setField('aircraft_type',     t.aircraft_type || 'fixed_wing');
+            setField('wing_type',         t.wing_type || '');
+            setField('military_civilian', t.military_civilian || 'military');
 
-        // Role dropdown depends on military_civilian, so rebuild it with the
-        // template's chosen role selected after the mil/civ change.
-        updateRoleDropdown(t.role_type || '');
+            // Role dropdown depends on military_civilian — rebuild it with
+            // the template's role pre-selected, then fire change so validity
+            // updates.
+            updateRoleDropdown(t.role_type || '');
+            $('.role-type-select').trigger('change');
 
-        $form.find('[name=aliases]').val((t.aliases || []).join(', '));
-        $form.find('[name=description]').val(t.description || '');
-
-        // Visual nudge so the user knows the fields changed.
-        $form.find('input, select, textarea').each(function() {
-            var $el = $(this);
-            $el.css('transition', 'background .4s ease')
-               .css('background', 'rgba(59,130,246,.15)');
-            setTimeout(function() { $el.css('background', ''); }, 400);
-        });
+            setField('aliases', (t.aliases || []).join(', '));
+            setField('description', t.description || '');
+        } catch (err) {
+            // Surface failures in the browser console so this never silently
+            // leaves the form in a broken state again.
+            console.error('Template prefill failed:', err);
+            $('#msg-aircraft')
+                .html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> Could not apply template: ' + (err && err.message ? err.message : err) + '</div>')
+                .show();
+        }
     });
 
     // ── Museum autocomplete + inline create ──
