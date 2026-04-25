@@ -207,7 +207,18 @@ class Museum(db.Model):
     latitude = db.Column(db.Numeric(10, 7))               # nullable
     longitude = db.Column(db.Numeric(10, 7))              # nullable
 
-    aircraft_links = db.relationship("AircraftMuseum", back_populates="museum", lazy="dynamic")
+    # cascade + passive_deletes: when a Museum is deleted, MySQL's ON DELETE
+    # CASCADE on aircraft_museum.museum_id handles the link cleanup. Telling
+    # SQLAlchemy to skip its own NULL-the-FK behavior avoids an IntegrityError
+    # (the aircraft_museum FK columns are NOT NULL) and avoids a redundant
+    # round-trip to bulk-delete the rows itself.
+    aircraft_links = db.relationship(
+        "AircraftMuseum",
+        back_populates="museum",
+        lazy="dynamic",
+        cascade="all, delete-orphan",
+        passive_deletes=True,
+    )
 
     @property
     def has_coordinates(self):
@@ -254,7 +265,16 @@ class Aircraft(db.Model):
     year_built = db.Column(db.Integer)
     description = db.Column(db.Text)
 
-    museum_links = db.relationship("AircraftMuseum", back_populates="aircraft", lazy="dynamic")
+    # See note on Museum.aircraft_links — same reason. Without these, deleting
+    # an Aircraft that's listed at any museum raises IntegrityError because
+    # SQLAlchemy tries to UPDATE aircraft_museum.aircraft_id = NULL.
+    museum_links = db.relationship(
+        "AircraftMuseum",
+        back_populates="aircraft",
+        lazy="dynamic",
+        cascade="all, delete-orphan",
+        passive_deletes=True,
+    )
     aliases = db.relationship("AircraftAlias", back_populates="aircraft", cascade="all, delete-orphan", lazy="joined")
 
     # Note: full_designation is declared above as a generated column. Loaded
