@@ -429,6 +429,11 @@ $(function() {
                 $('#form-aircraft')[0].reset();
                 clearMuseum();
                 updateRoleDropdown();
+                // Reset the template picker too — it lives OUTSIDE the form so
+                // form.reset() doesn't clear it. Without this, picking the same
+                // template again to make another aircraft is a no-op (change
+                // doesn't fire when the value doesn't change).
+                $('#template-picker').val('');
             },
             error: function(xhr) {
                 $('#msg-aircraft').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + (xhr.responseJSON ? JSON.stringify(xhr.responseJSON) : xhr.statusText) + '</div>').show();
