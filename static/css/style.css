@@ -493,22 +493,36 @@ pre code {
 }
 
 /* ─── Responsive ─────────────────────────── */
+/* Three breakpoints, each layered on top of the desktop defaults:
+     <= 900px : tablet / large phone  — sidebar collapses to off-canvas drawer
+     <= 700px : phone landscape       — single-column grids, smaller container padding
+     <= 480px : phone portrait        — tightest paddings, smaller fonts, table cards
+*/
+
 @media (max-width: 900px) {
     /* Show the topbar, reveal the hamburger, hide the sidebar off-canvas. */
     .topbar { display: flex; }
     .app-main { margin-left: 0; }
+
+    /* Sidebar becomes a slide-in drawer. Width caps at 85vw so it never
+       eats the whole viewport on a small phone. */
     .sidebar {
+        width: min(280px, 85vw);
         transform: translateX(-100%);
         transition: transform .22s ease;
+        padding-top: 1rem;
     }
-    /* Mobile: the sidebar is a slide-in panel. It opens when the hidden
-       toggle checkbox is checked (via the hamburger label) and closes when
-       the backdrop is tapped (also labelled to the same checkbox). */
+    /* Open via the hidden toggle checkbox (flipped by the hamburger label). */
     .sidebar-toggle:checked ~ .app-shell .sidebar { transform: translateX(0); }
     .sidebar-toggle:checked ~ .app-shell .sidebar-backdrop { display: block; }
-    /* Hide the in-sidebar brand on mobile since the topbar already shows it. */
+    /* The topbar already shows the brand, so hide the in-sidebar one. */
     .sidebar-brand { display: none; }
-    .sidebar { padding-top: 1rem; }
+
+    /* Less generous top padding so the page header is visible without scroll. */
+    .main-content { padding: 1.5rem 0 1.5rem; }
+
+    /* Larger tap target (Apple HIG / Material both call for ~44px min). */
+    .hamburger { width: 44px; height: 44px; }
 }
 
 @media (max-width: 700px) {
@@ -519,4 +533,58 @@ pre code {
     .prox-distance { flex-direction: row; gap: .5rem; min-width: auto; }
     .stats-grid { grid-template-columns: 1fr; }
     .perm-grid { grid-template-columns: 1fr; }
+
+    /* Tighter page chrome */
+    .container { padding: 0 .85rem; }
+    .card { padding: 1rem; margin-bottom: 1rem; }
+    .page-header h1 { font-size: 1.4rem; }
+    .card h2 { font-size: 1.05rem; }
+
+    /* Tab bar (admin sub-nav) wraps and stays usable */
+    .tab-nav { flex-wrap: wrap; gap: .35rem; }
+
+    /* Tables get a bit more compact so more columns fit before scrolling */
+    .result-table th,
+    .result-table td { padding: .5rem .65rem; font-size: .85rem; }
+
+    /* Buttons reach full width when they have nowhere else to go */
+    .page-header-row .btn { flex: 1; min-width: 0; }
+}
+
+@media (max-width: 480px) {
+    /* Real phones — squeeze further, prioritize content */
+    html { font-size: 15px; }                   /* slight global text shrink */
+
+    .topbar { height: 52px; padding: 0 .75rem; }
+    .topbar-brand { font-size: .95rem; }
+
+    .container { padding: 0 .65rem; }
+    .main-content { padding: 1rem 0 1.25rem; }
+
+    .card { padding: .85rem; border-radius: 8px; }
+    .page-header { margin-bottom: 1rem; }
+    .page-header h1 { font-size: 1.25rem; }
+    .subtitle { font-size: .82rem; }
+
+    /* Stat cards: smaller icon, smaller numbers, tighter gap */
+    .stat-card { padding: .85rem; gap: .65rem; }
+    .stat-icon { width: 38px; height: 38px; font-size: 1rem; }
+    .stat-card .stat-number,
+    .stat-card h3 { font-size: 1.4rem; }
+
+    /* Tables: keep horizontal scroll for wide ones, but make rows denser */
+    .result-table th,
+    .result-table td { padding: .45rem .55rem; font-size: .8rem; }
+
+    /* Form controls: easier to tap without zooming */
+    .admin-form input,
+    .admin-form select,
+    .admin-form textarea,
+    .search-bar input {
+        font-size: 16px;       /* iOS won't auto-zoom into a >=16px input */
+        padding: .55rem .7rem;
+    }
+
+    /* Footer: less weight, less margin */
+    .footer { padding: .85rem 0; margin-top: 1rem; }
 }
