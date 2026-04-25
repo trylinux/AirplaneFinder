@@ -59,3 +59,27 @@ class Config:
 
     # Pagination
     RESULTS_PER_PAGE = int(_get("app", "results_per_page", "RESULTS_PER_PAGE", "20"))
+
+    # ─── Auth security ────────────────────────────────────────────────────
+    # Idle timeout: log a user out after this many seconds of no activity.
+    # Tighter for higher-privilege roles since they can do more damage if
+    # someone walks up to an unattended browser.
+    SESSION_IDLE_TIMEOUT_ADMIN   = int(_get("auth", "idle_timeout_admin",   "SESSION_IDLE_TIMEOUT_ADMIN",   str(15 * 60)))   # 15 min
+    SESSION_IDLE_TIMEOUT_MANAGER = int(_get("auth", "idle_timeout_manager", "SESSION_IDLE_TIMEOUT_MANAGER", str(30 * 60)))   # 30 min
+    SESSION_IDLE_TIMEOUT_VIEWER  = int(_get("auth", "idle_timeout_viewer",  "SESSION_IDLE_TIMEOUT_VIEWER",  str(60 * 60)))   # 60 min
+
+    # Absolute timeout: regardless of activity, log out after this many
+    # seconds since login. Caps the blast radius of a stolen session cookie.
+    SESSION_ABSOLUTE_TIMEOUT     = int(_get("auth", "absolute_timeout",     "SESSION_ABSOLUTE_TIMEOUT",     str(12 * 60 * 60)))   # 12 hours
+
+    # Failed-login lockout: lock the account for this many seconds after
+    # this many consecutive failed attempts. Keyed by username; clears on
+    # any successful login.
+    LOGIN_LOCKOUT_MAX_ATTEMPTS   = int(_get("auth", "lockout_max_attempts", "LOGIN_LOCKOUT_MAX_ATTEMPTS", "5"))
+    LOGIN_LOCKOUT_DURATION       = int(_get("auth", "lockout_duration",     "LOGIN_LOCKOUT_DURATION",     str(15 * 60)))   # 15 min
+
+    # Password policy: minimum length and required character classes.
+    # Enforced on register, admin-create-user, and any password change.
+    PASSWORD_MIN_LENGTH          = int(_get("auth", "password_min_length",  "PASSWORD_MIN_LENGTH",  "8"))
+    # When True, password must contain at least one letter AND one digit.
+    PASSWORD_REQUIRE_MIXED       = _get("auth", "password_require_mixed", "PASSWORD_REQUIRE_MIXED", "true").lower() in ("1", "true", "yes")

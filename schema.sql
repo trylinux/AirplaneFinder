@@ -20,6 +20,8 @@ CREATE TABLE IF NOT EXISTS users (
     last_login_ip   VARCHAR(45)  DEFAULT NULL,
     last_logout     TIMESTAMP    NULL DEFAULT NULL,
     contribution_count INT       DEFAULT 0 NOT NULL,
+    failed_login_count INT       NOT NULL DEFAULT 0,
+    locked_until    TIMESTAMP    NULL DEFAULT NULL,
     created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;

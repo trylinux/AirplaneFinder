@@ -30,6 +30,12 @@ class User(UserMixin, db.Model):
     last_login_ip = db.Column(db.String(45), nullable=True)     # IPv4 or IPv6
     last_logout = db.Column(db.DateTime, nullable=True)
     contribution_count = db.Column(db.Integer, default=0, nullable=False)
+    # Failed-login tracking: incremented on each bad attempt against this
+    # username, reset to zero on any successful login. When it crosses the
+    # configured threshold, locked_until is set and the account refuses
+    # logins until that timestamp passes.
+    failed_login_count = db.Column(db.Integer, default=0, nullable=False)
+    locked_until = db.Column(db.DateTime, nullable=True)
     created_at = db.Column(db.DateTime, server_default=db.func.now())
 
     # Default lazy loading; the only site that walks user.api_keys is
@@ -67,6 +73,43 @@ class User(UserMixin, db.Model):
     def assigned_countries(self):
         """Return set of country names this user is assigned to."""
         return {a.country for a in self.country_assignments}
+
+    @property
+    def is_locked(self):
+        """True if a lockout window is currently active for this account."""
+        if self.locked_until is None:
+            return False
+        # locked_until may be naive (MySQL TIMESTAMP); treat naive as UTC.
+        lu = self.locked_until
+        if lu.tzinfo is None:
+            lu = lu.replace(tzinfo=timezone.utc)
+        return datetime.now(timezone.utc) < lu
+
+    def lockout_seconds_remaining(self):
+        """Seconds until the lockout expires, or 0 if not locked."""
+        if not self.is_locked:
+            return 0
+        lu = self.locked_until
+        if lu.tzinfo is None:
+            lu = lu.replace(tzinfo=timezone.utc)
+        return max(0, int((lu - datetime.now(timezone.utc)).total_seconds()))
+
+    def register_failed_login(self, max_attempts, lockout_seconds):
+        """Bump failed_login_count; if at threshold, lock for lockout_seconds.
+
+        Caller must commit. Returns True if the failure caused a fresh lock.
+        """
+        from datetime import timedelta
+        self.failed_login_count = (self.failed_login_count or 0) + 1
+        if self.failed_login_count >= max_attempts:
+            self.locked_until = datetime.now(timezone.utc) + timedelta(seconds=lockout_seconds)
+            return True
+        return False
+
+    def reset_failed_logins(self):
+        """Wipe lockout state. Call on any successful login. Caller commits."""
+        self.failed_login_count = 0
+        self.locked_until = None
 
     def can_access_museum(self, museum):
         """Check if user can access a specific museum (admin=all, others=assigned)."""

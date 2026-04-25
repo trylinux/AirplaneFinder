@@ -127,6 +127,109 @@ def _log_response(response):
 
 
 # ══════════════════════════════════════════════
+# Session timeout
+# ══════════════════════════════════════════════
+
+# Endpoints that must keep working even when an idle session has just been
+# timed out — otherwise we can't render the login page or process the logout.
+_TIMEOUT_EXEMPT_ENDPOINTS = {
+    "login_page", "logout", "register_page", "static",
+    "desktop_only_page",
+}
+
+
+def _idle_timeout_for(user):
+    """Idle-timeout in seconds for ``user``'s role."""
+    if user.is_admin:
+        return Config.SESSION_IDLE_TIMEOUT_ADMIN
+    if user.is_manager:
+        return Config.SESSION_IDLE_TIMEOUT_MANAGER
+    return Config.SESSION_IDLE_TIMEOUT_VIEWER
+
+
+@app.before_request
+def _enforce_session_timeout():
+    """Log out an authenticated user whose session is idle or too old.
+
+    Called on every request. Two conditions can trigger logout:
+      - Idle:     more than ``role idle timeout`` since the last activity.
+      - Absolute: more than SESSION_ABSOLUTE_TIMEOUT since login_time.
+    Either condition flashes a message and redirects to /login. We update
+    last_activity at the END of this hook so each request resets the idle
+    timer (even unauthenticated ones — harmless).
+    """
+    # Skip for endpoints that need to work even when the session just expired
+    # (login page, logout endpoint, static files, the desktop-only page).
+    if request.endpoint in _TIMEOUT_EXEMPT_ENDPOINTS:
+        return None
+
+    if not current_user.is_authenticated:
+        # Anonymous: just refresh last_activity so any subsequent login starts
+        # with a clean clock; nothing to enforce.
+        session["last_activity"] = datetime.now(timezone.utc).isoformat()
+        return None
+
+    now = datetime.now(timezone.utc)
+    login_time_iso = session.get("login_time")
+    last_activity_iso = session.get("last_activity")
+
+    # Defensive: if either value is missing (e.g. the user is on a session
+    # cookie issued before this code shipped), seed both and continue.
+    if not login_time_iso or not last_activity_iso:
+        session["login_time"] = now.isoformat()
+        session["last_activity"] = now.isoformat()
+        return None
+
+    login_time = datetime.fromisoformat(login_time_iso)
+    last_activity = datetime.fromisoformat(last_activity_iso)
+
+    # Absolute timeout: from login, regardless of activity.
+    if (now - login_time).total_seconds() > Config.SESSION_ABSOLUTE_TIMEOUT:
+        username = current_user.username
+        logout_user()
+        session.clear()
+        auth_log.info(f"SESSION_TIMEOUT_ABSOLUTE user={username} ip={request.remote_addr}")
+        flash("Your session has expired. Please sign in again.", "warning")
+        return redirect(url_for("login_page"))
+
+    # Idle timeout: per-role.
+    idle_limit = _idle_timeout_for(current_user)
+    if (now - last_activity).total_seconds() > idle_limit:
+        username = current_user.username
+        logout_user()
+        session.clear()
+        auth_log.info(f"SESSION_TIMEOUT_IDLE user={username} ip={request.remote_addr}")
+        flash("You have been signed out due to inactivity.", "warning")
+        return redirect(url_for("login_page"))
+
+    # Activity recorded — bump the idle clock.
+    session["last_activity"] = now.isoformat()
+    return None
+
+
+# ══════════════════════════════════════════════
+# Password policy
+# ══════════════════════════════════════════════
+
+def _validate_password_strength(password):
+    """Validate ``password`` against the configured policy.
+
+    Returns ``None`` if valid; otherwise returns a human-readable error
+    string suitable for showing to the user.
+    """
+    if password is None:
+        return "Password is required."
+    if len(password) < Config.PASSWORD_MIN_LENGTH:
+        return f"Password must be at least {Config.PASSWORD_MIN_LENGTH} characters."
+    if Config.PASSWORD_REQUIRE_MIXED:
+        has_letter = any(c.isalpha() for c in password)
+        has_digit = any(c.isdigit() for c in password)
+        if not (has_letter and has_digit):
+            return "Password must contain at least one letter and one digit."
+    return None
+
+
+# ══════════════════════════════════════════════
 # Mobile dispatch
 # ══════════════════════════════════════════════
 
@@ -331,8 +434,16 @@ def museums_page():
 # Auth: login / logout / register
 # ══════════════════════════════════════════════
 
+# Rate-limit login by username AND by IP. The username key blocks an
+# attacker spreading attempts across a botnet against one account, while
+# the IP key blocks a single client trying many usernames.
+def _login_username_key():
+    return (request.form.get("username") or "").strip().lower() or get_remote_address()
+
+
 @app.route("/login", methods=["GET", "POST"])
 @limiter.limit("5 per minute", methods=["POST"])
+@limiter.limit("10 per hour", key_func=_login_username_key, methods=["POST"])
 def login_page():
     if current_user.is_authenticated:
         return redirect(url_for("admin_page"))
@@ -342,14 +453,47 @@ def login_page():
         password = request.form.get("password", "")
         user = User.query.filter_by(username=username).first()
 
+        # Lockout check runs before the password check so a locked attacker
+        # learns nothing about whether their password is correct, AND so a
+        # legitimate user with a forgotten password sees the lockout
+        # message instead of repeatedly hitting "wrong password" and
+        # extending their own lockout.
+        if user and user.is_locked:
+            remaining = user.lockout_seconds_remaining()
+            mins = max(1, remaining // 60)
+            auth_log.warning(
+                f"LOGIN_BLOCKED_LOCKED user={username} ip={request.remote_addr} "
+                f"remaining={remaining}s"
+            )
+            flash(f"Account temporarily locked. Try again in {mins} minute(s).", "error")
+            return mobile_render("login.html")
+
         if user and user.check_password(password) and user.is_active:
             user.last_login = datetime.now(timezone.utc)
             user.last_login_ip = request.headers.get("X-Forwarded-For", request.remote_addr)
+            user.reset_failed_logins()
             db.session.commit()
             login_user(user, remember=True)
+            # Stamp absolute and idle clocks for the timeout middleware.
+            now_iso = datetime.now(timezone.utc).isoformat()
+            session["login_time"] = now_iso
+            session["last_activity"] = now_iso
             auth_log.info(f"LOGIN_SUCCESS user={username} ip={user.last_login_ip}")
             next_url = request.args.get("next") or url_for("admin_page")
             return redirect(next_url)
+
+        # Failed authentication: bump the counter and possibly lock.
+        if user:
+            locked_now = user.register_failed_login(
+                Config.LOGIN_LOCKOUT_MAX_ATTEMPTS,
+                Config.LOGIN_LOCKOUT_DURATION,
+            )
+            db.session.commit()
+            if locked_now:
+                auth_log.warning(
+                    f"LOGIN_LOCKOUT user={username} ip={request.remote_addr} "
+                    f"after {user.failed_login_count} failed attempts"
+                )
 
         auth_log.warning(f"LOGIN_FAILED user={username} ip={request.remote_addr}")
         flash("Invalid username or password.", "error")
@@ -379,10 +523,13 @@ def register_page():
         password = request.form.get("password", "")
         password2 = request.form.get("password2", "")
 
+        password_error = _validate_password_strength(password) if password else None
         if not username or not password:
             flash("Username and password are required.", "error")
         elif password != password2:
             flash("Passwords do not match.", "error")
+        elif password_error:
+            flash(password_error, "error")
         elif User.query.filter_by(username=username).first():
             flash("Username already taken.", "error")
         else:
@@ -1336,6 +1483,7 @@ def api_list_keys():
 
 @app.route("/api/v1/keys", methods=["POST"])
 @login_required
+@limiter.limit("10 per hour")
 def api_create_key():
     """Generate a new API key for the current user.
 
@@ -1481,6 +1629,9 @@ def api_create_user():
         return jsonify({"error": "username and password are required."}), 400
     if role not in ("admin", "manager", "viewer"):
         return jsonify({"error": "role must be 'admin', 'manager', or 'viewer'."}), 400
+    pw_error = _validate_password_strength(password)
+    if pw_error:
+        return jsonify({"error": pw_error}), 400
     if User.query.filter_by(username=username).first():
         return jsonify({"error": "Username already taken."}), 409
 
@@ -1538,7 +1689,12 @@ def api_update_user(user_id):
     if "is_active" in data:
         user.is_active_user = bool(data["is_active"])
     if "password" in data and data["password"]:
+        pw_error = _validate_password_strength(data["password"])
+        if pw_error:
+            return jsonify({"error": pw_error}), 400
         user.set_password(data["password"])
+        # New password = clean slate, drop any pending lockout.
+        user.reset_failed_logins()
 
     # Replace museum assignments
     if "assigned_museums" in data:
