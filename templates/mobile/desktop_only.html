@@ -1,0 +1,30 @@
+{% extends "mobile/base.html" %}
+{% block title %}Desktop required — Aircraft Finder{% endblock %}
+
+{% block content %}
+<div class="m-page-header">
+    <h1><i class="fa-solid fa-display"></i> Desktop required</h1>
+    <p class="m-subtitle">Admin tools are not available on mobile.</p>
+</div>
+
+<div class="m-card">
+    <p style="font-size:.92rem; line-height:1.6;">
+        Managing aircraft, museums, exhibits, and templates needs more screen
+        space than a phone has. Open the site on a tablet or desktop browser
+        to access the admin panel.
+    </p>
+    <p style="font-size:.92rem; line-height:1.6; margin-top:.7rem;">
+        If you really need to, you can override and view the full desktop
+        layout on this device — it'll be cramped, but it works.
+    </p>
+
+    <div style="display:flex; gap:.5rem; flex-direction:column; margin-top:1rem;">
+        <a href="/?desktop=1" class="m-btn">
+            <i class="fa-solid fa-display"></i> Force desktop layout
+        </a>
+        <a href="/" class="m-btn m-btn-secondary">
+            <i class="fa-solid fa-arrow-left"></i> Back to home
+        </a>
+    </div>
+</div>
+{% endblock %}

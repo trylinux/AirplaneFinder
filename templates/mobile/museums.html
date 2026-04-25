@@ -1,0 +1,99 @@
+{% extends "mobile/base.html" %}
+{% block title %}Museums — Aircraft Finder{% endblock %}
+{% block tab_museums %}active{% endblock %}
+
+{% block content %}
+<div class="m-page-header">
+    <h1><i class="fa-solid fa-building-columns"></i> Museums</h1>
+    <p class="m-subtitle">Browse aviation museums by name, region, or country.</p>
+</div>
+
+<div class="m-search">
+    <input type="text" id="m-q" placeholder="Search museums...">
+    <button id="m-go"><i class="fa-solid fa-magnifying-glass"></i></button>
+</div>
+
+<div class="m-field">
+    <label>Region</label>
+    <select id="m-region">
+        <option value="">All regions</option>
+    </select>
+</div>
+
+<div id="m-results"></div>
+<div id="m-pages" class="m-pagination"></div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+$(function() {
+    // Populate the region filter from the API.
+    $.getJSON('/api/v1/museums/regions', function(rows) {
+        rows.forEach(function(r) {
+            $('#m-region').append('<option value="' + escHtml(r.region) + '">' + escHtml(r.region) + ' (' + r.count + ')</option>');
+        });
+    });
+
+    function load(page) {
+        page = page || 1;
+        $('#m-results').html('<div class="m-list-empty">Loading…</div>');
+        $.getJSON('/api/v1/museums/search', {
+            q: $('#m-q').val().trim(),
+            region: $('#m-region').val(),
+            page: page, per_page: 20
+        }, function(d) {
+            renderResults(d);
+            renderPages(d.page, d.pages);
+        });
+    }
+
+    function renderResults(d) {
+        if (!d.results || !d.results.length) {
+            $('#m-results').html('<div class="m-list-empty">No museums found.</div>');
+            return;
+        }
+        var html = '<div class="m-list">';
+        d.results.forEach(function(m) {
+            var loc = m.city + (m.state_province ? ', ' + m.state_province : '') + ', ' + m.country;
+            html += '<div class="m-list-item">'
+                 + '<div class="m-list-title">'
+                 +   '<span>' + escHtml(m.name) + '</span>'
+                 + '</div>'
+                 + '<div class="m-list-meta">'
+                 +   '<span><i class="fa-solid fa-location-dot"></i>' + escHtml(loc) + '</span>'
+                 +   '<span><i class="fa-solid fa-globe"></i>' + escHtml(m.region) + '</span>'
+                 + (m.website ? '<span><a href="' + m.website + '" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Site</a></span>' : '')
+                 + '</div>'
+                 + '</div>';
+        });
+        html += '</div>';
+        html += '<div style="font-size:.75rem;color:var(--text-dim);text-align:center;margin-top:.5rem;">' + d.total + ' total</div>';
+        $('#m-results').html(html);
+    }
+
+    function renderPages(cur, total) {
+        if (!total || total < 2) { $('#m-pages').empty(); return; }
+        var html = '';
+        if (cur > 1)     html += '<button data-p="' + (cur-1) + '">‹</button>';
+        if (cur > 2)     html += '<button data-p="1">1</button>';
+        if (cur > 3)     html += '<span style="align-self:center;color:var(--text-dim);">…</span>';
+        for (var i = Math.max(1, cur-1); i <= Math.min(total, cur+1); i++) {
+            html += '<button class="' + (i === cur ? 'active' : '') + '" data-p="' + i + '">' + i + '</button>';
+        }
+        if (cur < total-2) html += '<span style="align-self:center;color:var(--text-dim);">…</span>';
+        if (cur < total-1) html += '<button data-p="' + total + '">' + total + '</button>';
+        if (cur < total)   html += '<button data-p="' + (cur+1) + '">›</button>';
+        $('#m-pages').html(html);
+    }
+
+    $('#m-pages').on('click', 'button', function() { load(parseInt($(this).data('p'), 10)); });
+    $('#m-go').on('click', function() { load(1); });
+    $('#m-q').on('keypress', function(e) { if (e.which === 13) load(1); });
+    $('#m-region').on('change', function() { load(1); });
+
+    var params = new URLSearchParams(window.location.search);
+    if (params.get('q')) $('#m-q').val(params.get('q'));
+    load(1);
+});
+</script>
+{% endblock %}

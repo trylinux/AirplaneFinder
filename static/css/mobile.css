@@ -1,0 +1,252 @@
+/* ─── Mobile-only stylesheet ──────────────────────────────────────────
+   Loaded by templates/mobile/base.html ONLY. Independent from style.css —
+   keep mobile rules here so the desktop layout can never accidentally pull
+   them in.
+   --------------------------------------------------------------------- */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+    --bg:        #0f172a;
+    --bg-card:   #1e293b;
+    --bg-input:  #334155;
+    --border:    #475569;
+    --text:      #e2e8f0;
+    --text-dim:  #94a3b8;
+    --primary:   #3b82f6;
+    --primary-h: #2563eb;
+    --accent:    #06b6d4;
+    --success:   #22c55e;
+    --warning:   #f59e0b;
+    --error:     #ef4444;
+    --danger:    #ef4444;
+    --radius:    10px;
+    --topbar-h:  52px;
+    --bottomnav-h: 60px;
+}
+
+html { font-size: 15px; -webkit-text-size-adjust: 100%; }
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    min-height: 100vh;
+    /* Pad top by topbar height and bottom by bottom-nav height so fixed
+       chrome never overlaps the content. */
+    padding-top: var(--topbar-h);
+    padding-bottom: var(--bottomnav-h);
+    -webkit-tap-highlight-color: transparent;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:active { opacity: .7; }
+
+/* ─── Top bar (fixed) ─────────────────────── */
+.m-topbar {
+    position: fixed; top: 0; left: 0; right: 0;
+    height: var(--topbar-h);
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 .85rem;
+    z-index: 50;
+}
+.m-brand {
+    display: flex; align-items: center; gap: .5rem;
+    color: var(--text); font-weight: 700; font-size: 1rem;
+}
+.m-brand i { color: var(--primary); font-size: 1.1rem; }
+.m-topbar-actions { display: flex; gap: .35rem; }
+.m-topbar-btn {
+    width: 38px; height: 38px; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--text-dim); cursor: pointer; background: transparent;
+    border: none; font-size: 1rem;
+}
+.m-topbar-btn:active { background: rgba(255,255,255,.08); }
+
+/* ─── Bottom tab bar (fixed) ──────────────── */
+.m-bottomnav {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    height: var(--bottomnav-h);
+    background: linear-gradient(0deg, #0f172a 0%, #1e293b 100%);
+    border-top: 1px solid var(--border);
+    display: flex; align-items: stretch; justify-content: space-around;
+    z-index: 50;
+    padding-bottom: env(safe-area-inset-bottom);
+}
+.m-tab {
+    flex: 1; display: flex; flex-direction: column; align-items: center;
+    justify-content: center; gap: 2px;
+    color: var(--text-dim); font-size: .68rem; font-weight: 500;
+    padding: .35rem .25rem;
+}
+.m-tab i { font-size: 1.15rem; }
+.m-tab.active { color: var(--primary); }
+.m-tab:active { opacity: .6; }
+
+/* ─── Main content ────────────────────────── */
+.m-main { padding: .85rem; max-width: 100%; }
+
+.m-page-header { margin-bottom: 1rem; }
+.m-page-header h1 {
+    font-size: 1.35rem; font-weight: 700;
+    display: flex; align-items: center; gap: .5rem;
+}
+.m-page-header h1 i { color: var(--primary); }
+.m-page-header .m-subtitle {
+    color: var(--text-dim); font-size: .85rem; margin-top: .2rem;
+}
+
+/* ─── Card ────────────────────────────────── */
+.m-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: .9rem;
+    margin-bottom: .9rem;
+}
+.m-card h2 {
+    font-size: 1rem; font-weight: 600; margin-bottom: .5rem;
+    display: flex; align-items: center; gap: .4rem;
+}
+.m-card h2 i { color: var(--primary); }
+
+/* ─── Stat cards (compact, 2 columns) ────── */
+.m-stats {
+    display: grid; grid-template-columns: 1fr 1fr; gap: .65rem;
+    margin-bottom: 1rem;
+}
+.m-stat {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: .75rem;
+    display: flex; align-items: center; gap: .65rem;
+}
+.m-stat-icon {
+    width: 36px; height: 36px; border-radius: 9px;
+    background: rgba(59,130,246,.15); color: var(--primary);
+    display: flex; align-items: center; justify-content: center;
+    font-size: .95rem; flex-shrink: 0;
+}
+.m-stat-num { font-size: 1.25rem; font-weight: 700; line-height: 1; }
+.m-stat-label { font-size: .72rem; color: var(--text-dim); margin-top: .15rem; }
+
+/* ─── Buttons ─────────────────────────────── */
+.m-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    gap: .4rem; padding: .65rem 1rem; border-radius: 8px;
+    font-size: .92rem; font-weight: 600; border: none;
+    background: var(--primary); color: white; cursor: pointer;
+    width: 100%;
+}
+.m-btn:active { background: var(--primary-h); }
+.m-btn.m-btn-secondary {
+    background: var(--bg-input); color: var(--text);
+    border: 1px solid var(--border);
+}
+.m-btn.m-btn-ghost { background: transparent; color: var(--text-dim); }
+
+/* ─── Form controls ───────────────────────── */
+.m-field { margin-bottom: .8rem; }
+.m-field label {
+    display: block; font-size: .8rem; color: var(--text-dim);
+    margin-bottom: .25rem; font-weight: 500;
+}
+.m-field input,
+.m-field select,
+.m-field textarea,
+.m-search input {
+    width: 100%; padding: .65rem .75rem;
+    background: var(--bg-input); color: var(--text);
+    border: 1px solid var(--border); border-radius: 8px;
+    font-size: 16px;     /* >= 16px so iOS doesn't auto-zoom */
+    font-family: inherit;
+}
+.m-field input:focus,
+.m-field select:focus,
+.m-field textarea:focus,
+.m-search input:focus {
+    outline: none; border-color: var(--primary);
+}
+
+.m-search {
+    display: flex; gap: .4rem; margin-bottom: .85rem;
+}
+.m-search input { flex: 1; }
+.m-search button {
+    flex-shrink: 0; width: 44px; height: 44px;
+    background: var(--primary); color: white;
+    border: none; border-radius: 8px; font-size: 1rem;
+}
+
+/* ─── List items (replaces tables on mobile) */
+.m-list { display: flex; flex-direction: column; gap: .5rem; }
+.m-list-item {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 9px; padding: .7rem .85rem;
+    display: flex; flex-direction: column; gap: .25rem;
+    cursor: pointer;
+}
+.m-list-item:active { background: rgba(255,255,255,.04); }
+.m-list-item .m-list-title {
+    font-weight: 600; font-size: .95rem;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: .5rem;
+}
+.m-list-item .m-list-meta {
+    font-size: .8rem; color: var(--text-dim);
+    display: flex; flex-wrap: wrap; gap: .65rem;
+}
+.m-list-item .m-list-meta span i { margin-right: .2rem; opacity: .7; }
+.m-list-empty {
+    text-align: center; color: var(--text-dim);
+    padding: 2rem 1rem; font-size: .9rem;
+}
+
+/* ─── Badges (military/civilian, status, etc.) */
+.m-badge {
+    display: inline-block; padding: .15rem .5rem; border-radius: 5px;
+    font-size: .7rem; font-weight: 600;
+    background: rgba(255,255,255,.08); color: var(--text-dim);
+}
+.m-badge.military { background: rgba(245,158,11,.2); color: #fbbf24; }
+.m-badge.civilian { background: rgba(34,197,94,.2);  color: #4ade80; }
+.m-badge.admin    { background: rgba(239,68,68,.2);  color: #f87171; }
+.m-badge.manager  { background: rgba(59,130,246,.2); color: #60a5fa; }
+.m-badge.viewer   { background: rgba(148,163,184,.2); color: #cbd5e1; }
+
+/* ─── Alerts / flash messages ─────────────── */
+.m-alert {
+    padding: .65rem .85rem; border-radius: 8px; font-size: .85rem;
+    display: flex; gap: .5rem; align-items: flex-start;
+    margin-bottom: .75rem;
+}
+.m-alert i { margin-top: .15rem; }
+.m-alert.success { background: rgba(34,197,94,.12);  color: #86efac; border: 1px solid rgba(34,197,94,.25); }
+.m-alert.error,
+.m-alert.danger  { background: rgba(239,68,68,.12);  color: #fca5a5; border: 1px solid rgba(239,68,68,.25); }
+.m-alert.warning { background: rgba(245,158,11,.12); color: #fcd34d; border: 1px solid rgba(245,158,11,.25); }
+.m-alert.info    { background: rgba(59,130,246,.12); color: #93c5fd; border: 1px solid rgba(59,130,246,.25); }
+
+/* ─── Pagination ──────────────────────────── */
+.m-pagination {
+    display: flex; gap: .35rem; justify-content: center;
+    margin-top: 1rem; flex-wrap: wrap;
+}
+.m-pagination button {
+    min-width: 38px; height: 38px;
+    background: var(--bg-input); color: var(--text);
+    border: 1px solid var(--border); border-radius: 7px;
+    font-size: .85rem; padding: 0 .5rem;
+}
+.m-pagination button.active {
+    background: var(--primary); color: white; border-color: var(--primary);
+}
+
+/* ─── Footer link (request desktop site) ──── */
+.m-foot {
+    text-align: center; padding: 1rem .5rem;
+    color: var(--text-dim); font-size: .75rem;
+}
+.m-foot a { color: var(--accent); }

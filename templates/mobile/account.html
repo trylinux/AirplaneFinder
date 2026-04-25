@@ -1,0 +1,150 @@
+{% extends "mobile/base.html" %}
+{% block title %}My Account — Aircraft Finder{% endblock %}
+
+{% block content %}
+<div class="m-page-header">
+    <h1><i class="fa-solid fa-user"></i> My Account</h1>
+</div>
+
+<div class="m-card">
+    <h2>Profile</h2>
+    <div style="font-size:.92rem;">
+        <div style="margin-bottom:.4rem;">
+            <span style="color:var(--text-dim);">Username:</span>
+            <strong>{{ current_user.username }}</strong>
+        </div>
+        <div style="margin-bottom:.4rem;">
+            <span style="color:var(--text-dim);">Role:</span>
+            <span class="m-badge {{ current_user.role }}">{{ current_user.role }}</span>
+        </div>
+        {% if current_user.email %}
+        <div style="margin-bottom:.4rem;">
+            <span style="color:var(--text-dim);">Email:</span>
+            {{ current_user.email }}
+        </div>
+        {% endif %}
+        <div>
+            <span style="color:var(--text-dim);">Contributions:</span>
+            <strong>{{ current_user.contribution_count }}</strong>
+        </div>
+    </div>
+</div>
+
+<div class="m-card">
+    <h2><i class="fa-solid fa-key"></i> API Keys</h2>
+    <p style="color:var(--text-dim); font-size:.82rem; margin-bottom:.65rem;">
+        Use Bearer tokens to authenticate against the JSON API.
+    </p>
+    <div id="keys-list" class="m-list">
+        <div class="m-list-empty">Loading…</div>
+    </div>
+
+    <div style="margin-top:.85rem;">
+        <details>
+            <summary style="font-size:.9rem; color:var(--accent); padding:.5rem 0; cursor:pointer;">
+                <i class="fa-solid fa-plus"></i> Generate new key
+            </summary>
+            <div style="margin-top:.5rem;">
+                <div class="m-field">
+                    <label>Label</label>
+                    <input type="text" id="key-label" placeholder="e.g. mobile app" value="default">
+                </div>
+                <div class="m-field">
+                    <label>Permissions</label>
+                    <select id="key-perms">
+                        <option value="read">Read only</option>
+                        {% if current_user.is_manager %}
+                        <option value="readwrite">Read + write</option>
+                        {% endif %}
+                        {% if current_user.is_admin %}
+                        <option value="admin">Admin</option>
+                        {% endif %}
+                    </select>
+                </div>
+                <button class="m-btn" id="key-gen"><i class="fa-solid fa-plus"></i> Generate</button>
+                <div id="key-result" style="margin-top:.65rem;"></div>
+            </div>
+        </details>
+    </div>
+</div>
+
+<a href="{{ url_for('logout') }}" class="m-btn m-btn-secondary" style="margin-top:.5rem;">
+    <i class="fa-solid fa-right-from-bracket"></i> Logout
+</a>
+{% endblock %}
+
+{% block scripts %}
+<script>
+$(function() {
+    $.ajaxSetup({
+        beforeSend: function(xhr, settings) {
+            if (!/^(GET|HEAD|OPTIONS)$/i.test(settings.type)) {
+                xhr.setRequestHeader('X-CSRFToken', $('meta[name="csrf-token"]').attr('content'));
+            }
+        }
+    });
+
+    function loadKeys() {
+        $.getJSON('/api/v1/keys', function(keys) {
+            if (!keys.length) {
+                $('#keys-list').html('<div class="m-list-empty">No keys yet.</div>');
+                return;
+            }
+            var html = '';
+            keys.forEach(function(k) {
+                var status = k.is_expired ? 'expired' : (k.is_active ? 'active' : 'revoked');
+                html += '<div class="m-list-item">'
+                     + '<div class="m-list-title">'
+                     +   '<span style="font-family:monospace;font-size:.82rem;">' + escHtml(k.key_prefix) + '</span>'
+                     +   '<span class="m-badge ' + (k.is_active && !k.is_expired ? 'civilian' : 'military') + '">' + status + '</span>'
+                     + '</div>'
+                     + '<div class="m-list-meta">'
+                     +   '<span><i class="fa-solid fa-tag"></i>' + escHtml(k.label) + '</span>'
+                     +   '<span><i class="fa-solid fa-shield"></i>' + escHtml(k.permissions) + '</span>'
+                     + (k.last_used ? '<span><i class="fa-solid fa-clock"></i>' + escHtml(k.last_used.split('T')[0]) + '</span>' : '')
+                     + '</div>';
+                if (k.is_active && !k.is_expired) {
+                    html += '<button class="m-btn m-btn-secondary revoke-key" data-id="' + k.id + '" style="margin-top:.5rem;">'
+                         + '<i class="fa-solid fa-trash"></i> Revoke</button>';
+                }
+                html += '</div>';
+            });
+            $('#keys-list').html(html);
+        });
+    }
+    loadKeys();
+
+    $('#key-gen').on('click', function() {
+        $.ajax({
+            url: '/api/v1/keys', method: 'POST', contentType: 'application/json',
+            data: JSON.stringify({label: $('#key-label').val(), permissions: $('#key-perms').val()}),
+            success: function(resp) {
+                $('#key-result').html(
+                    '<div class="m-alert success">'
+                    + '<i class="fa-solid fa-circle-check"></i>'
+                    + '<span>Key created. <strong style="display:block;font-family:monospace;word-break:break-all;margin-top:.35rem;">' + escHtml(resp.key) + '</strong>'
+                    + '<small style="display:block;margin-top:.35rem;">Copy it now — it won\'t be shown again.</small></span></div>'
+                );
+                loadKeys();
+            },
+            error: function(xhr) {
+                $('#key-result').html('<div class="m-alert error"><i class="fa-solid fa-circle-exclamation"></i><span>'
+                    + escHtml(xhr.responseJSON ? xhr.responseJSON.error : 'Failed to create key') + '</span></div>');
+            }
+        });
+    });
+
+    $(document).on('click', '.revoke-key', function() {
+        var id = $(this).data('id');
+        if (!confirm('Revoke this key?')) return;
+        $.ajax({
+            url: '/api/v1/keys/' + id, method: 'DELETE',
+            success: loadKeys,
+            error: function(xhr) {
+                alert(xhr.responseJSON ? xhr.responseJSON.error : 'Failed to revoke');
+            }
+        });
+    });
+});
+</script>
+{% endblock %}

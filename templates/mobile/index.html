@@ -1,0 +1,155 @@
+{% extends "mobile/base.html" %}
+{% block title %}Aircraft Finder{% endblock %}
+{% block tab_home %}active{% endblock %}
+
+{% block content %}
+<div class="m-page-header">
+    <h1><i class="fa-solid fa-gauge-high"></i> Dashboard</h1>
+    <p class="m-subtitle">Find historic aircraft and the museums that display them.</p>
+</div>
+
+<div class="m-stats">
+    <div class="m-stat">
+        <div class="m-stat-icon"><i class="fa-solid fa-jet-fighter"></i></div>
+        <div>
+            <div class="m-stat-num" id="stat-aircraft">—</div>
+            <div class="m-stat-label">Aircraft</div>
+        </div>
+    </div>
+    <div class="m-stat">
+        <div class="m-stat-icon"><i class="fa-solid fa-building-columns"></i></div>
+        <div>
+            <div class="m-stat-num" id="stat-museums">—</div>
+            <div class="m-stat-label">Museums</div>
+        </div>
+    </div>
+    <div class="m-stat">
+        <div class="m-stat-icon"><i class="fa-solid fa-link"></i></div>
+        <div>
+            <div class="m-stat-num" id="stat-exhibits">—</div>
+            <div class="m-stat-label">Exhibits</div>
+        </div>
+    </div>
+    <div class="m-stat">
+        <div class="m-stat-icon"><i class="fa-solid fa-globe"></i></div>
+        <div>
+            <div class="m-stat-num" id="stat-countries">—</div>
+            <div class="m-stat-label">Countries</div>
+        </div>
+    </div>
+</div>
+
+<div class="m-card">
+    <h2><i class="fa-solid fa-location-crosshairs"></i> Find Nearest</h2>
+    <div class="m-field">
+        <label>Aircraft (model, alias, or tail #)</label>
+        <input type="text" id="prox-aircraft" placeholder="e.g. C-130, B29, Superfortress">
+    </div>
+    <div class="m-field">
+        <label>Your location (zip or city)</label>
+        <input type="text" id="prox-location" placeholder="e.g. 92591, Dayton">
+    </div>
+    <button class="m-btn" id="prox-go"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+    <div id="prox-results" style="margin-top:.85rem;"></div>
+</div>
+
+<div class="m-card">
+    <h2><i class="fa-solid fa-magnifying-glass"></i> Quick Search</h2>
+    <div class="m-search">
+        <input type="text" id="quick-q" placeholder="Aircraft or museum name...">
+        <button id="quick-go"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div id="quick-results"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+$(function() {
+    // Stats
+    $.getJSON('/api/v1/stats', function(d) {
+        $('#stat-aircraft').text(d.aircraft_count);
+        $('#stat-museums').text(d.museum_count);
+        $('#stat-exhibits').text(d.link_count);
+        $('#stat-countries').text(d.country_count);
+    });
+
+    // Proximity search
+    $('#prox-go').on('click', function() {
+        var aircraft = $('#prox-aircraft').val().trim();
+        var location = $('#prox-location').val().trim();
+        if (!aircraft || !location) {
+            $('#prox-results').html('<div class="m-alert error"><i class="fa-solid fa-circle-exclamation"></i><span>Aircraft and location are required.</span></div>');
+            return;
+        }
+        $('#prox-results').html('<div class="m-list-empty">Searching…</div>');
+        $.getJSON('/api/v1/nearest', {aircraft: aircraft, location: location, limit: 5}, function(d) {
+            if (!d.results || !d.results.length) {
+                $('#prox-results').html('<div class="m-list-empty">No matches found.</div>');
+                return;
+            }
+            var html = '<div class="m-list">';
+            d.results.forEach(function(r) {
+                html += '<div class="m-list-item">'
+                     + '<div class="m-list-title">'
+                     +   '<span>' + escHtml(r.museum.name) + '</span>'
+                     +   '<span class="m-badge">' + r.distance_miles + ' mi</span>'
+                     + '</div>'
+                     + '<div class="m-list-meta">'
+                     +   '<span><i class="fa-solid fa-jet-fighter"></i>' + escHtml(r.aircraft.full_designation || r.aircraft.model) + '</span>'
+                     +   '<span><i class="fa-solid fa-location-dot"></i>' + escHtml(r.museum.city + ', ' + r.museum.country) + '</span>'
+                     + '</div>'
+                     + '</div>';
+            });
+            html += '</div>';
+            $('#prox-results').html(html);
+        }).fail(function(xhr) {
+            var msg = xhr.responseJSON ? xhr.responseJSON.error : 'Search failed.';
+            $('#prox-results').html('<div class="m-alert error"><i class="fa-solid fa-circle-exclamation"></i><span>' + escHtml(msg) + '</span></div>');
+        });
+    });
+
+    // Quick search — runs both searches and lists the top 3 of each
+    function runQuick() {
+        var q = $('#quick-q').val().trim();
+        if (!q) return;
+        $('#quick-results').html('<div class="m-list-empty">Searching…</div>');
+        $.when(
+            $.getJSON('/api/v1/aircraft/search', {q: q, per_page: 3}),
+            $.getJSON('/api/v1/museums/search',  {q: q, per_page: 3})
+        ).done(function(aRes, mRes) {
+            var ac = aRes[0].results || [];
+            var mu = mRes[0].results || [];
+            if (!ac.length && !mu.length) {
+                $('#quick-results').html('<div class="m-list-empty">Nothing found for "' + escHtml(q) + '".</div>');
+                return;
+            }
+            var html = '';
+            if (ac.length) {
+                html += '<div style="font-size:.78rem;color:var(--text-dim);margin:.4rem 0 .35rem;text-transform:uppercase;letter-spacing:.05em;">Aircraft</div><div class="m-list">';
+                ac.forEach(function(a) {
+                    html += '<a class="m-list-item" href="/aircraft?q=' + encodeURIComponent(a.full_designation || a.model) + '">'
+                         +   '<div class="m-list-title">' + escHtml(a.full_designation || a.model) + '</div>'
+                         +   '<div class="m-list-meta"><span>' + escHtml(a.manufacturer) + '</span></div>'
+                         + '</a>';
+                });
+                html += '</div>';
+            }
+            if (mu.length) {
+                html += '<div style="font-size:.78rem;color:var(--text-dim);margin:.6rem 0 .35rem;text-transform:uppercase;letter-spacing:.05em;">Museums</div><div class="m-list">';
+                mu.forEach(function(m) {
+                    html += '<a class="m-list-item" href="/museums?q=' + encodeURIComponent(m.name) + '">'
+                         +   '<div class="m-list-title">' + escHtml(m.name) + '</div>'
+                         +   '<div class="m-list-meta"><span>' + escHtml(m.city + ', ' + m.country) + '</span></div>'
+                         + '</a>';
+                });
+                html += '</div>';
+            }
+            $('#quick-results').html(html);
+        });
+    }
+    $('#quick-go').on('click', runQuick);
+    $('#quick-q').on('keypress', function(e) { if (e.which === 13) runQuick(); });
+});
+</script>
+{% endblock %}

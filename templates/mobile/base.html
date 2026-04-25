@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="theme-color" content="#0f172a">
+    <title>{% block title %}Aircraft Finder{% endblock %}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile.css') }}?v=mobile-1">
+    {% block head %}{% endblock %}
+</head>
+<body>
+
+<header class="m-topbar">
+    <a href="/" class="m-brand">
+        <i class="fa-solid fa-plane"></i>
+        <span>Aircraft Finder</span>
+    </a>
+    <div class="m-topbar-actions">
+        {% if current_user.is_authenticated %}
+            <a href="/account" class="m-topbar-btn" aria-label="Account"><i class="fa-solid fa-user"></i></a>
+            <a href="/logout"  class="m-topbar-btn" aria-label="Logout"><i class="fa-solid fa-right-from-bracket"></i></a>
+        {% else %}
+            <a href="/login" class="m-topbar-btn" aria-label="Login"><i class="fa-solid fa-right-to-bracket"></i></a>
+        {% endif %}
+    </div>
+</header>
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+<div class="m-main" style="padding-bottom:0;">
+    {% for category, message in messages %}
+    <div class="m-alert {{ category }}">
+        <i class="fa-solid fa-{% if category == 'error' %}circle-exclamation{% elif category == 'success' %}circle-check{% else %}circle-info{% endif %}"></i>
+        <span>{{ message }}</span>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+{% endwith %}
+
+<main class="m-main">
+    {% block content %}{% endblock %}
+</main>
+
+<div class="m-foot">
+    <a href="?desktop=1">Switch to desktop site</a>
+</div>
+
+<nav class="m-bottomnav">
+    <a href="/"             class="m-tab {% block tab_home %}{% endblock %}">
+        <i class="fa-solid fa-house"></i><span>Home</span>
+    </a>
+    <a href="/aircraft"     class="m-tab {% block tab_aircraft %}{% endblock %}">
+        <i class="fa-solid fa-jet-fighter"></i><span>Aircraft</span>
+    </a>
+    <a href="/museums"      class="m-tab {% block tab_museums %}{% endblock %}">
+        <i class="fa-solid fa-building-columns"></i><span>Museums</span>
+    </a>
+    <a href="/contributors" class="m-tab {% block tab_contributors %}{% endblock %}">
+        <i class="fa-solid fa-ranking-star"></i><span>Top</span>
+    </a>
+</nav>
+
+<script>
+function escHtml(s) {
+    if (s == null) return '';
+    return $('<span>').text(String(s)).html();
+}
+</script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,41 @@
+{% extends "mobile/base.html" %}
+{% block title %}Contributors — Aircraft Finder{% endblock %}
+{% block tab_contributors %}active{% endblock %}
+
+{% block content %}
+<div class="m-page-header">
+    <h1><i class="fa-solid fa-ranking-star"></i> Top Contributors</h1>
+    <p class="m-subtitle">Users ranked by total contributions to the catalog.</p>
+</div>
+
+<div id="contrib-list" class="m-list">
+    <div class="m-list-empty">Loading…</div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+$(function() {
+    $.getJSON('/api/v1/contributors', function(rows) {
+        if (!rows.length) {
+            $('#contrib-list').html('<div class="m-list-empty">No contributions yet.</div>');
+            return;
+        }
+        var html = '';
+        rows.forEach(function(u, i) {
+            html += '<div class="m-list-item">'
+                 + '<div class="m-list-title">'
+                 +   '<span><strong style="color:var(--primary);margin-right:.5rem;">#' + (i + 1) + '</strong>'
+                 +     escHtml(u.username) + '</span>'
+                 +   '<span class="m-badge ' + escHtml(u.role) + '">' + escHtml(u.role) + '</span>'
+                 + '</div>'
+                 + '<div class="m-list-meta">'
+                 +   '<span><i class="fa-solid fa-trophy"></i>' + u.contributions + ' contributions</span>'
+                 + '</div>'
+                 + '</div>';
+        });
+        $('#contrib-list').html(html);
+    });
+});
+</script>
+{% endblock %}

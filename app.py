@@ -11,12 +11,13 @@ Features:
   - Structured logging: auth, changes, access
 """
 
+import re
 from datetime import datetime, timedelta, timezone
 from functools import wraps
 
 from flask import (
     Flask, render_template, request, jsonify,
-    redirect, url_for, flash, abort, g,
+    redirect, url_for, flash, abort, g, session,
 )
 from flask_login import (
     LoginManager, login_user, logout_user,
@@ -123,6 +124,86 @@ def _log_response(response):
         change_log.info(line)
 
     return response
+
+
+# ══════════════════════════════════════════════
+# Mobile dispatch
+# ══════════════════════════════════════════════
+
+# A small regex covering the User-Agent strings of phones and small tablets.
+# Intentionally conservative — better to render desktop for an ambiguous UA
+# (an unknown bot, e.g.) than to ship a half-broken mobile layout. Users on a
+# desktop browser in mobile-emulation mode trip this regex too, which is fine
+# for testing.
+_MOBILE_UA_RE = re.compile(
+    r"(iPhone|iPod|Android.*Mobile|BlackBerry|IEMobile|Opera Mini|"
+    r"Mobile Safari|Windows Phone|webOS)",
+    re.IGNORECASE,
+)
+
+
+def _is_mobile_request():
+    """True if the current request looks like it's from a phone.
+
+    Honors a per-session override: visiting any URL with ``?desktop=1`` flips
+    a session flag that forces the desktop layout for the rest of the session.
+    Visiting ``?desktop=0`` clears the override. The override exists so users
+    can request the full site from a phone (and so devs can verify mobile
+    routing without spoofing UA).
+    """
+    if request.args.get("desktop") == "1":
+        session["force_desktop"] = True
+    elif request.args.get("desktop") == "0":
+        session.pop("force_desktop", None)
+    if session.get("force_desktop"):
+        return False
+    ua = request.headers.get("User-Agent", "")
+    return bool(_MOBILE_UA_RE.search(ua))
+
+
+@app.before_request
+def _detect_mobile():
+    """Stash is_mobile on flask.g so route handlers and templates can branch."""
+    g.is_mobile = _is_mobile_request()
+
+
+@app.context_processor
+def _inject_mobile_flag():
+    """Make ``is_mobile`` available inside every Jinja template."""
+    return {"is_mobile": getattr(g, "is_mobile", False)}
+
+
+def mobile_render(name, **context):
+    """Render ``mobile/<name>`` for phone clients, else the desktop ``<name>``.
+
+    Used by every public-facing web route. Admin routes use ``@no_mobile``
+    instead, which redirects to /desktop-only — admin is desktop-only by
+    product decision.
+    """
+    if getattr(g, "is_mobile", False):
+        return render_template(f"mobile/{name}", **context)
+    return render_template(name, **context)
+
+
+def no_mobile(fn):
+    """Decorator: redirect mobile callers to /desktop-only.
+
+    Apply to every admin route. Mobile users get a friendly page explaining
+    that admin tools require a larger screen, with a one-click link to
+    request the desktop layout for the rest of their session.
+    """
+    @wraps(fn)
+    def wrapper(*args, **kwargs):
+        if getattr(g, "is_mobile", False):
+            return redirect(url_for("desktop_only_page"))
+        return fn(*args, **kwargs)
+    return wrapper
+
+
+@app.route("/desktop-only")
+def desktop_only_page():
+    """Mobile-only landing page shown when a phone hits an admin route."""
+    return render_template("mobile/desktop_only.html")
 
 
 # ══════════════════════════════════════════════
@@ -233,17 +314,17 @@ def _user_can_write_museum(museum_id):
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return mobile_render("index.html")
 
 
 @app.route("/aircraft")
 def aircraft_page():
-    return render_template("aircraft.html")
+    return mobile_render("aircraft.html")
 
 
 @app.route("/museums")
 def museums_page():
-    return render_template("museums.html")
+    return mobile_render("museums.html")
 
 
 # ══════════════════════════════════════════════
@@ -273,7 +354,7 @@ def login_page():
         auth_log.warning(f"LOGIN_FAILED user={username} ip={request.remote_addr}")
         flash("Invalid username or password.", "error")
 
-    return render_template("login.html")
+    return mobile_render("login.html")
 
 
 @app.route("/logout")
@@ -317,7 +398,7 @@ def register_page():
             flash("Account created!" + (" You are the first user, so you have admin rights." if is_first else ""), "success")
             return redirect(url_for("admin_page"))
 
-    return render_template("register.html")
+    return mobile_render("register.html")
 
 
 # ══════════════════════════════════════════════
@@ -327,7 +408,7 @@ def register_page():
 @app.route("/account")
 @login_required
 def account_page():
-    return render_template("account.html")
+    return mobile_render("account.html")
 
 
 # ══════════════════════════════════════════════
@@ -335,60 +416,70 @@ def account_page():
 # ══════════════════════════════════════════════
 
 @app.route("/admin")
+@no_mobile
 @login_required
 def admin_page():
     return render_template("admin.html")
 
 
 @app.route("/admin/aircraft")
+@no_mobile
 @login_required
 def admin_aircraft_page():
     return render_template("admin_aircraft.html")
 
 
 @app.route("/admin/aircraft/new")
+@no_mobile
 @login_required
 def admin_aircraft_new_page():
     return render_template("admin_aircraft_new.html")
 
 
 @app.route("/admin/museums")
+@no_mobile
 @login_required
 def admin_museums_page():
     return render_template("admin_museums.html")
 
 
 @app.route("/admin/museums/new")
+@no_mobile
 @login_required
 def admin_museums_new_page():
     return render_template("admin_museums_new.html")
 
 
 @app.route("/admin/exhibits")
+@no_mobile
 @login_required
 def admin_exhibits_page():
     return render_template("admin_exhibits.html")
 
 
 @app.route("/admin/exhibits/new")
+@no_mobile
 @login_required
 def admin_exhibits_new_page():
     return render_template("admin_exhibits_new.html")
 
 
 @app.route("/admin/templates")
+@no_mobile
 @login_required
 def admin_templates_page():
     return render_template("admin_templates.html")
 
 
 @app.route("/admin/users")
+@no_mobile
 @admin_required
 def admin_users_page():
     return render_template("users.html")
 
 
 @app.route("/admin/api-keys")
+@no_mobile
 @login_required
 def api_keys_page():
     return render_template("api_keys.html")
@@ -400,7 +491,7 @@ def api_keys_page():
 
 @app.route("/contributors")
 def contributors_page():
-    return render_template("contributors.html")
+    return mobile_render("contributors.html")
 
 
 @app.route("/api/v1/contributors")

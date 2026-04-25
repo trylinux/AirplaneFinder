@@ -1,0 +1,87 @@
+{% extends "mobile/base.html" %}
+{% block title %}Aircraft — Aircraft Finder{% endblock %}
+{% block tab_aircraft %}active{% endblock %}
+
+{% block content %}
+<div class="m-page-header">
+    <h1><i class="fa-solid fa-jet-fighter"></i> Aircraft</h1>
+    <p class="m-subtitle">Browse historic airframes by model, name, or tail number.</p>
+</div>
+
+<div class="m-search">
+    <input type="text" id="ac-q" placeholder="Search aircraft...">
+    <button id="ac-go"><i class="fa-solid fa-magnifying-glass"></i></button>
+</div>
+
+<div id="ac-results"></div>
+<div id="ac-pages" class="m-pagination"></div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+$(function() {
+    var page = 1;
+
+    function load(p) {
+        page = p || 1;
+        var q = $('#ac-q').val().trim();
+        $('#ac-results').html('<div class="m-list-empty">Loading…</div>');
+        $.getJSON('/api/v1/aircraft/search', {q: q, page: page, per_page: 20}, function(d) {
+            renderResults(d);
+            renderPages(d.page, d.pages);
+        });
+    }
+
+    function renderResults(d) {
+        if (!d.results || !d.results.length) {
+            $('#ac-results').html('<div class="m-list-empty">No aircraft found.</div>');
+            return;
+        }
+        var html = '<div class="m-list">';
+        d.results.forEach(function(a) {
+            var milCiv = (a.military_civilian || 'military');
+            html += '<div class="m-list-item">'
+                 + '<div class="m-list-title">'
+                 +   '<span>' + escHtml(a.full_designation || a.model) + '</span>'
+                 +   '<span class="m-badge ' + milCiv + '">' + escHtml(milCiv) + '</span>'
+                 + '</div>'
+                 + '<div class="m-list-meta">'
+                 +   '<span><i class="fa-solid fa-industry"></i>' + escHtml(a.manufacturer) + '</span>';
+            if (a.model_name) html += '<span><i class="fa-solid fa-tag"></i>' + escHtml(a.model_name) + '</span>';
+            if (a.tail_number) html += '<span><i class="fa-solid fa-id-card"></i>' + escHtml(a.tail_number) + '</span>';
+            if (a.role_type)   html += '<span><i class="fa-solid fa-shield"></i>' + escHtml(a.role_type.replace(/_/g, ' ')) + '</span>';
+            html += '</div>';
+            html += '</div>';
+        });
+        html += '</div>';
+        html += '<div style="font-size:.75rem;color:var(--text-dim);text-align:center;margin-top:.5rem;">' + d.total + ' total</div>';
+        $('#ac-results').html(html);
+    }
+
+    function renderPages(cur, total) {
+        if (!total || total < 2) { $('#ac-pages').empty(); return; }
+        var html = '';
+        // Show prev / current+/-1 / next, condensed for mobile
+        if (cur > 1)     html += '<button data-p="' + (cur-1) + '">‹</button>';
+        if (cur > 2)     html += '<button data-p="1">1</button>';
+        if (cur > 3)     html += '<span style="align-self:center;color:var(--text-dim);">…</span>';
+        for (var i = Math.max(1, cur-1); i <= Math.min(total, cur+1); i++) {
+            html += '<button class="' + (i === cur ? 'active' : '') + '" data-p="' + i + '">' + i + '</button>';
+        }
+        if (cur < total-2) html += '<span style="align-self:center;color:var(--text-dim);">…</span>';
+        if (cur < total-1) html += '<button data-p="' + total + '">' + total + '</button>';
+        if (cur < total)   html += '<button data-p="' + (cur+1) + '">›</button>';
+        $('#ac-pages').html(html);
+    }
+
+    $('#ac-pages').on('click', 'button', function() { load(parseInt($(this).data('p'), 10)); });
+    $('#ac-go').on('click', function() { load(1); });
+    $('#ac-q').on('keypress', function(e) { if (e.which === 13) load(1); });
+
+    // Auto-load with optional ?q= from URL
+    var params = new URLSearchParams(window.location.search);
+    if (params.get('q')) $('#ac-q').val(params.get('q'));
+    load(1);
+});
+</script>
+{% endblock %}
