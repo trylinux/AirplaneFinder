@@ -125,20 +125,28 @@
                 </select>
             </div>
         </div>
-        <!-- Inline create-museum panel (shown when user types a new museum name) -->
+        <!-- Inline create-museum panel (shown when user types a new museum name).
+             Note: the inputs below intentionally do NOT use the HTML5 `required`
+             attribute. They live inside the parent <form id="form-aircraft">,
+             and when this panel is display:none the browser can't focus a
+             hidden invalid required field — which silently blocks the parent
+             form's submit with the error
+                "An invalid form control with name='' is not focusable."
+             The * marks in the labels are kept for the user; the JS handler
+             on #new-museum-save validates these fields manually (see below). -->
         <div id="new-museum-panel" class="form-group-wide" style="display:none;border:1px solid rgba(120,180,255,.3);border-radius:8px;padding:1rem;margin-bottom:1rem;background:rgba(10,20,40,.4);">
             <h3 style="margin:0 0 .75rem;font-size:.95rem;"><i class="fa-solid fa-building-columns"></i> Create New Museum</h3>
             <div class="form-grid">
                 <div class="form-group"><label>Museum Name *</label>
-                    <input type="text" id="new-museum-name" required></div>
+                    <input type="text" id="new-museum-name"></div>
                 <div class="form-group"><label>City *</label>
-                    <input type="text" id="new-museum-city" required placeholder="e.g. Dayton"></div>
+                    <input type="text" id="new-museum-city" placeholder="e.g. Dayton"></div>
                 <div class="form-group"><label>State / Province</label>
                     <input type="text" id="new-museum-state" placeholder="e.g. Ohio"></div>
                 <div class="form-group"><label>Country *</label>
-                    <input type="text" id="new-museum-country" required placeholder="e.g. United States" value="United States"></div>
+                    <input type="text" id="new-museum-country" placeholder="e.g. United States" value="United States"></div>
                 <div class="form-group"><label>Region *</label>
-                    <select id="new-museum-region" required>
+                    <select id="new-museum-region">
                         <option value="North America">North America</option>
                         <option value="Europe">Europe</option>
                         <option value="Asia">Asia</option>
