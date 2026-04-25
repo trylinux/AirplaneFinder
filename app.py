@@ -757,6 +757,35 @@ def stats_compat():
 
 # ── Aircraft CRUD ──
 
+def _normalize_tail_number(raw):
+    """Normalize a tail-number value: empty/whitespace becomes None.
+
+    Tail numbers are optional. Treating "" the same as NULL keeps duplicate
+    detection sane — multiple unmarked airframes shouldn't collide with each
+    other, only real tail-number reuses should.
+    """
+    if raw is None:
+        return None
+    s = str(raw).strip()
+    return s or None
+
+
+def _find_aircraft_duplicate(model, tail_number, exclude_id=None):
+    """Return the existing Aircraft that would conflict with (model, tail_number),
+    or None. tail_number must already be normalized — passing None means "no
+    tail number, no conflict possible" (NULL doesn't collide with NULL).
+    """
+    if not tail_number:
+        return None
+    q = Aircraft.query.filter(
+        Aircraft.model == model,
+        Aircraft.tail_number == tail_number,
+    )
+    if exclude_id is not None:
+        q = q.filter(Aircraft.id != exclude_id)
+    return q.first()
+
+
 @app.route("/api/v1/aircraft", methods=["POST"])
 @api_auth_required("readwrite")
 def api_create_aircraft():
@@ -777,8 +806,21 @@ def api_create_aircraft():
     if museum_id and not _user_can_write_museum(int(museum_id)):
         return jsonify({"error": "You do not have access to that museum."}), 403
 
+    # Sanity check: refuse to create a duplicate (same model + tail number).
+    # Empty/missing tail numbers are treated as "unknown" and never collide.
+    tail = _normalize_tail_number(data.get("tail_number"))
+    dup = _find_aircraft_duplicate(data["model"], tail)
+    if dup:
+        return jsonify({
+            "error": (
+                f"An aircraft with model '{data['model']}' and tail number "
+                f"'{tail}' already exists (id={dup.id})."
+            ),
+            "existing_id": dup.id,
+        }), 409
+
     aircraft = Aircraft(
-        tail_number=data.get("tail_number"),
+        tail_number=tail,
         model_name=data.get("model_name"),
         aircraft_name=data.get("aircraft_name"),
         manufacturer=data["manufacturer"],
@@ -824,12 +866,34 @@ def api_update_aircraft(aircraft_id):
     """Update an existing aircraft record. Include 'aliases' array to replace all aliases."""
     aircraft = Aircraft.query.get_or_404(aircraft_id)
     data = request.get_json() or {}
+
+    # Pre-flight uniqueness check: figure out what the (model, tail_number)
+    # would be after this update and reject if it would clash with another row.
+    new_model = data["model"] if "model" in data and data["model"] else aircraft.model
+    new_tail = (
+        _normalize_tail_number(data["tail_number"])
+        if "tail_number" in data
+        else aircraft.tail_number
+    )
+    dup = _find_aircraft_duplicate(new_model, new_tail, exclude_id=aircraft.id)
+    if dup:
+        return jsonify({
+            "error": (
+                f"Another aircraft (id={dup.id}) already has model '{new_model}' "
+                f"and tail number '{new_tail}'."
+            ),
+            "existing_id": dup.id,
+        }), 409
+
     for field in ["tail_number", "model_name", "aircraft_name",
                    "manufacturer", "model", "variant",
                    "aircraft_type", "wing_type", "military_civilian", "role_type",
                    "year_built", "description"]:
         if field in data:
-            val = data[field] if data[field] else None  # treat empty string as None
+            if field == "tail_number":
+                val = _normalize_tail_number(data[field])
+            else:
+                val = data[field] if data[field] else None  # treat empty string as None
             setattr(aircraft, field, val)
     # Replace aliases if provided
     if "aliases" in data:

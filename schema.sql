@@ -120,6 +120,11 @@ CREATE TABLE IF NOT EXISTS aircraft (
     INDEX idx_model      (model),
     INDEX idx_variant    (variant),
     INDEX idx_full_desig (full_designation),
+    -- Prevent duplicate airframes: same model + same tail number is a dupe.
+    -- MySQL allows multiple NULLs through UNIQUE, so aircraft without a tail
+    -- number don't collide with each other (the API normalizes "" to NULL
+    -- before insert).
+    UNIQUE KEY uq_model_tail (model, tail_number),
     FULLTEXT idx_ft_search (model_name, aircraft_name, model, variant, tail_number, manufacturer)
 ) ENGINE=InnoDB;
 
