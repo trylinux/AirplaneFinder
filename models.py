@@ -319,6 +319,62 @@ class AircraftMuseum(db.Model):
         }
 
 
+class AircraftTemplate(db.Model):
+    """Reusable 'type info' record. An admin picks one when creating a new
+    Aircraft to pre-fill the type-level fields; per-airframe fields
+    (tail_number, aircraft_name, year_built) are never on the template.
+    """
+    __tablename__ = "aircraft_templates"
+
+    id = db.Column(db.Integer, primary_key=True)
+    # Short label shown in the picker, e.g. "C-130H Hercules".
+    name = db.Column(db.String(200), nullable=False, unique=True)
+    manufacturer = db.Column(db.String(100), nullable=False)
+    model = db.Column(db.String(50), nullable=False)
+    variant = db.Column(db.String(50))
+    model_name = db.Column(db.String(200))
+    aircraft_type = db.Column(db.String(20), nullable=False, default="fixed_wing")
+    wing_type = db.Column(db.String(20))
+    military_civilian = db.Column(db.String(10), nullable=False, default="military")
+    role_type = db.Column(db.String(30))
+    description = db.Column(db.Text)
+    created_at = db.Column(db.DateTime, server_default=db.func.now())
+
+    aliases = db.relationship(
+        "AircraftTemplateAlias",
+        back_populates="template",
+        cascade="all, delete-orphan",
+        lazy="joined",
+    )
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "name": self.name,
+            "manufacturer": self.manufacturer,
+            "model": self.model,
+            "variant": self.variant,
+            "model_name": self.model_name,
+            "aircraft_type": self.aircraft_type,
+            "wing_type": self.wing_type,
+            "military_civilian": self.military_civilian,
+            "role_type": self.role_type,
+            "description": self.description,
+            "aliases": [a.alias for a in self.aliases],
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+        }
+
+
+class AircraftTemplateAlias(db.Model):
+    __tablename__ = "aircraft_template_aliases"
+
+    id = db.Column(db.Integer, primary_key=True)
+    template_id = db.Column(db.Integer, db.ForeignKey("aircraft_templates.id"), nullable=False)
+    alias = db.Column(db.String(200), nullable=False)
+
+    template = db.relationship("AircraftTemplate", back_populates="aliases")
+
+
 class ZipCode(db.Model):
     __tablename__ = "zip_codes"
 

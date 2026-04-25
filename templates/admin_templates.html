@@ -1,0 +1,246 @@
+{% extends "base.html" %}
+{% block title %}Templates — Admin — Aircraft Finder{% endblock %}
+{% block nav_admin %}active{% endblock %}
+
+{% set admin_section = 'templates' %}
+
+{% block content %}
+{% include "_admin_nav.html" %}
+
+<div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;">
+        <h2><i class="fa-solid fa-clone"></i> Aircraft Templates</h2>
+        <button class="btn btn-primary" id="new-template-btn"><i class="fa-solid fa-plus"></i> Add Template</button>
+    </div>
+    <p class="card-subtitle" style="margin-top:.35rem;">
+        Reusable aircraft-type records. Pick a template on the Add Aircraft page to
+        pre-fill manufacturer, model, variant, and other type fields.
+    </p>
+    <div class="search-bar" style="margin-top:.75rem;">
+        <input type="text" id="template-search" placeholder="Filter templates..." autocomplete="off">
+        <button class="btn btn-primary" id="template-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div id="templates-results"></div>
+</div>
+
+<!-- Edit / Create Modal -->
+<div id="template-modal" class="modal" style="display:none;">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+        <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+        <h2 id="template-modal-title">Edit Template</h2>
+        <form id="template-form" class="admin-form">
+            <div id="template-form-fields"></div>
+            <div class="edit-modal-actions">
+                <button type="submit" class="btn btn-primary"><i class="fa-solid fa-save"></i> Save</button>
+                <button type="button" class="btn btn-danger" id="template-delete-btn" style="display:none;">
+                    <i class="fa-solid fa-trash"></i> Delete
+                </button>
+            </div>
+        </form>
+        <div id="template-msg" class="form-message" style="display:none;"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Mirror the role options from the aircraft page so role_type prefills/edits
+// match what the new-aircraft form offers.
+var TPL_ROLE_OPTIONS = {
+    military: [
+        {v:'', l:'— Select —'},
+        {v:'bomber', l:'Bomber'}, {v:'transport', l:'Transport'},
+        {v:'recon', l:'Recon'}, {v:'electronic_warfare', l:'Electronic Warfare'},
+        {v:'fighter', l:'Fighter'}, {v:'tanker', l:'Tanker'},
+        {v:'search_rescue', l:'Search & Rescue'}, {v:'ground_attack', l:'Ground Attack'},
+        {v:'utility', l:'Utility'}, {v:'test', l:'Test'}, {v:'drone', l:'Drone'}
+    ],
+    civilian: [
+        {v:'', l:'— Select —'},
+        {v:'commercial_transport', l:'Commercial Transport'},
+        {v:'freighter', l:'Freighter'}, {v:'private', l:'Private'},
+        {v:'experimental', l:'Experimental'}, {v:'utility', l:'Utility'},
+        {v:'space', l:'Space'}, {v:'other', l:'Other'}
+    ]
+};
+function tplRoleOptions(mc) { return TPL_ROLE_OPTIONS[mc] || TPL_ROLE_OPTIONS.military; }
+
+$(function() {
+    var editId = 0;  // 0 = create mode, >0 = editing that template id
+
+    function loadTemplates() {
+        var q = $('#template-search').val() || '';
+        $.getJSON('/api/v1/templates', {q: q}, function(data) {
+            var html;
+            if (!data.length) {
+                html = '<p class="no-results">No templates yet. Click <strong>Add Template</strong> to create one.</p>';
+            } else {
+                html = '<table class="result-table"><thead><tr>' +
+                    '<th>ID</th><th>Name</th><th>Manufacturer</th><th>Model</th>' +
+                    '<th>Variant</th><th>Type</th><th>Mil/Civ</th><th>Role</th><th>Aliases</th><th>Actions</th>' +
+                    '</tr></thead><tbody>';
+                data.forEach(function(t) {
+                    var aliasStr = (t.aliases && t.aliases.length) ? escHtml(t.aliases.join(', ')) : '—';
+                    html += '<tr>' +
+                        '<td>' + t.id + '</td>' +
+                        '<td><strong>' + escHtml(t.name) + '</strong></td>' +
+                        '<td>' + escHtml(t.manufacturer) + '</td>' +
+                        '<td>' + escHtml(t.model) + '</td>' +
+                        '<td>' + escHtml(t.variant || '—') + '</td>' +
+                        '<td>' + escHtml((t.aircraft_type || 'fixed_wing').replace(/_/g, ' ')) + '</td>' +
+                        '<td><span class="badge status-' + (t.military_civilian || 'military') + '">' +
+                            escHtml(t.military_civilian || 'military') + '</span></td>' +
+                        '<td>' + escHtml((t.role_type || '—').replace(/_/g, ' ')) + '</td>' +
+                        '<td>' + aliasStr + '</td>' +
+                        '<td><button class="btn-icon edit-template-btn" data-id="' + t.id + '" title="Edit">' +
+                            '<i class="fa-solid fa-pen"></i></button></td>' +
+                    '</tr>';
+                });
+                html += '</tbody></table>';
+            }
+            $('#templates-results').html(html);
+        });
+    }
+    loadTemplates();
+    $('#template-search-btn').on('click', loadTemplates);
+    $('#template-search').on('keypress', function(e) { if (e.which === 13) loadTemplates(); });
+
+    // ── Open modal in create mode ──
+    $('#new-template-btn').on('click', function() {
+        editId = 0;
+        $('#template-modal-title').text('New Template');
+        $('#template-delete-btn').hide();
+        renderTemplateFields({});
+        $('#template-modal').fadeIn(200);
+    });
+
+    // ── Open modal in edit mode ──
+    $(document).on('click', '.edit-template-btn', function() {
+        var id = $(this).data('id');
+        $.getJSON('/api/v1/templates/' + id, function(t) {
+            editId = id;
+            $('#template-modal-title').text('Edit Template #' + id);
+            $('#template-delete-btn').show();
+            renderTemplateFields(t);
+            $('#template-modal').fadeIn(200);
+        });
+    });
+
+    function renderTemplateFields(t) {
+        var fields = [
+            {name:'name',              label:'Template Name',    val: t.name || '',            req: true,
+                placeholder: 'e.g. C-130H Hercules'},
+            {name:'manufacturer',      label:'Manufacturer',     val: t.manufacturer || '',    req: true},
+            {name:'model',             label:'Model',            val: t.model || '',           req: true},
+            {name:'variant',           label:'Variant',          val: t.variant || ''},
+            {name:'model_name',        label:'Model Name',       val: t.model_name || ''},
+            {name:'aircraft_type',     label:'Aircraft Type',    val: t.aircraft_type || 'fixed_wing', select: [
+                {v:'fixed_wing', l:'Fixed Wing'}, {v:'rotary_wing', l:'Rotary Wing'},
+                {v:'lighter_than_air', l:'Lighter Than Air'}, {v:'spacecraft', l:'Spacecraft'}
+            ]},
+            {name:'wing_type',         label:'Wing Type',        val: t.wing_type || '',       select: [
+                {v:'', l:'— N/A —'}, {v:'monoplane', l:'Monoplane'},
+                {v:'biplane', l:'Biplane'}, {v:'triplane', l:'Triplane'}
+            ]},
+            {name:'military_civilian', label:'Military / Civilian', val: t.military_civilian || 'military', select: [
+                {v:'military', l:'Military'}, {v:'civilian', l:'Civilian'}
+            ], cssClass: 'mil-civ-select'},
+            {name:'role_type',         label:'Role',             val: t.role_type || '',
+                select: tplRoleOptions(t.military_civilian || 'military'), cssClass: 'role-type-select'},
+            {name:'aliases',           label:'Aliases (comma-separated)',
+                val: (t.aliases || []).join(', ')},
+            {name:'description',       label:'Description',      val: t.description || '', textarea: true},
+        ];
+
+        var html = '<div class="form-grid">';
+        fields.forEach(function(f) {
+            var wide = f.textarea ? ' form-group-wide' : '';
+            html += '<div class="form-group' + wide + '">';
+            html += '<label>' + f.label + (f.req ? ' *' : '') + '</label>';
+            if (f.textarea) {
+                html += '<textarea name="' + f.name + '" rows="3">' + escHtml(f.val) + '</textarea>';
+            } else if (f.select) {
+                var cls = f.cssClass ? ' class="' + f.cssClass + '"' : '';
+                html += '<select name="' + f.name + '"' + (f.req ? ' required' : '') + cls + '>';
+                f.select.forEach(function(opt) {
+                    html += '<option value="' + opt.v + '"' + (opt.v === f.val ? ' selected' : '') + '>' + escHtml(opt.l) + '</option>';
+                });
+                html += '</select>';
+            } else {
+                html += '<input type="text" name="' + f.name + '" value="' + escHtml(String(f.val)) + '"' +
+                    (f.req ? ' required' : '') + (f.placeholder ? ' placeholder="' + escHtml(f.placeholder) + '"' : '') + '>';
+            }
+            html += '</div>';
+        });
+        html += '</div>';
+        $('#template-form-fields').html(html);
+        $('#template-msg').hide();
+    }
+
+    // Keep role dropdown in sync with military/civilian selection.
+    $(document).on('change', '.mil-civ-select', function() {
+        var $role = $(this).closest('form').find('.role-type-select');
+        var opts = tplRoleOptions($(this).val());
+        var current = $role.val();
+        $role.empty();
+        opts.forEach(function(o) {
+            $role.append('<option value="' + o.v + '"' + (o.v === current ? ' selected' : '') + '>' +
+                escHtml(o.l) + '</option>');
+        });
+    });
+
+    // ── Save (create or update) ──
+    $('#template-form').on('submit', function(e) {
+        e.preventDefault();
+        var data = {};
+        $(this).serializeArray().forEach(function(item) { data[item.name] = item.value; });
+        if ('aliases' in data) {
+            data.aliases = data.aliases.split(',')
+                .map(function(s) { return s.trim(); })
+                .filter(function(s) { return s; });
+        }
+
+        var isCreate = (editId === 0);
+        $.ajax({
+            url: isCreate ? '/api/v1/templates' : '/api/v1/templates/' + editId,
+            method: isCreate ? 'POST' : 'PUT',
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function() {
+                $('#template-msg')
+                    .html('<div class="alert alert-success"><i class="fa-solid fa-circle-check"></i> Saved!</div>')
+                    .show();
+                loadTemplates();
+                if (isCreate) { $('#template-modal').fadeOut(200); }
+            },
+            error: function(xhr) {
+                $('#template-msg')
+                    .html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' +
+                        (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText) + '</div>')
+                    .show();
+            }
+        });
+    });
+
+    // ── Delete (edit mode only) ──
+    $('#template-delete-btn').on('click', function() {
+        if (!editId) return;
+        if (!confirm('Delete this template? Aircraft already created from it are unaffected.')) return;
+        $.ajax({
+            url: '/api/v1/templates/' + editId, method: 'DELETE',
+            success: function() { $('#template-modal').fadeOut(200); loadTemplates(); },
+            error: function(xhr) {
+                $('#template-msg')
+                    .html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' +
+                        (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText) + '</div>')
+                    .show();
+            }
+        });
+    });
+
+    $('.modal-backdrop, .modal-close').on('click', function() { $('#template-modal').fadeOut(200); });
+    $(document).on('keydown', function(e) { if (e.key === 'Escape') $('#template-modal').fadeOut(200); });
+});
+</script>
+{% endblock %}

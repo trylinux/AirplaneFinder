@@ -32,6 +32,7 @@ from models import (
     db, User, ApiKey,
     Museum, Aircraft, AircraftAlias, AircraftMuseum, ZipCode, haversine,
     UserMuseumAssignment, UserCountryAssignment,
+    AircraftTemplate, AircraftTemplateAlias,
 )
 from geocoder import resolve_location
 from config import Config
@@ -373,6 +374,12 @@ def admin_exhibits_page():
 @login_required
 def admin_exhibits_new_page():
     return render_template("admin_exhibits_new.html")
+
+
+@app.route("/admin/templates")
+@login_required
+def admin_templates_page():
+    return render_template("admin_templates.html")
 
 
 @app.route("/admin/users")
@@ -982,6 +989,136 @@ def api_delete_exhibit(link_id):
     user = _get_effective_user()
     change_log.info(f"EXHIBIT_DELETE id={link_id} by={user.username}")
     return jsonify({"deleted": True, "id": link_id})
+
+
+# ── Aircraft templates ──
+
+# Fields that a template can set on a fresh aircraft when used to prefill the
+# admin create form. Kept as a module-level tuple so the client and server
+# agree on the shape and we don't scatter the list of names across files.
+_TEMPLATE_FIELDS = (
+    "name", "manufacturer", "model", "variant", "model_name",
+    "aircraft_type", "wing_type", "military_civilian", "role_type", "description",
+)
+
+
+@app.route("/api/v1/templates")
+def api_template_list():
+    """Public: list all aircraft templates, alphabetized by name. Supports
+    an optional ``q`` query that fuzzy-matches name / manufacturer / model."""
+    q = request.args.get("q", "").strip()
+    query = AircraftTemplate.query
+    if q:
+        like = f"%{q}%"
+        query = query.filter(or_(
+            AircraftTemplate.name.ilike(like),
+            AircraftTemplate.manufacturer.ilike(like),
+            AircraftTemplate.model.ilike(like),
+            AircraftTemplate.model_name.ilike(like),
+        ))
+    templates = query.order_by(AircraftTemplate.name).all()
+    return jsonify([t.to_dict() for t in templates])
+
+
+@app.route("/api/v1/templates/<int:template_id>")
+def api_template_detail(template_id):
+    """Public: single template with its aliases."""
+    t = AircraftTemplate.query.get_or_404(template_id)
+    return jsonify(t.to_dict())
+
+
+@app.route("/api/v1/templates", methods=["POST"])
+@api_auth_required("readwrite")
+def api_create_template():
+    """Create a new aircraft template.
+
+    Required: name, manufacturer, model.
+    Optional: variant, model_name, aircraft_type, wing_type,
+              military_civilian, role_type, description, aliases[].
+    """
+    data = request.get_json() or {}
+    missing = [f for f in ("name", "manufacturer", "model") if not data.get(f)]
+    if missing:
+        return jsonify({"error": f"Missing required fields: {', '.join(missing)}"}), 400
+
+    if AircraftTemplate.query.filter_by(name=data["name"]).first():
+        return jsonify({"error": f"A template named '{data['name']}' already exists."}), 409
+
+    t = AircraftTemplate(
+        name=data["name"],
+        manufacturer=data["manufacturer"],
+        model=data["model"],
+        variant=data.get("variant") or None,
+        model_name=data.get("model_name") or None,
+        aircraft_type=data.get("aircraft_type", "fixed_wing"),
+        wing_type=data.get("wing_type") or None,
+        military_civilian=data.get("military_civilian", "military"),
+        role_type=data.get("role_type") or None,
+        description=data.get("description") or None,
+    )
+    db.session.add(t)
+    db.session.flush()
+
+    for alias_str in data.get("aliases", []):
+        alias_str = (alias_str or "").strip()
+        if alias_str:
+            db.session.add(AircraftTemplateAlias(template_id=t.id, alias=alias_str))
+
+    _increment_contribution()
+    db.session.commit()
+    user = _get_effective_user()
+    change_log.info(f"TEMPLATE_CREATE id={t.id} name={t.name} by={user.username}")
+    return jsonify(t.to_dict()), 201
+
+
+@app.route("/api/v1/templates/<int:template_id>", methods=["PUT", "PATCH"])
+@api_auth_required("readwrite")
+def api_update_template(template_id):
+    """Update a template. Include 'aliases' to replace the full alias set."""
+    t = AircraftTemplate.query.get_or_404(template_id)
+    data = request.get_json() or {}
+
+    # Unique-name check only fires when the caller actually changes the name.
+    if "name" in data and data["name"] and data["name"] != t.name:
+        if AircraftTemplate.query.filter_by(name=data["name"]).first():
+            return jsonify({"error": f"A template named '{data['name']}' already exists."}), 409
+
+    for field in _TEMPLATE_FIELDS:
+        if field in data:
+            val = data[field] if data[field] not in ("", None) else None
+            # name is NOT NULL; refuse to blank it
+            if field == "name" and not val:
+                return jsonify({"error": "Template name cannot be empty."}), 400
+            setattr(t, field, val)
+
+    if "aliases" in data:
+        AircraftTemplateAlias.query.filter_by(template_id=template_id).delete()
+        for alias_str in data["aliases"]:
+            alias_str = (alias_str or "").strip()
+            if alias_str:
+                db.session.add(AircraftTemplateAlias(template_id=template_id, alias=alias_str))
+
+    _increment_contribution()
+    db.session.commit()
+    user = _get_effective_user()
+    change_log.info(f"TEMPLATE_UPDATE id={template_id} by={user.username}")
+    return jsonify(t.to_dict())
+
+
+@app.route("/api/v1/templates/<int:template_id>", methods=["DELETE"])
+@api_auth_required("admin")
+def api_delete_template(template_id):
+    """Delete a template (admin only). Does not touch aircraft that were
+    originally created from this template — once an Aircraft exists it has
+    its own copy of the type fields."""
+    t = AircraftTemplate.query.get_or_404(template_id)
+    name = t.name
+    db.session.delete(t)
+    _increment_contribution()
+    db.session.commit()
+    user = _get_effective_user()
+    change_log.info(f"TEMPLATE_DELETE id={template_id} name={name} by={user.username}")
+    return jsonify({"deleted": True, "id": template_id})
 
 
 # ── Backward-compat write aliases ──

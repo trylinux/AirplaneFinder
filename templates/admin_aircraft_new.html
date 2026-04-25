@@ -49,6 +49,26 @@
         <a href="/admin/aircraft" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i> Back to List</a>
     </div>
 
+    <!-- Template picker. Picking one prefills the type-level fields below;
+         per-airframe fields (tail number, aircraft name, year built) stay blank. -->
+    <div class="form-group form-group-wide" style="margin-top:1rem;border:1px solid rgba(120,180,255,.3);border-radius:8px;padding:1rem;background:rgba(10,20,40,.4);">
+        <label style="display:flex;align-items:center;gap:.4rem;">
+            <i class="fa-solid fa-clone"></i> Start from a template (optional)
+        </label>
+        <div style="display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-top:.35rem;">
+            <select id="template-picker" style="flex:1;min-width:250px;">
+                <option value="">— No template / blank form —</option>
+            </select>
+            <a href="/admin/templates" class="btn btn-secondary btn-sm" title="Manage templates">
+                <i class="fa-solid fa-gear"></i> Manage
+            </a>
+        </div>
+        <p class="card-subtitle" style="margin-top:.35rem;">
+            Picking a template fills in manufacturer, model, variant, type, role, aliases, etc.
+            You still supply tail number, aircraft name, year built, and museum.
+        </p>
+    </div>
+
     <form id="form-aircraft" class="admin-form" style="margin-top:1rem;">
         <div class="form-grid">
             <div class="form-group"><label>Manufacturer *</label><input type="text" name="manufacturer" required placeholder="e.g. Lockheed Martin"></div>
@@ -169,15 +189,69 @@ var ROLE_OPTIONS = {
 };
 
 $(function() {
-    function updateRoleDropdown() {
+    function updateRoleDropdown(selectedRole) {
         var mc = $('.mil-civ-select').val();
         var opts = ROLE_OPTIONS[mc] || ROLE_OPTIONS.military;
         var $r = $('.role-type-select');
         $r.empty();
-        opts.forEach(function(o) { $r.append('<option value="' + o.v + '">' + escHtml(o.l) + '</option>'); });
+        opts.forEach(function(o) {
+            $r.append('<option value="' + o.v + '"' +
+                (selectedRole !== undefined && o.v === selectedRole ? ' selected' : '') +
+                '>' + escHtml(o.l) + '</option>');
+        });
     }
-    $(document).on('change', '.mil-civ-select', updateRoleDropdown);
+    $(document).on('change', '.mil-civ-select', function() { updateRoleDropdown(); });
     updateRoleDropdown();
+
+    // ── Template picker ──────────────────────────────────────────────
+    // Loads all templates into a dropdown. Selecting one pre-fills the form
+    // fields that live on the template; the user still fills in per-airframe
+    // details (tail_number, aircraft_name, year_built, museum, display_status).
+    var _templatesById = {};
+
+    $.getJSON('/api/v1/templates', function(templates) {
+        var $sel = $('#template-picker');
+        templates.forEach(function(t) {
+            _templatesById[t.id] = t;
+            var label = t.name;
+            if (t.manufacturer && t.manufacturer !== t.name) {
+                label += ' — ' + t.manufacturer;
+            }
+            $sel.append('<option value="' + t.id + '">' + escHtml(label) + '</option>');
+        });
+    });
+
+    $('#template-picker').on('change', function() {
+        var id = $(this).val();
+        if (!id) return;
+        var t = _templatesById[id];
+        if (!t) return;
+
+        var $form = $('#form-aircraft');
+        // Type-level fields from the template
+        $form.find('[name=manufacturer]').val(t.manufacturer || '');
+        $form.find('[name=model]').val(t.model || '');
+        $form.find('[name=variant]').val(t.variant || '');
+        $form.find('[name=model_name]').val(t.model_name || '');
+        $form.find('[name=aircraft_type]').val(t.aircraft_type || 'fixed_wing');
+        $form.find('[name=wing_type]').val(t.wing_type || '');
+        $form.find('[name=military_civilian]').val(t.military_civilian || 'military');
+
+        // Role dropdown depends on military_civilian, so rebuild it with the
+        // template's chosen role selected after the mil/civ change.
+        updateRoleDropdown(t.role_type || '');
+
+        $form.find('[name=aliases]').val((t.aliases || []).join(', '));
+        $form.find('[name=description]').val(t.description || '');
+
+        // Visual nudge so the user knows the fields changed.
+        $form.find('input, select, textarea').each(function() {
+            var $el = $(this);
+            $el.css('transition', 'background .4s ease')
+               .css('background', 'rgba(59,130,246,.15)');
+            setTimeout(function() { $el.css('background', ''); }, 400);
+        });
+    });
 
     // ── Museum autocomplete + inline create ──
     var _allMuseums = [];
