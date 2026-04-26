@@ -505,6 +505,77 @@ pre code {
     white-space: pre;
 }
 
+/* ─── Link editor (exhibit links inside aircraft/museum modals) ──── */
+/* Used for the inline list of (other-entity, status, notes, actions) rows
+   in admin_aircraft.html and admin_museums.html — replaces the standalone
+   /admin/exhibits page. */
+.link-editor {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: .35rem;
+}
+.link-editor-row {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: .5rem .65rem;
+    padding: .65rem .75rem;
+    align-items: center;
+}
+.link-editor-row + .link-editor-row { border-top: 1px solid var(--border); }
+.link-editor-row .le-name {
+    grid-column: 1 / 4;
+    font-weight: 600;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: .5rem; flex-wrap: wrap;
+}
+.link-editor-row .le-name .le-loc {
+    font-weight: 400; color: var(--text-dim);
+    font-size: .8rem;
+}
+.link-editor-row .le-status,
+.link-editor-row .le-notes {
+    background: var(--bg-input);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: .35rem .5rem;
+    font-size: .85rem;
+    font-family: inherit;
+}
+.link-editor-row .le-status { grid-column: 1; min-width: 0; }
+.link-editor-row .le-notes  { grid-column: 1 / 4; }
+.link-editor-row .le-actions {
+    grid-column: 2 / 4;
+    display: flex; gap: .35rem; justify-content: flex-end;
+}
+.link-editor-empty {
+    padding: .65rem .85rem;
+    color: var(--text-dim); font-size: .85rem;
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+}
+.link-editor-add {
+    margin-top: .5rem; padding: .75rem;
+    background: rgba(59,130,246,.06);
+    border: 1px solid rgba(120,180,255,.25);
+    border-radius: 8px;
+    display: none;
+}
+.link-editor-add.open { display: block; }
+.link-editor-add .le-add-grid {
+    display: grid; grid-template-columns: 2fr 1fr; gap: .5rem;
+}
+.link-editor-add .le-add-grid input,
+.link-editor-add .le-add-grid select,
+.link-editor-add textarea {
+    background: var(--bg-input); color: var(--text);
+    border: 1px solid var(--border); border-radius: 6px;
+    padding: .4rem .55rem; font-size: .85rem; font-family: inherit;
+    width: 100%;
+}
+.link-editor-msg { margin-top: .5rem; }
+
 /* ─── Footer ─────────────────────────────── */
 .footer {
     padding: 1.25rem 0; text-align: center;

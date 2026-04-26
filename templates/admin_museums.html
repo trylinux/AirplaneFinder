@@ -27,6 +27,9 @@
         <h2 id="edit-modal-title">Edit Museum</h2>
         <form id="edit-form" class="admin-form">
             <div id="edit-form-fields"></div>
+            <!-- Aircraft on display at this museum. Editable in-place —
+                 mirrors the museum panel on the aircraft modal. -->
+            <div id="edit-aircraft-panel" style="margin-top:1rem;"></div>
             <div class="edit-modal-actions">
                 <button type="submit" class="btn btn-primary"><i class="fa-solid fa-save"></i> Save</button>
                 <button type="button" class="btn btn-danger" id="edit-delete-btn"><i class="fa-solid fa-trash"></i> Delete</button>
@@ -109,7 +112,199 @@ $(function() {
                 {name:'longitude', label:'Longitude', val: m.longitude != null ? m.longitude : '', type:'number', step:'any'},
             ];
             renderEditFields(fields);
+            renderAircraftPanel(data.aircraft || []);
             $('#edit-modal').fadeIn(200);
+        });
+    });
+
+    /* ════════════════════════════════════════════════════════════════
+       Editable list of aircraft on display at the museum being edited.
+       Mirrors the museum panel on the aircraft modal — replaces the
+       (deleted) /admin/exhibits page. */
+
+    var DISPLAY_STATUS_OPTIONS = [
+        {v: 'on_display',        l: 'On Display'},
+        {v: 'in_storage',        l: 'In Storage'},
+        {v: 'on_loan',           l: 'On Loan'},
+        {v: 'under_restoration', l: 'Under Restoration'},
+    ];
+    function statusSelectHtml(name, current) {
+        var opts = DISPLAY_STATUS_OPTIONS.map(function(o) {
+            return '<option value="' + o.v + '"' + (o.v === current ? ' selected' : '') + '>' + o.l + '</option>';
+        }).join('');
+        return '<select class="le-status" name="' + name + '">' + opts + '</select>';
+    }
+
+    var _allAircraftForPicker = null;
+    function ensureAircraftListLoaded(cb) {
+        if (_allAircraftForPicker) return cb();
+        $.getJSON('/api/v1/aircraft/search', {per_page: 1000}, function(data) {
+            _allAircraftForPicker = (data.results || []).slice().sort(function(a, b) {
+                var an = (a.full_designation || a.model || '');
+                var bn = (b.full_designation || b.model || '');
+                return an.localeCompare(bn);
+            });
+            cb();
+        });
+    }
+
+    function renderAircraftPanel(aircraftList) {
+        var $panel = $('#edit-aircraft-panel');
+        var html = '<div style="font-weight:600; font-size:.85rem; color:var(--text-dim);'
+                 + 'text-transform:uppercase; letter-spacing:.04em; margin-bottom:.4rem;'
+                 + 'display:flex; align-items:center; justify-content:space-between; gap:.5rem;">'
+                 +   '<span><i class="fa-solid fa-jet-fighter"></i> '
+                 +     (aircraftList.length
+                          ? aircraftList.length + ' aircraft on display'
+                          : 'Aircraft on display')
+                 +   '</span>'
+                 +   '<button type="button" class="btn btn-secondary btn-sm" id="le-toggle-add">'
+                 +     '<i class="fa-solid fa-plus"></i> Add link'
+                 +   '</button>'
+                 + '</div>';
+
+        if (!aircraftList.length) {
+            html += '<div class="link-editor-empty">'
+                  +   '<i class="fa-solid fa-circle-info"></i> No aircraft tracked at this museum yet.'
+                  + '</div>';
+        } else {
+            html += '<div class="link-editor">';
+            aircraftList.forEach(function(a) {
+                var statusRaw = a.display_status || 'on_display';
+                var label = a.full_designation || a.model;
+                if (a.model_name)    label += ' ' + a.model_name;
+                if (a.aircraft_name) label += ' "' + a.aircraft_name + '"';
+                if (a.tail_number)   label += ' (' + a.tail_number + ')';
+                html += '<div class="link-editor-row" data-link-id="' + a.link_id + '">'
+                      +   '<div class="le-name">'
+                      +     '<span>' + escHtml(label) + '</span>'
+                      +     '<span class="badge status-' + statusRaw + '">'
+                      +       escHtml(prettyEnum(statusRaw))
+                      +     '</span>'
+                      +   '</div>'
+                      +   statusSelectHtml('display_status', statusRaw)
+                      +   '<div class="le-actions">'
+                      +     '<button type="button" class="btn btn-primary btn-sm le-save-btn" title="Save changes">'
+                      +       '<i class="fa-solid fa-save"></i></button>'
+                      +     '<button type="button" class="btn btn-danger btn-sm le-remove-btn" title="Unlink">'
+                      +       '<i class="fa-solid fa-link-slash"></i></button>'
+                      +   '</div>'
+                      +   '<input type="text" class="le-notes" name="notes" value="' + escHtml(a.notes || '') + '" placeholder="Notes (optional)">'
+                      + '</div>';
+            });
+            html += '</div>';
+        }
+
+        html += '<div class="link-editor-add" id="le-add-form">'
+              +   '<div class="le-add-grid">'
+              +     '<select id="le-add-aircraft"><option value="">Select an aircraft…</option></select>'
+              +     statusSelectHtml('display_status', 'on_display')
+              +   '</div>'
+              +   '<textarea id="le-add-notes" rows="2" placeholder="Notes (optional)" style="margin-top:.5rem;"></textarea>'
+              +   '<div style="display:flex; gap:.4rem; margin-top:.5rem;">'
+              +     '<button type="button" class="btn btn-primary btn-sm" id="le-add-save">'
+              +       '<i class="fa-solid fa-link"></i> Link</button>'
+              +     '<button type="button" class="btn btn-secondary btn-sm" id="le-add-cancel">Cancel</button>'
+              +   '</div>'
+              +   '<div class="link-editor-msg" id="le-add-msg" style="display:none;"></div>'
+              + '</div>';
+
+        $panel.html(html);
+    }
+
+    function reloadAircraftPanel() {
+        if (!editId) return;
+        $.getJSON('/api/v1/museums/' + editId, function(data) {
+            renderAircraftPanel(data.aircraft || []);
+        });
+    }
+
+    $(document).on('click', '#le-toggle-add', function() {
+        var $form = $('#le-add-form');
+        if ($form.hasClass('open')) { $form.removeClass('open'); return; }
+        ensureAircraftListLoaded(function() {
+            var $sel = $('#le-add-aircraft').empty().append('<option value="">Select an aircraft…</option>');
+            _allAircraftForPicker.forEach(function(a) {
+                var label = a.full_designation || a.model;
+                if (a.tail_number) label += ' (' + a.tail_number + ')';
+                if (a.manufacturer) label += ' — ' + a.manufacturer;
+                $sel.append('<option value="' + a.id + '">' + escHtml(label) + '</option>');
+            });
+            $form.addClass('open');
+            $('#le-add-msg').hide().empty();
+        });
+    });
+
+    $(document).on('click', '#le-add-cancel', function() {
+        $('#le-add-form').removeClass('open');
+    });
+
+    $(document).on('click', '#edit-aircraft-panel .le-save-btn', function() {
+        var $row = $(this).closest('.link-editor-row');
+        var linkId = $row.data('link-id');
+        if (!linkId) return;
+        var payload = {
+            display_status: $row.find('.le-status').val(),
+            notes:          $row.find('.le-notes').val(),
+        };
+        $.ajax({
+            url: '/api/v1/exhibits/' + linkId, method: 'PUT', contentType: 'application/json',
+            data: JSON.stringify(payload),
+            success: reloadAircraftPanel,
+            error: function(xhr) {
+                alert('Failed to save: ' +
+                      (xhr.responseJSON && xhr.responseJSON.error
+                          ? xhr.responseJSON.error
+                          : (xhr.status + ' ' + xhr.statusText)));
+            }
+        });
+    });
+
+    $(document).on('click', '#edit-aircraft-panel .le-remove-btn', function() {
+        var $row = $(this).closest('.link-editor-row');
+        var linkId = $row.data('link-id');
+        if (!linkId) return;
+        if (!confirm('Unlink this aircraft?\nThe aircraft stays; only this exhibit link is removed.')) return;
+        $.ajax({
+            url: '/api/v1/exhibits/' + linkId, method: 'DELETE',
+            success: reloadAircraftPanel,
+            error: function(xhr) {
+                alert('Failed to remove: ' +
+                      (xhr.responseJSON && xhr.responseJSON.error
+                          ? xhr.responseJSON.error
+                          : (xhr.status + ' ' + xhr.statusText)));
+            }
+        });
+    });
+
+    $(document).on('click', '#le-add-save', function() {
+        var aircraftId = parseInt($('#le-add-aircraft').val(), 10);
+        if (!aircraftId) {
+            $('#le-add-msg').show()
+                .html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> Pick an aircraft first.</div>');
+            return;
+        }
+        var payload = {
+            aircraft_id:    aircraftId,
+            museum_id:      editId,
+            display_status: $('#le-add-form .le-status').val(),
+            notes:          $('#le-add-notes').val() || undefined,
+        };
+        $.ajax({
+            url: '/api/v1/exhibits', method: 'POST', contentType: 'application/json',
+            data: JSON.stringify(payload),
+            success: function() {
+                $('#le-add-form').removeClass('open');
+                reloadAircraftPanel();
+            },
+            error: function(xhr) {
+                $('#le-add-msg').show()
+                    .html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> '
+                        + escHtml(xhr.responseJSON && xhr.responseJSON.error
+                              ? xhr.responseJSON.error
+                              : 'Failed to link.')
+                        + '</div>');
+            }
         });
     });
 

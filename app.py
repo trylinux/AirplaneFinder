@@ -787,18 +787,10 @@ def admin_museums_new_page():
     return render_template("admin_museums_new.html")
 
 
-@app.route("/admin/exhibits")
-@no_mobile
-@login_required
-def admin_exhibits_page():
-    return render_template("admin_exhibits.html")
-
-
-@app.route("/admin/exhibits/new")
-@no_mobile
-@login_required
-def admin_exhibits_new_page():
-    return render_template("admin_exhibits_new.html")
+# /admin/exhibits and /admin/exhibits/new were removed when exhibit-link
+# management was folded into the aircraft and museum edit modals. The API
+# endpoints (POST/PUT/DELETE /api/v1/exhibits/...) stay; only the page
+# routes and their templates were deleted.
 
 
 @app.route("/admin/templates")
