@@ -529,11 +529,45 @@ def login_page():
 @app.route("/logout")
 @login_required
 def logout():
-    current_user.last_logout = datetime.now(timezone.utc)
-    db.session.commit()
-    auth_log.info(f"LOGOUT user={current_user.username} ip={request.remote_addr}")
+    # Capture identity BEFORE we tear the session down — current_user
+    # becomes anonymous as soon as logout_user() runs.
+    username = current_user.username
+    user_id = current_user.id
+
+    # Stamp last_logout on the database row.
+    user = User.query.get(user_id)
+    if user:
+        user.last_logout = datetime.now(timezone.utc)
+        db.session.commit()
+
+    auth_log.info(f"LOGOUT user={username} ip={request.remote_addr}")
+
+    # logout_user() clears Flask-Login's own session entries AND signals
+    # remember-me cookie deletion by setting session["_remember"] = "clear"
+    # — Flask-Login's response handler reads that on the way out and emits
+    # a Set-Cookie that expires the remember cookie. We then session.clear()
+    # the rest (login_time, last_activity, force_desktop) so a subsequent
+    # login starts clean.
+    #
+    # CRITICAL: the order matters. session.clear() AFTER logout_user() would
+    # erase the "_remember": "clear" signal, leaving the remember cookie
+    # intact — which causes Flask-Login to auto-re-authenticate the user on
+    # the very next request. So we save the signal across the wipe.
     logout_user()
-    return redirect(url_for("index"))
+    remember_signal = session.get("_remember")
+    remember_seconds = session.get("_remember_seconds")
+    session.clear()
+    if remember_signal is not None:
+        session["_remember"] = remember_signal
+    if remember_seconds is not None:
+        session["_remember_seconds"] = remember_seconds
+
+    # flash() must come AFTER session.clear() (flash messages live in the
+    # session). Redirect to /login (not /) so the user gets unambiguous
+    # feedback that they're signed out — the topbar on the index page
+    # only updates after the next render, which can confuse on cache.
+    flash("You have been signed out.", "info")
+    return redirect(url_for("login_page"))
 
 
 @app.route("/register", methods=["GET", "POST"])
