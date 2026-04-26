@@ -23,15 +23,76 @@
 {% block scripts %}
 <script>
 $(function() {
+    // The exhibits view is composed client-side from per-aircraft detail
+    // calls — there's no /api/v1/exhibits endpoint that returns flat
+    // (aircraft, museum) pairs. So we cache the assembled rows[] and
+    // sort/render in-place when the user clicks a header.
+    var sortState = {sort_by: '', sort_dir: 'asc'};
+    var _rowsCache = [];
+
+    /* Pluck the value used for sorting based on the column key. We expose
+       three columns — Aircraft, Museum, Status — each with a clean string
+       representation so localeCompare is well-defined. */
+    function rowSortValue(row, key) {
+        if (key === 'aircraft') {
+            return [row.aircraft.full_designation || row.aircraft.model || '',
+                    row.aircraft.model_name || '',
+                    row.aircraft.aircraft_name || ''].join(' ').toLowerCase();
+        }
+        if (key === 'museum') return (row.museum.name || '').toLowerCase();
+        if (key === 'status') return (row.museum.display_status || '').toLowerCase();
+        return '';
+    }
+    function sortInPlace(rows) {
+        if (!sortState.sort_by) return rows;
+        var dir = sortState.sort_dir === 'desc' ? -1 : 1;
+        return rows.slice().sort(function(a, b) {
+            var x = rowSortValue(a, sortState.sort_by);
+            var y = rowSortValue(b, sortState.sort_by);
+            return x.localeCompare(y, undefined, {sensitivity: 'base'}) * dir;
+        });
+    }
+
+    function renderExhibits(rows) {
+        if (!rows.length) {
+            $('#admin-exhibit-results').html('<p class="no-results">No exhibit links found.</p>');
+            return;
+        }
+        var html = '<table class="result-table"><thead><tr>'
+                 +   '<th data-sort="aircraft">Aircraft</th>'
+                 +   '<th data-sort="museum">Museum</th>'
+                 +   '<th data-sort="status">Status</th>'
+                 + '</tr></thead><tbody>';
+        rows.forEach(function(r) {
+            var statusRaw = r.museum.display_status || 'on_display';
+            var acLabel = escHtml(r.aircraft.full_designation || r.aircraft.model);
+            if (r.aircraft.model_name)    acLabel += ' ' + escHtml(r.aircraft.model_name);
+            if (r.aircraft.aircraft_name) acLabel += ' "' + escHtml(r.aircraft.aircraft_name) + '"';
+            html += '<tr>' +
+                '<td>' + acLabel + '</td>' +
+                '<td>' + escHtml(r.museum.name) + '</td>' +
+                // prettyEnum capitalizes the status label ("on_display" → "On Display").
+                '<td><span class="badge status-' + statusRaw + '">' + escHtml(prettyEnum(statusRaw)) + '</span></td>' +
+            '</tr>';
+        });
+        html += '</tbody></table>';
+        var $c = $('#admin-exhibit-results');
+        $c.html(html);
+        attachSortableHeaders($c, {
+            getState: function() { return sortState; },
+            setState: function(next) { sortState = next; renderExhibits(sortInPlace(_rowsCache)); }
+        });
+    }
+
     function loadExhibits() {
         var q = ($('#admin-exhibit-search').val() || '').toLowerCase();
         $.getJSON('/api/v1/aircraft/search', {per_page: 200}, function(acData) {
-            var html = '<table class="result-table"><thead><tr><th>Aircraft</th><th>Museum</th><th>Status</th></tr></thead><tbody>';
             var promises = [];
             acData.results.forEach(function(a) {
                 promises.push($.getJSON('/api/v1/aircraft/' + a.id));
             });
             if (!promises.length) {
+                _rowsCache = [];
                 $('#admin-exhibit-results').html('<p class="no-results">No aircraft found.</p>');
                 return;
             }
@@ -52,23 +113,8 @@ $(function() {
                                (r.museum.name || '').toLowerCase().indexOf(q) >= 0;
                     });
                 }
-                if (!rows.length) {
-                    $('#admin-exhibit-results').html('<p class="no-results">No exhibit links found.</p>');
-                    return;
-                }
-                rows.forEach(function(r) {
-                    var statusClass = 'status-' + (r.museum.display_status || 'on_display');
-                    var acLabel = escHtml(r.aircraft.full_designation || r.aircraft.model);
-                    if (r.aircraft.model_name) acLabel += ' ' + escHtml(r.aircraft.model_name);
-                    if (r.aircraft.aircraft_name) acLabel += ' "' + escHtml(r.aircraft.aircraft_name) + '"';
-                    html += '<tr>' +
-                        '<td>' + acLabel + '</td>' +
-                        '<td>' + escHtml(r.museum.name) + '</td>' +
-                        '<td><span class="badge ' + statusClass + '">' + (r.museum.display_status || 'on_display').replace(/_/g,' ') + '</span></td>' +
-                    '</tr>';
-                });
-                html += '</tbody></table>';
-                $('#admin-exhibit-results').html(html);
+                _rowsCache = rows;
+                renderExhibits(sortInPlace(_rowsCache));
             });
         });
     }

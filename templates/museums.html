@@ -306,13 +306,25 @@ $(function() {
     });
 
     // ── Name / region search ──
+    var sortState = {sort_by: '', sort_dir: 'asc'};
+
     function searchMuseums(page) {
         var q = $('#museum-search').val().trim();
         var region = $('#region-filter').val();
         currentPage = page || 1;
 
-        $.getJSON('/api/museums/search', {q: q, region: region, page: currentPage}, function(data) {
+        var params = {q: q, region: region, page: currentPage};
+        if (sortState.sort_by) {
+            params.sort_by  = sortState.sort_by;
+            params.sort_dir = sortState.sort_dir;
+        }
+        $.getJSON('/api/museums/search', params, function(data) {
             renderMuseumResults(data.results, data.total, '#museum-results', data.page, data.pages);
+            // Wire sortable headers on the freshly-rendered table.
+            attachSortableHeaders($('#museum-results'), {
+                getState: function() { return sortState; },
+                setState: function(next) { sortState = next; searchMuseums(1); }
+            });
         });
     }
 

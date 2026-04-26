@@ -33,6 +33,45 @@ function prettyEnum(s) {
     });
 }
 
+/* attachSortableHeaders($container, options)
+ *
+ * Make every <th data-sort="field"> inside $container clickable to sort.
+ * First click sorts ascending; second click on the same column flips to
+ * descending; clicking a different column resets to ascending on that one.
+ *
+ * options:
+ *   getState: () => ({sort_by, sort_dir})       — read current sort
+ *   setState: ({sort_by, sort_dir}) => void     — write + reload the table
+ *
+ * Adds an ▲/▼ glyph on the active column's header. Idempotent — safe to
+ * call after every re-render of the table.
+ */
+function attachSortableHeaders($container, options) {
+    var $hdrs = $container.find('th[data-sort]');
+    var state = options.getState() || {};
+
+    $hdrs.each(function() {
+        var $th = $(this);
+        var key = $th.data('sort');
+        $th.addClass('sortable-th').css('cursor', 'pointer');
+        // Strip any indicator from a previous render before deciding what to add.
+        $th.find('.sort-indicator').remove();
+        if (state.sort_by === key) {
+            var arrow = state.sort_dir === 'desc' ? '▼' : '▲';
+            $th.append(' <span class="sort-indicator">' + arrow + '</span>');
+        }
+    });
+
+    // Use one delegated listener on the container so re-rendering the
+    // <table> doesn't strip the click handler.
+    $container.off('click.sortable').on('click.sortable', 'th[data-sort]', function() {
+        var key = $(this).data('sort');
+        var cur = options.getState() || {};
+        var nextDir = (cur.sort_by === key && cur.sort_dir === 'asc') ? 'desc' : 'asc';
+        options.setState({sort_by: key, sort_dir: nextDir});
+    });
+}
+
 function renderAircraftResults(results, total, container, page, pages) {
     var $c = $(container);
 
@@ -43,8 +82,19 @@ function renderAircraftResults(results, total, container, page, pages) {
 
     var html = '<div class="results-meta"><span>' + total + ' aircraft found</span></div>';
 
+    // data-sort attributes match _AIRCRAFT_SORT_COLUMNS in app.py. The page
+    // wiring (templates/aircraft.html) calls attachSortableHeaders() to
+    // make these headers clickable.
     html += '<table class="result-table"><thead><tr>' +
-        '<th>Designation</th><th>Model Name</th><th>Aircraft Name</th><th>Tail #</th><th>Manufacturer</th><th>Type</th><th>Mil/Civ</th><th>Role</th><th>Year</th>' +
+        '<th data-sort="full_designation">Designation</th>' +
+        '<th data-sort="model_name">Model Name</th>' +
+        '<th data-sort="aircraft_name">Aircraft Name</th>' +
+        '<th data-sort="tail_number">Tail #</th>' +
+        '<th data-sort="manufacturer">Manufacturer</th>' +
+        '<th data-sort="aircraft_type">Type</th>' +
+        '<th data-sort="military_civilian">Mil/Civ</th>' +
+        '<th data-sort="role_type">Role</th>' +
+        '<th data-sort="year_built">Year</th>' +
     '</tr></thead><tbody>';
 
     results.forEach(function(a) {
@@ -86,8 +136,12 @@ function renderMuseumResults(results, total, container, page, pages) {
 
     var html = '<div class="results-meta"><span>' + total + ' museums found</span></div>';
 
+    // data-sort attributes match _MUSEUM_SORT_COLUMNS in app.py.
     html += '<table class="result-table"><thead><tr>' +
-        '<th>Museum</th><th>City</th><th>Country</th><th>Region</th>' +
+        '<th data-sort="name">Museum</th>' +
+        '<th data-sort="city">City</th>' +
+        '<th data-sort="country">Country</th>' +
+        '<th data-sort="region">Region</th>' +
     '</tr></thead><tbody>';
 
     results.forEach(function(m) {

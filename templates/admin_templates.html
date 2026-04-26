@@ -68,38 +68,78 @@ function tplRoleOptions(mc) { return TPL_ROLE_OPTIONS[mc] || TPL_ROLE_OPTIONS.mi
 
 $(function() {
     var editId = 0;  // 0 = create mode, >0 = editing that template id
+    // Client-side sort: the templates endpoint doesn't paginate server-side,
+    // so we cache the full list and re-render on header click. Cheap and
+    // avoids touching the API.
+    var sortState = {sort_by: '', sort_dir: 'asc'};
+    var _templatesCache = [];
+
+    function sortInPlace(rows) {
+        if (!sortState.sort_by) return rows;
+        var key = sortState.sort_by, dir = sortState.sort_dir === 'desc' ? -1 : 1;
+        return rows.slice().sort(function(a, b) {
+            var x = a[key], y = b[key];
+            if (x == null && y == null) return 0;
+            if (x == null) return  1 * dir;
+            if (y == null) return -1 * dir;
+            // Numeric comparison if both look numeric, otherwise locale string.
+            if (typeof x === 'number' && typeof y === 'number') return (x - y) * dir;
+            return String(x).localeCompare(String(y), undefined, {sensitivity: 'base'}) * dir;
+        });
+    }
+
+    function renderTemplates(rows) {
+        var html;
+        if (!rows.length) {
+            html = '<p class="no-results">No templates yet. Click <strong>Add Template</strong> to create one.</p>';
+        } else {
+            html = '<table class="result-table"><thead><tr>'
+                 +   '<th data-sort="id">ID</th>'
+                 +   '<th data-sort="name">Name</th>'
+                 +   '<th data-sort="manufacturer">Manufacturer</th>'
+                 +   '<th data-sort="model">Model</th>'
+                 +   '<th data-sort="variant">Variant</th>'
+                 +   '<th data-sort="aircraft_type">Type</th>'
+                 +   '<th data-sort="military_civilian">Mil/Civ</th>'
+                 +   '<th data-sort="role_type">Role</th>'
+                 +   '<th>Aliases</th>'
+                 +   '<th>Actions</th>'
+                 + '</tr></thead><tbody>';
+            rows.forEach(function(t) {
+                var aliasStr = (t.aliases && t.aliases.length) ? escHtml(t.aliases.join(', ')) : '—';
+                html += '<tr>' +
+                    '<td>' + t.id + '</td>' +
+                    '<td><strong>' + escHtml(t.name) + '</strong></td>' +
+                    '<td>' + escHtml(t.manufacturer) + '</td>' +
+                    '<td>' + escHtml(t.model) + '</td>' +
+                    '<td>' + escHtml(t.variant || '—') + '</td>' +
+                    '<td>' + escHtml(prettyEnum(t.aircraft_type || 'fixed_wing')) + '</td>' +
+                    '<td><span class="badge status-' + (t.military_civilian || 'military') + '">' +
+                        escHtml(prettyEnum(t.military_civilian || 'military')) + '</span></td>' +
+                    '<td>' + escHtml(prettyEnum(t.role_type)) + '</td>' +
+                    '<td>' + aliasStr + '</td>' +
+                    '<td><button class="btn-icon edit-template-btn" data-id="' + t.id + '" title="Edit">' +
+                        '<i class="fa-solid fa-pen"></i></button></td>' +
+                '</tr>';
+            });
+            html += '</tbody></table>';
+        }
+        var $c = $('#templates-results');
+        $c.html(html);
+        attachSortableHeaders($c, {
+            getState: function() { return sortState; },
+            setState: function(next) {
+                sortState = next;
+                renderTemplates(sortInPlace(_templatesCache));
+            }
+        });
+    }
 
     function loadTemplates() {
         var q = $('#template-search').val() || '';
         $.getJSON('/api/v1/templates', {q: q}, function(data) {
-            var html;
-            if (!data.length) {
-                html = '<p class="no-results">No templates yet. Click <strong>Add Template</strong> to create one.</p>';
-            } else {
-                html = '<table class="result-table"><thead><tr>' +
-                    '<th>ID</th><th>Name</th><th>Manufacturer</th><th>Model</th>' +
-                    '<th>Variant</th><th>Type</th><th>Mil/Civ</th><th>Role</th><th>Aliases</th><th>Actions</th>' +
-                    '</tr></thead><tbody>';
-                data.forEach(function(t) {
-                    var aliasStr = (t.aliases && t.aliases.length) ? escHtml(t.aliases.join(', ')) : '—';
-                    html += '<tr>' +
-                        '<td>' + t.id + '</td>' +
-                        '<td><strong>' + escHtml(t.name) + '</strong></td>' +
-                        '<td>' + escHtml(t.manufacturer) + '</td>' +
-                        '<td>' + escHtml(t.model) + '</td>' +
-                        '<td>' + escHtml(t.variant || '—') + '</td>' +
-                        '<td>' + escHtml(prettyEnum(t.aircraft_type || 'fixed_wing')) + '</td>' +
-                        '<td><span class="badge status-' + (t.military_civilian || 'military') + '">' +
-                            escHtml(prettyEnum(t.military_civilian || 'military')) + '</span></td>' +
-                        '<td>' + escHtml(prettyEnum(t.role_type)) + '</td>' +
-                        '<td>' + aliasStr + '</td>' +
-                        '<td><button class="btn-icon edit-template-btn" data-id="' + t.id + '" title="Edit">' +
-                            '<i class="fa-solid fa-pen"></i></button></td>' +
-                    '</tr>';
-                });
-                html += '</tbody></table>';
-            }
-            $('#templates-results').html(html);
+            _templatesCache = data;
+            renderTemplates(sortInPlace(_templatesCache));
         });
     }
     loadTemplates();

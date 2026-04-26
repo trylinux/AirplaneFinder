@@ -27,6 +27,9 @@
         <h2 id="edit-modal-title">Edit Aircraft</h2>
         <form id="edit-form" class="admin-form">
             <div id="edit-form-fields"></div>
+            <!-- Museums currently displaying this aircraft. Read-only panel —
+                 use /admin/exhibits to add/edit/remove a link. -->
+            <div id="edit-museum-panel" style="margin-top:1rem;"></div>
             <div class="edit-modal-actions">
                 <button type="submit" class="btn btn-primary"><i class="fa-solid fa-save"></i> Save</button>
                 <button type="button" class="btn btn-danger" id="edit-delete-btn"><i class="fa-solid fa-trash"></i> Delete</button>
@@ -60,14 +63,37 @@ function getRoleOptions(mc) { return ROLE_OPTIONS[mc] || ROLE_OPTIONS.military; 
 
 $(function() {
     var editId = 0;
+    // Sort state lives at this level (not in the URL) so it survives a
+    // re-render but resets when the user navigates away. setSort() reloads.
+    var sortState = {sort_by: '', sort_dir: 'asc'};
 
     function loadAircraft() {
         var q = $('#admin-aircraft-search').val() || '';
-        $.getJSON('/api/v1/aircraft/search', {q: q, per_page: 100}, function(data) {
+        var params = {q: q, per_page: 100};
+        if (sortState.sort_by) {
+            params.sort_by  = sortState.sort_by;
+            params.sort_dir = sortState.sort_dir;
+        }
+        $.getJSON('/api/v1/aircraft/search', params, function(data) {
             var html = '';
             if (!data.results.length) { html = '<p class="no-results">No aircraft found.</p>'; }
             else {
-                html = '<table class="result-table"><thead><tr><th>ID</th><th>Designation</th><th>Model Name</th><th>Aircraft Name</th><th>Tail #</th><th>Manufacturer</th><th>Type</th><th>Mil/Civ</th><th>Role</th><th>Aliases</th><th>Actions</th></tr></thead><tbody>';
+                // data-sort attributes match _AIRCRAFT_SORT_COLUMNS on the
+                // server (see app.py). Headers without data-sort aren't
+                // sortable (Aliases is a derived field; Actions has no value).
+                html = '<table class="result-table"><thead><tr>'
+                     +   '<th data-sort="id">ID</th>'
+                     +   '<th data-sort="full_designation">Designation</th>'
+                     +   '<th data-sort="model_name">Model Name</th>'
+                     +   '<th data-sort="aircraft_name">Aircraft Name</th>'
+                     +   '<th data-sort="tail_number">Tail #</th>'
+                     +   '<th data-sort="manufacturer">Manufacturer</th>'
+                     +   '<th data-sort="aircraft_type">Type</th>'
+                     +   '<th data-sort="military_civilian">Mil/Civ</th>'
+                     +   '<th data-sort="role_type">Role</th>'
+                     +   '<th>Aliases</th>'
+                     +   '<th>Actions</th>'
+                     + '</tr></thead><tbody>';
                 data.results.forEach(function(a) {
                     var aliasStr = (a.aliases && a.aliases.length) ? escHtml(a.aliases.join(', ')) : '—';
                     var milCivRaw = (a.military_civilian || 'military');   // raw for CSS class
@@ -87,7 +113,12 @@ $(function() {
                 });
                 html += '</tbody></table>';
             }
-            $('#admin-aircraft-results').html(html);
+            var $c = $('#admin-aircraft-results');
+            $c.html(html);
+            attachSortableHeaders($c, {
+                getState: function() { return sortState; },
+                setState: function(next) { sortState = next; loadAircraft(); }
+            });
         });
     }
     loadAircraft();
@@ -132,9 +163,60 @@ $(function() {
                 {name:'description', label:'Description', val: a.description || '', textarea: true},
             ];
             renderEditFields(fields);
+            renderMuseumPanel(data.museums || []);
             $('#edit-modal').fadeIn(200);
         });
     });
+
+    /* Read-only summary of museums currently displaying this aircraft.
+       Editing is intentionally NOT in this modal — use /admin/exhibits.
+       The summary helps the admin verify they're editing the right airframe. */
+    function renderMuseumPanel(museums) {
+        var $panel = $('#edit-museum-panel');
+        if (!museums.length) {
+            $panel.html(
+                '<div style="padding:.65rem .85rem; border:1px dashed var(--border);'
+              + 'border-radius:8px; color:var(--text-dim); font-size:.85rem;">'
+              +   '<i class="fa-solid fa-circle-info"></i> Not currently linked to any museum. '
+              +   '<a href="/admin/exhibits/new">Add a link</a>.'
+              + '</div>'
+            );
+            return;
+        }
+        var html = '<div style="font-weight:600; font-size:.85rem; color:var(--text-dim);'
+                 + 'text-transform:uppercase; letter-spacing:.04em; margin-bottom:.4rem;">'
+                 +   '<i class="fa-solid fa-building-columns"></i> '
+                 +   'On display at ' + museums.length + ' museum' + (museums.length === 1 ? '' : 's')
+                 + '</div>';
+        html += '<ul style="list-style:none; padding:0; margin:0;'
+              + 'border:1px solid var(--border); border-radius:8px; overflow:hidden;">';
+        museums.forEach(function(m, idx) {
+            var statusRaw = m.display_status || 'on_display';
+            var loc = [m.city, m.state_province, m.country].filter(Boolean).join(', ');
+            html += '<li style="padding:.55rem .75rem;'
+                  + (idx > 0 ? 'border-top:1px solid var(--border);' : '')
+                  + 'display:flex; flex-wrap:wrap; gap:.5rem; align-items:center;'
+                  + 'justify-content:space-between;">'
+                  +   '<div style="min-width:0; flex:1;">'
+                  +     '<div style="font-weight:600;">' + escHtml(m.name) + '</div>'
+                  +     '<div style="font-size:.78rem; color:var(--text-dim);">' + escHtml(loc) + '</div>'
+                  +     (m.notes
+                            ? '<div style="font-size:.78rem; color:var(--text-dim);'
+                              + 'margin-top:.2rem; font-style:italic;">' + escHtml(m.notes) + '</div>'
+                            : '')
+                  +   '</div>'
+                  +   '<span class="badge status-' + statusRaw + '">'
+                  +     escHtml(prettyEnum(statusRaw))
+                  +   '</span>'
+                  + '</li>';
+        });
+        html += '</ul>';
+        html += '<div style="margin-top:.4rem; font-size:.78rem; color:var(--text-dim);">'
+              +   '<a href="/admin/exhibits"><i class="fa-solid fa-link"></i> '
+              +   'Manage exhibit links →</a>'
+              + '</div>';
+        $panel.html(html);
+    }
 
     function renderEditFields(fields) {
         var html = '<div class="form-grid">';

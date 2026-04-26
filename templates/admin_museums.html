@@ -41,14 +41,29 @@
 <script>
 $(function() {
     var editId = 0;
+    var sortState = {sort_by: '', sort_dir: 'asc'};
 
     function loadMuseums() {
         var q = $('#admin-museum-search').val() || '';
-        $.getJSON('/api/v1/museums/search', {q: q, per_page: 100}, function(data) {
+        var params = {q: q, per_page: 100};
+        if (sortState.sort_by) {
+            params.sort_by  = sortState.sort_by;
+            params.sort_dir = sortState.sort_dir;
+        }
+        $.getJSON('/api/v1/museums/search', params, function(data) {
             var html = '';
             if (!data.results.length) { html = '<p class="no-results">No museums found.</p>'; }
             else {
-                html = '<table class="result-table"><thead><tr><th>ID</th><th>Museum</th><th>City</th><th>Country</th><th>Region</th><th>Actions</th></tr></thead><tbody>';
+                // data-sort attributes match _MUSEUM_SORT_COLUMNS in app.py.
+                // City column is rendered as "City, State" but sorts on city.
+                html = '<table class="result-table"><thead><tr>'
+                     +   '<th data-sort="id">ID</th>'
+                     +   '<th data-sort="name">Museum</th>'
+                     +   '<th data-sort="city">City</th>'
+                     +   '<th data-sort="country">Country</th>'
+                     +   '<th data-sort="region">Region</th>'
+                     +   '<th>Actions</th>'
+                     + '</tr></thead><tbody>';
                 data.results.forEach(function(m) {
                     var loc = escHtml(m.city);
                     if (m.state_province) loc += ', ' + escHtml(m.state_province);
@@ -63,7 +78,12 @@ $(function() {
                 });
                 html += '</tbody></table>';
             }
-            $('#admin-museum-results').html(html);
+            var $c = $('#admin-museum-results');
+            $c.html(html);
+            attachSortableHeaders($c, {
+                getState: function() { return sortState; },
+                setState: function(next) { sortState = next; loadMuseums(); }
+            });
         });
     }
     loadMuseums();

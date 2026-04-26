@@ -42,12 +42,28 @@
 <script>
 $(function() {
     var currentPage = 1;
+    // Sort state is page-local; doesn't survive a full page reload, but
+    // does survive search-text changes and pagination.
+    var sortState = {sort_by: '', sort_dir: 'asc'};
 
     function searchAircraft(page) {
         var q = $('#aircraft-search').val().trim();
         currentPage = page || 1;
-        $.getJSON('/api/aircraft/search', {q: q, page: currentPage}, function(data) {
+        var params = {q: q, page: currentPage};
+        if (sortState.sort_by) {
+            params.sort_by  = sortState.sort_by;
+            params.sort_dir = sortState.sort_dir;
+        }
+        $.getJSON('/api/aircraft/search', params, function(data) {
             renderAircraftResults(data.results, data.total, '#aircraft-results', data.page, data.pages);
+            // attachSortableHeaders runs AFTER renderAircraftResults so the
+            // freshly-rendered <th data-sort="..."> elements are present.
+            // Clicking a header updates sortState and re-fires the search,
+            // resetting to page 1 (sorting + paging are independent UX).
+            attachSortableHeaders($('#aircraft-results'), {
+                getState: function() { return sortState; },
+                setState: function(next) { sortState = next; searchAircraft(1); }
+            });
         });
     }
 

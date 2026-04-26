@@ -852,6 +852,52 @@ def api_contributors():
 # API: Public read-only (no auth needed)
 # ══════════════════════════════════════════════
 
+# Sortable-column whitelists. Only columns listed here can be sorted via
+# ?sort_by=...; anything else is silently ignored and the endpoint falls back
+# to its default ORDER BY. This stops "?sort_by=password_hash" style probes
+# in case someone tries to sort by a column we never meant to expose.
+_AIRCRAFT_SORT_COLUMNS = {
+    "id":                lambda: Aircraft.id,
+    "model":             lambda: Aircraft.model,
+    "variant":           lambda: Aircraft.variant,
+    "model_name":        lambda: Aircraft.model_name,
+    "aircraft_name":     lambda: Aircraft.aircraft_name,
+    "tail_number":       lambda: Aircraft.tail_number,
+    "manufacturer":      lambda: Aircraft.manufacturer,
+    "aircraft_type":     lambda: Aircraft.aircraft_type,
+    "military_civilian": lambda: Aircraft.military_civilian,
+    "role_type":         lambda: Aircraft.role_type,
+    "year_built":        lambda: Aircraft.year_built,
+    "full_designation":  lambda: Aircraft.full_designation,
+}
+
+_MUSEUM_SORT_COLUMNS = {
+    "id":             lambda: Museum.id,
+    "name":           lambda: Museum.name,
+    "city":           lambda: Museum.city,
+    "state_province": lambda: Museum.state_province,
+    "country":        lambda: Museum.country,
+    "region":         lambda: Museum.region,
+}
+
+
+def _apply_sort(query, column_map, default_order):
+    """Apply ?sort_by=…&sort_dir=… to ``query`` if the requested column is
+    in the ``column_map`` whitelist; otherwise fall back to ``default_order``.
+
+    column_map values are zero-arg callables returning the column expression
+    so we evaluate them only when used (avoids touching the model at module
+    import time before the app is configured).
+    """
+    sort_by = (request.args.get("sort_by") or "").strip()
+    sort_dir = (request.args.get("sort_dir") or "asc").strip().lower()
+    column_factory = column_map.get(sort_by)
+    if column_factory is None:
+        return query.order_by(*default_order)
+    column = column_factory()
+    return query.order_by(column.desc() if sort_dir == "desc" else column.asc())
+
+
 def _build_aircraft_filter(q):
     """Build an OR filter that matches aircraft by model, name, tail, manufacturer, or alias."""
     like = f"%{q}%"
@@ -886,7 +932,11 @@ def api_aircraft_search():
     query = Aircraft.query
     if q:
         query = query.filter(_build_aircraft_filter(q))
-    query = query.order_by(Aircraft.model, Aircraft.variant, Aircraft.model_name)
+    # Honor ?sort_by=field&sort_dir=asc|desc; default ordering otherwise.
+    query = _apply_sort(
+        query, _AIRCRAFT_SORT_COLUMNS,
+        default_order=(Aircraft.model, Aircraft.variant, Aircraft.model_name),
+    )
     p = query.paginate(page=page, per_page=per_page, error_out=False)
     return jsonify({"results": [a.to_dict() for a in p.items], "total": p.total, "page": p.page, "pages": p.pages})
 
@@ -930,7 +980,10 @@ def api_museum_search():
         query = query.filter(Museum.country.ilike(country))
     if state:
         query = query.filter(Museum.state_province.ilike(state))
-    query = query.order_by(Museum.name)
+    query = _apply_sort(
+        query, _MUSEUM_SORT_COLUMNS,
+        default_order=(Museum.name,),
+    )
     p = query.paginate(page=page, per_page=per_page, error_out=False)
     return jsonify({"results": [m.to_dict() for m in p.items], "total": p.total, "page": p.page, "pages": p.pages})
 

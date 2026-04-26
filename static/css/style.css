@@ -265,6 +265,19 @@ label { display: block; font-size: .85rem; font-weight: 500; margin-bottom: .3re
     background: var(--bg-card); border: 1px solid var(--border);
     border-radius: var(--radius); overflow: hidden;
 }
+.result-table th.sortable-th {
+    user-select: none;
+    transition: background .12s ease, color .12s ease;
+}
+.result-table th.sortable-th:hover {
+    background: rgba(255,255,255,.08);
+    color: var(--text);
+}
+.result-table th .sort-indicator {
+    color: var(--primary);
+    font-size: .8em;
+    margin-left: .25rem;
+}
 .result-table th {
     text-align: left; padding: .7rem 1rem;
     background: rgba(255,255,255,.04); color: var(--text-dim);
