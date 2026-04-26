@@ -165,6 +165,31 @@ def _idle_timeout_for(user):
     return Config.SESSION_IDLE_TIMEOUT_VIEWER
 
 
+def _full_logout():
+    """Tear the session down completely AND make sure the remember-me cookie
+    actually gets cleared on the response.
+
+    Naive version is broken: ``logout_user(); session.clear()`` wipes the
+    ``_remember = 'clear'`` flag that Flask-Login sets to signal cookie
+    deletion, so the long-lived remember cookie survives and on the very
+    next request Flask-Login auto-re-authenticates the user. (We hit this
+    on the explicit /logout route AND on the timeout middleware — both
+    routes need the same dance.)
+
+    We capture _remember and _remember_seconds before the clear and put
+    them back, so Flask-Login's response handler can still issue the
+    expiring Set-Cookie header.
+    """
+    logout_user()
+    remember_signal  = session.get("_remember")
+    remember_seconds = session.get("_remember_seconds")
+    session.clear()
+    if remember_signal is not None:
+        session["_remember"] = remember_signal
+    if remember_seconds is not None:
+        session["_remember_seconds"] = remember_seconds
+
+
 @app.before_request
 def _enforce_session_timeout():
     """Log out an authenticated user whose session is idle or too old.
@@ -204,8 +229,7 @@ def _enforce_session_timeout():
     # Absolute timeout: from login, regardless of activity.
     if (now - login_time).total_seconds() > Config.SESSION_ABSOLUTE_TIMEOUT:
         username = current_user.username
-        logout_user()
-        session.clear()
+        _full_logout()
         auth_log.info(f"SESSION_TIMEOUT_ABSOLUTE user={username} ip={request.remote_addr}")
         flash("Your session has expired. Please sign in again.", "warning")
         return redirect(url_for("login_page"))
@@ -214,8 +238,7 @@ def _enforce_session_timeout():
     idle_limit = _idle_timeout_for(current_user)
     if (now - last_activity).total_seconds() > idle_limit:
         username = current_user.username
-        logout_user()
-        session.clear()
+        _full_logout()
         auth_log.info(f"SESSION_TIMEOUT_IDLE user={username} ip={request.remote_addr}")
         flash("You have been signed out due to inactivity.", "warning")
         return redirect(url_for("login_page"))
@@ -673,25 +696,10 @@ def logout():
 
     auth_log.info(f"LOGOUT user={username} ip={request.remote_addr}")
 
-    # logout_user() clears Flask-Login's own session entries AND signals
-    # remember-me cookie deletion by setting session["_remember"] = "clear"
-    # — Flask-Login's response handler reads that on the way out and emits
-    # a Set-Cookie that expires the remember cookie. We then session.clear()
-    # the rest (login_time, last_activity, force_desktop) so a subsequent
-    # login starts clean.
-    #
-    # CRITICAL: the order matters. session.clear() AFTER logout_user() would
-    # erase the "_remember": "clear" signal, leaving the remember cookie
-    # intact — which causes Flask-Login to auto-re-authenticate the user on
-    # the very next request. So we save the signal across the wipe.
-    logout_user()
-    remember_signal = session.get("_remember")
-    remember_seconds = session.get("_remember_seconds")
-    session.clear()
-    if remember_signal is not None:
-        session["_remember"] = remember_signal
-    if remember_seconds is not None:
-        session["_remember_seconds"] = remember_seconds
+    # See _full_logout for the why-is-this-so-fiddly comment. Same dance
+    # is used by the session-timeout middleware so the two paths can't
+    # silently drift apart.
+    _full_logout()
 
     # flash() must come AFTER session.clear() (flash messages live in the
     # session). Redirect to /login (not /) so the user gets unambiguous
