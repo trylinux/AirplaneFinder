@@ -83,3 +83,36 @@ class Config:
     PASSWORD_MIN_LENGTH          = int(_get("auth", "password_min_length",  "PASSWORD_MIN_LENGTH",  "8"))
     # When True, password must contain at least one letter AND one digit.
     PASSWORD_REQUIRE_MIXED       = _get("auth", "password_require_mixed", "PASSWORD_REQUIRE_MIXED", "true").lower() in ("1", "true", "yes")
+
+    # ─── Cookie + transport security ──────────────────────────────────────
+    # Default to "secure when not running in debug" — local dev typically
+    # uses plain HTTP and SECURE cookies would never be sent. Override
+    # explicitly via env var if you need a different policy.
+    _SECURE_DEFAULT = "false" if SERVER_DEBUG else "true"
+    SESSION_COOKIE_SECURE   = _get("security", "cookie_secure",   "COOKIE_SECURE",   _SECURE_DEFAULT).lower() in ("1", "true", "yes")
+    SESSION_COOKIE_HTTPONLY = True   # JS should never read the session cookie
+    SESSION_COOKIE_SAMESITE = _get("security", "cookie_samesite", "COOKIE_SAMESITE", "Lax")
+
+    # Mirror the same flags onto the Flask-Login remember-me cookie.
+    REMEMBER_COOKIE_SECURE   = SESSION_COOKIE_SECURE
+    REMEMBER_COOKIE_HTTPONLY = True
+    REMEMBER_COOKIE_SAMESITE = SESSION_COOKIE_SAMESITE
+    # Cap the remember-me cookie lifetime. SESSION_ABSOLUTE_TIMEOUT logs the
+    # user out after 12 h regardless; tying the cookie to the same window
+    # means a stolen cookie can't outlive the absolute timeout.
+    REMEMBER_COOKIE_DURATION = SESSION_ABSOLUTE_TIMEOUT
+
+    # PERMANENT_SESSION_LIFETIME is what Flask uses to set the session-cookie
+    # Max-Age. We don't currently mark sessions permanent, but if any code
+    # path does, this caps it to the same window.
+    PERMANENT_SESSION_LIFETIME = SESSION_ABSOLUTE_TIMEOUT
+
+    # Reject obscenely large request bodies. The largest legitimate POST is
+    # an aircraft/museum create with a description — kilobytes at most. 1 MB
+    # is plenty of headroom and protects against trivial DoS via huge bodies.
+    MAX_CONTENT_LENGTH = int(_get("security", "max_content_length", "MAX_CONTENT_LENGTH", str(1 * 1024 * 1024)))
+
+    # Toggle for adding HSTS / strict cookies / CSP. Off in debug so local
+    # HTTP dev works; on otherwise.
+    SECURITY_HEADERS_ENABLED = _get("security", "headers_enabled", "SECURITY_HEADERS_ENABLED",
+                                     "false" if SERVER_DEBUG else "true").lower() in ("1", "true", "yes")

@@ -14,6 +14,7 @@ Features:
 import re
 from datetime import datetime, timedelta, timezone
 from functools import wraps
+from urllib.parse import urlparse, urljoin
 
 from flask import (
     Flask, render_template, request, jsonify,
@@ -68,9 +69,26 @@ csrf = _BearerAwareCSRF()
 limiter = Limiter(key_func=get_remote_address, default_limits=[])
 
 
+_DEFAULT_SECRET_KEY = "change-me-in-production"
+
+
 def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
+
+    # Refuse to boot in production with the placeholder SECRET_KEY. Sessions
+    # are signed with this key — a known value means anyone can forge a
+    # session cookie and impersonate any user.
+    if Config.SECRET_KEY == _DEFAULT_SECRET_KEY:
+        if not Config.SERVER_DEBUG:
+            raise RuntimeError(
+                "SECRET_KEY is the default placeholder. Set the SECRET_KEY env var "
+                "(or [app] secret_key in web.config) before running outside debug mode."
+            )
+        # Dev mode: still loud about it.
+        import logging as _logging
+        _logging.warning("SECRET_KEY is the default placeholder. OK in debug, never in prod.")
+
     db.init_app(app)
     csrf.init_app(app)
     limiter.init_app(app)
@@ -226,6 +244,102 @@ def _validate_password_strength(password):
         has_digit = any(c.isdigit() for c in password)
         if not (has_letter and has_digit):
             return "Password must contain at least one letter and one digit."
+    return None
+
+
+# ══════════════════════════════════════════════
+# Security headers + safe-redirect helper
+# ══════════════════════════════════════════════
+
+# Content-Security-Policy. Notes on the rules:
+#   default-src 'self'                 — only load resources from our origin
+#                                        unless explicitly allowed below
+#   script-src                         — our origin + the CDNs we load JS from,
+#                                        plus 'unsafe-inline' because every
+#                                        page has inline <script> blocks. To
+#                                        tighten this we'd need to extract all
+#                                        inline JS into static files.
+#   style-src                          — our origin + Google Fonts CSS + the
+#                                        Font Awesome CDN, plus 'unsafe-inline'
+#                                        for the per-page <style> overrides.
+#   font-src                           — Google Fonts and Font Awesome.
+#   img-src 'self' data: https:        — allow museum/site images from any
+#                                        HTTPS origin (museums.html links to
+#                                        external sites).
+#   frame-ancestors 'none'             — no one can iframe us (clickjacking).
+#   base-uri 'self'                    — block <base href="evil.com"> tricks.
+#   form-action 'self'                 — POSTs only go to us.
+_CSP_DIRECTIVES = (
+    "default-src 'self'; "
+    "script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; "
+    "style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; "
+    "font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com data:; "
+    "img-src 'self' data: https:; "
+    "connect-src 'self'; "
+    "frame-ancestors 'none'; "
+    "base-uri 'self'; "
+    "form-action 'self'; "
+    "object-src 'none'"
+)
+
+
+@app.after_request
+def _add_security_headers(response):
+    """Apply standard security response headers.
+
+    All gated by SECURITY_HEADERS_ENABLED so local HTTP dev isn't disrupted
+    (HSTS over HTTP is wasted; some browsers also bicker about it).
+    """
+    if not Config.SECURITY_HEADERS_ENABLED:
+        return response
+
+    # Don't ever let the page be framed (clickjacking + UI-redress attacks).
+    response.headers.setdefault("X-Frame-Options", "DENY")
+    # Defense against MIME-type sniffing.
+    response.headers.setdefault("X-Content-Type-Options", "nosniff")
+    # Don't leak full URLs as Referer to third-party origins.
+    response.headers.setdefault("Referrer-Policy", "strict-origin-when-cross-origin")
+    # Block APIs we don't use; tightens the surface against compromised JS.
+    response.headers.setdefault(
+        "Permissions-Policy",
+        "geolocation=(), camera=(), microphone=(), payment=(), usb=()",
+    )
+    response.headers.setdefault("Content-Security-Policy", _CSP_DIRECTIVES)
+
+    # HSTS only makes sense on a secure connection. Set max-age 6 months,
+    # preload-eligible. Trust X-Forwarded-Proto if a reverse proxy is
+    # terminating TLS in front of us.
+    is_secure = request.is_secure or (
+        request.headers.get("X-Forwarded-Proto", "").lower() == "https"
+    )
+    if is_secure:
+        response.headers.setdefault(
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+        )
+    return response
+
+
+def _safe_next_url(target):
+    """Return ``target`` if it's a same-origin URL, else None.
+
+    Mitigates open-redirect via ``?next=https://evil.com``. Allows relative
+    paths (most common case) and absolute URLs whose netloc matches this
+    request's host. Anything else gets dropped — caller falls back to a
+    safe default.
+    """
+    if not target:
+        return None
+    # urljoin resolves a relative target against the current URL; absolute
+    # targets pass through unchanged. urlparse then lets us inspect them.
+    test_url = urlparse(urljoin(request.host_url, target))
+    ref_url = urlparse(request.host_url)
+    same_scheme = test_url.scheme in ("http", "https")
+    same_host = test_url.netloc == ref_url.netloc
+    if same_scheme and same_host:
+        # Return the original (so a caller-supplied relative URL stays
+        # relative when redirected — preserves clean URLs).
+        return target
     return None
 
 
@@ -498,13 +612,26 @@ def login_page():
             user.last_login_ip = request.headers.get("X-Forwarded-For", request.remote_addr)
             user.reset_failed_logins()
             db.session.commit()
+
+            # Session-fixation defense: clear any pre-existing session before
+            # we mark the user as authenticated, so an attacker who planted
+            # a session ID via an XSS or shared-link vector can't elevate it
+            # by waiting for the victim to log in. Flask's signed-session
+            # implementation derives the cookie from session content, so a
+            # cleared-then-rebuilt session effectively rotates the cookie.
+            session.clear()
+
             login_user(user, remember=True)
             # Stamp absolute and idle clocks for the timeout middleware.
             now_iso = datetime.now(timezone.utc).isoformat()
             session["login_time"] = now_iso
             session["last_activity"] = now_iso
             auth_log.info(f"LOGIN_SUCCESS user={username} ip={user.last_login_ip}")
-            next_url = request.args.get("next") or url_for("admin_page")
+
+            # Open-redirect defense: only redirect to ?next= if it's a URL
+            # on this host. Anything else (full external URL, missing host)
+            # falls back to /admin.
+            next_url = _safe_next_url(request.args.get("next")) or url_for("admin_page")
             return redirect(next_url)
 
         # Failed authentication: bump the counter and possibly lock.
