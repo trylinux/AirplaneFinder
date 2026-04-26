@@ -434,6 +434,27 @@ def museums_page():
     return mobile_render("museums.html")
 
 
+@app.route("/aircraft/<int:aircraft_id>")
+def aircraft_detail_page(aircraft_id):
+    """Aircraft detail page.
+
+    Mobile: renders a dedicated detail template.
+    Desktop: the list page handles detail in-place — redirect there with a
+    ``focus`` query param so the existing JS can highlight/scroll to the row.
+    """
+    if getattr(g, "is_mobile", False):
+        return render_template("mobile/aircraft_detail.html", aircraft_id=aircraft_id)
+    return redirect(url_for("aircraft_page") + f"?focus={aircraft_id}")
+
+
+@app.route("/museums/<int:museum_id>")
+def museum_detail_page(museum_id):
+    """Museum detail page — same dispatch pattern as aircraft_detail_page."""
+    if getattr(g, "is_mobile", False):
+        return render_template("mobile/museum_detail.html", museum_id=museum_id)
+    return redirect(url_for("museums_page") + f"?focus={museum_id}")
+
+
 # ══════════════════════════════════════════════
 # Auth: login / logout / register
 # ══════════════════════════════════════════════

@@ -11,8 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile.css') }}?v=role-1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile.css') }}?v=detail-1">
     {% block head %}{% endblock %}
 </head>
 <body>
@@ -72,6 +73,14 @@
 function escHtml(s) {
     if (s == null) return '';
     return $('<span>').text(String(s)).html();
+}
+/* See app.js — same helper, duplicated because the mobile base does not
+   include /static/js/app.js (different layout, different render funcs). */
+function prettyEnum(s) {
+    if (s == null || s === '') return '—';
+    return String(s).replace(/_/g, ' ').replace(/\b\w/g, function(c) {
+        return c.toUpperCase();
+    });
 }
 </script>
 {% block scripts %}{% endblock %}

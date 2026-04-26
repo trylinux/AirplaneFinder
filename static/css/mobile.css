@@ -245,6 +245,74 @@ a:active { opacity: .7; }
     background: var(--primary); color: white; border-color: var(--primary);
 }
 
+/* ─── Tab toggle (List / Globe on Museums page) ──── */
+.m-tabs {
+    display: flex; gap: .35rem; padding: .25rem;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 9px; margin-bottom: .85rem;
+}
+.m-tabs .m-tab-btn {
+    flex: 1; padding: .55rem .75rem; border: none; cursor: pointer;
+    background: transparent; color: var(--text-dim);
+    font-weight: 500; font-size: .85rem; border-radius: 7px;
+    display: inline-flex; align-items: center; justify-content: center; gap: .35rem;
+}
+.m-tabs .m-tab-btn.active {
+    background: var(--primary); color: white;
+}
+
+/* ─── Globe wrapper ─────────────────────────── */
+.m-globe-wrap {
+    position: relative;
+    width: 100%; aspect-ratio: 1 / 1;
+    max-height: 70vh;
+    background: radial-gradient(circle at 30% 20%, #1a2c5c 0%, #0a1530 60%, #050a18 100%);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    touch-action: none;     /* let our pointer handlers own pan/zoom */
+}
+#m-globe-canvas { display: block; width: 100%; height: 100%; }
+.m-globe-loading {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--text-dim); font-size: .9rem; gap: .5rem;
+    background: rgba(10, 20, 50, .35); pointer-events: none;
+}
+.m-globe-controls {
+    position: absolute; top: .5rem; right: .5rem;
+    display: flex; gap: .3rem; z-index: 5;
+}
+.m-globe-controls button {
+    width: 36px; height: 36px;
+    background: rgba(10, 20, 40, .85);
+    color: var(--text); border: 1px solid rgba(120,180,255,.3);
+    border-radius: 7px; font-size: .8rem; cursor: pointer;
+}
+.m-globe-controls button:active { background: rgba(30, 50, 90, .95); }
+
+.m-globe-pin-info {
+    position: absolute; left: .5rem; right: .5rem; bottom: .5rem;
+    background: rgba(10, 20, 40, .92);
+    border: 1px solid rgba(120, 180, 255, .35);
+    border-radius: 9px; padding: .65rem .75rem;
+    color: var(--text); font-size: .85rem;
+    display: none; z-index: 6;
+}
+.m-globe-pin-info.show { display: block; }
+.m-globe-pin-info .pin-name  { font-weight: 600; }
+.m-globe-pin-info .pin-loc   { color: var(--text-dim); font-size: .78rem; margin-top: .1rem; }
+.m-globe-pin-info .pin-count {
+    color: #60a5fa; font-weight: 600; margin-top: .25rem;
+    display: block; font-size: .8rem;
+}
+.m-globe-pin-info a {
+    display: inline-block; margin-top: .35rem;
+    background: var(--primary); color: white;
+    padding: .35rem .65rem; border-radius: 6px;
+    font-size: .8rem; font-weight: 500;
+}
+
 /* ─── Footer link (request desktop site) ──── */
 .m-foot {
     text-align: center; padding: 1rem .5rem;

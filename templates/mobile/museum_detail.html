@@ -1,0 +1,102 @@
+{% extends "mobile/base.html" %}
+{% block title %}Museum — Aircraft Finder{% endblock %}
+{% block tab_museums %}active{% endblock %}
+
+{% block content %}
+<div id="m-detail-loading" class="m-list-empty">
+    <i class="fa-solid fa-spinner fa-spin"></i> Loading…
+</div>
+<div id="m-detail-body" style="display:none;"></div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+$(function() {
+    var museumId = {{ museum_id|int }};
+
+    $.getJSON('/api/v1/museums/' + museumId, function(data) {
+        var m = data.museum;
+        var aircraft = data.aircraft || [];
+
+        var loc = [m.city, m.state_province, m.country].filter(Boolean).join(', ');
+
+        var html =
+            '<a href="/museums" class="m-btn m-btn-ghost" style="margin-bottom:.6rem;justify-content:flex-start;">'
+          +   '<i class="fa-solid fa-arrow-left"></i> Back to museums'
+          + '</a>'
+          + '<div class="m-page-header">'
+          +   '<h1><i class="fa-solid fa-building-columns"></i> ' + escHtml(m.name) + '</h1>'
+          +   '<p class="m-subtitle">' + escHtml(loc) + '</p>'
+          + '</div>'
+
+          + '<div class="m-card">'
+          +   '<h2><i class="fa-solid fa-circle-info"></i> Location</h2>'
+          +   '<div style="display:grid;grid-template-columns:auto 1fr;gap:.4rem .85rem;font-size:.9rem;">'
+          +     row('Region',  escHtml(m.region))
+          +     row('Country', escHtml(m.country))
+          + (m.state_province ? row('State / Province', escHtml(m.state_province)) : '')
+          +     row('City',    escHtml(m.city))
+          + (m.postal_code ? row('Postal code', escHtml(m.postal_code)) : '')
+          + (m.address     ? row('Address',     escHtml(m.address))     : '')
+          +   '</div>'
+          + (m.website ? '<a href="' + escHtml(m.website)
+              + '" target="_blank" rel="noopener" class="m-btn m-btn-secondary" style="margin-top:.85rem;">'
+              + '<i class="fa-solid fa-up-right-from-square"></i> Visit website</a>' : '')
+          + '</div>';
+
+        // Map link if we have coordinates
+        if (m.latitude != null && m.longitude != null) {
+            var mapUrl = 'https://www.google.com/maps/search/?api=1&query=' + m.latitude + ',' + m.longitude;
+            html += '<a href="' + mapUrl
+                 + '" target="_blank" rel="noopener" class="m-btn m-btn-secondary" style="margin-bottom:.85rem;">'
+                 + '<i class="fa-solid fa-location-dot"></i> Open in Maps</a>';
+        }
+
+        // Aircraft on display
+        if (aircraft.length) {
+            html += '<div class="m-page-header" style="margin-top:.5rem;margin-bottom:.5rem;">'
+                 +   '<h1 style="font-size:1.05rem;"><i class="fa-solid fa-jet-fighter"></i> Aircraft on display ('
+                 +   aircraft.length + ')</h1>'
+                 + '</div>'
+                 + '<div class="m-list">';
+            aircraft.forEach(function(a) {
+                var milCivRaw = a.military_civilian || 'military';
+                var statusRaw = a.display_status || 'on_display';
+                html += '<a href="/aircraft/' + a.id + '" class="m-list-item">'
+                     + '<div class="m-list-title">'
+                     +   '<span>' + escHtml(a.full_designation || a.model) + '</span>'
+                     +   '<span class="m-badge ' + milCivRaw + '">' + escHtml(prettyEnum(milCivRaw)) + '</span>'
+                     + '</div>'
+                     + '<div class="m-list-meta">'
+                     +   '<span><i class="fa-solid fa-industry"></i>' + escHtml(a.manufacturer) + '</span>'
+                     + (a.tail_number ? '<span><i class="fa-solid fa-id-card"></i>' + escHtml(a.tail_number) + '</span>' : '')
+                     +   '<span><i class="fa-solid fa-clipboard-check"></i>' + escHtml(prettyEnum(statusRaw)) + '</span>'
+                     + '</div>'
+                     + '</a>';
+            });
+            html += '</div>';
+        } else {
+            html += '<div class="m-card"><p style="color:var(--text-dim);font-size:.88rem;">'
+                 + 'No aircraft tracked at this museum yet.</p></div>';
+        }
+
+        $('#m-detail-loading').hide();
+        $('#m-detail-body').html(html).show();
+    }).fail(function(xhr) {
+        var msg = xhr.responseJSON && xhr.responseJSON.error
+                ? xhr.responseJSON.error
+                : (xhr.status === 404 ? 'Museum not found.' : 'Could not load museum.');
+        $('#m-detail-loading').html(
+            '<div class="m-alert error"><i class="fa-solid fa-circle-exclamation"></i><span>'
+            + escHtml(msg) + '</span></div>'
+            + '<a href="/museums" class="m-btn m-btn-secondary"><i class="fa-solid fa-arrow-left"></i> Back to list</a>'
+        );
+    });
+
+    function row(label, value) {
+        return '<div style="color:var(--text-dim);">' + label + ':</div>'
+             + '<div>' + value + '</div>';
+    }
+});
+</script>
+{% endblock %}

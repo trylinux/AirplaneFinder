@@ -360,7 +360,7 @@ $(function() {
                     (a.model_name ? '<span class="aircraft-name"> ' + escHtml(a.model_name) + '</span>' : '') +
                     (a.aircraft_name ? '<span class="aircraft-name"> "' + escHtml(a.aircraft_name) + '"</span>' : '') +
                     (a.tail_number ? '<span class="aircraft-tail"> (' + escHtml(a.tail_number) + ')</span>' : '') +
-                    ' <span class="badge ' + statusClass + '">' + a.display_status.replace(/_/g, ' ') + '</span>' +
+                    ' <span class="badge ' + statusClass + '">' + escHtml(prettyEnum(a.display_status)) + '</span>' +
                 '</div>';
             });
             html += '</div>';

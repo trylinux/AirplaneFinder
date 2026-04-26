@@ -88,10 +88,10 @@ $(function() {
                         '<td>' + escHtml(t.manufacturer) + '</td>' +
                         '<td>' + escHtml(t.model) + '</td>' +
                         '<td>' + escHtml(t.variant || '—') + '</td>' +
-                        '<td>' + escHtml((t.aircraft_type || 'fixed_wing').replace(/_/g, ' ')) + '</td>' +
+                        '<td>' + escHtml(prettyEnum(t.aircraft_type || 'fixed_wing')) + '</td>' +
                         '<td><span class="badge status-' + (t.military_civilian || 'military') + '">' +
-                            escHtml(t.military_civilian || 'military') + '</span></td>' +
-                        '<td>' + escHtml((t.role_type || '—').replace(/_/g, ' ')) + '</td>' +
+                            escHtml(prettyEnum(t.military_civilian || 'military')) + '</span></td>' +
+                        '<td>' + escHtml(prettyEnum(t.role_type)) + '</td>' +
                         '<td>' + aliasStr + '</td>' +
                         '<td><button class="btn-icon edit-template-btn" data-id="' + t.id + '" title="Edit">' +
                             '<i class="fa-solid fa-pen"></i></button></td>' +

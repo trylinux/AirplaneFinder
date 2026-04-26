@@ -5,23 +5,55 @@
 {% block content %}
 <div class="m-page-header">
     <h1><i class="fa-solid fa-building-columns"></i> Museums</h1>
-    <p class="m-subtitle">Browse aviation museums by name, region, or country.</p>
+    <p class="m-subtitle">Browse aviation museums or explore them on a globe.</p>
 </div>
 
-<div class="m-search">
-    <input type="text" id="m-q" placeholder="Search museums...">
-    <button id="m-go"><i class="fa-solid fa-magnifying-glass"></i></button>
+<!-- View toggle -->
+<div class="m-tabs">
+    <button class="m-tab-btn active" data-view="list">
+        <i class="fa-solid fa-list"></i> List
+    </button>
+    <button class="m-tab-btn" data-view="globe">
+        <i class="fa-solid fa-globe"></i> Globe
+    </button>
 </div>
 
-<div class="m-field">
-    <label>Region</label>
-    <select id="m-region">
-        <option value="">All regions</option>
-    </select>
+<!-- ─── List view ─── -->
+<div id="m-view-list">
+    <div class="m-search">
+        <input type="text" id="m-q" placeholder="Search museums...">
+        <button id="m-go"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="m-field">
+        <label>Region</label>
+        <select id="m-region">
+            <option value="">All regions</option>
+        </select>
+    </div>
+
+    <div id="m-results"></div>
+    <div id="m-pages" class="m-pagination"></div>
 </div>
 
-<div id="m-results"></div>
-<div id="m-pages" class="m-pagination"></div>
+<!-- ─── Globe view ─── -->
+<div id="m-view-globe" style="display:none;">
+    <div class="m-globe-wrap" id="m-globe-wrap">
+        <canvas id="m-globe-canvas"></canvas>
+        <div class="m-globe-controls">
+            <button id="m-globe-zoom-in"  title="Zoom in"><i class="fa-solid fa-plus"></i></button>
+            <button id="m-globe-zoom-out" title="Zoom out"><i class="fa-solid fa-minus"></i></button>
+            <button id="m-globe-spin"     title="Pause / resume"><i class="fa-solid fa-pause"></i></button>
+        </div>
+        <div class="m-globe-pin-info" id="m-globe-pin-info"></div>
+        <div class="m-globe-loading" id="m-globe-loading">
+            <i class="fa-solid fa-spinner fa-spin"></i> Loading globe…
+        </div>
+    </div>
+    <p style="margin-top:.5rem; font-size:.78rem; color:var(--text-dim); text-align:center;">
+        Drag to rotate · pinch or buttons to zoom · tap a pin for details
+    </p>
+</div>
 {% endblock %}
 
 {% block scripts %}
@@ -55,16 +87,16 @@ $(function() {
         var html = '<div class="m-list">';
         d.results.forEach(function(m) {
             var loc = m.city + (m.state_province ? ', ' + m.state_province : '') + ', ' + m.country;
-            html += '<div class="m-list-item">'
+            // Whole card is a link to /museums/<id>.
+            html += '<a class="m-list-item" href="/museums/' + m.id + '">'
                  + '<div class="m-list-title">'
                  +   '<span>' + escHtml(m.name) + '</span>'
                  + '</div>'
                  + '<div class="m-list-meta">'
                  +   '<span><i class="fa-solid fa-location-dot"></i>' + escHtml(loc) + '</span>'
                  +   '<span><i class="fa-solid fa-globe"></i>' + escHtml(m.region) + '</span>'
-                 + (m.website ? '<span><a href="' + m.website + '" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Site</a></span>' : '')
                  + '</div>'
-                 + '</div>';
+                 + '</a>';
         });
         html += '</div>';
         html += '<div style="font-size:.75rem;color:var(--text-dim);text-align:center;margin-top:.5rem;">' + d.total + ' total</div>';
@@ -94,6 +126,254 @@ $(function() {
     var params = new URLSearchParams(window.location.search);
     if (params.get('q')) $('#m-q').val(params.get('q'));
     load(1);
+
+    // ── View toggle ──────────────────────────────────────
+    var globeReady = false;
+    $('.m-tabs .m-tab-btn').on('click', function() {
+        var view = $(this).data('view');
+        $('.m-tabs .m-tab-btn').removeClass('active');
+        $(this).addClass('active');
+        $('#m-view-list').toggle(view === 'list');
+        $('#m-view-globe').toggle(view === 'globe');
+        if (view === 'globe' && !globeReady) {
+            globeReady = true;
+            initMobileGlobe();
+        }
+    });
 });
+
+/* ════════════════════════════════════════════════════════════════════
+   Mobile globe — slimmer than the desktop version. Sphere + pins +
+   touch drag to rotate + pinch (or buttons) to zoom. Tapping a pin
+   pops a small info panel with a "View museum" link.
+
+   No country borders / state labels — they're unreadable on a phone
+   and double the asset weight.
+   ════════════════════════════════════════════════════════════════════ */
+function initMobileGlobe() {
+    if (typeof THREE === 'undefined') {
+        $('#m-globe-loading').html(
+            '<i class="fa-solid fa-circle-exclamation"></i> Could not load Three.js.'
+        );
+        return;
+    }
+    var wrap   = document.getElementById('m-globe-wrap');
+    var canvas = document.getElementById('m-globe-canvas');
+    var info   = document.getElementById('m-globe-pin-info');
+
+    var W = wrap.clientWidth, H = wrap.clientHeight;
+
+    var scene  = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(45, W / H, 0.1, 1000);
+    camera.position.z = 3.2;
+    var INITIAL_Z = camera.position.z;
+
+    var renderer = new THREE.WebGLRenderer({canvas: canvas, antialias: true, alpha: true});
+    renderer.setPixelRatio(window.devicePixelRatio || 1);
+    renderer.setSize(W, H, false);
+    renderer.setClearColor(0x000000, 0);
+
+    var globeGroup = new THREE.Group();
+    scene.add(globeGroup);
+
+    var R = 1;
+
+    // Solid base sphere (so pins on the far side are occluded).
+    globeGroup.add(new THREE.Mesh(
+        new THREE.SphereGeometry(R * 0.995, 40, 28),
+        new THREE.MeshBasicMaterial({color: 0x0a1b3a, transparent: true, opacity: 0.92})
+    ));
+
+    // Wireframe overlay
+    globeGroup.add(new THREE.LineSegments(
+        new THREE.WireframeGeometry(new THREE.SphereGeometry(R, 20, 14)),
+        new THREE.LineBasicMaterial({color: 0x3a6bd8, transparent: true, opacity: 0.32})
+    ));
+
+    // Equator ring for depth cue
+    var ringPts = [];
+    for (var i = 0; i < 96; i++) {
+        var a = (i / 96) * Math.PI * 2;
+        ringPts.push(new THREE.Vector3(Math.cos(a) * R, 0, Math.sin(a) * R));
+    }
+    globeGroup.add(new THREE.LineLoop(
+        new THREE.BufferGeometry().setFromPoints(ringPts),
+        new THREE.LineBasicMaterial({color: 0x6ba7ff, transparent: true, opacity: 0.5})
+    ));
+
+    function latLonToVec3(lat, lon, radius) {
+        var phi   = (90 - lat) * Math.PI / 180;
+        var theta = (lon + 180) * Math.PI / 180;
+        return new THREE.Vector3(
+            -radius * Math.sin(phi) * Math.cos(theta),
+             radius * Math.cos(phi),
+             radius * Math.sin(phi) * Math.sin(theta)
+        );
+    }
+
+    var pinGeom = new THREE.SphereGeometry(0.014, 8, 8);
+    var pinMat  = new THREE.MeshBasicMaterial({color: 0xffffff});
+    var pins    = [];
+
+    var raycaster = new THREE.Raycaster();
+    raycaster.params.Mesh.threshold = 0.025;
+
+    // ── Fetch museums and place pins ──
+    $.getJSON('/api/v1/museums/globe', function(museums) {
+        museums.forEach(function(m) {
+            if (m.latitude == null || m.longitude == null) return;
+            var pin = new THREE.Mesh(pinGeom, pinMat);
+            pin.position.copy(latLonToVec3(m.latitude, m.longitude, R * 1.005));
+            pin.userData = m;
+            globeGroup.add(pin);
+            pins.push(pin);
+        });
+        $('#m-globe-loading').hide();
+    }).fail(function() {
+        $('#m-globe-loading').html(
+            '<i class="fa-solid fa-circle-exclamation"></i> Could not load museum pins.'
+        );
+    });
+
+    // ── Touch / pointer handling ──
+    // We support: single-finger drag = rotate, two-finger pinch = zoom,
+    // single-tap (move < 6px) = select pin under finger.
+    var spinPaused = false;
+    var dragging = false, lastX = 0, lastY = 0;
+    var rotV = {x: 0, y: 0};                   // rotation velocity (auto-spin)
+    var pinchStart = null;                     // {dist: px, z: cameraZ}
+    var pressStart = null;                     // {x, y, t} for tap detection
+
+    function clientToLocal(clientX, clientY) {
+        var rect = canvas.getBoundingClientRect();
+        return {x: clientX - rect.left, y: clientY - rect.top};
+    }
+
+    function distancePx(t1, t2) {
+        var dx = t1.clientX - t2.clientX, dy = t1.clientY - t2.clientY;
+        return Math.sqrt(dx*dx + dy*dy);
+    }
+
+    canvas.addEventListener('touchstart', function(e) {
+        if (e.touches.length === 1) {
+            dragging = true;
+            lastX = e.touches[0].clientX;
+            lastY = e.touches[0].clientY;
+            pressStart = {x: lastX, y: lastY, t: Date.now()};
+        } else if (e.touches.length === 2) {
+            dragging = false;
+            pressStart = null;
+            pinchStart = {dist: distancePx(e.touches[0], e.touches[1]), z: camera.position.z};
+        }
+    }, {passive: true});
+
+    canvas.addEventListener('touchmove', function(e) {
+        if (e.touches.length === 1 && dragging) {
+            var t = e.touches[0];
+            var dx = t.clientX - lastX, dy = t.clientY - lastY;
+            globeGroup.rotation.y += dx * 0.005;
+            globeGroup.rotation.x += dy * 0.005;
+            globeGroup.rotation.x = Math.max(-1.2, Math.min(1.2, globeGroup.rotation.x));
+            lastX = t.clientX; lastY = t.clientY;
+        } else if (e.touches.length === 2 && pinchStart) {
+            var d = distancePx(e.touches[0], e.touches[1]);
+            var ratio = pinchStart.dist / d;
+            camera.position.z = Math.max(1.4, Math.min(6, pinchStart.z * ratio));
+        }
+    }, {passive: true});
+
+    canvas.addEventListener('touchend', function(e) {
+        // Tap detection — touchend with no remaining touches and small movement.
+        if (pressStart && e.touches.length === 0) {
+            var moved = Math.hypot(lastX - pressStart.x, lastY - pressStart.y);
+            var dt = Date.now() - pressStart.t;
+            if (moved < 6 && dt < 350) {
+                var p = clientToLocal(lastX, lastY);
+                pickPin(p.x, p.y);
+            }
+        }
+        if (e.touches.length === 0) { dragging = false; pinchStart = null; pressStart = null; }
+        else if (e.touches.length === 1) { pinchStart = null; }
+    }, {passive: true});
+
+    // Mouse fallback (so the globe also works on a desktop running ?desktop=0
+    // mobile-mode emulation).
+    canvas.addEventListener('mousedown', function(e) {
+        dragging = true; lastX = e.clientX; lastY = e.clientY;
+        pressStart = {x: e.clientX, y: e.clientY, t: Date.now()};
+    });
+    window.addEventListener('mousemove', function(e) {
+        if (!dragging) return;
+        var dx = e.clientX - lastX, dy = e.clientY - lastY;
+        globeGroup.rotation.y += dx * 0.005;
+        globeGroup.rotation.x += dy * 0.005;
+        globeGroup.rotation.x = Math.max(-1.2, Math.min(1.2, globeGroup.rotation.x));
+        lastX = e.clientX; lastY = e.clientY;
+    });
+    window.addEventListener('mouseup', function() {
+        if (pressStart) {
+            var moved = Math.hypot(lastX - pressStart.x, lastY - pressStart.y);
+            var dt = Date.now() - pressStart.t;
+            if (moved < 6 && dt < 350) {
+                var p = clientToLocal(lastX, lastY);
+                pickPin(p.x, p.y);
+            }
+        }
+        dragging = false; pressStart = null;
+    });
+
+    function pickPin(localX, localY) {
+        var pointer = new THREE.Vector2(
+            (localX / wrap.clientWidth) * 2 - 1,
+            -(localY / wrap.clientHeight) * 2 + 1
+        );
+        raycaster.setFromCamera(pointer, camera);
+        var hits = raycaster.intersectObjects(pins);
+        if (!hits.length) {
+            $(info).removeClass('show');
+            return;
+        }
+        var m = hits[0].object.userData;
+        info.innerHTML =
+            '<div class="pin-name">' + escHtml(m.name) + '</div>' +
+            '<div class="pin-loc">'  + escHtml(m.city + ', ' + m.country) + '</div>' +
+            '<span class="pin-count">' + m.aircraft_count + ' aircraft tracked</span>' +
+            '<a href="/museums/' + m.id + '">View museum &rarr;</a>';
+        info.classList.add('show');
+    }
+
+    // Buttons
+    document.getElementById('m-globe-zoom-in').addEventListener('click', function() {
+        camera.position.z = Math.max(1.4, camera.position.z * 0.8);
+    });
+    document.getElementById('m-globe-zoom-out').addEventListener('click', function() {
+        camera.position.z = Math.min(6, camera.position.z * 1.25);
+    });
+    var spinBtn = document.getElementById('m-globe-spin');
+    spinBtn.addEventListener('click', function() {
+        spinPaused = !spinPaused;
+        spinBtn.innerHTML = spinPaused
+            ? '<i class="fa-solid fa-play"></i>'
+            : '<i class="fa-solid fa-pause"></i>';
+    });
+
+    // Resize on viewport change (e.g. orientation flip)
+    window.addEventListener('resize', function() {
+        var w = wrap.clientWidth, h = wrap.clientHeight;
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+        renderer.setSize(w, h, false);
+    });
+
+    // Animation loop
+    function tick() {
+        if (!spinPaused && !dragging) {
+            globeGroup.rotation.y += 0.0015;
+        }
+        renderer.render(scene, camera);
+        requestAnimationFrame(tick);
+    }
+    tick();
+}
 </script>
 {% endblock %}

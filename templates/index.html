@@ -161,8 +161,8 @@ $(function() {
         html += '<div class="prox-list">';
 
         data.results.forEach(function(r) {
-            var statusClass = 'status-' + r.display_status;
-            var statusLabel = r.display_status.replace(/_/g, ' ');
+            var statusClass = 'status-' + r.display_status;   // raw, used as CSS class
+            var statusLabel = prettyEnum(r.display_status);
             html += '<div class="prox-item">' +
                 '<div class="prox-distance"><span class="dist-num">' + r.distance_miles + '</span><span class="dist-unit">miles</span></div>' +
                 '<div class="prox-info">' +

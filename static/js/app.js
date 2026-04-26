@@ -22,6 +22,17 @@ function escHtml(str) {
     return $('<span>').text(str).html();
 }
 
+/* Convert a snake_case enum value to a Title Case display label.
+ * Empty/null -> "—". Used for aircraft_type, military_civilian, role_type,
+ * wing_type, display_status, etc. Do NOT use the result as a CSS class name —
+ * keep the raw value for that. */
+function prettyEnum(s) {
+    if (s == null || s === '') return '—';
+    return String(s).replace(/_/g, ' ').replace(/\b\w/g, function(c) {
+        return c.toUpperCase();
+    });
+}
+
 function renderAircraftResults(results, total, container, page, pages) {
     var $c = $(container);
 
@@ -37,18 +48,16 @@ function renderAircraftResults(results, total, container, page, pages) {
     '</tr></thead><tbody>';
 
     results.forEach(function(a) {
-        var typeLabel = (a.aircraft_type || 'fixed_wing').replace(/_/g, ' ');
-        var milCiv = a.military_civilian || 'military';
-        var roleLabel = (a.role_type || '—').replace(/_/g, ' ');
+        var milCivRaw = a.military_civilian || 'military';   // raw, used for CSS class
         html += '<tr class="aircraft-row" data-id="' + a.id + '">' +
             '<td><strong>' + escHtml(a.full_designation || a.model) + '</strong></td>' +
             '<td>' + escHtml(a.model_name || '—') + '</td>' +
             '<td>' + escHtml(a.aircraft_name || '—') + '</td>' +
             '<td>' + escHtml(a.tail_number || '—') + '</td>' +
             '<td>' + escHtml(a.manufacturer) + '</td>' +
-            '<td>' + escHtml(typeLabel) + '</td>' +
-            '<td><span class="badge status-' + milCiv + '">' + milCiv + '</span></td>' +
-            '<td>' + escHtml(roleLabel) + '</td>' +
+            '<td>' + escHtml(prettyEnum(a.aircraft_type || 'fixed_wing')) + '</td>' +
+            '<td><span class="badge status-' + milCivRaw + '">' + escHtml(prettyEnum(milCivRaw)) + '</span></td>' +
+            '<td>' + escHtml(prettyEnum(a.role_type)) + '</td>' +
             '<td>' + (a.year_built || '—') + '</td>' +
         '</tr>';
     });

@@ -1,0 +1,95 @@
+{% extends "mobile/base.html" %}
+{% block title %}Aircraft Details — Aircraft Finder{% endblock %}
+{% block tab_aircraft %}active{% endblock %}
+
+{% block content %}
+<div id="m-detail-loading" class="m-list-empty">
+    <i class="fa-solid fa-spinner fa-spin"></i> Loading…
+</div>
+<div id="m-detail-body" style="display:none;"></div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+$(function() {
+    var aircraftId = {{ aircraft_id|int }};
+
+    $.getJSON('/api/v1/aircraft/' + aircraftId, function(data) {
+        var a = data.aircraft;
+        var museums = data.museums || [];
+
+        var milCivRaw = a.military_civilian || 'military';
+        var html =
+            '<a href="/aircraft" class="m-btn m-btn-ghost" style="margin-bottom:.6rem;justify-content:flex-start;">'
+          +   '<i class="fa-solid fa-arrow-left"></i> Back to aircraft'
+          + '</a>'
+          + '<div class="m-page-header">'
+          +   '<h1><i class="fa-solid fa-jet-fighter"></i> ' + escHtml(a.full_designation || a.model) + '</h1>'
+          +   (a.model_name || a.aircraft_name ? '<p class="m-subtitle">' +
+                escHtml([a.model_name, a.aircraft_name && '"' + a.aircraft_name + '"'].filter(Boolean).join(' · ')) +
+              '</p>' : '')
+          + '</div>'
+
+          + '<div class="m-card">'
+          +   '<h2><i class="fa-solid fa-circle-info"></i> Details</h2>'
+          +   '<div style="display:grid;grid-template-columns:auto 1fr;gap:.4rem .85rem;font-size:.9rem;">'
+          +     row('Manufacturer', escHtml(a.manufacturer))
+          +     row('Type',         escHtml(prettyEnum(a.aircraft_type)))
+          +     row('Class',        '<span class="m-badge ' + milCivRaw + '">' + escHtml(prettyEnum(milCivRaw)) + '</span>')
+          + (a.role_type    ? row('Role',    escHtml(prettyEnum(a.role_type))) : '')
+          + (a.wing_type    ? row('Wing',    escHtml(prettyEnum(a.wing_type))) : '')
+          + (a.tail_number  ? row('Tail #',  escHtml(a.tail_number)) : '')
+          + (a.year_built   ? row('Year',    a.year_built)           : '')
+          +   '</div>'
+          + (a.description ? '<p style="margin-top:.65rem;color:var(--text-dim);font-size:.9rem;line-height:1.55;">'
+              + escHtml(a.description) + '</p>' : '')
+          + (a.aliases && a.aliases.length ?
+              '<div style="margin-top:.65rem;font-size:.78rem;color:var(--text-dim);">' +
+              '<strong>Also known as:</strong> ' + escHtml(a.aliases.join(', ')) + '</div>' : '')
+          + '</div>';
+
+        // Museums where this aircraft is displayed
+        if (museums.length) {
+            html += '<div class="m-page-header" style="margin-top:1rem;margin-bottom:.5rem;">'
+                 +   '<h1 style="font-size:1.05rem;"><i class="fa-solid fa-building-columns"></i> On display at</h1>'
+                 + '</div>'
+                 + '<div class="m-list">';
+            museums.forEach(function(m) {
+                var statusRaw = m.display_status || 'on_display';
+                html += '<a href="/museums/' + m.id + '" class="m-list-item">'
+                     + '<div class="m-list-title">'
+                     +   '<span>' + escHtml(m.name) + '</span>'
+                     +   '<span class="m-badge">' + escHtml(prettyEnum(statusRaw)) + '</span>'
+                     + '</div>'
+                     + '<div class="m-list-meta">'
+                     +   '<span><i class="fa-solid fa-location-dot"></i>' + escHtml(m.city + ', ' + m.country) + '</span>'
+                     + (m.notes ? '<span style="color:var(--text-dim);">' + escHtml(m.notes) + '</span>' : '')
+                     + '</div>'
+                     + '</a>';
+            });
+            html += '</div>';
+        } else {
+            html += '<div class="m-card"><p style="color:var(--text-dim);font-size:.88rem;">'
+                 + 'Not currently on display at any tracked museum.</p></div>';
+        }
+
+        $('#m-detail-loading').hide();
+        $('#m-detail-body').html(html).show();
+    }).fail(function(xhr) {
+        var msg = xhr.responseJSON && xhr.responseJSON.error
+                ? xhr.responseJSON.error
+                : (xhr.status === 404 ? 'Aircraft not found.' : 'Could not load aircraft.');
+        $('#m-detail-loading').html(
+            '<div class="m-alert error"><i class="fa-solid fa-circle-exclamation"></i><span>'
+            + escHtml(msg) + '</span></div>'
+            + '<a href="/aircraft" class="m-btn m-btn-secondary"><i class="fa-solid fa-arrow-left"></i> Back to list</a>'
+        );
+    });
+
+    function row(label, value) {
+        return '<div style="color:var(--text-dim);">' + label + ':</div>'
+             + '<div>' + value + '</div>';
+    }
+});
+</script>
+{% endblock %}

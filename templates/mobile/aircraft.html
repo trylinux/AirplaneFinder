@@ -39,19 +39,21 @@ $(function() {
         }
         var html = '<div class="m-list">';
         d.results.forEach(function(a) {
-            var milCiv = (a.military_civilian || 'military');
-            html += '<div class="m-list-item">'
+            var milCivRaw = (a.military_civilian || 'military');   // raw for CSS class
+            // Wrap each list item in an anchor so the whole card is a tap target.
+            html += '<a class="m-list-item" href="/aircraft/' + a.id + '">'
                  + '<div class="m-list-title">'
                  +   '<span>' + escHtml(a.full_designation || a.model) + '</span>'
-                 +   '<span class="m-badge ' + milCiv + '">' + escHtml(milCiv) + '</span>'
+                 +   '<span class="m-badge ' + milCivRaw + '">' + escHtml(prettyEnum(milCivRaw)) + '</span>'
                  + '</div>'
                  + '<div class="m-list-meta">'
                  +   '<span><i class="fa-solid fa-industry"></i>' + escHtml(a.manufacturer) + '</span>';
-            if (a.model_name) html += '<span><i class="fa-solid fa-tag"></i>' + escHtml(a.model_name) + '</span>';
-            if (a.tail_number) html += '<span><i class="fa-solid fa-id-card"></i>' + escHtml(a.tail_number) + '</span>';
-            if (a.role_type)   html += '<span><i class="fa-solid fa-shield"></i>' + escHtml(a.role_type.replace(/_/g, ' ')) + '</span>';
+            if (a.model_name)    html += '<span><i class="fa-solid fa-tag"></i>' + escHtml(a.model_name) + '</span>';
+            if (a.tail_number)   html += '<span><i class="fa-solid fa-id-card"></i>' + escHtml(a.tail_number) + '</span>';
+            if (a.role_type)     html += '<span><i class="fa-solid fa-shield"></i>' + escHtml(prettyEnum(a.role_type)) + '</span>';
+            if (a.aircraft_type) html += '<span><i class="fa-solid fa-plane"></i>' + escHtml(prettyEnum(a.aircraft_type)) + '</span>';
             html += '</div>';
-            html += '</div>';
+            html += '</a>';
         });
         html += '</div>';
         html += '<div style="font-size:.75rem;color:var(--text-dim);text-align:center;margin-top:.5rem;">' + d.total + ' total</div>';

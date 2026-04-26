@@ -100,7 +100,7 @@ $(function() {
                 html += '<div class="detail-museum-item">' +
                     '<div class="detail-museum-name">' + escHtml(m.name) + '</div>' +
                     '<div class="detail-museum-loc">' + escHtml(m.city + ', ' + m.state) + '</div>' +
-                    '<span class="badge ' + statusClass + '">' + m.display_status.replace(/_/g, ' ') + '</span>' +
+                    '<span class="badge ' + statusClass + '">' + escHtml(prettyEnum(m.display_status)) + '</span>' +
                     (m.website ? ' <a href="' + escHtml(m.website) + '" target="_blank" class="btn-link"><i class="fa-solid fa-external-link-alt"></i></a>' : '') +
                 '</div>';
             });

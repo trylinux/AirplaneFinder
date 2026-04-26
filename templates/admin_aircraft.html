@@ -70,9 +70,7 @@ $(function() {
                 html = '<table class="result-table"><thead><tr><th>ID</th><th>Designation</th><th>Model Name</th><th>Aircraft Name</th><th>Tail #</th><th>Manufacturer</th><th>Type</th><th>Mil/Civ</th><th>Role</th><th>Aliases</th><th>Actions</th></tr></thead><tbody>';
                 data.results.forEach(function(a) {
                     var aliasStr = (a.aliases && a.aliases.length) ? escHtml(a.aliases.join(', ')) : '—';
-                    var typeLabel = (a.aircraft_type || 'fixed_wing').replace(/_/g, ' ');
-                    var milCiv = (a.military_civilian || 'military');
-                    var roleLabel = (a.role_type || '—').replace(/_/g, ' ');
+                    var milCivRaw = (a.military_civilian || 'military');   // raw for CSS class
                     html += '<tr>' +
                         '<td>' + a.id + '</td>' +
                         '<td><strong>' + escHtml(a.full_designation || a.model) + '</strong></td>' +
@@ -80,9 +78,9 @@ $(function() {
                         '<td>' + escHtml(a.aircraft_name || '—') + '</td>' +
                         '<td>' + escHtml(a.tail_number || '—') + '</td>' +
                         '<td>' + escHtml(a.manufacturer) + '</td>' +
-                        '<td>' + escHtml(typeLabel) + '</td>' +
-                        '<td><span class="badge status-' + milCiv + '">' + milCiv + '</span></td>' +
-                        '<td>' + escHtml(roleLabel) + '</td>' +
+                        '<td>' + escHtml(prettyEnum(a.aircraft_type || 'fixed_wing')) + '</td>' +
+                        '<td><span class="badge status-' + milCivRaw + '">' + escHtml(prettyEnum(milCivRaw)) + '</span></td>' +
+                        '<td>' + escHtml(prettyEnum(a.role_type)) + '</td>' +
                         '<td>' + aliasStr + '</td>' +
                         '<td><button class="btn-icon edit-aircraft-btn" data-id="' + a.id + '" title="Edit"><i class="fa-solid fa-pen"></i></button></td>' +
                     '</tr>';
