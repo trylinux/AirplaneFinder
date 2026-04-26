@@ -218,7 +218,43 @@ function initMobileGlobe() {
     var raycaster = new THREE.Raycaster();
     raycaster.params.Mesh.threshold = 0.025;
 
-    // ── Fetch museums and place pins ──
+    // Country-border material. Slightly dimmer + thinner than desktop so it
+    // doesn't visually compete with the pins on a small canvas.
+    var borderMat = new THREE.LineBasicMaterial({
+        color: 0x6fa3e8, transparent: true, opacity: 0.45
+    });
+
+    /* Convert a GeoJSON FeatureCollection into Three.js Line objects on the
+       globe. We draw country outlines only — not labels, not state borders,
+       not filled fills — because at phone size the labels are unreadable
+       and the state polylines double the geometry count for no real gain. */
+    function addCountryBorders(geo) {
+        var feats = geo.features || [];
+        feats.forEach(function(feat) {
+            var g = feat.geometry;
+            if (!g) return;
+            // GeoJSON geometry shapes: Polygon = [[ring]], MultiPolygon = [[[ring]]]
+            var polys = g.type === 'Polygon'      ? [g.coordinates]
+                      : g.type === 'MultiPolygon' ? g.coordinates
+                      : [];
+            polys.forEach(function(poly) {
+                poly.forEach(function(ring) {
+                    var pts = ring.map(function(c) {
+                        // GeoJSON is [lon, lat]; latLonToVec3 wants (lat, lon).
+                        // R * 1.002 floats the borders just above the surface
+                        // so they're not z-fighting with the sphere.
+                        return latLonToVec3(c[1], c[0], R * 1.002);
+                    });
+                    if (pts.length > 1) {
+                        var bg = new THREE.BufferGeometry().setFromPoints(pts);
+                        globeGroup.add(new THREE.Line(bg, borderMat));
+                    }
+                });
+            });
+        });
+    }
+
+    // ── Fetch museums, place pins, then load country borders ──
     $.getJSON('/api/v1/museums/globe', function(museums) {
         museums.forEach(function(m) {
             if (m.latitude == null || m.longitude == null) return;
@@ -229,6 +265,13 @@ function initMobileGlobe() {
             pins.push(pin);
         });
         $('#m-globe-loading').hide();
+
+        // Borders load on a second hop so the user gets pins immediately —
+        // the GeoJSON file is ~250 KB, a noticeable extra wait on cellular.
+        // CSP connect-src must include cdn.jsdelivr.net (see app.py).
+        $.getJSON('https://cdn.jsdelivr.net/gh/johan/world.geo.json@master/countries.geo.json')
+            .done(addCountryBorders)
+            .fail(function() { /* network blocked / CDN down — skip silently */ });
     }).fail(function() {
         $('#m-globe-loading').html(
             '<i class="fa-solid fa-circle-exclamation"></i> Could not load museum pins.'

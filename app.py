@@ -275,7 +275,11 @@ _CSP_DIRECTIVES = (
     "style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; "
     "font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com data:; "
     "img-src 'self' data: https:; "
-    "connect-src 'self'; "
+    # connect-src governs fetch/XHR. jsDelivr hosts the world-borders
+    # GeoJSON consumed by the globe view (desktop and mobile). Keeping
+    # it tight to known origins — not 'https:' — so XSS payloads can't
+    # exfiltrate to arbitrary hosts.
+    "connect-src 'self' https://cdn.jsdelivr.net; "
     "frame-ancestors 'none'; "
     "base-uri 'self'; "
     "form-action 'self'; "
