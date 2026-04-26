@@ -951,7 +951,19 @@ def api_aircraft_detail(aircraft_id):
         .filter_by(aircraft_id=aircraft_id)
         .all()
     )
-    museums = [{**lnk.museum.to_dict(), "display_status": lnk.display_status, "notes": lnk.notes} for lnk in links]
+    # NOTE on key ordering: spread museum.to_dict() FIRST, then add the link
+    # fields after — otherwise the museum's `id` would clobber a link `id`.
+    # We expose the AircraftMuseum primary key as `link_id` so the UI can call
+    # DELETE /api/v1/exhibits/<link_id> to unlink without ambiguity.
+    museums = [
+        {
+            **lnk.museum.to_dict(),
+            "display_status": lnk.display_status,
+            "notes": lnk.notes,
+            "link_id": lnk.id,
+        }
+        for lnk in links
+    ]
     return jsonify({"aircraft": aircraft.to_dict(), "museums": museums})
 
 
@@ -998,7 +1010,17 @@ def api_museum_detail(museum_id):
         .filter_by(museum_id=museum_id)
         .all()
     )
-    aircraft_list = [{**lnk.aircraft.to_dict(), "display_status": lnk.display_status, "notes": lnk.notes} for lnk in links]
+    # See note on api_aircraft_detail — link_id is the AircraftMuseum primary
+    # key, exposed for the UI's unlink action.
+    aircraft_list = [
+        {
+            **lnk.aircraft.to_dict(),
+            "display_status": lnk.display_status,
+            "notes": lnk.notes,
+            "link_id": lnk.id,
+        }
+        for lnk in links
+    ]
     return jsonify({"museum": museum.to_dict(), "aircraft": aircraft_list})
 
 
