@@ -170,6 +170,46 @@ curl -X DELETE http://localhost:5000/api/v1/aircraft/42 \
   -H "Authorization: Bearer amt_YOUR_KEY"
 ```
 
+## Maintenance
+
+### Running the test suite
+
+```bash
+pip install -r requirements.txt -r requirements-dev.txt
+pytest
+```
+
+The suite uses an **in-memory SQLite** database — no MySQL needed locally.
+86 tests covering: auth flow (login, logout, lockout, session timeout,
+session-fixation defense), role-based access, security hardening (headers,
+open-redirect, default-secret guard), the aircraft API regression-prone
+paths (link_id, uniqueness, sort whitelist), pure helpers, and the logger
+fallback.
+
+Run a single file or test:
+
+```bash
+pytest tests/test_auth.py
+pytest tests/test_auth.py::TestLogout::test_logout_actually_logs_out_with_remember_cookie -v
+```
+
+### Pre-deploy security check
+
+Before each deploy, run:
+
+```bash
+bash scripts/security_check.sh
+```
+
+This runs **`pip-audit`** against `requirements.txt` to flag any dependencies
+with known CVEs in the [PyPI Advisory Database](https://pypi.org/security/),
+and prints a summary of outdated packages in your `.venv` for visibility.
+
+The script installs `pip-audit` into a one-shot temporary venv if it isn't
+already on your `$PATH`, so it doesn't pollute the app's runtime
+environment. Exit code is non-zero on findings, so it can fail a CI pipeline
+or a deploy script — wire it in as the first step of whatever you use.
+
 ## Project Structure
 
 ```
