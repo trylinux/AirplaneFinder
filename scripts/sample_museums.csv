@@ -1,0 +1,4 @@
+name,city,state_province,country,postal_code,region,address,website,latitude,longitude
+National Air & Space Museum,Washington,DC,United States,20560,North America,Independence Ave SW,https://airandspace.si.edu,38.8882,-77.0199
+National Museum of the United States Air Force,Dayton,OH,United States,45433,North America,1100 Spaatz St,https://nationalmuseum.af.mil,39.7806,-84.1086
+Imperial War Museum Duxford,Duxford,Cambridgeshire,United Kingdom,CB22 4QR,Europe,,https://www.iwm.org.uk/visits/iwm-duxford,52.0922,0.1311

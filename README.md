@@ -170,6 +170,55 @@ curl -X DELETE http://localhost:5000/api/v1/aircraft/42 \
   -H "Authorization: Bearer amt_YOUR_KEY"
 ```
 
+## Bulk Import
+
+Aircraft and museums can be imported in bulk from CSV or JSON.
+
+**Web UI:** `/admin/import` — file upload or paste, with a Validate (dry-run)
+button before the real Import. The page is in the admin nav under
+**Bulk Import**.
+
+**API:** `POST /api/v1/aircraft/bulk_import`, `POST /api/v1/museums/bulk_import`.
+Either send a multipart `file` upload, or a JSON body of the form
+
+```json
+{ "format": "csv" | "json" | "auto",
+  "data":   "<the CSV or JSON text>",
+  "dry_run": false }
+```
+
+The response is a per-row report:
+
+```json
+{ "created": 4, "skipped": 0, "errors": [], "dry_run": false }
+```
+
+**Rules**
+
+- Permission: `admin` or `aircraft_admin`.
+- Cap: 5,000 rows per request. Split larger imports.
+- Atomic: any validation error rolls back the whole batch — partial
+  imports are too painful to debug after the fact.
+- Existing duplicates (same `(model, tail_number)` for aircraft, same
+  `(name, city, country)` for museums) are reported as skipped *and*
+  cause the batch to roll back. Re-import after removing them.
+
+**Aircraft column / field names** (CSV header order = JSON keys)
+
+`manufacturer`, `model`, `variant`, `tail_number`, `model_name`,
+`aircraft_name`, `aircraft_type`, `wing_type`, `military_civilian`,
+`role_type`, `year_built`, `description`, `aliases`. Required:
+`manufacturer`, `model`. `aliases` in CSV is **semicolon**-separated
+(`Herc;Hercules`); in JSON it's an array.
+
+**Museum field names**
+
+`name`, `city`, `state_province`, `country`, `postal_code`, `region`,
+`address`, `website`, `latitude`, `longitude`. Required: `name`, `city`,
+`region`. `latitude` and `longitude` must both be present or both empty.
+
+Sample files: `scripts/sample_aircraft.csv`, `scripts/sample_museums.csv`.
+
 ## Maintenance
 
 ### Running the test suite

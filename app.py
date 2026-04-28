@@ -11,6 +11,9 @@ Features:
   - Structured logging: auth, changes, access
 """
 
+import csv
+import io
+import json
 import re
 import secrets
 from datetime import datetime, timedelta, timezone
@@ -842,6 +845,15 @@ def admin_templates_page():
     return render_template("admin_templates.html")
 
 
+@app.route("/admin/import")
+@no_mobile
+@login_required
+def admin_import_page():
+    """Bulk-import landing page. Auth handled by the login_required decorator;
+    the API endpoints behind the form enforce the admin-data role gate."""
+    return render_template("admin_import.html")
+
+
 @app.route("/admin/users")
 @no_mobile
 @admin_required
@@ -1291,6 +1303,393 @@ def stats_compat():
 # ══════════════════════════════════════════════
 # API: Authenticated CRUD (requires API key or session)
 # ══════════════════════════════════════════════
+
+# ══════════════════════════════════════════════
+# Bulk import (aircraft + museums, CSV + JSON)
+# ══════════════════════════════════════════════
+
+# Hard cap on rows per request. Keeps any single import bounded so a 100k-row
+# upload can't tie up a worker for minutes; users with bigger batches should
+# split them.
+_BULK_MAX_ROWS = 5000
+
+# Enum allowlists used by the validators below. Must match the schema ENUMs.
+_AIRCRAFT_TYPE_VALUES = {"fixed_wing", "rotary_wing", "lighter_than_air", "spacecraft"}
+_WING_TYPE_VALUES = {"monoplane", "biplane", "triplane"}
+_MILITARY_CIVILIAN_VALUES = {"military", "civilian"}
+_REGION_VALUES = {
+    "North America", "Europe", "Asia", "Asia-Pacific", "South America",
+    "Oceania", "Africa", "Middle East",
+}
+
+
+def _parse_bulk_payload(raw, fmt):
+    """Parse ``raw`` (a string) as ``fmt`` ('csv' or 'json') and return a list
+    of dicts. Raises ValueError on malformed input.
+
+    'auto' format detection picks JSON if the text starts with [ or {,
+    otherwise CSV. This matches both pasted-text and uploaded-file flows.
+    """
+    fmt = (fmt or "auto").lower()
+    text = raw.strip() if isinstance(raw, str) else raw.decode("utf-8").strip()
+
+    if fmt == "auto":
+        fmt = "json" if text[:1] in ("[", "{") else "csv"
+
+    if fmt == "json":
+        try:
+            data = json.loads(text)
+        except json.JSONDecodeError as e:
+            raise ValueError(f"JSON parse error: {e.msg} at line {e.lineno}, col {e.colno}")
+        if not isinstance(data, list):
+            raise ValueError("JSON payload must be a list of objects.")
+        if not all(isinstance(row, dict) for row in data):
+            raise ValueError("Every entry in the JSON list must be an object.")
+        return data
+
+    if fmt == "csv":
+        # csv.DictReader handles quoted fields with embedded commas, etc.
+        reader = csv.DictReader(io.StringIO(text))
+        rows = list(reader)
+        if not rows:
+            raise ValueError("CSV is empty or missing a header row.")
+        return rows
+
+    raise ValueError(f"Unsupported format: {fmt!r}. Use 'csv', 'json', or 'auto'.")
+
+
+def _split_aliases(value):
+    """Aliases are JSON arrays in JSON payloads, semicolon-separated strings
+    in CSV. Normalize both into a clean list of unique non-empty strings."""
+    if value is None or value == "":
+        return []
+    if isinstance(value, list):
+        return [a.strip() for a in value if isinstance(a, str) and a.strip()]
+    if isinstance(value, str):
+        # Both ; and , can show up in user CSVs. Default to ; (since aircraft
+        # designations contain commas inside aliases like "B-29, Superfortress").
+        parts = [p.strip() for p in value.split(";")]
+        return [p for p in parts if p]
+    return []
+
+
+def _coerce_int(value, field_name, errors):
+    """Try to parse ``value`` as int; record an error and return None if not."""
+    if value is None or value == "":
+        return None
+    try:
+        return int(str(value).strip())
+    except (ValueError, TypeError):
+        errors.append({"field": field_name, "message": f"must be an integer (got {value!r})"})
+        return None
+
+
+def _coerce_float(value, field_name, errors):
+    if value is None or value == "":
+        return None
+    try:
+        return float(str(value).strip())
+    except (ValueError, TypeError):
+        errors.append({"field": field_name, "message": f"must be a number (got {value!r})"})
+        return None
+
+
+def _validate_aircraft_row(row):
+    """Return (clean_dict, errors). clean_dict is None if errors is non-empty."""
+    errors = []
+    # Trim every string field for safety.
+    g = lambda k: (row.get(k) or "").strip() if isinstance(row.get(k), str) else row.get(k)
+
+    manufacturer = g("manufacturer")
+    model = g("model")
+    if not manufacturer:
+        errors.append({"field": "manufacturer", "message": "required"})
+    if not model:
+        errors.append({"field": "model", "message": "required"})
+
+    aircraft_type = g("aircraft_type") or "fixed_wing"
+    if aircraft_type not in _AIRCRAFT_TYPE_VALUES:
+        errors.append({"field": "aircraft_type",
+                       "message": f"must be one of {sorted(_AIRCRAFT_TYPE_VALUES)}"})
+
+    wing_type = g("wing_type") or None
+    if wing_type and wing_type not in _WING_TYPE_VALUES:
+        errors.append({"field": "wing_type",
+                       "message": f"must be one of {sorted(_WING_TYPE_VALUES)} or empty"})
+
+    mil_civ = g("military_civilian") or "military"
+    if mil_civ not in _MILITARY_CIVILIAN_VALUES:
+        errors.append({"field": "military_civilian",
+                       "message": f"must be one of {sorted(_MILITARY_CIVILIAN_VALUES)}"})
+
+    year_built = _coerce_int(row.get("year_built"), "year_built", errors)
+
+    if errors:
+        return None, errors
+
+    return {
+        "manufacturer": manufacturer,
+        "model": model,
+        "variant": g("variant") or None,
+        "tail_number": _normalize_tail_number(g("tail_number")),
+        "model_name": g("model_name") or None,
+        "aircraft_name": g("aircraft_name") or None,
+        "aircraft_type": aircraft_type,
+        "wing_type": wing_type,
+        "military_civilian": mil_civ,
+        "role_type": g("role_type") or None,
+        "year_built": year_built,
+        "description": g("description") or None,
+        "aliases": _split_aliases(row.get("aliases")),
+    }, []
+
+
+def _validate_museum_row(row):
+    """Return (clean_dict, errors). clean_dict is None if errors is non-empty."""
+    errors = []
+    g = lambda k: (row.get(k) or "").strip() if isinstance(row.get(k), str) else row.get(k)
+
+    name = g("name")
+    city = g("city")
+    country = g("country") or "United States"
+    region = g("region")
+
+    if not name:    errors.append({"field": "name", "message": "required"})
+    if not city:    errors.append({"field": "city", "message": "required"})
+    if not region:  errors.append({"field": "region", "message": "required"})
+
+    if region and region not in _REGION_VALUES:
+        errors.append({"field": "region",
+                       "message": f"must be one of {sorted(_REGION_VALUES)}"})
+
+    latitude = _coerce_float(row.get("latitude"), "latitude", errors)
+    longitude = _coerce_float(row.get("longitude"), "longitude", errors)
+    # Either both coordinates or neither.
+    if (latitude is None) != (longitude is None):
+        errors.append({"field": "latitude/longitude",
+                       "message": "set both latitude AND longitude, or neither"})
+
+    if errors:
+        return None, errors
+
+    return {
+        "name": name,
+        "city": city,
+        "state_province": g("state_province") or None,
+        "country": country,
+        "postal_code": g("postal_code") or None,
+        "region": region,
+        "address": g("address") or None,
+        "website": g("website") or None,
+        "latitude": latitude,
+        "longitude": longitude,
+    }, []
+
+
+def _bulk_import_aircraft(rows, dry_run):
+    """Validate + (optionally) insert aircraft rows. Atomic: any error
+    triggers rollback so an import never half-applies."""
+    report = {"created": 0, "skipped": 0, "errors": [], "dry_run": dry_run}
+
+    # First pass: validate every row, collect errors with row indices.
+    cleaned = []
+    seen_pairs = set()  # (model, tail) duplicates within the batch
+    for i, raw in enumerate(rows):
+        clean, errs = _validate_aircraft_row(raw)
+        if errs:
+            for e in errs:
+                report["errors"].append({"row": i, **e})
+            continue
+        # Within-batch duplicate detection (DB unique index would catch it too,
+        # but we want a clean error report instead of an opaque IntegrityError).
+        if clean["tail_number"]:
+            pair = (clean["model"], clean["tail_number"])
+            if pair in seen_pairs:
+                report["errors"].append({
+                    "row": i, "field": "(model, tail_number)",
+                    "message": f"duplicate of an earlier row in this batch: {pair}",
+                })
+                continue
+            seen_pairs.add(pair)
+        cleaned.append((i, clean))
+
+    # If validation failed anywhere, bail without writing.
+    if report["errors"]:
+        return report
+
+    if dry_run:
+        report["created"] = len(cleaned)
+        return report
+
+    # Second pass: insert. Existing-DB duplicate check uses our helper.
+    try:
+        for i, clean in cleaned:
+            existing = _find_aircraft_duplicate(clean["model"], clean["tail_number"])
+            if existing is not None:
+                report["skipped"] += 1
+                report["errors"].append({
+                    "row": i, "field": "(model, tail_number)",
+                    "message": f"already exists in DB (id={existing.id}); skipped",
+                })
+                continue
+            aliases = clean.pop("aliases")
+            ac = Aircraft(**clean)
+            db.session.add(ac)
+            db.session.flush()
+            for alias in aliases:
+                db.session.add(AircraftAlias(aircraft_id=ac.id, alias=alias))
+            report["created"] += 1
+        # Roll back if ANY row triggered a "skipped because duplicate" error —
+        # the alternative is partial success which is hard to recover from.
+        # Comment out the rollback here if you want skip-and-continue semantics.
+        if report["errors"]:
+            db.session.rollback()
+            report["created"] = 0   # report rolls back too
+        else:
+            db.session.commit()
+    except Exception as exc:
+        db.session.rollback()
+        report["errors"].append({"row": -1, "field": "_db", "message": str(exc)})
+        report["created"] = 0
+    return report
+
+
+def _bulk_import_museums(rows, dry_run):
+    """Validate + (optionally) insert museum rows. Same atomic semantics."""
+    report = {"created": 0, "skipped": 0, "errors": [], "dry_run": dry_run}
+
+    cleaned = []
+    seen_names = set()
+    for i, raw in enumerate(rows):
+        clean, errs = _validate_museum_row(raw)
+        if errs:
+            for e in errs:
+                report["errors"].append({"row": i, **e})
+            continue
+        # Within-batch dup: same name + city + country = same museum.
+        key = (clean["name"].lower(), clean["city"].lower(), clean["country"].lower())
+        if key in seen_names:
+            report["errors"].append({
+                "row": i, "field": "name+city+country",
+                "message": f"duplicate of an earlier row in this batch",
+            })
+            continue
+        seen_names.add(key)
+        cleaned.append((i, clean))
+
+    if report["errors"]:
+        return report
+    if dry_run:
+        report["created"] = len(cleaned)
+        return report
+
+    try:
+        for i, clean in cleaned:
+            # Existing-DB dedupe: same name+city+country already in DB?
+            existing = Museum.query.filter(
+                func.lower(Museum.name) == clean["name"].lower(),
+                func.lower(Museum.city) == clean["city"].lower(),
+                func.lower(Museum.country) == clean["country"].lower(),
+            ).first()
+            if existing is not None:
+                report["skipped"] += 1
+                report["errors"].append({
+                    "row": i, "field": "name+city+country",
+                    "message": f"already exists in DB (id={existing.id}); skipped",
+                })
+                continue
+            db.session.add(Museum(**clean))
+            report["created"] += 1
+        if report["errors"]:
+            db.session.rollback()
+            report["created"] = 0
+        else:
+            db.session.commit()
+    except Exception as exc:
+        db.session.rollback()
+        report["errors"].append({"row": -1, "field": "_db", "message": str(exc)})
+        report["created"] = 0
+    return report
+
+
+def _bulk_import_request_payload():
+    """Pull the import payload from EITHER a multipart file upload OR a JSON
+    body. Returns (raw_text, fmt, dry_run). Raises ValueError on malformed
+    input or oversize payload."""
+    dry_run = False
+    fmt = "auto"
+    raw = None
+
+    # 1. Multipart upload (the admin web UI uses this path).
+    if "file" in request.files and request.files["file"].filename:
+        f = request.files["file"]
+        # Detect format from filename extension if format wasn't specified.
+        if request.form.get("format"):
+            fmt = request.form["format"]
+        elif f.filename.lower().endswith(".json"):
+            fmt = "json"
+        else:
+            fmt = "csv"
+        dry_run = request.form.get("dry_run", "").lower() in ("1", "true", "yes", "on")
+        raw = f.read().decode("utf-8")
+    else:
+        # 2. JSON body: {"format": "csv"|"json", "data": "...", "dry_run": bool}
+        body = request.get_json(silent=True) or {}
+        fmt = body.get("format", "auto")
+        dry_run = bool(body.get("dry_run", False))
+        raw = body.get("data")
+        if not raw:
+            raise ValueError(
+                "Provide either a 'file' upload (multipart) or a JSON body "
+                "with a 'data' field containing the CSV/JSON text."
+            )
+
+    if len(raw) > Config.MAX_CONTENT_LENGTH:
+        raise ValueError(f"Payload exceeds {Config.MAX_CONTENT_LENGTH:,}-byte limit.")
+    return raw, fmt, dry_run
+
+
+@app.route("/api/v1/aircraft/bulk_import", methods=["POST"])
+@api_auth_required("admin")
+@limiter.limit("10 per hour")
+def api_bulk_import_aircraft():
+    """Bulk-create aircraft from a CSV or JSON payload. aircraft_admin+."""
+    try:
+        raw, fmt, dry_run = _bulk_import_request_payload()
+        rows = _parse_bulk_payload(raw, fmt)
+    except ValueError as e:
+        return jsonify({"error": str(e)}), 400
+    if len(rows) > _BULK_MAX_ROWS:
+        return jsonify({"error": f"At most {_BULK_MAX_ROWS} rows per import."}), 400
+    report = _bulk_import_aircraft(rows, dry_run=dry_run)
+    user = _get_effective_user()
+    change_log.info(
+        f"BULK_IMPORT_AIRCRAFT created={report['created']} skipped={report['skipped']} "
+        f"errors={len(report['errors'])} dry_run={dry_run} by={user.username}"
+    )
+    return jsonify(report)
+
+
+@app.route("/api/v1/museums/bulk_import", methods=["POST"])
+@api_auth_required("admin")
+@limiter.limit("10 per hour")
+def api_bulk_import_museums():
+    """Bulk-create museums from a CSV or JSON payload. aircraft_admin+."""
+    try:
+        raw, fmt, dry_run = _bulk_import_request_payload()
+        rows = _parse_bulk_payload(raw, fmt)
+    except ValueError as e:
+        return jsonify({"error": str(e)}), 400
+    if len(rows) > _BULK_MAX_ROWS:
+        return jsonify({"error": f"At most {_BULK_MAX_ROWS} rows per import."}), 400
+    report = _bulk_import_museums(rows, dry_run=dry_run)
+    user = _get_effective_user()
+    change_log.info(
+        f"BULK_IMPORT_MUSEUMS created={report['created']} skipped={report['skipped']} "
+        f"errors={len(report['errors'])} dry_run={dry_run} by={user.username}"
+    )
+    return jsonify(report)
+
 
 # ── Aircraft CRUD ──
 

@@ -1,0 +1,232 @@
+{% extends "base.html" %}
+{% block title %}Bulk Import — Admin — Aircraft Finder{% endblock %}
+{% block nav_admin %}active{% endblock %}
+
+{% set admin_section = 'import' %}
+
+{% block content %}
+{% include "_admin_nav.html" %}
+
+<div class="card">
+    <h2><i class="fa-solid fa-upload"></i> Bulk Import</h2>
+    <p class="card-subtitle">
+        Import aircraft or museums from a CSV or JSON file. <strong>Validate</strong>
+        runs a dry-run check; <strong>Import</strong> commits in one transaction
+        (any error rolls back the whole batch). Cap is 5,000 rows per request.
+    </p>
+
+    <!-- Entity tab toggle -->
+    <div class="tab-nav" style="margin-top:1rem;">
+        <button class="tab-btn active" data-import-tab="aircraft">
+            <i class="fa-solid fa-jet-fighter"></i> Aircraft
+        </button>
+        <button class="tab-btn" data-import-tab="museums">
+            <i class="fa-solid fa-building-columns"></i> Museums
+        </button>
+    </div>
+
+    <!-- Common form fields, swapped per-tab via JS -->
+    <div style="margin-top:1rem;">
+        <div class="form-group">
+            <label>File (.csv or .json)</label>
+            <input type="file" id="import-file" accept=".csv,.json,text/csv,application/json">
+            <p class="card-subtitle" style="margin-top:.25rem;">
+                Or paste the data into the textarea below.
+            </p>
+        </div>
+
+        <div class="form-group">
+            <label>
+                Or paste CSV / JSON
+                <span id="import-paste-hint" class="card-subtitle" style="display:inline; font-weight:400;"></span>
+            </label>
+            <textarea id="import-paste" rows="10" style="width:100%; font-family:monospace; font-size:.85rem;"
+                      placeholder="Paste your CSV or JSON here..."></textarea>
+        </div>
+
+        <div style="display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.75rem;">
+            <button class="btn btn-secondary" id="btn-validate">
+                <i class="fa-solid fa-check"></i> Validate (dry run)
+            </button>
+            <button class="btn btn-primary" id="btn-import">
+                <i class="fa-solid fa-upload"></i> Import
+            </button>
+            <button class="btn btn-secondary" id="btn-show-format" type="button">
+                <i class="fa-solid fa-circle-info"></i> Show format
+            </button>
+        </div>
+
+        <div id="import-msg" class="form-message" style="display:none; margin-top:1rem;"></div>
+        <div id="import-report" style="margin-top:1rem;"></div>
+    </div>
+</div>
+
+<!-- Format help, hidden until user clicks "Show format" -->
+<div class="card" id="format-help" style="display:none;">
+    <h3 id="format-help-title"></h3>
+    <pre id="format-help-csv" style="font-size:.78rem;"></pre>
+    <pre id="format-help-json" style="font-size:.78rem;"></pre>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script nonce="{{ csp_nonce }}">
+$(function() {
+    var entity = "aircraft";   // "aircraft" or "museums"
+
+    // ── Tab switching ─────────────────────────────────────
+    $('.tab-btn[data-import-tab]').on('click', function() {
+        $('.tab-btn[data-import-tab]').removeClass('active');
+        $(this).addClass('active');
+        entity = $(this).data('import-tab');
+        $('#format-help').hide();
+        $('#import-paste-hint').text(' — ' + entity);
+    });
+    $('#import-paste-hint').text(' — ' + entity);
+
+    // ── Format help (per-entity) ──────────────────────────
+    var FORMATS = {
+        aircraft: {
+            title: 'Aircraft format',
+            csv:
+                'manufacturer,model,variant,tail_number,model_name,aircraft_name,' +
+                'aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases\n' +
+                'Lockheed,C-130,H,55-0014,Hercules,,fixed_wing,,military,transport,1965,' +
+                '"Combat Talon variant","Herc;Hercules"\n' +
+                'Boeing,B-29,,44-86292,Superfortress,Bockscar,fixed_wing,,military,bomber,1944,' +
+                '"Dropped Fat Man on Nagasaki",',
+            json: JSON.stringify([
+                {
+                    manufacturer: "Lockheed", model: "C-130", variant: "H",
+                    tail_number: "55-0014", model_name: "Hercules",
+                    aircraft_type: "fixed_wing", military_civilian: "military",
+                    role_type: "transport", year_built: 1965,
+                    aliases: ["Herc", "Hercules"]
+                }
+            ], null, 2)
+        },
+        museums: {
+            title: 'Museum format',
+            csv:
+                'name,city,state_province,country,postal_code,region,address,website,latitude,longitude\n' +
+                'National Air & Space Museum,Washington,DC,United States,20560,North America,' +
+                '"Independence Ave SW",https://airandspace.si.edu,38.8882,-77.0199',
+            json: JSON.stringify([
+                {
+                    name: "National Air & Space Museum",
+                    city: "Washington", state_province: "DC",
+                    country: "United States", region: "North America",
+                    latitude: 38.8882, longitude: -77.0199
+                }
+            ], null, 2)
+        }
+    };
+
+    $('#btn-show-format').on('click', function() {
+        var f = FORMATS[entity];
+        $('#format-help-title').text(f.title);
+        $('#format-help-csv').text('# CSV\n' + f.csv);
+        $('#format-help-json').text('# JSON\n' + f.json);
+        $('#format-help').show();
+    });
+
+    // ── Build the multipart payload from the form ─────────
+    function buildPayload(dryRun) {
+        var fd = new FormData();
+        var file = document.getElementById('import-file').files[0];
+        var paste = $('#import-paste').val();
+
+        if (file) {
+            fd.append('file', file);
+        } else if (paste.trim()) {
+            // No file → wrap pasted text as a Blob so the same multipart
+            // path on the server handles both cases identically.
+            // Heuristic format detection: starts with [ or { → JSON.
+            var fmt = /^\s*[\[{]/.test(paste) ? 'json' : 'csv';
+            fd.append('file', new Blob([paste], {type: 'text/plain'}), 'paste.' + fmt);
+            fd.append('format', fmt);
+        } else {
+            return null;
+        }
+        if (dryRun) fd.append('dry_run', '1');
+        return fd;
+    }
+
+    function endpoint() { return '/api/v1/' + entity + '/bulk_import'; }
+
+    function postImport(dryRun) {
+        var fd = buildPayload(dryRun);
+        if (fd === null) {
+            $('#import-msg').show().html(
+                '<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' +
+                'Pick a file or paste some text first.</div>');
+            return;
+        }
+        $('#import-msg').show().html(
+            '<div class="alert alert-info"><i class="fa-solid fa-spinner fa-spin"></i> ' +
+            (dryRun ? 'Validating…' : 'Importing…') + '</div>');
+        $('#import-report').empty();
+
+        $.ajax({
+            url: endpoint(), method: 'POST', data: fd,
+            processData: false, contentType: false,
+            headers: {'X-CSRFToken': $('meta[name="csrf-token"]').attr('content')},
+        })
+        .done(function(report) { renderReport(report, dryRun); })
+        .fail(function(xhr) {
+            var msg = xhr.responseJSON && xhr.responseJSON.error
+                ? xhr.responseJSON.error
+                : (xhr.status + ' ' + xhr.statusText);
+            $('#import-msg').html(
+                '<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' +
+                escHtml(msg) + '</div>');
+        });
+    }
+
+    function renderReport(report, wasDryRun) {
+        var hasErrors = (report.errors && report.errors.length);
+        var box;
+        if (hasErrors) {
+            box = '<div class="alert alert-error">';
+            box += '<i class="fa-solid fa-triangle-exclamation"></i> ';
+            if (wasDryRun) {
+                box += '<strong>Dry run failed.</strong> ' +
+                       'Fix the errors below and try again. Nothing was inserted.';
+            } else {
+                box += '<strong>Import rolled back.</strong> ' +
+                       'No rows were inserted because of errors below.';
+            }
+            box += '</div>';
+        } else {
+            box = '<div class="alert alert-success">';
+            box += '<i class="fa-solid fa-circle-check"></i> ';
+            box += wasDryRun
+                ? 'Validation OK — would create <strong>' + report.created + '</strong> rows.'
+                : 'Created <strong>' + report.created + '</strong> rows.';
+            if (report.skipped) box += ' Skipped ' + report.skipped + ' (already in DB).';
+            box += '</div>';
+        }
+        $('#import-msg').html(box);
+
+        if (hasErrors) {
+            var html = '<table class="result-table"><thead><tr>' +
+                '<th>Row</th><th>Field</th><th>Message</th>' +
+                '</tr></thead><tbody>';
+            report.errors.forEach(function(e) {
+                var rowDisplay = (e.row >= 0) ? (e.row + 1) : '—';
+                html += '<tr>' +
+                    '<td>' + rowDisplay + '</td>' +
+                    '<td><code>' + escHtml(e.field) + '</code></td>' +
+                    '<td>' + escHtml(e.message) + '</td>' +
+                    '</tr>';
+            });
+            html += '</tbody></table>';
+            $('#import-report').html(html);
+        }
+    }
+
+    $('#btn-validate').on('click', function() { postImport(true); });
+    $('#btn-import').on('click',   function() { postImport(false); });
+});
+</script>
+{% endblock %}

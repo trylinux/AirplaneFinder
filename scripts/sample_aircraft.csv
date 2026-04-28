@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases
+Lockheed,C-130,H,55-0014,Hercules,,fixed_wing,,military,transport,1965,"Combat Talon variant",Herc;Hercules
+Boeing,B-29,,44-86292,Superfortress,Bockscar,fixed_wing,,military,bomber,1944,"Dropped Fat Man on Nagasaki",B29;Superfortress
+Lockheed Martin,F-35,A,12-5052,Lightning II,,fixed_wing,,military,fighter,2014,,F35;Lightning
+Bell,AH-1,W,160790,Cobra,,rotary_wing,,military,ground_attack,1986,,AH1
