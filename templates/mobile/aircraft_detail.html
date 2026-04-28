@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce }}">
 $(function() {
     var aircraftId = {{ aircraft_id|int }};
 

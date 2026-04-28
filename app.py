@@ -12,6 +12,7 @@ Features:
 """
 
 import re
+import secrets
 from datetime import datetime, timedelta, timezone
 from functools import wraps
 from urllib.parse import urlparse, urljoin
@@ -274,40 +275,68 @@ def _validate_password_strength(password):
 # Security headers + safe-redirect helper
 # ══════════════════════════════════════════════
 
-# Content-Security-Policy. Notes on the rules:
-#   default-src 'self'                 — only load resources from our origin
-#                                        unless explicitly allowed below
-#   script-src                         — our origin + the CDNs we load JS from,
-#                                        plus 'unsafe-inline' because every
-#                                        page has inline <script> blocks. To
-#                                        tighten this we'd need to extract all
-#                                        inline JS into static files.
-#   style-src                          — our origin + Google Fonts CSS + the
-#                                        Font Awesome CDN, plus 'unsafe-inline'
-#                                        for the per-page <style> overrides.
-#   font-src                           — Google Fonts and Font Awesome.
-#   img-src 'self' data: https:        — allow museum/site images from any
-#                                        HTTPS origin (museums.html links to
-#                                        external sites).
-#   frame-ancestors 'none'             — no one can iframe us (clickjacking).
-#   base-uri 'self'                    — block <base href="evil.com"> tricks.
-#   form-action 'self'                 — POSTs only go to us.
-_CSP_DIRECTIVES = (
-    "default-src 'self'; "
-    "script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; "
-    "style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; "
-    "font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com data:; "
-    "img-src 'self' data: https:; "
-    # connect-src governs fetch/XHR. jsDelivr hosts the world-borders
-    # GeoJSON consumed by the globe view (desktop and mobile). Keeping
-    # it tight to known origins — not 'https:' — so XSS payloads can't
-    # exfiltrate to arbitrary hosts.
-    "connect-src 'self' https://cdn.jsdelivr.net; "
-    "frame-ancestors 'none'; "
-    "base-uri 'self'; "
-    "form-action 'self'; "
-    "object-src 'none'"
-)
+# Per-request CSP nonce. Generated in _generate_csp_nonce (before_request)
+# and exposed to templates via the _csp_nonce context processor. Inline
+# <script nonce="{{ csp_nonce }}"> tags execute; anything injected via XSS
+# will not have the nonce and will be blocked by the browser.
+
+
+def _build_csp(nonce):
+    """Construct the Content-Security-Policy header value for THIS request.
+
+    Built per-request because the script-src directive embeds a fresh nonce
+    each time. The other directives are static.
+
+    Notes on the rules:
+      default-src 'self'              only load resources from our origin
+                                      unless explicitly allowed below
+      script-src                      our origin + cdnjs (jQuery, Three.js,
+                                      Font Awesome) + a per-request nonce
+                                      that legitimate inline <script> tags
+                                      carry. NO 'unsafe-inline' — that's the
+                                      whole point of the nonce.
+      style-src                       still has 'unsafe-inline' because the
+                                      templates have many inline `style=`
+                                      attributes and inline <style> blocks.
+                                      Lower XSS risk than script.
+      font-src                        Google Fonts and Font Awesome.
+      img-src 'self' data: https:     museum/site images from any HTTPS origin.
+      connect-src                     'self' + jsDelivr (world-borders GeoJSON).
+                                      Tight allowlist — not 'https:' — so an
+                                      XSS payload can't exfiltrate to any host.
+      frame-ancestors 'none'          no one can iframe us (clickjacking).
+      base-uri 'self'                 block <base href="evil"> tricks.
+      form-action 'self'              POSTs only go to us.
+      object-src 'none'               <object>/<embed> are blocked entirely.
+    """
+    return (
+        f"default-src 'self'; "
+        f"script-src 'nonce-{nonce}' 'self' https://cdnjs.cloudflare.com; "
+        f"style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; "
+        f"font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com data:; "
+        f"img-src 'self' data: https:; "
+        f"connect-src 'self' https://cdn.jsdelivr.net; "
+        f"frame-ancestors 'none'; "
+        f"base-uri 'self'; "
+        f"form-action 'self'; "
+        f"object-src 'none'"
+    )
+
+
+@app.before_request
+def _generate_csp_nonce():
+    """Mint a fresh nonce per request. Stored on flask.g so the after_request
+    handler and the template context processor see the same value within
+    one request lifecycle. 16 bytes = 128 bits of entropy, base64 url-safe.
+    """
+    g.csp_nonce = secrets.token_urlsafe(16)
+
+
+@app.context_processor
+def _csp_nonce():
+    """Expose ``csp_nonce`` to every Jinja template — used as
+    ``<script nonce="{{ csp_nonce }}">`` on every legitimate inline script."""
+    return {"csp_nonce": getattr(g, "csp_nonce", "")}
 
 
 @app.after_request
@@ -331,7 +360,12 @@ def _add_security_headers(response):
         "Permissions-Policy",
         "geolocation=(), camera=(), microphone=(), payment=(), usb=()",
     )
-    response.headers.setdefault("Content-Security-Policy", _CSP_DIRECTIVES)
+    # CSP is per-request — the script-src directive embeds the nonce so
+    # legitimate inline <script> blocks can execute while injected ones can't.
+    response.headers.setdefault(
+        "Content-Security-Policy",
+        _build_csp(getattr(g, "csp_nonce", "")),
+    )
 
     # HSTS only makes sense on a secure connection. Set max-age 6 months,
     # preload-eligible. Trust X-Forwarded-Proto if a reverse proxy is

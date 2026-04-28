@@ -39,7 +39,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce }}">
 $(function() {
     var currentPage = 1;
     // Sort state is page-local; doesn't survive a full page reload, but

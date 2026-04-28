@@ -53,7 +53,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce }}">
 $(function() {
     $('#form-museum').on('submit', function(e) {
         e.preventDefault();

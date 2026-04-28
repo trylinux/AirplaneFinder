@@ -14,7 +14,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce }}">
 $(function() {
     $.getJSON('/api/v1/contributors', function(rows) {
         if (!rows.length) {

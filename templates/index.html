@@ -84,7 +84,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce }}">
 $(function() {
     // Load stats
     $.getJSON('/api/stats', function(data) {

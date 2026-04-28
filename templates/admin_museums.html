@@ -41,7 +41,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce }}">
 $(function() {
     var editId = 0;
     var sortState = {sort_by: '', sort_dir: 'asc'};

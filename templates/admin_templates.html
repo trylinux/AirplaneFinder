@@ -44,7 +44,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce }}">
 // Mirror the role options from the aircraft page so role_type prefills/edits
 // match what the new-aircraft form offers.
 var TPL_ROLE_OPTIONS = {

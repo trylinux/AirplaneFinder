@@ -84,7 +84,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce }}">
 $(function() {
     function loadKeys() {
         $.getJSON('/api/v1/keys', function(keys) {

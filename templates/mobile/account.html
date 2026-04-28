@@ -74,7 +74,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce }}">
 $(function() {
     $.ajaxSetup({
         beforeSend: function(xhr, settings) {

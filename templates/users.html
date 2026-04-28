@@ -82,7 +82,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce }}">
 var _allMuseums = [];
 var _editUserId = 0;
 

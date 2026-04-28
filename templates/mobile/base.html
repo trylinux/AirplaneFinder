@@ -75,7 +75,7 @@
     </a>
 </nav>
 
-<script>
+<script nonce="{{ csp_nonce }}">
 function escHtml(s) {
     if (s == null) return '';
     return $('<span>').text(String(s)).html();

@@ -57,6 +57,31 @@ class TestSecurityHeaders:
         csp = hdrs["content-security-policy"]
         assert "https://cdn.jsdelivr.net" in csp
 
+    def test_script_src_no_unsafe_inline(self, hdrs):
+        """The whole point of the nonce: 'unsafe-inline' is gone from
+        script-src. An XSS-injected <script> can't execute because it
+        won't have a nonce, and 'unsafe-inline' isn't there to bail it out."""
+        csp = hdrs["content-security-policy"]
+        # Find just the script-src directive (not other directives that
+        # legitimately keep 'unsafe-inline').
+        script_src = next(
+            (d.strip() for d in csp.split(";") if d.strip().startswith("script-src")),
+            "",
+        )
+        assert script_src, f"script-src directive missing from CSP: {csp}"
+        assert "'unsafe-inline'" not in script_src, (
+            f"script-src still has 'unsafe-inline' — XSS would execute "
+            f"freely. Directive was: {script_src}"
+        )
+
+    def test_script_src_uses_a_nonce(self, hdrs):
+        csp = hdrs["content-security-policy"]
+        script_src = next(d for d in csp.split(";") if d.strip().startswith("script-src"))
+        assert "'nonce-" in script_src, (
+            f"script-src missing nonce — inline scripts won't execute. "
+            f"Directive was: {script_src}"
+        )
+
     def test_hsts_only_on_https(self, hdrs):
         # The test client is plain HTTP — HSTS would be wasted and some
         # browsers complain about it on bare HTTP responses.
@@ -114,6 +139,95 @@ class TestOpenRedirectProtection:
         assert r.status_code in (301, 302)
         loc = r.headers["Location"]
         assert "javascript:" not in loc.lower()
+
+
+# ─────────────────────────────────────────────────────────────────────
+# CSP nonce — emitted in header AND embedded in rendered HTML
+# ─────────────────────────────────────────────────────────────────────
+
+import re
+
+
+class TestCspNonce:
+    """For nonce-based CSP to actually work, two invariants must hold:
+       1. Every legitimate inline <script> in the rendered HTML must carry
+          the nonce that was emitted in the response's CSP header.
+       2. The nonce must change per request (otherwise a cached nonce is
+          a forgeable nonce — defeats the whole point).
+    """
+
+    @pytest.fixture
+    def headered_client(self, app, db_session):
+        """Test client that runs through the security-headers hook."""
+        import config
+        config.Config.SECURITY_HEADERS_ENABLED = True
+        return app.test_client()
+
+    def _extract_nonce_from_csp(self, response):
+        """Pull the nonce-XXX value out of a CSP header. Returns the raw
+        nonce string ('XXX'), or None if no nonce in script-src."""
+        csp = response.headers.get("Content-Security-Policy", "")
+        m = re.search(r"'nonce-([^']+)'", csp)
+        return m.group(1) if m else None
+
+    def test_response_includes_nonce_in_script_src(self, headered_client):
+        r = headered_client.get("/")
+        nonce = self._extract_nonce_from_csp(r)
+        assert nonce, "no nonce in script-src directive of CSP header"
+        # Should be a non-trivial random value (token_urlsafe(16) → 22 chars).
+        assert len(nonce) >= 16
+
+    def test_inline_script_in_html_carries_matching_nonce(self, headered_client):
+        """The rendered page should have at least one <script nonce="…">
+        tag where the nonce matches what's in the CSP header. If they
+        don't match, the inline script will be blocked by the browser."""
+        r = headered_client.get("/")
+        nonce = self._extract_nonce_from_csp(r)
+        body = r.get_data(as_text=True)
+        # At least one inline <script nonce="<the-nonce-from-csp>">
+        # Hoist the regex into a variable: f-strings can't contain backslashes
+        # inside the {} placeholder on Python 3.10.
+        actual_nonces = re.findall(r'<script[^>]+nonce="([^"]+)"', body)[:3]
+        assert f'nonce="{nonce}"' in body, (
+            f"rendered HTML doesn't carry the CSP nonce on any inline script. "
+            f"CSP nonce was {nonce!r}; nonce attributes in body: {actual_nonces}"
+        )
+
+    def test_nonce_rotates_per_request(self, headered_client):
+        """Same client, two requests, two different nonces."""
+        n1 = self._extract_nonce_from_csp(headered_client.get("/"))
+        n2 = self._extract_nonce_from_csp(headered_client.get("/"))
+        assert n1 and n2 and n1 != n2, (
+            f"nonce did NOT rotate across requests: {n1!r} == {n2!r}. "
+            "A static nonce is no better than 'unsafe-inline'."
+        )
+
+    def test_no_inline_script_lacks_nonce(self):
+        """Static check across every template: every inline <script> tag
+        (no src=) must carry nonce="{{ csp_nonce }}". If a new template
+        ever adds a bare <script> tag, this fails the build."""
+        import os, glob
+        # Crude but effective: open each template, find <script> tags, and
+        # for any without src=, require nonce="{{ csp_nonce }}".
+        offenders = []
+        templates_dir = os.path.join(
+            os.path.dirname(os.path.dirname(__file__)), "templates"
+        )
+        for path in glob.glob(os.path.join(templates_dir, "**", "*.html"),
+                              recursive=True):
+            with open(path) as f:
+                contents = f.read()
+            # Match <script ...> opening tags. Skip closing </script>.
+            for m in re.finditer(r"<script\b([^>]*)>", contents):
+                attrs = m.group(1)
+                if "src=" in attrs:
+                    continue   # external script — uses URL allowlist instead
+                if 'nonce="{{ csp_nonce }}"' not in attrs:
+                    offenders.append((path, m.group(0)))
+        assert not offenders, (
+            "inline <script> tag(s) missing nonce attribute:\n  " +
+            "\n  ".join(f"{p}: {tag}" for p, tag in offenders)
+        )
 
 
 # ─────────────────────────────────────────────────────────────────────

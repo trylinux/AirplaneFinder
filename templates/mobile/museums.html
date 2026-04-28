@@ -57,7 +57,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce }}">
 $(function() {
     // Populate the region filter from the API.
     $.getJSON('/api/v1/museums/regions', function(rows) {

@@ -49,7 +49,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce }}">
 function escHtml(s) {
     return $('<span>').text(s || '').html();
 }

@@ -41,7 +41,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce }}">
 var ROLE_OPTIONS = {
     military: [
         {v:'', l:'— Select —'},
