@@ -219,6 +219,53 @@ The response is a per-row report:
 
 Sample files: `scripts/sample_aircraft.csv`, `scripts/sample_museums.csv`.
 
+## Python Scripts
+
+A small set of CLI tools in `scripts/` that talk to the public REST API.
+They depend only on the [`requests`](https://pypi.org/project/requests/)
+library — install once: `pip install requests`.
+
+**Configuration** (env vars; flags override)
+
+```
+AIRPLANE_BASE_URL    # default http://127.0.0.1:5000
+AIRPLANE_API_KEY     # required only for write operations (admin / aircraft_admin)
+```
+
+**Tools**
+
+| Script | What it does |
+|---|---|
+| `airplane_api.py` | Reusable `AirplaneClient` class — used by every script below; also fine to `import` from your own one-offs. |
+| `export_aircraft.py` | Dump every aircraft to CSV or JSON in the bulk-import format. |
+| `export_museums.py` | Same for museums. |
+| `import_data.py` | POST a CSV/JSON file to the bulk-import endpoint with `--dry-run` support. |
+| `find_nearest.py` | CLI wrapper for `/api/v1/nearest`. |
+| `health_check.py` | Smoke-tests `/api/v1/stats`, exits non-zero on failure. Cron-friendly. |
+
+**Common workflows**
+
+```bash
+# Backup the catalog (no API key needed; reads are public)
+python3 scripts/export_aircraft.py --format json --out aircraft_backup.json
+python3 scripts/export_museums.py  --format json --out museum_backup.json
+
+# Round-trip: export → edit in a spreadsheet → re-import
+python3 scripts/export_aircraft.py --format csv --out aircraft.csv
+# (open aircraft.csv in Excel, edit)
+AIRPLANE_API_KEY=amt_... \
+    python3 scripts/import_data.py --entity aircraft --file aircraft.csv --dry-run
+AIRPLANE_API_KEY=amt_... \
+    python3 scripts/import_data.py --entity aircraft --file aircraft.csv
+
+# Quick lookups (no auth)
+python3 scripts/find_nearest.py "C-130" "Dayton, OH"
+
+# Cron-friendly status probe (exits 0 on success, non-zero on failure)
+* * * * *  python3 /opt/AirplaneFinder/scripts/health_check.py --quiet \
+              || curl -s https://status-collector.example.com/airplane-down
+```
+
 ## Maintenance
 
 ### Running the test suite
