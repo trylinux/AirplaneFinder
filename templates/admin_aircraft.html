@@ -57,9 +57,29 @@ var ROLE_OPTIONS = {
         {v:'freighter', l:'Freighter'}, {v:'private', l:'Private'},
         {v:'experimental', l:'Experimental'}, {v:'utility', l:'Utility'},
         {v:'space', l:'Space'}, {v:'other', l:'Other'}
+    ],
+    // Used when aircraft_type === 'missile_rocket' regardless of mil/civ —
+    // rockets blur both axes (Saturn V and an AIM-9 share the same shape
+    // of category but different operational use). The dropdown reflects
+    // the missile/rocket-specific roles instead of the general aircraft list.
+    missile_rocket: [
+        {v:'', l:'— Select —'},
+        {v:'air_to_air',     l:'Air-to-Air'},
+        {v:'surface_to_air', l:'Surface-to-Air'},
+        {v:'air_to_surface', l:'Air-to-Surface'},
+        {v:'anti_ship',      l:'Anti-Ship'},
+        {v:'ballistic',      l:'Ballistic'},
+        {v:'cruise',         l:'Cruise'},
+        {v:'sounding',       l:'Sounding'},
+        {v:'launch_vehicle', l:'Launch Vehicle'}
     ]
 };
-function getRoleOptions(mc) { return ROLE_OPTIONS[mc] || ROLE_OPTIONS.military; }
+// Pick the role list based on aircraft_type FIRST (missile_rocket overrides
+// the military/civilian axis), then fall back to military/civilian.
+function getRoleOptions(mc, type) {
+    if (type === 'missile_rocket') return ROLE_OPTIONS.missile_rocket;
+    return ROLE_OPTIONS[mc] || ROLE_OPTIONS.military;
+}
 
 $(function() {
     var editId = 0;
@@ -125,11 +145,20 @@ $(function() {
     $('#admin-aircraft-search-btn').on('click', loadAircraft);
     $('#admin-aircraft-search').on('keypress', function(e) { if (e.which === 13) loadAircraft(); });
 
-    $(document).on('change', '.mil-civ-select', function() {
-        var $role = $(this).closest('form').find('.role-type-select');
-        var opts = getRoleOptions($(this).val());
+    // Refresh role dropdown when EITHER military/civilian OR aircraft_type
+    // changes — missile_rocket has its own role list that overrides mil/civ.
+    function _refreshRoleOptions($form) {
+        var $role = $form.find('.role-type-select');
+        var mc    = $form.find('.mil-civ-select').val();
+        var type  = $form.find('.aircraft-type-select').val();
+        var opts  = getRoleOptions(mc, type);
         $role.empty();
-        opts.forEach(function(o) { $role.append('<option value="' + o.v + '">' + escHtml(o.l) + '</option>'); });
+        opts.forEach(function(o) {
+            $role.append('<option value="' + o.v + '">' + escHtml(o.l) + '</option>');
+        });
+    }
+    $(document).on('change', '.mil-civ-select, .aircraft-type-select', function() {
+        _refreshRoleOptions($(this).closest('form'));
     });
 
     $(document).on('click', '.edit-aircraft-btn', function() {
@@ -148,8 +177,9 @@ $(function() {
                 {name:'year_built', label:'Year Built', val: a.year_built || '', type:'number'},
                 {name:'aircraft_type', label:'Aircraft Type', val: a.aircraft_type || 'fixed_wing', select: [
                     {v:'fixed_wing', l:'Fixed Wing'}, {v:'rotary_wing', l:'Rotary Wing'},
-                    {v:'lighter_than_air', l:'Lighter Than Air'}, {v:'spacecraft', l:'Spacecraft'}
-                ]},
+                    {v:'lighter_than_air', l:'Lighter Than Air'}, {v:'spacecraft', l:'Spacecraft'},
+                    {v:'missile_rocket', l:'Missile / Rocket'}
+                ], cssClass: 'aircraft-type-select'},
                 {name:'wing_type', label:'Wing Type', val: a.wing_type || '', select: [
                     {v:'', l:'— N/A —'}, {v:'monoplane', l:'Monoplane'},
                     {v:'biplane', l:'Biplane'}, {v:'triplane', l:'Triplane'}
@@ -158,7 +188,8 @@ $(function() {
                     {v:'military', l:'Military'}, {v:'civilian', l:'Civilian'}
                 ], cssClass: 'mil-civ-select'},
                 {name:'role_type', label:'Role', val: a.role_type || '', select:
-                    getRoleOptions(a.military_civilian || 'military'), cssClass: 'role-type-select'},
+                    getRoleOptions(a.military_civilian || 'military', a.aircraft_type),
+                    cssClass: 'role-type-select'},
                 {name:'aliases', label:'Aliases (comma-separated)', val: (a.aliases || []).join(', ')},
                 {name:'description', label:'Description', val: a.description || '', textarea: true},
             ];

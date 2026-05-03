@@ -22,12 +22,29 @@ function escHtml(str) {
     return $('<span>').text(str).html();
 }
 
+/* Hand-curated labels for enum values where the default snake_case →
+ * Title Case rule reads awkwardly:
+ *   missile_rocket   → "Missile / Rocket"  (combined category)
+ *   air_to_air, etc. → "Air-to-Air"        (military convention is hyphens, not spaces)
+ * Anything not in this map falls through to the default prettifier below.
+ */
+var PRETTY_ENUM_OVERRIDES = {
+    missile_rocket:  'Missile / Rocket',
+    air_to_air:      'Air-to-Air',
+    surface_to_air:  'Surface-to-Air',
+    air_to_surface:  'Air-to-Surface',
+    anti_ship:       'Anti-Ship',
+};
+
 /* Convert a snake_case enum value to a Title Case display label.
  * Empty/null -> "—". Used for aircraft_type, military_civilian, role_type,
  * wing_type, display_status, etc. Do NOT use the result as a CSS class name —
  * keep the raw value for that. */
 function prettyEnum(s) {
     if (s == null || s === '') return '—';
+    if (Object.prototype.hasOwnProperty.call(PRETTY_ENUM_OVERRIDES, s)) {
+        return PRETTY_ENUM_OVERRIDES[s];
+    }
     return String(s).replace(/_/g, ' ').replace(/\b\w/g, function(c) {
         return c.toUpperCase();
     });

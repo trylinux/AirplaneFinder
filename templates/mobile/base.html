@@ -80,10 +80,20 @@ function escHtml(s) {
     if (s == null) return '';
     return $('<span>').text(String(s)).html();
 }
-/* See app.js — same helper, duplicated because the mobile base does not
-   include /static/js/app.js (different layout, different render funcs). */
+/* See app.js — same helper + override map, duplicated because the mobile
+   base does not include /static/js/app.js. Keep the two in sync. */
+var PRETTY_ENUM_OVERRIDES = {
+    missile_rocket:  'Missile / Rocket',
+    air_to_air:      'Air-to-Air',
+    surface_to_air:  'Surface-to-Air',
+    air_to_surface:  'Air-to-Surface',
+    anti_ship:       'Anti-Ship',
+};
 function prettyEnum(s) {
     if (s == null || s === '') return '—';
+    if (Object.prototype.hasOwnProperty.call(PRETTY_ENUM_OVERRIDES, s)) {
+        return PRETTY_ENUM_OVERRIDES[s];
+    }
     return String(s).replace(/_/g, ' ').replace(/\b\w/g, function(c) {
         return c.toUpperCase();
     });

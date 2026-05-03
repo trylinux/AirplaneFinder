@@ -172,6 +172,28 @@ class TestAircraftBulkImportCSV:
         assert report["created"] == 0
         assert any(e["field"] == "year_built" for e in report["errors"])
 
+    def test_missile_rocket_aircraft_type_accepted(self, admin_client, db_session):
+        """The bulk-import validator's enum allowlist must include the new
+        missile_rocket value, mirroring the schema-side ENUM."""
+        import models
+        payload = {
+            "format": "json",
+            "data": json.dumps([
+                {"manufacturer": "Raytheon", "model": "AIM-9", "tail_number": "M-1",
+                 "aircraft_type": "missile_rocket", "role_type": "air_to_air"},
+                {"manufacturer": "NASA",     "model": "Saturn V", "tail_number": "M-2",
+                 "aircraft_type": "missile_rocket", "military_civilian": "civilian",
+                 "role_type": "launch_vehicle"},
+            ]),
+        }
+        r = admin_client.post("/api/v1/aircraft/bulk_import", json=payload)
+        assert r.status_code == 200
+        report = r.get_json()
+        assert report["created"] == 2, f"expected 2, got {report}"
+        # Confirm both landed with the right type.
+        types = sorted(a.aircraft_type for a in models.Aircraft.query.all())
+        assert types == ["missile_rocket", "missile_rocket"]
+
     def test_format_auto_detects_json_from_leading_bracket(self, admin_client, db_session):
         """Helpful UX: the JSON-body path doesn't need explicit format=json
         when the data starts with [ — handy when wrapping an existing JSON

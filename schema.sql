@@ -105,7 +105,7 @@ CREATE TABLE IF NOT EXISTS aircraft (
     variant         VARCHAR(50)  DEFAULT NULL,     -- e.g. "D", "J", "H"
     full_designation VARCHAR(100) GENERATED ALWAYS
                      AS (CONCAT(model, IFNULL(CONCAT('-', variant), ''))) STORED,
-    aircraft_type   ENUM('fixed_wing','rotary_wing','lighter_than_air','spacecraft')
+    aircraft_type   ENUM('fixed_wing','rotary_wing','lighter_than_air','spacecraft','missile_rocket')
                      NOT NULL DEFAULT 'fixed_wing',
     wing_type       ENUM('monoplane','biplane','triplane') DEFAULT NULL,
     military_civilian ENUM('military','civilian') NOT NULL DEFAULT 'military',

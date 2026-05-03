@@ -151,6 +151,41 @@ class TestNormalizeTailNumber:
 # _validate_password_strength — policy enforcement
 # ─────────────────────────────────────────────────────────────────────
 
+class TestPrettyEnumOverrides:
+    """The JS prettyEnum has an override map for enum values where the
+    default snake_case → Title Case rule reads awkwardly. This test pins
+    the canonical labels in BOTH copies (app.js and mobile/base.html) so
+    the two stay in sync — a common source of "the desktop and mobile
+    pages disagree on a label" bugs."""
+
+    EXPECTED = {
+        "missile_rocket":  "Missile / Rocket",
+        "air_to_air":      "Air-to-Air",
+        "surface_to_air":  "Surface-to-Air",
+        "air_to_surface":  "Air-to-Surface",
+        "anti_ship":       "Anti-Ship",
+    }
+
+    @pytest.mark.parametrize("path", [
+        "static/js/app.js",
+        "templates/mobile/base.html",
+    ])
+    def test_override_map_present_and_canonical(self, path):
+        import os
+        full = os.path.join(
+            os.path.dirname(os.path.dirname(os.path.abspath(__file__))), path)
+        text = open(full).read()
+        for key, label in self.EXPECTED.items():
+            # Keys appear like ``missile_rocket:  'Missile / Rocket'`` —
+            # tolerate any whitespace between key, colon, and string.
+            import re
+            m = re.search(rf"{re.escape(key)}\s*:\s*'([^']+)'", text)
+            assert m, f"{path} missing override for {key!r}"
+            assert m.group(1) == label, (
+                f"{path}: {key!r} = {m.group(1)!r}, expected {label!r}"
+            )
+
+
 class TestPasswordPolicy:
     """Defaults: >=8 chars, requires both letter and digit."""
 

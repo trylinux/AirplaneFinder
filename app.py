@@ -1314,7 +1314,12 @@ def stats_compat():
 _BULK_MAX_ROWS = 5000
 
 # Enum allowlists used by the validators below. Must match the schema ENUMs.
-_AIRCRAFT_TYPE_VALUES = {"fixed_wing", "rotary_wing", "lighter_than_air", "spacecraft"}
+_AIRCRAFT_TYPE_VALUES = {
+    "fixed_wing", "rotary_wing", "lighter_than_air", "spacecraft",
+    # Missiles, rockets, and unmanned expendable flight vehicles. See
+    # migrate_missile_rocket.sql for the schema-side enum change.
+    "missile_rocket",
+}
 _WING_TYPE_VALUES = {"monoplane", "biplane", "triplane"}
 _MILITARY_CIVILIAN_VALUES = {"military", "civilian"}
 _REGION_VALUES = {

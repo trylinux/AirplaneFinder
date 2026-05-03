@@ -79,11 +79,12 @@
             <div class="form-group"><label>Aircraft Name</label><input type="text" name="aircraft_name" placeholder="e.g. Daisy Duke, Bockscar"></div>
             <div class="form-group"><label>Year Built</label><input type="number" name="year_built" placeholder="e.g. 1965"></div>
             <div class="form-group"><label>Aircraft Type *</label>
-                <select name="aircraft_type" required>
+                <select name="aircraft_type" required class="aircraft-type-select">
                     <option value="fixed_wing">Fixed Wing</option>
                     <option value="rotary_wing">Rotary Wing</option>
                     <option value="lighter_than_air">Lighter Than Air</option>
                     <option value="spacecraft">Spacecraft</option>
+                    <option value="missile_rocket">Missile / Rocket</option>
                 </select>
             </div>
             <div class="form-group"><label>Wing Type</label>
@@ -193,13 +194,29 @@ var ROLE_OPTIONS = {
         {v:'freighter', l:'Freighter'}, {v:'private', l:'Private'},
         {v:'experimental', l:'Experimental'}, {v:'utility', l:'Utility'},
         {v:'space', l:'Space'}, {v:'other', l:'Other'}
+    ],
+    // Used when aircraft_type === 'missile_rocket' regardless of mil/civ.
+    missile_rocket: [
+        {v:'', l:'— Select —'},
+        {v:'air_to_air',     l:'Air-to-Air'},
+        {v:'surface_to_air', l:'Surface-to-Air'},
+        {v:'air_to_surface', l:'Air-to-Surface'},
+        {v:'anti_ship',      l:'Anti-Ship'},
+        {v:'ballistic',      l:'Ballistic'},
+        {v:'cruise',         l:'Cruise'},
+        {v:'sounding',       l:'Sounding'},
+        {v:'launch_vehicle', l:'Launch Vehicle'}
     ]
 };
 
 $(function() {
     function updateRoleDropdown(selectedRole) {
-        var mc = $('.mil-civ-select').val();
-        var opts = ROLE_OPTIONS[mc] || ROLE_OPTIONS.military;
+        // missile_rocket overrides the military/civilian axis.
+        var mc   = $('.mil-civ-select').val();
+        var type = $('.aircraft-type-select').val();
+        var opts = (type === 'missile_rocket')
+            ? ROLE_OPTIONS.missile_rocket
+            : (ROLE_OPTIONS[mc] || ROLE_OPTIONS.military);
         var $r = $('.role-type-select');
         $r.empty();
         opts.forEach(function(o) {
@@ -208,7 +225,10 @@ $(function() {
                 '>' + escHtml(o.l) + '</option>');
         });
     }
-    $(document).on('change', '.mil-civ-select', function() { updateRoleDropdown(); });
+    // Refresh role list whenever EITHER military/civilian OR aircraft_type
+    // changes — both axes feed the dropdown.
+    $(document).on('change', '.mil-civ-select, .aircraft-type-select',
+                   function() { updateRoleDropdown(); });
     updateRoleDropdown();
 
     // ── Template picker ──────────────────────────────────────────────

@@ -62,9 +62,26 @@ var TPL_ROLE_OPTIONS = {
         {v:'freighter', l:'Freighter'}, {v:'private', l:'Private'},
         {v:'experimental', l:'Experimental'}, {v:'utility', l:'Utility'},
         {v:'space', l:'Space'}, {v:'other', l:'Other'}
+    ],
+    // Used when aircraft_type === 'missile_rocket' regardless of mil/civ.
+    missile_rocket: [
+        {v:'', l:'— Select —'},
+        {v:'air_to_air',     l:'Air-to-Air'},
+        {v:'surface_to_air', l:'Surface-to-Air'},
+        {v:'air_to_surface', l:'Air-to-Surface'},
+        {v:'anti_ship',      l:'Anti-Ship'},
+        {v:'ballistic',      l:'Ballistic'},
+        {v:'cruise',         l:'Cruise'},
+        {v:'sounding',       l:'Sounding'},
+        {v:'launch_vehicle', l:'Launch Vehicle'}
     ]
 };
-function tplRoleOptions(mc) { return TPL_ROLE_OPTIONS[mc] || TPL_ROLE_OPTIONS.military; }
+// Pick by aircraft_type FIRST (missile_rocket overrides mil/civ), then
+// fall back to the military/civilian list.
+function tplRoleOptions(mc, type) {
+    if (type === 'missile_rocket') return TPL_ROLE_OPTIONS.missile_rocket;
+    return TPL_ROLE_OPTIONS[mc] || TPL_ROLE_OPTIONS.military;
+}
 
 $(function() {
     var editId = 0;  // 0 = create mode, >0 = editing that template id
@@ -177,8 +194,9 @@ $(function() {
             {name:'model_name',        label:'Model Name',       val: t.model_name || ''},
             {name:'aircraft_type',     label:'Aircraft Type',    val: t.aircraft_type || 'fixed_wing', select: [
                 {v:'fixed_wing', l:'Fixed Wing'}, {v:'rotary_wing', l:'Rotary Wing'},
-                {v:'lighter_than_air', l:'Lighter Than Air'}, {v:'spacecraft', l:'Spacecraft'}
-            ]},
+                {v:'lighter_than_air', l:'Lighter Than Air'}, {v:'spacecraft', l:'Spacecraft'},
+                {v:'missile_rocket', l:'Missile / Rocket'}
+            ], cssClass: 'aircraft-type-select'},
             {name:'wing_type',         label:'Wing Type',        val: t.wing_type || '',       select: [
                 {v:'', l:'— N/A —'}, {v:'monoplane', l:'Monoplane'},
                 {v:'biplane', l:'Biplane'}, {v:'triplane', l:'Triplane'}
@@ -187,7 +205,8 @@ $(function() {
                 {v:'military', l:'Military'}, {v:'civilian', l:'Civilian'}
             ], cssClass: 'mil-civ-select'},
             {name:'role_type',         label:'Role',             val: t.role_type || '',
-                select: tplRoleOptions(t.military_civilian || 'military'), cssClass: 'role-type-select'},
+                select: tplRoleOptions(t.military_civilian || 'military', t.aircraft_type),
+                cssClass: 'role-type-select'},
             {name:'aliases',           label:'Aliases (comma-separated)',
                 val: (t.aliases || []).join(', ')},
             {name:'description',       label:'Description',      val: t.description || '', textarea: true},
@@ -219,9 +238,13 @@ $(function() {
     }
 
     // Keep role dropdown in sync with military/civilian selection.
-    $(document).on('change', '.mil-civ-select', function() {
-        var $role = $(this).closest('form').find('.role-type-select');
-        var opts = tplRoleOptions($(this).val());
+    // Refresh role list when EITHER military/civilian OR aircraft_type changes.
+    $(document).on('change', '.mil-civ-select, .aircraft-type-select', function() {
+        var $form = $(this).closest('form');
+        var $role = $form.find('.role-type-select');
+        var mc    = $form.find('.mil-civ-select').val();
+        var type  = $form.find('.aircraft-type-select').val();
+        var opts  = tplRoleOptions(mc, type);
         var current = $role.val();
         $role.empty();
         opts.forEach(function(o) {
