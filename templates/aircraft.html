@@ -88,7 +88,10 @@ $(function() {
     // Aircraft detail modal
     $(document).on('click', '.aircraft-row', function() {
         var id = $(this).data('id');
-        $.getJSON('/api/aircraft/' + id, function(data) {
+        // visible_only=true filters the museums list to on_display only —
+        // this is a public page and we don't want to advertise that an
+        // aircraft is somewhere a visitor can't actually see it.
+        $.getJSON('/api/v1/aircraft/' + id, {visible_only: 'true'}, function(data) {
             renderAircraftDetail(data);
         });
     });

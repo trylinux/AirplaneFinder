@@ -31,7 +31,7 @@ from flask_login import (
 from flask_wtf.csrf import CSRFProtect, CSRFError
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
-from sqlalchemy import or_, func
+from sqlalchemy import or_, and_, func
 from sqlalchemy.orm import joinedload, selectinload
 
 from models import (
@@ -989,14 +989,22 @@ def api_aircraft_search():
 
 @app.route("/api/v1/aircraft/<int:aircraft_id>")
 def api_aircraft_detail(aircraft_id):
-    """Get a single aircraft with its museum locations."""
+    """Get a single aircraft with its museum locations.
+
+    ``?visible_only=true`` restricts the museums list to links the public
+    can actually see (display_status=on_display). Public detail pages pass
+    it; admin edit modals don't (they need to manage non-viewable links).
+    """
     aircraft = Aircraft.query.get_or_404(aircraft_id)
-    links = (
+    visible_only = request.args.get("visible_only", "").lower() in ("1", "true", "yes")
+    q = (
         AircraftMuseum.query
         .options(joinedload(AircraftMuseum.museum))
         .filter_by(aircraft_id=aircraft_id)
-        .all()
     )
+    if visible_only:
+        q = q.filter(AircraftMuseum.display_status == _DISPLAY_STATUS_VIEWABLE)
+    links = q.all()
     # NOTE on key ordering: spread museum.to_dict() FIRST, then add the link
     # fields after — otherwise the museum's `id` would clobber a link `id`.
     # We expose the AircraftMuseum primary key as `link_id` so the UI can call
@@ -1048,14 +1056,21 @@ def api_museum_search():
 
 @app.route("/api/v1/museums/<int:museum_id>")
 def api_museum_detail(museum_id):
-    """Get a single museum with its aircraft collection."""
+    """Get a single museum with its aircraft collection.
+
+    ``?visible_only=true`` restricts the aircraft list to links the public
+    can actually see (display_status=on_display). See api_aircraft_detail.
+    """
     museum = Museum.query.get_or_404(museum_id)
-    links = (
+    visible_only = request.args.get("visible_only", "").lower() in ("1", "true", "yes")
+    q = (
         AircraftMuseum.query
         .options(joinedload(AircraftMuseum.aircraft))
         .filter_by(museum_id=museum_id)
-        .all()
     )
+    if visible_only:
+        q = q.filter(AircraftMuseum.display_status == _DISPLAY_STATUS_VIEWABLE)
+    links = q.all()
     # See note on api_aircraft_detail — link_id is the AircraftMuseum primary
     # key, exposed for the UI's unlink action.
     aircraft_list = [
@@ -1085,13 +1100,24 @@ def api_museums_globe():
     total number of aircraft linked to it. Museums without coordinates are
     skipped.
     """
+    # Visitor-facing endpoint: aircraft_count reflects what visitors can
+    # actually see on display, not the museum's total inventory. Note this
+    # has to live on the join (not as a separate WHERE) so museums with
+    # zero on_display links still appear as pins with aircraft_count=0,
+    # rather than being dropped entirely.
     rows = (
         db.session.query(
             Museum.id, Museum.name, Museum.city, Museum.country,
             Museum.latitude, Museum.longitude,
             func.count(AircraftMuseum.id),
         )
-        .outerjoin(AircraftMuseum, AircraftMuseum.museum_id == Museum.id)
+        .outerjoin(
+            AircraftMuseum,
+            and_(
+                AircraftMuseum.museum_id == Museum.id,
+                AircraftMuseum.display_status == _DISPLAY_STATUS_VIEWABLE,
+            ),
+        )
         .filter(Museum.latitude.isnot(None), Museum.longitude.isnot(None))
         # Group by every selected non-aggregate column so this stays valid
         # under MySQL's ONLY_FULL_GROUP_BY sql_mode (the default in 5.7+).
@@ -1147,6 +1173,10 @@ def api_nearest_museum():
     if not matching:
         return jsonify({"error": f"No aircraft matching '{aircraft_query}' found."}), 404
 
+    # Visitor-facing endpoint: only return links the public can actually
+    # see. in_storage / under_restoration links are hidden — telling a
+    # visitor "drive to museum X to see Y" only to find Y not on display
+    # is the bug this filter prevents.
     links_query = (
         AircraftMuseum.query
         .options(
@@ -1154,6 +1184,7 @@ def api_nearest_museum():
             joinedload(AircraftMuseum.aircraft),
         )
         .filter(AircraftMuseum.aircraft_id.in_([a.id for a in matching]))
+        .filter(AircraftMuseum.display_status == _DISPLAY_STATUS_VIEWABLE)
     )
 
     # Optional museum name filter — single subquery instead of two round-trips.
@@ -1256,11 +1287,19 @@ def api_nearby_museums():
 
 @app.route("/api/v1/stats")
 def api_stats():
-    """Dashboard statistics."""
+    """Dashboard statistics.
+
+    ``link_count`` reflects visitor-viewable exhibits only (on_display).
+    The dashboard reads as "how many aircraft can a visitor go see" —
+    counting in_storage / under_restoration links would inflate the
+    number in a way that doesn't match what the proximity search returns.
+    """
     return jsonify({
         "aircraft_count": Aircraft.query.count(),
         "museum_count": Museum.query.count(),
-        "link_count": AircraftMuseum.query.count(),
+        "link_count": AircraftMuseum.query.filter(
+            AircraftMuseum.display_status == _DISPLAY_STATUS_VIEWABLE
+        ).count(),
         "country_count": db.session.query(func.count(func.distinct(Museum.country))).scalar(),
     })
 
@@ -1322,6 +1361,12 @@ _AIRCRAFT_TYPE_VALUES = {
 }
 _WING_TYPE_VALUES = {"monoplane", "biplane", "triplane"}
 _MILITARY_CIVILIAN_VALUES = {"military", "civilian"}
+# display_status is a visitor-perspective field: "can I see this aircraft
+# at this museum right now?" The old `on_loan` value was ambiguous (it
+# meant opposite things depending on whose curator wrote the row) and is
+# no longer accepted. See migrate_display_status_drop_on_loan.sql.
+_DISPLAY_STATUS_VALUES = {"on_display", "in_storage", "under_restoration"}
+_DISPLAY_STATUS_VIEWABLE = "on_display"  # the one value visitors see filtered by
 _REGION_VALUES = {
     "North America", "Europe", "Asia", "Asia-Pacific", "South America",
     "Oceania", "Africa", "Middle East",
@@ -1787,10 +1832,16 @@ def api_create_aircraft():
     if museum_id:
         museum = Museum.query.get(museum_id)
         if museum:
+            status = data.get("display_status", "on_display")
+            if status not in _DISPLAY_STATUS_VALUES:
+                return jsonify({
+                    "error": "Invalid display_status",
+                    "message": f"must be one of {sorted(_DISPLAY_STATUS_VALUES)}",
+                }), 400
             link = AircraftMuseum(
                 aircraft_id=aircraft.id,
                 museum_id=museum.id,
-                display_status=data.get("display_status", "on_display"),
+                display_status=status,
             )
             db.session.add(link)
 
@@ -1951,10 +2002,17 @@ def api_create_exhibit():
     Aircraft.query.get_or_404(data["aircraft_id"])
     Museum.query.get_or_404(data["museum_id"])
 
+    status = data.get("display_status", "on_display")
+    if status not in _DISPLAY_STATUS_VALUES:
+        return jsonify({
+            "error": "Invalid display_status",
+            "message": f"must be one of {sorted(_DISPLAY_STATUS_VALUES)}",
+        }), 400
+
     link = AircraftMuseum(
         aircraft_id=data["aircraft_id"],
         museum_id=data["museum_id"],
-        display_status=data.get("display_status", "on_display"),
+        display_status=status,
         notes=data.get("notes"),
     )
     db.session.add(link)
@@ -1976,6 +2034,11 @@ def api_update_exhibit(link_id):
         return jsonify({"error": "You do not have access to this museum."}), 403
 
     data = request.get_json() or {}
+    if "display_status" in data and data["display_status"] not in _DISPLAY_STATUS_VALUES:
+        return jsonify({
+            "error": "Invalid display_status",
+            "message": f"must be one of {sorted(_DISPLAY_STATUS_VALUES)}",
+        }), 400
     for field in ["display_status", "notes"]:
         if field in data:
             setattr(link, field, data[field])

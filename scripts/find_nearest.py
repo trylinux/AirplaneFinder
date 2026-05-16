@@ -68,6 +68,10 @@ def main():
         mu, ac = r["museum"], r["aircraft"]
         loc = ", ".join(filter(None, [mu.get("city"), mu.get("country")]))
         line1 = f"  {i:>2}  {dist:>10}  {mu['name']}  ({loc})"
+        # The /api/v1/nearest endpoint server-side filters to on_display
+        # only (see _DISPLAY_STATUS_VIEWABLE in app.py) — so the status
+        # printed here will always be 'on_display' on a current server.
+        # Kept for backward compat with older servers that didn't filter.
         line2 = f"  {' '*16}  {ac.get('full_designation') or ac.get('model')}" \
                 f"{' — ' + r['display_status'] if r.get('display_status') else ''}"
         print(line1)

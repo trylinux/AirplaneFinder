@@ -217,10 +217,12 @@ $(function() {
         });
     }
 
+    // display_status is a visitor-perspective answer to "can I see it
+    // here right now?" — on_loan was ambiguous (whose perspective?) and
+    // is no longer a valid value. See migrate_display_status_drop_on_loan.sql.
     var DISPLAY_STATUS_OPTIONS = [
         {v: 'on_display',        l: 'On Display'},
         {v: 'in_storage',        l: 'In Storage'},
-        {v: 'on_loan',           l: 'On Loan'},
         {v: 'under_restoration', l: 'Under Restoration'},
     ];
     function statusSelectHtml(name, current) {

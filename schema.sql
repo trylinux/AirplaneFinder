@@ -149,7 +149,10 @@ CREATE TABLE IF NOT EXISTS aircraft_museum (
     id          INT AUTO_INCREMENT PRIMARY KEY,
     aircraft_id INT NOT NULL,
     museum_id   INT NOT NULL,
-    display_status ENUM('on_display','in_storage','on_loan','under_restoration') DEFAULT 'on_display',
+    -- display_status is the visitor's answer to "can I see this aircraft
+    -- here right now?" `on_loan` used to be a value but was ambiguous
+    -- (whose perspective?) — dropped in migrate_display_status_drop_on_loan.sql.
+    display_status ENUM('on_display','in_storage','under_restoration') DEFAULT 'on_display',
     notes       TEXT DEFAULT NULL,
     created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (aircraft_id) REFERENCES aircraft(id) ON DELETE CASCADE,

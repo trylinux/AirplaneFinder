@@ -14,7 +14,8 @@
 $(function() {
     var aircraftId = {{ aircraft_id|int }};
 
-    $.getJSON('/api/v1/aircraft/' + aircraftId, function(data) {
+    // visible_only=true: public detail page filters out non-viewable links.
+    $.getJSON('/api/v1/aircraft/' + aircraftId, {visible_only: 'true'}, function(data) {
         var a = data.aircraft;
         var museums = data.museums || [];
 

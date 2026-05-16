@@ -299,10 +299,11 @@ $(function() {
     $('#museum-prox-search').on('click', doMuseumProximity);
     $('#museum-prox-location').on('keypress', function(e) { if (e.which === 13) doMuseumProximity(); });
 
-    // Click on proximity result opens museum detail
+    // Click on proximity result opens museum detail. visible_only=true so
+    // the aircraft list only shows what's actually on display today.
     $(document).on('click', '.museum-prox-row', function() {
         var id = $(this).data('id');
-        $.getJSON('/api/museums/' + id, function(data) { renderMuseumDetail(data); });
+        $.getJSON('/api/v1/museums/' + id, {visible_only: 'true'}, function(data) { renderMuseumDetail(data); });
     });
 
     // ── Name / region search ──
@@ -339,10 +340,10 @@ $(function() {
         window.scrollTo({top: 0, behavior: 'smooth'});
     });
 
-    // Museum detail
+    // Museum detail. visible_only=true filters aircraft to on_display.
     $(document).on('click', '.museum-row', function() {
         var id = $(this).data('id');
-        $.getJSON('/api/museums/' + id, function(data) { renderMuseumDetail(data); });
+        $.getJSON('/api/v1/museums/' + id, {visible_only: 'true'}, function(data) { renderMuseumDetail(data); });
     });
 
     function renderMuseumDetail(data) {
@@ -652,10 +653,11 @@ $(function() {
             dragging = false;
             try { canvas.releasePointerCapture(e.pointerId); } catch(_) {}
 
-            // Click (not drag) on a hovered pin → open museum detail
+            // Click (not drag) on a hovered pin → open museum detail.
+            // visible_only=true so the popout matches the globe pin count.
             if (!didDrag && hovered !== null) {
                 var museumId = hovered;
-                $.getJSON('/api/museums/' + museumId, function(data) {
+                $.getJSON('/api/v1/museums/' + museumId, {visible_only: 'true'}, function(data) {
                     renderMuseumDetail(data);
                 });
             }
