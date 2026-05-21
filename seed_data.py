@@ -174,8 +174,10 @@ AIRCRAFT = [
     {"manufacturer": "Lockheed Martin", "model": "C-130", "variant": "H", "tail_number": "74-1686", "model_name": "Hercules", "aircraft_name": None, "year_built": 1974, "aircraft_type": "fixed_wing", "wing_type": "monoplane", "military_civilian": "military", "role_type": "transport", "description": "Most widely produced Hercules variant."},
     {"manufacturer": "Lockheed Martin", "model": "C-130", "variant": "J", "tail_number": "99-1431", "model_name": "Super Hercules", "aircraft_name": None, "year_built": 1999, "aircraft_type": "fixed_wing", "wing_type": "monoplane", "military_civilian": "military", "role_type": "transport", "description": "Latest Hercules variant with glass cockpit and Rolls-Royce AE 2100D3 engines."},
 
-    # Bombers (idx 4-9)
-    {"manufacturer": "Boeing", "model": "B-17", "variant": "G", "tail_number": "44-83624", "model_name": "Flying Fortress", "aircraft_name": "Shoo Shoo Baby", "year_built": 1944, "aircraft_type": "fixed_wing", "wing_type": "monoplane", "military_civilian": "military", "role_type": "bomber", "description": "WWII heavy bomber, restored to original condition."},
+    # Bombers (idx 4-9). NOTE: airframe-specific fields (aircraft_name like
+    # "Shoo Shoo Baby") are NOT set on the type template — they go on the
+    # specific EXHIBITS row for the airframe at that museum.
+    {"manufacturer": "Boeing", "model": "B-17", "variant": "G", "tail_number": "44-83624", "model_name": "Flying Fortress", "aircraft_name": None, "year_built": 1944, "aircraft_type": "fixed_wing", "wing_type": "monoplane", "military_civilian": "military", "role_type": "bomber", "description": "WWII heavy bomber, restored to original condition."},
     {"manufacturer": "Boeing", "model": "B-29", "variant": None, "tail_number": "44-27297", "model_name": "Superfortress", "aircraft_name": "Bockscar", "year_built": 1944, "aircraft_type": "fixed_wing", "wing_type": "monoplane", "military_civilian": "military", "role_type": "bomber", "description": "Dropped the Fat Man atomic bomb on Nagasaki on August 9, 1945."},
     {"manufacturer": "Boeing", "model": "B-29", "variant": None, "tail_number": "44-86292", "model_name": "Superfortress", "aircraft_name": "Enola Gay", "year_built": 1944, "aircraft_type": "fixed_wing", "wing_type": "monoplane", "military_civilian": "military", "role_type": "bomber", "description": "Dropped the first atomic bomb on Hiroshima on August 6, 1945."},
     {"manufacturer": "Convair", "model": "B-36", "variant": "J", "tail_number": "52-2220", "model_name": "Peacemaker", "aircraft_name": None, "year_built": 1952, "aircraft_type": "fixed_wing", "wing_type": "monoplane", "military_civilian": "military", "role_type": "bomber", "description": "Largest mass-produced piston-engined aircraft ever built."},
@@ -220,112 +222,133 @@ AIRCRAFT = [
     {"manufacturer": "Concorde", "model": "Concorde", "variant": None, "tail_number": "G-BOAA", "model_name": "Concorde", "aircraft_name": None, "year_built": 1974, "aircraft_type": "fixed_wing", "wing_type": "monoplane", "military_civilian": "civilian", "role_type": "commercial_transport", "description": "Supersonic passenger airliner."},
 ]
 
-# Museum-aircraft associations (museum_index, aircraft_index, status)
-LINKS = [
+# ──────────────────────────────────────────────────────────────────────
+# EXHIBITS — one entry per *physical airframe* on display at a museum.
+#
+# Previously this section was a `LINKS` list that pointed multiple
+# museums at a single `aircraft` row (e.g. the same F-14A row was linked
+# to 4 museums). That conflated the *type* (F-14A) with the *airframe*
+# (one specific tail number sitting in one specific hangar), which made
+# the dashboard's exhibit count read as ~2x the aircraft count.
+#
+# Each row here generates exactly one Aircraft DB row + one
+# AircraftMuseum link, so the ratio is 1:1.
+#
+# Format:
+#   (museum_idx, type_idx, tail_number, aircraft_name, display_status)
+#
+# `tail_number` and `aircraft_name` are airframe-specific overrides; if
+# None, they fall back to the template's value (and the template's value
+# is generally None too for multi-airframe types). Where we don't know
+# the real tail of the airframe at a given museum, we use None — the
+# (model, NULL tail) pair is intentionally allowed to coexist across rows.
+# A curator who knows the real tail can fill it in via the admin UI.
+# ──────────────────────────────────────────────────────────────────────
+EXHIBITS = [
     # National Museum USAF (0)
-    (0, 5, "on_display"),      # Bockscar
-    (0, 7, "on_display"),      # B-36J Peacemaker
-    (0, 2, "on_display"),      # C-130H
-    (0, 10, "on_display"),     # P-51D
-    (0, 13, "on_display"),     # F-15A
-    (0, 18, "on_display"),     # F-117A
-    (0, 8, "on_display"),      # B-52D
-    (0, 14, "on_display"),     # F-16A
-    (0, 22, "on_display"),     # C-47A
-    (0, 17, "on_display"),     # F-22A
-    (0, 21, "on_display"),     # U-2C
-    (0, 0, "on_display"),      # C-130A
-    (0, 25, "on_display"),     # UH-1H
+    (0, 5,  "44-27297", "Bockscar",   "on_display"),  # B-29 Bockscar
+    (0, 7,  "52-2220",  None,         "on_display"),  # B-36J Peacemaker
+    (0, 2,  "74-1686",  None,         "on_display"),  # C-130H — Dayton-held airframe
+    (0, 10, "44-74936", None,         "on_display"),  # P-51D — Dayton's Mustang
+    (0, 13, "76-0008",  None,         "on_display"),  # F-15A — Dayton's Eagle
+    (0, 18, "79-10781", None,         "on_display"),  # F-117A Nighthawk
+    (0, 8,  "56-0612",  None,         "on_display"),  # B-52D — Dayton's Stratofortress
+    (0, 14, "75-0745",  None,         "on_display"),  # F-16A — Dayton's Fighting Falcon
+    (0, 22, "43-15073", None,         "on_display"),  # C-47A — Dayton's Skytrain
+    (0, 17, "91-4003",  None,         "on_display"),  # F-22A Raptor
+    (0, 21, "56-6680",  None,         "on_display"),  # U-2C Dragon Lady
+    (0, 0,  "57-0457",  None,         "on_display"),  # C-130A
+    (0, 25, "66-16579", None,         "on_display"),  # UH-1H — Dayton's Huey
 
     # Smithsonian NASM (1)
-    (1, 27, "on_display"),     # Wright Flyer
-    (1, 28, "on_display"),     # JN-4D Jenny
+    (1, 27, None,       None,         "on_display"),  # Wright Flyer (original, no tail)
+    (1, 28, None,       None,         "on_display"),  # JN-4D Jenny
 
     # Udvar-Hazy (2)
-    (2, 6, "on_display"),      # Enola Gay
-    (2, 19, "on_display"),     # SR-71A 61-7972
-    (2, 12, "on_display"),     # F-14A
-    (2, 23, "on_display"),     # C-5A
-    (2, 9, "on_display"),      # B-2A
-    (2, 34, "on_display"),     # Concorde
+    (2, 6,  "44-86292", "Enola Gay",  "on_display"),  # B-29 Enola Gay
+    (2, 19, "61-7972",  None,         "on_display"),  # SR-71A — Udvar's Blackbird
+    (2, 12, "160694",   None,         "on_display"),  # F-14A — Udvar's Tomcat
+    (2, 23, "87-0025",  None,         "on_display"),  # C-17A Globemaster III
+    (2, 9,  "82-1066",  None,         "on_display"),  # B-2A — Udvar test article
+    (2, 34, "F-BVFA",   None,         "on_display"),  # Concorde — Udvar's Air France
 
     # Pima (3)
-    (3, 1, "on_display"),      # C-130E
-    (3, 8, "on_display"),      # B-52D
-    (3, 11, "on_display"),     # P-38L
-    (3, 16, "on_display"),     # F/A-18A
-    (3, 15, "on_display"),     # F-16C
+    (3, 1,  "62-1787",  None,         "on_display"),  # C-130E
+    (3, 8,  None,       None,         "on_display"),  # B-52D — Pima's example (tail unknown)
+    (3, 11, "44-53236", None,         "on_display"),  # P-38L
+    (3, 16, "161749",   None,         "on_display"),  # F/A-18A — Pima's Hornet
+    (3, 15, "84-1301",  None,         "on_display"),  # F-16C Block 25
 
     # Museum of Flight Seattle (4)
-    (4, 20, "on_display"),     # SR-71A 61-7976
-    (4, 4, "on_display"),      # B-17G
-    (4, 12, "on_display"),     # F-14A
-    (4, 16, "on_display"),     # F/A-18A
-    (4, 34, "on_display"),     # Concorde
+    (4, 20, "61-7976",  None,         "on_display"),  # SR-71A — speed record airframe
+    (4, 4,  "44-83624", "Shoo Shoo Baby", "on_display"),  # B-17G (airframe-specific name)
+    (4, 12, None,       None,         "on_display"),  # F-14A — Seattle's example
+    (4, 16, None,       None,         "on_display"),  # F/A-18A — Seattle's Hornet
+    (4, 34, "G-BOAG",   None,         "on_display"),  # Concorde — Seattle's BA airframe
 
     # Intrepid NYC (5)
-    (5, 3, "on_display"),      # C-130J
-    (5, 12, "on_display"),     # F-14A
-    (5, 14, "on_display"),     # F-16A
+    (5, 3,  "99-1431",  None,         "on_display"),  # C-130J Super Hercules
+    (5, 12, None,       None,         "on_display"),  # F-14A — Intrepid's Tomcat
+    (5, 14, None,       None,         "on_display"),  # F-16A — Intrepid's example
 
     # National Naval Aviation Museum (6)
-    (6, 12, "on_display"),     # F-14A
-    (6, 16, "on_display"),     # F/A-18A
-    (6, 25, "on_display"),     # UH-1H
+    (6, 12, None,       None,         "on_display"),  # F-14A — Pensacola's Tomcat
+    (6, 16, None,       None,         "on_display"),  # F/A-18A — Pensacola
+    (6, 25, None,       None,         "on_display"),  # UH-1H — Pensacola
 
     # March Field (7)
-    (7, 8, "on_display"),      # B-52D
-    (7, 2, "on_display"),      # C-130H
-    (7, 19, "on_display"),     # SR-71A
+    (7, 8,  None,       None,         "on_display"),  # B-52D — March Field
+    (7, 2,  None,       None,         "on_display"),  # C-130H — March Field
+    (7, 19, None,       None,         "on_display"),  # SR-71A — March Field
 
     # Hill Aerospace (8)
-    (8, 14, "on_display"),     # F-16A
-    (8, 13, "on_display"),     # F-15A
-    (8, 2, "on_display"),      # C-130H
-    (8, 25, "on_display"),     # UH-1H
+    (8, 14, None,       None,         "on_display"),  # F-16A — Hill
+    (8, 13, None,       None,         "on_display"),  # F-15A — Hill
+    (8, 2,  None,       None,         "on_display"),  # C-130H — Hill
+    (8, 25, None,       None,         "on_display"),  # UH-1H — Hill
 
     # CAF Mesa (9)
-    (9, 10, "on_display"),     # P-51D
-    (9, 4, "on_display"),      # B-17G
-    (9, 22, "on_display"),     # C-47A
+    (9, 10, None,       None,         "on_display"),  # P-51D — CAF Mesa
+    (9, 4,  None,       None,         "on_display"),  # B-17G — CAF Mesa "Sentimental Journey"
+    (9, 22, None,       None,         "on_display"),  # C-47A — CAF Mesa
 
     # EAA Oshkosh (10)
-    (10, 27, "on_display"),    # Wright Flyer (replica)
-    (10, 10, "on_display"),    # P-51D
-    (10, 28, "on_display"),    # JN-4D
+    (10, 27, None,      "Replica",    "on_display"),  # Wright Flyer replica
+    (10, 10, None,      None,         "on_display"),  # P-51D — EAA
+    (10, 28, None,      None,         "on_display"),  # JN-4D — EAA
 
     # Pacific Aviation Museum (11)
-    (11, 22, "on_display"),    # C-47A
-    (11, 25, "on_display"),    # UH-1H
-    (11, 31, "on_display"),    # A6M Zero
+    (11, 22, None,      None,         "on_display"),  # C-47A — Pearl Harbor
+    (11, 25, None,      None,         "on_display"),  # UH-1H — Pearl Harbor
+    (11, 31, None,      None,         "on_display"),  # A6M Zero — Pearl Harbor
 
     # Canada Aviation Museum (12)
-    (12, 29, "on_display"),    # Lancaster
-    (12, 33, "on_display"),    # Mosquito
+    (12, 29, "KB726",   None,         "on_display"),  # Lancaster (specific Canadian airframe)
+    (12, 33, None,      None,         "on_display"),  # Mosquito — Canada
 
     # RAF Museum London (13)
-    (13, 30, "on_display"),    # Spitfire
-    (13, 32, "on_display"),    # Bf 109
-    (13, 33, "on_display"),    # Mosquito
+    (13, 30, "MK356",   None,         "on_display"),  # Spitfire — RAF Museum
+    (13, 32, None,      None,         "on_display"),  # Bf 109 — RAF Museum
+    (13, 33, None,      None,         "on_display"),  # Mosquito — RAF Museum
 
     # IWM Duxford (14)
-    (14, 30, "on_display"),    # Spitfire
-    (14, 10, "on_display"),    # P-51D
-    (14, 4, "on_display"),     # B-17G
-    (14, 34, "on_display"),    # Concorde
+    (14, 30, None,      None,         "on_display"),  # Spitfire — Duxford
+    (14, 10, None,      None,         "on_display"),  # P-51D — Duxford
+    (14, 4,  None,      None,         "on_display"),  # B-17G — Duxford
+    (14, 34, "G-AXDN",  None,         "on_display"),  # Concorde — Duxford prototype
 
     # Deutsches Museum (15)
-    (15, 32, "on_display"),    # Bf 109
+    (15, 32, None,      None,         "on_display"),  # Bf 109 — Deutsches Museum
 
     # Musee de l'Air Paris (16)
-    (16, 34, "on_display"),    # Concorde
-    (16, 30, "on_display"),    # Spitfire
+    (16, 34, "F-BTSD",  None,         "on_display"),  # Concorde — Le Bourget
+    (16, 30, None,      None,         "on_display"),  # Spitfire — Le Bourget
 
     # JASDF Hamamatsu (17)
-    (17, 31, "on_display"),    # A6M Zero
+    (17, 31, None,      None,         "on_display"),  # A6M Zero — Hamamatsu
 
     # Australian War Memorial (18)
-    (18, 31, "on_display"),    # A6M Zero
+    (18, 31, None,      None,         "on_display"),  # A6M Zero — Canberra
 ]
 
 # Aircraft aliases: (aircraft_index, [aliases])
@@ -470,31 +493,57 @@ def seed():
                 db.session.add(UserMuseumAssignment(user_id=mgr_us.id, museum_id=museum_objs[i].id))
         db.session.flush()
 
-        # ── Insert aircraft ──
-        aircraft_objs = []
-        for a in AIRCRAFT:
-            obj = Aircraft(**a)
+        # ── Insert aircraft (one row per physical airframe) ──
+        # Each EXHIBITS entry produces one Aircraft row + one link. The
+        # AIRCRAFT list is now strictly a *template* — fields come from
+        # there, with per-airframe overrides (tail_number, aircraft_name)
+        # coming from the EXHIBITS tuple itself. This keeps the
+        # aircraft:link ratio at 1:1 and makes the seed's "exhibits" stat
+        # match the visitor's intuition.
+        #
+        # exhibits_per_type maps a type_idx → list of created Aircraft
+        # rows. Aliases are then attached to every airframe of that type.
+        exhibits_per_type = {}
+        exhibit_link_pairs = []  # parallel list of (Aircraft row, museum_idx, status)
+
+        for museum_idx, type_idx, tail_override, name_override, status in EXHIBITS:
+            template = dict(AIRCRAFT[type_idx])  # shallow copy
+            if tail_override is not None:
+                template["tail_number"] = tail_override
+            elif type_idx in exhibits_per_type:
+                # Second or later airframe of this type with no real tail
+                # available — explicitly NULL so it doesn't clash with the
+                # template's tail (which belongs to the *first* airframe).
+                template["tail_number"] = None
+            if name_override is not None:
+                template["aircraft_name"] = name_override
+
+            obj = Aircraft(**template)
             db.session.add(obj)
-            aircraft_objs.append(obj)
+            exhibits_per_type.setdefault(type_idx, []).append(obj)
+            exhibit_link_pairs.append((obj, museum_idx, status))
         db.session.flush()
 
         # ── Insert aircraft aliases ──
+        # Aliases attach to every Aircraft row of a given type — so
+        # searching "F14" finds all four F-14A airframes, not just one.
         alias_count = 0
-        for aircraft_idx, alias_list in ALIASES:
-            for alias_str in alias_list:
-                obj = AircraftAlias(aircraft_id=aircraft_objs[aircraft_idx].id, alias=alias_str)
-                db.session.add(obj)
-                alias_count += 1
+        for type_idx, alias_list in ALIASES:
+            for aircraft_obj in exhibits_per_type.get(type_idx, []):
+                for alias_str in alias_list:
+                    db.session.add(AircraftAlias(
+                        aircraft_id=aircraft_obj.id, alias=alias_str,
+                    ))
+                    alias_count += 1
         db.session.flush()
 
-        # ── Insert exhibit links ──
-        for museum_idx, aircraft_idx, status in LINKS:
-            link = AircraftMuseum(
+        # ── Insert exhibit links (1:1 with aircraft rows) ──
+        for aircraft_obj, museum_idx, status in exhibit_link_pairs:
+            db.session.add(AircraftMuseum(
                 museum_id=museum_objs[museum_idx].id,
-                aircraft_id=aircraft_objs[aircraft_idx].id,
+                aircraft_id=aircraft_obj.id,
                 display_status=status,
-            )
-            db.session.add(link)
+            ))
 
         # ── Insert geocoding entries ──
         for zc in ZIP_CODES:
@@ -513,9 +562,9 @@ def seed():
         print("  Database seeded successfully!")
         print("=" * 60)
         print(f"  Museums:   {len(museum_objs)} ({len(countries)} countries)")
-        print(f"  Aircraft:  {len(aircraft_objs)}")
+        print(f"  Aircraft:  {len(exhibit_link_pairs)} airframes (1:1 with exhibits)")
         print(f"  Aliases:   {alias_count}")
-        print(f"  Exhibits:  {len(LINKS)}")
+        print(f"  Exhibits:  {len(EXHIBITS)}")
         print(f"  Geocoding: {len(ZIP_CODES)} cache entries (museum cities)")
         print(f"  Users:     4 (1 admin, 2 managers, 1 viewer)")
         print()
