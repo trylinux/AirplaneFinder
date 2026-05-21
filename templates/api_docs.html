@@ -169,6 +169,20 @@
 
         <div class="endpoint">
             <div class="endpoint-header">
+                <span class="method get">GET</span>
+                <code>/api/v1/exhibits</code>
+                <span class="badge status-in_storage">public</span>
+            </div>
+            <p>List every aircraft-museum link as a flat array — one row per exhibit, each carrying the full aircraft and museum objects.</p>
+            <table class="param-table">
+                <tr><td><code>q</code></td><td>Filter by aircraft designation, name, manufacturer, tail number, or museum name/city (optional)</td></tr>
+                <tr><td><code>sort_by</code></td><td>Sort column: <code>id</code>, <code>aircraft</code>, <code>museum</code>, <code>status</code> (optional)</td></tr>
+                <tr><td><code>sort_dir</code></td><td><code>asc</code> (default) or <code>desc</code></td></tr>
+            </table>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
                 <span class="method post">POST</span>
                 <code>/api/v1/exhibits</code>
                 <span class="badge status-on_display">readwrite</span>

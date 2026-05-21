@@ -1,0 +1,239 @@
+{% extends "base.html" %}
+{% block title %}Exhibits — Admin — Aircraft Finder{% endblock %}
+{% block nav_admin %}active{% endblock %}
+
+{% set admin_section = 'exhibits' %}
+
+{% block content %}
+{% include "_admin_nav.html" %}
+
+<div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:.5rem;">
+        <div>
+            <h2><i class="fa-solid fa-link"></i> All Exhibit Links</h2>
+            <p class="subtitle" style="margin-top:.2rem;">
+                Every aircraft-to-museum link in one place. New links are created
+                from the <a href="/admin/aircraft">Aircraft</a> and
+                <a href="/admin/museums">Museums</a> edit screens.
+            </p>
+        </div>
+        <span class="badge status-in_storage" id="exhibit-count">&hellip;</span>
+    </div>
+    <div class="search-bar" style="margin-top:.75rem;">
+        <input type="text" id="admin-exhibit-search"
+               placeholder="Filter by aircraft or museum..." autocomplete="off">
+        <button class="btn btn-primary" id="admin-exhibit-search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+    <div id="admin-exhibit-results"><p class="no-results">Loading&hellip;</p></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script nonce="{{ csp_nonce }}">
+$(function() {
+    // Status values the inline editor offers — must mirror the server-side
+    // allowlist (_DISPLAY_STATUS_VALUES in app.py).
+    var STATUS_VALUES = ['on_display', 'in_storage', 'under_restoration'];
+
+    // Sort is done client-side: GET /api/v1/exhibits returns the whole set
+    // (no pagination — duplicate detection needs every row), so re-sorting
+    // is instant and needs no round-trip.
+    var sortState = {sort_by: '', sort_dir: 'asc'};
+    var _rowsCache = [];
+
+    function rowSortValue(row, key) {
+        if (key === 'aircraft') {
+            return [row.aircraft.full_designation || row.aircraft.model || '',
+                    row.aircraft.model_name || '',
+                    row.aircraft.aircraft_name || ''].join(' ').toLowerCase();
+        }
+        if (key === 'museum') return (row.museum.name || '').toLowerCase();
+        if (key === 'status') return (row.display_status || '').toLowerCase();
+        return '';
+    }
+    function sortInPlace(rows) {
+        if (!sortState.sort_by) return rows;
+        var dir = sortState.sort_dir === 'desc' ? -1 : 1;
+        return rows.slice().sort(function(a, b) {
+            return rowSortValue(a, sortState.sort_by).localeCompare(
+                rowSortValue(b, sortState.sort_by),
+                undefined, {sensitivity: 'base'}) * dir;
+        });
+    }
+
+    /* Duplicate detection. A pure (aircraft_id, museum_id) dupe is blocked
+       by a UNIQUE index, so what slips through is *two aircraft records*
+       describing one real airframe — each with its own exhibit link. Key
+       on (designation, tail, museum-name): rows that collide are the same
+       airframe listed twice at the same museum. */
+    function rowKey(r) {
+        return [
+            (r.aircraft.full_designation || r.aircraft.model || '').toLowerCase(),
+            (r.aircraft.tail_number || '').toLowerCase(),
+            (r.museum.name || '').toLowerCase()
+        ].join('|');
+    }
+    function findDuplicateKeys(rows) {
+        var counts = {}, dupes = {};
+        rows.forEach(function(r) {
+            var k = rowKey(r);
+            counts[k] = (counts[k] || 0) + 1;
+        });
+        Object.keys(counts).forEach(function(k) {
+            if (counts[k] > 1) dupes[k] = true;
+        });
+        return dupes;
+    }
+
+    function renderExhibits(rows) {
+        var $c = $('#admin-exhibit-results');
+        if (!rows.length) {
+            $c.html('<p class="no-results">No exhibit links found.</p>');
+            return;
+        }
+
+        // Detect against the full cache, not the (possibly sorted) slice,
+        // so the count is stable regardless of sort order.
+        var dupes = findDuplicateKeys(_rowsCache);
+        var dupeCount = Object.keys(dupes).length;
+
+        var html = '';
+        if (dupeCount) {
+            html += '<div class="alert alert-warning" style="margin-bottom:.65rem;">'
+                  +   '<i class="fa-solid fa-triangle-exclamation"></i> '
+                  +   '<strong>' + dupeCount + '</strong> possible duplicate'
+                  +   (dupeCount === 1 ? '' : 's') + ' detected (highlighted below). '
+                  +   'Unlink a stray row, or merge the duplicate aircraft records '
+                  +   'with <code>scripts/dedupe_aircraft.py</code>.'
+                  + '</div>';
+        }
+
+        html += '<table class="result-table"><thead><tr>'
+              +   '<th data-sort="aircraft">Aircraft</th>'
+              +   '<th data-sort="museum">Museum</th>'
+              +   '<th data-sort="status">Status</th>'
+              +   '<th>Actions</th>'
+              + '</tr></thead><tbody>';
+
+        rows.forEach(function(r) {
+            var acLabel = escHtml(r.aircraft.full_designation || r.aircraft.model);
+            if (r.aircraft.model_name)    acLabel += ' ' + escHtml(r.aircraft.model_name);
+            if (r.aircraft.aircraft_name) acLabel += ' "' + escHtml(r.aircraft.aircraft_name) + '"';
+            if (r.aircraft.tail_number)   acLabel += ' (' + escHtml(r.aircraft.tail_number) + ')';
+
+            var isDupe = dupes[rowKey(r)] === true;
+            var rowStyle = isDupe ? ' style="background: rgba(245,158,11,.07);"' : '';
+            var dupeChip = isDupe
+                ? ' <span class="badge" style="background:rgba(245,158,11,.18);color:#fcd34d;" '
+                  + 'title="Another row shares this airframe and museum">'
+                  + '<i class="fa-solid fa-triangle-exclamation"></i> dup</span>'
+                : '';
+
+            var statusSel = '<select class="exhibit-status-select" data-link-id="'
+                          + r.id + '" style="font-size:.8rem;padding:.2rem .4rem;">';
+            STATUS_VALUES.forEach(function(v) {
+                statusSel += '<option value="' + v + '"'
+                           + (r.display_status === v ? ' selected' : '') + '>'
+                           + escHtml(prettyEnum(v)) + '</option>';
+            });
+            statusSel += '</select>';
+
+            var label = (r.aircraft.full_designation || r.aircraft.model)
+                      + ' @ ' + r.museum.name;
+            var unlinkBtn = '<button class="btn-icon unlink-exhibit-btn" data-link-id="'
+                          + r.id + '" data-label="' + escHtml(label)
+                          + '" title="Unlink"><i class="fa-solid fa-link-slash"></i></button>';
+
+            html += '<tr' + rowStyle + '>'
+                  +   '<td>' + acLabel + dupeChip + '</td>'
+                  +   '<td>' + escHtml(r.museum.name) + '</td>'
+                  +   '<td>' + statusSel + '</td>'
+                  +   '<td>' + unlinkBtn + '</td>'
+                  + '</tr>';
+        });
+        html += '</tbody></table>';
+
+        $c.html(html);
+        attachSortableHeaders($c, {
+            getState: function() { return sortState; },
+            setState: function(next) {
+                sortState = next;
+                renderExhibits(sortInPlace(_rowsCache));
+            }
+        });
+    }
+
+    function loadExhibits() {
+        var q = ($('#admin-exhibit-search').val() || '').trim();
+        $('#admin-exhibit-results').html('<p class="no-results">Loading&hellip;</p>');
+        $.getJSON('/api/v1/exhibits', q ? {q: q} : {})
+            .done(function(data) {
+                _rowsCache = data.results || [];
+                var n = _rowsCache.length;
+                $('#exhibit-count').text(n + ' link' + (n === 1 ? '' : 's'));
+                renderExhibits(sortInPlace(_rowsCache));
+            })
+            .fail(function(xhr) {
+                $('#admin-exhibit-results').html(
+                    '<p class="no-results">Failed to load exhibits ('
+                    + xhr.status + ' ' + escHtml(xhr.statusText) + ').</p>');
+            });
+    }
+
+    /* Inline status edit → PUT /api/v1/exhibits/<id>. The "previous" value
+       comes from the cache (only updated on success), so a failed write
+       reverts cleanly. */
+    $(document).on('change', '.exhibit-status-select', function() {
+        var $sel = $(this);
+        var linkId = $sel.data('link-id');
+        var newStatus = $sel.val();
+        var row = _rowsCache.filter(function(r) { return r.id === linkId; })[0];
+        var prev = row ? row.display_status : newStatus;
+
+        $sel.prop('disabled', true);
+        $.ajax({
+            url: '/api/v1/exhibits/' + linkId,
+            method: 'PUT',
+            contentType: 'application/json',
+            data: JSON.stringify({display_status: newStatus})
+        }).done(function() {
+            if (row) row.display_status = newStatus;
+        }).fail(function(xhr) {
+            alert('Could not update status: ' +
+                  (xhr.responseJSON && xhr.responseJSON.error
+                      ? xhr.responseJSON.error
+                      : (xhr.status + ' ' + xhr.statusText)));
+            $sel.val(prev);
+        }).always(function() {
+            $sel.prop('disabled', false);
+        });
+    });
+
+    /* Per-row Unlink. Re-fetch on success rather than splicing the cache —
+       cheap at this scale and avoids drift if anything else changed. */
+    $(document).on('click', '.unlink-exhibit-btn', function() {
+        var linkId = $(this).data('link-id');
+        var label  = $(this).data('label') || ('link #' + linkId);
+        if (!confirm('Unlink ' + label + '?\n\n'
+                   + 'The aircraft and museum records stay; only the exhibit '
+                   + 'link is removed.')) return;
+        $.ajax({url: '/api/v1/exhibits/' + linkId, method: 'DELETE'})
+            .done(function() { loadExhibits(); })
+            .fail(function(xhr) {
+                alert('Failed to unlink: ' +
+                      (xhr.responseJSON && xhr.responseJSON.error
+                          ? xhr.responseJSON.error
+                          : (xhr.status + ' ' + xhr.statusText)));
+            });
+    });
+
+    loadExhibits();
+    $('#admin-exhibit-search-btn').on('click', loadExhibits);
+    $('#admin-exhibit-search').on('keypress', function(e) {
+        if (e.which === 13) loadExhibits();
+    });
+});
+</script>
+{% endblock %}

@@ -32,7 +32,7 @@ from flask_wtf.csrf import CSRFProtect, CSRFError
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from sqlalchemy import or_, and_, func
-from sqlalchemy.orm import joinedload, selectinload
+from sqlalchemy.orm import joinedload, selectinload, contains_eager
 
 from models import (
     db, User, ApiKey,
@@ -832,10 +832,17 @@ def admin_museums_new_page():
     return render_template("admin_museums_new.html")
 
 
-# /admin/exhibits and /admin/exhibits/new were removed when exhibit-link
-# management was folded into the aircraft and museum edit modals. The API
-# endpoints (POST/PUT/DELETE /api/v1/exhibits/...) stay; only the page
-# routes and their templates were deleted.
+@app.route("/admin/exhibits")
+@no_mobile
+@login_required
+def admin_exhibits_page():
+    """Flat overview of every aircraft-museum link.
+
+    Link *creation* lives in the aircraft and museum edit modals; this page
+    is the cross-cutting view those modals can't give — every exhibit in
+    one sortable table, with duplicate detection and quick unlink/status
+    edits. Backed by GET /api/v1/exhibits."""
+    return render_template("admin_exhibits.html")
 
 
 @app.route("/admin/templates")
@@ -1986,6 +1993,71 @@ def api_delete_museum(museum_id):
 
 
 # ── Exhibit links ──
+
+# Sortable columns for the flat exhibits list. Same whitelist pattern as
+# _AIRCRAFT_SORT_COLUMNS — keeps "?sort_by=password_hash"-style probes from
+# reaching a column we never meant to order by.
+_EXHIBIT_SORT_COLUMNS = {
+    "id":       lambda: AircraftMuseum.id,
+    "aircraft": lambda: Aircraft.full_designation,
+    "museum":   lambda: Museum.name,
+    "status":   lambda: AircraftMuseum.display_status,
+}
+
+
+@app.route("/api/v1/exhibits", methods=["GET"])
+def api_list_exhibits():
+    """Flat list of every aircraft-museum link.
+
+    The /admin/exhibits overview needs one row per exhibit across the whole
+    dataset. The per-aircraft and per-museum detail endpoints can't serve
+    that without N round-trips, so this joins all three tables and returns
+    the assembled rows directly.
+
+    Query params
+        q         case-insensitive filter on aircraft designation / name /
+                  manufacturer / tail number, or museum name / city
+        sort_by   one of: id, aircraft, museum, status
+        sort_dir  asc (default) | desc
+
+    Not paginated: the overview detects duplicates client-side, which needs
+    the whole set in hand. One row per exhibit keeps the payload small.
+    """
+    q = request.args.get("q", "").strip()
+    query = (
+        AircraftMuseum.query
+        .join(AircraftMuseum.aircraft)
+        .join(AircraftMuseum.museum)
+        # contains_eager: the joins above already pulled aircraft + museum,
+        # so populate the relationships from them instead of re-querying
+        # (which would be an N+1 once to_dict() touches each link).
+        .options(
+            contains_eager(AircraftMuseum.aircraft).joinedload(Aircraft.aliases),
+            contains_eager(AircraftMuseum.museum),
+        )
+    )
+    if q:
+        like = f"%{q}%"
+        query = query.filter(or_(
+            Aircraft.full_designation.ilike(like),
+            Aircraft.model.ilike(like),
+            Aircraft.model_name.ilike(like),
+            Aircraft.aircraft_name.ilike(like),
+            Aircraft.manufacturer.ilike(like),
+            Aircraft.tail_number.ilike(like),
+            Museum.name.ilike(like),
+            Museum.city.ilike(like),
+        ))
+    query = _apply_sort(
+        query, _EXHIBIT_SORT_COLUMNS,
+        default_order=(Museum.name, Aircraft.full_designation),
+    )
+    links = query.all()
+    return jsonify({
+        "results": [lnk.to_dict() for lnk in links],
+        "total": len(links),
+    })
+
 
 @app.route("/api/v1/exhibits", methods=["POST"])
 @api_auth_required("readwrite")
