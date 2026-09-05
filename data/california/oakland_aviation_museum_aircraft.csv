@@ -1,0 +1,21 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Wright,EX,,,Vin Fiz,,fixed_wing,biplane,civilian,experimental,,,Vin Fiz;Wright EX,Oakland Aviation Museum,on_display
+Aeronca,7AC,,NC2758E,Champion,,fixed_wing,monoplane,civilian,utility,1946,,7AC;Champ,Oakland Aviation Museum,on_display
+Cessna,O-2,A,N474DF,Super Skymaster,,fixed_wing,monoplane,military,recon,,,O-2;Super Skymaster,Oakland Aviation Museum,on_display
+Douglas,A-3,B,147666,Skywarrior,,fixed_wing,monoplane,military,tanker,,,A-3;Skywarrior;Whale,Oakland Aviation Museum,on_display
+Douglas,A-4,J,154332,Skyhawk,,fixed_wing,monoplane,military,trainer,,,A-4;Skyhawk,Oakland Aviation Museum,on_display
+ERCO,415,,N2172H,Ercoupe,,fixed_wing,monoplane,civilian,private,,,415;Ercoupe,Oakland Aviation Museum,on_display
+Stoddard-Hamilton,Glasair II,RG,N94XR,Glasair,,fixed_wing,monoplane,civilian,experimental,,,Glasair,Oakland Aviation Museum,on_display
+Grumman,A-6,D,152910,Intruder,,fixed_wing,monoplane,military,tanker,,,A-6;Intruder,Oakland Aviation Museum,on_display
+Vought,A-7,E,159301,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,A-7;Corsair II,Oakland Aviation Museum,on_display
+Hawker Siddeley,AV-8,A,701,Harrier,,fixed_wing,monoplane,military,trainer,,,AV-8;Harrier,Oakland Aviation Museum,on_display
+Hiller,Ten99,,N3776G,,,rotary_wing,,civilian,experimental,1961,,Ten99;Hiller,Oakland Aviation Museum,on_display
+Denney,Kitfox IV,,N10EF,Kitfox,,fixed_wing,monoplane,civilian,experimental,1998,,Kitfox,Oakland Aviation Museum,on_display
+Mikoyan-Gurevich,MiG-15,bis,NX90589,,,fixed_wing,monoplane,military,fighter,,,MiG-15;Fagot,Oakland Aviation Museum,on_display
+Jurca,MJ-7,,N751JR,Gnatsum,,fixed_wing,monoplane,civilian,experimental,,,MJ-7;Gnatsum,Oakland Aviation Museum,on_display
+Short,Solent,III,G-AKNP,,,fixed_wing,monoplane,civilian,commercial_transport,,,Solent;flying boat,Oakland Aviation Museum,on_display
+Thorp,T-3,B,NX6497C,,,fixed_wing,monoplane,civilian,experimental,1939,,T-3B;Thorp,Oakland Aviation Museum,on_display
+North American,T-39,A,60-3504,Sabreliner,,fixed_wing,monoplane,military,utility,,,T-39;Sabreliner,Oakland Aviation Museum,on_display
+JDT,Mini-Max,1600R,N464BB,Mini-Max,Eros,fixed_wing,monoplane,civilian,experimental,,,Mini-Max,Oakland Aviation Museum,on_display
+Douglas,DC-6,BF,N444SQ,,,fixed_wing,monoplane,civilian,freighter,,,DC-6;nose section,Oakland Aviation Museum,on_display
+Grumman,S-2,A,136624,Tracker,,fixed_wing,monoplane,military,recon,,,S-2;Tracker;nose section,Oakland Aviation Museum,on_display

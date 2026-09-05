@@ -1,0 +1,146 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Stinson,L-5,G,,Sentinel,,fixed_wing,monoplane,military,recon,1945,,L5;Sentinel,Planes of Fame Air Museum,on_display
+Lockheed,P-38,J,44-23314,Lightning,,fixed_wing,monoplane,military,fighter,1944,,P38;Lightning,Planes of Fame Air Museum,on_display
+North American,AT-6,D,90790,Texan,,fixed_wing,monoplane,military,trainer,1944,,AT6;SNJ5;Texan,Planes of Fame Air Museum,on_display
+Curtiss-Wright,P-47,G,42-25254,Thunderbolt,Spirit of Atlantic City,fixed_wing,monoplane,military,fighter,1944,,P47;Thunderbolt;Jug,Planes of Fame Air Museum,on_display
+North American,P-51,D,45-11582,Mustang,Dolly,fixed_wing,monoplane,military,fighter,1945,,P51;Mustang,Planes of Fame Air Museum,on_display
+North American,P-51,D,44-84961,Mustang,Wee Willy II,fixed_wing,monoplane,military,fighter,1944,,P51;Mustang,Planes of Fame Air Museum,on_display
+North American,L-17,A,NAV-4-216,Navion,,fixed_wing,monoplane,military,recon,1947,,L17;Navion,Planes of Fame Air Museum,on_display
+North American,B-25,J,44-30423,Mitchell,,fixed_wing,monoplane,military,bomber,1945,,B25;Mitchell,Planes of Fame Air Museum,on_display
+Piper,L-4,H,15353,Grasshopper,,fixed_wing,monoplane,military,recon,1943,,L4;Grasshopper;Piper Cub,Planes of Fame Air Museum,on_display
+Mikoyan-Gurevich,MiG-15,bis,910-51,Fagot,,fixed_wing,monoplane,military,fighter,1951,,MiG15;Fagot,Planes of Fame Air Museum,on_display
+Douglas,AD-4,N,126997,Skyraider,,fixed_wing,monoplane,military,ground_attack,1950,,AD4;Skyraider,Planes of Fame Air Museum,on_display
+Vultee,BT-15,,79-1220,Valiant,,fixed_wing,monoplane,military,trainer,1942,,BT15;Valiant,Planes of Fame Air Museum,on_display
+North American,T-28,B,138310,Trojan,,fixed_wing,monoplane,military,trainer,1954,,T28;Trojan,Planes of Fame Air Museum,on_display
+Pilatus,P-2,06,62,,,fixed_wing,monoplane,military,trainer,1946,,P2;Pilatus P-2,Planes of Fame Air Museum,on_display
+Yakovlev,Yak-3,U,170101,,,fixed_wing,monoplane,military,fighter,1956,,Yak3,Planes of Fame Air Museum,on_display
+Cessna,182,D,18253304,Skylane,,fixed_wing,monoplane,civilian,private,1961,,Skylane,Planes of Fame Air Museum,on_display
+Seversky,AT-12,,41-17529,Guardsman,,fixed_wing,monoplane,military,trainer,1940,,AT-12;Guardsman,Planes of Fame Air Museum,on_display
+Boeing,P-26,A,33123,Peashooter,,fixed_wing,monoplane,military,fighter,1934,,P26;Peashooter,Planes of Fame Air Museum,on_display
+Cessna,L-19,,22443,Bird Dog,,fixed_wing,monoplane,military,recon,1950,,L19;BirdDog;O-1,Planes of Fame Air Museum,on_display
+Canadair,CT-33,,580-8495,Silver Star,,fixed_wing,monoplane,military,trainer,1952,,T33;Silver Star,Planes of Fame Air Museum,on_display
+North American,F-86,F,52-5012,Sabre,,fixed_wing,monoplane,military,fighter,1953,,F86;Sabre,Planes of Fame Air Museum,on_display
+Curtiss-Wright,P-40,N,42-105192,Warhawk,,fixed_wing,monoplane,military,fighter,1943,,P40;Warhawk;Kittyhawk,Planes of Fame Air Museum,on_display
+Mitsubishi,A6M,5,61-120,Zero,,fixed_wing,monoplane,military,fighter,1943,,A6M5;Zero;Zeke;Reisen,Planes of Fame Air Museum,on_display
+North American,P-51,A,43-6251,Mustang,,fixed_wing,monoplane,military,fighter,1943,,P51;Mustang,Planes of Fame Air Museum,on_display
+Chance Vought,F4U,1A,17799,Corsair,,fixed_wing,monoplane,military,fighter,1943,,F4U;Corsair,Planes of Fame Air Museum,on_display
+General Motors,TBM,3E,91264,Avenger,,fixed_wing,monoplane,military,bomber,1945,,TBM;Avenger;TBF,Planes of Fame Air Museum,on_display
+Douglas,SBD,5,28536,Dauntless,,fixed_wing,monoplane,military,bomber,1943,,SBD;Dauntless,Planes of Fame Air Museum,on_display
+Fairchild,PT-26,A,FT-683,Cornell,,fixed_wing,monoplane,military,trainer,1943,,PT26;Cornell,Planes of Fame Air Museum,on_display
+North American,P-51,D,44-73415,Mustang,Voodoo,fixed_wing,monoplane,civilian,other,1944,,P51;Mustang;Voodoo,Planes of Fame Air Museum,on_display
+Fairchild,24,C8F,3018,,,fixed_wing,monoplane,civilian,private,1936,,Fairchild 24,Planes of Fame Air Museum,on_display
+Sanders Aviation,415,E,4922,Ercoupe,,fixed_wing,monoplane,civilian,private,1948,,Ercoupe,Planes of Fame Air Museum,on_display
+Vultee,BT-13,B,42-90054,Valiant,,fixed_wing,monoplane,military,trainer,1944,,BT13;Valiant,Planes of Fame Air Museum,on_display
+Flug Werk,Fw 190,A-8,980574,Wurger,,fixed_wing,monoplane,military,fighter,2000,,Fw190;Wurger;Butcher Bird,Planes of Fame Air Museum,on_display
+Gloster,Meteor,T7,WA591,Meteor,,fixed_wing,monoplane,military,trainer,1949,,Meteor,Planes of Fame Air Museum,on_display
+Grumman,F8F,2,739A,Bearcat,Gulfhawk II,fixed_wing,monoplane,civilian,private,1949,,F8F;Bearcat;Gulfhawk,Planes of Fame Air Museum,on_display
+Stearman,PT-17,,41-8746,Kaydet,,fixed_wing,biplane,military,trainer,1941,,PT17;Kaydet;Stearman,Planes of Fame Air Museum,on_display
+Beech,D17,S,23738,Staggerwing,,fixed_wing,biplane,civilian,private,1944,,Staggerwing;D17S,Planes of Fame Air Museum,on_display
+Curtiss,R3C,2,,,,fixed_wing,biplane,military,,1925,,R3C-2;Schneider Trophy,Planes of Fame Air Museum,on_display
+Bell,X-2,,,,,fixed_wing,monoplane,military,test,,,X-2,Planes of Fame Air Museum,on_display
+Deperdussin,Monocoque,,,,,fixed_wing,monoplane,civilian,other,,,Deperdussin;Monocoque,Planes of Fame Air Museum,on_display
+Howard,DGA-5,,,Ike,,fixed_wing,monoplane,civilian,other,,,DGA-5;Ike;Howard Racer,Planes of Fame Air Museum,on_display
+Macchi,M.39,,,,,fixed_wing,monoplane,military,,1926,,M.39;Schneider Trophy,Planes of Fame Air Museum,on_display
+Miles and Atwood,Special,,,,,fixed_wing,monoplane,civilian,other,,,Miles Atwood Special,Planes of Fame Air Museum,on_display
+Granville Brothers,R-1,,,Gee Bee,,fixed_wing,monoplane,civilian,other,,,Gee Bee;R-1,Planes of Fame Air Museum,on_display
+Fieseler,Fi 103,,,Buzz Bomb,,missile_rocket,,military,cruise,1945,,V1;Buzz Bomb;JB-2;Loon,Planes of Fame Air Museum,on_display
+Curtiss,Model D,,,Pusher,,fixed_wing,biplane,civilian,experimental,,,Curtiss Pusher,Planes of Fame Air Museum,on_display
+Supermarine,S.6B,,,,,fixed_wing,monoplane,military,,1931,,S.6B;Schneider Trophy,Planes of Fame Air Museum,on_display
+Wright,Flyer,,,Kitty Hawk Flyer,,fixed_wing,biplane,civilian,experimental,1953,,Wright Flyer,Planes of Fame Air Museum,on_display
+Sopwith,Pup,,,Pup,,fixed_wing,biplane,military,fighter,2002,,Sopwith Pup,Planes of Fame Air Museum,on_display
+Fokker,Dr.1,,,Dreidecker,,fixed_wing,triplane,military,fighter,1980,,Fokker Triplane;Red Baron,Planes of Fame Air Museum,on_display
+Messerschmitt,Me 163,,,Komet,,fixed_wing,monoplane,military,fighter,,,Me163;Komet,Planes of Fame Air Museum,on_display
+Heinkel,He 100,D-1,,,,fixed_wing,monoplane,military,fighter,,,He100,Planes of Fame Air Museum,on_display
+Bachem,Ba-349,,,Natter,,fixed_wing,monoplane,military,fighter,,,Ba349;Natter,Planes of Fame Air Museum,on_display
+Nieuport,17,,,,,fixed_wing,biplane,military,fighter,1998,,Nieuport 17,Planes of Fame Air Museum,on_display
+Heinkel,He 178,,,,,fixed_wing,monoplane,military,test,,,He178,Planes of Fame Air Museum,on_display
+Hispano Aviacion,HA-1112,M1L,,Buchon,,fixed_wing,monoplane,military,fighter,1954,,Buchon;HA-1112,Planes of Fame Air Museum,on_display
+North American,O-47,A,,,,fixed_wing,monoplane,military,recon,1943,,O-47A,Planes of Fame Air Museum,on_display
+Bell,P-59,A,,Airacomet,,fixed_wing,monoplane,military,fighter,1942,,P-59;Airacomet,Planes of Fame Air Museum,on_display
+Grumman,OV-1,A,,Mohawk,,fixed_wing,monoplane,military,recon,1960,,OV-1;Mohawk,Planes of Fame Air Museum,on_display
+Douglas,C-47,,,Skytrain,,fixed_wing,monoplane,military,transport,1943,,C47;Skytrain;Dakota,Planes of Fame Air Museum,on_display
+Aichi,D3A,2,N3131G,Val,,fixed_wing,monoplane,military,bomber,1943,,D3A;Val,Planes of Fame Air Museum,on_display
+Douglas,D-558,2,,Skyrocket,,fixed_wing,monoplane,military,test,1947,,D-558-2;Skyrocket,Planes of Fame Air Museum,on_display
+Grumman,F9F,5P,,Panther,,fixed_wing,monoplane,military,recon,1952,,F9F;Panther,Planes of Fame Air Museum,on_display
+Boeing,FB,5,,Hawk,,fixed_wing,biplane,military,fighter,1925,,FB-5;Hawk,Planes of Fame Air Museum,on_display
+Convair,L-13,A,,Grasshopper,,fixed_wing,monoplane,military,recon,1947,,L-13;Grasshopper,Planes of Fame Air Museum,on_display
+Gloster,Meteor,F.4,,Meteor,,fixed_wing,monoplane,military,fighter,1948,,Meteor,Planes of Fame Air Museum,on_display
+Mikoyan-Gurevich,MiG-21,R,,Fishbed,,fixed_wing,monoplane,military,recon,1970,,MiG21;Fishbed,Planes of Fame Air Museum,on_display
+PZL-Mielec,TS-11,,,Iskra,,fixed_wing,monoplane,military,trainer,1970,,TS-11;Iskra,Planes of Fame Air Museum,on_display
+Lockheed,P-80,A,,Shooting Star,,fixed_wing,monoplane,military,fighter,1945,,P80;F-80;Shooting Star,Planes of Fame Air Museum,on_display
+Republic,RF-84,K,,Thunderflash,,fixed_wing,monoplane,military,recon,1952,,RF-84K;Thunderflash,Planes of Fame Air Museum,on_display
+Culver,PQ-14,B,,Cadet,,fixed_wing,monoplane,military,drone,1944,,PQ-14;Cadet,Planes of Fame Air Museum,on_display
+Van Nuys Consortium,Cosmic Wind,,,,Miss Cosmic Wind,fixed_wing,monoplane,civilian,other,1949,,Cosmic Wind,Planes of Fame Air Museum,on_display
+Keith Rider,R-4,,,,Firecracker,fixed_wing,monoplane,civilian,other,1936,,R-4;Firecracker,Planes of Fame Air Museum,on_display
+Keith Rider,R-6,,,,8 Ball,fixed_wing,monoplane,civilian,other,1938,,R-6;8 Ball,Planes of Fame Air Museum,on_display
+Aero Industries,Shoestring,,,,Shoestring,fixed_wing,monoplane,civilian,other,1949,,Shoestring,Planes of Fame Air Museum,on_display
+Robert Mayer,Mr. D,,,,Mr. D,fixed_wing,monoplane,civilian,other,1951,,Mr. D;Midget Racer,Planes of Fame Air Museum,on_display
+William Hanson,WH-1,,,,Sump'n Else,fixed_wing,monoplane,civilian,other,1974,,WH-1;Sump'n Else,Planes of Fame Air Museum,on_display
+Yokosuka,MXY-7,,,Ohka,,fixed_wing,monoplane,military,ground_attack,1945,,Ohka;Baka;MXY7,Planes of Fame Air Museum,on_display
+Aero Vodochody,L-29,,,Delfin,,fixed_wing,monoplane,military,trainer,1971,,L-29;Delfin,Planes of Fame Air Museum,on_display
+Convair,CV-240,,,,,fixed_wing,monoplane,civilian,commercial_transport,1948,,CV-240;Convairliner,Planes of Fame Air Museum,on_display
+Grumman,G-32,A,,,,fixed_wing,biplane,civilian,experimental,1956,,G-32A,Planes of Fame Air Museum,on_display
+Lockheed,T-33,A,,Shooting Star,,fixed_wing,monoplane,military,trainer,1953,,T33;T-Bird,Planes of Fame Air Museum,on_display
+Messerschmitt,Bf 109,G-10,577,Gustav,,fixed_wing,monoplane,military,fighter,1943,,Bf109;Gustav,Planes of Fame Air Museum,on_display
+Mooney,M-18,C,,Mite,,fixed_wing,monoplane,civilian,private,1991,,M-18;Mite,Planes of Fame Air Museum,on_display
+Republic,F-84,B,,Thunderjet,,fixed_wing,monoplane,military,fighter,1946,,F-84;Thunderjet,Planes of Fame Air Museum,on_display
+Yokosuka,D4Y,3,483,Suisei,,fixed_wing,monoplane,military,bomber,1944,,D4Y;Suisei;Judy,Planes of Fame Air Museum,on_display
+Michel Colomban,MC-12,,,Cri-Cri,,fixed_wing,monoplane,civilian,experimental,1973,,Cri-Cri,Planes of Fame Air Museum,on_display
+Oldfield,Baby Great Lakes,,,,,fixed_wing,biplane,civilian,experimental,1999,,Baby Great Lakes,Planes of Fame Air Museum,on_display
+Martin,4-0-4,,,,,fixed_wing,monoplane,civilian,commercial_transport,1952,,Martin 404,Planes of Fame Air Museum,on_display
+Rutan,61,,,Long-EZ,,fixed_wing,monoplane,civilian,experimental,1983,,Long-EZ;Rutan,Planes of Fame Air Museum,on_display
+Hiller,H-23,D,,Raven,,rotary_wing,,military,utility,1951,,H-23;Raven,Planes of Fame Air Museum,on_display
+Luscombe,8A,,,Silvaire,,fixed_wing,monoplane,civilian,private,1948,,Luscombe 8A;Silvaire,Planes of Fame Air Museum,on_display
+North American,F-86,E,,Sabre,,fixed_wing,monoplane,military,fighter,1952,,F86;Sabre,Planes of Fame Air Museum,on_display
+North American,T-28,C,,Trojan,,fixed_wing,monoplane,military,trainer,1954,,T28;Trojan,Planes of Fame Air Museum,on_display
+Lancair,235,,,,,fixed_wing,monoplane,civilian,experimental,1989,,Lancair 235,Planes of Fame Air Museum,on_display
+Bede,BD-5,,,,Micro,fixed_wing,monoplane,civilian,experimental,1986,,BD-5;Micro,Planes of Fame Air Museum,on_display
+TEAM Mini-Max,1600R,,,Mini-Max,,fixed_wing,monoplane,civilian,experimental,1994,,Mini-Max,Planes of Fame Air Museum,on_display
+Boeing,P-12,E,,,,fixed_wing,biplane,military,fighter,1931,,P-12,Planes of Fame Air Museum,on_display
+Hanriot,HD.1,,,Scout,,fixed_wing,biplane,military,fighter,1918,,HD.1,Planes of Fame Air Museum,on_display
+de Havilland,Vampire,FB.6,,Vampire,,fixed_wing,monoplane,military,fighter,1951,,Vampire,Planes of Fame Air Museum,on_display
+Folland,Gnat,T1,,Gnat,,fixed_wing,monoplane,military,trainer,1963,,Gnat,Planes of Fame Air Museum,on_display
+PZL-Mielec,MiG-15,bis,,Fagot,,fixed_wing,monoplane,military,fighter,1955,,MiG15;LIM-2;Fagot,Planes of Fame Air Museum,on_display
+Pitts,S-2,B,,,Double Take,fixed_wing,biplane,civilian,private,1986,,Pitts S-2B,Planes of Fame Air Museum,on_display
+Yakovlev,Yak-18,A,,Max,,fixed_wing,monoplane,military,trainer,1958,,Yak-18;Max,Planes of Fame Air Museum,on_display
+Laister-Kauffman,TG-4,A,,,Yankee Doodle,fixed_wing,monoplane,military,trainer,1945,,TG-4A;Glider,Planes of Fame Air Museum,on_display
+Mitsubishi,J8M,1,403,Shusui,,fixed_wing,monoplane,military,fighter,1945,,J8M1;Shusui;Ki-200,Planes of Fame Air Museum,on_display
+Mitsubishi,J2M,3,3014,Raiden,,fixed_wing,monoplane,military,fighter,1944,,J2M3;Raiden;Jack,Planes of Fame Air Museum,on_display
+Horten,H.IV,,,Flying Wing,,fixed_wing,monoplane,civilian,experimental,1943,,Horten;Flying Wing,Planes of Fame Air Museum,on_display
+Heinkel,He 162,A-1,120077,Volksjager,Red 1,fixed_wing,monoplane,military,fighter,1945,,He162;Volksjager;Salamander,Planes of Fame Air Museum,on_display
+Morane-Saulnier,MS.500,,,Storch,,fixed_wing,monoplane,military,recon,1945,,Fi156;Storch;MS.500,Planes of Fame Air Museum,on_display
+Ryan,FR,1,39657,Fireball,,fixed_wing,monoplane,military,fighter,1945,,FR-1;Fireball,Planes of Fame Air Museum,on_display
+ERCO,415,C,,Ercoupe,,fixed_wing,monoplane,civilian,private,1946,,Ercoupe,Planes of Fame Air Museum,on_display
+Hispano Aviacion,HA-200,A,,Saeta,,fixed_wing,monoplane,military,trainer,1963,,HA-200;Saeta,Planes of Fame Air Museum,on_display
+Hispano Aviacion,HA-200,A,,Saeta,,fixed_wing,monoplane,military,trainer,1965,,HA-200;Saeta,Planes of Fame Air Museum,on_display
+John Dudley,MS1,,,,Glass Slipper,fixed_wing,monoplane,civilian,other,1973,,Mong MS1;Glass Slipper,Planes of Fame Air Museum,on_display
+Aero Vodochody,L-29,,,Delfin,,fixed_wing,monoplane,military,trainer,1969,,L-29;Delfin,Planes of Fame Air Museum,on_display
+Stinson,AT-19,,,Reliant,,fixed_wing,monoplane,military,utility,1943,,AT-19;Reliant,Planes of Fame Air Museum,on_display
+WSK-Mielec,MiG-17,F,,Fresco,,fixed_wing,monoplane,military,fighter,1959,,MiG17;LIM-5;Fresco,Planes of Fame Air Museum,on_display
+Mikoyan-Gurevich,MiG-15,UTI,,Midget,,fixed_wing,monoplane,military,trainer,1953,,MiG15UTI;Midget,Planes of Fame Air Museum,on_display
+Rand-Robinson,KR-1,,,,,fixed_wing,monoplane,civilian,experimental,1980,,KR-1,Planes of Fame Air Museum,on_display
+Fleet,2,,,,,fixed_wing,biplane,civilian,private,1929,,Fleet Model 2,Planes of Fame Air Museum,on_display
+Curtiss-Robertson,Robin,J-1,,Robin,,fixed_wing,monoplane,civilian,private,1929,,Curtiss Robin,Planes of Fame Air Museum,on_display
+Lockheed,L-18,,,Lodestar,,fixed_wing,monoplane,civilian,private,1943,,Lodestar;L-18,Planes of Fame Air Museum,on_display
+Bell,P-39,N,,Airacobra,,fixed_wing,monoplane,military,fighter,1942,,P-39;Airacobra,Planes of Fame Air Museum,on_display
+Northrop,Alpha,4A,,,,fixed_wing,monoplane,civilian,commercial_transport,1931,,Northrop Alpha,Planes of Fame Air Museum,on_display
+Lockheed,C-60,A,,Lodestar,,fixed_wing,monoplane,military,transport,1942,,C-60;Lodestar,Planes of Fame Air Museum,on_display
+North American,F-100,D,,Super Sabre,,fixed_wing,monoplane,military,fighter,1956,,F-100;Super Sabre;Hun,Planes of Fame Air Museum,on_display
+Republic,F-84,F,,Thunderstreak,,fixed_wing,monoplane,military,fighter,1951,,F-84F;Thunderstreak,Planes of Fame Air Museum,on_display
+North American,FJ,3,,Fury,,fixed_wing,monoplane,military,fighter,1954,,FJ-3;Fury,Planes of Fame Air Museum,on_display
+North American,T-2,A,,Buckeye,,fixed_wing,monoplane,military,trainer,1960,,T-2;Buckeye,Planes of Fame Air Museum,on_display
+Beech,UC-45,,,Expeditor,,fixed_wing,monoplane,military,transport,1954,,UC-45;SNB-5;Expeditor,Planes of Fame Air Museum,on_display
+Boeing,B-50,A,,Superfortress,Lucky Lady II,fixed_wing,monoplane,military,bomber,1948,,B-50;Superfortress;Lucky Lady II,Planes of Fame Air Museum,on_display
+Grumman,F7F,3N,,Tigercat,,fixed_wing,monoplane,military,fighter,1946,,F7F;Tigercat,Planes of Fame Air Museum,on_display
+Cessna,A-37,,,Dragonfly,,fixed_wing,monoplane,military,ground_attack,,,A-37;Dragonfly,Planes of Fame Air Museum,on_display
+Curtiss-Wright,C-46,A,,Commando,,fixed_wing,monoplane,military,transport,1944,,C-46;Commando,Planes of Fame Air Museum,on_display
+Douglas,A-4,E,,Skyhawk,,fixed_wing,monoplane,military,ground_attack,1962,,A-4;Skyhawk,Planes of Fame Air Museum,on_display
+Douglas,A-4,L,,Skyhawk,,fixed_wing,monoplane,military,ground_attack,1960,,A-4;Skyhawk,Planes of Fame Air Museum,on_display
+F+W,C-3605,,,Schlepp,,fixed_wing,monoplane,military,utility,1943,,C-3605;Schlepp,Planes of Fame Air Museum,on_display
+Messerschmitt,Bf 108,B-1,,Taifun,,fixed_wing,monoplane,civilian,private,1937,,Bf 108;Taifun,Planes of Fame Air Museum,on_display
+Northrop,F-89,J,,Scorpion,,fixed_wing,monoplane,military,fighter,1954,,F-89;Scorpion,Planes of Fame Air Museum,on_display
+Douglas,A-4,C,,Skyhawk,,fixed_wing,monoplane,military,ground_attack,1960,,A-4;Skyhawk,Planes of Fame Air Museum,on_display
+North American,F-86,H,,Sabre,,fixed_wing,monoplane,military,fighter,1953,,F86;Sabre,Planes of Fame Air Museum,on_display
+Vought,F8U,1,,Crusader,,fixed_wing,monoplane,military,fighter,1958,,F8U;Crusader;F-8,Planes of Fame Air Museum,on_display
+Ling-Temco-Vought,A-7,A,,Corsair II,,fixed_wing,monoplane,military,ground_attack,1967,,A-7;Corsair II,Planes of Fame Air Museum,on_display
+Messerschmitt,Bf 109,E-7,CS+AJ,Emil,,fixed_wing,monoplane,military,fighter,1939,,Bf109;Emil,Planes of Fame Air Museum,on_display

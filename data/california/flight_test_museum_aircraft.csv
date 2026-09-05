@@ -1,0 +1,82 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Beechcraft,UC-45,J,67161,Expeditor,,fixed_wing,monoplane,military,utility,,,C-45;Expeditor;Twin Beech,Air Force Flight Test Museum,on_display
+Bell,LLRV,,,,,spacecraft,,civilian,space,,,LLRV;Lunar Landing Research Vehicle,Air Force Flight Test Museum,on_display
+Bell,P-59,A,44-22633,Airacomet,,fixed_wing,monoplane,military,fighter,,,P-59A;Airacomet,Air Force Flight Test Museum,on_display
+Bensen,X-25,B,68-10771,Gyrocopter,,rotary_wing,,military,test,,,B-8;X-25B;gyroglider,Air Force Flight Test Museum,on_display
+Boeing,C-135,A,60-0377,Stratolifter,,fixed_wing,monoplane,military,test,,,NC-135A;Stratolifter,Air Force Flight Test Museum,on_display
+Boeing,C-135,C,61-2669,Stratolifter,Speckled Trout,fixed_wing,monoplane,military,transport,,,Speckled Trout,Air Force Flight Test Museum,on_display
+Boeing,B-52,B,52-0008,Stratofortress,Balls 8,fixed_wing,monoplane,military,test,,,NB-52B;Balls 8;X-15 carrier,Air Force Flight Test Museum,on_display
+Boeing,Phantom Eye,,,,,fixed_wing,monoplane,civilian,experimental,,,Phantom Eye;HALE UAV,Air Force Flight Test Museum,on_display
+Boeing,B-47,A,46-0066,Stratojet,,fixed_wing,monoplane,military,test,,,XB-47;Stratojet,Air Force Flight Test Museum,on_display
+Boeing,X-48,C,,,,fixed_wing,monoplane,civilian,experimental,,,X-48C;Blended Wing Body,Air Force Flight Test Museum,on_display
+Cessna,A-37,B,73-1090,Dragonfly,,fixed_wing,monoplane,military,test,,,NA-37B;Dragonfly,Air Force Flight Test Museum,on_display
+Convair,F-106,B,59-0158,Delta Dart,,fixed_wing,monoplane,military,fighter,,,Delta Dart;Century Circle,Air Force Flight Test Museum,on_display
+Convair,F-102,A,54-1353,Delta Dagger,,fixed_wing,monoplane,military,trainer,,,TF-102A;Century Circle,Air Force Flight Test Museum,on_display
+Convair,B-58,A,55-665,Hustler,,fixed_wing,monoplane,military,test,,,YB-58A;Hustler,Air Force Flight Test Museum,on_display
+de Havilland Canada,C-7,B,63-9765,Caribou,,fixed_wing,monoplane,military,transport,,,DHC-4;Caribou,Air Force Flight Test Museum,on_display
+Douglas,A-26,B,44-34165,Invader,,fixed_wing,monoplane,military,trainer,,,TB-26B;Invader,Air Force Flight Test Museum,on_display
+Douglas,A-3,A,135434,Skywarrior,,fixed_wing,monoplane,military,bomber,,,A3D-1;Skywarrior;Whale,Air Force Flight Test Museum,on_display
+Douglas,C-53,D,41-20093,Skytrooper,,fixed_wing,monoplane,military,transport,,,C-53D;Skytrooper;Dakota,Air Force Flight Test Museum,on_display
+Douglas,F-10,B,125850,Skyknight,,fixed_wing,monoplane,military,fighter,,,F3D-2;Skyknight,Air Force Flight Test Museum,on_display
+Douglas,PGM-17,,,Thor,,missile_rocket,,military,ballistic,,,Thor;SM-75;IRBM,Air Force Flight Test Museum,on_display
+Fairchild,T-46,A,84-0492,Eaglet,,fixed_wing,monoplane,military,trainer,,,T-46A;Eaglet,Air Force Flight Test Museum,on_display
+General Dynamics,F-111,A,63-9766,Aardvark,,fixed_wing,monoplane,military,test,,,F-111A;Aardvark,Air Force Flight Test Museum,on_display
+General Dynamics,F-16,B,75-0751,Fighting Falcon,,fixed_wing,monoplane,military,test,,,F-16B;Viper,Air Force Flight Test Museum,on_display
+General Dynamics,F-16,B,80-0634,Fighting Falcon,,fixed_wing,monoplane,military,test,,,F-16B;Viper,Air Force Flight Test Museum,on_display
+General Dynamics,F-16,XL,75-0747,Fighting Falcon,,fixed_wing,monoplane,military,test,,,F-16XL;Cranked Arrow,Air Force Flight Test Museum,on_display
+General Dynamics,F-16,XL,75-0749,Fighting Falcon,,fixed_wing,monoplane,military,test,,,F-16XL;Cranked Arrow,Air Force Flight Test Museum,on_display
+General Dynamics,F-111,A,63-9778,Aardvark,,fixed_wing,monoplane,military,test,,,NF-111A;Aardvark,Air Force Flight Test Museum,on_display
+Gloster,Meteor,TT.20,WD592,Meteor,,fixed_wing,monoplane,military,utility,,,Meteor TT.20;target tug,Air Force Flight Test Museum,on_display
+Grumman,G-2,,N944NA,Gulfstream II,Shuttle Training Aircraft,fixed_wing,monoplane,civilian,space,,,STA;Shuttle Training Aircraft,Air Force Flight Test Museum,on_display
+Lockheed,C-130,E,61-2358,Hercules,,fixed_wing,monoplane,military,transport,,,C-130E;Hercules,Air Force Flight Test Museum,on_display
+Lockheed,C-140,A,59-5962,JetStar,,fixed_wing,monoplane,military,utility,,,C-140A;JetStar,Air Force Flight Test Museum,on_display
+Lockheed,F-80,A,44-85123,Shooting Star,,fixed_wing,monoplane,military,test,,,EF-80A;Shooting Star,Air Force Flight Test Museum,on_display
+Lockheed,F-104,A,56-801,Starfighter,,fixed_wing,monoplane,military,test,,,F-104A;Starfighter,Air Force Flight Test Museum,on_display
+Lockheed,C-141,A,61-2779,Starlifter,,fixed_wing,monoplane,military,test,,,NC-141A;Starlifter,Air Force Flight Test Museum,on_display
+Lockheed,F-104,A,56-756,Starfighter,,fixed_wing,monoplane,military,test,,,NF-104A;zoom climb,Air Force Flight Test Museum,on_display
+Lockheed,F-104,A,56-790,Starfighter,,fixed_wing,monoplane,military,test,,,NF-104A;Century Circle,Air Force Flight Test Museum,on_display
+Lockheed,SR-71,A,61-7955,Blackbird,,fixed_wing,monoplane,military,recon,,,SR-71A;Blackbird;Habu,Air Force Flight Test Museum,on_display
+Lockheed,T-33,A,58-0669,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-33A;T-Bird,Air Force Flight Test Museum,on_display
+Lockheed,T-33,A,52-9846,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-33A;T-Bird,Air Force Flight Test Museum,on_display
+Lockheed,F-94,A,48-356,Starfire,,fixed_wing,monoplane,military,test,,,YF-94A;Starfire,Air Force Flight Test Museum,on_display
+Lockheed,F-117,A,79-10783,Nighthawk,,fixed_wing,monoplane,military,test,,,YF-117A;Nighthawk,Air Force Flight Test Museum,on_display
+Lockheed,F-22,,87-0700,Raptor,,fixed_wing,monoplane,military,test,,,YF-22;Raptor;ATF,Air Force Flight Test Museum,on_display
+Accurate Automation,LoFLYTE,,,,,fixed_wing,monoplane,civilian,experimental,1996,,LoFLYTE;waverider,Air Force Flight Test Museum,on_display
+Martin,B-57,B,52-1576,Canberra,,fixed_wing,monoplane,military,recon,,,RB-57B;Canberra,Air Force Flight Test Museum,on_display
+Martin Marietta,Model 845,,01454,,,fixed_wing,monoplane,military,drone,,,MMC-845;Compass Dwell,Air Force Flight Test Museum,on_display
+McDonnell Douglas,F-15,B,73-0114,Eagle,,fixed_wing,monoplane,military,test,,,F-15B;Eagle,Air Force Flight Test Museum,on_display
+McDonnell Douglas,YC-15,,72-1875,,,fixed_wing,monoplane,military,test,,,YC-15;AMST,Air Force Flight Test Museum,on_display
+McDonnell Douglas,F-15,A,71-0287,Eagle,,fixed_wing,monoplane,military,test,,,YF-15A;Eagle,Air Force Flight Test Museum,on_display
+McDonnell Douglas,F-4,E,65-0713,Phantom II,,fixed_wing,monoplane,military,test,,,YF-4E;Phantom II,Air Force Flight Test Museum,on_display
+McDonnell Douglas,X-36,,,,,fixed_wing,monoplane,military,test,,,X-36;tailless,Air Force Flight Test Museum,on_display
+McDonnell,F-101,B,58-288,Voodoo,,fixed_wing,monoplane,military,fighter,,,F-101B;Voodoo;Century Circle,Air Force Flight Test Museum,on_display
+McDonnell,F-4,C,63-7407,Phantom II,,fixed_wing,monoplane,military,test,,,NF-4C;Phantom II,Air Force Flight Test Museum,on_display
+McDonnell,RF-4,C,64-1004,Phantom II,,fixed_wing,monoplane,military,recon,,,RF-4C;Phantom II,Air Force Flight Test Museum,on_display
+Mikoyan-Gurevich,MiG-21,PF,761811,Fishbed,,fixed_wing,monoplane,military,fighter,,,MiG-21PF;Fishbed,Air Force Flight Test Museum,on_display
+NASA,M2-F1,,,,,fixed_wing,monoplane,civilian,experimental,,,lifting body;M2-F1,Air Force Flight Test Museum,on_display
+North American,CT-39,A,60-3505,Sabreliner,,fixed_wing,monoplane,military,utility,,,CT-39A;Sabreliner,Air Force Flight Test Museum,on_display
+North American,F-100,A,52-5760,Super Sabre,,fixed_wing,monoplane,military,fighter,,,F-100A;Hun,Air Force Flight Test Museum,on_display
+North American,F-86,F,52-5241,Sabre,,fixed_wing,monoplane,military,fighter,,,F-86F;Sabre,Air Force Flight Test Museum,on_display
+North American,T-28,B,137702,Trojan,,fixed_wing,monoplane,military,trainer,,,T-28B;Trojan,Air Force Flight Test Museum,on_display
+North American,F-100,A,52-5755,Super Sabre,,fixed_wing,monoplane,military,test,,,YF-100A;Century Circle,Air Force Flight Test Museum,on_display
+Northrop,T-38,A,61-0849,Talon,,fixed_wing,monoplane,military,trainer,,,T-38A;Talon,Air Force Flight Test Museum,on_display
+Northrop,F-89,D,52-1959,Scorpion,,fixed_wing,monoplane,military,fighter,,,F-89D;Scorpion,Air Force Flight Test Museum,on_display
+Northrop,T-38,A,61-0810,Talon,,fixed_wing,monoplane,military,trainer,,,T-38A;Talon,Air Force Flight Test Museum,on_display
+Northrop,X-21,A,55-408,,,fixed_wing,monoplane,military,test,,,X-21;laminar flow,Air Force Flight Test Museum,on_display
+Northrop,X-21,A,55-410,,,fixed_wing,monoplane,military,test,,,X-21;laminar flow,Air Force Flight Test Museum,on_display
+Northrop,X-4,,46-676,Bantam,,fixed_wing,monoplane,military,test,,,X-4;Bantam,Air Force Flight Test Museum,on_display
+Northrop,YA-9,A,71-1367,,,fixed_wing,monoplane,military,test,,,YA-9A;A-X competitor,Air Force Flight Test Museum,on_display
+Piasecki,H-21,B,52-8623,Work Horse,,rotary_wing,,military,utility,,,H-21B;Flying Banana,Air Force Flight Test Museum,on_display
+Piper,PA-48,,48-8301002,Enforcer,,fixed_wing,monoplane,military,ground_attack,,,PA-48;Enforcer,Air Force Flight Test Museum,on_display
+Republic,F-105,D,61-146,Thunderchief,,fixed_wing,monoplane,military,fighter,,,F-105D;Thud;Century Circle,Air Force Flight Test Museum,on_display
+Republic,F-84,F,51-9350,Thunderstreak,,fixed_wing,monoplane,military,fighter,,,F-84F;Thunderstreak,Air Force Flight Test Museum,on_display
+Fairchild Republic,A-10,B,73-1664,Thunderbolt II,,fixed_wing,monoplane,military,test,,,YA-10B;Warthog,Air Force Flight Test Museum,on_display
+Rockwell,B-1,B,84-0049,Lancer,,fixed_wing,monoplane,military,bomber,,,B-1B;Lancer;Bone,Air Force Flight Test Museum,on_display
+Rutan,VariEze,,N309V,VariEze,,fixed_wing,monoplane,civilian,experimental,,,VariEze;canard,Air Force Flight Test Museum,on_display
+Ryan,AQM-34,J,,Firebee,,fixed_wing,monoplane,military,drone,,,Firebee;Lightning Bug,Air Force Flight Test Museum,on_display
+Scaled Composites,Model 133,,,,,fixed_wing,monoplane,civilian,experimental,1987,,ATTT;Model 133,Air Force Flight Test Museum,on_display
+Scaled Composites,Model 226,,,,,fixed_wing,monoplane,civilian,experimental,,,Raptor D-2,Air Force Flight Test Museum,on_display
+Sikorsky,H-34,G,53-4477,Seabat,,rotary_wing,,military,utility,,,CH-34G;Seabat,Air Force Flight Test Museum,on_display
+Sikorsky,H-3,C,62-12581,,,rotary_wing,,military,search_rescue,,,JCH-3C;Sea King,Air Force Flight Test Museum,on_display
+Vought,A-7,D,67-14583,Corsair II,,fixed_wing,monoplane,military,test,,,YA-7D;Corsair II,Air Force Flight Test Museum,on_display
+Vought,A-7,F,71-0344,Corsair II,Strikefighter,fixed_wing,monoplane,military,test,,,YA-7F;Strikefighter,Air Force Flight Test Museum,on_display

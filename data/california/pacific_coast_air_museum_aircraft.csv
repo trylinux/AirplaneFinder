@@ -1,0 +1,35 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,A-26,C,,,Invader,fixed_wing,monoplane,military,bomber,,,A-26;Invader,Pacific Coast Air Museum,on_display
+Douglas,A-4,E,,,Skyhawk,fixed_wing,monoplane,military,ground_attack,,,A-4;Skyhawk,Pacific Coast Air Museum,on_display
+Grumman,A-6,E,,,Intruder,fixed_wing,monoplane,military,bomber,,,A-6;Intruder,Pacific Coast Air Museum,on_display
+Vought,A-7,A,153241,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,A-7;Corsair II;SLUF,Pacific Coast Air Museum,on_display
+McDonnell Douglas,AV-8,C,,,Harrier,fixed_wing,monoplane,military,ground_attack,,,AV-8;Harrier,Pacific Coast Air Museum,on_display
+AgustaWestland,AW109,,,,,fixed_wing,monoplane,civilian,utility,,,AW109,Pacific Coast Air Museum,on_display
+Bede,BD-5,J,,,,fixed_wing,monoplane,civilian,experimental,,,BD-5;Acrostar,Pacific Coast Air Museum,on_display
+Grumman,C-1,A,,,Trader,fixed_wing,monoplane,military,transport,,,C-1;Trader;COD,Pacific Coast Air Museum,on_display
+Lockheed,D-21,,,,,fixed_wing,monoplane,military,drone,,,D-21;Tagboard,Pacific Coast Air Museum,on_display
+Grumman,EA-6,B,,,Prowler,fixed_wing,monoplane,military,electronic_warfare,,,EA-6;Prowler,Pacific Coast Air Museum,on_display
+Republic,F-105,F,,,Thunderchief,fixed_wing,monoplane,military,ground_attack,,,F-105;Thud;Wild Weasel,Pacific Coast Air Museum,on_display
+Convair,F-106,A,,,Delta Dart,fixed_wing,monoplane,military,fighter,,,F-106;Delta Dart,Pacific Coast Air Museum,on_display
+Grumman,F-14,A,,,Tomcat,fixed_wing,monoplane,military,fighter,,,F-14;Tomcat,Pacific Coast Air Museum,on_display
+McDonnell Douglas,F-15,A,,,Eagle,fixed_wing,monoplane,military,fighter,,,F-15;Eagle,Pacific Coast Air Museum,on_display
+General Dynamics,F-16,N,,,Fighting Falcon,fixed_wing,monoplane,military,fighter,,,F-16;Viper,Pacific Coast Air Museum,on_display
+McDonnell,F-4,C,,,Phantom II,fixed_wing,monoplane,military,fighter,,,F-4;Phantom II,Pacific Coast Air Museum,on_display
+Northrop,F-5,E,,,Tiger II,fixed_wing,monoplane,military,fighter,,,F-5;Tiger II,Pacific Coast Air Museum,on_display
+Republic,F-84,F,,,Thunderstreak,fixed_wing,monoplane,military,fighter,,,F-84;Thunderstreak,Pacific Coast Air Museum,on_display
+North American,F-86,H,,,Sabre,fixed_wing,monoplane,military,fighter,,,F-86;Sabre,Pacific Coast Air Museum,on_display
+Vought,F-8,C,,,Crusader,fixed_wing,monoplane,military,fighter,,,F-8;Crusader,Pacific Coast Air Museum,on_display
+McDonnell Douglas,F/A-18,A,,,Hornet,fixed_wing,monoplane,military,fighter,,,F-18;Hornet,Pacific Coast Air Museum,on_display
+Sikorsky,CH-34,C,57-1708,Choctaw,,rotary_wing,,military,utility,,,CH-34;Choctaw,Pacific Coast Air Museum,on_display
+Grumman,HU-16,E,,,Albatross,fixed_wing,monoplane,military,search_rescue,,,HU-16;Albatross,Pacific Coast Air Museum,on_display
+Ilyushin,Il-14,,,,,fixed_wing,monoplane,military,transport,,,Il-14;Crate,Pacific Coast Air Museum,on_display
+Lockheed,JetStar,,,,,fixed_wing,monoplane,civilian,utility,,,JetStar;C-140,Pacific Coast Air Museum,on_display
+Pitts,S-1,,,,Special,fixed_wing,biplane,civilian,private,,,Pitts Special,Pacific Coast Air Museum,on_display
+North American,RF-86,F,,,Sabre,fixed_wing,monoplane,military,recon,,,RF-86;Sabre,Pacific Coast Air Museum,on_display
+Grumman,S-2,A,,,Tracker,fixed_wing,monoplane,civilian,utility,,,S-2;Tracker;Firecat,Pacific Coast Air Museum,on_display
+Sikorsky,SH-60,F,,,Seahawk,rotary_wing,,military,utility,,,SH-60;Seahawk,Pacific Coast Air Museum,on_display
+North American,T-28,C,,,Trojan,fixed_wing,monoplane,military,trainer,,,T-28;Trojan,Pacific Coast Air Museum,on_display
+Lockheed,T-33,,,,Shooting Star,fixed_wing,monoplane,military,trainer,,,T-33;T-Bird,Pacific Coast Air Museum,on_display
+Cessna,T-37,,,,Tweet,fixed_wing,monoplane,military,trainer,,,T-37;Tweet,Pacific Coast Air Museum,on_display
+Northrop,T-38,,,,Talon,fixed_wing,monoplane,military,trainer,,,T-38;Talon,Pacific Coast Air Museum,on_display
+Bell,UH-1,H,,,Iroquois,rotary_wing,,military,utility,,,UH-1;Huey,Pacific Coast Air Museum,on_display

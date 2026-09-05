@@ -1,0 +1,17 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,T-6,G,51-15124,Texan,,fixed_wing,monoplane,military,trainer,,,Harvard;AT-6,Aerospace Museum of California,on_display
+Convair,F-106,A,59-0010,Delta Dart,,fixed_wing,monoplane,military,fighter,,,F106;Delta Dart,Aerospace Museum of California,on_display
+Lockheed,F-104,B,57-1303,Starfighter,,fixed_wing,monoplane,military,test,,,F104;Starfighter;NASA chase,Aerospace Museum of California,on_display
+Convair,F-102,A,56-1140,Delta Dagger,,fixed_wing,monoplane,military,fighter,,,F102;Delta Dagger;Deuce,Aerospace Museum of California,on_display
+McDonnell,F-101,B,57-427,Voodoo,,fixed_wing,monoplane,military,fighter,,,F101;Voodoo,Aerospace Museum of California,on_display
+North American,F-100,D,56-3288,Super Sabre,,fixed_wing,monoplane,military,fighter,,,F100;Super Sabre;Hun,Aerospace Museum of California,on_display
+North American,F-86,F,51-13082,Sabre,,fixed_wing,monoplane,military,fighter,,,F86;Sabre,Aerospace Museum of California,on_display
+Lockheed,T-33,A,53-5205,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T33;T-Bird,Aerospace Museum of California,on_display
+Fairchild,C-119,G,22114,Flying Boxcar,,fixed_wing,monoplane,military,transport,,,C119;Flying Boxcar,Aerospace Museum of California,on_display
+Fairchild Republic,A-10,A,76-540,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,,,A10;Warthog,Aerospace Museum of California,on_display
+Vought,A-7,D,70-0998,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,A7;Corsair II;SLUF,Aerospace Museum of California,on_display
+Douglas,A-4,C,148502,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,A4;Skyhawk;Scooter,Aerospace Museum of California,on_display
+Douglas,A-1,E,132463,Skyraider,,fixed_wing,monoplane,military,ground_attack,,,AD-5;Skyraider;Spad,Aerospace Museum of California,on_display
+Douglas,C-53,D,,Skytrooper,Ruby Ann,fixed_wing,monoplane,military,transport,,,C53;Skytrooper;Dakota,Aerospace Museum of California,on_display
+Sikorsky,CH-3,E,65-5690,Jolly Green Giant,,rotary_wing,,military,search_rescue,,,CH3;Jolly Green Giant,Aerospace Museum of California,on_display
+Republic,F-105,D,62-4301,Thunderchief,,fixed_wing,monoplane,military,fighter,,,F105;Thud,Aerospace Museum of California,on_display

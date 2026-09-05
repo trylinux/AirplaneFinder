@@ -1,0 +1,34 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,A-26,C,43-22652,Invader,,fixed_wing,monoplane,military,bomber,1944,,A-26;Invader,Travis Air Force Base Aviation Museum,on_display
+Beechcraft,AT-11,B,41-27616,Kansan,,fixed_wing,monoplane,military,trainer,1942,,AT-11;Kansan,Travis Air Force Base Aviation Museum,on_display
+Boeing,B-29,,42-65281,Superfortress,Miss America 62,fixed_wing,monoplane,military,bomber,1944,,B-29;Superfortress,Travis Air Force Base Aviation Museum,on_display
+Boeing,B-52,D,56-0696,Stratofortress,Twilight D Lite,fixed_wing,monoplane,military,bomber,1957,,B-52;BUFF;Stratofortress,Travis Air Force Base Aviation Museum,on_display
+Lockheed,C-5,A,70-0451,Galaxy,,fixed_wing,monoplane,military,transport,,,C-5;Galaxy,Travis Air Force Base Aviation Museum,on_display
+de Havilland Canada,C-7,A,60-3767,Caribou,,fixed_wing,monoplane,military,transport,,,C-7;Caribou,Travis Air Force Base Aviation Museum,on_display
+Beechcraft,C-45,H,52-10865,Expeditor,,fixed_wing,monoplane,military,transport,1954,,C-45;Expeditor,Travis Air Force Base Aviation Museum,on_display
+Douglas,C-47,A,42-92990,Skytrain,Okie Dokie,fixed_wing,monoplane,military,transport,,,C-47;Skytrain;Dakota,Travis Air Force Base Aviation Museum,on_display
+Douglas,C-54,D,42-72560,Skymaster,,fixed_wing,monoplane,military,transport,,,C-54;Skymaster,Travis Air Force Base Aviation Museum,on_display
+Lockheed,C-56,,41-19729,Lodestar,,fixed_wing,monoplane,military,transport,1941,,C-56;Lodestar,Travis Air Force Base Aviation Museum,on_display
+Douglas,C-118,A,51-17651,Liftmaster,,fixed_wing,monoplane,military,transport,1951,,C-118;Liftmaster,Travis Air Force Base Aviation Museum,on_display
+Fairchild,C-119,G,53-22134,Flying Boxcar,,fixed_wing,monoplane,military,transport,,,C-119;Flying Boxcar,Travis Air Force Base Aviation Museum,on_display
+Fairchild,C-123,K,55-4507,Provider,,fixed_wing,monoplane,military,transport,,,C-123;Provider,Travis Air Force Base Aviation Museum,on_display
+Douglas,C-124,C,52-1000,Globemaster II,Old Shakey,fixed_wing,monoplane,military,transport,,,C-124;Globemaster,Travis Air Force Base Aviation Museum,on_display
+Convair,C-131,D,54-2806,Samaritan,,fixed_wing,monoplane,military,transport,,,C-131;Samaritan,Travis Air Force Base Aviation Museum,on_display
+Douglas,C-133,A,56-1999,Cargomaster,,fixed_wing,monoplane,military,transport,,,C-133;Cargomaster,Travis Air Force Base Aviation Museum,on_display
+Lockheed,C-140,A,59-5958,JetStar,,fixed_wing,monoplane,military,utility,1962,,C-140;JetStar,Travis Air Force Base Aviation Museum,on_display
+Lockheed,C-141,B,63-8088,Starlifter,Golden Bear,fixed_wing,monoplane,military,transport,,,C-141;Starlifter,Travis Air Force Base Aviation Museum,on_display
+North American,CT-39,A,62-4452,Sabreliner,,fixed_wing,monoplane,military,utility,,,CT-39;Sabreliner,Travis Air Force Base Aviation Museum,on_display
+Republic,F-84,F,52-6359,Thunderstreak,,fixed_wing,monoplane,military,fighter,,,F-84;Thunderstreak,Travis Air Force Base Aviation Museum,on_display
+North American,F-86,L,53-0704,Sabre,,fixed_wing,monoplane,military,fighter,,,F-86;Sabre,Travis Air Force Base Aviation Museum,on_display
+McDonnell,F-101,B,58-0285,Voodoo,,fixed_wing,monoplane,military,fighter,,,F-101;Voodoo,Travis Air Force Base Aviation Museum,on_display
+North American,F-100,,52-5770,Super Sabre,,fixed_wing,monoplane,military,fighter,,,F-100;Hun,Travis Air Force Base Aviation Museum,on_display
+Convair,F-102,A,56-1247,Delta Dagger,,fixed_wing,monoplane,military,fighter,1957,,F-102;Deuce,Travis Air Force Base Aviation Museum,on_display
+Cessna,O-2,A,68-10848,Super Skymaster,,fixed_wing,monoplane,military,recon,,,O-2;Super Skymaster,Travis Air Force Base Aviation Museum,on_display
+Grumman,SA-16,B,51-7254,Albatross,,fixed_wing,monoplane,military,search_rescue,1954,,SA-16;HU-16;Albatross,Travis Air Force Base Aviation Museum,on_display
+Lockheed,T-33,,55-3021,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-33;T-Bird,Travis Air Force Base Aviation Museum,on_display
+Cessna,AT-17,,41507,Bobcat,,fixed_wing,monoplane,military,trainer,,,AT-17;Bamboo Bomber,Travis Air Force Base Aviation Museum,on_display
+Vultee,BT-13,,41-21933,Valiant,,fixed_wing,monoplane,military,trainer,,,BT-13;Valiant,Travis Air Force Base Aviation Museum,on_display
+Fairchild,PT-19,,41-20230,Cornell,,fixed_wing,monoplane,military,trainer,,,PT-19;Cornell,Travis Air Force Base Aviation Museum,on_display
+Piper,L-4,A,43-753,Grasshopper,,fixed_wing,monoplane,military,recon,,,L-4;Grasshopper;Cub,Travis Air Force Base Aviation Museum,on_display
+Cessna,U-3,A,58-2127,Blue Canoe,,fixed_wing,monoplane,military,utility,,,U-3;Blue Canoe,Travis Air Force Base Aviation Museum,on_display
+Stinson,L-5,E,44-1794,Sentinel,,fixed_wing,monoplane,military,utility,,,L-5;Sentinel,Travis Air Force Base Aviation Museum,on_display

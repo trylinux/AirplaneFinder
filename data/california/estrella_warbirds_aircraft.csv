@@ -1,0 +1,40 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Hiller,OH-23,C,O-02259,Raven,,rotary_wing,,military,recon,1956,,OH-23;UH-12C;Raven,Estrella Warbirds Museum,on_display
+Bell,OH-13,G,N33507,Sioux,,rotary_wing,,military,recon,1952,,OH-13;H-13G;Sioux,Estrella Warbirds Museum,on_display
+Bell,UH-1,D,65-10054,Iroquois,,rotary_wing,,military,utility,1965,,UH-1;Huey,Estrella Warbirds Museum,on_display
+Sikorsky,UH-34,D,148762,Seabat,,rotary_wing,,military,utility,,,UH-34;HUS-1;Seabat,Estrella Warbirds Museum,on_display
+Sikorsky,UH-19,D,55-4943,Chickasaw,,rotary_wing,,military,utility,1955,,UH-19;H-19;Chickasaw,Estrella Warbirds Museum,on_display
+Grumman,US-2,D,,Tracker,,fixed_wing,monoplane,military,utility,1953,,US-2;S2F;Stoof,Estrella Warbirds Museum,on_display
+Douglas,TA-4,J,158512,Skyhawk,,fixed_wing,monoplane,military,trainer,1968,,TA-4;Skyhawk;Scooter,Estrella Warbirds Museum,on_display
+Cessna,T-37,B,EN 322,Dragonfly,,fixed_wing,monoplane,military,trainer,1965,,T-37;Tweet,Estrella Warbirds Museum,on_display
+Beech,T-34,B,N34NL,Mentor,,fixed_wing,monoplane,military,trainer,1956,,T-34;Mentor,Estrella Warbirds Museum,on_display
+Beech,T-34,B,N45TB,Mentor,,fixed_wing,monoplane,military,trainer,1956,,T-34;Mentor,Estrella Warbirds Museum,on_display
+Lockheed,T-33,A,53-5850,Shooting Star,,fixed_wing,monoplane,military,trainer,1953,,T-33;T-Bird,Estrella Warbirds Museum,on_display
+North American,T-28,B,8303,Trojan,,fixed_wing,monoplane,military,trainer,1958,,T-28;Trojan,Estrella Warbirds Museum,on_display
+North American,F-86,F,FU-608,Sabre,,fixed_wing,monoplane,military,test,1952,,F-86;Sabre,Estrella Warbirds Museum,on_display
+North American,F-86,F,FU-758,Sabre,,fixed_wing,monoplane,military,fighter,1952,,F-86;RF-86F;Sabre,Estrella Warbirds Museum,on_display
+Lockheed,P2V,5F,NR807NA,Neptune,,fixed_wing,monoplane,military,recon,1954,,P2V;Neptune,Estrella Warbirds Museum,on_display
+North American,OV-10,A,N93LM,Bronco,,fixed_wing,monoplane,military,recon,1967,,OV-10;Bronco,Estrella Warbirds Museum,on_display
+Aermacchi,MB-326,,,Impala,,fixed_wing,monoplane,military,trainer,1957,,MB-326;Impala,Estrella Warbirds Museum,on_display
+Saab,A-32,A,N4767R,Lansen,,fixed_wing,monoplane,military,ground_attack,1958,,A-32;Lansen,Estrella Warbirds Museum,on_display
+Stinson,L-5,E,17944,Sentinel,,fixed_wing,monoplane,military,utility,1945,,L-5;Sentinel,Estrella Warbirds Museum,on_display
+Taylorcraft,L-2,,N-48818,Grasshopper,,fixed_wing,monoplane,military,utility,1941,,L-2;Grasshopper,Estrella Warbirds Museum,on_display
+Saab,35,RF,AR-106,Draken,,fixed_wing,monoplane,military,recon,1971,,J35;Draken,Estrella Warbirds Museum,on_display
+de Havilland Canada,U-6,A,532817,Beaver,,fixed_wing,monoplane,military,utility,1953,,U-6;L-20;Beaver,Estrella Warbirds Museum,on_display
+Cessna,O-1,A,O-17312,Bird Dog,,fixed_wing,monoplane,military,recon,1951,,O-1;L-19;Bird Dog,Estrella Warbirds Museum,on_display
+Taylor,J-2,,NC17277,Cub,,fixed_wing,monoplane,civilian,private,1936,,J-2;Cub,Estrella Warbirds Museum,on_display
+Fouga,CM-170,,451FM,Magister,,fixed_wing,monoplane,military,trainer,1966,,CM-170;Magister,Estrella Warbirds Museum,on_display
+Grumman,F9F,8P,144388,Cougar,,fixed_wing,monoplane,military,recon,1956,,F9F;Cougar,Estrella Warbirds Museum,on_display
+Vought,F-8,K,6931,Crusader,,fixed_wing,monoplane,military,fighter,1960,,F-8;Crusader,Estrella Warbirds Museum,on_display
+Northrop,F-5,E,741537,Tiger II,,fixed_wing,monoplane,military,fighter,1963,,F-5;Tiger II,Estrella Warbirds Museum,on_display
+McDonnell Douglas,F-4,S,5890,Phantom II,,fixed_wing,monoplane,military,fighter,,,F-4;Phantom II,Estrella Warbirds Museum,on_display
+General Dynamics,F-16,B,089,Fighting Falcon,,fixed_wing,monoplane,military,fighter,1978,,F-16;Viper,Estrella Warbirds Museum,on_display
+Lockheed,TF-104,G,N824NA,Starfighter,,fixed_wing,monoplane,military,trainer,,,TF-104;Starfighter,Estrella Warbirds Museum,on_display
+Douglas,C-47,B,14424,Dakota,Betsy's Biscuit Bomber,fixed_wing,monoplane,military,transport,1943,,C-47;Skytrain;Dakota,Estrella Warbirds Museum,on_display
+Luscombe,T-8,F,N2123B,Observer,,fixed_wing,monoplane,civilian,private,1949,,T-8F;Observer,Estrella Warbirds Museum,on_display
+North American,SNJ-5,C,N621BC,Texan,,fixed_wing,monoplane,military,trainer,1944,,SNJ;Texan;Harvard,Estrella Warbirds Museum,on_display
+Grumman,F-14,B,2911,Tomcat,,fixed_wing,monoplane,military,fighter,1975,,F-14;Tomcat,Estrella Warbirds Museum,on_display
+Vought,A-7,C,156739,Corsair II,,fixed_wing,monoplane,military,ground_attack,1967,,A-7;Corsair II;SLUF,Estrella Warbirds Museum,on_display
+Grumman,A-6,E,4171,Intruder,,fixed_wing,monoplane,military,bomber,1968,,A-6;Intruder,Estrella Warbirds Museum,on_display
+Douglas,A-4,A,7826,Skyhawk,,fixed_wing,monoplane,military,ground_attack,1966,,A-4;Skyhawk,Estrella Warbirds Museum,on_display
+Douglas,A-3,B,144841,Skywarrior,,fixed_wing,monoplane,military,electronic_warfare,,,A-3;Skywarrior;Whale,Estrella Warbirds Museum,on_display

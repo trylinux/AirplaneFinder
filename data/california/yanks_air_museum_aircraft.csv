@@ -1,0 +1,139 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,P-51,D,44-74910,Mustang,,fixed_wing,monoplane,military,fighter,1945,,P-51D;Mustang,Yanks Air Museum,on_display
+Curtiss,JN-4,D,,Jenny,,fixed_wing,biplane,military,trainer,1918,,JN-4D;Jenny;Curtiss Jenny,Yanks Air Museum,on_display
+Dayton-Wright,J-1,,,Standard J-1,,fixed_wing,biplane,military,trainer,,,J-1;Standard J-1,Yanks Air Museum,on_display
+Thomas-Morse,S-4,C,,Scout,,fixed_wing,biplane,military,trainer,1918,,S-4C;Scout,Yanks Air Museum,on_display
+Wright,Flyer,,,,Wright Flyer (Replica),fixed_wing,biplane,civilian,experimental,,,Wright Flyer;Flyer;replica,Yanks Air Museum,on_display
+Aeronca,C-2,Sport,,,,fixed_wing,monoplane,civilian,private,,,C-2;Aeronca C2,Yanks Air Museum,on_display
+Aeronca,K,,,Scout,,fixed_wing,monoplane,civilian,private,,,Aeronca K;Scout,Yanks Air Museum,on_display
+Aeronca,PC-3,,NC-15287,,,fixed_wing,monoplane,civilian,private,1935,,PC-3,Yanks Air Museum,on_display
+American Eagle,A-1,,,,,fixed_wing,biplane,civilian,private,1927,,American Eagle A1,Yanks Air Museum,on_display
+Beech,UC-43,B,,Staggerwing,,fixed_wing,biplane,military,utility,1943,,UC-43B;Staggerwing;Beech 17,Yanks Air Museum,on_display
+Brunner-Winkle,Bird,BK,,,,fixed_wing,biplane,civilian,private,1930,,Bird BK,Yanks Air Museum,on_display
+Cessna,AW,,,,,fixed_wing,monoplane,civilian,private,1929,,Cessna AW,Yanks Air Museum,on_display
+Command-Aire,3-C-3,,,,,fixed_wing,biplane,civilian,private,1928,,Command-Aire 3C3,Yanks Air Museum,on_display
+Curtiss-Robertson,C-1,,,Robin,,fixed_wing,monoplane,civilian,private,1929,,C-1 Robin;Curtiss Robin,Yanks Air Museum,on_display
+Curtiss-Wright,CW-1,,,Junior,,fixed_wing,monoplane,civilian,private,1931,,CW-1 Junior,Yanks Air Museum,on_display
+ERCO,415,D,N99229,Ercoupe,,fixed_wing,monoplane,civilian,private,1946,,415-D;Ercoupe,Yanks Air Museum,on_display
+Fleet,7,B,,Fawn,Little Rosey,fixed_wing,biplane,military,trainer,,,Fleet 7B;Fawn Mk I;Little Rosey,Yanks Air Museum,on_display
+Great Lakes,2T-1,A,,Sport Trainer,,fixed_wing,biplane,civilian,private,1929,,2T-1A;Sport Trainer,Yanks Air Museum,on_display
+Grumman,G-21,A,,Goose,,fixed_wing,monoplane,civilian,commercial_transport,,,G-21A;JRF;Goose,Yanks Air Museum,on_display
+Kellett,KD-1,A,,Autogiro,,rotary_wing,,military,recon,,,KD-1A;YG-1B;Autogyro,Yanks Air Museum,on_display
+Kreider-Reisner,KR-31,,,Challenger,,fixed_wing,biplane,civilian,private,,,KR-31;Challenger C-2,Yanks Air Museum,on_display
+Ryan,B-1,,,Brougham,,fixed_wing,monoplane,civilian,commercial_transport,1928,,Mahoney-Ryan B-1;Brougham,Yanks Air Museum,on_display
+de Havilland,DH-60,GM,,Gipsy Moth,,fixed_wing,biplane,civilian,private,1929,,DH-60GM;Gipsy Moth;Moth,Yanks Air Museum,on_display
+Mutual Aircraft,X-87,M,,Blackbird,,fixed_wing,monoplane,civilian,experimental,,,X-87M;Blackbird,Yanks Air Museum,on_display
+Naval Aircraft Factory,N3N,3,,,Yellow Peril,fixed_wing,biplane,military,trainer,1940,,N3N-3;Yellow Peril,Yanks Air Museum,on_display
+Noorduyn,Norseman,,,,,fixed_wing,monoplane,civilian,utility,,,Norseman,Yanks Air Museum,on_display
+Porterfield,35,,,Flyabout,,fixed_wing,monoplane,civilian,private,1936,,Porterfield 35;Flyabout,Yanks Air Museum,on_display
+Lincoln-Page,LP-3,,,,,fixed_wing,biplane,civilian,private,1928,,LP-3;Roos Lincoln Page,Yanks Air Museum,on_display
+Stearman,4,D,,Junior Speed Mail,,fixed_wing,biplane,civilian,freighter,1931,,Stearman 4D;Speedmail,Yanks Air Museum,on_display
+Stearman,PT-9,B,,Cloudboy,,fixed_wing,biplane,military,trainer,1930,,YPT-9B;Cloudboy,Yanks Air Museum,on_display
+Swallow,TP,,,,,fixed_wing,biplane,civilian,,1928,,Swallow TP,Yanks Air Museum,on_display
+Taylor,J-2,,,Cub,,fixed_wing,monoplane,civilian,private,,,J-2 Cub;Taylor Cub,Yanks Air Museum,on_display
+Thomas-Pigeon,Flying Boat,,,,,fixed_wing,biplane,civilian,experimental,1920,,Thomas Pigeon;Flying Boat,Yanks Air Museum,on_display
+Travel Air,2000,,,,,fixed_wing,biplane,civilian,private,,,Travel Air 2000,Yanks Air Museum,on_display
+Travel Air,6000,A,N4942V,,,fixed_wing,monoplane,civilian,commercial_transport,1929,,Travel Air 6000A,Yanks Air Museum,on_display
+Waco,UEC,,,,,fixed_wing,biplane,civilian,private,1932,,Waco UEC,Yanks Air Museum,on_display
+Waco,GXE,,,,,fixed_wing,biplane,civilian,private,,,Waco GXE;Waco 10,Yanks Air Museum,on_display
+Waco,YKS-7,,,,,fixed_wing,biplane,civilian,private,,,Waco YKS-7,Yanks Air Museum,on_display
+Aeronca,65,CA,N33853,Super Chief,,fixed_wing,monoplane,civilian,private,1941,,Aeronca 65CA;Super Chief,Yanks Air Museum,on_display
+Bell,P-39,N,,Airacobra,,fixed_wing,monoplane,military,fighter,1942,,P-39N;Airacobra,Yanks Air Museum,on_display
+Bell,P-63,A,,Kingcobra,Fatal Fang,fixed_wing,monoplane,military,fighter,1944,,P-63A;Kingcobra;Fatal Fang,Yanks Air Museum,on_display
+Consolidated,PBY-5,A,,Catalina,,fixed_wing,monoplane,military,search_rescue,1945,,PBY-5A;Catalina;Super Catalina,Yanks Air Museum,on_display
+Cessna,UC-78,,,Bobcat,,fixed_wing,monoplane,military,trainer,1943,,UC-78;Bobcat;Cessna T-50,Yanks Air Museum,on_display
+Vought,F4U,4,,Corsair,,fixed_wing,monoplane,military,fighter,,,F4U-4;Corsair,Yanks Air Museum,on_display
+Consolidated,PB4Y,2,66300,Privateer,,fixed_wing,monoplane,military,bomber,,,PB4Y-2;Privateer,Yanks Air Museum,on_display
+Curtiss-Wright,C-46,F,43-47218,Commando,,fixed_wing,monoplane,military,transport,1945,,C-46F;Commando,Yanks Air Museum,on_display
+Curtiss,O-52,,,Owl,,fixed_wing,monoplane,military,recon,1941,,O-52;Owl,Yanks Air Museum,on_display
+Curtiss,P-40,E,,Warhawk,,fixed_wing,monoplane,military,fighter,1941,,P-40E;Warhawk,Yanks Air Museum,on_display
+Curtiss,SB2C,3,,Helldiver,,fixed_wing,monoplane,military,bomber,1944,,SB2C-3;Helldiver,Yanks Air Museum,on_display
+Douglas,C-47,A,42-23668,Skytrain,,fixed_wing,monoplane,military,transport,1943,,C-47A;Skytrain;Dakota,Yanks Air Museum,on_display
+Douglas,SBD,4,,Dauntless,,fixed_wing,monoplane,military,bomber,1942,,SBD-4;Dauntless,Yanks Air Museum,on_display
+General Motors,FM,2,,Wildcat,,fixed_wing,monoplane,military,fighter,1945,,FM-2;Wildcat,Yanks Air Museum,on_display
+Fairchild,PT-26,,,,,fixed_wing,monoplane,military,trainer,,,PT-26;Cornell,Yanks Air Museum,on_display
+Fieseler,Fi 103,,,V-1,,missile_rocket,,military,cruise,,,Fi103;V-1;Buzz Bomb;Doodlebug,Yanks Air Museum,on_display
+Grumman,F6F,3,,Hellcat,,fixed_wing,monoplane,military,fighter,,,F6F-3;Hellcat,Yanks Air Museum,on_display
+Grumman,J4F,2,37768,Widgeon,,fixed_wing,monoplane,military,utility,,,J4F-2;G-44;Widgeon,Yanks Air Museum,on_display
+Grumman,TBF,1C,,Avenger,,fixed_wing,monoplane,military,bomber,1942,,TBF-1C;Avenger,Yanks Air Museum,on_display
+Laister-Kauffman,TG-4,A,N54567,,,fixed_wing,monoplane,military,trainer,1943,,TG-4A;LK-10A;glider,Yanks Air Museum,on_display
+Lockheed,P-38,L,,Lightning,,fixed_wing,monoplane,military,recon,1945,,P-38L;F-5G;Lightning,Yanks Air Museum,on_display
+Lockheed,UC-40,A,,Electra Junior,,fixed_wing,monoplane,military,utility,1939,,UC-40A;Electra Junior,Yanks Air Museum,on_display
+North American,B-25,J,,Mitchell,,fixed_wing,monoplane,military,bomber,1945,,B-25J;Mitchell,Yanks Air Museum,on_display
+North American,P-51,A,,Mustang,,fixed_wing,monoplane,military,fighter,1943,,P-51A;Mustang,Yanks Air Museum,on_display
+North American,SNJ,5,,Texan,,fixed_wing,monoplane,military,trainer,1944,,SNJ-5;Texan;T-6,Yanks Air Museum,on_display
+Waco,CG-4,A,,Hadrian,,fixed_wing,monoplane,military,transport,1945,,CG-4A;Hadrian;Waco glider,Yanks Air Museum,on_display
+Republic,P-47,D,45-9346,Thunderbolt,,fixed_wing,monoplane,military,fighter,1945,,P-47D;Thunderbolt,Yanks Air Museum,on_display
+Republic,P-47,M,,Thunderbolt,,fixed_wing,monoplane,military,fighter,,,YP-47M;Thunderbolt,Yanks Air Museum,on_display
+Schweizer,TG-3,A,,,,fixed_wing,monoplane,military,trainer,,,TG-3A;glider,Yanks Air Museum,on_display
+Sikorsky,R-4,B,,Hoverfly,,rotary_wing,,military,utility,1944,,R-4B;Hoverfly,Yanks Air Museum,on_display
+Stinson,L-5,,,Sentinel,,fixed_wing,monoplane,military,utility,1943,,L-5;Sentinel,Yanks Air Museum,on_display
+Vultee,BT-13,B,,Valiant,,fixed_wing,monoplane,military,trainer,,,BT-13B;Valiant;Vibrator,Yanks Air Museum,on_display
+Yokosuka,MXY-7,,,Ohka,,fixed_wing,monoplane,military,ground_attack,1944,,Ohka;MXY-7;Baka Bomb,Yanks Air Museum,on_display
+Beechcraft,35,N,,Bonanza,,fixed_wing,monoplane,civilian,private,,,N35;Bonanza,Yanks Air Museum,on_display
+Bell,AH-1,F,67-15614,Cobra,,rotary_wing,,military,ground_attack,1967,,AH-1F;Cobra,Yanks Air Museum,on_display
+Bell,OH-13,E,,Sioux,,rotary_wing,,military,recon,1946,,OH-13E;Sioux,Yanks Air Museum,on_display
+Bell,UH-1,H,63-08848,Iroquois,,rotary_wing,,military,utility,1963,,UH-1H;Huey;Iroquois,Yanks Air Museum,on_display
+Boeing,B-52,F,,Stratofortress,,fixed_wing,monoplane,military,bomber,,,B-52F;Stratofortress;BUFF,Yanks Air Museum,on_display
+Canadair,CL-13,B,363,Sabre,,fixed_wing,monoplane,military,fighter,1951,,CL-13B;Sabre Mk6,Yanks Air Museum,on_display
+Cessna,172,A,,Skyhawk,,fixed_wing,monoplane,civilian,private,1960,,172A;Skyhawk,Yanks Air Museum,on_display
+Cessna,T-37,B,58-1962,Tweet,,fixed_wing,monoplane,military,trainer,1959,,T-37B;Tweet,Yanks Air Museum,on_display
+Vought,A-7,B,154475,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,A-7B;Corsair II,Yanks Air Museum,on_display
+Convair,F-106,B,,Delta Dart,,fixed_wing,monoplane,military,fighter,1958,,F-106B;Delta Dart,Yanks Air Museum,on_display
+Convair,C-131,F,,Samaritan,,fixed_wing,monoplane,military,transport,1956,,VC-131F;Samaritan,Yanks Air Museum,on_display
+Douglas,A-4,C,,Skyhawk,,fixed_wing,monoplane,military,ground_attack,1962,,A-4C;Skyhawk,Yanks Air Museum,on_display
+Douglas,A-4,E,151038,Skyhawk,,fixed_wing,monoplane,military,ground_attack,1964,,A-4E;Skyhawk,Yanks Air Museum,on_display
+Douglas,AD-4,NA,,Skyraider,,fixed_wing,monoplane,military,ground_attack,,,AD-4NA;Skyraider,Yanks Air Museum,on_display
+Douglas,A-3,B,138965,Skywarrior,,fixed_wing,monoplane,military,tanker,1957,,KA-3B;Skywarrior,Yanks Air Museum,on_display
+Fairchild,C-123,K,,Provider,,fixed_wing,monoplane,military,transport,,,C-123K;Provider,Yanks Air Museum,on_display
+Grumman,A-6,E,155644,Intruder,,fixed_wing,monoplane,military,ground_attack,1968,,A-6E;Intruder,Yanks Air Museum,on_display
+Grumman,E-2,C,161344,Hawkeye,,fixed_wing,monoplane,military,recon,1989,,E-2C;Hawkeye,Yanks Air Museum,on_display
+Grumman,F-14,A,158985,Tomcat,,fixed_wing,monoplane,military,fighter,1973,,F-14A;Tomcat,Yanks Air Museum,on_display
+Grumman,F11F,1,,Tiger,,fixed_wing,monoplane,military,fighter,1957,,F11F-1;Tiger,Yanks Air Museum,on_display
+Grumman,F9F,2,,Panther,,fixed_wing,monoplane,military,fighter,,,F9F-2;Panther,Yanks Air Museum,on_display
+Grumman,HU-16,,,Albatross,,fixed_wing,monoplane,military,search_rescue,,,HU-16;Albatross,Yanks Air Museum,on_display
+Grumman,F9F,8P,,Cougar,,fixed_wing,monoplane,military,recon,1956,,F9F-8P;Cougar,Yanks Air Museum,on_display
+Hawker Siddeley,AV-8,A,ZD668,Harrier,,fixed_wing,monoplane,military,ground_attack,1986,,AV-8A;Harrier,Yanks Air Museum,on_display
+Learjet,23,,,,,fixed_wing,monoplane,civilian,private,,,Learjet 23,Yanks Air Museum,on_display
+Lockheed,EC-121,T,,Super Constellation,,fixed_wing,monoplane,military,electronic_warfare,1955,,EC-121T;Warning Star;Connie,Yanks Air Museum,on_display
+Lockheed,F-80,C,,Shooting Star,,fixed_wing,monoplane,military,fighter,,,F-80C;Shooting Star,Yanks Air Museum,on_display
+Lockheed,T-33,A,,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-33A;T-Bird,Yanks Air Museum,on_display
+Lockheed,F-104,C,,Starfighter,,fixed_wing,monoplane,military,fighter,,,F-104C;Starfighter,Yanks Air Museum,on_display
+Martin,4-0-4,,,,,fixed_wing,monoplane,civilian,commercial_transport,,,Martin 404,Yanks Air Museum,on_display
+McCulloch,MC-4,A,133818,,,rotary_wing,,military,utility,1953,,MC-4A;HUM-1,Yanks Air Museum,on_display
+McDonnell Douglas,F-4,S,,Phantom II,,fixed_wing,monoplane,military,fighter,,,F-4S;Phantom II,Yanks Air Museum,on_display
+North American,F-86,F,,Sabre,,fixed_wing,monoplane,military,fighter,,,F-86F;Sabre,Yanks Air Museum,on_display
+North American,FJ,1,,Fury,,fixed_wing,monoplane,military,fighter,1947,,FJ-1;Fury,Yanks Air Museum,on_display
+North American,F-100,C,54-2091,Super Sabre,,fixed_wing,monoplane,military,fighter,1956,,F-100C;Super Sabre;Hun,Yanks Air Museum,on_display
+Northrop,F-5,E,76-1638,Tiger II,,fixed_wing,monoplane,military,fighter,1974,,F-5E;Tiger II,Yanks Air Museum,on_display
+Northrop,T-38,A,61-0908,Talon,,fixed_wing,monoplane,military,trainer,1962,,T-38A;Talon,Yanks Air Museum,on_display
+Piasecki,HUP,3,,Retriever,,rotary_wing,,military,search_rescue,1949,,HUP-3;Retriever,Yanks Air Museum,on_display
+Republic,F-84,E,49-2155,Thunderjet,,fixed_wing,monoplane,military,fighter,1950,,F-84E;Thunderjet,Yanks Air Museum,on_display
+Republic,F-84,F,,Thunderstreak,,fixed_wing,monoplane,military,fighter,,,F-84F;Thunderstreak,Yanks Air Museum,on_display
+Republic,F-105,D,59-1759,Thunderchief,,fixed_wing,monoplane,military,ground_attack,1961,,F-105D;Thunderchief;Thud,Yanks Air Museum,on_display
+Sikorsky,CH-3,C,,Sea King,,rotary_wing,,military,utility,,,CH-3C;Sea King,Yanks Air Museum,on_display
+Sikorsky,S-58,B,,,,rotary_wing,,civilian,utility,,,S-58B,Yanks Air Museum,on_display
+Sikorsky,HH-52,A,1375,Sea Guard,,rotary_wing,,military,search_rescue,1963,,HH-52A;Sea Guard,Yanks Air Museum,on_display
+General Dynamics,F-16,B,80-0633,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,,F-16B;Fighting Falcon;Viper,Yanks Air Museum,on_display
+McDonnell Douglas,F/A-18,B,161943,Hornet,,fixed_wing,monoplane,military,fighter,,,F/A-18B;Hornet,Yanks Air Museum,on_display
+McDonnell Douglas,F-15,A,,Eagle,,fixed_wing,monoplane,military,fighter,1979,,F-15A;Eagle,Yanks Air Museum,on_display
+Beechcraft,AQM-37,A,,Jayhawk,,fixed_wing,monoplane,military,drone,,,AQM-37A;Jayhawk,Yanks Air Museum,on_display
+Beechcraft,BQM-126,A,,,,fixed_wing,monoplane,military,drone,,,BQM-126A,Yanks Air Museum,on_display
+Teledyne Ryan,BQM-34,A,,Firebee,,fixed_wing,monoplane,military,drone,,,BQM-34A;Firebee,Yanks Air Museum,on_display
+Culver,KD6G,2,,Firefly,,fixed_wing,monoplane,military,drone,,,KD6G-2;Firefly;PQ-14,Yanks Air Museum,on_display
+Mikoyan-Gurevich,MiG-27,,,Flogger,,fixed_wing,monoplane,military,ground_attack,,,MiG-27;Flogger,Yanks Air Museum,on_display
+Radioplane,MQM-61,,,Cardinal,,fixed_wing,monoplane,military,drone,,,MQM-61;Cardinal,Yanks Air Museum,on_display
+Radioplane,OQ-2,A,,,,fixed_wing,monoplane,military,drone,,,OQ-2A;Target Drone,Yanks Air Museum,on_display
+Aeronca,C-3,,,,,fixed_wing,monoplane,civilian,private,,,Aeronca C3,Yanks Air Museum,on_display
+Bellanca,300,A,,Viking,,fixed_wing,monoplane,civilian,private,,,Bellanca Viking;300A,Yanks Air Museum,on_display
+Chotia,Gypsy,,,,,fixed_wing,monoplane,civilian,experimental,,,Chotia Gypsy,Yanks Air Museum,on_display
+General Dynamics,F-111,D,,Aardvark,,fixed_wing,monoplane,military,ground_attack,,,F-111D;Aardvark,Yanks Air Museum,on_display
+Hawker,Hunter,T7,,,,fixed_wing,monoplane,military,trainer,,,Hunter T7,Yanks Air Museum,on_display
+Hawker Siddeley,Harrier,GR3,,,,fixed_wing,monoplane,military,ground_attack,,,Harrier GR3,Yanks Air Museum,on_display
+Schweizer,SGS 2-12,,,,,fixed_wing,monoplane,civilian,private,,,SGS 2-12;glider,Yanks Air Museum,on_display
+Vought,OS2U,3,,Kingfisher,,fixed_wing,monoplane,military,recon,,,OS2U-3;Kingfisher,Yanks Air Museum,on_display
+Douglas,A-4,A,,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,A-4A;Skyhawk,Yanks Air Museum,on_display
+Curtiss,C-2,,,Robin,,fixed_wing,monoplane,civilian,private,,,C-2 Robin;Curtiss Robin,Yanks Air Museum,on_display
+Curtiss,JNS,,,Jenny,,fixed_wing,biplane,military,trainer,,,JNS;Jenny;Canuck,Yanks Air Museum,on_display
+McDonnell Douglas,F-4,C,,Phantom II,,fixed_wing,monoplane,military,fighter,,,F-4C;Phantom II,Yanks Air Museum,on_display
+Grumman,F6F,5,,Hellcat,,fixed_wing,monoplane,military,fighter,,,F6F-5;Hellcat,Yanks Air Museum,on_display
