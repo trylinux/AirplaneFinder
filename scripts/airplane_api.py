@@ -27,6 +27,9 @@ Usage
 Environment variables (used as defaults)
 ----------------------------------------
     AIRPLANE_BASE_URL    Base URL of the API. Default: http://127.0.0.1:5000
+                         The scheme is optional — "airplane.museum" becomes
+                         "https://airplane.museum", and a localhost value
+                         becomes http://. See normalize_base_url.
     AIRPLANE_API_KEY     Bearer API key for write/admin operations.
 """
 
@@ -57,14 +60,38 @@ class AirplaneClient:
 
     DEFAULT_BASE_URL = "http://127.0.0.1:5000"
 
+    # Hosts that get http:// when the scheme is omitted. Everything else is
+    # assumed to be a real deployment and gets https://.
+    _LOCAL_HOSTS = ("localhost", "127.0.0.1", "0.0.0.0", "::1", "host.docker.internal")
+
+    @classmethod
+    def normalize_base_url(cls, raw: str) -> str:
+        """Add a scheme if the caller left it off, and drop any trailing '/'.
+
+        ``AIRPLANE_BASE_URL=airplane.museum`` is the natural thing to type,
+        but requests rejects a schemeless URL with a MissingSchema error
+        from deep inside prepare_url — a confusing traceback for what is
+        really a one-token typo. Fill it in instead: https:// for a real
+        host, http:// for localhost (which rarely has a certificate).
+        """
+        url = (raw or "").strip().rstrip("/")
+        if not url:
+            return cls.DEFAULT_BASE_URL
+        if "://" in url:
+            return url
+        host = url.split("/", 1)[0].split(":", 1)[0].lower()
+        scheme = "http" if host in cls._LOCAL_HOSTS else "https"
+        return f"{scheme}://{url}"
+
     def __init__(
         self,
         base_url: Optional[str] = None,
         api_key: Optional[str] = None,
         timeout: float = 30.0,
     ):
-        self.base_url = (base_url or os.environ.get("AIRPLANE_BASE_URL")
-                         or self.DEFAULT_BASE_URL).rstrip("/")
+        self.base_url = self.normalize_base_url(
+            base_url or os.environ.get("AIRPLANE_BASE_URL") or self.DEFAULT_BASE_URL
+        )
         self.api_key = api_key or os.environ.get("AIRPLANE_API_KEY")
         self.timeout = timeout
         self._session = requests.Session()
