@@ -324,6 +324,176 @@ class TestBulkImportLimits:
         assert r.status_code == 400
 
 
+class TestAircraftBulkImportMuseumLink:
+    """Optional museum_id / museum_name / display_status columns.
+
+    These let one file create the aircraft AND the exhibit link. The
+    museum has to already exist; an unresolvable reference is a validation
+    error, which (per the atomic rule) rolls back the whole batch rather
+    than quietly importing unlinked aircraft.
+    """
+
+    def test_museum_id_creates_link(self, admin_client, db_session, make_museum):
+        import models
+        m = make_museum(name="Castle Air Museum", city="Atwater")
+        payload = {"format": "json", "data": json.dumps([
+            {"manufacturer": "Lockheed", "model": "SR-71", "variant": "A",
+             "tail_number": "61-7960", "museum_id": m.id},
+        ])}
+        r = admin_client.post("/api/v1/aircraft/bulk_import", json=payload)
+        assert r.status_code == 200
+        report = r.get_json()
+        assert report["created"] == 1
+        assert report["linked"] == 1
+        link = models.AircraftMuseum.query.one()
+        assert link.museum_id == m.id
+        assert link.display_status == "on_display"   # default
+
+    def test_museum_name_resolves(self, admin_client, db_session, make_museum):
+        import models
+        m = make_museum(name="Castle Air Museum", city="Atwater")
+        payload = {"format": "json", "data": json.dumps([
+            {"manufacturer": "Boeing", "model": "B-52", "variant": "D",
+             "tail_number": "56-0612", "museum_name": "Castle Air Museum"},
+        ])}
+        r = admin_client.post("/api/v1/aircraft/bulk_import", json=payload)
+        assert r.get_json()["linked"] == 1
+        assert models.AircraftMuseum.query.one().museum_id == m.id
+
+    def test_museum_name_match_is_case_insensitive(
+        self, admin_client, db_session, make_museum
+    ):
+        make_museum(name="Castle Air Museum", city="Atwater")
+        payload = {"format": "json", "data": json.dumps([
+            {"manufacturer": "Boeing", "model": "B-52", "museum_name": "castle AIR museum"},
+        ])}
+        assert admin_client.post(
+            "/api/v1/aircraft/bulk_import", json=payload
+        ).get_json()["linked"] == 1
+
+    def test_explicit_display_status_honored(
+        self, admin_client, db_session, make_museum
+    ):
+        import models
+        make_museum(name="Castle Air Museum", city="Atwater")
+        payload = {"format": "json", "data": json.dumps([
+            {"manufacturer": "Douglas", "model": "B-18", "tail_number": "37-0029",
+             "museum_name": "Castle Air Museum", "display_status": "under_restoration"},
+        ])}
+        r = admin_client.post("/api/v1/aircraft/bulk_import", json=payload)
+        assert r.get_json()["linked"] == 1
+        assert models.AircraftMuseum.query.one().display_status == "under_restoration"
+
+    def test_invalid_display_status_rejected(
+        self, admin_client, db_session, make_museum
+    ):
+        import models
+        make_museum(name="Castle Air Museum", city="Atwater")
+        payload = {"format": "json", "data": json.dumps([
+            {"manufacturer": "Douglas", "model": "B-18",
+             "museum_name": "Castle Air Museum", "display_status": "on_loan"},
+        ])}
+        r = admin_client.post("/api/v1/aircraft/bulk_import", json=payload)
+        report = r.get_json()
+        assert report["created"] == 0
+        assert any(e["field"] == "display_status" for e in report["errors"])
+        assert models.Aircraft.query.count() == 0
+
+    def test_unknown_museum_name_fails_whole_batch(self, admin_client, db_session):
+        """The aircraft is otherwise valid — but importing it unlinked would
+        silently lose the curator's intent, so the batch fails."""
+        import models
+        payload = {"format": "json", "data": json.dumps([
+            {"manufacturer": "Lockheed", "model": "SR-71",
+             "museum_name": "Museum That Does Not Exist"},
+        ])}
+        r = admin_client.post("/api/v1/aircraft/bulk_import", json=payload)
+        report = r.get_json()
+        assert report["created"] == 0
+        assert any(e["field"] == "museum_name" for e in report["errors"])
+        assert models.Aircraft.query.count() == 0
+
+    def test_unknown_museum_id_fails(self, admin_client, db_session):
+        import models
+        payload = {"format": "json", "data": json.dumps([
+            {"manufacturer": "Lockheed", "model": "SR-71", "museum_id": 99999},
+        ])}
+        r = admin_client.post("/api/v1/aircraft/bulk_import", json=payload)
+        assert any(e["field"] == "museum_id" for e in r.get_json()["errors"])
+        assert models.Aircraft.query.count() == 0
+
+    def test_ambiguous_museum_name_reports_ids(
+        self, admin_client, db_session, make_museum
+    ):
+        """Two museums with the same name in different cities — the importer
+        refuses to guess and hands back the ids to disambiguate with."""
+        m1 = make_museum(name="Air Museum", city="Atwater")
+        m2 = make_museum(name="Air Museum", city="Tucson")
+        payload = {"format": "json", "data": json.dumps([
+            {"manufacturer": "Lockheed", "model": "SR-71", "museum_name": "Air Museum"},
+        ])}
+        r = admin_client.post("/api/v1/aircraft/bulk_import", json=payload)
+        errs = r.get_json()["errors"]
+        assert any(e["field"] == "museum_name" for e in errs)
+        msg = " ".join(e["message"] for e in errs)
+        assert str(m1.id) in msg and str(m2.id) in msg
+
+    def test_both_museum_id_and_name_rejected(
+        self, admin_client, db_session, make_museum
+    ):
+        m = make_museum(name="Castle Air Museum", city="Atwater")
+        payload = {"format": "json", "data": json.dumps([
+            {"manufacturer": "Lockheed", "model": "SR-71",
+             "museum_id": m.id, "museum_name": "Castle Air Museum"},
+        ])}
+        r = admin_client.post("/api/v1/aircraft/bulk_import", json=payload)
+        assert any(e["field"] == "museum_id/museum_name"
+                   for e in r.get_json()["errors"])
+
+    def test_rows_without_museum_still_work(self, admin_client, db_session):
+        """Link columns are optional — omitting them imports plain aircraft."""
+        import models
+        payload = {"format": "json", "data": json.dumps([
+            {"manufacturer": "Lockheed", "model": "C-130", "tail_number": "55-0014"},
+        ])}
+        r = admin_client.post("/api/v1/aircraft/bulk_import", json=payload)
+        report = r.get_json()
+        assert report["created"] == 1
+        assert report["linked"] == 0
+        assert models.AircraftMuseum.query.count() == 0
+
+    def test_csv_link_columns(self, admin_client, db_session, make_museum):
+        import models
+        make_museum(name="Castle Air Museum", city="Atwater")
+        csv_text = (
+            "manufacturer,model,variant,tail_number,museum_name,display_status\n"
+            "Lockheed,SR-71,A,61-7960,Castle Air Museum,on_display\n"
+            "Convair,B-58,A,55-0666,Castle Air Museum,on_display\n"
+        )
+        r = admin_client.post("/api/v1/aircraft/bulk_import",
+                              json={"format": "csv", "data": csv_text})
+        report = r.get_json()
+        assert report["created"] == 2
+        assert report["linked"] == 2
+        assert models.AircraftMuseum.query.count() == 2
+
+    def test_dry_run_counts_links_without_writing(
+        self, admin_client, db_session, make_museum
+    ):
+        import models
+        make_museum(name="Castle Air Museum", city="Atwater")
+        payload = {"format": "json", "dry_run": True, "data": json.dumps([
+            {"manufacturer": "Lockheed", "model": "SR-71",
+             "museum_name": "Castle Air Museum"},
+        ])}
+        r = admin_client.post("/api/v1/aircraft/bulk_import", json=payload)
+        report = r.get_json()
+        assert report["dry_run"] is True
+        assert report["linked"] == 1
+        assert models.Aircraft.query.count() == 0
+        assert models.AircraftMuseum.query.count() == 0
+
+
 class TestBulkImportPermissions:
 
     @pytest.fixture

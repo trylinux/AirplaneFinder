@@ -66,6 +66,7 @@
     <h3 id="format-help-title"></h3>
     <pre id="format-help-csv" style="font-size:.78rem;"></pre>
     <pre id="format-help-json" style="font-size:.78rem;"></pre>
+    <p id="format-help-note" class="card-subtitle"></p>
 </div>
 {% endblock %}
 
@@ -90,20 +91,27 @@ $(function() {
             title: 'Aircraft format',
             csv:
                 'manufacturer,model,variant,tail_number,model_name,aircraft_name,' +
-                'aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases\n' +
+                'aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,' +
+                'museum_name,display_status\n' +
                 'Lockheed,C-130,H,55-0014,Hercules,,fixed_wing,,military,transport,1965,' +
-                '"Combat Talon variant","Herc;Hercules"\n' +
+                '"Combat Talon variant","Herc;Hercules",Castle Air Museum,on_display\n' +
                 'Boeing,B-29,,44-86292,Superfortress,Bockscar,fixed_wing,,military,bomber,1944,' +
-                '"Dropped Fat Man on Nagasaki",',
+                '"Dropped Fat Man on Nagasaki",,,',
             json: JSON.stringify([
                 {
                     manufacturer: "Lockheed", model: "C-130", variant: "H",
                     tail_number: "55-0014", model_name: "Hercules",
                     aircraft_type: "fixed_wing", military_civilian: "military",
                     role_type: "transport", year_built: 1965,
-                    aliases: ["Herc", "Hercules"]
+                    aliases: ["Herc", "Hercules"],
+                    museum_name: "Castle Air Museum", display_status: "on_display"
                 }
-            ], null, 2)
+            ], null, 2),
+            note:
+                'Optional link columns: museum_id OR museum_name (not both) attaches '
+                + 'each aircraft to a museum as it is created. The museum must already '
+                + 'exist — import museums first. display_status defaults to on_display '
+                + '(also: in_storage, under_restoration).'
         },
         museums: {
             title: 'Museum format',
@@ -127,6 +135,7 @@ $(function() {
         $('#format-help-title').text(f.title);
         $('#format-help-csv').text('# CSV\n' + f.csv);
         $('#format-help-json').text('# JSON\n' + f.json);
+        $('#format-help-note').text(f.note || '');
         $('#format-help').show();
     });
 

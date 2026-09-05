@@ -190,8 +190,11 @@ Either send a multipart `file` upload, or a JSON body of the form
 The response is a per-row report:
 
 ```json
-{ "created": 4, "skipped": 0, "errors": [], "dry_run": false }
+{ "created": 4, "linked": 4, "skipped": 0, "errors": [], "dry_run": false }
 ```
+
+`linked` counts how many rows also produced a museum exhibit link (see the
+link columns below).
 
 **Rules**
 
@@ -210,6 +213,16 @@ The response is a per-row report:
 `role_type`, `year_built`, `description`, `aliases`. Required:
 `manufacturer`, `model`. `aliases` in CSV is **semicolon**-separated
 (`Herc;Hercules`); in JSON it's an array.
+
+**Optional link columns** — `museum_id`, `museum_name`, `display_status`.
+Supplying `museum_id` *or* `museum_name` (not both) also creates the
+exhibit link, so one file can say what the aircraft is and where to go see
+it. The museum must already exist — import museums first. `museum_name`
+matches case-insensitively but must be exact and unambiguous; if two
+museums share a name the row errors and tells you their ids.
+`display_status` defaults to `on_display` (`in_storage`,
+`under_restoration` also valid). An unresolvable museum fails the whole
+batch like any other validation error.
 
 **Museum field names**
 

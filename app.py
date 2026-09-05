@@ -1481,6 +1481,24 @@ def _validate_aircraft_row(row):
 
     year_built = _coerce_int(row.get("year_built"), "year_built", errors)
 
+    # Optional museum link. A row may name the museum by id OR by name, not
+    # both — accepting both invites a row where they disagree, and silently
+    # picking one would link the aircraft somewhere the curator didn't mean.
+    # The name is resolved against the DB later (in _bulk_import_aircraft);
+    # this validator only checks shape.
+    museum_id = _coerce_int(row.get("museum_id"), "museum_id", errors)
+    museum_name = g("museum_name") or None
+    if museum_id is not None and museum_name:
+        errors.append({
+            "field": "museum_id/museum_name",
+            "message": "set one or the other, not both",
+        })
+
+    display_status = g("display_status") or _DISPLAY_STATUS_VIEWABLE
+    if display_status not in _DISPLAY_STATUS_VALUES:
+        errors.append({"field": "display_status",
+                       "message": f"must be one of {sorted(_DISPLAY_STATUS_VALUES)}"})
+
     if errors:
         return None, errors
 
@@ -1498,6 +1516,10 @@ def _validate_aircraft_row(row):
         "year_built": year_built,
         "description": g("description") or None,
         "aliases": _split_aliases(row.get("aliases")),
+        # Link fields — popped off before the Aircraft(**clean) construction.
+        "museum_id": museum_id,
+        "museum_name": museum_name,
+        "display_status": display_status,
     }, []
 
 
@@ -1543,10 +1565,67 @@ def _validate_museum_row(row):
     }, []
 
 
+def _resolve_import_museum(clean, row_index, report):
+    """Resolve a row's museum_id/museum_name into a concrete Museum id.
+
+    Returns the id, or None when the row asks for no link. Appends to
+    ``report['errors']`` (and returns None) when the museum can't be
+    resolved or the user lacks write access to it.
+    """
+    museum_id = clean.get("museum_id")
+    museum_name = clean.get("museum_name")
+
+    if museum_id is None and not museum_name:
+        return None
+
+    if museum_name:
+        # Case-insensitive exact match. Deliberately not a LIKE/prefix match:
+        # "Air Museum" shouldn't silently bind to whichever row sorts first.
+        matches = Museum.query.filter(
+            func.lower(Museum.name) == museum_name.lower()
+        ).all()
+        if not matches:
+            report["errors"].append({
+                "row": row_index, "field": "museum_name",
+                "message": f"no museum named {museum_name!r} (create it first)",
+            })
+            return None
+        if len(matches) > 1:
+            report["errors"].append({
+                "row": row_index, "field": "museum_name",
+                "message": (f"{len(matches)} museums named {museum_name!r} — "
+                            f"use museum_id instead (ids: "
+                            f"{sorted(m.id for m in matches)})"),
+            })
+            return None
+        museum_id = matches[0].id
+    elif Museum.query.get(museum_id) is None:
+        report["errors"].append({
+            "row": row_index, "field": "museum_id",
+            "message": f"no museum with id={museum_id}",
+        })
+        return None
+
+    # Scoped users can only attach aircraft to museums they administer.
+    if not _user_can_write_museum(museum_id):
+        report["errors"].append({
+            "row": row_index, "field": "museum_id",
+            "message": f"you do not have write access to museum id={museum_id}",
+        })
+        return None
+
+    return museum_id
+
+
 def _bulk_import_aircraft(rows, dry_run):
     """Validate + (optionally) insert aircraft rows. Atomic: any error
-    triggers rollback so an import never half-applies."""
-    report = {"created": 0, "skipped": 0, "errors": [], "dry_run": dry_run}
+    triggers rollback so an import never half-applies.
+
+    A row may carry ``museum_id`` or ``museum_name`` (plus an optional
+    ``display_status``) to create the exhibit link in the same pass — so one
+    file can populate both the aircraft and where to go see it.
+    """
+    report = {"created": 0, "skipped": 0, "linked": 0, "errors": [], "dry_run": dry_run}
 
     # First pass: validate every row, collect errors with row indices.
     cleaned = []
@@ -1570,12 +1649,20 @@ def _bulk_import_aircraft(rows, dry_run):
             seen_pairs.add(pair)
         cleaned.append((i, clean))
 
+    # Resolve museum references before deciding whether to write anything —
+    # a typo'd museum_name should fail the whole import at validation time,
+    # not halfway through the insert loop.
+    resolved_museums = {}
+    for i, clean in cleaned:
+        resolved_museums[i] = _resolve_import_museum(clean, i, report)
+
     # If validation failed anywhere, bail without writing.
     if report["errors"]:
         return report
 
     if dry_run:
         report["created"] = len(cleaned)
+        report["linked"] = sum(1 for v in resolved_museums.values() if v is not None)
         return report
 
     # Second pass: insert. Existing-DB duplicate check uses our helper.
@@ -1590,11 +1677,24 @@ def _bulk_import_aircraft(rows, dry_run):
                 })
                 continue
             aliases = clean.pop("aliases")
+            # Link fields aren't Aircraft columns — pull them out before
+            # constructing the model.
+            clean.pop("museum_id", None)
+            clean.pop("museum_name", None)
+            display_status = clean.pop("display_status")
             ac = Aircraft(**clean)
             db.session.add(ac)
             db.session.flush()
             for alias in aliases:
                 db.session.add(AircraftAlias(aircraft_id=ac.id, alias=alias))
+            museum_id = resolved_museums.get(i)
+            if museum_id is not None:
+                db.session.add(AircraftMuseum(
+                    aircraft_id=ac.id,
+                    museum_id=museum_id,
+                    display_status=display_status,
+                ))
+                report["linked"] += 1
             report["created"] += 1
         # Roll back if ANY row triggered a "skipped because duplicate" error —
         # the alternative is partial success which is hard to recover from.
@@ -1602,12 +1702,14 @@ def _bulk_import_aircraft(rows, dry_run):
         if report["errors"]:
             db.session.rollback()
             report["created"] = 0   # report rolls back too
+            report["linked"] = 0
         else:
             db.session.commit()
     except Exception as exc:
         db.session.rollback()
         report["errors"].append({"row": -1, "field": "_db", "message": str(exc)})
         report["created"] = 0
+        report["linked"] = 0
     return report
 
 
@@ -1721,8 +1823,9 @@ def api_bulk_import_aircraft():
     report = _bulk_import_aircraft(rows, dry_run=dry_run)
     user = _get_effective_user()
     change_log.info(
-        f"BULK_IMPORT_AIRCRAFT created={report['created']} skipped={report['skipped']} "
-        f"errors={len(report['errors'])} dry_run={dry_run} by={user.username}"
+        f"BULK_IMPORT_AIRCRAFT created={report['created']} linked={report['linked']} "
+        f"skipped={report['skipped']} errors={len(report['errors'])} "
+        f"dry_run={dry_run} by={user.username}"
     )
     return jsonify(report)
 
