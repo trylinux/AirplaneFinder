@@ -98,7 +98,50 @@ aviation library and artifact museum, no airframes).
 | `travis_afb_aircraft.csv` | 33 | 33 (100%) | validated, 0 errors |
 | `oakland_aviation_museum_aircraft.csv` | 20 | 19 (95%) | validated, 0 errors |
 | `aerospace_museum_of_california_aircraft.csv` | 16 | 15 (94%) | validated, 0 errors |
-| **Total** | **540** | **267 (49%)** | |
+| `uss_midway_aircraft.csv` | 35 | **0 (0%)** | validated, 0 errors |
+| `western_museum_of_flight_aircraft.csv` | 16 | 7 (44%) | validated, 0 errors |
+| `joe_davies_heritage_airpark_aircraft.csv` | 20 | 20 (100%) | validated, 0 errors |
+| `chico_air_museum_aircraft.csv` | 18 | 7 (39%) | validated, 0 errors |
+| `caf_socal_aircraft.csv` | 14 | 8 (57%) | validated, 0 errors |
+| `uss_hornet_aircraft.csv` | 12 | 7 (58%) | validated, 0 errors |
+| `moffett_field_museum_aircraft.csv` | 9 | 8 (89%) | validated, 0 errors |
+| `mojave_legacy_park_aircraft.csv` | 2 | 1 (50%) | validated, 0 errors |
+| `san_diego_air_and_space_aircraft.csv` | 61 | 8 (13%) | validated, 0 errors |
+| **Total** | **727** | **334 (45%)** | **18 museums** |
+
+### San Diego Air & Space — a TOP-UP, read this before importing
+
+This is the first top-up file rather than a fresh museum, and it has two
+traps:
+
+1. **The museum is already in your database as "San Diego Air and Space
+   Museum" (id 39) — spelled with "and", not "&".** The file uses that exact
+   string. Changing it to an ampersand would leave all 61 rows
+   unresolvable and roll the batch back. Note this is a *different* record
+   from "San Diego Air & Space Museum Gillespie Field Annex" (id 71), which
+   `ca_museums.csv` added and which is still empty.
+2. **Five researched aircraft were removed because they are already
+   there**: Apollo 9 Command Module, A-12 60-6933, YF2Y-1 135763, Curtiss
+   A-1, and the MQ-1 Predator. Four of the five have **no tail number in
+   the database**, so they would not have collided — they would have
+   silently duplicated. 67 researched, 61 written.
+
+**24 of the 61 are replicas or mock-ups**, now marked in `description` and
+tagged `replica` in `aliases`. This museum lost much of its original
+collection in a 1978 fire and rebuilt with reproductions, so this is
+expected rather than sloppy — but presenting a reproduction as an original
+is exactly the sort of thing a visitor notices. Genuine originals worth
+knowing: the **Apollo 9 Command Module "Gumdrop" is flown hardware**
+(already in your database), while the Mercury, Gemini and Apollo CSM items
+are mock-ups that never flew. The **Montgomery Evergreen glider (1911)** is
+a real pioneer-era original.
+
+Their "MiG-17" is, per Wikipedia, actually a Chinese-built Shenyang J-5
+(licensed copy). Kept under the museum's own labelling, with `Shenyang J-5`
+in aliases.
+
+Excluded: a Ryan PT-22 and a Bell UH-1V that the museum's own pages place
+at the Gillespie Field Annex, not Balboa Park.
 
 Run it all with `bash scripts/import_california.sh --dry-run` first.
 
@@ -135,6 +178,53 @@ Run it all with `bash scripts/import_california.sh --dry-run` first.
   (notably C-47B "Betsy's Biscuit Bomber") so may not always be on site.
   Its UH-34D and UH-19D are composite airframes, so their serials describe
   the aircraft as displayed rather than one clean identity.
+### Batch 4 caveats
+
+- **Joe Davies is the second file at 100% serial coverage** — the City of
+  Palmdale publishes an aircraft-by-aircraft brochure. Note its F-16
+  (78-0105) is a *composite* radar-target airframe: forward fuselage from
+  84-1228, aft from 78-0105. One record, two donor airframes.
+- **Excluded from Joe Davies**: four F-117s, a U-2R, an F-104N and an L-1011
+  that sit at the Lockheed Martin plant entrance elsewhere on Plant 42, not
+  in the airpark. The city's own brochure draws that line.
+- **Mojave yielded only 2 rows.** It's a working spaceport, not a museum,
+  and has no versioned collection list. The Roton ATV (N990RR) is a genuine
+  vehicle that made three hover flights in 1999; the SpaceShipOne is a
+  full-size **replica** (the real one is in the Smithsonian). Excluded a
+  small-scale Voyager model, plus a Draken and an F-4D documented as being
+  elsewhere on airport property.
+- **CAF SoCal aircraft mostly fly.** 11 of 14 are airworthy warbirds that
+  travel to airshows, so "on display" is truer on average than on any given
+  day. Their Bearcat is in restoration.
+- **USS Hornet's three spacecraft rows need care.** Apollo CM-011 is a real
+  uncrewed Block I flight-test article (on loan from the Smithsonian), not a
+  flown lunar capsule. Both Gemini items are explicitly **boilerplate** —
+  non-functional training mock-ups.
+- **Three of Moffett's nine are cockpit sections only** (AV-8A Harrier,
+  TP-3A Orion, F-8A Crusader), flagged in `aliases`. Their serials came from
+  Wikipedia citing Aerial Visuals, since the museum publishes none. Their
+  site mentions a P-2 Neptune that no source could pin to a serial, so it
+  is not included.
+- **Chico**: the SPAD S.XIII is a flying **replica**, and the BT-13 is on
+  loan rather than owned. One entry on their list ("EAA Biplane") had no
+  identifiable manufacturer and was dropped.
+
+### Batch 3 caveats
+
+- **USS Midway has ZERO published serials** — 0 of 35. Their aircraft gallery
+  pages give generic type specifications and never name the airframe on deck.
+  This is the first file in the set where *nothing* has a tail number, which
+  matters: blank tails never collide, so re-importing this file would create
+  35 duplicates with no error raised. The idempotency guard in
+  `import_california.sh` is the only thing standing between you and that.
+  Their O-1 Bird Dog is an explicit **replica** — the original Buang-Ly
+  aircraft is at Pensacola — flagged in `aliases`.
+- **Western Museum of Flight** is Northrop-heavy and full of one-offs. The
+  **YF-23A "Black Widow II" (PAV-2, 87-801)** is on long-term loan from NASA,
+  and the **YO-3A Quiet Star** is in storage rather than on display. The
+  Montgomery Glider is a 1985 replica of an 1883 design. Excluded the
+  Northrop RP-99: the museum's own page says no flight article was ever
+  built, so it is a wind-tunnel mock-up, not an airframe.
 - **Oakland** includes two nose-section-only airframes (DC-6BF N444SQ,
   S-2A 136624), kept as rows and flagged in `aliases`. Excluded a 1/50-scale
   dirigible model and two aircraft the registry marks "Removed".

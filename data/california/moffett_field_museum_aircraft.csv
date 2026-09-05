@@ -1,0 +1,10 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,AH-1,S,68-15155,Cobra,,rotary_wing,,military,ground_attack,,,AH-1;Cobra,Moffett Field Museum,on_display
+Hawker Siddeley,AV-8,A,,Harrier,,fixed_wing,monoplane,military,ground_attack,,,AV-8;Harrier;cockpit section,Moffett Field Museum,on_display
+Lockheed,U-2,C,56-6681,Dragon Lady,,fixed_wing,monoplane,military,recon,,,U-2;Dragon Lady,Moffett Field Museum,on_display
+Lockheed,TF-104,G,28+09,Starfighter,,fixed_wing,monoplane,military,trainer,,,TF-104;F-104;Starfighter,Moffett Field Museum,on_display
+Lockheed,P-3,A,150509,Orion,,fixed_wing,monoplane,military,recon,,,P-3;Orion,Moffett Field Museum,on_display
+Lockheed,TP-3,A,151370,Orion,,fixed_wing,monoplane,military,trainer,,,TP-3;P-3;Orion;cockpit section,Moffett Field Museum,on_display
+McDonnell Douglas,F/A-18,A,161521,Hornet,,fixed_wing,monoplane,military,fighter,,,F-18;Hornet,Moffett Field Museum,on_display
+Vought,F-8,A,145399,Crusader,,fixed_wing,monoplane,military,fighter,,,F-8;Crusader;cockpit section,Moffett Field Museum,on_display
+Vultee,BT-13,A,41-22386,Valiant,,fixed_wing,monoplane,military,trainer,,,BT-13;Valiant;Vibrator,Moffett Field Museum,on_display

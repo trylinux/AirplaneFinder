@@ -1,0 +1,13 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Sikorsky,SH-3,H,148999,Sea King,,rotary_wing,,military,search_rescue,1961,,SH-3;Sea King,"USS Hornet Sea, Air & Space Museum",on_display
+Vought,F8U,1,,Crusader,,fixed_wing,monoplane,military,fighter,,,F8U;F-8A;Crusader,"USS Hornet Sea, Air & Space Museum",on_display
+General Motors,TBM,3E,,Avenger,,fixed_wing,monoplane,military,bomber,,,TBM;Avenger,"USS Hornet Sea, Air & Space Museum",on_display
+General Motors,FM,2,,Wildcat,,fixed_wing,monoplane,military,fighter,,,FM-2;Wildcat,"USS Hornet Sea, Air & Space Museum",on_display
+Grumman,F-14,A,162689,Tomcat,,fixed_wing,monoplane,military,fighter,1986,,F-14;Tomcat,"USS Hornet Sea, Air & Space Museum",on_display
+McDonnell Douglas,F/A-18,C,163502,Hornet,,fixed_wing,monoplane,military,fighter,,,F-18;Hornet,"USS Hornet Sea, Air & Space Museum",on_display
+Piasecki,HUP,1,,Retriever,,rotary_wing,,military,search_rescue,,,HUP;Retriever,"USS Hornet Sea, Air & Space Museum",on_display
+Kaman,SH-2,,,Seasprite,,rotary_wing,,military,utility,,,SH-2;Seasprite,"USS Hornet Sea, Air & Space Museum",on_display
+North American,T-28,B,529263,Trojan,,fixed_wing,monoplane,military,trainer,,,T-28;Trojan,"USS Hornet Sea, Air & Space Museum",on_display
+North American Rockwell,Apollo CM,Block I,CM-011,,,spacecraft,,civilian,space,,,Apollo;CM-011,"USS Hornet Sea, Air & Space Museum",on_display
+McDonnell,Gemini,Boilerplate,MSC-307,,,spacecraft,,civilian,space,,,Gemini;boilerplate,"USS Hornet Sea, Air & Space Museum",on_display
+McDonnell,Gemini,Boilerplate,MSC-302,,,spacecraft,,civilian,space,,,Gemini;boilerplate,"USS Hornet Sea, Air & Space Museum",on_display

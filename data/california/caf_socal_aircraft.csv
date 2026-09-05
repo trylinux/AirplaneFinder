@@ -1,0 +1,15 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Curtiss,C-46,F,N53594,Commando,China Doll,fixed_wing,monoplane,military,transport,1945,,C-46;Commando;China Doll,Commemorative Air Force Southern California Wing Museum,on_display
+North American,PBJ,1J,35857,Mitchell,Semper Fi,fixed_wing,monoplane,military,bomber,1945,,PBJ;B-25J;Mitchell,Commemorative Air Force Southern California Wing Museum,on_display
+Fairchild,PT-19,A,N641BP,Cornell,,fixed_wing,monoplane,military,trainer,,,PT-19;Cornell,Commemorative Air Force Southern California Wing Museum,on_display
+Grumman,F6F,5,N1078Z,Hellcat,,fixed_wing,monoplane,military,fighter,,,F6F;Hellcat,Commemorative Air Force Southern California Wing Museum,on_display
+Grumman,F8F,2,122674,Bearcat,,fixed_wing,monoplane,military,fighter,,,F8F;Bearcat,Commemorative Air Force Southern California Wing Museum,on_display
+Mitsubishi,A6M,3,,Zero,,fixed_wing,monoplane,military,fighter,,,A6M;Zero;Zeke,Commemorative Air Force Southern California Wing Museum,on_display
+Supermarine,Spitfire,Mk.XIV,NH749,,,fixed_wing,monoplane,military,fighter,1945,,Spitfire,Commemorative Air Force Southern California Wing Museum,on_display
+North American,SNJ,5,N89014,Texan,,fixed_wing,monoplane,military,trainer,,,SNJ;Texan,Commemorative Air Force Southern California Wing Museum,on_display
+North American,SNJ,4,N6411D,Texan,BlueBird,fixed_wing,monoplane,military,trainer,1942,,SNJ;Texan,Commemorative Air Force Southern California Wing Museum,on_display
+Fairchild,F-24,R,,Forwarder,,fixed_wing,monoplane,military,utility,1946,,F-24;Forwarder;Argus,Commemorative Air Force Southern California Wing Museum,on_display
+ERCO,Ercoupe,,,,,fixed_wing,monoplane,civilian,private,,,Ercoupe;415,Commemorative Air Force Southern California Wing Museum,on_display
+North American,Navion,,,,,fixed_wing,monoplane,civilian,private,,,Navion,Commemorative Air Force Southern California Wing Museum,on_display
+Fieseler,Fi 156,,,Storch,,fixed_wing,monoplane,military,utility,,,Fi 156;Storch,Commemorative Air Force Southern California Wing Museum,on_display
+Messerschmitt,Bf 108,,,Taifun,,fixed_wing,monoplane,civilian,private,,,Bf 108;Taifun,Commemorative Air Force Southern California Wing Museum,on_display

@@ -47,7 +47,10 @@ failed=0
 already_loaded() {  # already_loaded <csv>  -> 0 if that museum already has aircraft
     local file="$1" museum id count
     command -v jq >/dev/null 2>&1 || return 1
-    museum=$(awk -F',' 'NR==2 {print $(NF-1)}' "$file" | tr -d '"')
+    museum=$(python3 -c "
+import csv,sys
+r=next(csv.DictReader(open(sys.argv[1],encoding='utf-8')),None)
+print(r['museum_name'] if r else '')" "$file" 2>/dev/null)
     [[ -z "$museum" ]] && return 1
     id=$(curl -sS -G --data-urlencode "q=${museum}" "${HOST}/api/v1/museums/search" \
          | jq -r --arg n "$museum" '.results[] | select(.name == $n) | .id' | head -1)

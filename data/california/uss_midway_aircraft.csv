@@ -1,0 +1,36 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,FJ,3,,Fury,,fixed_wing,monoplane,military,fighter,,,FJ-3;Fury,USS Midway Museum,on_display
+Lockheed,S-3,,,,Viking,fixed_wing,monoplane,military,recon,,,S-3;Viking,USS Midway Museum,on_display
+North American,RA-5,C,,Vigilante,,fixed_wing,monoplane,military,recon,,,RA-5;A-5;Vigilante,USS Midway Museum,on_display
+North American,T-2,,,,Buckeye,fixed_wing,monoplane,military,trainer,,,T-2;Buckeye,USS Midway Museum,on_display
+Grumman,F9F,,,Panther,,fixed_wing,monoplane,military,fighter,,,F9F;Panther,USS Midway Museum,on_display
+Grumman,A-6,E,,Intruder,,fixed_wing,monoplane,military,bomber,,,A-6;Intruder,USS Midway Museum,on_display
+Douglas,EKA-3,B,,Skywarrior,,fixed_wing,monoplane,military,tanker,,,EKA-3;A-3;Skywarrior;Whale,USS Midway Museum,on_display
+Vought,F-8,,,Crusader,,fixed_wing,monoplane,military,fighter,,,F-8;Crusader,USS Midway Museum,on_display
+Grumman,F9F,8P,,Cougar,,fixed_wing,monoplane,military,recon,,,F9F-8P;Cougar,USS Midway Museum,on_display
+McDonnell Douglas,F-4,N,,Phantom II,,fixed_wing,monoplane,military,fighter,,,F-4;Phantom II,USS Midway Museum,on_display
+McDonnell Douglas,F/A-18,A,,Hornet,,fixed_wing,monoplane,military,fighter,,,F-18;Hornet,USS Midway Museum,on_display
+Grumman,F-14,A,,Tomcat,,fixed_wing,monoplane,military,fighter,,,F-14;Tomcat,USS Midway Museum,on_display
+Vought,A-7,B,,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,A-7;Corsair II;SLUF,USS Midway Museum,on_display
+Douglas,A-4,F,,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,A-4;Skyhawk;Scooter,USS Midway Museum,on_display
+Grumman,EA-6,B,,Prowler,,fixed_wing,monoplane,military,electronic_warfare,,,EA-6B;Prowler,USS Midway Museum,on_display
+Vought,F7U,3,,Cutlass,,fixed_wing,monoplane,military,fighter,,,F7U;Cutlass,USS Midway Museum,on_display
+Douglas,TBD,1,,Devastator,,fixed_wing,monoplane,military,bomber,,,TBD;Devastator,USS Midway Museum,on_display
+Douglas,SBD,,,Dauntless,,fixed_wing,monoplane,military,bomber,,,SBD;Dauntless,USS Midway Museum,on_display
+Grumman,C-1,A,,Trader,,fixed_wing,monoplane,military,transport,,,C-1;Trader;COD,USS Midway Museum,on_display
+North American,SNJ,,,Texan,,fixed_wing,monoplane,military,trainer,,,SNJ;Texan,USS Midway Museum,on_display
+General Motors,TBM,3,,Avenger,,fixed_wing,monoplane,military,bomber,,,TBM;Avenger,USS Midway Museum,on_display
+Douglas,A-1,H,,Skyraider,,fixed_wing,monoplane,military,ground_attack,,,A-1;Skyraider;Spad,USS Midway Museum,on_display
+Vought,F4U,,,Corsair,,fixed_wing,monoplane,military,fighter,,,F4U;Corsair,USS Midway Museum,on_display
+Grumman,E-2,B,,Hawkeye,,fixed_wing,monoplane,military,recon,,,E-2;Hawkeye;Hummer,USS Midway Museum,on_display
+Grumman,F4F,,,Wildcat,,fixed_wing,monoplane,military,fighter,,,F4F;Wildcat,USS Midway Museum,on_display
+Boeing Vertol,HH-46,D,,Sea Knight,,rotary_wing,,military,utility,,,HH-46;Sea Knight,USS Midway Museum,on_display
+Kaman,SH-2,F,,Seasprite,,rotary_wing,,military,recon,,,SH-2;Seasprite,USS Midway Museum,on_display
+Piasecki,HUP,2,,Retriever,,rotary_wing,,military,search_rescue,,,HUP;Retriever,USS Midway Museum,on_display
+Bell,UH-1,,,Iroquois,,rotary_wing,,military,ground_attack,,,UH-1;Huey;Seawolves,USS Midway Museum,on_display
+Sikorsky,H-34,,,Seabat,,rotary_wing,,military,utility,,,H-34;HSS-1;Seabat,USS Midway Museum,on_display
+Sikorsky,HO3S,1,,Dragonfly,,rotary_wing,,military,search_rescue,,,HO3S;Dragonfly,USS Midway Museum,on_display
+Sikorsky,SH-3,,,Sea King,,rotary_wing,,military,utility,,,SH-3;Sea King,USS Midway Museum,on_display
+Sikorsky,SH-60,,,Seahawk,,rotary_wing,,military,utility,,,SH-60;Seahawk,USS Midway Museum,on_display
+Cessna,O-1,,,Bird Dog,,fixed_wing,monoplane,military,recon,,,O-1;Bird Dog;replica,USS Midway Museum,on_display
+Grumman,C-2,A,,Greyhound,,fixed_wing,monoplane,military,transport,,,C-2;Greyhound;COD,USS Midway Museum,on_display

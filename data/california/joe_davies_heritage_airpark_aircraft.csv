@@ -1,0 +1,21 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Curtiss,C-46,D,44-78019,Commando,,fixed_wing,monoplane,military,transport,,,C-46;Commando,Joe Davies Heritage Airpark at Palmdale Plant 42,on_display
+McDonnell,F-101,F,58-0324,Voodoo,,fixed_wing,monoplane,military,fighter,,,F-101;Voodoo,Joe Davies Heritage Airpark at Palmdale Plant 42,on_display
+North American,F-100,D,54-2299,Super Sabre,,fixed_wing,monoplane,military,fighter,,,F-100;Hun,Joe Davies Heritage Airpark at Palmdale Plant 42,on_display
+Lockheed,F-104,C,57-0915,Starfighter,,fixed_wing,monoplane,military,fighter,,,F-104;Zipper,Joe Davies Heritage Airpark at Palmdale Plant 42,on_display
+Republic,F-105,G,62-4416,Thunderchief,,fixed_wing,monoplane,military,electronic_warfare,,,F-105;Thud;Wild Weasel,Joe Davies Heritage Airpark at Palmdale Plant 42,on_display
+Grumman,F-14,D,164350,Tomcat,,fixed_wing,monoplane,military,fighter,,,F-14;Tomcat,Joe Davies Heritage Airpark at Palmdale Plant 42,on_display
+General Dynamics,F-16,,78-0105,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,,F-16;Viper,Joe Davies Heritage Airpark at Palmdale Plant 42,on_display
+North American,AGM-28,,M-025,Hound Dog,,missile_rocket,,military,cruise,,,AGM-28;Hound Dog,Joe Davies Heritage Airpark at Palmdale Plant 42,on_display
+Boeing,B-52,F,57-0038,Stratofortress,,fixed_wing,monoplane,military,bomber,,,B-52;BUFF,Joe Davies Heritage Airpark at Palmdale Plant 42,on_display
+Boeing,747,SR-46,N911NA,Shuttle Carrier Aircraft,NASA 911,fixed_wing,monoplane,civilian,space,1973,,747;SCA;NASA 911,Joe Davies Heritage Airpark at Palmdale Plant 42,on_display
+Scaled Composites,143,,N143SC,Triumph,,fixed_wing,monoplane,civilian,experimental,,,Model 143;Triumph,Joe Davies Heritage Airpark at Palmdale Plant 42,on_display
+Lockheed,T-33,A,51-4533,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-33;T-Bird,Joe Davies Heritage Airpark at Palmdale Plant 42,on_display
+Lockheed Martin,X-55,A,N807LM,Advanced Composite Cargo Aircraft,,fixed_wing,monoplane,military,test,,,X-55;ACCA,Joe Davies Heritage Airpark at Palmdale Plant 42,on_display
+Vought,A-7,B,154449,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,A-7;SLUF,Joe Davies Heritage Airpark at Palmdale Plant 42,on_display
+McDonnell Douglas,F-4,D,65-0696,Phantom II,,fixed_wing,monoplane,military,fighter,,,F-4;Phantom II,Joe Davies Heritage Airpark at Palmdale Plant 42,on_display
+Northrop,T-38,A,63-8182,Talon,,fixed_wing,monoplane,military,trainer,,,T-38;Talon,Joe Davies Heritage Airpark at Palmdale Plant 42,on_display
+Douglas,A-4,C,145067,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,A-4;Scooter,Joe Davies Heritage Airpark at Palmdale Plant 42,on_display
+Northrop,F-5,E,74-1529,Tiger II,,fixed_wing,monoplane,military,fighter,,,F-5;Tiger II,Joe Davies Heritage Airpark at Palmdale Plant 42,on_display
+Lockheed,C-140,,N814NA,JetStar,,fixed_wing,monoplane,civilian,experimental,,,C-140;JetStar;NASA 4,Joe Davies Heritage Airpark at Palmdale Plant 42,on_display
+Canadair,CL-13,Mk.5,23231,Sabre,,fixed_wing,monoplane,military,fighter,,,CL-13;Sabre;N91FS,Joe Davies Heritage Airpark at Palmdale Plant 42,on_display

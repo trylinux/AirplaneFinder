@@ -1,0 +1,17 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,F-86,,55-3937,Sabre,,fixed_wing,monoplane,military,fighter,1952,,F-86;Sabre,Western Museum of Flight,on_display
+Northrop,YF-17,,72-1569,Cobra,,fixed_wing,monoplane,military,test,,,YF-17;Cobra,Western Museum of Flight,on_display
+Grumman,F-14,A,159830,Tomcat,,fixed_wing,monoplane,military,fighter,,,F-14;Tomcat,Western Museum of Flight,on_display
+Northrop,F-5,A,207,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,,F-5;Freedom Fighter,Western Museum of Flight,on_display
+Douglas,A-4,A,142227,Skyhawk,,fixed_wing,monoplane,military,ground_attack,1957,,A-4;Skyhawk,Western Museum of Flight,on_display
+Northrop,JB-1,,,Bat,,fixed_wing,monoplane,military,test,,,JB-1;Bat;MX-543;flying wing,Western Museum of Flight,on_display
+Norman Ward,Montgomery Glider,,,,,fixed_wing,monoplane,civilian,experimental,1985,,Montgomery;replica,Western Museum of Flight,on_display
+Northrop,RP-76,,,,,fixed_wing,monoplane,military,drone,,,RP-76;AQM-38A,Western Museum of Flight,on_display
+Radioplane,RP-5,A,,,,fixed_wing,monoplane,military,drone,,,RP-5A;OQ-2;TDD-1,Western Museum of Flight,on_display
+Northrop,KD2R,5,,Shelduck,,fixed_wing,monoplane,military,drone,,,KD2R5;Shelduck;MQM-36,Western Museum of Flight,on_display
+Northrop,YF-23,A,87-801,Black Widow II,PAV-2,fixed_wing,monoplane,military,test,,,YF-23;Black Widow II;Spider,Western Museum of Flight,on_display
+Acme,S-1,,,Sierra Sue,,fixed_wing,monoplane,civilian,experimental,1948,,Acme S-1;Sierra Sue,Western Museum of Flight,on_display
+Northrop,RP-71,,,Falconer,,fixed_wing,monoplane,military,drone,,,RP-71;Falconer;MQM-57,Western Museum of Flight,on_display
+Bede,BD-5,,,,,fixed_wing,monoplane,civilian,experimental,,,BD-5;Octopussy scheme,Western Museum of Flight,on_display
+Northrop,NV-144,,,,,fixed_wing,monoplane,military,drone,,,NV-144,Western Museum of Flight,on_display
+Lockheed,YO-3,A,69-18007,Quiet Star,,fixed_wing,monoplane,military,recon,,,YO-3;Quiet Star,Western Museum of Flight,on_display

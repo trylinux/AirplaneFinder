@@ -1,0 +1,19 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Thorp,T-211,,,Sky Scooter,,fixed_wing,monoplane,civilian,private,,,T-211;Sky Scooter,Chico Air Museum,on_display
+Antonov,An-2,,RA-07618,Colt,,fixed_wing,biplane,civilian,utility,,,An-2;Colt,Chico Air Museum,on_display
+Bell,47,,,,,rotary_wing,,civilian,utility,,,Bell 47,Chico Air Museum,on_display
+Culver,LCA,,,Cadet,,fixed_wing,monoplane,civilian,private,,,Culver Cadet,Chico Air Museum,on_display
+Vought,A-7,D,70-0964,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,A-7;Corsair II;SLUF,Chico Air Museum,on_display
+Aero,L-29,,38,Delfin,,fixed_wing,monoplane,military,trainer,,,L-29;Delfin;Maya,Chico Air Museum,on_display
+Grumman,AF,2S,123088,Guardian,,fixed_wing,monoplane,military,recon,,,AF-2S;Guardian,Chico Air Museum,on_display
+Lockheed,P-2,H,147968,Neptune,,fixed_wing,monoplane,military,recon,,,P2V-7;P-2;Neptune,Chico Air Museum,on_display
+Lockheed,T-33,A,58-0491,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-33;T-Bird,Chico Air Museum,on_display
+McDonnell Douglas,F-15,C,80-0014,Eagle,,fixed_wing,monoplane,military,fighter,,,F-15;Eagle,Chico Air Museum,on_display
+North American,F-86,,,Sabre,Mama Inez,fixed_wing,monoplane,military,fighter,,,F-86;Sabre,Chico Air Museum,on_display
+Piasecki,H-21,,,Workhorse,,rotary_wing,,military,transport,,,H-21;Flying Banana,Chico Air Museum,on_display
+Pitts,S-12,,,,,fixed_wing,biplane,civilian,private,,,Pitts;Macho Stinker,Chico Air Museum,on_display
+Rotary Air Force,RAF 2000,GTX SE,,,,rotary_wing,,civilian,experimental,,,RAF 2000;gyrocopter,Chico Air Museum,on_display
+Schreder,HP-11,,,Airmate,,fixed_wing,monoplane,civilian,private,,,HP-11;Airmate;glider,Chico Air Museum,on_display
+SPAD,S.XIII,,,,,fixed_wing,biplane,military,fighter,,,SPAD XIII;replica,Chico Air Museum,on_display
+Taylor,Titch,,,,,fixed_wing,monoplane,civilian,experimental,,,Taylor Titch;Formula 1,Chico Air Museum,on_display
+Vultee,BT-13,,,Valiant,,fixed_wing,monoplane,military,trainer,,,BT-13;Valiant,Chico Air Museum,on_display

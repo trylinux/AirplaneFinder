@@ -1,0 +1,62 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Consolidated,PBY,5A,,Catalina,,fixed_wing,monoplane,military,recon,1943,,PBY;Catalina,San Diego Air and Space Museum,on_display
+Curtiss-Robertson,B-1,,329,Robin,,fixed_wing,monoplane,civilian,private,1929,,Curtiss Robin,San Diego Air and Space Museum,on_display
+Douglas,SBD,4,06900,Dauntless,,fixed_wing,monoplane,military,bomber,,,SBD;Dauntless,San Diego Air and Space Museum,on_display
+Ford,5-AT,11,,Trimotor,,fixed_wing,monoplane,civilian,commercial_transport,1928,,Trimotor;Tin Goose,San Diego Air and Space Museum,on_display
+Granville Brothers,R-1,,,Gee Bee,,fixed_wing,monoplane,civilian,experimental,,"Replica / reproduction, not an original airframe.",Gee Bee;R-1;replica,San Diego Air and Space Museum,on_display
+McDonnell,Mercury,,,,Sigma 7,spacecraft,,civilian,space,,"Replica / reproduction, not an original airframe.",Mercury;mock-up;replica,San Diego Air and Space Museum,on_display
+Mikoyan-Gurevich,MiG-17,,,Fresco,,fixed_wing,monoplane,military,fighter,,,MiG-17;Fresco;Shenyang J-5,San Diego Air and Space Museum,on_display
+McDonnell Douglas,F-4,S,,Phantom II,,fixed_wing,monoplane,military,fighter,,,F-4;Phantom II,San Diego Air and Space Museum,on_display
+Bell,AH-1,E,,Cobra,,rotary_wing,,military,ground_attack,1977,,AH-1;Cobra,San Diego Air and Space Museum,on_display
+Douglas,A-4,B,142905,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,A-4;Skyhawk,San Diego Air and Space Museum,on_display
+McDonnell Douglas,F/A-18,A,,Hornet,Blue Angel 1,fixed_wing,monoplane,military,fighter,,,F-18;Hornet;Blue Angels,San Diego Air and Space Museum,on_display
+McDonnell,Gemini,,,,,spacecraft,,civilian,space,,"Replica / reproduction, not an original airframe.",Gemini;mock-up;replica,San Diego Air and Space Museum,on_display
+Boeing,P-26,,,Peashooter,,fixed_wing,monoplane,military,fighter,,"Replica / reproduction, not an original airframe.",P-26;Peashooter;replica,San Diego Air and Space Museum,on_display
+Horten,229,V3,,,,fixed_wing,monoplane,military,fighter,,"Replica / reproduction, not an original airframe.",Ho 229;Horten;replica,San Diego Air and Space Museum,on_display
+Stearman,N2S,3,,Kaydet,,fixed_wing,biplane,military,trainer,1943,,N2S;Kaydet;Yellow Peril,San Diego Air and Space Museum,on_display
+North American,P-51,D,,Mustang,,fixed_wing,monoplane,military,fighter,1945,,P-51;Mustang,San Diego Air and Space Museum,on_display
+Messerschmitt,Bf 109,G-14,,,,fixed_wing,monoplane,military,fighter,1978,"Replica / reproduction, not an original airframe.",Bf 109;Gustav;replica,San Diego Air and Space Museum,on_display
+Supermarine,Spitfire,Mk.XVI,,,,fixed_wing,monoplane,military,fighter,,,Spitfire,San Diego Air and Space Museum,on_display
+Vought,F4U,7,,Corsair,,fixed_wing,monoplane,military,fighter,1953,,F4U;Corsair;AU-1,San Diego Air and Space Museum,on_display
+Mitsubishi,A6M,7,,Zero,,fixed_wing,monoplane,military,fighter,1945,,A6M;Zero;Zeke,San Diego Air and Space Museum,on_display
+Grumman,F6F,3,,Hellcat,,fixed_wing,monoplane,military,fighter,,,F6F;Hellcat,San Diego Air and Space Museum,on_display
+Grumman,F4F,4,,Wildcat,,fixed_wing,monoplane,military,fighter,,,F4F;Wildcat,San Diego Air and Space Museum,on_display
+Lincoln-Standard,J-1,,,,,fixed_wing,biplane,civilian,utility,,,Standard J-1;Hisso Standard,San Diego Air and Space Museum,on_display
+Consolidated,PT-1,,,Trusty,,fixed_wing,biplane,military,trainer,,,PT-1;Trusty,San Diego Air and Space Museum,on_display
+Aeronca,C-3,,,Collegian,,fixed_wing,monoplane,civilian,private,1933,,C-3;Flying Bathtub,San Diego Air and Space Museum,on_display
+Fleet,Model 2,,C600M,,,fixed_wing,biplane,civilian,utility,1929,,Fleet 2,San Diego Air and Space Museum,on_display
+Ryan,M-1,,,,,fixed_wing,monoplane,civilian,freighter,1979,"Replica / reproduction, not an original airframe.",Ryan M-1;replica,San Diego Air and Space Museum,on_display
+Lockheed,Vega,5B,,,,fixed_wing,monoplane,civilian,other,,"Replica / reproduction, not an original airframe.",Vega;replica,San Diego Air and Space Museum,on_display
+Bowlus,SP-1,,,Albatross,,fixed_wing,monoplane,civilian,private,1988,"Replica / reproduction, not an original airframe.",SP-1;Paperwing;replica,San Diego Air and Space Museum,on_display
+Ryan,STA,,,,,fixed_wing,monoplane,civilian,private,,,Ryan STA;Sport Trainer,San Diego Air and Space Museum,on_display
+Piper,J-3,C-65,,Cub,,fixed_wing,monoplane,civilian,private,1939,,J-3;Cub,San Diego Air and Space Museum,on_display
+Pitts,S-1,S,,Special,,fixed_wing,biplane,civilian,experimental,1975,,Pitts Special,San Diego Air and Space Museum,on_display
+Ryan,B-5,,NC731M,Brougham,,fixed_wing,monoplane,civilian,private,1931,,B-5;Brougham,San Diego Air and Space Museum,on_display
+Robinson,R44,,,,,rotary_wing,,civilian,private,,,R44,San Diego Air and Space Museum,on_display
+Fokker,Dr.I,,477/18,Dreidecker,,fixed_wing,triplane,military,fighter,,"Replica / reproduction, not an original airframe.",Dr.I;Triplane;Red Baron;replica,San Diego Air and Space Museum,on_display
+Albatros,D.Va,,,,,fixed_wing,biplane,military,fighter,,"Replica / reproduction, not an original airframe.",Albatros D.Va;replica,San Diego Air and Space Museum,on_display
+Fokker,E III,,,Eindecker,,fixed_wing,monoplane,military,fighter,1997,"Replica / reproduction, not an original airframe.",Eindecker;replica,San Diego Air and Space Museum,on_display
+SPAD,VII,,,,,fixed_wing,biplane,military,fighter,1917,,SPAD VII,San Diego Air and Space Museum,on_display
+Nieuport,28,C-1,,,,fixed_wing,biplane,military,fighter,,,Nieuport 28,San Diego Air and Space Museum,on_display
+Nieuport,11,,,Bebe,,fixed_wing,biplane,military,fighter,1962,,Nieuport 11;Bebe,San Diego Air and Space Museum,on_display
+Leonardo da Vinci,Ornithopter,,,,,fixed_wing,monoplane,civilian,experimental,,"Replica / reproduction, not an original airframe.",Ornithopter;da Vinci;replica,San Diego Air and Space Museum,on_display
+George Cayley,Glider,,,,,fixed_wing,monoplane,civilian,experimental,,"Replica / reproduction, not an original airframe.",Cayley Glider;replica,San Diego Air and Space Museum,on_display
+Otto Lilienthal,No. 11,,,Glider,,fixed_wing,monoplane,civilian,experimental,1978,"Replica / reproduction, not an original airframe.",Lilienthal;replica,San Diego Air and Space Museum,on_display
+John J. Montgomery,Evergreen,,,,,fixed_wing,monoplane,civilian,experimental,1911,,Montgomery;Evergreen,San Diego Air and Space Museum,on_display
+Wright Brothers,1902 Glider,,,,,fixed_wing,biplane,civilian,experimental,2003,"Replica / reproduction, not an original airframe.",Wright Glider;replica,San Diego Air and Space Museum,on_display
+Beachey-Eaton,Little Looper,,,,,fixed_wing,biplane,civilian,experimental,1948,"Replica / reproduction, not an original airframe.",Little Looper;Beachey;replica,San Diego Air and Space Museum,on_display
+Deperdussin,Type Militaire,,,,,fixed_wing,monoplane,military,recon,,,Deperdussin,San Diego Air and Space Museum,on_display
+Wright Brothers,1901 Glider,,,,,fixed_wing,biplane,civilian,experimental,2003,"Replica / reproduction, not an original airframe.",Wright Glider;replica,San Diego Air and Space Museum,on_display
+Octave Chanute,Glider,,,,,fixed_wing,biplane,civilian,experimental,1980,"Replica / reproduction, not an original airframe.",Chanute Glider;replica,San Diego Air and Space Museum,on_display
+Ryan,BQM-34,F,,Firebee II,,fixed_wing,monoplane,military,drone,1970,,BQM-34;Firebee,San Diego Air and Space Museum,on_display
+Ryan,NYP,3,,Spirit of St. Louis,,fixed_wing,monoplane,civilian,experimental,1979,"Replica / reproduction, not an original airframe.",NYP;Spirit of St. Louis;replica,San Diego Air and Space Museum,on_display
+Sopwith,Pup,,,,,fixed_wing,biplane,military,fighter,2003,"Replica / reproduction, not an original airframe.",Sopwith Pup;replica,San Diego Air and Space Museum,on_display
+Bell,X-1,,,,,fixed_wing,monoplane,military,test,,"Replica / reproduction, not an original airframe.",X-1;XS-1;replica,San Diego Air and Space Museum,on_display
+Northrop Grumman,MQ-8,B,FS-001,Fire Scout,,rotary_wing,,military,drone,,,MQ-8;Fire Scout,San Diego Air and Space Museum,on_display
+Bowlus,BA-100,,11,Baby Albatross,,fixed_wing,monoplane,civilian,other,,,BA-100;Baby Albatross,San Diego Air and Space Museum,on_display
+Wright Brothers,Flyer,,,,,fixed_wing,biplane,civilian,experimental,1980,"Replica / reproduction, not an original airframe.",Wright Flyer;replica,San Diego Air and Space Museum,on_display
+Wright Brothers,EX,,,,Vin Fiz,fixed_wing,biplane,civilian,experimental,1961,"Replica / reproduction, not an original airframe.",Wright EX;Vin Fiz;replica,San Diego Air and Space Museum,on_display
+Sydney White,Pitts Special,,,,Sundancer,fixed_wing,biplane,civilian,other,1973,,Sundancer,San Diego Air and Space Museum,on_display
+Dan Gilbert,DG-1,,,,Miss B Haven,fixed_wing,monoplane,civilian,other,1995,,DG-1;Shadow,San Diego Air and Space Museum,on_display
+Bleriot,XI,,,,,fixed_wing,monoplane,civilian,experimental,,,Bleriot XI,San Diego Air and Space Museum,on_display
+Curtiss,JN-4,D,,Jenny,,fixed_wing,biplane,military,trainer,1917,,JN-4;Jenny,San Diego Air and Space Museum,on_display
