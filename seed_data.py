@@ -181,7 +181,7 @@ AIRCRAFT = [
     {"manufacturer": "Boeing", "model": "B-29", "variant": None, "tail_number": "44-27297", "model_name": "Superfortress", "aircraft_name": "Bockscar", "year_built": 1944, "aircraft_type": "fixed_wing", "wing_type": "monoplane", "military_civilian": "military", "role_type": "bomber", "description": "Dropped the Fat Man atomic bomb on Nagasaki on August 9, 1945."},
     {"manufacturer": "Boeing", "model": "B-29", "variant": None, "tail_number": "44-86292", "model_name": "Superfortress", "aircraft_name": "Enola Gay", "year_built": 1944, "aircraft_type": "fixed_wing", "wing_type": "monoplane", "military_civilian": "military", "role_type": "bomber", "description": "Dropped the first atomic bomb on Hiroshima on August 6, 1945."},
     {"manufacturer": "Convair", "model": "B-36", "variant": "J", "tail_number": "52-2220", "model_name": "Peacemaker", "aircraft_name": None, "year_built": 1952, "aircraft_type": "fixed_wing", "wing_type": "monoplane", "military_civilian": "military", "role_type": "bomber", "description": "Largest mass-produced piston-engined aircraft ever built."},
-    {"manufacturer": "Boeing", "model": "B-52", "variant": "D", "tail_number": "56-0612", "model_name": "Stratofortress", "aircraft_name": None, "year_built": 1956, "aircraft_type": "fixed_wing", "wing_type": "monoplane", "military_civilian": "military", "role_type": "bomber", "description": "Long-range strategic bomber used from the 1950s to present."},
+    {"manufacturer": "Boeing", "model": "B-52", "variant": "D", "tail_number": "56-0665", "model_name": "Stratofortress", "aircraft_name": None, "year_built": 1956, "aircraft_type": "fixed_wing", "wing_type": "monoplane", "military_civilian": "military", "role_type": "bomber", "description": "Long-range strategic bomber used from the 1950s to present."},
     {"manufacturer": "Northrop Grumman", "model": "B-2", "variant": "A", "tail_number": "82-1066", "model_name": "Spirit", "aircraft_name": "Spirit of Kitty Hawk", "year_built": 1993, "aircraft_type": "fixed_wing", "wing_type": "monoplane", "military_civilian": "military", "role_type": "bomber", "description": "Stealth strategic bomber with flying-wing design."},
 
     # Fighters (idx 10-18)
@@ -252,7 +252,10 @@ EXHIBITS = [
     (0, 10, "44-74936", None,         "on_display"),  # P-51D — Dayton's Mustang
     (0, 13, "76-0008",  None,         "on_display"),  # F-15A — Dayton's Eagle
     (0, 18, "79-10781", None,         "on_display"),  # F-117A Nighthawk
-    (0, 8,  "56-0612",  None,         "on_display"),  # B-52D — Dayton's Stratofortress
+    # 56-0665 is Dayton's actual B-52D. (An earlier revision used 56-0612,
+    # which is the Castle Air Museum airframe — that collided with the
+    # Castle import file and rolled the whole batch back.)
+    (0, 8,  "56-0665",  None,         "on_display"),  # B-52D — Dayton's Stratofortress
     (0, 14, "75-0745",  None,         "on_display"),  # F-16A — Dayton's Fighting Falcon
     (0, 22, "43-15073", None,         "on_display"),  # C-47A — Dayton's Skytrain
     (0, 17, "91-4003",  None,         "on_display"),  # F-22A Raptor

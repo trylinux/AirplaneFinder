@@ -302,6 +302,62 @@ pytest tests/test_auth.py
 pytest tests/test_auth.py::TestLogout::test_logout_actually_logs_out_with_remember_cookie -v
 ```
 
+### Deploying (gunicorn + systemd)
+
+The server runs the app under gunicorn, launched by a systemd unit pointing
+at `.venv/bin/gunicorn`. Install the production requirements — **not** just
+`requirements.txt`, which deliberately omits gunicorn:
+
+```bash
+cd /home/debian/AirplaneFinder
+.venv/bin/pip install -r requirements-prod.txt
+sudo systemctl restart airplanefinder
+```
+
+**If the service dies with `ModuleNotFoundError: No module named 'gunicorn'`,**
+the `.venv/bin/gunicorn` launcher exists but its package doesn't. Two usual
+causes:
+
+1. The venv was rebuilt from `requirements.txt` alone, so gunicorn was never
+   reinstalled.
+2. The system Python was upgraded (a Debian dist-upgrade from, say, 3.11 to
+   3.13). The venv still has `lib/python3.11/site-packages`, which the new
+   interpreter ignores — so *every* package looks missing, and gunicorn is
+   simply the first import to fail.
+
+Tell them apart:
+
+```bash
+ls /home/debian/AirplaneFinder/.venv/lib/     # which pythonX.Y the venv holds
+python3 -V                                    # which the system now has
+.venv/bin/python -c "import flask"            # fails too? then it is case 2
+```
+
+Case 1 — reinstall into the existing venv:
+
+```bash
+.venv/bin/pip install -r requirements-prod.txt
+```
+
+Case 2 — the venv is orphaned; rebuild it:
+
+```bash
+cd /home/debian/AirplaneFinder
+rm -rf .venv
+python3 -m venv .venv
+.venv/bin/pip install --upgrade pip
+.venv/bin/pip install -r requirements-prod.txt
+sudo systemctl restart airplanefinder
+```
+
+Verify before restarting, so a broken venv fails in your shell rather than
+in systemd:
+
+```bash
+.venv/bin/gunicorn --version
+sudo systemctl status airplanefinder --no-pager
+```
+
 ### Pre-deploy security check
 
 Before each deploy, run:

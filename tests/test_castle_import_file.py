@@ -141,6 +141,24 @@ class TestCastleDataQuality:
             if r["year_built"]:
                 assert 1930 <= int(r["year_built"]) <= 2026, r
 
+    def test_no_tail_collides_with_seed_data(self, rows):
+        """The seed and the Castle file must not claim the same airframe.
+
+        A shared (model, tail_number) makes the import report that row as
+        an existing duplicate — which, per the atomic rule, rolls back all
+        94 rows. The seed once listed B-52D 56-0612 (Castle's airframe) as
+        Dayton's, which did exactly that.
+        """
+        import re
+        seed_src = (Path(__file__).resolve().parent.parent / "seed_data.py").read_text()
+        seed_tails = set(re.findall(r"['\"]((?:\d{2}-\d{3,5})|(?:\d{6}))['\"]", seed_src))
+        csv_tails = {r["tail_number"] for r in rows if r["tail_number"]}
+        overlap = seed_tails & csv_tails
+        assert not overlap, (
+            f"seed_data.py and the Castle file share tail number(s) {sorted(overlap)} — "
+            f"importing into a seeded database would roll the whole batch back"
+        )
+
     def test_role_types_match_ui_vocabulary(self, rows):
         """role_type isn't server-validated, but a value outside the admin
         dropdown's list would render as an unselectable option in the edit

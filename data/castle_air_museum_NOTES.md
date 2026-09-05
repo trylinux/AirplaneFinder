@@ -106,6 +106,27 @@ Worth a curator's eye before or after import:
     is listed as Boeing (McDonnell Douglas designed it) and the AV-8B and
     F-4S as McDonnell Douglas.
 
+## Duplicate check (September 2026)
+
+Checked the museum's live collection page against this file:
+
+- **91 entries on the site, no duplicate listings.** The category tabs
+  appear to sum to more than 91 because the RB-36H Peacemaker and RA-5C
+  Vigilante are each filed under *both* Bomber and Reconnaissance. Two
+  categories, one airframe — not a duplicate. Both are `role_type=recon`
+  here, matching their R-for-reconnaissance designations.
+- **No duplicates inside this file**: no repeated `(model, tail_number)`,
+  no repeated tail number, and no two rows sharing
+  `(manufacturer, model, variant)` — the grouping
+  `scripts/dedupe_aircraft.py` uses. Rows that share a *model* are
+  genuinely different airframes (F-84C vs F-84F, F-4E vs F-4S).
+- **One collision found and fixed, in the seed data.** `seed_data.py`
+  listed B-52D **56-0612** as Dayton's aircraft; 56-0612 is Castle's.
+  Importing this file into a seeded database would have reported that row
+  as an existing duplicate and rolled back all 94 rows. The seed now uses
+  Dayton's actual B-52D, **56-0665**. `tests/test_castle_import_file.py`
+  fails if the two files ever share a tail number again.
+
 ## Re-generating
 
 The files are generated data, not hand-maintained. `tests/test_castle_import_file.py`

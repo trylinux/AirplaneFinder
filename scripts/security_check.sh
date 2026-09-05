@@ -25,6 +25,17 @@ if [[ ! -f "$REQS" ]]; then
     exit 2
 fi
 
+# Audit the production set too when it exists. requirements-prod.txt pulls
+# in requirements.txt and adds gunicorn; auditing only the base file would
+# leave the WSGI server — the process actually facing the internet —
+# unchecked.
+REQ_FILES=(-r "$REQS")
+REQS_LABEL="$REQS"
+if [[ -f requirements-prod.txt ]]; then
+    REQ_FILES+=(-r requirements-prod.txt)
+    REQS_LABEL="$REQS + requirements-prod.txt"
+fi
+
 echo "════════════════════════════════════════════════════════"
 echo "  Security audit  ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
 echo "════════════════════════════════════════════════════════"
@@ -36,13 +47,13 @@ echo "════════════════════════�
 # stays clean — pip-audit doesn't need to be a runtime dependency.
 
 echo
-echo "→ Running pip-audit on $REQS"
+echo "→ Running pip-audit on $REQS_LABEL"
 echo "  (CVE check against PyPI Advisory Database)"
 echo
 
 if command -v pip-audit >/dev/null 2>&1; then
     # User has it globally (via pipx or a separate venv). Just use it.
-    pip-audit -r "$REQS" --strict
+    pip-audit "${REQ_FILES[@]}" --strict
 else
     # No global pip-audit. Spin up a temp venv just for this run.
     echo "  pip-audit not installed globally — using a one-shot temp venv."
@@ -50,7 +61,7 @@ else
     python3 -m venv "$AUDIT_VENV"
     # shellcheck disable=SC1091
     "$AUDIT_VENV/bin/pip" install --quiet --upgrade pip pip-audit
-    "$AUDIT_VENV/bin/pip-audit" -r "$REQS" --strict
+    "$AUDIT_VENV/bin/pip-audit" "${REQ_FILES[@]}" --strict
     rm -rf "$AUDIT_VENV"
 fi
 
