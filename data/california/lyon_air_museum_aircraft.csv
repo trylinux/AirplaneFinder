@@ -1,0 +1,10 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,P-51,D,,Mustang,Sierra Sue II,fixed_wing,monoplane,military,fighter,1944,,P-51;Mustang,Lyon Air Museum,on_display
+Boeing,PT-13,D,42-17698,Kaydet,,fixed_wing,biplane,military,trainer,1944,,PT-13;Kaydet;Stearman,Lyon Air Museum,on_display
+Boeing,B-17,G,44-83563,Flying Fortress,Fuddy Duddy,fixed_wing,monoplane,military,bomber,1945,,B-17;Flying Fortress,Lyon Air Museum,on_display
+Cessna,O-1,E,,Bird Dog,,fixed_wing,monoplane,military,recon,,,O-1;L-19;Bird Dog,Lyon Air Museum,on_display
+Douglas,A-26,B,44-34538,Invader,Feeding Frenzy,fixed_wing,monoplane,military,ground_attack,1945,,A-26;B-26;Invader,Lyon Air Museum,on_display
+Douglas,C-47,B,44-76791,Skytrain,Willa Dean,fixed_wing,monoplane,military,transport,,,C-47;Skytrain;Dakota,Lyon Air Museum,on_display
+Douglas,DC-3,,42-100931,,Flagship Orange County,fixed_wing,monoplane,civilian,commercial_transport,,,DC-3;C-47A,Lyon Air Museum,on_display
+North American,AT-6,F,,Texan,,fixed_wing,monoplane,military,trainer,1945,,AT-6;SNJ-6;Texan;Harvard,Lyon Air Museum,on_display
+North American,B-25,J,44-29465,Mitchell,Guardian of Freedom,fixed_wing,monoplane,military,bomber,,,B-25;Mitchell,Lyon Air Museum,on_display

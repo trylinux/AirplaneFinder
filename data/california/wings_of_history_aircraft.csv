@@ -1,0 +1,28 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+American Eagle,A-101,,NC7172,,,fixed_wing,biplane,civilian,private,1928,,A-101;American Eagle,Wings of History Air Museum,on_display
+Marketello,Stahltaube,,N1381N,Steel Dove,,fixed_wing,monoplane,civilian,experimental,,,Stahltaube;Taube;reproduction,Wings of History Air Museum,on_display
+Stinson,10,A,,Voyager,,fixed_wing,monoplane,civilian,utility,1940,,Stinson 10A;Voyager,Wings of History Air Museum,on_display
+Taylorcraft,BC12,65,,,,fixed_wing,monoplane,civilian,private,1941,,BC12-65;Taylorcraft,Wings of History Air Museum,on_display
+Wright,Flyer,,,,,fixed_wing,biplane,civilian,experimental,,,Wright Flyer;reproduction,Wings of History Air Museum,on_display
+Aeronca,C-3,,,,,fixed_wing,monoplane,civilian,private,,,Aeronca C-3,Wings of History Air Museum,on_display
+Aeronca,7AC,,,Champ,,fixed_wing,monoplane,civilian,private,1946,,7AC;Champ,Wings of History Air Museum,on_display
+Bowlus,BB-1,,,Dragonfly,,fixed_wing,monoplane,civilian,private,,,BB-1;Dragonfly;glider,Wings of History Air Museum,on_display
+Bowlus,BA-100,,,Baby Albatross,,fixed_wing,monoplane,civilian,private,,,BA-100;Baby Albatross,Wings of History Air Museum,on_display
+Christen,Eagle,II,,,,fixed_wing,biplane,civilian,experimental,,,Christen Eagle,Wings of History Air Museum,on_display
+Dobbins,Simcopter,,,,,rotary_wing,,civilian,experimental,,,Simcopter,Wings of History Air Museum,on_display
+Globe,GC-1,,,Swift,,fixed_wing,monoplane,civilian,private,,,GC-1;Swift,Wings of History Air Museum,on_display
+Hiller,UH-12,E4,,,,rotary_wing,,civilian,utility,,,UH-12;Hiller,Wings of History Air Museum,on_display
+Kittyhawk,Heaviside,H2,,,,rotary_wing,,civilian,experimental,,,Heaviside;H2,Wings of History Air Museum,on_display
+Marske,Pioneer,II,,Deaf Hawk,,fixed_wing,monoplane,civilian,experimental,1968,,Pioneer II;Marske,Wings of History Air Museum,on_display
+Volmer Jensen,Penguin,,,,,fixed_wing,monoplane,civilian,other,,,Penguin;ground trainer,Wings of History Air Museum,on_display
+Pietenpol,Air Camper,,,,,fixed_wing,monoplane,civilian,experimental,,,Air Camper;Pietenpol,Wings of History Air Museum,on_display
+Pitts,S-1,,,Special,,fixed_wing,biplane,civilian,private,,,Pitts Special,Wings of History Air Museum,on_display
+Bowlus,BS-100,,,Super Albatross,,fixed_wing,monoplane,civilian,private,,,BS-100;Super Albatross,Wings of History Air Museum,on_display
+Volmer Jensen,VJ-23,E,,Swingwing,,fixed_wing,monoplane,civilian,experimental,,,VJ-23;Swingwing,Wings of History Air Museum,on_display
+Volmer Jensen,VJ-21,,,,,fixed_wing,monoplane,civilian,experimental,,,VJ-21,Wings of History Air Museum,on_display
+Volmer Jensen,VJ-24,W,,,,fixed_wing,monoplane,civilian,experimental,,,VJ-24,Wings of History Air Museum,on_display
+Alexander,Primary Glider,,,,,fixed_wing,monoplane,civilian,other,1930,,Alexander;primary glider,Wings of History Air Museum,under_restoration
+Peel,Z-1,,,Glider Boat,,fixed_wing,biplane,civilian,private,,,Peel Z-1;Glider Boat,Wings of History Air Museum,under_restoration
+Security National,Airster,S1-B,,,,fixed_wing,monoplane,civilian,private,1940,,Airster;S1-B,Wings of History Air Museum,under_restoration
+Beechcraft,19,B,,Musketeer Sport,,fixed_wing,monoplane,civilian,private,,,Beech 19;Musketeer,Wings of History Air Museum,on_display
+Vickers-Armstrongs,Viscount,,,,,fixed_wing,monoplane,civilian,commercial_transport,,,Viscount,Wings of History Air Museum,on_display

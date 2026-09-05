@@ -111,7 +111,46 @@ aviation library and artifact museum, no airframes).
 | `california_science_center_aircraft.csv` | 14 | 8 (57%) | validated, 0 errors |
 | `warbirds_west_aircraft.csv` | 6 | 6 (100%) | validated — museum may be closed |
 | `allen_airways_aircraft.csv` | 4 | 4 (100%) | validated, 0 errors |
-| **Total** | **776** | **354 (45%)** | **22 museums** |
+| `wings_of_history_aircraft.csv` | 27 | 2 (7%) | validated, 0 errors |
+| `museum_of_flying_aircraft.csv` | 17 | 4 (24%) | validated, 0 errors |
+| `lyon_air_museum_aircraft.csv` | 9 | 6 (67%) | validated, 0 errors |
+| **Total** | **829** | **366 (44%)** | **25 museums** |
+
+### Batch 6
+
+| File | Rows | Tails |
+|---|---|---|
+| `wings_of_history_aircraft.csv` | 27 | 2 |
+| `museum_of_flying_aircraft.csv` | 17 | 4 |
+| `lyon_air_museum_aircraft.csv` | 9 | 6 |
+
+**Two museums in `ca_museums.csv` turn out to hold no aircraft at all:**
+
+- **Alameda Naval Air Museum** — its "aircraft gallery" pages are *archival
+  photographs* of aircraft that passed through NAS Alameda, not airframes it
+  owns. Visitor reports confirm the collection is models, artifacts and
+  memorabilia; the only thing outdoors is a drop tank. **No aircraft file.**
+- **Aviation Museum of Santa Paula** — a "chain of hangars" where private
+  owners display their own aircraft. Nothing is named anywhere on the site,
+  and the contents change with the owners. **No aircraft file.**
+
+Both museum records are harmless to keep (they are real places worth
+visiting) but they will always show zero aircraft. Consider whether an
+aviation-*finder* should list them at all.
+
+Notable flags:
+- **Museum of Flying**: its Lockheed Vega and Wright Flyer are **movie
+  props** — the Vega from 20th Century Fox, the Flyer built for *Night at
+  the Museum*. The T-33 is a cockpit section. Its Douglas World Cruiser
+  "New Orleans" is `in_storage`. A-4M and F-86H are on loan from Pensacola.
+- **Wings of History**: three airframes marked `under_restoration` (1930
+  Alexander primary glider, Peel Z-1 glider boat, Security Airster). Its
+  Stahltaube is a flyable ¾-scale reproduction and its Wright Flyer a
+  non-flying reproduction built for a restaurant. Their VJ-23 page describes
+  the Channel-crossing record aircraft but also says that airframe is in
+  Manchester, England — so the one on display probably isn't it.
+- **Lyon Air Museum**: largely airworthy privately-owned warbirds, so
+  "on display" is truer on average than on any given day.
 
 ## Still outstanding
 

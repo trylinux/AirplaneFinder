@@ -1,0 +1,18 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Trautmann,RoadAir,,,,,fixed_wing,monoplane,civilian,experimental,1959,,RoadAir,Museum of Flying,on_display
+Cassutt,III,,,Formula One,,fixed_wing,monoplane,civilian,experimental,,,Cassutt;air racer,Museum of Flying,on_display
+Cessna,172,,,Skyhawk,,fixed_wing,monoplane,civilian,utility,,,172;Skyhawk,Museum of Flying,on_display
+Douglas,A-4,M,,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,A-4;Skyhawk,Museum of Flying,on_display
+Douglas,DC-3,,41-20107,,Spirit of Santa Monica,fixed_wing,monoplane,civilian,commercial_transport,1942,,DC-3;C-53;R4D-3,Museum of Flying,on_display
+Douglas,World Cruiser,,,,New Orleans,fixed_wing,biplane,military,test,1924,,World Cruiser;New Orleans,Museum of Flying,in_storage
+Mauro,Easy Riser,,,,,fixed_wing,biplane,civilian,experimental,,,Easy Riser,Museum of Flying,on_display
+Lockheed,T-33,,,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-33;T-Bird;cockpit section,Museum of Flying,on_display
+Lockheed,Vega,,,,,fixed_wing,monoplane,civilian,private,,,Vega;movie prop;replica,Museum of Flying,on_display
+Monnett,Monerai,,N450SP,,,fixed_wing,monoplane,civilian,experimental,,,Monerai;glider,Museum of Flying,on_display
+North American,F-86,H,,Sabre,,fixed_wing,monoplane,military,fighter,,,F-86;Sabre,Museum of Flying,on_display
+North American,Navion,NA-145,,,,fixed_wing,monoplane,civilian,private,1947,,Navion,Museum of Flying,on_display
+Rutan,VariEze,,,,,fixed_wing,monoplane,civilian,experimental,,,VariEze;Rutan,Museum of Flying,on_display
+Rutan,VariViggen,,,,,fixed_wing,monoplane,civilian,experimental,,,VariViggen;Rutan,Museum of Flying,on_display
+Stolp-Adams,SA-100,,N163G,Starduster,,fixed_wing,biplane,civilian,experimental,,,SA-100;Starduster,Museum of Flying,on_display
+Advance Aircraft,Waco 10,GXE,NC3957,,,fixed_wing,biplane,civilian,private,1927,,Waco 10;Waco GXE,Museum of Flying,on_display
+Wright,Flyer,,,,,fixed_wing,biplane,civilian,experimental,,,Wright Flyer;movie prop;replica,Museum of Flying,on_display
