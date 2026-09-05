@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Boeing,F4B,1,N926R,,,fixed_wing,biplane,military,fighter,1929,,F4B;Boeing F4B-1,Allen Airways Flying Museum,on_display
+Stearman,PT-17,,N3188,Kaydet,,fixed_wing,biplane,military,trainer,1945,,PT-17;Kaydet;Stearman,Allen Airways Flying Museum,on_display
+Ryan,STM,2,NX466WA,Sport Trainer,,fixed_wing,monoplane,military,trainer,1940,,STM;Sport Trainer,Allen Airways Flying Museum,on_display
+Stearman,C3,R,NC794H,Business Speedster,,fixed_wing,biplane,civilian,private,1930,,C3R;Business Speedster,Allen Airways Flying Museum,on_display

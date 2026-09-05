@@ -1,0 +1,26 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Ryan,X-13,,,Vertijet,,fixed_wing,monoplane,military,test,,,X-13;Vertijet,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Ryan,PT-22,,,Recruit,,fixed_wing,monoplane,military,trainer,,,PT-22;ST3KR;Recruit,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Stinson,SM-8,A,,Junior,,fixed_wing,monoplane,civilian,private,,,SM-8;Junior,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Waco,YKS,7,,,,fixed_wing,biplane,civilian,private,,,Waco YKS-7,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Wright,EX,,,,Vin Fiz,fixed_wing,biplane,civilian,experimental,,,Wright EX;Vin Fiz;replica,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Rearwin,8125,,,Cloudster,,fixed_wing,monoplane,civilian,private,,,Rearwin;Cloudster,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Christen,Eagle,II,,,,fixed_wing,biplane,civilian,private,,,Christen Eagle;Aviat,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Sikorsky,SH-60,B,,Seahawk,,rotary_wing,,military,utility,,,SH-60;Seahawk,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Vertol,H-21,B,,Workhorse,,rotary_wing,,military,transport,,,H-21;Flying Banana,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Mikoyan-Gurevich,MiG-15,,,,,fixed_wing,monoplane,military,fighter,,,MiG-15;Fagot,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Ryan,Model 147,,,Firebee,,fixed_wing,monoplane,military,drone,,,Model 147;Lightning Bug,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Vought,A-7,B,,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,A-7;Corsair II,San Diego Air & Space Museum Gillespie Field Annex,on_display
+North American,F-86,F,,Sabre,,fixed_wing,monoplane,military,fighter,,,F-86;Sabre,San Diego Air & Space Museum Gillespie Field Annex,on_display
+McDonnell Douglas,AV-8,A,,Harrier,,fixed_wing,monoplane,military,ground_attack,,,AV-8;Harrier,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Grumman,A-6,E,,Intruder,,fixed_wing,monoplane,military,ground_attack,,,A-6;Intruder,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Mikoyan-Gurevich,MiG-21,bis,,Fishbed,,fixed_wing,monoplane,military,fighter,,,MiG-21;Fishbed,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Douglas,A2D,1,,Skyshark,,fixed_wing,monoplane,military,ground_attack,,,A2D;Skyshark,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Convair,F-102,A,,Delta Dagger,,fixed_wing,monoplane,military,fighter,,,F-102;Delta Dagger,San Diego Air & Space Museum Gillespie Field Annex,on_display
+General Dynamics,F-16,N,,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,,F-16;Viper,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Vought,F-8,J,,Crusader,,fixed_wing,monoplane,military,fighter,,,F-8;Crusader,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Convair,SM-65,,,Atlas,,missile_rocket,,military,ballistic,,,SM-65;Atlas;ICBM,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Bleriot,XI,,,,,fixed_wing,monoplane,civilian,private,,,Bleriot XI,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Lockheed,S-3,B,159387,Viking,,fixed_wing,monoplane,military,test,,,S-3;Viking;NASA 601,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Lockheed,P2V,7,N443NA,Neptune,,fixed_wing,monoplane,military,utility,,,P2V;Neptune;Tanker 43,San Diego Air & Space Museum Gillespie Field Annex,on_display
+Beechcraft,D17,S,,Staggerwing,,fixed_wing,biplane,civilian,private,1943,,D17;Staggerwing,San Diego Air & Space Museum Gillespie Field Annex,on_display

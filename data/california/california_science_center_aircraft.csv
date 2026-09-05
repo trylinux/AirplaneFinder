@@ -1,0 +1,15 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Rockwell,Orbiter,OV-105,OV-105,Space Shuttle,Endeavour,spacecraft,,civilian,space,1991,,Endeavour;Space Shuttle;OV-105,California Science Center,in_storage
+Lockheed,A-12,B,60-6927,Blackbird,Titanium Goose,fixed_wing,monoplane,military,trainer,1963,,A-12;Blackbird;Titanium Goose,California Science Center,on_display
+Northrop,F-20,A,N44671,Tigershark,,fixed_wing,monoplane,civilian,experimental,,,F-20;Tigershark,California Science Center,in_storage
+Northrop,T-38,A,,Talon,,fixed_wing,monoplane,military,trainer,1959,,T-38;Talon,California Science Center,in_storage
+McDonnell Douglas,F/A-18,A,,Hornet,,fixed_wing,monoplane,military,fighter,,,F-18;Hornet,California Science Center,on_display
+Velie,Monocoupe,70,,,,fixed_wing,monoplane,civilian,private,,,Monocoupe 70,California Science Center,in_storage
+Wright,1902 Glider,,,,,fixed_wing,biplane,civilian,experimental,1971,,Wright Glider;reproduction,California Science Center,in_storage
+North American Rockwell,Apollo CSM,Block II,CM-111,Command Module,Apollo-Soyuz,spacecraft,,civilian,space,,,Apollo;CM-111;ASTP,California Science Center,in_storage
+McDonnell,Gemini,11,,Spacecraft,,spacecraft,,civilian,space,,,Gemini 11,California Science Center,in_storage
+McDonnell,Mercury,MR-2,,Spacecraft,,spacecraft,,civilian,space,,,Mercury;MR-2;Ham,California Science Center,in_storage
+Grumman,F11F,1,138608,Tiger,,fixed_wing,monoplane,military,fighter,1955,,F11F;Tiger,California Science Center,in_storage
+Convair,F-106,A,58-0786,Delta Dart,,fixed_wing,monoplane,military,fighter,1959,,F-106;Delta Dart,California Science Center,in_storage
+Pitts,S-1,C,C-FXTT,Special,,fixed_wing,biplane,civilian,experimental,1970,,Pitts Special,California Science Center,in_storage
+Hawker Siddeley,Harrier,T.4,XZ145,,,fixed_wing,monoplane,military,trainer,1976,,Harrier T.4,California Science Center,in_storage

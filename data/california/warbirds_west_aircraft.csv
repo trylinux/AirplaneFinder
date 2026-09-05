@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aero,L-29,C,N443KT,Delfin,,fixed_wing,monoplane,military,trainer,,,L-29;Delfin,Warbirds West Air Museum,on_display
+Beechcraft,C-45,G,N181MH,Expeditor,,fixed_wing,monoplane,military,transport,,,C-45;Expeditor,Warbirds West Air Museum,on_display
+Beechcraft,T-34,A,N4WL,Mentor,,fixed_wing,monoplane,military,trainer,,,T-34;Mentor,Warbirds West Air Museum,on_display
+North American,L-17,A,N46LJ,Navion,,fixed_wing,monoplane,military,utility,,,L-17;Navion,Warbirds West Air Museum,on_display
+North American,T-28,C,NX28CQ,Trojan,,fixed_wing,monoplane,military,trainer,,,T-28;Trojan,Warbirds West Air Museum,on_display
+Schweizer,SGS 2-8,,42-53018,TG-2,,fixed_wing,monoplane,military,trainer,,,SGS 2-8;TG-2;glider,Warbirds West Air Museum,on_display

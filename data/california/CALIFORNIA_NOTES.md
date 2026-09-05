@@ -107,7 +107,63 @@ aviation library and artifact museum, no airframes).
 | `moffett_field_museum_aircraft.csv` | 9 | 8 (89%) | validated, 0 errors |
 | `mojave_legacy_park_aircraft.csv` | 2 | 1 (50%) | validated, 0 errors |
 | `san_diego_air_and_space_aircraft.csv` | 61 | 8 (13%) | validated, 0 errors |
-| **Total** | **727** | **334 (45%)** | **18 museums** |
+| `sdasm_gillespie_annex_aircraft.csv` | 25 | 2 (8%) | validated, 0 errors |
+| `california_science_center_aircraft.csv` | 14 | 8 (57%) | validated, 0 errors |
+| `warbirds_west_aircraft.csv` | 6 | 6 (100%) | validated — museum may be closed |
+| `allen_airways_aircraft.csv` | 4 | 4 (100%) | validated, 0 errors |
+| **Total** | **776** | **354 (45%)** | **22 museums** |
+
+## Still outstanding
+
+Museums with a collection but no file yet: Lyon Air Museum, Museum of
+Flying (Santa Monica), Wings of History, Hillier Air Museum (Modesto),
+Minter Field, Aviation Museum of Santa Paula, Alameda Naval Air Museum,
+Stockton Field, Boron Aerospace, Prop and Jet, Wings & Rotors, China Lake,
+Golden Age Flight Museum, Tomorrow's Aeronautical, Battleship USS Iowa,
+Flight Path Learning Center, The Proud Bird, The American Military Museum,
+American Veterans Memorial, NTC & 11th ACR, West Gate Century Circle.
+
+Remaining top-ups: **Hiller Aviation** (4 of ~40) and **Palm Springs**
+(43 of ~75) — both need a diff against live data first, like San Diego did.
+
+Note: the six Century Circle aircraft are currently recorded under the Air
+Force Flight Test Museum, which operates them. If you want West Gate
+Century Circle to show its own collection, they need moving.
+
+### Batch 5 — El Cajon cluster + California Science Center
+
+| File | Rows | Tails |
+|---|---|---|
+| `sdasm_gillespie_annex_aircraft.csv` | 25 | 2 |
+| `california_science_center_aircraft.csv` | 14 | 8 |
+| `warbirds_west_aircraft.csv` | 6 | 6 |
+| `allen_airways_aircraft.csv` | 4 | 4 |
+
+**California Science Center is the first file to use `display_status`
+properly: 12 of 14 are `in_storage`, only 2 `on_display`.** Endeavour, the
+Apollo-Soyuz CM, Gemini 11, Mercury-Redstone 2, the Monocoupe and the Wright
+Glider reproduction are all in storage pending the Samuel Oschin Air and
+Space Center opening on **13 November 2026**. Four more (F11F Tiger, F-106A,
+Pitts S-1C, Harrier T.4) are physically installed in the new Korean Air
+gallery but it isn't open yet. Only the A-12 Blackbird and the F/A-18A are
+actually viewable today. Sending a visitor there expecting to see Endeavour
+would be wrong until November.
+
+Also at CSC: **Cassini-Huygens and the Viking Lander are full-scale
+engineering models**, never-flown, and were excluded as non-aircraft. Their
+Apollo, Gemini and Mercury capsules, by contrast, are all genuine flown
+hardware on loan from the Smithsonian.
+
+⚠️ **Warbirds West may be permanently closed.** AviationMuseum.eu lists it
+"Permanently closed", the Warbirds Resource Group archive agrees, and
+wwam.org now resolves to a parked placeholder — but a Yelp listing shows
+hours updated May 2026. The 6 aircraft are real and well documented (all 6
+have registrations), so the file is included, but **verify before you show
+it to visitors** and delete the file if the museum is gone.
+
+Gillespie Annex excluded a Boeing 377 and 727 cockpit section, a winged
+Citroën 2CV novelty, and an F-14A that a Nov 2025 announcement says moved
+to Balboa Park.
 
 ### San Diego Air & Space — a TOP-UP, read this before importing
 
