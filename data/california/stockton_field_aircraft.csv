@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,A-26,C,N126HK,Invader,,fixed_wing,monoplane,military,bomber,,,A-26;Invader,Stockton Field Aviation Museum,on_display
+Beechcraft,AT-11,,41-27603,Kansan,,fixed_wing,monoplane,military,trainer,,,AT-11;Kansan,Stockton Field Aviation Museum,under_restoration
+Lockheed,PV-1,,N183PL,Ventura,,fixed_wing,monoplane,civilian,private,,,PV-1;Ventura,Stockton Field Aviation Museum,under_restoration

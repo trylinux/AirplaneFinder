@@ -1,0 +1,19 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Vultee,BT-13,A,,Valiant,,fixed_wing,monoplane,military,trainer,,,BT-13;Valiant,Golden Age Flight Museum,on_display
+Fairchild,PT-23,A,,Cornell,,fixed_wing,monoplane,military,trainer,,,PT-23;Cornell,Golden Age Flight Museum,on_display
+Antonov,An-2,,CCCP-62624,Fat Cat,,fixed_wing,biplane,civilian,utility,1977,,An-2;Colt,Golden Age Flight Museum,on_display
+Nelson,Dragonfly,,,,,fixed_wing,monoplane,civilian,experimental,,,Dragonfly;sailplane,Golden Age Flight Museum,on_display
+Convair,240,5,N396CG,,,fixed_wing,monoplane,civilian,commercial_transport,1948,,Convair 240,Golden Age Flight Museum,under_restoration
+Howard,250,,,Lodestar,,fixed_wing,monoplane,civilian,private,1961,,Howard 250;Lodestar,Golden Age Flight Museum,on_display
+Howard,DGA-15,P,,,,fixed_wing,monoplane,civilian,private,,,DGA-15;Howard,Golden Age Flight Museum,on_display
+Prue,215,A,,Sailplane,,fixed_wing,monoplane,civilian,private,,,Prue 215,Golden Age Flight Museum,on_display
+Beechcraft,35,,,Bonanza,,fixed_wing,monoplane,civilian,private,1947,,Bonanza;V-tail,Golden Age Flight Museum,on_display
+Schweizer,1-26,,,Sailplane,,fixed_wing,monoplane,civilian,private,,,1-26;Schweizer,Golden Age Flight Museum,on_display
+Fouga,CM.170,,,Magister,,fixed_wing,monoplane,military,trainer,,,CM-170;Magister,Golden Age Flight Museum,under_restoration
+Mitchell,U-2,,,Superwing,,fixed_wing,monoplane,civilian,experimental,,,Mitchell U-2;flying wing,Golden Age Flight Museum,on_display
+Thorp,T-18,,,,,fixed_wing,monoplane,civilian,experimental,,,T-18;Thorp,Golden Age Flight Museum,under_restoration
+Weedhopper,Ultralight,,,,,fixed_wing,monoplane,civilian,experimental,,,Weedhopper,Golden Age Flight Museum,under_restoration
+Curtiss,Robin,C-1,,,,fixed_wing,monoplane,civilian,private,,,Curtiss Robin,Golden Age Flight Museum,on_display
+Nelson,Hummingbird,,,Sailplane,,fixed_wing,monoplane,civilian,experimental,,,Hummingbird,Golden Age Flight Museum,under_restoration
+Ken Brock,KB-2,,,Gyrocopter,,rotary_wing,,civilian,utility,,,KB-2;gyrocopter,Golden Age Flight Museum,on_display
+FFA,Diamant,19,,Sailplane,,fixed_wing,monoplane,civilian,private,,,Diamant,Golden Age Flight Museum,on_display

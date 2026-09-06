@@ -1,0 +1,23 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,T-39,D,,Sabreliner,,fixed_wing,monoplane,military,trainer,,,T-39;Sabreliner,China Lake Museum,on_display
+McDonnell Douglas,F/A-18,A,,Hornet,,fixed_wing,monoplane,military,fighter,,,F-18;Hornet,China Lake Museum,on_display
+Grumman,F11F,1F,,Super Tiger,,fixed_wing,monoplane,military,test,,,F11F;Super Tiger,China Lake Museum,on_display
+McDonnell Douglas,AV-8,B,,Harrier II,,fixed_wing,monoplane,military,ground_attack,,,AV-8;Harrier,China Lake Museum,on_display
+Texas Instruments,AGM-45,,,Shrike,,missile_rocket,,military,air_to_surface,,,AGM-45;Shrike,China Lake Museum,on_display
+Rockwell,AGM-53,,,Condor,,missile_rocket,,military,air_to_surface,,,AGM-53;Condor,China Lake Museum,on_display
+Martin Marietta,AGM-62,,,Walleye,,missile_rocket,,military,air_to_surface,,,AGM-62;Walleye,China Lake Museum,on_display
+Hughes,AGM-65,,,Maverick,,missile_rocket,,military,air_to_surface,,,AGM-65;Maverick,China Lake Museum,on_display
+Hughes,AGM-83,,,Bulldog,,missile_rocket,,military,air_to_surface,,,AGM-83;Bulldog,China Lake Museum,on_display
+Boeing,AGM-84,H,,SLAM-ER,,missile_rocket,,military,air_to_surface,,,AGM-84;SLAM-ER;Harpoon,China Lake Museum,on_display
+Texas Instruments,AGM-88,,,HARM,,missile_rocket,,military,air_to_surface,,,AGM-88;HARM,China Lake Museum,on_display
+Motorola,AGM-122,,,Sidearm,,missile_rocket,,military,air_to_surface,,,AGM-122;Sidearm,China Lake Museum,on_display
+Northrop,AGM-136,,,Tacit Rainbow,,missile_rocket,,military,air_to_surface,,,AGM-136;Tacit Rainbow,China Lake Museum,on_display
+Raytheon,AGM-154,,,JSOW,,missile_rocket,,military,air_to_surface,,,AGM-154;JSOW,China Lake Museum,on_display
+Naval Ordnance Test Station,AIM-9,,,Sidewinder,,missile_rocket,,military,air_to_air,,,AIM-9;Sidewinder,China Lake Museum,on_display
+Hughes,AIM-54,,,Phoenix,,missile_rocket,,military,air_to_air,,,AIM-54;Phoenix,China Lake Museum,on_display
+Douglas,ASM-N-2,,,Bat,,missile_rocket,,military,anti_ship,,,ASM-N-2;Bat,China Lake Museum,on_display
+General Dynamics,BGM-109,,,Tomahawk,,missile_rocket,,military,cruise,,,BGM-109;Tomahawk,China Lake Museum,on_display
+Emerson Electric,AGM-123,,,Skipper II,,missile_rocket,,military,air_to_surface,,,AGM-123;Skipper,China Lake Museum,on_display
+Raytheon,AIM-7,,,Sparrow,,missile_rocket,,military,air_to_air,,,AIM-7;Sparrow,China Lake Museum,on_display
+Naval Ordnance Test Station,Tiny Tim,,,,,missile_rocket,,military,air_to_surface,,,Tiny Tim,China Lake Museum,on_display
+Raytheon,AIM-120,,,AMRAAM,,missile_rocket,,military,air_to_air,,,AIM-120;AMRAAM,China Lake Museum,on_display

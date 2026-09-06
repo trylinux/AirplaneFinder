@@ -1,0 +1,11 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aero,L-29,,N29KJ,Delfin,,fixed_wing,monoplane,military,trainer,,,L-29;Delfin,Prop and Jet Air Museum,on_display
+Northrop,F-5,E,N4845M,Tiger II,,fixed_wing,monoplane,military,fighter,,,F-5;Tiger II,Prop and Jet Air Museum,on_display
+Beechcraft,Expeditor,3N,N62936,,,fixed_wing,monoplane,military,transport,,,C-45;Expeditor,Prop and Jet Air Museum,on_display
+Mikoyan-Gurevich,MiG-21,F-13,1014,Fishbed,,fixed_wing,monoplane,military,fighter,,,MiG-21;S-106;Fishbed,Prop and Jet Air Museum,on_display
+Fokker,Dr.I,,N113PC,Dreidecker,,fixed_wing,triplane,civilian,experimental,,,Dr.I;Triplane;replica,Prop and Jet Air Museum,on_display
+Bede,BD-5,J,,Microjet,,fixed_wing,monoplane,civilian,experimental,,,BD-5;Microjet,Prop and Jet Air Museum,on_display
+Corbin,Super Ace,,,,,fixed_wing,monoplane,civilian,experimental,,,Corbin Super Ace,Prop and Jet Air Museum,on_display
+Pitts,Special,,,,,fixed_wing,biplane,civilian,experimental,,,Pitts Special,Prop and Jet Air Museum,on_display
+Staudacher,S-300,,,,,fixed_wing,monoplane,civilian,experimental,,,Staudacher S-300,Prop and Jet Air Museum,on_display
+Piper,J-3,C-65,N58368,Cub,,fixed_wing,monoplane,civilian,private,1942,,J-3;Cub,Prop and Jet Air Museum,on_display

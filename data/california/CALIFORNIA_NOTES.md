@@ -114,7 +114,8 @@ aviation library and artifact museum, no airframes).
 | `wings_of_history_aircraft.csv` | 27 | 2 (7%) | validated, 0 errors |
 | `museum_of_flying_aircraft.csv` | 17 | 4 (24%) | validated, 0 errors |
 | `lyon_air_museum_aircraft.csv` | 9 | 6 (67%) | validated, 0 errors |
-| **Total** | **829** | **366 (44%)** | **25 museums** |
+| batch 7 (7 files, see below) | 75 | 32 | validated, 0 errors |
+| **Total** | **904** | **398 (44%)** | **32 museums** |
 
 ### Batch 6
 
@@ -151,6 +152,44 @@ Notable flags:
   Manchester, England — so the one on display probably isn't it.
 - **Lyon Air Museum**: largely airworthy privately-owned warbirds, so
   "on display" is truer on average than on any given day.
+
+### Batch 7 — the small museums
+
+| File | Rows | Tails |
+|---|---|---|
+| `china_lake_museum_aircraft.csv` | 22 | 0 |
+| `golden_age_flight_museum_aircraft.csv` | 18 | 2 |
+| `minter_field_aircraft.csv` | 11 | 10 |
+| `prop_and_jet_aircraft.csv` | 10 | 6 |
+| `wings_and_rotors_aircraft.csv` | 6 | 6 |
+| `boron_aerospace_aircraft.csv` | 5 | 5 |
+| `stockton_field_aircraft.csv` | 3 | 3 |
+
+**China Lake is 4 aircraft and 18 missiles** — the largest use of
+`missile_rocket` in the dataset (Sidewinder, Phoenix, Tomahawk, HARM,
+Walleye, Maverick and more, all developed there). Plain unguided ordnance
+(Mk 80-series bombs, Rockeye, Paveway kits) was excluded — they're munitions,
+not flight vehicles, and there is no honest `aircraft_type` for them. Note
+the museum has **moved off the Navy base** to 130 E Las Flores Ave in
+Ridgecrest, so it no longer needs base access — the address in
+`ca_museums.csv` is correct.
+
+⚠️ **Hillier Air Museum (Modesto) has no file — it is permanently closed.**
+AviationMuseum.eu lists it closed and its own domain returns nothing. Nine
+aircraft were documented but the collection's current whereabouts are
+unknown, so attributing them to a closed museum would be inventing a place
+to visit. **Its museum record should probably be removed from
+`ca_museums.csv`.**
+
+⚠️ **Wings & Rotors (Murrieta) status unconfirmed** — its domain is a parked
+placeholder and a 2019 thread says it closed, but directories still list
+hours. Included with all 6 registrations, same treatment as Warbirds West.
+Verify both before showing them to visitors.
+
+Also excluded: aircraft that Aerial Visuals lists as having *moved off-site*
+from Minter Field (7 airframes), Stockton's PV-2D Harpoon and RC-45J (both
+sold in late 2025), and several Prop and Jet aircraft the registry marks
+only as "may be in the collection".
 
 ## Still outstanding
 

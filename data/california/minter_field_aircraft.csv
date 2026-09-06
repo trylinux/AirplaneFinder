@@ -1,0 +1,12 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aeronca,L-3,B,N48850,Grasshopper,,fixed_wing,monoplane,military,utility,,,L-3;Grasshopper,Minter Field Air Museum,on_display
+Boeing,PT-17,,N3946,Kaydet,,fixed_wing,biplane,military,trainer,,,PT-17;Kaydet;Stearman,Minter Field Air Museum,on_display
+Hughes,OH-6,A,91153,Cayuse,,rotary_wing,,military,recon,,,OH-6;Cayuse;Loach,Minter Field Air Museum,on_display
+Bell,OH-58,,,Kiowa,,rotary_wing,,military,recon,,,OH-58;Kiowa,Minter Field Air Museum,on_display
+Lockheed,TV-2,,138995,Shooting Star,,fixed_wing,monoplane,military,trainer,,,TV-2;T-33,Minter Field Air Museum,on_display
+Lockheed,T-33,A,53-6001,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-33;T-Bird,Minter Field Air Museum,on_display
+Sikorsky,HSS-1,,140122,Seabat,,rotary_wing,,military,utility,,,HSS-1;Seabat,Minter Field Air Museum,on_display
+Sikorsky,S-58,,143892,,,rotary_wing,,military,utility,,,S-58;H-34,Minter Field Air Museum,on_display
+Vultee,BT-13,,41-22077,Valiant,,fixed_wing,monoplane,military,trainer,,,BT-13;Valiant,Minter Field Air Museum,on_display
+Vultee,BT-13,,N75789,Valiant,,fixed_wing,monoplane,military,trainer,,,BT-13;Valiant,Minter Field Air Museum,on_display
+Northrop,T-38,A,60-0566,Talon,,fixed_wing,monoplane,military,trainer,,,T-38;Talon,Minter Field Air Museum,on_display

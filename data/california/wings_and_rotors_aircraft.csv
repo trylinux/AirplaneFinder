@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,UH-1,B,N832M,Iroquois,,rotary_wing,,military,utility,,,UH-1;Huey,Wings & Rotors Air Museum,on_display
+Bell,OH-58,A,N206PR,Kiowa,,rotary_wing,,military,recon,,,OH-58;Kiowa,Wings & Rotors Air Museum,on_display
+Bell,OH-58,C,N58WR,Kiowa,,rotary_wing,,military,recon,,,OH-58;Kiowa,Wings & Rotors Air Museum,on_display
+Hughes,TH-55,A,N57953,Osage,,rotary_wing,,military,trainer,,,TH-55;Osage,Wings & Rotors Air Museum,on_display
+McDonnell,F4H,1,145310,Phantom II,,fixed_wing,monoplane,military,fighter,,,F4H;F-4;Phantom II,Wings & Rotors Air Museum,on_display
+Sikorsky,UH-34,D,150255,Seahorse,,rotary_wing,,military,transport,,,UH-34;Seahorse,Wings & Rotors Air Museum,on_display

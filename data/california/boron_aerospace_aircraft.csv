@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Turner,T-40,A,N115ET,,,fixed_wing,monoplane,civilian,experimental,,,T-40;Turner,Boron Aerospace Museum,on_display
+McDonnell,F-4,D,66-7716,Phantom II,,fixed_wing,monoplane,military,fighter,,,F-4;NF-4D;Phantom II,Boron Aerospace Museum,on_display
+Saab,35,SK35XD,N167TP,Draken,,fixed_wing,monoplane,military,trainer,,,J35;Draken;AT-153,Boron Aerospace Museum,on_display
+Denney,Kitfox,XL,N31LP,,,fixed_wing,monoplane,civilian,experimental,,,Kitfox;SkyStar,Boron Aerospace Museum,on_display
+Pietenpol,Air Camper,,N22EZ,,,fixed_wing,monoplane,civilian,experimental,,,Air Camper;Pietenpol,Boron Aerospace Museum,on_display
