@@ -91,3 +91,51 @@ class TestClientUsesNormalizedUrl:
         c.get("/api/v1/aircraft/search")
         assert captured["url"] == "https://airplane.museum/api/v1/aircraft/search"
         assert "://" in captured["url"]
+
+
+class TestEnvVarAliases:
+    """Both naming conventions must work.
+
+    The shell scripts use AIRPLANE_HOST / AIRPLANE_KEY; the Python ones grew
+    up with AIRPLANE_BASE_URL / AIRPLANE_API_KEY. Exporting the shell pair
+    and then running a Python script reported "API key missing" even though
+    it was set — the script was reading the other name.
+    """
+
+    def _clear(self, monkeypatch):
+        for k in ("AIRPLANE_BASE_URL", "AIRPLANE_HOST",
+                  "AIRPLANE_API_KEY", "AIRPLANE_KEY"):
+            monkeypatch.delenv(k, raising=False)
+
+    def test_shell_style_names_work(self, Client, monkeypatch):
+        self._clear(monkeypatch)
+        monkeypatch.setenv("AIRPLANE_HOST", "airplane.museum")
+        monkeypatch.setenv("AIRPLANE_KEY", "amt_shell")
+        c = Client()
+        assert c.api_key == "amt_shell"
+        assert c.base_url == "https://airplane.museum"
+
+    def test_python_style_names_work(self, Client, monkeypatch):
+        self._clear(monkeypatch)
+        monkeypatch.setenv("AIRPLANE_BASE_URL", "http://127.0.0.1:5000")
+        monkeypatch.setenv("AIRPLANE_API_KEY", "amt_py")
+        c = Client()
+        assert c.api_key == "amt_py"
+        assert c.base_url == "http://127.0.0.1:5000"
+
+    def test_python_names_win_when_both_set(self, Client, monkeypatch):
+        self._clear(monkeypatch)
+        monkeypatch.setenv("AIRPLANE_HOST", "shell.example")
+        monkeypatch.setenv("AIRPLANE_KEY", "amt_shell")
+        monkeypatch.setenv("AIRPLANE_BASE_URL", "https://py.example")
+        monkeypatch.setenv("AIRPLANE_API_KEY", "amt_py")
+        c = Client()
+        assert c.api_key == "amt_py"
+        assert c.base_url == "https://py.example"
+
+    def test_explicit_argument_still_wins(self, Client, monkeypatch):
+        self._clear(monkeypatch)
+        monkeypatch.setenv("AIRPLANE_KEY", "amt_env")
+        c = Client(api_key="amt_explicit", base_url="https://explicit.example")
+        assert c.api_key == "amt_explicit"
+        assert c.base_url == "https://explicit.example"

@@ -27,10 +27,15 @@ Usage
 Environment variables (used as defaults)
 ----------------------------------------
     AIRPLANE_BASE_URL    Base URL of the API. Default: http://127.0.0.1:5000
-                         The scheme is optional — "airplane.museum" becomes
+    (or AIRPLANE_HOST)   The scheme is optional — "airplane.museum" becomes
                          "https://airplane.museum", and a localhost value
                          becomes http://. See normalize_base_url.
     AIRPLANE_API_KEY     Bearer API key for write/admin operations.
+    (or AIRPLANE_KEY)
+
+Both spellings work, because the shell scripts alongside this module use
+AIRPLANE_HOST / AIRPLANE_KEY while the Python ones use the longer names.
+Exporting either pair is enough.
 """
 
 from __future__ import annotations
@@ -89,10 +94,21 @@ class AirplaneClient:
         api_key: Optional[str] = None,
         timeout: float = 30.0,
     ):
+        # Accept either naming. The shell scripts in this directory use
+        # AIRPLANE_HOST / AIRPLANE_KEY; the Python ones grew up with
+        # AIRPLANE_BASE_URL / AIRPLANE_API_KEY. Having two conventions
+        # meant exporting one pair and then being told the key was missing
+        # by a script that read the other. Read both, preferring the
+        # Python-native names.
         self.base_url = self.normalize_base_url(
-            base_url or os.environ.get("AIRPLANE_BASE_URL") or self.DEFAULT_BASE_URL
+            base_url
+            or os.environ.get("AIRPLANE_BASE_URL")
+            or os.environ.get("AIRPLANE_HOST")
+            or self.DEFAULT_BASE_URL
         )
-        self.api_key = api_key or os.environ.get("AIRPLANE_API_KEY")
+        self.api_key = (api_key
+                        or os.environ.get("AIRPLANE_API_KEY")
+                        or os.environ.get("AIRPLANE_KEY"))
         self.timeout = timeout
         self._session = requests.Session()
         if self.api_key:

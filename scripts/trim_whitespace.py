@@ -110,8 +110,8 @@ def main():
 
     client = AirplaneClient()
     if args.apply and not client.api_key:
-        print("error: --apply needs AIRPLANE_API_KEY (readwrite or admin).",
-              file=sys.stderr)
+        print("error: --apply needs an API key with readwrite or admin. "
+              "Set AIRPLANE_API_KEY (or AIRPLANE_KEY).", file=sys.stderr)
         return 2
 
     dirty = find_dirty(client, fields, limit=args.limit)

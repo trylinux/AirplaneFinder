@@ -150,7 +150,8 @@ def main():
 
     c = AirplaneClient()
     if args.apply and not c.api_key:
-        print("error: --apply needs AIRPLANE_API_KEY (admin).", file=sys.stderr)
+        print("error: --apply needs an admin API key. Set AIRPLANE_API_KEY "
+              "(or AIRPLANE_KEY).", file=sys.stderr)
         return 2
 
     print("=" * 66)
