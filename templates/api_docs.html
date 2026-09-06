@@ -121,6 +121,21 @@
         <div class="endpoint">
             <div class="endpoint-header">
                 <span class="method get">GET</span>
+                <code>/api/v1/museums/nearest</code>
+                <span class="badge status-in_storage">public</span>
+            </div>
+            <p>Museums near a point, closest first — no aircraft filter. Answers "what's near me?", where <code>/api/v1/nearest</code> answers "where can I see a B-17?". <code>aircraft_count</code> reflects only aircraft on display.</p>
+            <table class="param-table">
+                <tr><td><code>lat</code>, <code>lon</code></td><td>Decimal degrees. Takes precedence when both are supplied — mobile passes these straight from the browser's geolocation API.</td></tr>
+                <tr><td><code>location</code></td><td>Zip/postal code or city name, used when lat/lon are absent</td></tr>
+                <tr><td><code>radius</code></td><td>Optional cap in miles</td></tr>
+                <tr><td><code>limit</code></td><td>Max results (default 10, max 50)</td></tr>
+            </table>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method get">GET</span>
                 <code>/api/v1/museums/regions</code>
                 <span class="badge status-in_storage">public</span>
             </div>
@@ -206,6 +221,59 @@
                 <span class="badge status-under_restoration">admin</span>
             </div>
             <p>Remove an exhibit link.</p>
+        </div>
+    </div>
+
+    <div class="endpoint-group">
+        <h3>Aviation Facts</h3>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method get">GET</span>
+                <code>/api/v1/facts</code>
+                <span class="badge status-in_storage">public</span>
+            </div>
+            <p>List facts. Hidden facts are excluded unless <code>include_inactive=true</code>.</p>
+            <table class="param-table">
+                <tr><td><code>aircraft_id</code></td><td>Only facts about this aircraft</td></tr>
+                <tr><td><code>include_inactive</code></td><td>Include hidden facts</td></tr>
+            </table>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method get">GET</span>
+                <code>/api/v1/facts/random</code>
+                <span class="badge status-in_storage">public</span>
+            </div>
+            <p>One random active fact. Optional <code>aircraft_id</code> narrows it to a single airframe. Returns 404 when no facts exist.</p>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method post">POST</span>
+                <code>/api/v1/facts</code>
+                <span class="badge status-on_display">readwrite</span>
+            </div>
+            <p>Add a fact. Required: <code>fact</code> (max 5000 chars). Optional: <code>source_url</code>, <code>aircraft_id</code> to attach it to a specific airframe.</p>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method put">PUT</span>
+                <code>/api/v1/facts/{id}</code>
+                <span class="badge status-on_display">readwrite</span>
+            </div>
+            <p>Update <code>fact</code>, <code>source_url</code>, <code>aircraft_id</code> or <code>is_active</code>. Set <code>is_active=false</code> to hide a fact without deleting it.</p>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method delete">DELETE</span>
+                <code>/api/v1/facts/{id}</code>
+                <span class="badge status-under_restoration">admin</span>
+            </div>
+            <p>Delete a fact permanently. Prefer <code>is_active=false</code> to hide one.</p>
         </div>
     </div>
 

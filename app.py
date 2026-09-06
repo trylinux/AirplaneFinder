@@ -36,7 +36,7 @@ from sqlalchemy.orm import joinedload, selectinload, contains_eager
 
 from models import (
     db, User, ApiKey,
-    Museum, Aircraft, AircraftAlias, AircraftMuseum, ZipCode, haversine,
+    Museum, Aircraft, AircraftAlias, AircraftMuseum, AircraftFact, ZipCode, haversine,
     UserMuseumAssignment, UserCountryAssignment,
     AircraftTemplate, AircraftTemplateAlias,
 )
@@ -852,6 +852,15 @@ def admin_templates_page():
     return render_template("admin_templates.html")
 
 
+@app.route("/admin/facts")
+@no_mobile
+@login_required
+def admin_facts_page():
+    """Manage aviation facts. Writes go through /api/v1/facts, which
+    enforces the real permissions."""
+    return render_template("admin_facts.html")
+
+
 @app.route("/admin/import")
 @no_mobile
 @login_required
@@ -878,6 +887,19 @@ def api_keys_page():
 # ══════════════════════════════════════════════
 # Public: contributions leaderboard
 # ══════════════════════════════════════════════
+
+@app.route("/near-me")
+def near_me_page():
+    """Find museums near you. Mobile gets the GPS-first layout; desktop
+    gets the same search with a typed location."""
+    return mobile_render("near_me.html")
+
+
+@app.route("/facts")
+def facts_page():
+    """Random aviation facts."""
+    return mobile_render("facts.html")
+
 
 @app.route("/contributors")
 def contributors_page():
@@ -1090,6 +1112,84 @@ def api_museum_detail(museum_id):
         for lnk in links
     ]
     return jsonify({"museum": museum.to_dict(), "aircraft": aircraft_list})
+
+
+@app.route("/api/v1/museums/nearest")
+def api_museums_nearest():
+    """Museums near a point, closest first — no aircraft filter.
+
+    ``/api/v1/nearest`` answers "where can I see a B-17?". This answers the
+    other question a visitor actually asks: "what's near me?" Mobile passes
+    lat/lon straight from the browser's geolocation API; the web form
+    passes a typed zip or city, which goes through the same geocoder as the
+    aircraft search.
+
+    Query params
+        lat, lon    decimal degrees — takes precedence if both are present
+        location    zip/postal code or city name (used when lat/lon absent)
+        radius      optional cap in miles; omit for no limit
+        limit       max results, default 10, cap 50
+
+    ``aircraft_count`` counts only ``on_display`` links — the same
+    visitor-perspective rule the globe uses, so a museum's count here
+    matches what they'll actually be able to see.
+    """
+    limit = min(request.args.get("limit", 10, type=int), 50)
+    radius = request.args.get("radius", type=float)
+
+    lat = request.args.get("lat", type=float)
+    lon = request.args.get("lon", type=float)
+    origin_label = None
+
+    if lat is None or lon is None:
+        location = request.args.get("location", "").strip()
+        if not location:
+            return jsonify({
+                "error": "Provide either 'lat' and 'lon', or a 'location' "
+                         "(zip/postal code or city name)."
+            }), 400
+        lat, lon = _resolve_location(location)
+        if lat is None:
+            return jsonify({"error": f"Could not resolve location: {location}"}), 404
+        origin_label = location
+
+    if not (-90 <= lat <= 90 and -180 <= lon <= 180):
+        return jsonify({"error": "lat must be -90..90 and lon must be -180..180."}), 400
+
+    # One grouped query for the on_display counts rather than a query per
+    # museum. The count lives on the join so museums with zero viewable
+    # aircraft still appear — they're still somewhere you can go.
+    rows = (
+        db.session.query(Museum, func.count(AircraftMuseum.id))
+        .outerjoin(
+            AircraftMuseum,
+            and_(AircraftMuseum.museum_id == Museum.id,
+                 AircraftMuseum.display_status == _DISPLAY_STATUS_VIEWABLE),
+        )
+        .filter(Museum.latitude.isnot(None), Museum.longitude.isnot(None))
+        .group_by(Museum.id)
+        .all()
+    )
+
+    results = []
+    for museum, count in rows:
+        dist = haversine(lat, lon, float(museum.latitude), float(museum.longitude))
+        if radius is not None and dist > radius:
+            continue
+        results.append({
+            "distance_miles": round(dist, 1),
+            "aircraft_count": count,
+            "museum": museum.to_dict(),
+        })
+    results.sort(key=lambda r: r["distance_miles"])
+
+    return jsonify({
+        "origin": {"location": origin_label, "latitude": lat, "longitude": lon},
+        "radius_miles": radius,
+        "count": len(results[:limit]),
+        "total_in_range": len(results),
+        "results": results[:limit],
+    })
 
 
 @app.route("/api/v1/museums/regions")
@@ -2235,6 +2335,127 @@ def api_delete_exhibit(link_id):
     user = _get_effective_user()
     change_log.info(f"EXHIBIT_DELETE id={link_id} by={user.username}")
     return jsonify({"deleted": True, "id": link_id})
+
+
+# ── Aviation facts ──
+
+def _fact_or_404(fact_id):
+    return AircraftFact.query.get_or_404(fact_id)
+
+
+def _validate_fact_payload(data, require_text=True):
+    """Return (clean, error_response). Shared by POST and PUT."""
+    text = (data.get("fact") or "").strip()
+    if require_text and not text:
+        return None, (jsonify({"error": "'fact' is required and cannot be empty."}), 400)
+    if text and len(text) > 5000:
+        return None, (jsonify({"error": "'fact' is limited to 5000 characters."}), 400)
+
+    aircraft_id = data.get("aircraft_id")
+    if aircraft_id not in (None, ""):
+        try:
+            aircraft_id = int(aircraft_id)
+        except (TypeError, ValueError):
+            return None, (jsonify({"error": "'aircraft_id' must be an integer."}), 400)
+        if Aircraft.query.get(aircraft_id) is None:
+            return None, (jsonify({"error": f"No aircraft with id={aircraft_id}."}), 404)
+    else:
+        aircraft_id = None
+
+    return {
+        "fact": text,
+        "source_url": (data.get("source_url") or "").strip() or None,
+        "aircraft_id": aircraft_id,
+    }, None
+
+
+@app.route("/api/v1/facts")
+def api_list_facts():
+    """List facts. Public; hidden facts are excluded unless ?include_inactive.
+
+    ``?aircraft_id=`` filters to facts about one airframe — that's what the
+    aircraft detail page uses.
+    """
+    q = AircraftFact.query.options(joinedload(AircraftFact.aircraft))
+    if request.args.get("include_inactive", "").lower() not in ("1", "true", "yes"):
+        q = q.filter(AircraftFact.is_active.is_(True))
+    aircraft_id = request.args.get("aircraft_id", type=int)
+    if aircraft_id:
+        q = q.filter(AircraftFact.aircraft_id == aircraft_id)
+    facts = q.order_by(AircraftFact.id.desc()).all()
+    return jsonify({"results": [f.to_dict() for f in facts], "total": len(facts)})
+
+
+@app.route("/api/v1/facts/random")
+def api_random_fact():
+    """One random active fact.
+
+    Ordering by RAND()/RANDOM() keeps the work in the database instead of
+    loading every fact to pick one. ``func.random()`` renders correctly on
+    both SQLite (tests) and MySQL (production), so this needs no dialect
+    branch.
+    """
+    q = AircraftFact.query.filter(AircraftFact.is_active.is_(True))
+    aircraft_id = request.args.get("aircraft_id", type=int)
+    if aircraft_id:
+        q = q.filter(AircraftFact.aircraft_id == aircraft_id)
+    fact = q.order_by(func.random()).first()
+    if fact is None:
+        return jsonify({"error": "No facts available."}), 404
+    return jsonify(fact.to_dict())
+
+
+@app.route("/api/v1/facts", methods=["POST"])
+@api_auth_required("readwrite")
+def api_create_fact():
+    """Add a fact. Optionally attach it to an aircraft via aircraft_id."""
+    clean, err = _validate_fact_payload(request.get_json() or {})
+    if err:
+        return err
+    user = _get_effective_user()
+    fact = AircraftFact(**clean, created_by=user.id if user else None)
+    db.session.add(fact)
+    _increment_contribution()
+    db.session.commit()
+    change_log.info(f"FACT_CREATE id={fact.id} by={user.username}")
+    return jsonify(fact.to_dict()), 201
+
+
+@app.route("/api/v1/facts/<int:fact_id>", methods=["PUT", "PATCH"])
+@api_auth_required("readwrite")
+def api_update_fact(fact_id):
+    """Update a fact's text, source, aircraft link, or active flag."""
+    fact = _fact_or_404(fact_id)
+    data = request.get_json() or {}
+    clean, err = _validate_fact_payload(data, require_text="fact" in data)
+    if err:
+        return err
+    if "fact" in data:
+        fact.fact = clean["fact"]
+    if "source_url" in data:
+        fact.source_url = clean["source_url"]
+    if "aircraft_id" in data:
+        fact.aircraft_id = clean["aircraft_id"]
+    if "is_active" in data:
+        fact.is_active = bool(data["is_active"])
+    _increment_contribution()
+    db.session.commit()
+    user = _get_effective_user()
+    change_log.info(f"FACT_UPDATE id={fact_id} by={user.username}")
+    return jsonify(fact.to_dict())
+
+
+@app.route("/api/v1/facts/<int:fact_id>", methods=["DELETE"])
+@api_auth_required("admin")
+def api_delete_fact(fact_id):
+    """Delete a fact outright. To hide one instead, PATCH is_active=false."""
+    fact = _fact_or_404(fact_id)
+    db.session.delete(fact)
+    _increment_contribution()
+    db.session.commit()
+    user = _get_effective_user()
+    change_log.info(f"FACT_DELETE id={fact_id} by={user.username}")
+    return jsonify({"deleted": True, "id": fact_id})
 
 
 # ── Aircraft templates ──

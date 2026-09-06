@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}Aviation Facts — Aircraft Finder{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1><i class="fa-solid fa-lightbulb"></i> Aviation Facts</h1>
+    <p class="subtitle">A random piece of aviation trivia. Refresh for another.</p>
+</div>
+
+<div class="card fact-card" id="fact-card">
+    <p class="fact-text" id="fact-text">Loading…</p>
+    <p class="fact-meta" id="fact-meta"></p>
+</div>
+
+<div style="display:flex; gap:.5rem; flex-wrap:wrap;">
+    <button class="btn btn-primary" id="btn-another">
+        <i class="fa-solid fa-shuffle"></i> Another fact
+    </button>
+    {% if current_user.is_authenticated %}
+    <a href="/admin/facts" class="btn btn-secondary">
+        <i class="fa-solid fa-pen"></i> Manage facts
+    </a>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script nonce="{{ csp_nonce }}">
+$(function () {
+    function load() {
+        $('#btn-another').prop('disabled', true);
+        $.getJSON('/api/v1/facts/random')
+            .done(function (f) {
+                $('#fact-text').text(f.fact);
+                var bits = [];
+                if (f.aircraft) {
+                    bits.push('<a href="/aircraft/' + f.aircraft.id + '">' +
+                        escHtml(f.aircraft.full_designation || f.aircraft.model) +
+                        (f.aircraft.model_name ? ' ' + escHtml(f.aircraft.model_name) : '') +
+                        '</a>');
+                }
+                if (f.source_url) {
+                    bits.push('<a href="' + escHtml(f.source_url) +
+                              '" target="_blank" rel="noopener">Source</a>');
+                }
+                $('#fact-meta').html(bits.join(' &middot; '));
+            })
+            .fail(function (xhr) {
+                $('#fact-text').text(xhr.status === 404
+                    ? 'No facts have been added yet.'
+                    : 'Could not load a fact.');
+                $('#fact-meta').html('');
+            })
+            .always(function () { $('#btn-another').prop('disabled', false); });
+    }
+    $('#btn-another').on('click', load);
+    load();
+});
+</script>
+{% endblock %}

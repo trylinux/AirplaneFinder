@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% block title %}Facts — Admin — Aircraft Finder{% endblock %}
+{% block nav_admin %}active{% endblock %}
+
+{% set admin_section = 'facts' %}
+
+{% block content %}
+{% include "_admin_nav.html" %}
+
+<div class="card">
+    <h2><i class="fa-solid fa-lightbulb"></i> Add a Fact</h2>
+    <form id="form-fact" class="admin-form" style="margin-top:.75rem;">
+        <div class="form-group">
+            <label>Fact *</label>
+            <textarea name="fact" rows="3" required
+                      placeholder="Something checkable and interesting..."></textarea>
+        </div>
+        <div class="form-grid">
+            <div class="form-group">
+                <label>Source URL</label>
+                <input type="url" name="source_url" placeholder="https://...">
+            </div>
+            <div class="form-group">
+                <label>About a specific aircraft?</label>
+                <input type="text" id="ac-search" placeholder="Search aircraft (optional)"
+                       autocomplete="off">
+                <input type="hidden" name="aircraft_id" id="ac-id">
+                <div id="ac-hits" class="ac-hits"></div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add Fact</button>
+    </form>
+    <div id="msg" class="form-message" style="display:none; margin-top:.75rem;"></div>
+</div>
+
+<div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;">
+        <h2><i class="fa-solid fa-list"></i> All Facts</h2>
+        <label style="font-size:.85rem;">
+            <input type="checkbox" id="show-hidden"> Show hidden
+        </label>
+    </div>
+    <div id="results"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script nonce="{{ csp_nonce }}">
+$(function () {
+
+    // ── Aircraft picker: optional link, so this stays entirely skippable ──
+    var searchTimer = null;
+    $('#ac-search').on('input', function () {
+        var q = $(this).val().trim();
+        $('#ac-id').val('');
+        clearTimeout(searchTimer);
+        if (q.length < 2) { $('#ac-hits').empty(); return; }
+        searchTimer = setTimeout(function () {
+            $.getJSON('/api/v1/aircraft/search', {q: q, per_page: 6}, function (d) {
+                $('#ac-hits').html(d.results.map(function (a) {
+                    return '<button type="button" class="ac-hit" data-id="' + a.id + '">' +
+                        escHtml(a.full_designation || a.model) +
+                        (a.model_name ? ' ' + escHtml(a.model_name) : '') +
+                        (a.tail_number ? ' <span class="muted">' + escHtml(a.tail_number) + '</span>' : '') +
+                        '</button>';
+                }).join(''));
+            });
+        }, 250);
+    });
+    $('#ac-hits').on('click', '.ac-hit', function () {
+        $('#ac-id').val($(this).data('id'));
+        $('#ac-search').val($(this).text().trim());
+        $('#ac-hits').empty();
+    });
+
+    // ── Create ──
+    $('#form-fact').on('submit', function (e) {
+        e.preventDefault();
+        var data = {};
+        $(this).serializeArray().forEach(function (i) { if (i.value) data[i.name] = i.value; });
+        if (data.aircraft_id) data.aircraft_id = parseInt(data.aircraft_id, 10);
+        $.ajax({
+            url: '/api/v1/facts', method: 'POST', contentType: 'application/json',
+            data: JSON.stringify(data)
+        }).done(function () {
+            $('#msg').html('<div class="alert alert-success">' +
+                '<i class="fa-solid fa-circle-check"></i> Fact added.</div>').show();
+            $('#form-fact')[0].reset(); $('#ac-id').val(''); $('#ac-hits').empty();
+            load();
+        }).fail(function (xhr) {
+            $('#msg').html('<div class="alert alert-error">' +
+                escHtml((xhr.responseJSON && xhr.responseJSON.error) || xhr.statusText) +
+                '</div>').show();
+        });
+    });
+
+    // ── List ──
+    function load() {
+        var params = $('#show-hidden').is(':checked') ? {include_inactive: 'true'} : {};
+        $.getJSON('/api/v1/facts', params, function (d) {
+            if (!d.results.length) {
+                $('#results').html('<p class="no-results">No facts yet.</p>'); return;
+            }
+            var html = '<table class="result-table"><thead><tr>' +
+                       '<th>Fact</th><th>Aircraft</th><th>Status</th><th>Actions</th>' +
+                       '</tr></thead><tbody>';
+            d.results.forEach(function (f) {
+                html += '<tr' + (f.is_active ? '' : ' style="opacity:.55;"') + '>' +
+                    '<td>' + escHtml(f.fact) +
+                        (f.source_url ? ' <a href="' + escHtml(f.source_url) +
+                            '" target="_blank" rel="noopener" title="Source">' +
+                            '<i class="fa-solid fa-link"></i></a>' : '') + '</td>' +
+                    '<td>' + (f.aircraft
+                        ? '<a href="/aircraft/' + f.aircraft.id + '">' +
+                          escHtml(f.aircraft.full_designation || f.aircraft.model) + '</a>'
+                        : '<span class="muted">—</span>') + '</td>' +
+                    '<td><span class="badge status-' + (f.is_active ? 'on_display' : 'in_storage') +
+                        '">' + (f.is_active ? 'Visible' : 'Hidden') + '</span></td>' +
+                    '<td>' +
+                      '<button class="btn-icon toggle-fact" data-id="' + f.id +
+                        '" data-active="' + (f.is_active ? '1' : '0') +
+                        '" title="' + (f.is_active ? 'Hide' : 'Show') + '">' +
+                        '<i class="fa-solid fa-eye' + (f.is_active ? '-slash' : '') + '"></i></button> ' +
+                      '<button class="btn-icon delete-fact" data-id="' + f.id +
+                        '" title="Delete"><i class="fa-solid fa-trash"></i></button>' +
+                    '</td></tr>';
+            });
+            $('#results').html(html + '</tbody></table>');
+        });
+    }
+
+    // Hiding is reversible; deleting is not. Offer both, default to hiding.
+    $('#results').on('click', '.toggle-fact', function () {
+        var id = $(this).data('id'), active = $(this).data('active') === 1 || $(this).data('active') === '1';
+        $.ajax({url: '/api/v1/facts/' + id, method: 'PATCH', contentType: 'application/json',
+                data: JSON.stringify({is_active: !active})}).done(load);
+    });
+    $('#results').on('click', '.delete-fact', function () {
+        var id = $(this).data('id');
+        if (!confirm('Delete this fact permanently?\n\nTo hide it instead, use the eye button.')) return;
+        $.ajax({url: '/api/v1/facts/' + id, method: 'DELETE'})
+            .done(load)
+            .fail(function (xhr) {
+                alert('Delete failed: ' +
+                    ((xhr.responseJSON && xhr.responseJSON.error) || xhr.statusText));
+            });
+    });
+    $('#show-hidden').on('change', load);
+    load();
+});
+</script>
+{% endblock %}

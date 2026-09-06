@@ -194,6 +194,26 @@ CREATE TABLE IF NOT EXISTS aircraft_template_aliases (
 ) ENGINE=InnoDB;
 
 -- ─────────────────────────────────────────────
+-- Aviation facts / trivia
+-- aircraft_id is nullable: most facts are general, but one tied to an
+-- airframe can also surface on that aircraft's detail page. SET NULL
+-- rather than CASCADE so deleting an aircraft doesn't destroy the writing.
+-- ─────────────────────────────────────────────
+CREATE TABLE IF NOT EXISTS aircraft_facts (
+    id          INT AUTO_INCREMENT PRIMARY KEY,
+    fact        TEXT         NOT NULL,
+    source_url  VARCHAR(500) DEFAULT NULL,
+    aircraft_id INT          DEFAULT NULL,
+    is_active   BOOLEAN      NOT NULL DEFAULT TRUE,
+    created_by  INT          DEFAULT NULL,
+    created_at  TIMESTAMP    DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (aircraft_id) REFERENCES aircraft(id) ON DELETE SET NULL,
+    FOREIGN KEY (created_by)  REFERENCES users(id)    ON DELETE SET NULL,
+    INDEX idx_fact_aircraft (aircraft_id),
+    INDEX idx_fact_active   (is_active)
+) ENGINE=InnoDB;
+
+-- ─────────────────────────────────────────────
 -- Geocoding table for proximity lookups
 -- Stores zip/postal codes and city names with coordinates
 -- ─────────────────────────────────────────────

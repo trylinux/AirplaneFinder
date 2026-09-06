@@ -679,3 +679,17 @@ pre code {
     /* Footer: less weight, less margin */
     .footer { padding: .85rem 0; margin-top: 1rem; }
 }
+
+/* ─── Facts + Near Me (desktop) ───────────────────────── */
+.fact-card { text-align: center; padding: 2rem 1.5rem; }
+.fact-text { font-size: 1.25rem; line-height: 1.6; margin: 0 0 .75rem; }
+.fact-meta { font-size: .85rem; color: var(--text-dim); margin: 0; }
+.muted { color: var(--text-dim); }
+.aircraft-panel { padding: .5rem 0; }
+.ac-hits { display: flex; flex-wrap: wrap; gap: .3rem; margin-top: .35rem; }
+.ac-hit {
+    background: rgba(148,163,184,.12); border: 1px solid rgba(148,163,184,.25);
+    color: inherit; border-radius: 6px; padding: .2rem .5rem;
+    font-size: .8rem; cursor: pointer;
+}
+.ac-hit:hover { border-color: var(--primary); color: var(--primary); }

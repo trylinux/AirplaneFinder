@@ -1,0 +1,68 @@
+{% extends "mobile/base.html" %}
+{% block title %}Aviation Facts — Aircraft Finder{% endblock %}
+{% block tab_facts %}active{% endblock %}
+
+{% block content %}
+<div class="m-header">
+    <h1><i class="fa-solid fa-lightbulb"></i> Aviation Facts</h1>
+    <p class="m-sub">Tap for another.</p>
+</div>
+
+<div class="m-card m-fact-card" id="fact-card">
+    <p class="m-fact" id="fact-text">Loading…</p>
+    <div id="fact-meta" class="m-fact-meta"></div>
+</div>
+
+<button class="m-btn m-btn-primary m-btn-block" id="btn-another">
+    <i class="fa-solid fa-shuffle"></i> Another fact
+</button>
+{% endblock %}
+
+{% block scripts %}
+<script nonce="{{ csp_nonce }}">
+(function () {
+    var $text = document.getElementById('fact-text');
+    var $meta = document.getElementById('fact-meta');
+    var $btn = document.getElementById('btn-another');
+    var lastId = null;
+
+    function load() {
+        $btn.disabled = true;
+        fetch('/api/v1/facts/random')
+            .then(function (r) {
+                if (r.status === 404) return null;
+                return r.json();
+            })
+            .then(function (f) {
+                if (!f) {
+                    $text.textContent = 'No facts have been added yet.';
+                    $meta.innerHTML = '';
+                    return;
+                }
+                lastId = f.id;
+                $text.textContent = f.fact;
+                var bits = [];
+                // A fact tied to an airframe links through to it — that's the
+                // whole point of the optional aircraft_id.
+                if (f.aircraft) {
+                    bits.push('<a href="/aircraft/' + f.aircraft.id + '">' +
+                              escHtml(f.aircraft.full_designation || f.aircraft.model) +
+                              (f.aircraft.model_name ? ' ' + escHtml(f.aircraft.model_name) : '') +
+                              '</a>');
+                }
+                if (f.source_url) {
+                    bits.push('<a href="' + escHtml(f.source_url) +
+                              '" target="_blank" rel="noopener">Source</a>');
+                }
+                $meta.innerHTML = bits.join(' · ');
+            })
+            .catch(function () { $text.textContent = 'Could not load a fact.'; })
+            .then(function () { $btn.disabled = false; });
+    }
+
+    $btn.addEventListener('click', load);
+    document.getElementById('fact-card').addEventListener('click', load);
+    load();
+})();
+</script>
+{% endblock %}

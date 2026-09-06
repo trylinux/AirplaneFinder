@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+{% block title %}Museums Near Me — Aircraft Finder{% endblock %}
+{% block nav_museums %}active{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1><i class="fa-solid fa-location-dot"></i> Museums Near Me</h1>
+    <p class="subtitle">Find aviation museums close to you and see what's on display.</p>
+</div>
+
+<div class="card">
+    <div class="search-bar">
+        <input type="text" id="loc-input" placeholder="Zip code or city..." autocomplete="postal-code">
+        <select id="radius" style="max-width:12rem;">
+            <option value="">Any distance</option>
+            <option value="25">Within 25 miles</option>
+            <option value="50">Within 50 miles</option>
+            <option value="100" selected>Within 100 miles</option>
+            <option value="250">Within 250 miles</option>
+        </select>
+        <button class="btn btn-primary" id="btn-search">
+            <i class="fa-solid fa-magnifying-glass"></i> Search
+        </button>
+        <button class="btn btn-secondary" id="btn-gps">
+            <i class="fa-solid fa-crosshairs"></i> Use my location
+        </button>
+    </div>
+    <div id="status" class="form-message" style="margin-top:.5rem;"></div>
+</div>
+
+<div id="results"></div>
+{% endblock %}
+
+{% block scripts %}
+<script nonce="{{ csp_nonce }}">
+$(function () {
+    var loaded = {};
+
+    function isApplePlatform() {
+        var ua = navigator.userAgent || '';
+        return /iPad|iPhone|iPod|Macintosh/.test(ua);
+    }
+    function directionsUrl(m) {
+        var hasCoords = m.latitude != null && m.longitude != null;
+        var coords = hasCoords ? m.latitude + ',' + m.longitude : '';
+        var label = [m.name, m.address, m.city, m.state_province, m.postal_code]
+                        .filter(Boolean).join(', ');
+        var dest = encodeURIComponent(hasCoords ? coords : label);
+        return isApplePlatform()
+            ? 'https://maps.apple.com/?daddr=' + dest + '&q=' + encodeURIComponent(m.name)
+            : 'https://www.google.com/maps/dir/?api=1&destination=' + dest;
+    }
+
+    function render(data) {
+        if (!data.results.length) {
+            $('#results').html('<p class="no-results">No museums found in range. Try a wider radius.</p>');
+            return;
+        }
+        var html = '<table class="result-table"><thead><tr>' +
+                   '<th>Distance</th><th>Museum</th><th>Location</th>' +
+                   '<th>Aircraft</th><th>Actions</th></tr></thead><tbody>';
+        data.results.forEach(function (r) {
+            var m = r.museum;
+            html += '<tr class="museum-row" data-museum-id="' + m.id + '" style="cursor:pointer;">' +
+                '<td><strong>' + r.distance_miles + ' mi</strong></td>' +
+                '<td>' + escHtml(m.name) + '</td>' +
+                '<td>' + escHtml([m.city, m.state_province].filter(Boolean).join(', ')) + '</td>' +
+                '<td><span class="badge status-on_display">' + r.aircraft_count + '</span></td>' +
+                '<td><a class="btn-icon" target="_blank" rel="noopener" href="' + directionsUrl(m) +
+                    '" title="Directions"><i class="fa-solid fa-diamond-turn-right"></i></a></td>' +
+                '</tr>' +
+                '<tr class="museum-detail" data-detail-for="' + m.id + '" hidden>' +
+                '<td colspan="5"><div class="aircraft-panel">Loading aircraft…</div></td></tr>';
+        });
+        $('#results').html(html + '</tbody></table>');
+    }
+
+    // Expand a row to list what's actually on display there.
+    $('#results').on('click', '.museum-row', function () {
+        var id = $(this).data('museum-id');
+        var $detail = $('[data-detail-for="' + id + '"]');
+        $detail.prop('hidden', !$detail.prop('hidden'));
+        if (loaded[id] || $detail.prop('hidden')) return;
+        $.getJSON('/api/v1/museums/' + id, {visible_only: 'true'}, function (d) {
+            loaded[id] = true;
+            var list = (d.aircraft || []).slice().sort(function (a, b) {
+                return (a.full_designation || '').localeCompare(b.full_designation || '');
+            });
+            $detail.find('.aircraft-panel').html(
+                list.length
+                  ? list.map(function (a) {
+                        return '<a href="/aircraft/' + a.id + '" class="badge status-in_storage" ' +
+                               'style="margin:.15rem; display:inline-block;">' +
+                               escHtml(a.full_designation || a.model) +
+                               (a.tail_number ? ' ' + escHtml(a.tail_number) : '') + '</a>';
+                    }).join('')
+                  : '<span class="no-results">No aircraft on display here yet.</span>');
+        });
+    });
+
+    function search(params) {
+        var radius = $('#radius').val();
+        if (radius) params.radius = radius;
+        params.limit = 50;
+        $('#status').html('Searching…').show();
+        $('#results').empty();
+        $.getJSON('/api/v1/museums/nearest', params)
+            .done(function (d) {
+                $('#status').html('Showing ' + d.count + ' of ' + d.total_in_range +
+                                  ' museums near ' + escHtml(d.origin.location || 'your location') + '.');
+                render(d);
+            })
+            .fail(function (xhr) {
+                $('#status').html('<div class="alert alert-error">' +
+                    escHtml((xhr.responseJSON && xhr.responseJSON.error) || 'Search failed.') +
+                    '</div>');
+            });
+    }
+
+    $('#btn-search').on('click', function () {
+        var v = $('#loc-input').val().trim();
+        if (!v) { $('#status').html('Enter a zip code or city.').show(); return; }
+        search({location: v});
+    });
+    $('#loc-input').on('keypress', function (e) { if (e.which === 13) $('#btn-search').click(); });
+
+    $('#btn-gps').on('click', function () {
+        if (!navigator.geolocation) {
+            $('#status').html('This browser does not support location.').show(); return;
+        }
+        $('#status').html('Getting your location…').show();
+        navigator.geolocation.getCurrentPosition(
+            function (p) { search({lat: p.coords.latitude.toFixed(5), lon: p.coords.longitude.toFixed(5)}); },
+            function (err) {
+                $('#status').html(err.code === err.PERMISSION_DENIED
+                    ? 'Location permission denied — enter a zip code instead.'
+                    : 'Could not get your location — enter a zip code instead.').show();
+            });
+    });
+});
+</script>
+{% endblock %}

@@ -459,6 +459,46 @@ class AircraftTemplateAlias(db.Model):
     template = db.relationship("AircraftTemplate", back_populates="aliases")
 
 
+class AircraftFact(db.Model):
+    """A piece of aviation trivia, optionally tied to a specific aircraft.
+
+    ``aircraft_id`` is nullable on purpose. Most facts are general ("the
+    SR-71 leaked fuel on the ground until friction heat sealed the tanks"),
+    but one attached to an airframe can also surface on that aircraft's
+    detail page. ON DELETE SET NULL rather than CASCADE: deleting an
+    aircraft record shouldn't silently destroy the writing about it.
+    """
+
+    __tablename__ = "aircraft_facts"
+
+    id = db.Column(db.Integer, primary_key=True)
+    fact = db.Column(db.Text, nullable=False)
+    source_url = db.Column(db.String(500))
+    aircraft_id = db.Column(
+        db.Integer,
+        db.ForeignKey("aircraft.id", ondelete="SET NULL"),
+        nullable=True,
+    )
+    # Hide a fact without deleting it — useful when something is disputed
+    # but you don't want to lose the text.
+    is_active = db.Column(db.Boolean, default=True, nullable=False)
+    created_by = db.Column(db.Integer, db.ForeignKey("users.id", ondelete="SET NULL"))
+    created_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
+
+    aircraft = db.relationship("Aircraft", backref="facts")
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "fact": self.fact,
+            "source_url": self.source_url,
+            "aircraft_id": self.aircraft_id,
+            "aircraft": self.aircraft.to_dict() if self.aircraft else None,
+            "is_active": bool(self.is_active),
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+        }
+
+
 class ZipCode(db.Model):
     __tablename__ = "zip_codes"
 
