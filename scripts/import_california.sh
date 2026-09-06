@@ -44,19 +44,47 @@ failed=0
 # created a second time as duplicates. Today the atomic rollback hides that
 # (one collision discards the batch), but a file whose rows all lack tail
 # numbers would silently double. So: check first, skip if already loaded.
-already_loaded() {  # already_loaded <csv>  -> 0 if that museum already has aircraft
-    local file="$1" museum id count
-    command -v jq >/dev/null 2>&1 || return 1
-    museum=$(python3 -c "
-import csv,sys
-r=next(csv.DictReader(open(sys.argv[1],encoding='utf-8')),None)
-print(r['museum_name'] if r else '')" "$file" 2>/dev/null)
-    [[ -z "$museum" ]] && return 1
-    id=$(curl -sS -G --data-urlencode "q=${museum}" "${HOST}/api/v1/museums/search" \
-         | jq -r --arg n "$museum" '.results[] | select(.name == $n) | .id' | head -1)
-    [[ -z "$id" ]] && return 1
-    count=$(curl -sS "${HOST}/api/v1/museums/${id}" | jq -r '(.aircraft // []) | length')
-    [[ "${count:-0}" -gt 0 ]]
+# Returns 0 ("already loaded") if that museum already has aircraft.
+#
+# This MUST fail closed. An earlier version began with
+#   command -v jq >/dev/null 2>&1 || return 1
+# so on a box without jq the guard reported "not loaded" and the import
+# went ahead — which is how USS Midway ended up imported four times and
+# China Lake twice. Files with no tail numbers duplicate silently, because
+# a NULL tail never collides. It now uses python3 only (already required
+# for the museum filter) and returns "already loaded" if it cannot tell.
+already_loaded() {  # already_loaded <csv>
+    local file="$1" result
+    if ! command -v python3 >/dev/null 2>&1; then
+        echo "      (python3 missing — cannot verify; skipping to be safe)" >&2
+        return 0                       # fail CLOSED: skip rather than duplicate
+    fi
+    result=$(AIRPLANE_BASE_URL="$HOST" python3 - "$file" <<'PY' 2>/dev/null
+import csv, json, sys, os, urllib.parse, urllib.request
+path = sys.argv[1]
+base = os.environ.get("AIRPLANE_BASE_URL", "").rstrip("/")
+try:
+    row = next(csv.DictReader(open(path, encoding="utf-8")), None)
+    name = (row or {}).get("museum_name", "").strip()
+    if not name:
+        print("UNKNOWN"); sys.exit()
+    q = base + "/api/v1/museums/search?q=" + urllib.parse.quote(name)
+    res = json.load(urllib.request.urlopen(q, timeout=20))
+    m = next((x for x in res.get("results", []) if x["name"] == name), None)
+    if not m:
+        print("NEW"); sys.exit()        # museum absent -> nothing imported yet
+    d = json.load(urllib.request.urlopen(f"{base}/api/v1/museums/{m['id']}", timeout=20))
+    print("LOADED" if d.get("aircraft") else "NEW")
+except Exception:
+    print("UNKNOWN")
+PY
+)
+    case "$result" in
+        NEW)    return 1 ;;            # safe to import
+        LOADED) return 0 ;;            # skip, already there
+        *)      echo "      (could not verify $(basename "$file") — skipping to be safe)" >&2
+                return 0 ;;            # fail CLOSED
+    esac
 }
 
 post() {  # post <endpoint> <file>
