@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,A-12,,60-6924,Blackbird,,fixed_wing,monoplane,military,recon,,,A-12;Oxcart;Blackbird,Blackbird Airpark,on_display
+Lockheed,D-21,B,525,Tagboard,,fixed_wing,monoplane,military,drone,,,D-21;Tagboard;Senior Bowl,Blackbird Airpark,on_display
+Lockheed,U-2,D,56-6721,Dragon Lady,,fixed_wing,monoplane,military,recon,,,U-2;Dragon Lady,Blackbird Airpark,on_display

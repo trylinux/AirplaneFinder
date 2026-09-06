@@ -1,0 +1,57 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Marriott,Avitor,,,,,lighter_than_air,,civilian,other,,,Avitor;replica,Hiller Aviation Museum,on_display
+Montgomery,Gull Glider,,,,,fixed_wing,monoplane,civilian,experimental,,,Montgomery;replica,Hiller Aviation Museum,on_display
+Wright,Flyer,,,,,fixed_wing,biplane,civilian,experimental,,,Wright Flyer;replica,Hiller Aviation Museum,on_display
+Montgomery,Santa Clara Glider,,,,,fixed_wing,monoplane,civilian,experimental,,,Montgomery;replica,Hiller Aviation Museum,on_display
+Maupin & Lanteri,Black Diamond,,,,,fixed_wing,biplane,civilian,experimental,1910,,Black Diamond,Hiller Aviation Museum,on_display
+Curtiss,Model D,,,,,fixed_wing,biplane,civilian,experimental,,,Curtiss Pusher;replica,Hiller Aviation Museum,on_display
+Montgomery,Evergreen Glider,,,,,fixed_wing,monoplane,civilian,experimental,1911,,Montgomery;Evergreen,Hiller Aviation Museum,on_display
+Wright,EX,,,,Vin Fiz,fixed_wing,biplane,civilian,experimental,,,Vin Fiz;replica,Hiller Aviation Museum,on_display
+Curtiss,Pusher,,,,Little Looper,fixed_wing,biplane,civilian,experimental,,,Little Looper;replica,Hiller Aviation Museum,on_display
+Fokker,Dr.I,,,Dreidecker,,fixed_wing,triplane,military,fighter,,,Dr.I;Triplane;replica,Hiller Aviation Museum,on_display
+Thaden,T-1,,,Argonaut,,fixed_wing,monoplane,civilian,commercial_transport,1928,,Thaden T-1;Argonaut,Hiller Aviation Museum,on_display
+Mono Aircraft,Monocoupe,70,,,,fixed_wing,monoplane,civilian,private,1928,,Monocoupe;Velie,Hiller Aviation Museum,on_display
+Travel Air,D4D,,,,Pepsi Skywriter,fixed_wing,biplane,civilian,private,1928,,Travel Air;Pepsi Skywriter,Hiller Aviation Museum,on_display
+Pietenpol,Air Camper,,,,,fixed_wing,monoplane,civilian,private,1929,,Air Camper,Hiller Aviation Museum,on_display
+Buhl,A-1,,,Autogiro,,rotary_wing,,civilian,experimental,1931,,Buhl Autogiro,Hiller Aviation Museum,on_display
+EAA,Penguin,,,,,fixed_wing,monoplane,civilian,other,1932,,Penguin;ground trainer,Hiller Aviation Museum,on_display
+Stearman-Hammond,Y-1,S,,,,fixed_wing,monoplane,civilian,private,1935,,Y-1S;Stearman-Hammond,Hiller Aviation Museum,on_display
+Hiller,XH-44,,,Hiller-Copter,,rotary_wing,,civilian,experimental,,,XH-44;replica,Hiller Aviation Museum,on_display
+United Helicopters,UH-4,,,Commuter,,rotary_wing,,civilian,private,1945,,UH-4;Commuter,Hiller Aviation Museum,on_display
+Bell,47,D-1,,,,rotary_wing,,civilian,utility,1947,,Bell 47,Hiller Aviation Museum,on_display
+Jet Propulsion Laboratory,Thunderbird,,,,,missile_rocket,,military,sounding,1947,,Thunderbird;sounding rocket,Hiller Aviation Museum,on_display
+Hiller,J-10,,,,,rotary_wing,,civilian,experimental,1947,,Hiller J-10,Hiller Aviation Museum,on_display
+Hiller,360,,,,,rotary_wing,,civilian,private,1949,,Hiller 360;UH-12A,Hiller Aviation Museum,on_display
+Hiller,YH-32,,,Hornet,,rotary_wing,,military,utility,1950,,YH-32;Hornet,Hiller Aviation Museum,on_display
+Hiller,OH-23,B,,Raven,,rotary_wing,,military,utility,1950,,OH-23;Raven,Hiller Aviation Museum,on_display
+Hiller,YH-32,A,Hornet,Sally Rand,,rotary_wing,,military,ground_attack,1952,,YH-32;Hornet,Hiller Aviation Museum,on_display
+Hiller,VZ-1,,,Flying Platform,,rotary_wing,,military,test,1955,,VZ-1;Pawnee;Flying Platform,Hiller Aviation Museum,on_display
+Grumman,HU-16,RD,N44RD,Albatross,,fixed_wing,monoplane,civilian,utility,1955,,HU-16;Albatross,Hiller Aviation Museum,on_display
+Hiller,XROE,1,,Rotorcycle,,rotary_wing,,military,utility,1956,,XROE-1;Rotorcycle,Hiller Aviation Museum,on_display
+Hiller,VXT-8,,,Coleopter,,fixed_wing,monoplane,military,test,,,VXT-8;Coleopter;replica,Hiller Aviation Museum,on_display
+Fairchild Hiller,FH-1100,,,,,rotary_wing,,civilian,utility,1963,,FH-1100;Ten99,Hiller Aviation Museum,on_display
+Del Mar,DHT-2,,,,,rotary_wing,,military,trainer,1966,,DHT-2;Del Mar,Hiller Aviation Museum,on_display
+Del Mar,DH-20,,,,,rotary_wing,,military,search_rescue,1968,,DH-20;Del Mar,Hiller Aviation Museum,on_display
+Boeing,737,200,,,,fixed_wing,monoplane,civilian,commercial_transport,1969,,737;cockpit section,Hiller Aviation Museum,on_display
+Lockheed,YO-3,A,18001,Quiet Star,,fixed_wing,monoplane,military,recon,1969,,YO-3;Quiet Star;QT-2,Hiller Aviation Museum,on_display
+RotorWay,Scorpion,,,,,rotary_wing,,civilian,experimental,1970,,Scorpion;RotorWay,Hiller Aviation Museum,on_display
+Boeing,747,136,G-AWNG,,,fixed_wing,monoplane,civilian,commercial_transport,1971,,747;forward fuselage,Hiller Aviation Museum,on_display
+Cessna,177,,,Cardinal,,fixed_wing,monoplane,civilian,private,1973,,177;Cardinal,Hiller Aviation Museum,on_display
+Colomban,MC-10,,,Cri-Cri,,fixed_wing,monoplane,civilian,experimental,1973,,MC-10;Cri-Cri,Hiller Aviation Museum,on_display
+Hollmann,HA-2,M,,Sportster,,rotary_wing,,civilian,experimental,1974,,HA-2M;Sportster,Hiller Aviation Museum,on_display
+Rutan,Long-EZ,,,,,fixed_wing,monoplane,civilian,experimental,1976,,Long-EZ;Rutan,Hiller Aviation Museum,on_display
+Rutan,Defiant,,,,,fixed_wing,monoplane,civilian,experimental,1978,,Defiant;Rutan,Hiller Aviation Museum,on_display
+NASA,AD-1,,,Oblique Wing,,fixed_wing,monoplane,civilian,experimental,1979,,AD-1;Oblique Wing,Hiller Aviation Museum,on_display
+Quicksilver,MX,,,,,fixed_wing,monoplane,civilian,private,1982,,Quicksilver MX,Hiller Aviation Museum,on_display
+Bede,BD-5,T,,,,fixed_wing,monoplane,civilian,experimental,1982,,BD-5;Bede,Hiller Aviation Museum,on_display
+ParaPlane,PM-1,,,,,fixed_wing,monoplane,civilian,experimental,1983,,PM-1;ParaPlane,Hiller Aviation Museum,on_display
+NASA,OAW,,,Oblique All Wing,,fixed_wing,monoplane,civilian,experimental,1985,,OAW;Oblique All Wing,Hiller Aviation Museum,on_display
+Pitts,S-1,C,,Special,,fixed_wing,biplane,civilian,private,1985,,Pitts Special,Hiller Aviation Museum,on_display
+Boeing,Condor,,,,,fixed_wing,monoplane,military,recon,1988,,Condor;UAV,Hiller Aviation Museum,on_display
+Bright Star,Swift,,,,,fixed_wing,monoplane,civilian,experimental,1989,,Swift;glider,Hiller Aviation Museum,on_display
+Trek Aerospace,SoloTrek,,,,,rotary_wing,,civilian,experimental,2001,,SoloTrek;XFV,Hiller Aviation Museum,on_display
+General Atomics,MQ-1,B,00-3069,Predator,,fixed_wing,monoplane,military,recon,2000,,MQ-1;RQ-1;Predator,Hiller Aviation Museum,on_display
+Scaled Composites,SpaceShipOne,,,,,spacecraft,,civilian,space,,,SpaceShipOne;replica,Hiller Aviation Museum,on_display
+Kitty Hawk,Flyer,,,,,rotary_wing,,civilian,experimental,2017,,Kitty Hawk Flyer;eVTOL,Hiller Aviation Museum,on_display
+Opener,BlackFly,,,,,rotary_wing,,civilian,experimental,2017,,BlackFly;eVTOL,Hiller Aviation Museum,on_display
+Wisk Aero,Cora,Gen5,,,,rotary_wing,,civilian,experimental,2017,,Cora;Wisk;eVTOL,Hiller Aviation Museum,on_display

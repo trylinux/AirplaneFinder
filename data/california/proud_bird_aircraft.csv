@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,DC-3,,,,,fixed_wing,monoplane,civilian,commercial_transport,,,DC-3,The Proud Bird,on_display
+Beechcraft,C-45,,,Expeditor,,fixed_wing,monoplane,military,utility,,,C-45;Twin Beech,The Proud Bird,on_display
+Douglas,A-4,,,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,A-4;Skyhawk;Blue Angels,The Proud Bird,on_display

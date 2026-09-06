@@ -1,0 +1,16 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,UH-1,B,60-3607,Iroquois,,rotary_wing,,military,utility,1960,,UH-1;Huey,Tomorrow's Aeronautical Museum,on_display
+Bell,UH-1,H,66-0765,Iroquois,,rotary_wing,,military,utility,1966,,UH-1;Huey,Tomorrow's Aeronautical Museum,on_display
+Cessna,152,,N4644Q,,,fixed_wing,monoplane,civilian,private,,,152;Tuskegee tribute,Tomorrow's Aeronautical Museum,on_display
+Cessna,172,N,N734SV,,,fixed_wing,monoplane,civilian,private,,,172;Skyhawk,Tomorrow's Aeronautical Museum,on_display
+Cessna,172,RG,N6259V,,,fixed_wing,monoplane,civilian,private,,,172RG;Cutlass,Tomorrow's Aeronautical Museum,on_display
+Cessna,172,S,N6048Z,,,fixed_wing,monoplane,civilian,private,,,172;Skyhawk,Tomorrow's Aeronautical Museum,on_display
+Cessna,310,Q,N315CB,,,fixed_wing,monoplane,civilian,private,,,310,Tomorrow's Aeronautical Museum,on_display
+Cessna,T-37,B,60-0103,Tweet,,fixed_wing,monoplane,military,trainer,1960,,T-37;Tweet,Tomorrow's Aeronautical Museum,on_display
+Hughes,OH-6,A,67-16091,Cayuse,,rotary_wing,,military,recon,1967,,OH-6;Cayuse;Loach,Tomorrow's Aeronautical Museum,on_display
+Lockheed,T-33,A,N32GB,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-33;T-Bird,Tomorrow's Aeronautical Museum,on_display
+Northrop,T-38,A,61-0894,Talon,,fixed_wing,monoplane,military,trainer,1961,,T-38;Talon,Tomorrow's Aeronautical Museum,on_display
+Piper,PA-23,250,N513B,Aztec,,fixed_wing,monoplane,civilian,private,,,PA-23;Aztec,Tomorrow's Aeronautical Museum,on_display
+Piper,PA-28,180,N7506W,Cherokee,,fixed_wing,monoplane,civilian,private,,,PA-28;Cherokee,Tomorrow's Aeronautical Museum,on_display
+Piper,PA-38,112,N23680,Tomahawk,,fixed_wing,monoplane,civilian,private,,,PA-38;Tomahawk,Tomorrow's Aeronautical Museum,on_display
+Sikorsky,UH-34,D,N163YP,Seahorse,,rotary_wing,,military,search_rescue,,,UH-34;Seahorse,Tomorrow's Aeronautical Museum,on_display

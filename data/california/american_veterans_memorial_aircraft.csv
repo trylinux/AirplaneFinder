@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Boeing,B-17,G,44-85738,Flying Fortress,Preston's Pride,fixed_wing,monoplane,military,bomber,1944,,B-17;Flying Fortress,American Veterans Memorial,on_display
+McDonnell,F-4,C,64-0912,Phantom II,,fixed_wing,monoplane,military,fighter,1964,,F-4;GF-4C;Phantom II,American Veterans Memorial,on_display

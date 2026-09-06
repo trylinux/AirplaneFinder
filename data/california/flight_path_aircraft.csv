@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,DC-3,,N760,,,fixed_wing,monoplane,civilian,commercial_transport,,,DC-3,Flight Path Learning Center and Museum,on_display
+Northrop,T-38,A,N963NA,Talon,,fixed_wing,monoplane,military,trainer,,,T-38;Talon,Flight Path Learning Center and Museum,on_display
