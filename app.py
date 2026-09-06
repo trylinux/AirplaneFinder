@@ -1810,7 +1810,7 @@ def _bulk_import_request_payload():
 
 @app.route("/api/v1/aircraft/bulk_import", methods=["POST"])
 @api_auth_required("admin")
-@limiter.limit("10 per hour")
+@limiter.limit(lambda: Config.BULK_IMPORT_RATE_LIMIT)
 def api_bulk_import_aircraft():
     """Bulk-create aircraft from a CSV or JSON payload. aircraft_admin+."""
     try:
@@ -1832,7 +1832,7 @@ def api_bulk_import_aircraft():
 
 @app.route("/api/v1/museums/bulk_import", methods=["POST"])
 @api_auth_required("admin")
-@limiter.limit("10 per hour")
+@limiter.limit(lambda: Config.BULK_IMPORT_RATE_LIMIT)
 def api_bulk_import_museums():
     """Bulk-create museums from a CSV or JSON payload. aircraft_admin+."""
     try:

@@ -200,6 +200,12 @@ link columns below).
 
 - Permission: `admin` or `aircraft_admin`.
 - Cap: 5,000 rows per request. Split larger imports.
+- Rate limit: `BULK_IMPORT_RATE_LIMIT`, default **200 per hour**. A
+  multi-file load (one file per museum, plus a dry run) is easily 80+
+  requests, so the old 10/hour cap returned `429 Too Many Requests` — an
+  HTML error page, not a JSON report, which reads like a failed import
+  rather than throttling. Raise it in `config.py` or via the
+  `BULK_IMPORT_RATE_LIMIT` env var if you need more.
 - Atomic: any validation error rolls back the whole batch — partial
   imports are too painful to debug after the fact.
 - Existing duplicates (same `(model, tail_number)` for aircraft, same

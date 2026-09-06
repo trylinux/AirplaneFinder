@@ -70,9 +70,34 @@ post() {  # post <endpoint> <file>
     fi
     local rows; rows=$(($(wc -l < "$file") - 1))
     printf "  %-46s %4d rows  " "$(basename "$file")" "$rows"
-    local resp
-    resp=$(curl -sS -H "Authorization: Bearer $KEY" -F "file=@${file}" $DRY \
-                "${HOST}${endpoint}")
+    local resp code attempt=1
+    # The bulk endpoints are rate limited. Importing one file per museum is
+    # dozens of requests in a couple of minutes, so a 429 is expected rather
+    # than exceptional — back off and retry instead of reporting a phantom
+    # failure. A 429 body is an HTML error page, not JSON, so it has to be
+    # caught by status code before we try to parse it.
+    while :; do
+        resp=$(curl -sS -w '\n%{http_code}' -H "Authorization: Bearer $KEY" \
+                    -F "file=@${file}" $DRY "${HOST}${endpoint}")
+        code=$(tail -n1 <<<"$resp")
+        resp=$(sed '$d' <<<"$resp")
+        [[ "$code" != "429" ]] && break
+        if (( attempt > 5 )); then
+            echo "rate limited (429) — gave up after $((attempt-1)) retries"
+            echo "        raise BULK_IMPORT_RATE_LIMIT in config.py, or wait an hour."
+            failed=1
+            return
+        fi
+        local wait=$(( attempt * 60 ))
+        printf "\n      429 rate limited — waiting %ds (attempt %d/5) " "$wait" "$attempt"
+        sleep "$wait"
+        attempt=$((attempt+1))
+    done
+    if [[ "$code" != "200" ]]; then
+        echo "HTTP $code"
+        failed=1
+        return
+    fi
     if command -v jq >/dev/null 2>&1; then
         local created linked errs
         created=$(jq -r '.created // 0' <<<"$resp")

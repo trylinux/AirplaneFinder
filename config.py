@@ -112,6 +112,18 @@ class Config:
     # is plenty of headroom and protects against trivial DoS via huge bodies.
     MAX_CONTENT_LENGTH = int(_get("security", "max_content_length", "MAX_CONTENT_LENGTH", str(1 * 1024 * 1024)))
 
+    # Rate limit on the bulk-import endpoints, as a Flask-Limiter string.
+    #
+    # This started at a hard-coded "10 per hour", which is fine for the
+    # occasional hand-uploaded spreadsheet but far too tight for a real
+    # data load: importing one file per museum means dozens of requests in
+    # a few minutes, and a dry run doubles it. The limit is not what keeps
+    # a bulk import from tying up a worker — _BULK_MAX_ROWS (5,000 rows)
+    # and MAX_CONTENT_LENGTH already do that — so it can be generous while
+    # still stopping a runaway loop.
+    BULK_IMPORT_RATE_LIMIT = _get("security", "bulk_import_rate_limit",
+                                  "BULK_IMPORT_RATE_LIMIT", "200 per hour")
+
     # Toggle for adding HSTS / strict cookies / CSP. Off in debug so local
     # HTTP dev works; on otherwise.
     SECURITY_HEADERS_ENABLED = _get("security", "headers_enabled", "SECURITY_HEADERS_ENABLED",
