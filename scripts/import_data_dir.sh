@@ -113,6 +113,25 @@ post() {  # post <endpoint> <file>
         printf "  %-46s already imported — skipped\n" "$(basename "$file")"
         return
     fi
+    # TOP-UP files bypass the museum-level guard (their museum always has
+    # aircraft), so they need row-level filtering instead — otherwise a
+    # re-run collides on rows that landed last time and the atomic importer
+    # discards the whole file. Filter to genuinely-new rows first.
+    local FILTERED_AC=""
+    if [[ "$endpoint" == *aircraft* && "$(basename "$file")" == *topup* ]] \
+       && command -v python3 >/dev/null 2>&1; then
+        FILTERED_AC=$(mktemp /tmp/ac_new.XXXXXX.csv)
+        AIRPLANE_BASE_URL="$HOST" AIRPLANE_API_KEY="$KEY" \
+            python3 scripts/filter_new_aircraft.py "$file" --out "$FILTERED_AC"
+        case $? in
+            0) file="$FILTERED_AC" ;;
+            3) printf "  %-46s all rows already present — skipped\n" \
+                      "$(basename "$file")"
+               rm -f "$FILTERED_AC"; return ;;
+            *) rm -f "$FILTERED_AC"; FILTERED_AC=""
+               echo "      (row filter failed; importing unfiltered)" >&2 ;;
+        esac
+    fi
     local rows; rows=$(($(wc -l < "$file") - 1))
     printf "  %-46s %4d rows  " "$(basename "$file")" "$rows"
     local resp code attempt=1
@@ -143,6 +162,7 @@ post() {  # post <endpoint> <file>
         failed=1
         return
     fi
+    [[ -n "$FILTERED_AC" ]] && rm -f "$FILTERED_AC"
     if command -v jq >/dev/null 2>&1; then
         local created linked errs
         created=$(jq -r '.created // 0' <<<"$resp")

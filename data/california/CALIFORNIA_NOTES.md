@@ -302,6 +302,18 @@ worth an on-site check. Note the site has been renamed the **General
 Robert W. Cone NTC and 11th ACR Heritage Center** — the database still
 holds the old name.
 
+### Unresolved: A-6 Intruder BuNo 154162
+
+Two museums claim this airframe. It is recorded in the database at **March
+Field Air Museum** (aircraft id 206), and Palm Springs' own listing shows an
+A-6A 154162 described as on loan. One of them is wrong, or the aircraft has
+moved and one record is stale.
+
+Because the importer is atomic, this single row was rejecting the entire
+21-row Palm Springs top-up. `scripts/filter_new_aircraft.py` now drops rows
+already present, so the other 20 import and this one stays at March Field
+until somebody checks. Worth a phone call to either museum.
+
 ### What is genuinely left
 
 1. **Delete the Hillier Air Museum record (id 80)** — permanently closed,
