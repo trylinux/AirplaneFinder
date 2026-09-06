@@ -17,8 +17,8 @@ Split by manufacturer initial so each slice is a manageable research pass.
 
 | File | Slice | Rows | Tails |
 |---|---|---|---|
-| `pima_topup_a_to_f_aircraft.csv` | manufacturers A–F | 142 | 140 (**98%**) |
-| _(pending)_ | G–M | ~110 | |
+| `pima_topup_a_to_f_aircraft.csv` | manufacturers A–F | 142 | 140 (98%) |
+| `pima_topup_g_to_m_aircraft.csv` | manufacturers G–M | 112 | 106 (95%) |
 | _(pending)_ | N–Z | ~110 | |
 
 **98% serial coverage is the best in the whole project** — better than
@@ -49,10 +49,30 @@ SR-71A 61-7951, which fall in the L slice.
 - No AMARG/boneyard aircraft appeared in this slice — the adjacent boneyard
   is not part of the museum and is excluded by policy.
 
+### G–M caveats
+
+- **One aircraft moved museums.** Pima's MiG-21PF serial **507** is on loan
+  *from* Pima *to* the CAF Arizona Wing in Mesa — it is in Pima's catalogue
+  but physically in another building. Since this app answers "where can I
+  go and see it", it is recorded at **CAF Airbase Arizona**
+  (`caf_airbase_arizona_aircraft.csv`), not Pima.
+- **One collision, dropped:** Lockheed C-130A **57-0457** is already in the
+  database under another museum. Left where it is rather than forced.
+- **On loan to Pima** (kept, since they are physically there): S-3B 160604
+  and the Blue Angels F/A-18A 163093 from Pensacola; MiG-15UTI and MiG-23MLD
+  from NMUSAF; the Mi-24D Hind from IWM Duxford.
+- In storage: Lark 95, P-2H 150281, Bf 109F-4, WB-57F.
+  Under restoration: P-38G "Dumbo", B-26B Marauder, MiG-23MLD.
+- Pima's own manufacturer field uses compound credits in two places
+  ("General Dynamics/McDonnell-Douglas" for the Gryphon,
+  "Martin/General Dynamics" for the WB-57F); recorded under the first.
+- No AMARG boneyard aircraft in this slice. Several passed through
+  Davis-Monthan storage historically, but all are museum collection now.
+
 ## Other Arizona museums in the database
 
-**Commemorative Air Force Airbase Arizona** (id 29, Mesa) — 0 aircraft.
-Not yet researched.
+**Commemorative Air Force Airbase Arizona** (id 29, Mesa) — has 1 aircraft
+now (the MiG-21 above). Its own collection is not yet researched.
 
 Worth adding later: Titan Missile Museum (Sahuarita), Planes of Fame Valle
 — note the Valle site is the one whose aircraft were deliberately excluded
