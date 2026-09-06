@@ -116,7 +116,8 @@ aviation library and artifact museum, no airframes).
 | `lyon_air_museum_aircraft.csv` | 9 | 6 (67%) | validated, 0 errors |
 | batch 7 (7 files, see below) | 75 | 32 | validated, 0 errors |
 | batch 8 (9 files, see below) | 84 | 28 | validated, 0 errors |
-| **Total** | **988** | **426 (43%)** | **41 files** |
+| batch 9 (3 files, see below) | 29 | 22 | validated, 0 errors |
+| **Total** | **1,017** | **448 (44%)** | **44 files** |
 
 ### Batch 6
 
@@ -235,7 +236,7 @@ numbers, but it deserves a spot-check.
 
 ## Status: California complete
 
-**41 files, 988 aircraft, 43 museums with collections.** Every file
+**44 files, 1,017 aircraft, 46 museums with collections.** Every file
 validates through the real importer with zero errors.
 
 | | |
@@ -271,7 +272,56 @@ validates through the real importer with zero errors.
 - The **NB-52 52-008 / B-52 52-0008** duplicate (see
   `../verified_misattributions.md`) is still unresolved.
 
-### Remaining top-up
+### Batch 9 — the last gaps
 
-**Palm Springs Air Museum** holds 43 records against a real collection of
-about 75. It is the only substantial gap left in the state.
+| File | Rows | Tails |
+|---|---|---|
+| `palm_springs_topup_aircraft.csv` | 21 | 14 |
+| `air_group_one_aircraft.csv` | 4 | 4 |
+| `fort_irwin_ntc_aircraft.csv` | 4 | 4 |
+
+**Palm Springs top-up: 43 → 64.** Checked against all 43 live tail numbers —
+zero collisions. One near-miss worth noting: the researcher surfaced an
+F-100D "3-888" as missing, but it *is* already recorded. Excluded. That is
+what a diff is for.
+
+On loan rather than owned at Palm Springs: the A-6A (154162), the
+Commonwealth CA-27 Sabre (F-8612 — the museum labels it "F-86 Sabre" but
+it's the Australian-built licensed variant), the MiG-15bis (from Planes of
+Fame) and the Gulfstream I "Mickey Mouse One" (from the Disney Archives).
+The C-119G (53-8154) is **fuselage only**.
+
+**Air Group One's own domain (ag1caf.org) has lapsed** — it now serves
+unrelated French spam. All four aircraft came from secondary sources and
+should be re-verified if the museum reclaims its site. Its KC-97L is a
+cockpit section.
+
+**Fort Irwin** is really an armour museum; its four aircraft are outdoor
+gate-guard helicopters. Sourced from a directory last updated 2016, so
+worth an on-site check. Note the site has been renamed the **General
+Robert W. Cone NTC and 11th ACR Heritage Center** — the database still
+holds the old name.
+
+### What is genuinely left
+
+1. **Delete the Hillier Air Museum record (id 80)** — permanently closed,
+   collection whereabouts unknown, currently showing zero aircraft.
+2. **Decide on Alameda Naval (57) and Santa Paula (92)** — real places, but
+   they hold no airframes and always will show zero.
+3. **West Gate Century Circle (68)** shows zero because its six Century
+   Series jets are recorded under the Air Force Flight Test Museum, which
+   operates them. Correct either way; move them if you want the Century
+   Circle page to look populated.
+4. **6 orphan seed aircraft** with no museum link (B-17G 44-83624, C-123K,
+   C-5A, Concorde, UH-60A, Ford 5-AT-B) — invisible to visitors but counted
+   in `aircraft_count`.
+5. **5 type-level records** shared across museums (Wright Flyer, JN-4D,
+   A6M Zero, Bf 109G, Mosquito). Splitting them properly needs a serial per
+   airframe.
+6. **Verify on site**: Warbirds West and Wings & Rotors (possibly closed),
+   Golden Age (Google says closed, its own site disagrees), Aerospace Museum
+   of California (16 recorded vs ~40 claimed), Classic Rotors (identities
+   from photo filenames), Tomorrow's Aeronautical and Fort Irwin (both from
+   third-party directories).
+
+Content coverage for California is otherwise complete.

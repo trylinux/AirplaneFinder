@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aeronca,L-3,B,N36687,Grasshopper,,fixed_wing,monoplane,military,utility,,,L-3;Grasshopper,Air Group One Commemorative Air Force Museum,on_display
+Boeing,KC-97,L,53-0200,Stratofreighter,,fixed_wing,monoplane,military,tanker,,,KC-97;Stratofreighter;cockpit section,Air Group One Commemorative Air Force Museum,under_restoration
+North American,SNJ,5,43763,Texan,Sassy,fixed_wing,monoplane,military,trainer,,,SNJ;Texan;N7300C,Air Group One Commemorative Air Force Museum,on_display
+Stinson,L-5,,214934,Sentinel,Betsy,fixed_wing,monoplane,military,utility,,,L-5;Sentinel;N59AF,Air Group One Commemorative Air Force Museum,under_restoration

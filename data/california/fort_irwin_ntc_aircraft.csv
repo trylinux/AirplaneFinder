@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,AH-1,F,67-15776,Cobra,,rotary_wing,,military,ground_attack,,,AH-1;Cobra,National Training Center and 11th Armored Cavalry Regiment Museum,on_display
+Bell,UH-1,H,69-15312,Iroquois,,rotary_wing,,military,utility,,,UH-1;Huey;JUH-1H,National Training Center and 11th Armored Cavalry Regiment Museum,on_display
+Bell,UH-1,H,70-15839,Iroquois,,rotary_wing,,military,utility,,,UH-1;Huey,National Training Center and 11th Armored Cavalry Regiment Museum,on_display
+Hiller,OH-23,G,54-007,Raven,,rotary_wing,,military,recon,,,OH-23;Raven,National Training Center and 11th Armored Cavalry Regiment Museum,on_display

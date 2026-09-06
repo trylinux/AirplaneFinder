@@ -1,0 +1,22 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,47,,,,,rotary_wing,,civilian,utility,,,Bell 47,Palm Springs Air Museum,on_display
+Bell,H-13,,,Sioux,,rotary_wing,,military,utility,,,H-13;Sioux;on loan,Palm Springs Air Museum,on_display
+Boeing,B-17,G,44-83546,Flying Fortress,Movie Memphis Belle,fixed_wing,monoplane,military,bomber,,,B-17;Flying Fortress;N3703G,Palm Springs Air Museum,on_display
+Boeing,Skyfox,,N221SF,,,fixed_wing,monoplane,civilian,experimental,,,Skyfox;T-33 derivative,Palm Springs Air Museum,on_display
+Commonwealth,Sabre,Mk32,F-8612,,,fixed_wing,monoplane,military,fighter,,,CA-27;Sabre;on loan,Palm Springs Air Museum,on_display
+Fairchild,C-119,G,53-8154,Flying Boxcar,,fixed_wing,monoplane,military,transport,,,C-119;Flying Boxcar;fuselage only,Palm Springs Air Museum,on_display
+Grumman,A-6,A,154162,Intruder,,fixed_wing,monoplane,military,ground_attack,,,A-6;Intruder;on loan,Palm Springs Air Museum,on_display
+Grumman,OV-1,B,59-2621,Mohawk,,fixed_wing,monoplane,military,recon,,,OV-1;AO-1;Mohawk,Palm Springs Air Museum,on_display
+Grumman,F9F,5P,125316,Panther,,fixed_wing,monoplane,military,recon,,,F9F;Panther,Palm Springs Air Museum,on_display
+Grumman,Gulfstream I,,N234MM,,Mickey Mouse One,fixed_wing,monoplane,civilian,private,,,Gulfstream I;The Mouse,Palm Springs Air Museum,on_display
+Bell,OH-58,C,68-16940,Kiowa,,rotary_wing,,military,recon,,,OH-58;Kiowa,Palm Springs Air Museum,on_display
+WSK-Mielec,MiG-17,Lim-5,1617,Fresco,,fixed_wing,monoplane,military,fighter,,,MiG-17;Lim-5;Fresco,Palm Springs Air Museum,on_display
+WSK-Mielec,MiG-15,bis,,Fagot,,fixed_wing,monoplane,military,fighter,,,MiG-15;Lim-2;Fagot,Palm Springs Air Museum,on_display
+North American,AT-6,D,C.6-27,Texan,Heave Ho,fixed_wing,monoplane,military,trainer,,,AT-6;Texan;N4086T,Palm Springs Air Museum,on_display
+Piper,J-3,,N6944H,Cub,,fixed_wing,monoplane,civilian,private,,,J-3;Cub,Palm Springs Air Museum,on_display
+Piper,J-3,,N26044,Cub,,fixed_wing,monoplane,civilian,private,,,J-3;Cub,Palm Springs Air Museum,on_display
+Vought,A-7,,,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,A-7;Corsair II,Palm Springs Air Museum,under_restoration
+Steen,Skybolt,,,,,fixed_wing,biplane,civilian,experimental,,,Skybolt;Steen,Palm Springs Air Museum,on_display
+Waco,YPT-14,,,,,fixed_wing,biplane,military,trainer,,,YPT-14;Waco,Palm Springs Air Museum,on_display
+GAF,Nomad,N24A,N4817E,,,fixed_wing,monoplane,civilian,utility,,,Nomad;GAF,Palm Springs Air Museum,on_display
+General Atomics,MQ-1,,,Predator,,fixed_wing,monoplane,military,drone,,,MQ-1;Predator,Palm Springs Air Museum,on_display
