@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-# Import the California museum + aircraft data set.
+# Import a museum + aircraft data set from a data/ directory.
+#
+#   AIRPLANE_DATA_DIR=data/arizona bash scripts/import_data_dir.sh
+#
+# Picks up <dir>/*museums*.csv first, then every <dir>/*_aircraft.csv.
 #
 # Order matters: museums first. Every aircraft row carries
 # museum_name=<its museum>, which the importer resolves against museums that
@@ -13,8 +17,9 @@
 # Usage:
 #   export AIRPLANE_HOST=https://airplane.museum
 #   export AIRPLANE_KEY=amt_your_admin_key
-#   bash scripts/import_california.sh --dry-run     # validate everything, write nothing
-#   bash scripts/import_california.sh               # do it for real
+#   bash scripts/import_data_dir.sh --dry-run       # validate everything, write nothing
+#   bash scripts/import_data_dir.sh                 # do it for real
+#   AIRPLANE_DATA_DIR=data/arizona bash scripts/import_data_dir.sh
 #
 # Exit codes: 0 all good, 1 at least one file reported errors.
 
@@ -163,8 +168,11 @@ echo "── Step 1: museums (must run first) ──"
 # Subtract museums that already exist. Without this, one already-imported
 # museum makes the atomic importer reject all 43 rows — which is what
 # happens the moment you add a museum and re-run.
-MUSEUM_FILE="$DATA/ca_museums.csv"
-if [[ ! -f "$MUSEUM_FILE" ]]; then
+# Any *_museums.csv in the directory. Was hard-coded to ca_museums.csv,
+# which meant a new state's museums file was silently never imported and
+# every aircraft file in it then failed to resolve its museum_name.
+MUSEUM_FILE=$(ls "$DATA"/*museums*.csv 2>/dev/null | head -1)
+if [[ -z "$MUSEUM_FILE" || ! -f "$MUSEUM_FILE" ]]; then
     echo "  no museums file in $DATA — skipping step 1"
     MUSEUM_FILE=""
 elif command -v python3 >/dev/null 2>&1; then
