@@ -14,7 +14,7 @@ function initMuseumGlobe(options) {
 
     // Scene, camera, renderer
     var scene = new THREE.Scene();
-    var camera = new THREE.PerspectiveCamera(45, W / H, 0.1, 1000);
+    var camera = new THREE.PerspectiveCamera(45, W / H, 0.001, 1000);
     camera.position.z = 3.2;
 
     var renderer;
@@ -38,7 +38,7 @@ function initMuseumGlobe(options) {
     var surfaceMat = new THREE.MeshBasicMaterial({
         color: 0x0a1b3a, transparent: true, opacity: 0.92
     });
-    var surface = new THREE.Mesh(new THREE.SphereGeometry(R * 0.995, 48, 32), surfaceMat);
+    var surface = new THREE.Mesh(new THREE.SphereGeometry(R * 0.995, 256, 128), surfaceMat);
     globeGroup.add(surface);
 
     // Wireframe overlay — latitude/longitude grid in dim blue
@@ -77,11 +77,25 @@ function initMuseumGlobe(options) {
         );
     }
 
-    // Shared pin geometry / material
-    var pinGeom = new THREE.SphereGeometry(0.012, 10, 10);
-    var pinMat = new THREE.MeshBasicMaterial({
-        color: 0xffffff, transparent: true, opacity: 0.95
+    // Small, steady dots with a dark rim stay legible over borders. Their
+    // screen size is fixed below; the larger invisible hit area stays intact.
+    var pinCanvas = document.createElement('canvas');
+    pinCanvas.width = pinCanvas.height = 32;
+    var pinContext = pinCanvas.getContext('2d');
+    pinContext.beginPath();
+    pinContext.arc(16, 16, 16, 0, Math.PI * 2);
+    pinContext.fillStyle = '#071426';
+    pinContext.fill();
+    pinContext.beginPath();
+    pinContext.arc(16, 16, 11, 0, Math.PI * 2);
+    pinContext.fillStyle = '#ffffff';
+    pinContext.fill();
+    var pinMat = new THREE.SpriteMaterial({
+        map: new THREE.CanvasTexture(pinCanvas), depthWrite: false
     });
+    var activePinMat = pinMat.clone();
+    activePinMat.color.setHex(0x38bdf8);
+    var activePinId = null;
     var pins = [];
 
     // Country borders + labels
@@ -134,6 +148,8 @@ function initMuseumGlobe(options) {
         });
         var sprite = new THREE.Sprite(mat);
         sprite.scale.set(w * worldScale, h * worldScale, 1);
+        sprite.userData.labelScale = sprite.scale.clone();
+        sprite.userData.maxPixelHeight = opts.maxPixelHeight || 18;
         return sprite;
     }
 
@@ -178,7 +194,7 @@ function initMuseumGlobe(options) {
                 all.forEach(function(c) { cx += c[0]; cy += c[1]; });
                 cx /= all.length; cy /= all.length;
                 var sprite = makeLabelSprite(cname);
-                sprite.position.copy(latLonToVec3(cy, cx, R * 1.035));
+                sprite.position.copy(latLonToVec3(cy, cx, R * 1.004));
                 globeGroup.add(sprite);
                 labelSprites.push(sprite);
             }
@@ -215,7 +231,7 @@ function initMuseumGlobe(options) {
                     fontSize: 36, fontWeight: '500',
                     color: '#b8d0f5', worldScale: 0.00045
                 });
-                sprite.position.copy(latLonToVec3(cy, cx, R * 1.04));
+                sprite.position.copy(latLonToVec3(cy, cx, R * 1.004));
                 stateGroup.add(sprite);
                 stateLabelSprites.push(sprite);
             }
@@ -231,7 +247,7 @@ function initMuseumGlobe(options) {
     var dragging = false;
     var spinPaused = false;
     var rotY = 0, rotX = 0.25;
-    var INITIAL_Z = 3.2, MIN_Z = 1.35, MAX_Z = 6;
+    var INITIAL_Z = 3.2, MIN_Z = 1.04, MAX_Z = 6;
     var pointers = new Map();
     var press = null, didDrag = false, pinch = null;
 
@@ -257,6 +273,7 @@ function initMuseumGlobe(options) {
     }
 
     function showPin(m) {
+        activePinId = m ? m.id : null;
         if (!m) { tooltip.classList.remove('show'); return; }
         tooltip.innerHTML =
             '<div class="t-name pin-name">' + escHtml(m.name) + '</div>' +
@@ -267,7 +284,8 @@ function initMuseumGlobe(options) {
     }
 
     function zoomBy(factor) {
-        camera.position.z = Math.max(MIN_Z, Math.min(MAX_Z, camera.position.z * factor));
+        // Scale altitude above the surface, so close zoom remains gradual.
+        camera.position.z = Math.max(MIN_Z, Math.min(MAX_Z, R + (camera.position.z - R) * factor));
     }
     document.getElementById(prefix + 'globe-zoom-in').addEventListener('click', function() { zoomBy(0.8); });
     document.getElementById(prefix + 'globe-zoom-out').addEventListener('click', function() { zoomBy(1.25); });
@@ -306,12 +324,13 @@ function initMuseumGlobe(options) {
             pointers.set(e.pointerId, {x: e.clientX, y: e.clientY});
             if (pointers.size > 1 && pinch) {
                 var distance = pointerDistance();
-                if (distance > 0) camera.position.z = Math.max(MIN_Z, Math.min(MAX_Z, pinch.z * pinch.distance / distance));
+                if (distance > 0) camera.position.z = Math.max(MIN_Z, Math.min(MAX_Z, R + (pinch.z - R) * pinch.distance / distance));
             } else {
                 if (press && Math.hypot(e.clientX - press.x, e.clientY - press.y) > 6) didDrag = true;
                 if (didDrag) {
-                    rotY += (e.clientX - previous.x) * 0.005;
-                    rotX = Math.max(-1.3, Math.min(1.3, rotX + (e.clientY - previous.y) * 0.005));
+                    var dragSpeed = 0.005 * Math.min(1, (camera.position.z - R) / 2.2);
+                    rotY += (e.clientX - previous.x) * dragSpeed;
+                    rotX = Math.max(-1.3, Math.min(1.3, rotX + (e.clientY - previous.y) * dragSpeed));
                 }
             }
         } else if (e.pointerType === 'mouse') {
@@ -354,8 +373,8 @@ function initMuseumGlobe(options) {
         loadingEl.style.display = 'none';
         var countryHasMuseum = {};
         museums.forEach(function(m) {
-            var pos = latLonToVec3(m.latitude, m.longitude, R * 1.01);
-            var pin = new THREE.Mesh(pinGeom, pinMat.clone());
+            var pos = latLonToVec3(m.latitude, m.longitude, R * 1.004);
+            var pin = new THREE.Sprite(pinMat);
             pin.position.copy(pos);
             pin.userData = m;
             globeGroup.add(pin);
@@ -389,24 +408,33 @@ function initMuseumGlobe(options) {
     resizeObserver.observe(wrap);
 
     // ── Animation loop ──
-    var clock = new THREE.Clock();
+    var markerPosition = new THREE.Vector3();
+    function worldUnitsPerPixel(object) {
+        object.getWorldPosition(markerPosition).applyMatrix4(camera.matrixWorldInverse);
+        return 2 * Math.max(camera.near, -markerPosition.z) * Math.tan(camera.fov * Math.PI / 360) / H;
+    }
     function animate() {
         requestAnimationFrame(animate);
         if (!wrap.clientWidth || !wrap.clientHeight || document.hidden) return;
-        var t = clock.getElapsedTime();
-
         // Auto-rotate unless paused or dragging
-        if (!dragging && !spinPaused && !selected) rotY += 0.00025;
+        if (!dragging && !spinPaused && !selected) rotY += 0.00025 * Math.min(1, (camera.position.z - R) / 2.2);
 
         globeGroup.rotation.y = rotY;
         globeGroup.rotation.x = rotX;
 
-        // Throb pins: scale oscillates between .85 and 1.6, opacity 0.6 → 1
-        var throb = 0.85 + Math.sin(t * 2.6) * 0.4;
-        var opac  = 0.65 + Math.sin(t * 2.6) * 0.35;
+        scene.updateMatrixWorld(true);
+        camera.updateMatrixWorld(true);
+        // Six CSS pixels at every distance, with only the active dot accented.
         pins.forEach(function(p) {
-            p.scale.setScalar(throb);
-            p.material.opacity = opac;
+            var active = p.userData.id === activePinId;
+            p.scale.setScalar((active ? 8 : 6) * worldUnitsPerPixel(p));
+            p.material = active ? activePinMat : pinMat;
+        });
+        // Labels also stop growing when zoomed in to an individual region.
+        labelSprites.concat(stateLabelSprites).forEach(function(label) {
+            var baseScale = label.userData.labelScale;
+            var limit = label.userData.maxPixelHeight * worldUnitsPerPixel(label);
+            label.scale.copy(baseScale).multiplyScalar(Math.min(1, limit / baseScale.y));
         });
 
         // Zoom-based detail: show state lines/labels only when close

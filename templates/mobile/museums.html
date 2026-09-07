@@ -87,7 +87,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script src="{{ url_for('static', filename='js/museum-globe.js') }}"></script>
+<script src="{{ url_for('static', filename='js/museum-globe.js') }}?v=compact-pins-2"></script>
 <script nonce="{{ csp_nonce }}">
 $(function() {
     // Populate both region filters from the API.

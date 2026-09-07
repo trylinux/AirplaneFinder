@@ -22,7 +22,10 @@ Then run the browser checks in another terminal:
 
 ```sh
 NODE_PATH=/tmp/airplanefinder-browser-tests/node_modules node tests/browser/mobile_views.cjs
+NODE_PATH=/tmp/airplanefinder-browser-tests/node_modules node tests/browser/globe_markers.cjs
 ```
+
+The globe check verifies steady marker size at overview and close zoom, button/wheel/pinch zoom limits, and selection on both mobile and desktop.
 
 Stop the fixture server when finished. Its data is discarded on exit.
 Screenshots are written to `/private/tmp/airplanefinder-*.png`.
