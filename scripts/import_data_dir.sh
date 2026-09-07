@@ -109,17 +109,26 @@ post() {  # post <endpoint> <file>
     if [[ ! -f "$file" ]]; then
         echo "  SKIP (missing): $file"; return
     fi
-    if [[ "$endpoint" == *aircraft* && -z "$DRY" ]] && already_loaded "$file"; then
-        printf "  %-46s already imported — skipped\n" "$(basename "$file")"
+    # Row-level filtering runs on EVERY aircraft file, not just *topup* ones.
+    #
+    # The museum-level guard ("does this museum already have aircraft?") was
+    # written for California, where any aircraft at a museum meant the museum
+    # was fully imported. That stopped being true the moment we topped up
+    # museums that already held a stub or two: Udvar-Hazy had four aircraft,
+    # EAA two, Pensacola one, Duxford one, Evergreen one, Museum of Flight
+    # two — and the guard silently skipped all six full files, 755 aircraft,
+    # while reporting nothing wrong. The row filter is precise about which
+    # rows are already present, handles blank tails, and is safe to re-run,
+    # so it supersedes the guard. The guard remains only as the fallback
+    # when python3 is unavailable, because then nothing else protects
+    # untailed rows from duplicating.
+    local FILTERED_AC=""
+    if [[ "$endpoint" == *aircraft* && -z "$DRY" ]] \
+       && ! command -v python3 >/dev/null 2>&1 && already_loaded "$file"; then
+        printf "  %-46s already imported — skipped (no python3 for row filter)\n" "$(basename "$file")"
         return
     fi
-    # TOP-UP files bypass the museum-level guard (their museum always has
-    # aircraft), so they need row-level filtering instead — otherwise a
-    # re-run collides on rows that landed last time and the atomic importer
-    # discards the whole file. Filter to genuinely-new rows first.
-    local FILTERED_AC=""
-    if [[ "$endpoint" == *aircraft* && "$(basename "$file")" == *topup* ]] \
-       && command -v python3 >/dev/null 2>&1; then
+    if [[ "$endpoint" == *aircraft* ]] && command -v python3 >/dev/null 2>&1; then
         FILTERED_AC=$(mktemp /tmp/ac_new.XXXXXX.csv)
         AIRPLANE_BASE_URL="$HOST" AIRPLANE_API_KEY="$KEY" \
             python3 scripts/filter_new_aircraft.py "$file" --out "$FILTERED_AC"
@@ -128,8 +137,12 @@ post() {  # post <endpoint> <file>
             3) printf "  %-46s all rows already present — skipped\n" \
                       "$(basename "$file")"
                rm -f "$FILTERED_AC"; return ;;
-            *) rm -f "$FILTERED_AC"; FILTERED_AC=""
-               echo "      (row filter failed; importing unfiltered)" >&2 ;;
+            *) rm -f "$FILTERED_AC"
+               # Fail CLOSED. Importing unfiltered when the filter could not
+               # reach the API is exactly how untailed rows get duplicated.
+               printf "  %-46s row filter could not run — skipped to be safe\n" \
+                      "$(basename "$file")"
+               failed=1; return ;;
         esac
     fi
     local rows; rows=$(($(wc -l < "$file") - 1))
