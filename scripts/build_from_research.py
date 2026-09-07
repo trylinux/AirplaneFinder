@@ -116,6 +116,13 @@ def sanitise(row, museum):
     row.setdefault("description", "")
     row["museum_name"] = museum
 
+    # Folding surplus fields with " ".join produces a lone space when the
+    # surplus fields were all empty, which then imports as a one-character
+    # aircraft_name. Strip everything once, here, rather than per-field.
+    for k, v in list(row.items()):
+        if isinstance(v, str):
+            row[k] = v.strip()
+
     # Tail numbers arrive with prefixes: "BuNo 140048", "S/N 43-3374".
     t = row.get("tail_number", "").strip()
     t = re.sub(r"^(BuNo|Bu\.?No\.?|S/?N|Serial|Ser\.?)\s*[:.]?\s*", "", t, flags=re.I)
@@ -151,11 +158,15 @@ def main():
     p.add_argument("--out", required=True)
     args = p.parse_args()
 
-    rows, rejected = [], []
+    rows, rejected, deduped = [], [], []
+    seen_tail = {}
     for lineno, line in enumerate(Path(args.src).read_text(encoding="utf-8")
                                   .splitlines(), 1):
         line = line.strip()
         if not line or line.startswith("---") or "|" not in line:
+            continue
+        # A pasted-in header row is not data.
+        if line.lower().startswith("manufacturer|model|"):
             continue
         row, problem = realign(line.split("|"))
         if problem:
@@ -165,6 +176,19 @@ def main():
         if problems:
             rejected.append((lineno, "; ".join(problems), line[:90]))
             continue
+
+        # Cross-slice duplicates. Research is split by manufacturer initial,
+        # which assumes every airframe has one canonical manufacturer — and
+        # compound credits break that. A Vought/Chance Vought RF-8G lands in
+        # both the A-L and M-Z passes; so do Lancair/Neibauer, Howard/Poberezny
+        # and Boeing/Stearman. The tail number is the airframe's identity, so
+        # it is what catches them.
+        tail = row["tail_number"].strip().lower()
+        if tail:
+            if tail in seen_tail:
+                deduped.append((row, seen_tail[tail]))
+                continue
+            seen_tail[tail] = f"{row['manufacturer']} {row['model']}"
         rows.append({k: row.get(k, "") for k in HEADER})
 
     with open(args.out, "w", newline="", encoding="utf-8") as f:
@@ -175,6 +199,13 @@ def main():
     tails = sum(1 for r in rows if r["tail_number"])
     print(f"wrote {args.out}: {len(rows)} rows, {tails} with a tail number "
           f"({tails * 100 // max(len(rows), 1)}%)", file=sys.stderr)
+    if deduped:
+        print(f"  dropped {len(deduped)} duplicate airframe(s) already seen "
+              f"under another manufacturer credit:", file=sys.stderr)
+        for row, first in deduped:
+            print(f"      {row['manufacturer']} {row['model']} "
+                  f"{row['tail_number']} — already had it as {first}",
+                  file=sys.stderr)
     if rejected:
         print(f"REJECTED {len(rejected)} lines — fix by hand, do not guess:",
               file=sys.stderr)

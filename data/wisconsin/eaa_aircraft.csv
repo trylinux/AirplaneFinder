@@ -1,0 +1,118 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Corben,Baby Ace,C,N9050C,,,fixed_wing,monoplane,civilian,experimental,1955,,Mechanix Illustrated Baby Ace,EAA Aviation Museum,on_display
+Chanute,Hang Glider,,,,,fixed_wing,biplane,civilian,experimental,,,replica of 1896 Chanute glider,EAA Aviation Museum,on_display
+Bates,Monoplane,,,,,fixed_wing,monoplane,civilian,experimental,1912,,,EAA Aviation Museum,on_display
+Curtiss,Pusher,A-1,N24034,,Sweetheart,fixed_wing,biplane,civilian,experimental,1912,,,EAA Aviation Museum,on_display
+Fairchild,FC-2,W2,NC3569,,,fixed_wing,monoplane,civilian,utility,1927,,,EAA Aviation Museum,on_display
+Church,Midwing,JC-1,N9167,,,fixed_wing,monoplane,civilian,experimental,1928,,,EAA Aviation Museum,on_display
+Folkerts,Henderson Highwing,,,,,fixed_wing,monoplane,civilian,experimental,1928,,contest number 8902,EAA Aviation Museum,on_display
+Curtiss-Wright,Robin,B-2,N50H,,,fixed_wing,monoplane,civilian,private,1929,,,EAA Aviation Museum,on_display
+Cessna,CG-2,,,,,fixed_wing,monoplane,civilian,trainer,1930,,,EAA Aviation Museum,on_display
+Driggers,1-A,,N891H,,Sunshine Girl 3rd,fixed_wing,monoplane,civilian,experimental,1930,,,EAA Aviation Museum,on_display
+Kreider-Reisner,KR-21,B,N954V,Challenger,,fixed_wing,biplane,civilian,trainer,1930,,,EAA Aviation Museum,on_display
+Lincoln,PT-K,,N275N,,,fixed_wing,biplane,civilian,trainer,1930,,,EAA Aviation Museum,on_display
+Great Lakes,2T-1,A,N77RF,Sport Trainer,,fixed_wing,biplane,civilian,trainer,1931,,,EAA Aviation Museum,on_display
+Heath,LNB-4,,N953M,Parasol,,fixed_wing,monoplane,civilian,experimental,1931,,,EAA Aviation Museum,on_display
+Laird,Super Solution,,NR12048,,,fixed_wing,monoplane,civilian,experimental,1981,,LC-DW300;replica of 1931 original,EAA Aviation Museum,on_display
+Chester,Special,,N12930,,Jeep,fixed_wing,monoplane,civilian,experimental,1932,,,EAA Aviation Museum,on_display
+Aeronca,C-2,N,NC13089,Deluxe Scout,,fixed_wing,monoplane,civilian,private,1933,,,EAA Aviation Museum,on_display
+Davis,D-1,W,NC13456,,,fixed_wing,monoplane,civilian,private,1933,,,EAA Aviation Museum,on_display
+Fairchild,Model 24,C-8,NC13191,,,fixed_wing,monoplane,civilian,private,1933,,,EAA Aviation Museum,on_display
+Bucker,Bu 133,L,N515,Jungmeister,,fixed_wing,biplane,military,trainer,1935,,,EAA Aviation Museum,on_display
+Aeronca,C-3,,N16291,Master,,fixed_wing,monoplane,civilian,private,1936,,,EAA Aviation Museum,on_display
+Bugatti,Model 100,,,,,fixed_wing,monoplane,civilian,experimental,1938,,,EAA Aviation Museum,on_display
+Crosby,CR-4,,NR92Y,,,fixed_wing,monoplane,civilian,experimental,1938,,,EAA Aviation Museum,on_display
+Haufe-Dale,Hawk 2,,N18278,,,fixed_wing,monoplane,civilian,experimental,1939,,,EAA Aviation Museum,on_display
+Funk,Model B,,NC24116,,,fixed_wing,monoplane,civilian,private,1940,,,EAA Aviation Museum,on_display
+Harlow,PJC-2,,N3947B,,,fixed_wing,monoplane,civilian,private,1940,,,EAA Aviation Museum,on_display
+ERCO,415,C,NC28961,Ercoupe,,fixed_wing,monoplane,civilian,private,1941,,,EAA Aviation Museum,on_display
+de Havilland,DH.82,C,N667EA,Tiger Moth,,fixed_wing,biplane,military,trainer,1942,,CF-IVO,EAA Aviation Museum,on_display
+Douglas,DC-3,,N7772,,,fixed_wing,monoplane,civilian,commercial_transport,1942,,,EAA Aviation Museum,on_display
+Culver,PQ-14,B,N999ML,,,fixed_wing,monoplane,military,drone,1944,,Culver Cadet-derived target drone,EAA Aviation Museum,on_display
+Grumman,J2F,6,N1196N,Duck,,fixed_wing,biplane,military,utility,1944,,Columbia-built,EAA Aviation Museum,on_display
+de Havilland,DH.98,B.35,N35MK,Mosquito,,fixed_wing,monoplane,military,bomber,1946,,,EAA Aviation Museum,on_display
+Hispano Aviacion,HA-1112,M1L,N109BF,Buchon,,fixed_wing,monoplane,military,fighter,1947,,Bf 109 derivative;Battle of Britain film aircraft,EAA Aviation Museum,on_display
+LeVier,Cosmic Wind,W-5,N99CW,,Mr. Robinson,fixed_wing,monoplane,civilian,experimental,1948,,,EAA Aviation Museum,on_display
+Lockheed,P-80,C,,Shooting Star,,fixed_wing,monoplane,military,fighter,1948,,,EAA Aviation Museum,on_display
+de Havilland Canada,DHC-1,B-2,N1114V,Chipmunk,,fixed_wing,monoplane,military,trainer,1950,,,EAA Aviation Museum,on_display
+Loving,WR-1,,N351C,,Love,fixed_wing,monoplane,civilian,experimental,1951,,Loving-Wayne WR-1,EAA Aviation Museum,on_display
+Lockheed,T-33,A,,Shooting Star,,fixed_wing,monoplane,military,trainer,1952,,,EAA Aviation Museum,on_display
+Hegy,R.C.H.I.,,N9360,,El Chuparosa,fixed_wing,biplane,civilian,experimental,1959,,,EAA Aviation Museum,on_display
+EAA,Biplane,A-1 P-2,N6077V,,,fixed_wing,biplane,civilian,experimental,1960,,,EAA Aviation Museum,on_display
+Bucker,Bu 133,,N258H,Jungmeister,,fixed_wing,biplane,civilian,experimental,1967,,replica,EAA Aviation Museum,on_display
+Bede,BD-5,,N500BD,,,fixed_wing,monoplane,civilian,experimental,1970,,,EAA Aviation Museum,on_display
+Brock,KB-2,,N2303,,,rotary_wing,,civilian,experimental,1970,,gyroplane,EAA Aviation Museum,on_display
+Christen,Eagle,II,N2FC,,,fixed_wing,biplane,civilian,experimental,1977,,,EAA Aviation Museum,on_display
+Christen,Eagle,I-F,N41ET,,,fixed_wing,biplane,civilian,experimental,1979,,Eagles Aerobatic Team;N42ET;N43ET,EAA Aviation Museum,on_display
+Eipper,Quicksilver,MX-1,,,,fixed_wing,monoplane,civilian,experimental,1982,,Eipper-Formance,EAA Aviation Museum,on_display
+Cirrus,VK-30,,N33VK,,,fixed_wing,monoplane,civilian,experimental,1991,,,EAA Aviation Museum,on_display
+Lockwood,AirCam,,N5084T,,,fixed_wing,monoplane,civilian,experimental,2003,,,EAA Aviation Museum,on_display
+Aeronca,Model K,,NC19723,,,fixed_wing,monoplane,civilian,private,1937,,,EAA Aviation Museum,on_display
+Aeronca,Model LC,,NC17484,,,fixed_wing,monoplane,civilian,private,,,,EAA Aviation Museum,on_display
+Antares,MA-30,,,,,fixed_wing,monoplane,civilian,experimental,1991,,Rogallo-wing weight-shift trike,EAA Aviation Museum,on_display
+Bleriot,XI,bis,N908LB,,,fixed_wing,monoplane,civilian,experimental,,,replica,EAA Aviation Museum,on_display
+Consolidated,PT-1,,N31PT,Husky,,fixed_wing,biplane,military,trainer,,,,EAA Aviation Museum,on_display
+Curtiss,P-6,E,NX606PE,Hawk,,fixed_wing,biplane,military,fighter,,,Rosanik-built replica,EAA Aviation Museum,on_display
+Fokker,Dr.I,,N105RF,,,fixed_wing,triplane,military,fighter,,,Redfern-built replica,EAA Aviation Museum,on_display
+Ford,Flivver,,,,,fixed_wing,monoplane,civilian,experimental,,,replica by EAA Chapter 159;display number 268,EAA Aviation Museum,on_display
+Pitts,S-1,Special,N442X,,,fixed_wing,biplane,civilian,experimental,,,Red Devils formation team,EAA Aviation Museum,on_display
+Pitts,S-1,Special,N9J,,,fixed_wing,biplane,civilian,experimental,,,Red Devils formation team,EAA Aviation Museum,on_display
+Pitts,S-1,Special,N58J,,,fixed_wing,biplane,civilian,experimental,,,Red Devils formation team,EAA Aviation Museum,on_display
+Pitts,S-2,Special,N22Q,,,fixed_wing,biplane,civilian,private,1966,,,EAA Aviation Museum,on_display
+Monocoupe,113,,N7808,,,fixed_wing,monoplane,civilian,private,1928,,,EAA Aviation Museum,on_display
+Monocoupe,90,AW,N38904,,Little Mulligan,fixed_wing,monoplane,civilian,private,1941,,,EAA Aviation Museum,on_display
+Monocoupe,110,Clipwing,N15E,,,fixed_wing,monoplane,civilian,private,1949,,,EAA Aviation Museum,on_display
+Rasor,21,,,,,lighter_than_air,,civilian,private,,,,EAA Aviation Museum,on_display
+Spartan,C3,225,NC718N,,,fixed_wing,biplane,civilian,private,1930,,,EAA Aviation Museum,on_display
+Spartan,7W,,NC13993,Executive,,fixed_wing,monoplane,civilian,private,1937,,,EAA Aviation Museum,on_display
+Pitcairn,PA-7,S,NC95W,Sport Mailwing,,fixed_wing,biplane,civilian,private,1930,,,EAA Aviation Museum,on_display
+Pitcairn,PCA-2,,NC11609,Autogiro,Miss Champion,rotary_wing,,civilian,private,1931,,,EAA Aviation Museum,on_display
+Pitcairn,PA-39,,N3908,Autogiro,,rotary_wing,,civilian,private,1941,,,EAA Aviation Museum,on_display
+Waco,ARE,,NC20953,,,fixed_wing,biplane,civilian,private,1939,,,EAA Aviation Museum,on_display
+Waco,Model 10,ATO,NC5814,Taperwing,,fixed_wing,biplane,civilian,private,1928,,,EAA Aviation Museum,on_display
+Waco,CTO,,NC7527,Taperwing,,fixed_wing,biplane,civilian,private,1928,,,EAA Aviation Museum,on_display
+Waco,Primary Glider,,,,,fixed_wing,monoplane,civilian,trainer,,,replica,EAA Aviation Museum,on_display
+Nieuport,11,,N2001,,,fixed_wing,biplane,military,fighter,,,replica built by Huntley,EAA Aviation Museum,on_display
+Ryan,NYP,,,Spirit of St. Louis,,fixed_wing,monoplane,civilian,private,,,replica,EAA Aviation Museum,on_display
+Ryan,SCW-145,,NC17372,,,fixed_wing,monoplane,civilian,private,1937,,,EAA Aviation Museum,on_display
+Roloff-Unger,RLU-1,,N59Y,Breezy,,fixed_wing,monoplane,civilian,experimental,1964,,,EAA Aviation Museum,on_display
+Van's Aircraft,RV-3,,N17RV,,,fixed_wing,monoplane,civilian,experimental,1971,,,EAA Aviation Museum,on_display
+Van's Aircraft,RV-4,,N14RV,,,fixed_wing,monoplane,civilian,experimental,1979,,,EAA Aviation Museum,on_display
+RotorWay,Exec,,N3WN,Executive,,rotary_wing,,civilian,experimental,1983,,built by Walter Nitz,EAA Aviation Museum,on_display
+Stits,DS-1,,N4453H,Baby Bird,,fixed_wing,monoplane,civilian,experimental,1983,,,EAA Aviation Museum,on_display
+Wittman,D-12,,N13688,,Bonzo,fixed_wing,monoplane,civilian,experimental,1934,,N4486E,EAA Aviation Museum,on_display
+Wittman,DFA,,N1292,,Little Bonzo,fixed_wing,monoplane,civilian,experimental,1948,,,EAA Aviation Museum,on_display
+Wittman,Buttercup,,N18268,,,fixed_wing,monoplane,civilian,experimental,1938,,,EAA Aviation Museum,on_display
+Wittman,W-8,C,N5747N,Tailwind,,fixed_wing,monoplane,civilian,experimental,1953,,originally Flying Carpet,EAA Aviation Museum,on_display
+Wittman,Witts V,,N3259,,,fixed_wing,monoplane,civilian,experimental,1970,,,EAA Aviation Museum,on_display
+Wittman,Hardly Abelson,,,,,fixed_wing,monoplane,civilian,experimental,1995,,replica built 1995 by Pat Packard,EAA Aviation Museum,on_display
+Rider,R-5,,NX264Y,,Jackrabbit,fixed_wing,monoplane,civilian,experimental,1936,,,EAA Aviation Museum,on_display
+Taylorcraft,BF-50,,N21292,,,fixed_wing,monoplane,civilian,private,1938,,clipped wing;modified by Duane Cole,EAA Aviation Museum,on_display
+Taylor,Aerocar,,N4994P,,,fixed_wing,monoplane,civilian,experimental,1949,,,EAA Aviation Museum,on_display
+Thorp,T-18,,N455DT,,,fixed_wing,monoplane,civilian,experimental,1968,,,EAA Aviation Museum,on_display
+Rutan,VariViggen,,N27VV,,,fixed_wing,monoplane,civilian,experimental,1972,,,EAA Aviation Museum,on_display
+Rutan,VariEze,,N7EZ,,,fixed_wing,monoplane,civilian,experimental,1975,,prototype,EAA Aviation Museum,on_display
+Rutan,Voyager,,,,,fixed_wing,monoplane,civilian,experimental,,,partial replica by Scaled Composites,EAA Aviation Museum,on_display
+Stoddard-Hamilton,Glasair,,N88TH,,Ham2,fixed_wing,monoplane,civilian,experimental,1979,,,EAA Aviation Museum,on_display
+Stoddard-Hamilton,GlaStar,3,N231YE,,,fixed_wing,monoplane,civilian,experimental,,,,EAA Aviation Museum,on_display
+Miller,JM-2,,N189BB,,Pushy Galore,fixed_wing,monoplane,civilian,experimental,1989,,Miller-Bohannon,EAA Aviation Museum,on_display
+North American,P-64,,N840,,,fixed_wing,monoplane,military,fighter,1940,,NA-50,EAA Aviation Museum,on_display
+North American,XP-51,,NX51NA,Mustang,,fixed_wing,monoplane,military,fighter,1941,,,EAA Aviation Museum,on_display
+North American,F-51,D,44-75007,Mustang,Paul I,fixed_wing,monoplane,military,fighter,1944,,N3451D,EAA Aviation Museum,on_display
+North American,F-86,H,,Sabre,,fixed_wing,monoplane,military,fighter,1952,,,EAA Aviation Museum,on_display
+Northrop,F-89,J,,Scorpion,,fixed_wing,monoplane,military,fighter,1952,,,EAA Aviation Museum,on_display
+Vought,F4U,4,N6667,Corsair,,fixed_wing,monoplane,military,fighter,1945,,Chance Vought,EAA Aviation Museum,on_display
+Poberezny,P-5,,N51G,Pober Sport,,fixed_wing,monoplane,civilian,experimental,1959,,,EAA Aviation Museum,on_display
+Poberezny,P-9,,N9PH,Pober Pixie,,fixed_wing,monoplane,civilian,experimental,1974,,,EAA Aviation Museum,on_display
+Poberezny,Pete,III,N111PL,,Little Audrey,fixed_wing,monoplane,civilian,experimental,1953,,N27B;Howard Pete lineage,EAA Aviation Museum,on_display
+Wright,Model B,,N1911L,,,fixed_wing,biplane,civilian,experimental,,,replica by EAA Chapter 610,EAA Aviation Museum,on_display
+Swallow,Swallow,,N4028,,,fixed_wing,biplane,civilian,private,1927,,,EAA Aviation Museum,on_display
+Pheasant,H-10,,NC151N,,,fixed_wing,biplane,civilian,private,1929,,,EAA Aviation Museum,on_display
+Travel Air,E-4000,,NC648H,,,fixed_wing,biplane,civilian,private,1929,,,EAA Aviation Museum,on_display
+Mignet,Pou du Ciel,,N43993,,Flying Flea,fixed_wing,monoplane,civilian,experimental,1937,,tandem-wing,EAA Aviation Museum,on_display
+Rearwin,6000,M,N20741,Speedster,,fixed_wing,monoplane,civilian,private,1938,,,EAA Aviation Museum,on_display
+Rearwin,8135,,N4404W,Cloudster,,fixed_wing,monoplane,civilian,private,1940,,,EAA Aviation Museum,on_display
+Schreder,HP-10,,N319Y,,,fixed_wing,monoplane,civilian,experimental,1961,,Helisoar;du Pont HP-10,EAA Aviation Museum,on_display
+Nicholas-Beazley,Pobjoy Special,,N6119G,,,fixed_wing,monoplane,civilian,experimental,,,replica,EAA Aviation Museum,on_display
+Stearman,Model 75,,N121R,,Super Stearman,fixed_wing,biplane,civilian,experimental,1943,,N5051V;rebuilt 1977 by Joe Hughes,EAA Aviation Museum,on_display
+Lancair,Model 200,,N384L,,,fixed_wing,monoplane,civilian,experimental,1984,,Neibauer Lancer,EAA Aviation Museum,on_display

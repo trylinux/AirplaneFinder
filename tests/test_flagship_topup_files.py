@@ -26,6 +26,14 @@ FILES = {
                     "Pima Air & Space Museum"),
     "nmusaf_m_to_z": (DATA / "ohio" / "nmusaf_topup_m_to_z_aircraft.csv",
                       "National Museum of the United States Air Force"),
+    "udvarhazy": (DATA / "virginia" / "udvarhazy_aircraft.csv",
+                  "Steven F. Udvar-Hazy Center"),
+    "eaa": (DATA / "wisconsin" / "eaa_aircraft.csv",
+            "EAA Aviation Museum"),
+    "museum_of_flight": (DATA / "washington" / "museum_of_flight_aircraft.csv",
+                         "Museum of Flight"),
+    "nnam_pensacola": (DATA / "florida" / "nnam_pensacola_aircraft.csv",
+                       "National Naval Aviation Museum"),
 }
 
 
@@ -134,11 +142,17 @@ class TestFieldHygiene:
 
         Only flags the modern hyphenated pattern; legacy Navy designations
         (F4U, HO3S) and type names (Spitfire, Camel) are legitimately whole.
+
+        A handful of designations genuinely end in a letter with no variant —
+        the Northrop N-1M is the whole designation, not an N-1 mark M — so
+        they are listed rather than allowed to fail the file forever.
         """
         import re
+        WHOLE_DESIGNATIONS = {"N-1M", "D-558", "X-1E", "P-6E"}
         name, rows, _ = dataset
         bad = [f"{r['model']} (variant={r['variant']!r})" for r in rows
                if not r["variant"].strip()
+               and r["model"].strip() not in WHOLE_DESIGNATIONS
                and re.fullmatch(r"[A-Z]{1,3}-\d+[A-Z]", r["model"].strip())]
         assert not bad, f"{name}: model contains the variant: {bad}"
 
@@ -187,6 +201,55 @@ class TestKnownBiplanes:
         ("nmusaf_m_to_z", "Packard-LePere", "LUSAC 11"),
         ("nmusaf_m_to_z", "Sopwith", "Camel"),
         ("nmusaf_m_to_z", "Wright", "1909 Military Flyer"),
+        # Udvar-Hazy
+        ("udvarhazy", "Curtiss", "JN-4"),
+        ("udvarhazy", "Curtiss", "F9C"),
+        ("udvarhazy", "Boeing", "FB"),
+        ("udvarhazy", "Boeing-Stearman", "N2S"),
+        ("udvarhazy", "Nieuport", "28"),
+        ("udvarhazy", "SPAD", "XVI"),
+        ("udvarhazy", "Halberstadt", "CL.IV"),
+        ("udvarhazy", "Caudron", "G.4"),
+        ("udvarhazy", "Wright", "EX"),
+        # EAA — an unusually biplane-heavy collection
+        ("eaa", "Pitts", "S-1"),
+        ("eaa", "Pitts", "S-2"),
+        ("eaa", "Waco", "ARE"),
+        ("eaa", "Waco", "Model 10"),
+        ("eaa", "Waco", "CTO"),
+        ("eaa", "Travel Air", "E-4000"),
+        ("eaa", "Spartan", "C3"),
+        ("eaa", "Pitcairn", "PA-7"),
+        ("eaa", "Stearman", "Model 75"),
+        ("eaa", "Great Lakes", "2T-1"),
+        ("eaa", "Nieuport", "11"),
+        # Museum of Flight — the Personal Courage Wing
+        ("museum_of_flight", "Albatros", "D.Va"),
+        ("museum_of_flight", "Aviatik", "D.I"),
+        ("museum_of_flight", "Nieuport", "24"),
+        ("museum_of_flight", "Nieuport", "27"),
+        ("museum_of_flight", "Nieuport", "28"),
+        ("museum_of_flight", "SPAD", "XIII"),
+        ("museum_of_flight", "Sopwith", "Camel"),
+        ("museum_of_flight", "Royal Aircraft Factory", "S.E.5"),
+        ("museum_of_flight", "Fokker", "D.VII"),
+        ("museum_of_flight", "Stearman", "PT-13"),
+        ("museum_of_flight", "Stearman", "C-3"),
+        ("museum_of_flight", "Boeing", "Model 100"),
+        # Pensacola — many 1920s-30s Navy biplanes
+        ("nnam_pensacola", "Boeing", "F4B"),
+        ("nnam_pensacola", "Curtiss", "F6C"),
+        ("nnam_pensacola", "Curtiss", "F7C"),
+        ("nnam_pensacola", "Curtiss", "BFC"),
+        ("nnam_pensacola", "Curtiss", "NC"),
+        ("nnam_pensacola", "Curtiss", "N2C"),
+        ("nnam_pensacola", "Grumman", "FF"),
+        ("nnam_pensacola", "Grumman", "F3F"),
+        ("nnam_pensacola", "Grumman", "J2F"),
+        ("nnam_pensacola", "Naval Aircraft Factory", "N3N"),
+        ("nnam_pensacola", "Thomas-Morse", "S-4"),
+        ("nnam_pensacola", "Hanriot", "HD.1"),
+        ("nnam_pensacola", "Vought", "VE-7"),
     ]
 
     @pytest.mark.parametrize("dataset_name,manufacturer,model", KNOWN_BIPLANES,
