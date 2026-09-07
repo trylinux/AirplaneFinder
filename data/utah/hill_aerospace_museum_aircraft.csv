@@ -1,0 +1,77 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Beechcraft,C-45,H,52-10862,Expeditor,,fixed_wing,monoplane,military,transport,,,Model 18;UC-45,Hill Aerospace Museum,on_display
+Bell,HH-1,H,70-02470,Iroquois,,rotary_wing,,military,search_rescue,,,Huey,Hill Aerospace Museum,on_display
+Bell,TH-13,T,67-17053,Sioux,,rotary_wing,,military,trainer,,,Model 47,Hill Aerospace Museum,on_display
+Boeing,B-17,G,44-83663,Flying Fortress,Short Bier,fixed_wing,monoplane,military,bomber,1945,,B-17G-90-DL,Hill Aerospace Museum,on_display
+Boeing,B-29,,44-86408,Superfortress,Straight Flush,fixed_wing,monoplane,military,bomber,,,B-29-55-MO;museum page misprints the C-45's serial,Hill Aerospace Museum,on_display
+Boeing,B-52,G,58-0191,Stratofortress,,fixed_wing,monoplane,military,bomber,,,B-52G-100-BW,Hill Aerospace Museum,on_display
+Boeing,KC-135,E,57-1510,Stratotanker,,fixed_wing,monoplane,military,tanker,,,,Hill Aerospace Museum,on_display
+Boeing-Stearman,PT-17,A,41-25284,Kaydet,,fixed_wing,biplane,military,trainer,,,Model 75,Hill Aerospace Museum,on_display
+Burgess,Model F,,,,,fixed_wing,biplane,civilian,experimental,,,replica of the Burgess-Wright Model B,Hill Aerospace Museum,on_display
+Cessna,O-2,A,68-10853,Super Skymaster,,fixed_wing,monoplane,military,recon,,,Model 337,Hill Aerospace Museum,on_display
+Cessna,T-37,B,57-2259,Tweet,,fixed_wing,monoplane,military,trainer,1958,,built as T-37A,Hill Aerospace Museum,on_display
+Cessna,U-3,A,57-05869,Blue Canoe,,fixed_wing,monoplane,military,utility,,,Model 310;L-27A,Hill Aerospace Museum,on_display
+Consolidated,B-24,D,41-23908,Liberator,,fixed_wing,monoplane,military,bomber,,,B-24D-10-CO,Hill Aerospace Museum,on_display
+Convair,F-102,A,57-0833,Delta Dagger,,fixed_wing,monoplane,military,fighter,1958,,,Hill Aerospace Museum,on_display
+Convair,F-106,A,58-0774,Delta Dart,,fixed_wing,monoplane,military,fighter,,,,Hill Aerospace Museum,on_display
+Convair,T-29,C,52-1119,Flying Classroom,,fixed_wing,monoplane,military,trainer,,,Convair 240,Hill Aerospace Museum,on_display
+Convair,VC-131,D,55-0300,Samaritan,,fixed_wing,monoplane,military,transport,,,Convair 340,Hill Aerospace Museum,on_display
+Curtiss,JN-4,D,5002,Jenny,,fixed_wing,biplane,military,trainer,1918,,Springfield-built,Hill Aerospace Museum,on_display
+Curtiss,P-40,N,42-105270,Warhawk,,fixed_wing,monoplane,military,fighter,,,composite with fiberglass P-40E replica parts;serial borrowed from another P-40 per museum,Hill Aerospace Museum,on_display
+Douglas,A-1,E,52-0247,Skyraider,,fixed_wing,monoplane,military,ground_attack,,,"AD-5;Sandy;serial as museum states it, does not fit AD-5 blocks",Hill Aerospace Museum,on_display
+Douglas,A-26,B,44-35617,Invader,,fixed_wing,monoplane,military,bomber,,,delivered as A-26C,Hill Aerospace Museum,on_display
+Douglas,VC-47,D,43-49281,Skytrain,,fixed_wing,monoplane,military,transport,1944,,C-47B,Hill Aerospace Museum,on_display
+Douglas,C-54,G,45-0502,Skymaster,,fixed_wing,monoplane,military,transport,,,DC-4,Hill Aerospace Museum,on_display
+Douglas,C-124,C,53-0050,Globemaster II,,fixed_wing,monoplane,military,transport,,,Old Shaky,Hill Aerospace Museum,on_display
+Fairchild,C-119,G,22107,Flying Boxcar,,fixed_wing,monoplane,military,transport,,,ex-RCAF serial,Hill Aerospace Museum,on_display
+Fairchild Republic,A-10,A,73-1666,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,1975,,Warthog,Hill Aerospace Museum,on_display
+General Atomics,MQ-1,B,03-3116,Predator,,fixed_wing,monoplane,military,drone,,,,Hill Aerospace Museum,on_display
+General Dynamics,F-16,A,79-0388,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,,,Hill Aerospace Museum,on_display
+General Dynamics,F-16,A,79-0402,Fighting Falcon,Little Precious,fixed_wing,monoplane,military,fighter,,,,Hill Aerospace Museum,on_display
+General Dynamics,F-16,A,81-0678,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,,Thunderbirds demonstration jet,Hill Aerospace Museum,on_display
+General Dynamics,F-111,E,68-0020,Aardvark,,fixed_wing,monoplane,military,ground_attack,1969,,,Hill Aerospace Museum,on_display
+Kaman,HH-43,B,62-4561,Huskie,,rotary_wing,,military,search_rescue,1963,,Pedro,Hill Aerospace Museum,on_display
+Lockheed,C-130,E,64-0569,Hercules,,fixed_wing,monoplane,military,transport,,,fuselage only;education classroom,Hill Aerospace Museum,on_display
+Lockheed,NC-130,B,57-0526,Hercules,,fixed_wing,monoplane,military,test,,,,Hill Aerospace Museum,on_display
+Lockheed,C-140,B,62-4201,JetStar,,fixed_wing,monoplane,military,transport,1963,,ex-presidential fleet,Hill Aerospace Museum,on_display
+Lockheed,F-80,A,44-84999,Shooting Star,,fixed_wing,monoplane,military,fighter,,,"P-80A;Wikipedia claims a converted T-33, museum says F-80A",Hill Aerospace Museum,on_display
+Lockheed,F-104,A,56-0753,Starfighter,,fixed_wing,monoplane,military,fighter,1957,,,Hill Aerospace Museum,on_display
+Lockheed,F-117,A,82-0799,Nighthawk,,fixed_wing,monoplane,military,ground_attack,,,,Hill Aerospace Museum,on_display
+Lockheed,P-38,J,42-67638,Lightning,,fixed_wing,monoplane,military,fighter,,,P-38J-10-LO,Hill Aerospace Museum,on_display
+Lockheed,SR-71,C,61-7981,Blackbird,The Bastard,fixed_wing,monoplane,military,recon,1969,,only SR-71C built,Hill Aerospace Museum,on_display
+Lockheed,T-33,A,51-9271,Shooting Star,,fixed_wing,monoplane,military,trainer,,,,Hill Aerospace Museum,on_display
+Lockheed,U-2,C,56-6716,Dragon Lady,,fixed_wing,monoplane,military,recon,,,,Hill Aerospace Museum,on_display
+Lockheed Martin,F-22,A,91-4002,Raptor,,fixed_wing,monoplane,military,fighter,,,EMD test airframe 4002,Hill Aerospace Museum,on_display
+Martin,RB-57,A,52-1492,Canberra,,fixed_wing,monoplane,military,recon,1955,,,Hill Aerospace Museum,on_display
+McDonnell,F-101,B,57-0252,Voodoo,,fixed_wing,monoplane,military,fighter,1959,,,Hill Aerospace Museum,on_display
+McDonnell,ADM-20,C,61-0633,Quail,,missile_rocket,,military,other,,,GAM-72;air-launched decoy,Hill Aerospace Museum,on_display
+McDonnell Douglas,F-4,C,63-7424,Phantom II,,fixed_wing,monoplane,military,fighter,1964,,,Hill Aerospace Museum,on_display
+McDonnell Douglas,F-4,D,66-8711,Phantom II,,fixed_wing,monoplane,military,fighter,,,,Hill Aerospace Museum,on_display
+McDonnell Douglas,RF-4,C,66-0469,Phantom II,,fixed_wing,monoplane,military,recon,1967,,,Hill Aerospace Museum,on_display
+McDonnell Douglas,F-15,A,77-0090,Eagle,,fixed_wing,monoplane,military,fighter,1978,,,Hill Aerospace Museum,on_display
+PZL-Mielec,Lim-5,,1C0406,,,fixed_wing,monoplane,military,fighter,,,MiG-17F;Fresco-C;museum credits Mikoyan-Gurevich,Hill Aerospace Museum,on_display
+Mikoyan-Gurevich,MiG-21,F,585,Fishbed,,fixed_wing,monoplane,military,fighter,,,Fishbed-C,Hill Aerospace Museum,on_display
+North American,AT-6,A,,Texan,,fixed_wing,monoplane,military,trainer,,,displays 039;assembled from parts by a restoration firm;no verifiable identity,Hill Aerospace Museum,on_display
+North American,B-25,J,44-86772,Mitchell,,fixed_wing,monoplane,military,bomber,1945,,TB-25N,Hill Aerospace Museum,on_display
+North American,F-86,F,52-4978,Sabre,Jolley Roger,fixed_wing,monoplane,military,fighter,1953,,,Hill Aerospace Museum,on_display
+North American,F-100,A,52-5777,Super Sabre,,fixed_wing,monoplane,military,fighter,1954,,,Hill Aerospace Museum,on_display
+North American,P-51,D,44-13371,Mustang,Audrey,fixed_wing,monoplane,military,fighter,,,composite built by Kal Aero 1992 wearing the serial of an aircraft lost in 1944,Hill Aerospace Museum,on_display
+North American,T-28,B,137749,Trojan,,fixed_wing,monoplane,military,trainer,,,BuNo,Hill Aerospace Museum,on_display
+North American Rockwell,OV-10,A,67-14675,Bronco,,fixed_wing,monoplane,military,recon,1968,,forward air control,Hill Aerospace Museum,on_display
+Northrop,F-5,E,73-1640,Tiger II,,fixed_wing,monoplane,military,fighter,,,aggressor markings,Hill Aerospace Museum,on_display
+Northrop,F-89,H,54-0322,Scorpion,,fixed_wing,monoplane,military,fighter,,,,Hill Aerospace Museum,on_display
+Northrop,T-38,A,61-0824,Talon,,fixed_wing,monoplane,military,trainer,1962,,,Hill Aerospace Museum,on_display
+Northrop,SM-62,A,,Snark,,missile_rocket,,military,cruise,,,XSM-62A,Hill Aerospace Museum,on_display
+Piasecki,CH-21,C,56-2142,Workhorse,,rotary_wing,,military,transport,,,Flying Banana,Hill Aerospace Museum,on_display
+Republic,F-84,F,51-1640,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,1954,,,Hill Aerospace Museum,on_display
+Republic,F-84,G,52-3242,Thunderjet,,fixed_wing,monoplane,military,ground_attack,1953,,,Hill Aerospace Museum,on_display
+Republic,F-105,D,59-1743,Thunderchief,,fixed_wing,monoplane,military,fighter,1960,,Thud,Hill Aerospace Museum,on_display
+Republic,F-105,G,62-4440,Thunderchief,,fixed_wing,monoplane,military,electronic_warfare,1964,,Wild Weasel,Hill Aerospace Museum,on_display
+Republic,P-47,D,44-32798,Thunderbolt,,fixed_wing,monoplane,military,fighter,1944,,Jug,Hill Aerospace Museum,on_display
+Ryan,L-17,,,Navion,,fixed_wing,monoplane,military,utility,,,c/n NAV-4-1300;Jake Garn aircraft,Hill Aerospace Museum,on_display
+Teledyne Ryan,AQM-34,L,,Firebee,,fixed_wing,monoplane,military,drone,,,Lightning Bug,Hill Aerospace Museum,on_display
+Sikorsky,CH-3,E,65-12790,Jolly Green Giant,,rotary_wing,,military,search_rescue,1966,,,Hill Aerospace Museum,on_display
+Sikorsky,MH-53,M,68-10369,Pave Low IV,,rotary_wing,,military,search_rescue,1971,,,Hill Aerospace Museum,on_display
+Vought,YA-7,F,70-1039,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,LTV;A-7D Strikefighter,Hill Aerospace Museum,on_display
+Vultee,BT-13,B,42-90406,Valiant,,fixed_wing,monoplane,military,trainer,1944,,Vibrator,Hill Aerospace Museum,on_display
+Wright Brothers,Flyer,,,,,fixed_wing,biplane,civilian,experimental,,,three-quarter-scale replica;on loan from USAF Heritage Program,Hill Aerospace Museum,on_display

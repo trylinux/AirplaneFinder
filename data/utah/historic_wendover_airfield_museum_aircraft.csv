@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,C-54,E,44-9141,Skymaster,Tanker 65,fixed_wing,monoplane,military,transport,,,N8502R;R5D;ex-firefighting tanker;identity registry-sourced,Historic Wendover Airfield Museum,under_restoration
+Fairchild,C-123,K,56-4361,Provider,Con Air,fixed_wing,monoplane,military,transport,,,msn 20245;N709RR is a film marking not this airframe's registration,Historic Wendover Airfield Museum,on_display
+North American,F-86,L,53-1045,Sabre,,fixed_wing,monoplane,military,fighter,,,Sabre Dog;191st FIS Utah ANG markings,Historic Wendover Airfield Museum,on_display

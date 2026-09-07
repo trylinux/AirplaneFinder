@@ -1,0 +1,21 @@
+Douglas|C-54|E|44-9141|Skymaster|Tanker 65|fixed_wing|monoplane|military|transport||N8502R;R5D;ex-firefighting tanker;identity registry-sourced|under_restoration|Historic Wendover Airfield Museum
+Fairchild|C-123|K|56-4361|Provider|Con Air|fixed_wing|monoplane|military|transport||msn 20245;N709RR is a film marking not this airframe's registration|on_display|Historic Wendover Airfield Museum
+North American|F-86|L|53-1045|Sabre||fixed_wing|monoplane|military|fighter||Sabre Dog;191st FIS Utah ANG markings|on_display|Historic Wendover Airfield Museum
+Aero Vodochody|L-29||N129U|Delfin||fixed_wing|monoplane|military|trainer|1972||on_display|Western Sky Aviation Warbird Museum
+BAC|Jet Provost|T.3A|N4421B|||fixed_wing|monoplane|military|trainer|||on_display|Western Sky Aviation Warbird Museum
+BAC|Jet Provost|T.3A|N4427Q|||fixed_wing|monoplane|military|trainer||XM371|on_display|Western Sky Aviation Warbird Museum
+Cessna|A-37|B|68-7921|Dragonfly|Dragon 921|fixed_wing|monoplane|military|ground_attack|1969|N87921|on_display|Western Sky Aviation Warbird Museum
+Cessna|T-37|B|64-13418|Tweet||fixed_wing|monoplane|military|trainer|||on_display|Western Sky Aviation Warbird Museum
+Cessna|T-37|B|60-0122|Tweet||fixed_wing|monoplane|military|trainer||serial least corroborated|on_display|Western Sky Aviation Warbird Museum
+Douglas|C-54|Q|N55CW|Skymaster||fixed_wing|monoplane|military|transport||BuNo 56506;C-54D|on_display|Western Sky Aviation Warbird Museum
+Grega|GN-1||N9169N|Aircamper||fixed_wing|monoplane|civilian|private|2002|Pietenpol Air Camper derivative|on_display|Western Sky Aviation Warbird Museum
+Northrop|F-5|B|63-8440|Freedom Fighter||fixed_wing|monoplane|military|fighter|||on_display|Western Sky Aviation Warbird Museum
+Northrop|T-38|A|62-3634|Talon||fixed_wing|monoplane|military|trainer|||on_display|Western Sky Aviation Warbird Museum
+PZL-Mielec|Lim-5||N509|||fixed_wing|monoplane|military|fighter|1959|MiG-17F;1C01509|on_display|Western Sky Aviation Warbird Museum
+PZL-Mielec|SBLim-2||N15UT|||fixed_wing|monoplane|military|trainer|1955|MiG-15UTI;522546|on_display|Western Sky Aviation Warbird Museum
+Shenyang|J-2|||||fixed_wing|monoplane|military|fighter||MiG-15bis Chinese variant|on_display|Western Sky Aviation Warbird Museum
+North American|T-6|||Texan||fixed_wing|monoplane|military|trainer||SNJ;member-owned|on_display|CAF Utah Wing Museum
+Boeing-Stearman|N2S|5|N1387V|Kaydet||fixed_wing|biplane|military|trainer|1943|Model 75;75-8291|under_restoration|CAF Utah Wing Museum
+Bell|UH-1|H|67-19527|Iroquois||rotary_wing||military|utility||Huey|on_display|Utah Military Museum at Historic Fort Douglas
+Bell|AH-1|G|70-16042|Cobra||rotary_wing||military|ground_attack|||on_display|Utah Military Museum at Historic Fort Douglas
+Hughes|OH-6|A|67-16132|Cayuse||rotary_wing||military|recon|||on_display|Utah Military Museum at Historic Fort Douglas
