@@ -65,13 +65,12 @@ $(function() {
                 var statusRaw = a.display_status || 'on_display';
                 html += '<a href="/aircraft/' + a.id + '" class="m-list-item">'
                      + '<div class="m-list-title">'
-                     +   '<span>' + escHtml(a.full_designation || a.model) + '</span>'
+                     +   '<span>' + escHtml([a.manufacturer, a.full_designation || a.model].filter(Boolean).join(' ')) + '</span>'
                      +   '<span class="m-badge ' + milCivRaw + '">' + escHtml(prettyEnum(milCivRaw)) + '</span>'
                      + '</div>'
                      + '<div class="m-list-meta">'
                      + (a.model_name ? '<span>' + escHtml(a.model_name) + '</span>' : '')
                      + (a.aircraft_name ? '<span>' + escHtml(a.aircraft_name) + '</span>' : '')
-                     +   '<span><i class="fa-solid fa-industry"></i>' + escHtml(a.manufacturer) + '</span>'
                      + (a.tail_number ? '<span><i class="fa-solid fa-id-card"></i>' + escHtml(a.tail_number) + '</span>' : '')
                      +   '<span><i class="fa-solid fa-clipboard-check"></i>' + escHtml(prettyEnum(statusRaw)) + '</span>'
                      + '</div>'

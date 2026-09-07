@@ -155,7 +155,7 @@
                     return (a.full_designation || '').localeCompare(b.full_designation || '');
                 });
                 target.innerHTML = '<ul class="m-aircraft">' + list.map(function (a) {
-                    var name = escHtml(a.full_designation || a.model);
+                    var name = escHtml([a.manufacturer, a.full_designation || a.model].filter(Boolean).join(' '));
                     if (a.model_name) name += ' <span class="m-ac-name">' + escHtml(a.model_name) + '</span>';
                     var tail = a.tail_number ? '<span class="m-tail">' + escHtml(a.tail_number) + '</span>' : '';
                     return '<li><a href="/aircraft/' + a.id + '">' + name + tail + '</a></li>';

@@ -91,7 +91,7 @@ $(function () {
                   ? list.map(function (a) {
                         return '<a href="/aircraft/' + a.id + '" class="badge status-in_storage" ' +
                                'style="margin:.15rem; display:inline-block;">' +
-                               escHtml(a.full_designation || a.model) +
+                               escHtml([a.manufacturer, a.full_designation || a.model].filter(Boolean).join(' ')) +
                                (a.tail_number ? ' ' + escHtml(a.tail_number) : '') + '</a>';
                     }).join('')
                   : '<span class="no-results">No aircraft on display here yet.</span>');
