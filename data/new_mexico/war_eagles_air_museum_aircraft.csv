@@ -1,0 +1,43 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Curtiss,P-40,E,AL152,Warhawk,,fixed_wing,monoplane,military,fighter,1941,,N95JB;c/n 18796;ex-RCAF 1082;flew in Tobruk and Tora Tora Tora;wears 41-36402 and AVG markings that are not its identity,War Eagles Air Museum,on_display
+Hawker,Sea Fury,FB.11,WJ231,Sea Fury,,fixed_wing,monoplane,military,fighter,1948,,N57JB;c/n 37703;ex-Iraqi Air Force 253;museum labels it Fury FB MkII;serial conflict between WJ231 and Iraqi 253,War Eagles Air Museum,on_display
+Lockheed,P-38,L,44-27087,Lightning,,fixed_wing,monoplane,military,fighter,1944,,N577JB;civil F-5G;c/n reported as both 8057 and 422-8091,War Eagles Air Museum,on_display
+PZL-Mielec,Lim-2,,1013,Fagot,,fixed_wing,monoplane,military,fighter,,,N13KM;c/n 1B 010-13;ex-Polish Air Force;Polish-built not a Soviet MiG-15bis as the museum states,War Eagles Air Museum,on_display
+Mikoyan-Gurevich,MiG-21,SPS,22+24,Fishbed,,fixed_wing,monoplane,military,fighter,,,c/n 94A4213;ex-East German NVA then Luftwaffe;museum calls it MiG-21PFM,War Eagles Air Museum,on_display
+Canadair,F-86,Mk.6,23684,Sabre,,fixed_wing,monoplane,military,fighter,1955,,N106JB;ex-South African Air Force 365;Canadair-built Sabre Mk.6,War Eagles Air Museum,on_display
+North American,FJ-2,,132028,Fury,,fixed_wing,monoplane,military,fighter,1954,,marked 9,War Eagles Air Museum,on_display
+Republic,F-84,F,52-7343,Thunderstreak,,fixed_wing,monoplane,military,fighter,1952,,marked JB-834,War Eagles Air Museum,on_display
+Tupolev,Tu-2,S,495,Bat,,fixed_wing,monoplane,military,bomber,1945,,recovered from a Chinese cave hangar in 1990;the only Tu-2 on display in the United States;Russian winter scheme,War Eagles Air Museum,on_display
+Douglas,A-26,C,44-35493,Invader,,fixed_wing,monoplane,military,bomber,1945,,N576JB;c/n 28772;civil RB-26C,War Eagles Air Museum,on_display
+Grumman,TBM,3E,69459,Avenger,,fixed_wing,monoplane,military,bomber,1945,,N8397H;c/n 2198;built by General Motors Eastern Aircraft,War Eagles Air Museum,on_display
+Vought,F4U,4,81698,Corsair,,fixed_wing,monoplane,military,fighter,1942,,N53JB;listed by Wikipedia but not on the museum's current site;FAA registration live and museum-owned,War Eagles Air Museum,on_display
+Douglas,C-47,A,43-15679,Skytrain,,fixed_wing,monoplane,military,transport,1944,,N574JB;c/n 20145;delivered 26 April 1944;D-Day and Market Garden;later Phillips Petroleum for 27 years,War Eagles Air Museum,on_display
+Morane-Saulnier,MS.502,,,Criquet,,fixed_wing,monoplane,military,utility,1939,,N28670;c/n 728;the French postwar derivative not a genuine Fieseler Fi 156 Storch as the museum states,War Eagles Air Museum,on_display
+Stinson,L-5,A,42-15017,Sentinel,,fixed_wing,monoplane,military,utility,1943,,N40002;c/n 76-0220,War Eagles Air Museum,on_display
+Convair,L-13,A,47-316,Grasshopper,,fixed_wing,monoplane,military,utility,1947,,N316LG;c/n 196;Stinson design,War Eagles Air Museum,on_display
+Stinson,Reliant,,,Reliant,,fixed_wing,monoplane,civilian,private,,,serial not established;SR-10 or V-77,War Eagles Air Museum,on_display
+Boeing-Stearman,PT-13,D,42-17250,Kaydet,,fixed_wing,biplane,military,trainer,1943,,N75855;c/n 75-5413;Model E75;falsely marked as PT-17 41-8275,War Eagles Air Museum,on_display
+Vultee,BT-13,B,42-90296,Valiant,,fixed_wing,monoplane,military,trainer,1942,,N63697;c/n 79-1293;SNV-2,War Eagles Air Museum,on_display
+North American,AT-6,F,44-81841,Texan,,fixed_wing,monoplane,military,trainer,1945,,N578JB;c/n 121-42563,War Eagles Air Museum,on_display
+North American,TF-51,D,44-84658,Mustang,The Friendly Ghost,fixed_wing,monoplane,military,trainer,1945,,N51TF;TEMCO two-seat conversion;parts recovered near Jakarta 1978;restored 1983;the site's separate P-51D listing is the same airframe,War Eagles Air Museum,on_display
+Canadair,T-33,Mk.3,21582,Silver Star,,fixed_wing,monoplane,military,trainer,1957,,N92JB;c/n T33-582;ex-RCAF;Canadair-built not a Lockheed T-33A,War Eagles Air Museum,on_display
+PZL-Mielec,SBLim-2,A,6040,Midget,,fixed_wing,monoplane,military,trainer,1953,,N40BM;c/n 1A 06-040;ex-Polish Air Force;museum calls it MiG-15UTI,War Eagles Air Museum,on_display
+Cessna,T-37,B,66-7966,Tweet,,fixed_wing,monoplane,military,trainer,1966,,,War Eagles Air Museum,on_display
+de Havilland,DH-82,A,,Tiger Moth,,fixed_wing,biplane,military,trainer,,,serial not established,War Eagles Air Museum,on_display
+North American,T-28,B,138247,Trojan,,fixed_wing,monoplane,military,trainer,1955,,N572JB;c/n 200-318,War Eagles Air Museum,on_display
+Northrop,AT-38,B,64-13267,Talon,,fixed_wing,monoplane,military,trainer,1964,,,War Eagles Air Museum,on_display
+Fairchild,PT-19,,,Cornell,,fixed_wing,monoplane,military,trainer,,,registration not established;owned by CAF Border Eagles Squadron and housed here,War Eagles Air Museum,on_display
+Cessna,140,A,,,Cotton Clipper Cutie,fixed_wing,monoplane,civilian,private,1950,,serial not established;won the Powder Puff Derby flown by Ruth Deerman and Ruby Hayes;donated 1994,War Eagles Air Museum,on_display
+Globe,GC-1,B,,Swift,,fixed_wing,monoplane,civilian,private,,,serial not established,War Eagles Air Museum,on_display
+Piper,J-3,,,Cub,,fixed_wing,monoplane,civilian,private,,,serial not established,War Eagles Air Museum,on_display
+Piper,PA-18,,,Super Cub,,fixed_wing,monoplane,civilian,private,,,serial not established,War Eagles Air Museum,on_display
+Waco,EGC-8,,,,,fixed_wing,biplane,civilian,private,,,serial not established,War Eagles Air Museum,on_display
+Bell,OH-58,,,Kiowa,,rotary_wing,,military,recon,,,serial not established,War Eagles Air Museum,on_display
+Bell,UH-1,V,,Iroquois,,rotary_wing,,military,search_rescue,,,serial not established;Dust Off medevac configuration with rescue hoist;acquired from Holloman AFB in 2015,War Eagles Air Museum,on_display
+Hughes,OH-6,A,67-16301,Cayuse,,rotary_wing,,military,recon,,,Loach,War Eagles Air Museum,on_display
+Hughes,AH-64,,,Apache,,rotary_wing,,military,ground_attack,,,serial not established,War Eagles Air Museum,under_restoration
+PZL-Swidnik,Mi-2,,,Hoplite,,rotary_wing,,military,utility,,,c/n 5411031099;ex-N56346 now deregistered,War Eagles Air Museum,under_restoration
+Sikorsky,H-34,,,Choctaw,,rotary_wing,,military,utility,,,serial not established,War Eagles Air Museum,under_restoration
+Vought,A-7,E,157455,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,c/n E-111;marked AE-315;not listed on the museum website;site text calls these A-7D but the BuNos are Navy A-7E,War Eagles Air Museum,on_display
+Vought,A-7,E,157544,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,not listed on the museum website,War Eagles Air Museum,on_display
+Vought,A-7,E,160721,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,not listed on the museum website,War Eagles Air Museum,on_display

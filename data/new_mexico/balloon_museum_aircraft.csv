@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Hall,Cherokee II,,N3034,Cherokee II,,fixed_wing,monoplane,civilian,private,1971,,s/n RS-1;built by R.L. Schellenbaum;on loan from the US Southwest Soaring Museum;hangs in the gallery;registration cancelled,Anderson-Abruzzo Albuquerque International Balloon Museum,on_display
+Yost,Gas Balloon,,,Jules Verne,Jules Verne,lighter_than_air,,civilian,private,,,gondola on display;from the early round-the-world attempts,Anderson-Abruzzo Albuquerque International Balloon Museum,on_display

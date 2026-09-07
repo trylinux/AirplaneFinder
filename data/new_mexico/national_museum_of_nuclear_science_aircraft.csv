@@ -1,0 +1,23 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Boeing,B-29,B,45-21748,Superfortress,,fixed_wing,monoplane,military,bomber,1945,,c/n 13643;Renton-built;previously displayed at Chanute AFB painted as Enola Gay;not the Duke of Albuquerque 44-69829 as often claimed,National Museum of Nuclear Science and History,on_display
+Boeing,B-52,B,52-0013,Stratofortress,,fixed_wing,monoplane,military,bomber,1955,,RB-52B;c/n 16503;delivered new to Kirtland and never reassigned;dropped the live Mk-15 in Operation Redwing shot Cherokee 21 May 1956;restored 2016;tail wears 0-20013,National Museum of Nuclear Science and History,on_display
+Boeing,B-47,E,53-2280,Stratojet,,fixed_wing,monoplane,military,test,1955,,B-47E-11-BW later JB-47E;fly-by-wire testbed;retired 1969;permanent loan from NMUSAF;restored 2018,National Museum of Nuclear Science and History,on_display
+Republic,F-105,D,61-0107,Thunderchief,,fixed_wing,monoplane,military,ground_attack,1962,,c/n D302;49th TFW Germany then Kansas and DC ANG;final landing at Kirtland 1981 after a power loss;pylon-mounted,National Museum of Nuclear Science and History,on_display
+General Dynamics,F-16,A,78-0050,Fighting Falcon,,fixed_wing,monoplane,military,fighter,1978,,c/n 61-46;a Hill AFB battle-damage-repair hulk scrapped at Kirtland in 1997 and rebuilt for display;dedicated 5 November 2014,National Museum of Nuclear Science and History,on_display
+Vought,A-7,C,154407,Corsair II,,fixed_wing,monoplane,military,ground_attack,1968,,TA-7C two-seat conversion from A-7B;c/n B-047;museum signage says A-7 Corsair II,National Museum of Nuclear Science and History,on_display
+Mikoyan-Gurevich,MiG-21,,,Fishbed,,fixed_wing,monoplane,military,fighter,,,serial not published and provenance largely unknown;ex-AMARG;arrived disassembled December 2017;reassembly completed 2021,National Museum of Nuclear Science and History,on_display
+Bell,412,HP,N411DE,,NEST helicopter,rotary_wing,,civilian,utility,1993,,c/n 36030;Nuclear Emergency Support Team aircraft 1993-2025;arrived 25 March 2026,National Museum of Nuclear Science and History,on_display
+Martin,LGM-25,C,,Titan II,,missile_rocket,,military,ballistic,,,displayed in sections horizontally with transport trailer;inert stage bodies,National Museum of Nuclear Science and History,on_display
+Chrysler,PGM-19,,,Jupiter,,missile_rocket,,military,ballistic,,,on trailer;inert display body,National Museum of Nuclear Science and History,on_display
+Martin Marietta,LGM-118,,,Peacekeeper,,missile_rocket,,military,ballistic,,,inert display body;real LGM-118s were destroyed under START II so this is probably a mass simulator or training article,National Museum of Nuclear Science and History,on_display
+Lockheed,UGM-27,,,Polaris A-3,,missile_rocket,,military,ballistic,,,inert,National Museum of Nuclear Science and History,on_display
+Douglas,PGM-17,,,Thor,,missile_rocket,,military,ballistic,,,on trailer;inert,National Museum of Nuclear Science and History,on_display
+Boeing,LGM-30,,,Minuteman,,missile_rocket,,military,ballistic,,,inert;variant not confirmed,National Museum of Nuclear Science and History,on_display
+Northrop,SM-62,,,Snark,,missile_rocket,,military,cruise,,,intercontinental cruise missile;inert airframe,National Museum of Nuclear Science and History,on_display
+Martin,MGM-13,,,Mace,,missile_rocket,,military,cruise,,,inert,National Museum of Nuclear Science and History,on_display
+Martin,MGM-1,,,Matador,,missile_rocket,,military,cruise,,,TM-61;inert,National Museum of Nuclear Science and History,on_display
+North American,AGM-28,,,Hound Dog,,missile_rocket,,military,air_to_surface,,,air-launched standoff missile,National Museum of Nuclear Science and History,on_display
+Western Electric,MIM-14,,,Nike Hercules,,missile_rocket,,military,surface_to_air,,,inert training round,National Museum of Nuclear Science and History,on_display
+Boeing,CIM-10,,,BOMARC,,missile_rocket,,military,surface_to_air,,,inert,National Museum of Nuclear Science and History,on_display
+Lavochkin,S-75,,,SA-2 Guideline,,missile_rocket,,military,surface_to_air,,,Soviet origin;inert,National Museum of Nuclear Science and History,on_display
+Douglas,MGR-1,,,Honest John,,missile_rocket,,military,artillery_rocket,,,unguided artillery rocket displayed on its motorized launcher,National Museum of Nuclear Science and History,on_display
