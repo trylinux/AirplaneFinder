@@ -1,0 +1,13 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aérospatiale,SA 365,C2,3022,Dauphin 2,,rotary_wing,,military,transport,,,ex-presidential,Parque Museo Aeronáutico de la FARD,on_display
+Beechcraft,T-34,B,1611,Mentor,,fixed_wing,monoplane,military,trainer,,,,Parque Museo Aeronáutico de la FARD,on_display
+Cessna,O-2,A,1702,Skymaster,,fixed_wing,monoplane,military,recon,,,Super Skymaster,Parque Museo Aeronáutico de la FARD,on_display
+de Havilland,Vampire,FB.50,2741,,,fixed_wing,monoplane,military,fighter,,,DH.100,Parque Museo Aeronáutico de la FARD,on_display
+Douglas,C-47,A,3403,Skytrain,,fixed_wing,monoplane,military,transport,,,Dakota,Parque Museo Aeronáutico de la FARD,on_display
+Eagle,EA-100,,1544,,,fixed_wing,monoplane,military,trainer,,,,Parque Museo Aeronáutico de la FARD,on_display
+Hughes,369,A,3016,,,rotary_wing,,military,utility,,,Hughes 500;OH-6,Parque Museo Aeronáutico de la FARD,on_display
+North American,AT-6,D,1031,Texan,,fixed_wing,monoplane,military,trainer,,,"Harvard;1031 is a display serial, true identity possibly 1054",Parque Museo Aeronáutico de la FARD,on_display
+North American,P-51,D,1914,Mustang,,fixed_wing,monoplane,military,fighter,,,,Parque Museo Aeronáutico de la FARD,on_display
+Sikorsky,S-55,C,3004,Chickasaw,,rotary_wing,,military,utility,,,H-19,Parque Museo Aeronáutico de la FARD,on_display
+Cessna,A-37,B,3702,Dragonfly,,fixed_wing,monoplane,military,ground_attack,,,Super Tweet,Parque Museo Aeronáutico de la FARD,on_display
+Zoilo Hermógenes García,Poliplano,,,,,fixed_wing,triplane,civilian,experimental,,,replica of the 1911 original,Parque Museo Aeronáutico de la FARD,on_display

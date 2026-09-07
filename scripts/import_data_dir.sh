@@ -200,7 +200,8 @@ elif command -v python3 >/dev/null 2>&1; then
     AIRPLANE_BASE_URL="$HOST" AIRPLANE_API_KEY="$KEY" \
         python3 scripts/filter_new_museums.py "$MUSEUM_FILE" --out "$FILTERED"
     case $? in
-        0) MUSEUM_FILE="$FILTERED" ;;
+        0) MUSEUM_FILE="$FILTERED"
+           NEW_MUSEUMS=$(python3 -c "import csv,sys;print(', '.join(r['name'] for r in csv.DictReader(open(sys.argv[1]))))" "$FILTERED") ;;
         3) echo "  all museums already present — skipped"; MUSEUM_FILE="" ;;
         *) echo "  (filter failed; falling back to the full file)" ;;
     esac
@@ -210,6 +211,17 @@ fi
 
 echo
 echo "── Step 2: aircraft, one file per museum ──"
+# A dry run writes nothing, so a museum that only exists in this run's
+# museums file will not be there when the aircraft files are validated, and
+# every row for it fails with "no museum named X (create it first)". That is
+# not a data error — the aircraft file is fine — but it looked like one, and
+# the only way to tell was to notice that Step 1 had said "dry run". Say so.
+if [[ -n "$DRY" && -n "${NEW_MUSEUMS:-}" ]]; then
+    echo "  note: dry run — museums from step 1 were validated but NOT created,"
+    echo "        so aircraft rows for them will fail to resolve below. That is"
+    echo "        expected. Re-run without --dry-run to import both steps."
+    echo "        New museums this run: $NEW_MUSEUMS"
+fi
 for f in "$DATA"/*_aircraft.csv; do
     post /api/v1/aircraft/bulk_import "$f"
 done

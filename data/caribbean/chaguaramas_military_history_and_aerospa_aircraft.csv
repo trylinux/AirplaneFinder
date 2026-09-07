@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aérospatiale,SA 341,,NS1,Gazelle,,rotary_wing,,military,utility,,,serial low confidence,Chaguaramas Military History and Aerospace Museum,on_display
+Ayres,S2R,,9Y-522,Thrush,,fixed_wing,monoplane,civilian,utility,,,Thrush Commander,Chaguaramas Military History and Aerospace Museum,on_display
+Cessna,150,,,,,fixed_wing,monoplane,civilian,trainer,,,,Chaguaramas Military History and Aerospace Museum,on_display
+Lockheed,L-1011,500,9Y-TGN,TriStar,,fixed_wing,monoplane,civilian,commercial_transport,1980,,L-1011-385-3;msn 1191,Chaguaramas Military History and Aerospace Museum,on_display

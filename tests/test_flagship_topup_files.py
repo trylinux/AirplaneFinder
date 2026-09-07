@@ -42,6 +42,16 @@ FILES = {
                       "Musee de l'Air et de l'Espace"),
     "monino": (DATA / "russia" / "monino_aircraft.csv",
                "Central Air Force Museum"),
+    # Caribbean — five small museums built from one research file
+    "fard": (DATA / "caribbean" / "parque_museo_aeronautico_de_la_fard_aircraft.csv",
+             "Parque Museo Aeronáutico de la FARD"),
+    "giron": (DATA / "caribbean" / "museo_giron_aircraft.csv", "Museo Girón"),
+    "jamaica": (DATA / "caribbean" / "jamaica_military_museum_and_library_aircraft.csv",
+                "Jamaica Military Museum and Library"),
+    "chaguaramas": (DATA / "caribbean" / "chaguaramas_military_history_and_aerospa_aircraft.csv",
+                    "Chaguaramas Military History and Aerospace Museum"),
+    "carolina": (DATA / "caribbean" / "museo_del_nino_de_carolina_aircraft.csv",
+                 "Museo del Niño de Carolina"),
 }
 
 
@@ -309,6 +319,14 @@ class TestKnownBiplanes:
         ("monino", "Sikorsky", "Ilya Muromets"),
         ("monino", "Voisin", "LAS"),
     ]
+
+    KNOWN_TRIPLANES = [("fard", "Zoilo Hermógenes García", "Poliplano")]
+
+    @pytest.mark.parametrize("dataset_name,manufacturer,model", KNOWN_TRIPLANES)
+    def test_recorded_as_a_triplane(self, dataset_name, manufacturer, model):
+        rows = [r for r in rows_of(FILES[dataset_name][0])
+                if r["manufacturer"] == manufacturer and r["model"] == model]
+        assert rows and all(r["wing_type"] == "triplane" for r in rows)
 
     @pytest.mark.parametrize("dataset_name,manufacturer,model", KNOWN_BIPLANES,
                              ids=[f"{m}-{mo}" for _, m, mo in KNOWN_BIPLANES])

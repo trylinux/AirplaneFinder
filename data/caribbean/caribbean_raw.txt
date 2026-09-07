@@ -1,0 +1,19 @@
+Aérospatiale|SA 365|C2|3022|Dauphin 2||rotary_wing||military|transport||ex-presidential|on_display|Parque Museo Aeronáutico de la FARD
+Beechcraft|T-34|B|1611|Mentor||fixed_wing|monoplane|military|trainer|||on_display|Parque Museo Aeronáutico de la FARD
+Cessna|O-2|A|1702|Skymaster||fixed_wing|monoplane|military|recon||Super Skymaster|on_display|Parque Museo Aeronáutico de la FARD
+de Havilland|Vampire|FB.50|2741|||fixed_wing|monoplane|military|fighter||DH.100|on_display|Parque Museo Aeronáutico de la FARD
+Douglas|C-47|A|3403|Skytrain||fixed_wing|monoplane|military|transport||Dakota|on_display|Parque Museo Aeronáutico de la FARD
+Eagle|EA-100||1544|||fixed_wing|monoplane|military|trainer|||on_display|Parque Museo Aeronáutico de la FARD
+Hughes|369|A|3016|||rotary_wing||military|utility||Hughes 500;OH-6|on_display|Parque Museo Aeronáutico de la FARD
+North American|AT-6|D|1031|Texan||fixed_wing|monoplane|military|trainer||Harvard;1031 is a display serial, true identity possibly 1054|on_display|Parque Museo Aeronáutico de la FARD
+North American|P-51|D|1914|Mustang||fixed_wing|monoplane|military|fighter|||on_display|Parque Museo Aeronáutico de la FARD
+Sikorsky|S-55|C|3004|Chickasaw||rotary_wing||military|utility||H-19|on_display|Parque Museo Aeronáutico de la FARD
+Cessna|A-37|B|3702|Dragonfly||fixed_wing|monoplane|military|ground_attack||Super Tweet|on_display|Parque Museo Aeronáutico de la FARD
+Zoilo Hermógenes García|Poliplano|||||fixed_wing|triplane|civilian|experimental||replica of the 1911 original|on_display|Parque Museo Aeronáutico de la FARD
+Hawker|Sea Fury|FB.11|541|||fixed_wing|monoplane|military|fighter|||on_display|Museo Girón
+Bell|UH-1|H||Iroquois||rotary_wing||military|utility||Huey;pole-mounted;JDF fleet H-19 to H-22, identity unconfirmed|on_display|Jamaica Military Museum and Library
+Aérospatiale|SA 341||NS1|Gazelle||rotary_wing||military|utility||serial low confidence|on_display|Chaguaramas Military History and Aerospace Museum
+Ayres|S2R||9Y-522|Thrush||fixed_wing|monoplane|civilian|utility||Thrush Commander|on_display|Chaguaramas Military History and Aerospace Museum
+Cessna|150|||||fixed_wing|monoplane|civilian|trainer|||on_display|Chaguaramas Military History and Aerospace Museum
+Lockheed|L-1011|500|9Y-TGN|TriStar||fixed_wing|monoplane|civilian|commercial_transport|1980|L-1011-385-3;msn 1191|on_display|Chaguaramas Military History and Aerospace Museum
+McDonnell Douglas|MD-82||N292AA|||fixed_wing|monoplane|civilian|commercial_transport|1985|DC-9-82;ex-American Airlines|on_display|Museo del Niño de Carolina

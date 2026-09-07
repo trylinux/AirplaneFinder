@@ -154,9 +154,18 @@ def sanitise(row, museum):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--in", dest="src", required=True)
-    p.add_argument("--museum", required=True)
-    p.add_argument("--out", required=True)
+    p.add_argument("--museum", help="museum name for every row")
+    p.add_argument("--out", help="output CSV (single-museum mode)")
+    p.add_argument("--museum-in-last-field", action="store_true",
+                   help="each line carries its museum as a 14th, final field; "
+                        "write one <slug>_aircraft.csv per museum into --out-dir")
+    p.add_argument("--out-dir", help="directory for per-museum files")
     args = p.parse_args()
+    if args.museum_in_last_field:
+        if not args.out_dir:
+            p.error("--museum-in-last-field needs --out-dir")
+    elif not (args.museum and args.out):
+        p.error("need --museum and --out, or --museum-in-last-field --out-dir")
 
     rows, rejected, deduped = [], [], []
     seen_tail = {}
@@ -168,11 +177,21 @@ def main():
         # A pasted-in header row is not data.
         if line.lower().startswith("manufacturer|model|"):
             continue
-        row, problem = realign(line.split("|"))
+        parts = line.split("|")
+        # A region sweep with several small museums is easier to research as
+        # one file. In that mode the museum rides along as a trailing field
+        # and is peeled off here, so realign() sees the usual 13.
+        museum = args.museum
+        if args.museum_in_last_field:
+            museum = parts.pop().strip()
+            if not museum:
+                rejected.append((lineno, "no museum in last field", line[:90]))
+                continue
+        row, problem = realign(parts)
         if problem:
             rejected.append((lineno, problem, line[:90]))
             continue
-        row, problems = sanitise(row, args.museum)
+        row, problems = sanitise(row, museum)
         if problems:
             rejected.append((lineno, "; ".join(problems), line[:90]))
             continue
@@ -199,14 +218,29 @@ def main():
             seen_tail[key] = f"{row['manufacturer']} {row['model']}"
         rows.append({k: row.get(k, "") for k in HEADER})
 
-    with open(args.out, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=HEADER)
-        w.writeheader()
-        w.writerows(rows)
+    def write(path, subset):
+        with open(path, "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=HEADER)
+            w.writeheader()
+            w.writerows(subset)
+        tails = sum(1 for r in subset if r["tail_number"])
+        print(f"wrote {path}: {len(subset)} rows, {tails} with a tail number "
+              f"({tails * 100 // max(len(subset), 1)}%)", file=sys.stderr)
 
-    tails = sum(1 for r in rows if r["tail_number"])
-    print(f"wrote {args.out}: {len(rows)} rows, {tails} with a tail number "
-          f"({tails * 100 // max(len(rows), 1)}%)", file=sys.stderr)
+    if args.museum_in_last_field:
+        # One file per museum, as everywhere else: the importer is atomic per
+        # request, so a bad row can only ever take down its own museum.
+        import unicodedata
+        outdir = Path(args.out_dir); outdir.mkdir(parents=True, exist_ok=True)
+        by_museum = {}
+        for r in rows:
+            by_museum.setdefault(r["museum_name"], []).append(r)
+        for name, subset in by_museum.items():
+            slug = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
+            slug = re.sub(r"[^a-z0-9]+", "_", slug.lower()).strip("_")[:40]
+            write(outdir / f"{slug}_aircraft.csv", subset)
+    else:
+        write(args.out, rows)
     if deduped:
         print(f"  dropped {len(deduped)} duplicate airframe(s) already seen "
               f"under another manufacturer credit:", file=sys.stderr)
