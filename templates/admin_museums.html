@@ -53,7 +53,7 @@ $(function() {
             params.sort_by  = sortState.sort_by;
             params.sort_dir = sortState.sort_dir;
         }
-        $.getJSON('/api/v1/museums/search', params, function(data) {
+        fetchAllResults('/api/v1/museums/search', params, function(data) {
             var html = '';
             if (!data.results.length) { html = '<p class="no-results">No museums found.</p>'; }
             else {
@@ -119,8 +119,8 @@ $(function() {
 
     /* ════════════════════════════════════════════════════════════════
        Editable list of aircraft on display at the museum being edited.
-       Mirrors the museum panel on the aircraft modal — replaces the
-       (deleted) /admin/exhibits page. */
+       Mirrors the museum panel on the aircraft modal; /admin/exhibits
+       provides the cross-museum overview. */
 
     // display_status is a visitor-perspective answer to "can I see it
     // here right now?" — on_loan was ambiguous (whose perspective?) and
@@ -140,7 +140,7 @@ $(function() {
     var _allAircraftForPicker = null;
     function ensureAircraftListLoaded(cb) {
         if (_allAircraftForPicker) return cb();
-        $.getJSON('/api/v1/aircraft/search', {per_page: 1000}, function(data) {
+        fetchAllResults('/api/v1/aircraft/search', {}, function(data) {
             _allAircraftForPicker = (data.results || []).slice().sort(function(a, b) {
                 var an = (a.full_designation || a.model || '');
                 var bn = (b.full_designation || b.model || '');

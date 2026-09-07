@@ -11,6 +11,7 @@ future use so the same query never hits external services twice.
 
 import math
 import logging
+import re
 
 from sqlalchemy import and_ as db_and_
 
@@ -121,8 +122,9 @@ def _guess_country_code(location_str):
     Returns a two-letter code (default "us").
     """
     lower = location_str.lower()
-    for name, code in _COUNTRY_CODES.items():
-        if name in lower:
+    for name in sorted(_COUNTRY_CODES, key=len, reverse=True):
+        code = _COUNTRY_CODES[name]
+        if re.search(r"(?<!\w)" + re.escape(name) + r"(?!\w)", lower):
             return code
     return "us"
 
@@ -184,9 +186,6 @@ def resolve_location(location_str, db=None, ZipCode=None):
 
     country_code = _guess_country_code(location_str)
 
-    # Extract the postal code portion (handle "city, state ZIP" patterns)
-    postal_candidate = location_str.split(",")[0].strip() if "," not in location_str else location_str.split()[-1].strip()
-
     # For pure numeric input, assume postal code
     clean_input = location_str.replace(" ", "").replace("-", "")
     is_likely_postal = (
@@ -228,7 +227,7 @@ def _cache_result(key, lat, lon, country_code, db, ZipCode):
         existing = ZipCode.query.get(key)
         if existing:
             return
-        country_name = {v: k for k, v in _COUNTRY_CODES.items()}.get(country_code, country_code).title()
+        country_name = next((name for name, code in _COUNTRY_CODES.items() if code == country_code), country_code).title()
         entry = ZipCode(
             zip_code=key,
             city=key,  # best guess; will be refined on future queries

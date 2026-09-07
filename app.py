@@ -3,8 +3,8 @@
 Features:
   - Flask-Login session auth for the web admin panel
   - Bearer-token (API key) auth for the JSON REST API
-  - Role-based access: admin, manager, viewer
-  - Scoped CRUD: users see only their assigned museums/countries
+  - Role-based access: admin, aircraft_admin, manager, viewer
+  - Museum/exhibit writes respect assignments; public reads expose the catalog
   - Full CRUD on aircraft, museums, and exhibit links
   - Public read-only search + proximity endpoints
   - International museum support (optional coordinates)
@@ -22,7 +22,7 @@ from urllib.parse import urlparse, urljoin
 
 from flask import (
     Flask, render_template, request, jsonify,
-    redirect, url_for, flash, abort, g, session,
+    redirect, url_for, flash, abort, g, session, current_app,
 )
 from flask_login import (
     LoginManager, login_user, logout_user,
@@ -31,6 +31,8 @@ from flask_login import (
 from flask_wtf.csrf import CSRFProtect, CSRFError
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
+from math import isfinite
+
 from sqlalchemy import or_, and_, func
 from sqlalchemy.orm import joinedload, selectinload, contains_eager
 
@@ -64,7 +66,10 @@ class _BearerAwareCSRF(CSRFProtect):
     """
 
     def protect(self):
-        if request.headers.get("Authorization", "").startswith("Bearer "):
+        view = current_app.view_functions.get(request.endpoint)
+        if (request.headers.get("Authorization", "").startswith("Bearer ")
+                and getattr(view, "required_api_permission", None)):
+            # This view rejects invalid headers instead of using session auth.
             return
         return super().protect()
 
@@ -108,7 +113,8 @@ def create_app():
 
     @login_manager.user_loader
     def load_user(user_id):
-        return User.query.get(int(user_id))
+        user = User.query.get(int(user_id))
+        return user if user and user.is_active else None
 
     return app
 
@@ -119,6 +125,13 @@ app = create_app()
 # ══════════════════════════════════════════════
 # Request logging middleware
 # ══════════════════════════════════════════════
+
+@app.before_request
+def _validate_json_object():
+    if request.path.startswith('/api/') and request.is_json:
+        if not isinstance(request.get_json(), dict):
+            return jsonify({"error": "JSON body must be an object."}), 400
+
 
 @app.before_request
 def _log_request():
@@ -208,6 +221,11 @@ def _enforce_session_timeout():
     # Skip for endpoints that need to work even when the session just expired
     # (login page, logout endpoint, static files, the desktop-only page).
     if request.endpoint in _TIMEOUT_EXEMPT_ENDPOINTS:
+        return None
+
+    view = current_app.view_functions.get(request.endpoint)
+    if request.headers.get("Authorization") and getattr(view, "required_api_permission", None):
+        # API credentials are independent of any expired browser session.
         return None
 
     if not current_user.is_authenticated:
@@ -484,7 +502,7 @@ def _get_api_user():
     if auth.startswith("Bearer "):
         raw_key = auth[7:].strip()
         api_key = ApiKey.lookup(raw_key)
-        if api_key:
+        if api_key and api_key.user.is_active:
             # Throttle last_used writes: only update if the previous value is
             # missing or stale. This keeps the auth-check path read-only on hot
             # traffic instead of committing a row on every request.
@@ -512,6 +530,10 @@ def api_auth_required(min_permission="read"):
         def wrapper(*args, **kwargs):
             user, api_key = _get_api_user()
 
+            # Explicit credentials must not silently fall back to another identity.
+            if request.headers.get("Authorization") and user is None:
+                return jsonify({"error": "Invalid or inactive API credentials."}), 401
+
             # Fallback: logged-in web session
             if user is None and current_user.is_authenticated:
                 user = current_user
@@ -527,7 +549,8 @@ def api_auth_required(min_permission="read"):
                 else:
                     perm_level = 0
             elif api_key:
-                perm_level = levels.get(api_key.permissions, 0)
+                role_level = 2 if user.is_data_admin else (1 if user.is_manager else 0)
+                perm_level = min(levels.get(api_key.permissions, 0), role_level)
             else:
                 return jsonify({"error": "Authentication required. Supply 'Authorization: Bearer <api_key>' header."}), 401
 
@@ -537,6 +560,7 @@ def api_auth_required(min_permission="read"):
             # Store the resolved user on g for scope checks
             g.api_user = user
             return fn(*args, **kwargs)
+        wrapper.required_api_permission = min_permission
         return wrapper
     return decorator
 
@@ -569,7 +593,7 @@ def _user_can_write_museum(museum_id):
     user = _get_effective_user()
     if not user:
         return False
-    if user.is_admin:
+    if user.is_data_admin:
         return True
     museum = Museum.query.get(museum_id)
     if not museum:
@@ -601,8 +625,8 @@ def aircraft_detail_page(aircraft_id):
     """Aircraft detail page.
 
     Mobile: renders a dedicated detail template.
-    Desktop: the list page handles detail in-place — redirect there with a
-    ``focus`` query param so the existing JS can highlight/scroll to the row.
+    Desktop: redirect to the directory with a ``focus`` query parameter;
+    its JavaScript opens the requested detail modal.
     """
     if getattr(g, "is_mobile", False):
         return render_template("mobile/aircraft_detail.html", aircraft_id=aircraft_id)
@@ -941,9 +965,9 @@ def _apply_sort(query, column_map, default_order):
     sort_dir = (request.args.get("sort_dir") or "asc").strip().lower()
     column_factory = column_map.get(sort_by)
     if column_factory is None:
-        return query.order_by(*default_order)
+        return query.order_by(*default_order, query.column_descriptions[0]["entity"].id)
     column = column_factory()
-    return query.order_by(column.desc() if sort_dir == "desc" else column.asc())
+    return query.order_by(column.desc() if sort_dir == "desc" else column.asc(), query.column_descriptions[0]["entity"].id)
 
 
 def _build_aircraft_filter(q):
@@ -975,7 +999,7 @@ def api_aircraft_search():
     """Search aircraft by tail number, model, variant, name, manufacturer, or alias."""
     q = request.args.get("q", "").strip()
     page = request.args.get("page", 1, type=int)
-    per_page = min(request.args.get("per_page", 20, type=int), 100)
+    per_page = max(1, min(request.args.get("per_page", Config.RESULTS_PER_PAGE, type=int), 100))
 
     query = Aircraft.query
     if q:
@@ -1031,7 +1055,7 @@ def api_museum_search():
     country = request.args.get("country", "").strip()
     state = request.args.get("state", "").strip()
     page = request.args.get("page", 1, type=int)
-    per_page = min(request.args.get("per_page", 20, type=int), 100)
+    per_page = max(1, min(request.args.get("per_page", Config.RESULTS_PER_PAGE, type=int), 100))
 
     query = Museum.query
     if q:
@@ -1107,8 +1131,10 @@ def api_museums_nearest():
     visitor-perspective rule the globe uses, so a museum's count here
     matches what they'll actually be able to see.
     """
-    limit = min(request.args.get("limit", 10, type=int), 50)
+    limit = max(1, min(request.args.get("limit", 10, type=int), 50))
     radius = request.args.get("radius", type=float)
+    if "radius" in request.args and (radius is None or not isfinite(radius) or radius < 0):
+        return jsonify({"error": "radius must be a finite, non-negative number."}), 400
 
     lat = request.args.get("lat", type=float)
     lon = request.args.get("lon", type=float)
@@ -1240,7 +1266,7 @@ def api_nearest_museum():
     aircraft_query = request.args.get("aircraft", "").strip()
     museum_query = request.args.get("museum", "").strip()
     location = request.args.get("location", "").strip()
-    limit = min(request.args.get("limit", 5, type=int), 25)
+    limit = max(1, min(request.args.get("limit", 5, type=int), 25))
 
     if not aircraft_query or not location:
         return jsonify({"error": "Both 'aircraft' and 'location' parameters are required."}), 400
@@ -1319,7 +1345,7 @@ def api_nearby_museums():
     """
     location = request.args.get("location", "").strip()
     region = request.args.get("region", "").strip()
-    limit = min(request.args.get("limit", 10, type=int), 50)
+    limit = max(1, min(request.args.get("limit", 10, type=int), 50))
 
     if not location:
         return jsonify({"error": "The 'location' parameter is required."}), 400
@@ -1494,12 +1520,12 @@ def _split_aliases(value):
     if value is None or value == "":
         return []
     if isinstance(value, list):
-        return [a.strip() for a in value if isinstance(a, str) and a.strip()]
+        return list(dict.fromkeys(a.strip() for a in value if isinstance(a, str) and a.strip()))
     if isinstance(value, str):
         # Both ; and , can show up in user CSVs. Default to ; (since aircraft
         # designations contain commas inside aliases like "B-29, Superfortress").
         parts = [p.strip() for p in value.split(";")]
-        return [p for p in parts if p]
+        return list(dict.fromkeys(p for p in parts if p))
     return []
 
 
@@ -1518,15 +1544,33 @@ def _coerce_float(value, field_name, errors):
     if value is None or value == "":
         return None
     try:
-        return float(str(value).strip())
+        result = float(str(value).strip())
+        if not isfinite(result):
+            raise ValueError("non-finite number")
+        return result
     except (ValueError, TypeError):
         errors.append({"field": field_name, "message": f"must be a number (got {value!r})"})
         return None
 
 
+def _validate_text_fields(row, fields, errors):
+    row = dict(row)
+    for field in fields:
+        value = row.get(field)
+        if value is not None and not isinstance(value, str):
+            errors.append({"field": field, "message": "must be a string"})
+            row[field] = None
+    return row
+
+
 def _validate_aircraft_row(row):
     """Return (clean_dict, errors). clean_dict is None if errors is non-empty."""
     errors = []
+    row = _validate_text_fields(row, (
+        "manufacturer", "model", "variant", "model_name", "aircraft_name",
+        "aircraft_type", "wing_type", "military_civilian", "role_type",
+        "description", "museum_name", "display_status",
+    ), errors)
     # Trim every string field for safety.
     g = lambda k: (row.get(k) or "").strip() if isinstance(row.get(k), str) else row.get(k)
 
@@ -1599,6 +1643,9 @@ def _validate_aircraft_row(row):
 def _validate_museum_row(row):
     """Return (clean_dict, errors). clean_dict is None if errors is non-empty."""
     errors = []
+    row = _validate_text_fields(row, (
+        "name", "city", "country", "region", "state_province", "postal_code", "address", "website",
+    ), errors)
     g = lambda k: (row.get(k) or "").strip() if isinstance(row.get(k), str) else row.get(k)
 
     name = g("name")
@@ -1616,6 +1663,10 @@ def _validate_museum_row(row):
 
     latitude = _coerce_float(row.get("latitude"), "latitude", errors)
     longitude = _coerce_float(row.get("longitude"), "longitude", errors)
+    if latitude is not None and not -90 <= latitude <= 90:
+        errors.append({"field": "latitude", "message": "must be between -90 and 90"})
+    if longitude is not None and not -180 <= longitude <= 180:
+        errors.append({"field": "longitude", "message": "must be between -180 and 180"})
     # Either both coordinates or neither.
     if (latitude is None) != (longitude is None):
         errors.append({"field": "latitude/longitude",
@@ -1734,6 +1785,14 @@ def _bulk_import_aircraft(rows, dry_run):
         return report
 
     if dry_run:
+        for i, clean in cleaned:
+            existing = _find_aircraft_duplicate(clean["model"], clean["tail_number"])
+            if existing is not None:
+                report["skipped"] += 1
+                report["errors"].append({"row": i, "field": "(model, tail_number)",
+                                         "message": f"already exists in DB (id={existing.id}); skipped"})
+        if report["errors"]:
+            return report
         report["created"] = len(cleaned)
         report["linked"] = sum(1 for v in resolved_museums.values() if v is not None)
         return report
@@ -1812,6 +1871,18 @@ def _bulk_import_museums(rows, dry_run):
     if report["errors"]:
         return report
     if dry_run:
+        for i, clean in cleaned:
+            existing = Museum.query.filter(
+                func.lower(Museum.name) == clean["name"].lower(),
+                func.lower(Museum.city) == clean["city"].lower(),
+                func.lower(Museum.country) == clean["country"].lower(),
+            ).first()
+            if existing is not None:
+                report["skipped"] += 1
+                report["errors"].append({"row": i, "field": "name+city+country",
+                                         "message": f"already exists in DB (id={existing.id}); skipped"})
+        if report["errors"]:
+            return report
         report["created"] = len(cleaned)
         return report
 
@@ -1868,7 +1939,9 @@ def _bulk_import_request_payload():
         # 2. JSON body: {"format": "csv"|"json", "data": "...", "dry_run": bool}
         body = request.get_json(silent=True) or {}
         fmt = body.get("format", "auto")
-        dry_run = bool(body.get("dry_run", False))
+        if "dry_run" in body and not isinstance(body["dry_run"], bool):
+            raise ValueError("dry_run must be a JSON boolean.")
+        dry_run = body.get("dry_run", False)
         raw = body.get("data")
         if not raw:
             raise ValueError(
@@ -1876,6 +1949,8 @@ def _bulk_import_request_payload():
                 "with a 'data' field containing the CSV/JSON text."
             )
 
+    if not isinstance(raw, str) or not isinstance(fmt, str):
+        raise ValueError("data and format must be strings.")
     if len(raw) > Config.MAX_CONTENT_LENGTH:
         raise ValueError(f"Payload exceeds {Config.MAX_CONTENT_LENGTH:,}-byte limit.")
     return raw, fmt, dry_run
@@ -1970,10 +2045,15 @@ def api_create_aircraft():
     if missing:
         return jsonify({"error": f"Missing required fields: {', '.join(missing)}"}), 400
 
-    # Scope check: if linking to museum, user must have access
+    clean, errors = _validate_aircraft_row(data)
+    if errors:
+        return jsonify({"error": "Invalid aircraft fields.", "errors": errors}), 400
+    data = clean
     museum_id = data.get("museum_id")
-    if museum_id and not _user_can_write_museum(int(museum_id)):
-        return jsonify({"error": "You do not have access to that museum."}), 403
+    if museum_id is not None:
+        Museum.query.get_or_404(museum_id)
+        if not _user_can_write_museum(museum_id):
+            return jsonify({"error": "You do not have access to that museum."}), 403
 
     # Sanity check: refuse to create a duplicate (same model + tail number).
     # Empty/missing tail numbers are treated as "unknown" and never collide.
@@ -2042,6 +2122,11 @@ def api_update_aircraft(aircraft_id):
     aircraft = Aircraft.query.get_or_404(aircraft_id)
     data = request.get_json() or {}
 
+    clean, errors = _validate_aircraft_row({**aircraft.to_dict(), **data})
+    if errors:
+        return jsonify({"error": "Invalid aircraft fields.", "errors": errors}), 400
+    data = {field: clean[field] for field in data if field in clean}
+
     # Pre-flight uniqueness check: figure out what the (model, tail_number)
     # would be after this update and reject if it would clash with another row.
     new_model = data["model"] if "model" in data and data["model"] else aircraft.model
@@ -2109,9 +2194,13 @@ def api_create_museum():
     """
     data = request.get_json() or {}
     required = ["name", "city", "country", "region"]
-    missing = [f for f in required if not data.get(f)]
+    missing = [f for f in required if not isinstance(data.get(f), str) or not data[f].strip()]
     if missing:
         return jsonify({"error": f"Missing required fields: {', '.join(missing)}"}), 400
+
+    data, errors = _validate_museum_row(data)
+    if errors:
+        return jsonify({"error": "Invalid museum fields.", "errors": errors}), 400
 
     museum = Museum(
         name=data["name"],
@@ -2141,10 +2230,16 @@ def api_update_museum(museum_id):
 
     # Scope check
     user = _get_effective_user()
-    if not user.is_admin and not user.can_access_museum(museum):
+    if not user.can_access_museum(museum):
         return jsonify({"error": "You do not have access to this museum."}), 403
 
     data = request.get_json() or {}
+    if "country" in data and (not isinstance(data["country"], str) or not data["country"].strip()):
+        return jsonify({"error": "Country cannot be empty."}), 400
+    clean, errors = _validate_museum_row({**museum.to_dict(), **data})
+    if errors:
+        return jsonify({"error": "Invalid museum fields.", "errors": errors}), 400
+    data = {field: clean[field] for field in data if field in clean}
     for field in ["name", "city", "state_province", "country", "postal_code", "region",
                    "address", "website", "latitude", "longitude"]:
         if field in data:
@@ -2243,15 +2338,20 @@ def api_create_exhibit():
     if not data.get("aircraft_id") or not data.get("museum_id"):
         return jsonify({"error": "Both 'aircraft_id' and 'museum_id' are required."}), 400
 
+    errors = []
+    for field in ("aircraft_id", "museum_id"):
+        data[field] = _coerce_int(data[field], field, errors)
+    if errors:
+        return jsonify({"error": "Invalid exhibit IDs.", "errors": errors}), 400
+    Aircraft.query.get_or_404(data["aircraft_id"])
+    Museum.query.get_or_404(data["museum_id"])
+
     # Scope check
     if not _user_can_write_museum(int(data["museum_id"])):
         return jsonify({"error": "You do not have access to that museum."}), 403
 
-    Aircraft.query.get_or_404(data["aircraft_id"])
-    Museum.query.get_or_404(data["museum_id"])
-
     status = data.get("display_status", "on_display")
-    if status not in _DISPLAY_STATUS_VALUES:
+    if not isinstance(status, str) or status not in _DISPLAY_STATUS_VALUES:
         return jsonify({
             "error": "Invalid display_status",
             "message": f"must be one of {sorted(_DISPLAY_STATUS_VALUES)}",
@@ -2282,7 +2382,7 @@ def api_update_exhibit(link_id):
         return jsonify({"error": "You do not have access to this museum."}), 403
 
     data = request.get_json() or {}
-    if "display_status" in data and data["display_status"] not in _DISPLAY_STATUS_VALUES:
+    if "display_status" in data and (not isinstance(data["display_status"], str) or data["display_status"] not in _DISPLAY_STATUS_VALUES):
         return jsonify({
             "error": "Invalid display_status",
             "message": f"must be one of {sorted(_DISPLAY_STATUS_VALUES)}",
@@ -2400,6 +2500,8 @@ def api_update_fact(fact_id):
     """Update a fact's text, source, aircraft link, or active flag."""
     fact = _fact_or_404(fact_id)
     data = request.get_json() or {}
+    if "is_active" in data and not isinstance(data["is_active"], bool):
+        return jsonify({"error": "is_active must be a JSON boolean."}), 400
     clean, err = _validate_fact_payload(data, require_text="fact" in data)
     if err:
         return err
@@ -2518,6 +2620,10 @@ def api_update_template(template_id):
     t = AircraftTemplate.query.get_or_404(template_id)
     data = request.get_json() or {}
 
+    for field in ("name", "manufacturer", "model"):
+        if field in data and (not isinstance(data[field], str) or not data[field].strip()):
+            return jsonify({"error": f"Template {field} cannot be empty."}), 400
+
     # Unique-name check only fires when the caller actually changes the name.
     if "name" in data and data["name"] and data["name"] != t.name:
         if AircraftTemplate.query.filter_by(name=data["name"]).first():
@@ -2630,8 +2736,10 @@ def api_create_key():
     permissions = data.get("permissions", "read")
     if permissions not in ("read", "readwrite", "admin"):
         return jsonify({"error": "permissions must be 'read', 'readwrite', or 'admin'."}), 400
-    if permissions == "admin" and not current_user.is_admin:
-        return jsonify({"error": "Only admins can create admin-level keys."}), 403
+    if permissions == "admin" and not current_user.is_data_admin:
+        return jsonify({"error": "Only data admins can create admin-level keys."}), 403
+    if permissions == "readwrite" and not current_user.is_manager:
+        return jsonify({"error": "Your role cannot create readwrite keys."}), 403
 
     expires_at = None
     expires_in = data.get("expires_in_days")
@@ -2641,7 +2749,7 @@ def api_create_key():
             if days < 1:
                 return jsonify({"error": "expires_in_days must be a positive integer."}), 400
             expires_at = datetime.now(timezone.utc) + timedelta(days=days)
-        except (ValueError, TypeError):
+        except (ValueError, TypeError, OverflowError):
             return jsonify({"error": "expires_in_days must be a positive integer."}), 400
 
     api_key, raw_key = ApiKey.generate(current_user.id, label=label, permissions=permissions, expires_at=expires_at)
@@ -2758,7 +2866,7 @@ def api_create_user():
     """Create a new user (admin only).
 
     Required: username, password.
-    Optional: email, role (admin/manager/viewer).
+    Optional: email, role (admin/aircraft_admin/manager/viewer).
     """
     data = request.get_json() or {}
     username = (data.get("username") or "").strip()
@@ -2823,6 +2931,8 @@ def api_update_user(user_id):
     """Update a user (admin only). Can change role, email, active status, and assignments."""
     user = User.query.get_or_404(user_id)
     data = request.get_json() or {}
+    if "is_active" in data and not isinstance(data["is_active"], bool):
+        return jsonify({"error": "is_active must be a JSON boolean."}), 400
 
     if "email" in data:
         user.email = data["email"] or None
@@ -2877,7 +2987,19 @@ def api_delete_user(user_id):
 
 @app.route("/api/v1/docs")
 def api_docs():
-    return render_template("api_docs.html")
+    endpoints = []
+    for rule in sorted(current_app.url_map.iter_rules(), key=lambda r: (r.rule, sorted(r.methods))):
+        if not rule.rule.startswith("/api/v1/"):
+            continue
+        view = current_app.view_functions[rule.endpoint]
+        permission = getattr(view, "required_api_permission", None)
+        access = permission or ("Session" if rule.rule.startswith(("/api/v1/keys", "/api/v1/users")) else "Public")
+        endpoints.append({
+            "path": rule.rule,
+            "methods": ", ".join(sorted(rule.methods - {"HEAD", "OPTIONS"})),
+            "access": access,
+        })
+    return render_template("api_docs.html", endpoints=endpoints)
 
 
 # ══════════════════════════════════════════════

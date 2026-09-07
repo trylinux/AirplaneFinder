@@ -118,13 +118,13 @@ $(function() {
 
         $('#prox-results').html('<div class="m-list-empty">Searching…</div>');
         $.getJSON('/api/v1/nearest', params, function(d) {
-            if (!d.results || !d.results.length) {
+            if (!(d.results || []).length && !(d.no_coordinates || []).length) {
                 $('#prox-results').html('<div class="m-list-empty">No museums found for that aircraft.</div>');
                 return;
             }
             var html = '<div class="m-prox-origin">Showing results from <strong>' + escHtml(d.origin.location) + '</strong></div>';
             html += '<div class="m-list">';
-            d.results.forEach(function(r) { html += proxCard(r, r.distance_miles); });
+            (d.results || []).forEach(function(r) { html += proxCard(r, r.distance_miles); });
             html += '</div>';
             if (d.no_coordinates && d.no_coordinates.length) {
                 html += '<div class="m-prox-origin" style="margin-top:.75rem;">Also displaying this aircraft (distance unavailable)</div><div class="m-list">';

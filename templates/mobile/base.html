@@ -84,7 +84,9 @@
 <script nonce="{{ csp_nonce }}">
 function escHtml(s) {
     if (s == null) return '';
-    return $('<span>').text(String(s)).html();
+    return String(s).replace(/[&<>"']/g, function(c) {
+        return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c];
+    });
 }
 /* See app.js — same helper + override map, duplicated because the mobile
    base does not include /static/js/app.js. Keep the two in sync. */

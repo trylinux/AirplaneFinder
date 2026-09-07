@@ -94,7 +94,7 @@ $(function() {
             params.sort_by  = sortState.sort_by;
             params.sort_dir = sortState.sort_dir;
         }
-        $.getJSON('/api/v1/aircraft/search', params, function(data) {
+        fetchAllResults('/api/v1/aircraft/search', params, function(data) {
             var html = '';
             if (!data.results.length) { html = '<p class="no-results">No aircraft found.</p>'; }
             else {
@@ -202,14 +202,14 @@ $(function() {
     /* Editable list of museum links for the aircraft currently being edited.
        Each row exposes display_status (select), notes (input), Save and Remove
        buttons. An "Add link" form below attaches the aircraft to a new museum.
-       This panel replaces the (now-deleted) /admin/exhibits page entirely. */
+       The /admin/exhibits page provides the cross-museum overview. */
 
     // Cache of all museums for the picker. Loaded once per page; refresh after
     // /admin/museums actions can be added later if it matters.
     var _allMuseumsForPicker = null;
     function ensureMuseumListLoaded(cb) {
         if (_allMuseumsForPicker) return cb();
-        $.getJSON('/api/v1/museums/search', {per_page: 1000}, function(data) {
+        fetchAllResults('/api/v1/museums/search', {}, function(data) {
             _allMuseumsForPicker = (data.results || []).slice().sort(function(a, b) {
                 return a.name.localeCompare(b.name);
             });
@@ -309,16 +309,7 @@ $(function() {
         var $form = $('#le-add-form');
         if ($form.hasClass('open')) { $form.removeClass('open'); return; }
         ensureMuseumListLoaded(function() {
-            // Populate picker with museums NOT already linked, since the
-            // (aircraft, museum) UNIQUE constraint would reject a duplicate.
-            var attachedIds = $('#edit-museum-panel .link-editor-row')
-                .map(function() {
-                    // We stored link_id on the row; we need museum_id, which
-                    // we don't have here. Fall back to allowing all museums
-                    // and letting the API respond 409 if duplicate. Keeps the
-                    // picker simple.
-                    return null;
-                }).get();
+            // Duplicate links are rejected by the API with a 409 response.
             var $sel = $('#le-add-museum').empty().append('<option value="">Select a museum…</option>');
             _allMuseumsForPicker.forEach(function(m) {
                 $sel.append('<option value="' + m.id + '">'

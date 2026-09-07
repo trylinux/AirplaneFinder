@@ -24,8 +24,10 @@
                 <label>Permissions</label>
                 <select name="permissions">
                     <option value="read">Read Only</option>
+                    {% if current_user.is_manager %}
                     <option value="readwrite" selected>Read + Write</option>
-                    {% if current_user.is_admin %}
+                    {% endif %}
+                    {% if current_user.is_data_admin %}
                     <option value="admin">Admin (full access)</option>
                     {% endif %}
                 </select>

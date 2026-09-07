@@ -38,8 +38,8 @@ Rules that matter more than they look:
   "F-4" + "E", never "F-4E". The generated `full_designation` column
   depends on this.
 - **Enum values verbatim.** `aircraft_type`, `military_civilian`,
-  `role_type` and `wing_type` are validated server-side; anything else
-  fails the import.
+  `display_status`, and `wing_type` are validated server-side. `role_type`
+  is a free-text field; use the role names offered in the admin UI for consistency.
 - **`wing_type` only for fixed-wing.** A helicopter with "monoplane" set
   is a data error.
 - **Never invent a tail number or a year.** A blank field is honest and

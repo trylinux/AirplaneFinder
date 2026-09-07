@@ -17,9 +17,11 @@ $(function() {
 
 /* ─── Shared utilities ────────────────────── */
 
-function escHtml(str) {
-    if (!str) return '';
-    return $('<span>').text(str).html();
+function escHtml(s) {
+    if (s == null) return '';
+    return String(s).replace(/[&<>"']/g, function(c) {
+        return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c];
+    });
 }
 
 /* Hand-curated labels for enum values where the default snake_case →
@@ -183,4 +185,22 @@ function renderMuseumResults(results, total, container, page, pages) {
     }
 
     $c.html(html);
+}
+
+
+// Admin lists and pickers need the full catalog; the API caps each page at 100.
+// Return the familiar {results, total} shape only after every page succeeds.
+function fetchAllResults(url, params, success) {
+    var deferred = $.Deferred(), results = [];
+    function next(page) {
+        $.getJSON(url, $.extend({}, params, {page: page, per_page: 100}))
+            .done(function(data) {
+                results = results.concat(data.results || []);
+                if (page < data.pages) next(page + 1);
+                else deferred.resolve({results: results, total: data.total});
+            }).fail(function(xhr) { deferred.reject(xhr); });
+    }
+    if (success) deferred.done(success);
+    next(1);
+    return deferred.promise();
 }

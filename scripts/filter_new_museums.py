@@ -30,13 +30,12 @@ from __future__ import annotations
 
 import argparse
 import csv
-import os
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from airplane_api import AirplaneClient, ApiError  # noqa: E402
+from airplane_api import AirplaneClient  # noqa: E402
 
 
 def key(name, city, country):

@@ -45,19 +45,6 @@ CREATE TABLE IF NOT EXISTS api_keys (
 ) ENGINE=InnoDB;
 
 -- ─────────────────────────────────────────────
--- User ↔ Museum assignments (scoped access)
--- ─────────────────────────────────────────────
-CREATE TABLE IF NOT EXISTS user_museum_assignments (
-    id          INT AUTO_INCREMENT PRIMARY KEY,
-    user_id     INT NOT NULL,
-    museum_id   INT NOT NULL,
-    created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (user_id)  REFERENCES users(id)   ON DELETE CASCADE,
-    FOREIGN KEY (museum_id) REFERENCES museums(id) ON DELETE CASCADE,
-    UNIQUE KEY uq_user_museum (user_id, museum_id)
-) ENGINE=InnoDB;
-
--- ─────────────────────────────────────────────
 -- User ↔ Country assignments (scoped access)
 -- ─────────────────────────────────────────────
 CREATE TABLE IF NOT EXISTS user_country_assignments (
@@ -90,6 +77,19 @@ CREATE TABLE IF NOT EXISTS museums (
     INDEX idx_country (country),
     INDEX idx_state   (state_province),
     INDEX idx_postal  (postal_code)
+) ENGINE=InnoDB;
+
+-- ─────────────────────────────────────────────
+-- User ↔ Museum assignments (scoped access)
+-- ─────────────────────────────────────────────
+CREATE TABLE IF NOT EXISTS user_museum_assignments (
+    id          INT AUTO_INCREMENT PRIMARY KEY,
+    user_id     INT NOT NULL,
+    museum_id   INT NOT NULL,
+    created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id)  REFERENCES users(id)   ON DELETE CASCADE,
+    FOREIGN KEY (museum_id) REFERENCES museums(id) ON DELETE CASCADE,
+    UNIQUE KEY uq_user_museum (user_id, museum_id)
 ) ENGINE=InnoDB;
 
 -- ─────────────────────────────────────────────

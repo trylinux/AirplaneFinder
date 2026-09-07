@@ -151,8 +151,8 @@ $(function() {
     }
 
     function renderProximityResults(data) {
-        if (!data.results || data.results.length === 0) {
-            $('#prox-results').html('<p class="no-results">No museums found for that aircraft.</p>');
+        if (!(data.results || []).length && !(data.no_coordinates || []).length) {
+            $('#prox-results').html('<p class="no-results">No museums found for that aircraft.</p>').show();
             return;
         }
 
@@ -160,7 +160,7 @@ $(function() {
                    escHtml(data.origin.location) + '</strong></div>';
         html += '<div class="prox-list">';
 
-        data.results.forEach(function(r) {
+        (data.results || []).forEach(function(r) {
             var statusClass = 'status-' + r.display_status;   // raw, used as CSS class
             var statusLabel = prettyEnum(r.display_status);
             html += '<div class="prox-item">' +

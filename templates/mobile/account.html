@@ -56,7 +56,7 @@
                         {% if current_user.is_manager %}
                         <option value="readwrite">Read + write</option>
                         {% endif %}
-                        {% if current_user.is_admin %}
+                        {% if current_user.is_data_admin %}
                         <option value="admin">Admin</option>
                         {% endif %}
                     </select>

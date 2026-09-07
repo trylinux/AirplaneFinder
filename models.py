@@ -24,7 +24,7 @@ class User(UserMixin, db.Model):
     username = db.Column(db.String(80), unique=True, nullable=False)
     email = db.Column(db.String(200))
     password_hash = db.Column(db.String(256), nullable=False)
-    role = db.Column(db.String(20), nullable=False, default="viewer")  # admin, manager, viewer
+    role = db.Column(db.String(20), nullable=False, default="viewer")  # admin, aircraft_admin, manager, viewer
     is_active_user = db.Column("is_active", db.Boolean, default=True)
     last_login = db.Column(db.DateTime, nullable=True)
     last_login_ip = db.Column(db.String(45), nullable=True)     # IPv4 or IPv6
@@ -40,7 +40,7 @@ class User(UserMixin, db.Model):
 
     # Default lazy loading; the only site that walks user.api_keys is
     # User.to_dict. Everywhere else queries ApiKey directly via its own model.
-    api_keys = db.relationship("ApiKey", back_populates="user")
+    api_keys = db.relationship("ApiKey", back_populates="user", cascade="all, delete-orphan")
     # Default ("select") lazy loading: these were previously lazy="joined", which
     # meant every User query — including the Flask-Login load_user() call on each
     # session request — joined both assignment tables even when unused. Callers
@@ -133,8 +133,8 @@ class User(UserMixin, db.Model):
         self.locked_until = None
 
     def can_access_museum(self, museum):
-        """Check if user can access a specific museum (admin=all, others=assigned)."""
-        if self.is_admin:
+        """Data admins access every museum; other roles require an assignment."""
+        if self.is_data_admin:
             return True
         museum_ids = self.assigned_museum_ids()
         countries = self.assigned_countries()
@@ -169,8 +169,8 @@ class UserMuseumAssignment(db.Model):
     __tablename__ = "user_museum_assignments"
 
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
-    museum_id = db.Column(db.Integer, db.ForeignKey("museums.id"), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    museum_id = db.Column(db.Integer, db.ForeignKey("museums.id", ondelete="CASCADE"), nullable=False)
 
     user = db.relationship("User", back_populates="museum_assignments")
     museum = db.relationship("Museum")
@@ -180,7 +180,7 @@ class UserCountryAssignment(db.Model):
     __tablename__ = "user_country_assignments"
 
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
     country = db.Column(db.String(100), nullable=False)
 
     user = db.relationship("User", back_populates="country_assignments")
@@ -190,7 +190,7 @@ class ApiKey(db.Model):
     __tablename__ = "api_keys"
 
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
     key_hash = db.Column(db.String(256), nullable=False)
     key_prefix = db.Column(db.String(16), nullable=True)   # first 12 chars for identification
     label = db.Column(db.String(100), default="default")
@@ -373,7 +373,7 @@ class AircraftAlias(db.Model):
     __tablename__ = "aircraft_aliases"
 
     id = db.Column(db.Integer, primary_key=True)
-    aircraft_id = db.Column(db.Integer, db.ForeignKey("aircraft.id"), nullable=False)
+    aircraft_id = db.Column(db.Integer, db.ForeignKey("aircraft.id", ondelete="CASCADE"), nullable=False)
     alias = db.Column(db.String(200), nullable=False)
 
     aircraft = db.relationship("Aircraft", back_populates="aliases")
@@ -383,8 +383,8 @@ class AircraftMuseum(db.Model):
     __tablename__ = "aircraft_museum"
 
     id = db.Column(db.Integer, primary_key=True)
-    aircraft_id = db.Column(db.Integer, db.ForeignKey("aircraft.id"), nullable=False)
-    museum_id = db.Column(db.Integer, db.ForeignKey("museums.id"), nullable=False)
+    aircraft_id = db.Column(db.Integer, db.ForeignKey("aircraft.id", ondelete="CASCADE"), nullable=False)
+    museum_id = db.Column(db.Integer, db.ForeignKey("museums.id", ondelete="CASCADE"), nullable=False)
     display_status = db.Column(db.String(20), default="on_display")
     notes = db.Column(db.Text)
 
@@ -453,7 +453,7 @@ class AircraftTemplateAlias(db.Model):
     __tablename__ = "aircraft_template_aliases"
 
     id = db.Column(db.Integer, primary_key=True)
-    template_id = db.Column(db.Integer, db.ForeignKey("aircraft_templates.id"), nullable=False)
+    template_id = db.Column(db.Integer, db.ForeignKey("aircraft_templates.id", ondelete="CASCADE"), nullable=False)
     alias = db.Column(db.String(200), nullable=False)
 
     template = db.relationship("AircraftTemplate", back_populates="aliases")

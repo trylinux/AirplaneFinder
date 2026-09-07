@@ -86,7 +86,7 @@
 var _allMuseums = [];
 var _editUserId = 0;
 
-function escHtml(s) { return $('<span>').text(s || '').html(); }
+
 
 function formatTime(iso) {
     if (!iso) return '<span style="color:#555;">—</span>';
@@ -103,7 +103,7 @@ function formatTime(iso) {
 }
 
 function loadMuseumList(cb) {
-    $.getJSON('/api/v1/museums/search', {per_page: 500}, function(data) {
+    fetchAllResults('/api/v1/museums/search', {}, function(data) {
         _allMuseums = data.results || [];
         if (cb) cb(_allMuseums);
     });

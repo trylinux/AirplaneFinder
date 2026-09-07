@@ -299,7 +299,7 @@ $(function() {
     // ── Museum autocomplete + inline create ──
     var _allMuseums = [];
     function loadMuseumList() {
-        $.getJSON('/api/v1/museums/search', {per_page: 500}, function(data) {
+        fetchAllResults('/api/v1/museums/search', {}, function(data) {
             _allMuseums = data.results || [];
         });
     }

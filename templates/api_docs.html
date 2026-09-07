@@ -28,7 +28,27 @@
             <p>Everything in <em>readwrite</em>, plus delete records.</p>
         </div>
     </div>
+    <p class="doc-text">Keys are limited by the owner's current role and museum/country assignments. Disabled accounts cannot use keys. Admin and aircraft_admin have full catalog access; managers can edit assigned museums and their exhibit links. Only admin sessions can manage other users. Session writes require CSRF tokens; adding a Bearer header does not bypass CSRF for session-only endpoints.</p>
     <p class="doc-text">To get an API key, <a href="/login">log in</a> and visit the <a href="/admin/api-keys">API Keys</a> page.</p>
+</div>
+
+<div class="card">
+    <h2>Complete route index</h2>
+    <p class="doc-text">Generated from the running application's routes. PUT and PATCH apply partial updates. Session endpoints require login; users may access their own details and keys, while managing other users requires an admin session.</p>
+    <div class="results-container"><table class="result-table">
+        <thead><tr><th>Method</th><th>Route</th><th>Access</th></tr></thead>
+        <tbody>{% for endpoint in endpoints %}
+        <tr><td>{{ endpoint.methods }}</td><td><code>{{ endpoint.path }}</code></td><td>{{ endpoint.access }}</td></tr>
+        {% endfor %}</tbody>
+    </table></div>
+</div>
+<div class="card">
+    <h2>Query and import conventions</h2>
+    <p class="doc-text">Aircraft and museum searches return results, total, page, and pages. per_page defaults to RESULTS_PER_PAGE (20) and is capped at 100; fetch subsequent pages to retrieve the full catalog. sort_by names a supported field and sort_dir is asc or desc.</p>
+    <p class="doc-text">Detail requests include all exhibits by default. Add visible_only=true to show only on_display exhibits, as the public UI does. Other valid statuses are in_storage and under_restoration. Statistics count only on_display exhibit links.</p>
+    <p class="doc-text">GET /api/v1/museums/globe returns coordinates and on-display aircraft counts. GET /api/v1/museums/nearby takes location, optional region, and limit (default 10, maximum 50); museums without coordinates are listed separately. GET /api/v1/museums/nearest takes lat and lon or location, optional radius in miles, and limit (default 10, maximum 50). GET /api/v1/contributors lists contributor rankings.</p>
+    <p class="doc-text">Aircraft and museum bulk_import endpoints require admin-level data access. POST a multipart file or a JSON object with format (csv, json, or auto), data (text), and dry_run (boolean). The limits are 5,000 rows, the configured request-size limit (1 MiB by default), and BULK_IMPORT_RATE_LIMIT (200 per hour by default). Validation includes duplicates already in the database; writes are atomic. Aircraft rows may supply museum_id or museum_name to create an exhibit link.</p>
+    <p class="doc-text">Templates require name, manufacturer, and model; optional type fields and aliases prefill new aircraft without changing existing airframes. API key creation accepts label and permissions. POST /api/v1/keys also accepts expires_in_days; raw keys are returned once. JSON flags such as is_active and dry_run must be booleans, not strings.</p>
 </div>
 
 <!-- Endpoints -->
@@ -67,7 +87,7 @@
                 <code>/api/v1/aircraft</code>
                 <span class="badge status-on_display">readwrite</span>
             </div>
-            <p>Create a new aircraft. Send JSON body with <code>manufacturer</code> (required), <code>model</code> (required), and optional fields: <code>variant</code>, <code>tail_number</code>, <code>name</code>, <code>year_built</code>, <code>description</code>, <code>aliases</code> (array of strings), <code>aircraft_type</code> (fixed_wing | rotary_wing | lighter_than_air | spacecraft), <code>wing_type</code> (monoplane | biplane | triplane), <code>military_civilian</code> (military | civilian), <code>museum_id</code> + <code>display_status</code> to assign to a museum on creation.</p>
+            <p>Create a new aircraft. Send JSON body with <code>manufacturer</code> (required), <code>model</code> (required), and optional fields: <code>variant</code>, <code>tail_number</code>, <code>model_name</code>, <code>aircraft_name</code>, <code>role_type</code>, <code>year_built</code>, <code>description</code>, <code>aliases</code> (array of strings), <code>aircraft_type</code> (fixed_wing | rotary_wing | lighter_than_air | spacecraft | missile_rocket), <code>wing_type</code> (monoplane | biplane | triplane), <code>military_civilian</code> (military | civilian), <code>museum_id</code> + <code>display_status</code> to assign to a museum on creation.</p>
         </div>
 
         <div class="endpoint">
@@ -101,7 +121,7 @@
             <p>Search museums by name, city, state/province, or country. Optionally filter by region or country.</p>
             <table class="param-table">
                 <tr><td><code>q</code></td><td>Search query (optional)</td></tr>
-                <tr><td><code>region</code></td><td>Filter by region: North America, Europe, Asia-Pacific, Middle East, South America, Africa, Oceania</td></tr>
+                <tr><td><code>region</code></td><td>Filter by region: North America, Europe, Asia, Asia-Pacific, Middle East, South America, Africa, Oceania</td></tr>
                 <tr><td><code>country</code></td><td>Filter by country name</td></tr>
                 <tr><td><code>state</code></td><td>Filter by state/province name</td></tr>
                 <tr><td><code>page</code></td><td>Page number</td></tr>

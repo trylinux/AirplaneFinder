@@ -23,9 +23,12 @@ Then run the browser checks in another terminal:
 ```sh
 NODE_PATH=/tmp/airplanefinder-browser-tests/node_modules node tests/browser/mobile_views.cjs
 NODE_PATH=/tmp/airplanefinder-browser-tests/node_modules node tests/browser/globe_markers.cjs
+NODE_PATH=/tmp/airplanefinder-browser-tests/node_modules node tests/browser/catalog_lists.cjs
 ```
 
 The globe check verifies steady marker size at overview and close zoom, button/wheel/pinch zoom limits, and selection on both mobile and desktop.
+
+The catalog check verifies admin lists and pickers beyond 100 records, quoted names in edit fields, and home search results when all matching museums lack coordinates. Its larger read responses are intercepted without changing the fixture database.
 
 Stop the fixture server when finished. Its data is discarded on exit.
 Screenshots are written to `/private/tmp/airplanefinder-*.png`.

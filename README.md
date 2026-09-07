@@ -1,27 +1,24 @@
 # Aircraft Finder
 
-A Flask web application for tracking which aircraft are displayed at which aviation museums worldwide, with proximity search to find the nearest museum with a given aircraft.
+A Flask application for tracking historic aircraft at aviation museums worldwide,
+with searchable directories, museum collections, and proximity searches.
 
-## Prerequisites
+## Requirements and setup
 
-- Python 3.9+
-- MySQL 8.0+ (or MariaDB 10.6+)
+- Python 3.9+ and MySQL 8.0+ (or MariaDB 10.6+).
+- Browser access to the configured public CDNs for jQuery, Three.js, fonts,
+  icons, and globe boundary data. Geolocation requires HTTPS or localhost.
 
-## Setup
-
-### 1. Create the database
+Create a virtual environment and install the application dependencies:
 
 ```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
 mysql -u root -p < schema.sql
 ```
 
-### 2. Install Python dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Configure environment (optional)
+Configuration is read from `web.config` first, then environment variables, then
+built-in defaults. Copy `web.config.example` or set the environment:
 
 ```bash
 export MYSQL_HOST=127.0.0.1
@@ -29,145 +26,199 @@ export MYSQL_PORT=3306
 export MYSQL_USER=root
 export MYSQL_PASSWORD=yourpassword
 export MYSQL_DB=airplane_museum_tracker
-export SECRET_KEY=your-secret-key-here
+export SECRET_KEY=replace-with-a-long-random-secret
 ```
 
-### 4. Seed sample data
+For local development, debug defaults to true and the server uses port 5000:
 
 ```bash
-python seed_data.py
+.venv/bin/python app.py
 ```
 
-This creates a default admin account and prints an API key. Save the API key for programmatic access.
+Open [the local app](http://localhost:5000). For production set `SERVER_DEBUG=false`,
+use a non-default secret, serve HTTPS, and install `requirements-prod.txt` for
+Gunicorn. Secure session/remember cookies and security headers default to enabled
+when debug is false. An explicit value in `web.config` overrides the matching
+environment variable.
 
-### 5. Run the application
+### First administrator on a fresh database
+
+Create an administrator without loading demonstration data:
 
 ```bash
-python app.py
+.venv/bin/flask --app app shell
 ```
 
-Visit **http://localhost:5000** in your browser.
+In that shell, choose an unused username and enter a password that meets the
+policy (at least eight characters, including a letter and a digit):
 
-## Features
-
-- **Aircraft Search** -- search by tail number, model, variant (e.g. C-130J vs C-130H), name, or manufacturer
-- **Museum Directory** -- browse and filter museums by region or country
-- **International Support** -- museums from any country; coordinates are optional
-- **Proximity Search** -- enter an aircraft and zip/postal code or city to find the nearest museum with that aircraft
-- **Admin Panel** -- login-protected panel with full CRUD: list/create/edit/delete for aircraft, museums, and exhibit links
-- **REST API** -- versioned JSON API (`/api/v1/`) with Bearer token authentication
-- **API Key Management** -- generate, list, and revoke API keys from the web UI
-- **API Documentation** -- built-in interactive docs at `/api/v1/docs`
-
-## Authentication
-
-### Web UI
-
-Session-based authentication via Flask-Login. Register at `/register` or use the seeded admin account. The admin panel and API key management pages require login.
-
-### REST API
-
-Bearer token authentication. Include your API key in the `Authorization` header:
-
+```python
+from getpass import getpass
+from models import db, User
+from app import _validate_password_strength
+password = getpass("Administrator password: ")
+assert _validate_password_strength(password) is None
+user = User(username="admin", role="admin")
+user.set_password(password)
+db.session.add(user)
+db.session.commit()
+exit()
 ```
+
+### Optional demonstration data
+
+**`seed_data.py` clears existing catalog, account, assignment, and API-key data.**
+Run it only against a disposable demonstration database:
+
+```bash
+.venv/bin/python seed_data.py
+```
+
+It creates sample aircraft and museums, four users (`admin`, two managers, and a
+viewer), and prints the generated admin API key and demonstration credentials.
+The admin demonstration password is `admin`; change all demonstration passwords
+before using that database beyond local testing. Seeding is not an upgrade step.
+
+### Existing databases
+
+`schema.sql` describes a fresh database. `db.create_all()` and `CREATE TABLE IF
+NOT EXISTS` do not upgrade existing columns. Review and apply the relevant SQL
+migration files for an older installation:
+
+- `migrate_missile_rocket.sql`
+- `migrate_display_status_drop_on_loan.sql`
+- `migrate_aircraft_facts.sql`
+
+## Features and views
+
+- **Aircraft directory:** search manufacturer, model, variant, names, tail number,
+  or aliases; sort and paginate results; open details and museum locations.
+- **Museum directory:** search by name or location, filter by region, sort, and
+  view aircraft collections. Country/state filters are also available in the API.
+- **Discovery globe:** country borders and labels, US state detail at close zoom,
+  steady markers, hover/tap museum information, drag rotation, button/wheel/pinch
+  zoom, reset, and pause. Desktop and mobile use the same globe implementation.
+- **Proximity:** the dashboard finds museums displaying a specific aircraft;
+  the museum directory finds nearby museums by typed location. `/near-me`
+  supports device location, a typed location, a radius, collections, and directions.
+- **Facts and contributors:** aviation facts at `/facts`; contributor rankings at
+  `/contributors`.
+- **Management:** aircraft, museums, exhibit links, reusable aircraft templates,
+  facts, CSV/JSON bulk import, API keys, and administrator user management.
+- **Mobile:** dedicated public templates and responsive management pages. Museum
+  editing works on phones; login and role requirements are the same on every device.
+  `?desktop=1` forces the desktop layout for the session; `?desktop=0` clears that
+  override and resumes user-agent detection. `/desktop-only` is a legacy redirect
+  to `/admin`.
+
+Public aircraft/museum details request `visible_only=true`, so visitors see only
+`on_display` exhibits. `in_storage` and `under_restoration` remain available in
+management views and unfiltered detail API responses. Dashboard `link_count` and
+globe aircraft counts include only `on_display` links. Museums without coordinates
+remain searchable; `/nearest` and `/museums/nearby` return them separately, while
+`/museums/nearest` and the globe require coordinates.
+
+## Authentication and permissions
+
+Web sessions use Flask-Login. Registration creates a viewer account. Management
+pages require login; the write APIs enforce role and museum scope. Session writes
+need a CSRF token, sent as `X-CSRFToken` by the UI.
+
+| User role | Capabilities |
+|---|---|
+| `viewer` | Public catalog reads; own account and read-only API keys |
+| `manager` | Create/update shared aircraft, templates and facts; create museums; edit assigned museums and their exhibit links |
+| `aircraft_admin` | Full catalog CRUD and bulk import, including all museums; own account and keys |
+| `admin` | All catalog operations plus user, role, assignment, and other users' key management |
+
+Museum/country assignments restrict managers' museum and exhibit writes.
+Aircraft records, facts, and templates are shared catalog data; their write gates
+are role-based. Reads are public and are not restricted to assigned museums.
+
+The JSON API accepts Bearer tokens on catalog write endpoints:
+
+```text
 Authorization: Bearer amt_your_api_key_here
 ```
 
-Three permission levels:
+Key permissions are `read`, `readwrite`, or `admin`. Effective access is limited
+by both the key permission and its owner's **current** role and scope. Disabling
+a user disables their keys; lowering a role also lowers access through old keys.
+A supplied invalid Authorization header does not fall back to a logged-in session.
+User and key management endpoints require sessions rather than Bearer auth.
 
-| Level | Can do |
-|-------|--------|
-| `read` | Search, view details, proximity lookups (public endpoints also work without a key) |
-| `readwrite` | All of read, plus create and update records |
-| `admin` | All of readwrite, plus delete records |
+Create/revoke your keys at `/account` or `/admin/api-keys`. Raw keys are returned
+only at creation. `POST /api/v1/keys` supports `expires_in_days`; omit it for no
+expiration. Session idle timeouts default to 15 minutes for admins, 30 for managers
+and aircraft admins, and 60 for viewers; the absolute timeout is 12 hours. Login
+lockout defaults to five failed attempts for 15 minutes. Password policy defaults
+to eight characters including a letter and a digit.
 
-Generate API keys from the web UI at `/admin/api-keys`, or the first key is printed when you run `seed_data.py`.
+## API overview
 
-## API Endpoints (v1)
+All paths below are prefixed with `/api/v1`. The built-in
+[API documentation](http://localhost:5000/api/v1/docs) includes a complete route
+index generated from the running application, plus field and query descriptions.
 
-All endpoints are prefixed with `/api/v1/`.
+| Public GET endpoint | Purpose |
+|---|---|
+| `/aircraft/search` | Aircraft search with `q`, pagination, and sorting |
+| `/aircraft/{aircraft_id}` | Aircraft detail; optional `visible_only=true` |
+| `/museums/search` | `q`, `region`, `country`, `state`, pagination, sorting |
+| `/museums/{museum_id}` | Museum collection; optional `visible_only=true` |
+| `/museums/regions`, `/museums/countries` | Region/country counts |
+| `/museums/globe` | Museums with coordinates and on-display aircraft counts |
+| `/museums/nearby` | Typed `location`, optional `region`; limit 10 by default, maximum 50 |
+| `/museums/nearest` | `lat`/`lon` or `location`, optional `radius` in miles; limit 10 by default, maximum 50 |
+| `/nearest` | Required `aircraft` and `location`; optional `museum`; limit 5 by default, maximum 25 |
+| `/exhibits` | All exhibit links; optional `q`, `sort_by`, `sort_dir` |
+| `/templates`, `/templates/{template_id}` | Aircraft templates; optional `q` on the list |
+| `/facts`, `/facts/random` | Facts, optional `aircraft_id`; list accepts `include_inactive=true` |
+| `/contributors`, `/stats`, `/docs` | Rankings, counts, API reference |
 
-### Public (no auth required)
+Aircraft/museum search returns `{results, total, page, pages}`. The default page
+size is `RESULTS_PER_PAGE` (20); the per-request `per_page` cap is 100. Request
+successive pages for the complete result set. `sort_dir` is `asc` or `desc`;
+unsupported `sort_by` values use default ordering. Museum sort fields include
+`name`, `city`, `state_province`, `country`, `region`, and `id`; aircraft fields
+include designation, names, manufacturer, type, class, role, year, and ID.
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/aircraft/search?q=` | Search aircraft |
-| GET | `/aircraft/{id}` | Aircraft detail with museums |
-| GET | `/museums/search?q=&region=&country=&state=` | Search museums |
-| GET | `/museums/{id}` | Museum detail with aircraft |
-| GET | `/museums/regions` | List regions with counts |
-| GET | `/museums/countries` | List countries with counts |
-| GET | `/nearest?aircraft=&location=` | Find nearest museum |
-| GET | `/stats` | Dashboard counts |
-| GET | `/docs` | API documentation page |
+| Write endpoints | Required key permission / corresponding session role |
+|---|---|
+| POST `/aircraft`, `/museums`, `/exhibits`, `/templates`, `/facts` | `readwrite`; manager or data admin, subject to museum scope |
+| PUT or PATCH `/aircraft/{aircraft_id}`, `/museums/{museum_id}`, `/exhibits/{link_id}`, `/templates/{template_id}`, `/facts/{fact_id}` | `readwrite`; partial updates, subject to scope |
+| DELETE on those same detail paths | `admin`; admin or aircraft_admin |
+| POST `/aircraft/bulk_import`, `/museums/bulk_import` | `admin`; admin or aircraft_admin |
 
-### Authenticated (readwrite)
+| Session endpoints | Access |
+|---|---|
+| GET/POST `/keys`, DELETE `/keys/{key_id}` | Own keys; admins may revoke others' keys |
+| GET `/users`, GET `/users/{user_id}` | Admin sees all; other users see only themselves |
+| POST `/users`, PUT/PATCH/DELETE `/users/{user_id}` | Admin only; cannot delete your own account |
+| GET/POST `/users/{user_id}/keys` | Own keys or admin managing another user |
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/aircraft` | Create aircraft |
-| PUT | `/aircraft/{id}` | Update aircraft |
-| POST | `/museums` | Create museum |
-| PUT | `/museums/{id}` | Update museum |
-| POST | `/exhibits` | Link aircraft to museum |
-| PUT | `/exhibits/{id}` | Update exhibit |
+Send JSON objects for API writes. `is_active` and `dry_run` are JSON booleans,
+not strings. Legacy `/api/...` aliases remain for older clients and templates;
+new clients should use `/api/v1/...`.
 
-### Authenticated (admin)
+## Museum fields
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| DELETE | `/aircraft/{id}` | Delete aircraft |
-| DELETE | `/museums/{id}` | Delete museum |
-| DELETE | `/exhibits/{id}` | Delete exhibit link |
+Create requests require `name`, `city`, `country`, and `region`. Museum bulk import
+defaults omitted/empty `country` to `United States`. Other fields are
+`state_province`, `postal_code`, `address`, `website`, `latitude`, and `longitude`.
 
-### Key Management (session auth)
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/keys` | List your API keys |
-| POST | `/keys` | Generate new API key |
-| DELETE | `/keys/{id}` | Revoke an API key |
-
-## Museum Data Model
-
-Museums now support international locations:
-
-| Field | Required | Notes |
-|-------|----------|-------|
-| `name` | Yes | Museum name |
-| `city` | Yes | City |
-| `state_province` | No | State, province, county, etc. |
-| `country` | Yes | Country name (defaults to "United States") |
-| `postal_code` | No | Zip/postal code (format varies by country) |
-| `region` | Yes | North America, Europe, Asia-Pacific, Middle East, South America, Africa, Oceania |
-| `address` | No | Full street address |
-| `website` | No | URL |
-| `latitude` | No | Decimal degrees (for proximity search) |
-| `longitude` | No | Decimal degrees (for proximity search) |
-
-Museums without coordinates are still searchable and browsable, but won't appear in distance-sorted proximity results. They are listed separately when relevant.
-
-## Example API Usage
+Valid regions are `North America`, `Europe`, `Asia`, `Asia-Pacific`, `Middle East`,
+`South America`, `Africa`, and `Oceania`. Supply both coordinates or neither;
+latitude must be -90 through 90 and longitude -180 through 180. Zero is a valid
+coordinate. Partial edits validate the resulting coordinate pair.
 
 ```bash
-# Search (no auth needed)
-curl http://localhost:5000/api/v1/aircraft/search?q=C-130
+curl 'http://localhost:5000/api/v1/aircraft/search?q=C-130'
 
-# Create museum (readwrite key) — only name, city, country, region required
 curl -X POST http://localhost:5000/api/v1/museums \
-  -H "Authorization: Bearer amt_YOUR_KEY" \
-  -H "Content-Type: application/json" \
+  -H 'Authorization: Bearer amt_YOUR_KEY' \
+  -H 'Content-Type: application/json' \
   -d '{"name":"RAF Museum","city":"London","country":"United Kingdom","region":"Europe"}'
-
-# Update museum with coordinates
-curl -X PUT http://localhost:5000/api/v1/museums/1 \
-  -H "Authorization: Bearer amt_YOUR_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{"latitude":51.5953,"longitude":-0.2376}'
-
-# Delete (admin key only)
-curl -X DELETE http://localhost:5000/api/v1/aircraft/42 \
-  -H "Authorization: Bearer amt_YOUR_KEY"
 ```
 
 ## Bulk Import
@@ -182,12 +233,12 @@ button before the real Import. The page is in the admin nav under
 Either send a multipart `file` upload, or a JSON body of the form
 
 ```json
-{ "format": "csv" | "json" | "auto",
+{ "format": "csv",
   "data":   "<the CSV or JSON text>",
   "dry_run": false }
 ```
 
-The response is a per-row report:
+`format` accepts `csv`, `json`, or `auto`. The response is a per-row report:
 
 ```json
 { "created": 4, "linked": 4, "skipped": 0, "errors": [], "dry_run": false }
@@ -199,7 +250,7 @@ link columns below).
 **Rules**
 
 - Permission: `admin` or `aircraft_admin`.
-- Cap: 5,000 rows per request. Split larger imports.
+- Cap: 5,000 rows per request and `MAX_CONTENT_LENGTH` bytes (1 MiB by default). Split larger imports.
 - Rate limit: `BULK_IMPORT_RATE_LIMIT`, default **200 per hour**. A
   multi-file load (one file per museum, plus a dry run) is easily 80+
   requests, so the old 10/hour cap returned `429 Too Many Requests` — an
@@ -208,9 +259,10 @@ link columns below).
   `BULK_IMPORT_RATE_LIMIT` env var if you need more.
 - Atomic: any validation error rolls back the whole batch — partial
   imports are too painful to debug after the fact.
-- Existing duplicates (same `(model, tail_number)` for aircraft, same
-  `(name, city, country)` for museums) are reported as skipped *and*
-  cause the batch to roll back. Re-import after removing them.
+- Both dry runs and imports check existing duplicates: `(model, tail_number)`
+  for aircraft with known tail numbers, and `(name, city, country)` for museums.
+  Duplicates are reported as skipped and prevent the batch from being written.
+  Remove them before importing again.
 
 **Aircraft column / field names** (CSV header order = JSON keys)
 
@@ -248,7 +300,7 @@ library — install once: `pip install requests`.
 
 ```
 AIRPLANE_BASE_URL    # default http://127.0.0.1:5000
-AIRPLANE_API_KEY     # required only for write operations (admin / aircraft_admin)
+AIRPLANE_API_KEY     # needed for writes; bulk import requires admin-level data access
 ```
 
 **Tools**
@@ -269,9 +321,10 @@ AIRPLANE_API_KEY     # required only for write operations (admin / aircraft_admi
 python3 scripts/export_aircraft.py --format json --out aircraft_backup.json
 python3 scripts/export_museums.py  --format json --out museum_backup.json
 
-# Round-trip: export → edit in a spreadsheet → re-import
+# Prepare NEW records using the export column format
 python3 scripts/export_aircraft.py --format csv --out aircraft.csv
-# (open aircraft.csv in Excel, edit)
+# Replace the exported rows with new aircraft; import inserts, it does not update.
+# To edit existing records, use the management UI or PATCH endpoints.
 AIRPLANE_API_KEY=amt_... \
     python3 scripts/import_data.py --entity aircraft --file aircraft.csv --dry-run
 AIRPLANE_API_KEY=amt_... \
@@ -295,11 +348,11 @@ pytest
 ```
 
 The suite uses an **in-memory SQLite** database — no MySQL needed locally.
-86 tests covering: auth flow (login, logout, lockout, session timeout,
-session-fixation defense), role-based access, security hardening (headers,
-open-redirect, default-secret guard), the aircraft API regression-prone
-paths (link_id, uniqueness, sort whitelist), pure helpers, and the logger
-fallback.
+Coverage includes authentication, role/scope enforcement, CRUD and deletion,
+imports, public display filtering, proximity, facts, mobile route access, API
+contracts, maintenance scripts, and helpers. Get the current test count with
+`pytest --collect-only -q`; it changes as regressions are added. Browser checks
+use an isolated fixture server: see [tests/browser/README.md](tests/browser/README.md).
 
 Run a single file or test:
 
@@ -378,10 +431,9 @@ echo | openssl s_client -connect airplane.museum:443 -servername airplane.museum
      -showcerts 2>/dev/null | grep -c 'BEGIN CERTIFICATE'
 ```
 
-If that prints `1`, the intermediate is missing. It should print `2`.
-
-The certificate itself is valid — Sectigo, issued to `airplane.museum`, and it
-verifies cleanly once the intermediate is supplied:
+A count of `1` means only one certificate was sent. Check your CA's required
+chain; the correct count depends on the certificate issuer. To validate a
+downloaded leaf against its intermediate:
 
 ```bash
 openssl verify -untrusted intermediate.pem leaf.pem      # -> leaf.pem: OK
@@ -401,7 +453,7 @@ ssl_certificate_key  /etc/ssl/private/airplane.museum/privkey.pem;
 
 Apache: `SSLCertificateFile` should be the fullchain, or set
 `SSLCertificateChainFile` alongside it. Reload, then re-run the openssl check
-above and confirm it prints `2`.
+above and confirm that the server supplies the required intermediate certificates.
 
 Do **not** work around this with `verify=False`, `curl -k`, or by pinning a
 custom CA bundle in the scripts. That disables certificate checking for every
@@ -415,7 +467,7 @@ Before each deploy, run:
 bash scripts/security_check.sh
 ```
 
-This runs **`pip-audit`** against `requirements.txt` to flag any dependencies
+This runs **`pip-audit`** against `requirements.txt` and `requirements-prod.txt` to flag dependencies
 with known CVEs in the [PyPI Advisory Database](https://pypi.org/security/),
 and prints a summary of outdated packages in your `.venv` for visibility.
 
@@ -424,27 +476,18 @@ already on your `$PATH`, so it doesn't pollute the app's runtime
 environment. Exit code is non-zero on findings, so it can fail a CI pipeline
 or a deploy script — wire it in as the first step of whatever you use.
 
-## Project Structure
+## Project structure
 
-```
-airplane-museum-tracker/
-├── app.py              # Flask app: routes, auth, API
-├── models.py           # SQLAlchemy models (User, ApiKey, Aircraft, Museum, etc.)
-├── config.py           # Configuration
-├── schema.sql          # MySQL schema (includes users + api_keys tables)
-├── seed_data.py        # Sample data + default admin user/key
-├── requirements.txt
-├── static/
-│   ├── css/style.css
-│   └── js/app.js
-└── templates/
-    ├── base.html       # Layout with auth-aware nav
-    ├── index.html      # Dashboard + proximity search
-    ├── aircraft.html   # Aircraft directory
-    ├── museums.html    # Museum directory
-    ├── login.html      # Login page
-    ├── register.html   # Registration page
-    ├── admin.html      # Admin panel (CRUD)
-    ├── api_keys.html   # API key management
-    └── api_docs.html   # API documentation
-```
+- `app.py`: Flask routes, session/API auth, validation, imports, and API docs route index.
+- `models.py`, `schema.sql`, `migrate_*.sql`: ORM models, fresh schema, and upgrades.
+- `config.py`, `web.config.example`: file/environment configuration and defaults.
+- `geocoder.py`, `logger.py`: location resolution/cache and structured logs.
+- `templates/`: desktop/public and responsive management views; `templates/mobile/`
+  contains dedicated phone views. `_admin_nav.html` is the shared management navigation.
+- `static/js/app.js`: shared desktop helpers, escaping, sorting, and paginated catalog loading.
+- `static/js/museum-globe.js`: shared mobile/desktop globe.
+- `static/css/style.css`, `static/css/mobile.css`: responsive shared and phone layouts.
+- `scripts/`: API clients, import/export, research conversion, and data maintenance.
+- `data/`: catalog CSVs and historical research/source notes; see
+  [data/METHODOLOGY.md](data/METHODOLOGY.md).
+- `tests/`: pytest regressions and optional Playwright browser checks.
