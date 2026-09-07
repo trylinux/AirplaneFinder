@@ -1,0 +1,24 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Curtiss-Wright,CW-1,,,Junior,,fixed_wing,monoplane,civilian,private,1931,,,Port Townsend Aero Museum,on_display
+Corben,Baby Ace,,,,,fixed_wing,monoplane,civilian,private,1929,,,Port Townsend Aero Museum,on_display
+Howard,DGA-4,,,Mike,,fixed_wing,monoplane,civilian,private,1932,,replica of the Benny Howard racer,Port Townsend Aero Museum,on_display
+de Havilland Canada,DHC-1,,N1366,Chipmunk,,fixed_wing,monoplane,military,trainer,1959,,,Port Townsend Aero Museum,on_display
+Mooney,M-18,LA,,Mite,,fixed_wing,monoplane,civilian,private,1953,,,Port Townsend Aero Museum,on_display
+CallAir,A-2,,N2907V,,,fixed_wing,monoplane,civilian,utility,1949,,same model Kenneth Arnold flew in 1947,Port Townsend Aero Museum,on_display
+Travel Air,2000,,NC6147,,,fixed_wing,biplane,civilian,private,1928,,restored by museum youth program,Port Townsend Aero Museum,on_display
+Rose,Parrakeet,,,,,fixed_wing,biplane,civilian,private,1930,,ex-North Cascades Vintage Aircraft Museum,Port Townsend Aero Museum,on_display
+Fairchild,22,C7B,NC13167,,,fixed_wing,monoplane,civilian,private,1933,,ex-North Cascades Vintage Aircraft Museum,Port Townsend Aero Museum,on_display
+Fairchild,M62,A,N54977,Cornell,,fixed_wing,monoplane,military,trainer,1940,,painted as a PT-19B;ex-North Cascades Vintage Aircraft Museum,Port Townsend Aero Museum,on_display
+Fairchild,24,W-40,NC28517,,,fixed_wing,monoplane,civilian,private,1940,,flown on floats as WWII coastal patrol aircraft,Port Townsend Aero Museum,on_display
+Boeing,P-12,C,,,,fixed_wing,biplane,military,fighter,,,three-quarter-scale replica;ex-North Cascades Vintage Aircraft Museum,Port Townsend Aero Museum,on_display
+Pietenpol,Sky Scout,,,,,fixed_wing,monoplane,civilian,private,1932,,,Port Townsend Aero Museum,on_display
+Taylorcraft,BC-12,D,,,,fixed_wing,monoplane,civilian,private,1946,,,Port Townsend Aero Museum,on_display
+Aeronca,L-3,,,Grasshopper,,fixed_wing,monoplane,military,recon,1943,,restored by museum youth program,Port Townsend Aero Museum,on_display
+Aeronca,7AC,,,Champion,,fixed_wing,monoplane,civilian,private,1946,,Champ;restored by museum youth program,Port Townsend Aero Museum,on_display
+Aeronca,C-3,B,,Master,,fixed_wing,monoplane,civilian,private,1936,,original factory engine;airworthy,Port Townsend Aero Museum,on_display
+Stinson,SM-8A,,,Junior,,fixed_wing,monoplane,civilian,private,1930,,Detroiter,Port Townsend Aero Museum,on_display
+Laister-Kauffman,LK-10,A,,,,fixed_wing,monoplane,military,trainer,1942,,TG-4A training glider,Port Townsend Aero Museum,on_display
+Bowlus,BA-100,,,Baby Albatross,,fixed_wing,monoplane,civilian,other,,,kit-built sailplane,Port Townsend Aero Museum,on_display
+Beechcraft,C17,B,,Staggerwing,,fixed_wing,biplane,civilian,private,1937,,,Port Townsend Aero Museum,on_display
+Piper,J-3,C-65,,Cub,,fixed_wing,monoplane,civilian,trainer,,,airworthy,Port Townsend Aero Museum,on_display
+Taylorcraft,Model B,,,,,fixed_wing,monoplane,civilian,private,1939,,,Port Townsend Aero Museum,on_display

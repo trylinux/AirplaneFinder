@@ -1,0 +1,112 @@
+Curtiss|P-40|C|41-13390|Tomahawk||fixed_wing|monoplane|military|fighter||N2689;ex-Soviet Lend-Lease;airworthy|on_display|Flying Heritage & Combat Armor Museum
+Republic|P-47|D|45-49406|Thunderbolt||fixed_wing|monoplane|military|fighter||N7159Z;marked 2Z-T 510th FS;static|on_display|Flying Heritage & Combat Armor Museum
+North American|P-51|D|44-72364|Mustang|Upupa Epops|fixed_wing|monoplane|military|fighter||N723FH;ex-Dominican AF FAD 1916;airworthy|on_display|Flying Heritage & Combat Armor Museum
+North American|B-25|J|44-30254|Mitchell|Grumpy|fixed_wing|monoplane|military|bomber||N41123;ex-RCAF 5211;airworthy|on_display|Flying Heritage & Combat Armor Museum
+Lockheed|P-38|J|42-103988|Lightning|Jandina III|fixed_wing|monoplane|military|fighter|1943|N988J;first post-restoration flight June 2025;airworthy|on_display|Flying Heritage & Combat Armor Museum
+Grumman|F6F|5|79863|Hellcat||fixed_wing|monoplane|military|fighter||N79863;later F6F-5K drone conversion;static|on_display|Flying Heritage & Combat Armor Museum
+Goodyear|FG-1|D|88303|Corsair||fixed_wing|monoplane|military|fighter||N700G;airworthy|on_display|Flying Heritage & Combat Armor Museum
+Curtiss|JN-4|D|N3712|Jenny||fixed_wing|biplane|military|trainer|||on_display|Flying Heritage & Combat Armor Museum
+Bell|UH-1|B||Iroquois||rotary_wing||military|utility||Huey;Vietnam gunship exhibit;serial not confirmed|on_display|Flying Heritage & Combat Armor Museum
+Supermarine|Spitfire|Mk.Vc|AR614|||fixed_wing|monoplane|military|fighter||N614VC;No. 312 Czechoslovak Sqn code DU-Z;airworthy|on_display|Flying Heritage & Combat Armor Museum
+Canadian Car & Foundry|Hurricane|Mk.XIIA|BW881|||fixed_wing|monoplane|military|fighter||N54FH;flown as 5429;airworthy|on_display|Flying Heritage & Combat Armor Museum
+de Havilland|Mosquito|T.III|TV959|||fixed_wing|monoplane|military|trainer||N959TV;displayed in fighter-bomber configuration;airworthy|on_display|Flying Heritage & Combat Armor Museum
+Avro|Lancaster|B.I|TW911|||fixed_wing|monoplane|military|bomber||nose section only|on_display|Flying Heritage & Combat Armor Museum
+Polikarpov|I-16|Type 24|2421014|Rata||fixed_wing|monoplane|military|fighter||N7459;airworthy|on_display|Flying Heritage & Combat Armor Museum
+Polikarpov|Po-2||641543|Kukuruznik||fixed_wing|biplane|military|bomber||N46GU;marked for 46th Guards Night Bomber Regiment;airworthy|on_display|Flying Heritage & Combat Armor Museum
+Ilyushin|Il-2|M3|305401|Shturmovik||fixed_wing|monoplane|military|ground_attack||N112VW;composite of four wrecks;Allison engine;airworthy|on_display|Flying Heritage & Combat Armor Museum
+Nakajima|Ki-43|Ib|750|Hayabusa||fixed_wing|monoplane|military|fighter||N750N;Oscar;only surviving Ki-43-Ib;static|on_display|Flying Heritage & Combat Armor Museum
+Mitsubishi|A6M|3|3852|Zero||fixed_wing|monoplane|military|fighter||N3852;Model 22;composite rebuild with P&W R-1830;airworthy|on_display|Flying Heritage & Combat Armor Museum
+Messerschmitt|Bf 109|E-3|1342|Emil|Yellow 8|fixed_wing|monoplane|military|fighter||N342FH;6./JG 51;crashed 29 Jul 1940;airworthy|on_display|Flying Heritage & Combat Armor Museum
+Focke-Wulf|Fw 190|A-5|151227|Würger||fixed_wing|monoplane|military|fighter||N19027;JG 54;only airworthy Fw 190 with original BMW 801;airworthy|on_display|Flying Heritage & Combat Armor Museum
+Focke-Wulf|Fw 190|D-13|836017|Dora|Yellow 10|fixed_wing|monoplane|military|fighter||N190D;sole surviving D-13;static|on_display|Flying Heritage & Combat Armor Museum
+Messerschmitt|Me 262|A-1a/U3|500453|Schwalbe||fixed_wing|monoplane|military|recon||N94503;ex-FE-4012;ex-Planes of Fame;original Jumo 004 engines|on_display|Flying Heritage & Combat Armor Museum
+Messerschmitt|Me 163|B-1|191660|Komet|Yellow 3|fixed_wing|monoplane|military|fighter||ex-IWM Duxford;static|on_display|Flying Heritage & Combat Armor Museum
+Fieseler|Fi 156|C-2|4362|Storch||fixed_wing|monoplane|military|utility||N436FS;marked 2E-RA;airworthy|on_display|Flying Heritage & Combat Armor Museum
+Fieseler|Fi 103|||V-1||missile_rocket||military|cruise|||on_display|Flying Heritage & Combat Armor Museum
+Fieseler|Fi 103|R|||Reichenberg|missile_rocket||military|cruise||piloted V-1|on_display|Flying Heritage & Combat Armor Museum
+Mittelwerk|V-2|||A-4||missile_rocket||military|ballistic|||on_display|Flying Heritage & Combat Armor Museum
+Scaled Composites|Model 318||N318SL|White Knight||fixed_wing|monoplane|civilian|experimental||suspended in Hangar C|on_display|Flying Heritage & Combat Armor Museum
+Scaled Composites|Model 316|||SpaceShipOne||spacecraft||civilian|space||full-size replica;original N328KF is at NASM|on_display|Flying Heritage & Combat Armor Museum
+North American|P-51|D|45-11525|Mustang|Val-Halla|fixed_wing|monoplane|military|fighter|1945|N151AF;57th FIS markings;airworthy|on_display|Heritage Flight Museum
+Douglas|AD-4|NA|126965|Skyraider|The Proud American|fixed_wing|monoplane|military|ground_attack||N965AD;A-1D;ex-VA-115;airworthy|on_display|Heritage Flight Museum
+Northrop|F-89|J|53-2453|Scorpion||fixed_wing|monoplane|military|fighter||gate guardian;static|on_display|Heritage Flight Museum
+Mikoyan-Gurevich|MiG-21|PFM|5409|Fishbed||fixed_wing|monoplane|military|fighter||ex-Czechoslovak Air Force;static|on_display|Heritage Flight Museum
+Beechcraft|AT-11||42-37240|Kansan|Buff Baby|fixed_wing|monoplane|military|trainer||Model 18;bombardier trainer;airworthy|on_display|Heritage Flight Museum
+Beechcraft|T-34|B|N168AF|Mentor||fixed_wing|monoplane|military|trainer||IO-520 conversion;airworthy|on_display|Heritage Flight Museum
+Beechcraft|T-34|B|N268AF|Mentor||fixed_wing|monoplane|military|trainer||airworthy|on_display|Heritage Flight Museum
+Beechcraft|T-34|B|N34MT|Mentor||fixed_wing|monoplane|military|trainer||airworthy|on_display|Heritage Flight Museum
+Bell|UH-1|B||Iroquois||rotary_wing||military|utility||Huey;Aircraft Garden static|on_display|Heritage Flight Museum
+Bell|Model 47|||||rotary_wing||civilian|utility||restored to represent an H-13G|on_display|Heritage Flight Museum
+Stinson|L-13|B||Grasshopper||fixed_wing|monoplane|military|recon||only airworthy original-configuration L-13B|on_display|Heritage Flight Museum
+Cessna|O-1|||Bird Dog||fixed_wing|monoplane|military|recon||L-19;airworthy|on_display|Heritage Flight Museum
+Cessna|O-2|A||Skymaster||fixed_wing|monoplane|military|recon||ex-Hurlburt Field FAC trainer;airworthy|on_display|Heritage Flight Museum
+de Havilland Canada|DHC-2||N682AF|Beaver||fixed_wing|monoplane|military|utility|1954|L-20A;USAF rescue colours;restored by Frank Borman;airworthy|on_display|Heritage Flight Museum
+North American|AT-6|D||Texan|Hog Wild Gunner|fixed_wing|monoplane|military|trainer|1942|T-6D;ex-Spanish Air Force;airworthy|on_display|Heritage Flight Museum
+North American|AT-6|F||Texan||fixed_wing|monoplane|military|trainer|1945|T-6F;ET-6F conversion;ex-race number 70 Old Betsy;airworthy|on_display|Heritage Flight Museum
+Boeing-Stearman|PT-13|||Kaydet||fixed_wing|biplane|military|trainer||donated by Bill Anders 2000;airworthy|on_display|Heritage Flight Museum
+Fairchild|PT-19|||Cornell||fixed_wing|monoplane|military|trainer||airworthy|on_display|Heritage Flight Museum
+Interstate|S-1A||NC37266|Cadet|The Pearl|fixed_wing|monoplane|civilian|private|1941|based Honolulu 1941;on loan from Lost Aviators of Pearl Harbor|on_display|Heritage Flight Museum
+Canadian Car & Foundry|Harvard|IV||Texan|Tora Zero|fixed_wing|monoplane|military|trainer||converted to represent an A6M2 Zero for Tora! Tora! Tora!|on_display|Heritage Flight Museum
+Cessna|T-37|B||Tweet||fixed_wing|monoplane|military|trainer|||on_display|Heritage Flight Museum
+Curtiss-Wright|CW-1|||Junior||fixed_wing|monoplane|civilian|private|1931||on_display|Port Townsend Aero Museum
+Corben|Baby Ace|||||fixed_wing|monoplane|civilian|private|1929||on_display|Port Townsend Aero Museum
+Howard|DGA-4|||Mike||fixed_wing|monoplane|civilian|private|1932|replica of the Benny Howard racer|on_display|Port Townsend Aero Museum
+de Havilland Canada|DHC-1||N1366|Chipmunk||fixed_wing|monoplane|military|trainer|1959||on_display|Port Townsend Aero Museum
+Mooney|M-18|LA||Mite||fixed_wing|monoplane|civilian|private|1953||on_display|Port Townsend Aero Museum
+CallAir|A-2||N2907V|||fixed_wing|monoplane|civilian|utility|1949|same model Kenneth Arnold flew in 1947|on_display|Port Townsend Aero Museum
+Travel Air|2000||NC6147|||fixed_wing|biplane|civilian|private|1928|restored by museum youth program|on_display|Port Townsend Aero Museum
+Rose|Parrakeet|||||fixed_wing|biplane|civilian|private|1930|ex-North Cascades Vintage Aircraft Museum|on_display|Port Townsend Aero Museum
+Fairchild|22|C7B|NC13167|||fixed_wing|monoplane|civilian|private|1933|ex-North Cascades Vintage Aircraft Museum|on_display|Port Townsend Aero Museum
+Fairchild|M62|A|N54977|Cornell||fixed_wing|monoplane|military|trainer|1940|painted as a PT-19B;ex-North Cascades Vintage Aircraft Museum|on_display|Port Townsend Aero Museum
+Fairchild|24|W-40|NC28517|||fixed_wing|monoplane|civilian|private|1940|flown on floats as WWII coastal patrol aircraft|on_display|Port Townsend Aero Museum
+Boeing|P-12|C||||fixed_wing|biplane|military|fighter||three-quarter-scale replica;ex-North Cascades Vintage Aircraft Museum|on_display|Port Townsend Aero Museum
+Pietenpol|Sky Scout|||||fixed_wing|monoplane|civilian|private|1932||on_display|Port Townsend Aero Museum
+Taylorcraft|BC-12|D||||fixed_wing|monoplane|civilian|private|1946||on_display|Port Townsend Aero Museum
+Aeronca|L-3|||Grasshopper||fixed_wing|monoplane|military|recon|1943|restored by museum youth program|on_display|Port Townsend Aero Museum
+Aeronca|7AC|||Champion||fixed_wing|monoplane|civilian|private|1946|Champ;restored by museum youth program|on_display|Port Townsend Aero Museum
+Aeronca|C-3|B||Master||fixed_wing|monoplane|civilian|private|1936|original factory engine;airworthy|on_display|Port Townsend Aero Museum
+Stinson|SM-8A|||Junior||fixed_wing|monoplane|civilian|private|1930|Detroiter|on_display|Port Townsend Aero Museum
+Laister-Kauffman|LK-10|A||||fixed_wing|monoplane|military|trainer|1942|TG-4A training glider|on_display|Port Townsend Aero Museum
+Bowlus|BA-100|||Baby Albatross||fixed_wing|monoplane|civilian|other||kit-built sailplane|on_display|Port Townsend Aero Museum
+Beechcraft|C17|B||Staggerwing||fixed_wing|biplane|civilian|private|1937||on_display|Port Townsend Aero Museum
+Piper|J-3|C-65||Cub||fixed_wing|monoplane|civilian|trainer||airworthy|on_display|Port Townsend Aero Museum
+Taylorcraft|Model B|||||fixed_wing|monoplane|civilian|private|1939||on_display|Port Townsend Aero Museum
+Fairchild Republic|A-10|A|75-0270|Thunderbolt II||fixed_wing|monoplane|military|ground_attack||Warthog|on_display|McChord Air Museum
+Douglas|B-18|A|37-0505|Bolo||fixed_wing|monoplane|military|bomber|||on_display|McChord Air Museum
+Douglas|B-23||39-0036|Dragon||fixed_wing|monoplane|military|bomber|||on_display|McChord Air Museum
+Beechcraft|UC-45|J|89484|Expeditor||fixed_wing|monoplane|military|transport||JRB-5;Model 18|on_display|McChord Air Museum
+Douglas|C-47|B|44-76502|Skytrain||fixed_wing|monoplane|military|transport||TC-47B|on_display|McChord Air Museum
+Fairchild|C-82|A|48-0574|Packet||fixed_wing|monoplane|military|transport||museum page also gives 48-57574|on_display|McChord Air Museum
+Douglas|C-124|C|52-0994|Globemaster II|Old Shakey|fixed_wing|monoplane|military|transport|1953|last C-124 to fly|on_display|McChord Air Museum
+Lockheed|C-130|E|62-1789|Hercules||fixed_wing|monoplane|military|transport|||on_display|McChord Air Museum
+Lockheed|C-141|B|65-0277|Starlifter||fixed_wing|monoplane|military|transport||built as C-141A|on_display|McChord Air Museum
+McDonnell Douglas|F-15|A|76-0048|Eagle||fixed_wing|monoplane|military|fighter|||on_display|McChord Air Museum
+North American|F-86|D|52-3669|Sabre||fixed_wing|monoplane|military|fighter||Sabre Dog|on_display|McChord Air Museum
+McDonnell|CF-101|F|101022|Voodoo||fixed_wing|monoplane|military|fighter||RCAF serial;USAF 57-0322 or 57-0332|on_display|McChord Air Museum
+Convair|F-102|A|56-1515|Delta Dagger||fixed_wing|monoplane|military|fighter|||on_display|McChord Air Museum
+Convair|F-106|A|56-0459|Delta Dart||fixed_wing|monoplane|military|fighter|||on_display|McChord Air Museum
+Canadian Vickers|OA-10|A|43-43847|Catalina||fixed_wing|monoplane|military|search_rescue||SA-10A;PBV-1A;serial as museum states it, does not fit known blocks|on_display|McChord Air Museum
+Sikorsky|UH-19|B|138499|Chickasaw||rotary_wing||military|search_rescue||H-19;HO4S-3;BuNo|on_display|McChord Air Museum
+Kaman|HH-43|A|58-1833|Huskie||rotary_wing||military|search_rescue|||on_display|McChord Air Museum
+Lockheed|T-33|A|58-2106|Shooting Star||fixed_wing|monoplane|military|trainer||T-Bird|on_display|McChord Air Museum
+Canadian Car & Foundry|Harvard|IV|N15796|Texan|Tora Zero|fixed_wing|monoplane|military|trainer||converted to represent an A6M2 Zero for Tora! Tora! Tora!|on_display|Olympic Flight Museum
+Aero|L-39|ZO||Albatros||fixed_wing|monoplane|military|trainer|||on_display|Olympic Flight Museum
+Bell|UH-1|H||Iroquois||rotary_wing||military|utility||Huey|on_display|Olympic Flight Museum
+North American|P-51|D|44-73436|Mustang|American Beauty|fixed_wing|monoplane|military|fighter||N51KD;ex-RCAF 9300|in_storage|Olympic Flight Museum
+Bell|AH-1|S|77-22791|Cobra||rotary_wing||military|ground_attack|||in_storage|Olympic Flight Museum
+Bell|HH-1|K|157183|Iroquois||rotary_wing||military|search_rescue||N6156X;BuNo low confidence|in_storage|Olympic Flight Museum
+Kaman|HH-43|||Huskie||rotary_wing||military|search_rescue|||in_storage|Olympic Flight Museum
+Hughes|OH-6|A||Cayuse||rotary_wing||military|recon||Loach|on_display|Olympic Flight Museum
+Dayton-Wright|DH-4|B||Liberty Plane||fixed_wing|biplane|military|bomber|1918|restored by Century Aviation|on_display|Pearson Air Museum
+Curtiss|JN-4|D||Jenny||fixed_wing|biplane|military|trainer|1918|JNS;restored by Century Aviation|on_display|Pearson Air Museum
+Curtiss|Model D|||Pusher||fixed_wing|biplane|civilian|experimental||replica built by NPS volunteers 2016-2018;Silas Christofferson 1912 aircraft|on_display|Pearson Air Museum
+Fleet|Model 7|||||fixed_wing|biplane|civilian|private|1931|Leah Hing aircraft;originally Fleet Model 2|on_display|Pearson Air Museum
+Voisin|III|||||fixed_wing|biplane|military|bomber||replica|on_display|Pearson Air Museum
+Fokker|Dr.I|||||fixed_wing|triplane|military|fighter||replica|on_display|Pearson Air Museum
+Consolidated|PBY|5A|33968|Catalina|Gigi|fixed_wing|monoplane|military|recon|1943|N84857;Radar Rachel;airlifted to new site Jan 2026|on_display|Pacific Northwest Naval Air Museum
+Bede|BD-5|B||||fixed_wing|monoplane|civilian|private||homebuilt by Robert Clerf;Honda Civic engine|on_display|McAllister Museum of Aviation
+Roberts|Sceptre|||||fixed_wing|monoplane|civilian|experimental||designed by Dennis Roberts;built by Darrell Hill;composite prototype|on_display|McAllister Museum of Aviation
+Republic|F-105|D|62-4299|Thunderchief||fixed_wing|monoplane|military|ground_attack||Thud|on_display|Veterans Memorial Museum
+Bell|AH-1|F|68-17083|Cobra||rotary_wing||military|ground_attack||status conflicts between sources|on_display|Veterans Memorial Museum
+Bell|UH-1|D||Iroquois||rotary_wing||military|utility||Huey|on_display|Lewis Army Museum
+Wisk Aero|Generation 5|||Cora||fixed_wing|monoplane|civilian|experimental||eVTOL air taxi|on_display|Boeing Future of Flight

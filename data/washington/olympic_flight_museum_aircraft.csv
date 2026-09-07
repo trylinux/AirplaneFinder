@@ -1,0 +1,9 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Canadian Car & Foundry,Harvard,IV,N15796,Texan,Tora Zero,fixed_wing,monoplane,military,trainer,,,converted to represent an A6M2 Zero for Tora! Tora! Tora!,Olympic Flight Museum,on_display
+Aero,L-39,ZO,,Albatros,,fixed_wing,monoplane,military,trainer,,,,Olympic Flight Museum,on_display
+Bell,UH-1,H,,Iroquois,,rotary_wing,,military,utility,,,Huey,Olympic Flight Museum,on_display
+North American,P-51,D,44-73436,Mustang,American Beauty,fixed_wing,monoplane,military,fighter,,,N51KD;ex-RCAF 9300,Olympic Flight Museum,in_storage
+Bell,AH-1,S,77-22791,Cobra,,rotary_wing,,military,ground_attack,,,,Olympic Flight Museum,in_storage
+Bell,HH-1,K,157183,Iroquois,,rotary_wing,,military,search_rescue,,,N6156X;BuNo low confidence,Olympic Flight Museum,in_storage
+Kaman,HH-43,,,Huskie,,rotary_wing,,military,search_rescue,,,,Olympic Flight Museum,in_storage
+Hughes,OH-6,A,,Cayuse,,rotary_wing,,military,recon,,,Loach,Olympic Flight Museum,on_display

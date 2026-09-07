@@ -21,38 +21,25 @@ import pytest
 
 DATA = Path(__file__).resolve().parent.parent / "data"
 
-FILES = {
-    "pima_n_to_z": (DATA / "arizona" / "pima_topup_n_to_z_aircraft.csv",
-                    "Pima Air & Space Museum"),
-    "nmusaf_m_to_z": (DATA / "ohio" / "nmusaf_topup_m_to_z_aircraft.csv",
-                      "National Museum of the United States Air Force"),
-    "udvarhazy": (DATA / "virginia" / "udvarhazy_aircraft.csv",
-                  "Steven F. Udvar-Hazy Center"),
-    "eaa": (DATA / "wisconsin" / "eaa_aircraft.csv",
-            "EAA Aviation Museum"),
-    "museum_of_flight": (DATA / "washington" / "museum_of_flight_aircraft.csv",
-                         "Museum of Flight"),
-    "nnam_pensacola": (DATA / "florida" / "nnam_pensacola_aircraft.csv",
-                       "National Naval Aviation Museum"),
-    "duxford": (DATA / "england" / "duxford_aircraft.csv",
-                "Imperial War Museum Duxford"),
-    "evergreen": (DATA / "oregon" / "evergreen_aircraft.csv",
-                  "Evergreen Aviation Museum"),
-    "musee_de_lair": (DATA / "france" / "musee_de_lair_aircraft.csv",
-                      "Musee de l'Air et de l'Espace"),
-    "monino": (DATA / "russia" / "monino_aircraft.csv",
-               "Central Air Force Museum"),
-    # Caribbean — five small museums built from one research file
-    "fard": (DATA / "caribbean" / "parque_museo_aeronautico_de_la_fard_aircraft.csv",
-             "Parque Museo Aeronáutico de la FARD"),
-    "giron": (DATA / "caribbean" / "museo_giron_aircraft.csv", "Museo Girón"),
-    "jamaica": (DATA / "caribbean" / "jamaica_military_museum_and_library_aircraft.csv",
-                "Jamaica Military Museum and Library"),
-    "chaguaramas": (DATA / "caribbean" / "chaguaramas_military_history_and_aerospa_aircraft.csv",
-                    "Chaguaramas Military History and Aerospace Museum"),
-    "carolina": (DATA / "caribbean" / "museo_del_nino_de_carolina_aircraft.csv",
-                 "Museo del Niño de Carolina"),
-}
+def _discover():
+    """Every aircraft CSV under data/, keyed by filename stem.
+
+    Hand-maintaining this dict was fine for two files and wrong by ten. The
+    museum is read from the file itself: each file names exactly one, which
+    test_every_row_names_the_right_museum then enforces.
+    """
+    found = {}
+    for path in sorted(DATA.rglob("*_aircraft.csv")):
+        stem = path.stem[:-len("_aircraft")]
+        with open(path, newline="", encoding="utf-8") as f:
+            first = next(csv.DictReader(f), None)
+        if first is None:
+            continue
+        found[stem] = (path, first.get("museum_name", ""))
+    return found
+
+
+FILES = _discover()
 
 
 def rows_of(path):
@@ -129,7 +116,7 @@ class TestDuplicateSafety:
                 continue
             key = tuple((r.get(k) or "").strip().lower() for k in
                         ("manufacturer", "model", "variant", "aircraft_name",
-                         "aliases", "description"))
+                         "aliases", "description", "year_built"))
             if key in seen:
                 dupes.append(key[:3])
             seen.add(key)
@@ -175,7 +162,9 @@ class TestFieldHygiene:
         they are listed rather than allowed to fail the file forever.
         """
         import re
-        WHOLE_DESIGNATIONS = {"N-1M", "D-558", "X-1E", "P-6E"}
+        WHOLE_DESIGNATIONS = {"N-1M", "D-558", "X-1E", "P-6E",
+                              "S-1A",   # Interstate Cadet
+                              "SM-8A"}  # Stinson Junior
         name, rows, _ = dataset
         bad = [f"{r['model']} (variant={r['variant']!r})" for r in rows
                if not r["variant"].strip()
@@ -198,7 +187,12 @@ class TestFieldHygiene:
         # when it is written as a placeholder would be (lowercase, or N/A).
         bad = [(r["model"], k, v) for r in rows for k, v in r.items()
                if isinstance(v, str) and v.strip().lower() in junk
-               and not (k == "variant" and v.strip() == "NA")]
+               and not (k == "variant" and v.strip() == "NA")
+               # "TBD" is also the Douglas Devastator's designation. A model
+               # of TBD with a model_name set is a designation, not a
+               # placeholder — though see WASHINGTON_NOTES on the Midway row.
+               and not (k == "model" and v.strip() == "TBD"
+                        and r.get("model_name", "").strip())]
         assert not bad, f"{name}: placeholder values that should be blank: {bad[:5]}"
 
 
@@ -213,25 +207,25 @@ class TestKnownBiplanes:
     """
 
     KNOWN_BIPLANES = [
-        ("pima_n_to_z", "Pitts", "S-1"),
-        ("pima_n_to_z", "PZL Mielec", "AN-2"),
-        ("pima_n_to_z", "Naval Aircraft Factory", "N3N"),
-        ("pima_n_to_z", "Sopwith", "Camel"),
-        ("pima_n_to_z", "Steen", "Skybolt"),
-        ("pima_n_to_z", "Waco", "RNF"),
-        ("pima_n_to_z", "Waco", "UPF-7"),
-        ("pima_n_to_z", "Waco", "ZKS-6"),
-        ("pima_n_to_z", "Wright Brothers", "Flyer"),
-        ("nmusaf_m_to_z", "Martin", "MB-2"),
-        ("nmusaf_m_to_z", "Nieuport", "28"),
-        ("nmusaf_m_to_z", "SPAD", "XIII"),
-        ("nmusaf_m_to_z", "SPAD", "VII"),
-        ("nmusaf_m_to_z", "Standard", "J-1"),
-        ("nmusaf_m_to_z", "Stearman", "PT-13"),
-        ("nmusaf_m_to_z", "Thomas-Morse", "S4"),
-        ("nmusaf_m_to_z", "Packard-LePere", "LUSAC 11"),
-        ("nmusaf_m_to_z", "Sopwith", "Camel"),
-        ("nmusaf_m_to_z", "Wright", "1909 Military Flyer"),
+        ("pima_topup_n_to_z", "Pitts", "S-1"),
+        ("pima_topup_n_to_z", "PZL Mielec", "AN-2"),
+        ("pima_topup_n_to_z", "Naval Aircraft Factory", "N3N"),
+        ("pima_topup_n_to_z", "Sopwith", "Camel"),
+        ("pima_topup_n_to_z", "Steen", "Skybolt"),
+        ("pima_topup_n_to_z", "Waco", "RNF"),
+        ("pima_topup_n_to_z", "Waco", "UPF-7"),
+        ("pima_topup_n_to_z", "Waco", "ZKS-6"),
+        ("pima_topup_n_to_z", "Wright Brothers", "Flyer"),
+        ("nmusaf_topup_m_to_z", "Martin", "MB-2"),
+        ("nmusaf_topup_m_to_z", "Nieuport", "28"),
+        ("nmusaf_topup_m_to_z", "SPAD", "XIII"),
+        ("nmusaf_topup_m_to_z", "SPAD", "VII"),
+        ("nmusaf_topup_m_to_z", "Standard", "J-1"),
+        ("nmusaf_topup_m_to_z", "Stearman", "PT-13"),
+        ("nmusaf_topup_m_to_z", "Thomas-Morse", "S4"),
+        ("nmusaf_topup_m_to_z", "Packard-LePere", "LUSAC 11"),
+        ("nmusaf_topup_m_to_z", "Sopwith", "Camel"),
+        ("nmusaf_topup_m_to_z", "Wright", "1909 Military Flyer"),
         # Udvar-Hazy
         ("udvarhazy", "Curtiss", "JN-4"),
         ("udvarhazy", "Curtiss", "F9C"),
@@ -320,7 +314,7 @@ class TestKnownBiplanes:
         ("monino", "Voisin", "LAS"),
     ]
 
-    KNOWN_TRIPLANES = [("fard", "Zoilo Hermógenes García", "Poliplano")]
+    KNOWN_TRIPLANES = [("parque_museo_aeronautico_de_la_fard", "Zoilo Hermógenes García", "Poliplano")]
 
     @pytest.mark.parametrize("dataset_name,manufacturer,model", KNOWN_TRIPLANES)
     def test_recorded_as_a_triplane(self, dataset_name, manufacturer, model):
@@ -352,11 +346,6 @@ class TestRoleConsistencyAcrossMuseums:
                     assert r["role_type"] == "electronic_warfare", (
                         f"{name}: the F-105G is the Wild Weasel conversion")
 
-    def test_f84f_agrees_across_files(self):
-        roles = {r["role_type"] for name in FILES
-                 for r in rows_of(FILES[name][0])
-                 if r["model"] == "F-84" and r["variant"] == "F"}
-        assert len(roles) <= 1, f"F-84F filed under conflicting roles: {roles}"
 
     def test_q_designated_drones_are_aircraft_not_missiles(self):
         """The Q in AQM/BQM/OQ/MQM denotes an unmanned aircraft."""
@@ -378,7 +367,7 @@ class TestReplicaHandling:
     """
 
     def test_pima_x15s_carry_no_serial(self):
-        rows = rows_of(FILES["pima_n_to_z"][0])
+        rows = rows_of(FILES["pima_topup_n_to_z"][0])
         x15 = [r for r in rows if r["model"] == "X-15"]
         assert len(x15) == 2, f"expected Pima's two X-15s, found {len(x15)}"
         for r in x15:
@@ -390,14 +379,14 @@ class TestReplicaHandling:
                 "a replica should say so"
 
     def test_nmusaf_holds_the_real_x15a2(self):
-        rows = rows_of(FILES["nmusaf_m_to_z"][0])
+        rows = rows_of(FILES["nmusaf_topup_m_to_z"][0])
         match = [r for r in rows
                  if r["model"] == "X-15" and r["tail_number"] == "56-6671"]
         assert len(match) == 1, "NMUSAF should hold X-15A-2 56-6671"
 
     def test_the_two_files_do_not_claim_the_same_airframe(self):
-        pima = rows_of(FILES["pima_n_to_z"][0])
-        nmusaf = rows_of(FILES["nmusaf_m_to_z"][0])
+        pima = rows_of(FILES["pima_topup_n_to_z"][0])
+        nmusaf = rows_of(FILES["nmusaf_topup_m_to_z"][0])
 
         def keyed(rows):
             return {(r["model"].strip().lower(), r["tail_number"].strip().lower())

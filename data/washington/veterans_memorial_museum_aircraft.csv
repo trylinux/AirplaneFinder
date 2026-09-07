@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Republic,F-105,D,62-4299,Thunderchief,,fixed_wing,monoplane,military,ground_attack,,,Thud,Veterans Memorial Museum,on_display
+Bell,AH-1,F,68-17083,Cobra,,rotary_wing,,military,ground_attack,,,status conflicts between sources,Veterans Memorial Museum,on_display
