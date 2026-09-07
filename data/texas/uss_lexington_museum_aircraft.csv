@@ -1,0 +1,20 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,SBD,3,06694,Dauntless,,fixed_wing,monoplane,military,bomber,1942,,c/n 1509;on loan from the National Naval Aviation Museum;hangar deck,USS Lexington Museum on the Bay,on_display
+Grumman,TBM,3E,53804,Avenger,,fixed_wing,monoplane,military,bomber,1945,,ex-Royal Canadian Navy Avenger AS.3M;ex-N9710Z;NNAM loan,USS Lexington Museum on the Bay,on_display
+Naval Aircraft Factory,N3N,3,02959,Yellow Peril,,fixed_wing,biplane,military,trainer,1941,,ex-N6358T;last FAA registrant was the National Museum of Naval Aviation;code 703,USS Lexington Museum on the Bay,on_display
+North American,SNJ,5,52020,Texan,,fixed_wing,monoplane,military,trainer,1943,,ex-N8211E;NNAM loan,USS Lexington Museum on the Bay,on_display
+North American,T-28,B,138271,Trojan,,fixed_wing,monoplane,military,trainer,1955,,NNAM loan,USS Lexington Museum on the Bay,on_display
+Beechcraft,T-34,B,140936,Mentor,,fixed_wing,monoplane,military,trainer,1955,,c/n BG-270;ex-N7035P;NNAM loan,USS Lexington Museum on the Bay,on_display
+McDonnell,F2H,2,125052,Banshee,,fixed_wing,monoplane,military,fighter,1951,,NNAM loan,USS Lexington Museum on the Bay,on_display
+Grumman,F9F,8T,147276,Cougar,,fixed_wing,monoplane,military,trainer,1957,,TF-9J;NNAM loan,USS Lexington Museum on the Bay,on_display
+Douglas,A-4,B,142929,Skyhawk,,fixed_wing,monoplane,military,ground_attack,1957,,c/n 11991;wears AH-300 squadron markings;NNAM loan,USS Lexington Museum on the Bay,on_display
+Douglas,A-4,B,142675,Skyhawk,,fixed_wing,monoplane,military,ground_attack,1957,,c/n 11737;pole-mounted at the museum entrance;painted as Blue Angels number 1 though no A-4B served with the team in this identity,USS Lexington Museum on the Bay,on_display
+Douglas,TA-4,J,158722,Skyhawk,,fixed_wing,monoplane,military,trainer,1969,,NNAM loan,USS Lexington Museum on the Bay,on_display
+Douglas,A-3,B,138944,Skywarrior,,fixed_wing,monoplane,military,tanker,1957,,KA-3B;c/n 10805;displayed in VAQ-34 EA-3B markings though the airframe is a KA-3B,USS Lexington Museum on the Bay,on_display
+McDonnell,F-4,A,145315,Phantom II,,fixed_wing,monoplane,military,fighter,1961,,c/n 16;the 16th Phantom built;F4H-1F;NNAM loan,USS Lexington Museum on the Bay,on_display
+Grumman,A-6,E,158532,Intruder,,fixed_wing,monoplane,military,ground_attack,1970,,c/n I-515;wears NK-500;NNAM loan,USS Lexington Museum on the Bay,on_display
+Grumman,F-14,A,160694,Tomcat,,fixed_wing,monoplane,military,fighter,1975,,the Top Gun film aircraft;currently in VF-84 Jolly Rogers markings it did not wear operationally;NNAM loan,USS Lexington Museum on the Bay,on_display
+Vought,A-7,B,154548,Corsair II,,fixed_wing,monoplane,military,ground_attack,1968,,c/n B188;code 412;NNAM loan,USS Lexington Museum on the Bay,on_display
+North American Rockwell,T-2,C,158898,Buckeye,,fixed_wing,monoplane,military,trainer,1970,,NNAM loan,USS Lexington Museum on the Bay,on_display
+McDonnell Douglas,F/A-18,A,161942,Hornet,,fixed_wing,monoplane,military,fighter,1985,,c/n 149;in Blue Angels markings though not a Blue Angels airframe;NNAM loan,USS Lexington Museum on the Bay,on_display
+Bell,AH-1,P,77-22754,Cobra,,rotary_wing,,military,ground_attack,1977,,c/n 22092;TAH-1P;ex-N4144;widely mispublished as AH-1S 76-22574 which is not a valid serial;code 601,USS Lexington Museum on the Bay,on_display

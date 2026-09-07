@@ -1,0 +1,9 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Grumman,F-14,A,160403,Tomcat,Fast Eagle 102,fixed_wing,monoplane,military,fighter,1977,,VF-41 Black Aces;scored the first aerial victory in the Gulf of Sidra on 19 August 1981 in the first US Navy air combat since Vietnam and the F-14's first combat engagement;the only surviving aircraft from that action;restored by the Flight Deck Veterans Group and unveiled 2016,Midland Army Air Field Museum,on_display
+Republic,F-105,D,59-1739,Thunderchief,,fixed_wing,monoplane,military,ground_attack,1959,,transferred from the former American Airpower Heritage Museum location,Midland Army Air Field Museum,on_display
+Fairchild,PT-19,,N49797,Cornell,,fixed_wing,monoplane,military,trainer,,,High Sky Wing operating aircraft and ride aircraft,Midland Army Air Field Museum,on_display
+North American,SNJ,5,N101X,Texan,,fixed_wing,monoplane,military,trainer,,,coded 101;High Sky Wing ride aircraft,Midland Army Air Field Museum,on_display
+North American,T-28,,N70743,Trojan,,fixed_wing,monoplane,military,trainer,,,High Sky Wing operating aircraft,Midland Army Air Field Museum,on_display
+Stinson,L-5,,N961JW,Sentinel,,fixed_wing,monoplane,military,utility,,,High Sky Wing operating aircraft,Midland Army Air Field Museum,on_display
+Beechcraft,C-45,,,Expeditor,Spirit of West Texas,fixed_wing,monoplane,military,transport,,,High Sky Wing operating aircraft;registration not established,Midland Army Air Field Museum,on_display
+Ryan,L-17,,,Navion,,fixed_wing,monoplane,military,utility,,,High Sky Wing operating aircraft;registration not established,Midland Army Air Field Museum,on_display

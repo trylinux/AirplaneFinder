@@ -1,0 +1,11 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Cessna,T-37,A,54-2730,Tweet,,fixed_wing,monoplane,military,trainer,1955,,c/n 40006;pylon-mounted;internal completeness unverified as is common for pole-mounted airframes,JBSA-Randolph Display Collection,on_display
+Beechcraft,T-34,B,144090,Mentor,,fixed_wing,monoplane,military,trainer,1955,,c/n BG-397;a US Navy BuNo airframe painted as USAF 53-3309 which is a fictitious serial,JBSA-Randolph Display Collection,on_display
+Cessna,T-41,A,65-5226,Mescalero,,fixed_wing,monoplane,military,trainer,1965,,c/n 172-53271;ex-civil N5226F;a militarised Cessna 172,JBSA-Randolph Display Collection,on_display
+North American,T-28,A,49-1695,Trojan,,fixed_wing,monoplane,military,trainer,1950,,,JBSA-Randolph Display Collection,on_display
+North American,AT-6,F,44-81910,Texan,,fixed_wing,monoplane,military,trainer,1945,,variant disputed between AT-6F and AT-6A,JBSA-Randolph Display Collection,on_display
+Northrop,T-38,A,61-0838,Talon,,fixed_wing,monoplane,military,trainer,1962,,c/n N.5204;pylon-mounted;one source records it painted as 61-0638 and another records Republic of China Air Force markings so it has probably been repainted between surveys,JBSA-Randolph Display Collection,on_display
+Lockheed,T-33,A,53-6147,Shooting Star,,fixed_wing,monoplane,military,trainer,1954,,c/n 580-9768;pylon-mounted;code TR-147,JBSA-Randolph Display Collection,on_display
+Boeing,T-43,A,73-1153,,,fixed_wing,monoplane,military,trainer,1974,,c/n 20700;a militarised Boeing 737-200 navigator trainer;the fleet retired around 2010 so this is a relatively recent addition,JBSA-Randolph Display Collection,on_display
+Beechcraft,SNB,1,39819,Kansan,,fixed_wing,monoplane,military,trainer,1943,,c/n 4460;US Navy BuNo;ex-civil N450M;one source mistakes the construction number for the serial,JBSA-Randolph Display Collection,on_display
+Convair,T-29,C,53-3489,Samaritan,,fixed_wing,monoplane,military,trainer,1954,,c/n 240-443;the Flying Classroom,JBSA-Randolph Display Collection,on_display

@@ -1,0 +1,13 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Thomas-Morse,S-4,C,,Scout,,fixed_wing,biplane,military,trainer,1917,,original airframe;flies on a Curtiss licence-built Le Rhone copy;registration not established,Pioneer Flight Museum,on_display
+Curtiss,JN-4,Can,,Canuck,,fixed_wing,biplane,military,trainer,1916,,original Canadian-built airframe restored several times;registration not established,Pioneer Flight Museum,on_display
+Waco,10,GXE,NC4534,Waco 10,,fixed_wing,biplane,civilian,private,1928,,msn 1381;original airframe;airworthy and flew the Fall Fly-In November 2025,Pioneer Flight Museum,on_display
+Bleriot,XI,,,Bleriot XI,,fixed_wing,monoplane,civilian,experimental,1909,,replica per the museum's own page;flyable,Pioneer Flight Museum,on_display
+Aeronautical Syndicate,Valkyrie,,,Valkyrie,,fixed_wing,monoplane,civilian,experimental,1910,,replica;canard pusher;static only and not airworthy,Pioneer Flight Museum,on_display
+Breese,Penguin,,,Penguin,,fixed_wing,biplane,military,trainer,1917,,replica airframe with an original Lawrance Model A engine;a non-flying ground taxi trainer by design,Pioneer Flight Museum,on_display
+Great Lakes,2T-1,,NC318Y,Sport Trainer,,fixed_wing,biplane,civilian,private,1976,,msn 6829-D-367;a Wilcox-built replica displayed as a 1930 type,Pioneer Flight Museum,on_display
+Fokker,Dr.I,,,Triplane,,fixed_wing,triplane,military,fighter,,,almost certainly a reproduction since no original survives worldwide;flyable,Pioneer Flight Museum,on_display
+Fokker,D.VII,,,,,fixed_wing,biplane,military,fighter,,,status unstated by the museum;Wikipedia calls it a replica,Pioneer Flight Museum,on_display
+Dormoy,Bathtub,,N14HD,Bathtub,,fixed_wing,monoplane,civilian,experimental,1983,,msn 143;a reproduction of the 1924 design;flying,Pioneer Flight Museum,on_display
+Rearwin,7000,,NC15896,Sportster,,fixed_wing,monoplane,civilian,private,1937,,msn 477;likely original;flying,Pioneer Flight Museum,on_display
+Meyers,OTW,160,N34310,OTW,,fixed_wing,biplane,military,trainer,1941,,msn 53;likely original;flying,Pioneer Flight Museum,on_display

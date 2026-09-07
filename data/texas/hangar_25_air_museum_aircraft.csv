@@ -1,0 +1,11 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Boeing,B-52,G,58-0232,Stratofortress,,fixed_wing,monoplane,military,bomber,1958,,nose and cockpit section only;sources disagree on whether it is a B-52G or B-52D,Hangar 25 Air Museum,on_display
+Beechcraft,AT-11,,41-9503,Kansan,,fixed_wing,monoplane,military,trainer,1941,,N88KD;bombardier trainer,Hangar 25 Air Museum,on_display
+Cessna,T-37,A,55-4305,Tweet,,fixed_wing,monoplane,military,trainer,1955,,sources disagree on whether it is a T-37A or an A-37A,Hangar 25 Air Museum,on_display
+Hawker Siddeley,AV-8,C,159238,Harrier,,fixed_wing,monoplane,military,ground_attack,1971,,V/STOL attack,Hangar 25 Air Museum,on_display
+Lockheed,T-33,A,56-1573,Shooting Star,,fixed_wing,monoplane,military,trainer,1956,,N5848F,Hangar 25 Air Museum,on_display
+Lockheed,T-33,A,57-0606,Shooting Star,,fixed_wing,monoplane,military,trainer,1957,,,Hangar 25 Air Museum,on_display
+North American,F-100,F,56-3982,Super Sabre,,fixed_wing,monoplane,military,fighter,1956,,F-100F-15-NA two-seat,Hangar 25 Air Museum,on_display
+North American,T-28,A,49-1544,Trojan,,fixed_wing,monoplane,military,trainer,1949,,N6FY,Hangar 25 Air Museum,on_display
+Northrop,T-38,A,64-13198,Talon,,fixed_wing,monoplane,military,trainer,1964,,T-38A-55-NO,Hangar 25 Air Museum,on_display
+Fairchild Republic,A-10,A,,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,,,nose section only;listed by one source and absent from another,Hangar 25 Air Museum,on_display

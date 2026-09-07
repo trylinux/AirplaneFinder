@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,F-104,B,57-1305,Starfighter,,fixed_wing,monoplane,military,trainer,1958,,c/n 5017;pole-mounted;painted as 57-1319 which has generated a phantom second airframe in some registries;often miscatalogued as an F-104D,Lackland OTS Parade Ground,on_display
+Northrop,T-38,A,59-1605,Talon,,fixed_wing,monoplane,military,trainer,1959,,,Lackland OTS Parade Ground,on_display
+McDonnell,F-101,F,56-0241,Voodoo,,fixed_wing,monoplane,military,fighter,1956,,c/n 176;TF-101F,Lackland OTS Parade Ground,on_display
