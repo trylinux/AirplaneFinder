@@ -108,6 +108,10 @@ $(function() {
                 {name:'region', label:'Region', val: m.region, req: true},
                 {name:'address', label:'Address', val: m.address || ''},
                 {name:'website', label:'Website', val: m.website || ''},
+                {name:'access_type', label:'Visitor Access', val: m.access_type || 'public',
+                 opts: [['public','Public — walk in'],
+                        ['appointment','By appointment / open house only'],
+                        ['restricted','Restricted — base access or escort']]},
                 {name:'latitude', label:'Latitude', val: m.latitude != null ? m.latitude : '', type:'number', step:'any'},
                 {name:'longitude', label:'Longitude', val: m.longitude != null ? m.longitude : '', type:'number', step:'any'},
             ];
@@ -314,8 +318,18 @@ $(function() {
         var html = '<div class="form-grid">';
         fields.forEach(function(f) {
             html += '<div class="form-group"><label>' + f.label + (f.req ? ' *' : '') + '</label>';
-            html += '<input type="' + (f.type || 'text') + '" name="' + f.name + '" value="' + escHtml(String(f.val)) + '"' +
-                (f.req ? ' required' : '') + (f.step ? ' step="' + f.step + '"' : '') + '>';
+            if (f.opts) {
+                html += '<select name="' + f.name + '"' + (f.req ? ' required' : '') + '>';
+                f.opts.forEach(function(o) {
+                    html += '<option value="' + escHtml(o[0]) + '"' +
+                            (String(f.val) === o[0] ? ' selected' : '') + '>' +
+                            escHtml(o[1]) + '</option>';
+                });
+                html += '</select>';
+            } else {
+                html += '<input type="' + (f.type || 'text') + '" name="' + f.name + '" value="' + escHtml(String(f.val)) + '"' +
+                    (f.req ? ' required' : '') + (f.step ? ' step="' + f.step + '"' : '') + '>';
+            }
             html += '</div>';
         });
         html += '</div>';

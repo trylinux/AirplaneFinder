@@ -41,6 +41,13 @@
                 <input type="text" name="address" placeholder="Full street address"></div>
             <div class="form-group"><label>Website</label>
                 <input type="url" name="website" placeholder="https://..."></div>
+            <div class="form-group"><label>Visitor Access</label>
+                <select name="access_type">
+                    <option value="public" selected>Public &mdash; walk in</option>
+                    <option value="appointment">By appointment / open house only</option>
+                    <option value="restricted">Restricted &mdash; base access or escort</option>
+                </select>
+            </div>
             <div class="form-group"><label>Latitude</label>
                 <input type="number" step="any" name="latitude" placeholder="e.g. 39.7811 (optional)"></div>
             <div class="form-group"><label>Longitude</label>

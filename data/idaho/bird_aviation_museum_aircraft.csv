@@ -1,0 +1,11 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,47,G-3B-2,N481RD,,,rotary_wing,,civilian,utility,1968,,c/n 6716;Soloy Allison 250-C20 turbine conversion 1979,Bird Aviation Museum and Invention Center,on_display
+Boeing,PT-17,,N2803D,Kaydet,,fixed_wing,biplane,military,trainer,1940,,c/n 75-6822;B75N1;Stearman;P&W R-985 and canopy;restored 1990,Bird Aviation Museum and Invention Center,on_display
+de Havilland Canada,DHC-1,B-2,N11PB,Chipmunk,,fixed_wing,monoplane,military,trainer,1956,,c/n 177/215;DHC-1B-2-S5;restored 1992,Bird Aviation Museum and Invention Center,on_display
+North American,AT-6,,N901H,Harvard,,fixed_wing,monoplane,military,trainer,,,c/n 75-3439A;museum writes NC901H;military serial not established,Bird Aviation Museum and Invention Center,on_display
+Republic,RC-3,,N781RD,Seabee,,fixed_wing,monoplane,civilian,private,1947,,c/n 511;Lycoming GTSIO-480 conversion;restored 2001,Bird Aviation Museum and Invention Center,on_display
+Schweizer,SGS 2-33,A,N1179S,,,fixed_wing,monoplane,civilian,private,1972,,c/n 229;sailplane;ex-Silverwood Theme Park,Bird Aviation Museum and Invention Center,on_display
+American Champion,8KCAB,,N276R,Decathlon,,fixed_wing,monoplane,civilian,private,1993,,c/n 713-93;museum literature says N267R which is not on the FAA register,Bird Aviation Museum and Invention Center,on_display
+Experimental Aviation,Berkut,,N268DK,,,fixed_wing,monoplane,civilian,experimental,,,c/n 059;Rutan-derived canard;titled to the museum corporation,Bird Aviation Museum and Invention Center,on_display
+Beech,F17,D,NC291Y,Staggerwing,,fixed_wing,biplane,civilian,private,1939,,c/n U-261;registration cancelled 2020,Bird Aviation Museum and Invention Center,on_display
+Waco,GXE,,NC4780W,,,fixed_wing,biplane,civilian,private,1928,,c/n 1249;Continental W-670 re-engine;museum states 1927;registration cancelled 2020,Bird Aviation Museum and Invention Center,on_display

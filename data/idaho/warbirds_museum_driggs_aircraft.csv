@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,T-2,B,155226,Buckeye,,fixed_wing,monoplane,military,trainer,1968,,N212TB;Rockwell;held by Richard G. Sugden,Warbirds Museum at Driggs-Reed Memorial Airport,on_display
+Aero Vodochody,L-39,C,N439RS,Albatros,,fixed_wing,monoplane,military,trainer,1981,,c/n 131907;held by Richard G. Sugden,Warbirds Museum at Driggs-Reed Memorial Airport,on_display
+North American,SNJ,5,84981,Texan,,fixed_wing,monoplane,military,trainer,1944,,N85169;held by Richard G. Sugden,Warbirds Museum at Driggs-Reed Memorial Airport,on_display
+Naval Aircraft Factory,N3N,3,N112D,Yellow Peril,,fixed_wing,biplane,military,trainer,1941,,serial 2659;held by Richard G. Sugden,Warbirds Museum at Driggs-Reed Memorial Airport,on_display
+Bell,47,G-3B-2,N147RS,,,rotary_wing,,civilian,utility,1961,,c/n 2636;museum lists it as BHT-47-G3;held by Richard G. Sugden,Warbirds Museum at Driggs-Reed Memorial Airport,on_display
+Beechcraft,T-34,B,N934RS,Mentor,,fixed_wing,monoplane,military,trainer,,,c/n BG-77;held by Richard G. Sugden;photographed as a bare fuselage,Warbirds Museum at Driggs-Reed Memorial Airport,under_restoration
+Extra,EA 300,L,N199X,,,fixed_wing,monoplane,civilian,private,2001,,c/n 138;museum writes NX199X;aerobatic;held by Richard G. Sugden,Warbirds Museum at Driggs-Reed Memorial Airport,on_display

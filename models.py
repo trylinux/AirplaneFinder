@@ -268,6 +268,12 @@ class Museum(db.Model):
     region = db.Column(db.String(50), nullable=False)     # North America, Europe, etc.
     address = db.Column(db.String(300))
     website = db.Column(db.String(300))
+    # Visitor access. 'public' = walk in; 'appointment' = call ahead or
+    # open-house only; 'restricted' = base access / escort / DoD ID.
+    # Proximity search hides 'restricted' unless explicitly asked for it,
+    # mirroring how display_status hides aircraft a visitor can't see.
+    access_type = db.Column(db.String(20), nullable=False,
+                            default="public", server_default="public")
     latitude = db.Column(db.Numeric(10, 7))               # nullable
     longitude = db.Column(db.Numeric(10, 7))              # nullable
 
@@ -299,6 +305,7 @@ class Museum(db.Model):
             "region": self.region,
             "address": self.address,
             "website": self.website,
+            "access_type": self.access_type or "public",
             "latitude": float(self.latitude) if self.latitude is not None else None,
             "longitude": float(self.longitude) if self.longitude is not None else None,
         }

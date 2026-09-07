@@ -23,7 +23,7 @@ from airplane_api import AirplaneClient, ApiError  # noqa: E402
 
 MUSEUM_COLUMNS = [
     "name", "city", "state_province", "country", "postal_code", "region",
-    "address", "website", "latitude", "longitude",
+    "address", "website", "access_type", "latitude", "longitude",
 ]
 
 

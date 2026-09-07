@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+General Dynamics,F-111,A,67-0058,Aardvark,,fixed_wing,monoplane,military,bomber,1969,,c/n A1-103;Linebacker II combat veteran with 429th TFS;389th TFS 366th TFW Mountain Home AFB;on pole since 1990;NMUSAF loan,Carl Miller Park,on_display
+Northrop,F-89,B,49-2457,Scorpion,,fixed_wing,monoplane,military,fighter,1949,,1 of 36 F-89Bs built;83rd and 84th FIS;176th FIS Wisconsin ANG;190th FIS Idaho ANG;on display since December 1959;NMUSAF loan,Lakeview Park,on_display
+Lockheed,T-33,A,53-5007,Shooting Star,,fixed_wing,monoplane,military,trainer,1953,,c/n 580-8346;on display since at least February 1982;NMUSAF loan,Malad City Park,on_display

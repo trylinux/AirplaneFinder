@@ -184,7 +184,7 @@
                 <code>/api/v1/museums</code>
                 <span class="badge status-on_display">readwrite</span>
             </div>
-            <p>Create a new museum. Required fields: <code>name</code>, <code>city</code>, <code>country</code>, <code>region</code>. Optional: <code>state_province</code>, <code>postal_code</code>, <code>address</code>, <code>website</code>, <code>latitude</code>, <code>longitude</code>.</p>
+            <p>Create a new museum. Required fields: <code>name</code>, <code>city</code>, <code>country</code>, <code>region</code>. Optional: <code>state_province</code>, <code>postal_code</code>, <code>address</code>, <code>website</code>, <code>access_type</code>, <code>latitude</code>, <code>longitude</code>. <code>access_type</code> is one of <code>public</code> (default), <code>appointment</code> or <code>restricted</code>; proximity endpoints hide <code>restricted</code> museums unless called with <code>include_restricted=1</code>.</p>
         </div>
 
         <div class="endpoint">

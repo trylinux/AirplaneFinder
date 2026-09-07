@@ -1166,6 +1166,14 @@ def api_museums_nearest():
                  AircraftMuseum.display_status == _DISPLAY_STATUS_VIEWABLE),
         )
         .filter(Museum.latitude.isnot(None), Museum.longitude.isnot(None))
+    )
+    # "What's near me?" means places a visitor can actually walk into.
+    # Base-access collections are real and recorded, but they stay out of
+    # the default answer — pass include_restricted=1 to see them.
+    if not _wants_restricted(request):
+        rows = rows.filter(Museum.access_type != _ACCESS_TYPE_HIDDEN)
+    rows = (
+        rows
         .group_by(Museum.id)
         .all()
     )
@@ -1292,6 +1300,18 @@ def api_nearest_museum():
         .filter(AircraftMuseum.aircraft_id.in_([a.id for a in matching]))
         .filter(AircraftMuseum.display_status == _DISPLAY_STATUS_VIEWABLE)
     )
+
+    # Same rule at the museum level: an airframe parked inside a base gate
+    # is not somewhere this endpoint should send someone. The aircraft is
+    # still in the database and still findable by search — it just doesn't
+    # win a "nearest place I can see one" query unless asked for.
+    if not _wants_restricted(request):
+        public_ids = (
+            db.session.query(Museum.id)
+            .filter(Museum.access_type != _ACCESS_TYPE_HIDDEN)
+            .scalar_subquery()
+        )
+        links_query = links_query.filter(AircraftMuseum.museum_id.in_(public_ids))
 
     # Optional museum name filter — single subquery instead of two round-trips.
     # scalar_subquery() so SQLAlchemy 2.x doesn't warn about coercion in IN().
@@ -1478,6 +1498,23 @@ _REGION_VALUES = {
     "Oceania", "Africa", "Middle East",
 }
 
+# access_type answers "can an ordinary visitor get in?" — the museum-level
+# counterpart to display_status. Some of the biggest collections sit on
+# active air bases (NAS Fallon, Nellis, Gowen Field) and need a DoD ID or a
+# sponsored escort; recording them without this field would send visitors to
+# a gate they can't pass. Proximity search hides 'restricted' by default and
+# takes ?include_restricted=1 to opt back in.
+_ACCESS_TYPE_VALUES = {"public", "appointment", "restricted"}
+_ACCESS_TYPE_DEFAULT = "public"
+_ACCESS_TYPE_HIDDEN = "restricted"  # excluded from visitor-facing proximity results
+
+
+def _wants_restricted(req):
+    """True when the caller explicitly opted into base-access museums."""
+    return (req.args.get("include_restricted", "") or "").strip().lower() in (
+        "1", "true", "yes", "on",
+    )
+
 
 def _parse_bulk_payload(raw, fmt):
     """Parse ``raw`` (a string) as ``fmt`` ('csv' or 'json') and return a list
@@ -1661,6 +1698,14 @@ def _validate_museum_row(row):
         errors.append({"field": "region",
                        "message": f"must be one of {sorted(_REGION_VALUES)}"})
 
+    # Blank/absent means 'public'. A CSV written before this column existed
+    # imports unchanged, which is the whole point of defaulting rather than
+    # requiring it.
+    access_type = (g("access_type") or _ACCESS_TYPE_DEFAULT).lower()
+    if access_type not in _ACCESS_TYPE_VALUES:
+        errors.append({"field": "access_type",
+                       "message": f"must be one of {sorted(_ACCESS_TYPE_VALUES)}"})
+
     latitude = _coerce_float(row.get("latitude"), "latitude", errors)
     longitude = _coerce_float(row.get("longitude"), "longitude", errors)
     if latitude is not None and not -90 <= latitude <= 90:
@@ -1684,6 +1729,7 @@ def _validate_museum_row(row):
         "region": region,
         "address": g("address") or None,
         "website": g("website") or None,
+        "access_type": access_type,
         "latitude": latitude,
         "longitude": longitude,
     }, []
@@ -2211,6 +2257,7 @@ def api_create_museum():
         region=data["region"],
         address=data.get("address"),
         website=data.get("website"),
+        access_type=data.get("access_type") or _ACCESS_TYPE_DEFAULT,
         latitude=data.get("latitude"),
         longitude=data.get("longitude"),
     )
@@ -2241,7 +2288,7 @@ def api_update_museum(museum_id):
         return jsonify({"error": "Invalid museum fields.", "errors": errors}), 400
     data = {field: clean[field] for field in data if field in clean}
     for field in ["name", "city", "state_province", "country", "postal_code", "region",
-                   "address", "website", "latitude", "longitude"]:
+                   "address", "website", "access_type", "latitude", "longitude"]:
         if field in data:
             setattr(museum, field, data[field])
     _increment_contribution()

@@ -222,10 +222,19 @@ new clients should use `/api/v1/...`.
 
 Create requests require `name`, `city`, `country`, and `region`. Museum bulk import
 defaults omitted/empty `country` to `United States`. Other fields are
-`state_province`, `postal_code`, `address`, `website`, `latitude`, and `longitude`.
+`state_province`, `postal_code`, `address`, `website`, `access_type`, `latitude`, and
+`longitude`.
 
 Valid regions are `North America`, `Europe`, `Asia`, `Asia-Pacific`, `Middle East`,
-`South America`, `Africa`, and `Oceania`. Supply both coordinates or neither;
+`South America`, `Africa`, and `Oceania`.
+
+`access_type` records whether an ordinary visitor can get in: `public` (walk in),
+`appointment` (call ahead or open-house only), or `restricted` (military base,
+escort or DoD ID required). It defaults to `public`, so museum CSVs written before
+the column existed import unchanged. Proximity endpoints — `/api/v1/nearest` and
+`/api/v1/museums/nearest` — omit `restricted` museums by default, since the app
+answers "where can I go and see it"; pass `include_restricted=1` to include them.
+Restricted museums remain fully searchable and still serve their detail pages. Supply both coordinates or neither;
 latitude must be -90 through 90 and longitude -180 through 180. Zero is a valid
 coordinate. Partial edits validate the resulting coordinate pair.
 
@@ -302,8 +311,10 @@ batch like any other validation error.
 **Museum field names**
 
 `name`, `city`, `state_province`, `country`, `postal_code`, `region`,
-`address`, `website`, `latitude`, `longitude`. Required: `name`, `city`,
-`region`. `latitude` and `longitude` must both be present or both empty.
+`address`, `website`, `access_type`, `latitude`, `longitude`. Required: `name`,
+`city`, `region`. `latitude` and `longitude` must both be present or both empty.
+`access_type` is `public` (the default when omitted), `appointment`, or
+`restricted` — see below.
 
 Sample files: `scripts/sample_aircraft.csv`, `scripts/sample_museums.csv`.
 

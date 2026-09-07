@@ -69,6 +69,14 @@ CREATE TABLE IF NOT EXISTS museums (
     region          VARCHAR(50)   NOT NULL,            -- North America, Europe, Asia-Pacific, etc.
     address         VARCHAR(300)  DEFAULT NULL,
     website         VARCHAR(300)  DEFAULT NULL,
+    -- Can an ordinary visitor walk in? 'public' = just turn up.
+    -- 'appointment' = call ahead, by arrangement, or open-house only.
+    -- 'restricted' = military base, escort or DoD ID required.
+    -- Visitor-facing proximity search hides 'restricted' by default, the
+    -- same way display_status hides aircraft that aren't on display.
+    -- See migrate_museum_access.sql.
+    access_type     ENUM('public','appointment','restricted')
+                     NOT NULL DEFAULT 'public',
     latitude        DECIMAL(10,7) DEFAULT NULL,        -- nullable: not all museums have geocoords
     longitude       DECIMAL(10,7) DEFAULT NULL,
     created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -76,7 +84,8 @@ CREATE TABLE IF NOT EXISTS museums (
     INDEX idx_region  (region),
     INDEX idx_country (country),
     INDEX idx_state   (state_province),
-    INDEX idx_postal  (postal_code)
+    INDEX idx_postal  (postal_code),
+    INDEX idx_access  (access_type)
 ) ENGINE=InnoDB;
 
 -- ─────────────────────────────────────────────
