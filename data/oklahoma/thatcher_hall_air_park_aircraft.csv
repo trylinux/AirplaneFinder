@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Republic,RF-84,F,53-7604,Thunderflash,,fixed_wing,monoplane,military,recon,,,pylon-mounted in simulated flight;AFROTC Detachment 670 memorial;refurbished and dedicated 26 September 1981;serial rests on a single source,Thatcher Hall Air Park,on_display
+Boeing,AGM-69,A,,SRAM,,missile_rocket,,military,air_to_surface,,,inert training round displayed beside the RF-84F,Thatcher Hall Air Park,on_display

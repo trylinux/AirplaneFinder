@@ -1,0 +1,26 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,F-117,A,85-0819,Nighthawk,Raven Beauty,fixed_wing,monoplane,military,ground_attack,,,first flight 14 April 1986;55 combat sorties;retired at Holloman AFB 12 October 2007;delivered to the museum 11 July 2024;widely misreported as 82-0819;tail code HO,Stafford Air & Space Museum,under_restoration
+McDonnell Douglas,F-15,A,76-0027,Eagle,,fixed_wing,monoplane,military,fighter,,,MSN 0207/A179;36th TFW Bitburg then 1st TFW and the Massachusetts and Louisiana ANG;to AMARC as FH0078 in May 1994;displayed at the National Museum of the USAF for about 30 years;arrived Weatherford 24 April 2024,Stafford Air & Space Museum,on_display
+Fairchild Republic,A-10,A,77-0199,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,,,converted to GA-10A ground-instructional airframe;at Sheppard AFB from at least 2004;to the museum by March 2018;tail code ST,Stafford Air & Space Museum,on_display
+McDonnell,F-4,C,63-7426,Phantom II,,fixed_wing,monoplane,military,fighter,,,MSN 371;struck off charge 3 June 1985;converted to GF-4C;pedestal-mounted at Sheppard AFB;moved to Weatherford in 2013;at the museum entrance,Stafford Air & Space Museum,on_display
+General Dynamics,F-16,B,79-0430,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,,MSN 62-62;converted to GF-16B at Sheppard AFB;wears the Edwards tail code ED,Stafford Air & Space Museum,on_display
+Lockheed,F-104,C,56-0932,Starfighter,,fixed_wing,monoplane,military,fighter,,,MSN 383-1220;crashed at George AFB 16 June 1961;later a gate guard at Van Nuys California;at the museum entrance,Stafford Air & Space Museum,on_display
+Northrop,T-38,A,59-1595,Talon,,fixed_wing,monoplane,military,trainer,,,wears the false serial 67-14956;also recorded as a DT-38A;noted at Kelly AFB in 1997,Stafford Air & Space Museum,on_display
+Mikoyan-Gurevich,MiG-21,R,2109,Fishbed,,fixed_wing,monoplane,military,recon,,,displayed number 2109;on site since at least 1999;some records call it a MiG-21MF,Stafford Air & Space Museum,on_display
+Mikoyan-Gurevich,MiG-23,MF,675,Flogger,,fixed_wing,monoplane,military,fighter,,,displayed number 675,Stafford Air & Space Museum,on_display
+Canadair,CL-13,A,N92FS,Sabre Mk.5,,fixed_wing,monoplane,military,fighter,1954,,ex-RCAF 23285;c/n 1075;former marks CF-BKG and N8686D and N87FS;the registration has since been reissued to an unrelated aircraft,Stafford Air & Space Museum,on_display
+Canadair,CT-133,,N301FS,Silver Star,,fixed_wing,monoplane,military,trainer,,,Silver Star Mk.3;ex-Flight Systems Mojave fleet;the registration has since been reissued to an unrelated aircraft,Stafford Air & Space Museum,on_display
+McDonnell,Gemini,6A,,Gemini VI-A,,spacecraft,,military,space,,,genuine flown spacecraft;flown December 1965 by Thomas P. Stafford and Wally Schirra;first crewed space rendezvous;long-term loan from the Smithsonian;moved to Weatherford July 2018,Stafford Air & Space Museum,on_display
+Martin,Titan II,,,Titan II,,missile_rocket,,military,launch_vehicle,,,genuine vehicle;the LGM-25C also served as the Gemini launch vehicle,Stafford Air & Space Museum,on_display
+North American,Apollo CSM,,,Apollo Command and Service Module,,spacecraft,,military,space,,,replica;full-scale mockup,Stafford Air & Space Museum,on_display
+Grumman,Apollo LM,,,Apollo Lunar Module,,spacecraft,,military,space,,,replica;full-scale mockup,Stafford Air & Space Museum,on_display
+McDonnell,Gemini,,,Gemini spacecraft,,spacecraft,,military,space,,,replica;full-scale mockup;a separate item from the flown Gemini VI-A,Stafford Air & Space Museum,on_display
+OKB-1,Sputnik,1,,Sputnik 1,,spacecraft,,civilian,space,,,replica;full-scale,Stafford Air & Space Museum,on_display
+Jet Propulsion Laboratory,Explorer,1,,Explorer 1,,spacecraft,,military,space,,,replica;full-scale,Stafford Air & Space Museum,on_display
+Goddard,Goddard rocket,,,Goddard liquid-fuel rocket,,missile_rocket,,civilian,sounding,,,replica;full-scale,Stafford Air & Space Museum,on_display
+Wright,Wright Flyer,,,Wright Flyer,,fixed_wing,biplane,civilian,experimental,,,replica;full-scale and flyable,Stafford Air & Space Museum,on_display
+Curtiss,Pusher,,,Curtiss Pusher,,fixed_wing,biplane,civilian,experimental,,,replica;full-scale and flyable,Stafford Air & Space Museum,on_display
+Bleriot,Bleriot XI,,,Bleriot XI,,fixed_wing,monoplane,civilian,experimental,,,replica;full-scale,Stafford Air & Space Museum,on_display
+Sopwith,Pup,,,Sopwith Pup,,fixed_wing,biplane,military,fighter,,,replica;full-scale,Stafford Air & Space Museum,on_display
+Ryan,NYP,,,Ryan NYP,Spirit of St. Louis,fixed_wing,monoplane,civilian,private,,,replica;full-scale;wears Lindbergh's marking N-X-211,Stafford Air & Space Museum,on_display
+Bell,X-1,,,Bell X-1,,fixed_wing,monoplane,military,experimental,,,replica;full-scale,Stafford Air & Space Museum,on_display

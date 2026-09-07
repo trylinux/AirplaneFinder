@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,,,Fishbed,,fixed_wing,monoplane,military,fighter,,,sub-type not established;from the collection of the closed Kansas Museum of Military History at Augusta Kansas,American Military Heritage Museum,on_display
+Cessna,O-1,,,Bird Dog,,fixed_wing,monoplane,military,recon,,,also designated L-19;sub-type not established;from the closed Kansas Museum of Military History,American Military Heritage Museum,on_display
+Bell,AH-1,,,Cobra,,rotary_wing,,military,ground_attack,,,sub-type not established;from the closed Kansas Museum of Military History,American Military Heritage Museum,on_display
+Curtiss,JN-4,,,Jenny,,fixed_wing,biplane,military,trainer,,,replica;displayed in the World War I gallery,American Military Heritage Museum,on_display

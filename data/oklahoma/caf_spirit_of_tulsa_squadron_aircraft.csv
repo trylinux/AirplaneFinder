@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Fairchild,PT-19,,,,Silver Streak,fixed_wing,monoplane,military,trainer,1942,,fully restored and flyable;used for paid rides from Jones Riverside Airport;Ranger L-440-3;registration not published,CAF Spirit of Tulsa Squadron,on_display
+Fairchild,PT-26,,,Cornell,,fixed_wing,monoplane,military,trainer,,,enclosed-cockpit PT-19A derivative built for the Commonwealth Air Training Plan;registration not published,CAF Spirit of Tulsa Squadron,under_restoration

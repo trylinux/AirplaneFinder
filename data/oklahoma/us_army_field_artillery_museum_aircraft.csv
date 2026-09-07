@@ -1,0 +1,17 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,X-7,A-1,,X-7,,fixed_wing,monoplane,military,drone,,,ramjet test vehicle and target drone;air-launched from a carrier aircraft;the Kingfisher variant was redesignated AQM-60A;southeast section of Missile Park,U.S. Army Field Artillery Museum,on_display
+Republic,JB-2,,,Loon,,missile_rocket,,military,cruise,,,American copy of the German V-1 flying bomb;pulse-jet powered;the first US guided missile;also built under contract by Willys and Ford,U.S. Army Field Artillery Museum,on_display
+Firestone,MGM-5,,,Corporal,,missile_rocket,,military,ballistic,,,the first US guided nuclear missile;in service July 1954;liquid-fuelled;the museum label reads M2 Corporal,U.S. Army Field Artillery Museum,on_display
+Chrysler,PGM-11,,,Redstone,,missile_rocket,,military,ballistic,,,displayed in Missile Park,U.S. Army Field Artillery Museum,on_display
+Sperry,MGM-29,,,Sergeant,,missile_rocket,,military,ballistic,,,solid-fuelled;replaced the Corporal from March 1963,U.S. Army Field Artillery Museum,on_display
+Douglas,MGR-1,,,Honest John,,missile_rocket,,military,artillery_rocket,,,unguided spin-stabilised nuclear-capable rocket;in production from 1953;762mm diameter;replaced by Lance in the early 1970s,U.S. Army Field Artillery Museum,on_display
+Douglas,MGR-3,,,Little John,,missile_rocket,,military,artillery_rocket,,,air-transportable lightweight companion to the Honest John,U.S. Army Field Artillery Museum,on_display
+Martin Marietta,MGM-18,,,Lacrosse,,missile_rocket,,military,ballistic,,,radio-guided short-range missile;fielded July 1959;procurement halted January 1961;retired February 1964;the museum label reads M4 Lacrosse,U.S. Army Field Artillery Museum,on_display
+LTV,MGM-52,C,,Lance,,missile_rocket,,military,ballistic,,,displayed on a zero-length launcher;entered service June 1972;nuclear or conventional warhead,U.S. Army Field Artillery Museum,on_display
+Martin Marietta,MGM-31,A,,Pershing I,,missile_rocket,,military,ballistic,,,entered service 1964 replacing the Redstone;northeast section of Missile Park,U.S. Army Field Artillery Museum,on_display
+Martin Marietta,MGM-31,A,,Pershing 1a,,missile_rocket,,military,ballistic,,,succeeded the Pershing I from 1969-70;displayed on its launcher,U.S. Army Field Artillery Museum,on_display
+Martin Marietta,MGM-31,B,,Pershing II,,missile_rocket,,military,ballistic,,,introduced 1983;eliminated under the 1987 INF Treaty;the museum marker labels it MGM-31A,U.S. Army Field Artillery Museum,on_display
+Western Electric,MIM-3,,,Nike Ajax,,missile_rocket,,military,surface_to_air,,,the world's first operational surface-to-air guided missile;operational December 1953;two-stage,U.S. Army Field Artillery Museum,on_display
+Western Electric,MIM-14,,,Nike Hercules,,missile_rocket,,military,surface_to_air,,,fielded 1958;nuclear or conventional warhead;also had a surface-to-surface role;retired 1983,U.S. Army Field Artillery Museum,on_display
+Raytheon,MIM-23,,,Hawk,,missile_rocket,,military,surface_to_air,,,medium-range SAM in service from 1960;superseded by Patriot by 1994,U.S. Army Field Artillery Museum,on_display
+Martin Marietta,Sprint,,,Sprint,,missile_rocket,,military,surface_to_air,,,anti-ballistic missile interceptor for the Sentinel and Safeguard systems;silo-launched;no MIM or LIM designation verified so the popular name is used as the model,U.S. Army Field Artillery Museum,on_display

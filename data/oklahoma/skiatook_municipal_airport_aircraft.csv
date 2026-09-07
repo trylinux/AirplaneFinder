@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Cessna,T-37,B,57-2338,Tweet,,fixed_wing,monoplane,military,trainer,,,c/n 40271;T-37B-CE;pylon-mounted in flight attitude;the northern of the two displays,Skiatook Municipal Airport,on_display
+Lockheed,T-33,A,51-9080,Shooting Star,,fixed_wing,monoplane,military,trainer,,,c/n 580-6864;T-33A-1-LO;pylon-mounted with wingtip tanks;the southern of the two displays,Skiatook Municipal Airport,on_display

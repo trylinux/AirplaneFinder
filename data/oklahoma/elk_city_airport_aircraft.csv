@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,T-33,A,51-8896,Shooting Star,,fixed_wing,monoplane,military,trainer,,,buzz number 0-18896 read from the airframe;pylon-mounted;red tip tanks;variant inferred from the serial block;current presence not re-verified,Elk City Regional Business Airport,on_display
