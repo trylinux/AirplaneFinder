@@ -364,6 +364,49 @@ in systemd:
 sudo systemctl status airplanefinder --no-pager
 ```
 
+### TLS: serve the full certificate chain
+
+**Symptom.** Scripts that talk to `https://airplane.museum` fail with
+`CERTIFICATE_VERIFY_FAILED: unable to get local issuer certificate`, or curl's
+`SSL certificate problem: unable to get local issuer certificate` — while the
+site loads fine in a browser.
+
+**Cause.** The server sends only the leaf certificate. Check it:
+
+```bash
+echo | openssl s_client -connect airplane.museum:443 -servername airplane.museum \
+     -showcerts 2>/dev/null | grep -c 'BEGIN CERTIFICATE'
+```
+
+If that prints `1`, the intermediate is missing. It should print `2`.
+
+The certificate itself is valid — Sectigo, issued to `airplane.museum`, and it
+verifies cleanly once the intermediate is supplied:
+
+```bash
+openssl verify -untrusted intermediate.pem leaf.pem      # -> leaf.pem: OK
+```
+
+Browsers hide the problem because they fetch the missing intermediate
+themselves using the AIA extension. `curl`, `requests` and `urllib` do not —
+so this breaks every script while the site looks healthy.
+
+**Fix.** Point the web server at the full chain, not the bare certificate.
+Let's Encrypt and most CAs ship both files:
+
+```nginx
+ssl_certificate      /etc/ssl/certs/airplane.museum/fullchain.pem;  # not cert.pem
+ssl_certificate_key  /etc/ssl/private/airplane.museum/privkey.pem;
+```
+
+Apache: `SSLCertificateFile` should be the fullchain, or set
+`SSLCertificateChainFile` alongside it. Reload, then re-run the openssl check
+above and confirm it prints `2`.
+
+Do **not** work around this with `verify=False`, `curl -k`, or by pinning a
+custom CA bundle in the scripts. That disables certificate checking for every
+host those scripts talk to, to paper over a one-line server config.
+
 ### Pre-deploy security check
 
 Before each deploy, run:

@@ -1,57 +1,98 @@
 # Ohio — National Museum of the United States Air Force
 
-The world's largest military aviation museum, and the second-biggest gap in
-the database after Pima. **8 recorded, ~360 real.**
+Museum id 20. `1100 Spaatz St, Wright-Patterson AFB, OH 45433`.
+Real collection is roughly 360 airframes; the largest military aviation museum
+in the world.
 
-Split by manufacturer initial, same approach as Pima.
+## Files
 
-| File | Slice | Rows | Serials |
+| File | Rows | Tails | Status |
 |---|---|---|---|
-| `nmusaf_topup_a_to_l_aircraft.csv` | manufacturers A–L | 149 | 54 (36%) |
-| _(pending)_ | M–Z | ~150 | |
+| `nmusaf_topup_a_to_l_aircraft.csv` | 149 | — | imported (157 live) |
+| `nmusaf_topup_m_to_z_aircraft.csv` | 126 | 46 (36%) | ready |
+| `nmusaf_m_to_z_raw.txt` | — | — | research output, kept for audit |
 
-Import with:
+Split by manufacturer initial per METHODOLOGY.md. M–Z was researched as four
+parallel passes (M / N–R / S–T / U–Z) against the museum's own fact sheets at
+`nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Indextitle/<letter>/`.
 
-    AIRPLANE_DATA_DIR=data/ohio bash scripts/import_data_dir.sh
+Total after import: about 283 of ~360.
 
-There is no museums file here — NMUSAF is already in the database (id 28-ish,
-"National Museum of the United States Air Force"). The import script now
-skips step 1 cleanly when a directory has no `*museums*.csv`.
+## Serial coverage is low, and that is the honest number
 
-## Serial coverage is low, and that is the museum's choice
+36%, against 87% for Pima. NMUSAF fact sheets are written as type histories,
+not airframe records — most do not state the serial of the aircraft on the
+floor. Every blank here is a serial the museum does not publish, not one we
+failed to look up. Per METHODOLOGY.md we left them blank rather than sourcing
+a plausible serial from a registry and implying the museum said it.
 
-Only 36% — far below Pima's 98%. NMUSAF fact sheets lead with delivery and
-service history rather than the airframe's serial, and for the WWI, X-plane
-and missile galleries they frequently publish no serial at all. Every blank
-here is a genuine absence, not a research shortfall.
+Consequence worth knowing: 80 rows have no tail number, and a blank tail is
+NULL, which never collides. Re-running this file without
+`scripts/filter_new_aircraft.py` would silently double those 80 rows. The
+import script does this automatically for `*topup*` files.
 
-## Collisions: checked, zero
+## Judgment calls
 
-All 54 serials were diffed against the live database before shipping.
-Several near-misses were removed during the build because they duplicate
-records already present, in some cases attributed to a *different* museum:
+**`fetch` had to go through the app's web_fetch, not curl.** The site returns
+403 to plain HTTP clients. Noted because the next person will hit it.
 
-- **C-130E 62-1787** — NMUSAF's own fact sheet claims it ("Spare 617"), but
-  your database has it at **Pima**. One of the two is wrong. Left out of
-  this file rather than force a collision; worth resolving separately.
-- SR-71A 61-7976, F-22A 91-4003, C-17 87-0025, VC-137C 62-6000 (SAM 26000)
-  are all already recorded.
+**Excluded — not airframes.** Engines (Salmson, Sturtevant, Walter HWK 509),
+ground support equipment (MJ-1, MHU, MC-11, MA-1A), guns (M61A1, M102,
+ZPU-4), warheads (W53), bomb bodies without propulsion (VB-1 through VB-13),
+and exhibit/biography pages. The fact-sheet index mixes all of these in with
+aircraft.
 
-## Caveats
+**Included as `missile_rocket` though unpowered:** Texas Instruments BOLT-117
+(the first laser-guided bomb, later GBU-1) and Ruhrstahl X-4. Both are guided
+weapons displayed as complete articles, and this matches how Pima's Fritz X
+and Ohka are filed. Consistency across museums matters more here than a
+purist reading of "missile".
 
-- **Reproductions**, as expected for the WWI gallery: Bleriot Monoplane,
-  P-26A Peashooter, 1911 Curtiss Model D (built 1987), Fokker Dr.I,
-  Fokker D.VII, DH-4, and the Kettering Bug. All flagged in `aliases`.
-- **On loan**: the Fw 190D-9, from the Smithsonian.
-- **In storage**: Culver PQ-14B, Learjet C-21A, Lockheed NT-33A, XGAM-63
-  Rascal. **Under restoration**: the A-26B (only a cockpit section is shown)
-  and the Bleriot.
-- **Two identity oddities the museum documents itself**: the VC-54C "Sacred
-  Cow" is displayed wearing a wartime decoy serial (42-72252) rather than
-  its real 42-107451, which is what's recorded here; and the A-1H "The
-  Proud American" is physically an ex-Navy airframe (BuNo 134600) repainted
-  as USAF 52-139738.
-- **Sit-in cockpit exhibits excluded** (A-7D, F-4D, F-16, FB-111A, T-38) —
-  they are not complete airframes.
-- Missiles are included and typed `missile_rocket`: Minuteman I and III,
-  Jupiter, Atlas, Thor, Agena, Scout, Titan IV, Bull Goose, SRAM II, Rascal.
+**Excluded — SS-N-2 Styx.** The fact sheet gives the manufacturer only as a
+nationality. The real builder is a Soviet design bureau we could not confirm
+from the museum's own page, and `manufacturer` is a required field. Recording
+it as "Russian" would put a country in a company column. Left out; worth
+adding once someone can source the bureau.
+
+**Not included, needs a second look.** The M pass flagged three it could not
+re-verify before finishing: Martin X-24A and X-24B lifting bodies, McDonnell
+Douglas AIR-2A Genie, McDonnell ADM-20 Quail. These are very likely genuine
+NMUSAF holdings. They are absent rather than guessed at.
+
+**Letters O and Q yielded nothing.** Fully paged through; O contains only
+"Operation …" essays and Q only fragments. Recorded so nobody re-runs them.
+
+**Reproductions, recorded as such in aliases:** Martin MB-2/NBS-1 (built 2002
+from original drawings — no original survives), Sopwith Camel F.1 (built 1974),
+Nieuport 28 (rebuilt using original parts), Wright 1909 Military Flyer (1955).
+`year_built` on these is the reproduction's build year, which is the honest
+answer for the object on the floor.
+
+**Airframes displayed as something else.** Recorded under what they *are*,
+with the markings noted in aliases:
+
+- B-25B "Doolittle Raid" is physically RB-25D 43-3374
+- F-82G is physically an F-82B
+- F-89J 52-1911 wears the markings of 53-2509
+- O-47B 39-112 is displayed in O-47A markings
+- P-61C 43-8353 is displayed in P-61B markings
+
+**Northrop B-2** is one of two unpowered structural-test airframes, not a
+flying Spirit. Noted in aliases so it isn't mistaken for an operational bomber.
+
+**Spacecraft.** Northrop OV2-5 (a donated mock-up, never flown) and the DSP
+early-warning satellite are typed `spacecraft` with `role_type` `space`.
+
+## Cross-museum conflict resolved
+
+**X-15A-2, 56-6671 — NMUSAF holds the real one.** Pima also lists an X-15A-2
+with this serial, but Pima's own page calls it a construction mockup and puts
+the serial in quotation marks. The tail number is recorded here and blanked at
+Pima. See `data/arizona/ARIZONA_NOTES.md`.
+
+## Still open
+
+- Pima's C-130 62-1787 and NMUSAF's are the same serial. Unresolved from
+  before this batch; neither file currently claims it.
+- ~77 airframes remain unrecorded (283 of ~360). Mostly A–L gaps rather than
+  M–Z, since A–L was an earlier, less systematic pass.

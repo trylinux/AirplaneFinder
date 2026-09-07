@@ -18,8 +18,8 @@ North American,RA-5,C,149289,,,fixed_wing,monoplane,military,recon,,,,Pima Air &
 North American,T-28,C,140481,,,fixed_wing,monoplane,military,trainer,,,,Pima Air & Space Museum,on_display
 North American,T-2,C,157050,,,fixed_wing,monoplane,military,trainer,,,,Pima Air & Space Museum,on_display
 North American,T-6,G,49-2908,,,fixed_wing,monoplane,military,trainer,,,,Pima Air & Space Museum,on_display
-North American,X-15,A,56-6670,,,fixed_wing,monoplane,military,experimental,,,,Pima Air & Space Museum,on_display
-North American,X-15,A-2,56-6671,,,fixed_wing,monoplane,military,experimental,,,,Pima Air & Space Museum,on_display
+North American,X-15,A,,,,fixed_wing,monoplane,military,experimental,,"Replica or full-scale mockup, not an original airframe.",marked 56-6670,Pima Air & Space Museum,on_display
+North American,X-15,A-2,,,,fixed_wing,monoplane,military,experimental,,"Replica or full-scale mockup, not an original airframe.",marked 56-6671,Pima Air & Space Museum,on_display
 Northrop,F-5,B,72-0441,,,fixed_wing,monoplane,military,fighter,,,,Pima Air & Space Museum,on_display
 Northrop,F-5,E,741564,,,fixed_wing,monoplane,military,fighter,,,,Pima Air & Space Museum,on_display
 Northrop,F-89,J,53-2674,,,fixed_wing,monoplane,military,fighter,,,,Pima Air & Space Museum,on_display
@@ -32,17 +32,17 @@ Pereira,Osprey,2,N17EH,,,fixed_wing,monoplane,civilian,experimental,,,105A,Pima 
 Piasecki,CH-21,C,56-2159,,,rotary_wing,,military,transport,,,,Pima Air & Space Museum,on_display
 Piasecki,HUP,3,147595,Retriever,,rotary_wing,,military,utility,,,51-16608,Pima Air & Space Museum,on_display
 Piper,J-4,A,NC22783,,,fixed_wing,monoplane,civilian,private,,,4-469,Pima Air & Space Museum,on_display
-Piper,PA-48,,N481PE,,,fixed_wing,monoplane,civilian,private,,,48-8301001,Pima Air & Space Museum,on_display
+Piper,PA-48,,N481PE,Enforcer,,fixed_wing,monoplane,civilian,experimental,,,48-8301001,Pima Air & Space Museum,on_display
 Piper,U-11,A,149067,,,fixed_wing,monoplane,military,utility,,,,Pima Air & Space Museum,on_display
-Pitts,S-1,C,N6119,,,fixed_wing,monoplane,civilian,private,,,DC1,Pima Air & Space Museum,on_display
-PZL Mielec,AN-2,R,CCCP-32682,Colt,,fixed_wing,monoplane,civilian,utility,,,1G211-41;N75AN;HR-ARR,Pima Air & Space Museum,in_storage
+Pitts,S-1,C,N6119,,,fixed_wing,biplane,civilian,private,,,DC1,Pima Air & Space Museum,on_display
+PZL Mielec,AN-2,R,CCCP-32682,Colt,,fixed_wing,biplane,civilian,utility,,,1G211-41;N75AN;HR-ARR,Pima Air & Space Museum,in_storage
 Radioplane,OQ-19,D,,,,fixed_wing,monoplane,military,drone,,,,Pima Air & Space Museum,on_display
 Radioplane,OQ-3,,,,,fixed_wing,monoplane,military,drone,,,,Pima Air & Space Museum,on_display
 Radioplane,MQM-57,,,,,fixed_wing,monoplane,military,drone,,,,Pima Air & Space Museum,on_display
 Republic,F-105,D,61-0086,,Big Sal,fixed_wing,monoplane,military,fighter,,,,Pima Air & Space Museum,on_display
-Republic,F-105,G,62-4427,,,fixed_wing,monoplane,military,fighter,,,,Pima Air & Space Museum,on_display
+Republic,F-105,G,62-4427,,,fixed_wing,monoplane,military,electronic_warfare,,,,Pima Air & Space Museum,on_display
 Republic,F-84,C,47-1433,,,fixed_wing,monoplane,military,fighter,,,,Pima Air & Space Museum,on_display
-Republic,F-84,F,52-6563,,,fixed_wing,monoplane,military,fighter,,,,Pima Air & Space Museum,on_display
+Republic,F-84,F,52-6563,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,,,Pima Air & Space Museum,on_display
 Republic,P-47,D,42-8130,,Frankie,fixed_wing,monoplane,military,fighter,,,,Pima Air & Space Museum,under_restoration
 Republic,RF-84,F,51-1944,,,fixed_wing,monoplane,military,recon,,,,Pima Air & Space Museum,on_display
 Ruhrstahl,SD 1400,X,,,Fritz X,missile_rocket,,military,air_to_surface,,,,Pima Air & Space Museum,on_display

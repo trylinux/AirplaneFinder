@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Extract Pima Air & Space Museum's collection from its own WordPress feed.
+r"""Extract Pima Air & Space Museum's collection from its own WordPress feed.
 
 WHY A FEED AND NOT A SCRAPE
 ---------------------------
@@ -202,7 +202,20 @@ def parse_record(rec: dict) -> dict:
         if sm else "on_display")
     out["offsite"] = bool(sm and "offsite" in text[sm.end():sm.end() + 20].lower())
 
-    out["serial"] = nullish(out["serial"]).strip("\"“”'")
+    # A serial the museum wraps in quotation marks is a painted-on marking,
+    # not the airframe's identity. All three at Pima are replicas or mockups:
+    # the X-15A "56-6670" and X-15A-2 "56-6671" are a replica and a
+    # construction mockup, and the real 56-6671 is at the National Museum of
+    # the USAF. Importing the quoted serial as a tail number would both claim
+    # a famous airframe Pima does not have and collide with the museum that
+    # does, under the unique index on (model, tail_number).
+    raw_serial = (out["serial"] or "").strip()
+    out["serial_is_marking"] = bool(raw_serial and raw_serial[0] in "\"“'‘")
+    out["is_replica"] = bool(re.search(
+        r"\b(replica|mockup|mock-up|reproduction)\b",
+        f"{out['title']} {text[:400]}", re.I))
+
+    out["serial"] = nullish(out["serial"]).strip("\"“”'‘’")
     out["registration"] = nullish(out["registration"])
     out["markings"] = nullish(out["markings"])
 

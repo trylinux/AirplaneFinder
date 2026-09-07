@@ -1,0 +1,16 @@
+manufacturer,designation,serial,registration,display_status,serial_is_marking,is_replica,source
+Aeritalia,C-27A Spartan,90-0171,N23743,in_storage,False,False,https://pimaair.org/museum-aircraft/aeritalia-c-27a-spartan/
+Avian,Falcon II,12,N3AV,in_storage,False,False,https://pimaair.org/museum-aircraft/avian-falcon-ii/
+Bell,OH-58D,95-0015,,in_storage,False,False,https://pimaair.org/museum-aircraft/bell-oh-58d-2/
+Boeing,727-22,18296,N7004U,in_storage,False,False,https://pimaair.org/museum-aircraft/boeing-727-100/
+Boeing,A160T,A18,,in_storage,False,False,https://pimaair.org/museum-aircraft/boeing-a160t/
+Curtiss Aircraft Company,AT-9A,42-56882,,in_storage,False,False,https://pimaair.org/museum-aircraft/curtiss-at-9a/
+Douglas,SM-75,59-2406,,in_storage,False,False,https://pimaair.org/museum-aircraft/douglas-sm-75/
+Fairchild,C-119C,49-157,,in_storage,False,False,https://pimaair.org/museum-aircraft/fairchild-c-119c_1/
+Hawker,Hurricane Mk. IIB Trop.,BG974,,on_display,True,False,https://pimaair.org/museum-aircraft/hawker-hurricane/
+Lark Aviation Company,Lark 95,9512,N1512H,in_storage,False,False,https://pimaair.org/museum-aircraft/helton-lark/
+Lockheed,P-2H,150281,,in_storage,False,False,https://pimaair.org/museum-aircraft/lockheed-p-2h/
+Lockheed,P-38G,42-12847,,under_restoration,False,False,https://pimaair.org/museum-aircraft/lockheed-p-38g/
+Martin,B-26B,41-31856,,under_restoration,False,False,https://pimaair.org/museum-aircraft/martin-b-26b/
+Martin/General Dynamics,WB-57F,63-13501,N925NA,in_storage,False,False,https://pimaair.org/museum-aircraft/martin-wb-57f/
+Messerschmitt,Bf109F-4,13045,,in_storage,False,False,https://pimaair.org/museum-aircraft/messerschmitt-bf109f-4/

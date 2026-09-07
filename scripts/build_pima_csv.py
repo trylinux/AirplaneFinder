@@ -102,11 +102,17 @@ ROTARY_WORDS = re.compile(
 
 GLIDER = re.compile(r"^(TG-|SHK|IIIB|SGS|Schweizer TG)", re.I)
 
-BIPLANE = {  # types we know are biplanes; never guessed from the designation
-    ("Naval Aircraft Factory", "N3N-3"), ("Pitts", "S-1C"),
+# Types we know are biplanes. Keyed on (manufacturer, MODEL) — i.e. after the
+# variant has been split off — because "S-1C" never matches once the row says
+# model="S-1", variant="C". Two entries were dead for exactly that reason and
+# shipped the most recognisable aerobatic biplane in the world as a monoplane.
+BIPLANE = {
+    ("Naval Aircraft Factory", "N3N"), ("Pitts", "S-1"),
     ("Waco", "RNF"), ("Waco", "UPF-7"), ("Waco", "ZKS-6"),
     ("Steen", "Skybolt"), ("Sopwith", "Camel"), ("Wright Brothers", "Flyer"),
     ("Stearman", "PT-17"),
+    # The An-2 is a biplane, and a very large one — the type's defining feature.
+    ("PZL Mielec", "AN-2"),
 }
 
 # Serial shapes that mean "this is a military airframe serial", not a
@@ -205,7 +211,20 @@ FIX = {
     "l-2m grasshopper": dict(model="L-2", variant="M",
                              model_name="Grasshopper", role_type="utility"),
     "an-2r colt":   dict(model="AN-2", variant="R", model_name="Colt",
-                         military_civilian="civilian", role_type="utility"),
+                         military_civilian="civilian", role_type="utility",
+                         wing_type="biplane"),
+    # The F-105G is the Wild Weasel SAM-suppression conversion, not a fighter.
+    # NMUSAF's F-105G is filed as electronic_warfare; these should agree.
+    "f-105g":       dict(model="F-105", variant="G",
+                         role_type="electronic_warfare"),
+    # The PA-48 Enforcer was a turboprop COIN demonstrator built for USAF
+    # evaluation. It carries a civil registration but was never a private
+    # aircraft, and the ROLE_BY_PREFIX table has no way to know that.
+    "pa-48":        dict(model="PA-48", variant="", model_name="Enforcer",
+                         military_civilian="civilian", role_type="experimental"),
+    # The F-84F served in both roles; NMUSAF's is ground_attack, so match it.
+    "f-84f":        dict(model="F-84", variant="F", model_name="Thunderstreak",
+                         role_type="ground_attack"),
     "744":          dict(model="Viscount", variant="744",
                          military_civilian="civilian",
                          role_type="commercial_transport"),
@@ -387,6 +406,13 @@ def build(rec):
         mil_civ = ("civilian" if CIVIL_REG.match(reg) and
                    not MIL_SERIAL.match(ser) else "military")
     tail, aliases = pick_tail(rec, civilian=(mil_civ == "civilian"))
+
+    # A quoted serial is a painted marking on a replica, not an identity.
+    # Keep it visible in aliases, but never as the tail number.
+    if rec.get("serial_is_marking") and tail:
+        aliases = [f"marked {tail}"] + aliases
+        tail = ""
+
     if "tail_number" in fix:                      # an explicit override wins
         forced = fix["tail_number"]
         if tail and tail != forced:
@@ -408,7 +434,11 @@ def build(rec):
         "aircraft_name": rec.get("nickname", ""),
         "aircraft_type": ac_type, "wing_type": wing,
         "military_civilian": mil_civ, "role_type": role or "other",
-        "year_built": "", "description": "",
+        "year_built": "",
+        # Worth stating plainly: a visitor deciding whether to drive to Tucson
+        # to see an X-15 should know Pima's is a mockup.
+        "description": "Replica or full-scale mockup, not an original airframe."
+                       if rec.get("is_replica") else "",
         "aliases": ";".join(dict.fromkeys(a for a in aliases if a)),
         "museum_name": MUSEUM,
         # The museum states this itself; see STATUS_SENTENCE in the parser.

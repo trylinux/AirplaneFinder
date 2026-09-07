@@ -142,6 +142,13 @@ class AirplaneClient:
     def put(self, path, json=None, **kwargs):
         return self._request("PUT", path, json=json, **kwargs)
 
+    def patch(self, path, json=None, **kwargs):
+        """Partial update. Prefer this over put() when correcting one field:
+        PUT semantics invite sending a whole object back, and a round-trip
+        through a script is a good way to overwrite a field you didn't mean
+        to touch."""
+        return self._request("PATCH", path, json=json, **kwargs)
+
     def delete(self, path, **kwargs):
         return self._request("DELETE", path, **kwargs)
 
