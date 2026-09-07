@@ -107,6 +107,8 @@ migration files for an older installation:
   facts, CSV/JSON bulk import, API keys, and administrator user management.
 - **Mobile:** dedicated public templates and responsive management pages. Museum
   editing works on phones; login and role requirements are the same on every device.
+  The fixed Home, Aircraft, Museums, Near Me, and Facts tabs also appear on
+  management pages and desktop layouts at widths up to 900px.
   `?desktop=1` forces the desktop layout for the session; `?desktop=0` clears that
   override and resumes user-agent detection. `/desktop-only` is a legacy redirect
   to `/admin`.

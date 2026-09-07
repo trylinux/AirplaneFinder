@@ -22,7 +22,6 @@
     --danger:    #ef4444;
     --radius:    10px;
     --topbar-h:  52px;
-    --bottomnav-h: 60px;
 }
 
 html { font-size: 15px; -webkit-text-size-adjust: 100%; }
@@ -65,26 +64,6 @@ a:active { opacity: .7; }
     border: none; font-size: 1rem;
 }
 .m-topbar-btn:active { background: rgba(255,255,255,.08); }
-
-/* ─── Bottom tab bar (fixed) ──────────────── */
-.m-bottomnav {
-    position: fixed; bottom: 0; left: 0; right: 0;
-    height: var(--bottomnav-h);
-    background: linear-gradient(0deg, #0f172a 0%, #1e293b 100%);
-    border-top: 1px solid var(--border);
-    display: flex; align-items: stretch; justify-content: space-around;
-    z-index: 50;
-    padding-bottom: env(safe-area-inset-bottom);
-}
-.m-tab {
-    flex: 1; display: flex; flex-direction: column; align-items: center;
-    justify-content: center; gap: 2px;
-    color: var(--text-dim); font-size: .68rem; font-weight: 500;
-    padding: .35rem .25rem;
-}
-.m-tab i { font-size: 1.15rem; }
-.m-tab.active { color: var(--primary); }
-.m-tab:active { opacity: .6; }
 
 /* ─── Main content ────────────────────────── */
 .m-main { padding: .85rem; max-width: 100%; }
@@ -389,5 +368,4 @@ a:active { opacity: .7; }
 .m-museum-head { flex-wrap: wrap; }
 .m-museum-meta { flex-wrap: wrap; }
 .m-actions .m-btn { width: auto; }
-.m-bottomnav { height: calc(var(--bottomnav-h) + env(safe-area-inset-bottom)); }
 body { padding-bottom: calc(var(--bottomnav-h) + env(safe-area-inset-bottom)); }

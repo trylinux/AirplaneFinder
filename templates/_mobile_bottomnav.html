@@ -1,0 +1,14 @@
+<nav class="m-bottomnav" aria-label="Explore">
+    {% for href, icon, label in [
+        ('/', 'house', 'Home'),
+        ('/aircraft', 'jet-fighter', 'Aircraft'),
+        ('/museums', 'building-columns', 'Museums'),
+        ('/near-me', 'location-dot', 'Near Me'),
+        ('/facts', 'lightbulb', 'Facts')
+    ] %}
+    {% set active = request.path == href or (href != '/' and request.path.startswith(href + '/')) %}
+    <a href="{{ href }}" class="m-tab{% if active %} active{% endif %}"{% if active %} aria-current="page"{% endif %}>
+        <i class="fa-solid fa-{{ icon }}" aria-hidden="true"></i><span>{{ label }}</span>
+    </a>
+    {% endfor %}
+</nav>

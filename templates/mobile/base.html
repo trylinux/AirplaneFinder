@@ -19,10 +19,11 @@
             integrity="sha384-CI3ELBVUz9XQO+97x6nwMDPosPR5XvsxW2ua7N1Xeygeh1IxtgqtCkGfQY9WWdHu"
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile.css') }}?v=mobile-parity-2">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile.css') }}?v=bottom-tabs-1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile-nav.css') }}?v=bottom-tabs-1">
     {% block head %}{% endblock %}
 </head>
-<body>
+<body class="mobile-layout">
 
 <header class="m-topbar">
     <a href="/" class="m-brand">
@@ -63,23 +64,7 @@
     <a href="?desktop=1">Switch to desktop site</a>
 </div>
 
-<nav class="m-bottomnav">
-    <a href="/"             class="m-tab {% block tab_home %}{% endblock %}">
-        <i class="fa-solid fa-house"></i><span>Home</span>
-    </a>
-    <a href="/aircraft"     class="m-tab {% block tab_aircraft %}{% endblock %}">
-        <i class="fa-solid fa-jet-fighter"></i><span>Aircraft</span>
-    </a>
-    <a href="/museums"      class="m-tab {% block tab_museums %}{% endblock %}">
-        <i class="fa-solid fa-building-columns"></i><span>Museums</span>
-    </a>
-    <a href="/near-me"      class="m-tab {% block tab_nearme %}{% endblock %}">
-        <i class="fa-solid fa-location-dot"></i><span>Near Me</span>
-    </a>
-    <a href="/facts"        class="m-tab {% block tab_facts %}{% endblock %}">
-        <i class="fa-solid fa-lightbulb"></i><span>Facts</span>
-    </a>
-</nav>
+{% include "_mobile_bottomnav.html" %}
 
 <script nonce="{{ csp_nonce }}">
 function escHtml(s) {

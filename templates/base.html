@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{% block title %}Aircraft Finder{% endblock %}</title>
 
@@ -23,9 +23,10 @@
     <!-- ?v= cache-buster: bump this string whenever style.css changes so browsers
          pick up the new file without requiring users to hard-refresh. -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=mobile-management-2">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile-nav.css') }}?v=bottom-tabs-1">
     {% block head %}{% endblock %}
 </head>
-<body>
+<body class="shared-layout">
     <!-- CSS-only sidebar toggle (no JS needed). Label in the topbar flips it. -->
     <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle navigation">
 
@@ -130,6 +131,8 @@
             </footer>
         </div>
     </div>
+
+    {% include "_mobile_bottomnav.html" %}
 
     <script src="{{ url_for('static', filename='js/app.js') }}?v=catalog-pages-2"></script>
     {% block scripts %}{% endblock %}
