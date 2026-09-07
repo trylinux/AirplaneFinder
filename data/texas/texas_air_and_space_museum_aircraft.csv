@@ -2,7 +2,7 @@ manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wi
 Douglas,DC-3,C,N34,,N34,fixed_wing,monoplane,civilian,utility,1945,,msn 33359;FAA flight-inspection and navigation-aid calibration aircraft;listed on the National Register of Historic Places;owned by the FAA and displayed on loan;relocated to Amarillo 2014,Texas Air and Space Museum,on_display
 North American,P-51,D,,Mustang,,fixed_wing,monoplane,military,fighter,,,serial not established,Texas Air and Space Museum,on_display
 de Havilland Canada,C-7,A,63-9719,Caribou,,fixed_wing,monoplane,military,transport,,,serial reported but low confidence,Texas Air and Space Museum,on_display
-Bell,OH-13,S,63-9085,Sioux,,rotary_wing,,military,recon,1963,,N9263Z reported;associated with M*A*S*H,Texas Air and Space Museum,on_display
+Bell,OH-13,S,63-9085,Sioux,,rotary_wing,,military,recon,,,N9263Z reported;associated with M*A*S*H,Texas Air and Space Museum,on_display
 Grumman,G-1159,,N946NA,Shuttle Training Aircraft,,fixed_wing,monoplane,civilian,test,,,NASA 946;Gulfstream II converted for astronaut training,Texas Air and Space Museum,on_display
 Yakovlev,Yak-11,,,,Mr. Awesome,fixed_wing,monoplane,civilian,experimental,,,unlimited air racer;registration not established,Texas Air and Space Museum,on_display
 Grumman,F8F,,,Bearcat,,fixed_wing,monoplane,civilian,experimental,,,Reno racer;registration not established,Texas Air and Space Museum,on_display

@@ -1,7 +1,7 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
 Bell,UH-1,L,,Iroquois,,rotary_wing,,military,trainer,,,TH-1L Navy training variant;serial not established,Frontiers of Flight Museum,on_display
 Bell,H-13,S,,Sioux,,rotary_wing,,military,trainer,,,TH-13S;serial not established,Frontiers of Flight Museum,on_display
-Bell,UH-1,D,66-16977,Iroquois,,rotary_wing,,military,utility,1966,,converted to JUH-1H test configuration;Vietnam-era livery;displayed outdoors,Frontiers of Flight Museum,on_display
+Bell,UH-1,D,66-16977,Iroquois,,rotary_wing,,military,utility,,,converted to JUH-1H test configuration;Vietnam-era livery;displayed outdoors,Frontiers of Flight Museum,on_display
 Boeing,737,300,N300SW,,Spirit of Kitty Hawk,fixed_wing,monoplane,civilian,commercial_transport,1984,,c/n 22940;the first 737-300 built;museum-owned;about two-thirds of the airframe retained;Southwest livery,Frontiers of Flight Museum,on_display
 Boeing,737,200,N102SW,,,fixed_wing,monoplane,civilian,commercial_transport,,,nose and cockpit section only;Southwest livery,Frontiers of Flight Museum,on_display
 Boeing-Stearman,PT-17,,,Kaydet,,fixed_wing,biplane,military,trainer,,,serial not established,Frontiers of Flight Museum,on_display
@@ -11,7 +11,7 @@ Curtiss,JN-4,D,4072,Jenny,,fixed_wing,biplane,military,trainer,1918,,post-WWI ci
 de Havilland,DH.82,A,DE664,Tiger Moth,,fixed_wing,biplane,military,trainer,,,N82AK;ex-RAF then Australian register VH-PCC;museum-owned,Frontiers of Flight Museum,on_display
 E-Systems,XQM-93,A,,,,fixed_wing,monoplane,military,drone,,,LTV L-450;unmanned target and recon drone;serial not established,Frontiers of Flight Museum,on_display
 Glasflugel,BS-1,,,,,fixed_wing,monoplane,civilian,private,,,sailplane;registration not established,Frontiers of Flight Museum,on_display
-General Dynamics,F-16,B,75-0752,Fighting Falcon,,fixed_wing,monoplane,military,fighter,1975,,the pre-production YF-16B not a production F-16B;displayed outdoors in poor condition,Frontiers of Flight Museum,on_display
+General Dynamics,F-16,B,75-0752,Fighting Falcon,,fixed_wing,monoplane,military,fighter,1978,,the pre-production YF-16B not a production F-16B;displayed outdoors in poor condition,Frontiers of Flight Museum,on_display
 Grumman,EA-6,B,162228,Prowler,,fixed_wing,monoplane,military,electronic_warfare,,,wears VMAQ-2 Death Jesters markings;displayed outdoors,Frontiers of Flight Museum,on_display
 McDonnell Douglas,F/A-18,C,163435,Hornet,,fixed_wing,monoplane,military,fighter,,,Blue Angels number 4 livery;one of the last-batch Blue Angels legacy Hornets;a recent arrival absent from published lists,Frontiers of Flight Museum,on_display
 Stephens,Laser,200,N20JJ,,,fixed_wing,monoplane,civilian,experimental,,,aerobatic,Frontiers of Flight Museum,on_display
@@ -23,7 +23,7 @@ Meyer,Little Toot,,,Little Toot,,fixed_wing,biplane,civilian,experimental,,,amat
 Northrop,T-38,,,Talon,,fixed_wing,monoplane,military,trainer,,,serial not established,Frontiers of Flight Museum,on_display
 Piper,PA-20,,,Pacer,,fixed_wing,monoplane,civilian,private,,,least-corroborated entry in the collection,Frontiers of Flight Museum,on_display
 Pitts,S-2,B,,Special,,fixed_wing,biplane,civilian,private,,,registration not established,Frontiers of Flight Museum,on_display
-Republic,F-105,D,62-4346,Thunderchief,,fixed_wing,monoplane,military,ground_attack,1962,,displayed outdoors,Frontiers of Flight Museum,on_display
+Republic,F-105,D,62-4346,Thunderchief,,fixed_wing,monoplane,military,ground_attack,1963,,displayed outdoors,Frontiers of Flight Museum,on_display
 Ryan,PT-22,,,Recruit,,fixed_wing,monoplane,military,trainer,,,serial not established,Frontiers of Flight Museum,on_display
 Shoestring,F1,,NX24ML,Shoestring,Time Bandit,fixed_wing,monoplane,civilian,experimental,,,Formula One air racer,Frontiers of Flight Museum,on_display
 Sopwith,Pup,,,Pup,,fixed_wing,biplane,military,fighter,,,replica flagged as such by the museum,Frontiers of Flight Museum,on_display

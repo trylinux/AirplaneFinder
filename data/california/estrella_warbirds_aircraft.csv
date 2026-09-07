@@ -1,15 +1,15 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
 Hiller,OH-23,C,O-02259,Raven,,rotary_wing,,military,recon,1956,,OH-23;UH-12C;Raven,Estrella Warbirds Museum,on_display
 Bell,OH-13,G,N33507,Sioux,,rotary_wing,,military,recon,1952,,OH-13;H-13G;Sioux,Estrella Warbirds Museum,on_display
-Bell,UH-1,D,65-10054,Iroquois,,rotary_wing,,military,utility,1965,,UH-1;Huey,Estrella Warbirds Museum,on_display
+Bell,UH-1,D,65-10054,Iroquois,,rotary_wing,,military,utility,,,UH-1;Huey,Estrella Warbirds Museum,on_display
 Sikorsky,UH-34,D,148762,Seabat,,rotary_wing,,military,utility,,,UH-34;HUS-1;Seabat,Estrella Warbirds Museum,on_display
-Sikorsky,UH-19,D,55-4943,Chickasaw,,rotary_wing,,military,utility,1955,,UH-19;H-19;Chickasaw,Estrella Warbirds Museum,on_display
+Sikorsky,UH-19,D,55-4943,Chickasaw,,rotary_wing,,military,utility,1956,,UH-19;H-19;Chickasaw,Estrella Warbirds Museum,on_display
 Grumman,US-2,D,,Tracker,,fixed_wing,monoplane,military,utility,1953,,US-2;S2F;Stoof,Estrella Warbirds Museum,on_display
 Douglas,TA-4,J,158512,Skyhawk,,fixed_wing,monoplane,military,trainer,1968,,TA-4;Skyhawk;Scooter,Estrella Warbirds Museum,on_display
 Cessna,T-37,B,EN 322,Dragonfly,,fixed_wing,monoplane,military,trainer,1965,,T-37;Tweet,Estrella Warbirds Museum,on_display
 Beech,T-34,B,N34NL,Mentor,,fixed_wing,monoplane,military,trainer,1956,,T-34;Mentor,Estrella Warbirds Museum,on_display
 Beech,T-34,B,N45TB,Mentor,,fixed_wing,monoplane,military,trainer,1956,,T-34;Mentor,Estrella Warbirds Museum,on_display
-Lockheed,T-33,A,53-5850,Shooting Star,,fixed_wing,monoplane,military,trainer,1953,,T-33;T-Bird,Estrella Warbirds Museum,on_display
+Lockheed,T-33,A,53-5850,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-33;T-Bird,Estrella Warbirds Museum,on_display
 North American,T-28,B,8303,Trojan,,fixed_wing,monoplane,military,trainer,1958,,T-28;Trojan,Estrella Warbirds Museum,on_display
 North American,F-86,F,FU-608,Sabre,,fixed_wing,monoplane,military,test,1952,,F-86;Sabre,Estrella Warbirds Museum,on_display
 North American,F-86,F,FU-758,Sabre,,fixed_wing,monoplane,military,fighter,1952,,F-86;RF-86F;Sabre,Estrella Warbirds Museum,on_display

@@ -71,9 +71,9 @@ Stinson,L-5,,,Sentinel,,fixed_wing,monoplane,military,utility,1943,,L-5;Sentinel
 Vultee,BT-13,B,,Valiant,,fixed_wing,monoplane,military,trainer,,,BT-13B;Valiant;Vibrator,Yanks Air Museum,on_display
 Yokosuka,MXY-7,,,Ohka,,fixed_wing,monoplane,military,ground_attack,1944,,Ohka;MXY-7;Baka Bomb,Yanks Air Museum,on_display
 Beechcraft,35,N,,Bonanza,,fixed_wing,monoplane,civilian,private,,,N35;Bonanza,Yanks Air Museum,on_display
-Bell,AH-1,F,67-15614,Cobra,,rotary_wing,,military,ground_attack,1967,,AH-1F;Cobra,Yanks Air Museum,on_display
+Bell,AH-1,F,67-15614,Cobra,,rotary_wing,,military,ground_attack,,,AH-1F;Cobra,Yanks Air Museum,on_display
 Bell,OH-13,E,,Sioux,,rotary_wing,,military,recon,1946,,OH-13E;Sioux,Yanks Air Museum,on_display
-Bell,UH-1,H,63-08848,Iroquois,,rotary_wing,,military,utility,1963,,UH-1H;Huey;Iroquois,Yanks Air Museum,on_display
+Bell,UH-1,H,63-08848,Iroquois,,rotary_wing,,military,utility,,,UH-1H;Huey;Iroquois,Yanks Air Museum,on_display
 Boeing,B-52,F,,Stratofortress,,fixed_wing,monoplane,military,bomber,,,B-52F;Stratofortress;BUFF,Yanks Air Museum,on_display
 Canadair,CL-13,B,363,Sabre,,fixed_wing,monoplane,military,fighter,1951,,CL-13B;Sabre Mk6,Yanks Air Museum,on_display
 Cessna,172,A,,Skyhawk,,fixed_wing,monoplane,civilian,private,1960,,172A;Skyhawk,Yanks Air Museum,on_display

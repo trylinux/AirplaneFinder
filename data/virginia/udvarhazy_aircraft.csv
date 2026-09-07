@@ -103,7 +103,7 @@ Lockheed,T-33,A,53-5226,Shooting Star,,fixed_wing,monoplane,military,trainer,,,,
 Loening,OA-1,A,28312,,San Francisco,fixed_wing,biplane,military,recon,,,,Steven F. Udvar-Hazy Center,on_display
 Loudenslager,Laser 200,,N10LL,,,fixed_wing,monoplane,civilian,other,,,,Steven F. Udvar-Hazy Center,on_display
 Martin,B-26,B,41-31773,Marauder,Flak-Bait,fixed_wing,monoplane,military,bomber,1943,,,Steven F. Udvar-Hazy Center,on_display
-McDonnell Douglas,F-15,C,85-0114,Eagle,,fixed_wing,monoplane,military,fighter,1985,,,Steven F. Udvar-Hazy Center,on_display
+McDonnell Douglas,F-15,C,85-0114,Eagle,,fixed_wing,monoplane,military,fighter,,,,Steven F. Udvar-Hazy Center,on_display
 McDonnell Douglas,F/A-18,C,,Hornet,,fixed_wing,monoplane,military,fighter,,,,Steven F. Udvar-Hazy Center,on_display
 McDonnell Douglas,F-4,S,157307,Phantom II,,fixed_wing,monoplane,military,fighter,,,,Steven F. Udvar-Hazy Center,on_display
 Mikoyan-Gurevich,MiG-21,F-13,,,,fixed_wing,monoplane,military,fighter,,,Fishbed-C,Steven F. Udvar-Hazy Center,on_display
@@ -111,7 +111,7 @@ Mikoyan-Gurevich,MiG-15,Ji-2,4320,,,fixed_wing,monoplane,military,fighter,,,Fago
 Messerschmitt,Me 163,B-1a,191301,Komet,,fixed_wing,monoplane,military,fighter,,,,Steven F. Udvar-Hazy Center,on_display
 Nakajima,J1N,1S,7334,Gekko,,fixed_wing,monoplane,military,fighter,,,Irving,Steven F. Udvar-Hazy Center,on_display
 Nakajima,Kikka,,,Orange Blossom,,fixed_wing,monoplane,military,ground_attack,1945,,,Steven F. Udvar-Hazy Center,on_display
-North American,F-100,D,56-3440,Super Sabre,,fixed_wing,monoplane,military,fighter,1956,,,Steven F. Udvar-Hazy Center,on_display
+North American,F-100,D,56-3440,Super Sabre,,fixed_wing,monoplane,military,fighter,1957,,,Steven F. Udvar-Hazy Center,on_display
 North American,F-86,A,,Sabre,,fixed_wing,monoplane,military,fighter,,,,Steven F. Udvar-Hazy Center,on_display
 North American,P-51,C,,Mustang,Excalibur III,fixed_wing,monoplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
 North American Rockwell,Shrike Commander,500S,N500RA,,,fixed_wing,monoplane,civilian,private,1972,,,Steven F. Udvar-Hazy Center,on_display

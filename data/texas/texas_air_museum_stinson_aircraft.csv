@@ -1,7 +1,7 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
 Northrop,F-89,B,49-2434,Scorpion,,fixed_wing,monoplane,military,fighter,1951,,the oldest surviving F-89 and the first airframe converted to B standard;seen in pieces in 2011 so treat as incomplete,Texas Air Museum Stinson Chapter,under_restoration
-McDonnell,F-4,C,63-7415,Phantom II,,fixed_wing,monoplane,military,fighter,1963,,c/n 342;one of the first two production F-4Cs accepted by Tactical Air Command in November 1963;ex-Hawaii ANG 199th FIS;towed from Kelly to Stinson in 2001,Texas Air Museum Stinson Chapter,on_display
-McDonnell,F-101,B,59-0421,Voodoo,,fixed_wing,monoplane,military,fighter,1959,,c/n 745;ex-136th FIS New York ANG;preserved at Kelly AFB before Stinson,Texas Air Museum Stinson Chapter,on_display
+McDonnell,F-4,C,63-7415,Phantom II,,fixed_wing,monoplane,military,fighter,,,c/n 342;one of the first two production F-4Cs accepted by Tactical Air Command in November 1963;ex-Hawaii ANG 199th FIS;towed from Kelly to Stinson in 2001,Texas Air Museum Stinson Chapter,on_display
+McDonnell,F-101,B,59-0421,Voodoo,,fixed_wing,monoplane,military,fighter,,,c/n 745;ex-136th FIS New York ANG;preserved at Kelly AFB before Stinson,Texas Air Museum Stinson Chapter,on_display
 Sikorsky,H-34,,145728,Seahorse,,rotary_wing,,military,utility,1958,,c/n 58-0896;HUS-1A later UH-34E;orange NASA Project Mercury capsule-recovery scheme,Texas Air Museum Stinson Chapter,on_display
 Bleriot,XI,,,Bleriot XI,,fixed_wing,monoplane,civilian,experimental,,,full-scale replica fitted with an original 1909 Detroit Aero engine owned by Katherine Stinson;the engine is the genuine artifact not the airframe,Texas Air Museum Stinson Chapter,on_display
 Curtiss,Model D,,,,,fixed_wing,biplane,civilian,experimental,,,replica,Texas Air Museum Stinson Chapter,on_display

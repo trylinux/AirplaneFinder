@@ -1,3 +1,3 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
 Grumman,F-14,A,158999,Tomcat,,fixed_wing,monoplane,military,fighter,,,confirmed on the F-14 Association on-display list,NAS Fort Worth JRB,on_display
-North American,F-86,,53-1030,Sabre,,fixed_wing,monoplane,military,fighter,1953,,corroboration is thin so treat the serial as moderate confidence,NAS Fort Worth JRB,on_display
+North American,F-86,,53-1030,Sabre,,fixed_wing,monoplane,military,fighter,,,corroboration is thin so treat the serial as moderate confidence,NAS Fort Worth JRB,on_display

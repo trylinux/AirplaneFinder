@@ -1,6 +1,6 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
 North American,P-51,D,44-74739,Mustang,Ole Yeller,fixed_wing,monoplane,military,fighter,1944,,N51RH;ex-RCAF 9297;Cavalier conversion 1962;Bob Hoover's airshow Mustang;race 47;held by 51RH LLC,Legacy Flight Museum,on_display
-Cavalier,F-51,D,67-22579,Mustang,Mormon Mustang,fixed_wing,monoplane,military,fighter,1967,,N551BJ;ex-N251RM;ex-Bolivian AF FAB 519;Cavalier Mustang II;rebuilt after 2006 forced landing;held by 251RM LLC,Legacy Flight Museum,on_display
+Cavalier,F-51,D,67-22579,Mustang,Mormon Mustang,fixed_wing,monoplane,military,fighter,,,N551BJ;ex-N251RM;ex-Bolivian AF FAB 519;Cavalier Mustang II;rebuilt after 2006 forced landing;held by 251RM LLC,Legacy Flight Museum,on_display
 Bell,P-63,C,43-11223,Kingcobra,,fixed_wing,monoplane,military,fighter,1943,,N163FS;painted as 42-69021;restored by Frank Borman and Square 1 Aviation;held by 163FS LLC,Legacy Flight Museum,on_display
 de Havilland Canada,DHC-4,A,N6080,Caribou,,fixed_wing,monoplane,military,transport,1958,,c/n 002;second DHC-4 prototype;oldest flying Caribou;ex-Yankee Air Museum;flown to Rexburg 2021,Legacy Flight Museum,on_display
 McDonnell Douglas,A-4,,,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,BuNo not established;painted in Blue Angels colors;ex-AMARC;bought at auction 2013,Legacy Flight Museum,on_display

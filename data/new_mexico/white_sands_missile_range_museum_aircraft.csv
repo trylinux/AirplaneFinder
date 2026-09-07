@@ -1,7 +1,7 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Beechcraft,VC-6,A,66-15361,King Air,,fixed_wing,monoplane,military,transport,1966,,US Army;acquired 26 July 1966 and assigned Redstone Arsenal;used to transport Wernher von Braun;later a test platform;not the Lady Bird Special 66-7943,White Sands Missile Range Museum,on_display
-Bell,UH-1,M,66-0616,Iroquois,,rotary_wing,,military,test,1966,,US Army;a re-engined UH-1C;used on the range as a target and test platform;one source lists it as UH-1C,White Sands Missile Range Museum,on_display
-McDonnell Douglas,F-4,F,72-1135,Phantom II,,fixed_wing,monoplane,military,fighter,1972,,ex-Luftwaffe 37+25;c/n 4410;wears Holloman HO tail code from the German training wing;a German airframe not a USAF operational one,White Sands Missile Range Museum,on_display
+Beechcraft,VC-6,A,66-15361,King Air,,fixed_wing,monoplane,military,transport,,,US Army;acquired 26 July 1966 and assigned Redstone Arsenal;used to transport Wernher von Braun;later a test platform;not the Lady Bird Special 66-7943,White Sands Missile Range Museum,on_display
+Bell,UH-1,M,66-0616,Iroquois,,rotary_wing,,military,test,,,US Army;a re-engined UH-1C;used on the range as a target and test platform;one source lists it as UH-1C,White Sands Missile Range Museum,on_display
+McDonnell Douglas,F-4,F,72-1135,Phantom II,,fixed_wing,monoplane,military,fighter,,,ex-Luftwaffe 37+25;c/n 4410;wears Holloman HO tail code from the German training wing;a German airframe not a USAF operational one,White Sands Missile Range Museum,on_display
 Gyrodyne,QH-50,A,,DASH,,rotary_wing,,military,drone,,,BuNo not published;one source lists it as OH-50D,White Sands Missile Range Museum,on_display
 Peenemunde,V-2,,,Vergeltungswaffe 2,,missile_rocket,,military,ballistic,,,German;a separate V-2 building holds a nearly intact cutaway example,White Sands Missile Range Museum,on_display
 Chrysler,PGM-11,,,Redstone,,missile_rocket,,military,ballistic,,,inert,White Sands Missile Range Museum,on_display

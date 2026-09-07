@@ -1,8 +1,8 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Lockheed,T-33,A,53-5219,Shooting Star,,fixed_wing,monoplane,military,trainer,1953,,c/n 580-8558;ex-N1040Z,Texas Air Museum Caprock Chapter,on_display
+Lockheed,T-33,A,53-5219,Shooting Star,,fixed_wing,monoplane,military,trainer,,,c/n 580-8558;ex-N1040Z,Texas Air Museum Caprock Chapter,on_display
 Grumman,F9F,8,131063,Cougar,,fixed_wing,monoplane,military,fighter,1954,,c/n 1C;ex-Pate Museum of Transportation;NNAM loan;stripped to bare metal,Texas Air Museum Caprock Chapter,under_restoration
-McDonnell,F-101,B,59-0429,Voodoo,,fixed_wing,monoplane,military,fighter,1959,,c/n 753;ex-136th FIS New York ANG at Niagara Falls,Texas Air Museum Caprock Chapter,on_display
-Republic,F-105,D,61-0093,Thunderchief,,fixed_wing,monoplane,military,ground_attack,1961,,c/n D288;49th TFW then 388th and 355th TFW then Kansas and DC ANG;visible Vietnam battle-damage patches;Aerial Visuals also lists 61-0993 which is a transposition duplicate,Texas Air Museum Caprock Chapter,on_display
+McDonnell,F-101,B,59-0429,Voodoo,,fixed_wing,monoplane,military,fighter,,,c/n 753;ex-136th FIS New York ANG at Niagara Falls,Texas Air Museum Caprock Chapter,on_display
+Republic,F-105,D,61-0093,Thunderchief,,fixed_wing,monoplane,military,ground_attack,1962,,c/n D288;49th TFW then 388th and 355th TFW then Kansas and DC ANG;visible Vietnam battle-damage patches;Aerial Visuals also lists 61-0993 which is a transposition duplicate,Texas Air Museum Caprock Chapter,on_display
 North American Rockwell,T-2,C,158599,Buckeye,,fixed_wing,monoplane,military,trainer,1970,,NNAM loan,Texas Air Museum Caprock Chapter,on_display
 Grumman,OV-1,B,N512NA,Mohawk,,fixed_wing,monoplane,civilian,test,1961,,c/n 39B;NASA 518;the only OV-1 ever painted in NASA colours;flown by NASA Dryden for airspeed and stall-warning research;demilitarised,Texas Air Museum Caprock Chapter,on_display
 McDonnell Douglas,F-4,S,157293,Phantom II,,fixed_wing,monoplane,military,fighter,1969,,built as an F-4J;presumed NNAM loan,Texas Air Museum Caprock Chapter,on_display

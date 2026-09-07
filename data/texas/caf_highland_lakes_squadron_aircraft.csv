@@ -3,7 +3,7 @@ Douglas,C-47,B,44-77109,Skytrain,Texas Zephyr,fixed_wing,monoplane,military,tran
 North American,SNJ,4,N7024C,Texan,,fixed_wing,monoplane,military,trainer,1943,,msn 88-13517;coded 6F1,CAF Highland Lakes Squadron,on_display
 Fairchild,PT-19,,N6072C,Cornell,,fixed_wing,monoplane,military,trainer,,,M-62A-3;coded 34;FAA serial recorded as 42-65935 with a 1954 rebuild date,CAF Highland Lakes Squadron,on_display
 Ryan,L-17,,N444AC,Navion,,fixed_wing,monoplane,military,utility,1948,,msn NAV-4-1463,CAF Highland Lakes Squadron,on_display
-Cessna,T-37,B,59-0383,Tweet,,fixed_wing,monoplane,military,trainer,1959,,marked RA;static display,CAF Highland Lakes Squadron,on_display
-North American,F-100,F,56-3990,Super Sabre,,fixed_wing,monoplane,military,fighter,1956,,marked TX;static display,CAF Highland Lakes Squadron,on_display
-Northrop,AT-38,B,60-0594,Talon,,fixed_wing,monoplane,military,trainer,1960,,marked HM;static display,CAF Highland Lakes Squadron,on_display
-Vought,A-7,D,72-0188,Corsair II,,fixed_wing,monoplane,military,ground_attack,1972,,marked PT;static display,CAF Highland Lakes Squadron,on_display
+Cessna,T-37,B,59-0383,Tweet,,fixed_wing,monoplane,military,trainer,,,marked RA;static display,CAF Highland Lakes Squadron,on_display
+North American,F-100,F,56-3990,Super Sabre,,fixed_wing,monoplane,military,fighter,1958,,marked TX;static display,CAF Highland Lakes Squadron,on_display
+Northrop,AT-38,B,60-0594,Talon,,fixed_wing,monoplane,military,trainer,,,marked HM;static display,CAF Highland Lakes Squadron,on_display
+Vought,A-7,D,72-0188,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,marked PT;static display,CAF Highland Lakes Squadron,on_display

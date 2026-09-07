@@ -1,14 +1,14 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Bell,UH-1,H,64-14142,Iroquois,,rotary_wing,,military,utility,1964,,,Texas Military Forces Museum,on_display
-Bell,UH-1,M,68-16189,Iroquois,,rotary_wing,,military,ground_attack,1968,,variant disputed between UH-1H and UH-1M,Texas Military Forces Museum,on_display
-Bell,AH-1,G,68-15153,Cobra,,rotary_wing,,military,ground_attack,1968,,one source renders the serial 66-15153 which is inconsistent with the AH-1G block,Texas Military Forces Museum,on_display
+Bell,UH-1,H,64-14142,Iroquois,,rotary_wing,,military,utility,,,,Texas Military Forces Museum,on_display
+Bell,UH-1,M,68-16189,Iroquois,,rotary_wing,,military,ground_attack,,,variant disputed between UH-1H and UH-1M,Texas Military Forces Museum,on_display
+Bell,AH-1,G,68-15153,Cobra,,rotary_wing,,military,ground_attack,,,one source renders the serial 66-15153 which is inconsistent with the AH-1G block,Texas Military Forces Museum,on_display
 Bell,OH-58,,,Kiowa,,rotary_wing,,military,recon,,,marked 0-20486 which is a buzz-number style rendering and not a valid serial as written,Texas Military Forces Museum,on_display
 Hiller,OH-23,,116337,Raven,,rotary_wing,,military,trainer,,,,Texas Military Forces Museum,on_display
 Sikorsky,H-34,,71726,Choctaw,,rotary_wing,,military,utility,,,claimed to be an ex-Army One aircraft for President Kennedy and later Texas National Guard for President Johnson;provenance needs verification,Texas Military Forces Museum,on_display
-General Dynamics,F-16,C,84-1393,Fighting Falcon,,fixed_wing,monoplane,military,fighter,1984,,pylon-mounted;marked EF for the 147th Fighter Wing,Texas Military Forces Museum,on_display
-McDonnell,F-4,C,64-0712,Phantom II,,fixed_wing,monoplane,military,fighter,1964,,pylon-mounted,Texas Military Forces Museum,on_display
-North American,F-86,D,52-3770,Sabre,,fixed_wing,monoplane,military,fighter,1952,,Texas ANG markings;displayed at the Austin Air National Guard headquarters portion of the site,Texas Military Forces Museum,on_display
-Republic,F-84,,49-2285,Thunderjet,,fixed_wing,monoplane,military,ground_attack,1949,,painted as FS-189 which is not its identity,Texas Military Forces Museum,on_display
+General Dynamics,F-16,C,84-1393,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,,pylon-mounted;marked EF for the 147th Fighter Wing,Texas Military Forces Museum,on_display
+McDonnell,F-4,C,64-0712,Phantom II,,fixed_wing,monoplane,military,fighter,1965,,pylon-mounted,Texas Military Forces Museum,on_display
+North American,F-86,D,52-3770,Sabre,,fixed_wing,monoplane,military,fighter,,,Texas ANG markings;displayed at the Austin Air National Guard headquarters portion of the site,Texas Military Forces Museum,on_display
+Republic,F-84,,49-2285,Thunderjet,,fixed_wing,monoplane,military,ground_attack,,,painted as FS-189 which is not its identity,Texas Military Forces Museum,on_display
 Piper,L-4,,18573,Grasshopper,,fixed_wing,monoplane,military,utility,,,,Texas Military Forces Museum,on_display
 Piper,L-4,,,Grasshopper,,fixed_wing,monoplane,military,utility,,,second example;serial not established,Texas Military Forces Museum,on_display
 Piper,L-21,,,Super Cub,,fixed_wing,monoplane,military,utility,,,serial not established,Texas Military Forces Museum,on_display

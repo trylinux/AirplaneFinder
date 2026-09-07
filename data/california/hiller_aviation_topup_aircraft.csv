@@ -50,7 +50,7 @@ Pitts,S-1,C,,Special,,fixed_wing,biplane,civilian,private,1985,,Pitts Special,Hi
 Boeing,Condor,,,,,fixed_wing,monoplane,military,recon,1988,,Condor;UAV,Hiller Aviation Museum,on_display
 Bright Star,Swift,,,,,fixed_wing,monoplane,civilian,experimental,1989,,Swift;glider,Hiller Aviation Museum,on_display
 Trek Aerospace,SoloTrek,,,,,rotary_wing,,civilian,experimental,2001,,SoloTrek;XFV,Hiller Aviation Museum,on_display
-General Atomics,MQ-1,B,00-3069,Predator,,fixed_wing,monoplane,military,recon,2000,,MQ-1;RQ-1;Predator,Hiller Aviation Museum,on_display
+General Atomics,MQ-1,B,00-3069,Predator,,fixed_wing,monoplane,military,recon,,,MQ-1;RQ-1;Predator,Hiller Aviation Museum,on_display
 Scaled Composites,SpaceShipOne,,,,,spacecraft,,civilian,space,,,SpaceShipOne;replica,Hiller Aviation Museum,on_display
 Kitty Hawk,Flyer,,,,,rotary_wing,,civilian,experimental,2017,,Kitty Hawk Flyer;eVTOL,Hiller Aviation Museum,on_display
 Opener,BlackFly,,,,,rotary_wing,,civilian,experimental,2017,,BlackFly;eVTOL,Hiller Aviation Museum,on_display

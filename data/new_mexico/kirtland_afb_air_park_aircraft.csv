@@ -1,6 +1,6 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
 Lockheed,F-80,B,45-8501,Shooting Star,,fixed_wing,monoplane,military,fighter,1946,,pylon-mounted;previously displayed at Chanute AFB,Kirtland AFB Air Park,on_display
 North American,F-100,A,53-1532,Super Sabre,,fixed_wing,monoplane,military,fighter,1954,,c/n 192-27;NMUSAF loan to the 150th;withdrawn from use 1 September 1966;concrete pylon,Kirtland AFB Air Park,on_display
-Vought,A-7,D,72-0177,Corsair II,,fixed_wing,monoplane,military,ground_attack,1972,,concrete pylon;wears 72-0245 which is not its serial;confirmed on site October 2022,Kirtland AFB Air Park,on_display
+Vought,A-7,D,72-0177,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,concrete pylon;wears 72-0245 which is not its serial;confirmed on site October 2022,Kirtland AFB Air Park,on_display
 Mikoyan-Gurevich,MiG-21,F-13,,Fishbed,,fixed_wing,monoplane,military,fighter,,,serial not established;ex-Indonesian Air Force;wears 150 red and formerly 562 or Red 13 which are markings not serials,Kirtland AFB Air Park,on_display
 North American,P-51,D,,Mustang,,fixed_wing,monoplane,military,fighter,,,full-scale reproduction;claimed as 45-11400 but that serial appears in no surviving-Mustang list;New Mexico ANG colours;pylon-mounted,Kirtland AFB Air Park,on_display

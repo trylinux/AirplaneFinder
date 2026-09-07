@@ -1,36 +1,36 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
 Rockwell,B-1,B,83-0065,Lancer,,fixed_wing,monoplane,military,bomber,1985,,Desert Fox and Enduring Freedom veteran;carried as GB-1B ground-instructional in USAF records,Dyess Linear Air Park,on_display
-Boeing,B-52,D,56-0685,Stratofortress,,fixed_wing,monoplane,military,bomber,1956,,B-52D-40-BW;Linebacker II with the 96th BW;took SAM damage April 1972,Dyess Linear Air Park,on_display
+Boeing,B-52,D,56-0685,Stratofortress,,fixed_wing,monoplane,military,bomber,1957,,B-52D-40-BW;Linebacker II with the 96th BW;took SAM damage April 1972,Dyess Linear Air Park,on_display
 Boeing,B-17,G,44-85599,Flying Fortress,,fixed_wing,monoplane,military,bomber,1944,,DB-17P drone-director conversion;never saw combat;wears 337th BS markings that are not its service history,Dyess Linear Air Park,on_display
-Boeing,B-47,E,52-0412,Stratojet,,fixed_wing,monoplane,military,electronic_warfare,1952,,EB-47E;dual identity as US Navy BuNo 24120;Navy ECM testbed retired December 1977,Dyess Linear Air Park,on_display
+Boeing,B-47,E,52-0412,Stratojet,,fixed_wing,monoplane,military,electronic_warfare,1953,,EB-47E;dual identity as US Navy BuNo 24120;Navy ECM testbed retired December 1977,Dyess Linear Air Park,on_display
 Douglas,A-26,C,44-35913,Invader,,fixed_wing,monoplane,military,ground_attack,1944,,converted to an On Mark Marketeer executive configuration;ex-Biggs AFB then a civilian testbed,Dyess Linear Air Park,on_display
-Douglas,B-66,B,53-0466,Destroyer,,fixed_wing,monoplane,military,recon,1953,,RB-66B-DL;one of about seven survivors,Dyess Linear Air Park,on_display
-Martin,B-57,B,52-1504,Canberra,,fixed_wing,monoplane,military,electronic_warfare,1952,,EB-57B Night Intruder;English Electric design built by Martin;retired December 1981,Dyess Linear Air Park,on_display
-Boeing,KC-135,A,56-3639,Stratotanker,,fixed_wing,monoplane,military,tanker,1956,,KC-135A-BN;38 Desert Shield and Desert Storm sorties;retired June 1992,Dyess Linear Air Park,on_display
-Boeing,KC-97,G,53-0282,Stratofreighter,,fixed_wing,monoplane,military,tanker,1953,,KC-97G-29-BO displayed as a KC-97L;the base booklet misprints this serial as the KC-135's,Dyess Linear Air Park,on_display
-Lockheed,C-130,A,55-0023,Hercules,City of Ardmore,fixed_wing,monoplane,military,transport,1955,,NC-130A;the first operational C-130;Vietnam combat damage,Dyess Linear Air Park,on_display
-Lockheed,C-130,E,69-6579,Hercules,Spirit of Abilene,fixed_wing,monoplane,military,transport,1969,,GC-130E;decommissioned 2004,Dyess Linear Air Park,on_display
-Fairchild,C-123,K,54-0604,Provider,,fixed_wing,monoplane,military,transport,1954,,retired August 1981,Dyess Linear Air Park,on_display
-de Havilland Canada,C-7,A,57-3082,Caribou,,fixed_wing,monoplane,military,transport,1957,,YC-7A;ex-Army CV-2B;a Golden Knights platform;dedicated May 1992,Dyess Linear Air Park,on_display
+Douglas,B-66,B,53-0466,Destroyer,,fixed_wing,monoplane,military,recon,,,RB-66B-DL;one of about seven survivors,Dyess Linear Air Park,on_display
+Martin,B-57,B,52-1504,Canberra,,fixed_wing,monoplane,military,electronic_warfare,1954,,EB-57B Night Intruder;English Electric design built by Martin;retired December 1981,Dyess Linear Air Park,on_display
+Boeing,KC-135,A,56-3639,Stratotanker,,fixed_wing,monoplane,military,tanker,1958,,KC-135A-BN;38 Desert Shield and Desert Storm sorties;retired June 1992,Dyess Linear Air Park,on_display
+Boeing,KC-97,G,53-0282,Stratofreighter,,fixed_wing,monoplane,military,tanker,1955,,KC-97G-29-BO displayed as a KC-97L;the base booklet misprints this serial as the KC-135's,Dyess Linear Air Park,on_display
+Lockheed,C-130,A,55-0023,Hercules,City of Ardmore,fixed_wing,monoplane,military,transport,1956,,NC-130A;the first operational C-130;Vietnam combat damage,Dyess Linear Air Park,on_display
+Lockheed,C-130,E,69-6579,Hercules,Spirit of Abilene,fixed_wing,monoplane,military,transport,,,GC-130E;decommissioned 2004,Dyess Linear Air Park,on_display
+Fairchild,C-123,K,54-0604,Provider,,fixed_wing,monoplane,military,transport,1955,,retired August 1981,Dyess Linear Air Park,on_display
+de Havilland Canada,C-7,A,57-3082,Caribou,,fixed_wing,monoplane,military,transport,1959,,YC-7A;ex-Army CV-2B;a Golden Knights platform;dedicated May 1992,Dyess Linear Air Park,on_display
 Douglas,R4D,6S,42-108808,Skytrain,,fixed_wing,monoplane,military,transport,1942,,US Navy BuNo 17106;wears D-Day invasion stripes that are not its service history;last flew with US Customs,Dyess Linear Air Park,on_display
-Convair,T-29,C,52-1175,Samaritan,,fixed_wing,monoplane,military,trainer,1952,,Harlingen and James Connally AFB;retired March 1975,Dyess Linear Air Park,on_display
+Convair,T-29,C,52-1175,Samaritan,,fixed_wing,monoplane,military,trainer,1954,,Harlingen and James Connally AFB;retired March 1975,Dyess Linear Air Park,on_display
 Grumman,HU-16,E,7251,Albatross,,fixed_wing,monoplane,military,search_rescue,1951,,US Coast Guard identity 7251;ex-USAF 51-7251;USCG service to July 1982,Dyess Linear Air Park,on_display
-General Dynamics,F-111,A,67-0057,Aardvark,,fixed_wing,monoplane,military,bomber,1967,,GF-111A;wears 9th Bomb Squadron commander's markings,Dyess Linear Air Park,on_display
-McDonnell Douglas,F-15,A,76-0067,Eagle,,fixed_wing,monoplane,military,fighter,1976,,a Sheppard AFB maintenance training aid listed in the base booklet but absent from other surveys,Dyess Linear Air Park,on_display
+General Dynamics,F-111,A,67-0057,Aardvark,,fixed_wing,monoplane,military,bomber,1968,,GF-111A;wears 9th Bomb Squadron commander's markings,Dyess Linear Air Park,on_display
+McDonnell Douglas,F-15,A,76-0067,Eagle,,fixed_wing,monoplane,military,fighter,,,a Sheppard AFB maintenance training aid listed in the base booklet but absent from other surveys,Dyess Linear Air Park,on_display
 Republic,F-105,D,59-1738,Thunderchief,,fixed_wing,monoplane,military,ground_attack,1960,,F-105D-5-RE;delivered November 1960 and retired August 1981,Dyess Linear Air Park,on_display
-McDonnell,F-101,F,57-0287,Voodoo,,fixed_wing,monoplane,military,fighter,1957,,TF-101B dual-control;the base booklet calls it an F-101B,Dyess Linear Air Park,on_display
-Lockheed,F-104,A,56-0748,Starfighter,,fixed_wing,monoplane,military,fighter,1956,,F-104A-10-LO;Edwards Flight Test Center 1957 to 1967;retired December 1972,Dyess Linear Air Park,on_display
-Northrop,F-89,H,54-0298,Scorpion,,fixed_wing,monoplane,military,fighter,1954,,F-89H-1-NO not an F-89J as often listed,Dyess Linear Air Park,on_display
-North American,F-86,L,53-4035,Sabre,,fixed_wing,monoplane,military,fighter,1953,,F-86L-60-NA;331st FIS at Webb AFB;retired June 1960,Dyess Linear Air Park,on_display
-North American,F-100,C,54-1752,Super Sabre,,fixed_wing,monoplane,military,fighter,1954,,F-100C-1-NA;often misprinted as 54-1753,Dyess Linear Air Park,on_display
-Republic,F-84,F,51-9364,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,1951,,F-84F-25-GK;Texas ANG at Kelly AFB;retired March 1971,Dyess Linear Air Park,on_display
-Republic,RF-84,F,51-11293,Thunderflash,,fixed_wing,monoplane,military,recon,1951,,RF-84F-15-RE;71st SRW at Larson AFB;retired December 1971,Dyess Linear Air Park,on_display
+McDonnell,F-101,F,57-0287,Voodoo,,fixed_wing,monoplane,military,fighter,,,TF-101B dual-control;the base booklet calls it an F-101B,Dyess Linear Air Park,on_display
+Lockheed,F-104,A,56-0748,Starfighter,,fixed_wing,monoplane,military,fighter,1957,,F-104A-10-LO;Edwards Flight Test Center 1957 to 1967;retired December 1972,Dyess Linear Air Park,on_display
+Northrop,F-89,H,54-0298,Scorpion,,fixed_wing,monoplane,military,fighter,1956,,F-89H-1-NO not an F-89J as often listed,Dyess Linear Air Park,on_display
+North American,F-86,L,53-4035,Sabre,,fixed_wing,monoplane,military,fighter,1955,,F-86L-60-NA;331st FIS at Webb AFB;retired June 1960,Dyess Linear Air Park,on_display
+North American,F-100,C,54-1752,Super Sabre,,fixed_wing,monoplane,military,fighter,1955,,F-100C-1-NA;often misprinted as 54-1753,Dyess Linear Air Park,on_display
+Republic,F-84,F,51-9364,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,1954,,F-84F-25-GK;Texas ANG at Kelly AFB;retired March 1971,Dyess Linear Air Park,on_display
+Republic,RF-84,F,51-11293,Thunderflash,,fixed_wing,monoplane,military,recon,1955,,RF-84F-15-RE;71st SRW at Larson AFB;retired December 1971,Dyess Linear Air Park,on_display
 Cessna,O-2,A,67-21326,Skymaster,,fixed_wing,monoplane,military,recon,1967,,Da Nang and Cam Ranh 1967 to 1971;visible combat damage,Dyess Linear Air Park,on_display
-Lockheed,T-33,A,51-4300,Shooting Star,,fixed_wing,monoplane,military,trainer,1951,,T-33A-1-LO;Webb AFB;retired September 1961,Dyess Linear Air Park,on_display
-Northrop,T-38,A,60-0592,Talon,,fixed_wing,monoplane,military,trainer,1960,,T-38A-35-NO;wears Aggressor camouflage which does not reflect its role;a Sheppard maintenance trainer,Dyess Linear Air Park,on_display
-Cessna,T-37,B,54-2734,Tweet,,fixed_wing,monoplane,military,trainer,1954,,GT-37B;ex-Edwards research airframe with under 1500 hours,Dyess Linear Air Park,on_display
+Lockheed,T-33,A,51-4300,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-33A-1-LO;Webb AFB;retired September 1961,Dyess Linear Air Park,on_display
+Northrop,T-38,A,60-0592,Talon,,fixed_wing,monoplane,military,trainer,,,T-38A-35-NO;wears Aggressor camouflage which does not reflect its role;a Sheppard maintenance trainer,Dyess Linear Air Park,on_display
+Cessna,T-37,B,54-2734,Tweet,,fixed_wing,monoplane,military,trainer,,,GT-37B;ex-Edwards research airframe with under 1500 hours,Dyess Linear Air Park,on_display
 North American,AT-6,F,44-81819,Texan,,fixed_wing,monoplane,military,trainer,1945,,delivered March 1945;a film aircraft used in Tora Tora Tora and Midway,Dyess Linear Air Park,on_display
-North American,T-39,A,61-0634,Sabreliner,,fixed_wing,monoplane,military,utility,1961,,CT-39A;Randolph AFB;arrived Dyess October 1985,Dyess Linear Air Park,on_display
+North American,T-39,A,61-0634,Sabreliner,,fixed_wing,monoplane,military,utility,1962,,CT-39A;Randolph AFB;arrived Dyess October 1985,Dyess Linear Air Park,on_display
 Beechcraft,T-34,B,140810,Mentor,,fixed_wing,monoplane,military,trainer,1956,,US Navy BuNo;delivered February 1956 and retired September 1960 at 1123 hours,Dyess Linear Air Park,on_display
 Curtiss,P-40,E,,Warhawk,Kibosh,fixed_wing,monoplane,military,fighter,,,full-scale mockup and film prop from Tora Tora Tora;honours base namesake Lt Col William E. Dyess;represents his P-40E not a P-40N;the booklet labels it a mock display,Dyess Linear Air Park,on_display
 North American,AGM-28,A,,Hound Dog,,missile_rocket,,military,air_to_surface,,,B-52-carried standoff missile;serial not established,Dyess Linear Air Park,on_display

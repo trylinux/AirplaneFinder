@@ -54,9 +54,9 @@ Beechcraft,T-34,C-1,N93GR,Turbo Mentor,,fixed_wing,monoplane,military,trainer,19
 Beechcraft,T-34,C-1,N903PA,Turbo Mentor,,fixed_wing,monoplane,military,trainer,1978,,c/n GM-60,Mid America Flight Museum,on_display
 Beechcraft,T-34,C-1,N80GR,Turbo Mentor,,fixed_wing,monoplane,military,trainer,1978,,c/n GM-92,Mid America Flight Museum,on_display
 Beechcraft,T-34,C-1,N6925Y,Turbo Mentor,,fixed_wing,monoplane,military,trainer,1978,,c/n GM-94,Mid America Flight Museum,on_display
-Bell,UH-1,H,67-17238,Iroquois,,rotary_wing,,military,utility,1967,,N443ZB,Mid America Flight Museum,on_display
-Bell,UH-1,H,68-15419,Iroquois,,rotary_wing,,military,utility,1968,,N4439B;registration pending at Mount Pleasant so probably a recent arrival,Mid America Flight Museum,on_display
-Bell,TAH-1,P,76-22599,Cobra,,rotary_wing,,military,ground_attack,1976,,N599HF,Mid America Flight Museum,on_display
+Bell,UH-1,H,67-17238,Iroquois,,rotary_wing,,military,utility,,,N443ZB,Mid America Flight Museum,on_display
+Bell,UH-1,H,68-15419,Iroquois,,rotary_wing,,military,utility,,,N4439B;registration pending at Mount Pleasant so probably a recent arrival,Mid America Flight Museum,on_display
+Bell,TAH-1,P,76-22599,Cobra,,rotary_wing,,military,ground_attack,,,N599HF,Mid America Flight Museum,on_display
 Hughes,369,A,N387RF,,,rotary_wing,,civilian,utility,1969,,c/n 301381,Mid America Flight Museum,on_display
 Continental Copters,47,G,N6356X,,,rotary_wing,,civilian,utility,1963,,c/n CCI-563,Mid America Flight Museum,on_display
 ICA-Brasov,IS-28,B2,N777FV,,,fixed_wing,monoplane,civilian,private,1977,,c/n 102;sailplane,Mid America Flight Museum,on_display

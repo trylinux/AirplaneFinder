@@ -23,14 +23,14 @@ Boeing,CH-47,D,91-00261,Chinook,My Old Lady,rotary_wing,,military,transport,,,,M
 Boeing,Inertial Upper Stage,,,,,spacecraft,,civilian,space,1982,,IUS,Museum of Flight,on_display
 Boeing,Lunar Roving Vehicle,,,,,spacecraft,,civilian,space,1971,,LRV mock-up,Museum of Flight,on_display
 Boeing,Model 40,B,,,,fixed_wing,biplane,civilian,freighter,2007,,reproduction,Museum of Flight,on_display
-Boeing,B-47,E,51-7066,Stratojet,,fixed_wing,monoplane,military,bomber,1951,,WB-47E,Museum of Flight,on_display
+Boeing,B-47,E,51-7066,Stratojet,,fixed_wing,monoplane,military,bomber,1953,,WB-47E,Museum of Flight,on_display
 Bowers,Fly Baby,1A,N4339,,,fixed_wing,monoplane,civilian,private,1971,,,Museum of Flight,on_display
 Bowers,Fly Baby,,N500F,,,fixed_wing,monoplane,civilian,private,1962,,prototype,Museum of Flight,under_restoration
 Bowlus,BA-100,,N25605,Baby Albatross,,fixed_wing,monoplane,civilian,other,1940,,,Museum of Flight,under_restoration
 Canadair,CL-13,B,23363,Sabre,,fixed_wing,monoplane,military,fighter,1954,,N8686F;Mk.6,Museum of Flight,on_display
 Caproni,Ca.20,,,,,fixed_wing,monoplane,military,fighter,1914,,only one built,Museum of Flight,on_display
 Cessna,CG-2,,N178V,,,fixed_wing,monoplane,civilian,other,1930,,,Museum of Flight,on_display
-Cessna,O-2,A,67-21363,Super Skymaster,,fixed_wing,monoplane,military,recon,1967,,N18BB,Museum of Flight,under_restoration
+Cessna,O-2,A,67-21363,Super Skymaster,,fixed_wing,monoplane,military,recon,,,N18BB,Museum of Flight,under_restoration
 Chanute-Herring,Biplane Glider,,,,,fixed_wing,biplane,civilian,experimental,1996,,reproduction of 1896 design,Museum of Flight,on_display
 Aerospatiale,Concorde,,G-BOAG,,Alpha Golf,fixed_wing,monoplane,civilian,commercial_transport,1978,,Aerospatiale/BAC,Museum of Flight,on_display
 Curtiss,JN-4,D,,Jenny,,fixed_wing,biplane,military,trainer,1917,,reproduction,Museum of Flight,on_display
@@ -72,7 +72,7 @@ Lockheed,M-21,,60-6940,Blackbird,,fixed_wing,monoplane,military,recon,1963,,,Mus
 Lockheed Martin,RQ-3,A,,Dark Star,,fixed_wing,monoplane,military,drone,1996,,Tier III Minus,Museum of Flight,on_display
 Lockheed,Model 10,E,N72GT,Electra,,fixed_wing,monoplane,civilian,commercial_transport,1935,,NC14900,Museum of Flight,on_display
 Lockheed,P-38,L,44-53097,Lightning,,fixed_wing,monoplane,military,fighter,1944,,NL3JB,Museum of Flight,on_display
-Lockheed,YO-3,A,69-18005,Quiet Star,,fixed_wing,monoplane,military,recon,1969,,,Museum of Flight,on_display
+Lockheed,YO-3,A,69-18005,Quiet Star,,fixed_wing,monoplane,military,recon,1968,,,Museum of Flight,on_display
 Messerschmitt,Bf 109,E-3,NX109J,,,fixed_wing,monoplane,military,fighter,1940,,composite airframe with HA-1112 components,Museum of Flight,on_display
 North American,P-51,D,44-72423,Mustang,,fixed_wing,monoplane,military,fighter,1944,,identity stated as likely,Museum of Flight,on_display
 Nieuport,24,bis,N24RL,,Zigomar,fixed_wing,biplane,military,fighter,1992,,reproduction,Museum of Flight,on_display
@@ -86,7 +86,7 @@ Vought,F8U,XF8U-1,138899,Crusader,,fixed_wing,monoplane,military,fighter,1955,,X
 Mikoyan-Gurevich,MiG-17,F,,,,fixed_wing,monoplane,military,fighter,1952,,Fresco-C;ex-Royal Moroccan Air Force,Museum of Flight,on_display
 Mikoyan-Gurevich,MiG-21,PFM,5411,,,fixed_wing,monoplane,military,fighter,1967,,Fishbed-F,Museum of Flight,on_display
 Mikoyan-Gurevich,MiG-15,bis,124079,,,fixed_wing,monoplane,military,fighter,1950,,ex-PLAAF,Museum of Flight,on_display
-McDonnell,F-4,C,64-0776,Phantom II,,fixed_wing,monoplane,military,fighter,1964,,on loan from NMUSAF,Museum of Flight,on_display
+McDonnell,F-4,C,64-0776,Phantom II,,fixed_wing,monoplane,military,fighter,1965,,on loan from NMUSAF,Museum of Flight,on_display
 McDonnell Douglas,F/A-18,A,163106,Hornet,,fixed_wing,monoplane,military,fighter,1978,,ex-Blue Angels;on loan from NNAM,Museum of Flight,on_display
 Supermarine,Spitfire,Mk.IX,N521R,,,fixed_wing,monoplane,military,fighter,1944,,OO-ARF;on loan from Apex Foundation,Museum of Flight,on_display
 Stearman,PT-13,A,N8FL,Kaydet,,fixed_wing,biplane,military,trainer,1937,,,Museum of Flight,on_display

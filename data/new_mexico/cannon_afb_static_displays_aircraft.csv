@@ -2,12 +2,12 @@ manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wi
 Republic,F-84,F,51-1810,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,1952,,buzz number FS-810;gate guard,Cannon AFB Static Displays,on_display
 McDonnell,F-101,C,56-0187,Voodoo,,fixed_wing,monoplane,military,recon,1957,,RF-101C;wears 32426;currently dismantled;the reported JF-101A 53-2426 is this airframe's marking,Cannon AFB Static Displays,in_storage
 North American,F-100,D,56-2940,Super Sabre,,fixed_wing,monoplane,military,ground_attack,1957,,code CD;the reported F-100A 56141 is this airframe's tail marking,Cannon AFB Static Displays,on_display
-Lockheed,T-33,A,58-0503,Shooting Star,,fixed_wing,monoplane,military,trainer,1958,,last confirmed on site October 2012,Cannon AFB Static Displays,on_display
+Lockheed,T-33,A,58-0503,Shooting Star,,fixed_wing,monoplane,military,trainer,,,last confirmed on site October 2012,Cannon AFB Static Displays,on_display
 General Dynamics,F-111,A,63-9771,Aardvark,,fixed_wing,monoplane,military,bomber,1967,,code CC,Cannon AFB Static Displays,on_display
 General Dynamics,EF-111,A,66-0016,Raven,,fixed_wing,monoplane,military,electronic_warfare,1967,,c/n A1-34/EF-10;code CC;credited with forcing an Iraqi Mirage F1 into the ground 17 January 1991;moved 2013 to the Joe Cannon Estates entrance,Cannon AFB Static Displays,on_display
-Lockheed,MC-130,E,64-0523,Hercules,,fixed_wing,monoplane,military,transport,1964,,Combat Talon I,Cannon AFB Static Displays,on_display
-Lockheed,MC-130,P,65-0991,Hercules,,fixed_wing,monoplane,military,tanker,1965,,Combat Shadow,Cannon AFB Static Displays,on_display
-Lockheed,AC-130,H,69-6572,Hercules,,fixed_wing,monoplane,military,ground_attack,1969,,Spectre;has an interpretive plaque,Cannon AFB Static Displays,on_display
-Lockheed,AC-130,W,88-1308,Hercules,Excalibur II,fixed_wing,monoplane,military,ground_attack,1988,,Stinger II;unveiled on the Steadfast Line 21 March 2024,Cannon AFB Static Displays,on_display
-Sikorsky,MH-53,J,68-10367,Pave Low III,,rotary_wing,,military,search_rescue,1968,,special operations helicopter,Cannon AFB Static Displays,on_display
-General Dynamics,F-16,A,79-0307,Fighting Falcon,,fixed_wing,monoplane,military,fighter,1979,,GF-16A ground instructional airframe now displayed;code CC;on Eagle Claw Blvd near the Housing Office,Cannon AFB Static Displays,on_display
+Lockheed,MC-130,E,64-0523,Hercules,,fixed_wing,monoplane,military,transport,,,Combat Talon I,Cannon AFB Static Displays,on_display
+Lockheed,MC-130,P,65-0991,Hercules,,fixed_wing,monoplane,military,tanker,1966,,Combat Shadow,Cannon AFB Static Displays,on_display
+Lockheed,AC-130,H,69-6572,Hercules,,fixed_wing,monoplane,military,ground_attack,,,Spectre;has an interpretive plaque,Cannon AFB Static Displays,on_display
+Lockheed,AC-130,W,88-1308,Hercules,Excalibur II,fixed_wing,monoplane,military,ground_attack,,,Stinger II;unveiled on the Steadfast Line 21 March 2024,Cannon AFB Static Displays,on_display
+Sikorsky,MH-53,J,68-10367,Pave Low III,,rotary_wing,,military,search_rescue,,,special operations helicopter,Cannon AFB Static Displays,on_display
+General Dynamics,F-16,A,79-0307,Fighting Falcon,,fixed_wing,monoplane,military,fighter,1980,,GF-16A ground instructional airframe now displayed;code CC;on Eagle Claw Blvd near the Housing Office,Cannon AFB Static Displays,on_display

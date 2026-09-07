@@ -1,5 +1,5 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-North American,F-86,F,51-2826,Sabre,,fixed_wing,monoplane,military,fighter,1951,,c/n 172-109;ex-N6213F;built as F-86E-10-NA;Project Gunval testbed;wears false markings 91050 City of Coeur D'Alene,Idaho Military History Museum,on_display
+North American,F-86,F,51-2826,Sabre,,fixed_wing,monoplane,military,fighter,,,c/n 172-109;ex-N6213F;built as F-86E-10-NA;Project Gunval testbed;wears false markings 91050 City of Coeur D'Alene,Idaho Military History Museum,on_display
 Mikoyan-Gurevich,MiG-21,PFM,6611,Fishbed,,fixed_wing,monoplane,military,fighter,,,c/n 94A6611;ex-Polish Air Force;ex-Merle Maine collection;displayed in Soviet livery,Idaho Military History Museum,on_display
 McDonnell Douglas,F-4,C,69-0350,Phantom II,,fixed_wing,monoplane,military,recon,1969,,RF-4C;c/n 3688;190th TRS Idaho ANG 1984-88;sources differ on complete airframe vs nose section,Idaho Military History Museum,on_display
 Fairchild,PT-23,,,,,fixed_wing,monoplane,military,trainer,,,serial not established;indoor display,Idaho Military History Museum,on_display
