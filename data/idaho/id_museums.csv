@@ -1,10 +1,11 @@
-name,city,state_province,country,postal_code,region,address,website,latitude,longitude
-Warhawk Air Museum,Nampa,Idaho,United States,83687,North America,201 Municipal Drive,https://warhawkairmuseum.org/,43.5817,-116.5228
-Legacy Flight Museum,Rexburg,Idaho,United States,83440,North America,400 Airport Road,https://www.rexburg.org/o/legacyflight,43.8346,-111.8067
-Idaho Military History Museum,Boise,Idaho,United States,83705,North America,4692 West Harvard Street,https://museum.mil.idaho.gov/,43.5578,-116.2396
-Bird Aviation Museum and Invention Center,Hayden,Idaho,United States,83835,North America,2678 West Cessna Avenue,http://www.birdaviationmuseum.com/,47.7691,-116.8234
-Spirit of Flight Center,Nampa,Idaho,United States,83687,North America,205 North Pilatus Lane,https://spiritofflight.com/,43.5852,-116.5188
-Warbirds Museum at Driggs-Reed Memorial Airport,Driggs,Idaho,United States,83422,North America,253 Warbird Lane,https://driggsairport.org/about/museum/,43.7377,-111.1075
-Carl Miller Park,Mountain Home,Idaho,United States,83647,North America,North 10th East at American Legion Boulevard,https://mountain-home.us/departments/parks-rec/parks/carl-miller-park/,43.1344,-115.6882
-Lakeview Park,Nampa,Idaho,United States,83651,North America,1227 East Orson F. Persons Court,https://www.cityofnampa.us/Facilities/Facility/Details/6,43.5857,-116.5450
-Malad City Park,Malad City,Idaho,United States,83252,North America,100 1st West Street,https://www.maladidaho.org/,42.1861,-112.2483
+name,city,state_province,country,postal_code,region,address,website,access_type,latitude,longitude
+Warhawk Air Museum,Nampa,Idaho,United States,83687,North America,201 Municipal Drive,https://warhawkairmuseum.org/,public,43.5817,-116.5228
+Legacy Flight Museum,Rexburg,Idaho,United States,83440,North America,400 Airport Road,https://www.rexburg.org/o/legacyflight,public,43.8346,-111.8067
+Idaho Military History Museum,Boise,Idaho,United States,83705,North America,4692 West Harvard Street,https://museum.mil.idaho.gov/,public,43.5578,-116.2396
+Bird Aviation Museum and Invention Center,Hayden,Idaho,United States,83835,North America,2678 West Cessna Avenue,http://www.birdaviationmuseum.com/,public,47.7691,-116.8234
+Spirit of Flight Center,Nampa,Idaho,United States,83687,North America,205 North Pilatus Lane,https://spiritofflight.com/,public,43.5852,-116.5188
+Warbirds Museum at Driggs-Reed Memorial Airport,Driggs,Idaho,United States,83422,North America,253 Warbird Lane,https://driggsairport.org/about/museum/,public,43.7377,-111.1075
+Carl Miller Park,Mountain Home,Idaho,United States,83647,North America,North 10th East at American Legion Boulevard,https://mountain-home.us/departments/parks-rec/parks/carl-miller-park/,public,43.1344,-115.6882
+Lakeview Park,Nampa,Idaho,United States,83651,North America,1227 East Orson F. Persons Court,https://www.cityofnampa.us/Facilities/Facility/Details/6,public,43.5857,-116.5450
+Malad City Park,Malad City,Idaho,United States,83252,North America,100 1st West Street,https://www.maladidaho.org/,public,42.1861,-112.2483
+Gowen Field Air Park,Boise,Idaho,United States,83705,North America,"4040 West Guard Street, Gowen Field",https://www.124thfighterwing.ang.af.mil,restricted,43.5614,-116.2291

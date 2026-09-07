@@ -133,11 +133,9 @@ company lists it as a wreck under restoration and **for sale**. Excluded. The
 **Evel Knievel Skycycle X-2** is an acknowledged 2015 television replica, and
 the 1:7 A-10 is a radio-control model.
 
-**Gowen Field ANGB airpark** — nine complete airframes (C-130E, A-10A, T-33A
-NASA 815, RF-4C 68-0594, F-102A, F-4G, UH-1F, AH-1F, UH-1M) about a mile from
-the museum, inside the wire. Requires a military sponsor, background check and
-a REAL ID. Not public. Note that its RF-4C **68-0594** is routinely confused
-with the museum's **69-0350**.
+**Gowen Field ANGB airpark** — originally excluded here as base-access only.
+**Now included** as `Gowen Field Air Park`, access_type `restricted`, once the
+museums table gained that column. See the section below.
 
 **Aeroplanes Over Idaho, Caldwell** — closed. No record of where its ten-plus
 aircraft went. Worth a look if anyone has a lead.
@@ -185,3 +183,56 @@ bucket, not an airframe count — it shows "20+" against Gowen Field's nine.
   2014; it is absent from the museum's current collection page and from
   aerialvisuals, so it is not recorded here.
 - Lakeview Park's ZIP: the City of Nampa gives 83651, third-party listings 83687.
+
+
+---
+
+# Addendum — Gowen Field Air Park
+
+Added after `museums.access_type` shipped. Nine complete airframes at
+43.5614, -116.2291, about a mile from the public Idaho Military History
+Museum, inside the wire. Entry needs a military sponsor, a Gowen Field
+background check, and — since 7 May 2025 — a REAL ID-compliant credential.
+Recorded `restricted`, so it stays out of proximity results unless a caller
+asks for it. The Gowen Thunder air show is the periodic public window.
+
+`gowen_field_air_park_aircraft.csv`, 9 rows, 9 tails. All NMUSAF loans, so the
+inventory can change without announcement.
+
+## The two RF-4Cs are different aircraft
+
+This is the confusion the original notes flagged, now settled:
+
+| | **68-0594** — Gowen Field Air Park | **69-0350** — Idaho Military History Museum |
+|---|---|---|
+| Block | RF-4C-40-MC | RF-4C-41-MC |
+| c/n | 3598 | 3688 |
+| First flight | 29 Aug 1969 | 12 Dec 1969 |
+| Access | restricted | public |
+| Condition | complete airframe | battle-damage-repair trainer |
+
+Both served with the 190th TRS Idaho ANG 1984–88 and both retired in July
+1988, which is exactly why they get merged in directories.
+
+## Worth knowing
+
+- **AH-1F 67-15496** is the most historically significant airframe in either
+  Idaho site. On 24 March 1971, flown by WO1 Marvin Beck Jr., it destroyed an
+  NVA tank and damaged two more — believed to be the first Cobra tank kill of
+  the war, and likely the first by any helicopter.
+- **T-33A 55-4351 wears no USAF serial at all.** It carries NASA 815 and the
+  civil registration N815NA from its 1963–73 NASA career at Edwards, which
+  included a monocular-vision landing study. Warbird Registry lost track of it
+  after Redding, California in 1992; this placement closes that gap.
+- **UH-1M 66-15229 is painted "65138"**, which is not its serial. Seven
+  documented combat hit incidents in Vietnam between Feb 1968 and May 1969.
+- **F-102A 53-1816** actually served with the 190th FIS at Gowen Field from
+  June 1964 — a home-unit airframe.
+- **A-10A 78-0608 is engineless**, de-engined after its final flight to Gowen
+  in Aug 1996 and kept as a ground trainer. Complete, but not flight-configured.
+- **C-130E 62-1846** carries RAAF-style roundel nose art of unexplained origin.
+  It is genuinely applied, not airshow dressing.
+
+`aviationmuseum.eu`'s Idaho Military History Museum page is badly corrupted —
+it gives a Coeur d'Alene address, calls the museum closed, and attaches serial
+69-0350 to the PT-23. It was not used.
