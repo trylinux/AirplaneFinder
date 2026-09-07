@@ -34,6 +34,8 @@ $(function() {
           + '<div class="m-card">'
           +   '<h2><i class="fa-solid fa-circle-info"></i> Details</h2>'
           +   '<div style="display:grid;grid-template-columns:auto 1fr;gap:.4rem .85rem;font-size:.9rem;">'
+          +     row('Model', escHtml(a.model))
+          + (a.variant ? row('Variant', escHtml(a.variant)) : '')
           +     row('Manufacturer', escHtml(a.manufacturer))
           +     row('Type',         escHtml(prettyEnum(a.aircraft_type)))
           +     row('Class',        '<span class="m-badge ' + milCivRaw + '">' + escHtml(prettyEnum(milCivRaw)) + '</span>')

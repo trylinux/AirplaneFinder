@@ -9,11 +9,26 @@
 </div>
 
 <div class="m-search">
-    <input type="text" id="ac-q" placeholder="Search aircraft...">
-    <button id="ac-go"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <input type="text" aria-label="Search aircraft" id="ac-q" placeholder="Search aircraft...">
+    <button id="ac-go" aria-label="Search aircraft"><i class="fa-solid fa-magnifying-glass"></i></button>
 </div>
 
-<div id="ac-results"></div>
+<div class="m-search-examples" aria-label="Example aircraft searches">
+    {% for model in ['C-130', 'F-16', 'B-17', 'SR-71', 'P-51'] %}
+    <button type="button" data-q="{{ model }}">{{ model }}</button>
+    {% endfor %}
+</div>
+<div class="m-sort-row">
+        <div class="m-field">
+            <label for="ac-sort">Sort by</label>
+            <select id="ac-sort"><option value="full_designation">Designation</option><option value="model_name">Model name</option><option value="aircraft_name">Aircraft name</option><option value="tail_number">Tail number</option><option value="manufacturer">Manufacturer</option><option value="aircraft_type">Type</option><option value="military_civilian">Military / civilian</option><option value="role_type">Role</option><option value="year_built">Year</option></select>
+        </div>
+        <div class="m-field">
+            <label for="ac-sort-dir">Order</label>
+            <select id="ac-sort-dir"><option value="asc">Ascending</option><option value="desc">Descending</option></select>
+        </div>
+    </div>
+    <div id="ac-results"></div>
 <div id="ac-pages" class="m-pagination"></div>
 {% endblock %}
 
@@ -25,10 +40,13 @@ $(function() {
     function load(p) {
         page = p || 1;
         var q = $('#ac-q').val().trim();
+        $('#ac-pages').empty();
         $('#ac-results').html('<div class="m-list-empty">Loading…</div>');
-        $.getJSON('/api/v1/aircraft/search', {q: q, page: page, per_page: 20}, function(d) {
+        $.getJSON('/api/v1/aircraft/search', {q: q, page: page, per_page: 20, sort_by: $('#ac-sort').val(), sort_dir: $('#ac-sort-dir').val()}, function(d) {
             renderResults(d);
             renderPages(d.page, d.pages);
+        }).fail(function() {
+            $('#ac-results').html('<div class="m-alert error">Could not load aircraft. Please try searching again.</div>');
         });
     }
 
@@ -48,6 +66,8 @@ $(function() {
                  + '</div>'
                  + '<div class="m-list-meta">'
                  +   '<span><i class="fa-solid fa-industry"></i>' + escHtml(a.manufacturer) + '</span>';
+            if (a.aircraft_name) html += '<span><i class="fa-solid fa-tag"></i>' + escHtml(a.aircraft_name) + '</span>';
+            if (a.year_built) html += '<span><i class="fa-solid fa-calendar"></i>' + escHtml(a.year_built) + '</span>';
             if (a.model_name)    html += '<span><i class="fa-solid fa-tag"></i>' + escHtml(a.model_name) + '</span>';
             if (a.tail_number)   html += '<span><i class="fa-solid fa-id-card"></i>' + escHtml(a.tail_number) + '</span>';
             if (a.role_type)     html += '<span><i class="fa-solid fa-shield"></i>' + escHtml(prettyEnum(a.role_type)) + '</span>';
@@ -76,9 +96,12 @@ $(function() {
         $('#ac-pages').html(html);
     }
 
+    $('.m-search-examples button').on('click', function() { $('#ac-q').val($(this).data('q')); load(1); });
     $('#ac-pages').on('click', 'button', function() { load(parseInt($(this).data('p'), 10)); });
     $('#ac-go').on('click', function() { load(1); });
     $('#ac-q').on('keypress', function(e) { if (e.which === 13) load(1); });
+
+    $('#ac-sort, #ac-sort-dir').on('change', function() { load(1); });
 
     // Auto-load with optional ?q= from URL
     var params = new URLSearchParams(window.location.search);

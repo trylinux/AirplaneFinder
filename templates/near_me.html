@@ -34,7 +34,6 @@
 {% block scripts %}
 <script nonce="{{ csp_nonce }}">
 $(function () {
-    var loaded = {};
 
     function isApplePlatform() {
         var ua = navigator.userAgent || '';
@@ -80,9 +79,10 @@ $(function () {
         var id = $(this).data('museum-id');
         var $detail = $('[data-detail-for="' + id + '"]');
         $detail.prop('hidden', !$detail.prop('hidden'));
-        if (loaded[id] || $detail.prop('hidden')) return;
+        if ($detail.data('collectionState') || $detail.prop('hidden')) return;
+        $detail.data('collectionState', 'loading');
         $.getJSON('/api/v1/museums/' + id, {visible_only: 'true'}, function (d) {
-            loaded[id] = true;
+            $detail.data('collectionState', 'loaded');
             var list = (d.aircraft || []).slice().sort(function (a, b) {
                 return (a.full_designation || '').localeCompare(b.full_designation || '');
             });
@@ -95,6 +95,9 @@ $(function () {
                                (a.tail_number ? ' ' + escHtml(a.tail_number) : '') + '</a>';
                     }).join('')
                   : '<span class="no-results">No aircraft on display here yet.</span>');
+        }).fail(function() {
+            $detail.removeData('collectionState');
+            $detail.find('.aircraft-panel').text('Could not load aircraft. Close and reopen this museum to retry.');
         });
     });
 

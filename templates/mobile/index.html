@@ -47,7 +47,11 @@
     </div>
     <div class="m-field">
         <label>Your location (zip or city)</label>
-        <input type="text" id="prox-location" placeholder="e.g. 92591, Dayton">
+        <input type="text" id="prox-location" placeholder="e.g. 92591, Dayton" autocomplete="postal-code">
+    </div>
+    <div class="m-field">
+        <label>Museum (optional)</label>
+        <input type="text" id="prox-museum" placeholder="e.g. Smithsonian, Duxford">
     </div>
     <button class="m-btn" id="prox-go"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
     <div id="prox-results" style="margin-top:.85rem;"></div>
@@ -74,39 +78,68 @@ $(function() {
         $('#stat-countries').text(d.country_count);
     });
 
-    // Proximity search
-    $('#prox-go').on('click', function() {
+    // Proximity search — same params + result detail as the desktop dashboard.
+    function proxCard(r, dist) {
+        var m = r.museum, a = r.aircraft;
+        var loc = m.city + (m.state_province ? ', ' + m.state_province : '') + ', ' + m.country;
+        var ac  = escHtml(a.full_designation || a.model)
+                + (a.model_name ? ' ' + escHtml(a.model_name) : '')
+                + (a.aircraft_name ? ' "' + escHtml(a.aircraft_name) + '"' : '');
+        var actions = '';
+        if (r.display_status) {
+            actions += '<span class="m-badge status-' + escHtml(r.display_status) + '">' + escHtml(prettyEnum(r.display_status)) + '</span>';
+        }
+        if (m.website) {
+            actions += '<a href="' + escHtml(m.website) + '" target="_blank" rel="noopener"><i class="fa-solid fa-external-link-alt"></i>Website</a>';
+        }
+        return '<div class="m-list-item">'
+             + '<div class="m-list-title">'
+             +   '<a href="/museums/' + m.id + '" style="color:inherit;">' + escHtml(m.name) + '</a>'
+             +   '<span class="m-badge">' + (dist == null ? '? mi' : dist + ' mi') + '</span>'
+             + '</div>'
+             + '<div class="m-list-meta">'
+             +   '<span><i class="fa-solid fa-jet-fighter"></i>' + ac + '</span>'
+             +   '<span><i class="fa-solid fa-location-dot"></i>' + escHtml(loc) + '</span>'
+             + '</div>'
+             + (actions ? '<div class="m-list-actions">' + actions + '</div>' : '')
+             + '</div>';
+    }
+
+    function doProximitySearch() {
         var aircraft = $('#prox-aircraft').val().trim();
         var location = $('#prox-location').val().trim();
+        var museum   = $('#prox-museum').val().trim();
         if (!aircraft || !location) {
             $('#prox-results').html('<div class="m-alert error"><i class="fa-solid fa-circle-exclamation"></i><span>Aircraft and location are required.</span></div>');
             return;
         }
+        var params = {aircraft: aircraft, location: location, limit: 5};
+        if (museum) params.museum = museum;
+
         $('#prox-results').html('<div class="m-list-empty">Searching…</div>');
-        $.getJSON('/api/v1/nearest', {aircraft: aircraft, location: location, limit: 5}, function(d) {
+        $.getJSON('/api/v1/nearest', params, function(d) {
             if (!d.results || !d.results.length) {
-                $('#prox-results').html('<div class="m-list-empty">No matches found.</div>');
+                $('#prox-results').html('<div class="m-list-empty">No museums found for that aircraft.</div>');
                 return;
             }
-            var html = '<div class="m-list">';
-            d.results.forEach(function(r) {
-                html += '<div class="m-list-item">'
-                     + '<div class="m-list-title">'
-                     +   '<span>' + escHtml(r.museum.name) + '</span>'
-                     +   '<span class="m-badge">' + r.distance_miles + ' mi</span>'
-                     + '</div>'
-                     + '<div class="m-list-meta">'
-                     +   '<span><i class="fa-solid fa-jet-fighter"></i>' + escHtml(r.aircraft.full_designation || r.aircraft.model) + '</span>'
-                     +   '<span><i class="fa-solid fa-location-dot"></i>' + escHtml(r.museum.city + ', ' + r.museum.country) + '</span>'
-                     + '</div>'
-                     + '</div>';
-            });
+            var html = '<div class="m-prox-origin">Showing results from <strong>' + escHtml(d.origin.location) + '</strong></div>';
+            html += '<div class="m-list">';
+            d.results.forEach(function(r) { html += proxCard(r, r.distance_miles); });
             html += '</div>';
+            if (d.no_coordinates && d.no_coordinates.length) {
+                html += '<div class="m-prox-origin" style="margin-top:.75rem;">Also displaying this aircraft (distance unavailable)</div><div class="m-list">';
+                d.no_coordinates.forEach(function(r) { html += proxCard(r, null); });
+                html += '</div>';
+            }
             $('#prox-results').html(html);
         }).fail(function(xhr) {
             var msg = xhr.responseJSON ? xhr.responseJSON.error : 'Search failed.';
             $('#prox-results').html('<div class="m-alert error"><i class="fa-solid fa-circle-exclamation"></i><span>' + escHtml(msg) + '</span></div>');
         });
+    }
+    $('#prox-go').on('click', doProximitySearch);
+    $('#prox-aircraft, #prox-location, #prox-museum').on('keypress', function(e) {
+        if (e.which === 13) doProximitySearch();
     });
 
     // Quick search — runs both searches and lists the top 3 of each

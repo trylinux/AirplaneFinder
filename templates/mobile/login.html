@@ -7,7 +7,7 @@
 </div>
 
 <div class="m-card">
-    <form method="POST" action="{{ url_for('login_page') }}">
+    <form method="POST" action="{{ url_for('login_page', next=request.args.get('next')) }}">
         <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
 
         <div class="m-field">

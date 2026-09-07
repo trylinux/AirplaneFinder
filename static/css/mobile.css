@@ -112,6 +112,24 @@ a:active { opacity: .7; }
     display: flex; align-items: center; gap: .4rem;
 }
 .m-card h2 i { color: var(--primary); }
+.m-section-title {
+    font-size: 1rem; font-weight: 600; margin: .25rem 0 .6rem;
+    display: flex; align-items: center; gap: .4rem;
+}
+.m-section-title i { color: var(--primary); }
+
+/* ─── Proximity results (dashboard + museum finder) */
+.m-prox-origin { font-size: .8rem; color: var(--text-dim); margin-bottom: .5rem; }
+.m-prox-origin strong { color: var(--text); }
+.m-list-item .m-list-actions {
+    display: flex; align-items: center; gap: .6rem; margin-top: .15rem;
+}
+.m-list-item .m-list-actions a { color: var(--accent); font-size: .8rem; }
+.m-list-item .m-list-actions a i { margin-right: .25rem; }
+/* Display-status badge colors — mirror .status-* in style.css */
+.m-badge.status-on_display        { background: rgba(34,197,94,.15);   color: #4ade80; }
+.m-badge.status-in_storage        { background: rgba(148,163,184,.15); color: #cbd5e1; }
+.m-badge.status-under_restoration { background: rgba(6,182,212,.15);   color: #67e8f9; }
 
 /* ─── Stat cards (compact, 2 columns) ────── */
 .m-stats {
@@ -351,3 +369,25 @@ a:active { opacity: .7; }
 .m-fact-card { text-align: center; padding: 1.75rem 1rem; cursor: pointer; }
 .m-fact { font-size: 1.05rem; line-height: 1.55; margin: 0 0 .6rem; }
 .m-fact-meta { font-size: .8rem; color: var(--m-text-dim, #94a3b8); }
+
+/* Keep directory controls and museum cards usable on narrow phones. */
+.m-sort-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: .5rem; }
+.m-search input { min-width: 0; }
+.m-search-row .m-btn { width: 44px; flex-shrink: 0; }
+.m-search-row input, .m-radius-row select {
+    padding: .65rem .75rem; border: 1px solid var(--border); border-radius: 8px;
+    background: var(--bg-input); color: var(--text); font: inherit; font-size: 16px;
+}
+.m-search-examples { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: .85rem; }
+.m-search-examples button {
+    min-height: 44px; padding: .4rem .65rem; border: 1px solid var(--border);
+    border-radius: 8px; background: var(--bg-card); color: var(--accent);
+}
+.m-globe-controls button { width: 44px; height: 44px; }
+.m-globe-pin-info a { min-height: 44px; display: inline-flex; align-items: center; }
+.m-list-title > span, .m-page-header h1, .m-museum-title, .m-card { overflow-wrap: anywhere; min-width: 0; }
+.m-museum-head { flex-wrap: wrap; }
+.m-museum-meta { flex-wrap: wrap; }
+.m-actions .m-btn { width: auto; }
+.m-bottomnav { height: calc(var(--bottomnav-h) + env(safe-area-inset-bottom)); }
+body { padding-bottom: calc(var(--bottomnav-h) + env(safe-area-inset-bottom)); }

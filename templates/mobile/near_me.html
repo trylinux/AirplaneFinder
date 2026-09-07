@@ -1,10 +1,12 @@
 {% extends "mobile/base.html" %}
 {% block title %}Museums Near Me — Aircraft Finder{% endblock %}
 
+{% block tab_nearme %}active{% endblock %}
+
 {% block content %}
-<div class="m-header">
+<div class="m-page-header">
     <h1><i class="fa-solid fa-location-dot"></i> Museums Near Me</h1>
-    <p class="m-sub">Find aviation museums close to you, and see what's on display.</p>
+    <p class="m-subtitle">Find aviation museums close to you, and see what's on display.</p>
 </div>
 
 <div class="m-card">
@@ -15,9 +17,9 @@
     <div class="m-or">or</div>
 
     <div class="m-search-row">
-        <input type="text" id="loc-input" inputmode="search"
+        <input type="text" id="loc-input" aria-label="Zip code or city" inputmode="search"
                placeholder="Zip code or city" autocomplete="postal-code">
-        <button class="m-btn m-btn-primary" id="btn-search">
+        <button class="m-btn m-btn-primary" id="btn-search" aria-label="Search nearby museums">
             <i class="fa-solid fa-magnifying-glass"></i>
         </button>
     </div>
@@ -96,7 +98,7 @@
             var place = [m.city, m.state_province].filter(Boolean).join(', ');
             html +=
               '<div class="m-museum" data-museum-id="' + m.id + '">' +
-                '<div class="m-museum-head" role="button" tabindex="0">' +
+                '<div class="m-museum-head" role="button" tabindex="0" aria-expanded="false">' +
                   '<div class="m-museum-title">' +
                     '<strong>' + escHtml(m.name) + '</strong>' +
                     '<span class="m-museum-place">' + escHtml(place) + '</span>' +
@@ -109,6 +111,7 @@
                 '</div>' +
                 '<div class="m-museum-body" hidden>' +
                   '<div class="m-actions">' +
+                    '<a class="m-btn m-btn-secondary" href="/museums/' + m.id + '">View museum</a>' +
                     '<a class="m-btn m-btn-secondary" target="_blank" rel="noopener" ' +
                        'href="' + directionsUrl(m) + '">' +
                       '<i class="fa-solid fa-diamond-turn-right"></i> ' + mapsLabel() +
@@ -128,21 +131,22 @@
     /* Aircraft are fetched only when a card is opened — 40 museums would
        otherwise mean 40 requests on a phone connection. visible_only=true
        so we never promise an aircraft that's in storage. */
-    var loaded = {};
     function toggle(card) {
         var body = card.querySelector('.m-museum-body');
         var open = !body.hidden;
         body.hidden = open;
         card.classList.toggle('is-open', !open);
+        card.querySelector('.m-museum-head').setAttribute('aria-expanded', String(!open));
         if (open) return;
 
         var id = card.getAttribute('data-museum-id');
-        if (loaded[id]) return;
+        if (card.dataset.collectionState) return;
+        card.dataset.collectionState = 'loading';
         var target = card.querySelector('.m-aircraft-list');
         fetch('/api/v1/museums/' + id + '?visible_only=true')
-            .then(function (r) { return r.json(); })
+            .then(function (r) { if (!r.ok) throw new Error('Collection request failed'); return r.json(); })
             .then(function (d) {
-                loaded[id] = true;
+                card.dataset.collectionState = 'loaded';
                 var list = d.aircraft || [];
                 if (!list.length) {
                     target.innerHTML = '<p class="m-empty">No aircraft on display here yet.</p>';
@@ -159,7 +163,8 @@
                 }).join('') + '</ul>';
             })
             .catch(function () {
-                target.innerHTML = '<p class="m-empty">Could not load aircraft.</p>';
+                delete card.dataset.collectionState;
+                target.innerHTML = '<p class="m-empty">Could not load aircraft. Close and reopen this museum to retry.</p>';
             });
     }
 
@@ -176,7 +181,7 @@
     function search(params) {
         var radius = document.getElementById('radius').value;
         if (radius) params.radius = radius;
-        params.limit = 25;
+        params.limit = 50;
         var qs = Object.keys(params).map(function (k) {
             return k + '=' + encodeURIComponent(params[k]);
         }).join('&');

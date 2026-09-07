@@ -67,8 +67,16 @@ $(function() {
         });
     }
 
-    // Initial load - show all
+    var initialParams = new URLSearchParams(window.location.search);
+    if (initialParams.get('q')) $('#aircraft-search').val(initialParams.get('q'));
     searchAircraft(1);
+    if (/^\d+$/.test(initialParams.get('focus'))) {
+        $.getJSON('/api/v1/aircraft/' + initialParams.get('focus'), {visible_only: 'true'}, renderAircraftDetail)
+            .fail(function() {
+                $('#aircraft-modal-body').html('<p class="no-results">Could not load aircraft. Please try again.</p>');
+                $('#aircraft-modal').show();
+            });
+    }
 
     $('#aircraft-search-btn').on('click', function() { searchAircraft(1); });
     $('#aircraft-search').on('keypress', function(e) { if (e.which === 13) searchAircraft(1); });

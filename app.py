@@ -457,34 +457,18 @@ def _inject_mobile_flag():
 def mobile_render(name, **context):
     """Render ``mobile/<name>`` for phone clients, else the desktop ``<name>``.
 
-    Used by every public-facing web route. Admin routes use ``@no_mobile``
-    instead, which redirects to /desktop-only — admin is desktop-only by
-    product decision.
+    Public routes have dedicated mobile templates. Management routes use
+    the shared responsive templates on every device.
     """
     if getattr(g, "is_mobile", False):
         return render_template(f"mobile/{name}", **context)
     return render_template(name, **context)
 
 
-def no_mobile(fn):
-    """Decorator: redirect mobile callers to /desktop-only.
-
-    Apply to every admin route. Mobile users get a friendly page explaining
-    that admin tools require a larger screen, with a one-click link to
-    request the desktop layout for the rest of their session.
-    """
-    @wraps(fn)
-    def wrapper(*args, **kwargs):
-        if getattr(g, "is_mobile", False):
-            return redirect(url_for("desktop_only_page"))
-        return fn(*args, **kwargs)
-    return wrapper
-
-
 @app.route("/desktop-only")
 def desktop_only_page():
-    """Mobile-only landing page shown when a phone hits an admin route."""
-    return render_template("mobile/desktop_only.html")
+    """Keep old bookmarks working now that management supports phones."""
+    return redirect(url_for("admin_page"))
 
 
 # ══════════════════════════════════════════════
@@ -798,42 +782,36 @@ def account_page():
 # ══════════════════════════════════════════════
 
 @app.route("/admin")
-@no_mobile
 @login_required
 def admin_page():
     return render_template("admin.html")
 
 
 @app.route("/admin/aircraft")
-@no_mobile
 @login_required
 def admin_aircraft_page():
     return render_template("admin_aircraft.html")
 
 
 @app.route("/admin/aircraft/new")
-@no_mobile
 @login_required
 def admin_aircraft_new_page():
     return render_template("admin_aircraft_new.html")
 
 
 @app.route("/admin/museums")
-@no_mobile
 @login_required
 def admin_museums_page():
     return render_template("admin_museums.html")
 
 
 @app.route("/admin/museums/new")
-@no_mobile
 @login_required
 def admin_museums_new_page():
     return render_template("admin_museums_new.html")
 
 
 @app.route("/admin/exhibits")
-@no_mobile
 @login_required
 def admin_exhibits_page():
     """Flat overview of every aircraft-museum link.
@@ -846,14 +824,12 @@ def admin_exhibits_page():
 
 
 @app.route("/admin/templates")
-@no_mobile
 @login_required
 def admin_templates_page():
     return render_template("admin_templates.html")
 
 
 @app.route("/admin/facts")
-@no_mobile
 @login_required
 def admin_facts_page():
     """Manage aviation facts. Writes go through /api/v1/facts, which
@@ -862,7 +838,6 @@ def admin_facts_page():
 
 
 @app.route("/admin/import")
-@no_mobile
 @login_required
 def admin_import_page():
     """Bulk-import landing page. Auth handled by the login_required decorator;
@@ -871,14 +846,12 @@ def admin_import_page():
 
 
 @app.route("/admin/users")
-@no_mobile
 @admin_required
 def admin_users_page():
     return render_template("users.html")
 
 
 @app.route("/admin/api-keys")
-@no_mobile
 @login_required
 def api_keys_page():
     return render_template("api_keys.html")

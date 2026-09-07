@@ -591,6 +591,8 @@ pre code {
 */
 
 @media (max-width: 900px) {
+    .app-shell { flex-direction: column; }
+    .app-main { width: 100%; }
     /* Show the topbar, reveal the hamburger, hide the sidebar off-canvas. */
     .topbar { display: flex; }
     .app-main { margin-left: 0; }
@@ -693,3 +695,14 @@ pre code {
     font-size: .8rem; cursor: pointer;
 }
 .ac-hit:hover { border-color: var(--primary); color: var(--primary); }
+
+@media (max-width: 700px) {
+    .modal-content { width: calc(100% - 1rem); padding: 1rem; }
+    .modal-close, .btn-icon, .le-actions .btn { min-width: 44px; min-height: 44px; }
+    .form-grid > *, .link-editor-row > * { min-width: 0; }
+    .link-editor-add .le-add-grid { grid-template-columns: minmax(0, 1fr); }
+    .link-editor-row { grid-template-columns: minmax(0, 1fr) auto auto; }
+    .link-editor-row .le-name { overflow-wrap: anywhere; }
+    .link-editor-row .le-status, .link-editor-row .le-notes,
+    .link-editor-add select, .link-editor-add textarea { font-size: 16px; }
+}

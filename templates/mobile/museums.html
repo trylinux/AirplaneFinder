@@ -11,18 +11,37 @@
 <!-- View toggle -->
 <div class="m-tabs">
     <button class="m-tab-btn active" data-view="list">
-        <i class="fa-solid fa-list"></i> List
+        <i class="fa-solid fa-list"></i> Directory
     </button>
     <button class="m-tab-btn" data-view="globe">
-        <i class="fa-solid fa-globe"></i> Globe
+        <i class="fa-solid fa-globe"></i> Discovery
     </button>
 </div>
 
 <!-- ─── List view ─── -->
 <div id="m-view-list">
+
+    <!-- Find Nearby Museums (mirrors the desktop proximity card) -->
+    <div class="m-card">
+        <h2><i class="fa-solid fa-location-crosshairs"></i> Find Nearby Museums</h2>
+        <div class="m-field">
+            <label>Your location (zip or city)</label>
+            <input type="text" id="m-prox-location" inputmode="search" placeholder="e.g. 92591, Dayton, London" autocomplete="postal-code">
+        </div>
+        <div class="m-field">
+            <label>Region (optional)</label>
+            <select id="m-prox-region">
+                <option value="">All regions</option>
+            </select>
+        </div>
+        <button class="m-btn" id="m-prox-go"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+        <div id="m-prox-results" style="margin-top:.85rem;"></div>
+    </div>
+
+    <h2 class="m-section-title"><i class="fa-solid fa-magnifying-glass"></i> Browse Museums</h2>
     <div class="m-search">
-        <input type="text" id="m-q" placeholder="Search museums...">
-        <button id="m-go"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <input type="text" aria-label="Search museums" id="m-q" placeholder="Search museums...">
+        <button id="m-go" aria-label="Search museums"><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
 
     <div class="m-field">
@@ -32,6 +51,16 @@
         </select>
     </div>
 
+    <div class="m-sort-row">
+        <div class="m-field">
+            <label for="m-sort">Sort by</label>
+            <select id="m-sort"><option value="name">Museum</option><option value="city">City</option><option value="country">Country</option><option value="region">Region</option></select>
+        </div>
+        <div class="m-field">
+            <label for="m-sort-dir">Order</label>
+            <select id="m-sort-dir"><option value="asc">Ascending</option><option value="desc">Descending</option></select>
+        </div>
+    </div>
     <div id="m-results"></div>
     <div id="m-pages" class="m-pagination"></div>
 </div>
@@ -43,9 +72,10 @@
         <div class="m-globe-controls">
             <button id="m-globe-zoom-in"  title="Zoom in"><i class="fa-solid fa-plus"></i></button>
             <button id="m-globe-zoom-out" title="Zoom out"><i class="fa-solid fa-minus"></i></button>
-            <button id="m-globe-spin"     title="Pause / resume"><i class="fa-solid fa-pause"></i></button>
+            <button id="m-globe-zoom-reset" aria-label="Reset zoom" title="Reset zoom"><i class="fa-solid fa-expand"></i></button>
+            <button id="m-globe-spin-toggle"     title="Pause / resume"><i class="fa-solid fa-pause"></i></button>
         </div>
-        <div class="m-globe-pin-info" id="m-globe-pin-info"></div>
+        <div class="m-globe-pin-info" id="m-globe-tooltip"></div>
         <div class="m-globe-loading" id="m-globe-loading">
             <i class="fa-solid fa-spinner fa-spin"></i> Loading globe…
         </div>
@@ -57,25 +87,82 @@
 {% endblock %}
 
 {% block scripts %}
+<script src="{{ url_for('static', filename='js/museum-globe.js') }}"></script>
 <script nonce="{{ csp_nonce }}">
 $(function() {
-    // Populate the region filter from the API.
+    // Populate both region filters from the API.
     $.getJSON('/api/v1/museums/regions', function(rows) {
         rows.forEach(function(r) {
-            $('#m-region').append('<option value="' + escHtml(r.region) + '">' + escHtml(r.region) + ' (' + r.count + ')</option>');
+            var opt = '<option value="' + escHtml(r.region) + '">' + escHtml(r.region) + ' (' + r.count + ')</option>';
+            $('#m-region').append(opt);
+            $('#m-prox-region').append(opt);
         });
     });
 
+    // ── Find Nearby Museums (proximity) ──
+    // Same endpoint + params as the desktop museums page; results render as
+    // tappable cards linking to /museums/<id> instead of a modal.
+    function museumCard(m, dist) {
+        var loc = m.city + (m.state_province ? ', ' + m.state_province : '') + ', ' + m.country;
+        return '<a class="m-list-item" href="/museums/' + m.id + '">'
+             + '<div class="m-list-title">'
+             +   '<span>' + escHtml(m.name) + '</span>'
+             +   '<span class="m-badge">' + (dist == null ? '? mi' : dist + ' mi') + '</span>'
+             + '</div>'
+             + '<div class="m-list-meta">'
+             +   '<span><i class="fa-solid fa-location-dot"></i>' + escHtml(loc) + '</span>'
+             +   (m.region ? '<span><i class="fa-solid fa-globe"></i>' + escHtml(m.region) + '</span>' : '')
+             + '</div>'
+             + '</a>';
+    }
+
+    function doMuseumProximity() {
+        var location = $('#m-prox-location').val().trim();
+        if (!location) {
+            $('#m-prox-results').html('<div class="m-alert error"><i class="fa-solid fa-circle-exclamation"></i><span>Please enter a zip code or city name.</span></div>');
+            return;
+        }
+        var params = {location: location, limit: 15};
+        var region = $('#m-prox-region').val();
+        if (region) params.region = region;
+
+        $('#m-prox-results').html('<div class="m-list-empty">Searching…</div>');
+        $.getJSON('/api/v1/museums/nearby', params, function(d) {
+            if ((!d.results || !d.results.length) && (!d.no_coordinates || !d.no_coordinates.length)) {
+                $('#m-prox-results').html('<div class="m-list-empty">No museums found near that location.</div>');
+                return;
+            }
+            var html = '<div class="m-prox-origin">Museums nearest to <strong>' + escHtml(d.origin.location) + '</strong></div>';
+            html += '<div class="m-list">';
+            (d.results || []).forEach(function(r) { html += museumCard(r.museum, r.distance_miles); });
+            html += '</div>';
+            if (d.no_coordinates && d.no_coordinates.length) {
+                html += '<div class="m-prox-origin" style="margin-top:.75rem;">Other museums (distance unavailable)</div><div class="m-list">';
+                d.no_coordinates.forEach(function(r) { html += museumCard(r.museum, null); });
+                html += '</div>';
+            }
+            $('#m-prox-results').html(html);
+        }).fail(function(xhr) {
+            var msg = (xhr.responseJSON && xhr.responseJSON.error) ? xhr.responseJSON.error : 'Search failed.';
+            $('#m-prox-results').html('<div class="m-alert error"><i class="fa-solid fa-circle-exclamation"></i><span>' + escHtml(msg) + '</span></div>');
+        });
+    }
+    $('#m-prox-go').on('click', doMuseumProximity);
+    $('#m-prox-location').on('keypress', function(e) { if (e.which === 13) doMuseumProximity(); });
+
     function load(page) {
         page = page || 1;
+        $('#m-pages').empty();
         $('#m-results').html('<div class="m-list-empty">Loading…</div>');
         $.getJSON('/api/v1/museums/search', {
             q: $('#m-q').val().trim(),
             region: $('#m-region').val(),
-            page: page, per_page: 20
+            page: page, per_page: 20, sort_by: $('#m-sort').val(), sort_dir: $('#m-sort-dir').val()
         }, function(d) {
             renderResults(d);
             renderPages(d.page, d.pages);
+        }).fail(function() {
+            $('#m-results').html('<div class="m-alert error">Could not load museums. Please try searching again.</div>');
         });
     }
 
@@ -121,302 +208,26 @@ $(function() {
     $('#m-pages').on('click', 'button', function() { load(parseInt($(this).data('p'), 10)); });
     $('#m-go').on('click', function() { load(1); });
     $('#m-q').on('keypress', function(e) { if (e.which === 13) load(1); });
-    $('#m-region').on('change', function() { load(1); });
+    $('#m-region, #m-sort, #m-sort-dir').on('change', function() { load(1); });
 
     var params = new URLSearchParams(window.location.search);
     if (params.get('q')) $('#m-q').val(params.get('q'));
     load(1);
 
     // ── View toggle ──────────────────────────────────────
-    var globeReady = false;
+    var globe = null;
     $('.m-tabs .m-tab-btn').on('click', function() {
         var view = $(this).data('view');
         $('.m-tabs .m-tab-btn').removeClass('active');
         $(this).addClass('active');
         $('#m-view-list').toggle(view === 'list');
         $('#m-view-globe').toggle(view === 'globe');
-        if (view === 'globe' && !globeReady) {
-            globeReady = true;
-            initMobileGlobe();
+        if (view === 'globe') {
+            if (!globe) globe = initMuseumGlobe({prefix: 'm-', mobile: true});
+            if (globe) globe.resize();
         }
     });
 });
 
-/* ════════════════════════════════════════════════════════════════════
-   Mobile globe — slimmer than the desktop version. Sphere + pins +
-   touch drag to rotate + pinch (or buttons) to zoom. Tapping a pin
-   pops a small info panel with a "View museum" link.
-
-   No country borders / state labels — they're unreadable on a phone
-   and double the asset weight.
-   ════════════════════════════════════════════════════════════════════ */
-function initMobileGlobe() {
-    if (typeof THREE === 'undefined') {
-        $('#m-globe-loading').html(
-            '<i class="fa-solid fa-circle-exclamation"></i> Could not load Three.js.'
-        );
-        return;
-    }
-    var wrap   = document.getElementById('m-globe-wrap');
-    var canvas = document.getElementById('m-globe-canvas');
-    var info   = document.getElementById('m-globe-pin-info');
-
-    var W = wrap.clientWidth, H = wrap.clientHeight;
-
-    var scene  = new THREE.Scene();
-    var camera = new THREE.PerspectiveCamera(45, W / H, 0.1, 1000);
-    camera.position.z = 3.2;
-    var INITIAL_Z = camera.position.z;
-
-    var renderer = new THREE.WebGLRenderer({canvas: canvas, antialias: true, alpha: true});
-    renderer.setPixelRatio(window.devicePixelRatio || 1);
-    renderer.setSize(W, H, false);
-    renderer.setClearColor(0x000000, 0);
-
-    var globeGroup = new THREE.Group();
-    scene.add(globeGroup);
-
-    var R = 1;
-
-    // Solid base sphere (so pins on the far side are occluded).
-    globeGroup.add(new THREE.Mesh(
-        new THREE.SphereGeometry(R * 0.995, 40, 28),
-        new THREE.MeshBasicMaterial({color: 0x0a1b3a, transparent: true, opacity: 0.92})
-    ));
-
-    // Wireframe overlay
-    globeGroup.add(new THREE.LineSegments(
-        new THREE.WireframeGeometry(new THREE.SphereGeometry(R, 20, 14)),
-        new THREE.LineBasicMaterial({color: 0x3a6bd8, transparent: true, opacity: 0.32})
-    ));
-
-    // Equator ring for depth cue
-    var ringPts = [];
-    for (var i = 0; i < 96; i++) {
-        var a = (i / 96) * Math.PI * 2;
-        ringPts.push(new THREE.Vector3(Math.cos(a) * R, 0, Math.sin(a) * R));
-    }
-    globeGroup.add(new THREE.LineLoop(
-        new THREE.BufferGeometry().setFromPoints(ringPts),
-        new THREE.LineBasicMaterial({color: 0x6ba7ff, transparent: true, opacity: 0.5})
-    ));
-
-    function latLonToVec3(lat, lon, radius) {
-        var phi   = (90 - lat) * Math.PI / 180;
-        var theta = (lon + 180) * Math.PI / 180;
-        return new THREE.Vector3(
-            -radius * Math.sin(phi) * Math.cos(theta),
-             radius * Math.cos(phi),
-             radius * Math.sin(phi) * Math.sin(theta)
-        );
-    }
-
-    var pinGeom = new THREE.SphereGeometry(0.014, 8, 8);
-    var pinMat  = new THREE.MeshBasicMaterial({color: 0xffffff});
-    var pins    = [];
-
-    var raycaster = new THREE.Raycaster();
-    raycaster.params.Mesh.threshold = 0.025;
-
-    // Country-border material. Slightly dimmer + thinner than desktop so it
-    // doesn't visually compete with the pins on a small canvas.
-    var borderMat = new THREE.LineBasicMaterial({
-        color: 0x6fa3e8, transparent: true, opacity: 0.45
-    });
-
-    /* Convert a GeoJSON FeatureCollection into Three.js Line objects on the
-       globe. We draw country outlines only — not labels, not state borders,
-       not filled fills — because at phone size the labels are unreadable
-       and the state polylines double the geometry count for no real gain. */
-    function addCountryBorders(geo) {
-        var feats = geo.features || [];
-        feats.forEach(function(feat) {
-            var g = feat.geometry;
-            if (!g) return;
-            // GeoJSON geometry shapes: Polygon = [[ring]], MultiPolygon = [[[ring]]]
-            var polys = g.type === 'Polygon'      ? [g.coordinates]
-                      : g.type === 'MultiPolygon' ? g.coordinates
-                      : [];
-            polys.forEach(function(poly) {
-                poly.forEach(function(ring) {
-                    var pts = ring.map(function(c) {
-                        // GeoJSON is [lon, lat]; latLonToVec3 wants (lat, lon).
-                        // R * 1.002 floats the borders just above the surface
-                        // so they're not z-fighting with the sphere.
-                        return latLonToVec3(c[1], c[0], R * 1.002);
-                    });
-                    if (pts.length > 1) {
-                        var bg = new THREE.BufferGeometry().setFromPoints(pts);
-                        globeGroup.add(new THREE.Line(bg, borderMat));
-                    }
-                });
-            });
-        });
-    }
-
-    // ── Fetch museums, place pins, then load country borders ──
-    $.getJSON('/api/v1/museums/globe', function(museums) {
-        museums.forEach(function(m) {
-            if (m.latitude == null || m.longitude == null) return;
-            var pin = new THREE.Mesh(pinGeom, pinMat);
-            pin.position.copy(latLonToVec3(m.latitude, m.longitude, R * 1.005));
-            pin.userData = m;
-            globeGroup.add(pin);
-            pins.push(pin);
-        });
-        $('#m-globe-loading').hide();
-
-        // Borders load on a second hop so the user gets pins immediately —
-        // the GeoJSON file is ~250 KB, a noticeable extra wait on cellular.
-        // CSP connect-src must include cdn.jsdelivr.net (see app.py).
-        $.getJSON('https://cdn.jsdelivr.net/gh/johan/world.geo.json@master/countries.geo.json')
-            .done(addCountryBorders)
-            .fail(function() { /* network blocked / CDN down — skip silently */ });
-    }).fail(function() {
-        $('#m-globe-loading').html(
-            '<i class="fa-solid fa-circle-exclamation"></i> Could not load museum pins.'
-        );
-    });
-
-    // ── Touch / pointer handling ──
-    // We support: single-finger drag = rotate, two-finger pinch = zoom,
-    // single-tap (move < 6px) = select pin under finger.
-    var spinPaused = false;
-    var dragging = false, lastX = 0, lastY = 0;
-    var rotV = {x: 0, y: 0};                   // rotation velocity (auto-spin)
-    var pinchStart = null;                     // {dist: px, z: cameraZ}
-    var pressStart = null;                     // {x, y, t} for tap detection
-
-    function clientToLocal(clientX, clientY) {
-        var rect = canvas.getBoundingClientRect();
-        return {x: clientX - rect.left, y: clientY - rect.top};
-    }
-
-    function distancePx(t1, t2) {
-        var dx = t1.clientX - t2.clientX, dy = t1.clientY - t2.clientY;
-        return Math.sqrt(dx*dx + dy*dy);
-    }
-
-    canvas.addEventListener('touchstart', function(e) {
-        if (e.touches.length === 1) {
-            dragging = true;
-            lastX = e.touches[0].clientX;
-            lastY = e.touches[0].clientY;
-            pressStart = {x: lastX, y: lastY, t: Date.now()};
-        } else if (e.touches.length === 2) {
-            dragging = false;
-            pressStart = null;
-            pinchStart = {dist: distancePx(e.touches[0], e.touches[1]), z: camera.position.z};
-        }
-    }, {passive: true});
-
-    canvas.addEventListener('touchmove', function(e) {
-        if (e.touches.length === 1 && dragging) {
-            var t = e.touches[0];
-            var dx = t.clientX - lastX, dy = t.clientY - lastY;
-            globeGroup.rotation.y += dx * 0.005;
-            globeGroup.rotation.x += dy * 0.005;
-            globeGroup.rotation.x = Math.max(-1.2, Math.min(1.2, globeGroup.rotation.x));
-            lastX = t.clientX; lastY = t.clientY;
-        } else if (e.touches.length === 2 && pinchStart) {
-            var d = distancePx(e.touches[0], e.touches[1]);
-            var ratio = pinchStart.dist / d;
-            camera.position.z = Math.max(1.4, Math.min(6, pinchStart.z * ratio));
-        }
-    }, {passive: true});
-
-    canvas.addEventListener('touchend', function(e) {
-        // Tap detection — touchend with no remaining touches and small movement.
-        if (pressStart && e.touches.length === 0) {
-            var moved = Math.hypot(lastX - pressStart.x, lastY - pressStart.y);
-            var dt = Date.now() - pressStart.t;
-            if (moved < 6 && dt < 350) {
-                var p = clientToLocal(lastX, lastY);
-                pickPin(p.x, p.y);
-            }
-        }
-        if (e.touches.length === 0) { dragging = false; pinchStart = null; pressStart = null; }
-        else if (e.touches.length === 1) { pinchStart = null; }
-    }, {passive: true});
-
-    // Mouse fallback (so the globe also works on a desktop running ?desktop=0
-    // mobile-mode emulation).
-    canvas.addEventListener('mousedown', function(e) {
-        dragging = true; lastX = e.clientX; lastY = e.clientY;
-        pressStart = {x: e.clientX, y: e.clientY, t: Date.now()};
-    });
-    window.addEventListener('mousemove', function(e) {
-        if (!dragging) return;
-        var dx = e.clientX - lastX, dy = e.clientY - lastY;
-        globeGroup.rotation.y += dx * 0.005;
-        globeGroup.rotation.x += dy * 0.005;
-        globeGroup.rotation.x = Math.max(-1.2, Math.min(1.2, globeGroup.rotation.x));
-        lastX = e.clientX; lastY = e.clientY;
-    });
-    window.addEventListener('mouseup', function() {
-        if (pressStart) {
-            var moved = Math.hypot(lastX - pressStart.x, lastY - pressStart.y);
-            var dt = Date.now() - pressStart.t;
-            if (moved < 6 && dt < 350) {
-                var p = clientToLocal(lastX, lastY);
-                pickPin(p.x, p.y);
-            }
-        }
-        dragging = false; pressStart = null;
-    });
-
-    function pickPin(localX, localY) {
-        var pointer = new THREE.Vector2(
-            (localX / wrap.clientWidth) * 2 - 1,
-            -(localY / wrap.clientHeight) * 2 + 1
-        );
-        raycaster.setFromCamera(pointer, camera);
-        var hits = raycaster.intersectObjects(pins);
-        if (!hits.length) {
-            $(info).removeClass('show');
-            return;
-        }
-        var m = hits[0].object.userData;
-        info.innerHTML =
-            '<div class="pin-name">' + escHtml(m.name) + '</div>' +
-            '<div class="pin-loc">'  + escHtml(m.city + ', ' + m.country) + '</div>' +
-            '<span class="pin-count">' + m.aircraft_count + ' aircraft tracked</span>' +
-            '<a href="/museums/' + m.id + '">View museum &rarr;</a>';
-        info.classList.add('show');
-    }
-
-    // Buttons
-    document.getElementById('m-globe-zoom-in').addEventListener('click', function() {
-        camera.position.z = Math.max(1.4, camera.position.z * 0.8);
-    });
-    document.getElementById('m-globe-zoom-out').addEventListener('click', function() {
-        camera.position.z = Math.min(6, camera.position.z * 1.25);
-    });
-    var spinBtn = document.getElementById('m-globe-spin');
-    spinBtn.addEventListener('click', function() {
-        spinPaused = !spinPaused;
-        spinBtn.innerHTML = spinPaused
-            ? '<i class="fa-solid fa-play"></i>'
-            : '<i class="fa-solid fa-pause"></i>';
-    });
-
-    // Resize on viewport change (e.g. orientation flip)
-    window.addEventListener('resize', function() {
-        var w = wrap.clientWidth, h = wrap.clientHeight;
-        camera.aspect = w / h;
-        camera.updateProjectionMatrix();
-        renderer.setSize(w, h, false);
-    });
-
-    // Animation loop
-    function tick() {
-        if (!spinPaused && !dragging) {
-            globeGroup.rotation.y += 0.0015;
-        }
-        renderer.render(scene, camera);
-        requestAnimationFrame(tick);
-    }
-    tick();
-}
 </script>
 {% endblock %}
