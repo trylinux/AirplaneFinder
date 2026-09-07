@@ -379,7 +379,7 @@ def _add_security_headers(response):
     # Block APIs we don't use; tightens the surface against compromised JS.
     response.headers.setdefault(
         "Permissions-Policy",
-        "geolocation=(), camera=(), microphone=(), payment=(), usb=()",
+        "geolocation=(self), camera=(), microphone=(), payment=(), usb=()",
     )
     # CSP is per-request — the script-src directive embeds the nonce so
     # legitimate inline <script> blocks can execute while injected ones can't.
@@ -3018,6 +3018,10 @@ def _resolve_location(location_str):
     """
     return resolve_location(location_str, db=db, ZipCode=ZipCode)
 
+
+from exploration import register_exploration
+register_exploration(app, api_auth_required, _get_effective_user, _increment_contribution,
+                     lambda location: _resolve_location(location), limiter)
 
 if __name__ == "__main__":
     app.run(

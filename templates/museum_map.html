@@ -1,0 +1,31 @@
+{% extends "mobile/base.html" if is_mobile else "base.html" %}
+{% block title %}Museum Map — Aircraft Finder{% endblock %}
+{% block nav_map %}active{% endblock %}
+{% block head %}{% set with_map = true %}{% include "_exploration_head.html" %}{% endblock %}
+{% block content %}
+<section class="explorer">
+    <h1>Museum map</h1>
+    <p class="x-intro">Find aviation museums street by street. Tap a group to zoom in, or a museum to explore its collection.</p>
+    <div class="x-actions"><a class="x-button secondary" href="/museums">Directory & globe</a><a class="x-button" href="/trips">Plan an aircraft trip</a></div>
+    <form id="map-search" class="x-card">
+        <div class="x-form-grid">
+            <label class="x-field">Museum, city or country<input id="map-query" type="search" maxlength="200" placeholder="e.g. London"></label>
+            <label class="x-field">Region<select id="map-region"><option value="">All regions</option></select></label>
+        </div>
+        <div class="x-actions"><button class="x-button" type="submit">Find museums</button><button class="x-button secondary" type="button" id="map-locate">Use my location</button><button class="x-button secondary" type="button" id="map-area">Search this area</button><button class="x-button secondary" type="button" id="map-all">Show all matches</button></div>
+    </form>
+    <p class="x-status" id="map-status" role="status" aria-live="polite">Loading museums…</p>
+    <p class="x-status" id="map-tile-status" role="status"></p>
+    <div class="x-grid">
+        <div id="museum-map" class="x-map" aria-label="Map of aviation museums" data-tile-url="{{ config.MAP_TILE_URL }}" data-attribution="{{ config.MAP_ATTRIBUTION }}"></div>
+        <div><h2 id="map-result-heading">Museums</h2><div id="map-results" class="x-results"></div><button type="button" id="map-more" class="x-button secondary" hidden>Show more museums</button></div>
+    </div>
+    <details class="x-card" id="map-unlocated" hidden><summary id="map-unlocated-title"></summary><div id="map-unlocated-list"></div></details>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='vendor/leaflet/leaflet.js') }}"></script>
+<script src="{{ url_for('static', filename='js/explorer.js') }}?v=explore-1"></script>
+<script src="{{ url_for('static', filename='js/museum-map.js') }}?v=explore-1"></script>
+<script src="{{ url_for('static', filename='js/map-discovery.js') }}?v=explore-1"></script>
+{% endblock %}

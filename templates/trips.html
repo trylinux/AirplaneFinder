@@ -1,0 +1,56 @@
+{% extends "mobile/base.html" if is_mobile else "base.html" %}
+{% block title %}Aircraft Trip Planner — Aircraft Finder{% endblock %}
+{% block nav_trips %}active{% endblock %}
+{% block head %}{% set with_map = true %}{% include "_exploration_head.html" %}{% endblock %}
+{% block content %}
+<section class="explorer" id="trip-app">
+    <h1>Plan an aircraft trip</h1>
+    <p class="x-intro">Choose the aircraft you want to see. Find museums that cover your list and arrange a suggested order of stops.</p>
+    <div class="x-actions"><a class="x-button secondary" href="/map">Explore museum map</a><a class="x-button secondary" href="/aircraft">Aircraft directory</a></div>
+    <div class="x-grid">
+        <section class="x-card">
+            <h2>1. Choose your aircraft</h2>
+            <form id="trip-search-form">
+                <label class="x-field">Search by model, name or registration<input id="trip-search" type="search" maxlength="200" placeholder="e.g. B-17 or a tail number"></label>
+                <div class="x-actions"><button class="x-button secondary" type="submit">Search aircraft</button></div>
+            </form>
+            <p id="trip-search-status" class="x-status" role="status"></p>
+            <div id="trip-search-results" class="x-results"></div>
+            <h3>Your aircraft list <span id="trip-target-count" class="x-muted">0 / 12</span></h3>
+            <ul id="trip-targets" class="x-targets"></ul>
+        </section>
+        <section>
+            <form id="trip-form" class="x-card">
+                <h2>2. Set your starting point</h2>
+                <div class="x-form-grid">
+                    <label class="x-field wide">Starting city or postal code<input id="trip-origin" required maxlength="200" placeholder="e.g. Dayton, Ohio, United States"></label>
+                    <label class="x-field">Search radius (miles)<input id="trip-radius" type="number" min="1" max="5000" value="500" required></label>
+                    <label class="x-field">Maximum museum stops<select id="trip-max-stops">{% for count in range(1,9) %}<option value="{{ count }}"{% if count == 5 %} selected{% endif %}>{{ count }}</option>{% endfor %}</select></label>
+                    <label class="x-check wide"><input type="checkbox" id="trip-round">Return to starting point</label>
+                </div>
+                <p class="x-status">Radius is measured in a straight line from your start. Suggestions prioritize covering your aircraft list, then nearby stops.</p>
+                <button class="x-button" id="trip-build" type="submit">Find museum stops</button>
+                <p id="trip-status" class="x-status" role="status" aria-live="polite"></p>
+            </form>
+            <div class="x-card"><h2>Saved trips on this device</h2><p class="x-muted">Saved plans stay in this browser. Loading one checks the current catalog again.</p><div id="trip-saved"></div><p id="trip-storage-status" class="x-status" role="status"></p></div>
+        </section>
+    </div>
+    <section id="trip-result" hidden>
+        <h2 id="trip-summary"></h2>
+        <p class="x-intro">Suggested itinerary based on recorded on-display aircraft. Check each museum’s official site before travelling. Dashed lines and mileage are straight-line estimates; use directions for roads and driving times.</p>
+        <div class="x-actions" id="trip-directions"></div>
+        <p class="x-status" id="trip-tile-status" role="status"></p>
+        <div id="trip-map" class="x-map" aria-label="Suggested museum stops" data-tile-url="{{ config.MAP_TILE_URL }}" data-attribution="{{ config.MAP_ATTRIBUTION }}"></div>
+        <p class="x-map-key">Green dot: starting point · Numbers: museum stops · Dashed line: visit order</p>
+        <div id="trip-unmatched" class="x-card" hidden></div>
+        <div id="trip-stops"></div>
+        <form class="x-card" id="trip-save-form"><h2>Save this plan</h2><p class="x-muted">Saving with an existing name replaces that plan.</p><label class="x-field">Trip name<input id="trip-name" value="My aircraft trip" maxlength="80" required></label><div class="x-actions"><button class="x-button" type="submit">Save on this device</button></div><p id="trip-save-status" class="x-status" role="status"></p></form>
+    </section>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='vendor/leaflet/leaflet.js') }}"></script>
+<script src="{{ url_for('static', filename='js/explorer.js') }}?v=explore-1"></script>
+<script src="{{ url_for('static', filename='js/museum-map.js') }}?v=explore-1"></script>
+<script src="{{ url_for('static', filename='js/trip-planner.js') }}?v=explore-1"></script>
+{% endblock %}

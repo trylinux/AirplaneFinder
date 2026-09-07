@@ -21,6 +21,10 @@ def _get(section, key, env_var, default):
 
 
 class Config:
+    # Public map tiles; keep provider attribution visible when changing providers.
+    MAP_TILE_URL = _get("map", "tile_url", "MAP_TILE_URL", "https://tile.openstreetmap.org/{z}/{x}/{y}.png")
+    MAP_ATTRIBUTION = _get("map", "attribution", "MAP_ATTRIBUTION", '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors')
+
     SECRET_KEY = _get("app", "secret_key", "SECRET_KEY", "change-me-in-production")
 
     # Server (used by app.run in __main__)

@@ -136,6 +136,7 @@ $(function() {
             html += '<p class="no-results">Not currently on display at any tracked museum.</p>';
         }
 
+        html += '<div class="detail-actions"><a class="btn btn-secondary" href="/aircraft/' + a.id + '/history">Airframe history</a> <a class="btn btn-primary" href="/trips?aircraft_id=' + a.id + '">Plan a visit</a></div>';
         $('#aircraft-modal-body').html(html);
         $('#aircraft-modal').fadeIn(200);
     }

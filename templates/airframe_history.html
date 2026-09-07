@@ -1,0 +1,46 @@
+{% extends "mobile/base.html" if is_mobile else "base.html" %}
+{% block title %}{{ aircraft.full_designation }} — Airframe History{% endblock %}
+{% block nav_aircraft %}active{% endblock %}
+{% block head %}{% include "_exploration_head.html" %}{% endblock %}
+{% block content %}
+<section class="explorer" id="history-app" data-aircraft-id="{{ aircraft.id }}" data-editing="{{ 'true' if editing else 'false' }}" data-can-delete="{{ 'true' if current_user.is_authenticated and current_user.is_data_admin else 'false' }}">
+    <a href="{{ '/admin/aircraft' if editing else '/aircraft/' ~ aircraft.id }}">← {{ 'Aircraft management' if editing else 'Aircraft details' }}</a>
+    <h1>{{ aircraft.full_designation }} <span class="x-muted">/ Airframe history</span></h1>
+    <p class="x-intro">{{ aircraft.manufacturer }} · {{ aircraft.tail_number or 'Registration unknown' }}{% if aircraft.aircraft_name %} · {{ aircraft.aircraft_name }}{% endif %}</p>
+    <p class="x-muted">Milestones for this individual aircraft. Sources and date precision are shown with each entry.</p>
+    <div class="x-actions">
+        <a class="x-button" href="/trips?aircraft_id={{ aircraft.id }}">Plan a visit</a>
+        {% if not editing and current_user.is_authenticated and current_user.is_manager %}<a class="x-button secondary" href="/admin/aircraft/{{ aircraft.id }}/history">Edit history</a>{% endif %}
+        {% if editing %}<a class="x-button secondary" href="/aircraft/{{ aircraft.id }}/history">Public history</a>{% endif %}
+    </div>
+    <div id="history-status" class="x-status" role="status" aria-live="polite">Loading history…</div>
+    <ol id="history-events" class="x-timeline"></ol>
+    {% if editing %}
+    <form id="history-form" class="x-card">
+        <h2 id="history-form-title">Add a milestone</h2>
+        <div class="x-form-grid">
+            <label class="x-field">Title<input name="title" required maxlength="200" placeholder="e.g. Delivered to its first operator"></label>
+            <label class="x-field">Event type<select name="event_type">{% for type in history_types %}<option value="{{ type }}">{{ type|title }}</option>{% endfor %}</select></label>
+            <label class="x-field">Year (optional)<input name="event_year" type="number" min="1" max="9999" placeholder="Unknown"></label>
+            <label class="x-field">Month (optional)<select name="event_month"><option value="">Unknown</option>{% for month in range(1,13) %}<option value="{{ month }}">{{ month }}</option>{% endfor %}</select></label>
+            <label class="x-field">Day (optional)<input name="event_day" type="number" min="1" max="31" placeholder="Unknown"></label>
+            <label class="x-check"><input name="is_approximate" type="checkbox">Approximate date</label>
+            <label class="x-field">Operator / owner<input name="operator" maxlength="200"></label>
+            <label class="x-field">Location<input name="location" maxlength="200"></label>
+            <label class="x-field">Registration / serial at this time<input name="registration" maxlength="80"></label>
+            <label class="x-field wide">Description<textarea name="description" maxlength="10000"></textarea></label>
+            <label class="x-field">Source citation<input name="source_name" maxlength="300" placeholder="Publication, author, page or archive reference"></label>
+            <label class="x-field">Source URL<input name="source_url" type="url" maxlength="1000" placeholder="https://…"></label>
+            <label class="x-check"><input name="is_published" type="checkbox" checked>Publish this milestone</label>
+        </div>
+        <p class="x-status">Include a citation or source URL. Leave unknown date parts empty. Milestones do not change the aircraft’s current museum or registration.</p>
+        <div class="x-actions"><button class="x-button" type="submit">Save milestone</button><button class="x-button secondary" id="history-cancel" type="button">Clear / cancel edit</button></div>
+        <p id="history-save-status" class="x-status" role="status" aria-live="polite"></p>
+    </form>
+    {% endif %}
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/explorer.js') }}?v=explore-1"></script>
+<script src="{{ url_for('static', filename='js/airframe-history.js') }}?v=explore-1"></script>
+{% endblock %}

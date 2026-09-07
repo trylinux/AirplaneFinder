@@ -193,6 +193,8 @@ $(function() {
                 {name:'aliases', label:'Aliases (comma-separated)', val: (a.aliases || []).join(', ')},
                 {name:'description', label:'Description', val: a.description || '', textarea: true},
             ];
+            $('#history-editor-link').remove();
+            $('<a>', {id:'history-editor-link', href:'/admin/aircraft/' + id + '/history', text:'Edit airframe history', class:'btn btn-secondary'}).insertAfter('#edit-modal-title');
             renderEditFields(fields);
             renderMuseumPanel(data.museums || []);
             $('#edit-modal').fadeIn(200);

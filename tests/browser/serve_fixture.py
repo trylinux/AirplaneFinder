@@ -10,8 +10,10 @@ from config import Config
 Config.SQLALCHEMY_DATABASE_URI = 'sqlite:///:memory:'
 Config.SQLALCHEMY_ENGINE_OPTIONS = {}
 Config.SECRET_KEY = 'local-browser-test-secret'
-Config.SECURITY_HEADERS_ENABLED = False
+Config.SECURITY_HEADERS_ENABLED = True
 Config.SESSION_COOKIE_SECURE = False
+# Automated tests use a local tile fixture, never the public OSM tile service.
+Config.MAP_TILE_URL = '/__test_tiles/{z}/{x}/{y}.svg'
 
 import app as appmod
 from models import db, Aircraft, Museum, AircraftMuseum, User
@@ -33,5 +35,11 @@ with appmod.app.app_context():
     db.session.add_all([AircraftMuseum(aircraft_id=aircraft.id, museum_id=museum.id, display_status='on_display'), AircraftMuseum(aircraft_id=stored.id, museum_id=museum.id, display_status='in_storage')])
     db.session.commit()
 
+@appmod.app.route('/__test_tiles/<int:z>/<int:x>/<int:y>.svg')
+def map_tile(z, x, y):
+    from flask import Response
+    return Response('<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"><rect width="256" height="256" fill="#dbe4e8"/><path d="M0 128H256M128 0V256" stroke="#b8c8d0"/><text x="16" y="30" fill="#506875" font-family="sans-serif">Local test map tile</text></svg>', mimetype='image/svg+xml')
+
+
 if __name__ == '__main__':
-    appmod.app.run(host='127.0.0.1', port=5057, debug=False, use_reloader=False)
+    appmod.app.run(host='127.0.0.1', port=5057, debug=False, use_reloader=False, threaded=False)

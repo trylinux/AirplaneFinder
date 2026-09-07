@@ -38,10 +38,10 @@ class TestSecurityHeaders:
         assert hdrs["referrer-policy"] == "strict-origin-when-cross-origin"
 
     def test_permissions_policy_disables_unused_apis(self, hdrs):
-        # Tightens the surface against compromised JS that tries to grab
-        # geolocation/camera/etc. We don't use any of these, so deny all.
+        # Location is needed by Near Me and the museum map. Other device
+        # APIs remain disabled, and location still requires browser consent.
         pp = hdrs["permissions-policy"]
-        for feature in ("geolocation=()", "camera=()", "microphone=()"):
+        for feature in ("geolocation=(self)", "camera=()", "microphone=()"):
             assert feature in pp, f"missing {feature} in {pp}"
 
     def test_csp_present_with_frame_ancestors_none(self, hdrs):

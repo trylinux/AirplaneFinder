@@ -51,6 +51,13 @@
     <p class="doc-text">Templates require name, manufacturer, and model; optional type fields and aliases prefill new aircraft without changing existing airframes. API key creation accepts label and permissions. POST /api/v1/keys also accepts expires_in_days; raw keys are returned once. JSON flags such as is_active and dry_run must be booleans, not strings.</p>
 </div>
 
+<div class="card">
+    <h2>Histories, map, and trip planning</h2>
+    <p class="doc-text">GET /api/v1/aircraft/{id}/history lists published milestones; /history/manage requires readwrite access and includes drafts. POST on /history creates a milestone; PUT/PATCH /api/v1/history/{event_id} edits one; DELETE requires admin data access. Entries require a title and source_name or source_url. Optional integer event_year, event_month, event_day preserve date precision; is_approximate and is_published are booleans. Histories belong to the individual aircraft ID and do not change current exhibit assignments.</p>
+    <p class="doc-text">GET /api/v1/museums/map accepts q, region, country and returns all matching museums in results and no_coordinates, with total and on-display aircraft_count. The <a href="/map">museum map</a> supports clusters and area search.</p>
+    <p class="doc-text">POST /api/v1/trips/plan accepts origin (location text, or latitude and longitude), targets (1–12 objects), radius_miles (1–5000, default 500), max_stops (1–8, default 5), and round_trip (boolean). Targets use kind=airframe plus aircraft_id, or kind=model plus manufacturer and model. The public endpoint requires a CSRF token and is limited to 30 requests per minute. It returns ordered stops, covered targets, unmatched reasons, and straight-line mileage. Suggestions use on_display exhibits only and do not calculate driving time or opening hours. Try the <a href="/trips">trip planner</a>.</p>
+</div>
+
 <!-- Endpoints -->
 <div class="card">
     <h2><i class="fa-solid fa-route"></i> Endpoints</h2>

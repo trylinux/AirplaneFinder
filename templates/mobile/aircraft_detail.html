@@ -75,6 +75,7 @@ $(function() {
                  + 'Not currently on display at any tracked museum.</p></div>';
         }
 
+        html += '<div class="m-actions"><a class="m-btn m-btn-secondary" href="/aircraft/' + a.id + '/history">Airframe history</a><a class="m-btn" href="/trips?aircraft_id=' + a.id + '">Plan a visit</a></div>';
         $('#m-detail-loading').hide();
         $('#m-detail-body').html(html).show();
     }).fail(function(xhr) {

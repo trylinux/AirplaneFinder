@@ -499,6 +499,39 @@ class AircraftFact(db.Model):
         }
 
 
+class AircraftHistoryEvent(db.Model):
+    """Sourced milestones tied to a stable airframe ID, independent of its registration."""
+    __tablename__ = "aircraft_history_events"
+
+    id = db.Column(db.Integer, primary_key=True)
+    aircraft_id = db.Column(db.Integer, db.ForeignKey("aircraft.id", ondelete="CASCADE"), nullable=False, index=True)
+    event_type = db.Column(db.String(30), nullable=False, default="other")
+    title = db.Column(db.String(200), nullable=False)
+    description = db.Column(db.Text)
+    event_year = db.Column(db.Integer)
+    event_month = db.Column(db.Integer)
+    event_day = db.Column(db.Integer)
+    is_approximate = db.Column(db.Boolean, nullable=False, default=False)
+    operator = db.Column(db.String(200))
+    location = db.Column(db.String(200))
+    registration = db.Column(db.String(80))
+    source_name = db.Column(db.String(300))
+    source_url = db.Column(db.String(1000))
+    is_published = db.Column(db.Boolean, nullable=False, default=True)
+    created_by = db.Column(db.Integer, db.ForeignKey("users.id", ondelete="SET NULL"))
+    updated_by = db.Column(db.Integer, db.ForeignKey("users.id", ondelete="SET NULL"))
+    created_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
+    updated_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
+
+    def to_dict(self):
+        fields = ("id", "aircraft_id", "event_type", "title", "description", "event_year",
+                  "event_month", "event_day", "is_approximate", "operator", "location",
+                  "registration", "source_name", "source_url", "is_published")
+        result = {field: getattr(self, field) for field in fields}
+        result["updated_at"] = self.updated_at.isoformat() if self.updated_at else None
+        return result
+
+
 class ZipCode(db.Model):
     __tablename__ = "zip_codes"
 

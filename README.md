@@ -88,6 +88,7 @@ migration files for an older installation:
 - `migrate_missile_rocket.sql`
 - `migrate_display_status_drop_on_loan.sql`
 - `migrate_aircraft_facts.sql`
+- `migrate_airframe_history.sql`
 
 ## Features and views
 
@@ -119,6 +120,20 @@ management views and unfiltered detail API responses. Dashboard `link_count` and
 globe aircraft counts include only `on_display` links. Museums without coordinates
 remain searchable; `/nearest` and `/museums/nearby` return them separately, while
 `/museums/nearest` and the globe require coordinates.
+
+## Histories, street map, and trip planning
+
+Aircraft details now link to sourced individual airframe histories. Editors can
+add dated or approximate milestones, retain source citations, and publish drafts.
+The museum directory links to `/map`, a conventional map with clustered markers
+and area search, and `/trips` finds museum stops for several wanted aircraft.
+Trips can target a specific airframe or any example of a model, and saved plans
+stay in the current browser. Distances are straight-line estimates; external
+directions provide road navigation.
+
+Existing installations must apply `migrate_airframe_history.sql` before using
+the new history pages. See [the feature and upgrade guide](docs/exploration.md)
+for commands, map provider configuration, API fields, permissions, and limitations.
 
 ## Authentication and permissions
 
@@ -481,6 +496,7 @@ or a deploy script — wire it in as the first step of whatever you use.
 ## Project structure
 
 - `app.py`: Flask routes, session/API auth, validation, imports, and API docs route index.
+- `exploration.py`: airframe history, museum-map API, and trip-planning logic.
 - `models.py`, `schema.sql`, `migrate_*.sql`: ORM models, fresh schema, and upgrades.
 - `config.py`, `web.config.example`: file/environment configuration and defaults.
 - `geocoder.py`, `logger.py`: location resolution/cache and structured logs.
