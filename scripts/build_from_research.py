@@ -183,12 +183,20 @@ def main():
         # both the A-L and M-Z passes; so do Lancair/Neibauer, Howard/Poberezny
         # and Boeing/Stearman. The tail number is the airframe's identity, so
         # it is what catches them.
+        #
+        # Keyed on (model, tail), which is the database's own unique index —
+        # NOT on tail alone. A bare-tail key was fine while every tail was a
+        # globally unique USAF serial, and then Monino arrived with painted
+        # bort numbers ("01" on a MiG-9, a MiG-17, a Tu-4 and an An-14) and
+        # Le Bourget with four different Dassault prototypes all numbered
+        # "01". Keying on tail alone threw away 39 real aircraft.
         tail = row["tail_number"].strip().lower()
         if tail:
-            if tail in seen_tail:
-                deduped.append((row, seen_tail[tail]))
+            key = (row["model"].strip().lower(), tail)
+            if key in seen_tail:
+                deduped.append((row, seen_tail[key]))
                 continue
-            seen_tail[tail] = f"{row['manufacturer']} {row['model']}"
+            seen_tail[key] = f"{row['manufacturer']} {row['model']}"
         rows.append({k: row.get(k, "") for k in HEADER})
 
     with open(args.out, "w", newline="", encoding="utf-8") as f:

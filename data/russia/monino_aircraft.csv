@@ -1,0 +1,133 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-3,,,,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-9,,01,Fargo,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-15,,,Fagot,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,under_restoration
+Mikoyan-Gurevich,MiG-15,bis ISh,27,Fagot,,fixed_wing,monoplane,military,ground_attack,,,,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-15,UTI,03,Midget,,fixed_wing,monoplane,military,trainer,,,,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-17,,01,Fresco,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-19,PM,11,Farmer,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-21,bis,48,Fishbed,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-21,I,21,Analog,,fixed_wing,monoplane,military,experimental,,,Tu-144 wing test analog,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-21,PFS,93,Fishbed,,fixed_wing,monoplane,military,fighter,,,museum also calls it MiG-21S,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-23,23-11,231,,,fixed_wing,monoplane,military,experimental,,,swept-wing prototype,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-23,BM,01,Flogger,,fixed_wing,monoplane,military,ground_attack,,,,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-23,MLD,19,Flogger,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-25,R,02,Foxbat,,fixed_wing,monoplane,military,recon,,,,Central Air Force Museum,under_restoration
+Mikoyan-Gurevich,MiG-25,PD,04,Foxbat,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-25,RB,25,Foxbat-B,,fixed_wing,monoplane,military,recon,,,,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-27,,01,Flogger-D,,fixed_wing,monoplane,military,ground_attack,,,,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-29,9-12,01,Fulcrum,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-29,,03,Fulcrum,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-29,,51,Fulcrum,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-29,K,70,Fulcrum-D,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-29,K,18,Fulcrum-D,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-31,,96,Foxhound,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-31,,202,Foxhound,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-105,,,,,fixed_wing,monoplane,military,experimental,,,Spiral EPOS orbital spaceplane analog,Central Air Force Museum,on_display
+Mikoyan-Gurevich,Ye-152,M,,,,fixed_wing,monoplane,military,experimental,,,Ye-166;record-setting prototype interceptor,Central Air Force Museum,on_display
+Mil,Mi-2,,12,Hoplite,,rotary_wing,,military,utility,,,,Central Air Force Museum,on_display
+Mil,Mi-2,SKh,CCCP-20869,Hoplite,,rotary_wing,,civilian,utility,,,,Central Air Force Museum,on_display
+Mil,Mi-4,,34,Hound,,rotary_wing,,military,transport,,,,Central Air Force Museum,on_display
+Mil,Mi-6,,02,Hook,,rotary_wing,,military,transport,,,,Central Air Force Museum,on_display
+Mil,Mi-6,AYa,,Hook,,rotary_wing,,military,utility,,,airborne command post,Central Air Force Museum,on_display
+Mil,Mi-6,PZh2,41,Hook,,rotary_wing,,military,utility,,,firefighting,Central Air Force Museum,on_display
+Mil,Mi-8,,05,Hip,,rotary_wing,,military,utility,,,,Central Air Force Museum,on_display
+Mil,Mi-8,T,25,Hip,,rotary_wing,,military,transport,,,,Central Air Force Museum,on_display
+Mil,Mi-10,,,Harke,,rotary_wing,,military,transport,,,,Central Air Force Museum,on_display
+Mil,Mi-12,,CCCP-21142,Homer,,rotary_wing,,civilian,experimental,,,V-12;heaviest helicopter ever flown,Central Air Force Museum,on_display
+Mil,Mi-24,A,50,Hind-A,,rotary_wing,,military,ground_attack,,,,Central Air Force Museum,on_display
+Mil,Mi-24,V,46,Hind-E,,rotary_wing,,military,ground_attack,,,,Central Air Force Museum,on_display
+Mil,Mi-24,V,44,Hind-E,,rotary_wing,,military,ground_attack,,,,Central Air Force Museum,on_display
+Mil,Mi-26,,21,Halo,,rotary_wing,,military,transport,,,,Central Air Force Museum,on_display
+Kamov,Ka-25,,17,Hormone,,rotary_wing,,military,utility,,,,Central Air Force Museum,on_display
+Beriev,Be-12,,25,Mail,,fixed_wing,monoplane,military,recon,,,,Central Air Force Museum,on_display
+Beriev,Be-32,,CCCP-67209,,,fixed_wing,monoplane,civilian,commercial_transport,,,,Central Air Force Museum,on_display
+Beriev,VVA-14,,,,,fixed_wing,monoplane,military,experimental,,,Bartini-Beriev amphibious VTOL prototype,Central Air Force Museum,on_display
+Lavochkin,La-15,,212,Fantail,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Lavochkin,La-250,A,04,Anaconda,,fixed_wing,monoplane,military,experimental,,,,Central Air Force Museum,on_display
+Lavochkin,La-7,,27,,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Myasishchev,3M,D,30,Bison,,fixed_wing,monoplane,military,bomber,,,,Central Air Force Museum,on_display
+Myasishchev,M-17,,CCCP-17103,Mystic,,fixed_wing,monoplane,military,experimental,,,Stratosfera;high-altitude research aircraft,Central Air Force Museum,on_display
+Myasishchev,M-50,,12,Bounder,,fixed_wing,monoplane,military,experimental,,,,Central Air Force Museum,on_display
+Ilyushin,DB-3,,12,,,fixed_wing,monoplane,military,bomber,,,,Central Air Force Museum,on_display
+Ilyushin,Il-2,,19,Bark,,fixed_wing,monoplane,military,ground_attack,,,,Central Air Force Museum,on_display
+Ilyushin,Il-10,M,,Beast,,fixed_wing,monoplane,military,ground_attack,,,,Central Air Force Museum,on_display
+Ilyushin,Il-12,T,10,Coach,,fixed_wing,monoplane,military,transport,,,,Central Air Force Museum,on_display
+Ilyushin,Il-28,,04,Beagle,,fixed_wing,monoplane,military,bomber,,,,Central Air Force Museum,on_display
+Ilyushin,Il-76,M,CCCP-86047,Candid,,fixed_wing,monoplane,military,transport,,,,Central Air Force Museum,on_display
+Ilyushin,Il-18,V,CCCP-75737,Coot,,fixed_wing,monoplane,civilian,commercial_transport,,,,Central Air Force Museum,on_display
+Ilyushin,Il-62,,CCCP-86670,Classic,,fixed_wing,monoplane,civilian,commercial_transport,,,,Central Air Force Museum,on_display
+Antonov,An-8,,10,Camp,,fixed_wing,monoplane,military,transport,,,,Central Air Force Museum,on_display
+Antonov,An-12,,04,Cub,,fixed_wing,monoplane,military,transport,,,,Central Air Force Museum,on_display
+Antonov,An-14,A,01,Clod,,fixed_wing,monoplane,military,utility,,,,Central Air Force Museum,on_display
+Antonov,An-22,,CCCP-09334,Cock,,fixed_wing,monoplane,military,transport,,,,Central Air Force Museum,on_display
+Antonov,An-2,,CCCP-70992,Colt,,fixed_wing,biplane,civilian,commercial_transport,,,,Central Air Force Museum,under_restoration
+Antonov,An-24,,CCCP-46746,Coke,,fixed_wing,monoplane,civilian,commercial_transport,,,,Central Air Force Museum,on_display
+Antonov,An-10,A,CCCP-11213,Cat,,fixed_wing,monoplane,civilian,commercial_transport,,,,Central Air Force Museum,on_display
+Sukhoi,Su-2,,38,,,fixed_wing,monoplane,military,bomber,,,replica,Central Air Force Museum,on_display
+Sukhoi,Su-7,B,25,Fitter,,fixed_wing,monoplane,military,ground_attack,1960,,,Central Air Force Museum,on_display
+Sukhoi,Su-7,BKL,15,Fitter,,fixed_wing,monoplane,military,ground_attack,1965,,,Central Air Force Museum,on_display
+Sukhoi,Su-7,L,17,Fitter,,fixed_wing,monoplane,military,experimental,,,S-26 ski-undercarriage testbed,Central Air Force Museum,on_display
+Sukhoi,Su-9,,68,Fishpot,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Sukhoi,Su-11,,14,Fishpot,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Sukhoi,Su-15,,11,Flagon,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Sukhoi,Su-17,,24,Fitter,,fixed_wing,monoplane,military,ground_attack,,,,Central Air Force Museum,on_display
+Sukhoi,Su-17,M3,93,Fitter-H,,fixed_wing,monoplane,military,ground_attack,,,,Central Air Force Museum,on_display
+Sukhoi,Su-17,M4,05,Fitter-K,,fixed_wing,monoplane,military,ground_attack,,,,Central Air Force Museum,on_display
+Sukhoi,Su-17,UM3,56,Fitter-G,,fixed_wing,monoplane,military,trainer,,,,Central Air Force Museum,on_display
+Sukhoi,Su-24,T6-1,61,Fencer,,fixed_wing,monoplane,military,experimental,,,first Su-24 prototype,Central Air Force Museum,on_display
+Sukhoi,Su-24,,54,Fencer,,fixed_wing,monoplane,military,bomber,,,,Central Air Force Museum,on_display
+Sukhoi,Su-24,M,09,Fencer,,fixed_wing,monoplane,military,bomber,,,also listed as 31,Central Air Force Museum,on_display
+Sukhoi,Su-25,,09,Frogfoot,,fixed_wing,monoplane,military,ground_attack,,,,Central Air Force Museum,on_display
+Sukhoi,Su-25,T8-11,66,Frogfoot,,fixed_wing,monoplane,military,experimental,,,Su-25 prototype,Central Air Force Museum,on_display
+Sukhoi,Su-27,T10-1,10,Flanker,,fixed_wing,monoplane,military,experimental,,,first Su-27 prototype,Central Air Force Museum,on_display
+Sukhoi,Su-27,SK,28,Flanker,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Sukhoi,Su-35,T10M-1,701,Flanker-E,,fixed_wing,monoplane,military,experimental,,,Su-27M prototype,Central Air Force Museum,on_display
+Sukhoi,T-4,,101,,,fixed_wing,monoplane,military,experimental,,,Su-100;Sotka,Central Air Force Museum,on_display
+Tupolev,ANT-2,,,,,fixed_wing,monoplane,civilian,experimental,,,,Central Air Force Museum,on_display
+Tupolev,ANT-25,RD,25,,,fixed_wing,monoplane,civilian,experimental,,,record-distance aircraft,Central Air Force Museum,on_display
+Tupolev,ANT-40,,,,,fixed_wing,monoplane,military,bomber,,,SB,Central Air Force Museum,on_display
+Tupolev,Tu-2,,103,Bat,,fixed_wing,monoplane,military,bomber,,,,Central Air Force Museum,on_display
+Tupolev,Tu-4,,01,Bull,,fixed_wing,monoplane,military,bomber,,,serial 280503,Central Air Force Museum,on_display
+Tupolev,Tu-16,R,50,Badger,,fixed_wing,monoplane,military,recon,,,serial 1880302,Central Air Force Museum,on_display
+Tupolev,Tu-16,K,53,Badger,,fixed_wing,monoplane,military,bomber,1954,,serial 4201004,Central Air Force Museum,on_display
+Tupolev,Tu-22,,32,Blinder,,fixed_wing,monoplane,military,bomber,,,,Central Air Force Museum,on_display
+Tupolev,Tu-22M,0,,Backfire,,fixed_wing,monoplane,military,bomber,,,bort 33,Central Air Force Museum,on_display
+Tupolev,Tu-22M,3,,Backfire,,fixed_wing,monoplane,military,bomber,,,bort 33,Central Air Force Museum,on_display
+Tupolev,Tu-95,LL,,Bear,,fixed_wing,monoplane,military,test,,,engine flying testbed,Central Air Force Museum,on_display
+Tupolev,Tu-95,MS,31,Bear-H,,fixed_wing,monoplane,military,bomber,,,transferred 2012,Central Air Force Museum,on_display
+Tupolev,Tu-128,,,Fiddler,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Tupolev,Tu-141,,05,Strizh,,fixed_wing,monoplane,military,drone,,,,Central Air Force Museum,on_display
+Tupolev,Tu-104,AK,46,Camel,,fixed_wing,monoplane,military,test,,,zero-g cosmonaut trainer;CCCP-42390,Central Air Force Museum,on_display
+Tupolev,Tu-114,,CCCP-L5611,Cleat,,fixed_wing,monoplane,civilian,commercial_transport,,,,Central Air Force Museum,on_display
+Tupolev,Tu-124,,CCCP-45825,Cookpot,,fixed_wing,monoplane,civilian,commercial_transport,,,,Central Air Force Museum,on_display
+Tupolev,Tu-144,,CCCP-77106,Charger,,fixed_wing,monoplane,civilian,experimental,,,,Central Air Force Museum,on_display
+Yakovlev,Yak-9,U,0257,Frank,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Yakovlev,Yak-17,,02,Feather,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Yakovlev,Yak-23,,15,Flora,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Yakovlev,Yak-25,,03,Flashlight,,fixed_wing,monoplane,military,fighter,,,,Central Air Force Museum,on_display
+Yakovlev,Yak-25,RV,11,Mandrake,,fixed_wing,monoplane,military,recon,,,,Central Air Force Museum,on_display
+Yakovlev,Yak-27,R,14,Mangrove,,fixed_wing,monoplane,military,recon,,,serial 0703,Central Air Force Museum,on_display
+Yakovlev,Yak-28,L,44,Brewer,,fixed_wing,monoplane,military,bomber,,,,Central Air Force Museum,on_display
+Yakovlev,Yak-36,,36,Freehand,,fixed_wing,monoplane,military,experimental,,,VTOL demonstrator,Central Air Force Museum,on_display
+Yakovlev,Yak-38,,38,Forger,,fixed_wing,monoplane,military,ground_attack,,,,Central Air Force Museum,on_display
+Yakovlev,Yak-38,,37,Forger,,fixed_wing,monoplane,military,ground_attack,,,,Central Air Force Museum,on_display
+Yakovlev,Yak-130,D,01,Mitten,,fixed_wing,monoplane,military,trainer,,,demonstrator prototype,Central Air Force Museum,on_display
+Yakovlev,Yak-141,,77,Freestyle,,fixed_wing,monoplane,military,experimental,,,Yak-41,Central Air Force Museum,on_display
+Yakovlev,Yak-24,,51,Horse,,rotary_wing,,military,transport,,,,Central Air Force Museum,on_display
+Yakovlev,Yak-40,,CCCP-87490,Codling,,fixed_wing,monoplane,civilian,commercial_transport,,,,Central Air Force Museum,on_display
+Yakovlev,Yak-42,,CCCP-42302,Clobber,,fixed_wing,monoplane,civilian,commercial_transport,,,,Central Air Force Museum,on_display
+Polikarpov,I-15,bis,,,,fixed_wing,biplane,military,fighter,,,,Central Air Force Museum,on_display
+Polikarpov,I-16,,,,,fixed_wing,monoplane,military,fighter,,,first of two airframes,Central Air Force Museum,on_display
+Polikarpov,I-16,,,,,fixed_wing,monoplane,military,fighter,,,second of two airframes,Central Air Force Museum,on_display
+Polikarpov,Po-2,,,Mule,,fixed_wing,biplane,military,utility,,,Hangar 8,Central Air Force Museum,on_display
+Polikarpov,Po-2,,,Mule,,fixed_wing,biplane,military,trainer,,,Hangar 6A,Central Air Force Museum,on_display
+Polikarpov,R-5,,,,,fixed_wing,biplane,military,utility,,,,Central Air Force Museum,on_display
+Polikarpov,U-2,LNB,,Mule,,fixed_wing,biplane,military,bomber,,,night bomber variant,Central Air Force Museum,on_display
+Petlyakov,Pe-2,,,Buck,,fixed_wing,monoplane,military,bomber,,,assembled from three recovered airframes,Central Air Force Museum,on_display
+Sikorsky,Ilya Muromets,,,,,fixed_wing,biplane,military,bomber,,,replica built as film prop;S-22,Central Air Force Museum,on_display
+Sopwith,Triplane,,,,,fixed_wing,triplane,military,fighter,,,acquired 1959-60,Central Air Force Museum,on_display
+Voisin,LAS,,,,,fixed_wing,biplane,military,recon,,,acquired 1959-60,Central Air Force Museum,on_display
+North American,B-25,,,Mitchell,,fixed_wing,monoplane,military,bomber,,,Lend-Lease,Central Air Force Museum,on_display
+Piasecki,H-21,C,,Shawnee,,rotary_wing,,military,utility,,,Model 44;N74056,Central Air Force Museum,under_restoration
+PZL,M-15,,CCCP-15105,Belphegor,,fixed_wing,biplane,civilian,utility,,,agricultural jet biplane,Central Air Force Museum,on_display

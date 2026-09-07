@@ -173,6 +173,44 @@ class TestNeverInvent:
         assert "structural test airframe" in row["aliases"]
 
 
+class TestCrossSliceDedupe:
+    """The dedupe must use the database's unique key, (model, tail), not the
+    tail alone. Bort numbers and prototype numbers repeat across models."""
+
+    def run(self, tmp_path, lines):
+        src = tmp_path / "raw.txt"
+        src.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        out = tmp_path / "out.csv"
+        sys.argv = ["prog", "--in", str(src), "--museum", "M", "--out", str(out)]
+        B.main()
+        return list(csv.DictReader(out.open(encoding="utf-8")))
+
+    def test_same_airframe_under_two_credits_is_deduped(self, tmp_path):
+        rows = self.run(tmp_path, [
+            "Chance Vought|RF-8|G|146860|Crusader||fixed_wing|monoplane|military|recon|||on_display",
+            "Vought|RF-8|G|146860|Crusader||fixed_wing|monoplane|military|recon|||on_display",
+        ])
+        assert len(rows) == 1
+
+    def test_same_bort_on_different_models_is_two_aircraft(self, tmp_path):
+        """Monino: bort 01 on a MiG-9 AND a Tu-4 AND an An-14."""
+        rows = self.run(tmp_path, [
+            "Mikoyan-Gurevich|MiG-9||01|Fargo||fixed_wing|monoplane|military|fighter|||on_display",
+            "Tupolev|Tu-4||01|Bull||fixed_wing|monoplane|military|bomber|||on_display",
+            "Antonov|An-14|A|01|Clod||fixed_wing|monoplane|military|utility|||on_display",
+        ])
+        assert len(rows) == 3, "a bort number is only unique within a type"
+
+    def test_prototype_01s_on_different_types_are_kept(self, tmp_path):
+        """Le Bourget: Mirage III V-01, Mirage G8-01, Mirage 2000-01."""
+        rows = self.run(tmp_path, [
+            "Dassault|Mirage III|V|01|||fixed_wing|monoplane|military|experimental|||on_display",
+            "Dassault|Mirage G8||01|||fixed_wing|monoplane|military|experimental|||on_display",
+            "Dassault|Mirage 2000||01|||fixed_wing|monoplane|military|experimental|||on_display",
+        ])
+        assert len(rows) == 3
+
+
 class TestEndToEnd:
 
     def test_writes_a_csv_the_importer_header_expects(self, tmp_path):

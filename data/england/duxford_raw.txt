@@ -1,0 +1,114 @@
+Airco|DH.9||D5649|||fixed_wing|biplane|military|bomber|||on_display
+Airco|DH.9||E8894|||fixed_wing|biplane|military|bomber||G-CDLI|on_display
+Airspeed|Oxford|I|V3388|||fixed_wing|monoplane|military|trainer|||on_display
+Airspeed|Ambassador|2|G-ALZO|||fixed_wing|monoplane|civilian|commercial_transport||Elizabethan|on_display
+Avro Canada|CF-100||18393|Canuck||fixed_wing|monoplane|military|fighter|||on_display
+Avro|Lancaster|X|KB889|||fixed_wing|monoplane|military|bomber|||on_display
+Avro|Vulcan|B.2|XJ824|||fixed_wing|monoplane|military|bomber|||on_display
+Avro|Anson|I|N4877|||fixed_wing|monoplane|military|trainer|||on_display
+Avro|Rota|I|HM580|||rotary_wing||military|utility||Cierva C.30A;autogyro|on_display
+Avro|Shackleton|MR.3|XF708|||fixed_wing|monoplane|military|recon|||under_restoration
+Avro|York||G-ANTK|||fixed_wing|monoplane|civilian|commercial_transport|||on_display
+BAC|TSR.2||XR222|||fixed_wing|monoplane|military|experimental|||on_display
+BAC|Concorde|101|G-AXDN|||fixed_wing|monoplane|civilian|commercial_transport|1971|Aerospatiale/BAC;pre-production prototype|on_display
+BAC|Strikemaster||1133|||fixed_wing|monoplane|military|trainer|||on_display
+BAC|One-Eleven|500|G-AVMU||County of Dorset|fixed_wing|monoplane|civilian|commercial_transport|||on_display
+BAC|VC10|Super|G-ASGC|||fixed_wing|monoplane|civilian|commercial_transport|||on_display
+Bell|UH-1|H|72-21605|Huey||rotary_wing||military|utility|||on_display
+Boeing|B-17|G|44-83735|Flying Fortress|Mary Alice|fixed_wing|monoplane|military|bomber||231983;F-BDRS|on_display
+Boeing|B-17|G|44-85784|Flying Fortress|Sally B|fixed_wing|monoplane|military|bomber|1945|G-BEDF;airworthy|on_display
+Boeing|B-52|D|56-0689|Stratofortress||fixed_wing|monoplane|military|bomber|||on_display
+Boeing|B-29|A|44-61748|Superfortress|It's Hawg Wild|fixed_wing|monoplane|military|bomber||G-BHDK|on_display
+Boeing-Stearman|PT-17||41-8169|Kaydet||fixed_wing|biplane|military|trainer||CF-EQS|on_display
+Bristol|Blenheim|IF|L6739|||fixed_wing|monoplane|military|fighter||G-BPIV;airworthy|on_display
+Bristol|F.2B||E2581|Fighter|||fixed_wing|biplane|military|fighter|||on_display
+Bristol|Britannia|312|G-AOVT|||fixed_wing|monoplane|civilian|commercial_transport|||on_display
+Bristol|Beaufighter|XIc|JM135|||fixed_wing|monoplane|military|fighter||A19-144;composite of four airframes|under_restoration
+British Aerospace|146|CC2|ZE701|||fixed_wing|monoplane|military|transport|||on_display
+Britten-Norman|Trislander|BN-2A-III|G-BEVT|||fixed_wing|monoplane|civilian|commercial_transport|||on_display
+Commonwealth Aircraft|CA-18|Mustang 22|A68-192||Jersey Jerk|fixed_wing|monoplane|military|fighter||415152;G-JERK|on_display
+Consolidated|B-24|M|44-50493|Liberator|Dugan|fixed_wing|monoplane|military|bomber|||on_display
+de Havilland|Mosquito|TT.35|TA719|||fixed_wing|monoplane|military|other|||on_display
+de Havilland|Sea Vixen|FAW.2|XS576|||fixed_wing|monoplane|military|fighter|||on_display
+de Havilland|Vampire|T.11|WZ590|||fixed_wing|monoplane|military|trainer|||on_display
+de Havilland|Dove||G-ALFU|||fixed_wing|monoplane|civilian|utility|||on_display
+de Havilland|Comet|4|G-APDB|||fixed_wing|monoplane|civilian|commercial_transport|||on_display
+de Havilland Canada|DHC-2||G-DHCZ|Beaver||fixed_wing|monoplane|civilian|utility||XP772|on_display
+Douglas|C-47|A|43-15509|Skytrain||fixed_wing|monoplane|military|transport|||on_display
+English Electric|Lightning|F.1|XM135|||fixed_wing|monoplane|military|fighter|||on_display
+Fairchild Republic|A-10|A|77-0259|Thunderbolt II||fixed_wing|monoplane|military|ground_attack|||on_display
+Fairey|Swordfish||NF370|||fixed_wing|biplane|military|bomber|||on_display
+Fairey|Gannet|ECM.6|XG797|||fixed_wing|monoplane|military|electronic_warfare|||on_display
+Fairey|Firefly|TT.I|Z2033|||fixed_wing|monoplane|military|other|||on_display
+FMA|IA 58||ZD487|Pucara||fixed_wing|monoplane|military|ground_attack||A-549|under_restoration
+General Dynamics|F-111|E|67-0120|Aardvark||fixed_wing|monoplane|military|ground_attack|||on_display
+Gloster|Javelin|FAW.9|XH897|||fixed_wing|monoplane|military|fighter|||on_display
+Gloster|Meteor|F.8|WK991|||fixed_wing|monoplane|military|fighter|||on_display
+Gloster|Gladiator|II|N5903|||fixed_wing|biplane|military|fighter||G-GLAD;airworthy|on_display
+Grumman|F8F|2P|121714|Bearcat||fixed_wing|monoplane|military|fighter|1948|G-RUMM;N700HL;airworthy|on_display
+Handley Page|Hastings|C.1A|TG528|||fixed_wing|monoplane|military|transport|||on_display
+Handley Page|Victor|B.1|XH648|||fixed_wing|monoplane|military|bomber|||on_display
+Handley Page|Victor|K.2|XH669|||fixed_wing|monoplane|military|tanker||cockpit section only|under_restoration
+Hawker Siddeley|Harrier|GR.3|XZ133|||fixed_wing|monoplane|military|ground_attack|||on_display
+Hawker|Sea Hawk|FB.5|WM969|||fixed_wing|monoplane|military|fighter|||on_display
+Hawker Siddeley|Buccaneer|S.2B|XV865|||fixed_wing|monoplane|military|ground_attack|||on_display
+Hawker|Fury|I|K5674|||fixed_wing|biplane|military|fighter||G-CBZP;airworthy|on_display
+Hawker|Sea Fury|FB.11|SR661|||fixed_wing|monoplane|military|fighter|||on_display
+Hawker|Nimrod|II|K3661|||fixed_wing|biplane|military|fighter||G-BURZ;airworthy|on_display
+Hawker|Hurricane|I|P2902|||fixed_wing|monoplane|military|fighter||G-ROBT;airworthy|on_display
+Hawker|Hurricane|I|R4118|||fixed_wing|monoplane|military|fighter||G-HUPW;airworthy|on_display
+Hawker|Hurricane|TR.2B|BE505|||fixed_wing|monoplane|military|trainer||G-HHII;two-seat conversion;airworthy|on_display
+Hawker|Hurricane|I|V7497|||fixed_wing|monoplane|military|fighter||G-HRLI;airworthy|on_display
+Hawker|Hurricane|IIB|Z2315|||fixed_wing|monoplane|military|fighter|||on_display
+Hawker|Tempest|II|MW763|||fixed_wing|monoplane|military|fighter||PR533;G-TEMT|on_display
+Hawker|Hunter|F.6A|XE627|||fixed_wing|monoplane|military|fighter|||on_display
+Heinkel|He 162|A-2|120235|Salamander||fixed_wing|monoplane|military|fighter|||under_restoration
+Lockheed|Model 12|A|G-AFTL|Electra Junior||fixed_wing|monoplane|civilian|private|||on_display
+Lockheed|U-2|C|56-6692|Dragon Lady||fixed_wing|monoplane|military|recon|||on_display
+Curtiss|P-40|B|G-CDWH|Tomahawk||fixed_wing|monoplane|military|fighter||16073;airworthy|on_display
+Curtiss|P-40|C|41-13357|Tomahawk||fixed_wing|monoplane|military|fighter||G-CIIO;airworthy|on_display
+Curtiss|P-40|F|41-19841|Warhawk||fixed_wing|monoplane|military|fighter||G-CGZP;airworthy|on_display
+Curtiss|Hawk 75|A|G-CCVH|||fixed_wing|monoplane|military|fighter||82;airworthy|on_display
+Fiat|CR.42||Fv2542|Falco||fixed_wing|biplane|military|fighter||G-CBLS;c/n 920|on_display
+Miles|Magister|I|G-AFBS|||fixed_wing|monoplane|military|trainer|||on_display
+Panavia|Tornado|GR.1|ZA465|||fixed_wing|monoplane|military|ground_attack|||on_display
+Panavia|Tornado|GR.4|ZA469|||fixed_wing|monoplane|military|ground_attack|||on_display
+Royal Aircraft Factory|R.E.8||F3556|||fixed_wing|biplane|military|recon|||on_display
+Royal Aircraft Factory|B.E.2|c|2699|||fixed_wing|biplane|military|recon|||on_display
+Short|Sunderland|MR.5|ML796|||fixed_wing|monoplane|military|recon|||on_display
+Supermarine|Spitfire|F.24|VN485|||fixed_wing|monoplane|military|fighter|||on_display
+Supermarine|Spitfire|VB|BM597|||fixed_wing|monoplane|military|fighter||G-MKVB;code JH-C;airworthy|on_display
+Supermarine|Spitfire|VC|EE602|||fixed_wing|monoplane|military|fighter||G-IBSY;code DV-V;airworthy|on_display
+Supermarine|Spitfire|LF.IXB|MH434|||fixed_wing|monoplane|military|fighter||G-ASJV;code ZD-B;airworthy|on_display
+Supermarine|Spitfire|HF.VIIIC|MT928|||fixed_wing|monoplane|military|fighter||G-BKMI;code ZX-M;airworthy|on_display
+Supermarine|Spitfire|FR.XIVE|MV293|||fixed_wing|monoplane|military|fighter||G-SPIT;airworthy|on_display
+Supermarine|Spitfire|LF.XVIE|RN201|||fixed_wing|monoplane|military|fighter||G-BSKP;airworthy|on_display
+Supermarine|Spitfire|LF.XVIE|RW382|||fixed_wing|monoplane|military|fighter||G-PBIX;code WZ-RR;airworthy|on_display
+Supermarine|Spitfire|IA|N3200|||fixed_wing|monoplane|military|fighter||G-CFGJ;code QV;airworthy|on_display
+Supermarine|Spitfire|T.9|PV202|||fixed_wing|monoplane|military|trainer||G-CCCA;two-seat conversion;airworthy|on_display
+Supermarine|Spitfire|PR.XI|PL983|||fixed_wing|monoplane|military|recon||G-PRXI;NHS Spitfire 2020;airworthy|on_display
+Supermarine|Spitfire|T.9|PT462|||fixed_wing|monoplane|military|trainer||G-CTIX;code SW-A;two-seat conversion;airworthy|on_display
+Supermarine|Spitfire|VB|EP120|||fixed_wing|monoplane|military|fighter||G-LFVB;airworthy|on_display
+Supermarine|Spitfire|22|PK624|||fixed_wing|monoplane|military|fighter|||under_restoration
+Westland|Lysander|III|V9673|||fixed_wing|monoplane|military|utility||code MA-J|on_display
+Westland|Lysander|IIIA|V9312|||fixed_wing|monoplane|military|utility|1940|G-CCOM;airworthy|on_display
+Westland|Wessex|HAS.1|XS863|||rotary_wing||military|recon||code 304/R|on_display
+Westland|Whirlwind|HAS.7|XK936|||rotary_wing||military|recon|||on_display
+Westland|Sea King|HAS.6|XV712|||rotary_wing||military|recon|||on_display
+Westland|Wasp|HAS.1|XS567|||rotary_wing||military|recon||code 434|on_display
+Percival|Proctor|III|LZ766|||fixed_wing|monoplane|military|utility||G-ALCK|on_display
+McDonnell Douglas|F-4|M|XV474|Phantom II||fixed_wing|monoplane|military|fighter||FGR.2|on_display
+Messerschmitt|Bf 109|E-3|1190|||fixed_wing|monoplane|military|fighter||force-landed 1940;displayed as crashed|on_display
+Mikoyan-Gurevich|MiG-21|PF|501|Fishbed||fixed_wing|monoplane|military|fighter|||on_display
+McDonnell Douglas|F-4|J|155529|Phantom II||fixed_wing|monoplane|military|fighter||ZE359;F-4J(UK);VF-74 markings|on_display
+McDonnell Douglas|F-15|A|76-0020|Eagle||fixed_wing|monoplane|military|fighter||on loan from NMUSAF|on_display
+Noorduyn|AT-16||B-168|Harvard||fixed_wing|monoplane|military|trainer||Harvard IIB|on_display
+North American|B-25|J|43-4064|Mitchell|Li'l Critter from the Moon|fixed_wing|monoplane|military|bomber||previously displayed as 44-31171;PBJ-1J markings|on_display
+North American|P-51|D|44-11631|Mustang|Etta Jeanne II|fixed_wing|monoplane|military|fighter||code MX-V|on_display
+North American|P-51|D|44-13521|Mustang|Marinell|fixed_wing|monoplane|military|fighter||G-MRLL;code 5Q-B;airworthy|on_display
+North American|P-51|D|44-72216|Mustang|Miss Helen|fixed_wing|monoplane|military|fighter||G-BIXL;code HO-M;airworthy|on_display
+Republic|P-47|D|45-49192|Thunderbolt|Nellie B|fixed_wing|monoplane|military|fighter||G-THUN;code F4-J;airworthy|on_display
+Republic|P-47|D|42-26413|Thunderbolt||fixed_wing|monoplane|military|fighter||78th FG markings;composite static rebuild|on_display
+Noorduyn|Harvard|IIB|FE695|||fixed_wing|monoplane|military|trainer|1942|G-BTXI;airworthy|on_display
+SPAD|XIII|||||fixed_wing|biplane|military|fighter||replica;represents S.4513 Rickenbacker|on_display
+Vickers|Viscount|701|G-ALWF||Sir John Franklin|fixed_wing|monoplane|civilian|commercial_transport|1953||on_display

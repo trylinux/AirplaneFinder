@@ -34,6 +34,14 @@ FILES = {
                          "Museum of Flight"),
     "nnam_pensacola": (DATA / "florida" / "nnam_pensacola_aircraft.csv",
                        "National Naval Aviation Museum"),
+    "duxford": (DATA / "england" / "duxford_aircraft.csv",
+                "Imperial War Museum Duxford"),
+    "evergreen": (DATA / "oregon" / "evergreen_aircraft.csv",
+                  "Evergreen Aviation Museum"),
+    "musee_de_lair": (DATA / "france" / "musee_de_lair_aircraft.csv",
+                      "Musee de l'Air et de l'Espace"),
+    "monino": (DATA / "russia" / "monino_aircraft.csv",
+               "Central Air Force Museum"),
 }
 
 
@@ -97,20 +105,27 @@ class TestDuplicateSafety:
 
     def test_untailed_rows_are_distinguishable(self, dataset):
         """A blank tail is NULL, so two identical untailed rows would both
-        insert and then be indistinguishable forever."""
+        insert and then be indistinguishable forever.
+
+        A museum holding two of a type is normal — Monino has two I-16s and
+        two Po-2s with no published borts — so the rule is that the rows must
+        differ in *something* a reader could use: variant, name, aliases or
+        description. Two rows identical on all of those are the hazard.
+        """
         name, rows, _ = dataset
         seen, dupes = set(), []
         for r in rows:
             if (r["tail_number"] or "").strip():
                 continue
-            key = (r["manufacturer"].strip().lower(), r["model"].strip().lower(),
-                   (r["variant"] or "").strip().lower())
+            key = tuple((r.get(k) or "").strip().lower() for k in
+                        ("manufacturer", "model", "variant", "aircraft_name",
+                         "aliases", "description"))
             if key in seen:
-                dupes.append(key)
+                dupes.append(key[:3])
             seen.add(key)
         assert not dupes, (
-            f"{name} has untailed rows that are identical on "
-            f"(manufacturer, model, variant): {dupes}")
+            f"{name} has untailed rows that are identical in every "
+            f"descriptive field: {dupes}")
 
 
 class TestFieldHygiene:
@@ -134,7 +149,9 @@ class TestFieldHygiene:
         bad = [(r["model"], r["year_built"]) for r in rows
                if r["year_built"].strip()
                and not (r["year_built"].strip().isdigit()
-                        and 1900 <= int(r["year_built"]) <= 2030)]
+                        # Le Bourget holds the only surviving original
+                        # Chanute glider, built 1896.
+                        and 1850 <= int(r["year_built"]) <= 2030)]
         assert not bad, f"{name}: year_built holds something that is not a year: {bad}"
 
     def test_model_does_not_swallow_the_variant(self, dataset):
@@ -166,8 +183,12 @@ class TestFieldHygiene:
         """'Unknown' and 'None' are how a blank arrives dressed as data."""
         name, rows, _ = dataset
         junk = {"unknown", "none", "n/a", "na", "tbd", "unk", "-", "null"}
+        # "NA" in the variant column is a designation, not "not applicable":
+        # the Douglas AD-4NA is a real Skyraider variant. Only flag it there
+        # when it is written as a placeholder would be (lowercase, or N/A).
         bad = [(r["model"], k, v) for r in rows for k, v in r.items()
-               if isinstance(v, str) and v.strip().lower() in junk]
+               if isinstance(v, str) and v.strip().lower() in junk
+               and not (k == "variant" and v.strip() == "NA")]
         assert not bad, f"{name}: placeholder values that should be blank: {bad[:5]}"
 
 
@@ -250,6 +271,43 @@ class TestKnownBiplanes:
         ("nnam_pensacola", "Thomas-Morse", "S-4"),
         ("nnam_pensacola", "Hanriot", "HD.1"),
         ("nnam_pensacola", "Vought", "VE-7"),
+        # Duxford
+        ("duxford", "Airco", "DH.9"),
+        ("duxford", "Bristol", "F.2B"),
+        ("duxford", "Fairey", "Swordfish"),
+        ("duxford", "Gloster", "Gladiator"),
+        ("duxford", "Hawker", "Fury"),
+        ("duxford", "Hawker", "Nimrod"),
+        ("duxford", "Royal Aircraft Factory", "R.E.8"),
+        ("duxford", "Royal Aircraft Factory", "B.E.2"),
+        ("duxford", "Fiat", "CR.42"),
+        ("duxford", "Boeing-Stearman", "PT-17"),
+        # Evergreen
+        ("evergreen", "Beechcraft", "UC-43"),
+        ("evergreen", "Naval Aircraft Factory", "N3N"),
+        ("evergreen", "Pitts", "S-2"),
+        ("evergreen", "Sopwith", "Camel"),
+        # The PZL M-15 Belphegor is the only jet biplane ever built.
+        ("monino", "PZL", "M-15"),
+        # Le Bourget — a very large pre-1920 collection
+        ("musee_de_lair", "Bréguet", "14"),
+        ("musee_de_lair", "Bréguet", "19"),
+        ("musee_de_lair", "Caudron", "G.4"),
+        ("musee_de_lair", "Farman", "F.60"),
+        ("musee_de_lair", "Nieuport", "11"),
+        ("musee_de_lair", "SPAD", "VII"),
+        ("musee_de_lair", "SPAD", "XIII"),
+        ("musee_de_lair", "Voisin", "LAS"),
+        ("musee_de_lair", "Fokker", "D.VII"),
+        ("musee_de_lair", "Polikarpov", "I-153"),
+        ("musee_de_lair", "Chanute", "Glider"),
+        # Monino
+        ("monino", "Antonov", "An-2"),
+        ("monino", "Polikarpov", "I-15"),
+        ("monino", "Polikarpov", "Po-2"),
+        ("monino", "Polikarpov", "R-5"),
+        ("monino", "Sikorsky", "Ilya Muromets"),
+        ("monino", "Voisin", "LAS"),
     ]
 
     @pytest.mark.parametrize("dataset_name,manufacturer,model", KNOWN_BIPLANES,

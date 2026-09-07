@@ -1,0 +1,107 @@
+Airco|DH-4||3258|Liberty Plane||fixed_wing|biplane|military|bomber||DH-4M-1|on_display
+Bede|BD-5|B|N110CJ|||fixed_wing|monoplane|civilian|private|||on_display
+Beechcraft|UC-43|F|42-49071|Traveler||fixed_wing|biplane|military|utility||Staggerwing;Model 17|on_display
+Beechcraft|C-45|H|52-10902|Expeditor||fixed_wing|monoplane|military|transport||Model 18|on_display
+Beechcraft|2000||N74TD|Starship||fixed_wing|monoplane|civilian|private|||on_display
+Beechcraft|Model 35||N3870N|Bonanza||fixed_wing|monoplane|civilian|private|||on_display
+Beechcraft|T-34|B|140938|Mentor||fixed_wing|monoplane|military|trainer|||on_display
+Bell|UH-1|H|64-13502|Iroquois||rotary_wing||military|utility||Huey|on_display
+Bell|206|B|N10729|JetRanger||rotary_wing||civilian|utility|||on_display
+Bell|AH-1|F|69-16434|Cobra||rotary_wing||military|ground_attack||GAH-1F ground trainer|on_display
+Bell|HTL|3|124564|Sioux||rotary_wing||military|trainer|||on_display
+Bell|OH-13|E|51-13934|Sioux||rotary_wing||military|recon|||on_display
+Boeing|747|132|N481EV|||fixed_wing|monoplane|civilian|commercial_transport||atop Wings and Waves waterpark|on_display
+Boeing|747|212B|N482EV|||fixed_wing|monoplane|civilian|commercial_transport||ex-Singapore Airlines 9V-SIB|on_display
+Cessna|O-2|A|67-21395|Skymaster||fixed_wing|monoplane|military|recon|||on_display
+Christen|Eagle|II|N4221H|||fixed_wing|biplane|civilian|private|||on_display
+Canadian Vickers|Canso|A|9815|Catalina||fixed_wing|monoplane|military|search_rescue||PBY-5A;RCAF|on_display
+Convair|F-102|A|56-1368|Delta Dagger||fixed_wing|monoplane|military|fighter|||on_display
+Convair|F-106|A|59-0137|Delta Dart||fixed_wing|monoplane|military|fighter|||on_display
+Curtiss|N2C||N868N|Fledgling||fixed_wing|biplane|military|trainer|||on_display
+Curtiss|Robin|C-1|N9283|||fixed_wing|monoplane|civilian|private|||on_display
+Curtiss-Wright|CW-15|D|N12314|Sedan||fixed_wing|monoplane|civilian|private|||on_display
+Douglas|B-26|B|44-35439|Invader||fixed_wing|monoplane|military|bomber||A-26C|on_display
+Douglas|A-4|E|152070|Skyhawk||fixed_wing|monoplane|military|ground_attack|||on_display
+Douglas|A-4|A|139929|Skyhawk||fixed_wing|monoplane|military|ground_attack|||on_display
+Douglas|EA-1|F|132534|Skyraider||fixed_wing|monoplane|military|electronic_warfare|||on_display
+Douglas|C-47|A|43-15512|Skytrain||fixed_wing|monoplane|military|transport||DC-3|on_display
+Douglas|C-9|C|73-1683|Nightingale||fixed_wing|monoplane|military|transport|||on_display
+Douglas|F5D|1|N708NA|Skylancer||fixed_wing|monoplane|military|test||NASA 708;ex-US Navy|on_display
+Fairchild|PT-19|A|42-83239|Cornell||fixed_wing|monoplane|military|trainer|||on_display
+Fairchild Republic|A-10|C|80-0186|Thunderbolt II||fixed_wing|monoplane|military|ground_attack|||on_display
+Focke-Wulf|Fw 190|A-3||||fixed_wing|monoplane|military|fighter||reproduction|on_display
+Fokker|Dr.I|||||fixed_wing|triplane|military|fighter||replica|on_display
+Stoddard-Hamilton|Glasair|SH-2|N306AT|||fixed_wing|monoplane|civilian|private|||on_display
+Granville Brothers|Model E||N11044|Sportster||fixed_wing|monoplane|civilian|private||Gee Bee|on_display
+Great Lakes|Baby Great Lakes||N44ET|||fixed_wing|biplane|civilian|private|||on_display
+Grumman|F-14|D|164343|Tomcat||fixed_wing|monoplane|military|fighter|||on_display
+Grumman|F9F|8T|146417|Cougar||fixed_wing|monoplane|military|trainer||TF-9J|on_display
+Grumman|Gulfstream II||N947NA|||fixed_wing|monoplane|civilian|trainer||NASA Shuttle Training Aircraft|on_display
+Grumman|OV-1|D|67-18902|Mohawk||fixed_wing|monoplane|military|recon|||on_display
+Grumman|S-2|B||Tracker||fixed_wing|monoplane|military|recon|||on_display
+Gyrodyne|XRON|1|04021|Rotorcycle||rotary_wing||military|utility||USMC one-man helicopter|on_display
+Hiller|OH-23|B|51-16245|Raven||rotary_wing||military|utility|||on_display
+Hiller|UH-12|E|N5363V|||rotary_wing||civilian|utility|||on_display
+Hiller|UH-12|E|N1H|||rotary_wing||civilian|utility||c/n 2100|on_display
+Hiller|YROE|1||Rotorcycle||rotary_wing||military|utility||USN prototype|on_display
+Hughes|TH-55||N79P|Osage||rotary_wing||military|trainer|||on_display
+Hughes|369|D|N11035|||rotary_wing||civilian|utility||civil OH-6|on_display
+Hughes|500|C||||rotary_wing||civilian|utility||registry gave invalid N110035;possibly same airframe as 369D N11035|on_display
+Hughes|H-4||NX37602|Hercules|Spruce Goose|fixed_wing|monoplane|civilian|experimental|1947|HK-1;largest wooden aircraft ever flown|on_display
+Kaman|SH-2|F|151321|Seasprite||rotary_wing||military|utility|||on_display
+Lancair|360||N44BH|||fixed_wing|monoplane|civilian|private|||on_display
+Lockheed|P-2|E|131502|Neptune||fixed_wing|monoplane|military|recon|||on_display
+Lockheed|T-33|A|53-5943|Shooting Star||fixed_wing|monoplane|military|trainer|||on_display
+Lockheed|F-94|C|51-13575|Starfire||fixed_wing|monoplane|military|fighter|||on_display
+Lockheed|F-104|G|FX-84|Starfighter||fixed_wing|monoplane|military|fighter||SABCA-built;Belgian Air Force|on_display
+McDonnell|F-101|A|53-2418|Voodoo||fixed_wing|monoplane|military|fighter||first production F-101A|on_display
+McDonnell|CF-101|F||Voodoo||fixed_wing|monoplane|military|fighter||Royal Canadian Air Force|on_display
+McDonnell|F-4|C|63-7647|Phantom II||fixed_wing|monoplane|military|fighter|||on_display
+McDonnell Douglas|F-15|A|73-0089|Eagle||fixed_wing|monoplane|military|fighter|||on_display
+McDonnell Douglas|F-15|A|76-0014|Eagle||fixed_wing|monoplane|military|fighter||pedestal display across highway at former Evergreen HQ;Michael King Smith memorial|on_display
+Messerschmitt|Me 262|A|501242|Schwalbe||fixed_wing|monoplane|military|fighter||reproduction by Texas Airplane Factory|on_display
+Shenyang|JJ-2||83238|Midget||fixed_wing|monoplane|military|trainer||Chinese-built MiG-15UTI|on_display
+Mikoyan-Gurevich|MiG-17|F|115|Fresco||fixed_wing|monoplane|military|fighter||Bulgarian Air Force|on_display
+Mikoyan-Gurevich|MiG-21|MF|7600|Fishbed||fixed_wing|monoplane|military|fighter|||on_display
+Mikoyan-Gurevich|MiG-23|ML|20+16|Flogger||fixed_wing|monoplane|military|fighter||ex-East German Air Force|on_display
+Mikoyan|MiG-29||41|Fulcrum||fixed_wing|monoplane|military|fighter||Moldovan Air Force|on_display
+Murphy|Rebel||N711WH|||fixed_wing|monoplane|civilian|private|||on_display
+Naval Aircraft Factory|N3N|3|02831|Canary||fixed_wing|biplane|military|trainer|||on_display
+North American|F-100|F|56-3832|Super Sabre||fixed_wing|monoplane|military|fighter|||on_display
+North American|F-100|F|56-3861|Super Sabre||fixed_wing|monoplane|military|fighter|||on_display
+North American|FJ-4|B|136119|Fury||fixed_wing|monoplane|military|fighter||F-1E;USMC|on_display
+North American|F-86|H|53-1251|Sabre||fixed_wing|monoplane|military|fighter|||on_display
+North American|T-2|C|158312|Buckeye||fixed_wing|monoplane|military|trainer|||on_display
+North American|T-28|B|138334|Trojan||fixed_wing|monoplane|military|trainer|||on_display
+North American|AT-6|C|42-43973|Texan||fixed_wing|monoplane|military|trainer|||on_display
+Northrop|T-38|A|63-8224|Talon||fixed_wing|monoplane|military|trainer|||on_display
+Northrop|F-5|E|741556|Tiger II||fixed_wing|monoplane|military|fighter||aggressor aircraft|on_display
+Northrop|F-89|A|53-26077|Scorpion||fixed_wing|monoplane|military|fighter|||on_display
+Northrop|F-89|J|53-2534|Scorpion||fixed_wing|monoplane|military|fighter|||on_display
+Northrop Grumman|RQ-8|A|166416|Fire Scout||rotary_wing||military|drone|||on_display
+Piasecki|CH-21|C|55-4218|Shawnee||rotary_wing||military|transport||Flying Banana|on_display
+Pietenpol|Air Camper|||||fixed_wing|monoplane|civilian|private|||on_display
+Taylorcraft|TG-6||N46471|||fixed_wing|monoplane|military|trainer||training glider|on_display
+Pitts|S-2|B||Special||fixed_wing|biplane|civilian|private|||on_display
+Pitts|S-1|S||Special||fixed_wing|biplane|civilian|private|||on_display
+Republic|F-105|G|62-4432|Thunderchief||fixed_wing|monoplane|military|electronic_warfare||Wild Weasel|on_display
+Republic|F-84|F|51-9522|Thunderstreak||fixed_wing|monoplane|military|ground_attack|||on_display
+Republic|RC-3||N6481K|Seabee||fixed_wing|monoplane|civilian|private|||on_display
+Ryan|BQM-34|A|67-21596|Firebee||fixed_wing|monoplane|military|drone|||on_display
+Ryan|PT-22||41-20952|Recruit||fixed_wing|monoplane|military|trainer|||on_display
+Schweizer|SGS 2-32||N8600R|||fixed_wing|monoplane|civilian|private||glider|on_display
+Sikorsky|HO3S|1G|1233|||rotary_wing||military|search_rescue||US Coast Guard|on_display
+Sikorsky|H-19||52-7602|Chickasaw||rotary_wing||military|utility|||on_display
+Sikorsky|H-37|A|58-0999|Mojave||rotary_wing||military|transport|||on_display
+Sikorsky|S-58||138460|||rotary_wing||military|transport||USN|on_display
+Sikorsky|HH-3|E|65-12791|Jolly Green Giant||rotary_wing||military|search_rescue|||on_display
+Sikorsky|UH-3|H|149006|Sea King||rotary_wing||military|utility|||on_display
+Sopwith|Camel|||||fixed_wing|biplane|military|fighter||replica|on_display
+Piper|L-4|H|43-29459|Grasshopper||fixed_wing|monoplane|military|utility|||on_display
+Auster|AOP.6||VF644|||fixed_wing|monoplane|military|recon||British Army Air Corps|on_display
+Thorp|T-18||N3BF|Tiger||fixed_wing|monoplane|civilian|private|||on_display
+Vought|A-7|D|69-6230|Corsair II||fixed_wing|monoplane|military|ground_attack|||on_display
+Yakovlev|Yak-50||N7144F|||fixed_wing|monoplane|civilian|private|||on_display
+Lockheed|F-117|A||Nighthawk||fixed_wing|monoplane|military|ground_attack||arrived 2023|under_restoration
+de Havilland|Venom|||||fixed_wing|monoplane|military|fighter||new exhibit 2023|on_display
+Martin Marietta|Titan|II||||missile_rocket||military|space||displayed vertically with launch control room|on_display
