@@ -89,6 +89,13 @@ migration files for an older installation:
 - `migrate_display_status_drop_on_loan.sql`
 - `migrate_aircraft_facts.sql`
 - `migrate_airframe_history.sql`
+- `migrate_full_designation.sql`
+
+Apply one with, for example:
+
+```
+mysql -u YOUR_DB_USER -p airplane_museum_tracker < migrate_full_designation.sql
+```
 
 ## Features and views
 

@@ -349,3 +349,217 @@ block.
   Sidney, Donnelsville, Kettering, Franklin, Middletown, Newark, Cambridge,
   McArthur, Harrod and Centerville. All trace to a single stale list and need
   individual currency checks. This is the phase 3 workload.
+
+---
+
+# Ohio phases 2 and 3, and the NMUSAF gap-fill (2026-09-08)
+
+**105 airframes and 31 sites added.** Ohio now stands at **48 sites and 500
+aircraft**, from 1 site and 283 at the start of the day.
+
+| Pass | Sites | Airframes | Files |
+|---|---|---|---|
+| NMUSAF gap-fill | 0 (existing site) | 64 | `nmusaf_topup_gapfill_aircraft.csv` |
+| Phase 2 — military bases | 8 | 16 | `oh_bases_museums.csv` + 8 |
+| Phase 3 — monuments | 23 | 25 | `oh_monuments_museums.csv` + 23 |
+
+---
+
+## NMUSAF: 283 -> 347
+
+The A–L half was catalogued in an early unsystematic pass; M–Z was done
+properly. The gap-fill paged **all 26 letters** of the fact-sheet index —
+194 pages, 1,823 unique fact sheets — and then fetched ~110 individual sheets
+to confirm each candidate is an artifact the museum actually holds.
+
+**M–Z was not as complete as assumed.** The supposedly-finished half still
+yielded MiG-23MLD, MiG-23MS, MiG-25RB, MiG-29A, XP-81, X-19, XB-42A, O-46A,
+XF-85, XF-90, XH-20, XR-8, X-24A, X-24B, X-29, YF-4E, Q-2, NF-16A, a second
+Standard J-1, SV-5D, Mercury and Teal Ruby.
+
+**The gallery pages are a subset of the fact-sheet index, not a supplement.**
+All ten gallery pages were checked: 452 links, 9 absent from the index, and
+**none of the 9 was an airframe** (trophies, a camera, a 37 mm cannon, HVAR
+rockets). Worth knowing — it means the index alone is sufficient, and saves
+the next pass the work.
+
+**The X-24A on display is not an X-24A.** It is the jet-powered Martin SV-5J
+built for flight training; the real X-24A was rebuilt in 1973 into the X-24B
+that stands beside it. Both are recorded, with the substitution stated.
+
+**Four cross-museum conflicts found and left unresolved rather than guessed.**
+Each is an airframe the NMUSAF fact sheet claims while the database already
+records it elsewhere. Importing any of them would have collided on
+`uq_model_tail`, which is how they surfaced:
+
+| Airframe | Database says | NMUSAF fact sheet says |
+|---|---|---|
+| C-130E 62-1787 | Pima Air & Space Museum | NMUSAF (the Air Force Cross mission aircraft) |
+| SR-71A 61-7976 | Museum of Flight, Seattle | NMUSAF |
+| C-17A 87-0025 "T-1" | Steven F. Udvar-Hazy Center | NMUSAF (the prototype) |
+| AC-130A 54-1630 "Azrael" | already at NMUSAF | — a true duplicate, not a conflict |
+
+The C-130E case was already flagged as open in these notes before this pass;
+the other three are new. **All four excluded from the import.** Resolving them
+means checking the *other* museum's own page, not NMUSAF's — one of the two is
+wrong in each case, and the AC-130A finding suggests the real NMUSAF gap there
+is the **prototype gunship** (retired May 1976), not Azrael.
+
+**16 rows excluded for want of a sourced manufacturer.** `manufacturer` is a
+required field, and the fact sheets for these name none. This follows the rule
+already applied to the SS-N-2 Styx in the earlier pass — recording a
+nationality or a from-memory attribution would put a guess in a company
+column. Excluded: **AGM-45 Shrike, AGM-65 Maverick, AGM-78 Standard ARM,
+AIM-9 Sidewinder, SA-2 Guideline, SA-4 Ganef, SS-N-2 Styx, Wasserfall, V-2,
+GAM-67 Crossbow, Discoverer XIV, Sputnik I, Grid-Sphere, Caquot Type R**, and
+the three balloon gondolas **Man High, Stargazer, Excelsior** (Excelsior is
+also a stated replica). Every one is a real museum holding — they need a
+sourced builder, not more research into whether they exist. This is the
+single most actionable open item in Ohio.
+
+Where the museum's own text named the builder it was used: the KH-7 and KH-8
+GAMBIT vehicles and the KH-9 HEXAGON are recorded as **Lockheed** because the
+fact sheets say Lockheed built the Agena and was the vehicle contractor.
+
+**Serial coverage is 11 of 64.** That is the museum's gap, not the
+researcher's: NMUSAF fact sheets are written as type histories and mostly do
+not state which airframe is on the floor. B-52D, B-57B, F-15 Streak Eagle,
+F-15C, XF-85, XF-90, both X-24s, HH-60G, Ju 52, XP-81, O-46A, T-46A and C-5A
+all have no serial published by the museum. Left blank rather than sourced
+from a registry and implied to be the museum's own claim.
+
+---
+
+## Phase 2 — military bases
+
+Eight sites, 16 airframes, every serial checked against its production block
+and **all 16 inside their block**.
+
+**Currency is the whole story here, and it is uneven.** Base displays are
+harder to verify than museums because you cannot walk up to most of them:
+
+- **Rickenbacker (3 gate jets), the AASF Cobra, and the NOSC A-7** — reported
+  present **March 2026**, six months ago. Strongest evidence in the pass.
+- **Toledo (4 jets)** — last dated sighting **July 2022**.
+- **Springfield-Beckley (4 jets)** — last evidence is a **2012** coordinate log
+  and **2005** photographs. Fourteen years. The 178th has since lost its flying
+  mission entirely (F-16s gone 2010, now MQ-9 and intelligence), and all four
+  are NMUSAF loan-programme airframes, which the museum recalls and reassigns.
+  **Treat as unverified.**
+- **Mansfield Lahm (2 jets)** — last evidence **2014**; the pole-mount note is
+  from **2001**. The 179th redesignated from Airlift Wing to Cyberspace Wing in
+  September 2023 and its last C-130H departed. A unit that stops flying is
+  exactly when displays get moved.
+- **Camp Perry** — 2013 photographs, 2017 log.
+- **DSCC Columbus** — no dated sighting of any kind.
+
+Every one of these carries its currency evidence in `description`, so the
+record states its own weakness.
+
+**Corrections with evidence.** Toledo's F-84F **51-9525 was built by General
+Motors** at Kansas City (block F-84F-40-GK), not Republic as the directories
+say — manufacturer recorded accordingly. A published account gives Toledo's
+F-16 as 80-0159; the wing's own article and two serial lists give **80-0519**.
+DSCC's UH-1H is a **Bell** airframe, not the Aerospace Industrial Development
+Corporation build one directory claims.
+
+**The "Valentine Flyer at Huffman Prairie" lead was wrong.** Wright "B" Flyer
+Inc's own page places it at **Fairfield Commons Shopping Mall, Beavercreek** —
+not on Wright-Patterson, and not a base display. Huffman Prairie Flying Field
+itself holds **no airframe**: a reconstructed 1905 hangar, a catapult and an
+interpretive centre. No site record created. (For the record, Huffman Prairie
+would be `public` — NPS states the memorial is open to the public and Gate 16A
+is a public access point.)
+
+**Excluded:** Youngstown Air Reserve Station (searched wing PA, AFRC and three
+directories — **no display airframe found**, recorded as nothing rather than as
+an empty site); Camp Ravenna (same); Rickenbacker's civil-side stored airframes
+(privately owned, on the airport, not installation displays); and the
+**NASIC MiG-29UB** at Wright-Patterson Area B — a real outdoor static display
+confirmed by a NASIC photo release, but **no serial, Bort number or
+construction number exists in any reachable source**, so it was left out rather
+than invented. That is a genuine gap worth a second pass.
+
+---
+
+## Phase 3 — monuments
+
+23 sites, 25 airframes. **Every serial checked against its production block and
+all are internally valid** — but a valid serial says nothing about whether the
+airframe is still on its pad, and that is this category's whole problem.
+
+**Only four rest on evidence newer than five years:** Harrod (photographs
+20 April 2022), Baltimore (photo set 4 December 2022), Belmont (unveiled
+25 April 2026), and Union Township Cincinnati (visitor photography through
+2026). **The other twenty are carried on aggregator compilations with no dated
+imagery.** Each says so in its own `description`. These are the first
+candidates for a Street View sweep.
+
+**Harrod UH-1H 65-9587 is the best-documented monument in the state** and a
+clean example of the marking trap: bought by the Army December 1965, flown in
+Vietnam by the 173rd Assault Helicopter Company, shot down August 1967,
+repaired, and now **painted in the markings of the 176th AHC** — not its own
+unit — because the memorial honours the 176th's dead. Patched bullet holes are
+still visible. True identity in `tail_number`, the worn number 587 in
+`aliases`.
+
+**Union Local High School, Belmont** is the freshest record in the database:
+a retired Thunderbirds F-16 unveiled **25 April 2026**, the first given to an
+American high school, pursued by the community for sixty years because the
+school teams are the Union Local Jets. One compilation gives the serial as
+87-0329 but none of the extensive news coverage confirms it, so **the tail
+number is blank** and the candidate serial sits in aliases.
+
+**Leads refuted — named here so nobody re-chases them:**
+- **Sidney VFW Post 4239 AH-1 66-15250 does not exist.** The Army *allocated*
+  a Cobra to Post 4239 on 24 October 2003 and **never delivered it**. Every
+  compilation carrying this is propagating an allocation record. The Sidney
+  Cobra is at the **AMVETS** post.
+- **Blue Ash A-7 "75-0368" is an impossible serial** — there is no FY1975 A-7D
+  block. Blue Ash Air Station is also an active ANG installation, so its real
+  A-7D (71-0360) belongs to a base pass, not this one.
+- **Middletown T-33A 51-8911** — the Middletown Veterans Memorial marker
+  describes no aircraft at all.
+- **Marion VFW 7201 AH-1 66-15286** — that airframe is at the Army Aviation
+  Heritage Foundation in Hampton, Georgia.
+- **Newark T-33A 51-9173, F-100D 54-2223 and Mystère IVA** — these belonged to
+  the museum at **Newark Air Force Base, closed 1996**, collection dispersed.
+- **Vandalia VFW Post 9582 UH-1 65-9696** — the post's own website and its 2024
+  Veterans Day coverage make no mention of a helicopter. **Not imported.**
+- **Donnelsville T-33A 51-8623, Kettering T-33A 52-9788, Franklin F-86D
+  53-1058, Centerville BT-13A N93** — zero corroboration beyond one stale
+  compilation. No post, park, marker, photo or news item. Likeliest of the
+  whole lead list to be long gone. Not imported.
+- **Harrod has ONE helicopter, not two.** The park's other exhibits are an
+  M60A3 tank and a 155 mm howitzer, which probably generated the error.
+
+**Found by sweeping rather than from the lead list:** Union Local High School
+(Belmont), Brooklyn City Hall, Harrison County Airport (Cadiz), Wood County
+Regional (Bowling Green), Williams Park (Gibsonburg), Alliance High School,
+VFW 3334 Jefferson, VFW 4953 Rock Creek, VFW 5532 Washingtonville, VFW 5137
+Medina, American Legion 551 Holmesville, VVA Chapter 55 Newark, and Wilmington
+Airborne Airpark — 13 of the 23 sites.
+
+**Site naming.** Every monument site carries its city in the name
+("VFW Post 5137 Medina Ohio"), because "Veterans Memorial Museum" already
+collided nationally in this database and had to be renamed.
+
+---
+
+## Open, ranked
+
+1. **The 16 NMUSAF rows needing a sourced manufacturer** — highest yield per
+   unit of effort in the state. They are confirmed holdings; only the builder
+   field blocks them.
+2. **The four cross-museum conflicts** — C-130E 62-1787, SR-71A 61-7976,
+   C-17A 87-0025, plus which AC-130A is the recorded one. Check the *other*
+   museum's page in each case.
+3. **A Street View / dated-photograph sweep of the 20 unconfirmed monuments**
+   and the 10 base airframes at Springfield and Mansfield. Cheap, and it would
+   move a third of Ohio's records from "compilation says so" to "confirmed".
+4. **The NASIC MiG-29UB** at Wright-Patterson needs an identity.
+5. **Green Township Veterans Park, Cincinnati** — a Vietnam Huey with visible
+   combat patching is in restoration, targeted for installation by 4 July 2027.
+   Add it after it lands.
+6. **Firelands Museum of Military History, Norwalk** (AH-1 70-16080) — a
+   museum missed by the phase 1 geography split. Worth a pass.
