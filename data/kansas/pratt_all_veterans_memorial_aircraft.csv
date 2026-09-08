@@ -1,5 +1,5 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-McDonnell,F-4,C,63-7702,Phantom II,,fixed_wing,monoplane,military,fighter,,,outdoor pylon;serial from a single source,Pratt B-29 Museum and All Veterans Memorial,on_display
-Northrop,T-38,A,71-0814,Talon,,fixed_wing,monoplane,military,trainer,,,the HMdb marker mislabels it as an F-5;serial from a single source,Pratt B-29 Museum and All Veterans Memorial,on_display
-Sikorsky,HH-3,F,1469,Pelican,,rotary_wing,,military,search_rescue,,,US Coast Guard 1469;serial from a single source,Pratt B-29 Museum and All Veterans Memorial,on_display
-Bell,AH-1,S,,Cobra,,rotary_wing,,military,ground_attack,,,no serial found,Pratt B-29 Museum and All Veterans Memorial,on_display
+McDonnell,F-4,C,63-7702,Phantom II,,fixed_wing,monoplane,military,fighter,,outdoor pylon; serial from a single source,F4,Pratt B-29 Museum and All Veterans Memorial,on_display
+Northrop,T-38,A,71-0814,Talon,,fixed_wing,monoplane,military,trainer,,the HMdb marker mislabels it as an F-5; serial from a single source,T38,Pratt B-29 Museum and All Veterans Memorial,on_display
+Sikorsky,HH-3,F,1469,Pelican,,rotary_wing,,military,search_rescue,,US Coast Guard 1469; serial from a single source,HH3,Pratt B-29 Museum and All Veterans Memorial,on_display
+Bell,AH-1,S,,Cobra,,rotary_wing,,military,ground_attack,,no serial found,AH1,Pratt B-29 Museum and All Veterans Memorial,on_display

@@ -1,6 +1,6 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Douglas,R4D,6S,N151ZE,Skytrain,Ready 4 Duty,fixed_wing,monoplane,military,transport,,,BuNo 50783;R4D-6S modified to carry depth charges;served with the US Navy Atlantic Special Service Squadron,CAF Dallas/Fort Worth Wing,on_display
-Consolidated Vultee,BT-15,,N69605,Valiant,Little Noodle,fixed_wing,monoplane,military,trainer,1941,,c/n 1258,CAF Dallas/Fort Worth Wing,on_display
-Boeing,PT-17,,N27933,Kaydet,,fixed_wing,biplane,military,trainer,1941,,Boeing 75;c/n 75-630,CAF Dallas/Fort Worth Wing,on_display
-Stinson,L-5,,,Sentinel,Miss Ziggy,fixed_wing,monoplane,military,utility,,,its former registration N5789 is deregistered so the current number is not established,CAF Dallas/Fort Worth Wing,on_display
-Cessna,T-41,,,Mescalero,,fixed_wing,monoplane,military,trainer,,,registration not established,CAF Dallas/Fort Worth Wing,on_display
+Douglas,R4D,6S,N151ZE,Skytrain,Ready 4 Duty,fixed_wing,monoplane,military,transport,,R4D-6S modified to carry depth charges; served with the US Navy Atlantic Special Service Squadron,BuNo 50783,CAF Dallas/Fort Worth Wing,on_display
+Consolidated Vultee,BT-15,,N69605,Valiant,Little Noodle,fixed_wing,monoplane,military,trainer,1941,,c/n 1258; BT15,CAF Dallas/Fort Worth Wing,on_display
+Boeing,PT-17,,N27933,Kaydet,,fixed_wing,biplane,military,trainer,1941,,Boeing 75; c/n 75-630; PT17,CAF Dallas/Fort Worth Wing,on_display
+Stinson,L-5,,,Sentinel,Miss Ziggy,fixed_wing,monoplane,military,utility,,its former registration N5789 is deregistered so the current number is not established,L5,CAF Dallas/Fort Worth Wing,on_display
+Cessna,T-41,,,Mescalero,,fixed_wing,monoplane,military,trainer,,registration not established,T41,CAF Dallas/Fort Worth Wing,on_display

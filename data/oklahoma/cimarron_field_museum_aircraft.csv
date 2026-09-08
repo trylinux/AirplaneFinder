@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Fairchild,PT-26,,,Cornell,,fixed_wing,monoplane,military,trainer,,,the type flown at Cimarron Field;the museum's featured aircraft,Cimarron Field and Mustang Field Museum,under_restoration
+Fairchild,PT-26,,,Cornell,,fixed_wing,monoplane,military,trainer,,the type flown at Cimarron Field; the museum's featured aircraft,PT26,Cimarron Field and Mustang Field Museum,under_restoration

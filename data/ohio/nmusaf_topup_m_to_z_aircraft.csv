@@ -1,127 +1,127 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Martin Marietta,AGM-62,A,,,Walleye I,missile_rocket,,military,air_to_surface,,,,National Museum of the United States Air Force,on_display
-Martin Marietta,AGM-12,C,,,Bullpup,missile_rocket,,military,air_to_surface,,,,National Museum of the United States Air Force,on_display
-Martin,AGM-12,B,,,Bullpup,missile_rocket,,military,air_to_surface,,,,National Museum of the United States Air Force,on_display
-Mikoyan-Gurevich,MiG-21,PF,,Fishbed,,fixed_wing,monoplane,military,fighter,,,Fishbed-D,National Museum of the United States Air Force,on_display
-Mikoyan-Gurevich,MiG-17,F,,Fresco,,fixed_wing,monoplane,military,fighter,,,Fresco,National Museum of the United States Air Force,on_display
-McDonnell,RF-101,C,56-166,Voodoo,,fixed_wing,monoplane,military,recon,,,,National Museum of the United States Air Force,on_display
-McDonnell Douglas,F-4,C,,Phantom II,,fixed_wing,monoplane,military,fighter,,,,National Museum of the United States Air Force,on_display
-Mikoyan-Gurevich,MiG-15,bis,2015357,Fagot,,fixed_wing,monoplane,military,fighter,,,Fagot,National Museum of the United States Air Force,on_display
-Mitsubishi,A6M,2,,Zero,,fixed_wing,monoplane,military,fighter,,,Zeke;Reisen,National Museum of the United States Air Force,on_display
+Martin Marietta,AGM-62,A,,,Walleye I,missile_rocket,,military,air_to_surface,,,AGM62,National Museum of the United States Air Force,on_display
+Martin Marietta,AGM-12,C,,,Bullpup,missile_rocket,,military,air_to_surface,,,AGM12,National Museum of the United States Air Force,on_display
+Martin,AGM-12,B,,,Bullpup,missile_rocket,,military,air_to_surface,,,AGM12,National Museum of the United States Air Force,on_display
+Mikoyan-Gurevich,MiG-21,PF,,Fishbed,,fixed_wing,monoplane,military,fighter,,,Fishbed-D; MiG21,National Museum of the United States Air Force,on_display
+Mikoyan-Gurevich,MiG-17,F,,Fresco,,fixed_wing,monoplane,military,fighter,,,Fresco; MiG17,National Museum of the United States Air Force,on_display
+McDonnell,RF-101,C,56-166,Voodoo,,fixed_wing,monoplane,military,recon,,,RF101,National Museum of the United States Air Force,on_display
+McDonnell Douglas,F-4,C,,Phantom II,,fixed_wing,monoplane,military,fighter,,,F4,National Museum of the United States Air Force,on_display
+Mikoyan-Gurevich,MiG-15,bis,2015357,Fagot,,fixed_wing,monoplane,military,fighter,,,Fagot; MiG15,National Museum of the United States Air Force,on_display
+Mitsubishi,A6M,2,,Zero,,fixed_wing,monoplane,military,fighter,,,Zeke; Reisen,National Museum of the United States Air Force,on_display
 Messerschmitt,Me 262,A,,Schwalbe,,fixed_wing,monoplane,military,fighter,,,,National Museum of the United States Air Force,on_display
 Messerschmitt,Me 163,B,191095,Komet,,fixed_wing,monoplane,military,fighter,,,,National Museum of the United States Air Force,on_display
 Macchi,MC.200,,,Saetta,,fixed_wing,monoplane,military,fighter,,,,National Museum of the United States Air Force,on_display
 Messerschmitt,Bf 109,G-10,,,,fixed_wing,monoplane,military,fighter,,,,National Museum of the United States Air Force,on_display
-Martin,B-10,,,,,fixed_wing,monoplane,military,bomber,,,Martin 139W,National Museum of the United States Air Force,on_display
-Martin,MB-2,,,,NBS-1,fixed_wing,biplane,military,bomber,2002,,NBS-1;reproduction built 2002 from original drawings,National Museum of the United States Air Force,on_display
-McDonnell Douglas,F-4,G,,Phantom II,,fixed_wing,monoplane,military,electronic_warfare,,,Wild Weasel,National Museum of the United States Air Force,on_display
-McDonnell Douglas,RF-4,C,,Phantom II,,fixed_wing,monoplane,military,recon,,,,National Museum of the United States Air Force,on_display
-Martin,CGM-13,B,,Mace,,missile_rocket,,military,cruise,,,TM-76;MGM-13,National Museum of the United States Air Force,on_display
-Martin,TM-61,A,,Matador,,missile_rocket,,military,cruise,,,B-61,National Museum of the United States Air Force,on_display
-Martin Marietta,LGM-118,A,,Peacekeeper,,missile_rocket,,military,ballistic,,,MX,National Museum of the United States Air Force,on_display
-Mikoyan-Gurevich,MiG-19,S,,Farmer,,fixed_wing,monoplane,military,fighter,,,Farmer,National Museum of the United States Air Force,on_display
-McDonnell,F-101,B,58-325,Voodoo,,fixed_wing,monoplane,military,fighter,,,,National Museum of the United States Air Force,on_display
-Martin,RB-57,D,53-3982,Canberra,,fixed_wing,monoplane,military,recon,,,,National Museum of the United States Air Force,on_display
-Martin Marietta,HGM-25,A,,Titan I,,missile_rocket,,military,ballistic,,,SM-68A,National Museum of the United States Air Force,on_display
-Martin Marietta,LGM-25,C,,Titan II,,missile_rocket,,military,ballistic,,,SM-68B,National Museum of the United States Air Force,on_display
-McDonnell Douglas,F-15,A,,,Streak Eagle,fixed_wing,monoplane,military,test,,,,National Museum of the United States Air Force,on_display
-McDonnell Douglas,KC-10,A,84-0191,Extender,,fixed_wing,monoplane,military,tanker,,,,National Museum of the United States Air Force,on_display
-North American,L-17,A,,Navion,,fixed_wing,monoplane,military,utility,,,,National Museum of the United States Air Force,on_display
-North American,F-86,A,49-1067,Sabre,,fixed_wing,monoplane,military,fighter,,,,National Museum of the United States Air Force,on_display
-North American,F-82,G,,Twin Mustang,,fixed_wing,monoplane,military,fighter,,,airframe is an F-82B marked as F-82G,National Museum of the United States Air Force,on_display
-Noorduyn,UC-64,A,44-70296,Norseman,,fixed_wing,monoplane,military,utility,,,,National Museum of the United States Air Force,on_display
-North American,B-25,B,43-3374,Mitchell,,fixed_wing,monoplane,military,bomber,,,airframe is RB-25D 43-3374 displayed as Doolittle Raid B-25B,National Museum of the United States Air Force,on_display
-North American,A-36,A,42-83665,Mustang,,fixed_wing,monoplane,military,ground_attack,,,,National Museum of the United States Air Force,on_display
-North American,BT-14,,,,,fixed_wing,monoplane,military,trainer,,,NA-64,National Museum of the United States Air Force,on_display
-Nieuport,28,,,,,fixed_wing,biplane,military,fighter,,,reproduction rebuilt using original parts,National Museum of the United States Air Force,on_display
-North American,O-47,B,39-112,,,fixed_wing,monoplane,military,recon,,,displayed in O-47A markings,National Museum of the United States Air Force,on_display
-Northrop,Tacit Blue,,,,,fixed_wing,monoplane,military,experimental,,,stealth technology demonstrator,National Museum of the United States Air Force,on_display
-Northrop,X-4,,,Bantam,,fixed_wing,monoplane,military,experimental,,,,National Museum of the United States Air Force,on_display
-North American,T-6,D,42-84216,Mosquito,,fixed_wing,monoplane,military,recon,,,Texan,National Museum of the United States Air Force,on_display
-North American,B-45,C,48-0010,Tornado,,fixed_wing,monoplane,military,bomber,,,,National Museum of the United States Air Force,on_display
-Northrop,A-17,A,36-207,,,fixed_wing,monoplane,military,ground_attack,,,,National Museum of the United States Air Force,on_display
-Northrop,YF-23,A,,Black Widow II,,fixed_wing,monoplane,military,experimental,,,,National Museum of the United States Air Force,on_display
-North American,X-10,,,,,fixed_wing,monoplane,military,test,,,SM-64 Navaho testbed,National Museum of the United States Air Force,on_display
-North American,F-107,A,,,,fixed_wing,monoplane,military,test,,,one of three prototypes built,National Museum of the United States Air Force,in_storage
-North American,T-39,A,,Sabreliner,,fixed_wing,monoplane,military,utility,,,,National Museum of the United States Air Force,on_display
-Northrop Grumman,RQ-4,A,98-2003,Global Hawk,Grumpy,fixed_wing,monoplane,military,drone,,,AV-3;YRQ-4A,National Museum of the United States Air Force,on_display
-Northrop,P-61,C,43-8353,Black Widow,,fixed_wing,monoplane,military,fighter,,,displayed in P-61B markings,National Museum of the United States Air Force,on_display
-Northrop,AT-38,B,,Talon,,fixed_wing,monoplane,military,trainer,,,,National Museum of the United States Air Force,on_display
-North American,F-100,D,,Super Sabre,,fixed_wing,monoplane,military,fighter,,,former Thunderbirds aircraft,National Museum of the United States Air Force,on_display
-North American,T-28,A,49-1494,Trojan,,fixed_wing,monoplane,military,trainer,,,,National Museum of the United States Air Force,on_display
-Northrop,F-89,J,52-1911,Scorpion,,fixed_wing,monoplane,military,fighter,,,marked as 53-2509,National Museum of the United States Air Force,on_display
-North American,F-86,H,53-1352,Sabre,,fixed_wing,monoplane,military,fighter,,,,National Museum of the United States Air Force,on_display
-North American,RF-86,F,52-4492,Sabre,Haymaker,fixed_wing,monoplane,military,recon,,,,National Museum of the United States Air Force,on_display
-North American,F-86,D,,Sabre,,fixed_wing,monoplane,military,fighter,,,Sabre Dog,National Museum of the United States Air Force,on_display
-North American,F-82,B,44-65168,Twin Mustang,Betty Jo,fixed_wing,monoplane,military,fighter,,,,National Museum of the United States Air Force,on_display
-Northrop,B-2,,,Spirit,,fixed_wing,monoplane,military,test,,,"unpowered structural-test airframe, never flew",National Museum of the United States Air Force,on_display
-North American,X-15,A-2,56-6671,,,fixed_wing,monoplane,military,test,,,"fastest X-15, Mach 6.7",National Museum of the United States Air Force,on_display
-Northrop,SM-62,,,Snark,,missile_rocket,,military,cruise,,,,National Museum of the United States Air Force,on_display
-Northrop,AGM-136,A,,Tacit Rainbow,,missile_rocket,,military,air_to_surface,,,,National Museum of the United States Air Force,on_display
-North American,AGM-28,B,,Hound Dog,,missile_rocket,,military,cruise,,,,National Museum of the United States Air Force,on_display
-Northrop,BQM-74,C,,,,fixed_wing,monoplane,military,drone,,,target drone reconfigured as Desert Storm decoy,National Museum of the United States Air Force,on_display
-North American Rockwell,OV-10,A,,Bronco,,fixed_wing,monoplane,military,recon,,,,National Museum of the United States Air Force,on_display
-North American,T-28,B,140048,Trojan,,fixed_wing,monoplane,military,trainer,,,painted as VNAF Farm Gate aircraft,National Museum of the United States Air Force,on_display
-North American,F-100,F,56-3837,Super Sabre,,fixed_wing,monoplane,military,fighter,,,Misty FAC aircraft,National Museum of the United States Air Force,on_display
-Northrop,YF-5,A,59-4989,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,,Skoshi Tiger,National Museum of the United States Air Force,on_display
-North American,XB-70,A,62-0001,Valkyrie,,fixed_wing,monoplane,military,experimental,,,,National Museum of the United States Air Force,on_display
-Piper,J-3,C-65-8,,Cub,,fixed_wing,monoplane,civilian,private,,,,National Museum of the United States Air Force,on_display
-Piper,L-4,A,,Grasshopper,,fixed_wing,monoplane,military,utility,,,O-59,National Museum of the United States Air Force,on_display
+Martin,B-10,,,,,fixed_wing,monoplane,military,bomber,,,Martin 139W; B10,National Museum of the United States Air Force,on_display
+Martin,MB-2,,,,NBS-1,fixed_wing,biplane,military,bomber,2002,reproduction built 2002 from original drawings,NBS-1; MB2; NBS1,National Museum of the United States Air Force,on_display
+McDonnell Douglas,F-4,G,,Phantom II,,fixed_wing,monoplane,military,electronic_warfare,,,Wild Weasel; F4,National Museum of the United States Air Force,on_display
+McDonnell Douglas,RF-4,C,,Phantom II,,fixed_wing,monoplane,military,recon,,,RF4,National Museum of the United States Air Force,on_display
+Martin,CGM-13,B,,Mace,,missile_rocket,,military,cruise,,,TM-76; MGM-13; CGM13; TM76; MGM13,National Museum of the United States Air Force,on_display
+Martin,TM-61,A,,Matador,,missile_rocket,,military,cruise,,,B-61; TM61; B61,National Museum of the United States Air Force,on_display
+Martin Marietta,LGM-118,A,,Peacekeeper,,missile_rocket,,military,ballistic,,,MX; LGM118,National Museum of the United States Air Force,on_display
+Mikoyan-Gurevich,MiG-19,S,,Farmer,,fixed_wing,monoplane,military,fighter,,,Farmer; MiG19,National Museum of the United States Air Force,on_display
+McDonnell,F-101,B,58-325,Voodoo,,fixed_wing,monoplane,military,fighter,,,F101,National Museum of the United States Air Force,on_display
+Martin,RB-57,D,53-3982,Canberra,,fixed_wing,monoplane,military,recon,,,RB57,National Museum of the United States Air Force,on_display
+Martin Marietta,HGM-25,A,,Titan I,,missile_rocket,,military,ballistic,,,SM-68A; HGM25; SM68A,National Museum of the United States Air Force,on_display
+Martin Marietta,LGM-25,C,,Titan II,,missile_rocket,,military,ballistic,,,SM-68B; LGM25; SM68B,National Museum of the United States Air Force,on_display
+McDonnell Douglas,F-15,A,,,Streak Eagle,fixed_wing,monoplane,military,test,,,F15,National Museum of the United States Air Force,on_display
+McDonnell Douglas,KC-10,A,84-0191,Extender,,fixed_wing,monoplane,military,tanker,,,KC10,National Museum of the United States Air Force,on_display
+North American,L-17,A,,Navion,,fixed_wing,monoplane,military,utility,,,L17,National Museum of the United States Air Force,on_display
+North American,F-86,A,49-1067,Sabre,,fixed_wing,monoplane,military,fighter,,,F86,National Museum of the United States Air Force,on_display
+North American,F-82,G,,Twin Mustang,,fixed_wing,monoplane,military,fighter,,airframe is an F-82B marked as F-82G,F82,National Museum of the United States Air Force,on_display
+Noorduyn,UC-64,A,44-70296,Norseman,,fixed_wing,monoplane,military,utility,,,UC64,National Museum of the United States Air Force,on_display
+North American,B-25,B,43-3374,Mitchell,,fixed_wing,monoplane,military,bomber,,airframe is RB-25D 43-3374 displayed as Doolittle Raid B-25B,B25,National Museum of the United States Air Force,on_display
+North American,A-36,A,42-83665,Mustang,,fixed_wing,monoplane,military,ground_attack,,,A36,National Museum of the United States Air Force,on_display
+North American,BT-14,,,,,fixed_wing,monoplane,military,trainer,,,NA-64; BT14; NA64,National Museum of the United States Air Force,on_display
+Nieuport,28,,,,,fixed_wing,biplane,military,fighter,,reproduction rebuilt using original parts,,National Museum of the United States Air Force,on_display
+North American,O-47,B,39-112,,,fixed_wing,monoplane,military,recon,,displayed in O-47A markings,O47,National Museum of the United States Air Force,on_display
+Northrop,Tacit Blue,,,,,fixed_wing,monoplane,military,experimental,,stealth technology demonstrator,,National Museum of the United States Air Force,on_display
+Northrop,X-4,,,Bantam,,fixed_wing,monoplane,military,experimental,,,X4,National Museum of the United States Air Force,on_display
+North American,T-6,D,42-84216,Mosquito,,fixed_wing,monoplane,military,recon,,,Texan; T6,National Museum of the United States Air Force,on_display
+North American,B-45,C,48-0010,Tornado,,fixed_wing,monoplane,military,bomber,,,B45,National Museum of the United States Air Force,on_display
+Northrop,A-17,A,36-207,,,fixed_wing,monoplane,military,ground_attack,,,A17,National Museum of the United States Air Force,on_display
+Northrop,YF-23,A,,Black Widow II,,fixed_wing,monoplane,military,experimental,,,YF23,National Museum of the United States Air Force,on_display
+North American,X-10,,,,,fixed_wing,monoplane,military,test,,SM-64 Navaho testbed,X10,National Museum of the United States Air Force,on_display
+North American,F-107,A,,,,fixed_wing,monoplane,military,test,,one of three prototypes built,F107,National Museum of the United States Air Force,in_storage
+North American,T-39,A,,Sabreliner,,fixed_wing,monoplane,military,utility,,,T39,National Museum of the United States Air Force,on_display
+Northrop Grumman,RQ-4,A,98-2003,Global Hawk,Grumpy,fixed_wing,monoplane,military,drone,,,AV-3; YRQ-4A; RQ4; AV3; YRQ4A,National Museum of the United States Air Force,on_display
+Northrop,P-61,C,43-8353,Black Widow,,fixed_wing,monoplane,military,fighter,,displayed in P-61B markings,P61,National Museum of the United States Air Force,on_display
+Northrop,AT-38,B,,Talon,,fixed_wing,monoplane,military,trainer,,,AT38,National Museum of the United States Air Force,on_display
+North American,F-100,D,,Super Sabre,,fixed_wing,monoplane,military,fighter,,former Thunderbirds aircraft,F100,National Museum of the United States Air Force,on_display
+North American,T-28,A,49-1494,Trojan,,fixed_wing,monoplane,military,trainer,,,T28,National Museum of the United States Air Force,on_display
+Northrop,F-89,J,52-1911,Scorpion,,fixed_wing,monoplane,military,fighter,,marked as 53-2509,F89,National Museum of the United States Air Force,on_display
+North American,F-86,H,53-1352,Sabre,,fixed_wing,monoplane,military,fighter,,,F86,National Museum of the United States Air Force,on_display
+North American,RF-86,F,52-4492,Sabre,Haymaker,fixed_wing,monoplane,military,recon,,,RF86,National Museum of the United States Air Force,on_display
+North American,F-86,D,,Sabre,,fixed_wing,monoplane,military,fighter,,,Sabre Dog; F86,National Museum of the United States Air Force,on_display
+North American,F-82,B,44-65168,Twin Mustang,Betty Jo,fixed_wing,monoplane,military,fighter,,,F82,National Museum of the United States Air Force,on_display
+Northrop,B-2,,,Spirit,,fixed_wing,monoplane,military,test,,"unpowered structural-test airframe, never flew",B2,National Museum of the United States Air Force,on_display
+North American,X-15,A-2,56-6671,,,fixed_wing,monoplane,military,test,,"fastest X-15, Mach 6.7",X15,National Museum of the United States Air Force,on_display
+Northrop,SM-62,,,Snark,,missile_rocket,,military,cruise,,,SM62,National Museum of the United States Air Force,on_display
+Northrop,AGM-136,A,,Tacit Rainbow,,missile_rocket,,military,air_to_surface,,,AGM136,National Museum of the United States Air Force,on_display
+North American,AGM-28,B,,Hound Dog,,missile_rocket,,military,cruise,,,AGM28,National Museum of the United States Air Force,on_display
+Northrop,BQM-74,C,,,,fixed_wing,monoplane,military,drone,,target drone reconfigured as Desert Storm decoy,BQM74,National Museum of the United States Air Force,on_display
+North American Rockwell,OV-10,A,,Bronco,,fixed_wing,monoplane,military,recon,,,OV10,National Museum of the United States Air Force,on_display
+North American,T-28,B,140048,Trojan,,fixed_wing,monoplane,military,trainer,,painted as VNAF Farm Gate aircraft,T28,National Museum of the United States Air Force,on_display
+North American,F-100,F,56-3837,Super Sabre,,fixed_wing,monoplane,military,fighter,,Misty FAC aircraft,F100,National Museum of the United States Air Force,on_display
+Northrop,YF-5,A,59-4989,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,,Skoshi Tiger; YF5,National Museum of the United States Air Force,on_display
+North American,XB-70,A,62-0001,Valkyrie,,fixed_wing,monoplane,military,experimental,,,XB70,National Museum of the United States Air Force,on_display
+Piper,J-3,C-65-8,,Cub,,fixed_wing,monoplane,civilian,private,,,J3,National Museum of the United States Air Force,on_display
+Piper,L-4,A,,Grasshopper,,fixed_wing,monoplane,military,utility,,,O-59; L4; O59,National Museum of the United States Air Force,on_display
 Packard-LePere,LUSAC 11,,SC 42133,,,fixed_wing,biplane,military,fighter,,,,National Museum of the United States Air Force,on_display
 Panavia,Tornado,GR1,,,Miss Behavin',fixed_wing,monoplane,military,ground_attack,,,,National Museum of the United States Air Force,on_display
-Republic,YRF-84,F,49-2430,,,fixed_wing,monoplane,military,experimental,,,FICON;YF-96A,National Museum of the United States Air Force,in_storage
-Republic,XF-84,H,51-17060,,,fixed_wing,monoplane,military,experimental,,,,National Museum of the United States Air Force,on_display
-Ryan,X-13,,,Vertijet,,fixed_wing,monoplane,military,experimental,,,,National Museum of the United States Air Force,on_display
-Ryan,BQM-34,F,69-3374,Firebee II,,fixed_wing,monoplane,military,drone,,,,National Museum of the United States Air Force,on_display
-Republic,XF-91,,,Thunderceptor,,fixed_wing,monoplane,military,experimental,,,,National Museum of the United States Air Force,in_storage
-Radioplane,OQ-14,,,,,fixed_wing,monoplane,military,drone,,,,National Museum of the United States Air Force,on_display
-Radioplane,MQM-57,,,Falconer,,fixed_wing,monoplane,military,recon,,,RP-71;SD-1,National Museum of the United States Air Force,in_storage
-Radioplane,OQ-19,D,,,,fixed_wing,monoplane,military,drone,,,,National Museum of the United States Air Force,on_display
-Ryan,BQM-34,,,Firebee,,fixed_wing,monoplane,military,drone,,,Q-2;XQ-2C,National Museum of the United States Air Force,on_display
-Ryan,AQM-34,N,,Firebee,,fixed_wing,monoplane,military,recon,,,Model 147H,National Museum of the United States Air Force,on_display
-Republic,RF-84,K,,Thunderflash,,fixed_wing,monoplane,military,recon,,,,National Museum of the United States Air Force,on_display
-Republic,F-84,F,52-6526,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,,,National Museum of the United States Air Force,on_display
-Republic,F-105,G,63-8320,Thunderchief,,fixed_wing,monoplane,military,electronic_warfare,,,Wild Weasel,National Museum of the United States Air Force,on_display
-Republic,F-105,D,,Thunderchief,Memphis Belle II,fixed_wing,monoplane,military,fighter,,,,National Museum of the United States Air Force,on_display
-Republic,F-84,E,50-1143,Thunderjet,,fixed_wing,monoplane,military,ground_attack,,,,National Museum of the United States Air Force,on_display
-Ruhrstahl,X-4,,,,,missile_rocket,,military,air_to_air,,,,National Museum of the United States Air Force,on_display
-Republic,JB-2,,,Loon,,missile_rocket,,military,cruise,,,V-1 Buzz Bomb,National Museum of the United States Air Force,on_display
-Ryan,PT-22,,,Recruit,,fixed_wing,monoplane,military,trainer,,,,National Museum of the United States Air Force,on_display
-Radioplane,OQ-2,A,,,,fixed_wing,monoplane,military,drone,,,,National Museum of the United States Air Force,on_display
-Republic,P-47,D,42-23278,Thunderbolt,Fiery Ginger,fixed_wing,monoplane,military,fighter,,,,National Museum of the United States Air Force,on_display
-Ryan,PT-16,Y,,STA,,fixed_wing,monoplane,military,trainer,,,militarised Ryan STA,National Museum of the United States Air Force,on_display
-Sikorsky,HH-3,E,67-14709,Jolly Green Giant,,rotary_wing,,military,search_rescue,,,Jolly Green 22,National Museum of the United States Air Force,on_display
-Sikorsky,CH-3,E,63-9676,,Black Mariah,rotary_wing,,military,utility,,,,National Museum of the United States Air Force,on_display
-Sikorsky,MH-53,M,,Pave Low IV,,rotary_wing,,military,utility,,,,National Museum of the United States Air Force,on_display
-Sikorsky,UH-19,B,52-7587,Chickasaw,,rotary_wing,,military,utility,,,Hopalong,National Museum of the United States Air Force,on_display
-Sikorsky,YH-5,A,43-46620,Dragonfly,,rotary_wing,,military,search_rescue,,,,National Museum of the United States Air Force,on_display
-Sikorsky,R-6,A,43-45379,Hoverfly II,,rotary_wing,,military,utility,,,,National Museum of the United States Air Force,on_display
-Sikorsky,R-4,B,43-46506,Hoverfly,,rotary_wing,,military,utility,,,,National Museum of the United States Air Force,on_display
-Sukhoi,Su-27,UB,,Flanker-C,,fixed_wing,monoplane,military,trainer,,,,National Museum of the United States Air Force,on_display
-Sukhoi,Su-22,M4,,Fitter-K,,fixed_wing,monoplane,military,ground_attack,,,,National Museum of the United States Air Force,in_storage
-Scaled Composites,Long-EZ,,,,Borealis,fixed_wing,monoplane,military,experimental,,,pulse detonation engine testbed,National Museum of the United States Air Force,on_display
+Republic,YRF-84,F,49-2430,,,fixed_wing,monoplane,military,experimental,,,FICON; YF-96A; YRF84; YF96A,National Museum of the United States Air Force,in_storage
+Republic,XF-84,H,51-17060,,,fixed_wing,monoplane,military,experimental,,,XF84,National Museum of the United States Air Force,on_display
+Ryan,X-13,,,Vertijet,,fixed_wing,monoplane,military,experimental,,,X13,National Museum of the United States Air Force,on_display
+Ryan,BQM-34,F,69-3374,Firebee II,,fixed_wing,monoplane,military,drone,,,BQM34,National Museum of the United States Air Force,on_display
+Republic,XF-91,,,Thunderceptor,,fixed_wing,monoplane,military,experimental,,,XF91,National Museum of the United States Air Force,in_storage
+Radioplane,OQ-14,,,,,fixed_wing,monoplane,military,drone,,,OQ14,National Museum of the United States Air Force,on_display
+Radioplane,MQM-57,,,Falconer,,fixed_wing,monoplane,military,recon,,,RP-71; SD-1; MQM57; RP71; SD1,National Museum of the United States Air Force,in_storage
+Radioplane,OQ-19,D,,,,fixed_wing,monoplane,military,drone,,,OQ19,National Museum of the United States Air Force,on_display
+Ryan,BQM-34,,,Firebee,,fixed_wing,monoplane,military,drone,,,Q-2; XQ-2C; BQM34; Q2; XQ2C,National Museum of the United States Air Force,on_display
+Ryan,AQM-34,N,,Firebee,,fixed_wing,monoplane,military,recon,,,Model 147H; AQM34,National Museum of the United States Air Force,on_display
+Republic,RF-84,K,,Thunderflash,,fixed_wing,monoplane,military,recon,,,RF84,National Museum of the United States Air Force,on_display
+Republic,F-84,F,52-6526,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,,F84,National Museum of the United States Air Force,on_display
+Republic,F-105,G,63-8320,Thunderchief,,fixed_wing,monoplane,military,electronic_warfare,,,Wild Weasel; F105,National Museum of the United States Air Force,on_display
+Republic,F-105,D,,Thunderchief,Memphis Belle II,fixed_wing,monoplane,military,fighter,,,F105,National Museum of the United States Air Force,on_display
+Republic,F-84,E,50-1143,Thunderjet,,fixed_wing,monoplane,military,ground_attack,,,F84,National Museum of the United States Air Force,on_display
+Ruhrstahl,X-4,,,,,missile_rocket,,military,air_to_air,,,X4,National Museum of the United States Air Force,on_display
+Republic,JB-2,,,Loon,,missile_rocket,,military,cruise,,,V-1 Buzz Bomb; JB2,National Museum of the United States Air Force,on_display
+Ryan,PT-22,,,Recruit,,fixed_wing,monoplane,military,trainer,,,PT22,National Museum of the United States Air Force,on_display
+Radioplane,OQ-2,A,,,,fixed_wing,monoplane,military,drone,,,OQ2,National Museum of the United States Air Force,on_display
+Republic,P-47,D,42-23278,Thunderbolt,Fiery Ginger,fixed_wing,monoplane,military,fighter,,,P47,National Museum of the United States Air Force,on_display
+Ryan,PT-16,Y,,STA,,fixed_wing,monoplane,military,trainer,,militarised Ryan STA,PT16,National Museum of the United States Air Force,on_display
+Sikorsky,HH-3,E,67-14709,Jolly Green Giant,,rotary_wing,,military,search_rescue,,,Jolly Green 22; HH3,National Museum of the United States Air Force,on_display
+Sikorsky,CH-3,E,63-9676,,Black Mariah,rotary_wing,,military,utility,,,CH3,National Museum of the United States Air Force,on_display
+Sikorsky,MH-53,M,,Pave Low IV,,rotary_wing,,military,utility,,,MH53,National Museum of the United States Air Force,on_display
+Sikorsky,UH-19,B,52-7587,Chickasaw,,rotary_wing,,military,utility,,,Hopalong; UH19,National Museum of the United States Air Force,on_display
+Sikorsky,YH-5,A,43-46620,Dragonfly,,rotary_wing,,military,search_rescue,,,YH5,National Museum of the United States Air Force,on_display
+Sikorsky,R-6,A,43-45379,Hoverfly II,,rotary_wing,,military,utility,,,R6,National Museum of the United States Air Force,on_display
+Sikorsky,R-4,B,43-46506,Hoverfly,,rotary_wing,,military,utility,,,R4,National Museum of the United States Air Force,on_display
+Sukhoi,Su-27,UB,,Flanker-C,,fixed_wing,monoplane,military,trainer,,,Su27,National Museum of the United States Air Force,on_display
+Sukhoi,Su-22,M4,,Fitter-K,,fixed_wing,monoplane,military,ground_attack,,,Su22,National Museum of the United States Air Force,in_storage
+Scaled Composites,Long-EZ,,,,Borealis,fixed_wing,monoplane,military,experimental,,pulse detonation engine testbed,,National Museum of the United States Air Force,on_display
 Supermarine,Spitfire,Mk Vc,,,,fixed_wing,monoplane,military,fighter,1943,,,National Museum of the United States Air Force,on_display
 Supermarine,Spitfire,PR.XI,,,,fixed_wing,monoplane,military,recon,,,,National Museum of the United States Air Force,on_display
-Sopwith,Camel,F.1,,,,fixed_wing,biplane,military,fighter,1974,,reproduction,National Museum of the United States Air Force,on_display
-Stearman,PT-13,D,,Kaydet,,fixed_wing,biplane,military,trainer,,,,National Museum of the United States Air Force,on_display
-Seversky,P-35,,,,,fixed_wing,monoplane,military,fighter,,,,National Museum of the United States Air Force,on_display
-Stinson,L-5,,,Sentinel,,fixed_wing,monoplane,military,utility,,,,National Museum of the United States Air Force,on_display
+Sopwith,Camel,F.1,,,,fixed_wing,biplane,military,fighter,1974,reproduction,,National Museum of the United States Air Force,on_display
+Stearman,PT-13,D,,Kaydet,,fixed_wing,biplane,military,trainer,,,PT13,National Museum of the United States Air Force,on_display
+Seversky,P-35,,,,,fixed_wing,monoplane,military,fighter,,,P35,National Museum of the United States Air Force,on_display
+Stinson,L-5,,,Sentinel,,fixed_wing,monoplane,military,utility,,,L5,National Museum of the United States Air Force,on_display
 SPAD,XIII,C.1,16594,,,fixed_wing,biplane,military,fighter,1918,,,National Museum of the United States Air Force,on_display
 SPAD,VII,,,,,fixed_wing,biplane,military,fighter,,,,National Museum of the United States Air Force,on_display
-Standard,J-1,,,,,fixed_wing,biplane,military,trainer,,,,National Museum of the United States Air Force,on_display
+Standard,J-1,,,,,fixed_wing,biplane,military,trainer,,,J1,National Museum of the United States Air Force,on_display
 Schneider,SG 38,,,,Schulgleiter,fixed_wing,monoplane,military,trainer,,,,National Museum of the United States Air Force,on_display
-Taylorcraft,L-2,M,43-26592,Grasshopper,,fixed_wing,monoplane,military,utility,1944,,,National Museum of the United States Air Force,on_display
+Taylorcraft,L-2,M,43-26592,Grasshopper,,fixed_wing,monoplane,military,utility,1944,,L2,National Museum of the United States Air Force,on_display
 Thomas-Morse,S4,C,,Scout,,fixed_wing,biplane,military,trainer,,,,National Museum of the United States Air Force,on_display
-Teledyne Ryan,XAQM-81,A,,Firebolt,,fixed_wing,monoplane,military,drone,,,,National Museum of the United States Air Force,on_display
-Teledyne Ryan,AQM-91,A,,Compass Arrow,,fixed_wing,monoplane,military,drone,,,,National Museum of the United States Air Force,on_display
-Teledyne Ryan,AQM-34,Q,,Firebee,,fixed_wing,monoplane,military,drone,,,Combat Dawn,National Museum of the United States Air Force,in_storage
-Teledyne Ryan,AQM-34,L,,Firebee,,fixed_wing,monoplane,military,drone,,,,National Museum of the United States Air Force,on_display
-Texas Instruments,BOLT-117,,,,,missile_rocket,,military,air_to_surface,,,GBU-1,National Museum of the United States Air Force,on_display
+Teledyne Ryan,XAQM-81,A,,Firebolt,,fixed_wing,monoplane,military,drone,,,XAQM81,National Museum of the United States Air Force,on_display
+Teledyne Ryan,AQM-91,A,,Compass Arrow,,fixed_wing,monoplane,military,drone,,,AQM91,National Museum of the United States Air Force,on_display
+Teledyne Ryan,AQM-34,Q,,Firebee,,fixed_wing,monoplane,military,drone,,,Combat Dawn; AQM34,National Museum of the United States Air Force,in_storage
+Teledyne Ryan,AQM-34,L,,Firebee,,fixed_wing,monoplane,military,drone,,,AQM34,National Museum of the United States Air Force,on_display
+Texas Instruments,BOLT-117,,,,,missile_rocket,,military,air_to_surface,,,GBU-1; BOLT117; GBU1,National Museum of the United States Air Force,on_display
 Wright,Model B,Modified,,,,fixed_wing,biplane,military,trainer,,,,National Museum of the United States Air Force,on_display
-Wright,1909 Military Flyer,,,,Signal Corps Airplane No. 1,fixed_wing,biplane,military,trainer,1955,,reproduction built 1955,National Museum of the United States Air Force,on_display
-Waco,CG-4,A,45-27948,Hadrian,,fixed_wing,monoplane,military,transport,,,,National Museum of the United States Air Force,on_display
-Vertol,CH-21,B,51-15857,Workhorse,,rotary_wing,,military,transport,,,H-21;Flying Banana,National Museum of the United States Air Force,in_storage
-Vultee,BT-13,B,42-90629,Valiant,,fixed_wing,monoplane,military,trainer,,,,National Museum of the United States Air Force,on_display
-Vultee,L-1,A,41-19039,Vigilant,,fixed_wing,monoplane,military,utility,,,O-49,National Museum of the United States Air Force,on_display
-Vought,ASM-135,A,,,,missile_rocket,,military,space,,,CASM-135A,National Museum of the United States Air Force,on_display
+Wright,1909 Military Flyer,,,,Signal Corps Airplane No. 1,fixed_wing,biplane,military,trainer,1955,reproduction built 1955,,National Museum of the United States Air Force,on_display
+Waco,CG-4,A,45-27948,Hadrian,,fixed_wing,monoplane,military,transport,,,CG4,National Museum of the United States Air Force,on_display
+Vertol,CH-21,B,51-15857,Workhorse,,rotary_wing,,military,transport,,,H-21; Flying Banana; CH21; H21,National Museum of the United States Air Force,in_storage
+Vultee,BT-13,B,42-90629,Valiant,,fixed_wing,monoplane,military,trainer,,,BT13,National Museum of the United States Air Force,on_display
+Vultee,L-1,A,41-19039,Vigilant,,fixed_wing,monoplane,military,utility,,,O-49; L1; O49,National Museum of the United States Air Force,on_display
+Vought,ASM-135,A,,,,missile_rocket,,military,space,,,CASM-135A; ASM135; CASM135A,National Museum of the United States Air Force,on_display
 Yokosuka,MXY7,K1,,Ohka,,fixed_wing,monoplane,military,trainer,,,,National Museum of the United States Air Force,on_display

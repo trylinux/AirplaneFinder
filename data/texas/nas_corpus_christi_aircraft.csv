@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Douglas,A-4,,158087,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,the only airframe confirmed on base;claims of a PBY and TBM here are a conflation with the USS Lexington museum across the bay,NAS Corpus Christi,on_display
+Douglas,A-4,,158087,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,the only airframe confirmed on base; claims of a PBY and TBM here are a conflation with the USS Lexington museum across the bay,A4,NAS Corpus Christi,on_display

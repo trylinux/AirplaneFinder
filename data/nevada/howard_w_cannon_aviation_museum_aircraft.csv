@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Cessna,172,,N9172B,,Hacienda,fixed_wing,monoplane,civilian,private,1958,,c/n 172-36772;flew the unbroken 64-day 22-hour endurance record Dec 1958 to Feb 1959;registration cancelled;suspended over baggage claim,Howard W. Cannon Aviation Museum,on_display
+Cessna,172,,N9172B,,Hacienda,fixed_wing,monoplane,civilian,private,1958,flew the unbroken 64-day 22-hour endurance record Dec 1958 to Feb 1959; registration cancelled; suspended over baggage claim,c/n 172-36772,Howard W. Cannon Aviation Museum,on_display

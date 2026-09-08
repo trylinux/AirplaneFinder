@@ -1,11 +1,11 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Waco,EGC-7,,N17749,,,fixed_wing,biplane,civilian,private,1937,,c/n 4588;Custom Cabin sesquiplane;ex-Grand Canyon Airways;1 of 38 built;donated 2024,Spirit of Flight Center,under_restoration
-McCombs,Cassutt,IIIM,N3730,,,fixed_wing,monoplane,civilian,experimental,1975,,c/n MC3;Formula One racer;dedicated to Gary Hubler Jay Jones and Ib Hansen,Spirit of Flight Center,on_display
-Globe,GC-1,B,N80851,Swift,,fixed_wing,monoplane,civilian,private,1946,,c/n 254,Spirit of Flight Center,on_display
-Ebershoff,Skybolt,,N360QB,,Super Dave's Super Skybolt,fixed_wing,biplane,civilian,experimental,,,c/n DE1002;enlarged one-off Steen Skybolt built for a 6ft 8in pilot,Spirit of Flight Center,on_display
-Chester,Swee' Pea,,,,,fixed_wing,monoplane,civilian,experimental,1947,,Art Chester midget racer;V-tail;raced as number 7;recovered 2018;no registration established,Spirit of Flight Center,under_restoration
-Bede,BD-5,J,,,,fixed_wing,monoplane,civilian,experimental,,,micro-jet;Octopussy scheme is markings only;registration not established,Spirit of Flight Center,on_display
-Radioplane,KD2R,5,,Shelduck,,fixed_wing,monoplane,military,drone,,,Northrop KD2R-5;Shelduck;target drone,Spirit of Flight Center,on_display
-Culver,PQ-14,,,Cadet,,fixed_wing,monoplane,military,drone,,,radio-controlled target drone;serial not established,Spirit of Flight Center,in_storage
-Rutan,VariEze,,,,,fixed_wing,monoplane,civilian,experimental,,,canard homebuilt;registration not established,Spirit of Flight Center,on_display
-Pitts,Special,,,,,fixed_wing,biplane,civilian,private,,,dedicated to Betty Skelton;registration not established,Spirit of Flight Center,on_display
+Waco,EGC-7,,N17749,,,fixed_wing,biplane,civilian,private,1937,Custom Cabin sesquiplane; ex-Grand Canyon Airways; 1 of 38 built; donated 2024,c/n 4588; EGC7,Spirit of Flight Center,under_restoration
+McCombs,Cassutt,IIIM,N3730,,,fixed_wing,monoplane,civilian,experimental,1975,Formula One racer; dedicated to Gary Hubler Jay Jones and Ib Hansen,c/n MC3,Spirit of Flight Center,on_display
+Globe,GC-1,B,N80851,Swift,,fixed_wing,monoplane,civilian,private,1946,,c/n 254; GC1,Spirit of Flight Center,on_display
+Ebershoff,Skybolt,,N360QB,,Super Dave's Super Skybolt,fixed_wing,biplane,civilian,experimental,,enlarged one-off Steen Skybolt built for a 6ft 8in pilot,c/n DE1002,Spirit of Flight Center,on_display
+Chester,Swee' Pea,,,,,fixed_wing,monoplane,civilian,experimental,1947,Art Chester midget racer; raced as number 7; recovered 2018; no registration established,V-tail,Spirit of Flight Center,under_restoration
+Bede,BD-5,J,,,,fixed_wing,monoplane,civilian,experimental,,micro-jet; Octopussy scheme is markings only; registration not established,BD5,Spirit of Flight Center,on_display
+Radioplane,KD2R,5,,Shelduck,,fixed_wing,monoplane,military,drone,,target drone,Northrop KD2R-5; Shelduck,Spirit of Flight Center,on_display
+Culver,PQ-14,,,Cadet,,fixed_wing,monoplane,military,drone,,radio-controlled target drone; serial not established,PQ14,Spirit of Flight Center,in_storage
+Rutan,VariEze,,,,,fixed_wing,monoplane,civilian,experimental,,canard homebuilt; registration not established,,Spirit of Flight Center,on_display
+Pitts,Special,,,,,fixed_wing,biplane,civilian,private,,dedicated to Betty Skelton; registration not established,,Spirit of Flight Center,on_display

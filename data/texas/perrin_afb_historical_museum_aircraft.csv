@@ -1,3 +1,3 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-North American,F-86,L,51-6144,Sabre,,fixed_wing,monoplane,military,fighter,1953,,marked FU-144;pylon-mounted outdoor display;acquired 2007,Perrin AFB Historical Museum,on_display
-Cessna,T-37,B,59-0361,Tweet,,fixed_wing,monoplane,military,trainer,,,marked EN;acquired 2005,Perrin AFB Historical Museum,on_display
+North American,F-86,L,51-6144,Sabre,,fixed_wing,monoplane,military,fighter,1953,pylon-mounted outdoor display; acquired 2007; marked FU-144,FU-144; F86; FU144,Perrin AFB Historical Museum,on_display
+Cessna,T-37,B,59-0361,Tweet,,fixed_wing,monoplane,military,trainer,,acquired 2005; marked EN,T37,Perrin AFB Historical Museum,on_display

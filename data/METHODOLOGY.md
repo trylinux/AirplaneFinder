@@ -26,11 +26,12 @@ conflict in the region's NOTES.md rather than silently picking one.
 
 ## The output contract
 
-Every research pass returns pipe-delimited lines, exactly 12 fields
-(13 with an optional `display_status`):
+Every research pass returns pipe-delimited lines, exactly 13 fields
+(14 with an optional `display_status`):
 
     manufacturer|model|variant|tail_number|model_name|aircraft_name|
-    aircraft_type|wing_type|military_civilian|role_type|year_built|aliases
+    aircraft_type|wing_type|military_civilian|role_type|year_built|
+    description|aliases
 
 Rules that matter more than they look:
 
@@ -47,6 +48,27 @@ Rules that matter more than they look:
   looks authoritative and will collide with the real airframe later.
 - **A serial never goes in `year_built`.** Researchers do this constantly;
   the builder now detects and moves it, but the rule stands.
+
+- **`aliases` holds names, not notes.** `aliases` is a separate table that
+  is joined into search, so anything put there becomes a search term for
+  the airframe. It takes only *other ways of naming this aircraft*:
+  alternate designations (`SR-71`, `A-12`), the dashless form of each
+  designation (`SR71`, `PT22`, `F16C` — always include it, people search
+  without the dash), popular and export names (`Blackbird`, `Harvard`,
+  `Lim-5`), block and construction identifiers (`Block 10C`, `c/n 61-226`,
+  `BuNo 91188`), and any false serial the airframe visibly wears — the
+  bare identifier, never the sentence around it.
+
+- **Everything else goes in `description`.** Provenance, condition,
+  ownership, loan status, unit history, sighting dates, markings, the
+  reason a serial is doubted: all of it is prose and belongs in
+  `description`. If a string has a verb in it, it is not an alias.
+  A useful test: would someone type this into a search box to find this
+  aircraft? If no, it is a description.
+
+  Wrong: `aliases: stood at VFW Post 382 until the post sold the property`
+  Right: `aliases: F-4C; F4C` + `description: stood at VFW Post 382 until
+  the post sold the property in 2025`
 
 ## Splitting large collections
 
@@ -65,6 +87,7 @@ them at source.
 1. **Build.** A generator turns the raw lines into CSV, normalising as it
    goes: literal `"None"` → empty, `model_name` that merely echoes the
    designation → blank, restoration notes in `aliases` → `display_status`,
+   prose in `aliases` → `description`, dashless designation variants added,
    serials misfiled in `year_built` → `tail_number`.
 2. **Validate** against the *real* importer in tests, not a reimplementation
    of it. If `_validate_aircraft_row` would reject a row, the test fails.

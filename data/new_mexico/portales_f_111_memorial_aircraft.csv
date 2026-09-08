@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-General Dynamics,F-111,F,70-2364,Aardvark,,fixed_wing,monoplane,military,bomber,,,c/n E2-03;marked City of Portales;on a stick in the US-70 median;Aerial Visuals mislabels it F-111D but Baugher places it in the F-111F block,Portales F-111 Memorial,on_display
+General Dynamics,F-111,F,70-2364,Aardvark,,fixed_wing,monoplane,military,bomber,,marked City of Portales; on a stick in the US-70 median; Aerial Visuals mislabels it F-111D but Baugher places it in the F-111F block,c/n E2-03; F111,Portales F-111 Memorial,on_display

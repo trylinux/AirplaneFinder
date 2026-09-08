@@ -1,12 +1,12 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Boeing,B-29,,44-27343,Superfortress,Tinker's Heritage,fixed_wing,monoplane,military,bomber,,,built by Martin at Omaha;converted to WB-29;also listed as TB-29;57th Weather Reconnaissance Squadron;recovered from Aberdeen Proving Ground in 1985;variant letter unresolved,Charles B. Hall Air Park,on_display
-Boeing,RB-47,E,53-4257,Stratojet,,fixed_wing,monoplane,military,recon,,,c/n 4501281;also listed as NRB-47E,Charles B. Hall Air Park,on_display
-Boeing,B-52,D,56-0695,Stratofortress,,fixed_wing,monoplane,military,bomber,,,c/n 464066,Charles B. Hall Air Park,on_display
-Boeing,C-135,C,61-2671,Stratolifter,,fixed_wing,monoplane,military,transport,,,c/n 18347;delivered as a C-135B and converted to C-135C,Charles B. Hall Air Park,on_display
-Rockwell,B-1,B,83-0071,Lancer,,fixed_wing,monoplane,military,bomber,,,c/n 8;tail code DY,Charles B. Hall Air Park,on_display
-McDonnell,F-4,D,66-7518,Phantom II,,fixed_wing,monoplane,military,fighter,,,c/n 2040;tail code SH;carried the ground-instructional designation GF-4D,Charles B. Hall Air Park,on_display
-Republic,F-105,D,62-4360,Thunderchief,Iron Duke,fixed_wing,monoplane,military,ground_attack,,,tail code SH,Charles B. Hall Air Park,on_display
-Vought,A-7,D,72-0175,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,LTV built;tail code OK;Oklahoma Air National Guard markings,Charles B. Hall Air Park,on_display
-Grumman,EA-6,B,158034,Prowler,,fixed_wing,monoplane,military,electronic_warfare,,,US Navy BuNo;carries the code NE-500,Charles B. Hall Air Park,on_display
-Douglas,C-47,J,50761,Skytrain,,fixed_wing,monoplane,military,transport,,,US Navy BuNo 50761;built as an R4D-6;wears the false USAAF serial 2150761;code U5-N with invasion stripes;ex-civil N219GB;often misfiled as 43-49012,Charles B. Hall Air Park,on_display
-General Dynamics,AGM-129,A,,ACM,,missile_rocket,,military,cruise,,,Advanced Cruise Missile;pre-production asset demilitarized and installed November 2010,Charles B. Hall Air Park,on_display
+Boeing,B-29,,44-27343,Superfortress,Tinker's Heritage,fixed_wing,monoplane,military,bomber,,built by Martin at Omaha; converted to WB-29; also listed as TB-29; 57th Weather Reconnaissance Squadron; recovered from Aberdeen Proving Ground in 1985; variant letter unresolved,TB-29; B29; TB29,Charles B. Hall Air Park,on_display
+Boeing,RB-47,E,53-4257,Stratojet,,fixed_wing,monoplane,military,recon,,also listed as NRB-47E,c/n 4501281; NRB-47E; RB47; NRB47E,Charles B. Hall Air Park,on_display
+Boeing,B-52,D,56-0695,Stratofortress,,fixed_wing,monoplane,military,bomber,,,c/n 464066; B52,Charles B. Hall Air Park,on_display
+Boeing,C-135,C,61-2671,Stratolifter,,fixed_wing,monoplane,military,transport,,delivered as a C-135B and converted to C-135C,c/n 18347; C135,Charles B. Hall Air Park,on_display
+Rockwell,B-1,B,83-0071,Lancer,,fixed_wing,monoplane,military,bomber,,tail code DY,c/n 8; B1,Charles B. Hall Air Park,on_display
+McDonnell,F-4,D,66-7518,Phantom II,,fixed_wing,monoplane,military,fighter,,tail code SH; carried the ground-instructional designation GF-4D,c/n 2040; F4,Charles B. Hall Air Park,on_display
+Republic,F-105,D,62-4360,Thunderchief,Iron Duke,fixed_wing,monoplane,military,ground_attack,,tail code SH,F105,Charles B. Hall Air Park,on_display
+Vought,A-7,D,72-0175,Corsair II,,fixed_wing,monoplane,military,ground_attack,,LTV built; tail code OK; Oklahoma Air National Guard markings,A7,Charles B. Hall Air Park,on_display
+Grumman,EA-6,B,158034,Prowler,,fixed_wing,monoplane,military,electronic_warfare,,US Navy BuNo; carries the code NE-500,EA6,Charles B. Hall Air Park,on_display
+Douglas,C-47,J,50761,Skytrain,,fixed_wing,monoplane,military,transport,,US Navy BuNo 50761; built as an R4D-6; wears the false USAAF serial 2150761; code U5-N with invasion stripes; ex-civil N219GB; often misfiled as 43-49012,N219GB; C47,Charles B. Hall Air Park,on_display
+General Dynamics,AGM-129,A,,ACM,,missile_rocket,,military,cruise,,pre-production asset demilitarized and installed November 2010,Advanced Cruise Missile; AGM129,Charles B. Hall Air Park,on_display

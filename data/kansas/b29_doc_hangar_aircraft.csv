@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Boeing,B-29,,44-69972,Superfortress,Doc,fixed_wing,monoplane,military,bomber,1944,,civil registration N69972;airworthy;registered to Doc's Friends Inc;Wichita-built;the hangar closes while the aircraft is on tour,B-29 Doc Hangar Education and Visitors Center,on_display
+Boeing,B-29,,44-69972,Superfortress,Doc,fixed_wing,monoplane,military,bomber,1944,civil registration N69972; airworthy; registered to Doc's Friends Inc; the hangar closes while the aircraft is on tour,Wichita-built; B29,B-29 Doc Hangar Education and Visitors Center,on_display

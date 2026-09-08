@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-McDonnell,RF-4,C,64-1000,Phantom II,City of Marlow,fixed_wing,monoplane,military,recon,1964,,RF-4C-20-MC;c/n 665;served with the 10th TRW at RAF Alconbury;converted to GRF-4C;ex-Bergstrom AFB gate guard;NMUSAF loan,Rusty Allen Airport,on_display
+McDonnell,RF-4,C,64-1000,Phantom II,City of Marlow,fixed_wing,monoplane,military,recon,1964,served with the 10th TRW at RAF Alconbury; converted to GRF-4C; ex-Bergstrom AFB gate guard; NMUSAF loan,RF-4C-20-MC; c/n 665; RF4,Rusty Allen Airport,on_display

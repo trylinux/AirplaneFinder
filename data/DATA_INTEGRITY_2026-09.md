@@ -197,3 +197,88 @@ no published serial.
 **The Barbers Point question that prompted this is answered**: of the five
 airframes reported in 2021 as shipping from Hawaii to Castle, only the AH-1W and
 the SH-60B are evidenced as having arrived, and both were already recorded.
+
+---
+
+## Addendum: `aliases` misuse, corrected 2026-09-08
+
+### The defect
+
+Research passes from California onward were instructed to leave `description`
+blank and to record provenance in `aliases`. That is inverted. `aliases` is a
+separate table (`aircraft_aliases`) joined into aircraft search by
+`_build_aircraft_filter`, so every note written there became a search term:
+"confirmed still in place March 2026" made an airframe match a search for
+*place*. `description`, the field intended for prose, was empty across the
+whole corpus — 120 of 4,881 CSV rows had one.
+
+The root cause was upstream of the research: `data/METHODOLOGY.md` defined a
+12-field output contract that had no `description` field at all.
+
+### Scale
+
+Of 9,377 alias strings across 5,082 aircraft:
+
+| bucket | count |
+|---|---|
+| genuine names/identifiers, retained | 4,992 |
+| identifier wrapped in prose, rewritten to the bare identifier | 133 |
+| prose or attributes, moved to `description` | 4,385 |
+
+2,211 aircraft were affected; 1,165 lost every alias they had. Worst states by
+strings moved: Texas 890, Colorado 569, Kansas 544, Oklahoma 413, New Mexico
+301, Nebraska 249, Hawaii 218.
+
+The moved set included pure attributes that are not names either — `replica`
+(116), `airworthy` (94), `NMUSAF loan` (71), `inert` (32), `pylon-mounted` (26).
+
+### Rule now in force
+
+`aliases` holds only other ways of naming the airframe: alternate designations,
+the dashless form of each designation, popular/export names, block and
+construction identifiers, civil registrations, and the bare identifier of any
+false serial worn. Everything else is `description`. Recorded in
+METHODOLOGY.md; enforced by `tests/test_alias_hygiene.py`.
+
+### Dashless search variants
+
+Added in the same pass: every dashed designation now carries its dashless form
+as an alias (`PT-22` → `PT22`, `F-16C` → `F16C`), generated from `model`,
+`model`+`variant`, and each designation alias. 3,772 new alias rows across
+3,388 aircraft. Without these, a search for "PT22" returned nothing.
+
+### Method
+
+A shape heuristic was tried first and rejected — it left a 2,298-item review
+band and still kept `airworthy` and `replica` as aliases. It was replaced with
+a *positive* name test: a string survives only if it matches a designation,
+popular-name, registration, serial, BuNo, c/n or block pattern. Everything
+failing the test moves. The full 2,211-record dry run was reviewed before
+anything was written.
+
+Four rule bugs were caught during execution rather than after:
+
+- the operator deny-list matched bare `Wing`, killing genuine names
+  (`Mitchell Wing`, `Blended Wing Body`, `Oblique Wing`) — narrowed to unit
+  contexts (`138th Fighter Wing`); 9 records re-patched;
+- identifier shapes like `4-469` and `707-320B` had no pattern — added;
+- the `mark`/`model` pattern was unanchored and swallowed `marked …` strings,
+  keeping 32 notes verbatim as aliases — anchored; 32 records re-patched;
+- the `c/n` pattern accepted trailing prose (`c/n 6 the sixth Learjet built`),
+  which the new hygiene test caught in 5 files after the migration had
+  "finished"; 11 strings split into `c/n <id>` + description.
+
+### Verification
+
+- DB: 4,056 aircraft patched (148 transient 500s at 6 concurrent workers, all
+  clean on serial retry), plus 41 rule-fix re-patches and 90 reconciliation
+  patches.
+- CSVs: 335 of 336 files rewritten, preserving each file's original line
+  terminator. All 336 round-tripped byte-identically before the rewrite, so the
+  diff is exactly the changed cells: 4,326 insertions / 4,303 deletions.
+- Reconciliation: every CSV row matched to its database id by
+  (museum, model, tail). 4,767 rows had an unambiguous match; **4,767 of 4,767
+  now have identical alias and description sets in the CSV and the live
+  database.** 114 rows (untailed duplicates within one museum) have ambiguous
+  keys and were verified only through the migration itself.
+- Test suite: 4,952 passing, including 672 new alias-hygiene assertions.

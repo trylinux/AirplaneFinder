@@ -1,14 +1,14 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Aero Vodochody,L-29,,N129U,Delfin,,fixed_wing,monoplane,military,trainer,1972,,,Western Sky Aviation Warbird Museum,on_display
+Aero Vodochody,L-29,,N129U,Delfin,,fixed_wing,monoplane,military,trainer,1972,,L29,Western Sky Aviation Warbird Museum,on_display
 BAC,Jet Provost,T.3A,N4421B,,,fixed_wing,monoplane,military,trainer,,,,Western Sky Aviation Warbird Museum,on_display
 BAC,Jet Provost,T.3A,N4427Q,,,fixed_wing,monoplane,military,trainer,,,XM371,Western Sky Aviation Warbird Museum,on_display
-Cessna,A-37,B,68-7921,Dragonfly,Dragon 921,fixed_wing,monoplane,military,ground_attack,1969,,N87921,Western Sky Aviation Warbird Museum,on_display
-Cessna,T-37,B,64-13418,Tweet,,fixed_wing,monoplane,military,trainer,,,,Western Sky Aviation Warbird Museum,on_display
-Cessna,T-37,B,60-0122,Tweet,,fixed_wing,monoplane,military,trainer,,,serial least corroborated,Western Sky Aviation Warbird Museum,on_display
-Douglas,C-54,Q,N55CW,Skymaster,,fixed_wing,monoplane,military,transport,,,BuNo 56506;C-54D,Western Sky Aviation Warbird Museum,on_display
-Grega,GN-1,,N9169N,Aircamper,,fixed_wing,monoplane,civilian,private,2002,,Pietenpol Air Camper derivative,Western Sky Aviation Warbird Museum,on_display
-Northrop,F-5,B,63-8440,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,,,Western Sky Aviation Warbird Museum,on_display
-Northrop,T-38,A,62-3634,Talon,,fixed_wing,monoplane,military,trainer,,,,Western Sky Aviation Warbird Museum,on_display
-PZL-Mielec,Lim-5,,N509,,,fixed_wing,monoplane,military,fighter,1959,,MiG-17F;1C01509,Western Sky Aviation Warbird Museum,on_display
-PZL-Mielec,SBLim-2,,N15UT,,,fixed_wing,monoplane,military,trainer,1955,,MiG-15UTI;522546,Western Sky Aviation Warbird Museum,on_display
-Shenyang,J-2,,,,,fixed_wing,monoplane,military,fighter,,,MiG-15bis Chinese variant,Western Sky Aviation Warbird Museum,on_display
+Cessna,A-37,B,68-7921,Dragonfly,Dragon 921,fixed_wing,monoplane,military,ground_attack,1969,,N87921; A37,Western Sky Aviation Warbird Museum,on_display
+Cessna,T-37,B,64-13418,Tweet,,fixed_wing,monoplane,military,trainer,,,T37,Western Sky Aviation Warbird Museum,on_display
+Cessna,T-37,B,60-0122,Tweet,,fixed_wing,monoplane,military,trainer,,serial least corroborated,T37,Western Sky Aviation Warbird Museum,on_display
+Douglas,C-54,Q,N55CW,Skymaster,,fixed_wing,monoplane,military,transport,,,BuNo 56506; C-54D; C54; C54D,Western Sky Aviation Warbird Museum,on_display
+Grega,GN-1,,N9169N,Aircamper,,fixed_wing,monoplane,civilian,private,2002,Pietenpol Air Camper derivative,GN1,Western Sky Aviation Warbird Museum,on_display
+Northrop,F-5,B,63-8440,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,,F5,Western Sky Aviation Warbird Museum,on_display
+Northrop,T-38,A,62-3634,Talon,,fixed_wing,monoplane,military,trainer,,,T38,Western Sky Aviation Warbird Museum,on_display
+PZL-Mielec,Lim-5,,N509,,,fixed_wing,monoplane,military,fighter,1959,1C01509,MiG-17F; Lim5; MiG17F,Western Sky Aviation Warbird Museum,on_display
+PZL-Mielec,SBLim-2,,N15UT,,,fixed_wing,monoplane,military,trainer,1955,,MiG-15UTI; 522546; MiG15UTI,Western Sky Aviation Warbird Museum,on_display
+Shenyang,J-2,,,,,fixed_wing,monoplane,military,fighter,,MiG-15bis Chinese variant,J2,Western Sky Aviation Warbird Museum,on_display

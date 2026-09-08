@@ -1,36 +1,36 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Boeing,B-17,G,44-83512,Flying Fortress,,fixed_wing,monoplane,military,bomber,1944,,parade ground airpark,USAF Airman Heritage Museum,on_display
-Boeing,B-29,A,44-62220,Superfortress,,fixed_wing,monoplane,military,bomber,1944,,parade ground airpark,USAF Airman Heritage Museum,on_display
-Boeing,B-52,D,55-0068,Stratofortress,,fixed_wing,monoplane,military,bomber,1956,,moved from the former Southeast Asia Airpark in 2020,USAF Airman Heritage Museum,on_display
-North American,P-82,E,46-0262,Twin Mustang,,fixed_wing,monoplane,military,fighter,,,marked 46-0297 which is not its serial,USAF Airman Heritage Museum,on_display
-Republic,P-47,N,44-89348,Thunderbolt,,fixed_wing,monoplane,military,fighter,1944,,marked 226418 which is not its serial,USAF Airman Heritage Museum,on_display
-North American,P-51,H,44-64376,Mustang,,fixed_wing,monoplane,military,fighter,1944,,marked 10,USAF Airman Heritage Museum,on_display
-Bell,RP-63,G,45-57295,Kingcobra,,fixed_wing,monoplane,military,fighter,1945,,manned target aircraft variant,USAF Airman Heritage Museum,on_display
-McDonnell Douglas,F-15,A,71-0280,Eagle,,fixed_wing,monoplane,military,fighter,1972,,,USAF Airman Heritage Museum,on_display
-McDonnell,F-4,B,149421,Phantom II,,fixed_wing,monoplane,military,fighter,1961,,built as F4H-1 and redesignated F-4B;marked 49-421,USAF Airman Heritage Museum,on_display
-Lockheed,EC-121,S,54-0155,Constellation,,fixed_wing,monoplane,military,electronic_warfare,1955,,often listed as a C-121C,USAF Airman Heritage Museum,on_display
-Douglas,B-66,D,55-0390,Destroyer,,fixed_wing,monoplane,military,recon,,,WB-66D weather reconnaissance;moved from the Southeast Asia Airpark in 2020,USAF Airman Heritage Museum,on_display
-Republic,F-105,D,62-4387,Thunderchief,,fixed_wing,monoplane,military,ground_attack,1963,,moved from the Southeast Asia Airpark in 2020,USAF Airman Heritage Museum,on_display
-Republic,JF-105,B,54-0105,Thunderchief,,fixed_wing,monoplane,military,test,1957,,c/n JF-1;a genuine pre-production prototype;marked FH-105,USAF Airman Heritage Museum,on_display
-Martin,RB-57,A,52-1482,Canberra,,fixed_wing,monoplane,military,recon,1954,,marked BA-482;moved from the Southeast Asia Airpark in 2020,USAF Airman Heritage Museum,on_display
-North American,F-100,A,52-5759,Super Sabre,,fixed_wing,monoplane,military,fighter,1954,,moved from the Southeast Asia Airpark in 2020,USAF Airman Heritage Museum,on_display
-North American,F-86,A,47-0605,Sabre,,fixed_wing,monoplane,military,fighter,1948,,marked FU-605;built as a P-86A,USAF Airman Heritage Museum,on_display
-Cessna,A-37,B,67-14790,Dragonfly,,fixed_wing,monoplane,military,ground_attack,,,NOA-37B,USAF Airman Heritage Museum,on_display
-Fairchild Republic,A-10,A,76-0547,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,1978,,OA-10A;marked NF,USAF Airman Heritage Museum,on_display
-General Dynamics,F-16,B,78-0107,Fighting Falcon,,fixed_wing,monoplane,military,fighter,1980,,,USAF Airman Heritage Museum,on_display
-McDonnell Douglas,C-9,A,71-0878,Nightingale,,fixed_wing,monoplane,military,transport,,,gate guard,USAF Airman Heritage Museum,on_display
-Northrop,F-5,B,73-1630,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,,a non-flying static structural test frame rather than a flyable F-5E as often listed;marked 31630,USAF Airman Heritage Museum,on_display
-North American,B-25,J,44-29835,Mitchell,,fixed_wing,monoplane,military,bomber,1944,,marked 435103 which is a marking not its serial and has led to it being catalogued as a B-25H,USAF Airman Heritage Museum,on_display
-Douglas,B-26,C,44-35918,Invader,,fixed_wing,monoplane,military,bomber,1944,,marked 44-34287 which is not its serial,USAF Airman Heritage Museum,on_display
-Fairchild,C-119,C,51-2567,Flying Boxcar,,fixed_wing,monoplane,military,transport,,,,USAF Airman Heritage Museum,on_display
-Fairchild,C-123,K,54-0668,Provider,,fixed_wing,monoplane,military,transport,,,often listed as a C-123B,USAF Airman Heritage Museum,on_display
-Douglas,C-47,D,44-76671,Skytrain,,fixed_wing,monoplane,military,transport,1944,,VC-47D,USAF Airman Heritage Museum,on_display
-Douglas,C-118,A,51-17640,Liftmaster,,fixed_wing,monoplane,military,transport,,,VC-118A;often conflated with instructional C-118B 131600,USAF Airman Heritage Museum,on_display
-Convair,T-29,B,51-5172,Samaritan,,fixed_wing,monoplane,military,trainer,,,gate guard,USAF Airman Heritage Museum,on_display
-North American,T-28,A,49-1611,Trojan,,fixed_wing,monoplane,military,trainer,,,,USAF Airman Heritage Museum,on_display
-Beechcraft,T-34,A,55-0206,Mentor,,fixed_wing,monoplane,military,trainer,,,,USAF Airman Heritage Museum,on_display
-North American,SNJ,5,51584,Texan,,fixed_wing,monoplane,military,trainer,,,US Navy BuNo;marked 93477;often listed as an SNJ-4,USAF Airman Heritage Museum,on_display
-Beechcraft,UC-45,J,29637,Expeditor,,fixed_wing,monoplane,military,transport,,,US Navy BuNo;ex-SNB-2,USAF Airman Heritage Museum,on_display
-Republic,F-84,F,52-8889,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,,marked 26718 which is not its serial,USAF Airman Heritage Museum,on_display
-Vought,A-7,D,71-0337,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,,USAF Airman Heritage Museum,on_display
-Lockheed,P-38,L,,Lightning,,fixed_wing,monoplane,military,fighter,,,full-scale replica painted as 43-78538;no such airframe identity is present,USAF Airman Heritage Museum,on_display
+Boeing,B-17,G,44-83512,Flying Fortress,,fixed_wing,monoplane,military,bomber,1944,parade ground airpark,B17,USAF Airman Heritage Museum,on_display
+Boeing,B-29,A,44-62220,Superfortress,,fixed_wing,monoplane,military,bomber,1944,parade ground airpark,B29,USAF Airman Heritage Museum,on_display
+Boeing,B-52,D,55-0068,Stratofortress,,fixed_wing,monoplane,military,bomber,1956,moved from the former Southeast Asia Airpark in 2020,B52,USAF Airman Heritage Museum,on_display
+North American,P-82,E,46-0262,Twin Mustang,,fixed_wing,monoplane,military,fighter,,marked 46-0297 which is not its serial,P82,USAF Airman Heritage Museum,on_display
+Republic,P-47,N,44-89348,Thunderbolt,,fixed_wing,monoplane,military,fighter,1944,marked 226418 which is not its serial,P47,USAF Airman Heritage Museum,on_display
+North American,P-51,H,44-64376,Mustang,,fixed_wing,monoplane,military,fighter,1944,marked 10,P51,USAF Airman Heritage Museum,on_display
+Bell,RP-63,G,45-57295,Kingcobra,,fixed_wing,monoplane,military,fighter,1945,manned target aircraft variant,RP63,USAF Airman Heritage Museum,on_display
+McDonnell Douglas,F-15,A,71-0280,Eagle,,fixed_wing,monoplane,military,fighter,1972,,F15,USAF Airman Heritage Museum,on_display
+McDonnell,F-4,B,149421,Phantom II,,fixed_wing,monoplane,military,fighter,1961,built as F4H-1 and redesignated F-4B; marked 49-421,49-421; F4,USAF Airman Heritage Museum,on_display
+Lockheed,EC-121,S,54-0155,Constellation,,fixed_wing,monoplane,military,electronic_warfare,1955,often listed as a C-121C,EC121,USAF Airman Heritage Museum,on_display
+Douglas,B-66,D,55-0390,Destroyer,,fixed_wing,monoplane,military,recon,,WB-66D weather reconnaissance; moved from the Southeast Asia Airpark in 2020,B66,USAF Airman Heritage Museum,on_display
+Republic,F-105,D,62-4387,Thunderchief,,fixed_wing,monoplane,military,ground_attack,1963,moved from the Southeast Asia Airpark in 2020,F105,USAF Airman Heritage Museum,on_display
+Republic,JF-105,B,54-0105,Thunderchief,,fixed_wing,monoplane,military,test,1957,a genuine pre-production prototype; marked FH-105,c/n JF-1; FH-105; JF105; FH105,USAF Airman Heritage Museum,on_display
+Martin,RB-57,A,52-1482,Canberra,,fixed_wing,monoplane,military,recon,1954,moved from the Southeast Asia Airpark in 2020; marked BA-482,BA-482; RB57; BA482,USAF Airman Heritage Museum,on_display
+North American,F-100,A,52-5759,Super Sabre,,fixed_wing,monoplane,military,fighter,1954,moved from the Southeast Asia Airpark in 2020,F100,USAF Airman Heritage Museum,on_display
+North American,F-86,A,47-0605,Sabre,,fixed_wing,monoplane,military,fighter,1948,built as a P-86A; marked FU-605,FU-605; F86; FU605,USAF Airman Heritage Museum,on_display
+Cessna,A-37,B,67-14790,Dragonfly,,fixed_wing,monoplane,military,ground_attack,,,NOA-37B; A37; NOA37B,USAF Airman Heritage Museum,on_display
+Fairchild Republic,A-10,A,76-0547,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,1978,marked NF,OA-10A; A10; OA10A,USAF Airman Heritage Museum,on_display
+General Dynamics,F-16,B,78-0107,Fighting Falcon,,fixed_wing,monoplane,military,fighter,1980,,F16,USAF Airman Heritage Museum,on_display
+McDonnell Douglas,C-9,A,71-0878,Nightingale,,fixed_wing,monoplane,military,transport,,gate guard,C9,USAF Airman Heritage Museum,on_display
+Northrop,F-5,B,73-1630,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,a non-flying static structural test frame rather than a flyable F-5E as often listed; marked 31630,31630; F5,USAF Airman Heritage Museum,on_display
+North American,B-25,J,44-29835,Mitchell,,fixed_wing,monoplane,military,bomber,1944,marked 435103 which is a marking not its serial and has led to it being catalogued as a B-25H,B25,USAF Airman Heritage Museum,on_display
+Douglas,B-26,C,44-35918,Invader,,fixed_wing,monoplane,military,bomber,1944,marked 44-34287 which is not its serial,B26,USAF Airman Heritage Museum,on_display
+Fairchild,C-119,C,51-2567,Flying Boxcar,,fixed_wing,monoplane,military,transport,,,C119,USAF Airman Heritage Museum,on_display
+Fairchild,C-123,K,54-0668,Provider,,fixed_wing,monoplane,military,transport,,often listed as a C-123B,C123,USAF Airman Heritage Museum,on_display
+Douglas,C-47,D,44-76671,Skytrain,,fixed_wing,monoplane,military,transport,1944,,VC-47D; C47; VC47D,USAF Airman Heritage Museum,on_display
+Douglas,C-118,A,51-17640,Liftmaster,,fixed_wing,monoplane,military,transport,,often conflated with instructional C-118B 131600,VC-118A; C118; VC118A,USAF Airman Heritage Museum,on_display
+Convair,T-29,B,51-5172,Samaritan,,fixed_wing,monoplane,military,trainer,,gate guard,T29,USAF Airman Heritage Museum,on_display
+North American,T-28,A,49-1611,Trojan,,fixed_wing,monoplane,military,trainer,,,T28,USAF Airman Heritage Museum,on_display
+Beechcraft,T-34,A,55-0206,Mentor,,fixed_wing,monoplane,military,trainer,,,T34,USAF Airman Heritage Museum,on_display
+North American,SNJ,5,51584,Texan,,fixed_wing,monoplane,military,trainer,,US Navy BuNo; often listed as an SNJ-4; marked 93477,93477; SNJ5,USAF Airman Heritage Museum,on_display
+Beechcraft,UC-45,J,29637,Expeditor,,fixed_wing,monoplane,military,transport,,US Navy BuNo; ex-SNB-2,SNB-2; UC45; SNB2,USAF Airman Heritage Museum,on_display
+Republic,F-84,F,52-8889,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,marked 26718 which is not its serial,F84,USAF Airman Heritage Museum,on_display
+Vought,A-7,D,71-0337,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,A7,USAF Airman Heritage Museum,on_display
+Lockheed,P-38,L,,Lightning,,fixed_wing,monoplane,military,fighter,,full-scale replica painted as 43-78538; no such airframe identity is present,P38,USAF Airman Heritage Museum,on_display

@@ -1,21 +1,21 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Lockheed,T-33,A,53-5219,Shooting Star,,fixed_wing,monoplane,military,trainer,,,c/n 580-8558;ex-N1040Z,Texas Air Museum Caprock Chapter,on_display
-Grumman,F9F,8,131063,Cougar,,fixed_wing,monoplane,military,fighter,1954,,c/n 1C;ex-Pate Museum of Transportation;NNAM loan;stripped to bare metal,Texas Air Museum Caprock Chapter,under_restoration
-McDonnell,F-101,B,59-0429,Voodoo,,fixed_wing,monoplane,military,fighter,,,c/n 753;ex-136th FIS New York ANG at Niagara Falls,Texas Air Museum Caprock Chapter,on_display
-Republic,F-105,D,61-0093,Thunderchief,,fixed_wing,monoplane,military,ground_attack,1962,,c/n D288;49th TFW then 388th and 355th TFW then Kansas and DC ANG;visible Vietnam battle-damage patches;Aerial Visuals also lists 61-0993 which is a transposition duplicate,Texas Air Museum Caprock Chapter,on_display
-North American Rockwell,T-2,C,158599,Buckeye,,fixed_wing,monoplane,military,trainer,1970,,NNAM loan,Texas Air Museum Caprock Chapter,on_display
-Grumman,OV-1,B,N512NA,Mohawk,,fixed_wing,monoplane,civilian,test,1961,,c/n 39B;NASA 518;the only OV-1 ever painted in NASA colours;flown by NASA Dryden for airspeed and stall-warning research;demilitarised,Texas Air Museum Caprock Chapter,on_display
-McDonnell Douglas,F-4,S,157293,Phantom II,,fixed_wing,monoplane,military,fighter,1969,,built as an F-4J;presumed NNAM loan,Texas Air Museum Caprock Chapter,on_display
-Vought,A-7,B,154431,Corsair II,,fixed_wing,monoplane,military,ground_attack,1968,,NNAM loan,Texas Air Museum Caprock Chapter,on_display
-Grumman,F-14,A,160391,Tomcat,,fixed_wing,monoplane,military,fighter,1974,,c/n 247;last unit VF-101;struck November 1999;NNAM loan,Texas Air Museum Caprock Chapter,on_display
-McDonnell Douglas,F/A-18,A,162473,Hornet,,fixed_wing,monoplane,military,fighter,1985,,c/n 331;NNAM loan,Texas Air Museum Caprock Chapter,on_display
-Stinson,V-77,,N88026,Reliant,London Nights,fixed_wing,monoplane,military,utility,1944,,s/n 77-411;RAF FB684;AT-19B;served the Fleet Air Arm at Piarco Trinidad on photo-recon and sub-chasing;museum-owned and flying,Texas Air Museum Caprock Chapter,on_display
-Fairchild,PT-26,,N58810,Cornell,Lindy,fixed_wing,monoplane,military,trainer,1943,,FT825;ex-RCAF;museum-owned;out of service about a year for fabric re-cover,Texas Air Museum Caprock Chapter,under_restoration
-Taylorcraft,L-2,M,N47344,Grasshopper,Tumbleweed,fixed_wing,monoplane,military,utility,1943,,c/n 5362;military 43-26050;served at Lubbock Army Airfield;restored 2005 into its delivery scheme;museum-owned,Texas Air Museum Caprock Chapter,on_display
-Fairchild,M62C,,N1131Z,,,fixed_wing,monoplane,civilian,experimental,1965,,c/n 9;a Fairchild-Funk crop duster converted to represent a Mitsubishi Ki-51 Sonia;a replica conversion not an original Japanese airframe;museum-owned,Texas Air Museum Caprock Chapter,on_display
-Fairchild,M62C,,N1129Z,,,fixed_wing,monoplane,civilian,experimental,1965,,c/n 6;second Ki-51 Sonia replica conversion;museum-owned,Texas Air Museum Caprock Chapter,under_restoration
-Stinson,10A,,N31541,Voyager,,fixed_wing,monoplane,civilian,private,1940,,c/n 7790;donated;first post-restoration flight September 2024,Texas Air Museum Caprock Chapter,on_display
-Beechcraft,UC-45,J,N3483,Expeditor,,fixed_wing,monoplane,military,transport,1952,,c/n 039219;being converted to static display,Texas Air Museum Caprock Chapter,under_restoration
-Stinson,L-5,,N48083,Sentinel,,fixed_wing,monoplane,military,utility,1943,,military 42-98801;museum-owned,Texas Air Museum Caprock Chapter,on_display
-Boeing-Stearman,PT-13,,N50685,Kaydet,,fixed_wing,biplane,military,trainer,1942,,c/n 75-3845;museum-owned,Texas Air Museum Caprock Chapter,on_display
-Piper,J-3,C-65,N88012,Cub,,fixed_wing,monoplane,civilian,private,1945,,c/n 15629;museum-owned,Texas Air Museum Caprock Chapter,on_display
+Lockheed,T-33,A,53-5219,Shooting Star,,fixed_wing,monoplane,military,trainer,,ex-N1040Z,c/n 580-8558; N1040Z; T33,Texas Air Museum Caprock Chapter,on_display
+Grumman,F9F,8,131063,Cougar,,fixed_wing,monoplane,military,fighter,1954,ex-Pate Museum of Transportation; NNAM loan; stripped to bare metal,c/n 1C,Texas Air Museum Caprock Chapter,under_restoration
+McDonnell,F-101,B,59-0429,Voodoo,,fixed_wing,monoplane,military,fighter,,ex-136th FIS New York ANG at Niagara Falls,c/n 753; F101,Texas Air Museum Caprock Chapter,on_display
+Republic,F-105,D,61-0093,Thunderchief,,fixed_wing,monoplane,military,ground_attack,1962,49th TFW then 388th and 355th TFW then Kansas and DC ANG; visible Vietnam battle-damage patches; Aerial Visuals also lists 61-0993 which is a transposition duplicate,c/n D288; F105,Texas Air Museum Caprock Chapter,on_display
+North American Rockwell,T-2,C,158599,Buckeye,,fixed_wing,monoplane,military,trainer,1970,NNAM loan,T2,Texas Air Museum Caprock Chapter,on_display
+Grumman,OV-1,B,N512NA,Mohawk,,fixed_wing,monoplane,civilian,test,1961,the only OV-1 ever painted in NASA colours; flown by NASA Dryden for airspeed and stall-warning research; demilitarised,c/n 39B; NASA 518; OV1,Texas Air Museum Caprock Chapter,on_display
+McDonnell Douglas,F-4,S,157293,Phantom II,,fixed_wing,monoplane,military,fighter,1969,built as an F-4J; presumed NNAM loan,F4,Texas Air Museum Caprock Chapter,on_display
+Vought,A-7,B,154431,Corsair II,,fixed_wing,monoplane,military,ground_attack,1968,NNAM loan,A7,Texas Air Museum Caprock Chapter,on_display
+Grumman,F-14,A,160391,Tomcat,,fixed_wing,monoplane,military,fighter,1974,last unit VF-101; struck November 1999; NNAM loan,c/n 247; F14,Texas Air Museum Caprock Chapter,on_display
+McDonnell Douglas,F/A-18,A,162473,Hornet,,fixed_wing,monoplane,military,fighter,1985,NNAM loan,c/n 331,Texas Air Museum Caprock Chapter,on_display
+Stinson,V-77,,N88026,Reliant,London Nights,fixed_wing,monoplane,military,utility,1944,served the Fleet Air Arm at Piarco Trinidad on photo-recon and sub-chasing; museum-owned and flying,s/n 77-411; RAF FB684; AT-19B; V77; AT19B,Texas Air Museum Caprock Chapter,on_display
+Fairchild,PT-26,,N58810,Cornell,Lindy,fixed_wing,monoplane,military,trainer,1943,ex-RCAF; museum-owned; out of service about a year for fabric re-cover,FT825; PT26,Texas Air Museum Caprock Chapter,under_restoration
+Taylorcraft,L-2,M,N47344,Grasshopper,Tumbleweed,fixed_wing,monoplane,military,utility,1943,military 43-26050; served at Lubbock Army Airfield; restored 2005 into its delivery scheme; museum-owned,c/n 5362; L2,Texas Air Museum Caprock Chapter,on_display
+Fairchild,M62C,,N1131Z,,,fixed_wing,monoplane,civilian,experimental,1965,a Fairchild-Funk crop duster converted to represent a Mitsubishi Ki-51 Sonia; a replica conversion not an original Japanese airframe; museum-owned,c/n 9,Texas Air Museum Caprock Chapter,on_display
+Fairchild,M62C,,N1129Z,,,fixed_wing,monoplane,civilian,experimental,1965,second Ki-51 Sonia replica conversion; museum-owned,c/n 6,Texas Air Museum Caprock Chapter,under_restoration
+Stinson,10A,,N31541,Voyager,,fixed_wing,monoplane,civilian,private,1940,donated; first post-restoration flight September 2024,c/n 7790,Texas Air Museum Caprock Chapter,on_display
+Beechcraft,UC-45,J,N3483,Expeditor,,fixed_wing,monoplane,military,transport,1952,being converted to static display,c/n 039219; UC45,Texas Air Museum Caprock Chapter,under_restoration
+Stinson,L-5,,N48083,Sentinel,,fixed_wing,monoplane,military,utility,1943,military 42-98801; museum-owned,L5,Texas Air Museum Caprock Chapter,on_display
+Boeing-Stearman,PT-13,,N50685,Kaydet,,fixed_wing,biplane,military,trainer,1942,museum-owned,c/n 75-3845; PT13,Texas Air Museum Caprock Chapter,on_display
+Piper,J-3,C-65,N88012,Cub,,fixed_wing,monoplane,civilian,private,1945,museum-owned,c/n 15629; J3,Texas Air Museum Caprock Chapter,on_display

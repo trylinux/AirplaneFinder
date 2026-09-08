@@ -1,3 +1,3 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Gyrodyne,QH-50,D,,DASH,,rotary_wing,,military,drone,,,BuNo not published;anti-submarine drone helicopter;displayed with MK 44 torpedo interpretation,Hawthorne Ordnance Museum,on_display
-Piasecki,HUP,1,,Retriever,,rotary_wing,,military,utility,,,BuNo not published;sub-variant uncertain and reported only as HUP-1;outdoors,Hawthorne Ordnance Museum,under_restoration
+Gyrodyne,QH-50,D,,DASH,,rotary_wing,,military,drone,,BuNo not published; anti-submarine drone helicopter; displayed with MK 44 torpedo interpretation,QH50,Hawthorne Ordnance Museum,on_display
+Piasecki,HUP,1,,Retriever,,rotary_wing,,military,utility,,BuNo not published; sub-variant uncertain and reported only as HUP-1; outdoors,HUP1,Hawthorne Ordnance Museum,under_restoration

@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Cessna,T-37,B,68-8077,Tweet,,fixed_wing,monoplane,military,trainer,,,c/n 41202,Medford Municipal Airfield,on_display
+Cessna,T-37,B,68-8077,Tweet,,fixed_wing,monoplane,military,trainer,,,c/n 41202; T37,Medford Municipal Airfield,on_display

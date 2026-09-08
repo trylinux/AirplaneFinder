@@ -1,51 +1,51 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Beechcraft,VC-6,A,66-15361,King Air,,fixed_wing,monoplane,military,transport,,,US Army;acquired 26 July 1966 and assigned Redstone Arsenal;used to transport Wernher von Braun;later a test platform;not the Lady Bird Special 66-7943,White Sands Missile Range Museum,on_display
-Bell,UH-1,M,66-0616,Iroquois,,rotary_wing,,military,test,,,US Army;a re-engined UH-1C;used on the range as a target and test platform;one source lists it as UH-1C,White Sands Missile Range Museum,on_display
-McDonnell Douglas,F-4,F,72-1135,Phantom II,,fixed_wing,monoplane,military,fighter,,,ex-Luftwaffe 37+25;c/n 4410;wears Holloman HO tail code from the German training wing;a German airframe not a USAF operational one,White Sands Missile Range Museum,on_display
-Gyrodyne,QH-50,A,,DASH,,rotary_wing,,military,drone,,,BuNo not published;one source lists it as OH-50D,White Sands Missile Range Museum,on_display
-Peenemunde,V-2,,,Vergeltungswaffe 2,,missile_rocket,,military,ballistic,,,German;a separate V-2 building holds a nearly intact cutaway example,White Sands Missile Range Museum,on_display
-Chrysler,PGM-11,,,Redstone,,missile_rocket,,military,ballistic,,,inert,White Sands Missile Range Museum,on_display
-Martin Marietta,MGM-31,I,,Pershing I,,missile_rocket,,military,ballistic,,,inert,White Sands Missile Range Museum,on_display
-Martin Marietta,MGM-31,II,,Pershing II,,missile_rocket,,military,ballistic,,,inert,White Sands Missile Range Museum,on_display
-Firestone,MGM-5,,,Corporal,,missile_rocket,,military,ballistic,,,inert,White Sands Missile Range Museum,on_display
-Sperry,MGM-29,,,Sergeant,,missile_rocket,,military,ballistic,,,inert,White Sands Missile Range Museum,on_display
-Martin,MGM-18,,,Lacrosse,,missile_rocket,,military,ballistic,,,inert,White Sands Missile Range Museum,on_display
-LTV,MGM-52,,,Lance,,missile_rocket,,military,ballistic,,,inert,White Sands Missile Range Museum,on_display
-LTV,MGM-140,,,ATACMS,,missile_rocket,,military,ballistic,,,inert,White Sands Missile Range Museum,on_display
-Martin,MGM-1,,,Matador,,missile_rocket,,military,cruise,,,displayed paired with the Mace,White Sands Missile Range Museum,on_display
-Martin,MGM-13,,,Mace,,missile_rocket,,military,cruise,,,displayed paired with the Matador,White Sands Missile Range Museum,on_display
-Republic,LTV-N-2,,,Loon,,missile_rocket,,military,cruise,,,US Navy copy of the German V-1,White Sands Missile Range Museum,on_display
-Western Electric,MIM-3,,,Nike Ajax,,missile_rocket,,military,surface_to_air,,,inert,White Sands Missile Range Museum,on_display
-Western Electric,MIM-14,,,Nike Hercules,,missile_rocket,,military,surface_to_air,,,inert,White Sands Missile Range Museum,on_display
-Raytheon,MIM-23,,,Hawk,,missile_rocket,,military,surface_to_air,,,inert,White Sands Missile Range Museum,on_display
-Raytheon,MIM-104,,,Patriot,,missile_rocket,,military,surface_to_air,,,inert,White Sands Missile Range Museum,on_display
-Fairchild,SAM-N-2,,,Lark,,missile_rocket,,military,surface_to_air,,,US Navy;inert,White Sands Missile Range Museum,on_display
-Convair,RIM-2,,,Terrier,,missile_rocket,,military,surface_to_air,,,US Navy;inert,White Sands Missile Range Museum,on_display
-Bendix,RIM-8,,,Talos,,missile_rocket,,military,surface_to_air,,,US Navy;inert,White Sands Missile Range Museum,on_display
-Convair,RIM-24,,,Tartar,,missile_rocket,,military,surface_to_air,,,US Navy;inert,White Sands Missile Range Museum,on_display
-Euromissile,XMIM-115,,,Roland,,missile_rocket,,military,surface_to_air,,,Franco-German design in US Army service;inert,White Sands Missile Range Museum,on_display
-Boeing,HIBEX,,,High Boost Experiment,,missile_rocket,,military,surface_to_air,,,anti-missile interceptor test vehicle,White Sands Missile Range Museum,on_display
-Raytheon,ERINT,,,Extended Range Interceptor,,missile_rocket,,military,surface_to_air,,,anti-missile interceptor,White Sands Missile Range Museum,on_display
-Hughes,AIM-4,,,Falcon,,missile_rocket,,military,air_to_air,,,inert,White Sands Missile Range Museum,on_display
-Douglas,AIR-2,,,Genie,,missile_rocket,,military,air_to_air,,,unguided nuclear-armed rocket;display body is inert,White Sands Missile Range Museum,on_display
-Raytheon,AIM-9,,,Sidewinder,,missile_rocket,,military,air_to_air,,,inert,White Sands Missile Range Museum,on_display
-Northrop,GAM-67,,,Crossbow,,missile_rocket,,military,air_to_surface,,,inert,White Sands Missile Range Museum,on_display
-North American,AGM-28,,,Hound Dog,,missile_rocket,,military,air_to_surface,,,inert,White Sands Missile Range Museum,on_display
-Boeing,AGM-69,,,SRAM,,missile_rocket,,military,air_to_surface,,,inert,White Sands Missile Range Museum,on_display
-Ford,MGM-51,,,Shillelagh,,missile_rocket,,military,anti_tank,,,inert,White Sands Missile Range Museum,on_display
-Nord,AGM-22,,,SS-11,,missile_rocket,,military,anti_tank,,,inert,White Sands Missile Range Museum,on_display
-Hughes,BGM-71,,,TOW,,missile_rocket,,military,anti_tank,,,inert,White Sands Missile Range Museum,on_display
-Douglas,MGR-1,,,Honest John,,missile_rocket,,military,artillery_rocket,,,unguided,White Sands Missile Range Museum,on_display
-Emerson,MGR-3,,,Little John,,missile_rocket,,military,artillery_rocket,,,unguided,White Sands Missile Range Museum,on_display
-Aerojet,Aerobee,170,,Aerobee,,missile_rocket,,military,sounding,,,sounding rocket,White Sands Missile Range Museum,on_display
-Aerojet,Aerobee,350,,Aerobee,,missile_rocket,,military,sounding,,,sounding rocket,White Sands Missile Range Museum,on_display
-Aerojet,Aerobee,Hi,,Aerobee-Hi,,missile_rocket,,military,sounding,,,sounding rocket,White Sands Missile Range Museum,on_display
-Cooper,Loki,Dart,,T220 Loki-Dart,,missile_rocket,,military,sounding,,,sounding rocket,White Sands Missile Range Museum,on_display
-Atlantic Research,Athena,,,Athena,,missile_rocket,,military,sounding,,,re-entry test vehicle,White Sands Missile Range Museum,on_display
-General Electric,RTV-A-3,,,Hermes II,,missile_rocket,,military,sounding,,,US Army test vehicle,White Sands Missile Range Museum,on_display
-Beechcraft,MQM-61,A,,Cardinal,,fixed_wing,monoplane,military,drone,,,target drone,White Sands Missile Range Museum,on_display
-Ryan,BQM-34,A,,Firebee,,fixed_wing,monoplane,military,drone,,,target drone,White Sands Missile Range Museum,on_display
-Beechcraft,MQM-107,D,,Streaker,,fixed_wing,monoplane,military,drone,,,target drone,White Sands Missile Range Museum,on_display
-Radioplane,AQM-38,A,,RP-76,,fixed_wing,monoplane,military,drone,,,target drone,White Sands Missile Range Museum,on_display
-Ryan,XQ-4,,,,,fixed_wing,monoplane,military,drone,,,target drone,White Sands Missile Range Museum,on_display
-NASA,PEPP,,,Planetary Entry Parachute Program,,spacecraft,,civilian,space,,,Mars lander parachute-test aeroshell,White Sands Missile Range Museum,on_display
+Beechcraft,VC-6,A,66-15361,King Air,,fixed_wing,monoplane,military,transport,,US Army; acquired 26 July 1966 and assigned Redstone Arsenal; used to transport Wernher von Braun; later a test platform; not the Lady Bird Special 66-7943,VC6,White Sands Missile Range Museum,on_display
+Bell,UH-1,M,66-0616,Iroquois,,rotary_wing,,military,test,,US Army; a re-engined UH-1C; used on the range as a target and test platform; one source lists it as UH-1C,UH1,White Sands Missile Range Museum,on_display
+McDonnell Douglas,F-4,F,72-1135,Phantom II,,fixed_wing,monoplane,military,fighter,,ex-Luftwaffe 37+25; wears Holloman HO tail code from the German training wing; a German airframe not a USAF operational one,c/n 4410; F4,White Sands Missile Range Museum,on_display
+Gyrodyne,QH-50,A,,DASH,,rotary_wing,,military,drone,,BuNo not published; one source lists it as OH-50D,QH50,White Sands Missile Range Museum,on_display
+Peenemunde,V-2,,,Vergeltungswaffe 2,,missile_rocket,,military,ballistic,,a separate V-2 building holds a nearly intact cutaway example,German; V2,White Sands Missile Range Museum,on_display
+Chrysler,PGM-11,,,Redstone,,missile_rocket,,military,ballistic,,inert,PGM11,White Sands Missile Range Museum,on_display
+Martin Marietta,MGM-31,I,,Pershing I,,missile_rocket,,military,ballistic,,inert,MGM31,White Sands Missile Range Museum,on_display
+Martin Marietta,MGM-31,II,,Pershing II,,missile_rocket,,military,ballistic,,inert,MGM31,White Sands Missile Range Museum,on_display
+Firestone,MGM-5,,,Corporal,,missile_rocket,,military,ballistic,,inert,MGM5,White Sands Missile Range Museum,on_display
+Sperry,MGM-29,,,Sergeant,,missile_rocket,,military,ballistic,,inert,MGM29,White Sands Missile Range Museum,on_display
+Martin,MGM-18,,,Lacrosse,,missile_rocket,,military,ballistic,,inert,MGM18,White Sands Missile Range Museum,on_display
+LTV,MGM-52,,,Lance,,missile_rocket,,military,ballistic,,inert,MGM52,White Sands Missile Range Museum,on_display
+LTV,MGM-140,,,ATACMS,,missile_rocket,,military,ballistic,,inert,MGM140,White Sands Missile Range Museum,on_display
+Martin,MGM-1,,,Matador,,missile_rocket,,military,cruise,,displayed paired with the Mace,MGM1,White Sands Missile Range Museum,on_display
+Martin,MGM-13,,,Mace,,missile_rocket,,military,cruise,,displayed paired with the Matador,MGM13,White Sands Missile Range Museum,on_display
+Republic,LTV-N-2,,,Loon,,missile_rocket,,military,cruise,,US Navy copy of the German V-1,,White Sands Missile Range Museum,on_display
+Western Electric,MIM-3,,,Nike Ajax,,missile_rocket,,military,surface_to_air,,inert,MIM3,White Sands Missile Range Museum,on_display
+Western Electric,MIM-14,,,Nike Hercules,,missile_rocket,,military,surface_to_air,,inert,MIM14,White Sands Missile Range Museum,on_display
+Raytheon,MIM-23,,,Hawk,,missile_rocket,,military,surface_to_air,,inert,MIM23,White Sands Missile Range Museum,on_display
+Raytheon,MIM-104,,,Patriot,,missile_rocket,,military,surface_to_air,,inert,MIM104,White Sands Missile Range Museum,on_display
+Fairchild,SAM-N-2,,,Lark,,missile_rocket,,military,surface_to_air,,US Navy; inert,,White Sands Missile Range Museum,on_display
+Convair,RIM-2,,,Terrier,,missile_rocket,,military,surface_to_air,,US Navy; inert,RIM2,White Sands Missile Range Museum,on_display
+Bendix,RIM-8,,,Talos,,missile_rocket,,military,surface_to_air,,US Navy; inert,RIM8,White Sands Missile Range Museum,on_display
+Convair,RIM-24,,,Tartar,,missile_rocket,,military,surface_to_air,,US Navy; inert,RIM24,White Sands Missile Range Museum,on_display
+Euromissile,XMIM-115,,,Roland,,missile_rocket,,military,surface_to_air,,Franco-German design in US Army service; inert,XMIM115,White Sands Missile Range Museum,on_display
+Boeing,HIBEX,,,High Boost Experiment,,missile_rocket,,military,surface_to_air,,anti-missile interceptor test vehicle,,White Sands Missile Range Museum,on_display
+Raytheon,ERINT,,,Extended Range Interceptor,,missile_rocket,,military,surface_to_air,,anti-missile interceptor,,White Sands Missile Range Museum,on_display
+Hughes,AIM-4,,,Falcon,,missile_rocket,,military,air_to_air,,inert,AIM4,White Sands Missile Range Museum,on_display
+Douglas,AIR-2,,,Genie,,missile_rocket,,military,air_to_air,,unguided nuclear-armed rocket; display body is inert,AIR2,White Sands Missile Range Museum,on_display
+Raytheon,AIM-9,,,Sidewinder,,missile_rocket,,military,air_to_air,,inert,AIM9,White Sands Missile Range Museum,on_display
+Northrop,GAM-67,,,Crossbow,,missile_rocket,,military,air_to_surface,,inert,GAM67,White Sands Missile Range Museum,on_display
+North American,AGM-28,,,Hound Dog,,missile_rocket,,military,air_to_surface,,inert,AGM28,White Sands Missile Range Museum,on_display
+Boeing,AGM-69,,,SRAM,,missile_rocket,,military,air_to_surface,,inert,AGM69,White Sands Missile Range Museum,on_display
+Ford,MGM-51,,,Shillelagh,,missile_rocket,,military,anti_tank,,inert,MGM51,White Sands Missile Range Museum,on_display
+Nord,AGM-22,,,SS-11,,missile_rocket,,military,anti_tank,,inert,AGM22,White Sands Missile Range Museum,on_display
+Hughes,BGM-71,,,TOW,,missile_rocket,,military,anti_tank,,inert,BGM71,White Sands Missile Range Museum,on_display
+Douglas,MGR-1,,,Honest John,,missile_rocket,,military,artillery_rocket,,unguided,MGR1,White Sands Missile Range Museum,on_display
+Emerson,MGR-3,,,Little John,,missile_rocket,,military,artillery_rocket,,unguided,MGR3,White Sands Missile Range Museum,on_display
+Aerojet,Aerobee,170,,Aerobee,,missile_rocket,,military,sounding,,sounding rocket,,White Sands Missile Range Museum,on_display
+Aerojet,Aerobee,350,,Aerobee,,missile_rocket,,military,sounding,,sounding rocket,,White Sands Missile Range Museum,on_display
+Aerojet,Aerobee,Hi,,Aerobee-Hi,,missile_rocket,,military,sounding,,sounding rocket,,White Sands Missile Range Museum,on_display
+Cooper,Loki,Dart,,T220 Loki-Dart,,missile_rocket,,military,sounding,,sounding rocket,,White Sands Missile Range Museum,on_display
+Atlantic Research,Athena,,,Athena,,missile_rocket,,military,sounding,,re-entry test vehicle,,White Sands Missile Range Museum,on_display
+General Electric,RTV-A-3,,,Hermes II,,missile_rocket,,military,sounding,,US Army test vehicle,,White Sands Missile Range Museum,on_display
+Beechcraft,MQM-61,A,,Cardinal,,fixed_wing,monoplane,military,drone,,target drone,MQM61,White Sands Missile Range Museum,on_display
+Ryan,BQM-34,A,,Firebee,,fixed_wing,monoplane,military,drone,,target drone,BQM34,White Sands Missile Range Museum,on_display
+Beechcraft,MQM-107,D,,Streaker,,fixed_wing,monoplane,military,drone,,target drone,MQM107,White Sands Missile Range Museum,on_display
+Radioplane,AQM-38,A,,RP-76,,fixed_wing,monoplane,military,drone,,target drone,AQM38,White Sands Missile Range Museum,on_display
+Ryan,XQ-4,,,,,fixed_wing,monoplane,military,drone,,target drone,XQ4,White Sands Missile Range Museum,on_display
+NASA,PEPP,,,Planetary Entry Parachute Program,,spacecraft,,civilian,space,,Mars lander parachute-test aeroshell,,White Sands Missile Range Museum,on_display

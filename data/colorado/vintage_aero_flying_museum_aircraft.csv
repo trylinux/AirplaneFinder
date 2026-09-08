@@ -1,7 +1,7 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Fokker,D.VII,,N18852,,,fixed_wing,biplane,military,fighter,1979,,replica built by Andy Parks c/n 20;registered to the LaFayette Foundation;flyable,Vintage Aero Flying Museum,on_display
-Fokker,Dr.I,,N152RB,Dreidecker,,fixed_wing,triplane,military,fighter,,,replica built by John S Eberle c/n 20936;Red Baron scheme;flyable,Vintage Aero Flying Museum,on_display
-Royal Aircraft Factory,S.E.5,a,N1917J,,,fixed_wing,biplane,military,fighter,,,replica;full scale by Donald Rushton c/n F-904;Continental C85;registered to the LaFayette Foundation,Vintage Aero Flying Museum,on_display
-Royal Aircraft Factory,S.E.5,a,N52RT,,,fixed_wing,biplane,military,fighter,1981,,replica at 7/8 scale built by Robert J Tallini c/n 078252;Lycoming O-235;Lambert markings,Vintage Aero Flying Museum,on_display
-Sopwith,Camel,,,,,fixed_wing,biplane,military,fighter,,,replica;full-scale project;no registration found,Vintage Aero Flying Museum,under_restoration
-SPAD,S.XIII,,,,,fixed_wing,biplane,military,fighter,,,replica;full-scale project;no registration found,Vintage Aero Flying Museum,under_restoration
+Fokker,D.VII,,N18852,,,fixed_wing,biplane,military,fighter,1979,replica built by Andy Parks c/n 20; registered to the LaFayette Foundation; flyable,,Vintage Aero Flying Museum,on_display
+Fokker,Dr.I,,N152RB,Dreidecker,,fixed_wing,triplane,military,fighter,,replica built by John S Eberle c/n 20936; Red Baron scheme; flyable,,Vintage Aero Flying Museum,on_display
+Royal Aircraft Factory,S.E.5,a,N1917J,,,fixed_wing,biplane,military,fighter,,replica; full scale by Donald Rushton c/n F-904; Continental C85; registered to the LaFayette Foundation,,Vintage Aero Flying Museum,on_display
+Royal Aircraft Factory,S.E.5,a,N52RT,,,fixed_wing,biplane,military,fighter,1981,replica at 7/8 scale built by Robert J Tallini c/n 078252; Lycoming O-235; Lambert markings,,Vintage Aero Flying Museum,on_display
+Sopwith,Camel,,,,,fixed_wing,biplane,military,fighter,,replica; full-scale project; no registration found,,Vintage Aero Flying Museum,under_restoration
+SPAD,S.XIII,,,,,fixed_wing,biplane,military,fighter,,replica; full-scale project; no registration found,,Vintage Aero Flying Museum,under_restoration

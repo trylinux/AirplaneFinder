@@ -1,141 +1,141 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Aero,L-39,C,N139BJ,Albatros,American Spirit,fixed_wing,monoplane,civilian,other,,,Aero Vodochody,Steven F. Udvar-Hazy Center,on_display
-Aeronca,C-2,,NC626N,Collegian,,fixed_wing,monoplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
+Aero,L-39,C,N139BJ,Albatros,American Spirit,fixed_wing,monoplane,civilian,other,,Aero Vodochody,L39,Steven F. Udvar-Hazy Center,on_display
+Aeronca,C-2,,NC626N,Collegian,,fixed_wing,monoplane,civilian,private,,,C2,Steven F. Udvar-Hazy Center,on_display
 Aichi,M6A,1,,Seiran,,fixed_wing,monoplane,military,bomber,,,,Steven F. Udvar-Hazy Center,on_display
 American Aerolights,Double Eagle,,,,,fixed_wing,monoplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
 Arado,Ar 234,B-2,140312,Blitz,,fixed_wing,monoplane,military,bomber,,,,Steven F. Udvar-Hazy Center,on_display
-Arlington,Sisu,1A,,,,fixed_wing,monoplane,civilian,other,,,,Steven F. Udvar-Hazy Center,on_display
+Arlington,Sisu,1A,,,,fixed_wing,monoplane,civilian,other,,,Sisu1A,Steven F. Udvar-Hazy Center,on_display
 Arrow,Sport,A2-60,,,,fixed_wing,monoplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
-Autogiro Company of America,AC-35,,,,,rotary_wing,,civilian,experimental,,,,Steven F. Udvar-Hazy Center,on_display
+Autogiro Company of America,AC-35,,,,,rotary_wing,,civilian,experimental,,,AC35,Steven F. Udvar-Hazy Center,on_display
 Baldwin,Red Devil,,,,,fixed_wing,biplane,civilian,experimental,,,,Steven F. Udvar-Hazy Center,on_display
 Beck-Mahoney,Sorceress,,,,,fixed_wing,biplane,civilian,other,,,,Steven F. Udvar-Hazy Center,on_display
-Bede,BD-5,B,,,,fixed_wing,monoplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
+Bede,BD-5,B,,,,fixed_wing,monoplane,civilian,private,,,BD5,Steven F. Udvar-Hazy Center,on_display
 Beechcraft,Model 35,,,Bonanza,Waikiki Beech,fixed_wing,monoplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
 Beechcraft,D18,S,N522B,Twin Beech,,fixed_wing,monoplane,civilian,utility,,,,Steven F. Udvar-Hazy Center,on_display
 Beechcraft,65-90,,N275DP,King Air,,fixed_wing,monoplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
 Bell,206L,1,N3911Z,LongRanger II,Spirit of Texas,rotary_wing,,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
 Bell,Model 30,,,Genevieve,,rotary_wing,,civilian,experimental,,,,Steven F. Udvar-Hazy Center,on_display
-Bell,H-13,J,57-2729,Sioux,,rotary_wing,,military,utility,,,Bell 47J Ranger,Steven F. Udvar-Hazy Center,on_display
+Bell,H-13,J,57-2729,Sioux,,rotary_wing,,military,utility,,,Bell 47J Ranger; H13,Steven F. Udvar-Hazy Center,on_display
 Bell,Model 47,B,,,,rotary_wing,,civilian,utility,,,,Steven F. Udvar-Hazy Center,on_display
-Bell,AH-1,F,67-15508,Cobra,,rotary_wing,,military,ground_attack,,,,Steven F. Udvar-Hazy Center,on_display
-Bell,UH-1,H,65-10126,Iroquois,Smokey III,rotary_wing,,military,utility,,,Huey,Steven F. Udvar-Hazy Center,on_display
-Bell,XV-15,,N703NA,,,rotary_wing,,civilian,experimental,,,,Steven F. Udvar-Hazy Center,on_display
+Bell,AH-1,F,67-15508,Cobra,,rotary_wing,,military,ground_attack,,,AH1,Steven F. Udvar-Hazy Center,on_display
+Bell,UH-1,H,65-10126,Iroquois,Smokey III,rotary_wing,,military,utility,,,Huey; UH1,Steven F. Udvar-Hazy Center,on_display
+Bell,XV-15,,N703NA,,,rotary_wing,,civilian,experimental,,,XV15,Steven F. Udvar-Hazy Center,on_display
 Bellanca,CF,,,,,fixed_wing,monoplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
 Benoist-Korn,Type XII,,,,,fixed_wing,biplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
 Boeing,Model 307,,NC19903,Stratoliner,Clipper Flying Cloud,fixed_wing,monoplane,civilian,commercial_transport,,,,Steven F. Udvar-Hazy Center,on_display
 Boeing,367-80,,N70700,,,fixed_wing,monoplane,civilian,test,,,Dash 80,Steven F. Udvar-Hazy Center,on_display
-Boeing,FB,5,A7114,Hawk,,fixed_wing,biplane,military,fighter,,,Boeing Model 15,Steven F. Udvar-Hazy Center,on_display
-Boeing,P-26,A,33-135,Peashooter,,fixed_wing,monoplane,military,fighter,,,,Steven F. Udvar-Hazy Center,on_display
-Boeing-Stearman,N2S,5,61064,Kaydet,,fixed_wing,biplane,military,trainer,1943,,PT-13D,Steven F. Udvar-Hazy Center,on_display
+Boeing,FB,5,A7114,Hawk,,fixed_wing,biplane,military,fighter,,,Boeing Model 15; FB5,Steven F. Udvar-Hazy Center,on_display
+Boeing,P-26,A,33-135,Peashooter,,fixed_wing,monoplane,military,fighter,,,P26,Steven F. Udvar-Hazy Center,on_display
+Boeing-Stearman,N2S,5,61064,Kaydet,,fixed_wing,biplane,military,trainer,1943,,PT-13D; PT13D,Steven F. Udvar-Hazy Center,on_display
 Bowlus,1-S-2100,,G13763,Senior Albatross,Falcon,fixed_wing,monoplane,civilian,other,,,Bowlus-du Pont,Steven F. Udvar-Hazy Center,on_display
-Bowlus,BA-100,,,Baby Albatross,,fixed_wing,monoplane,civilian,other,,,,Steven F. Udvar-Hazy Center,on_display
+Bowlus,BA-100,,,Baby Albatross,,fixed_wing,monoplane,civilian,other,,,BA100,Steven F. Udvar-Hazy Center,on_display
 Bucker,Bu 133,C,N15696,Jungmeister,,fixed_wing,biplane,civilian,other,,,,Steven F. Udvar-Hazy Center,on_display
-CASA,352,L,D-ADLH,,,fixed_wing,monoplane,civilian,transport,1951,,Junkers Ju 52/3m,Steven F. Udvar-Hazy Center,on_display
+CASA,352,L,D-ADLH,,,fixed_wing,monoplane,civilian,transport,1951,Junkers Ju 52/3m,,Steven F. Udvar-Hazy Center,on_display
 Caudron,G.4,,C4263,,,fixed_wing,biplane,military,bomber,,,,Steven F. Udvar-Hazy Center,on_display
-Cessna,O-1,A,,Bird Dog,,fixed_wing,monoplane,military,recon,,,,Steven F. Udvar-Hazy Center,on_display
+Cessna,O-1,A,,Bird Dog,,fixed_wing,monoplane,military,recon,,,O1,Steven F. Udvar-Hazy Center,on_display
 Cessna,152,,,,,fixed_wing,monoplane,civilian,trainer,,,,Steven F. Udvar-Hazy Center,on_display
 Cessna,180,,N1538C,,Spirit of Columbus,fixed_wing,monoplane,civilian,private,1953,,,Steven F. Udvar-Hazy Center,on_display
 Cessna,206,,,,,fixed_wing,monoplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
-Aerospatiale,Concorde,,F-BVFA,,,fixed_wing,monoplane,civilian,commercial_transport,,,Aerospatiale/BAC,Steven F. Udvar-Hazy Center,on_display
+Aerospatiale,Concorde,,F-BVFA,,,fixed_wing,monoplane,civilian,commercial_transport,,Aerospatiale/BAC,,Steven F. Udvar-Hazy Center,on_display
 Cosmos,Phase II,,,,,fixed_wing,monoplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
-Curtiss,Hawk,1A,N982V,,Gulfhawk,fixed_wing,biplane,civilian,other,,,Hawk I,Steven F. Udvar-Hazy Center,on_display
+Curtiss,Hawk,1A,N982V,,Gulfhawk,fixed_wing,biplane,civilian,other,,,Hawk I; Hawk1A,Steven F. Udvar-Hazy Center,on_display
 Curtiss,F9C,2,9056,Sparrowhawk,,fixed_wing,biplane,military,fighter,,,,Steven F. Udvar-Hazy Center,on_display
-Curtiss,JN-4,D,4983,Jenny,,fixed_wing,biplane,military,trainer,,,,Steven F. Udvar-Hazy Center,on_display
+Curtiss,JN-4,D,4983,Jenny,,fixed_wing,biplane,military,trainer,,,JN4,Steven F. Udvar-Hazy Center,on_display
 Curtiss,KD2C,2,,Skeet,,fixed_wing,monoplane,military,drone,,,,Steven F. Udvar-Hazy Center,on_display
 Curtiss,Model E,,,,,fixed_wing,biplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
-Curtiss,N-9,H,,,,fixed_wing,biplane,military,trainer,,,,Steven F. Udvar-Hazy Center,on_display
-Curtiss,P-40,E,41-13575,Kittyhawk,Lope's Hope,fixed_wing,monoplane,military,fighter,,,Kittyhawk IA;AK875,Steven F. Udvar-Hazy Center,on_display
+Curtiss,N-9,H,,,,fixed_wing,biplane,military,trainer,,,N9,Steven F. Udvar-Hazy Center,on_display
+Curtiss,P-40,E,41-13575,Kittyhawk,Lope's Hope,fixed_wing,monoplane,military,fighter,,,Kittyhawk IA; AK875; P40,Steven F. Udvar-Hazy Center,on_display
 Curtiss,SB2C,5,83479,Helldiver,,fixed_wing,monoplane,military,bomber,,,,Steven F. Udvar-Hazy Center,on_display
-Developmental Sciences,Oblique Wing RPV,,,,,fixed_wing,monoplane,civilian,experimental,,,DSI/NASA,Steven F. Udvar-Hazy Center,on_display
+Developmental Sciences,Oblique Wing RPV,,,,,fixed_wing,monoplane,civilian,experimental,,DSI/NASA,,Steven F. Udvar-Hazy Center,on_display
 Dassault,Falcon 20,,N8FE,,Wendy,fixed_wing,monoplane,civilian,freighter,,,Mystere 20,Steven F. Udvar-Hazy Center,on_display
-De Havilland Canada,DHC-1,A,N13Y,Chipmunk,Pennzoil Special,fixed_wing,monoplane,civilian,other,,,,Steven F. Udvar-Hazy Center,on_display
+De Havilland Canada,DHC-1,A,N13Y,Chipmunk,Pennzoil Special,fixed_wing,monoplane,civilian,other,,,DHC1,Steven F. Udvar-Hazy Center,on_display
 Delta Wing,Mariah,M-9,,,,fixed_wing,monoplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
 Delta Wing,Model 162,,,,,fixed_wing,monoplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
 Delta Wing,Phoenix,VI.B,,,,fixed_wing,monoplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
 Delta Wing,Streak,,,,,fixed_wing,monoplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
 Delta Wing,Viper,175,,,,fixed_wing,monoplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
 Dornier,Do 335,A-0,240102,Pfeil,,fixed_wing,monoplane,military,fighter,,,,Steven F. Udvar-Hazy Center,on_display
-Douglas,M-2,,,,,fixed_wing,biplane,civilian,freighter,,,,Steven F. Udvar-Hazy Center,on_display
+Douglas,M-2,,,,,fixed_wing,biplane,civilian,freighter,,,M2,Steven F. Udvar-Hazy Center,on_display
 Eipper-Formance,Cumulus,10,,,,fixed_wing,monoplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
-Fairchild,FC-2,W2,NX8006,,Stars and Stripes,fixed_wing,monoplane,civilian,recon,,,,Steven F. Udvar-Hazy Center,on_display
+Fairchild,FC-2,W2,NX8006,,Stars and Stripes,fixed_wing,monoplane,civilian,recon,,,FC2,Steven F. Udvar-Hazy Center,on_display
 Farman,Sport,,NC-72,,,fixed_wing,biplane,civilian,private,1923,,,Steven F. Udvar-Hazy Center,on_display
 Focke-Achgelis,Fa 330,A-1,,Bachstelze,,rotary_wing,,military,recon,,,Water Wagtail,Steven F. Udvar-Hazy Center,on_display
 Focke-Wulf,Fw 190,F-8,931884,,,fixed_wing,monoplane,military,ground_attack,,,,Steven F. Udvar-Hazy Center,on_display
 Fowler-Gage,Tractor,,,,,fixed_wing,biplane,civilian,private,,,Gage Tractor Biplane,Steven F. Udvar-Hazy Center,on_display
-Frankfort,TG-1,A,,Cinema,,fixed_wing,monoplane,military,trainer,,,,Steven F. Udvar-Hazy Center,on_display
+Frankfort,TG-1,A,,Cinema,,fixed_wing,monoplane,military,trainer,,,TG1,Steven F. Udvar-Hazy Center,on_display
 Globe,XKD5G,1,,,,fixed_wing,monoplane,military,drone,,,KD5G,Steven F. Udvar-Hazy Center,on_display
-Globe,GC-1,A,,Swift,,fixed_wing,monoplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
+Globe,GC-1,A,,Swift,,fixed_wing,monoplane,civilian,private,,,GC1,Steven F. Udvar-Hazy Center,on_display
 Grob,G102,,,,Standard Astir III,fixed_wing,monoplane,civilian,other,,,,Steven F. Udvar-Hazy Center,on_display
-Grumman,A-6,E,154167,Intruder,,fixed_wing,monoplane,military,ground_attack,,,,Steven F. Udvar-Hazy Center,on_display
-Grumman,G-164,,N332Y,Ag-Cat,,fixed_wing,biplane,civilian,utility,1963,,,Steven F. Udvar-Hazy Center,on_display
-Grumman,F-14,D,159610,Tomcat,,fixed_wing,monoplane,military,fighter,,,F-14D(R),Steven F. Udvar-Hazy Center,on_display
+Grumman,A-6,E,154167,Intruder,,fixed_wing,monoplane,military,ground_attack,,,A6,Steven F. Udvar-Hazy Center,on_display
+Grumman,G-164,,N332Y,Ag-Cat,,fixed_wing,biplane,civilian,utility,1963,,G164,Steven F. Udvar-Hazy Center,on_display
+Grumman,F-14,D,159610,Tomcat,,fixed_wing,monoplane,military,fighter,,F-14D(R),F14,Steven F. Udvar-Hazy Center,on_display
 Grumman,F6F,3K,41834,Hellcat,,fixed_wing,monoplane,military,fighter,,,,Steven F. Udvar-Hazy Center,on_display
 Grumman,F8F,2,121646,Bearcat,Conquest I,fixed_wing,monoplane,civilian,other,,,N1111L,Steven F. Udvar-Hazy Center,on_display
-Grumman,G-21,,,Goose,,fixed_wing,monoplane,civilian,commercial_transport,,,,Steven F. Udvar-Hazy Center,on_display
-Grumman,G-22,,NR1050,,Gulfhawk II,fixed_wing,biplane,civilian,other,,,F3F,Steven F. Udvar-Hazy Center,on_display
+Grumman,G-21,,,Goose,,fixed_wing,monoplane,civilian,commercial_transport,,,G21,Steven F. Udvar-Hazy Center,on_display
+Grumman,G-22,,NR1050,,Gulfhawk II,fixed_wing,biplane,civilian,other,,,F3F; G22,Steven F. Udvar-Hazy Center,on_display
 Gyro 2000,Ikenga,530Z,N5032,,,rotary_wing,,civilian,experimental,,,,Steven F. Udvar-Hazy Center,on_display
-Gyrodyne,QH-50,C,,DASH,,rotary_wing,,military,drone,,,,Steven F. Udvar-Hazy Center,on_display
+Gyrodyne,QH-50,C,,DASH,,rotary_wing,,military,drone,,,QH50,Steven F. Udvar-Hazy Center,on_display
 Halberstadt,CL.IV,,8130,,,fixed_wing,biplane,military,ground_attack,,,,Steven F. Udvar-Hazy Center,on_display
 Hawker,Hurricane,Mk.IIC,LF686,,,fixed_wing,monoplane,military,fighter,,,,Steven F. Udvar-Hazy Center,on_display
 Heinkel,He 219,A-2,290202,Uhu,,fixed_wing,monoplane,military,fighter,,,Eagle Owl,Steven F. Udvar-Hazy Center,on_display
-Hiller,1031,A-1,,Flying Platform,,rotary_wing,,military,experimental,,,VZ-1,Steven F. Udvar-Hazy Center,on_display
-Hiller,XH-44,,,,,rotary_wing,,civilian,experimental,,,Hiller-Copter,Steven F. Udvar-Hazy Center,on_display
-Hiller,XHOE,1,138652,Hornet,,rotary_wing,,military,utility,,,YH-32,Steven F. Udvar-Hazy Center,on_display
-Hiller,YROE,1,,Rotorcycle,,rotary_wing,,military,utility,,,XROE-1,Steven F. Udvar-Hazy Center,on_display
+Hiller,1031,A-1,,Flying Platform,,rotary_wing,,military,experimental,,,VZ-1; VZ1,Steven F. Udvar-Hazy Center,on_display
+Hiller,XH-44,,,,,rotary_wing,,civilian,experimental,,,Hiller-Copter; XH44,Steven F. Udvar-Hazy Center,on_display
+Hiller,XHOE,1,138652,Hornet,,rotary_wing,,military,utility,,,YH-32; YH32; XHOE1,Steven F. Udvar-Hazy Center,on_display
+Hiller,YROE,1,,Rotorcycle,,rotary_wing,,military,utility,,,XROE-1; XROE1; YROE1,Steven F. Udvar-Hazy Center,on_display
 Horten,Ho 229,V3,,,,fixed_wing,monoplane,military,fighter,,,,Steven F. Udvar-Hazy Center,under_restoration
 Horten,H.III,f,,,,fixed_wing,monoplane,civilian,other,1944,,Werk Nr. 32,Steven F. Udvar-Hazy Center,on_display
 Horten,H.III,h,,,,fixed_wing,monoplane,civilian,other,1944,,Werk Nr. 31,Steven F. Udvar-Hazy Center,on_display
 Horten,H.VI,V2,,,,fixed_wing,monoplane,civilian,other,,,,Steven F. Udvar-Hazy Center,on_display
-Kaman,K-225,,125477,,,rotary_wing,,military,experimental,,,,Steven F. Udvar-Hazy Center,on_display
+Kaman,K-225,,125477,,,rotary_wing,,military,experimental,,,K225,Steven F. Udvar-Hazy Center,on_display
 Kawanishi,N1K2,Ja,5341,Shiden Kai,,fixed_wing,monoplane,military,fighter,,,George,Steven F. Udvar-Hazy Center,on_display
-Kawasaki,Ki-45,KAIc,4268,Toryu,,fixed_wing,monoplane,military,fighter,,,Nick,Steven F. Udvar-Hazy Center,on_display
-Kellett,XO-60,,42-13610,,,rotary_wing,,military,recon,,,,Steven F. Udvar-Hazy Center,on_display
-Kreider-Reisner,C-4,C,N30M,Challenger,,fixed_wing,biplane,civilian,private,1929,,Fairchild KR-34,Steven F. Udvar-Hazy Center,on_display
-Kugisho,MXY7,22,,Ohka,,fixed_wing,monoplane,military,air_to_surface,,,Cherry Blossom;Baka,Steven F. Udvar-Hazy Center,on_display
+Kawasaki,Ki-45,KAIc,4268,Toryu,,fixed_wing,monoplane,military,fighter,,,Nick; Ki45,Steven F. Udvar-Hazy Center,on_display
+Kellett,XO-60,,42-13610,,,rotary_wing,,military,recon,,,XO60,Steven F. Udvar-Hazy Center,on_display
+Kreider-Reisner,C-4,C,N30M,Challenger,,fixed_wing,biplane,civilian,private,1929,,Fairchild KR-34; C4,Steven F. Udvar-Hazy Center,on_display
+Kugisho,MXY7,22,,Ohka,,fixed_wing,monoplane,military,air_to_surface,,,Cherry Blossom; Baka,Steven F. Udvar-Hazy Center,on_display
 Kyushu,J7W,1,,Shinden,,fixed_wing,monoplane,military,fighter,,,Magnificent Lightning,Steven F. Udvar-Hazy Center,on_display
 Langley,Aerodrome,A,,,,fixed_wing,monoplane,civilian,experimental,,,,Steven F. Udvar-Hazy Center,on_display
 Lear,Model 23,,N802L,Learjet,,fixed_wing,monoplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
-Lippisch,DM-1,,,,,fixed_wing,monoplane,military,experimental,,,,Steven F. Udvar-Hazy Center,on_display
-Lockheed,C-121,C,54-0177,Constellation,,fixed_wing,monoplane,military,transport,,,,Steven F. Udvar-Hazy Center,on_display
-Lockheed Martin,X-35,B,301,Joint Strike Fighter,,fixed_wing,monoplane,military,experimental,,,PAV-1,Steven F. Udvar-Hazy Center,on_display
-Lockheed,P-38,J,42-67762,Lightning,,fixed_wing,monoplane,military,fighter,,,,Steven F. Udvar-Hazy Center,on_display
-Lockheed,T-33,A,53-5226,Shooting Star,,fixed_wing,monoplane,military,trainer,,,,Steven F. Udvar-Hazy Center,on_display
-Loening,OA-1,A,28312,,San Francisco,fixed_wing,biplane,military,recon,,,,Steven F. Udvar-Hazy Center,on_display
+Lippisch,DM-1,,,,,fixed_wing,monoplane,military,experimental,,,DM1,Steven F. Udvar-Hazy Center,on_display
+Lockheed,C-121,C,54-0177,Constellation,,fixed_wing,monoplane,military,transport,,,C121,Steven F. Udvar-Hazy Center,on_display
+Lockheed Martin,X-35,B,301,Joint Strike Fighter,,fixed_wing,monoplane,military,experimental,,,PAV-1; X35; PAV1,Steven F. Udvar-Hazy Center,on_display
+Lockheed,P-38,J,42-67762,Lightning,,fixed_wing,monoplane,military,fighter,,,P38,Steven F. Udvar-Hazy Center,on_display
+Lockheed,T-33,A,53-5226,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T33,Steven F. Udvar-Hazy Center,on_display
+Loening,OA-1,A,28312,,San Francisco,fixed_wing,biplane,military,recon,,,OA1,Steven F. Udvar-Hazy Center,on_display
 Loudenslager,Laser 200,,N10LL,,,fixed_wing,monoplane,civilian,other,,,,Steven F. Udvar-Hazy Center,on_display
-Martin,B-26,B,41-31773,Marauder,Flak-Bait,fixed_wing,monoplane,military,bomber,1943,,,Steven F. Udvar-Hazy Center,on_display
-McDonnell Douglas,F-15,C,85-0114,Eagle,,fixed_wing,monoplane,military,fighter,,,,Steven F. Udvar-Hazy Center,on_display
+Martin,B-26,B,41-31773,Marauder,Flak-Bait,fixed_wing,monoplane,military,bomber,1943,,B26,Steven F. Udvar-Hazy Center,on_display
+McDonnell Douglas,F-15,C,85-0114,Eagle,,fixed_wing,monoplane,military,fighter,,,F15,Steven F. Udvar-Hazy Center,on_display
 McDonnell Douglas,F/A-18,C,,Hornet,,fixed_wing,monoplane,military,fighter,,,,Steven F. Udvar-Hazy Center,on_display
-McDonnell Douglas,F-4,S,157307,Phantom II,,fixed_wing,monoplane,military,fighter,,,,Steven F. Udvar-Hazy Center,on_display
-Mikoyan-Gurevich,MiG-21,F-13,,,,fixed_wing,monoplane,military,fighter,,,Fishbed-C,Steven F. Udvar-Hazy Center,on_display
-Mikoyan-Gurevich,MiG-15,Ji-2,4320,,,fixed_wing,monoplane,military,fighter,,,Fagot-B,Steven F. Udvar-Hazy Center,on_display
+McDonnell Douglas,F-4,S,157307,Phantom II,,fixed_wing,monoplane,military,fighter,,,F4,Steven F. Udvar-Hazy Center,on_display
+Mikoyan-Gurevich,MiG-21,F-13,,,,fixed_wing,monoplane,military,fighter,,,Fishbed-C; MiG21,Steven F. Udvar-Hazy Center,on_display
+Mikoyan-Gurevich,MiG-15,Ji-2,4320,,,fixed_wing,monoplane,military,fighter,,,Fagot-B; MiG15,Steven F. Udvar-Hazy Center,on_display
 Messerschmitt,Me 163,B-1a,191301,Komet,,fixed_wing,monoplane,military,fighter,,,,Steven F. Udvar-Hazy Center,on_display
 Nakajima,J1N,1S,7334,Gekko,,fixed_wing,monoplane,military,fighter,,,Irving,Steven F. Udvar-Hazy Center,on_display
 Nakajima,Kikka,,,Orange Blossom,,fixed_wing,monoplane,military,ground_attack,1945,,,Steven F. Udvar-Hazy Center,on_display
-North American,F-100,D,56-3440,Super Sabre,,fixed_wing,monoplane,military,fighter,1957,,,Steven F. Udvar-Hazy Center,on_display
-North American,F-86,A,,Sabre,,fixed_wing,monoplane,military,fighter,,,,Steven F. Udvar-Hazy Center,on_display
-North American,P-51,C,,Mustang,Excalibur III,fixed_wing,monoplane,civilian,private,,,,Steven F. Udvar-Hazy Center,on_display
+North American,F-100,D,56-3440,Super Sabre,,fixed_wing,monoplane,military,fighter,1957,,F100,Steven F. Udvar-Hazy Center,on_display
+North American,F-86,A,,Sabre,,fixed_wing,monoplane,military,fighter,,,F86,Steven F. Udvar-Hazy Center,on_display
+North American,P-51,C,,Mustang,Excalibur III,fixed_wing,monoplane,civilian,private,,,P51,Steven F. Udvar-Hazy Center,on_display
 North American Rockwell,Shrike Commander,500S,N500RA,,,fixed_wing,monoplane,civilian,private,1972,,,Steven F. Udvar-Hazy Center,on_display
-Northrop,N-1M,,,,Jeep,fixed_wing,monoplane,military,experimental,1940,,,Steven F. Udvar-Hazy Center,on_display
-Northrop,P-61,C,43-8330,Black Widow,,fixed_wing,monoplane,military,fighter,,,,Steven F. Udvar-Hazy Center,on_display
+Northrop,N-1M,,,,Jeep,fixed_wing,monoplane,military,experimental,1940,,N1M,Steven F. Udvar-Hazy Center,on_display
+Northrop,P-61,C,43-8330,Black Widow,,fixed_wing,monoplane,military,fighter,,,P61,Steven F. Udvar-Hazy Center,on_display
 Nieuport,28,C.1,,,,fixed_wing,biplane,military,fighter,,,,Steven F. Udvar-Hazy Center,on_display
-P-V Engineering Forum,PV-2,,,,,rotary_wing,,civilian,experimental,,,Piasecki,Steven F. Udvar-Hazy Center,on_display
-Piper,J-3,,N35773,Cub,,fixed_wing,monoplane,civilian,trainer,1941,,,Steven F. Udvar-Hazy Center,on_display
-Piper,PA-12,,,Super Cruiser,City of Washington,fixed_wing,monoplane,civilian,private,1946,,,Steven F. Udvar-Hazy Center,on_display
-Piper,PA-18,,N1872P,Super Cub,,fixed_wing,monoplane,civilian,utility,,,,Steven F. Udvar-Hazy Center,on_display
-Piper,PA-23,,N114DA,Apache,,fixed_wing,monoplane,civilian,commercial_transport,1954,,,Steven F. Udvar-Hazy Center,on_display
-Republic,F-105,D,,Thunderchief,,fixed_wing,monoplane,military,fighter,,,,Steven F. Udvar-Hazy Center,on_display
-Republic,P-47,D,44-32691,Thunderbolt,,fixed_wing,monoplane,military,fighter,1944,,,Steven F. Udvar-Hazy Center,on_display
-Ryan,PT-22,A,,Recruit,,fixed_wing,monoplane,military,trainer,1942,,,Steven F. Udvar-Hazy Center,on_display
-Sikorsky,HH-52,A,1426,Seaguard,,rotary_wing,,military,search_rescue,1966,,,Steven F. Udvar-Hazy Center,on_display
+P-V Engineering Forum,PV-2,,,,,rotary_wing,,civilian,experimental,,,Piasecki; PV2,Steven F. Udvar-Hazy Center,on_display
+Piper,J-3,,N35773,Cub,,fixed_wing,monoplane,civilian,trainer,1941,,J3,Steven F. Udvar-Hazy Center,on_display
+Piper,PA-12,,,Super Cruiser,City of Washington,fixed_wing,monoplane,civilian,private,1946,,PA12,Steven F. Udvar-Hazy Center,on_display
+Piper,PA-18,,N1872P,Super Cub,,fixed_wing,monoplane,civilian,utility,,,PA18,Steven F. Udvar-Hazy Center,on_display
+Piper,PA-23,,N114DA,Apache,,fixed_wing,monoplane,civilian,commercial_transport,1954,,PA23,Steven F. Udvar-Hazy Center,on_display
+Republic,F-105,D,,Thunderchief,,fixed_wing,monoplane,military,fighter,,,F105,Steven F. Udvar-Hazy Center,on_display
+Republic,P-47,D,44-32691,Thunderbolt,,fixed_wing,monoplane,military,fighter,1944,,P47,Steven F. Udvar-Hazy Center,on_display
+Ryan,PT-22,A,,Recruit,,fixed_wing,monoplane,military,trainer,1942,,PT22,Steven F. Udvar-Hazy Center,on_display
+Sikorsky,HH-52,A,1426,Seaguard,,rotary_wing,,military,search_rescue,1966,,HH52,Steven F. Udvar-Hazy Center,on_display
 Sikorsky,HO5S,1,,,,rotary_wing,,military,search_rescue,1952,,,Steven F. Udvar-Hazy Center,on_display
-Sikorsky,JRS,1,,,,fixed_wing,monoplane,military,utility,1938,,,Steven F. Udvar-Hazy Center,on_display
-Sikorsky,YH-19,,,,,rotary_wing,,military,search_rescue,1949,,,Steven F. Udvar-Hazy Center,on_display
-Sikorsky,XR-4,C,41-18874,,,rotary_wing,,military,test,1942,,Vought-Sikorsky,Steven F. Udvar-Hazy Center,on_display
+Sikorsky,JRS,1,,,,fixed_wing,monoplane,military,utility,1938,,JRS1,Steven F. Udvar-Hazy Center,on_display
+Sikorsky,YH-19,,,,,rotary_wing,,military,search_rescue,1949,,YH19,Steven F. Udvar-Hazy Center,on_display
+Sikorsky,XR-4,C,41-18874,,,rotary_wing,,military,test,1942,,Vought-Sikorsky; XR4,Steven F. Udvar-Hazy Center,on_display
 Sikorsky,X2,,,,,rotary_wing,,civilian,experimental,,,,Steven F. Udvar-Hazy Center,on_display
 SPAD,XVI,,9392,,,fixed_wing,biplane,military,recon,1918,,,Steven F. Udvar-Hazy Center,on_display
-Stinson,L-5,,42-14798,Sentinel,,fixed_wing,monoplane,military,utility,1942,,,Steven F. Udvar-Hazy Center,on_display
-Sperry,M-1,,,Messenger,,fixed_wing,biplane,military,utility,1920,,Verville-Sperry,Steven F. Udvar-Hazy Center,on_display
-Vought,RF-8,G,146860,Crusader,,fixed_wing,monoplane,military,recon,,,F8U-1P,Steven F. Udvar-Hazy Center,on_display
+Stinson,L-5,,42-14798,Sentinel,,fixed_wing,monoplane,military,utility,1942,,L5,Steven F. Udvar-Hazy Center,on_display
+Sperry,M-1,,,Messenger,,fixed_wing,biplane,military,utility,1920,,Verville-Sperry; M1,Steven F. Udvar-Hazy Center,on_display
+Vought,RF-8,G,146860,Crusader,,fixed_wing,monoplane,military,recon,,,F8U-1P; RF8,Steven F. Udvar-Hazy Center,on_display
 Vought,F4U,1D,50375,Corsair,Sun Setter,fixed_wing,monoplane,military,fighter,1944,,,Steven F. Udvar-Hazy Center,on_display
 Vought-Sikorsky,OS2U,3,5909,Kingfisher,,fixed_wing,monoplane,military,recon,1942,,,Steven F. Udvar-Hazy Center,on_display
 Westland,Lysander,IIIA,,,,fixed_wing,monoplane,military,utility,1942,,,Steven F. Udvar-Hazy Center,on_display

@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Douglas,TA-4,J,152861,Skyhawk,,fixed_wing,monoplane,military,trainer,,,c/n 13507;ex-VT-7 CTW-1 code A-706;NNAM loan;ferried in from Perryville in 2006;last photo-documented on site 2017,Cape Girardeau Regional Airport,on_display
+Douglas,TA-4,J,152861,Skyhawk,,fixed_wing,monoplane,military,trainer,,ex-VT-7 CTW-1 code A-706; NNAM loan; ferried in from Perryville in 2006; last photo-documented on site 2017,c/n 13507; TA4,Cape Girardeau Regional Airport,on_display

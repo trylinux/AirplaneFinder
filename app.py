@@ -353,6 +353,31 @@ def _generate_csp_nonce():
     g.csp_nonce = secrets.token_urlsafe(16)
 
 
+# Hand-curated enum labels. MUST stay in sync with PRETTY_ENUM_OVERRIDES in
+# static/js/app.js and templates/mobile/base.html — the same values are
+# rendered server-side on the detail pages and client-side in the directories.
+PRETTY_ENUM_OVERRIDES = {
+    "missile_rocket": "Missile / Rocket",
+    "air_to_air": "Air-to-Air",
+    "surface_to_air": "Surface-to-Air",
+    "air_to_surface": "Air-to-Surface",
+    "anti_ship": "Anti-Ship",
+}
+
+
+@app.template_filter("pretty_enum")
+def _pretty_enum(value):
+    """snake_case enum -> Title Case label. Empty renders as an em dash.
+
+    Never use the result as a CSS class name — keep the raw value for that.
+    """
+    if value is None or value == "":
+        return "\u2014"
+    if value in PRETTY_ENUM_OVERRIDES:
+        return PRETTY_ENUM_OVERRIDES[value]
+    return str(value).replace("_", " ").title()
+
+
 @app.context_processor
 def _csp_nonce():
     """Expose ``csp_nonce`` to every Jinja template — used as
@@ -622,23 +647,55 @@ def museums_page():
 
 @app.route("/aircraft/<int:aircraft_id>")
 def aircraft_detail_page(aircraft_id):
-    """Aircraft detail page.
+    """Dedicated aircraft page.
 
-    Mobile: renders a dedicated detail template.
-    Desktop: redirect to the directory with a ``focus`` query parameter;
-    its JavaScript opens the requested detail modal.
+    Server-rendered, and the same template serves desktop and mobile — it
+    picks its layout from ``is_mobile``. This used to bounce desktop users
+    to /aircraft?focus=<id> and pop a modal, which had no room for the
+    description, the aliases or the airframe history.
+
+    Museum links are filtered to publicly viewable ones: this is a public
+    page and it should not advertise that an aircraft sits somewhere a
+    visitor cannot actually see it.
     """
-    if getattr(g, "is_mobile", False):
-        return render_template("mobile/aircraft_detail.html", aircraft_id=aircraft_id)
-    return redirect(url_for("aircraft_page") + f"?focus={aircraft_id}")
+    aircraft = Aircraft.query.get_or_404(aircraft_id)
+    links = (
+        AircraftMuseum.query
+        .options(joinedload(AircraftMuseum.museum))
+        .filter_by(aircraft_id=aircraft_id)
+        .filter(AircraftMuseum.display_status == _DISPLAY_STATUS_VIEWABLE)
+        .all()
+    )
+    links.sort(key=lambda lnk: (lnk.museum.name or "").lower())
+    facts = (
+        AircraftFact.query
+        .filter(AircraftFact.aircraft_id == aircraft_id)
+        .filter(AircraftFact.is_active.is_(True))
+        .order_by(AircraftFact.id.desc())
+        .all()
+    )
+    return render_template(
+        "aircraft_detail.html", aircraft=aircraft, links=links, facts=facts
+    )
 
 
 @app.route("/museums/<int:museum_id>")
 def museum_detail_page(museum_id):
-    """Museum detail page — same dispatch pattern as aircraft_detail_page."""
-    if getattr(g, "is_mobile", False):
-        return render_template("mobile/museum_detail.html", museum_id=museum_id)
-    return redirect(url_for("museums_page") + f"?focus={museum_id}")
+    """Dedicated museum page — same server-rendered pattern as above."""
+    museum = Museum.query.get_or_404(museum_id)
+    links = (
+        AircraftMuseum.query
+        .options(joinedload(AircraftMuseum.aircraft))
+        .filter_by(museum_id=museum_id)
+        .filter(AircraftMuseum.display_status == _DISPLAY_STATUS_VIEWABLE)
+        .all()
+    )
+    links.sort(key=lambda lnk: (
+        (lnk.aircraft.manufacturer or "").lower(),
+        (lnk.aircraft.full_designation or lnk.aircraft.model or "").lower(),
+        lnk.aircraft.tail_number or "",
+    ))
+    return render_template("museum_detail.html", museum=museum, links=links)
 
 
 # ══════════════════════════════════════════════

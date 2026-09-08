@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Douglas,A-4,E,151036,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,c/n 13206;side number 12 in USMC markings;on loan from the National Naval Aviation Museum;previously at the Barbers Point museum;displayed in front of the center,Kauai Veterans Center and Museum,on_display
+Douglas,A-4,E,151036,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,side number 12 in USMC markings; on loan from the National Naval Aviation Museum; previously at the Barbers Point museum; displayed in front of the center,c/n 13206; A4,Kauai Veterans Center and Museum,on_display

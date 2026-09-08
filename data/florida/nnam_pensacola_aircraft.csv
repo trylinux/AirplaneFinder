@@ -1,166 +1,166 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Beechcraft,SNB,5P,,Expeditor,,fixed_wing,monoplane,military,recon,,,C-45;Twin Beech,National Naval Aviation Museum,on_display
-Beechcraft,T-34,B,144040,Mentor,,fixed_wing,monoplane,military,trainer,,,Model 45,National Naval Aviation Museum,on_display
-Beechcraft,T-34,C,161842,Turbo Mentor,,fixed_wing,monoplane,military,trainer,,,YT-34C,National Naval Aviation Museum,on_display
-Bell,AH-1,W,,Super Cobra,,rotary_wing,,military,ground_attack,,,,National Naval Aviation Museum,on_display
-Bell,HTL,4,,Sioux,,rotary_wing,,military,trainer,,,Bell 47;H-13,National Naval Aviation Museum,on_display
-Bell,HH-1,K,,Iroquois,,rotary_wing,,military,search_rescue,,,Huey,National Naval Aviation Museum,on_display
-Bell,UH-1,B,,Iroquois,,rotary_wing,,military,utility,,,Huey;HA(L)-3 Seawolves,National Naval Aviation Museum,on_display
-Bell,TH-57,C,162688,Sea Ranger,,rotary_wing,,military,trainer,,,Jet Ranger,National Naval Aviation Museum,on_display
-Boeing,F4B,4,32-92,,,fixed_wing,biplane,military,fighter,,,P-12F;USAAC serial,National Naval Aviation Museum,on_display
-Boeing Vertol,CH-46,D,,Sea Knight,,rotary_wing,,military,transport,,,Phrog,National Naval Aviation Museum,on_display
-Brewster,SB2A,1,FF860,Buccaneer,,fixed_wing,monoplane,military,bomber,,,Bermuda Mk.I;RAF serial,National Naval Aviation Museum,on_display
-Cessna,JRC,1,63426,Bobcat,,fixed_wing,monoplane,military,utility,,,UC-78B;Bamboo Bomber,National Naval Aviation Museum,on_display
-Cessna,O-1,E,,Bird Dog,,fixed_wing,monoplane,military,recon,,,USS Midway 1975 evacuation aircraft,National Naval Aviation Museum,on_display
+Beechcraft,SNB,5P,,Expeditor,,fixed_wing,monoplane,military,recon,,,C-45; Twin Beech; C45; SNB5P,National Naval Aviation Museum,on_display
+Beechcraft,T-34,B,144040,Mentor,,fixed_wing,monoplane,military,trainer,,,Model 45; T34,National Naval Aviation Museum,on_display
+Beechcraft,T-34,C,161842,Turbo Mentor,,fixed_wing,monoplane,military,trainer,,,YT-34C; T34; YT34C,National Naval Aviation Museum,on_display
+Bell,AH-1,W,,Super Cobra,,rotary_wing,,military,ground_attack,,,AH1,National Naval Aviation Museum,on_display
+Bell,HTL,4,,Sioux,,rotary_wing,,military,trainer,,,Bell 47; H-13; H13; HTL4,National Naval Aviation Museum,on_display
+Bell,HH-1,K,,Iroquois,,rotary_wing,,military,search_rescue,,,Huey; HH1,National Naval Aviation Museum,on_display
+Bell,UH-1,B,,Iroquois,,rotary_wing,,military,utility,,HA(L)-3 Seawolves,Huey; UH1,National Naval Aviation Museum,on_display
+Bell,TH-57,C,162688,Sea Ranger,,rotary_wing,,military,trainer,,,Jet Ranger; TH57,National Naval Aviation Museum,on_display
+Boeing,F4B,4,32-92,,,fixed_wing,biplane,military,fighter,,USAAC serial,P-12F; P12F,National Naval Aviation Museum,on_display
+Boeing Vertol,CH-46,D,,Sea Knight,,rotary_wing,,military,transport,,,Phrog; CH46,National Naval Aviation Museum,on_display
+Brewster,SB2A,1,FF860,Buccaneer,,fixed_wing,monoplane,military,bomber,,RAF serial,Bermuda Mk.I,National Naval Aviation Museum,on_display
+Cessna,JRC,1,63426,Bobcat,,fixed_wing,monoplane,military,utility,,,UC-78B; Bamboo Bomber; UC78B; JRC1,National Naval Aviation Museum,on_display
+Cessna,O-1,E,,Bird Dog,,fixed_wing,monoplane,military,recon,,USS Midway 1975 evacuation aircraft,O1,National Naval Aviation Museum,on_display
 Consolidated,N2Y,1,A8605,,,fixed_wing,biplane,military,trainer,,,,National Naval Aviation Museum,on_display
-Consolidated,PBY,5,08317,Catalina,,fixed_wing,monoplane,military,recon,,,suspended display,National Naval Aviation Museum,on_display
-Consolidated,PB2Y,5R,7099,Coronado,,fixed_wing,monoplane,military,transport,,,ex-Howard Hughes,National Naval Aviation Museum,on_display
-Consolidated,PB4Y,2,,Privateer,,fixed_wing,monoplane,military,bomber,,,damaged by Hurricane Ivan 2004,National Naval Aviation Museum,on_display
-Convair,C-131,,,Samaritan,,fixed_wing,monoplane,military,transport,,,R4Y,National Naval Aviation Museum,on_display
-Curtiss,A-1,,,Triad,,fixed_wing,biplane,military,utility,1961,,replica built for 50th anniversary of Naval Aviation,National Naval Aviation Museum,on_display
-Curtiss,BFC,2,9332,Goshawk,,fixed_wing,biplane,military,ground_attack,1933,,F11C;Tophatters VF-1B,National Naval Aviation Museum,on_display
+Consolidated,PBY,5,08317,Catalina,,fixed_wing,monoplane,military,recon,,suspended display,PBY5,National Naval Aviation Museum,on_display
+Consolidated,PB2Y,5R,7099,Coronado,,fixed_wing,monoplane,military,transport,,ex-Howard Hughes,,National Naval Aviation Museum,on_display
+Consolidated,PB4Y,2,,Privateer,,fixed_wing,monoplane,military,bomber,,damaged by Hurricane Ivan 2004,,National Naval Aviation Museum,on_display
+Convair,C-131,,,Samaritan,,fixed_wing,monoplane,military,transport,,,R4Y; C131,National Naval Aviation Museum,on_display
+Curtiss,A-1,,,Triad,,fixed_wing,biplane,military,utility,1961,replica built for 50th anniversary of Naval Aviation,A1,National Naval Aviation Museum,on_display
+Curtiss,BFC,2,9332,Goshawk,,fixed_wing,biplane,military,ground_attack,1933,,F11C; Tophatters VF-1B; BFC2,National Naval Aviation Museum,on_display
 Curtiss,F6C,1,A6969,Hawk,,fixed_wing,biplane,military,fighter,,,,National Naval Aviation Museum,on_display
 Curtiss,F7C,1,A7667,Seahawk,,fixed_wing,biplane,military,fighter,,,,National Naval Aviation Museum,on_display
-Curtiss,JN-4,D,A995,Jenny,,fixed_wing,biplane,military,trainer,,,,National Naval Aviation Museum,on_display
-Curtiss,NC,4,A2294,,,fixed_wing,biplane,military,transport,1919,,first transatlantic flight 1919;on loan from Smithsonian,National Naval Aviation Museum,on_display
+Curtiss,JN-4,D,A995,Jenny,,fixed_wing,biplane,military,trainer,,,JN4,National Naval Aviation Museum,on_display
+Curtiss,NC,4,A2294,,,fixed_wing,biplane,military,transport,1919,first transatlantic flight 1919; on loan from Smithsonian,NC4,National Naval Aviation Museum,on_display
 Curtiss,N2C,2,A8529,Fledgling,,fixed_wing,biplane,military,trainer,,,,National Naval Aviation Museum,on_display
-Curtiss,P-40,B,,Tomahawk,,fixed_wing,monoplane,military,fighter,,,Tomahawk IIB;Flying Tigers AVG markings,National Naval Aviation Museum,on_display
-Curtiss-Wright,SNC,1,05194,Falcon,,fixed_wing,monoplane,military,trainer,,,CW-22,National Naval Aviation Museum,on_display
-Douglas,A-1,H,135300,Skyraider,,fixed_wing,monoplane,military,ground_attack,1954,,AD-6;Spad;last Skyraider combat mission 1968,National Naval Aviation Museum,on_display
-Douglas,A3D,A,135418,Skywarrior,,fixed_wing,monoplane,military,bomber,,,NA-3A,National Naval Aviation Museum,on_display
-Douglas,A-4,A,,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,Tinker Toy,National Naval Aviation Museum,on_display
-Douglas,A-4,E,,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,,National Naval Aviation Museum,on_display
-Douglas,A-4,F,150076,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,Blue Angels diamond,National Naval Aviation Museum,on_display
-Douglas,A-4,F,154217,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,Blue Angels diamond,National Naval Aviation Museum,on_display
-Douglas,A-4,F,154983,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,Blue Angels diamond,National Naval Aviation Museum,on_display
-Douglas,A-4,F,155033,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,Blue Angels diamond;nose is A-4F on TA-4J airframe,National Naval Aviation Museum,on_display
-Douglas,R4D,5L,,Skytrain,Que Sera Sera,fixed_wing,monoplane,military,transport,,,C-47;first landing at South Pole 1956,National Naval Aviation Museum,on_display
-Douglas,C-117,D,,Skytrain,,fixed_wing,monoplane,military,transport,,,R4D-8,National Naval Aviation Museum,on_display
-Douglas,C-118,,,Liftmaster,,fixed_wing,monoplane,military,transport,,,R6D,National Naval Aviation Museum,on_display
-Douglas,RD,4,,Dolphin,Sinbad,fixed_wing,monoplane,military,search_rescue,,,ex-William Boeing,National Naval Aviation Museum,on_display
+Curtiss,P-40,B,,Tomahawk,,fixed_wing,monoplane,military,fighter,,Flying Tigers AVG markings,Tomahawk IIB; P40,National Naval Aviation Museum,on_display
+Curtiss-Wright,SNC,1,05194,Falcon,,fixed_wing,monoplane,military,trainer,,,CW-22; CW22; SNC1,National Naval Aviation Museum,on_display
+Douglas,A-1,H,135300,Skyraider,,fixed_wing,monoplane,military,ground_attack,1954,last Skyraider combat mission 1968,AD-6; Spad; A1; AD6,National Naval Aviation Museum,on_display
+Douglas,A3D,A,135418,Skywarrior,,fixed_wing,monoplane,military,bomber,,,NA-3A; NA3A,National Naval Aviation Museum,on_display
+Douglas,A-4,A,,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,Tinker Toy; A4,National Naval Aviation Museum,on_display
+Douglas,A-4,E,,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,A4,National Naval Aviation Museum,on_display
+Douglas,A-4,F,150076,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,Blue Angels diamond,A4,National Naval Aviation Museum,on_display
+Douglas,A-4,F,154217,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,Blue Angels diamond,A4,National Naval Aviation Museum,on_display
+Douglas,A-4,F,154983,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,Blue Angels diamond,A4,National Naval Aviation Museum,on_display
+Douglas,A-4,F,155033,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,Blue Angels diamond; nose is A-4F on TA-4J airframe,A4,National Naval Aviation Museum,on_display
+Douglas,R4D,5L,,Skytrain,Que Sera Sera,fixed_wing,monoplane,military,transport,,first landing at South Pole 1956,C-47; C47,National Naval Aviation Museum,on_display
+Douglas,C-117,D,,Skytrain,,fixed_wing,monoplane,military,transport,,,R4D-8; C117,National Naval Aviation Museum,on_display
+Douglas,C-118,,,Liftmaster,,fixed_wing,monoplane,military,transport,,,R6D; C118,National Naval Aviation Museum,on_display
+Douglas,RD,4,,Dolphin,Sinbad,fixed_wing,monoplane,military,search_rescue,,ex-William Boeing,RD4,National Naval Aviation Museum,on_display
 Douglas,F3D,,,Skyknight,,fixed_wing,monoplane,military,fighter,,,,National Naval Aviation Museum,on_display
 Douglas,F4D,1,,Skyray,,fixed_wing,monoplane,military,fighter,,,Ford,National Naval Aviation Museum,on_display
-Douglas,D-558,1,,Skystreak,Crimson Test Tube,fixed_wing,monoplane,military,experimental,,,world speed record Aug 1947,National Naval Aviation Museum,on_display
-Douglas,JD,,,Invader,,fixed_wing,monoplane,military,utility,,,A-26;target tug,National Naval Aviation Museum,on_display
-Douglas,SBD,2,2106,Dauntless,,fixed_wing,monoplane,military,bomber,1940,,Pearl Harbor and Midway veteran,National Naval Aviation Museum,on_display
-Douglas,SBD,5,,Dauntless,,fixed_wing,monoplane,military,bomber,,,Underwater Treasures exhibit;unrestored Lake Michigan recovery,National Naval Aviation Museum,on_display
+Douglas,D-558,1,,Skystreak,Crimson Test Tube,fixed_wing,monoplane,military,experimental,,world speed record Aug 1947,D558,National Naval Aviation Museum,on_display
+Douglas,JD,,,Invader,,fixed_wing,monoplane,military,utility,,target tug,A-26; A26,National Naval Aviation Museum,on_display
+Douglas,SBD,2,2106,Dauntless,,fixed_wing,monoplane,military,bomber,1940,Pearl Harbor and Midway veteran,SBD2,National Naval Aviation Museum,on_display
+Douglas,SBD,5,,Dauntless,,fixed_wing,monoplane,military,bomber,,Underwater Treasures exhibit; unrestored Lake Michigan recovery,SBD5,National Naval Aviation Museum,on_display
 Fokker,D.VII,,,,,fixed_wing,biplane,military,fighter,,,,National Naval Aviation Museum,on_display
-Ford,RR,5,,Tri-Motor,,fixed_wing,monoplane,military,transport,1928,,Tin Goose;4-AT/5-AT,National Naval Aviation Museum,on_display
-Franklin,PS-2,,,,,fixed_wing,monoplane,military,trainer,,,primary training glider,National Naval Aviation Museum,on_display
-General Dynamics,F-16,N,,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,,TOPGUN adversary aircraft,National Naval Aviation Museum,on_display
-General Motors,FM,2,,Wildcat,,fixed_wing,monoplane,military,fighter,,,Eastern Aircraft Division;Quarterdeck display,National Naval Aviation Museum,on_display
-General Motors,FM,2P,,Wildcat,,fixed_wing,monoplane,military,fighter,,,Eastern Aircraft Division;Pacific Island exhibit,National Naval Aviation Museum,on_display
-General Motors,TBM,3E,,Avenger,,fixed_wing,monoplane,military,bomber,,,Eastern Aircraft Division,National Naval Aviation Museum,on_display
-Goodyear,FG,1D,,Corsair,,fixed_wing,monoplane,military,fighter,,,,National Naval Aviation Museum,on_display
-Goodyear,K-47,,,,,lighter_than_air,,military,other,,,control car and gondola only,National Naval Aviation Museum,on_display
-Goodyear,L-8,,,Ghost Ship,,lighter_than_air,,military,other,,,control car;crashed Daly City 1942,National Naval Aviation Museum,on_display
-Goodyear,ZPG,2,,Snow Bird,,lighter_than_air,,military,recon,1957,,cockpit section only;unrefueled distance record 1957,National Naval Aviation Museum,on_display
-Grumman,FF,1,,,Fifi,fixed_wing,biplane,military,fighter,,,G-23,National Naval Aviation Museum,on_display
-Grumman,F3F,2,,,,fixed_wing,biplane,military,fighter,,,"ditched off USS Saratoga 1940, recovered 1990",National Naval Aviation Museum,on_display
-Grumman,F4F,3,,Wildcat,,fixed_wing,monoplane,military,fighter,,,USS Wasp Neutrality Patrol,National Naval Aviation Museum,on_display
+Ford,RR,5,,Tri-Motor,,fixed_wing,monoplane,military,transport,1928,4-AT/5-AT,Tin Goose; RR5,National Naval Aviation Museum,on_display
+Franklin,PS-2,,,,,fixed_wing,monoplane,military,trainer,,primary training glider,PS2,National Naval Aviation Museum,on_display
+General Dynamics,F-16,N,,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,TOPGUN adversary aircraft,F16,National Naval Aviation Museum,on_display
+General Motors,FM,2,,Wildcat,,fixed_wing,monoplane,military,fighter,,Eastern Aircraft Division; Quarterdeck display,FM2,National Naval Aviation Museum,on_display
+General Motors,FM,2P,,Wildcat,,fixed_wing,monoplane,military,fighter,,Eastern Aircraft Division; Pacific Island exhibit,FM2P,National Naval Aviation Museum,on_display
+General Motors,TBM,3E,,Avenger,,fixed_wing,monoplane,military,bomber,,Eastern Aircraft Division,TBM3E,National Naval Aviation Museum,on_display
+Goodyear,FG,1D,,Corsair,,fixed_wing,monoplane,military,fighter,,,FG1D,National Naval Aviation Museum,on_display
+Goodyear,K-47,,,,,lighter_than_air,,military,other,,control car and gondola only,K47,National Naval Aviation Museum,on_display
+Goodyear,L-8,,,Ghost Ship,,lighter_than_air,,military,other,,control car; crashed Daly City 1942,L8,National Naval Aviation Museum,on_display
+Goodyear,ZPG,2,,Snow Bird,,lighter_than_air,,military,recon,1957,cockpit section only; unrefueled distance record 1957,ZPG2,National Naval Aviation Museum,on_display
+Grumman,FF,1,,,Fifi,fixed_wing,biplane,military,fighter,,,G-23; G23; FF1,National Naval Aviation Museum,on_display
+Grumman,F3F,2,,,,fixed_wing,biplane,military,fighter,,"ditched off USS Saratoga 1940, recovered 1990",,National Naval Aviation Museum,on_display
+Grumman,F4F,3,,Wildcat,,fixed_wing,monoplane,military,fighter,,USS Wasp Neutrality Patrol,,National Naval Aviation Museum,on_display
 Grumman,F4F,3A,,Wildcat,,fixed_wing,monoplane,military,fighter,,,,National Naval Aviation Museum,on_display
-Grumman,F4F,4,,Wildcat,,fixed_wing,monoplane,military,fighter,,,Underwater Treasures exhibit;unrestored Lake Michigan recovery,National Naval Aviation Museum,on_display
-Grumman,F6F,3,,Hellcat,,fixed_wing,monoplane,military,fighter,,,VF-38 Solomon Islands combat veteran,National Naval Aviation Museum,on_display
-Grumman,F6F,5,,Hellcat,,fixed_wing,monoplane,military,fighter,,,displayed in Cdr. David McCampbell markings,National Naval Aviation Museum,on_display
+Grumman,F4F,4,,Wildcat,,fixed_wing,monoplane,military,fighter,,Underwater Treasures exhibit; unrestored Lake Michigan recovery,,National Naval Aviation Museum,on_display
+Grumman,F6F,3,,Hellcat,,fixed_wing,monoplane,military,fighter,,VF-38 Solomon Islands combat veteran,,National Naval Aviation Museum,on_display
+Grumman,F6F,5,,Hellcat,,fixed_wing,monoplane,military,fighter,,displayed in Cdr. David McCampbell markings,,National Naval Aviation Museum,on_display
 Grumman,F7F,,,Tigercat,,fixed_wing,monoplane,military,fighter,,,,National Naval Aviation Museum,on_display
 Grumman,F8F,2P,,Bearcat,,fixed_wing,monoplane,military,recon,,,,National Naval Aviation Museum,on_display
-Grumman,F9F,2,,Panther,,fixed_wing,monoplane,military,fighter,,,"flown by Glenn, Armstrong and Ted Williams in Korea",National Naval Aviation Museum,on_display
+Grumman,F9F,2,,Panther,,fixed_wing,monoplane,military,fighter,,"flown by Glenn, Armstrong and Ted Williams in Korea",,National Naval Aviation Museum,on_display
 Grumman,F9F,6,,Cougar,,fixed_wing,monoplane,military,fighter,,,,National Naval Aviation Museum,on_display
 Grumman,F9F,8,,Cougar,,fixed_wing,monoplane,military,fighter,,,,National Naval Aviation Museum,on_display
-Grumman,F11F,1,,Tiger,,fixed_wing,monoplane,military,fighter,,,Blue Angel number 1 airframe,National Naval Aviation Museum,on_display
-Grumman,YF-14,A,,Tomcat,,fixed_wing,monoplane,military,fighter,,,pedestal display outside entrance,National Naval Aviation Museum,on_display
-Grumman,F-14,D,,Tomcat,,fixed_wing,monoplane,military,fighter,,,flew last F-14 combat sortie 2006,National Naval Aviation Museum,on_display
-Grumman,HU-16,,,Albatross,,fixed_wing,monoplane,military,search_rescue,,,,National Naval Aviation Museum,on_display
-Grumman,J2F,,,Duck,,fixed_wing,biplane,military,utility,,,amphibian,National Naval Aviation Museum,on_display
-Grumman,J4F,,,Widgeon,,fixed_wing,monoplane,military,utility,,,amphibian,National Naval Aviation Museum,on_display
-Grumman,JRF,,,Goose,,fixed_wing,monoplane,military,utility,,,amphibian,National Naval Aviation Museum,on_display
+Grumman,F11F,1,,Tiger,,fixed_wing,monoplane,military,fighter,,Blue Angel number 1 airframe,,National Naval Aviation Museum,on_display
+Grumman,YF-14,A,,Tomcat,,fixed_wing,monoplane,military,fighter,,pedestal display outside entrance,YF14,National Naval Aviation Museum,on_display
+Grumman,F-14,D,,Tomcat,,fixed_wing,monoplane,military,fighter,,flew last F-14 combat sortie 2006,F14,National Naval Aviation Museum,on_display
+Grumman,HU-16,,,Albatross,,fixed_wing,monoplane,military,search_rescue,,,HU16,National Naval Aviation Museum,on_display
+Grumman,J2F,,,Duck,,fixed_wing,biplane,military,utility,,amphibian,,National Naval Aviation Museum,on_display
+Grumman,J4F,,,Widgeon,,fixed_wing,monoplane,military,utility,,amphibian,,National Naval Aviation Museum,on_display
+Grumman,JRF,,,Goose,,fixed_wing,monoplane,military,utility,,amphibian,,National Naval Aviation Museum,on_display
 Grumman,S2F,,,Tracker,,fixed_wing,monoplane,military,recon,,,,National Naval Aviation Museum,on_display
-Grumman,TC-4,C,,Academe,,fixed_wing,monoplane,military,trainer,,,Gulfstream I based,National Naval Aviation Museum,on_display
-Grumman,AF,2S,,Guardian,,fixed_wing,monoplane,military,recon,,,,National Naval Aviation Museum,on_display
-Grumman,C-1,,,Trader,,fixed_wing,monoplane,military,transport,,,carrier onboard delivery,National Naval Aviation Museum,on_display
-Grumman,E-1,,,Tracer,,fixed_wing,monoplane,military,recon,,,,National Naval Aviation Museum,on_display
-Grumman,E-2,C,,Hawkeye,,fixed_wing,monoplane,military,recon,,,VAW-123 Screwtops markings,National Naval Aviation Museum,on_display
-Grumman,A-6,E,,Intruder,,fixed_wing,monoplane,military,ground_attack,,,,National Naval Aviation Museum,on_display
-Grumman,EA-6,B,,Prowler,,fixed_wing,monoplane,military,electronic_warfare,,,,National Naval Aviation Museum,on_display
-Grumman,Lunar Module,,,Challenger,,spacecraft,,civilian,space,2012,,Apollo 17 replica,National Naval Aviation Museum,on_display
+Grumman,TC-4,C,,Academe,,fixed_wing,monoplane,military,trainer,,Gulfstream I based,TC4,National Naval Aviation Museum,on_display
+Grumman,AF,2S,,Guardian,,fixed_wing,monoplane,military,recon,,,AF2S,National Naval Aviation Museum,on_display
+Grumman,C-1,,,Trader,,fixed_wing,monoplane,military,transport,,carrier onboard delivery,C1,National Naval Aviation Museum,on_display
+Grumman,E-1,,,Tracer,,fixed_wing,monoplane,military,recon,,,E1,National Naval Aviation Museum,on_display
+Grumman,E-2,C,,Hawkeye,,fixed_wing,monoplane,military,recon,,VAW-123 Screwtops markings,E2,National Naval Aviation Museum,on_display
+Grumman,A-6,E,,Intruder,,fixed_wing,monoplane,military,ground_attack,,,A6,National Naval Aviation Museum,on_display
+Grumman,EA-6,B,,Prowler,,fixed_wing,monoplane,military,electronic_warfare,,,EA6,National Naval Aviation Museum,on_display
+Grumman,Lunar Module,,,Challenger,,spacecraft,,civilian,space,2012,Apollo 17 replica,,National Naval Aviation Museum,on_display
 Hanriot,HD.1,,,,,fixed_wing,biplane,military,fighter,,,,National Naval Aviation Museum,on_display
-Hiller,HTE,1,,,,rotary_wing,,military,trainer,,,UH-12,National Naval Aviation Museum,on_display
-Interstate,TDR,1,,Assault Drone,Edna III,fixed_wing,monoplane,military,drone,,,radio-controlled attack drone,National Naval Aviation Museum,on_display
-Kaman,SH-2,F,,Seasprite,,rotary_wing,,military,recon,,,LAMPS,National Naval Aviation Museum,on_display
+Hiller,HTE,1,,,,rotary_wing,,military,trainer,,,UH-12; UH12; HTE1,National Naval Aviation Museum,on_display
+Interstate,TDR,1,,Assault Drone,Edna III,fixed_wing,monoplane,military,drone,,radio-controlled attack drone,TDR1,National Naval Aviation Museum,on_display
+Kaman,SH-2,F,,Seasprite,,rotary_wing,,military,recon,,,LAMPS; SH2,National Naval Aviation Museum,on_display
 Kawanishi,N1K2,,,Shiden,,fixed_wing,monoplane,military,fighter,,,George,National Naval Aviation Museum,on_display
-Lockheed,TC-130,G,151891,Hercules,Fat Albert,fixed_wing,monoplane,military,transport,1965,,Blue Angels support aircraft,National Naval Aviation Museum,on_display
-Lockheed,KC-130,F,149798,Hercules,Look Ma No Hook,fixed_wing,monoplane,military,tanker,,,USS Forrestal carrier landing trials 1963,National Naval Aviation Museum,on_display
-Lockheed,EC-121,,,Warning Star,,fixed_wing,monoplane,military,recon,,,Constellation,National Naval Aviation Museum,on_display
+Lockheed,TC-130,G,151891,Hercules,Fat Albert,fixed_wing,monoplane,military,transport,1965,Blue Angels support aircraft,TC130,National Naval Aviation Museum,on_display
+Lockheed,KC-130,F,149798,Hercules,Look Ma No Hook,fixed_wing,monoplane,military,tanker,,USS Forrestal carrier landing trials 1963,KC130,National Naval Aviation Museum,on_display
+Lockheed,EC-121,,,Warning Star,,fixed_wing,monoplane,military,recon,,,Constellation; EC121,National Naval Aviation Museum,on_display
 Lockheed,Model 10,,,Electra,,fixed_wing,monoplane,civilian,transport,,,,National Naval Aviation Museum,on_display
-Lockheed,PV-2,,,Harpoon,,fixed_wing,monoplane,military,bomber,,,,National Naval Aviation Museum,on_display
-Lockheed,P2V,1,,Neptune,Truculent Turtle,fixed_wing,monoplane,military,recon,,,unrefueled distance record Oct 1946,National Naval Aviation Museum,on_display
-Lockheed,P2V,7,,Neptune,,fixed_wing,monoplane,military,recon,,,SP-2H,National Naval Aviation Museum,on_display
-Lockheed,P-3,A,,Orion,,fixed_wing,monoplane,military,recon,,,,National Naval Aviation Museum,on_display
-Lockheed,S-3,B,,Viking,Navy One,fixed_wing,monoplane,military,recon,,,carried President Bush to USS Abraham Lincoln 2003,National Naval Aviation Museum,on_display
-Lockheed,TV,2,,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-33,National Naval Aviation Museum,on_display
+Lockheed,PV-2,,,Harpoon,,fixed_wing,monoplane,military,bomber,,,PV2,National Naval Aviation Museum,on_display
+Lockheed,P2V,1,,Neptune,Truculent Turtle,fixed_wing,monoplane,military,recon,,unrefueled distance record Oct 1946,,National Naval Aviation Museum,on_display
+Lockheed,P2V,7,,Neptune,,fixed_wing,monoplane,military,recon,,,SP-2H; SP2H,National Naval Aviation Museum,on_display
+Lockheed,P-3,A,,Orion,,fixed_wing,monoplane,military,recon,,,P3,National Naval Aviation Museum,on_display
+Lockheed,S-3,B,,Viking,Navy One,fixed_wing,monoplane,military,recon,,carried President Bush to USS Abraham Lincoln 2003,S3,National Naval Aviation Museum,on_display
+Lockheed,TV,2,,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-33; T33; TV2,National Naval Aviation Museum,on_display
 Mitsubishi,A6M,2,,Zero,,fixed_wing,monoplane,military,fighter,,,Zeke,National Naval Aviation Museum,on_display
-North American,AJ,2,130418,Savage,,fixed_wing,monoplane,military,bomber,,,,National Naval Aviation Museum,on_display
-Martin,AM,1,122397,Mauler,,fixed_wing,monoplane,military,ground_attack,,,,National Naval Aviation Museum,on_display
-McDonnell Douglas,AV-8,C,158975,Harrier,,fixed_wing,monoplane,military,ground_attack,,,AV-8A,National Naval Aviation Museum,on_display
-Vought,A-7,E,160714,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,LTV Aerospace,National Naval Aviation Museum,on_display
-North American,B-25,J,,Mitchell,,fixed_wing,monoplane,military,bomber,,,,National Naval Aviation Museum,on_display
-North American,PBJ,1D,,Mitchell,,fixed_wing,monoplane,military,bomber,,,,National Naval Aviation Museum,on_display
-McDonnell Douglas,C-9,B,163511,Skytrain II,City of Marietta,fixed_wing,monoplane,military,transport,,,,National Naval Aviation Museum,on_display
-Sikorsky,CH-37,C,145864,Mojave,,rotary_wing,,military,transport,,,HR2S-1,National Naval Aviation Museum,on_display
-Sikorsky,CH-53,D,157159,Sea Stallion,,rotary_wing,,military,transport,,,,National Naval Aviation Museum,on_display
-McDonnell,F-4,N,153915,Phantom II,,fixed_wing,monoplane,military,fighter,,,,National Naval Aviation Museum,on_display
-McDonnell Douglas,RF-4,B,,Phantom II,,fixed_wing,monoplane,military,recon,,,,National Naval Aviation Museum,on_display
-Vought,F-8,A,145347,Crusader,,fixed_wing,monoplane,military,fighter,,,,National Naval Aviation Museum,on_display
-Vought,RF-8,G,,Crusader,,fixed_wing,monoplane,military,recon,,,,National Naval Aviation Museum,on_display
+North American,AJ,2,130418,Savage,,fixed_wing,monoplane,military,bomber,,,AJ2,National Naval Aviation Museum,on_display
+Martin,AM,1,122397,Mauler,,fixed_wing,monoplane,military,ground_attack,,,AM1,National Naval Aviation Museum,on_display
+McDonnell Douglas,AV-8,C,158975,Harrier,,fixed_wing,monoplane,military,ground_attack,,,AV-8A; AV8; AV8A,National Naval Aviation Museum,on_display
+Vought,A-7,E,160714,Corsair II,,fixed_wing,monoplane,military,ground_attack,,LTV Aerospace,A7,National Naval Aviation Museum,on_display
+North American,B-25,J,,Mitchell,,fixed_wing,monoplane,military,bomber,,,B25,National Naval Aviation Museum,on_display
+North American,PBJ,1D,,Mitchell,,fixed_wing,monoplane,military,bomber,,,PBJ1D,National Naval Aviation Museum,on_display
+McDonnell Douglas,C-9,B,163511,Skytrain II,City of Marietta,fixed_wing,monoplane,military,transport,,,C9,National Naval Aviation Museum,on_display
+Sikorsky,CH-37,C,145864,Mojave,,rotary_wing,,military,transport,,,HR2S-1; CH37,National Naval Aviation Museum,on_display
+Sikorsky,CH-53,D,157159,Sea Stallion,,rotary_wing,,military,transport,,,CH53,National Naval Aviation Museum,on_display
+McDonnell,F-4,N,153915,Phantom II,,fixed_wing,monoplane,military,fighter,,,F4,National Naval Aviation Museum,on_display
+McDonnell Douglas,RF-4,B,,Phantom II,,fixed_wing,monoplane,military,recon,,,RF4,National Naval Aviation Museum,on_display
+Vought,F-8,A,145347,Crusader,,fixed_wing,monoplane,military,fighter,,,F8,National Naval Aviation Museum,on_display
+Vought,RF-8,G,,Crusader,,fixed_wing,monoplane,military,recon,,,RF8,National Naval Aviation Museum,on_display
 McDonnell Douglas,F/A-18,A,161959,Hornet,,fixed_wing,monoplane,military,fighter,,,Blue Angels,National Naval Aviation Museum,on_display
-McDonnell Douglas,F/A-18,A,161955,Hornet,,fixed_wing,monoplane,military,fighter,,,formerly Blue Angels,National Naval Aviation Museum,on_display
+McDonnell Douglas,F/A-18,A,161955,Hornet,,fixed_wing,monoplane,military,fighter,,formerly Blue Angels,,National Naval Aviation Museum,on_display
 McDonnell,F2H,2P,126673,Banshee,,fixed_wing,monoplane,military,recon,,,Photo Banshee,National Naval Aviation Museum,on_display
 McDonnell,F2H,4,126419,Banshee,,fixed_wing,monoplane,military,fighter,,,,National Naval Aviation Museum,on_display
 McDonnell,F3H,2M,137078,Demon,,fixed_wing,monoplane,military,fighter,,,,National Naval Aviation Museum,on_display
-Vought,F4U,4,97349,Corsair,,fixed_wing,monoplane,military,fighter,,,VMF-312 markings,National Naval Aviation Museum,on_display
+Vought,F4U,4,97349,Corsair,,fixed_wing,monoplane,military,fighter,,VMF-312 markings,,National Naval Aviation Museum,on_display
 Vought,F7U,3M,129655,Cutlass,,fixed_wing,monoplane,military,fighter,,,,National Naval Aviation Museum,on_display
-McDonnell,FH,1,111793,Phantom,,fixed_wing,monoplane,military,fighter,,,XFD-1,National Naval Aviation Museum,on_display
-North American,FJ,2,132023,Fury,,fixed_wing,monoplane,military,fighter,,,,National Naval Aviation Museum,on_display
-North American,FJ,4,139486,Fury,,fixed_wing,monoplane,military,fighter,,,F-1E,National Naval Aviation Museum,on_display
-McDonnell,Mercury Capsule,,,Freedom 7,,spacecraft,,civilian,space,,,replica;Mercury-Redstone 3,National Naval Aviation Museum,on_display
-Sikorsky,H-34,,,Seabat,,rotary_wing,,military,transport,,,HSS-1;HUS-1 Seahorse;UH-34,National Naval Aviation Museum,on_display
-Sikorsky,HH-52,A,,Seaguard,,rotary_wing,,military,search_rescue,,,,National Naval Aviation Museum,on_display
-Sikorsky,HNS,1,,Hoverfly,,rotary_wing,,military,trainer,,,,National Naval Aviation Museum,on_display
+McDonnell,FH,1,111793,Phantom,,fixed_wing,monoplane,military,fighter,,,XFD-1; XFD1; FH1,National Naval Aviation Museum,on_display
+North American,FJ,2,132023,Fury,,fixed_wing,monoplane,military,fighter,,,FJ2,National Naval Aviation Museum,on_display
+North American,FJ,4,139486,Fury,,fixed_wing,monoplane,military,fighter,,,F-1E; F1E; FJ4,National Naval Aviation Museum,on_display
+McDonnell,Mercury Capsule,,,Freedom 7,,spacecraft,,civilian,space,,replica,Mercury-Redstone 3,National Naval Aviation Museum,on_display
+Sikorsky,H-34,,,Seabat,,rotary_wing,,military,transport,,,HSS-1; HUS-1 Seahorse; UH-34; H34; HSS1; UH34,National Naval Aviation Museum,on_display
+Sikorsky,HH-52,A,,Seaguard,,rotary_wing,,military,search_rescue,,,HH52,National Naval Aviation Museum,on_display
+Sikorsky,HNS,1,,Hoverfly,,rotary_wing,,military,trainer,,,HNS1,National Naval Aviation Museum,on_display
 Sikorsky,HO3S,1G,,,,rotary_wing,,military,search_rescue,,,,National Naval Aviation Museum,on_display
 Sikorsky,HO5S,1,,,,rotary_wing,,military,utility,,,,National Naval Aviation Museum,on_display
-Piasecki,HUP,3,,Retriever,,rotary_wing,,military,search_rescue,,,UH-25C,National Naval Aviation Museum,on_display
-Sikorsky,HH-3,F,1486,Pelican,,rotary_wing,,military,search_rescue,,,USCG tail number,National Naval Aviation Museum,on_display
-Schweizer,LNS,1,,,,fixed_wing,monoplane,military,trainer,,,,National Naval Aviation Museum,on_display
+Piasecki,HUP,3,,Retriever,,rotary_wing,,military,search_rescue,,,UH-25C; UH25C; HUP3,National Naval Aviation Museum,on_display
+Sikorsky,HH-3,F,1486,Pelican,,rotary_wing,,military,search_rescue,,USCG tail number,HH3,National Naval Aviation Museum,on_display
+Schweizer,LNS,1,,,,fixed_wing,monoplane,military,trainer,,,LNS1,National Naval Aviation Museum,on_display
 Messerschmitt,Me 262,B-1a,,Schwalbe,White 35,fixed_wing,monoplane,military,fighter,,,,National Naval Aviation Museum,on_display
 Naval Aircraft Factory,MF,,A-5483,,,fixed_wing,biplane,military,trainer,1918,,,National Naval Aviation Museum,on_display
-Mikoyan-Gurevich,MiG-15,bis,,,,fixed_wing,monoplane,military,fighter,,,,National Naval Aviation Museum,on_display
-Mikoyan-Gurevich,MiG-21,,,Fishbed,,fixed_wing,monoplane,military,fighter,,,,National Naval Aviation Museum,on_display
+Mikoyan-Gurevich,MiG-15,bis,,,,fixed_wing,monoplane,military,fighter,,,MiG15,National Naval Aviation Museum,on_display
+Mikoyan-Gurevich,MiG-21,,,Fishbed,,fixed_wing,monoplane,military,fighter,,,MiG21,National Naval Aviation Museum,on_display
 Timm,N2T,1,,Tutor,,fixed_wing,monoplane,military,trainer,,,,National Naval Aviation Museum,on_display
-Naval Aircraft Factory,N3N,3,3046,Yellow Peril,,fixed_wing,biplane,military,trainer,,,floatplane display,National Naval Aviation Museum,on_display
-Naval Aircraft Factory,N3N,1,,Yellow Peril,,fixed_wing,biplane,military,trainer,,,conventional-gear display,National Naval Aviation Museum,on_display
+Naval Aircraft Factory,N3N,3,3046,Yellow Peril,,fixed_wing,biplane,military,trainer,,floatplane display,,National Naval Aviation Museum,on_display
+Naval Aircraft Factory,N3N,1,,Yellow Peril,,fixed_wing,biplane,military,trainer,,conventional-gear display,,National Naval Aviation Museum,on_display
 Nieuport,28,C.1,,,,fixed_wing,biplane,military,fighter,,,,National Naval Aviation Museum,on_display
-Ryan,NR,1,,Recruit,,fixed_wing,monoplane,military,trainer,1941,,PT-22,National Naval Aviation Museum,on_display
-New Standard,NT,1,,,,fixed_wing,biplane,military,trainer,,,,National Naval Aviation Museum,on_display
+Ryan,NR,1,,Recruit,,fixed_wing,monoplane,military,trainer,1941,,PT-22; PT22; NR1,National Naval Aviation Museum,on_display
+New Standard,NT,1,,,,fixed_wing,biplane,military,trainer,,,NT1,National Naval Aviation Museum,on_display
 Stearman,N2S,3,05369,Kaydet,,fixed_wing,biplane,military,trainer,,,,National Naval Aviation Museum,on_display
 Vought,OS2U,3,,Kingfisher,,fixed_wing,monoplane,military,recon,,,,National Naval Aviation Museum,on_display
-North American Rockwell,OV-10,A,155472,Bronco,,fixed_wing,monoplane,military,ground_attack,,,OV-10D upgrade,National Naval Aviation Museum,on_display
-Stinson,OY,1,60507,Sentinel,,fixed_wing,monoplane,military,recon,,,,National Naval Aviation Museum,on_display
-North American,RA-5,C,,Vigilante,,fixed_wing,monoplane,military,recon,,,,National Naval Aviation Museum,on_display
-Northrop Grumman,RQ-8,A,,Fire Scout,,rotary_wing,,military,drone,,,,National Naval Aviation Museum,on_display
+North American Rockwell,OV-10,A,155472,Bronco,,fixed_wing,monoplane,military,ground_attack,,OV-10D upgrade,OV10,National Naval Aviation Museum,on_display
+Stinson,OY,1,60507,Sentinel,,fixed_wing,monoplane,military,recon,,,OY1,National Naval Aviation Museum,on_display
+North American,RA-5,C,,Vigilante,,fixed_wing,monoplane,military,recon,,,RA5,National Naval Aviation Museum,on_display
+Northrop Grumman,RQ-8,A,,Fire Scout,,rotary_wing,,military,drone,,,RQ8,National Naval Aviation Museum,on_display
 Vought,SB2U,2,,Vindicator,,fixed_wing,monoplane,military,ground_attack,,,,National Naval Aviation Museum,on_display
-Sikorsky,SH-3,D,156484,Sea King,,rotary_wing,,military,utility,,,displayed as SH-3A,National Naval Aviation Museum,on_display
-Sikorsky,SH-60,B,,Seahawk,,rotary_wing,,military,utility,,,,National Naval Aviation Museum,on_display
-North American Rockwell,Apollo Command Module,,,Skylab II,,spacecraft,,civilian,space,,,on loan from Smithsonian,National Naval Aviation Museum,on_display
-North American,SNJ,5C,51849,Texan,,fixed_wing,monoplane,military,trainer,,,,National Naval Aviation Museum,on_display
-Vultee,SNV,1,,Valiant,,fixed_wing,monoplane,military,trainer,1941,,BT-13A;Vultee Vibrator,National Naval Aviation Museum,on_display
+Sikorsky,SH-3,D,156484,Sea King,,rotary_wing,,military,utility,,displayed as SH-3A,SH3,National Naval Aviation Museum,on_display
+Sikorsky,SH-60,B,,Seahawk,,rotary_wing,,military,utility,,,SH60,National Naval Aviation Museum,on_display
+North American Rockwell,Apollo Command Module,,,Skylab II,,spacecraft,,civilian,space,,on loan from Smithsonian,,National Naval Aviation Museum,on_display
+North American,SNJ,5C,51849,Texan,,fixed_wing,monoplane,military,trainer,,,SNJ5C,National Naval Aviation Museum,on_display
+Vultee,SNV,1,,Valiant,,fixed_wing,monoplane,military,trainer,1941,,BT-13A; Vultee Vibrator; BT13A; SNV1,National Naval Aviation Museum,on_display
 Sopwith,Camel,F.1,,,,fixed_wing,biplane,military,fighter,,,,National Naval Aviation Museum,on_display
-Martin,SP-5,B,135553,Marlin,,fixed_wing,monoplane,military,recon,,,,National Naval Aviation Museum,on_display
+Martin,SP-5,B,135553,Marlin,,fixed_wing,monoplane,military,recon,,,SP5,National Naval Aviation Museum,on_display
 Winzen Research,Strato-Lab,,,,,lighter_than_air,,military,sounding,,,,National Naval Aviation Museum,on_display
-Thomas-Morse,S-4,C,A-5858,Scout,,fixed_wing,biplane,military,trainer,,,S-5 floatplane conversion,National Naval Aviation Museum,on_display
-North American,T-2,,,Buckeye,,fixed_wing,monoplane,military,trainer,,,,National Naval Aviation Museum,on_display
-North American,T-28,B,138326,Trojan,,fixed_wing,monoplane,military,trainer,,,,National Naval Aviation Museum,on_display
-Northrop,T-38,,,Talon,,fixed_wing,monoplane,military,trainer,,,,National Naval Aviation Museum,on_display
-North American Rockwell,CT-39,G,,Sabreliner,,fixed_wing,monoplane,military,transport,,,T-39D,National Naval Aviation Museum,on_display
-Temco,TT-1,,,Pinto,,fixed_wing,monoplane,military,trainer,,,,National Naval Aviation Museum,on_display
-Vought,VE-7,,,Bluebird,,fixed_wing,biplane,military,trainer,,,replica by Vought Aircraft Heritage Foundation,National Naval Aviation Museum,on_display
-Sikorsky,VH-3,A,150613,Sea King,,rotary_wing,,military,transport,,,Marine One,National Naval Aviation Museum,on_display
+Thomas-Morse,S-4,C,A-5858,Scout,,fixed_wing,biplane,military,trainer,,S-5 floatplane conversion,S4,National Naval Aviation Museum,on_display
+North American,T-2,,,Buckeye,,fixed_wing,monoplane,military,trainer,,,T2,National Naval Aviation Museum,on_display
+North American,T-28,B,138326,Trojan,,fixed_wing,monoplane,military,trainer,,,T28,National Naval Aviation Museum,on_display
+Northrop,T-38,,,Talon,,fixed_wing,monoplane,military,trainer,,,T38,National Naval Aviation Museum,on_display
+North American Rockwell,CT-39,G,,Sabreliner,,fixed_wing,monoplane,military,transport,,,T-39D; CT39; T39D,National Naval Aviation Museum,on_display
+Temco,TT-1,,,Pinto,,fixed_wing,monoplane,military,trainer,,,TT1,National Naval Aviation Museum,on_display
+Vought,VE-7,,,Bluebird,,fixed_wing,biplane,military,trainer,,replica by Vought Aircraft Heritage Foundation,VE7,National Naval Aviation Museum,on_display
+Sikorsky,VH-3,A,150613,Sea King,,rotary_wing,,military,transport,,,Marine One; VH3,National Naval Aviation Museum,on_display

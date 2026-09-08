@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-McDonnell,F-101,F,58-0269,Voodoo,,fixed_wing,monoplane,military,fighter,,,recorded as an F-101B by one source and an F-101F by another,James J. Eagan Center,on_display
+McDonnell,F-101,F,58-0269,Voodoo,,fixed_wing,monoplane,military,fighter,,recorded as an F-101B by one source and an F-101F by another,F101,James J. Eagan Center,on_display

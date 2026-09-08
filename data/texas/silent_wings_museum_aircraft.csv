@@ -1,11 +1,11 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Waco,CG-4,A,45-15691,Hadrian,,fixed_wing,monoplane,military,transport,1945,,assault glider;restored indoor centrepiece,Silent Wings Museum,on_display
-Waco,CG-4,A,,Hadrian,,fixed_wing,monoplane,military,transport,,,front fuselage and nose section only;serial not established,Silent Wings Museum,on_display
-Airspeed,AS.58,,,Horsa,,fixed_wing,monoplane,military,transport,,,replica under construction as a living exhibit,Silent Wings Museum,under_restoration
-Laister-Kauffman,TG-4,A,N58178,,,fixed_wing,monoplane,military,trainer,1942,,training glider;coded 78,Silent Wings Museum,on_display
-Schweizer,TG-2,,N47902,,,fixed_wing,monoplane,military,trainer,1942,,training glider,Silent Wings Museum,on_display
-Schweizer,TG-3,A,N64307,,,fixed_wing,monoplane,military,trainer,1942,,training glider,Silent Wings Museum,on_display
-Pratt-Read,TG-32,,,,,fixed_wing,monoplane,military,trainer,1943,,training glider;registration not established,Silent Wings Museum,on_display
-Coffman,Glider,,,,,fixed_wing,monoplane,civilian,experimental,,,registration not established,Silent Wings Museum,on_display
-Aeronca,L-3,D,,Grasshopper,,fixed_wing,monoplane,military,utility,1942,,marked 236639 which is a marking read off the airframe rather than a confirmed serial,Silent Wings Museum,on_display
-Douglas,C-47,J,,Skytrain,,fixed_wing,monoplane,military,transport,1944,,SC-47J;outdoor gate guard in front of the museum;marked 17278 which is a marking not a confirmed serial,Silent Wings Museum,on_display
+Waco,CG-4,A,45-15691,Hadrian,,fixed_wing,monoplane,military,transport,1945,assault glider; restored indoor centrepiece,CG4,Silent Wings Museum,on_display
+Waco,CG-4,A,,Hadrian,,fixed_wing,monoplane,military,transport,,front fuselage and nose section only; serial not established,CG4,Silent Wings Museum,on_display
+Airspeed,AS.58,,,Horsa,,fixed_wing,monoplane,military,transport,,replica under construction as a living exhibit,,Silent Wings Museum,under_restoration
+Laister-Kauffman,TG-4,A,N58178,,,fixed_wing,monoplane,military,trainer,1942,training glider; coded 78,TG4,Silent Wings Museum,on_display
+Schweizer,TG-2,,N47902,,,fixed_wing,monoplane,military,trainer,1942,training glider,TG2,Silent Wings Museum,on_display
+Schweizer,TG-3,A,N64307,,,fixed_wing,monoplane,military,trainer,1942,training glider,TG3,Silent Wings Museum,on_display
+Pratt-Read,TG-32,,,,,fixed_wing,monoplane,military,trainer,1943,training glider; registration not established,TG32,Silent Wings Museum,on_display
+Coffman,Glider,,,,,fixed_wing,monoplane,civilian,experimental,,registration not established,,Silent Wings Museum,on_display
+Aeronca,L-3,D,,Grasshopper,,fixed_wing,monoplane,military,utility,1942,marked 236639 which is a marking read off the airframe rather than a confirmed serial,L3,Silent Wings Museum,on_display
+Douglas,C-47,J,,Skytrain,,fixed_wing,monoplane,military,transport,1944,outdoor gate guard in front of the museum; marked 17278 which is a marking not a confirmed serial,SC-47J; C47; SC47J,Silent Wings Museum,on_display

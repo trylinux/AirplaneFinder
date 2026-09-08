@@ -1,8 +1,8 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Republic,F-84,F,52-6675,Thunderstreak,,fixed_wing,monoplane,military,fighter,,,outdoors,Coffeyville Aviation Heritage Museum,on_display
-Funk,B,,N22678,,,fixed_wing,monoplane,civilian,private,1939,,c/n 5;historic registration NC22678;Coffeyville-built,Coffeyville Aviation Heritage Museum,on_display
-Funk,B,75L,N34768,,,fixed_wing,monoplane,civilian,private,,,c/n 215,Coffeyville Aviation Heritage Museum,on_display
-Funk,B,85C,N77704,,,fixed_wing,monoplane,civilian,private,,,c/n 334;last registered to Emil W Roesky,Coffeyville Aviation Heritage Museum,on_display
-Brock,KB-2,,N171TC,,,rotary_wing,,civilian,experimental,1995,,gyroplane c/n TC-6 built by T L Cory,Coffeyville Aviation Heritage Museum,on_display
-Mitchell,U-2,,,Superwing,,fixed_wing,monoplane,civilian,experimental,,,flying-wing ultralight with a 34-foot span,Coffeyville Aviation Heritage Museum,on_display
-Curtiss,JN-4,,,Jenny,,fixed_wing,biplane,military,trainer,,,almost certainly a replica;mentioned by Kansas Tourism December 2025;unverified,Coffeyville Aviation Heritage Museum,on_display
+Republic,F-84,F,52-6675,Thunderstreak,,fixed_wing,monoplane,military,fighter,,outdoors,F84,Coffeyville Aviation Heritage Museum,on_display
+Funk,B,,N22678,,,fixed_wing,monoplane,civilian,private,1939,historic registration NC22678,c/n 5; Coffeyville-built,Coffeyville Aviation Heritage Museum,on_display
+Funk,B,75L,N34768,,,fixed_wing,monoplane,civilian,private,,,c/n 215; B75L,Coffeyville Aviation Heritage Museum,on_display
+Funk,B,85C,N77704,,,fixed_wing,monoplane,civilian,private,,last registered to Emil W Roesky,c/n 334; B85C,Coffeyville Aviation Heritage Museum,on_display
+Brock,KB-2,,N171TC,,,rotary_wing,,civilian,experimental,1995,gyroplane c/n TC-6 built by T L Cory,KB2,Coffeyville Aviation Heritage Museum,on_display
+Mitchell,U-2,,,Superwing,,fixed_wing,monoplane,civilian,experimental,,flying-wing ultralight with a 34-foot span,U2,Coffeyville Aviation Heritage Museum,on_display
+Curtiss,JN-4,,,Jenny,,fixed_wing,biplane,military,trainer,,almost certainly a replica; mentioned by Kansas Tourism December 2025; unverified,JN4,Coffeyville Aviation Heritage Museum,on_display

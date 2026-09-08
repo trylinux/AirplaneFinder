@@ -1,47 +1,47 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Boeing,B-29,A,44-62022,Superfortress,Peachy,fixed_wing,monoplane,military,bomber,,,c/n 11499;B-29A-60-BN;35 combat missions from Tinian;donated 1976;moved indoors 2005;hangar 1,Pueblo Weisbrod Aircraft Museum,on_display
-Douglas,A-26,C,44-35892,Invader,,fixed_wing,monoplane,military,bomber,,,c/n 29171;ex-N4811E;the first aircraft to arrive 30 June 1972;the museum calls it an A-26B,Pueblo Weisbrod Aircraft Museum,on_display
-Boeing,B-47,E,53-2104,Stratojet,,fixed_wing,monoplane,military,bomber,,,NB-47E test configuration;c/n 44450;ex-N1045Y;outdoors,Pueblo Weisbrod Aircraft Museum,on_display
-Boeing,B-52,F,57-0048,Stratofortress,,fixed_wing,monoplane,military,bomber,,,nose and cockpit section only;GB-52F ground trainer;c/n 17442;outdoors,Pueblo Weisbrod Aircraft Museum,on_display
-Lockheed,C-130,E,70-1259,Hercules,,fixed_wing,monoplane,military,transport,,,nose section only;c/n 4404;the museum calls it a C-130B,Pueblo Weisbrod Aircraft Museum,on_display
-Lockheed,P-2,E,128402,Neptune,,fixed_wing,monoplane,military,recon,,,SP-2E ex-P2V-5;c/n 426-5248;painted as BuNo 151353 of VP-19;outdoors,Pueblo Weisbrod Aircraft Museum,on_display
-Douglas,C-47,H,17217,Skytrain,,fixed_wing,monoplane,military,transport,,,US Navy R4D-5 BuNo 17217;c/n 13227;ex-N64605;USAAF serial 42-93328,Pueblo Weisbrod Aircraft Museum,on_display
-Fairchild,C-119,F,131688,Flying Boxcar,,fixed_wing,monoplane,military,transport,,,USMC R4Q-2 BuNo 131688;c/n 10855;ex-N99574;outdoors,Pueblo Weisbrod Aircraft Museum,on_display
-Convair,C-131,A,52-5794,Samaritan,,fixed_wing,monoplane,military,transport,,,HC-131A US Coast Guard 5794;c/n 53-14;ex-N3999P;interior open to visitors,Pueblo Weisbrod Aircraft Museum,on_display
-North American,RA-5,C,151629,Vigilante,,fixed_wing,monoplane,military,recon,,,c/n 283-35;RVAH-3 markings 314;hangar 2,Pueblo Weisbrod Aircraft Museum,on_display
-Douglas,A-4,C,147702,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,ex-A4D-2N;c/n 12466;VMA-214 markings,Pueblo Weisbrod Aircraft Museum,on_display
-Douglas,F-6,A,134936,Skyray,,fixed_wing,monoplane,military,fighter,,,ex-F4D-1;c/n 10530;ex-N4263;AJ-105 markings,Pueblo Weisbrod Aircraft Museum,on_display
-Vought,F-8,A,145349,Crusader,,fixed_wing,monoplane,military,fighter,,,ex-F8U-1;c/n 275;the museum site misprints the BuNo as 145394,Pueblo Weisbrod Aircraft Museum,on_display
-Grumman,F9F,8,138876,Cougar,,fixed_wing,monoplane,military,fighter,,,white and red ATU-202 training scheme,Pueblo Weisbrod Aircraft Museum,on_display
-Grumman,F-11,A,141853,Tiger,,fixed_wing,monoplane,military,fighter,,,ex-F11F-1;c/n 170;in-flight reverse-thrust test aircraft,Pueblo Weisbrod Aircraft Museum,on_display
-McDonnell Douglas,F-15,C,79-0022,Eagle,,fixed_wing,monoplane,military,fighter,,,F-15C-24-MC c/n 0554/C091;shot down an Iraqi MiG-23 on 28 January 1991 flown by Capt Donald Watrous,Pueblo Weisbrod Aircraft Museum,on_display
-General Dynamics,F-16,A,80-0499,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,,Block 10C;c/n 61-220,Pueblo Weisbrod Aircraft Museum,on_display
-Fairchild Republic,A-10,A,,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,,,arrived 19 June 2025 on NMUSAF loan;the museum states 64 Desert Storm combat missions;serial not published;outdoors,Pueblo Weisbrod Aircraft Museum,on_display
-Lockheed,F-80,C,49-1872,Shooting Star,,fixed_wing,monoplane,military,fighter,,,painted as 49-1872;Aerial Visuals identifies the airframe as ex-Ecuadorian AF TF-872 c/n 080-2699;outdoors,Pueblo Weisbrod Aircraft Museum,on_display
-Lockheed,T-33,B,137939,Shooting Star,,fixed_wing,monoplane,military,trainer,,,US Navy TV-2;c/n 580-8582;the museum site misprints the BuNo as 137936;USMC colours,Pueblo Weisbrod Aircraft Museum,on_display
-Republic,F-84,C,47-1562,Thunderjet,,fixed_wing,monoplane,military,fighter,,,FS-562 markings;pylon-mounted outdoors,Pueblo Weisbrod Aircraft Museum,on_display
-North American,F-86,D,52-3653,Sabre,,fixed_wing,monoplane,military,fighter,,,c/n 190-56;Colorado ANG colours,Pueblo Weisbrod Aircraft Museum,on_display
-North American,F-100,D,55-3503,Super Sabre,,fixed_wing,monoplane,military,fighter,,,F-100D-20-NA c/n 223-185;Thunderbirds colours;outdoors,Pueblo Weisbrod Aircraft Museum,on_display
-Lockheed,F-104,A,55-2967,Starfighter,,fixed_wing,monoplane,military,fighter,,,YF-104A later GF-104A;c/n 183-1013;ex-USAF Academy,Pueblo Weisbrod Aircraft Museum,on_display
-Mikoyan-Gurevich,MiG-15,bis,1B01205,Fagot,,fixed_wing,monoplane,military,fighter,,,Polish-built WSK-Mielec Lim-2;c/n 1B 012-05;ex-N205JM;painted 546;hangar 1,Pueblo Weisbrod Aircraft Museum,on_display
-Mikoyan-Gurevich,MiG-17,F,1C1303,Fresco,,fixed_wing,monoplane,military,fighter,,,Polish-built WSK-Mielec Lim-5;c/n 1C 13-03;painted 303;the museum calls it a Lim-6,Pueblo Weisbrod Aircraft Museum,on_display
-North American,T-28,C,140064,Trojan,,fixed_wing,monoplane,military,trainer,,,c/n 226-12;ex-N55534;outdoors,Pueblo Weisbrod Aircraft Museum,on_display
-Beechcraft,T-34,B,144018,Mentor,,fixed_wing,monoplane,military,trainer,,,Beech D45;c/n BG-325;ex-N2086U,Pueblo Weisbrod Aircraft Museum,on_display
-Cessna,T-37,B,67-22253,Tweet,,fixed_wing,monoplane,military,trainer,,,c/n 41062,Pueblo Weisbrod Aircraft Museum,on_display
-Stearman,PT-13,D,42-17780,Kaydet,,fixed_wing,biplane,military,trainer,,,c/n 75-5943;ex-N75857;the museum lists it as a 1942 PT-17;presence flagged unconfirmed by Aerial Visuals,Pueblo Weisbrod Aircraft Museum,on_display
-Piper,J-3,,,Cub,,fixed_wing,monoplane,civilian,private,,,the museum lists it as a 1942 L-4 or J-3 Cub;registration not published,Pueblo Weisbrod Aircraft Museum,on_display
-Steen,Skybolt,,,,,fixed_wing,biplane,civilian,experimental,,,homebuilt aerobatic biplane;on loan from the Colorado Aviation Historical Society,Pueblo Weisbrod Aircraft Museum,on_display
-Learjet,35,,N999MF,,,fixed_wing,monoplane,civilian,transport,,,registration since cancelled and re-reserved so treat as painted marks;outdoors,Pueblo Weisbrod Aircraft Museum,on_display
-Learjet,25,,,,,fixed_wing,monoplane,civilian,transport,,,registration not published;outdoors,Pueblo Weisbrod Aircraft Museum,on_display
-Supermarine,Spitfire,I,,Spitfire,,fixed_wing,monoplane,military,fighter,,,replica;full scale;outdoors,Pueblo Weisbrod Aircraft Museum,on_display
-Royal Aircraft Factory,S.E.5,,,,,fixed_wing,biplane,military,fighter,,,replica at 7/8 scale;hangar 1,Pueblo Weisbrod Aircraft Museum,on_display
-SPAD,S.XIII,,,,,fixed_wing,biplane,military,fighter,,,replica at half scale,Pueblo Weisbrod Aircraft Museum,on_display
-Bleriot,XI,,,,,fixed_wing,monoplane,civilian,experimental,,,replica;hangar 1,Pueblo Weisbrod Aircraft Museum,on_display
-Boeing,P-26,,,Peashooter,,fixed_wing,monoplane,military,fighter,,,on the museum's 2026 collection page;almost certainly a replica since only two originals survive elsewhere;outdoors,Pueblo Weisbrod Aircraft Museum,on_display
-Bell,OH-13,E,14941,Sioux,,rotary_wing,,military,utility,,,Aerial Visuals identifies it as TH-13T 67-15963 ex-N14941;displayed in a MASH scheme,Pueblo Weisbrod Aircraft Museum,on_display
-Bell,UH-1,H,72-21508,Iroquois,,rotary_wing,,military,utility,,,c/n 13207;the museum calls it a UH-1D medevac,Pueblo Weisbrod Aircraft Museum,on_display
-Bell,UH-1,M,65-9484,Iroquois,,rotary_wing,,military,ground_attack,,,gunship configuration;c/n 1384;some sources list it as a UH-1C,Pueblo Weisbrod Aircraft Museum,on_display
-Bell,OH-58,A,69-16271,Kiowa,,rotary_wing,,military,recon,,,on loan from the Colorado Aviation Historical Society,Pueblo Weisbrod Aircraft Museum,on_display
-Piasecki,H-21,B,53-4347,Workhorse,,rotary_wing,,military,transport,,,CH-21B;c/n B.97;painted 0-34347,Pueblo Weisbrod Aircraft Museum,on_display
-Sikorsky,SH-34,J,148002,Seabat,,rotary_wing,,military,utility,,,ex-HSS-1N;c/n 58-1254;the museum says it recovered Alan Shepard's Freedom 7 capsule in 1961,Pueblo Weisbrod Aircraft Museum,on_display
-McDonnell Douglas,F-4,D,,Phantom II,,fixed_wing,monoplane,military,fighter,,,nose and cockpit section only used as a flight simulator;serial not published,Pueblo Weisbrod Aircraft Museum,on_display
+Boeing,B-29,A,44-62022,Superfortress,Peachy,fixed_wing,monoplane,military,bomber,,35 combat missions from Tinian; donated 1976; moved indoors 2005; hangar 1,c/n 11499; B-29A-60-BN; B29,Pueblo Weisbrod Aircraft Museum,on_display
+Douglas,A-26,C,44-35892,Invader,,fixed_wing,monoplane,military,bomber,,ex-N4811E; the first aircraft to arrive 30 June 1972; the museum calls it an A-26B,c/n 29171; N4811E; A26,Pueblo Weisbrod Aircraft Museum,on_display
+Boeing,B-47,E,53-2104,Stratojet,,fixed_wing,monoplane,military,bomber,,NB-47E test configuration; ex-N1045Y; outdoors,c/n 44450; N1045Y; B47,Pueblo Weisbrod Aircraft Museum,on_display
+Boeing,B-52,F,57-0048,Stratofortress,,fixed_wing,monoplane,military,bomber,,nose and cockpit section only; GB-52F ground trainer; outdoors,c/n 17442; B52,Pueblo Weisbrod Aircraft Museum,on_display
+Lockheed,C-130,E,70-1259,Hercules,,fixed_wing,monoplane,military,transport,,nose section only; the museum calls it a C-130B,c/n 4404; C130,Pueblo Weisbrod Aircraft Museum,on_display
+Lockheed,P-2,E,128402,Neptune,,fixed_wing,monoplane,military,recon,,SP-2E ex-P2V-5; painted as BuNo 151353 of VP-19; outdoors,c/n 426-5248; P2,Pueblo Weisbrod Aircraft Museum,on_display
+Douglas,C-47,H,17217,Skytrain,,fixed_wing,monoplane,military,transport,,US Navy R4D-5 BuNo 17217; ex-N64605; USAAF serial 42-93328,c/n 13227; N64605; 42-93328; C47,Pueblo Weisbrod Aircraft Museum,on_display
+Fairchild,C-119,F,131688,Flying Boxcar,,fixed_wing,monoplane,military,transport,,USMC R4Q-2 BuNo 131688; ex-N99574; outdoors,c/n 10855; N99574; C119,Pueblo Weisbrod Aircraft Museum,on_display
+Convair,C-131,A,52-5794,Samaritan,,fixed_wing,monoplane,military,transport,,HC-131A US Coast Guard 5794; ex-N3999P; interior open to visitors,c/n 53-14; N3999P; C131,Pueblo Weisbrod Aircraft Museum,on_display
+North American,RA-5,C,151629,Vigilante,,fixed_wing,monoplane,military,recon,,RVAH-3 markings 314; hangar 2,c/n 283-35; RA5,Pueblo Weisbrod Aircraft Museum,on_display
+Douglas,A-4,C,147702,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,ex-A4D-2N; VMA-214 markings,c/n 12466; A4,Pueblo Weisbrod Aircraft Museum,on_display
+Douglas,F-6,A,134936,Skyray,,fixed_wing,monoplane,military,fighter,,ex-F4D-1; ex-N4263; AJ-105 markings,F4D-1; c/n 10530; N4263; F6,Pueblo Weisbrod Aircraft Museum,on_display
+Vought,F-8,A,145349,Crusader,,fixed_wing,monoplane,military,fighter,,ex-F8U-1; the museum site misprints the BuNo as 145394,F8U-1; c/n 275; F8,Pueblo Weisbrod Aircraft Museum,on_display
+Grumman,F9F,8,138876,Cougar,,fixed_wing,monoplane,military,fighter,,white and red ATU-202 training scheme,,Pueblo Weisbrod Aircraft Museum,on_display
+Grumman,F-11,A,141853,Tiger,,fixed_wing,monoplane,military,fighter,,ex-F11F-1; in-flight reverse-thrust test aircraft,F11F-1; c/n 170; F11,Pueblo Weisbrod Aircraft Museum,on_display
+McDonnell Douglas,F-15,C,79-0022,Eagle,,fixed_wing,monoplane,military,fighter,,F-15C-24-MC c/n 0554/C091; shot down an Iraqi MiG-23 on 28 January 1991 flown by Capt Donald Watrous,F15,Pueblo Weisbrod Aircraft Museum,on_display
+General Dynamics,F-16,A,80-0499,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,,Block 10C; c/n 61-220; F16,Pueblo Weisbrod Aircraft Museum,on_display
+Fairchild Republic,A-10,A,,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,,arrived 19 June 2025 on NMUSAF loan; the museum states 64 Desert Storm combat missions; serial not published; outdoors,A10,Pueblo Weisbrod Aircraft Museum,on_display
+Lockheed,F-80,C,49-1872,Shooting Star,,fixed_wing,monoplane,military,fighter,,painted as 49-1872; Aerial Visuals identifies the airframe as ex-Ecuadorian AF TF-872 c/n 080-2699; outdoors,49-1872; F80,Pueblo Weisbrod Aircraft Museum,on_display
+Lockheed,T-33,B,137939,Shooting Star,,fixed_wing,monoplane,military,trainer,,US Navy TV-2; the museum site misprints the BuNo as 137936; USMC colours,c/n 580-8582; T33,Pueblo Weisbrod Aircraft Museum,on_display
+Republic,F-84,C,47-1562,Thunderjet,,fixed_wing,monoplane,military,fighter,,FS-562 markings; pylon-mounted outdoors,F84,Pueblo Weisbrod Aircraft Museum,on_display
+North American,F-86,D,52-3653,Sabre,,fixed_wing,monoplane,military,fighter,,Colorado ANG colours,c/n 190-56; F86,Pueblo Weisbrod Aircraft Museum,on_display
+North American,F-100,D,55-3503,Super Sabre,,fixed_wing,monoplane,military,fighter,,F-100D-20-NA c/n 223-185; Thunderbirds colours; outdoors,F100,Pueblo Weisbrod Aircraft Museum,on_display
+Lockheed,F-104,A,55-2967,Starfighter,,fixed_wing,monoplane,military,fighter,,YF-104A later GF-104A; ex-USAF Academy,c/n 183-1013; F104,Pueblo Weisbrod Aircraft Museum,on_display
+Mikoyan-Gurevich,MiG-15,bis,1B01205,Fagot,,fixed_wing,monoplane,military,fighter,,ex-N205JM; painted 546; hangar 1,Polish-built WSK-Mielec Lim-2; c/n 1B 012-05; N205JM; MiG15,Pueblo Weisbrod Aircraft Museum,on_display
+Mikoyan-Gurevich,MiG-17,F,1C1303,Fresco,,fixed_wing,monoplane,military,fighter,,painted 303; the museum calls it a Lim-6,Polish-built WSK-Mielec Lim-5; c/n 1C 13-03; MiG17,Pueblo Weisbrod Aircraft Museum,on_display
+North American,T-28,C,140064,Trojan,,fixed_wing,monoplane,military,trainer,,ex-N55534; outdoors,c/n 226-12; N55534; T28,Pueblo Weisbrod Aircraft Museum,on_display
+Beechcraft,T-34,B,144018,Mentor,,fixed_wing,monoplane,military,trainer,,ex-N2086U,Beech D45; c/n BG-325; N2086U; T34,Pueblo Weisbrod Aircraft Museum,on_display
+Cessna,T-37,B,67-22253,Tweet,,fixed_wing,monoplane,military,trainer,,,c/n 41062; T37,Pueblo Weisbrod Aircraft Museum,on_display
+Stearman,PT-13,D,42-17780,Kaydet,,fixed_wing,biplane,military,trainer,,ex-N75857; the museum lists it as a 1942 PT-17; presence flagged unconfirmed by Aerial Visuals,c/n 75-5943; N75857; PT13,Pueblo Weisbrod Aircraft Museum,on_display
+Piper,J-3,,,Cub,,fixed_wing,monoplane,civilian,private,,the museum lists it as a 1942 L-4 or J-3 Cub; registration not published,J3,Pueblo Weisbrod Aircraft Museum,on_display
+Steen,Skybolt,,,,,fixed_wing,biplane,civilian,experimental,,homebuilt aerobatic biplane; on loan from the Colorado Aviation Historical Society,,Pueblo Weisbrod Aircraft Museum,on_display
+Learjet,35,,N999MF,,,fixed_wing,monoplane,civilian,transport,,registration since cancelled and re-reserved so treat as painted marks; outdoors,,Pueblo Weisbrod Aircraft Museum,on_display
+Learjet,25,,,,,fixed_wing,monoplane,civilian,transport,,registration not published; outdoors,,Pueblo Weisbrod Aircraft Museum,on_display
+Supermarine,Spitfire,I,,Spitfire,,fixed_wing,monoplane,military,fighter,,replica; full scale; outdoors,,Pueblo Weisbrod Aircraft Museum,on_display
+Royal Aircraft Factory,S.E.5,,,,,fixed_wing,biplane,military,fighter,,replica at 7/8 scale; hangar 1,,Pueblo Weisbrod Aircraft Museum,on_display
+SPAD,S.XIII,,,,,fixed_wing,biplane,military,fighter,,replica at half scale,,Pueblo Weisbrod Aircraft Museum,on_display
+Bleriot,XI,,,,,fixed_wing,monoplane,civilian,experimental,,replica; hangar 1,,Pueblo Weisbrod Aircraft Museum,on_display
+Boeing,P-26,,,Peashooter,,fixed_wing,monoplane,military,fighter,,on the museum's 2026 collection page; almost certainly a replica since only two originals survive elsewhere; outdoors,P26,Pueblo Weisbrod Aircraft Museum,on_display
+Bell,OH-13,E,14941,Sioux,,rotary_wing,,military,utility,,Aerial Visuals identifies it as TH-13T 67-15963 ex-N14941; displayed in a MASH scheme,OH13,Pueblo Weisbrod Aircraft Museum,on_display
+Bell,UH-1,H,72-21508,Iroquois,,rotary_wing,,military,utility,,the museum calls it a UH-1D medevac,c/n 13207; UH1,Pueblo Weisbrod Aircraft Museum,on_display
+Bell,UH-1,M,65-9484,Iroquois,,rotary_wing,,military,ground_attack,,gunship configuration; some sources list it as a UH-1C,c/n 1384; UH1,Pueblo Weisbrod Aircraft Museum,on_display
+Bell,OH-58,A,69-16271,Kiowa,,rotary_wing,,military,recon,,on loan from the Colorado Aviation Historical Society,OH58,Pueblo Weisbrod Aircraft Museum,on_display
+Piasecki,H-21,B,53-4347,Workhorse,,rotary_wing,,military,transport,,painted 0-34347,CH-21B; c/n B.97; H21; CH21B,Pueblo Weisbrod Aircraft Museum,on_display
+Sikorsky,SH-34,J,148002,Seabat,,rotary_wing,,military,utility,,ex-HSS-1N; the museum says it recovered Alan Shepard's Freedom 7 capsule in 1961,HSS-1N; c/n 58-1254; SH34; HSS1N,Pueblo Weisbrod Aircraft Museum,on_display
+McDonnell Douglas,F-4,D,,Phantom II,,fixed_wing,monoplane,military,fighter,,nose and cockpit section only used as a flight simulator; serial not published,F4,Pueblo Weisbrod Aircraft Museum,on_display

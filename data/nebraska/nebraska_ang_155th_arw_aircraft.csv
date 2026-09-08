@@ -1,5 +1,5 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-North American,F-86,D,53-0831,Sabre,,fixed_wing,monoplane,military,fighter,,,c/n 201-275;one source lists this airframe as F-86L 52-3760,Nebraska Air National Guard 155th ARW Air Park,on_display
-Lockheed,T-33,A,52-9264,Shooting Star,,fixed_wing,monoplane,military,trainer,,,c/n 580-7330,Nebraska Air National Guard 155th ARW Air Park,on_display
-Republic,RF-84,F,51-11259,Thunderflash,,fixed_wing,monoplane,military,recon,,,c/n 140,Nebraska Air National Guard 155th ARW Air Park,on_display
-McDonnell,RF-4,C,64-0998,Phantom II,,fixed_wing,monoplane,military,recon,,,c/n 0661,Nebraska Air National Guard 155th ARW Air Park,on_display
+North American,F-86,D,53-0831,Sabre,,fixed_wing,monoplane,military,fighter,,one source lists this airframe as F-86L 52-3760,c/n 201-275; F86,Nebraska Air National Guard 155th ARW Air Park,on_display
+Lockheed,T-33,A,52-9264,Shooting Star,,fixed_wing,monoplane,military,trainer,,,c/n 580-7330; T33,Nebraska Air National Guard 155th ARW Air Park,on_display
+Republic,RF-84,F,51-11259,Thunderflash,,fixed_wing,monoplane,military,recon,,,c/n 140; RF84,Nebraska Air National Guard 155th ARW Air Park,on_display
+McDonnell,RF-4,C,64-0998,Phantom II,,fixed_wing,monoplane,military,recon,,,c/n 0661; RF4,Nebraska Air National Guard 155th ARW Air Park,on_display

@@ -1,5 +1,5 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Douglas,DC-3,362,NC1945,,,fixed_wing,monoplane,civilian,commercial_transport,1941,,under engine overhaul;the museum has been locked out of its hangar since 2023,Airline History Museum,under_restoration
+Douglas,DC-3,362,NC1945,,,fixed_wing,monoplane,civilian,commercial_transport,1941,under engine overhaul; the museum has been locked out of its hangar since 2023,DC3,Airline History Museum,under_restoration
 Martin,4-0-4,,N145S,Skyliner,,fixed_wing,monoplane,civilian,commercial_transport,,,,Airline History Museum,in_storage
-Lockheed,L-1011,1,N31019,TriStar,,fixed_wing,monoplane,civilian,commercial_transport,1974,,c/n 193B-1066;ex-TWA;flown in as N700TS in April 2009;registered to Save A Connie Inc;reported at risk of scrapping after a June 2026 deadline,Airline History Museum,in_storage
-Ryan,PT-22,,,Recruit,,fixed_wing,monoplane,military,trainer,,,acquired 2020;registration not published,Airline History Museum,in_storage
+Lockheed,L-1011,1,N31019,TriStar,,fixed_wing,monoplane,civilian,commercial_transport,1974,ex-TWA; flown in as N700TS in April 2009; registered to Save A Connie Inc; reported at risk of scrapping after a June 2026 deadline,c/n 193B-1066,Airline History Museum,in_storage
+Ryan,PT-22,,,Recruit,,fixed_wing,monoplane,military,trainer,,acquired 2020; registration not published,PT22,Airline History Museum,in_storage

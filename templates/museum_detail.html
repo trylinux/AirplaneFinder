@@ -1,0 +1,106 @@
+{% extends "mobile/base.html" if is_mobile else "base.html" %}
+{% block title %}{{ museum.name }} — Aircraft Finder{% endblock %}
+{% block nav_museums %}active{% endblock %}
+
+{% block head %}
+<meta name="description" content="{{ museum.name }} in {{ [museum.city, museum.state_province, museum.country] | select | join(', ') }} — {{ links | length }} aircraft on display.">
+{% endblock %}
+
+{% block content %}
+<a href="/museums" class="d-back"><i class="fa-solid fa-arrow-left"></i> Back to museums</a>
+
+<div class="d-head">
+    <h1><i class="fa-solid fa-building-columns"></i> {{ museum.name }}</h1>
+    <p class="d-sub">{{ [museum.city, museum.state_province, museum.country] | select | join(', ') }}</p>
+    <div class="d-headmeta">
+        <span class="d-badge">{{ museum.access_type | pretty_enum }}</span>
+        <span class="d-badge">{{ links | length }} aircraft</span>
+        {% if museum.region %}<span class="d-badge">{{ museum.region }}</span>{% endif %}
+    </div>
+</div>
+
+<div class="d-split">
+  <div>
+    <div class="d-card">
+        <h2><i class="fa-solid fa-plane"></i> Aircraft on display</h2>
+        {% if links %}
+        {% if links | length > 12 %}
+        <input type="text" id="ac-filter" class="d-filter" placeholder="Filter these {{ links | length }} aircraft…" autocomplete="off">
+        {% endif %}
+        <div class="d-list" id="ac-list">
+            {% for link in links %}
+            {% set a = link.aircraft %}
+            <a href="/aircraft/{{ a.id }}" class="d-item"
+               data-search="{{ [a.manufacturer, a.full_designation, a.model, a.model_name, a.aircraft_name, a.tail_number] | select | join(' ') | lower }}">
+                <div class="d-item-title">
+                    <span>{{ a.full_designation or a.model }}{% if a.model_name %} <span class="d-dim">{{ a.model_name }}</span>{% endif %}</span>
+                    {% if a.tail_number %}<span class="d-badge">{{ a.tail_number }}</span>{% endif %}
+                </div>
+                <div class="d-item-meta">
+                    <span>{{ a.manufacturer }}</span>
+                    {% if a.aircraft_name %}<span>"{{ a.aircraft_name }}"</span>{% endif %}
+                    {% if a.role_type %}<span>{{ a.role_type | pretty_enum }}</span>{% endif %}
+                    {% if a.year_built %}<span>{{ a.year_built }}</span>{% endif %}
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        <p class="d-empty" id="ac-none" hidden>No aircraft match that filter.</p>
+        {% else %}
+        <p class="d-empty">No aircraft are currently recorded on display here.</p>
+        {% endif %}
+    </div>
+  </div>
+
+  <div>
+    <div class="d-card">
+        <h2><i class="fa-solid fa-circle-info"></i> Visiting</h2>
+        <div class="d-specs">
+            {% if museum.address %}<div><span class="d-spec-label">Address</span><span class="d-spec-value">{{ museum.address }}</span></div>{% endif %}
+            {% if museum.postal_code %}<div><span class="d-spec-label">Postal code</span><span class="d-spec-value">{{ museum.postal_code }}</span></div>{% endif %}
+            <div><span class="d-spec-label">Access</span><span class="d-spec-value">{{ museum.access_type | pretty_enum }}</span></div>
+            {% if museum.latitude is not none and museum.longitude is not none %}
+            <div><span class="d-spec-label">Coordinates</span><span class="d-spec-value">{{ '%.4f' % museum.latitude }}, {{ '%.4f' % museum.longitude }}</span></div>
+            {% endif %}
+        </div>
+        {% if museum.access_type == 'appointment' %}
+        <p class="d-prose d-note">Viewing must be arranged in advance — contact the museum before travelling.</p>
+        {% elif museum.access_type == 'restricted' %}
+        <p class="d-prose d-note">This collection sits behind a controlled or military gate and is not open to general public access.</p>
+        {% endif %}
+    </div>
+
+    <div class="d-actions">
+        {% if museum.website %}
+        <a class="d-btn" href="{{ museum.website }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Official site</a>
+        {% endif %}
+        {% if museum.latitude is not none and museum.longitude is not none %}
+        <a class="d-btn secondary" href="https://www.google.com/maps/search/?api=1&query={{ museum.latitude }},{{ museum.longitude }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-map-location-dot"></i> Directions</a>
+        {% endif %}
+        <a class="d-btn secondary" href="/trips?museum_id={{ museum.id }}"><i class="fa-solid fa-route"></i> Plan a visit</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script nonce="{{ csp_nonce }}">
+/* Client-side filter over the already-rendered list. The list is server-
+   rendered so it works with JS off; this only narrows what is shown. */
+(function () {
+    var input = document.getElementById('ac-filter');
+    if (!input) return;
+    var items = Array.prototype.slice.call(document.querySelectorAll('#ac-list .d-item'));
+    var none = document.getElementById('ac-none');
+    input.addEventListener('input', function () {
+        var q = input.value.trim().toLowerCase(), shown = 0;
+        items.forEach(function (item) {
+            var hit = !q || item.dataset.search.indexOf(q) !== -1;
+            item.hidden = !hit;
+            if (hit) shown++;
+        });
+        none.hidden = shown !== 0;
+    });
+})();
+</script>
+{% endblock %}

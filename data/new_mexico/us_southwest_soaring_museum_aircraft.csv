@@ -1,44 +1,44 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-AB Sportine Aviacija,Genesis,2,LY-GEN,Genesis 2,,fixed_wing,monoplane,civilian,private,,,Lithuanian registration,US Southwest Soaring Museum,on_display
+AB Sportine Aviacija,Genesis,2,LY-GEN,Genesis 2,,fixed_wing,monoplane,civilian,private,,Lithuanian registration,,US Southwest Soaring Museum,on_display
 Advanced Soaring Concepts,Falcon,,N444VV,American Falcon,,fixed_wing,monoplane,civilian,private,,,,US Southwest Soaring Museum,on_display
-Applebay,Zia,,N202Z,Zia,,fixed_wing,monoplane,civilian,experimental,,,motorglider designed by founder George Applebay,US Southwest Soaring Museum,on_display
-Applebay,Zuni,,,Zuni,,fixed_wing,monoplane,civilian,experimental,,,registration not established,US Southwest Soaring Museum,on_display
-Bensen,B-8,M,N5317,,,rotary_wing,,civilian,experimental,,,a gyrocopter not a sailplane,US Southwest Soaring Museum,on_display
-Bowlus,BS-100,,N64JJ,Super Albatross,,fixed_wing,monoplane,civilian,private,,,,US Southwest Soaring Museum,on_display
-Briegleb,BG-12,B,N1352,,,fixed_wing,monoplane,civilian,experimental,,,Hoey-Johnson built,US Southwest Soaring Museum,on_display
-Campbell,CSG-1,,N112CC,,,fixed_wing,monoplane,civilian,experimental,,,,US Southwest Soaring Museum,on_display
-Fibera,KK-1,e,N1070,Utu,,fixed_wing,monoplane,civilian,private,,,Finnish design,US Southwest Soaring Museum,on_display
-Focke-Wulf,Weihe,50,YU-4048,Weihe,,fixed_wing,monoplane,civilian,private,,,DFS Weihe;Yugoslav registration,US Southwest Soaring Museum,on_display
-Frankfort,TG-1,A,NC54138,Cinema,,fixed_wing,monoplane,military,trainer,,,ex-USAAF training glider type,US Southwest Soaring Museum,on_display
-Frankfort,TG-1,A,NC54139,Cinema,,fixed_wing,monoplane,military,trainer,,,second example,US Southwest Soaring Museum,on_display
-Franklin,PS-2,,N452Y,Eaglet,,fixed_wing,monoplane,civilian,private,,,,US Southwest Soaring Museum,on_display
+Applebay,Zia,,N202Z,Zia,,fixed_wing,monoplane,civilian,experimental,,motorglider designed by founder George Applebay,,US Southwest Soaring Museum,on_display
+Applebay,Zuni,,,Zuni,,fixed_wing,monoplane,civilian,experimental,,registration not established,,US Southwest Soaring Museum,on_display
+Bensen,B-8,M,N5317,,,rotary_wing,,civilian,experimental,,a gyrocopter not a sailplane,B8,US Southwest Soaring Museum,on_display
+Bowlus,BS-100,,N64JJ,Super Albatross,,fixed_wing,monoplane,civilian,private,,,BS100,US Southwest Soaring Museum,on_display
+Briegleb,BG-12,B,N1352,,,fixed_wing,monoplane,civilian,experimental,,Hoey-Johnson built,BG12,US Southwest Soaring Museum,on_display
+Campbell,CSG-1,,N112CC,,,fixed_wing,monoplane,civilian,experimental,,,CSG1,US Southwest Soaring Museum,on_display
+Fibera,KK-1,e,N1070,Utu,,fixed_wing,monoplane,civilian,private,,Finnish design,KK1,US Southwest Soaring Museum,on_display
+Focke-Wulf,Weihe,50,YU-4048,Weihe,,fixed_wing,monoplane,civilian,private,,Yugoslav registration,DFS Weihe,US Southwest Soaring Museum,on_display
+Frankfort,TG-1,A,NC54138,Cinema,,fixed_wing,monoplane,military,trainer,,ex-USAAF training glider type,TG1,US Southwest Soaring Museum,on_display
+Frankfort,TG-1,A,NC54139,Cinema,,fixed_wing,monoplane,military,trainer,,second example,TG1,US Southwest Soaring Museum,on_display
+Franklin,PS-2,,N452Y,Eaglet,,fixed_wing,monoplane,civilian,private,,,PS2,US Southwest Soaring Museum,on_display
 Glasflugel,H303,,N235A,Mosquito,,fixed_wing,monoplane,civilian,private,,,,US Southwest Soaring Museum,on_display
 Glasflugel,H401,,N59LL,Kestrel,,fixed_wing,monoplane,civilian,private,,,,US Southwest Soaring Museum,on_display
 Strojnik,S2,A,N98HP,,,fixed_wing,monoplane,civilian,experimental,,,,US Southwest Soaring Museum,on_display
 Hall,Cherokee II,,N1510U,Cherokee II,,fixed_wing,monoplane,civilian,private,,,,US Southwest Soaring Museum,on_display
-IAR,IS-29,D,N11GR,,,fixed_wing,monoplane,civilian,private,,,Romanian,US Southwest Soaring Museum,on_display
-Jansson,BJ-1,B,N11BJ,Duster,,fixed_wing,monoplane,civilian,experimental,,,DSK Duster prototype,US Southwest Soaring Museum,on_display
-Kensrue,MSK-10,,,,,fixed_wing,monoplane,civilian,experimental,,,registration not established,US Southwest Soaring Museum,on_display
-Laister,LP-46,,N46LP,,,fixed_wing,monoplane,civilian,private,,,,US Southwest Soaring Museum,on_display
-Laister-Kauffman,LK-10,A,N53613,,,fixed_wing,monoplane,military,trainer,,,TG-4;US Demobbed records the military identity as unknown,US Southwest Soaring Museum,on_display
+IAR,IS-29,D,N11GR,,,fixed_wing,monoplane,civilian,private,,,Romanian; IS29,US Southwest Soaring Museum,on_display
+Jansson,BJ-1,B,N11BJ,Duster,,fixed_wing,monoplane,civilian,experimental,,DSK Duster prototype,BJ1,US Southwest Soaring Museum,on_display
+Kensrue,MSK-10,,,,,fixed_wing,monoplane,civilian,experimental,,registration not established,MSK10,US Southwest Soaring Museum,on_display
+Laister,LP-46,,N46LP,,,fixed_wing,monoplane,civilian,private,,,LP46,US Southwest Soaring Museum,on_display
+Laister-Kauffman,LK-10,A,N53613,,,fixed_wing,monoplane,military,trainer,,US Demobbed records the military identity as unknown,TG-4; LK10; TG4,US Southwest Soaring Museum,on_display
 McEwan,M-2-153,,N1376,,,fixed_wing,monoplane,civilian,experimental,,,,US Southwest Soaring Museum,on_display
 Monnett,Monerai,S,N9020C,,,fixed_wing,monoplane,civilian,experimental,,,,US Southwest Soaring Museum,on_display
-Moore,SS-1,,N4072B,,,fixed_wing,monoplane,civilian,experimental,,,,US Southwest Soaring Museum,on_display
-Nelson,PG-185,B,N68582,Hummingbird,,fixed_wing,monoplane,civilian,experimental,,,motorglider,US Southwest Soaring Museum,on_display
-Oldershaw,O-2,,N7799C,,,fixed_wing,monoplane,civilian,experimental,,,,US Southwest Soaring Museum,on_display
-Oldershaw,O-3,,N2560B,,,fixed_wing,monoplane,civilian,experimental,,,,US Southwest Soaring Museum,on_display
-Schleicher,Ka 4,,N791D,Rhonlerche II,,fixed_wing,monoplane,civilian,private,,,two-seat,US Southwest Soaring Museum,on_display
-Schleicher,Ka 4,,N7984,Rhonlerche II,,fixed_wing,monoplane,civilian,private,,,second example,US Southwest Soaring Museum,on_display
-Schleicher,Ka-6,CR,N424ES,Rhonsegler,,fixed_wing,monoplane,civilian,private,,,,US Southwest Soaring Museum,on_display
-Schleicher,Ka-6,E,N99DW,Rhonsegler,,fixed_wing,monoplane,civilian,private,,,,US Southwest Soaring Museum,on_display
-Schreder,HP-11,A,N251F,,,fixed_wing,monoplane,civilian,experimental,,,,US Southwest Soaring Museum,on_display
-Schreder,HP-11,A,N678P,,,fixed_wing,monoplane,civilian,experimental,,,second example,US Southwest Soaring Museum,on_display
-Schreder,HP-18,,N897EN,,,fixed_wing,monoplane,civilian,experimental,,,,US Southwest Soaring Museum,on_display
+Moore,SS-1,,N4072B,,,fixed_wing,monoplane,civilian,experimental,,,SS1,US Southwest Soaring Museum,on_display
+Nelson,PG-185,B,N68582,Hummingbird,,fixed_wing,monoplane,civilian,experimental,,motorglider,PG185,US Southwest Soaring Museum,on_display
+Oldershaw,O-2,,N7799C,,,fixed_wing,monoplane,civilian,experimental,,,O2,US Southwest Soaring Museum,on_display
+Oldershaw,O-3,,N2560B,,,fixed_wing,monoplane,civilian,experimental,,,O3,US Southwest Soaring Museum,on_display
+Schleicher,Ka 4,,N791D,Rhonlerche II,,fixed_wing,monoplane,civilian,private,,two-seat,,US Southwest Soaring Museum,on_display
+Schleicher,Ka 4,,N7984,Rhonlerche II,,fixed_wing,monoplane,civilian,private,,second example,,US Southwest Soaring Museum,on_display
+Schleicher,Ka-6,CR,N424ES,Rhonsegler,,fixed_wing,monoplane,civilian,private,,,Ka6,US Southwest Soaring Museum,on_display
+Schleicher,Ka-6,E,N99DW,Rhonsegler,,fixed_wing,monoplane,civilian,private,,,Ka6,US Southwest Soaring Museum,on_display
+Schreder,HP-11,A,N251F,,,fixed_wing,monoplane,civilian,experimental,,,HP11,US Southwest Soaring Museum,on_display
+Schreder,HP-11,A,N678P,,,fixed_wing,monoplane,civilian,experimental,,second example,HP11,US Southwest Soaring Museum,on_display
+Schreder,HP-18,,N897EN,,,fixed_wing,monoplane,civilian,experimental,,,HP18,US Southwest Soaring Museum,on_display
 Schweizer,SGS 1-26,C,N1155S,,,fixed_wing,monoplane,civilian,private,,,,US Southwest Soaring Museum,on_display
 Schweizer,SGU 1-26,A,N8661R,,,fixed_wing,monoplane,civilian,private,,,,US Southwest Soaring Museum,on_display
 Schweizer,SGU 1-23,,N91874,,,fixed_wing,monoplane,civilian,private,,,,US Southwest Soaring Museum,on_display
 Schweizer,SGU 1-34,,N17973,,,fixed_wing,monoplane,civilian,private,,,,US Southwest Soaring Museum,on_display
-Schweizer,TG-3,A,CF-ZAY,,,fixed_wing,monoplane,military,trainer,,,ex-USAAF 42-52993;Canadian civil registration,US Southwest Soaring Museum,on_display
-Slingsby,Cadet,TX.3,N7012Z,Cadet,,fixed_wing,monoplane,military,trainer,,,ex-RAF XE785,US Southwest Soaring Museum,on_display
-Slingsby,Sedbergh,TX.1,N941WB,Sedbergh,,fixed_wing,monoplane,military,trainer,,,T.21;ex-RAF WB941,US Southwest Soaring Museum,on_display
-Stamer-Lippisch,Z-12,,,Zogling,,fixed_wing,monoplane,civilian,experimental,,,replica,US Southwest Soaring Museum,on_display
+Schweizer,TG-3,A,CF-ZAY,,,fixed_wing,monoplane,military,trainer,,ex-USAAF 42-52993; Canadian civil registration,42-52993; TG3,US Southwest Soaring Museum,on_display
+Slingsby,Cadet,TX.3,N7012Z,Cadet,,fixed_wing,monoplane,military,trainer,,ex-RAF XE785,XE785,US Southwest Soaring Museum,on_display
+Slingsby,Sedbergh,TX.1,N941WB,Sedbergh,,fixed_wing,monoplane,military,trainer,,ex-RAF WB941,T.21; WB941,US Southwest Soaring Museum,on_display
+Stamer-Lippisch,Z-12,,,Zogling,,fixed_wing,monoplane,civilian,experimental,,replica,Z12,US Southwest Soaring Museum,on_display

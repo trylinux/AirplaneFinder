@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Douglas,A-26,C,44-35627,Invader,,fixed_wing,monoplane,military,ground_attack,,,c/n 28906;ex-JB-26C testbed;displayed on a pylon as BC-627 since at least 1973;former civil registration N26RP;photographed April 2024,Dodge City Regional Airport,on_display
+Douglas,A-26,C,44-35627,Invader,,fixed_wing,monoplane,military,ground_attack,,ex-JB-26C testbed; displayed on a pylon as BC-627 since at least 1973; former civil registration N26RP; photographed April 2024,c/n 28906; A26,Dodge City Regional Airport,on_display

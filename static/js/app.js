@@ -119,7 +119,10 @@ function renderAircraftResults(results, total, container, page, pages) {
     results.forEach(function(a) {
         var milCivRaw = a.military_civilian || 'military';   // raw, used for CSS class
         html += '<tr class="aircraft-row" data-id="' + a.id + '">' +
-            '<td><strong>' + escHtml(a.full_designation || a.model) + '</strong></td>' +
+            // Real anchor so middle-click / open-in-new-tab work and the
+            // designation is crawlable; the row click handler defers to it.
+            '<td><a class="row-link" href="/aircraft/' + a.id + '"><strong>' +
+                escHtml(a.full_designation || a.model) + '</strong></a></td>' +
             '<td>' + escHtml(a.model_name || '—') + '</td>' +
             '<td>' + escHtml(a.aircraft_name || '—') + '</td>' +
             '<td>' + escHtml(a.tail_number || '—') + '</td>' +
@@ -167,7 +170,8 @@ function renderMuseumResults(results, total, container, page, pages) {
         var loc = escHtml(m.city);
         if (m.state_province) loc += ', ' + escHtml(m.state_province);
         html += '<tr class="museum-row" data-id="' + m.id + '">' +
-            '<td><strong>' + escHtml(m.name) + '</strong></td>' +
+            '<td><a class="row-link" href="/museums/' + m.id + '"><strong>' +
+                escHtml(m.name) + '</strong></a></td>' +
             '<td>' + loc + '</td>' +
             '<td>' + escHtml(m.country) + '</td>' +
             '<td>' + escHtml(m.region) + '</td>' +

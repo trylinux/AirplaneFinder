@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Bell,AH-1,F,67-15479,Cobra,,rotary_wing,,military,ground_attack,,,c/n 20143;Vietnam combat damage 1970;marked CO NG;photographed September 2018,VFW Post 6491,on_display
+Bell,AH-1,F,67-15479,Cobra,,rotary_wing,,military,ground_attack,,Vietnam combat damage 1970; photographed September 2018; marked CO NG,c/n 20143; AH1,VFW Post 6491,on_display

@@ -1,19 +1,19 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Boeing,B-29,A,44-62070,Superfortress,FIFI,fixed_wing,monoplane,military,bomber,1944,,N529B;recovered from China Lake where she was in use as a missile target;one of only two airworthy B-29s;on the Airpower History Tour much of the year,CAF National Airbase,on_display
-Consolidated,LB-30,,N24927,Liberator,Diamond Lil,fixed_wing,monoplane,military,bomber,1940,,c/n 18;the 25th Liberator built;contracted for France and diverted to Britain as AM927;an LB-30 export airframe marketed as a B-24,CAF National Airbase,on_display
-Douglas,A-26,C,44-35643,Invader,Shamrock 2-2,fixed_wing,monoplane,military,bomber,1944,,N626SH;c/n 28922;built at Douglas Tulsa;converted RB-26C;sold to the French Air Force and flew 18 months of combat recon in Indochina,CAF National Airbase,on_display
-Curtiss,P-40,N,N1226N,Warhawk,,fixed_wing,monoplane,military,fighter,,,c/n 29629;operated by the P-40 Sponsor Group,CAF National Airbase,on_display
-North American,T-6,G,N6253C,Texan,Nella,fixed_wing,monoplane,military,trainer,,,c/n 168-47;WASP Squadron;named for Fifinella the WASP mascot;flown by WASP in training from 1943 until disbandment and was the final check-ride aircraft for some WASP receiving their wings,CAF National Airbase,on_display
-Douglas,C-47,B,43-49942,Skytrain,Texas Zephyr,fixed_wing,monoplane,military,transport,1945,,N346AB;c/n 16693;built at Oklahoma City;Lend-Lease to Britain then RAF and No. 435 Transport Squadron RCAF,CAF National Airbase,on_display
-Boeing-Stearman,PT-13,,N4813V,Kaydet,,fixed_wing,biplane,military,trainer,1950,,c/n 75-5326;B-29/B-24 Squadron,CAF National Airbase,on_display
-Boeing-Stearman,PT-17,,N580RS,Kaydet,,fixed_wing,biplane,military,trainer,,,c/n 75-8148,CAF National Airbase,on_display
-Ryan,PT-22,,N22AL,Recruit,,fixed_wing,monoplane,military,trainer,1942,,c/n 1831,CAF National Airbase,on_display
-Fairchild,PT-26,,N4732G,Cornell,,fixed_wing,monoplane,military,trainer,,,c/n 10846;the FAA manufacture year of 1965 is a rebuild date since PT-26 production ended in 1944,CAF National Airbase,on_display
-Vultee,BT-13,A,N9743N,Valiant,Albro,fixed_wing,monoplane,military,trainer,,,c/n 10990;FAA airworthiness classification unknown with no airworthiness date so probably a static or restoration project,CAF National Airbase,under_restoration
-Stinson,AT-19,,N67227,Reliant,,fixed_wing,monoplane,military,trainer,1946,,c/n 77-496;V-77,CAF National Airbase,on_display
-Taylorcraft,L-2,,N53768,Grasshopper,,fixed_wing,monoplane,military,utility,1943,,c/n 5135,CAF National Airbase,on_display
-Stinson,L-5,,N63777,Sentinel,Nuts to You,fixed_wing,monoplane,military,utility,1943,,c/n 76-526;undergoing repair;restricted category from a post-war crop-duster conversion,CAF National Airbase,under_restoration
-Focke-Wulf,Fw 44,J,N2497,Stieglitz,,fixed_wing,biplane,military,trainer,1939,,c/n SZ-33;a genuine German-built airframe,CAF National Airbase,on_display
-Beechcraft,T-34,A,N6849C,Mentor,,fixed_wing,monoplane,military,trainer,1953,,c/n G-118,CAF National Airbase,on_display
-Piper,J-3,C-75,N3320N,Cub,,fixed_wing,monoplane,civilian,trainer,1946,,c/n 22521,CAF National Airbase,under_restoration
-Champion,7ECA,,N9141L,Citabria,,fixed_wing,monoplane,civilian,trainer,,,c/n 808-71;a modern civilian type rather than a warbird;likely a training or tow hack,CAF National Airbase,on_display
+Boeing,B-29,A,44-62070,Superfortress,FIFI,fixed_wing,monoplane,military,bomber,1944,recovered from China Lake where she was in use as a missile target; one of only two airworthy B-29s; on the Airpower History Tour much of the year,N529B; B29,CAF National Airbase,on_display
+Consolidated,LB-30,,N24927,Liberator,Diamond Lil,fixed_wing,monoplane,military,bomber,1940,the 25th Liberator built; contracted for France and diverted to Britain as AM927; an LB-30 export airframe marketed as a B-24,c/n 18; LB30,CAF National Airbase,on_display
+Douglas,A-26,C,44-35643,Invader,Shamrock 2-2,fixed_wing,monoplane,military,bomber,1944,built at Douglas Tulsa; converted RB-26C; sold to the French Air Force and flew 18 months of combat recon in Indochina,N626SH; c/n 28922; RB-26C; A26; RB26C,CAF National Airbase,on_display
+Curtiss,P-40,N,N1226N,Warhawk,,fixed_wing,monoplane,military,fighter,,operated by the P-40 Sponsor Group,c/n 29629; P40,CAF National Airbase,on_display
+North American,T-6,G,N6253C,Texan,Nella,fixed_wing,monoplane,military,trainer,,WASP Squadron; named for Fifinella the WASP mascot; flown by WASP in training from 1943 until disbandment and was the final check-ride aircraft for some WASP receiving their wings,c/n 168-47; T6,CAF National Airbase,on_display
+Douglas,C-47,B,43-49942,Skytrain,Texas Zephyr,fixed_wing,monoplane,military,transport,1945,built at Oklahoma City; Lend-Lease to Britain then RAF and No. 435 Transport Squadron RCAF,N346AB; c/n 16693; C47,CAF National Airbase,on_display
+Boeing-Stearman,PT-13,,N4813V,Kaydet,,fixed_wing,biplane,military,trainer,1950,B-29/B-24 Squadron,c/n 75-5326; PT13,CAF National Airbase,on_display
+Boeing-Stearman,PT-17,,N580RS,Kaydet,,fixed_wing,biplane,military,trainer,,,c/n 75-8148; PT17,CAF National Airbase,on_display
+Ryan,PT-22,,N22AL,Recruit,,fixed_wing,monoplane,military,trainer,1942,,c/n 1831; PT22,CAF National Airbase,on_display
+Fairchild,PT-26,,N4732G,Cornell,,fixed_wing,monoplane,military,trainer,,the FAA manufacture year of 1965 is a rebuild date since PT-26 production ended in 1944,c/n 10846; PT26,CAF National Airbase,on_display
+Vultee,BT-13,A,N9743N,Valiant,Albro,fixed_wing,monoplane,military,trainer,,FAA airworthiness classification unknown with no airworthiness date so probably a static or restoration project,c/n 10990; BT13,CAF National Airbase,under_restoration
+Stinson,AT-19,,N67227,Reliant,,fixed_wing,monoplane,military,trainer,1946,,c/n 77-496; V-77; AT19; V77,CAF National Airbase,on_display
+Taylorcraft,L-2,,N53768,Grasshopper,,fixed_wing,monoplane,military,utility,1943,,c/n 5135; L2,CAF National Airbase,on_display
+Stinson,L-5,,N63777,Sentinel,Nuts to You,fixed_wing,monoplane,military,utility,1943,undergoing repair; restricted category from a post-war crop-duster conversion,c/n 76-526; L5,CAF National Airbase,under_restoration
+Focke-Wulf,Fw 44,J,N2497,Stieglitz,,fixed_wing,biplane,military,trainer,1939,a genuine German-built airframe,c/n SZ-33,CAF National Airbase,on_display
+Beechcraft,T-34,A,N6849C,Mentor,,fixed_wing,monoplane,military,trainer,1953,,c/n G-118; T34,CAF National Airbase,on_display
+Piper,J-3,C-75,N3320N,Cub,,fixed_wing,monoplane,civilian,trainer,1946,,c/n 22521; J3,CAF National Airbase,under_restoration
+Champion,7ECA,,N9141L,Citabria,,fixed_wing,monoplane,civilian,trainer,,a modern civilian type rather than a warbird; likely a training or tow hack,c/n 808-71,CAF National Airbase,on_display

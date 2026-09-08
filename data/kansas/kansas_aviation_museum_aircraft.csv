@@ -1,38 +1,38 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Boeing,B-47,E,51-2387,Stratojet,,fixed_wing,monoplane,military,bomber,,,c/n 450440;converted to WB-47E weather reconnaissance;SAC atmospheric sampling;ex-Oklahoma City fairgrounds display;moved here 2007;NMUSAF loan,Kansas Aviation Museum,on_display
-Boeing,B-52,D,55-0094,Stratofortress,,fixed_wing,monoplane,military,bomber,1957,,c/n 17210;taken on strength 30 April 1957;42nd BW Loring;Arc Light and Linebacker II missions;flown to Boeing Wichita 1979 as a mockup;displayed since 1984;NMUSAF loan;SEA camouflage,Kansas Aviation Museum,on_display
-Boeing,KC-135,E,56-3658,Stratotanker,Iron Eagle,fixed_wing,monoplane,military,tanker,,,c/n 17407;ex-Kansas ANG 190th ARW,Kansas Aviation Museum,on_display
-Boeing,727,173C,N199FE,,,fixed_wing,monoplane,civilian,freighter,,,c/n 19509;ex-FedEx cargo configuration;FedEx livery;the museum's claim of earlier CIA ownership is unverified,Kansas Aviation Museum,on_display
-Boeing,737,200,N29SW,,,fixed_wing,monoplane,civilian,commercial_transport,1977,,c/n 21340;ex-Southwest Airlines then Ryan International;about 70000 flight hours;full airframe,Kansas Aviation Museum,on_display
-Republic,F-84,F,52-9089,Thunderstreak,,fixed_wing,monoplane,military,fighter,,,F-84F-51-GK built by General Motors at Kansas City Kansas;NMUSAF loan;the Wikipedia survivor list wrongly gives 47-1513,Kansas Aviation Museum,on_display
-Lockheed,T-33,B,126583,Shooting Star,,fixed_wing,monoplane,military,trainer,,,ex-US Navy TV-2 BuNo 126583;c/n 580-5313;former civil registration N1519;identity medium confidence,Kansas Aviation Museum,on_display
-Cessna,T-37,B,58-1977,Tweet,,fixed_wing,monoplane,military,trainer,,,c/n 40402;to AMARC as TE047 25 November 1991;NMUSAF loan;Wichita-built,Kansas Aviation Museum,on_display
-Beechcraft,U-8,F,62-3838,Seminole,,fixed_wing,monoplane,military,utility,1962,,c/n LF-36;built Wichita 1962;89th ARCOM Army Reserve;modified to Queen Air 800 standard about 1985;donated September 1992,Kansas Aviation Museum,on_display
-Beechcraft,2000,,N8283S,Starship,,fixed_wing,monoplane,civilian,private,,,c/n NC-41;the first Starship donated to a museum in August 2003;registration since cancelled,Kansas Aviation Museum,on_display
-Cessna,500,,N501CC,Citation,,fixed_wing,monoplane,civilian,private,,,early Citation I/SP;serial identity unresolved between 1 and 2 and c/n 701;registration since reassigned,Kansas Aviation Museum,on_display
-Cessna,526,,N526JP,CitationJet,,fixed_wing,monoplane,civilian,trainer,,,c/n 705;one of two Cessna 526 JPATS competition prototypes;registration cancelled,Kansas Aviation Museum,on_display
-Learjet,23,,N505PF,,,fixed_wing,monoplane,civilian,private,,,c/n 6 the sixth Learjet built;registration since reassigned,Kansas Aviation Museum,on_display
-Allied Aircraft,A-2,,,Balentine,,fixed_wing,monoplane,civilian,experimental,1948,,Wichita-built V-tail prototype of 1948;jigs destroyed in a fire so never produced;registration identity unresolved between N312TJ and N3153K,Kansas Aviation Museum,on_display
-Stearman,4,D,N569Y,Junior Speedmail,Texaco 11,fixed_wing,biplane,civilian,utility,1931,,c/n 4027;Texaco 11 later Texaco 14 until February 1936;later crop duster and TVA mosquito control;restoration completed 2014,Kansas Aviation Museum,on_display
-Travel Air,4000,D-4000,N671H,,,fixed_wing,biplane,civilian,private,1929,,c/n 1266;Louise Thaden's winning aircraft in the 1929 Women's Air Derby;owned by the Ninety-Nines and on loan since 2021,Kansas Aviation Museum,on_display
-Cessna,C-37,,,Airmaster,,fixed_wing,monoplane,civilian,private,,,once owned by Blanche Noyes;on loan from the Ninety-Nines since 2021;registration not confirmed,Kansas Aviation Museum,on_display
-Beechcraft,D17,S,NC44564,Staggerwing,,fixed_wing,biplane,military,utility,1944,,c/n 6925;delivered 1944 as a UC-43;found in a collapsed barn at Hutchinson in 2010;restored and exhibited 2017,Kansas Aviation Museum,on_display
-Watkins,Skylark,SL,N302V,,,fixed_wing,monoplane,civilian,private,1930,,painted as NC102V;c/n 102;the only surviving example;restored 2016,Kansas Aviation Museum,on_display
-Swallow,OX-5 Swallow,,N3924,,,fixed_wing,biplane,civilian,private,,,painted NC3924;c/n 1005;billed as a 1926 Swallow,Kansas Aviation Museum,on_display
-Laird,Swallow,,,,,fixed_wing,biplane,civilian,private,,,replica of the 1920 Laird Swallow;no originals survive,Kansas Aviation Museum,on_display
-Beechcraft,73,,,Jet Mentor,,fixed_wing,monoplane,civilian,trainer,,,c/n F-1;the sole Model 73 built in 1955;former registration N134B now reassigned,Kansas Aviation Museum,on_display
-Mooney,M-18,C,N492M,Mite,,fixed_wing,monoplane,civilian,private,1951,,c/n 245;Wichita-built,Kansas Aviation Museum,on_display
-Cessna,206,,N5228U,Skywagon,,fixed_wing,monoplane,civilian,utility,,,c/n 206-0228;ex-Gary Adamson air-mortuary aircraft;displays a replica casket,Kansas Aviation Museum,on_display
-Beechcraft,35,B35,N5124C,Bonanza,,fixed_wing,monoplane,civilian,private,1950,,c/n D-2409;active restoration project,Kansas Aviation Museum,under_restoration
-Cessna,310,F,PP-OTI,,,fixed_wing,monoplane,civilian,private,,,c/n 310-0103;carries a Brazilian registration;restoration-shop project,Kansas Aviation Museum,under_restoration
-Beechcraft,18,,,Expeditor,,fixed_wing,monoplane,military,trainer,,,flown by WASP pilots in WWII per the museum;WASP Fifinella nose art;identity possibly JRB-4 BuNo 76774 c/n 6628 but unconfirmed,Kansas Aviation Museum,under_restoration
-Cessna,O-2,B,67-21469,Skymaster,,fixed_wing,monoplane,military,utility,,,Cessna 337 c/n 337-0492;former civil registration N5392S;listed as GO-2B,Kansas Aviation Museum,on_display
-Stearman,NS-1,,9688,Kaydet,,fixed_wing,biplane,military,trainer,,,US Navy BuNo 9688;identity medium confidence,Kansas Aviation Museum,on_display
-Rawdon,T-1,,N41672,,,fixed_wing,monoplane,civilian,trainer,1949,,c/n T1-3CS;Wichita-built;donated by Rip Gooch,Kansas Aviation Museum,on_display
+Boeing,B-47,E,51-2387,Stratojet,,fixed_wing,monoplane,military,bomber,,converted to WB-47E weather reconnaissance; SAC atmospheric sampling; ex-Oklahoma City fairgrounds display; moved here 2007; NMUSAF loan,c/n 450440; B47,Kansas Aviation Museum,on_display
+Boeing,B-52,D,55-0094,Stratofortress,,fixed_wing,monoplane,military,bomber,1957,taken on strength 30 April 1957; 42nd BW Loring; Arc Light and Linebacker II missions; flown to Boeing Wichita 1979 as a mockup; displayed since 1984; NMUSAF loan; SEA camouflage,c/n 17210; B52,Kansas Aviation Museum,on_display
+Boeing,KC-135,E,56-3658,Stratotanker,Iron Eagle,fixed_wing,monoplane,military,tanker,,ex-Kansas ANG 190th ARW,c/n 17407; KC135,Kansas Aviation Museum,on_display
+Boeing,727,173C,N199FE,,,fixed_wing,monoplane,civilian,freighter,,ex-FedEx cargo configuration; FedEx livery; the museum's claim of earlier CIA ownership is unverified,c/n 19509,Kansas Aviation Museum,on_display
+Boeing,737,200,N29SW,,,fixed_wing,monoplane,civilian,commercial_transport,1977,ex-Southwest Airlines then Ryan International; about 70000 flight hours; full airframe,c/n 21340,Kansas Aviation Museum,on_display
+Republic,F-84,F,52-9089,Thunderstreak,,fixed_wing,monoplane,military,fighter,,F-84F-51-GK built by General Motors at Kansas City Kansas; NMUSAF loan; the Wikipedia survivor list wrongly gives 47-1513,F84,Kansas Aviation Museum,on_display
+Lockheed,T-33,B,126583,Shooting Star,,fixed_wing,monoplane,military,trainer,,ex-US Navy TV-2 BuNo 126583; former civil registration N1519; identity medium confidence,c/n 580-5313; T33,Kansas Aviation Museum,on_display
+Cessna,T-37,B,58-1977,Tweet,,fixed_wing,monoplane,military,trainer,,to AMARC as TE047 25 November 1991; NMUSAF loan,c/n 40402; Wichita-built; T37,Kansas Aviation Museum,on_display
+Beechcraft,U-8,F,62-3838,Seminole,,fixed_wing,monoplane,military,utility,1962,built Wichita 1962; 89th ARCOM Army Reserve; modified to Queen Air 800 standard about 1985; donated September 1992,c/n LF-36; U8,Kansas Aviation Museum,on_display
+Beechcraft,2000,,N8283S,Starship,,fixed_wing,monoplane,civilian,private,,the first Starship donated to a museum in August 2003; registration since cancelled,c/n NC-41,Kansas Aviation Museum,on_display
+Cessna,500,,N501CC,Citation,,fixed_wing,monoplane,civilian,private,,early Citation I/SP; serial identity unresolved between 1 and 2 and c/n 701; registration since reassigned,,Kansas Aviation Museum,on_display
+Cessna,526,,N526JP,CitationJet,,fixed_wing,monoplane,civilian,trainer,,one of two Cessna 526 JPATS competition prototypes; registration cancelled,c/n 705,Kansas Aviation Museum,on_display
+Learjet,23,,N505PF,,,fixed_wing,monoplane,civilian,private,,registration since reassigned; the sixth Learjet built,c/n 6,Kansas Aviation Museum,on_display
+Allied Aircraft,A-2,,,Balentine,,fixed_wing,monoplane,civilian,experimental,1948,Wichita-built V-tail prototype of 1948; jigs destroyed in a fire so never produced; registration identity unresolved between N312TJ and N3153K,A2,Kansas Aviation Museum,on_display
+Stearman,4,D,N569Y,Junior Speedmail,Texaco 11,fixed_wing,biplane,civilian,utility,1931,Texaco 11 later Texaco 14 until February 1936; later crop duster and TVA mosquito control; restoration completed 2014,c/n 4027,Kansas Aviation Museum,on_display
+Travel Air,4000,D-4000,N671H,,,fixed_wing,biplane,civilian,private,1929,Louise Thaden's winning aircraft in the 1929 Women's Air Derby; owned by the Ninety-Nines and on loan since 2021,c/n 1266,Kansas Aviation Museum,on_display
+Cessna,C-37,,,Airmaster,,fixed_wing,monoplane,civilian,private,,once owned by Blanche Noyes; on loan from the Ninety-Nines since 2021; registration not confirmed,C37,Kansas Aviation Museum,on_display
+Beechcraft,D17,S,NC44564,Staggerwing,,fixed_wing,biplane,military,utility,1944,delivered 1944 as a UC-43; found in a collapsed barn at Hutchinson in 2010; restored and exhibited 2017,c/n 6925,Kansas Aviation Museum,on_display
+Watkins,Skylark,SL,N302V,,,fixed_wing,monoplane,civilian,private,1930,painted as NC102V; the only surviving example; restored 2016,NC102V; c/n 102,Kansas Aviation Museum,on_display
+Swallow,OX-5 Swallow,,N3924,,,fixed_wing,biplane,civilian,private,,painted NC3924; billed as a 1926 Swallow,NC3924; c/n 1005,Kansas Aviation Museum,on_display
+Laird,Swallow,,,,,fixed_wing,biplane,civilian,private,,replica of the 1920 Laird Swallow; no originals survive,,Kansas Aviation Museum,on_display
+Beechcraft,73,,,Jet Mentor,,fixed_wing,monoplane,civilian,trainer,,the sole Model 73 built in 1955; former registration N134B now reassigned,c/n F-1,Kansas Aviation Museum,on_display
+Mooney,M-18,C,N492M,Mite,,fixed_wing,monoplane,civilian,private,1951,,c/n 245; Wichita-built; M18,Kansas Aviation Museum,on_display
+Cessna,206,,N5228U,Skywagon,,fixed_wing,monoplane,civilian,utility,,ex-Gary Adamson air-mortuary aircraft; displays a replica casket,c/n 206-0228,Kansas Aviation Museum,on_display
+Beechcraft,35,B35,N5124C,Bonanza,,fixed_wing,monoplane,civilian,private,1950,active restoration project,c/n D-2409,Kansas Aviation Museum,under_restoration
+Cessna,310,F,PP-OTI,,,fixed_wing,monoplane,civilian,private,,carries a Brazilian registration; restoration-shop project,c/n 310-0103,Kansas Aviation Museum,under_restoration
+Beechcraft,18,,,Expeditor,,fixed_wing,monoplane,military,trainer,,flown by WASP pilots in WWII per the museum; WASP Fifinella nose art; identity possibly JRB-4 BuNo 76774 c/n 6628 but unconfirmed,,Kansas Aviation Museum,under_restoration
+Cessna,O-2,B,67-21469,Skymaster,,fixed_wing,monoplane,military,utility,,Cessna 337 c/n 337-0492; former civil registration N5392S; listed as GO-2B,O2,Kansas Aviation Museum,on_display
+Stearman,NS-1,,9688,Kaydet,,fixed_wing,biplane,military,trainer,,US Navy BuNo 9688; identity medium confidence,NS1,Kansas Aviation Museum,on_display
+Rawdon,T-1,,N41672,,,fixed_wing,monoplane,civilian,trainer,1949,donated by Rip Gooch,c/n T1-3CS; Wichita-built; T1,Kansas Aviation Museum,on_display
 Detroit,Gull,,N41775,,,fixed_wing,monoplane,civilian,private,,,c/n 324,Kansas Aviation Museum,on_display
-Funk,B,85C,N81162,,,fixed_wing,monoplane,civilian,private,1946,,c/n 292,Kansas Aviation Museum,on_display
-American Eagle,A-129,,N536E,,,fixed_wing,biplane,civilian,private,,,c/n 397,Kansas Aviation Museum,on_display
-Prescott,Pusher,,N41PP,,,fixed_wing,monoplane,civilian,experimental,1985,,c/n 001;homebuilt,Kansas Aviation Museum,on_display
-Pretty Prairie,Special III,,N1473V,,,fixed_wing,monoplane,civilian,experimental,1954,,c/n 1;homebuilt,Kansas Aviation Museum,on_display
-Cessna,177,B,N1910F,Cardinal,,fixed_wing,monoplane,civilian,private,,,c/n 17700002;ex-University of Kansas;deregistered,Kansas Aviation Museum,on_display
-Bede,BD-5,B,N26019,,,fixed_wing,monoplane,civilian,private,,,c/n 3038;in the restoration shop,Kansas Aviation Museum,under_restoration
+Funk,B,85C,N81162,,,fixed_wing,monoplane,civilian,private,1946,,c/n 292; B85C,Kansas Aviation Museum,on_display
+American Eagle,A-129,,N536E,,,fixed_wing,biplane,civilian,private,,,c/n 397; A129,Kansas Aviation Museum,on_display
+Prescott,Pusher,,N41PP,,,fixed_wing,monoplane,civilian,experimental,1985,homebuilt,c/n 001,Kansas Aviation Museum,on_display
+Pretty Prairie,Special III,,N1473V,,,fixed_wing,monoplane,civilian,experimental,1954,homebuilt,c/n 1,Kansas Aviation Museum,on_display
+Cessna,177,B,N1910F,Cardinal,,fixed_wing,monoplane,civilian,private,,ex-University of Kansas; deregistered,c/n 17700002,Kansas Aviation Museum,on_display
+Bede,BD-5,B,N26019,,,fixed_wing,monoplane,civilian,private,,in the restoration shop,c/n 3038; BD5,Kansas Aviation Museum,under_restoration

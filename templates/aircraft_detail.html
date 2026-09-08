@@ -1,0 +1,137 @@
+{% extends "mobile/base.html" if is_mobile else "base.html" %}
+{% set title_bits = [aircraft.full_designation or aircraft.model, aircraft.tail_number] | select | list %}
+{% block title %}{{ title_bits | join(' ') }} — Aircraft Finder{% endblock %}
+{% block nav_aircraft %}active{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/exploration.css') }}?v=explore-1">
+<meta name="description" content="{{ (aircraft.description or (aircraft.full_designation ~ ' at ' ~ (links|length) ~ ' museum(s)'))|striptags|truncate(180) }}">
+{% endblock %}
+
+{% block content %}
+<a href="/aircraft" class="d-back"><i class="fa-solid fa-arrow-left"></i> Back to aircraft</a>
+
+<div class="d-head">
+    <h1>
+        <i class="fa-solid fa-jet-fighter"></i>
+        {{ aircraft.full_designation or aircraft.model }}
+    </h1>
+    {% set subtitle = [aircraft.model_name, ('"' ~ aircraft.aircraft_name ~ '"') if aircraft.aircraft_name else None] | select | list %}
+    {% if subtitle %}<p class="d-sub">{{ subtitle | join(' · ') }}</p>{% endif %}
+    <div class="d-headmeta">
+        {% if aircraft.military_civilian %}
+        <span class="d-badge {{ aircraft.military_civilian }}">{{ aircraft.military_civilian | pretty_enum }}</span>
+        {% endif %}
+        {% if aircraft.role_type %}<span class="d-badge">{{ aircraft.role_type | pretty_enum }}</span>{% endif %}
+        {% if aircraft.tail_number %}<span class="d-badge">{{ aircraft.tail_number }}</span>{% endif %}
+    </div>
+</div>
+
+<div class="d-split">
+  <div>
+    <div class="d-card">
+        <h2><i class="fa-solid fa-circle-info"></i> Airframe details</h2>
+        <div class="d-specs">
+            <div><span class="d-spec-label">Manufacturer</span><span class="d-spec-value">{{ aircraft.manufacturer or '—' }}</span></div>
+            <div><span class="d-spec-label">Model</span><span class="d-spec-value">{{ aircraft.model or '—' }}</span></div>
+            {% if aircraft.variant %}<div><span class="d-spec-label">Variant</span><span class="d-spec-value">{{ aircraft.variant }}</span></div>{% endif %}
+            {% if aircraft.tail_number %}<div><span class="d-spec-label">Tail number</span><span class="d-spec-value">{{ aircraft.tail_number }}</span></div>{% endif %}
+            <div><span class="d-spec-label">Type</span><span class="d-spec-value">{{ aircraft.aircraft_type | pretty_enum }}</span></div>
+            {% if aircraft.wing_type %}<div><span class="d-spec-label">Wing</span><span class="d-spec-value">{{ aircraft.wing_type | pretty_enum }}</span></div>{% endif %}
+            {% if aircraft.role_type %}<div><span class="d-spec-label">Role</span><span class="d-spec-value">{{ aircraft.role_type | pretty_enum }}</span></div>{% endif %}
+            <div><span class="d-spec-label">Class</span><span class="d-spec-value">{{ aircraft.military_civilian | pretty_enum }}</span></div>
+            {% if aircraft.year_built %}<div><span class="d-spec-label">Year built</span><span class="d-spec-value">{{ aircraft.year_built }}</span></div>{% endif %}
+            {% if aircraft.aircraft_name %}<div><span class="d-spec-label">Name</span><span class="d-spec-value">{{ aircraft.aircraft_name }}</span></div>{% endif %}
+        </div>
+    </div>
+
+    {% if aircraft.description %}
+    <div class="d-card">
+        <h2><i class="fa-solid fa-book-open"></i> About this airframe</h2>
+        {# description is semicolon-separated research notes; render one per line #}
+        {% for part in aircraft.description.split(';') if part.strip() %}
+        <p class="d-prose">{{ part.strip() }}</p>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if facts %}
+    <div class="d-card">
+        <h2><i class="fa-solid fa-lightbulb"></i> Facts</h2>
+        <div class="d-list">
+            {% for fact in facts %}
+            <div class="d-item">
+                <p class="d-prose">{{ fact.fact }}</p>
+                {% if fact.source_url %}
+                <div class="d-item-meta"><a href="{{ fact.source_url }}" target="_blank" rel="noopener noreferrer">Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+    {# The history timeline is rendered by airframe-history.js against
+       /api/v1/aircraft/<id>/history — the same code the standalone
+       /aircraft/<id>/history page uses, so there is one renderer. #}
+    <div class="d-card" id="history-app"
+         data-aircraft-id="{{ aircraft.id }}"
+         data-editing="false"
+         data-can-delete="false">
+        <h2><i class="fa-solid fa-clock-rotate-left"></i> Airframe history</h2>
+        <p id="history-status" class="d-empty" role="status" aria-live="polite">Loading history…</p>
+        <ol id="history-events" class="d-timeline x-timeline"></ol>
+    </div>
+  </div>
+
+  <div>
+    <div class="d-card">
+        <h2><i class="fa-solid fa-building-columns"></i> On display at</h2>
+        {% if links %}
+        <div class="d-list">
+            {% for link in links %}
+            <a href="/museums/{{ link.museum.id }}" class="d-item">
+                <div class="d-item-title">
+                    <span>{{ link.museum.name }}</span>
+                    <span class="d-badge {{ link.display_status }}">{{ link.display_status | pretty_enum }}</span>
+                </div>
+                <div class="d-item-meta">
+                    <span><i class="fa-solid fa-location-dot"></i>
+                        {{ [link.museum.city, link.museum.state_province, link.museum.country] | select | join(', ') }}
+                    </span>
+                    {% if link.notes %}<span>{{ link.notes }}</span>{% endif %}
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="d-empty">Not currently on display at any tracked museum.</p>
+        {% endif %}
+    </div>
+
+    {% if aircraft.aliases %}
+    <div class="d-card">
+        <h2><i class="fa-solid fa-tags"></i> Also known as</h2>
+        <div class="d-tags">
+            {% for alias in aircraft.aliases %}
+            <a class="d-tag" href="/aircraft?q={{ alias.alias | urlencode }}">{{ alias.alias }}</a>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="d-actions">
+        <a class="d-btn" href="/trips?aircraft_id={{ aircraft.id }}"><i class="fa-solid fa-route"></i> Plan a visit</a>
+        <a class="d-btn secondary" href="/aircraft/{{ aircraft.id }}/history"><i class="fa-solid fa-clock-rotate-left"></i> Full history</a>
+        {% if current_user.is_authenticated and current_user.is_manager %}
+        <a class="d-btn secondary" href="/admin/aircraft?focus={{ aircraft.id }}"><i class="fa-solid fa-pen"></i> Edit</a>
+        {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/explorer.js') }}?v=explore-1"></script>
+<script src="{{ url_for('static', filename='js/airframe-history.js') }}?v=explore-1"></script>
+{% endblock %}

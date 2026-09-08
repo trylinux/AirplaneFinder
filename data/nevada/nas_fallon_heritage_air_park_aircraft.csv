@@ -1,25 +1,25 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Grumman,F-14,A,159626,Tomcat,,fixed_wing,monoplane,military,fighter,,,c/n 173;some sources record it as an F-14D(R) c/n 175;repainted more than once,NAS Fallon Heritage Air Park,on_display
-McDonnell Douglas,F-4,N,151510,Phantom II,,fixed_wing,monoplane,military,fighter,,,converted from F-4B;wears VF-161 NF-100;two visitor reports read the airframe as F-4B 151014,NAS Fallon Heritage Air Park,on_display
-McDonnell Douglas,F/A-18,A,161708,Hornet,,fixed_wing,monoplane,military,fighter,,,c/n 54;wears VFA-22 CAG markings NF-300,NAS Fallon Heritage Air Park,on_display
-Douglas,A-4,F,155025,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,c/n 13841;wears VA-94 NF-401,NAS Fallon Heritage Air Park,on_display
-Douglas,A-4,B,142100,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,c/n 11354;pole-mounted at the main gate;painted in an aggressor scheme it never wore in service,NAS Fallon Heritage Air Park,on_display
-Grumman,A-6,E,155627,Intruder,,fixed_wing,monoplane,military,ground_attack,,,c/n I-353;wears VA-145 NE-500,NAS Fallon Heritage Air Park,on_display
-Grumman,EA-6,B,158810,Prowler,,fixed_wing,monoplane,military,electronic_warfare,,,c/n P-40;wears VAQ-129 NJ-901,NAS Fallon Heritage Air Park,on_display
-Vought,A-7,C,156734,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,wears NL-300,NAS Fallon Heritage Air Park,on_display
-Vought,A-7,B,154420,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,A-7B-2-CV;main gate group,NAS Fallon Heritage Air Park,on_display
-Grumman,E-2,C,159496,Hawkeye,,fixed_wing,monoplane,military,recon,,,reported in VAW-124 VAW-123 and AJ-600 markings in different years,NAS Fallon Heritage Air Park,on_display
-Lockheed,S-3,B,160571,Viking,,fixed_wing,monoplane,military,recon,,,c/n 394A-3151;markings reported as both VS-41 NJ-721 and VS-31 AG-700,NAS Fallon Heritage Air Park,on_display
-General Dynamics,F-16,N,163576,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,,USAF serial 86-1694;ex-TOPGUN adversary;wears the scheme it actually flew,NAS Fallon Heritage Air Park,on_display
-Northrop,F-5,E,160796,Tiger II,,fixed_wing,monoplane,military,fighter,,,c/n R.1092;wears VFC-13 aggressor colours AF-13;some sources list it as F-5N,NAS Fallon Heritage Air Park,on_display
-North American,F-86,F,52-4584,Sabre,,fixed_wing,monoplane,military,fighter,,,F-86F-30-NA;wears generic FU-371 buzz markings not its own service history,NAS Fallon Heritage Air Park,on_display
-Douglas,AD,4B,132261,Skyraider,,fixed_wing,monoplane,military,ground_attack,,,c/n 8369;main gate group;wears NK-500,NAS Fallon Heritage Air Park,on_display
-North American,RA-5,C,156638,Vigilante,,fixed_wing,monoplane,military,recon,,,c/n 316-31;main gate group;wears RVAH-7 NH-610,NAS Fallon Heritage Air Park,on_display
-Vought,F-8,L,145449,Crusader,,fixed_wing,monoplane,military,fighter,,,DF-8L drone director conversion;wears VF-111 Sundowners,NAS Fallon Heritage Air Park,on_display
-Bell,UH-1,B,60-3593,Iroquois,,rotary_wing,,military,utility,,,c/n 0239;a USAF airframe displayed in US Navy HA(L)-3 Seawolves markings coded 313,NAS Fallon Heritage Air Park,on_display
-Bell,HH-1,N,158272,Iroquois,,rotary_wing,,military,search_rescue,,,main gate group;recorded only by Aerial Visuals,NAS Fallon Heritage Air Park,on_display
-PZL-Mielec,Lim-2,,1614,Fagot,,fixed_wing,monoplane,military,fighter,,,MiG-15bis built under licence in Poland;c/n 1B 016-14;ex-Polish Air Force;displayed wearing 546,NAS Fallon Heritage Air Park,on_display
-PZL-Mielec,Lim-5,,1319,Fresco,,fixed_wing,monoplane,military,fighter,,,MiG-17F built under licence in Poland;c/n 1C 13-19;ex-Polish Air Force;displayed wearing 3020,NAS Fallon Heritage Air Park,on_display
-Mikoyan-Gurevich,MiG-21,bis,3964,Fishbed,,fixed_wing,monoplane,military,fighter,,,c/n N75033964;Soviet-built;ex-Hungarian Air Force and displayed in Hungarian colours,NAS Fallon Heritage Air Park,on_display
-Mikoyan-Gurevich,MiG-23,ML,20+23,Flogger,,fixed_wing,monoplane,military,fighter,,,c/n 0390324640;Soviet-built;ex-East German NVA then Luftwaffe;displayed as 353 red,NAS Fallon Heritage Air Park,on_display
-Mikoyan-Gurevich,MiG-29,,2960717458,Fulcrum,,fixed_wing,monoplane,military,fighter,,,Soviet-built at MAPO Moscow;ex-Moldovan Air Force from the 1997 US purchase;displayed as Black 15,NAS Fallon Heritage Air Park,on_display
+Grumman,F-14,A,159626,Tomcat,,fixed_wing,monoplane,military,fighter,,some sources record it as an F-14D(R) c/n 175; repainted more than once,c/n 173; F14,NAS Fallon Heritage Air Park,on_display
+McDonnell Douglas,F-4,N,151510,Phantom II,,fixed_wing,monoplane,military,fighter,,converted from F-4B; wears VF-161 NF-100; two visitor reports read the airframe as F-4B 151014,F4,NAS Fallon Heritage Air Park,on_display
+McDonnell Douglas,F/A-18,A,161708,Hornet,,fixed_wing,monoplane,military,fighter,,wears VFA-22 CAG markings NF-300,c/n 54,NAS Fallon Heritage Air Park,on_display
+Douglas,A-4,F,155025,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,wears VA-94 NF-401,c/n 13841; A4,NAS Fallon Heritage Air Park,on_display
+Douglas,A-4,B,142100,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,pole-mounted at the main gate; painted in an aggressor scheme it never wore in service,c/n 11354; A4,NAS Fallon Heritage Air Park,on_display
+Grumman,A-6,E,155627,Intruder,,fixed_wing,monoplane,military,ground_attack,,wears VA-145 NE-500,c/n I-353; A6,NAS Fallon Heritage Air Park,on_display
+Grumman,EA-6,B,158810,Prowler,,fixed_wing,monoplane,military,electronic_warfare,,wears VAQ-129 NJ-901,c/n P-40; EA6,NAS Fallon Heritage Air Park,on_display
+Vought,A-7,C,156734,Corsair II,,fixed_wing,monoplane,military,ground_attack,,wears NL-300,NL-300; A7; NL300,NAS Fallon Heritage Air Park,on_display
+Vought,A-7,B,154420,Corsair II,,fixed_wing,monoplane,military,ground_attack,,main gate group,A-7B-2-CV; A7,NAS Fallon Heritage Air Park,on_display
+Grumman,E-2,C,159496,Hawkeye,,fixed_wing,monoplane,military,recon,,reported in VAW-124 VAW-123 and AJ-600 markings in different years,E2,NAS Fallon Heritage Air Park,on_display
+Lockheed,S-3,B,160571,Viking,,fixed_wing,monoplane,military,recon,,markings reported as both VS-41 NJ-721 and VS-31 AG-700,c/n 394A-3151; S3,NAS Fallon Heritage Air Park,on_display
+General Dynamics,F-16,N,163576,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,USAF serial 86-1694; ex-TOPGUN adversary; wears the scheme it actually flew,86-1694; F16,NAS Fallon Heritage Air Park,on_display
+Northrop,F-5,E,160796,Tiger II,,fixed_wing,monoplane,military,fighter,,wears VFC-13 aggressor colours AF-13; some sources list it as F-5N,c/n R.1092; F5,NAS Fallon Heritage Air Park,on_display
+North American,F-86,F,52-4584,Sabre,,fixed_wing,monoplane,military,fighter,,wears generic FU-371 buzz markings not its own service history,F-86F-30-NA; F86,NAS Fallon Heritage Air Park,on_display
+Douglas,AD,4B,132261,Skyraider,,fixed_wing,monoplane,military,ground_attack,,main gate group; wears NK-500,c/n 8369; NK-500; NK500; AD4B,NAS Fallon Heritage Air Park,on_display
+North American,RA-5,C,156638,Vigilante,,fixed_wing,monoplane,military,recon,,main gate group; wears RVAH-7 NH-610,c/n 316-31; RA5,NAS Fallon Heritage Air Park,on_display
+Vought,F-8,L,145449,Crusader,,fixed_wing,monoplane,military,fighter,,DF-8L drone director conversion; wears VF-111 Sundowners,F8,NAS Fallon Heritage Air Park,on_display
+Bell,UH-1,B,60-3593,Iroquois,,rotary_wing,,military,utility,,a USAF airframe displayed in US Navy HA(L)-3 Seawolves markings coded 313,c/n 0239; UH1,NAS Fallon Heritage Air Park,on_display
+Bell,HH-1,N,158272,Iroquois,,rotary_wing,,military,search_rescue,,main gate group; recorded only by Aerial Visuals,HH1,NAS Fallon Heritage Air Park,on_display
+PZL-Mielec,Lim-2,,1614,Fagot,,fixed_wing,monoplane,military,fighter,,MiG-15bis built under licence in Poland; ex-Polish Air Force; displayed wearing 546,c/n 1B 016-14; Lim2,NAS Fallon Heritage Air Park,on_display
+PZL-Mielec,Lim-5,,1319,Fresco,,fixed_wing,monoplane,military,fighter,,MiG-17F built under licence in Poland; ex-Polish Air Force; displayed wearing 3020,c/n 1C 13-19; Lim5,NAS Fallon Heritage Air Park,on_display
+Mikoyan-Gurevich,MiG-21,bis,3964,Fishbed,,fixed_wing,monoplane,military,fighter,,ex-Hungarian Air Force and displayed in Hungarian colours,c/n N75033964; Soviet-built; MiG21,NAS Fallon Heritage Air Park,on_display
+Mikoyan-Gurevich,MiG-23,ML,20+23,Flogger,,fixed_wing,monoplane,military,fighter,,ex-East German NVA then Luftwaffe; displayed as 353 red,c/n 0390324640; Soviet-built; MiG23,NAS Fallon Heritage Air Park,on_display
+Mikoyan-Gurevich,MiG-29,,2960717458,Fulcrum,,fixed_wing,monoplane,military,fighter,,Soviet-built at MAPO Moscow; ex-Moldovan Air Force from the 1997 US purchase; displayed as Black 15,MiG29,NAS Fallon Heritage Air Park,on_display

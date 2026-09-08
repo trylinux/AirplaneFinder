@@ -1,5 +1,5 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-North American,B-25,J,N345TH,Mitchell,Show Me,fixed_wing,monoplane,military,bomber,1945,,USAAF serial 44-31385;delivered January 1945;ex-N3481G;acquired by the wing in 1982;airworthy,CAF Missouri Wing,on_display
-General Motors,TBM,3E,,Avenger,,fixed_wing,monoplane,military,bomber,,,registration not published,CAF Missouri Wing,on_display
-Aeronca,L-3,S,,Defender,,fixed_wing,monoplane,military,recon,,,liaison aircraft;registration not published,CAF Missouri Wing,on_display
-Stearman,PT-17,,,Kaydet,,fixed_wing,biplane,military,trainer,,,Boeing Stearman Model 75;registration not published,CAF Missouri Wing,on_display
+North American,B-25,J,N345TH,Mitchell,Show Me,fixed_wing,monoplane,military,bomber,1945,USAAF serial 44-31385; delivered January 1945; ex-N3481G; acquired by the wing in 1982; airworthy,44-31385; N3481G; B25,CAF Missouri Wing,on_display
+General Motors,TBM,3E,,Avenger,,fixed_wing,monoplane,military,bomber,,registration not published,TBM3E,CAF Missouri Wing,on_display
+Aeronca,L-3,S,,Defender,,fixed_wing,monoplane,military,recon,,liaison aircraft; registration not published,L3,CAF Missouri Wing,on_display
+Stearman,PT-17,,,Kaydet,,fixed_wing,biplane,military,trainer,,Boeing Stearman Model 75; registration not published,PT17,CAF Missouri Wing,on_display

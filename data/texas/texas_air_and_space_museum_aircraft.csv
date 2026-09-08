@@ -1,11 +1,11 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Douglas,DC-3,C,N34,,N34,fixed_wing,monoplane,civilian,utility,1945,,msn 33359;FAA flight-inspection and navigation-aid calibration aircraft;listed on the National Register of Historic Places;owned by the FAA and displayed on loan;relocated to Amarillo 2014,Texas Air and Space Museum,on_display
-North American,P-51,D,,Mustang,,fixed_wing,monoplane,military,fighter,,,serial not established,Texas Air and Space Museum,on_display
-de Havilland Canada,C-7,A,63-9719,Caribou,,fixed_wing,monoplane,military,transport,,,serial reported but low confidence,Texas Air and Space Museum,on_display
-Bell,OH-13,S,63-9085,Sioux,,rotary_wing,,military,recon,,,N9263Z reported;associated with M*A*S*H,Texas Air and Space Museum,on_display
-Grumman,G-1159,,N946NA,Shuttle Training Aircraft,,fixed_wing,monoplane,civilian,test,,,NASA 946;Gulfstream II converted for astronaut training,Texas Air and Space Museum,on_display
-Yakovlev,Yak-11,,,,Mr. Awesome,fixed_wing,monoplane,civilian,experimental,,,unlimited air racer;registration not established,Texas Air and Space Museum,on_display
-Grumman,F8F,,,Bearcat,,fixed_wing,monoplane,civilian,experimental,,,Reno racer;registration not established,Texas Air and Space Museum,on_display
-Erco,415,,,Ercoupe,Cecil Ingram Ercoupe,fixed_wing,monoplane,civilian,private,1946,,registration not established,Texas Air and Space Museum,on_display
-Beechcraft,T-34,B,,Mentor,,fixed_wing,monoplane,military,trainer,,,held offsite per the museum,Texas Air and Space Museum,in_storage
-Lockheed,T-33,A,,Shooting Star,,fixed_wing,monoplane,military,trainer,,,held offsite per the museum,Texas Air and Space Museum,in_storage
+Douglas,DC-3,C,N34,,N34,fixed_wing,monoplane,civilian,utility,1945,FAA flight-inspection and navigation-aid calibration aircraft; listed on the National Register of Historic Places; owned by the FAA and displayed on loan; relocated to Amarillo 2014,msn 33359; DC3,Texas Air and Space Museum,on_display
+North American,P-51,D,,Mustang,,fixed_wing,monoplane,military,fighter,,serial not established,P51,Texas Air and Space Museum,on_display
+de Havilland Canada,C-7,A,63-9719,Caribou,,fixed_wing,monoplane,military,transport,,serial reported but low confidence,C7,Texas Air and Space Museum,on_display
+Bell,OH-13,S,63-9085,Sioux,,rotary_wing,,military,recon,,N9263Z reported; associated with M*A*S*H,OH13,Texas Air and Space Museum,on_display
+Grumman,G-1159,,N946NA,Shuttle Training Aircraft,,fixed_wing,monoplane,civilian,test,,Gulfstream II converted for astronaut training,NASA 946,Texas Air and Space Museum,on_display
+Yakovlev,Yak-11,,,,Mr. Awesome,fixed_wing,monoplane,civilian,experimental,,unlimited air racer; registration not established,Yak11,Texas Air and Space Museum,on_display
+Grumman,F8F,,,Bearcat,,fixed_wing,monoplane,civilian,experimental,,Reno racer; registration not established,,Texas Air and Space Museum,on_display
+Erco,415,,,Ercoupe,Cecil Ingram Ercoupe,fixed_wing,monoplane,civilian,private,1946,registration not established,,Texas Air and Space Museum,on_display
+Beechcraft,T-34,B,,Mentor,,fixed_wing,monoplane,military,trainer,,held offsite per the museum,T34,Texas Air and Space Museum,in_storage
+Lockheed,T-33,A,,Shooting Star,,fixed_wing,monoplane,military,trainer,,held offsite per the museum,T33,Texas Air and Space Museum,in_storage

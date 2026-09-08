@@ -1,0 +1,123 @@
+/* Detail pages — /aircraft/<id> and /museums/<id>.
+ *
+ * Loaded by BOTH layouts. style.css and mobile.css declare an identical
+ * custom-property set, so these rules render correctly under either shell
+ * without knowing which one it is. Everything here is namespaced `d-` so it
+ * cannot collide with the `.detail-*` modal classes or the mobile `.m-*` set.
+ */
+
+.d-back {
+    display: inline-flex; align-items: center; gap: .45rem;
+    color: var(--text-dim); text-decoration: none;
+    font-size: .85rem; margin-bottom: .9rem;
+}
+.d-back:hover { color: var(--text); }
+
+.d-head { margin-bottom: 1.25rem; }
+.d-head h1 {
+    font-size: 1.65rem; line-height: 1.2; margin: 0;
+    display: flex; align-items: center; gap: .6rem; flex-wrap: wrap;
+}
+.d-head h1 i { color: var(--primary); font-size: 1.2rem; }
+.d-sub { color: var(--text-dim); margin: .35rem 0 0; font-size: 1rem; }
+.d-headmeta { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .7rem; }
+
+.d-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 1.1rem 1.2rem; margin-bottom: 1rem;
+}
+.d-card > h2 {
+    font-size: .95rem; margin: 0 0 .85rem; display: flex;
+    align-items: center; gap: .5rem; letter-spacing: .01em;
+}
+.d-card > h2 i { color: var(--primary); }
+
+/* Spec grid — auto-fits from one column on a phone to four on a wide desktop. */
+.d-specs {
+    display: grid; gap: .85rem 1.4rem;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+.d-spec-label {
+    display: block; font-size: .7rem; text-transform: uppercase;
+    letter-spacing: .06em; color: var(--text-dim); margin-bottom: .15rem;
+}
+.d-spec-value { font-weight: 500; word-break: break-word; }
+
+.d-prose { color: var(--text); font-size: .95rem; line-height: 1.6; margin: 0; }
+.d-prose + .d-prose { margin-top: .6rem; }
+
+/* Aliases. Each is a link into the directory search, which is the whole
+   point of storing them: "PT22" is a search term, not a note. */
+.d-tags { display: flex; flex-wrap: wrap; gap: .4rem; }
+.d-tag {
+    display: inline-block; padding: .22rem .6rem; border-radius: 999px;
+    background: rgba(59,130,246,.14); border: 1px solid rgba(59,130,246,.3);
+    color: var(--text); font-size: .8rem; text-decoration: none;
+    transition: background .12s ease;
+}
+.d-tag:hover { background: rgba(59,130,246,.3); }
+
+.d-list { display: flex; flex-direction: column; gap: .55rem; }
+.d-item {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--bg-input); border: 1px solid var(--border);
+    border-radius: 8px; padding: .7rem .85rem;
+    transition: border-color .12s ease;
+}
+a.d-item:hover { border-color: var(--primary); }
+.d-item-title {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: .75rem; font-weight: 600;
+}
+.d-item-meta {
+    color: var(--text-dim); font-size: .82rem; margin-top: .25rem;
+    display: flex; flex-wrap: wrap; gap: .3rem 1rem;
+}
+
+.d-badge {
+    display: inline-block; padding: .15rem .55rem; border-radius: 999px;
+    font-size: .72rem; font-weight: 600; white-space: nowrap;
+    background: var(--bg-input); border: 1px solid var(--border); color: var(--text-dim);
+}
+.d-badge.military   { background: rgba(59,130,246,.18);  border-color: rgba(59,130,246,.4);  color: #bfdbfe; }
+.d-badge.civilian   { background: rgba(6,182,212,.18);   border-color: rgba(6,182,212,.4);   color: #a5f3fc; }
+.d-badge.on_display { background: rgba(34,197,94,.16);   border-color: rgba(34,197,94,.38);  color: #bbf7d0; }
+.d-badge.in_storage { background: rgba(245,158,11,.16);  border-color: rgba(245,158,11,.38); color: #fde68a; }
+.d-badge.under_restoration { background: rgba(168,85,247,.16); border-color: rgba(168,85,247,.38); color: #e9d5ff; }
+
+.d-actions { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.1rem; }
+.d-btn {
+    display: inline-flex; align-items: center; gap: .45rem;
+    padding: .55rem 1rem; border-radius: 8px; text-decoration: none;
+    font-size: .88rem; font-weight: 500;
+    background: var(--primary); color: #fff; border: 1px solid var(--primary);
+}
+.d-btn:hover { background: var(--primary-h); }
+.d-btn.secondary { background: transparent; color: var(--text); border-color: var(--border); }
+.d-btn.secondary:hover { border-color: var(--primary); }
+
+.d-empty { color: var(--text-dim); font-size: .9rem; margin: 0; }
+
+/* Timeline — the airframe history events, rendered by airframe-history.js. */
+.d-timeline { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: .6rem; }
+
+/* Two-column split on wide screens; single column on phones and tablets. */
+@media (min-width: 900px) {
+    .d-split { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 1rem; align-items: start; }
+    .d-split > * { min-width: 0; }
+}
+
+.d-dim { color: var(--text-dim); font-weight: 400; }
+.d-note { color: var(--text-dim); font-size: .88rem; margin-top: .8rem; }
+.d-filter {
+    width: 100%; box-sizing: border-box; margin-bottom: .75rem;
+    padding: .5rem .75rem; border-radius: 8px; font: inherit; font-size: .88rem;
+    background: var(--bg-input); border: 1px solid var(--border); color: var(--text);
+}
+.d-filter:focus { outline: none; border-color: var(--primary); }
+.d-item[hidden] { display: none !important; }
+
+/* Directory tables: the first cell is a real link into the detail page.
+   Inherit colour so the table still reads as a table, not a list of links. */
+.row-link { color: inherit; text-decoration: none; }
+.row-link:hover { color: var(--primary); }

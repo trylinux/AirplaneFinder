@@ -1,7 +1,7 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Dayton-Wright,DH-4,B,,Liberty Plane,,fixed_wing,biplane,military,bomber,1918,,restored by Century Aviation,Pearson Air Museum,on_display
-Curtiss,JN-4,D,,Jenny,,fixed_wing,biplane,military,trainer,1918,,JNS;restored by Century Aviation,Pearson Air Museum,on_display
-Curtiss,Model D,,,Pusher,,fixed_wing,biplane,civilian,experimental,,,replica built by NPS volunteers 2016-2018;Silas Christofferson 1912 aircraft,Pearson Air Museum,on_display
-Fleet,Model 7,,,,,fixed_wing,biplane,civilian,private,1931,,Leah Hing aircraft;originally Fleet Model 2,Pearson Air Museum,on_display
-Voisin,III,,,,,fixed_wing,biplane,military,bomber,,,replica,Pearson Air Museum,on_display
-Fokker,Dr.I,,,,,fixed_wing,triplane,military,fighter,,,replica,Pearson Air Museum,on_display
+Dayton-Wright,DH-4,B,,Liberty Plane,,fixed_wing,biplane,military,bomber,1918,restored by Century Aviation,DH4,Pearson Air Museum,on_display
+Curtiss,JN-4,D,,Jenny,,fixed_wing,biplane,military,trainer,1918,restored by Century Aviation,JNS; JN4,Pearson Air Museum,on_display
+Curtiss,Model D,,,Pusher,,fixed_wing,biplane,civilian,experimental,,replica built by NPS volunteers 2016-2018; Silas Christofferson 1912 aircraft,,Pearson Air Museum,on_display
+Fleet,Model 7,,,,,fixed_wing,biplane,civilian,private,1931,Leah Hing aircraft; originally Fleet Model 2,,Pearson Air Museum,on_display
+Voisin,III,,,,,fixed_wing,biplane,military,bomber,,replica,,Pearson Air Museum,on_display
+Fokker,Dr.I,,,,,fixed_wing,triplane,military,fighter,,replica,,Pearson Air Museum,on_display

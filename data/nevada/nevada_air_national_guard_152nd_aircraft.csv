@@ -1,3 +1,3 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-McDonnell Douglas,F-101,B,59-0483,Voodoo,,fixed_wing,monoplane,military,recon,,,RF-101B;c/n 807;ex-RCAF CF-101B 17483;pylon-mounted near the main gate,Nevada Air National Guard 152nd Airlift Wing,on_display
-McDonnell Douglas,F-4,C,65-0886,Phantom II,,fixed_wing,monoplane,military,recon,1966,,RF-4C;c/n 1490;pylon-mounted near wing headquarters,Nevada Air National Guard 152nd Airlift Wing,on_display
+McDonnell Douglas,F-101,B,59-0483,Voodoo,,fixed_wing,monoplane,military,recon,,ex-RCAF CF-101B 17483; pylon-mounted near the main gate,RF-101B; c/n 807; F101; RF101B,Nevada Air National Guard 152nd Airlift Wing,on_display
+McDonnell Douglas,F-4,C,65-0886,Phantom II,,fixed_wing,monoplane,military,recon,1966,pylon-mounted near wing headquarters,RF-4C; c/n 1490; F4; RF4C,Nevada Air National Guard 152nd Airlift Wing,on_display

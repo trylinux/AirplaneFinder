@@ -1,24 +1,24 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Northrop,F-89,B,49-2434,Scorpion,,fixed_wing,monoplane,military,fighter,1951,,the oldest surviving F-89 and the first airframe converted to B standard;seen in pieces in 2011 so treat as incomplete,Texas Air Museum Stinson Chapter,under_restoration
-McDonnell,F-4,C,63-7415,Phantom II,,fixed_wing,monoplane,military,fighter,,,c/n 342;one of the first two production F-4Cs accepted by Tactical Air Command in November 1963;ex-Hawaii ANG 199th FIS;towed from Kelly to Stinson in 2001,Texas Air Museum Stinson Chapter,on_display
-McDonnell,F-101,B,59-0421,Voodoo,,fixed_wing,monoplane,military,fighter,,,c/n 745;ex-136th FIS New York ANG;preserved at Kelly AFB before Stinson,Texas Air Museum Stinson Chapter,on_display
-Sikorsky,H-34,,145728,Seahorse,,rotary_wing,,military,utility,1958,,c/n 58-0896;HUS-1A later UH-34E;orange NASA Project Mercury capsule-recovery scheme,Texas Air Museum Stinson Chapter,on_display
-Bleriot,XI,,,Bleriot XI,,fixed_wing,monoplane,civilian,experimental,,,full-scale replica fitted with an original 1909 Detroit Aero engine owned by Katherine Stinson;the engine is the genuine artifact not the airframe,Texas Air Museum Stinson Chapter,on_display
-Curtiss,Model D,,,,,fixed_wing,biplane,civilian,experimental,,,replica,Texas Air Museum Stinson Chapter,on_display
-Curtiss,Pusher,,,,,fixed_wing,biplane,civilian,experimental,,,replica;also called the Christofferson Pusher,Texas Air Museum Stinson Chapter,on_display
-Boeing,P-26,,,Peashooter,,fixed_wing,monoplane,military,fighter,,,replica,Texas Air Museum Stinson Chapter,on_display
-Avro,Mk IV,,,,,fixed_wing,biplane,civilian,experimental,1910,,replica of the A.V. Roe design,Texas Air Museum Stinson Chapter,on_display
-Fieseler,Fi 103,,,V-1,,missile_rocket,,military,cruise,,,replica of the Reichenberg piloted version,Texas Air Museum Stinson Chapter,on_display
-Waco,10,GXE,N7970,,,fixed_wing,biplane,civilian,private,1929,,c/n 1801;rare Curtiss OXX-6 V8;museum-owned,Texas Air Museum Stinson Chapter,on_display
-Piper,J-3,C-65,N32851,Cub,,fixed_wing,monoplane,civilian,private,1940,,c/n 5660;museum-owned,Texas Air Museum Stinson Chapter,on_display
-Funk,B,85C,N77712,,,fixed_wing,monoplane,civilian,private,1946,,c/n 342;museum-owned,Texas Air Museum Stinson Chapter,on_display
-Stolp,SA-500,,N808JR,Starlet,,fixed_wing,biplane,civilian,experimental,1973,,c/n 84;museum-owned,Texas Air Museum Stinson Chapter,on_display
-Pietenpol,Air Camper,,N36RN,,,fixed_wing,monoplane,civilian,experimental,1968,,c/n RN1;five-cylinder Lambert radial;FAA gives 1979,Texas Air Museum Stinson Chapter,on_display
-Fairchild Swearingen,SA227,,N566UP,Metroliner,,fixed_wing,monoplane,civilian,commercial_transport,1983,,FAA c/n AT-566;acquired October 2023,Texas Air Museum Stinson Chapter,on_display
-Cessna,AT-17,,42-58380,Bobcat,,fixed_wing,monoplane,military,trainer,1943,,N45358;c/n 3871;Bamboo Bomber;restoration project acquired October 2023,Texas Air Museum Stinson Chapter,under_restoration
-Spinks,Akromaster,,N31SA,,,fixed_wing,monoplane,civilian,experimental,1968,,c/n S-1;registration cancelled 2013 and since reissued to a Cessna 208B,Texas Air Museum Stinson Chapter,on_display
-Eichman,Aerobat,I-A,NX17638,,,fixed_wing,monoplane,civilian,experimental,1937,,c/n 1;built by Ellis Eichman of Brownsville;Aerial Visuals lists an Aerobat B c/n 101 N64638 which may be a second airframe,Texas Air Museum Stinson Chapter,on_display
-Piper,PA-22,,N4782A,Tri-Pacer,,fixed_wing,monoplane,civilian,private,1956,,s/n 22-3933;an incomplete static display and training aid from St Philip's College,Texas Air Museum Stinson Chapter,on_display
-Sawyer,Skyjacker,,N32765,,,fixed_wing,monoplane,civilian,experimental,1982,,s/n 002;built by Ralph V. Sawyer,Texas Air Museum Stinson Chapter,on_display
-Dyke,Delta,JD-2,,Dyke Delta,,fixed_wing,monoplane,civilian,experimental,1966,,homebuilt;donated from Payson Arizona;registration not established,Texas Air Museum Stinson Chapter,on_display
-Masoncraft,Homebuilt,,,,,fixed_wing,monoplane,civilian,experimental,2015,,single-seat homebuilt with a 750cc Kawasaki engine;registration not established,Texas Air Museum Stinson Chapter,on_display
+Northrop,F-89,B,49-2434,Scorpion,,fixed_wing,monoplane,military,fighter,1951,the oldest surviving F-89 and the first airframe converted to B standard; seen in pieces in 2011 so treat as incomplete,F89,Texas Air Museum Stinson Chapter,under_restoration
+McDonnell,F-4,C,63-7415,Phantom II,,fixed_wing,monoplane,military,fighter,,one of the first two production F-4Cs accepted by Tactical Air Command in November 1963; ex-Hawaii ANG 199th FIS; towed from Kelly to Stinson in 2001,c/n 342; F4,Texas Air Museum Stinson Chapter,on_display
+McDonnell,F-101,B,59-0421,Voodoo,,fixed_wing,monoplane,military,fighter,,ex-136th FIS New York ANG; preserved at Kelly AFB before Stinson,c/n 745; F101,Texas Air Museum Stinson Chapter,on_display
+Sikorsky,H-34,,145728,Seahorse,,rotary_wing,,military,utility,1958,HUS-1A later UH-34E; orange NASA Project Mercury capsule-recovery scheme,c/n 58-0896; H34,Texas Air Museum Stinson Chapter,on_display
+Bleriot,XI,,,Bleriot XI,,fixed_wing,monoplane,civilian,experimental,,full-scale replica fitted with an original 1909 Detroit Aero engine owned by Katherine Stinson; the engine is the genuine artifact not the airframe,,Texas Air Museum Stinson Chapter,on_display
+Curtiss,Model D,,,,,fixed_wing,biplane,civilian,experimental,,replica,,Texas Air Museum Stinson Chapter,on_display
+Curtiss,Pusher,,,,,fixed_wing,biplane,civilian,experimental,,replica; also called the Christofferson Pusher,,Texas Air Museum Stinson Chapter,on_display
+Boeing,P-26,,,Peashooter,,fixed_wing,monoplane,military,fighter,,replica,P26,Texas Air Museum Stinson Chapter,on_display
+Avro,Mk IV,,,,,fixed_wing,biplane,civilian,experimental,1910,replica of the A.V. Roe design,,Texas Air Museum Stinson Chapter,on_display
+Fieseler,Fi 103,,,V-1,,missile_rocket,,military,cruise,,replica of the Reichenberg piloted version,,Texas Air Museum Stinson Chapter,on_display
+Waco,10,GXE,N7970,,,fixed_wing,biplane,civilian,private,1929,rare Curtiss OXX-6 V8; museum-owned,c/n 1801,Texas Air Museum Stinson Chapter,on_display
+Piper,J-3,C-65,N32851,Cub,,fixed_wing,monoplane,civilian,private,1940,museum-owned,c/n 5660; J3,Texas Air Museum Stinson Chapter,on_display
+Funk,B,85C,N77712,,,fixed_wing,monoplane,civilian,private,1946,museum-owned,c/n 342; B85C,Texas Air Museum Stinson Chapter,on_display
+Stolp,SA-500,,N808JR,Starlet,,fixed_wing,biplane,civilian,experimental,1973,museum-owned,c/n 84; SA500,Texas Air Museum Stinson Chapter,on_display
+Pietenpol,Air Camper,,N36RN,,,fixed_wing,monoplane,civilian,experimental,1968,five-cylinder Lambert radial; FAA gives 1979,c/n RN1,Texas Air Museum Stinson Chapter,on_display
+Fairchild Swearingen,SA227,,N566UP,Metroliner,,fixed_wing,monoplane,civilian,commercial_transport,1983,FAA c/n AT-566; acquired October 2023,,Texas Air Museum Stinson Chapter,on_display
+Cessna,AT-17,,42-58380,Bobcat,,fixed_wing,monoplane,military,trainer,1943,restoration project acquired October 2023,N45358; c/n 3871; Bamboo Bomber; AT17,Texas Air Museum Stinson Chapter,under_restoration
+Spinks,Akromaster,,N31SA,,,fixed_wing,monoplane,civilian,experimental,1968,registration cancelled 2013 and since reissued to a Cessna 208B,c/n S-1,Texas Air Museum Stinson Chapter,on_display
+Eichman,Aerobat,I-A,NX17638,,,fixed_wing,monoplane,civilian,experimental,1937,built by Ellis Eichman of Brownsville; Aerial Visuals lists an Aerobat B c/n 101 N64638 which may be a second airframe,c/n 1,Texas Air Museum Stinson Chapter,on_display
+Piper,PA-22,,N4782A,Tri-Pacer,,fixed_wing,monoplane,civilian,private,1956,an incomplete static display and training aid from St Philip's College,s/n 22-3933; PA22,Texas Air Museum Stinson Chapter,on_display
+Sawyer,Skyjacker,,N32765,,,fixed_wing,monoplane,civilian,experimental,1982,built by Ralph V. Sawyer,s/n 002,Texas Air Museum Stinson Chapter,on_display
+Dyke,Delta,JD-2,,Dyke Delta,,fixed_wing,monoplane,civilian,experimental,1966,homebuilt; donated from Payson Arizona; registration not established,,Texas Air Museum Stinson Chapter,on_display
+Masoncraft,Homebuilt,,,,,fixed_wing,monoplane,civilian,experimental,2015,single-seat homebuilt with a 750cc Kawasaki engine; registration not established,,Texas Air Museum Stinson Chapter,on_display

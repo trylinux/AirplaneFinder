@@ -1,12 +1,12 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Beechcraft,UC-45,J,23774,Expeditor,,fixed_wing,monoplane,military,trainer,1944,,c/n 5850;US Navy BuNo;the SNB-5 was redesignated UC-45J in 1962 so both designations describe this airframe,Laughlin AFB Air Park,on_display
-Beechcraft,T-34,B,144112,Mentor,,fixed_wing,monoplane,military,trainer,1955,,c/n BG-419;US Navy BuNo;carried civil registration N155ZL at some point,Laughlin AFB Air Park,on_display
-Lockheed,U-2,C,56-6707,Dragon Lady,,fixed_wing,monoplane,military,recon,1957,,Laughlin flew Cuban Missile Crisis U-2 overflights from October 1960 with Detachment G and trained RAF and Republic of China Black Cat pilots,Laughlin AFB Air Park,on_display
-Martin,B-57,B,52-1509,Canberra,,fixed_wing,monoplane,military,electronic_warfare,1954,,EB-57B Night Intruder;English Electric design built under licence by Martin,Laughlin AFB Air Park,on_display
-Douglas,A-26,C,44-35204,Invader,,fixed_wing,monoplane,military,bomber,1945,,c/n 28483;the A-26 was redesignated B-26 in 1948 so both designations describe this airframe,Laughlin AFB Air Park,on_display
-North American,T-28,A,49-1682,Trojan,,fixed_wing,monoplane,military,trainer,1950,,,Laughlin AFB Air Park,on_display
-North American,AT-6,,38-1428,Texan,,fixed_wing,monoplane,military,trainer,1940,,an unusually early USAAC serial,Laughlin AFB Air Park,on_display
-Lockheed,T-33,A,51-8629,Shooting Star,,fixed_wing,monoplane,military,trainer,1952,,T-33A-1-LO,Laughlin AFB Air Park,on_display
-Republic,F-84,F,52-9060,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,1954,,,Laughlin AFB Air Park,on_display
-Northrop,T-38,A,60-0574,Talon,,fixed_wing,monoplane,military,trainer,1961,,c/n N.5147;displayed at a separate flightline-area site,Laughlin AFB Air Park,on_display
-Cessna,T-37,B,54-2739,Tweet,,fixed_wing,monoplane,military,trainer,1955,,built as a T-37A;carried as GT-37B;displayed at a separate flightline-area site,Laughlin AFB Air Park,on_display
+Beechcraft,UC-45,J,23774,Expeditor,,fixed_wing,monoplane,military,trainer,1944,US Navy BuNo; the SNB-5 was redesignated UC-45J in 1962 so both designations describe this airframe,c/n 5850; UC45,Laughlin AFB Air Park,on_display
+Beechcraft,T-34,B,144112,Mentor,,fixed_wing,monoplane,military,trainer,1955,US Navy BuNo; carried civil registration N155ZL at some point,c/n BG-419; T34,Laughlin AFB Air Park,on_display
+Lockheed,U-2,C,56-6707,Dragon Lady,,fixed_wing,monoplane,military,recon,1957,Laughlin flew Cuban Missile Crisis U-2 overflights from October 1960 with Detachment G and trained RAF and Republic of China Black Cat pilots,U2,Laughlin AFB Air Park,on_display
+Martin,B-57,B,52-1509,Canberra,,fixed_wing,monoplane,military,electronic_warfare,1954,English Electric design built under licence by Martin,EB-57B Night Intruder; B57,Laughlin AFB Air Park,on_display
+Douglas,A-26,C,44-35204,Invader,,fixed_wing,monoplane,military,bomber,1945,the A-26 was redesignated B-26 in 1948 so both designations describe this airframe,c/n 28483; A26,Laughlin AFB Air Park,on_display
+North American,T-28,A,49-1682,Trojan,,fixed_wing,monoplane,military,trainer,1950,,T28,Laughlin AFB Air Park,on_display
+North American,AT-6,,38-1428,Texan,,fixed_wing,monoplane,military,trainer,1940,an unusually early USAAC serial,AT6,Laughlin AFB Air Park,on_display
+Lockheed,T-33,A,51-8629,Shooting Star,,fixed_wing,monoplane,military,trainer,1952,,T-33A-1-LO; T33,Laughlin AFB Air Park,on_display
+Republic,F-84,F,52-9060,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,1954,,F84,Laughlin AFB Air Park,on_display
+Northrop,T-38,A,60-0574,Talon,,fixed_wing,monoplane,military,trainer,1961,displayed at a separate flightline-area site,c/n N.5147; T38,Laughlin AFB Air Park,on_display
+Cessna,T-37,B,54-2739,Tweet,,fixed_wing,monoplane,military,trainer,1955,built as a T-37A; carried as GT-37B; displayed at a separate flightline-area site,T37,Laughlin AFB Air Park,on_display

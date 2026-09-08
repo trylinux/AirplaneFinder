@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Cessna,O-2,A,67-21324,Super Skymaster,,fixed_wing,monoplane,military,recon,,,held on the technology centre campus;public visibility not established,Autry Technology Center,on_display
+Cessna,O-2,A,67-21324,Super Skymaster,,fixed_wing,monoplane,military,recon,,held on the technology centre campus; public visibility not established,O2,Autry Technology Center,on_display

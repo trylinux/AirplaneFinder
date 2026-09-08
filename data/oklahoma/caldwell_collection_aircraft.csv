@@ -1,30 +1,30 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
 Stearman,C3MB,,C6487,,,fixed_wing,biplane,civilian,private,1928,,,The Caldwell Collection at Mustang Field,on_display
-Travel Air,B4000,,,,,fixed_wing,biplane,civilian,private,1929,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Fleet,Model 1,,,,,fixed_wing,biplane,civilian,trainer,1929,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
+Travel Air,B4000,,,,,fixed_wing,biplane,civilian,private,1929,registration not published by the museum,,The Caldwell Collection at Mustang Field,on_display
+Fleet,Model 1,,,,,fixed_wing,biplane,civilian,trainer,1929,registration not published by the museum,,The Caldwell Collection at Mustang Field,on_display
 Lincoln-Page,PT-W,,NC561M,,,fixed_wing,biplane,civilian,trainer,1929,,,The Caldwell Collection at Mustang Field,on_display
-Waco,CSO,,,,,fixed_wing,biplane,civilian,private,1929,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Fairchild,KR-21,,,,,fixed_wing,biplane,civilian,trainer,1930,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Waco,RNF,,,,,fixed_wing,biplane,civilian,private,1930,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Great Lakes,2T-1,A,,Sport Trainer,,fixed_wing,biplane,civilian,trainer,1930,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Pietenpol,Air Camper,,,,,fixed_wing,monoplane,civilian,experimental,1931,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Curtiss-Wright,B-14,R,NC12311,Speedwing,,fixed_wing,biplane,civilian,private,1931,,,The Caldwell Collection at Mustang Field,on_display
-Waco,UBF,2,,,,fixed_wing,biplane,civilian,private,1933,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Fairchild,C-8,A,,,,fixed_wing,monoplane,civilian,private,1934,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Waco,UMF,3,,,,fixed_wing,biplane,civilian,private,1934,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Waco,YMF,5,,,,fixed_wing,biplane,civilian,private,1935,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Porterfield,35-70,,,Flyabout,,fixed_wing,monoplane,civilian,private,1936,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Monocoupe,90,A,,,,fixed_wing,monoplane,civilian,private,1936,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Waco,YKS,6,,,,fixed_wing,biplane,civilian,private,1936,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Waco,ZPF,6,,,,fixed_wing,biplane,civilian,private,1936,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Aeronca,C-3,,,,,fixed_wing,monoplane,civilian,private,1936,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Ryan,SCW,,,,,fixed_wing,monoplane,civilian,private,1938,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Luscombe,8,A,,Silvaire,,fixed_wing,monoplane,civilian,private,1939,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Culver,Cadet,,,,,fixed_wing,monoplane,civilian,private,1940,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Waco,UPF,7,,,,fixed_wing,biplane,civilian,trainer,1940,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Waco,UPF,7,,,,fixed_wing,biplane,civilian,trainer,1941,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Waco,ZPF,7,NC32018,,,fixed_wing,biplane,civilian,private,1941,,,The Caldwell Collection at Mustang Field,on_display
-Fairchild,PT-19,,N464BC,Cornell,,fixed_wing,monoplane,military,trainer,1942,,,The Caldwell Collection at Mustang Field,on_display
-Stearman,PT-17,,,Kaydet,,fixed_wing,biplane,military,trainer,1942,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Cessna,120,,,,,fixed_wing,monoplane,civilian,private,1946,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
-Rose-Rhinehart,Parrakeet,4A-C,,,,fixed_wing,biplane,civilian,experimental,1972,,registration not published by the museum,The Caldwell Collection at Mustang Field,on_display
+Waco,CSO,,,,,fixed_wing,biplane,civilian,private,1929,registration not published by the museum,,The Caldwell Collection at Mustang Field,on_display
+Fairchild,KR-21,,,,,fixed_wing,biplane,civilian,trainer,1930,registration not published by the museum,KR21,The Caldwell Collection at Mustang Field,on_display
+Waco,RNF,,,,,fixed_wing,biplane,civilian,private,1930,registration not published by the museum,,The Caldwell Collection at Mustang Field,on_display
+Great Lakes,2T-1,A,,Sport Trainer,,fixed_wing,biplane,civilian,trainer,1930,registration not published by the museum,,The Caldwell Collection at Mustang Field,on_display
+Pietenpol,Air Camper,,,,,fixed_wing,monoplane,civilian,experimental,1931,registration not published by the museum,,The Caldwell Collection at Mustang Field,on_display
+Curtiss-Wright,B-14,R,NC12311,Speedwing,,fixed_wing,biplane,civilian,private,1931,,B14,The Caldwell Collection at Mustang Field,on_display
+Waco,UBF,2,,,,fixed_wing,biplane,civilian,private,1933,registration not published by the museum,UBF2,The Caldwell Collection at Mustang Field,on_display
+Fairchild,C-8,A,,,,fixed_wing,monoplane,civilian,private,1934,registration not published by the museum,C8,The Caldwell Collection at Mustang Field,on_display
+Waco,UMF,3,,,,fixed_wing,biplane,civilian,private,1934,registration not published by the museum,UMF3,The Caldwell Collection at Mustang Field,on_display
+Waco,YMF,5,,,,fixed_wing,biplane,civilian,private,1935,registration not published by the museum,YMF5,The Caldwell Collection at Mustang Field,on_display
+Porterfield,35-70,,,Flyabout,,fixed_wing,monoplane,civilian,private,1936,registration not published by the museum,,The Caldwell Collection at Mustang Field,on_display
+Monocoupe,90,A,,,,fixed_wing,monoplane,civilian,private,1936,registration not published by the museum,,The Caldwell Collection at Mustang Field,on_display
+Waco,YKS,6,,,,fixed_wing,biplane,civilian,private,1936,registration not published by the museum,YKS6,The Caldwell Collection at Mustang Field,on_display
+Waco,ZPF,6,,,,fixed_wing,biplane,civilian,private,1936,registration not published by the museum,ZPF6,The Caldwell Collection at Mustang Field,on_display
+Aeronca,C-3,,,,,fixed_wing,monoplane,civilian,private,1936,registration not published by the museum,C3,The Caldwell Collection at Mustang Field,on_display
+Ryan,SCW,,,,,fixed_wing,monoplane,civilian,private,1938,registration not published by the museum,,The Caldwell Collection at Mustang Field,on_display
+Luscombe,8,A,,Silvaire,,fixed_wing,monoplane,civilian,private,1939,registration not published by the museum,,The Caldwell Collection at Mustang Field,on_display
+Culver,Cadet,,,,,fixed_wing,monoplane,civilian,private,1940,registration not published by the museum,,The Caldwell Collection at Mustang Field,on_display
+Waco,UPF,7,,,,fixed_wing,biplane,civilian,trainer,1940,registration not published by the museum,UPF7,The Caldwell Collection at Mustang Field,on_display
+Waco,UPF,7,,,,fixed_wing,biplane,civilian,trainer,1941,registration not published by the museum,UPF7,The Caldwell Collection at Mustang Field,on_display
+Waco,ZPF,7,NC32018,,,fixed_wing,biplane,civilian,private,1941,,ZPF7,The Caldwell Collection at Mustang Field,on_display
+Fairchild,PT-19,,N464BC,Cornell,,fixed_wing,monoplane,military,trainer,1942,,PT19,The Caldwell Collection at Mustang Field,on_display
+Stearman,PT-17,,,Kaydet,,fixed_wing,biplane,military,trainer,1942,registration not published by the museum,PT17,The Caldwell Collection at Mustang Field,on_display
+Cessna,120,,,,,fixed_wing,monoplane,civilian,private,1946,registration not published by the museum,,The Caldwell Collection at Mustang Field,on_display
+Rose-Rhinehart,Parrakeet,4A-C,,,,fixed_wing,biplane,civilian,experimental,1972,registration not published by the museum,,The Caldwell Collection at Mustang Field,on_display

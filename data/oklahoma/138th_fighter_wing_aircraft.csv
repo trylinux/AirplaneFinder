@@ -1,5 +1,5 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-General Dynamics,F-16,A,80-0505,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,,Block 10C;c/n 61-226,138th Fighter Wing Static Displays,on_display
-Vought,A-7,D,70-1028,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,A-7D-9-CV;c/n D-174;the type flown by the 138th TFG at Tulsa,138th Fighter Wing Static Displays,on_display
-North American,F-100,D,55-3650,Super Sabre,,fixed_wing,monoplane,military,fighter,,,,138th Fighter Wing Static Displays,on_display
-North American,F-86,L,51-8409,Sabre,,fixed_wing,monoplane,military,fighter,,,all-weather interceptor conversion of the F-86D;c/n 173-542;pylon-mounted,138th Fighter Wing Static Displays,on_display
+General Dynamics,F-16,A,80-0505,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,,Block 10C; c/n 61-226; F16,138th Fighter Wing Static Displays,on_display
+Vought,A-7,D,70-1028,Corsair II,,fixed_wing,monoplane,military,ground_attack,,the type flown by the 138th TFG at Tulsa,A-7D-9-CV; c/n D-174; A7,138th Fighter Wing Static Displays,on_display
+North American,F-100,D,55-3650,Super Sabre,,fixed_wing,monoplane,military,fighter,,,F100,138th Fighter Wing Static Displays,on_display
+North American,F-86,L,51-8409,Sabre,,fixed_wing,monoplane,military,fighter,,all-weather interceptor conversion of the F-86D; pylon-mounted,c/n 173-542; F86,138th Fighter Wing Static Displays,on_display

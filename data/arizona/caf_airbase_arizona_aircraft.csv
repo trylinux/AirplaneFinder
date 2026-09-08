@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Mikoyan-Gurevich,MiG-21,PF,507,Fishbed,,fixed_wing,monoplane,military,fighter,,,MiG-21;Fishbed;on loan from Pima,Commemorative Air Force Airbase Arizona,on_display
+Mikoyan-Gurevich,MiG-21,PF,507,Fishbed,,fixed_wing,monoplane,military,fighter,,on loan from Pima,MiG-21; Fishbed; MiG21,Commemorative Air Force Airbase Arizona,on_display

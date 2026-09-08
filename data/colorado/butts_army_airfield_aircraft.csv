@@ -1,4 +1,4 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Bell,UH-1,,65-9899,Iroquois,,rotary_wing,,military,utility,,,from an unreviewed Aerial Visuals record;sub-variant not established,Butts Army Airfield Static Displays,on_display
-Bell,AH-1,F,79-23247,Cobra,,rotary_wing,,military,ground_attack,,,from an unreviewed Aerial Visuals record which mislabels it USAF,Butts Army Airfield Static Displays,on_display
-Bell,AH-1,S,67-15687,Cobra,,rotary_wing,,military,ground_attack,,,from an unreviewed Aerial Visuals record,Butts Army Airfield Static Displays,on_display
+Bell,UH-1,,65-9899,Iroquois,,rotary_wing,,military,utility,,from an unreviewed Aerial Visuals record; sub-variant not established,UH1,Butts Army Airfield Static Displays,on_display
+Bell,AH-1,F,79-23247,Cobra,,rotary_wing,,military,ground_attack,,from an unreviewed Aerial Visuals record which mislabels it USAF,AH1,Butts Army Airfield Static Displays,on_display
+Bell,AH-1,S,67-15687,Cobra,,rotary_wing,,military,ground_attack,,from an unreviewed Aerial Visuals record,AH1,Butts Army Airfield Static Displays,on_display

@@ -1,6 +1,6 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Bell,AH-1,S,,Cobra,,rotary_wing,,military,ground_attack,,,donated by the 1107th Missouri National Guard in 1994;a reported marking N25191 is not a plausible serial and is not recorded,Air and Military Museum of the Ozarks,on_display
-Lockheed,T-33,A,,Shooting Star,,fixed_wing,monoplane,military,trainer,,,museum signage also calls it an F-80;serial not published,Air and Military Museum of the Ozarks,on_display
-Aeronca,L-3,B,,Grasshopper,,fixed_wing,monoplane,military,recon,,,a reported marking 70-16086 is not plausible for the type and is not recorded,Air and Military Museum of the Ozarks,on_display
-Stearman,PT-17,,,Kaydet,,fixed_wing,biplane,military,trainer,,,a reported marking 53-6055 is not plausible for the type and is not recorded,Air and Military Museum of the Ozarks,on_display
-Schweizer,TG-3,A,,,,fixed_wing,monoplane,military,trainer,,,training glider;serial not published,Air and Military Museum of the Ozarks,on_display
+Bell,AH-1,S,,Cobra,,rotary_wing,,military,ground_attack,,donated by the 1107th Missouri National Guard in 1994; a reported marking N25191 is not a plausible serial and is not recorded,AH1,Air and Military Museum of the Ozarks,on_display
+Lockheed,T-33,A,,Shooting Star,,fixed_wing,monoplane,military,trainer,,museum signage also calls it an F-80; serial not published,T33,Air and Military Museum of the Ozarks,on_display
+Aeronca,L-3,B,,Grasshopper,,fixed_wing,monoplane,military,recon,,a reported marking 70-16086 is not plausible for the type and is not recorded,L3,Air and Military Museum of the Ozarks,on_display
+Stearman,PT-17,,,Kaydet,,fixed_wing,biplane,military,trainer,,a reported marking 53-6055 is not plausible for the type and is not recorded,PT17,Air and Military Museum of the Ozarks,on_display
+Schweizer,TG-3,A,,,,fixed_wing,monoplane,military,trainer,,training glider; serial not published,TG3,Air and Military Museum of the Ozarks,on_display

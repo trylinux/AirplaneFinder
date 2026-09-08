@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-North American,B-25,J,44-86758,Mitchell,Devil Dog,fixed_wing,monoplane,military,bomber,1944,,N9643C;B-25J-30-NC;presented as a PBJ in US Marine Corps markings which is a representation rather than this airframe's service history;fuselage code 3,CAF Devil Dog Squadron,on_display
+North American,B-25,J,44-86758,Mitchell,Devil Dog,fixed_wing,monoplane,military,bomber,1944,presented as a PBJ in US Marine Corps markings which is a representation rather than this airframe's service history; fuselage code 3,N9643C; B-25J-30-NC; B25,CAF Devil Dog Squadron,on_display

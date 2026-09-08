@@ -1,19 +1,19 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Fairchild Republic,A-10,A,75-0270,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,,,Warthog,McChord Air Museum,on_display
-Douglas,B-18,A,37-0505,Bolo,,fixed_wing,monoplane,military,bomber,,,,McChord Air Museum,on_display
-Douglas,B-23,,39-0036,Dragon,,fixed_wing,monoplane,military,bomber,,,,McChord Air Museum,on_display
-Beechcraft,UC-45,J,89484,Expeditor,,fixed_wing,monoplane,military,transport,,,JRB-5;Model 18,McChord Air Museum,on_display
-Douglas,C-47,B,44-76502,Skytrain,,fixed_wing,monoplane,military,transport,,,TC-47B,McChord Air Museum,on_display
-Fairchild,C-82,A,48-0574,Packet,,fixed_wing,monoplane,military,transport,,,museum page also gives 48-57574,McChord Air Museum,on_display
-Douglas,C-124,C,52-0994,Globemaster II,Old Shakey,fixed_wing,monoplane,military,transport,1953,,last C-124 to fly,McChord Air Museum,on_display
-Lockheed,C-130,E,62-1789,Hercules,,fixed_wing,monoplane,military,transport,,,,McChord Air Museum,on_display
-Lockheed,C-141,B,65-0277,Starlifter,,fixed_wing,monoplane,military,transport,,,built as C-141A,McChord Air Museum,on_display
-McDonnell Douglas,F-15,A,76-0048,Eagle,,fixed_wing,monoplane,military,fighter,,,,McChord Air Museum,on_display
-North American,F-86,D,52-3669,Sabre,,fixed_wing,monoplane,military,fighter,,,Sabre Dog,McChord Air Museum,on_display
-McDonnell,CF-101,F,101022,Voodoo,,fixed_wing,monoplane,military,fighter,,,RCAF serial;USAF 57-0322 or 57-0332,McChord Air Museum,on_display
-Convair,F-102,A,56-1515,Delta Dagger,,fixed_wing,monoplane,military,fighter,,,,McChord Air Museum,on_display
-Convair,F-106,A,56-0459,Delta Dart,,fixed_wing,monoplane,military,fighter,,,,McChord Air Museum,on_display
-Canadian Vickers,OA-10,A,43-43847,Catalina,,fixed_wing,monoplane,military,search_rescue,,,"SA-10A;PBV-1A;serial as museum states it, does not fit known blocks",McChord Air Museum,on_display
-Sikorsky,UH-19,B,138499,Chickasaw,,rotary_wing,,military,search_rescue,,,H-19;HO4S-3;BuNo,McChord Air Museum,on_display
-Kaman,HH-43,A,58-1833,Huskie,,rotary_wing,,military,search_rescue,,,,McChord Air Museum,on_display
-Lockheed,T-33,A,58-2106,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-Bird,McChord Air Museum,on_display
+Fairchild Republic,A-10,A,75-0270,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,,,Warthog; A10,McChord Air Museum,on_display
+Douglas,B-18,A,37-0505,Bolo,,fixed_wing,monoplane,military,bomber,,,B18,McChord Air Museum,on_display
+Douglas,B-23,,39-0036,Dragon,,fixed_wing,monoplane,military,bomber,,,B23,McChord Air Museum,on_display
+Beechcraft,UC-45,J,89484,Expeditor,,fixed_wing,monoplane,military,transport,,,JRB-5; Model 18; UC45; JRB5,McChord Air Museum,on_display
+Douglas,C-47,B,44-76502,Skytrain,,fixed_wing,monoplane,military,transport,,,TC-47B; C47; TC47B,McChord Air Museum,on_display
+Fairchild,C-82,A,48-0574,Packet,,fixed_wing,monoplane,military,transport,,museum page also gives 48-57574,C82,McChord Air Museum,on_display
+Douglas,C-124,C,52-0994,Globemaster II,Old Shakey,fixed_wing,monoplane,military,transport,1953,last C-124 to fly,C124,McChord Air Museum,on_display
+Lockheed,C-130,E,62-1789,Hercules,,fixed_wing,monoplane,military,transport,,,C130,McChord Air Museum,on_display
+Lockheed,C-141,B,65-0277,Starlifter,,fixed_wing,monoplane,military,transport,,built as C-141A,C141,McChord Air Museum,on_display
+McDonnell Douglas,F-15,A,76-0048,Eagle,,fixed_wing,monoplane,military,fighter,,,F15,McChord Air Museum,on_display
+North American,F-86,D,52-3669,Sabre,,fixed_wing,monoplane,military,fighter,,,Sabre Dog; F86,McChord Air Museum,on_display
+McDonnell,CF-101,F,101022,Voodoo,,fixed_wing,monoplane,military,fighter,,RCAF serial; USAF 57-0322 or 57-0332,CF101,McChord Air Museum,on_display
+Convair,F-102,A,56-1515,Delta Dagger,,fixed_wing,monoplane,military,fighter,,,F102,McChord Air Museum,on_display
+Convair,F-106,A,56-0459,Delta Dart,,fixed_wing,monoplane,military,fighter,,,F106,McChord Air Museum,on_display
+Canadian Vickers,OA-10,A,43-43847,Catalina,,fixed_wing,monoplane,military,search_rescue,,"serial as museum states it, does not fit known blocks",SA-10A; PBV-1A; OA10; SA10A; PBV1A,McChord Air Museum,on_display
+Sikorsky,UH-19,B,138499,Chickasaw,,rotary_wing,,military,search_rescue,,,H-19; HO4S-3; BuNo; UH19; H19,McChord Air Museum,on_display
+Kaman,HH-43,A,58-1833,Huskie,,rotary_wing,,military,search_rescue,,,HH43,McChord Air Museum,on_display
+Lockheed,T-33,A,58-2106,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-Bird; T33,McChord Air Museum,on_display

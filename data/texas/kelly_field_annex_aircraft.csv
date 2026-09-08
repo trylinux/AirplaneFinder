@@ -1,13 +1,13 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Convair,B-58,A,59-2437,Hustler,Firefly II,fixed_wing,monoplane,military,bomber,1960,,c/n 40;B-58A-10-CF;displayed at the former General Dynamics plant now Port San Antonio where it was built;a rare B-58 outside a major museum,Kelly Field Annex,on_display
-General Dynamics,FB-111,A,68-0275,Aardvark,,fixed_wing,monoplane,military,bomber,1969,,c/n B1-47;pylon-mounted at the main entrance;sited at its own birthplace,Kelly Field Annex,on_display
-Convair,F-106,B,57-2533,Delta Dart,,fixed_wing,monoplane,military,fighter,1959,,c/n 8-27-27;a two-seat B model often miscatalogued as an F-106A;pylon-mounted,Kelly Field Annex,on_display
-Republic,F-105,D,62-4279,Thunderchief,,fixed_wing,monoplane,military,ground_attack,1963,,F-105D-31-RE,Kelly Field Annex,on_display
-North American,F-100,D,56-3000,Super Sabre,,fixed_wing,monoplane,military,ground_attack,1957,,c/n 235-98;displayed in the 149th Fighter Wing area,Kelly Field Annex,on_display
-McDonnell Douglas,F-15,A,76-0108,Eagle,,fixed_wing,monoplane,military,fighter,1977,,,Kelly Field Annex,on_display
-McDonnell,F-4,C,63-7515,Phantom II,,fixed_wing,monoplane,military,fighter,1964,,c/n 0529;F-4C-18-MC,Kelly Field Annex,on_display
-Douglas,C-47,B,43-48415,Skytrain,,fixed_wing,monoplane,military,transport,1945,,c/n 14231;C-47B-1-DK;displayed in the Air Intelligence headquarters area,Kelly Field Annex,on_display
-Cessna,O-2,A,67-21440,Skymaster,,fixed_wing,monoplane,military,recon,1968,,c/n 337-0518;ex-civil N5418S;Air Intelligence headquarters area,Kelly Field Annex,on_display
-McDonnell,F-4,C,63-7744,Phantom II,,fixed_wing,monoplane,military,recon,1964,,NRF-4C;the N prefix marks a permanently modified special-test airframe,Kelly Field Annex,on_display
-McDonnell,F-101,F,58-0290,Voodoo,,fixed_wing,monoplane,military,fighter,1959,,c/n 662;GF-101F;a ground-instructional airframe in the Security Police Training Area rather than a curated display;visible from State Highway 90,Kelly Field Annex,in_storage
-Ryan,BQM-34,,,Firebee,,fixed_wing,monoplane,military,drone,,,target drone;serial not established;Air Intelligence headquarters area,Kelly Field Annex,on_display
+Convair,B-58,A,59-2437,Hustler,Firefly II,fixed_wing,monoplane,military,bomber,1960,displayed at the former General Dynamics plant now Port San Antonio where it was built; a rare B-58 outside a major museum,c/n 40; B-58A-10-CF; B58,Kelly Field Annex,on_display
+General Dynamics,FB-111,A,68-0275,Aardvark,,fixed_wing,monoplane,military,bomber,1969,pylon-mounted at the main entrance; sited at its own birthplace,c/n B1-47; FB111,Kelly Field Annex,on_display
+Convair,F-106,B,57-2533,Delta Dart,,fixed_wing,monoplane,military,fighter,1959,a two-seat B model often miscatalogued as an F-106A; pylon-mounted,c/n 8-27-27; F106,Kelly Field Annex,on_display
+Republic,F-105,D,62-4279,Thunderchief,,fixed_wing,monoplane,military,ground_attack,1963,,F-105D-31-RE; F105,Kelly Field Annex,on_display
+North American,F-100,D,56-3000,Super Sabre,,fixed_wing,monoplane,military,ground_attack,1957,displayed in the 149th Fighter Wing area,c/n 235-98; F100,Kelly Field Annex,on_display
+McDonnell Douglas,F-15,A,76-0108,Eagle,,fixed_wing,monoplane,military,fighter,1977,,F15,Kelly Field Annex,on_display
+McDonnell,F-4,C,63-7515,Phantom II,,fixed_wing,monoplane,military,fighter,1964,,c/n 0529; F-4C-18-MC; F4,Kelly Field Annex,on_display
+Douglas,C-47,B,43-48415,Skytrain,,fixed_wing,monoplane,military,transport,1945,displayed in the Air Intelligence headquarters area,c/n 14231; C-47B-1-DK; C47,Kelly Field Annex,on_display
+Cessna,O-2,A,67-21440,Skymaster,,fixed_wing,monoplane,military,recon,1968,ex-civil N5418S; Air Intelligence headquarters area,c/n 337-0518; N5418S; O2,Kelly Field Annex,on_display
+McDonnell,F-4,C,63-7744,Phantom II,,fixed_wing,monoplane,military,recon,1964,the N prefix marks a permanently modified special-test airframe,NRF-4C; F4; NRF4C,Kelly Field Annex,on_display
+McDonnell,F-101,F,58-0290,Voodoo,,fixed_wing,monoplane,military,fighter,1959,a ground-instructional airframe in the Security Police Training Area rather than a curated display; visible from State Highway 90,c/n 662; GF-101F; F101; GF101F,Kelly Field Annex,in_storage
+Ryan,BQM-34,,,Firebee,,fixed_wing,monoplane,military,drone,,target drone; serial not established; Air Intelligence headquarters area,BQM34,Kelly Field Annex,on_display

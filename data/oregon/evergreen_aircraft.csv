@@ -1,108 +1,108 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Airco,DH-4,,3258,Liberty Plane,,fixed_wing,biplane,military,bomber,,,DH-4M-1,Evergreen Aviation Museum,on_display
-Bede,BD-5,B,N110CJ,,,fixed_wing,monoplane,civilian,private,,,,Evergreen Aviation Museum,on_display
-Beechcraft,UC-43,F,42-49071,Traveler,,fixed_wing,biplane,military,utility,,,Staggerwing;Model 17,Evergreen Aviation Museum,on_display
-Beechcraft,C-45,H,52-10902,Expeditor,,fixed_wing,monoplane,military,transport,,,Model 18,Evergreen Aviation Museum,on_display
+Airco,DH-4,,3258,Liberty Plane,,fixed_wing,biplane,military,bomber,,,DH-4M-1; DH4,Evergreen Aviation Museum,on_display
+Bede,BD-5,B,N110CJ,,,fixed_wing,monoplane,civilian,private,,,BD5,Evergreen Aviation Museum,on_display
+Beechcraft,UC-43,F,42-49071,Traveler,,fixed_wing,biplane,military,utility,,,Staggerwing; Model 17; UC43,Evergreen Aviation Museum,on_display
+Beechcraft,C-45,H,52-10902,Expeditor,,fixed_wing,monoplane,military,transport,,,Model 18; C45,Evergreen Aviation Museum,on_display
 Beechcraft,2000,,N74TD,Starship,,fixed_wing,monoplane,civilian,private,,,,Evergreen Aviation Museum,on_display
 Beechcraft,Model 35,,N3870N,Bonanza,,fixed_wing,monoplane,civilian,private,,,,Evergreen Aviation Museum,on_display
-Beechcraft,T-34,B,140938,Mentor,,fixed_wing,monoplane,military,trainer,,,,Evergreen Aviation Museum,on_display
-Bell,UH-1,H,64-13502,Iroquois,,rotary_wing,,military,utility,,,Huey,Evergreen Aviation Museum,on_display
+Beechcraft,T-34,B,140938,Mentor,,fixed_wing,monoplane,military,trainer,,,T34,Evergreen Aviation Museum,on_display
+Bell,UH-1,H,64-13502,Iroquois,,rotary_wing,,military,utility,,,Huey; UH1,Evergreen Aviation Museum,on_display
 Bell,206,B,N10729,JetRanger,,rotary_wing,,civilian,utility,,,,Evergreen Aviation Museum,on_display
-Bell,AH-1,F,69-16434,Cobra,,rotary_wing,,military,ground_attack,,,GAH-1F ground trainer,Evergreen Aviation Museum,on_display
-Bell,HTL,3,124564,Sioux,,rotary_wing,,military,trainer,,,,Evergreen Aviation Museum,on_display
-Bell,OH-13,E,51-13934,Sioux,,rotary_wing,,military,recon,,,,Evergreen Aviation Museum,on_display
-Boeing,747,132,N481EV,,,fixed_wing,monoplane,civilian,commercial_transport,,,atop Wings and Waves waterpark,Evergreen Aviation Museum,on_display
-Boeing,747,212B,N482EV,,,fixed_wing,monoplane,civilian,commercial_transport,,,ex-Singapore Airlines 9V-SIB,Evergreen Aviation Museum,on_display
-Cessna,O-2,A,67-21395,Skymaster,,fixed_wing,monoplane,military,recon,,,,Evergreen Aviation Museum,on_display
+Bell,AH-1,F,69-16434,Cobra,,rotary_wing,,military,ground_attack,,GAH-1F ground trainer,AH1,Evergreen Aviation Museum,on_display
+Bell,HTL,3,124564,Sioux,,rotary_wing,,military,trainer,,,HTL3,Evergreen Aviation Museum,on_display
+Bell,OH-13,E,51-13934,Sioux,,rotary_wing,,military,recon,,,OH13,Evergreen Aviation Museum,on_display
+Boeing,747,132,N481EV,,,fixed_wing,monoplane,civilian,commercial_transport,,atop Wings and Waves waterpark,,Evergreen Aviation Museum,on_display
+Boeing,747,212B,N482EV,,,fixed_wing,monoplane,civilian,commercial_transport,,ex-Singapore Airlines 9V-SIB,,Evergreen Aviation Museum,on_display
+Cessna,O-2,A,67-21395,Skymaster,,fixed_wing,monoplane,military,recon,,,O2,Evergreen Aviation Museum,on_display
 Christen,Eagle,II,N4221H,,,fixed_wing,biplane,civilian,private,,,,Evergreen Aviation Museum,on_display
-Canadian Vickers,Canso,A,9815,Catalina,,fixed_wing,monoplane,military,search_rescue,,,PBY-5A;RCAF,Evergreen Aviation Museum,on_display
-Convair,F-102,A,56-1368,Delta Dagger,,fixed_wing,monoplane,military,fighter,,,,Evergreen Aviation Museum,on_display
-Convair,F-106,A,59-0137,Delta Dart,,fixed_wing,monoplane,military,fighter,,,,Evergreen Aviation Museum,on_display
+Canadian Vickers,Canso,A,9815,Catalina,,fixed_wing,monoplane,military,search_rescue,,,PBY-5A; RCAF; PBY5A,Evergreen Aviation Museum,on_display
+Convair,F-102,A,56-1368,Delta Dagger,,fixed_wing,monoplane,military,fighter,,,F102,Evergreen Aviation Museum,on_display
+Convair,F-106,A,59-0137,Delta Dart,,fixed_wing,monoplane,military,fighter,,,F106,Evergreen Aviation Museum,on_display
 Curtiss,N2C,,N868N,Fledgling,,fixed_wing,biplane,military,trainer,,,,Evergreen Aviation Museum,on_display
 Curtiss,Robin,C-1,N9283,,,fixed_wing,monoplane,civilian,private,,,,Evergreen Aviation Museum,on_display
-Curtiss-Wright,CW-15,D,N12314,Sedan,,fixed_wing,monoplane,civilian,private,,,,Evergreen Aviation Museum,on_display
-Douglas,B-26,B,44-35439,Invader,,fixed_wing,monoplane,military,bomber,,,A-26C,Evergreen Aviation Museum,on_display
-Douglas,A-4,E,152070,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,,Evergreen Aviation Museum,on_display
-Douglas,A-4,A,139929,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,,Evergreen Aviation Museum,on_display
-Douglas,EA-1,F,132534,Skyraider,,fixed_wing,monoplane,military,electronic_warfare,,,,Evergreen Aviation Museum,on_display
-Douglas,C-47,A,43-15512,Skytrain,,fixed_wing,monoplane,military,transport,,,DC-3,Evergreen Aviation Museum,on_display
-Douglas,C-9,C,73-1683,Nightingale,,fixed_wing,monoplane,military,transport,,,,Evergreen Aviation Museum,on_display
-Douglas,F5D,1,N708NA,Skylancer,,fixed_wing,monoplane,military,test,,,NASA 708;ex-US Navy,Evergreen Aviation Museum,on_display
-Fairchild,PT-19,A,42-83239,Cornell,,fixed_wing,monoplane,military,trainer,,,,Evergreen Aviation Museum,on_display
-Fairchild Republic,A-10,C,80-0186,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,,,,Evergreen Aviation Museum,on_display
-Focke-Wulf,Fw 190,A-3,,,,fixed_wing,monoplane,military,fighter,,,reproduction,Evergreen Aviation Museum,on_display
-Fokker,Dr.I,,,,,fixed_wing,triplane,military,fighter,,,replica,Evergreen Aviation Museum,on_display
+Curtiss-Wright,CW-15,D,N12314,Sedan,,fixed_wing,monoplane,civilian,private,,,CW15,Evergreen Aviation Museum,on_display
+Douglas,B-26,B,44-35439,Invader,,fixed_wing,monoplane,military,bomber,,,A-26C; B26; A26C,Evergreen Aviation Museum,on_display
+Douglas,A-4,E,152070,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,A4,Evergreen Aviation Museum,on_display
+Douglas,A-4,A,139929,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,A4,Evergreen Aviation Museum,on_display
+Douglas,EA-1,F,132534,Skyraider,,fixed_wing,monoplane,military,electronic_warfare,,,EA1,Evergreen Aviation Museum,on_display
+Douglas,C-47,A,43-15512,Skytrain,,fixed_wing,monoplane,military,transport,,,DC-3; C47; DC3,Evergreen Aviation Museum,on_display
+Douglas,C-9,C,73-1683,Nightingale,,fixed_wing,monoplane,military,transport,,,C9,Evergreen Aviation Museum,on_display
+Douglas,F5D,1,N708NA,Skylancer,,fixed_wing,monoplane,military,test,,ex-US Navy,NASA 708,Evergreen Aviation Museum,on_display
+Fairchild,PT-19,A,42-83239,Cornell,,fixed_wing,monoplane,military,trainer,,,PT19,Evergreen Aviation Museum,on_display
+Fairchild Republic,A-10,C,80-0186,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,,,A10,Evergreen Aviation Museum,on_display
+Focke-Wulf,Fw 190,A-3,,,,fixed_wing,monoplane,military,fighter,,reproduction,,Evergreen Aviation Museum,on_display
+Fokker,Dr.I,,,,,fixed_wing,triplane,military,fighter,,replica,,Evergreen Aviation Museum,on_display
 Stoddard-Hamilton,Glasair,SH-2,N306AT,,,fixed_wing,monoplane,civilian,private,,,,Evergreen Aviation Museum,on_display
 Granville Brothers,Model E,,N11044,Sportster,,fixed_wing,monoplane,civilian,private,,,Gee Bee,Evergreen Aviation Museum,on_display
 Great Lakes,Baby Great Lakes,,N44ET,,,fixed_wing,biplane,civilian,private,,,,Evergreen Aviation Museum,on_display
-Grumman,F-14,D,164343,Tomcat,,fixed_wing,monoplane,military,fighter,,,,Evergreen Aviation Museum,on_display
-Grumman,F9F,8T,146417,Cougar,,fixed_wing,monoplane,military,trainer,,,TF-9J,Evergreen Aviation Museum,on_display
-Grumman,Gulfstream II,,N947NA,,,fixed_wing,monoplane,civilian,trainer,,,NASA Shuttle Training Aircraft,Evergreen Aviation Museum,on_display
-Grumman,OV-1,D,67-18902,Mohawk,,fixed_wing,monoplane,military,recon,,,,Evergreen Aviation Museum,on_display
-Grumman,S-2,B,,Tracker,,fixed_wing,monoplane,military,recon,,,,Evergreen Aviation Museum,on_display
-Gyrodyne,XRON,1,04021,Rotorcycle,,rotary_wing,,military,utility,,,USMC one-man helicopter,Evergreen Aviation Museum,on_display
-Hiller,OH-23,B,51-16245,Raven,,rotary_wing,,military,utility,,,,Evergreen Aviation Museum,on_display
-Hiller,UH-12,E,N5363V,,,rotary_wing,,civilian,utility,,,,Evergreen Aviation Museum,on_display
-Hiller,UH-12,E,N1H,,,rotary_wing,,civilian,utility,,,c/n 2100,Evergreen Aviation Museum,on_display
-Hiller,YROE,1,,Rotorcycle,,rotary_wing,,military,utility,,,USN prototype,Evergreen Aviation Museum,on_display
-Hughes,TH-55,,N79P,Osage,,rotary_wing,,military,trainer,,,,Evergreen Aviation Museum,on_display
-Hughes,369,D,N11035,,,rotary_wing,,civilian,utility,,,civil OH-6,Evergreen Aviation Museum,on_display
-Hughes,500,C,,,,rotary_wing,,civilian,utility,,,registry gave invalid N110035;possibly same airframe as 369D N11035,Evergreen Aviation Museum,on_display
-Hughes,H-4,,NX37602,Hercules,Spruce Goose,fixed_wing,monoplane,civilian,experimental,1947,,HK-1;largest wooden aircraft ever flown,Evergreen Aviation Museum,on_display
-Kaman,SH-2,F,151321,Seasprite,,rotary_wing,,military,utility,,,,Evergreen Aviation Museum,on_display
+Grumman,F-14,D,164343,Tomcat,,fixed_wing,monoplane,military,fighter,,,F14,Evergreen Aviation Museum,on_display
+Grumman,F9F,8T,146417,Cougar,,fixed_wing,monoplane,military,trainer,,,TF-9J; TF9J,Evergreen Aviation Museum,on_display
+Grumman,Gulfstream II,,N947NA,,,fixed_wing,monoplane,civilian,trainer,,NASA Shuttle Training Aircraft,,Evergreen Aviation Museum,on_display
+Grumman,OV-1,D,67-18902,Mohawk,,fixed_wing,monoplane,military,recon,,,OV1,Evergreen Aviation Museum,on_display
+Grumman,S-2,B,,Tracker,,fixed_wing,monoplane,military,recon,,,S2,Evergreen Aviation Museum,on_display
+Gyrodyne,XRON,1,04021,Rotorcycle,,rotary_wing,,military,utility,,USMC one-man helicopter,XRON1,Evergreen Aviation Museum,on_display
+Hiller,OH-23,B,51-16245,Raven,,rotary_wing,,military,utility,,,OH23,Evergreen Aviation Museum,on_display
+Hiller,UH-12,E,N5363V,,,rotary_wing,,civilian,utility,,,UH12,Evergreen Aviation Museum,on_display
+Hiller,UH-12,E,N1H,,,rotary_wing,,civilian,utility,,,c/n 2100; UH12,Evergreen Aviation Museum,on_display
+Hiller,YROE,1,,Rotorcycle,,rotary_wing,,military,utility,,USN prototype,YROE1,Evergreen Aviation Museum,on_display
+Hughes,TH-55,,N79P,Osage,,rotary_wing,,military,trainer,,,TH55,Evergreen Aviation Museum,on_display
+Hughes,369,D,N11035,,,rotary_wing,,civilian,utility,,civil OH-6,OH-6; OH6,Evergreen Aviation Museum,on_display
+Hughes,500,C,,,,rotary_wing,,civilian,utility,,registry gave invalid N110035; possibly same airframe as 369D N11035,,Evergreen Aviation Museum,on_display
+Hughes,H-4,,NX37602,Hercules,Spruce Goose,fixed_wing,monoplane,civilian,experimental,1947,largest wooden aircraft ever flown,HK-1; H4; HK1,Evergreen Aviation Museum,on_display
+Kaman,SH-2,F,151321,Seasprite,,rotary_wing,,military,utility,,,SH2,Evergreen Aviation Museum,on_display
 Lancair,360,,N44BH,,,fixed_wing,monoplane,civilian,private,,,,Evergreen Aviation Museum,on_display
-Lockheed,P-2,E,131502,Neptune,,fixed_wing,monoplane,military,recon,,,,Evergreen Aviation Museum,on_display
-Lockheed,T-33,A,53-5943,Shooting Star,,fixed_wing,monoplane,military,trainer,,,,Evergreen Aviation Museum,on_display
-Lockheed,F-94,C,51-13575,Starfire,,fixed_wing,monoplane,military,fighter,,,,Evergreen Aviation Museum,on_display
-Lockheed,F-104,G,FX-84,Starfighter,,fixed_wing,monoplane,military,fighter,,,SABCA-built;Belgian Air Force,Evergreen Aviation Museum,on_display
-McDonnell,F-101,A,53-2418,Voodoo,,fixed_wing,monoplane,military,fighter,,,first production F-101A,Evergreen Aviation Museum,on_display
-McDonnell,CF-101,F,,Voodoo,,fixed_wing,monoplane,military,fighter,,,Royal Canadian Air Force,Evergreen Aviation Museum,on_display
-McDonnell,F-4,C,63-7647,Phantom II,,fixed_wing,monoplane,military,fighter,,,,Evergreen Aviation Museum,on_display
-McDonnell Douglas,F-15,A,73-0089,Eagle,,fixed_wing,monoplane,military,fighter,,,,Evergreen Aviation Museum,on_display
-McDonnell Douglas,F-15,A,76-0014,Eagle,,fixed_wing,monoplane,military,fighter,,,pedestal display across highway at former Evergreen HQ;Michael King Smith memorial,Evergreen Aviation Museum,on_display
-Messerschmitt,Me 262,A,501242,Schwalbe,,fixed_wing,monoplane,military,fighter,,,reproduction by Texas Airplane Factory,Evergreen Aviation Museum,on_display
-Shenyang,JJ-2,,83238,Midget,,fixed_wing,monoplane,military,trainer,,,Chinese-built MiG-15UTI,Evergreen Aviation Museum,on_display
-Mikoyan-Gurevich,MiG-17,F,115,Fresco,,fixed_wing,monoplane,military,fighter,,,Bulgarian Air Force,Evergreen Aviation Museum,on_display
-Mikoyan-Gurevich,MiG-21,MF,7600,Fishbed,,fixed_wing,monoplane,military,fighter,,,,Evergreen Aviation Museum,on_display
-Mikoyan-Gurevich,MiG-23,ML,20+16,Flogger,,fixed_wing,monoplane,military,fighter,,,ex-East German Air Force,Evergreen Aviation Museum,on_display
-Mikoyan,MiG-29,,41,Fulcrum,,fixed_wing,monoplane,military,fighter,,,Moldovan Air Force,Evergreen Aviation Museum,on_display
+Lockheed,P-2,E,131502,Neptune,,fixed_wing,monoplane,military,recon,,,P2,Evergreen Aviation Museum,on_display
+Lockheed,T-33,A,53-5943,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T33,Evergreen Aviation Museum,on_display
+Lockheed,F-94,C,51-13575,Starfire,,fixed_wing,monoplane,military,fighter,,,F94,Evergreen Aviation Museum,on_display
+Lockheed,F-104,G,FX-84,Starfighter,,fixed_wing,monoplane,military,fighter,,Belgian Air Force,SABCA-built; F104,Evergreen Aviation Museum,on_display
+McDonnell,F-101,A,53-2418,Voodoo,,fixed_wing,monoplane,military,fighter,,first production F-101A,F101,Evergreen Aviation Museum,on_display
+McDonnell,CF-101,F,,Voodoo,,fixed_wing,monoplane,military,fighter,,Royal Canadian Air Force,CF101,Evergreen Aviation Museum,on_display
+McDonnell,F-4,C,63-7647,Phantom II,,fixed_wing,monoplane,military,fighter,,,F4,Evergreen Aviation Museum,on_display
+McDonnell Douglas,F-15,A,73-0089,Eagle,,fixed_wing,monoplane,military,fighter,,,F15,Evergreen Aviation Museum,on_display
+McDonnell Douglas,F-15,A,76-0014,Eagle,,fixed_wing,monoplane,military,fighter,,pedestal display across highway at former Evergreen HQ; Michael King Smith memorial,F15,Evergreen Aviation Museum,on_display
+Messerschmitt,Me 262,A,501242,Schwalbe,,fixed_wing,monoplane,military,fighter,,reproduction by Texas Airplane Factory,,Evergreen Aviation Museum,on_display
+Shenyang,JJ-2,,83238,Midget,,fixed_wing,monoplane,military,trainer,,,Chinese-built MiG-15UTI; JJ2,Evergreen Aviation Museum,on_display
+Mikoyan-Gurevich,MiG-17,F,115,Fresco,,fixed_wing,monoplane,military,fighter,,Bulgarian Air Force,MiG17,Evergreen Aviation Museum,on_display
+Mikoyan-Gurevich,MiG-21,MF,7600,Fishbed,,fixed_wing,monoplane,military,fighter,,,MiG21,Evergreen Aviation Museum,on_display
+Mikoyan-Gurevich,MiG-23,ML,20+16,Flogger,,fixed_wing,monoplane,military,fighter,,ex-East German Air Force,MiG23,Evergreen Aviation Museum,on_display
+Mikoyan,MiG-29,,41,Fulcrum,,fixed_wing,monoplane,military,fighter,,Moldovan Air Force,MiG29,Evergreen Aviation Museum,on_display
 Murphy,Rebel,,N711WH,,,fixed_wing,monoplane,civilian,private,,,,Evergreen Aviation Museum,on_display
 Naval Aircraft Factory,N3N,3,02831,Canary,,fixed_wing,biplane,military,trainer,,,,Evergreen Aviation Museum,on_display
-North American,F-100,F,56-3832,Super Sabre,,fixed_wing,monoplane,military,fighter,,,,Evergreen Aviation Museum,on_display
-North American,F-100,F,56-3861,Super Sabre,,fixed_wing,monoplane,military,fighter,,,,Evergreen Aviation Museum,on_display
-North American,FJ-4,B,136119,Fury,,fixed_wing,monoplane,military,fighter,,,F-1E;USMC,Evergreen Aviation Museum,on_display
-North American,F-86,H,53-1251,Sabre,,fixed_wing,monoplane,military,fighter,,,,Evergreen Aviation Museum,on_display
-North American,T-2,C,158312,Buckeye,,fixed_wing,monoplane,military,trainer,,,,Evergreen Aviation Museum,on_display
-North American,T-28,B,138334,Trojan,,fixed_wing,monoplane,military,trainer,,,,Evergreen Aviation Museum,on_display
-North American,AT-6,C,42-43973,Texan,,fixed_wing,monoplane,military,trainer,,,,Evergreen Aviation Museum,on_display
-Northrop,T-38,A,63-8224,Talon,,fixed_wing,monoplane,military,trainer,,,,Evergreen Aviation Museum,on_display
-Northrop,F-5,E,741556,Tiger II,,fixed_wing,monoplane,military,fighter,,,aggressor aircraft,Evergreen Aviation Museum,on_display
-Northrop,F-89,A,53-26077,Scorpion,,fixed_wing,monoplane,military,fighter,,,,Evergreen Aviation Museum,on_display
-Northrop,F-89,J,53-2534,Scorpion,,fixed_wing,monoplane,military,fighter,,,,Evergreen Aviation Museum,on_display
-Northrop Grumman,RQ-8,A,166416,Fire Scout,,rotary_wing,,military,drone,,,,Evergreen Aviation Museum,on_display
-Piasecki,CH-21,C,55-4218,Shawnee,,rotary_wing,,military,transport,,,Flying Banana,Evergreen Aviation Museum,on_display
+North American,F-100,F,56-3832,Super Sabre,,fixed_wing,monoplane,military,fighter,,,F100,Evergreen Aviation Museum,on_display
+North American,F-100,F,56-3861,Super Sabre,,fixed_wing,monoplane,military,fighter,,,F100,Evergreen Aviation Museum,on_display
+North American,FJ-4,B,136119,Fury,,fixed_wing,monoplane,military,fighter,,,F-1E; USMC; FJ4; F1E,Evergreen Aviation Museum,on_display
+North American,F-86,H,53-1251,Sabre,,fixed_wing,monoplane,military,fighter,,,F86,Evergreen Aviation Museum,on_display
+North American,T-2,C,158312,Buckeye,,fixed_wing,monoplane,military,trainer,,,T2,Evergreen Aviation Museum,on_display
+North American,T-28,B,138334,Trojan,,fixed_wing,monoplane,military,trainer,,,T28,Evergreen Aviation Museum,on_display
+North American,AT-6,C,42-43973,Texan,,fixed_wing,monoplane,military,trainer,,,AT6,Evergreen Aviation Museum,on_display
+Northrop,T-38,A,63-8224,Talon,,fixed_wing,monoplane,military,trainer,,,T38,Evergreen Aviation Museum,on_display
+Northrop,F-5,E,741556,Tiger II,,fixed_wing,monoplane,military,fighter,,aggressor aircraft,F5,Evergreen Aviation Museum,on_display
+Northrop,F-89,A,53-26077,Scorpion,,fixed_wing,monoplane,military,fighter,,,F89,Evergreen Aviation Museum,on_display
+Northrop,F-89,J,53-2534,Scorpion,,fixed_wing,monoplane,military,fighter,,,F89,Evergreen Aviation Museum,on_display
+Northrop Grumman,RQ-8,A,166416,Fire Scout,,rotary_wing,,military,drone,,,RQ8,Evergreen Aviation Museum,on_display
+Piasecki,CH-21,C,55-4218,Shawnee,,rotary_wing,,military,transport,,,Flying Banana; CH21,Evergreen Aviation Museum,on_display
 Pietenpol,Air Camper,,,,,fixed_wing,monoplane,civilian,private,,,,Evergreen Aviation Museum,on_display
-Taylorcraft,TG-6,,N46471,,,fixed_wing,monoplane,military,trainer,,,training glider,Evergreen Aviation Museum,on_display
-Pitts,S-2,B,,Special,,fixed_wing,biplane,civilian,private,,,,Evergreen Aviation Museum,on_display
-Pitts,S-1,S,,Special,,fixed_wing,biplane,civilian,private,,,,Evergreen Aviation Museum,on_display
-Republic,F-105,G,62-4432,Thunderchief,,fixed_wing,monoplane,military,electronic_warfare,,,Wild Weasel,Evergreen Aviation Museum,on_display
-Republic,F-84,F,51-9522,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,,,Evergreen Aviation Museum,on_display
-Republic,RC-3,,N6481K,Seabee,,fixed_wing,monoplane,civilian,private,,,,Evergreen Aviation Museum,on_display
-Ryan,BQM-34,A,67-21596,Firebee,,fixed_wing,monoplane,military,drone,,,,Evergreen Aviation Museum,on_display
-Ryan,PT-22,,41-20952,Recruit,,fixed_wing,monoplane,military,trainer,,,,Evergreen Aviation Museum,on_display
-Schweizer,SGS 2-32,,N8600R,,,fixed_wing,monoplane,civilian,private,,,glider,Evergreen Aviation Museum,on_display
-Sikorsky,HO3S,1G,1233,,,rotary_wing,,military,search_rescue,,,US Coast Guard,Evergreen Aviation Museum,on_display
-Sikorsky,H-19,,52-7602,Chickasaw,,rotary_wing,,military,utility,,,,Evergreen Aviation Museum,on_display
-Sikorsky,H-37,A,58-0999,Mojave,,rotary_wing,,military,transport,,,,Evergreen Aviation Museum,on_display
-Sikorsky,S-58,,138460,,,rotary_wing,,military,transport,,,USN,Evergreen Aviation Museum,on_display
-Sikorsky,HH-3,E,65-12791,Jolly Green Giant,,rotary_wing,,military,search_rescue,,,,Evergreen Aviation Museum,on_display
-Sikorsky,UH-3,H,149006,Sea King,,rotary_wing,,military,utility,,,,Evergreen Aviation Museum,on_display
-Sopwith,Camel,,,,,fixed_wing,biplane,military,fighter,,,replica,Evergreen Aviation Museum,on_display
-Piper,L-4,H,43-29459,Grasshopper,,fixed_wing,monoplane,military,utility,,,,Evergreen Aviation Museum,on_display
-Auster,AOP.6,,VF644,,,fixed_wing,monoplane,military,recon,,,British Army Air Corps,Evergreen Aviation Museum,on_display
-Thorp,T-18,,N3BF,Tiger,,fixed_wing,monoplane,civilian,private,,,,Evergreen Aviation Museum,on_display
-Vought,A-7,D,69-6230,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,,Evergreen Aviation Museum,on_display
-Yakovlev,Yak-50,,N7144F,,,fixed_wing,monoplane,civilian,private,,,,Evergreen Aviation Museum,on_display
-Lockheed,F-117,A,,Nighthawk,,fixed_wing,monoplane,military,ground_attack,,,arrived 2023,Evergreen Aviation Museum,under_restoration
-de Havilland,Venom,,,,,fixed_wing,monoplane,military,fighter,,,new exhibit 2023,Evergreen Aviation Museum,on_display
-Martin Marietta,Titan,II,,,,missile_rocket,,military,space,,,displayed vertically with launch control room,Evergreen Aviation Museum,on_display
+Taylorcraft,TG-6,,N46471,,,fixed_wing,monoplane,military,trainer,,training glider,TG6,Evergreen Aviation Museum,on_display
+Pitts,S-2,B,,Special,,fixed_wing,biplane,civilian,private,,,S2,Evergreen Aviation Museum,on_display
+Pitts,S-1,S,,Special,,fixed_wing,biplane,civilian,private,,,S1,Evergreen Aviation Museum,on_display
+Republic,F-105,G,62-4432,Thunderchief,,fixed_wing,monoplane,military,electronic_warfare,,,Wild Weasel; F105,Evergreen Aviation Museum,on_display
+Republic,F-84,F,51-9522,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,,F84,Evergreen Aviation Museum,on_display
+Republic,RC-3,,N6481K,Seabee,,fixed_wing,monoplane,civilian,private,,,RC3,Evergreen Aviation Museum,on_display
+Ryan,BQM-34,A,67-21596,Firebee,,fixed_wing,monoplane,military,drone,,,BQM34,Evergreen Aviation Museum,on_display
+Ryan,PT-22,,41-20952,Recruit,,fixed_wing,monoplane,military,trainer,,,PT22,Evergreen Aviation Museum,on_display
+Schweizer,SGS 2-32,,N8600R,,,fixed_wing,monoplane,civilian,private,,glider,,Evergreen Aviation Museum,on_display
+Sikorsky,HO3S,1G,1233,,,rotary_wing,,military,search_rescue,,US Coast Guard,,Evergreen Aviation Museum,on_display
+Sikorsky,H-19,,52-7602,Chickasaw,,rotary_wing,,military,utility,,,H19,Evergreen Aviation Museum,on_display
+Sikorsky,H-37,A,58-0999,Mojave,,rotary_wing,,military,transport,,,H37,Evergreen Aviation Museum,on_display
+Sikorsky,S-58,,138460,,,rotary_wing,,military,transport,,,USN; S58,Evergreen Aviation Museum,on_display
+Sikorsky,HH-3,E,65-12791,Jolly Green Giant,,rotary_wing,,military,search_rescue,,,HH3,Evergreen Aviation Museum,on_display
+Sikorsky,UH-3,H,149006,Sea King,,rotary_wing,,military,utility,,,UH3,Evergreen Aviation Museum,on_display
+Sopwith,Camel,,,,,fixed_wing,biplane,military,fighter,,replica,,Evergreen Aviation Museum,on_display
+Piper,L-4,H,43-29459,Grasshopper,,fixed_wing,monoplane,military,utility,,,L4,Evergreen Aviation Museum,on_display
+Auster,AOP.6,,VF644,,,fixed_wing,monoplane,military,recon,,British Army Air Corps,,Evergreen Aviation Museum,on_display
+Thorp,T-18,,N3BF,Tiger,,fixed_wing,monoplane,civilian,private,,,T18,Evergreen Aviation Museum,on_display
+Vought,A-7,D,69-6230,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,A7,Evergreen Aviation Museum,on_display
+Yakovlev,Yak-50,,N7144F,,,fixed_wing,monoplane,civilian,private,,,Yak50,Evergreen Aviation Museum,on_display
+Lockheed,F-117,A,,Nighthawk,,fixed_wing,monoplane,military,ground_attack,,arrived 2023,F117,Evergreen Aviation Museum,under_restoration
+de Havilland,Venom,,,,,fixed_wing,monoplane,military,fighter,,new exhibit 2023,,Evergreen Aviation Museum,on_display
+Martin Marietta,Titan,II,,,,missile_rocket,,military,space,,displayed vertically with launch control room,,Evergreen Aviation Museum,on_display

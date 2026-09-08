@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Beech,C-45,H,N40074,Expeditor,Yellow Belly,fixed_wing,monoplane,military,utility,1954,,USAF serial 52-10904;FAA serial AF-834;wears the markings 210904/V;registered to the American Airpower Heritage Flying Museum;flyable,CAF Cimarron Strip Wing,on_display
+Beech,C-45,H,N40074,Expeditor,Yellow Belly,fixed_wing,monoplane,military,utility,1954,USAF serial 52-10904; FAA serial AF-834; wears the markings 210904/V; registered to the American Airpower Heritage Flying Museum; flyable,52-10904; C45,CAF Cimarron Strip Wing,on_display

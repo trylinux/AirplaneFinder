@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Bell,UH-1,H,,Iroquois,,rotary_wing,,military,utility,,,"Huey;pole-mounted;JDF fleet H-19 to H-22, identity unconfirmed",Jamaica Military Museum and Library,on_display
+Bell,UH-1,H,,Iroquois,,rotary_wing,,military,utility,,"pole-mounted; JDF fleet H-19 to H-22, identity unconfirmed",Huey; UH1,Jamaica Military Museum and Library,on_display

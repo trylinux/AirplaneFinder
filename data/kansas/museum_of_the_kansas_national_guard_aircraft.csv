@@ -1,14 +1,14 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Boeing,KC-135,E,57-1429,Stratotanker,,fixed_wing,monoplane,military,tanker,,,landmark visible from Topeka Boulevard,Museum of the Kansas National Guard,on_display
-McDonnell Douglas,F-4,D,65-0801,Phantom II,,fixed_wing,monoplane,military,fighter,,,coded OY,Museum of the Kansas National Guard,on_display
-Republic,F-105,D,61-0106,Thunderchief,,fixed_wing,monoplane,military,ground_attack,,,ex-Kansas Aviation Museum;carried the ground-instructional designation GF-105D;one source gives the serial as 63-8366,Museum of the Kansas National Guard,on_display
-Martin,RB-57,B,52-1480,Canberra,,fixed_wing,monoplane,military,recon,,,,Museum of the Kansas National Guard,on_display
-Martin,EB-57,B,52-1526,Canberra,,fixed_wing,monoplane,military,electronic_warfare,,,serial from a single source;the museum lists one EB-57 so a second Canberra is unverified,Museum of the Kansas National Guard,on_display
-Sikorsky,CH-54,A,68-18439,Tarhe,,rotary_wing,,military,transport,,,,Museum of the Kansas National Guard,on_display
-Bell,AH-1,S,70-16060,Cobra,,rotary_wing,,military,ground_attack,,,,Museum of the Kansas National Guard,on_display
-Bell,UH-1,H,64-13569,Iroquois,,rotary_wing,,military,utility,,,,Museum of the Kansas National Guard,on_display
-Bell,UH-1,H,65-10011,Iroquois,,rotary_wing,,military,utility,,,,Museum of the Kansas National Guard,on_display
-Bell,OH-58,A,72-21375,Kiowa,,rotary_wing,,military,recon,,,,Museum of the Kansas National Guard,on_display
-Hughes,OH-6,A,67-16066,Cayuse,,rotary_wing,,military,recon,,,,Museum of the Kansas National Guard,on_display
-Cessna,L-19,,,Bird Dog,,fixed_wing,monoplane,military,recon,,,on the museum's static display page;no serial found,Museum of the Kansas National Guard,on_display
-Hiller,OH-23,,,Raven,,rotary_wing,,military,utility,,,on the museum's static display page;no serial found,Museum of the Kansas National Guard,on_display
+Boeing,KC-135,E,57-1429,Stratotanker,,fixed_wing,monoplane,military,tanker,,landmark visible from Topeka Boulevard,KC135,Museum of the Kansas National Guard,on_display
+McDonnell Douglas,F-4,D,65-0801,Phantom II,,fixed_wing,monoplane,military,fighter,,coded OY,F4,Museum of the Kansas National Guard,on_display
+Republic,F-105,D,61-0106,Thunderchief,,fixed_wing,monoplane,military,ground_attack,,ex-Kansas Aviation Museum; carried the ground-instructional designation GF-105D; one source gives the serial as 63-8366,F105,Museum of the Kansas National Guard,on_display
+Martin,RB-57,B,52-1480,Canberra,,fixed_wing,monoplane,military,recon,,,RB57,Museum of the Kansas National Guard,on_display
+Martin,EB-57,B,52-1526,Canberra,,fixed_wing,monoplane,military,electronic_warfare,,serial from a single source; the museum lists one EB-57 so a second Canberra is unverified,EB57,Museum of the Kansas National Guard,on_display
+Sikorsky,CH-54,A,68-18439,Tarhe,,rotary_wing,,military,transport,,,CH54,Museum of the Kansas National Guard,on_display
+Bell,AH-1,S,70-16060,Cobra,,rotary_wing,,military,ground_attack,,,AH1,Museum of the Kansas National Guard,on_display
+Bell,UH-1,H,64-13569,Iroquois,,rotary_wing,,military,utility,,,UH1,Museum of the Kansas National Guard,on_display
+Bell,UH-1,H,65-10011,Iroquois,,rotary_wing,,military,utility,,,UH1,Museum of the Kansas National Guard,on_display
+Bell,OH-58,A,72-21375,Kiowa,,rotary_wing,,military,recon,,,OH58,Museum of the Kansas National Guard,on_display
+Hughes,OH-6,A,67-16066,Cayuse,,rotary_wing,,military,recon,,,OH6,Museum of the Kansas National Guard,on_display
+Cessna,L-19,,,Bird Dog,,fixed_wing,monoplane,military,recon,,on the museum's static display page; no serial found,L19,Museum of the Kansas National Guard,on_display
+Hiller,OH-23,,,Raven,,rotary_wing,,military,utility,,on the museum's static display page; no serial found,OH23,Museum of the Kansas National Guard,on_display

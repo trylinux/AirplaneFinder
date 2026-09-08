@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-North American,F-86,H,53-1503,Sabre,,fixed_wing,monoplane,military,fighter,,,reported as an F-86H-10-NA,McCook Army Air Base Historical Society,on_display
+North American,F-86,H,53-1503,Sabre,,fixed_wing,monoplane,military,fighter,,reported as an F-86H-10-NA,F86,McCook Army Air Base Historical Society,on_display

@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-McDonnell Douglas,RF-4,C,68-0570,Phantom II,,fixed_wing,monoplane,military,recon,,,RF-4C-38-MC;c/n 3485;withdrawn from use October 1992;dedicated at the school 23 May 2003;NMUSAF loan held by VFW Post 8925 Austin,Del Valle High School,on_display
+McDonnell Douglas,RF-4,C,68-0570,Phantom II,,fixed_wing,monoplane,military,recon,,withdrawn from use October 1992; dedicated at the school 23 May 2003; NMUSAF loan held by VFW Post 8925 Austin,RF-4C-38-MC; c/n 3485; RF4,Del Valle High School,on_display

@@ -1,4 +1,4 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Boeing,F/A-18,E,165164,Super Hornet,E1,fixed_wing,monoplane,military,fighter,1995,,the first Super Hornet built;first flight 29 November 1995 from Lambert Field;previously in outdoor storage at Boeing St. Louis;arrived disassembled December 2023 and reassembled July 2024;dedicated 3 August 2024;NNAM loan,National Museum of Transportation,on_display
-Douglas,C-47,A,43-15635,Skytrain,,fixed_wing,monoplane,military,transport,,,c/n 20101;VC-47A;code 7J-N,National Museum of Transportation,on_display
-Lockheed,T-33,A,52-9446,Shooting Star,,fixed_wing,monoplane,military,trainer,,,c/n 580-7556;painted as 52-9564;pylon-mounted,National Museum of Transportation,on_display
+Boeing,F/A-18,E,165164,Super Hornet,E1,fixed_wing,monoplane,military,fighter,1995,the first Super Hornet built; first flight 29 November 1995 from Lambert Field; previously in outdoor storage at Boeing St. Louis; arrived disassembled December 2023 and reassembled July 2024; dedicated 3 August 2024; NNAM loan,,National Museum of Transportation,on_display
+Douglas,C-47,A,43-15635,Skytrain,,fixed_wing,monoplane,military,transport,,code 7J-N,c/n 20101; VC-47A; C47; VC47A,National Museum of Transportation,on_display
+Lockheed,T-33,A,52-9446,Shooting Star,,fixed_wing,monoplane,military,trainer,,painted as 52-9564; pylon-mounted,c/n 580-7556; 52-9564; T33,National Museum of Transportation,on_display

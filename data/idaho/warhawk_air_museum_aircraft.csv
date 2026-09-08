@@ -1,16 +1,16 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-North American,P-51,C,43-25057,Mustang,Boise Bee,fixed_wing,monoplane,military,fighter,1943,,N4651C;P-51C-10-NT;103-26688;wears QP-B markings of Duane Beeson's Boise Bee;held by Mustang LLC,Warhawk Air Museum,on_display
-Curtiss,P-40,N,42-106396,Warhawk,Parrot Head,fixed_wing,monoplane,military,fighter,1942,,N1195N;P-40N-15-CU;ex-RCAF 880;c/n 30158;held by War Hawk LLC,Warhawk Air Museum,on_display
-Curtiss,P-40,E,AK933,Kittyhawk,Sneak Attack,fixed_wing,monoplane,military,fighter,1941,,N94466;RCAF 1057;c/n 15404;restored with P-40F wings;wears RAF 112 Sqn SU-E markings,Warhawk Air Museum,on_display
-North American,F-86,F,,Sabre,Bernie's Bo,fixed_wing,monoplane,military,fighter,,,serial not published;wears markings of Capt Robert J. Love 335th FIS,Warhawk Air Museum,on_display
-Republic,F-84,G,,Thunderjet,,fixed_wing,monoplane,military,fighter,,,serial not published;restored 2022 in USAF Thunderbirds markings,Warhawk Air Museum,on_display
-Lockheed,F-104,A,56-0778,Starfighter,,fixed_wing,monoplane,military,fighter,1958,,ex-N66305;83rd FIS Hamilton AFB;later Taiwan and Jordan;ex-Merle Maine collection;arrived 2013,Warhawk Air Museum,on_display
-Grumman,F9F,2,,Panther,,fixed_wing,monoplane,military,fighter,,,BuNo not published;arrived June 2017,Warhawk Air Museum,under_restoration
-Bell,UH-1,C,66-15069,Iroquois,,rotary_wing,,military,ground_attack,,,N24097;c/n 1797;Huey;Mike model gunship;wears 68th AHC Mustangs markings,Warhawk Air Museum,on_display
-Cessna,O-1,A,51-12032,Bird Dog,,fixed_wing,monoplane,military,recon,1952,,N5263G;c/n 22346;L-19;marked 0-11954;wears markings honoring Chester Soapy Walborn,Warhawk Air Museum,on_display
-North American,T-6,G,N3623K,Texan,Mary Virginia,fixed_wing,monoplane,military,trainer,1951,,c/n 182-451;USAF serial not established;ex-Banta Aviation Corp,Warhawk Air Museum,on_display
-Naval Aircraft Factory,N3N,3,N45305,Yellow Peril,,fixed_wing,biplane,military,trainer,1940,,c/n 1918;BuNo not published;museum states 1939 built;FAA states 1940,Warhawk Air Museum,on_display
-PZL-Mielec,Lim-5,,1417,,,fixed_wing,monoplane,military,fighter,1957,,MiG-17F;Fresco;1C 14-17;ex-Polish Air Force;museum credits Mikoyan-Gurevich,Warhawk Air Museum,on_display
-Mikoyan-Gurevich,MiG-21,F-13,1011,Fishbed,,fixed_wing,monoplane,military,fighter,1962,,N1011E;c/n 061011;Aero S-106;Czechoslovak-built;ex-Merle Maine collection,Warhawk Air Museum,on_display
-Yakovlev,Yak-18,,N54YK,,,fixed_wing,monoplane,military,trainer,1954,,c/n 232012;restored 1993 by Robert Kantner;Continental W670 engine,Warhawk Air Museum,on_display
-Fokker,Dr.I,,,,The Blue Max,fixed_wing,triplane,military,fighter,1995,,replica;built by Max Fullmer;ex-N9224C;c/n 2896,Warhawk Air Museum,on_display
+North American,P-51,C,43-25057,Mustang,Boise Bee,fixed_wing,monoplane,military,fighter,1943,103-26688; wears QP-B markings of Duane Beeson's Boise Bee; held by Mustang LLC,N4651C; P-51C-10-NT; P51,Warhawk Air Museum,on_display
+Curtiss,P-40,N,42-106396,Warhawk,Parrot Head,fixed_wing,monoplane,military,fighter,1942,ex-RCAF 880; held by War Hawk LLC,N1195N; P-40N-15-CU; RCAF 880; c/n 30158; P40,Warhawk Air Museum,on_display
+Curtiss,P-40,E,AK933,Kittyhawk,Sneak Attack,fixed_wing,monoplane,military,fighter,1941,restored with P-40F wings; wears RAF 112 Sqn SU-E markings,N94466; RCAF 1057; c/n 15404; P40,Warhawk Air Museum,on_display
+North American,F-86,F,,Sabre,Bernie's Bo,fixed_wing,monoplane,military,fighter,,serial not published; wears markings of Capt Robert J. Love 335th FIS,F86,Warhawk Air Museum,on_display
+Republic,F-84,G,,Thunderjet,,fixed_wing,monoplane,military,fighter,,serial not published; restored 2022 in USAF Thunderbirds markings,F84,Warhawk Air Museum,on_display
+Lockheed,F-104,A,56-0778,Starfighter,,fixed_wing,monoplane,military,fighter,1958,ex-N66305; 83rd FIS Hamilton AFB; later Taiwan and Jordan; ex-Merle Maine collection; arrived 2013,N66305; F104,Warhawk Air Museum,on_display
+Grumman,F9F,2,,Panther,,fixed_wing,monoplane,military,fighter,,BuNo not published; arrived June 2017,,Warhawk Air Museum,under_restoration
+Bell,UH-1,C,66-15069,Iroquois,,rotary_wing,,military,ground_attack,,Mike model gunship; wears 68th AHC Mustangs markings,N24097; c/n 1797; Huey; UH1,Warhawk Air Museum,on_display
+Cessna,O-1,A,51-12032,Bird Dog,,fixed_wing,monoplane,military,recon,1952,wears markings honoring Chester Soapy Walborn; marked 0-11954,N5263G; c/n 22346; L-19; O1; L19,Warhawk Air Museum,on_display
+North American,T-6,G,N3623K,Texan,Mary Virginia,fixed_wing,monoplane,military,trainer,1951,USAF serial not established; ex-Banta Aviation Corp,c/n 182-451; T6,Warhawk Air Museum,on_display
+Naval Aircraft Factory,N3N,3,N45305,Yellow Peril,,fixed_wing,biplane,military,trainer,1940,BuNo not published; museum states 1939 built; FAA states 1940,c/n 1918,Warhawk Air Museum,on_display
+PZL-Mielec,Lim-5,,1417,,,fixed_wing,monoplane,military,fighter,1957,1C 14-17; ex-Polish Air Force; museum credits Mikoyan-Gurevich,MiG-17F; Fresco; Lim5; MiG17F,Warhawk Air Museum,on_display
+Mikoyan-Gurevich,MiG-21,F-13,1011,Fishbed,,fixed_wing,monoplane,military,fighter,1962,ex-Merle Maine collection,N1011E; c/n 061011; Aero S-106; Czechoslovak-built; MiG21,Warhawk Air Museum,on_display
+Yakovlev,Yak-18,,N54YK,,,fixed_wing,monoplane,military,trainer,1954,restored 1993 by Robert Kantner; Continental W670 engine,c/n 232012; Yak18,Warhawk Air Museum,on_display
+Fokker,Dr.I,,,,The Blue Max,fixed_wing,triplane,military,fighter,1995,replica; built by Max Fullmer; ex-N9224C,N9224C; c/n 2896,Warhawk Air Museum,on_display

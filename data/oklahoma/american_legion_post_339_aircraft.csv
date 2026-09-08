@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Bell,UH-1,,65-9937,Iroquois,,rotary_wing,,military,utility,,,sub-variant not established;the source dossier flags this record as needing confirmation,American Legion Post 339,on_display
+Bell,UH-1,,65-9937,Iroquois,,rotary_wing,,military,utility,,sub-variant not established; the source dossier flags this record as needing confirmation,UH1,American Legion Post 339,on_display

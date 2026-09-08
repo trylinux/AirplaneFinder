@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-North American,F-100,F,56-3813,Super Sabre,,fixed_wing,monoplane,military,fighter,,,two-seat F-100F;HMdb marker 61567;the Wikipedia survivor table wrongly calls it an F-100D,Riverside Park,on_display
+North American,F-100,F,56-3813,Super Sabre,,fixed_wing,monoplane,military,fighter,,two-seat F-100F; HMdb marker 61567; the Wikipedia survivor table wrongly calls it an F-100D,F100,Riverside Park,on_display

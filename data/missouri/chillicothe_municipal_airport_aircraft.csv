@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Republic,F-105,B,57-5817,Thunderchief,,fixed_wing,monoplane,military,ground_attack,,,c/n B54;NMUSAF loan;on site since 1985;at the airport entrance on US-36,Chillicothe Municipal Airport,on_display
+Republic,F-105,B,57-5817,Thunderchief,,fixed_wing,monoplane,military,ground_attack,,NMUSAF loan; on site since 1985; at the airport entrance on US-36,c/n B54; F105,Chillicothe Municipal Airport,on_display

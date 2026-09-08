@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-McDonnell,F-4,D,65-0735,Phantom II,,fixed_wing,monoplane,military,fighter,,,c/n 1794;later a GF-4D ground-instructional airframe;pedestal display,Hastings Municipal Airport,on_display
+McDonnell,F-4,D,65-0735,Phantom II,,fixed_wing,monoplane,military,fighter,,later a GF-4D ground-instructional airframe; pedestal display,c/n 1794; F4,Hastings Municipal Airport,on_display

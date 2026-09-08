@@ -1,6 +1,6 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-North American,P-51,D,N991R,Mustang,Miss America,fixed_wing,monoplane,military,fighter,,,USAAF serial 44-74536;race number 11;former marks N5452V and N991RC;acquired from the Museum of Flying in 1992;privately owned by Brent Hisey,Oklahoma Museum of Flying,on_display
-Aero Vodochody,L-39,C,N639RH,Albatros,,fixed_wing,monoplane,military,trainer,,,construction number reported inconsistently between sources,Oklahoma Museum of Flying,on_display
-North American,B-25,J,N25NA,Mitchell,Super Rabbit,fixed_wing,monoplane,military,bomber,,,USAAF serial 44-86725;acquired in 2013;postwar foreign service reported inconsistently between sources,Oklahoma Museum of Flying,on_display
-North American,T-28,C,N2800N,Trojan,,fixed_wing,monoplane,military,trainer,,,reported as BuNo 140480;one source calls it a T-28A,Oklahoma Museum of Flying,on_display
-Fokker,E.III,,N13FE,Eindecker,,fixed_wing,monoplane,military,fighter,,,replica;described as a project,Oklahoma Museum of Flying,under_restoration
+North American,P-51,D,N991R,Mustang,Miss America,fixed_wing,monoplane,military,fighter,,USAAF serial 44-74536; race number 11; former marks N5452V and N991RC; acquired from the Museum of Flying in 1992; privately owned by Brent Hisey,44-74536; P51,Oklahoma Museum of Flying,on_display
+Aero Vodochody,L-39,C,N639RH,Albatros,,fixed_wing,monoplane,military,trainer,,construction number reported inconsistently between sources,L39,Oklahoma Museum of Flying,on_display
+North American,B-25,J,N25NA,Mitchell,Super Rabbit,fixed_wing,monoplane,military,bomber,,USAAF serial 44-86725; acquired in 2013; postwar foreign service reported inconsistently between sources,44-86725; B25,Oklahoma Museum of Flying,on_display
+North American,T-28,C,N2800N,Trojan,,fixed_wing,monoplane,military,trainer,,reported as BuNo 140480; one source calls it a T-28A,T28,Oklahoma Museum of Flying,on_display
+Fokker,E.III,,N13FE,Eindecker,,fixed_wing,monoplane,military,fighter,,replica; described as a project,,Oklahoma Museum of Flying,under_restoration

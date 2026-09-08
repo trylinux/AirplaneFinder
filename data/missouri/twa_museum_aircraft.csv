@@ -1,3 +1,3 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Lockheed,12,A,N18137,Electra Junior,Ellie,fixed_wing,monoplane,civilian,transport,1937,,c/n 1229;TWA executive transport and research aircraft 1940-1945;restored 2005;returned to its original hangar 2019,TWA Museum at 10 Richards Road,on_display
-Boeing,707,,,Stratoliner,,fixed_wing,monoplane,civilian,commercial_transport,,,forward fuselage and cabin section only;walk-in exhibit;registration not published,TWA Museum at 10 Richards Road,on_display
+Lockheed,12,A,N18137,Electra Junior,Ellie,fixed_wing,monoplane,civilian,transport,1937,TWA executive transport and research aircraft 1940-1945; restored 2005; returned to its original hangar 2019,c/n 1229,TWA Museum at 10 Richards Road,on_display
+Boeing,707,,,Stratoliner,,fixed_wing,monoplane,civilian,commercial_transport,,forward fuselage and cabin section only; walk-in exhibit; registration not published,,TWA Museum at 10 Richards Road,on_display

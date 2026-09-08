@@ -1,113 +1,113 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-McDonnell Douglas,DC-10,10,N220AU,,Flying Eye Hospital,fixed_wing,monoplane,civilian,other,,,DC-10;Orbis,Pima Air & Space Museum,on_display
-McDonnell Douglas,AV-8,B,165574,Harrier II,,fixed_wing,monoplane,military,ground_attack,1986,,AV-8;Harrier,Pima Air & Space Museum,on_display
-McDonnell Douglas,F-4,C,64-0673,Phantom II,,fixed_wing,monoplane,military,fighter,1965,,F-4;Phantom II,Pima Air & Space Museum,on_display
-McDonnell Douglas,F-4,E,66-0329,Phantom II,,fixed_wing,monoplane,military,fighter,1967,,F-4;Phantom II,Pima Air & Space Museum,on_display
-McDonnell Douglas,F-4,J,151497,Phantom II,,fixed_wing,monoplane,military,test,1964,,F-4;YF-4J,Pima Air & Space Museum,on_display
-McDonnell Douglas,F-4,N,153016,Phantom II,,fixed_wing,monoplane,military,fighter,1966,,F-4;Phantom II,Pima Air & Space Museum,on_display
-McDonnell Douglas,F-15,A,74-0118,Eagle,,fixed_wing,monoplane,military,fighter,1976,,F-15;Eagle,Pima Air & Space Museum,on_display
-McDonnell Douglas,F/A-18,A,163093,Hornet,,fixed_wing,monoplane,military,fighter,,,F-18;Hornet;Blue Angels,Pima Air & Space Museum,on_display
-McDonnell,ADM-20,C,,Quail,,missile_rocket,,military,cruise,,,ADM-20;Quail,Pima Air & Space Museum,on_display
-McDonnell,F2H,2P,125690,Banshee,,fixed_wing,monoplane,military,recon,,,F2H;Banshee,Pima Air & Space Museum,on_display
-McDonnell,F3H,2,145221,Demon,,fixed_wing,monoplane,military,fighter,1958,,F3H;F-3B;Demon,Pima Air & Space Museum,on_display
-McDonnell,F-101,B,57-0282,Voodoo,,fixed_wing,monoplane,military,fighter,1959,,F-101;Voodoo,Pima Air & Space Museum,on_display
-McDonnell,FH-1,,111768,Phantom,,fixed_wing,monoplane,military,fighter,1947,,FH-1;Phantom,Pima Air & Space Museum,on_display
-McDonnell,LBD-1,,,Gargoyle,,missile_rocket,,military,air_to_surface,,,LBD-1;Gargoyle,Pima Air & Space Museum,on_display
-McDonnell,RF-101,C,56-0214,Voodoo,,fixed_wing,monoplane,military,recon,1958,,RF-101;Voodoo,Pima Air & Space Museum,on_display
-Messerschmitt,Bf 109,F-4,13045,,,fixed_wing,monoplane,military,fighter,1941,,Bf 109;Friedrich,Pima Air & Space Museum,in_storage
-Mikoyan-Gurevich,MiG-15,bis,1B-0822,Fagot,,fixed_wing,monoplane,military,fighter,,,MiG-15;LIM-2;Fagot,Pima Air & Space Museum,on_display
-Mikoyan-Gurevich,MiG-15,UTI,1A-06038,Midget,,fixed_wing,monoplane,military,trainer,1953,,MiG-15;LIM-2SB,Pima Air & Space Museum,on_display
-Mikoyan-Gurevich,MiG-17,F,1C-1905,Fresco,,fixed_wing,monoplane,military,fighter,,,MiG-17;LIM-5;Fresco,Pima Air & Space Museum,on_display
-Mikoyan-Gurevich,MiG-17,PF,1D-0634,Fresco,,fixed_wing,monoplane,military,fighter,,,MiG-17;LIM-6MR,Pima Air & Space Museum,on_display
-Mikoyan-Gurevich,MiG-21,PF,2410,Fishbed,,fixed_wing,monoplane,military,fighter,1964,,MiG-21;Fishbed,Pima Air & Space Museum,on_display
-Mikoyan-Gurevich,MiG-23,MLD,23709,Flogger,,fixed_wing,monoplane,military,fighter,,,MiG-23;Flogger,Pima Air & Space Museum,under_restoration
-Mikoyan-Gurevich,MiG-29,,29605,Fulcrum,,fixed_wing,monoplane,military,fighter,,,MiG-29;Fulcrum,Pima Air & Space Museum,on_display
-Mil,Mi-24,D,B4002,Hind,,rotary_wing,,military,ground_attack,1977,,Mi-24;Hind,Pima Air & Space Museum,on_display
-Mitchell,B-10,,N4232A,Mitchell Wing,,fixed_wing,monoplane,civilian,experimental,1982,,Mitchell Wing,Pima Air & Space Museum,on_display
-Morane-Saulnier,MS-500,,F-BJQH,Criquet,,fixed_wing,monoplane,military,utility,1947,,MS-500;Criquet;Storch,Pima Air & Space Museum,on_display
-General Dynamics,BGM-109,G,12436C0001,Gryphon,,missile_rocket,,military,cruise,,,BGM-109;GLCM;Gryphon,Pima Air & Space Museum,on_display
-General Dynamics,F-16,A,80-0509,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,,F-16;Viper,Pima Air & Space Museum,on_display
-General Dynamics,F-16,A,80-0527,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,,F-16;Viper,Pima Air & Space Museum,on_display
-General Dynamics,F-16,B,78-0077,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,,F-16;Viper,Pima Air & Space Museum,on_display
-General Dynamics,F-111,E,68-033,Aardvark,,fixed_wing,monoplane,military,bomber,,,F-111;Aardvark,Pima Air & Space Museum,on_display
-General Motors,FM-2,,16161,Wildcat,,fixed_wing,monoplane,military,fighter,,,FM-2;Wildcat,Pima Air & Space Museum,on_display
-General Motors,TBM-3,E,69472,Avenger,,fixed_wing,monoplane,military,ground_attack,,,TBM;Avenger,Pima Air & Space Museum,on_display
-Globe,KD6G,2,633,Firefly,,fixed_wing,monoplane,military,drone,,,KD6G;MQM-40,Pima Air & Space Museum,on_display
-GAF,N22,S,N6328,Nomad,,fixed_wing,monoplane,civilian,utility,,,Nomad;Searchmaster,Pima Air & Space Museum,on_display
-Grumman,A-6,E,155713,Intruder,,fixed_wing,monoplane,military,ground_attack,,,A-6;Intruder,Pima Air & Space Museum,on_display
-Grumman,AF-2,S,N9994Z,Guardian,,fixed_wing,monoplane,civilian,other,,,AF-2;Guardian,Pima Air & Space Museum,on_display
-Grumman,E-1,B,147227,Tracer,,fixed_wing,monoplane,military,recon,,,E-1;WF-2;Tracer,Pima Air & Space Museum,on_display
-Grumman,EA-6,B,158542,Prowler,,fixed_wing,monoplane,military,electronic_warfare,,,EA-6;Prowler,Pima Air & Space Museum,on_display
-Grumman,F7F,3,80410,Tigercat,,fixed_wing,monoplane,military,fighter,,,F7F;Tigercat,Pima Air & Space Museum,on_display
-Grumman,F9F,4,125183,Panther,,fixed_wing,monoplane,military,fighter,,,F9F;Panther,Pima Air & Space Museum,on_display
-Grumman,F9F,8B,141121,Cougar,,fixed_wing,monoplane,military,trainer,1955,,F9F;TAF-9J;Cougar,Pima Air & Space Museum,on_display
-Grumman,F9F,8P,144426,Cougar,,fixed_wing,monoplane,military,recon,,,F9F;RF-9J;Cougar,Pima Air & Space Museum,on_display
-Grumman,F9F,8T,147397,Cougar,,fixed_wing,monoplane,military,trainer,1959,,F9F;TF-9J;Cougar,Pima Air & Space Museum,on_display
-Grumman,F-11,A,141824,Tiger,,fixed_wing,monoplane,military,fighter,1958,,F-11;F11F;Blue Angels,Pima Air & Space Museum,on_display
-Grumman,F-14,A,160684,Tomcat,,fixed_wing,monoplane,military,fighter,,,F-14;Tomcat,Pima Air & Space Museum,on_display
-Grumman,G-159,,N4NA,Gulfstream I,,fixed_wing,monoplane,civilian,utility,,,G-159;Gulfstream I,Pima Air & Space Museum,on_display
-Grumman,G-1159,,N948NA,Gulfstream II,,fixed_wing,monoplane,civilian,utility,,,G-1159;Gulfstream II,Pima Air & Space Museum,on_display
-Grumman,HU-16,A,51-0022,Albatross,,fixed_wing,monoplane,military,search_rescue,,,HU-16;SA-16;Albatross,Pima Air & Space Museum,on_display
-Grumman,J4F,2,32976,Widgeon,Petulant Porpoise,fixed_wing,monoplane,civilian,utility,,,J4F;Widgeon,Pima Air & Space Museum,on_display
-Grumman,OV-1,C,61-2724,Mohawk,,fixed_wing,monoplane,military,recon,,,OV-1;Mohawk,Pima Air & Space Museum,on_display
-Grumman,S-2,F,136468,Tracker,,fixed_wing,monoplane,military,recon,,,S-2;S2F;Tracker,Pima Air & Space Museum,on_display
-Grumman,HU-16,B,N291TC,Albatross,,fixed_wing,monoplane,civilian,private,,,HU-16;Albatross,Pima Air & Space Museum,on_display
-Grumman,C-2,A,162166,Greyhound,,fixed_wing,monoplane,military,transport,,,C-2;Greyhound,Pima Air & Space Museum,on_display
-Gulfstream,C-20,G,165093,Gulfstream IV,,fixed_wing,monoplane,military,transport,,,C-20;Gulfstream IV,Pima Air & Space Museum,on_display
-Gyrodyne,QH-50,C,DS-1045,DASH,,rotary_wing,,military,drone,1963,,QH-50;DASH,Pima Air & Space Museum,on_display
-Gyrodyne,YRON,1,,Rotorcycle,,rotary_wing,,military,utility,,,YRON-1;Rotorcycle,Pima Air & Space Museum,on_display
+McDonnell Douglas,DC-10,10,N220AU,,Flying Eye Hospital,fixed_wing,monoplane,civilian,other,,,DC-10; Orbis; DC10,Pima Air & Space Museum,on_display
+McDonnell Douglas,AV-8,B,165574,Harrier II,,fixed_wing,monoplane,military,ground_attack,1986,,AV-8; Harrier; AV8,Pima Air & Space Museum,on_display
+McDonnell Douglas,F-4,C,64-0673,Phantom II,,fixed_wing,monoplane,military,fighter,1965,,F-4; Phantom II; F4,Pima Air & Space Museum,on_display
+McDonnell Douglas,F-4,E,66-0329,Phantom II,,fixed_wing,monoplane,military,fighter,1967,,F-4; Phantom II; F4,Pima Air & Space Museum,on_display
+McDonnell Douglas,F-4,J,151497,Phantom II,,fixed_wing,monoplane,military,test,1964,,F-4; YF-4J; F4; YF4J,Pima Air & Space Museum,on_display
+McDonnell Douglas,F-4,N,153016,Phantom II,,fixed_wing,monoplane,military,fighter,1966,,F-4; Phantom II; F4,Pima Air & Space Museum,on_display
+McDonnell Douglas,F-15,A,74-0118,Eagle,,fixed_wing,monoplane,military,fighter,1976,,F-15; Eagle; F15,Pima Air & Space Museum,on_display
+McDonnell Douglas,F/A-18,A,163093,Hornet,,fixed_wing,monoplane,military,fighter,,,F-18; Hornet; Blue Angels; F18,Pima Air & Space Museum,on_display
+McDonnell,ADM-20,C,,Quail,,missile_rocket,,military,cruise,,,ADM-20; Quail; ADM20,Pima Air & Space Museum,on_display
+McDonnell,F2H,2P,125690,Banshee,,fixed_wing,monoplane,military,recon,,,F2H; Banshee,Pima Air & Space Museum,on_display
+McDonnell,F3H,2,145221,Demon,,fixed_wing,monoplane,military,fighter,1958,,F3H; F-3B; Demon; F3B,Pima Air & Space Museum,on_display
+McDonnell,F-101,B,57-0282,Voodoo,,fixed_wing,monoplane,military,fighter,1959,,F-101; Voodoo; F101,Pima Air & Space Museum,on_display
+McDonnell,FH-1,,111768,Phantom,,fixed_wing,monoplane,military,fighter,1947,,FH-1; Phantom; FH1,Pima Air & Space Museum,on_display
+McDonnell,LBD-1,,,Gargoyle,,missile_rocket,,military,air_to_surface,,,LBD-1; Gargoyle; LBD1,Pima Air & Space Museum,on_display
+McDonnell,RF-101,C,56-0214,Voodoo,,fixed_wing,monoplane,military,recon,1958,,RF-101; Voodoo; RF101,Pima Air & Space Museum,on_display
+Messerschmitt,Bf 109,F-4,13045,,,fixed_wing,monoplane,military,fighter,1941,,Bf 109; Friedrich,Pima Air & Space Museum,in_storage
+Mikoyan-Gurevich,MiG-15,bis,1B-0822,Fagot,,fixed_wing,monoplane,military,fighter,,,MiG-15; LIM-2; Fagot; MiG15; LIM2,Pima Air & Space Museum,on_display
+Mikoyan-Gurevich,MiG-15,UTI,1A-06038,Midget,,fixed_wing,monoplane,military,trainer,1953,,MiG-15; LIM-2SB; MiG15; LIM2SB,Pima Air & Space Museum,on_display
+Mikoyan-Gurevich,MiG-17,F,1C-1905,Fresco,,fixed_wing,monoplane,military,fighter,,,MiG-17; LIM-5; Fresco; MiG17; LIM5,Pima Air & Space Museum,on_display
+Mikoyan-Gurevich,MiG-17,PF,1D-0634,Fresco,,fixed_wing,monoplane,military,fighter,,,MiG-17; LIM-6MR; MiG17; LIM6MR,Pima Air & Space Museum,on_display
+Mikoyan-Gurevich,MiG-21,PF,2410,Fishbed,,fixed_wing,monoplane,military,fighter,1964,,MiG-21; Fishbed; MiG21,Pima Air & Space Museum,on_display
+Mikoyan-Gurevich,MiG-23,MLD,23709,Flogger,,fixed_wing,monoplane,military,fighter,,,MiG-23; Flogger; MiG23,Pima Air & Space Museum,under_restoration
+Mikoyan-Gurevich,MiG-29,,29605,Fulcrum,,fixed_wing,monoplane,military,fighter,,,MiG-29; Fulcrum; MiG29,Pima Air & Space Museum,on_display
+Mil,Mi-24,D,B4002,Hind,,rotary_wing,,military,ground_attack,1977,,Mi-24; Hind; Mi24,Pima Air & Space Museum,on_display
+Mitchell,B-10,,N4232A,Mitchell Wing,,fixed_wing,monoplane,civilian,experimental,1982,,Mitchell Wing; B10,Pima Air & Space Museum,on_display
+Morane-Saulnier,MS-500,,F-BJQH,Criquet,,fixed_wing,monoplane,military,utility,1947,,MS-500; Criquet; Storch; MS500,Pima Air & Space Museum,on_display
+General Dynamics,BGM-109,G,12436C0001,Gryphon,,missile_rocket,,military,cruise,,,BGM-109; GLCM; Gryphon; BGM109,Pima Air & Space Museum,on_display
+General Dynamics,F-16,A,80-0509,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,,F-16; Viper; F16,Pima Air & Space Museum,on_display
+General Dynamics,F-16,A,80-0527,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,,F-16; Viper; F16,Pima Air & Space Museum,on_display
+General Dynamics,F-16,B,78-0077,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,,F-16; Viper; F16,Pima Air & Space Museum,on_display
+General Dynamics,F-111,E,68-033,Aardvark,,fixed_wing,monoplane,military,bomber,,,F-111; Aardvark; F111,Pima Air & Space Museum,on_display
+General Motors,FM-2,,16161,Wildcat,,fixed_wing,monoplane,military,fighter,,,FM-2; Wildcat; FM2,Pima Air & Space Museum,on_display
+General Motors,TBM-3,E,69472,Avenger,,fixed_wing,monoplane,military,ground_attack,,,TBM; Avenger; TBM3,Pima Air & Space Museum,on_display
+Globe,KD6G,2,633,Firefly,,fixed_wing,monoplane,military,drone,,,KD6G; MQM-40; MQM40,Pima Air & Space Museum,on_display
+GAF,N22,S,N6328,Nomad,,fixed_wing,monoplane,civilian,utility,,,Nomad; Searchmaster,Pima Air & Space Museum,on_display
+Grumman,A-6,E,155713,Intruder,,fixed_wing,monoplane,military,ground_attack,,,A-6; Intruder; A6,Pima Air & Space Museum,on_display
+Grumman,AF-2,S,N9994Z,Guardian,,fixed_wing,monoplane,civilian,other,,,AF-2; Guardian; AF2,Pima Air & Space Museum,on_display
+Grumman,E-1,B,147227,Tracer,,fixed_wing,monoplane,military,recon,,,E-1; WF-2; Tracer; E1; WF2,Pima Air & Space Museum,on_display
+Grumman,EA-6,B,158542,Prowler,,fixed_wing,monoplane,military,electronic_warfare,,,EA-6; Prowler; EA6,Pima Air & Space Museum,on_display
+Grumman,F7F,3,80410,Tigercat,,fixed_wing,monoplane,military,fighter,,,F7F; Tigercat,Pima Air & Space Museum,on_display
+Grumman,F9F,4,125183,Panther,,fixed_wing,monoplane,military,fighter,,,F9F; Panther,Pima Air & Space Museum,on_display
+Grumman,F9F,8B,141121,Cougar,,fixed_wing,monoplane,military,trainer,1955,,F9F; TAF-9J; Cougar; TAF9J,Pima Air & Space Museum,on_display
+Grumman,F9F,8P,144426,Cougar,,fixed_wing,monoplane,military,recon,,,F9F; RF-9J; Cougar; RF9J,Pima Air & Space Museum,on_display
+Grumman,F9F,8T,147397,Cougar,,fixed_wing,monoplane,military,trainer,1959,,F9F; TF-9J; Cougar; TF9J,Pima Air & Space Museum,on_display
+Grumman,F-11,A,141824,Tiger,,fixed_wing,monoplane,military,fighter,1958,,F-11; F11F; Blue Angels; F11,Pima Air & Space Museum,on_display
+Grumman,F-14,A,160684,Tomcat,,fixed_wing,monoplane,military,fighter,,,F-14; Tomcat; F14,Pima Air & Space Museum,on_display
+Grumman,G-159,,N4NA,Gulfstream I,,fixed_wing,monoplane,civilian,utility,,,G-159; Gulfstream I; G159,Pima Air & Space Museum,on_display
+Grumman,G-1159,,N948NA,Gulfstream II,,fixed_wing,monoplane,civilian,utility,,,G-1159; Gulfstream II,Pima Air & Space Museum,on_display
+Grumman,HU-16,A,51-0022,Albatross,,fixed_wing,monoplane,military,search_rescue,,,HU-16; SA-16; Albatross; HU16; SA16,Pima Air & Space Museum,on_display
+Grumman,J4F,2,32976,Widgeon,Petulant Porpoise,fixed_wing,monoplane,civilian,utility,,,J4F; Widgeon,Pima Air & Space Museum,on_display
+Grumman,OV-1,C,61-2724,Mohawk,,fixed_wing,monoplane,military,recon,,,OV-1; Mohawk; OV1,Pima Air & Space Museum,on_display
+Grumman,S-2,F,136468,Tracker,,fixed_wing,monoplane,military,recon,,,S-2; S2F; Tracker; S2,Pima Air & Space Museum,on_display
+Grumman,HU-16,B,N291TC,Albatross,,fixed_wing,monoplane,civilian,private,,,HU-16; Albatross; HU16,Pima Air & Space Museum,on_display
+Grumman,C-2,A,162166,Greyhound,,fixed_wing,monoplane,military,transport,,,C-2; Greyhound; C2,Pima Air & Space Museum,on_display
+Gulfstream,C-20,G,165093,Gulfstream IV,,fixed_wing,monoplane,military,transport,,,C-20; Gulfstream IV; C20,Pima Air & Space Museum,on_display
+Gyrodyne,QH-50,C,DS-1045,DASH,,rotary_wing,,military,drone,1963,,QH-50; DASH; QH50,Pima Air & Space Museum,on_display
+Gyrodyne,YRON,1,,Rotorcycle,,rotary_wing,,military,utility,,,YRON-1; Rotorcycle; YRON1,Pima Air & Space Museum,on_display
 Hawker,Hunter,Mk.58,J-4035,,,fixed_wing,monoplane,military,fighter,,,Hunter,Pima Air & Space Museum,on_display
 Hawker,Hurricane,Mk.IIB,BG974,,,fixed_wing,monoplane,military,fighter,,,Hurricane,Pima Air & Space Museum,on_display
-Hawker,Kestrel,FGA.1,XS690,,,fixed_wing,monoplane,military,test,,,Kestrel;XV-6A,Pima Air & Space Museum,on_display
-Hawker Siddeley,AV-8,C,159241,Harrier,,fixed_wing,monoplane,military,ground_attack,,,AV-8;Harrier,Pima Air & Space Museum,on_display
+Hawker,Kestrel,FGA.1,XS690,,,fixed_wing,monoplane,military,test,,,Kestrel; XV-6A; XV6A,Pima Air & Space Museum,on_display
+Hawker Siddeley,AV-8,C,159241,Harrier,,fixed_wing,monoplane,military,ground_attack,,,AV-8; Harrier; AV8,Pima Air & Space Museum,on_display
 Hawker Siddeley,Harrier,GR.3,XV804,,,fixed_wing,monoplane,military,ground_attack,,,Harrier,Pima Air & Space Museum,on_display
-Hawker Siddeley,TAV-8,A,159382,Harrier,,fixed_wing,monoplane,military,trainer,1975,,TAV-8;Harrier,Pima Air & Space Museum,on_display
-Hiller,UH-12,C,N7725C,,,rotary_wing,,civilian,private,,,UH-12;Hiller,Pima Air & Space Museum,on_display
-Hughes,OH-6,A,67-16381,Cayuse,,rotary_wing,,military,recon,,,OH-6;Loach,Pima Air & Space Museum,on_display
-Hughes,TH-55,A,67-15418,Osage,,rotary_wing,,military,trainer,,,TH-55;Osage,Pima Air & Space Museum,on_display
+Hawker Siddeley,TAV-8,A,159382,Harrier,,fixed_wing,monoplane,military,trainer,1975,,TAV-8; Harrier; TAV8,Pima Air & Space Museum,on_display
+Hiller,UH-12,C,N7725C,,,rotary_wing,,civilian,private,,,UH-12; Hiller; UH12,Pima Air & Space Museum,on_display
+Hughes,OH-6,A,67-16381,Cayuse,,rotary_wing,,military,recon,,,OH-6; Loach; OH6,Pima Air & Space Museum,on_display
+Hughes,TH-55,A,67-15418,Osage,,rotary_wing,,military,trainer,,,TH-55; Osage; TH55,Pima Air & Space Museum,on_display
 Hunting,Jet Provost,T.3A,XM464,,,fixed_wing,monoplane,military,trainer,,,Jet Provost,Pima Air & Space Museum,on_display
-Ilyushin,Il-2,M,5612,Shturmovik,,fixed_wing,monoplane,military,ground_attack,,,Il-2;Shturmovik,Pima Air & Space Museum,on_display
-Kaman,HH-43,F,62-4531,Huskie,,rotary_wing,,military,search_rescue,,,HH-43;Huskie,Pima Air & Space Museum,on_display
-Kaman,SH-2,F,150155,Seasprite,,rotary_wing,,military,recon,,,SH-2;Seasprite,Pima Air & Space Museum,on_display
-Kaman,OH-43,D,139974,Huskie,,rotary_wing,,military,search_rescue,,,OH-43;HOK-1;Huskie,Pima Air & Space Museum,on_display
-Kaman,CQ-24,A,A94-0031,K-Max,,rotary_wing,,military,drone,,,CQ-24;K-Max,Pima Air & Space Museum,on_display
-L3,Viking,300,,,,fixed_wing,monoplane,military,drone,,,Viking 300;UAV,Pima Air & Space Museum,on_display
+Ilyushin,Il-2,M,5612,Shturmovik,,fixed_wing,monoplane,military,ground_attack,,,Il-2; Shturmovik; Il2,Pima Air & Space Museum,on_display
+Kaman,HH-43,F,62-4531,Huskie,,rotary_wing,,military,search_rescue,,,HH-43; Huskie; HH43,Pima Air & Space Museum,on_display
+Kaman,SH-2,F,150155,Seasprite,,rotary_wing,,military,recon,,,SH-2; Seasprite; SH2,Pima Air & Space Museum,on_display
+Kaman,OH-43,D,139974,Huskie,,rotary_wing,,military,search_rescue,,,OH-43; HOK-1; Huskie; OH43; HOK1,Pima Air & Space Museum,on_display
+Kaman,CQ-24,A,A94-0031,K-Max,,rotary_wing,,military,drone,,,CQ-24; K-Max; CQ24,Pima Air & Space Museum,on_display
+L3,Viking,300,,,,fixed_wing,monoplane,military,drone,,,Viking 300; UAV,Pima Air & Space Museum,on_display
 Lark,95,,N1512H,,,fixed_wing,monoplane,civilian,private,1966,,Lark 95,Pima Air & Space Museum,in_storage
 Learjet,23,,N88B,,,fixed_wing,monoplane,civilian,private,,,Learjet 23,Pima Air & Space Museum,on_display
-Lockheed,AP-2,H,135620,Neptune,,fixed_wing,monoplane,military,recon,,,AP-2;P-2;Neptune,Pima Air & Space Museum,on_display
-Lockheed,C-130,D,57-0493,Hercules,,fixed_wing,monoplane,military,transport,1958,,C-130;Hercules,Pima Air & Space Museum,on_display
-Lockheed,C-141,B,67-0013,Starlifter,,fixed_wing,monoplane,military,transport,,,C-141;Starlifter,Pima Air & Space Museum,on_display
-Lockheed,D-21,B,533,Tagboard,,fixed_wing,monoplane,military,drone,,,D-21;Tagboard,Pima Air & Space Museum,on_display
-Lockheed,EC-121,T,53-0554,Warning Star,,fixed_wing,monoplane,military,recon,,,EC-121;Connie,Pima Air & Space Museum,on_display
-Lockheed,F-94,C,51-5623,Starfire,,fixed_wing,monoplane,military,fighter,,,F-94;Starfire,Pima Air & Space Museum,on_display
-Lockheed,F-104,D,57-1323,Starfighter,,fixed_wing,monoplane,military,trainer,,,F-104;Starfighter,Pima Air & Space Museum,on_display
-Lockheed,L-049,,N90831,Constellation,,fixed_wing,monoplane,civilian,commercial_transport,,,L-049;C-69;Connie,Pima Air & Space Museum,on_display
-Lockheed,Model 10,A,N4963C,Electra,,fixed_wing,monoplane,civilian,commercial_transport,1934,,Model 10;Electra,Pima Air & Space Museum,on_display
-Lockheed,Model 18,,12481,Lodestar,,fixed_wing,monoplane,military,transport,,,Model 18;R5O-5;Lodestar,Pima Air & Space Museum,on_display
-Lockheed,P-2,H,150281,Neptune,,fixed_wing,monoplane,military,recon,,,P-2;Neptune,Pima Air & Space Museum,in_storage
-Lockheed,P2V,7,N14448,Neptune,,fixed_wing,monoplane,civilian,other,,,P2V;SP-2H;Neptune,Pima Air & Space Museum,on_display
-Lockheed,P-38,G,42-12847,Lightning,Dumbo,fixed_wing,monoplane,military,fighter,,,P-38;Lightning,Pima Air & Space Museum,under_restoration
-Lockheed,P-80,B,45-8612,Shooting Star,,fixed_wing,monoplane,military,fighter,,,P-80;F-80;Shooting Star,Pima Air & Space Museum,on_display
-Lockheed,S-3,B,160604,Viking,,fixed_wing,monoplane,military,recon,1978,,S-3;Viking,Pima Air & Space Museum,on_display
-Lockheed,T-1,A,144200,Seastar,,fixed_wing,monoplane,military,trainer,,,T-1;T2V-1;Seastar,Pima Air & Space Museum,on_display
-Lockheed,T-33,A,51-16992,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-33;T-Bird,Pima Air & Space Museum,on_display
-Lockheed,T-33,A,53-6145,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-33;T-Bird,Pima Air & Space Museum,on_display
-Lockheed,TV-2,,136810,Shooting Star,,fixed_wing,monoplane,military,trainer,,,TV-2;T-33B,Pima Air & Space Museum,on_display
-Lockheed,VC-121,A,48-614,Constellation,Columbine,fixed_wing,monoplane,military,transport,,,VC-121;Columbine,Pima Air & Space Museum,on_display
-Lockheed,VC-140,B,61-2489,JetStar,,fixed_wing,monoplane,military,transport,,,VC-140;JetStar,Pima Air & Space Museum,on_display
-Lockheed,VP-3,A,150511,Orion,Catbird,fixed_wing,monoplane,military,transport,,,VP-3;Orion,Pima Air & Space Museum,on_display
-Lockheed,YO-3,A,69-18006,Quiet Star,,fixed_wing,monoplane,military,recon,,,YO-3;Quiet Star,Pima Air & Space Museum,on_display
-Lockheed,PV-2,,37257,Harpoon,,fixed_wing,monoplane,military,recon,,,PV-2;Harpoon,Pima Air & Space Museum,on_display
-Lockheed,P-3,,N145CS,Orion,,fixed_wing,monoplane,civilian,utility,,,P-3;Orion,Pima Air & Space Museum,on_display
-Lockheed,EP-3,E,156511,Orion,ARIES II,fixed_wing,monoplane,military,electronic_warfare,1969,,EP-3;Orion;ARIES,Pima Air & Space Museum,on_display
+Lockheed,AP-2,H,135620,Neptune,,fixed_wing,monoplane,military,recon,,,AP-2; P-2; Neptune; AP2; P2,Pima Air & Space Museum,on_display
+Lockheed,C-130,D,57-0493,Hercules,,fixed_wing,monoplane,military,transport,1958,,C-130; Hercules; C130,Pima Air & Space Museum,on_display
+Lockheed,C-141,B,67-0013,Starlifter,,fixed_wing,monoplane,military,transport,,,C-141; Starlifter; C141,Pima Air & Space Museum,on_display
+Lockheed,D-21,B,533,Tagboard,,fixed_wing,monoplane,military,drone,,,D-21; Tagboard; D21,Pima Air & Space Museum,on_display
+Lockheed,EC-121,T,53-0554,Warning Star,,fixed_wing,monoplane,military,recon,,,EC-121; Connie; EC121,Pima Air & Space Museum,on_display
+Lockheed,F-94,C,51-5623,Starfire,,fixed_wing,monoplane,military,fighter,,,F-94; Starfire; F94,Pima Air & Space Museum,on_display
+Lockheed,F-104,D,57-1323,Starfighter,,fixed_wing,monoplane,military,trainer,,,F-104; Starfighter; F104,Pima Air & Space Museum,on_display
+Lockheed,L-049,,N90831,Constellation,,fixed_wing,monoplane,civilian,commercial_transport,,,L-049; C-69; Connie; L049; C69,Pima Air & Space Museum,on_display
+Lockheed,Model 10,A,N4963C,Electra,,fixed_wing,monoplane,civilian,commercial_transport,1934,,Model 10; Electra,Pima Air & Space Museum,on_display
+Lockheed,Model 18,,12481,Lodestar,,fixed_wing,monoplane,military,transport,,,Model 18; R5O-5; Lodestar,Pima Air & Space Museum,on_display
+Lockheed,P-2,H,150281,Neptune,,fixed_wing,monoplane,military,recon,,,P-2; Neptune; P2,Pima Air & Space Museum,in_storage
+Lockheed,P2V,7,N14448,Neptune,,fixed_wing,monoplane,civilian,other,,,P2V; SP-2H; Neptune; SP2H,Pima Air & Space Museum,on_display
+Lockheed,P-38,G,42-12847,Lightning,Dumbo,fixed_wing,monoplane,military,fighter,,,P-38; Lightning; P38,Pima Air & Space Museum,under_restoration
+Lockheed,P-80,B,45-8612,Shooting Star,,fixed_wing,monoplane,military,fighter,,,P-80; F-80; Shooting Star; P80; F80,Pima Air & Space Museum,on_display
+Lockheed,S-3,B,160604,Viking,,fixed_wing,monoplane,military,recon,1978,,S-3; Viking; S3,Pima Air & Space Museum,on_display
+Lockheed,T-1,A,144200,Seastar,,fixed_wing,monoplane,military,trainer,,,T-1; T2V-1; Seastar; T1,Pima Air & Space Museum,on_display
+Lockheed,T-33,A,51-16992,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-33; T-Bird; T33,Pima Air & Space Museum,on_display
+Lockheed,T-33,A,53-6145,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-33; T-Bird; T33,Pima Air & Space Museum,on_display
+Lockheed,TV-2,,136810,Shooting Star,,fixed_wing,monoplane,military,trainer,,,TV-2; T-33B; TV2; T33B,Pima Air & Space Museum,on_display
+Lockheed,VC-121,A,48-614,Constellation,Columbine,fixed_wing,monoplane,military,transport,,,VC-121; Columbine; VC121,Pima Air & Space Museum,on_display
+Lockheed,VC-140,B,61-2489,JetStar,,fixed_wing,monoplane,military,transport,,,VC-140; JetStar; VC140,Pima Air & Space Museum,on_display
+Lockheed,VP-3,A,150511,Orion,Catbird,fixed_wing,monoplane,military,transport,,,VP-3; Orion; VP3,Pima Air & Space Museum,on_display
+Lockheed,YO-3,A,69-18006,Quiet Star,,fixed_wing,monoplane,military,recon,,,YO-3; Quiet Star; YO3,Pima Air & Space Museum,on_display
+Lockheed,PV-2,,37257,Harpoon,,fixed_wing,monoplane,military,recon,,,PV-2; Harpoon; PV2,Pima Air & Space Museum,on_display
+Lockheed,P-3,,N145CS,Orion,,fixed_wing,monoplane,civilian,utility,,,P-3; Orion; P3,Pima Air & Space Museum,on_display
+Lockheed,EP-3,E,156511,Orion,ARIES II,fixed_wing,monoplane,military,electronic_warfare,1969,,EP-3; Orion; ARIES; EP3,Pima Air & Space Museum,on_display
 Martin,404,,N462M,Skyliner,,fixed_wing,monoplane,civilian,private,,,Martin 404,Pima Air & Space Museum,on_display
-Martin,B-26,B,41-31856,Marauder,,fixed_wing,monoplane,military,bomber,,,B-26;Marauder,Pima Air & Space Museum,under_restoration
-Martin,B-57,E,55-4274,Canberra,,fixed_wing,monoplane,military,utility,,,B-57;Canberra,Pima Air & Space Museum,on_display
-Martin,PBM-5,A,122071,Mariner,,fixed_wing,monoplane,military,recon,,,PBM;Mariner,Pima Air & Space Museum,on_display
-Martin,WB-57,F,N925NA,Canberra,,fixed_wing,monoplane,civilian,experimental,,,WB-57;Canberra,Pima Air & Space Museum,in_storage
-Martin,JRM,1,76820,Mars,Philippine Mars,fixed_wing,monoplane,military,transport,1945,,JRM;Mars,Pima Air & Space Museum,on_display
-McCulloch,HUM-1,,,,,rotary_wing,,military,test,1953,,HUM-1;XH-30;MC-4,Pima Air & Space Museum,on_display
-McCulloch,J-2,,N4039G,,,rotary_wing,,civilian,private,1971,,J-2;autogyro,Pima Air & Space Museum,on_display
-General Atomics,MQ-1,B,00-3067,Predator,,fixed_wing,monoplane,military,drone,,,MQ-1;Predator,Pima Air & Space Museum,on_display
+Martin,B-26,B,41-31856,Marauder,,fixed_wing,monoplane,military,bomber,,,B-26; Marauder; B26,Pima Air & Space Museum,under_restoration
+Martin,B-57,E,55-4274,Canberra,,fixed_wing,monoplane,military,utility,,,B-57; Canberra; B57,Pima Air & Space Museum,on_display
+Martin,PBM-5,A,122071,Mariner,,fixed_wing,monoplane,military,recon,,,PBM; Mariner; PBM5,Pima Air & Space Museum,on_display
+Martin,WB-57,F,N925NA,Canberra,,fixed_wing,monoplane,civilian,experimental,,,WB-57; Canberra; WB57,Pima Air & Space Museum,in_storage
+Martin,JRM,1,76820,Mars,Philippine Mars,fixed_wing,monoplane,military,transport,1945,,JRM; Mars; JRM1,Pima Air & Space Museum,on_display
+McCulloch,HUM-1,,,,,rotary_wing,,military,test,1953,,HUM-1; XH-30; MC-4; HUM1; XH30; MC4,Pima Air & Space Museum,on_display
+McCulloch,J-2,,N4039G,,,rotary_wing,,civilian,private,1971,autogyro,J-2; J2,Pima Air & Space Museum,on_display
+General Atomics,MQ-1,B,00-3067,Predator,,fixed_wing,monoplane,military,drone,,,MQ-1; Predator; MQ1,Pima Air & Space Museum,on_display
 Gloster,Meteor,T.7,WF877,,,fixed_wing,monoplane,military,trainer,,,Meteor,Pima Air & Space Museum,on_display
-MMIST,CQ-10,A,,SnowGoose,,fixed_wing,monoplane,military,drone,,,CQ-10;SnowGoose,Pima Air & Space Museum,on_display
+MMIST,CQ-10,A,,SnowGoose,,fixed_wing,monoplane,military,drone,,,CQ-10; SnowGoose; CQ10,Pima Air & Space Museum,on_display

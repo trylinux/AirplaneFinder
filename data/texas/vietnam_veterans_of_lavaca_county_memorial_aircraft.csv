@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Bell,AH-1,F,67-15470,Cobra,,rotary_wing,,military,ground_attack,,,built as AH-1G;c/n 20134;converted to AH-1S 1982 and AH-1F 1985;acquired by VVA Chapter 854 in August 2004,Vietnam Veterans of Lavaca County Memorial,on_display
+Bell,AH-1,F,67-15470,Cobra,,rotary_wing,,military,ground_attack,,built as AH-1G; converted to AH-1S 1982 and AH-1F 1985; acquired by VVA Chapter 854 in August 2004,c/n 20134; AH1,Vietnam Veterans of Lavaca County Memorial,on_display

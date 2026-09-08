@@ -1,15 +1,15 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Panavia,Tornado,IDS,45+11,Tornado,,fixed_wing,monoplane,military,ground_attack,1983,,c/n 530/GS164/4211;German Air Force;served at Holloman AFB 22 July 1999 to 10 June 2009;a different airframe from Tornado 43+75 at Holloman Heritage Park,New Mexico Museum of Space History,on_display
-Ryan,XQ-4,A,,,,fixed_wing,monoplane,military,drone,,,target drone;serial not published,New Mexico Museum of Space History,on_display
-General Dynamics,Little Joe II,,,Little Joe II,,missile_rocket,,military,launch_vehicle,,,86 feet tall;built up from components left at the end of the test programme and delivered 1985;owned by the Smithsonian with the museum as custodian;refurbishment began November 2025,New Mexico Museum of Space History,on_display
-Western Electric,MIM-3,,,Nike Ajax,,missile_rocket,,military,surface_to_air,,,displayed with a separate Nike Ajax launcher record,New Mexico Museum of Space History,on_display
-LTV,MGM-52,,,Lance,,missile_rocket,,military,ballistic,,,serial not published,New Mexico Museum of Space History,on_display
-Aerojet,Aerobee,150,,Aerobee,,missile_rocket,,military,sounding,,,sounding rocket,New Mexico Museum of Space History,on_display
-Lockheed,X-7,,,,,missile_rocket,,military,test,,,ramjet test vehicle;catalogued by the museum as Missile X-7,New Mexico Museum of Space History,on_display
-Republic,JB-2,,,Loon,,missile_rocket,,military,cruise,,,American copy of the German V-1,New Mexico Museum of Space History,on_display
-Bell,GAM-63,,,Rascal,,missile_rocket,,military,air_to_surface,,,serial not published,New Mexico Museum of Space History,on_display
-Douglas,MGR-1,,,Honest John,,missile_rocket,,military,artillery_rocket,,,improved Honest John motors,New Mexico Museum of Space History,on_display
-Aerojet,Aerobee,X-8C,,Aerobee,,missile_rocket,,military,sounding,,,catalogued by the museum as a flown item,New Mexico Museum of Space History,on_display
-NASA,Mercury Primate Capsule,,,Mercury,,spacecraft,,civilian,space,,,associated with the chimpanzee programme;the museum's highest-value genuine flown artifact,New Mexico Museum of Space History,on_display
-Boeing,X-37,B,,Orbital Test Vehicle,,spacecraft,,military,space,,,the museum's own catalogue title says Mockup,New Mexico Museum of Space History,on_display
-North American,Apollo,Boilerplate,,Apollo,,spacecraft,,civilian,space,,,boilerplate capsule;a second boilerplate sits atop the Little Joe II,New Mexico Museum of Space History,on_display
+Panavia,Tornado,IDS,45+11,Tornado,,fixed_wing,monoplane,military,ground_attack,1983,German Air Force; served at Holloman AFB 22 July 1999 to 10 June 2009; a different airframe from Tornado 43+75 at Holloman Heritage Park,c/n 530/GS164/4211,New Mexico Museum of Space History,on_display
+Ryan,XQ-4,A,,,,fixed_wing,monoplane,military,drone,,target drone; serial not published,XQ4,New Mexico Museum of Space History,on_display
+General Dynamics,Little Joe II,,,Little Joe II,,missile_rocket,,military,launch_vehicle,,86 feet tall; built up from components left at the end of the test programme and delivered 1985; owned by the Smithsonian with the museum as custodian; refurbishment began November 2025,,New Mexico Museum of Space History,on_display
+Western Electric,MIM-3,,,Nike Ajax,,missile_rocket,,military,surface_to_air,,displayed with a separate Nike Ajax launcher record,MIM3,New Mexico Museum of Space History,on_display
+LTV,MGM-52,,,Lance,,missile_rocket,,military,ballistic,,serial not published,MGM52,New Mexico Museum of Space History,on_display
+Aerojet,Aerobee,150,,Aerobee,,missile_rocket,,military,sounding,,sounding rocket,,New Mexico Museum of Space History,on_display
+Lockheed,X-7,,,,,missile_rocket,,military,test,,ramjet test vehicle; catalogued by the museum as Missile X-7,X7,New Mexico Museum of Space History,on_display
+Republic,JB-2,,,Loon,,missile_rocket,,military,cruise,,American copy of the German V-1,JB2,New Mexico Museum of Space History,on_display
+Bell,GAM-63,,,Rascal,,missile_rocket,,military,air_to_surface,,serial not published,GAM63,New Mexico Museum of Space History,on_display
+Douglas,MGR-1,,,Honest John,,missile_rocket,,military,artillery_rocket,,improved Honest John motors,MGR1,New Mexico Museum of Space History,on_display
+Aerojet,Aerobee,X-8C,,Aerobee,,missile_rocket,,military,sounding,,catalogued by the museum as a flown item,,New Mexico Museum of Space History,on_display
+NASA,Mercury Primate Capsule,,,Mercury,,spacecraft,,civilian,space,,associated with the chimpanzee programme; the museum's highest-value genuine flown artifact,,New Mexico Museum of Space History,on_display
+Boeing,X-37,B,,Orbital Test Vehicle,,spacecraft,,military,space,,the museum's own catalogue title says Mockup,X37,New Mexico Museum of Space History,on_display
+North American,Apollo,Boilerplate,,Apollo,,spacecraft,,civilian,space,,boilerplate capsule; a second boilerplate sits atop the Little Joe II,,New Mexico Museum of Space History,on_display

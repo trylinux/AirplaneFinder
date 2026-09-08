@@ -1,4 +1,4 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Fairchild,PT-23,A,N64176,Cornell,Miss Mickey,fixed_wing,monoplane,military,trainer,1943,,c/n 256H0;owned by CAF headquarters;flying since 1999,CAF Jayhawk Wing,on_display
-Cessna,UC-78,,N44795,Bobcat,,fixed_wing,monoplane,military,trainer,1943,,c/n 6516;damaged in the August 2024 McConnell microburst;returned to the hangar January 2025 after repair,CAF Jayhawk Wing,on_display
-Ryan,PT-22,,N46220,Recruit,,fixed_wing,monoplane,military,trainer,,,c/n 1733;owned by CAF headquarters,CAF Jayhawk Wing,on_display
+Fairchild,PT-23,A,N64176,Cornell,Miss Mickey,fixed_wing,monoplane,military,trainer,1943,owned by CAF headquarters; flying since 1999,c/n 256H0; PT23,CAF Jayhawk Wing,on_display
+Cessna,UC-78,,N44795,Bobcat,,fixed_wing,monoplane,military,trainer,1943,damaged in the August 2024 McConnell microburst; returned to the hangar January 2025 after repair,c/n 6516; UC78,CAF Jayhawk Wing,on_display
+Ryan,PT-22,,N46220,Recruit,,fixed_wing,monoplane,military,trainer,,owned by CAF headquarters,c/n 1733; PT22,CAF Jayhawk Wing,on_display
