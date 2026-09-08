@@ -1,0 +1,23 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,T-33,A,57-0713,Shooting Star,,fixed_wing,monoplane,military,trainer,,,c/n 580-1442 per Aerial Visuals or 580-1362 per another source;4600th Air Wing markings;Academy proficiency trainer,Peterson Air and Space Museum,on_display
+Martin,EB-57,E,55-4279,Canberra,,fixed_wing,monoplane,military,electronic_warfare,,,c/n 381;ECM target aircraft,Peterson Air and Space Museum,on_display
+Lockheed,EC-121,T,52-3425,Warning Star,,fixed_wing,monoplane,military,recon,,,c/n 1049A-4343;airborne early warning;interior opened for tours,Peterson Air and Space Museum,on_display
+Avro Canada,CF-100,Mk 5C,100779,Canuck,,fixed_wing,monoplane,military,fighter,,,RCAF;c/n 679;414 Electronic Warfare Squadron markings;acquired May 1976,Peterson Air and Space Museum,on_display
+McDonnell,CF-101,B,101044,Voodoo,,fixed_wing,monoplane,military,fighter,,,ex-USAF 57-0381;c/n 559;409 Squadron Comox markings,Peterson Air and Space Museum,on_display
+McDonnell Douglas,CF-188,A,188723,Hornet,,fixed_wing,monoplane,military,fighter,,,RCAF CF-18;c/n 192;NORAD tail art by Jim Belliveau;donated by Canada,Peterson Air and Space Museum,on_display
+McDonnell Douglas,F-15,A,76-0024,Eagle,,fixed_wing,monoplane,military,fighter,,,c/n 0204/A176,Peterson Air and Space Museum,on_display
+Convair,F-106,A,59-0134,Delta Dart,,fixed_wing,monoplane,military,fighter,,,c/n 8-31-23;ex-GF-106A ground trainer with the 144th FIG California ANG;refurbishment noted January 2021,Peterson Air and Space Museum,on_display
+McDonnell,F-4,C,64-0799,Phantom II,,fixed_wing,monoplane,military,fighter,,,c/n 1118;painted as 63-7589 of the 57th FIS Keflavik,Peterson Air and Space Museum,on_display
+North American,F-86,L,53-0782,Sabre,,fixed_wing,monoplane,military,fighter,,,c/n 201-226;buzz number FU-782,Peterson Air and Space Museum,on_display
+Northrop,F-89,J,52-1941,Scorpion,,fixed_wing,monoplane,military,fighter,,,c/n N.435;buzz number FY-941,Peterson Air and Space Museum,on_display
+Lockheed,F-94,C,50-1006,Starfire,,fixed_wing,monoplane,military,fighter,,,c/n 880-8051;buzz number FA-006,Peterson Air and Space Museum,on_display
+Republic,P-47,N,44-89425,Thunderbolt,Wild Hair,fixed_wing,monoplane,military,fighter,,,c/n 1642;restored 2000-2005;156th FS Puerto Rico ANG markings;indoors in the Old City Hangar;the museum labels it an F-47N,Peterson Air and Space Museum,on_display
+Lockheed,F-104,C,56-0936,Starfighter,,fixed_wing,monoplane,military,fighter,,,c/n 183-1224;painted as F-104A 56-0808 in 435th TFS Udorn 1967-68 markings;pylon at Stewart Avenue and Peterson Boulevard,Peterson Air and Space Museum,on_display
+Convair,F-102,A,56-1109,Delta Dagger,,fixed_wing,monoplane,military,fighter,,,c/n 8-10-326;4780th ADW Perrin AFB markings;Stewart Avenue and Suffolk Street,Peterson Air and Space Museum,on_display
+McDonnell,F-101,B,58-0274,Voodoo,,fixed_wing,monoplane,military,fighter,,,c/n 646;pylon-mounted;13th FIS Glasgow AFB markings;near the passenger terminal,Peterson Air and Space Museum,on_display
+Curtiss,P-40,E,,Warhawk,Lynn II,fixed_wing,monoplane,military,fighter,,,replica;fibreglass on a pylon at Peterson Boulevard and Ent Avenue;the genuine P-40E 40-390 left for Robins about 1994,Peterson Air and Space Museum,on_display
+Boeing,CIM-10,A,,Bomarc,,missile_rocket,,military,surface_to_air,,,exterior pylon;one source gives 59-2051 unverified,Peterson Air and Space Museum,on_display
+Raytheon,MIM-23,,,Hawk,,missile_rocket,,military,surface_to_air,,,three rounds on an M192 towed launcher;6th Battalion 65th ADA markings,Peterson Air and Space Museum,on_display
+Western Electric,MIM-3,,,Nike Ajax,,missile_rocket,,military,surface_to_air,,,,Peterson Air and Space Museum,on_display
+Western Electric,MIM-14,,,Nike Hercules,,missile_rocket,,military,surface_to_air,,,,Peterson Air and Space Museum,on_display
+Boeing,LGM-30,G,,Minuteman III,,missile_rocket,,military,ballistic,,,exterior display at Otis Street and Peterson Boulevard;war-colours configuration,Peterson Air and Space Museum,on_display

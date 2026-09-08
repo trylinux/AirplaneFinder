@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Grumman,A-6,E,154131,Intruder,,fixed_wing,monoplane,military,ground_attack,,,USMC markings;roundabout at the airport entrance,Aviators Memorial Park,on_display
+Grumman,F-11,A,141796,Tiger,,fixed_wing,monoplane,military,fighter,,,ex-F11F-1;c/n 113;ex-Pima;Blue Angels markings,Aviators Memorial Park,on_display
