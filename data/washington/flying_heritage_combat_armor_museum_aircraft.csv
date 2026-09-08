@@ -1,13 +1,13 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Curtiss,P-40,C,41-13390,Tomahawk,,fixed_wing,monoplane,military,fighter,,ex-Soviet Lend-Lease; airworthy,N2689; P40,Flying Heritage & Combat Armor Museum,on_display
-Republic,P-47,D,45-49406,Thunderbolt,,fixed_wing,monoplane,military,fighter,,marked 2Z-T 510th FS; static,N7159Z; P47,Flying Heritage & Combat Armor Museum,on_display
-North American,P-51,D,44-72364,Mustang,Upupa Epops,fixed_wing,monoplane,military,fighter,,ex-Dominican AF FAD 1916; airworthy,N723FH; P51,Flying Heritage & Combat Armor Museum,on_display
-North American,B-25,J,44-30254,Mitchell,Grumpy,fixed_wing,monoplane,military,bomber,,ex-RCAF 5211; airworthy,N41123; 5211; B25,Flying Heritage & Combat Armor Museum,on_display
-Lockheed,P-38,J,42-103988,Lightning,Jandina III,fixed_wing,monoplane,military,fighter,1943,first post-restoration flight June 2025; airworthy,N988J; P38,Flying Heritage & Combat Armor Museum,on_display
+Curtiss,P-40,C,41-13390,Tomahawk,,fixed_wing,monoplane,military,fighter,,ex-Soviet Lend-Lease; airworthy,N2689; P40; P40C,Flying Heritage & Combat Armor Museum,on_display
+Republic,P-47,D,45-49406,Thunderbolt,,fixed_wing,monoplane,military,fighter,,marked 2Z-T 510th FS; static,N7159Z; P47; P47D,Flying Heritage & Combat Armor Museum,on_display
+North American,P-51,D,44-72364,Mustang,Upupa Epops,fixed_wing,monoplane,military,fighter,,ex-Dominican AF FAD 1916; airworthy,N723FH; P51; P51D,Flying Heritage & Combat Armor Museum,on_display
+North American,B-25,J,44-30254,Mitchell,Grumpy,fixed_wing,monoplane,military,bomber,,ex-RCAF 5211; airworthy,N41123; 5211; B25; B25J,Flying Heritage & Combat Armor Museum,on_display
+Lockheed,P-38,J,42-103988,Lightning,Jandina III,fixed_wing,monoplane,military,fighter,1943,first post-restoration flight June 2025; airworthy,N988J; P38; P38J,Flying Heritage & Combat Armor Museum,on_display
 Grumman,F6F,5,79863,Hellcat,,fixed_wing,monoplane,military,fighter,,later F6F-5K drone conversion; static,N79863,Flying Heritage & Combat Armor Museum,on_display
-Goodyear,FG-1,D,88303,Corsair,,fixed_wing,monoplane,military,fighter,,airworthy,N700G; FG1,Flying Heritage & Combat Armor Museum,on_display
-Curtiss,JN-4,D,N3712,Jenny,,fixed_wing,biplane,military,trainer,,,JN4,Flying Heritage & Combat Armor Museum,on_display
-Bell,UH-1,B,,Iroquois,,rotary_wing,,military,utility,,Vietnam gunship exhibit; serial not confirmed,Huey; UH1,Flying Heritage & Combat Armor Museum,on_display
+Goodyear,FG-1,D,88303,Corsair,,fixed_wing,monoplane,military,fighter,,airworthy,N700G; FG1; FG1D,Flying Heritage & Combat Armor Museum,on_display
+Curtiss,JN-4,D,N3712,Jenny,,fixed_wing,biplane,military,trainer,,,JN4; JN4D,Flying Heritage & Combat Armor Museum,on_display
+Bell,UH-1,B,,Iroquois,,rotary_wing,,military,utility,,Vietnam gunship exhibit; serial not confirmed,Huey; UH1; UH1B,Flying Heritage & Combat Armor Museum,on_display
 Supermarine,Spitfire,Mk.Vc,AR614,,,fixed_wing,monoplane,military,fighter,,No. 312 Czechoslovak Sqn code DU-Z; airworthy,N614VC,Flying Heritage & Combat Armor Museum,on_display
 Canadian Car & Foundry,Hurricane,Mk.XIIA,BW881,,,fixed_wing,monoplane,military,fighter,,flown as 5429; airworthy,N54FH,Flying Heritage & Combat Armor Museum,on_display
 de Havilland,Mosquito,T.III,TV959,,,fixed_wing,monoplane,military,trainer,,displayed in fighter-bomber configuration; airworthy,N959TV,Flying Heritage & Combat Armor Museum,on_display
@@ -15,7 +15,7 @@ Avro,Lancaster,B.I,TW911,,,fixed_wing,monoplane,military,bomber,,nose section on
 Polikarpov,I-16,Type 24,2421014,Rata,,fixed_wing,monoplane,military,fighter,,airworthy,N7459; I16,Flying Heritage & Combat Armor Museum,on_display
 Polikarpov,Po-2,,641543,Kukuruznik,,fixed_wing,biplane,military,bomber,,marked for 46th Guards Night Bomber Regiment; airworthy,N46GU; Po2,Flying Heritage & Combat Armor Museum,on_display
 Ilyushin,Il-2,M3,305401,Shturmovik,,fixed_wing,monoplane,military,ground_attack,,composite of four wrecks; Allison engine; airworthy,N112VW; Il2,Flying Heritage & Combat Armor Museum,on_display
-Nakajima,Ki-43,Ib,750,Hayabusa,,fixed_wing,monoplane,military,fighter,,only surviving Ki-43-Ib; static,N750N; Oscar; Ki43,Flying Heritage & Combat Armor Museum,on_display
+Nakajima,Ki-43,Ib,750,Hayabusa,,fixed_wing,monoplane,military,fighter,,only surviving Ki-43-Ib; static,N750N; Oscar; Ki43; Ki43Ib,Flying Heritage & Combat Armor Museum,on_display
 Mitsubishi,A6M,3,3852,Zero,,fixed_wing,monoplane,military,fighter,,composite rebuild with P&W R-1830; airworthy,N3852; Model 22,Flying Heritage & Combat Armor Museum,on_display
 Messerschmitt,Bf 109,E-3,1342,Emil,Yellow 8,fixed_wing,monoplane,military,fighter,,6./JG 51; crashed 29 Jul 1940; airworthy,N342FH,Flying Heritage & Combat Armor Museum,on_display
 Focke-Wulf,Fw 190,A-5,151227,Würger,,fixed_wing,monoplane,military,fighter,,only airworthy Fw 190 with original BMW 801; airworthy,N19027; JG 54,Flying Heritage & Combat Armor Museum,on_display

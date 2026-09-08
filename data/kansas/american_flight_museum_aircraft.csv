@@ -1,11 +1,11 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Douglas,C-47,B,N2805J,Skytrain,Spooky,fixed_wing,monoplane,military,ground_attack,1944,painted as an AC-47 gunship in Sgt John Levitow markings; airworthy and flown to airshows,c/n 20835; C47,American Flight Museum,on_display
-North American,T-28,A,N212DP,Trojan,,fixed_wing,monoplane,military,trainer,1949,,USAF 49-1616; T28,American Flight Museum,on_display
-Beechcraft,T-34,A,N56ZZ,Mentor,,fixed_wing,monoplane,military,trainer,,,c/n G-798; T34,American Flight Museum,on_display
-Beechcraft,T-34,A,N54654,Mentor,,fixed_wing,monoplane,military,trainer,,,c/n BG-247; T34,American Flight Museum,on_display
-Beechcraft,T-34,A,N84639,Mentor,,fixed_wing,monoplane,military,trainer,1956,,c/n BG-241; T34,American Flight Museum,on_display
-Beechcraft,T-34,A,N855MC,Mentor,,fixed_wing,monoplane,military,trainer,,,c/n BG-189; T34,American Flight Museum,on_display
-Beechcraft,T-34,A,N88796,Mentor,,fixed_wing,monoplane,military,trainer,,,c/n BG-203; T34,American Flight Museum,on_display
+Douglas,C-47,B,N2805J,Skytrain,Spooky,fixed_wing,monoplane,military,ground_attack,1944,painted as an AC-47 gunship in Sgt John Levitow markings; airworthy and flown to airshows,c/n 20835; C47; C47B,American Flight Museum,on_display
+North American,T-28,A,N212DP,Trojan,,fixed_wing,monoplane,military,trainer,1949,,USAF 49-1616; T28; T28A,American Flight Museum,on_display
+Beechcraft,T-34,A,N56ZZ,Mentor,,fixed_wing,monoplane,military,trainer,,,c/n G-798; T34; T34A,American Flight Museum,on_display
+Beechcraft,T-34,A,N54654,Mentor,,fixed_wing,monoplane,military,trainer,,,c/n BG-247; T34; T34A,American Flight Museum,on_display
+Beechcraft,T-34,A,N84639,Mentor,,fixed_wing,monoplane,military,trainer,1956,,c/n BG-241; T34; T34A,American Flight Museum,on_display
+Beechcraft,T-34,A,N855MC,Mentor,,fixed_wing,monoplane,military,trainer,,,c/n BG-189; T34; T34A,American Flight Museum,on_display
+Beechcraft,T-34,A,N88796,Mentor,,fixed_wing,monoplane,military,trainer,,,c/n BG-203; T34; T34A,American Flight Museum,on_display
 Yakovlev,Yak-52,,N1139Q,,,fixed_wing,monoplane,military,trainer,1983,,c/n 833713; Aerostar-built; Yak52,American Flight Museum,on_display
 Nanchang,CJ-6,,N5199Y,,,fixed_wing,monoplane,military,trainer,1968,FAA type Yak-18A,c/n 2432002; CJ6,American Flight Museum,on_display
 North American,AT-6,,N37642,Texan,,fixed_wing,monoplane,military,trainer,,,c/n 10560; AT6,American Flight Museum,on_display

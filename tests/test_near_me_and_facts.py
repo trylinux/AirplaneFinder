@@ -127,7 +127,7 @@ class TestFactsRead:
     def test_filter_by_aircraft(self, client, facts):
         d = client.get(f"/api/v1/facts?aircraft_id={facts.id}").get_json()
         assert d["total"] == 1
-        assert d["results"][0]["aircraft"]["full_designation"] == "SR-71-A"
+        assert d["results"][0]["aircraft"]["full_designation"] == "SR-71A"
 
     def test_random_returns_an_active_fact(self, client, facts):
         r = client.get("/api/v1/facts/random")
@@ -186,7 +186,7 @@ class TestFactsWrite:
         r = admin_client.post("/api/v1/facts",
                               json={"fact": "About the Fort.", "aircraft_id": ac.id})
         assert r.status_code == 201
-        assert r.get_json()["aircraft"]["full_designation"] == "B-17-G"
+        assert r.get_json()["aircraft"]["full_designation"] == "B-17G"
 
     def test_hide_via_patch(self, admin_client, db_session):
         import models

@@ -1,4 +1,4 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Boeing,EC-135,A,61-0287,Stratotanker,,fixed_wing,monoplane,military,other,,from the Looking Glass airborne command post fleet; gate guard at the STRATCOM entrance,c/n 18194; EC135,Zorinsky Memorial Air Park,on_display
-Boeing,B-52,G,57-6468,Stratofortress,,fixed_wing,monoplane,military,bomber,,,c/n 464173; B52,Zorinsky Memorial Air Park,on_display
-Boeing,B-17,F,42-3374,Flying Fortress,Homesick Angel,fixed_wing,monoplane,military,bomber,,recorded by Aerial Visuals as an RB-17F; a long-serving Offutt gate guard refurbished on base; displayed on the south side of the base rather than at the air park,c/n 8310; B17,Zorinsky Memorial Air Park,on_display
+Boeing,EC-135,A,61-0287,Stratotanker,,fixed_wing,monoplane,military,other,,from the Looking Glass airborne command post fleet; gate guard at the STRATCOM entrance,c/n 18194; EC135; EC135A,Zorinsky Memorial Air Park,on_display
+Boeing,B-52,G,57-6468,Stratofortress,,fixed_wing,monoplane,military,bomber,,,c/n 464173; B52; B52G,Zorinsky Memorial Air Park,on_display
+Boeing,B-17,F,42-3374,Flying Fortress,Homesick Angel,fixed_wing,monoplane,military,bomber,,recorded by Aerial Visuals as an RB-17F; a long-serving Offutt gate guard refurbished on base; displayed on the south side of the base rather than at the air park,c/n 8310; B17; B17F,Zorinsky Memorial Air Park,on_display

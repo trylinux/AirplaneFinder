@@ -23,17 +23,17 @@ Jet Propulsion Laboratory,Thunderbird,,,,,missile_rocket,,military,sounding,1947
 Hiller,J-10,,,,,rotary_wing,,civilian,experimental,1947,,Hiller J-10; J10,Hiller Aviation Museum,on_display
 Hiller,360,,,,,rotary_wing,,civilian,private,1949,,Hiller 360; UH-12A; UH12A,Hiller Aviation Museum,on_display
 Hiller,YH-32,,,Hornet,,rotary_wing,,military,utility,1950,,YH-32; Hornet; YH32,Hiller Aviation Museum,on_display
-Hiller,OH-23,B,,Raven,,rotary_wing,,military,utility,1950,,OH-23; Raven; OH23,Hiller Aviation Museum,on_display
-Hiller,YH-32,A,Hornet,Sally Rand,,rotary_wing,,military,ground_attack,1952,,YH-32; Hornet; YH32,Hiller Aviation Museum,on_display
+Hiller,OH-23,B,,Raven,,rotary_wing,,military,utility,1950,,OH-23; Raven; OH23; OH23B,Hiller Aviation Museum,on_display
+Hiller,YH-32,A,Hornet,Sally Rand,,rotary_wing,,military,ground_attack,1952,,YH-32; Hornet; YH32; YH32A,Hiller Aviation Museum,on_display
 Hiller,VZ-1,,,Flying Platform,,rotary_wing,,military,test,1955,,VZ-1; Pawnee; Flying Platform; VZ1,Hiller Aviation Museum,on_display
-Grumman,HU-16,RD,N44RD,Albatross,,fixed_wing,monoplane,civilian,utility,1955,,HU-16; Albatross; HU16,Hiller Aviation Museum,on_display
+Grumman,HU-16,RD,N44RD,Albatross,,fixed_wing,monoplane,civilian,utility,1955,,HU-16; Albatross; HU16; HU16RD,Hiller Aviation Museum,on_display
 Hiller,XROE,1,,Rotorcycle,,rotary_wing,,military,utility,1956,,XROE-1; Rotorcycle; XROE1,Hiller Aviation Museum,on_display
 Hiller,VXT-8,,,Coleopter,,fixed_wing,monoplane,military,test,,replica,VXT-8; Coleopter; VXT8,Hiller Aviation Museum,on_display
 Fairchild Hiller,FH-1100,,,,,rotary_wing,,civilian,utility,1963,,FH-1100; Ten99,Hiller Aviation Museum,on_display
 Del Mar,DHT-2,,,,,rotary_wing,,military,trainer,1966,,DHT-2; Del Mar; DHT2,Hiller Aviation Museum,on_display
 Del Mar,DH-20,,,,,rotary_wing,,military,search_rescue,1968,,DH-20; Del Mar; DH20,Hiller Aviation Museum,on_display
 Boeing,737,200,,,,fixed_wing,monoplane,civilian,commercial_transport,1969,cockpit section,737,Hiller Aviation Museum,on_display
-Lockheed,YO-3,A,18001,Quiet Star,,fixed_wing,monoplane,military,recon,1969,,YO-3; Quiet Star; QT-2; YO3; QT2,Hiller Aviation Museum,on_display
+Lockheed,YO-3,A,18001,Quiet Star,,fixed_wing,monoplane,military,recon,1969,,YO-3; Quiet Star; QT-2; YO3; QT2; YO3A,Hiller Aviation Museum,on_display
 RotorWay,Scorpion,,,,,rotary_wing,,civilian,experimental,1970,,Scorpion; RotorWay,Hiller Aviation Museum,on_display
 Boeing,747,136,G-AWNG,,,fixed_wing,monoplane,civilian,commercial_transport,1971,forward fuselage,747,Hiller Aviation Museum,on_display
 Cessna,177,,,Cardinal,,fixed_wing,monoplane,civilian,private,1973,,177; Cardinal,Hiller Aviation Museum,on_display
@@ -43,14 +43,14 @@ Rutan,Long-EZ,,,,,fixed_wing,monoplane,civilian,experimental,1976,,Long-EZ; Ruta
 Rutan,Defiant,,,,,fixed_wing,monoplane,civilian,experimental,1978,,Defiant; Rutan,Hiller Aviation Museum,on_display
 NASA,AD-1,,,Oblique Wing,,fixed_wing,monoplane,civilian,experimental,1979,,AD-1; Oblique Wing; AD1,Hiller Aviation Museum,on_display
 Quicksilver,MX,,,,,fixed_wing,monoplane,civilian,private,1982,,Quicksilver MX,Hiller Aviation Museum,on_display
-Bede,BD-5,T,,,,fixed_wing,monoplane,civilian,experimental,1982,,BD-5; Bede; BD5,Hiller Aviation Museum,on_display
+Bede,BD-5,T,,,,fixed_wing,monoplane,civilian,experimental,1982,,BD-5; Bede; BD5; BD5T,Hiller Aviation Museum,on_display
 ParaPlane,PM-1,,,,,fixed_wing,monoplane,civilian,experimental,1983,,PM-1; ParaPlane; PM1,Hiller Aviation Museum,on_display
 NASA,OAW,,,Oblique All Wing,,fixed_wing,monoplane,civilian,experimental,1985,,OAW; Oblique All Wing,Hiller Aviation Museum,on_display
-Pitts,S-1,C,,Special,,fixed_wing,biplane,civilian,private,1985,,Pitts Special; S1,Hiller Aviation Museum,on_display
+Pitts,S-1,C,,Special,,fixed_wing,biplane,civilian,private,1985,,Pitts Special; S1; S1C,Hiller Aviation Museum,on_display
 Boeing,Condor,,,,,fixed_wing,monoplane,military,recon,1988,,Condor; UAV,Hiller Aviation Museum,on_display
 Bright Star,Swift,,,,,fixed_wing,monoplane,civilian,experimental,1989,glider,Swift,Hiller Aviation Museum,on_display
 Trek Aerospace,SoloTrek,,,,,rotary_wing,,civilian,experimental,2001,,SoloTrek; XFV,Hiller Aviation Museum,on_display
-General Atomics,MQ-1,B,00-3069,Predator,,fixed_wing,monoplane,military,recon,,,MQ-1; RQ-1; Predator; MQ1; RQ1,Hiller Aviation Museum,on_display
+General Atomics,MQ-1,B,00-3069,Predator,,fixed_wing,monoplane,military,recon,,,MQ-1; RQ-1; Predator; MQ1; RQ1; MQ1B,Hiller Aviation Museum,on_display
 Scaled Composites,SpaceShipOne,,,,,spacecraft,,civilian,space,,replica,SpaceShipOne,Hiller Aviation Museum,on_display
 Kitty Hawk,Flyer,,,,,rotary_wing,,civilian,experimental,2017,eVTOL,Kitty Hawk Flyer,Hiller Aviation Museum,on_display
 Opener,BlackFly,,,,,rotary_wing,,civilian,experimental,2017,eVTOL,BlackFly,Hiller Aviation Museum,on_display

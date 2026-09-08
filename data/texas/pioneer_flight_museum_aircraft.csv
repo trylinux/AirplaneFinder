@@ -1,6 +1,6 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Thomas-Morse,S-4,C,,Scout,,fixed_wing,biplane,military,trainer,1917,original airframe; flies on a Curtiss licence-built Le Rhone copy; registration not established,S4,Pioneer Flight Museum,on_display
-Curtiss,JN-4,Can,,Canuck,,fixed_wing,biplane,military,trainer,1916,original Canadian-built airframe restored several times; registration not established,JN4,Pioneer Flight Museum,on_display
+Thomas-Morse,S-4,C,,Scout,,fixed_wing,biplane,military,trainer,1917,original airframe; flies on a Curtiss licence-built Le Rhone copy; registration not established,S4; S4C,Pioneer Flight Museum,on_display
+Curtiss,JN-4,Can,,Canuck,,fixed_wing,biplane,military,trainer,1916,original Canadian-built airframe restored several times; registration not established,JN4; JN4Can,Pioneer Flight Museum,on_display
 Waco,10,GXE,NC4534,Waco 10,,fixed_wing,biplane,civilian,private,1928,original airframe; airworthy and flew the Fall Fly-In November 2025,msn 1381,Pioneer Flight Museum,on_display
 Bleriot,XI,,,Bleriot XI,,fixed_wing,monoplane,civilian,experimental,1909,replica per the museum's own page; flyable,,Pioneer Flight Museum,on_display
 Aeronautical Syndicate,Valkyrie,,,Valkyrie,,fixed_wing,monoplane,civilian,experimental,1910,replica; canard pusher; static only and not airworthy,,Pioneer Flight Museum,on_display

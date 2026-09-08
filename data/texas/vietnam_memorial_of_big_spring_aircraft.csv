@@ -1,4 +1,4 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Bell,AH-1,S,68-15054,Cobra,Hammer Head,rotary_wing,,military,ground_attack,,built as AH-1G-BF and accepted February 1969; two Vietnam tours; converted to AH-1S-BF,AH1,Vietnam Memorial of Big Spring,on_display
-Bell,UH-1,H,66-1078,Iroquois,,rotary_wing,,military,utility,,displayed in MEDEVAC markings,c/n 5561; UH1,Vietnam Memorial of Big Spring,on_display
-McDonnell,F-4,E,66-0368,Phantom II,,fixed_wing,monoplane,military,fighter,,converted to GF-4E at Sheppard AFB; NMUSAF loan to the City of Big Spring,F-4E-33-MC; F4,Vietnam Memorial of Big Spring,on_display
+Bell,AH-1,S,68-15054,Cobra,Hammer Head,rotary_wing,,military,ground_attack,,built as AH-1G-BF and accepted February 1969; two Vietnam tours; converted to AH-1S-BF,AH1; AH1S,Vietnam Memorial of Big Spring,on_display
+Bell,UH-1,H,66-1078,Iroquois,,rotary_wing,,military,utility,,displayed in MEDEVAC markings,c/n 5561; UH1; UH1H,Vietnam Memorial of Big Spring,on_display
+McDonnell,F-4,E,66-0368,Phantom II,,fixed_wing,monoplane,military,fighter,,converted to GF-4E at Sheppard AFB; NMUSAF loan to the City of Big Spring,F-4E-33-MC; F4; F4E,Vietnam Memorial of Big Spring,on_display

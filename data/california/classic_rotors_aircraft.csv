@@ -4,7 +4,7 @@ Bell,47,B-3,,Bell 47,,rotary_wing,,civilian,utility,,,Bell 47,Classic Rotors Mus
 Bensen Aircraft,B-8,M,N1820,Gyrocopter,,rotary_wing,,civilian,experimental,,,B-8M; Gyrocopter; B8; B8M,Classic Rotors Museum,on_display
 Bolkow,Bo 102,,,Helitrainer,,rotary_wing,,civilian,experimental,,,Bo 102; Helitrainer,Classic Rotors Museum,on_display
 Hiller,Camel,,,,,fixed_wing,monoplane,military,utility,,Collapsible Airborne Military Equipment,Camel,Classic Rotors Museum,on_display
-Gyrodyne,QH-50,D,DS-1709,DASH,,rotary_wing,,military,drone,,,QH-50; DASH; QH50,Classic Rotors Museum,on_display
+Gyrodyne,QH-50,D,DS-1709,DASH,,rotary_wing,,military,drone,,,QH-50; DASH; QH50; QH50D,Classic Rotors Museum,on_display
 De Lackner,HZ-1,,,Aerocycle,,rotary_wing,,military,test,,,DH-4; Aerocycle; Flying Platform; HZ1; DH4,Classic Rotors Museum,on_display
 Sud-Ouest,SO.1221,S,F-BRGC,Djinn,,rotary_wing,,civilian,experimental,,,SO1221; Djinn,Classic Rotors Museum,on_display
 DuPont Aerospace,DP-1,C,,,,fixed_wing,monoplane,civilian,experimental,,tilt-duct VTOL,DP-1C; DP1; DP1C,Classic Rotors Museum,on_display
@@ -12,10 +12,10 @@ RotorWay,Exec,162F,N917MT,Exec 162F,,rotary_wing,,civilian,experimental,,,RotorW
 Goodyear,GA-400,R-3,N69N,Gizmo,,rotary_wing,,civilian,experimental,,,GA-400; Gizmo; GA400,Classic Rotors Museum,on_display
 Bell,UH-1,N,158256,Iroquois,,rotary_wing,,military,utility,,,UH-1N; Huey; UH1; UH1N,Classic Rotors Museum,on_display
 Hiller,UH-12,,,,,rotary_wing,,civilian,utility,,,UH-12; Raven; UH12,Classic Rotors Museum,on_display
-Piasecki,H-21,B,,Workhorse,,rotary_wing,,military,transport,,,H-21; Flying Banana; Shawnee; H21,Classic Rotors Museum,on_display
+Piasecki,H-21,B,,Workhorse,,rotary_wing,,military,transport,,,H-21; Flying Banana; Shawnee; H21; H21B,Classic Rotors Museum,on_display
 Piasecki,H-25,,,Army Mule,,rotary_wing,,military,utility,,,H-25; Retriever; HUP; H25,Classic Rotors Museum,on_display
 Sikorsky,CH-37,,,Mojave,,rotary_wing,,military,transport,,,CH-37; Mojave; CH37,Classic Rotors Museum,on_display
-Boeing Vertol,H-46,E,157688,Sea Knight,,rotary_wing,,military,search_rescue,,,HH-46E; Sea Knight; H46; HH46E,Classic Rotors Museum,on_display
+Boeing Vertol,H-46,E,157688,Sea Knight,,rotary_wing,,military,search_rescue,,,HH-46E; Sea Knight; H46; HH46E; H46E,Classic Rotors Museum,on_display
 Sikorsky,HH-52,,,Seaguard,,rotary_wing,,military,search_rescue,,,HH-52; Seaguard; HH52,Classic Rotors Museum,on_display
 Hiller,YH-32,,N3955,Hornet,,rotary_wing,,military,test,,,YH-32; Hornet; YH32,Classic Rotors Museum,on_display
 Piasecki,HRP,,,Rescuer,,rotary_wing,,military,search_rescue,,,HRP; Rescuer; Flying Banana,Classic Rotors Museum,on_display
@@ -29,7 +29,7 @@ Monte-Copter,15,,N69P,Triphibian,,rotary_wing,,civilian,experimental,,,Monte-Cop
 MD Helicopters,MD 500,N,,NOTAR,,rotary_wing,,military,test,,,MD500; NOTAR,Classic Rotors Museum,on_display
 Convertawings,Model A,,N63N,Quadrotor,,rotary_wing,,civilian,experimental,,,Convertawings; Quadrotor,Classic Rotors Museum,on_display
 Sikorsky,S-52,3,N9433H,HO5S,,rotary_wing,,military,utility,,,S-52; HO5S-1; S52,Classic Rotors Museum,on_display
-Sikorsky,H-19,D,N2256G,Chickasaw,,rotary_wing,,military,utility,,,H-19; S-55; Chickasaw; H19; S55,Classic Rotors Museum,on_display
+Sikorsky,H-19,D,N2256G,Chickasaw,,rotary_wing,,military,utility,,,H-19; S-55; Chickasaw; H19; S55; H19D,Classic Rotors Museum,on_display
 Westland,Wasp,HAS1,XV639,,,rotary_wing,,military,utility,,,Westland Wasp,Classic Rotors Museum,on_display
 Robinson,R22,,,,,rotary_wing,,civilian,private,,,R22,Classic Rotors Museum,on_display
 Robinson,R44,,,,,rotary_wing,,civilian,private,,,R44,Classic Rotors Museum,on_display

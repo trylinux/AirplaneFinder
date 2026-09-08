@@ -32,7 +32,7 @@ Bréguet,901,,,,,fixed_wing,monoplane,civilian,private,,glider,,Musee de l'Air e
 Bücker,Bü 181,C-3,,Bestmann,,fixed_wing,monoplane,military,trainer,,,,Musee de l'Air et de l'Espace,in_storage
 Canadair,CL-215,,,,,fixed_wing,monoplane,civilian,utility,,Sécurité Civile water bomber,CL215,Musee de l'Air et de l'Espace,on_display
 CASA,2.111,D,,,Pedro,fixed_wing,monoplane,military,bomber,,licence-built Heinkel He 111H-16,BR.21,Musee de l'Air et de l'Espace,in_storage
-Castel,C-301,S,,,,fixed_wing,monoplane,civilian,private,,glider,C301,Musee de l'Air et de l'Espace,in_storage
+Castel,C-301,S,,,,fixed_wing,monoplane,civilian,private,,glider,C301; C301S,Musee de l'Air et de l'Espace,in_storage
 Caudron,G.3,,,,,fixed_wing,biplane,military,recon,,,No 203,Musee de l'Air et de l'Espace,in_storage
 Caudron,G.4,,,,,fixed_wing,biplane,military,recon,,,,Musee de l'Air et de l'Espace,on_display
 Caudron,C.60,,,,,fixed_wing,biplane,military,trainer,,,,Musee de l'Air et de l'Espace,on_display
@@ -68,11 +68,11 @@ Deperdussin,Monocoque,,,,,fixed_wing,monoplane,civilian,private,,,Inv 36,Musee d
 Dewoitine,D.520,,,,,fixed_wing,monoplane,military,fighter,,,,Musee de l'Air et de l'Espace,on_display
 Dewoitine,D.530,,F-AJTE,,,fixed_wing,monoplane,civilian,private,,n°6,,Musee de l'Air et de l'Espace,on_display
 DFS,Habicht,,,,,fixed_wing,monoplane,civilian,private,,glider; flown by Marcel Doret,,Musee de l'Air et de l'Espace,on_display
-Douglas,C-47,A,,Skytrain,,fixed_wing,monoplane,military,transport,,,Dakota; C47,Musee de l'Air et de l'Espace,on_display
-Douglas,AD-4,NA,,Skyraider,,fixed_wing,monoplane,military,ground_attack,,,AD4,Musee de l'Air et de l'Espace,on_display
+Douglas,C-47,A,,Skytrain,,fixed_wing,monoplane,military,transport,,,Dakota; C47; C47A,Musee de l'Air et de l'Espace,on_display
+Douglas,AD-4,NA,,Skyraider,,fixed_wing,monoplane,military,ground_attack,,,AD4; AD4NA,Musee de l'Air et de l'Espace,on_display
 Douglas,DC-8,,F-RAFE,,Sarigue,fixed_wing,monoplane,military,electronic_warfare,,,DC8,Musee de l'Air et de l'Espace,in_storage
 Dragon Fly,333,,,,,rotary_wing,,civilian,private,,ultralight helicopter,,Musee de l'Air et de l'Espace,on_display
-Embraer,EMB-312,F,,Tucano,,fixed_wing,monoplane,military,trainer,,,EMB312,Musee de l'Air et de l'Espace,on_display
+Embraer,EMB-312,F,,Tucano,,fixed_wing,monoplane,military,trainer,,,EMB312; EMB312F,Musee de l'Air et de l'Espace,on_display
 Fabre,Hydravion,,,,,fixed_wing,monoplane,civilian,experimental,,first seaplane to fly 1910,,Musee de l'Air et de l'Espace,on_display
 Farman,MF.7,,,,,fixed_wing,biplane,military,recon,,,,Musee de l'Air et de l'Espace,on_display
 Farman,HF.20,,,,,fixed_wing,biplane,military,recon,,,,Musee de l'Air et de l'Espace,on_display
@@ -90,7 +90,7 @@ Gary,RG-01,,,,,rotary_wing,,civilian,experimental,,,RG01,Musee de l'Air et de l'
 Gloster,Meteor,,,,,fixed_wing,monoplane,military,fighter,,,,Musee de l'Air et de l'Espace,in_storage
 Heinkel,He 162,A-2,,Spatz,,fixed_wing,monoplane,military,fighter,,,,Musee de l'Air et de l'Espace,in_storage
 HFB,320,,,Hansa Jet,,fixed_wing,monoplane,civilian,private,,,,Musee de l'Air et de l'Espace,in_storage
-Hiller,UH-12,B,,Raven,,rotary_wing,,civilian,utility,,,Hiller 360; UH12,Musee de l'Air et de l'Espace,on_display
+Hiller,UH-12,B,,Raven,,rotary_wing,,civilian,utility,,,Hiller 360; UH12; UH12B,Musee de l'Air et de l'Espace,on_display
 Hirsch,H-100,,,,,fixed_wing,monoplane,civilian,experimental,,gust-absorber testbed,H100,Musee de l'Air et de l'Espace,on_display
 Hurel-Dubois,HD.10,,,,,fixed_wing,monoplane,civilian,experimental,,high-aspect-ratio testbed,,Musee de l'Air et de l'Espace,on_display
 Junkers,J.9,,,,,fixed_wing,monoplane,military,fighter,,,,Musee de l'Air et de l'Espace,on_display
@@ -109,12 +109,12 @@ Nieuport,11,,N556,Bébé,,fixed_wing,biplane,military,fighter,1915,,N976; Inv 19
 Nieuport,II,N,,,,fixed_wing,monoplane,civilian,private,,museum-built copy,Inv 17,Musee de l'Air et de l'Espace,on_display
 Nord,1500,02,,Griffon II,,fixed_wing,monoplane,military,experimental,,,,Musee de l'Air et de l'Espace,on_display
 Nord,262,E,72,Frégate,,fixed_wing,monoplane,military,transport,1969,,,Musee de l'Air et de l'Espace,on_display
-North American,P-51,D,,Mustang,,fixed_wing,monoplane,military,fighter,,,P51,Musee de l'Air et de l'Espace,on_display
-North American,F-86,K,,Sabre,,fixed_wing,monoplane,military,fighter,,,F86,Musee de l'Air et de l'Espace,on_display
-North American,F-100,D,,Super Sabre,,fixed_wing,monoplane,military,fighter,,,F100,Musee de l'Air et de l'Espace,on_display
-North American,T-6,G,,Texan,,fixed_wing,monoplane,military,trainer,,151-14522,T6,Musee de l'Air et de l'Espace,on_display
+North American,P-51,D,,Mustang,,fixed_wing,monoplane,military,fighter,,,P51; P51D,Musee de l'Air et de l'Espace,on_display
+North American,F-86,K,,Sabre,,fixed_wing,monoplane,military,fighter,,,F86; F86K,Musee de l'Air et de l'Espace,on_display
+North American,F-100,D,,Super Sabre,,fixed_wing,monoplane,military,fighter,,,F100; F100D,Musee de l'Air et de l'Espace,on_display
+North American,T-6,G,,Texan,,fixed_wing,monoplane,military,trainer,,151-14522,T6; T6G,Musee de l'Air et de l'Espace,on_display
 Mikoyan-Gurevich,MiG-21,F-13,,Fishbed,,fixed_wing,monoplane,military,fighter,,,1103; MiG21,Musee de l'Air et de l'Espace,on_display
-Mikoyan-Gurevich,MiG-23,ML,,Flogger,,fixed_wing,monoplane,military,fighter,,,MiG23,Musee de l'Air et de l'Espace,in_storage
+Mikoyan-Gurevich,MiG-23,ML,,Flogger,,fixed_wing,monoplane,military,fighter,,,MiG23; MiG23ML,Musee de l'Air et de l'Espace,in_storage
 Payen,Pa-49,,,Katy,,fixed_wing,monoplane,military,experimental,1954,,Pa49,Musee de l'Air et de l'Espace,on_display
 Piasecki,HUP,2,,Retriever,,rotary_wing,,military,search_rescue,,,HUP2,Musee de l'Air et de l'Espace,on_display
 Polikarpov,I-153,,,Chaika,,fixed_wing,biplane,military,fighter,,,Inv 34; I153,Musee de l'Air et de l'Espace,in_storage
@@ -122,8 +122,8 @@ Potez,53,,,,,fixed_wing,monoplane,civilian,other,1933,Coupe Deutsch de la Meurth
 Potez,43,7,,,,fixed_wing,monoplane,civilian,private,,,,Musee de l'Air et de l'Espace,on_display
 REP,Type D,,,,,fixed_wing,monoplane,civilian,experimental,1910,,Esnault-Pelterie,Musee de l'Air et de l'Espace,on_display
 REP,Type K,,,,,fixed_wing,monoplane,military,recon,1913,,Esnault-Pelterie,Musee de l'Air et de l'Espace,on_display
-Republic,P-47,D,44-20371,Thunderbolt,,fixed_wing,monoplane,military,fighter,1944,,P47,Musee de l'Air et de l'Espace,on_display
-Republic,F-84,F,,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,,F84,Musee de l'Air et de l'Espace,on_display
+Republic,P-47,D,44-20371,Thunderbolt,,fixed_wing,monoplane,military,fighter,1944,,P47; P47D,Musee de l'Air et de l'Espace,on_display
+Republic,F-84,F,,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,,F84; F84F,Musee de l'Air et de l'Espace,on_display
 Klöti,RK-02,,,Hydrogyro,,rotary_wing,,civilian,experimental,,,RK02,Musee de l'Air et de l'Espace,on_display
 Oehmichen,No 6,,,,,rotary_wing,,civilian,experimental,,,,Musee de l'Air et de l'Espace,on_display
 Rutan,VariEze,,F-PYJO,,,fixed_wing,monoplane,civilian,private,,,,Musee de l'Air et de l'Espace,in_storage
@@ -137,7 +137,7 @@ SEPECAT,Jaguar,A,,,,fixed_wing,monoplane,military,ground_attack,,,,Musee de l'Ai
 SEPECAT,Jaguar,A,A91,,,fixed_wing,monoplane,military,ground_attack,,opération Daguet,,Musee de l'Air et de l'Espace,on_display
 SEPECAT,Jaguar,E,,,,fixed_wing,monoplane,military,trainer,,,,Musee de l'Air et de l'Espace,in_storage
 Short,S.25,Sandringham 7,F-OBIP,,Bermuda,fixed_wing,monoplane,civilian,commercial_transport,,,,Musee de l'Air et de l'Espace,under_restoration
-Sikorsky,H-34,A,,Choctaw,,rotary_wing,,military,transport,1959,Sud-Aviation licence-built,H34,Musee de l'Air et de l'Espace,on_display
+Sikorsky,H-34,A,,Choctaw,,rotary_wing,,military,transport,1959,Sud-Aviation licence-built,H34; H34A,Musee de l'Air et de l'Espace,on_display
 Sud-Est,SE.535,,,Mistral,,fixed_wing,monoplane,military,fighter,,Vampire derivative,SNCASE,Musee de l'Air et de l'Espace,on_display
 Sud-Est,SE.3101,,,,,rotary_wing,,military,experimental,,,SNCASE,Musee de l'Air et de l'Espace,on_display
 Sud-Est,C.302,,,,,rotary_wing,,military,utility,,Cierva C.30 licence,SNCASE,Musee de l'Air et de l'Espace,on_display
@@ -158,8 +158,8 @@ Sud Aviation,Ludion,,,,,fixed_wing,monoplane,military,experimental,,VTOL individ
 Sud Aviation,SA 319,B,,Alouette III,,rotary_wing,,military,utility,,n°2009,Gendarmerie,Musee de l'Air et de l'Espace,on_display
 Sukhoi,Su-22,M4,,Fitter,,fixed_wing,monoplane,military,ground_attack,,,Su22,Musee de l'Air et de l'Espace,on_display
 Supermarine,Spitfire,LF.XVI,RR263,,,fixed_wing,monoplane,military,fighter,,,,Musee de l'Air et de l'Espace,on_display
-Transall,C-160,G,F-RAGT,Gabriel,,fixed_wing,monoplane,military,electronic_warfare,,n°1,C160,Musee de l'Air et de l'Espace,on_display
-Transall,C-160,R,F-RAMM,,Ville de Kolwezi,fixed_wing,monoplane,military,transport,,61-MM,R18; C160,Musee de l'Air et de l'Espace,on_display
+Transall,C-160,G,F-RAGT,Gabriel,,fixed_wing,monoplane,military,electronic_warfare,,n°1,C160; C160G,Musee de l'Air et de l'Espace,on_display
+Transall,C-160,R,F-RAMM,,Ville de Kolwezi,fixed_wing,monoplane,military,transport,,61-MM,R18; C160; C160R,Musee de l'Air et de l'Espace,on_display
 Voisin,LAS,,,,,fixed_wing,biplane,military,recon,1915,,Inv 31,Musee de l'Air et de l'Espace,in_storage
 Voisin,Voisin-Farman I,,,,,fixed_wing,biplane,civilian,experimental,,1919 replica of the 1907 machine,,Musee de l'Air et de l'Espace,on_display
 Vuia,No 1,,,,,fixed_wing,monoplane,civilian,experimental,1906,,,Musee de l'Air et de l'Espace,on_display

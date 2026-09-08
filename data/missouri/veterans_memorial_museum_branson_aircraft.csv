@@ -1,3 +1,3 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-North American,P-51,D,,Mustang,Donna K,fixed_wing,monoplane,military,fighter,,replica; full-scale non-flying; marked 44-60356 and FJ-H; pole-mounted at the museum entrance; the marking is not the identity of a real airframe,P51,Branson Veterans Memorial Museum,on_display
-Bell,UH-1,M,65-9510,Iroquois,,rotary_wing,,military,utility,,recorded as a QUH-1M; serial from a single source; marked 09510,09510; UH1,Branson Veterans Memorial Museum,on_display
+North American,P-51,D,,Mustang,Donna K,fixed_wing,monoplane,military,fighter,,replica; full-scale non-flying; marked 44-60356 and FJ-H; pole-mounted at the museum entrance; the marking is not the identity of a real airframe,P51; P51D,Branson Veterans Memorial Museum,on_display
+Bell,UH-1,M,65-9510,Iroquois,,rotary_wing,,military,utility,,recorded as a QUH-1M; serial from a single source; marked 09510,09510; UH1; UH1M,Branson Veterans Memorial Museum,on_display

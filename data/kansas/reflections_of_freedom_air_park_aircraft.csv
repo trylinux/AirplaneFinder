@@ -1,12 +1,12 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-General Dynamics,F-16,A,78-0066,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,delivered 28 March 1980; ex-466th TFS,Block 5; F16,Reflections of Freedom Air Park,on_display
-Republic,F-105,D,62-4253,Thunderchief,,fixed_wing,monoplane,military,fighter,,,F105,Reflections of Freedom Air Park,on_display
-Rockwell,B-1,B,83-0068,Lancer,Spuds,fixed_wing,monoplane,military,bomber,,McConnell flew the B-1B with the 384th BW and the 184th BW ANG,B1,Reflections of Freedom Air Park,on_display
-Boeing,B-47,E,53-4213,Stratojet,,fixed_wing,monoplane,military,bomber,,flew the last B-47 retirement flight Operation Fast Fly 7 December 1965; displayed in Wichita 1965-1988; moved to McConnell 1988; main-gate cluster beside Rock Road,B47,Reflections of Freedom Air Park,on_display
-Boeing,KC-135,A,55-3118,Stratotanker,City of Renton,fixed_wing,monoplane,military,tanker,1956,the first KC-135 built; first flight 31 August 1956; later an EC-135K command post; retired 1998; restored to KC-135A configuration for display near the main gate; tail refurbished July 2021,KC135,Reflections of Freedom Air Park,on_display
-Lockheed,F-80,C,47-0215,Shooting Star,,fixed_wing,monoplane,military,fighter,,,F80,Reflections of Freedom Air Park,on_display
-Republic,F-84,C,47-1513,Thunderjet,,fixed_wing,monoplane,military,fighter,,,F84,Reflections of Freedom Air Park,on_display
-North American,F-86,L,52-4256,Sabre,,fixed_wing,monoplane,military,fighter,,built as an F-86D-50-NA and converted to L; ex-127th FIS Kansas ANG; NMUSAF loan; one source transposes the serial as 52-4265,F86,Reflections of Freedom Air Park,on_display
-North American,F-100,C,54-1993,Super Sabre,,fixed_wing,monoplane,military,fighter,,,F100,Reflections of Freedom Air Park,on_display
-McDonnell Douglas,F-4,D,66-0271,Phantom II,,fixed_wing,monoplane,military,fighter,,two MiG-21 kills 18 and 29 July 1972 with the 432nd TRW; later 127th TFS Kansas ANG,F4,Reflections of Freedom Air Park,on_display
-Lockheed,T-33,A,53-5998,Shooting Star,,fixed_wing,monoplane,military,trainer,,serial from a single source,T33,Reflections of Freedom Air Park,on_display
+General Dynamics,F-16,A,78-0066,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,delivered 28 March 1980; ex-466th TFS,Block 5; F16; F16A,Reflections of Freedom Air Park,on_display
+Republic,F-105,D,62-4253,Thunderchief,,fixed_wing,monoplane,military,fighter,,,F105; F105D,Reflections of Freedom Air Park,on_display
+Rockwell,B-1,B,83-0068,Lancer,Spuds,fixed_wing,monoplane,military,bomber,,McConnell flew the B-1B with the 384th BW and the 184th BW ANG,B1; B1B,Reflections of Freedom Air Park,on_display
+Boeing,B-47,E,53-4213,Stratojet,,fixed_wing,monoplane,military,bomber,,flew the last B-47 retirement flight Operation Fast Fly 7 December 1965; displayed in Wichita 1965-1988; moved to McConnell 1988; main-gate cluster beside Rock Road,B47; B47E,Reflections of Freedom Air Park,on_display
+Boeing,KC-135,A,55-3118,Stratotanker,City of Renton,fixed_wing,monoplane,military,tanker,1956,the first KC-135 built; first flight 31 August 1956; later an EC-135K command post; retired 1998; restored to KC-135A configuration for display near the main gate; tail refurbished July 2021,KC135; KC135A,Reflections of Freedom Air Park,on_display
+Lockheed,F-80,C,47-0215,Shooting Star,,fixed_wing,monoplane,military,fighter,,,F80; F80C,Reflections of Freedom Air Park,on_display
+Republic,F-84,C,47-1513,Thunderjet,,fixed_wing,monoplane,military,fighter,,,F84; F84C,Reflections of Freedom Air Park,on_display
+North American,F-86,L,52-4256,Sabre,,fixed_wing,monoplane,military,fighter,,built as an F-86D-50-NA and converted to L; ex-127th FIS Kansas ANG; NMUSAF loan; one source transposes the serial as 52-4265,F86; F86L,Reflections of Freedom Air Park,on_display
+North American,F-100,C,54-1993,Super Sabre,,fixed_wing,monoplane,military,fighter,,,F100; F100C,Reflections of Freedom Air Park,on_display
+McDonnell Douglas,F-4,D,66-0271,Phantom II,,fixed_wing,monoplane,military,fighter,,two MiG-21 kills 18 and 29 July 1972 with the 432nd TRW; later 127th TFS Kansas ANG,F4; F4D,Reflections of Freedom Air Park,on_display
+Lockheed,T-33,A,53-5998,Shooting Star,,fixed_wing,monoplane,military,trainer,,serial from a single source,T33; T33A,Reflections of Freedom Air Park,on_display

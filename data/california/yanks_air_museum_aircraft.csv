@@ -28,7 +28,7 @@ Noorduyn,Norseman,,,,,fixed_wing,monoplane,civilian,utility,,,Norseman,Yanks Air
 Porterfield,35,,,Flyabout,,fixed_wing,monoplane,civilian,private,1936,,Porterfield 35; Flyabout,Yanks Air Museum,on_display
 Lincoln-Page,LP-3,,,,,fixed_wing,biplane,civilian,private,1928,,LP-3; Roos Lincoln Page; LP3,Yanks Air Museum,on_display
 Stearman,4,D,,Junior Speed Mail,,fixed_wing,biplane,civilian,freighter,1931,,Stearman 4D; Speedmail,Yanks Air Museum,on_display
-Stearman,PT-9,B,,Cloudboy,,fixed_wing,biplane,military,trainer,1930,,YPT-9B; Cloudboy; PT9; YPT9B,Yanks Air Museum,on_display
+Stearman,PT-9,B,,Cloudboy,,fixed_wing,biplane,military,trainer,1930,,YPT-9B; Cloudboy; PT9; YPT9B; PT9B,Yanks Air Museum,on_display
 Swallow,TP,,,,,fixed_wing,biplane,civilian,,1928,,Swallow TP,Yanks Air Museum,on_display
 Taylor,J-2,,,Cub,,fixed_wing,monoplane,civilian,private,,,J-2 Cub; Taylor Cub; J2,Yanks Air Museum,on_display
 Thomas-Pigeon,Flying Boat,,,,,fixed_wing,biplane,civilian,experimental,1920,,Thomas Pigeon; Flying Boat,Yanks Air Museum,on_display
@@ -64,7 +64,7 @@ North American,P-51,A,,Mustang,,fixed_wing,monoplane,military,fighter,1943,,P-51
 North American,SNJ,5,,Texan,,fixed_wing,monoplane,military,trainer,1944,,SNJ-5; Texan; T-6; SNJ5; T6,Yanks Air Museum,on_display
 Waco,CG-4,A,,Hadrian,,fixed_wing,monoplane,military,transport,1945,Waco glider,CG-4A; Hadrian; CG4; CG4A,Yanks Air Museum,on_display
 Republic,P-47,D,45-9346,Thunderbolt,,fixed_wing,monoplane,military,fighter,1945,,P-47D; Thunderbolt; P47; P47D,Yanks Air Museum,on_display
-Republic,P-47,M,,Thunderbolt,,fixed_wing,monoplane,military,fighter,,,YP-47M; Thunderbolt; P47; YP47M,Yanks Air Museum,on_display
+Republic,P-47,M,,Thunderbolt,,fixed_wing,monoplane,military,fighter,,,YP-47M; Thunderbolt; P47; YP47M; P47M,Yanks Air Museum,on_display
 Schweizer,TG-3,A,,,,fixed_wing,monoplane,military,trainer,,glider,TG-3A; TG3; TG3A,Yanks Air Museum,on_display
 Sikorsky,R-4,B,,Hoverfly,,rotary_wing,,military,utility,1944,,R-4B; Hoverfly; R4; R4B,Yanks Air Museum,on_display
 Stinson,L-5,,,Sentinel,,fixed_wing,monoplane,military,utility,1943,,L-5; Sentinel; L5,Yanks Air Museum,on_display
@@ -80,11 +80,11 @@ Cessna,172,A,,Skyhawk,,fixed_wing,monoplane,civilian,private,1960,,172A; Skyhawk
 Cessna,T-37,B,58-1962,Tweet,,fixed_wing,monoplane,military,trainer,1959,,T-37B; Tweet; T37; T37B,Yanks Air Museum,on_display
 Vought,A-7,B,154475,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,A-7B; Corsair II; A7; A7B,Yanks Air Museum,on_display
 Convair,F-106,B,,Delta Dart,,fixed_wing,monoplane,military,fighter,1958,,F-106B; Delta Dart; F106; F106B,Yanks Air Museum,on_display
-Convair,C-131,F,,Samaritan,,fixed_wing,monoplane,military,transport,1956,,VC-131F; Samaritan; C131; VC131F,Yanks Air Museum,on_display
+Convair,C-131,F,,Samaritan,,fixed_wing,monoplane,military,transport,1956,,VC-131F; Samaritan; C131; VC131F; C131F,Yanks Air Museum,on_display
 Douglas,A-4,C,,Skyhawk,,fixed_wing,monoplane,military,ground_attack,1962,,A-4C; Skyhawk; A4; A4C,Yanks Air Museum,on_display
 Douglas,A-4,E,151038,Skyhawk,,fixed_wing,monoplane,military,ground_attack,1964,,A-4E; Skyhawk; A4; A4E,Yanks Air Museum,on_display
 Douglas,AD-4,NA,,Skyraider,,fixed_wing,monoplane,military,ground_attack,,,AD-4NA; Skyraider; AD4; AD4NA,Yanks Air Museum,on_display
-Douglas,A-3,B,138965,Skywarrior,,fixed_wing,monoplane,military,tanker,1957,,KA-3B; Skywarrior; A3; KA3B,Yanks Air Museum,on_display
+Douglas,A-3,B,138965,Skywarrior,,fixed_wing,monoplane,military,tanker,1957,,KA-3B; Skywarrior; A3; KA3B; A3B,Yanks Air Museum,on_display
 Fairchild,C-123,K,,Provider,,fixed_wing,monoplane,military,transport,,,C-123K; Provider; C123; C123K,Yanks Air Museum,on_display
 Grumman,A-6,E,155644,Intruder,,fixed_wing,monoplane,military,ground_attack,1968,,A-6E; Intruder; A6; A6E,Yanks Air Museum,on_display
 Grumman,E-2,C,161344,Hawkeye,,fixed_wing,monoplane,military,recon,1989,,E-2C; Hawkeye; E2; E2C,Yanks Air Museum,on_display

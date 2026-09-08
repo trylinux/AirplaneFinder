@@ -1,150 +1,150 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
 Avro,504,K,,,,fixed_wing,biplane,military,trainer,,replica,504K,National Museum of the United States Air Force,on_display
 Bleriot,Monoplane,,,,,fixed_wing,monoplane,civilian,other,1911,replica,Bleriot,National Museum of the United States Air Force,under_restoration
-Boeing,P-12,E,,,,fixed_wing,biplane,military,fighter,1931,,P-12; P12,National Museum of the United States Air Force,on_display
-Boeing,P-26,A,,Peashooter,,fixed_wing,monoplane,military,fighter,,replica,P-26; Peashooter; P26,National Museum of the United States Air Force,on_display
+Boeing,P-12,E,,,,fixed_wing,biplane,military,fighter,1931,,P-12; P12; P12E,National Museum of the United States Air Force,on_display
+Boeing,P-26,A,,Peashooter,,fixed_wing,monoplane,military,fighter,,replica,P-26; Peashooter; P26; P26A,National Museum of the United States Air Force,on_display
 Caproni,Ca.36,,,,,fixed_wing,biplane,military,bomber,,,Caproni,National Museum of the United States Air Force,on_display
 Consolidated,PT-1,,,Trusty,,fixed_wing,biplane,military,trainer,,,PT-1; Trusty; PT1,National Museum of the United States Air Force,on_display
 Curtiss,Model D,,,,,fixed_wing,biplane,military,trainer,1987,replica,Curtiss Pusher,National Museum of the United States Air Force,on_display
-Curtiss,JN-4,D,,Jenny,,fixed_wing,biplane,military,trainer,,,JN-4; Jenny; JN4,National Museum of the United States Air Force,on_display
+Curtiss,JN-4,D,,Jenny,,fixed_wing,biplane,military,trainer,,,JN-4; Jenny; JN4; JN4D,National Museum of the United States Air Force,on_display
 Curtiss,O-52,,,Owl,,fixed_wing,monoplane,military,recon,,,O-52; Owl; O52,National Museum of the United States Air Force,on_display
-Curtiss,P-6,E,,Hawk,,fixed_wing,biplane,military,fighter,,,P-6; Hawk; P6,National Museum of the United States Air Force,on_display
+Curtiss,P-6,E,,Hawk,,fixed_wing,biplane,military,fighter,,,P-6; Hawk; P6; P6E,National Museum of the United States Air Force,on_display
 de Havilland,DH-4,,,,,fixed_wing,biplane,military,recon,,replica,DH-4; DH4,National Museum of the United States Air Force,on_display
 de Havilland,DH 82,A,,Tiger Moth,,fixed_wing,biplane,military,trainer,,,Tiger Moth,National Museum of the United States Air Force,on_display
-Douglas,O-38,F,,,,fixed_wing,biplane,military,recon,,,O-38; O38,National Museum of the United States Air Force,on_display
-Eberhart,SE-5,E,,,,fixed_wing,biplane,military,trainer,,,SE-5; SE5,National Museum of the United States Air Force,on_display
-Fairchild,PT-19,A,,Cornell,,fixed_wing,monoplane,military,trainer,,,PT-19; Cornell; PT19,National Museum of the United States Air Force,on_display
+Douglas,O-38,F,,,,fixed_wing,biplane,military,recon,,,O-38; O38; O38F,National Museum of the United States Air Force,on_display
+Eberhart,SE-5,E,,,,fixed_wing,biplane,military,trainer,,,SE-5; SE5; SE5E,National Museum of the United States Air Force,on_display
+Fairchild,PT-19,A,,Cornell,,fixed_wing,monoplane,military,trainer,,,PT-19; Cornell; PT19; PT19A,National Museum of the United States Air Force,on_display
 Fokker,Dr.I,,,,,fixed_wing,triplane,military,fighter,,replica,Dr.I; Triplane,National Museum of the United States Air Force,on_display
 Fokker,D.VII,,,,,fixed_wing,biplane,military,fighter,,replica,D.VII,National Museum of the United States Air Force,on_display
 Halberstadt,CL IV,,,,,fixed_wing,biplane,military,ground_attack,,,Halberstadt,National Museum of the United States Air Force,on_display
 Hawker,Hurricane,Mk.IIa,,,,fixed_wing,monoplane,military,fighter,,,Hurricane,National Museum of the United States Air Force,on_display
 Kellett,K-2,,,Autogiro,,rotary_wing,,military,test,1931,autogiro,Kellett; K2,National Museum of the United States Air Force,on_display
 Dayton-Wright,Kettering Bug,,,,,missile_rocket,,military,cruise,,replica,Kettering Bug,National Museum of the United States Air Force,on_display
-Boeing,LGM-30,A,,Minuteman,,missile_rocket,,military,ballistic,,,LGM-30; Minuteman; LGM30,National Museum of the United States Air Force,on_display
-Boeing,LGM-30,G,,Minuteman III,,missile_rocket,,military,ballistic,,,LGM-30; Minuteman III; LGM30,National Museum of the United States Air Force,on_display
-Chrysler,PGM-19,A,,Jupiter,,missile_rocket,,military,ballistic,,,PGM-19; Jupiter; PGM19,National Museum of the United States Air Force,on_display
-Convair,SM-65,D,,Atlas,,missile_rocket,,military,launch_vehicle,,,SM-65; Atlas; SM65,National Museum of the United States Air Force,on_display
-Douglas,PGM-17,A,,Thor,,missile_rocket,,military,ballistic,,,PGM-17; Thor; PGM17,National Museum of the United States Air Force,on_display
+Boeing,LGM-30,A,,Minuteman,,missile_rocket,,military,ballistic,,,LGM-30; Minuteman; LGM30; LGM30A,National Museum of the United States Air Force,on_display
+Boeing,LGM-30,G,,Minuteman III,,missile_rocket,,military,ballistic,,,LGM-30; Minuteman III; LGM30; LGM30G,National Museum of the United States Air Force,on_display
+Chrysler,PGM-19,A,,Jupiter,,missile_rocket,,military,ballistic,,,PGM-19; Jupiter; PGM19; PGM19A,National Museum of the United States Air Force,on_display
+Convair,SM-65,D,,Atlas,,missile_rocket,,military,launch_vehicle,,,SM-65; Atlas; SM65; SM65D,National Museum of the United States Air Force,on_display
+Douglas,PGM-17,A,,Thor,,missile_rocket,,military,ballistic,,,PGM-17; Thor; PGM17; PGM17A,National Museum of the United States Air Force,on_display
 Lockheed,Agena,A,,,,missile_rocket,,military,launch_vehicle,,,Agena,National Museum of the United States Air Force,on_display
 LTV,Scout,D,,,,missile_rocket,,military,launch_vehicle,,,Scout,National Museum of the United States Air Force,on_display
-Aeronca,L-3,B,42-36200,Grasshopper,,fixed_wing,monoplane,military,utility,,,L-3; Grasshopper; L3,National Museum of the United States Air Force,on_display
+Aeronca,L-3,B,42-36200,Grasshopper,,fixed_wing,monoplane,military,utility,,,L-3; Grasshopper; L3; L3B,National Museum of the United States Air Force,on_display
 Beech,AT-10,,,Wichita,,fixed_wing,monoplane,military,trainer,,,AT-10; Wichita; AT10,National Museum of the United States Air Force,on_display
 Beech,AT-11,,,Kansan,,fixed_wing,monoplane,military,trainer,,,AT-11; Kansan; AT11,National Museum of the United States Air Force,on_display
 Beech,UC-43,,,Traveler,,fixed_wing,biplane,military,transport,,,UC-43; Staggerwing; UC43,National Museum of the United States Air Force,on_display
-Bell,P-39,Q,44-3887,Airacobra,,fixed_wing,monoplane,military,fighter,,,P-39; Airacobra; P39,National Museum of the United States Air Force,on_display
-Boeing,B-17,F,41-24485,Flying Fortress,Memphis Belle,fixed_wing,monoplane,military,bomber,1942,,B-17; Memphis Belle; B17,National Museum of the United States Air Force,on_display
+Bell,P-39,Q,44-3887,Airacobra,,fixed_wing,monoplane,military,fighter,,,P-39; Airacobra; P39; P39Q,National Museum of the United States Air Force,on_display
+Boeing,B-17,F,41-24485,Flying Fortress,Memphis Belle,fixed_wing,monoplane,military,bomber,1942,,B-17; Memphis Belle; B17; B17F,National Museum of the United States Air Force,on_display
 Bristol,Beaufighter,Mk.VIf,,,,fixed_wing,monoplane,military,fighter,,,Beaufighter,National Museum of the United States Air Force,on_display
-Cessna,UC-78,B,42-71626,Bobcat,,fixed_wing,monoplane,military,transport,,,UC-78; Bamboo Bomber; UC78,National Museum of the United States Air Force,on_display
-Consolidated,B-24,D,42-72843,Liberator,,fixed_wing,monoplane,military,bomber,,,B-24; Liberator; B24,National Museum of the United States Air Force,on_display
+Cessna,UC-78,B,42-71626,Bobcat,,fixed_wing,monoplane,military,transport,,,UC-78; Bamboo Bomber; UC78; UC78B,National Museum of the United States Air Force,on_display
+Consolidated,B-24,D,42-72843,Liberator,,fixed_wing,monoplane,military,bomber,,,B-24; Liberator; B24; B24D,National Museum of the United States Air Force,on_display
 Consolidated,OA-10,,,Catalina,,fixed_wing,monoplane,military,search_rescue,,,OA-10; Catalina; PBY; OA10,National Museum of the United States Air Force,on_display
-Culver,PQ-14,B,44-68462,,,fixed_wing,monoplane,military,drone,,,PQ-14; PQ14,National Museum of the United States Air Force,in_storage
+Culver,PQ-14,B,44-68462,,,fixed_wing,monoplane,military,drone,,,PQ-14; PQ14; PQ14B,National Museum of the United States Air Force,in_storage
 Curtiss,AT-9,,41-12150,Jeep,,fixed_wing,monoplane,military,trainer,,,AT-9; Fledgling; AT9,National Museum of the United States Air Force,on_display
-Curtiss,C-46,D,44-78018,Commando,,fixed_wing,monoplane,military,transport,,,C-46; Commando; C46,National Museum of the United States Air Force,on_display
-Curtiss,P-36,A,,Hawk,,fixed_wing,monoplane,military,fighter,,,P-36; Hawk; P36,National Museum of the United States Air Force,on_display
-Curtiss,P-40,E,,Warhawk,,fixed_wing,monoplane,military,fighter,,,P-40; Warhawk; P40,National Museum of the United States Air Force,on_display
+Curtiss,C-46,D,44-78018,Commando,,fixed_wing,monoplane,military,transport,,,C-46; Commando; C46; C46D,National Museum of the United States Air Force,on_display
+Curtiss,P-36,A,,Hawk,,fixed_wing,monoplane,military,fighter,,,P-36; Hawk; P36; P36A,National Museum of the United States Air Force,on_display
+Curtiss,P-40,E,,Warhawk,,fixed_wing,monoplane,military,fighter,,,P-40; Warhawk; P40; P40E,National Museum of the United States Air Force,on_display
 de Havilland,DH 98,B.35,RS709,Mosquito,,fixed_wing,monoplane,military,recon,1946,,Mosquito; Mossie,National Museum of the United States Air Force,on_display
-Douglas,A-20,G,43-22200,Havoc,Little Joe,fixed_wing,monoplane,military,ground_attack,,,A-20; Havoc; A20,National Museum of the United States Air Force,on_display
+Douglas,A-20,G,43-22200,Havoc,Little Joe,fixed_wing,monoplane,military,ground_attack,,,A-20; Havoc; A20; A20G,National Museum of the United States Air Force,on_display
 Douglas,A-24,,,Dauntless,,fixed_wing,monoplane,military,bomber,,,A-24; Dauntless; A24,National Museum of the United States Air Force,on_display
-Douglas,A-26,B,,Invader,,fixed_wing,monoplane,military,ground_attack,,,A-26; Invader; A26,National Museum of the United States Air Force,under_restoration
-Douglas,B-18,A,37-0469,Bolo,,fixed_wing,monoplane,military,bomber,,,B-18; Bolo; B18,National Museum of the United States Air Force,on_display
-Douglas,C-47,D,,Skytrain,,fixed_wing,monoplane,military,transport,,,C-47; Gooney Bird; C47,National Museum of the United States Air Force,on_display
-Fairchild,UC-61,J,,Forwarder,,fixed_wing,monoplane,military,utility,,,UC-61; Model 24; UC61,National Museum of the United States Air Force,on_display
+Douglas,A-26,B,,Invader,,fixed_wing,monoplane,military,ground_attack,,,A-26; Invader; A26; A26B,National Museum of the United States Air Force,under_restoration
+Douglas,B-18,A,37-0469,Bolo,,fixed_wing,monoplane,military,bomber,,,B-18; Bolo; B18; B18A,National Museum of the United States Air Force,on_display
+Douglas,C-47,D,,Skytrain,,fixed_wing,monoplane,military,transport,,,C-47; Gooney Bird; C47; C47D,National Museum of the United States Air Force,on_display
+Fairchild,UC-61,J,,Forwarder,,fixed_wing,monoplane,military,utility,,,UC-61; Model 24; UC61; UC61J,National Museum of the United States Air Force,on_display
 Fieseler,Fi 156,C-2,,Storch,,fixed_wing,monoplane,military,utility,1940,,Fi 156; Storch,National Museum of the United States Air Force,on_display
 Focke-Achgelis,Fa 330,,,Bachstelze,,rotary_wing,,military,recon,,,Fa 330; Sandpiper,National Museum of the United States Air Force,on_display
 Focke-Wulf,Fw 190,D-9,,,,fixed_wing,monoplane,military,fighter,,,Fw 190; Dora,National Museum of the United States Air Force,on_display
 Interstate,L-6,,43-2680,Grasshopper,,fixed_wing,monoplane,military,utility,,,L-6; Grasshopper; L6,National Museum of the United States Air Force,on_display
 Junkers,Ju 88,D-1,,Baksheesh,,fixed_wing,monoplane,military,recon,1943,,Ju 88,National Museum of the United States Air Force,on_display
 Kawanishi,N1K2,Ja,,Shiden Kai,,fixed_wing,monoplane,military,fighter,,,N1K2; George,National Museum of the United States Air Force,on_display
-Laister-Kauffmann,TG-4,A,,,,fixed_wing,monoplane,military,trainer,,glider,TG-4; TG4,National Museum of the United States Air Force,on_display
-Lockheed,P-38,L,,Lightning,,fixed_wing,monoplane,military,fighter,,,P-38; Lightning; P38,National Museum of the United States Air Force,on_display
-Douglas,B-26,C,44-35733,Invader,,fixed_wing,monoplane,military,bomber,,,B-26; A-26C; Invader; B26; A26C,National Museum of the United States Air Force,on_display
-Douglas,C-124,C,52-1066,Globemaster II,,fixed_wing,monoplane,military,transport,,,C-124; Old Shakey; C124,National Museum of the United States Air Force,on_display
-Lockheed,F-80,C,49-696,Shooting Star,,fixed_wing,monoplane,military,fighter,,,F-80; Shooting Star; F80,National Museum of the United States Air Force,on_display
-Lockheed,F-94,A,49-2498,Starfire,,fixed_wing,monoplane,military,fighter,,,F-94; Starfire; F94,National Museum of the United States Air Force,on_display
-Beech,QU-22,B,,,,fixed_wing,monoplane,military,drone,,,QU-22; Pave Eagle; QU22,National Museum of the United States Air Force,on_display
-Bell,UH-1,P,,Iroquois,,rotary_wing,,military,search_rescue,,,UH-1; Huey; UH1,National Museum of the United States Air Force,on_display
-Cessna,A-37,A,62-5951,Dragonfly,,fixed_wing,monoplane,military,ground_attack,,,A-37; Super Tweet; A37,National Museum of the United States Air Force,on_display
-Cessna,O-1,G,51-11917,Bird Dog,,fixed_wing,monoplane,military,recon,,,O-1; L-19; Bird Dog; O1; L19,National Museum of the United States Air Force,on_display
-Cessna,O-2,A,67-21331,Skymaster,,fixed_wing,monoplane,military,recon,,,O-2; Skymaster; O2,National Museum of the United States Air Force,on_display
-de Havilland Canada,C-7,A,62-4193,Caribou,,fixed_wing,monoplane,military,transport,,,C-7; Caribou; C7,National Museum of the United States Air Force,on_display
-Douglas,A-1,E,52-132649,Skyraider,,fixed_wing,monoplane,military,ground_attack,,,A-1; Skyraider; A1,National Museum of the United States Air Force,on_display
-Douglas,A-1,H,52-139738,Skyraider,The Proud American,fixed_wing,monoplane,military,search_rescue,,,A-1; Sandy; A1,National Museum of the United States Air Force,on_display
-Douglas,B-26,K,,Counter Invader,,fixed_wing,monoplane,military,ground_attack,,,B-26; A-26A; B26; A26A,National Museum of the United States Air Force,on_display
-Douglas,RB-66,B,53-0475,Destroyer,,fixed_wing,monoplane,military,recon,,,RB-66; Destroyer; RB66,National Museum of the United States Air Force,on_display
-Fairchild,C-123,K,,Provider,Patches,fixed_wing,monoplane,military,transport,,,C-123; Provider; C123,National Museum of the United States Air Force,on_display
-General Dynamics,F-111,A,,Aardvark,,fixed_wing,monoplane,military,ground_attack,,,F-111; Aardvark; F111,National Museum of the United States Air Force,on_display
-Helio,U-10,D,66-14360,Super Courier,,fixed_wing,monoplane,military,utility,,,U-10; Super Courier; U10,National Museum of the United States Air Force,on_display
-Kaman,HH-43,B,60-0263,Huskie,,rotary_wing,,military,search_rescue,,,HH-43; Pedro; HH43,National Museum of the United States Air Force,on_display
-Lockheed,EC-121,D,53-555,Constellation,Triple Nickel,fixed_wing,monoplane,military,recon,,,EC-121; Connie; EC121,National Museum of the United States Air Force,on_display
-LTV,A-7,D,70-0970,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,A-7; Corsair II; A7,National Museum of the United States Air Force,on_display
+Laister-Kauffmann,TG-4,A,,,,fixed_wing,monoplane,military,trainer,,glider,TG-4; TG4; TG4A,National Museum of the United States Air Force,on_display
+Lockheed,P-38,L,,Lightning,,fixed_wing,monoplane,military,fighter,,,P-38; Lightning; P38; P38L,National Museum of the United States Air Force,on_display
+Douglas,B-26,C,44-35733,Invader,,fixed_wing,monoplane,military,bomber,,,B-26; A-26C; Invader; B26; A26C; B26C,National Museum of the United States Air Force,on_display
+Douglas,C-124,C,52-1066,Globemaster II,,fixed_wing,monoplane,military,transport,,,C-124; Old Shakey; C124; C124C,National Museum of the United States Air Force,on_display
+Lockheed,F-80,C,49-696,Shooting Star,,fixed_wing,monoplane,military,fighter,,,F-80; Shooting Star; F80; F80C,National Museum of the United States Air Force,on_display
+Lockheed,F-94,A,49-2498,Starfire,,fixed_wing,monoplane,military,fighter,,,F-94; Starfire; F94; F94A,National Museum of the United States Air Force,on_display
+Beech,QU-22,B,,,,fixed_wing,monoplane,military,drone,,,QU-22; Pave Eagle; QU22; QU22B,National Museum of the United States Air Force,on_display
+Bell,UH-1,P,,Iroquois,,rotary_wing,,military,search_rescue,,,UH-1; Huey; UH1; UH1P,National Museum of the United States Air Force,on_display
+Cessna,A-37,A,62-5951,Dragonfly,,fixed_wing,monoplane,military,ground_attack,,,A-37; Super Tweet; A37; A37A,National Museum of the United States Air Force,on_display
+Cessna,O-1,G,51-11917,Bird Dog,,fixed_wing,monoplane,military,recon,,,O-1; L-19; Bird Dog; O1; L19; O1G,National Museum of the United States Air Force,on_display
+Cessna,O-2,A,67-21331,Skymaster,,fixed_wing,monoplane,military,recon,,,O-2; Skymaster; O2; O2A,National Museum of the United States Air Force,on_display
+de Havilland Canada,C-7,A,62-4193,Caribou,,fixed_wing,monoplane,military,transport,,,C-7; Caribou; C7; C7A,National Museum of the United States Air Force,on_display
+Douglas,A-1,E,52-132649,Skyraider,,fixed_wing,monoplane,military,ground_attack,,,A-1; Skyraider; A1; A1E,National Museum of the United States Air Force,on_display
+Douglas,A-1,H,52-139738,Skyraider,The Proud American,fixed_wing,monoplane,military,search_rescue,,,A-1; Sandy; A1; A1H,National Museum of the United States Air Force,on_display
+Douglas,B-26,K,,Counter Invader,,fixed_wing,monoplane,military,ground_attack,,,B-26; A-26A; B26; A26A; B26K,National Museum of the United States Air Force,on_display
+Douglas,RB-66,B,53-0475,Destroyer,,fixed_wing,monoplane,military,recon,,,RB-66; Destroyer; RB66; RB66B,National Museum of the United States Air Force,on_display
+Fairchild,C-123,K,,Provider,Patches,fixed_wing,monoplane,military,transport,,,C-123; Provider; C123; C123K,National Museum of the United States Air Force,on_display
+General Dynamics,F-111,A,,Aardvark,,fixed_wing,monoplane,military,ground_attack,,,F-111; Aardvark; F111; F111A,National Museum of the United States Air Force,on_display
+Helio,U-10,D,66-14360,Super Courier,,fixed_wing,monoplane,military,utility,,,U-10; Super Courier; U10; U10D,National Museum of the United States Air Force,on_display
+Kaman,HH-43,B,60-0263,Huskie,,rotary_wing,,military,search_rescue,,,HH-43; Pedro; HH43; HH43B,National Museum of the United States Air Force,on_display
+Lockheed,EC-121,D,53-555,Constellation,Triple Nickel,fixed_wing,monoplane,military,recon,,,EC-121; Connie; EC121; EC121D,National Museum of the United States Air Force,on_display
+LTV,A-7,D,70-0970,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,A-7; Corsair II; A7; A7D,National Museum of the United States Air Force,on_display
 Boeing,Bird of Prey,,,,,fixed_wing,monoplane,civilian,experimental,,Bird of Prey,,National Museum of the United States Air Force,on_display
-General Atomics,MQ-9,A,02-4002,Reaper,,fixed_wing,monoplane,military,drone,,,MQ-9; Reaper; MQ9,National Museum of the United States Air Force,on_display
-Fairchild,C-82,A,48-581,Packet,,fixed_wing,monoplane,military,transport,,,C-82; Packet; C82,National Museum of the United States Air Force,on_display
-Learjet,C-21,A,84-0064,,,fixed_wing,monoplane,military,transport,,,C-21; Learjet; C21,National Museum of the United States Air Force,in_storage
-Lockheed,C-141,C,66-0177,Starlifter,Hanoi Taxi,fixed_wing,monoplane,military,transport,,,C-141; Starlifter; C141,National Museum of the United States Air Force,on_display
+General Atomics,MQ-9,A,02-4002,Reaper,,fixed_wing,monoplane,military,drone,,,MQ-9; Reaper; MQ9; MQ9A,National Museum of the United States Air Force,on_display
+Fairchild,C-82,A,48-581,Packet,,fixed_wing,monoplane,military,transport,,,C-82; Packet; C82; C82A,National Museum of the United States Air Force,on_display
+Learjet,C-21,A,84-0064,,,fixed_wing,monoplane,military,transport,,,C-21; Learjet; C21; C21A,National Museum of the United States Air Force,in_storage
+Lockheed,C-141,C,66-0177,Starlifter,Hanoi Taxi,fixed_wing,monoplane,military,transport,,,C-141; Starlifter; C141; C141C,National Museum of the United States Air Force,on_display
 Avro Canada,CF-100,Mk.4A,,Canuck,,fixed_wing,monoplane,military,fighter,,,CF-100; Canuck; CF100,National Museum of the United States Air Force,on_display
-Beech,T-34,A,53-3310,Mentor,,fixed_wing,monoplane,military,trainer,,,T-34; Mentor; T34,National Museum of the United States Air Force,on_display
+Beech,T-34,A,53-3310,Mentor,,fixed_wing,monoplane,military,trainer,,,T-34; Mentor; T34; T34A,National Museum of the United States Air Force,on_display
 Beechcraft,MQM-107,,,Streaker,,fixed_wing,monoplane,military,drone,,,MQM-107; Streaker; MQM107,National Museum of the United States Air Force,on_display
-Boeing,B-1,B,,Lancer,,fixed_wing,monoplane,military,bomber,,,B-1; Lancer; Bone; B1,National Museum of the United States Air Force,on_display
-Boeing,KC-97,L,52-2630,Stratofreighter,,fixed_wing,monoplane,military,tanker,,,KC-97; KC97,National Museum of the United States Air Force,on_display
-Boeing,RB-47,H,,Stratojet,,fixed_wing,monoplane,military,recon,,,RB-47; Stratojet; RB47,National Museum of the United States Air Force,on_display
-Boeing,WB-50,D,49-0310,Superfortress,,fixed_wing,monoplane,military,recon,,,WB-50; WB50,National Museum of the United States Air Force,on_display
-Cessna,LC-126,A,49-1949,,,fixed_wing,monoplane,military,search_rescue,,,LC-126; LC126,National Museum of the United States Air Force,on_display
-Cessna,T-37,B,57-2289,Tweet,,fixed_wing,monoplane,military,trainer,,,T-37; Tweet; T37,National Museum of the United States Air Force,on_display
-Cessna,T-41,A,65-5251,Mescalero,,fixed_wing,monoplane,military,trainer,,,T-41; Mescalero; T41,National Museum of the United States Air Force,on_display
-Cessna,U-3,A,58-2124,Blue Canoe,,fixed_wing,monoplane,military,utility,,,U-3; Blue Canoe; U3,National Museum of the United States Air Force,on_display
-Convair,B-58,A,,Hustler,,fixed_wing,monoplane,military,bomber,,,B-58; Hustler; B58,National Museum of the United States Air Force,on_display
-Convair,F-102,A,56-1416,Delta Dagger,,fixed_wing,monoplane,military,fighter,,,F-102; Delta Dagger; F102,National Museum of the United States Air Force,on_display
-Convair,F-106,A,58-0787,Delta Dart,,fixed_wing,monoplane,military,fighter,,,F-106; Cornfield Bomber; F106,National Museum of the United States Air Force,on_display
-de Havilland Canada,U-6,A,51-16501,Beaver,,fixed_wing,monoplane,military,utility,,,U-6; L-20; Beaver; U6; L20,National Museum of the United States Air Force,on_display
-Douglas,C-133,A,,Cargomaster,,fixed_wing,monoplane,military,transport,,,C-133; Cargomaster; C133,National Museum of the United States Air Force,on_display
-Fairchild Republic,A-10,A,,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,,,A-10; Warthog; A10,National Museum of the United States Air Force,on_display
-General Dynamics,F-111,F,70-2390,Aardvark,,fixed_wing,monoplane,military,ground_attack,,,F-111; Aardvark; F111,National Museum of the United States Air Force,on_display
-Grumman,HU-16,B,51-5282,Albatross,,fixed_wing,monoplane,military,search_rescue,,,HU-16; SA-16; Albatross; HU16; SA16,National Museum of the United States Air Force,on_display
+Boeing,B-1,B,,Lancer,,fixed_wing,monoplane,military,bomber,,,B-1; Lancer; Bone; B1; B1B,National Museum of the United States Air Force,on_display
+Boeing,KC-97,L,52-2630,Stratofreighter,,fixed_wing,monoplane,military,tanker,,,KC-97; KC97; KC97L,National Museum of the United States Air Force,on_display
+Boeing,RB-47,H,,Stratojet,,fixed_wing,monoplane,military,recon,,,RB-47; Stratojet; RB47; RB47H,National Museum of the United States Air Force,on_display
+Boeing,WB-50,D,49-0310,Superfortress,,fixed_wing,monoplane,military,recon,,,WB-50; WB50; WB50D,National Museum of the United States Air Force,on_display
+Cessna,LC-126,A,49-1949,,,fixed_wing,monoplane,military,search_rescue,,,LC-126; LC126; LC126A,National Museum of the United States Air Force,on_display
+Cessna,T-37,B,57-2289,Tweet,,fixed_wing,monoplane,military,trainer,,,T-37; Tweet; T37; T37B,National Museum of the United States Air Force,on_display
+Cessna,T-41,A,65-5251,Mescalero,,fixed_wing,monoplane,military,trainer,,,T-41; Mescalero; T41; T41A,National Museum of the United States Air Force,on_display
+Cessna,U-3,A,58-2124,Blue Canoe,,fixed_wing,monoplane,military,utility,,,U-3; Blue Canoe; U3; U3A,National Museum of the United States Air Force,on_display
+Convair,B-58,A,,Hustler,,fixed_wing,monoplane,military,bomber,,,B-58; Hustler; B58; B58A,National Museum of the United States Air Force,on_display
+Convair,F-102,A,56-1416,Delta Dagger,,fixed_wing,monoplane,military,fighter,,,F-102; Delta Dagger; F102; F102A,National Museum of the United States Air Force,on_display
+Convair,F-106,A,58-0787,Delta Dart,,fixed_wing,monoplane,military,fighter,,,F-106; Cornfield Bomber; F106; F106A,National Museum of the United States Air Force,on_display
+de Havilland Canada,U-6,A,51-16501,Beaver,,fixed_wing,monoplane,military,utility,,,U-6; L-20; Beaver; U6; L20; U6A,National Museum of the United States Air Force,on_display
+Douglas,C-133,A,,Cargomaster,,fixed_wing,monoplane,military,transport,,,C-133; Cargomaster; C133; C133A,National Museum of the United States Air Force,on_display
+Fairchild Republic,A-10,A,,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,,,A-10; Warthog; A10; A10A,National Museum of the United States Air Force,on_display
+General Dynamics,F-111,F,70-2390,Aardvark,,fixed_wing,monoplane,military,ground_attack,,,F-111; Aardvark; F111; F111F,National Museum of the United States Air Force,on_display
+Grumman,HU-16,B,51-5282,Albatross,,fixed_wing,monoplane,military,search_rescue,,,HU-16; SA-16; Albatross; HU16; SA16; HU16B,National Museum of the United States Air Force,on_display
 Grumman,OA-12,,,Duck,,fixed_wing,biplane,military,search_rescue,,,OA-12; J2F; Duck; OA12,National Museum of the United States Air Force,on_display
-Lockheed,AC-130,A,54-1630,Spectre,Azrael,fixed_wing,monoplane,military,ground_attack,,,AC-130; Spectre; AC130,National Museum of the United States Air Force,on_display
-Lockheed,F-94,C,50-980,Starfire,,fixed_wing,monoplane,military,fighter,,,F-94; Starfire; F94,National Museum of the United States Air Force,on_display
-Lockheed,F-104,C,56-914,Starfighter,,fixed_wing,monoplane,military,fighter,,,F-104; Starfighter; F104,National Museum of the United States Air Force,on_display
-Lockheed,T-33,A,53-5974,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-33; T-Bird; T33,National Museum of the United States Air Force,on_display
-Lockheed,U-2,A,,Dragon Lady,,fixed_wing,monoplane,military,recon,,,U-2; Dragon Lady; U2,National Museum of the United States Air Force,on_display
-Bell-Boeing,CV-22,B,99-0021,Osprey,,rotary_wing,,military,transport,,,CV-22; Osprey; CV22,National Museum of the United States Air Force,on_display
-General Atomics,RQ-1,K,94-3009,Predator,,fixed_wing,monoplane,military,drone,,,RQ-1; Predator; RQ1,National Museum of the United States Air Force,on_display
-Hawker Beechcraft,MC-12,W,,Liberty,,fixed_wing,monoplane,military,recon,,,MC-12; Liberty; MC12,National Museum of the United States Air Force,on_display
+Lockheed,AC-130,A,54-1630,Spectre,Azrael,fixed_wing,monoplane,military,ground_attack,,,AC-130; Spectre; AC130; AC130A,National Museum of the United States Air Force,on_display
+Lockheed,F-94,C,50-980,Starfire,,fixed_wing,monoplane,military,fighter,,,F-94; Starfire; F94; F94C,National Museum of the United States Air Force,on_display
+Lockheed,F-104,C,56-914,Starfighter,,fixed_wing,monoplane,military,fighter,,,F-104; Starfighter; F104; F104C,National Museum of the United States Air Force,on_display
+Lockheed,T-33,A,53-5974,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T-33; T-Bird; T33; T33A,National Museum of the United States Air Force,on_display
+Lockheed,U-2,A,,Dragon Lady,,fixed_wing,monoplane,military,recon,,,U-2; Dragon Lady; U2; U2A,National Museum of the United States Air Force,on_display
+Bell-Boeing,CV-22,B,99-0021,Osprey,,rotary_wing,,military,transport,,,CV-22; Osprey; CV22; CV22B,National Museum of the United States Air Force,on_display
+General Atomics,RQ-1,K,94-3009,Predator,,fixed_wing,monoplane,military,drone,,,RQ-1; Predator; RQ1; RQ1K,National Museum of the United States Air Force,on_display
+Hawker Beechcraft,MC-12,W,,Liberty,,fixed_wing,monoplane,military,recon,,,MC-12; Liberty; MC12; MC12W,National Museum of the United States Air Force,on_display
 American Helicopter,XH-26,,,Jet Jeep,,rotary_wing,,military,test,,,XH-26; Jet Jeep; XH26,National Museum of the United States Air Force,on_display
-Avro Canada,VZ-9,AV,58-7055,Avrocar,,fixed_wing,monoplane,military,test,,,VZ-9; Avrocar; VZ9,National Museum of the United States Air Force,on_display
+Avro Canada,VZ-9,AV,58-7055,Avrocar,,fixed_wing,monoplane,military,test,,,VZ-9; Avrocar; VZ9; VZ9AV,National Museum of the United States Air Force,on_display
 Bell,XV-3,,,,,rotary_wing,,military,test,,,XV-3; XV3,National Museum of the United States Air Force,on_display
-Bell,P-59,B,,Airacomet,,fixed_wing,monoplane,military,fighter,,,P-59; Airacomet; P59,National Museum of the United States Air Force,on_display
-Bell,X-1,B,,,,fixed_wing,monoplane,military,test,,,X-1; X1,National Museum of the United States Air Force,on_display
+Bell,P-59,B,,Airacomet,,fixed_wing,monoplane,military,fighter,,,P-59; Airacomet; P59; P59B,National Museum of the United States Air Force,on_display
+Bell,X-1,B,,,,fixed_wing,monoplane,military,test,,,X-1; X1; X1B,National Museum of the United States Air Force,on_display
 Bell,X-5,,,,,fixed_wing,monoplane,military,test,,,X-5; X5,National Museum of the United States Air Force,on_display
-Bensen,X-25,A,,Gyrocopter,,rotary_wing,,military,test,,gyroglider,X-25; X25,National Museum of the United States Air Force,on_display
-Boeing,X-32,A,,,,fixed_wing,monoplane,military,test,,,X-32; X32,National Museum of the United States Air Force,on_display
-LTV,XC-142,A,,,,fixed_wing,monoplane,military,transport,,,XC-142; XC142,National Museum of the United States Air Force,on_display
-Convair,XF-92,A,,,,fixed_wing,monoplane,military,test,,,XF-92; XF92,National Museum of the United States Air Force,on_display
+Bensen,X-25,A,,Gyrocopter,,rotary_wing,,military,test,,gyroglider,X-25; X25; X25A,National Museum of the United States Air Force,on_display
+Boeing,X-32,A,,,,fixed_wing,monoplane,military,test,,,X-32; X32; X32A,National Museum of the United States Air Force,on_display
+LTV,XC-142,A,,,,fixed_wing,monoplane,military,transport,,,XC-142; XC142; XC142A,National Museum of the United States Air Force,on_display
+Convair,XF-92,A,,,,fixed_wing,monoplane,military,test,,,XF-92; XF92; XF92A,National Museum of the United States Air Force,on_display
 Douglas,X-3,,,Stiletto,,fixed_wing,monoplane,military,test,,,X-3; Stiletto; X3,National Museum of the United States Air Force,on_display
-Fisher,P-75,A,,Eagle,,fixed_wing,monoplane,military,fighter,,,P-75; Eagle; P75,National Museum of the United States Air Force,on_display
-Hawker Siddeley,XV-6,A,,Kestrel,,fixed_wing,monoplane,military,test,,,XV-6; Kestrel; XV6,National Museum of the United States Air Force,on_display
-Lockheed,NT-33,A,,,,fixed_wing,monoplane,military,test,,,NT-33; NT33,National Museum of the United States Air Force,in_storage
-Lockheed,P-80,R,,Shooting Star,,fixed_wing,monoplane,military,test,,,P-80; Shooting Star; P80,National Museum of the United States Air Force,on_display
-Lockheed,YF-12,A,,,,fixed_wing,monoplane,military,fighter,,,YF-12; Blackbird; YF12,National Museum of the United States Air Force,on_display
-Lockheed Martin,X-44,A,,,,fixed_wing,monoplane,military,test,,,X-44; X44,National Museum of the United States Air Force,on_display
-Kratos,XQ-58,A,,Valkyrie,,fixed_wing,monoplane,military,drone,,,XQ-58; Valkyrie; XQ58,National Museum of the United States Air Force,on_display
+Fisher,P-75,A,,Eagle,,fixed_wing,monoplane,military,fighter,,,P-75; Eagle; P75; P75A,National Museum of the United States Air Force,on_display
+Hawker Siddeley,XV-6,A,,Kestrel,,fixed_wing,monoplane,military,test,,,XV-6; Kestrel; XV6; XV6A,National Museum of the United States Air Force,on_display
+Lockheed,NT-33,A,,,,fixed_wing,monoplane,military,test,,,NT-33; NT33; NT33A,National Museum of the United States Air Force,in_storage
+Lockheed,P-80,R,,Shooting Star,,fixed_wing,monoplane,military,test,,,P-80; Shooting Star; P80; P80R,National Museum of the United States Air Force,on_display
+Lockheed,YF-12,A,,,,fixed_wing,monoplane,military,fighter,,,YF-12; Blackbird; YF12; YF12A,National Museum of the United States Air Force,on_display
+Lockheed Martin,X-44,A,,,,fixed_wing,monoplane,military,test,,,X-44; X44; X44A,National Museum of the United States Air Force,on_display
+Kratos,XQ-58,A,,Valkyrie,,fixed_wing,monoplane,military,drone,,,XQ-58; Valkyrie; XQ58; XQ58A,National Museum of the United States Air Force,on_display
 Fairchild,XSM-73,,,Bull Goose,,missile_rocket,,military,cruise,,,XSM-73; Bull Goose; XSM73,National Museum of the United States Air Force,on_display
-Boeing,YQM-94,A,,Compass Cope,,fixed_wing,monoplane,military,drone,,,YQM-94; Compass Cope; YQM94,National Museum of the United States Air Force,on_display
-Lockheed Martin,RQ-3,A,,DarkStar,,fixed_wing,monoplane,military,drone,,,RQ-3; DarkStar; RQ3,National Museum of the United States Air Force,on_display
+Boeing,YQM-94,A,,Compass Cope,,fixed_wing,monoplane,military,drone,,,YQM-94; Compass Cope; YQM94; YQM94A,National Museum of the United States Air Force,on_display
+Lockheed Martin,RQ-3,A,,DarkStar,,fixed_wing,monoplane,military,drone,,,RQ-3; DarkStar; RQ3; RQ3A,National Museum of the United States Air Force,on_display
 Boeing,X-36,,,,,fixed_wing,monoplane,military,test,,,X-36; X36,National Museum of the United States Air Force,on_display
-Boeing,X-45,A,,,,fixed_wing,monoplane,military,drone,,,X-45; J-UCAS; X45,National Museum of the United States Air Force,on_display
+Boeing,X-45,A,,,,fixed_wing,monoplane,military,drone,,,X-45; J-UCAS; X45; X45A,National Museum of the United States Air Force,on_display
 Bell,XGAM-63,,,Rascal,,missile_rocket,,military,air_to_surface,,,XGAM-63; Rascal; XGAM63,National Museum of the United States Air Force,in_storage
-Boeing,AGM-131,A,,SRAM II,,missile_rocket,,military,air_to_surface,,,AGM-131; SRAM II; AGM131,National Museum of the United States Air Force,on_display
-Boeing,X-40,A,,,,fixed_wing,monoplane,military,test,,,X-40; X40,National Museum of the United States Air Force,on_display
-Fairchild,C-119,J,,Flying Boxcar,,fixed_wing,monoplane,military,transport,,,C-119; Flying Boxcar; C119,National Museum of the United States Air Force,on_display
+Boeing,AGM-131,A,,SRAM II,,missile_rocket,,military,air_to_surface,,,AGM-131; SRAM II; AGM131; AGM131A,National Museum of the United States Air Force,on_display
+Boeing,X-40,A,,,,fixed_wing,monoplane,military,test,,,X-40; X40; X40A,National Museum of the United States Air Force,on_display
+Fairchild,C-119,J,,Flying Boxcar,,fixed_wing,monoplane,military,transport,,,C-119; Flying Boxcar; C119; C119J,National Museum of the United States Air Force,on_display
 Lockheed Martin,Titan IV,B,,,,missile_rocket,,military,launch_vehicle,,,Titan IV,National Museum of the United States Air Force,on_display
-Aero Commander,U-4,B,,,,fixed_wing,monoplane,military,transport,,,U-4; U4,National Museum of the United States Air Force,on_display
-Beech,VC-6,A,,King Air,Lady Bird Special,fixed_wing,monoplane,military,transport,,,VC-6; King Air; VC6,National Museum of the United States Air Force,on_display
-Bell,UH-13,J,57-2728,Sioux,,rotary_wing,,military,transport,,,UH-13; Sioux; UH13,National Museum of the United States Air Force,on_display
-Douglas,VC-54,C,42-107451,Skymaster,Sacred Cow,fixed_wing,monoplane,military,transport,,,VC-54; Sacred Cow; VC54,National Museum of the United States Air Force,on_display
-Douglas,VC-118,A,,Liftmaster,The Independence,fixed_wing,monoplane,military,transport,,,VC-118; Independence; VC118,National Museum of the United States Air Force,on_display
-Lockheed,VC-121,E,,Super Constellation,Columbine III,fixed_wing,monoplane,military,transport,,,VC-121; Columbine III; VC121,National Museum of the United States Air Force,on_display
-Lockheed,VC-140,B,,JetStar,,fixed_wing,monoplane,military,transport,,,VC-140; JetStar; VC140,National Museum of the United States Air Force,on_display
-Boeing,EC-135,E,60-374,ARIA,,fixed_wing,monoplane,military,recon,,,EC-135; ARIA; EC135,National Museum of the United States Air Force,on_display
-Boeing,KC-135,R,60-0329,Stratotanker,,fixed_wing,monoplane,military,tanker,,,KC-135; KC135,National Museum of the United States Air Force,on_display
-Convair,NC-131,H,,Total In-Flight Simulator,TIFS,fixed_wing,monoplane,military,test,,,NC-131; TIFS; NC131,National Museum of the United States Air Force,on_display
+Aero Commander,U-4,B,,,,fixed_wing,monoplane,military,transport,,,U-4; U4; U4B,National Museum of the United States Air Force,on_display
+Beech,VC-6,A,,King Air,Lady Bird Special,fixed_wing,monoplane,military,transport,,,VC-6; King Air; VC6; VC6A,National Museum of the United States Air Force,on_display
+Bell,UH-13,J,57-2728,Sioux,,rotary_wing,,military,transport,,,UH-13; Sioux; UH13; UH13J,National Museum of the United States Air Force,on_display
+Douglas,VC-54,C,42-107451,Skymaster,Sacred Cow,fixed_wing,monoplane,military,transport,,,VC-54; Sacred Cow; VC54; VC54C,National Museum of the United States Air Force,on_display
+Douglas,VC-118,A,,Liftmaster,The Independence,fixed_wing,monoplane,military,transport,,,VC-118; Independence; VC118; VC118A,National Museum of the United States Air Force,on_display
+Lockheed,VC-121,E,,Super Constellation,Columbine III,fixed_wing,monoplane,military,transport,,,VC-121; Columbine III; VC121; VC121E,National Museum of the United States Air Force,on_display
+Lockheed,VC-140,B,,JetStar,,fixed_wing,monoplane,military,transport,,,VC-140; JetStar; VC140; VC140B,National Museum of the United States Air Force,on_display
+Boeing,EC-135,E,60-374,ARIA,,fixed_wing,monoplane,military,recon,,,EC-135; ARIA; EC135; EC135E,National Museum of the United States Air Force,on_display
+Boeing,KC-135,R,60-0329,Stratotanker,,fixed_wing,monoplane,military,tanker,,,KC-135; KC135; KC135R,National Museum of the United States Air Force,on_display
+Convair,NC-131,H,,Total In-Flight Simulator,TIFS,fixed_wing,monoplane,military,test,,,NC-131; TIFS; NC131; NC131H,National Museum of the United States Air Force,on_display

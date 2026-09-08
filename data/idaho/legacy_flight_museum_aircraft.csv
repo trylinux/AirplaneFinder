@@ -1,16 +1,16 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-North American,P-51,D,44-74739,Mustang,Ole Yeller,fixed_wing,monoplane,military,fighter,1944,ex-RCAF 9297; Cavalier conversion 1962; Bob Hoover's airshow Mustang; race 47; held by 51RH LLC,N51RH; 9297; P51,Legacy Flight Museum,on_display
-Cavalier,F-51,D,67-22579,Mustang,Mormon Mustang,fixed_wing,monoplane,military,fighter,,ex-N251RM; ex-Bolivian AF FAB 519; rebuilt after 2006 forced landing; held by 251RM LLC,N551BJ; N251RM; Cavalier Mustang II; F51,Legacy Flight Museum,on_display
-Bell,P-63,C,43-11223,Kingcobra,,fixed_wing,monoplane,military,fighter,1943,painted as 42-69021; restored by Frank Borman and Square 1 Aviation; held by 163FS LLC,N163FS; 42-69021; P63,Legacy Flight Museum,on_display
-de Havilland Canada,DHC-4,A,N6080,Caribou,,fixed_wing,monoplane,military,transport,1958,second DHC-4 prototype; oldest flying Caribou; ex-Yankee Air Museum; flown to Rexburg 2021,c/n 002; DHC4,Legacy Flight Museum,on_display
+North American,P-51,D,44-74739,Mustang,Ole Yeller,fixed_wing,monoplane,military,fighter,1944,ex-RCAF 9297; Cavalier conversion 1962; Bob Hoover's airshow Mustang; race 47; held by 51RH LLC,N51RH; 9297; P51; P51D,Legacy Flight Museum,on_display
+Cavalier,F-51,D,67-22579,Mustang,Mormon Mustang,fixed_wing,monoplane,military,fighter,,ex-N251RM; ex-Bolivian AF FAB 519; rebuilt after 2006 forced landing; held by 251RM LLC,N551BJ; N251RM; Cavalier Mustang II; F51; F51D,Legacy Flight Museum,on_display
+Bell,P-63,C,43-11223,Kingcobra,,fixed_wing,monoplane,military,fighter,1943,painted as 42-69021; restored by Frank Borman and Square 1 Aviation; held by 163FS LLC,N163FS; 42-69021; P63; P63C,Legacy Flight Museum,on_display
+de Havilland Canada,DHC-4,A,N6080,Caribou,,fixed_wing,monoplane,military,transport,1958,second DHC-4 prototype; oldest flying Caribou; ex-Yankee Air Museum; flown to Rexburg 2021,c/n 002; DHC4; DHC4A,Legacy Flight Museum,on_display
 McDonnell Douglas,A-4,,,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,BuNo not established; painted in Blue Angels colors; ex-AMARC; bought at auction 2013,A4,Legacy Flight Museum,on_display
 Hansen,P-64,,N64NA,,,fixed_wing,monoplane,military,fighter,1997,replica of North American NA-50/P-64; built by Robert C. Hansen,s/n RCH-1; P64,Legacy Flight Museum,on_display
-Cessna,O-1,E,N305SU,Bird Dog,,fixed_wing,monoplane,military,recon,1961,museum lists it as a 305A; held by 305SU LLC,c/n 305M-0007; Cessna 305C; O1,Legacy Flight Museum,on_display
-Cessna,O-1,E,N305CM,Bird Dog,,fixed_wing,monoplane,military,recon,1957,museum-owned,c/n 24558; Cessna 305C; O1,Legacy Flight Museum,on_display
-Grumman,S-2,F,136719,Tracker,,fixed_wing,monoplane,military,recon,1958,donated by Merle Maine of Ontario Oregon 2013,N8115M; S2F-1; S2,Legacy Flight Museum,on_display
+Cessna,O-1,E,N305SU,Bird Dog,,fixed_wing,monoplane,military,recon,1961,museum lists it as a 305A; held by 305SU LLC,c/n 305M-0007; Cessna 305C; O1; O1E,Legacy Flight Museum,on_display
+Cessna,O-1,E,N305CM,Bird Dog,,fixed_wing,monoplane,military,recon,1957,museum-owned,c/n 24558; Cessna 305C; O1; O1E,Legacy Flight Museum,on_display
+Grumman,S-2,F,136719,Tracker,,fixed_wing,monoplane,military,recon,1958,donated by Merle Maine of Ontario Oregon 2013,N8115M; S2F-1; S2; S2F,Legacy Flight Museum,on_display
 North American,SNJ,3,N676JD,Texan,,fixed_wing,monoplane,military,trainer,1942,ex-SAAF 7676; BuNo not established,c/n 78-6803; 7676; Harvard; SNJ3,Legacy Flight Museum,on_display
 Vultee,BT-15,,N128MW,Valiant,,fixed_wing,monoplane,military,trainer,1942,military serial not established,c/n 6475; Vultee Vibrator; BT15,Legacy Flight Museum,on_display
 Beechcraft,SNB,5,23843,Expeditor,,fixed_wing,monoplane,military,transport,,acquired 2016,N90265; c/n 6141; TC-45J; Model 18; TC45J; SNB5,Legacy Flight Museum,on_display
-Globe,GC-1,B,N80924,Swift,,fixed_wing,monoplane,civilian,private,1946,,c/n 1117; GC1,Legacy Flight Museum,on_display
+Globe,GC-1,B,N80924,Swift,,fixed_wing,monoplane,civilian,private,1946,,c/n 1117; GC1; GC1B,Legacy Flight Museum,on_display
 Stinson,V-77,,N43YF,Reliant,,fixed_wing,monoplane,military,utility,1943,military serial not established,c/n 77-452; UC-81; AT-19; Lend-Lease Reliant; V77; UC81; AT19,Legacy Flight Museum,on_display
-Noorduyn,UC-64,A,43-5233,Norseman,,fixed_wing,monoplane,military,utility,1943,absent from the museum's own website listing,N164UC; c/n 224; UC64,Legacy Flight Museum,on_display
+Noorduyn,UC-64,A,43-5233,Norseman,,fixed_wing,monoplane,military,utility,1943,absent from the museum's own website listing,N164UC; c/n 224; UC64; UC64A,Legacy Flight Museum,on_display

@@ -15,6 +15,8 @@ import re
 
 import pytest
 
+import models
+
 DATA = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
 FILES = sorted(glob.glob(os.path.join(DATA, "**", "*_aircraft.csv"), recursive=True))
 
@@ -76,7 +78,9 @@ def test_dashed_designations_have_a_dashless_alias(path):
         aliases = _aliases(row)
         have = {a.lower() for a in aliases}
         model, variant = (row.get("model") or "").strip(), (row.get("variant") or "").strip()
-        sources = [model] + ([f"{model}-{variant}"] if model and variant else []) + aliases
+        # Use the real joining rule rather than a second copy of it, so this
+        # test cannot drift from what full_designation actually contains.
+        sources = [model, models.join_designation(model, variant)] + aliases
         for src in sources:
             m = DESIG.match(src)
             if m:

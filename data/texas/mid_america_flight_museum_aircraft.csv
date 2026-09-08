@@ -1,21 +1,21 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Boeing,B-17,G,44-85718,Flying Fortress,Thunderbird,fixed_wing,monoplane,military,bomber,1944,purchased from the Lone Star Flight Museum in 2020; airworthy,N900RW; B17,Mid America Flight Museum,on_display
-Curtiss,P-40,N,42-104977,Warhawk,,fixed_wing,monoplane,military,fighter,1942,,N977WH; P-40N-5; P40,Mid America Flight Museum,on_display
-Curtiss,P-40,K,42-10256,Warhawk,,fixed_wing,monoplane,military,fighter,1942,,N401WH; P40,Mid America Flight Museum,on_display
-Cavalier,F-51,D,N151MC,Mustang,,fixed_wing,monoplane,military,fighter,1968,a Cavalier rebuild rather than a wartime-build P-51,F51,Mid America Flight Museum,on_display
-Goodyear,FG-1,D,92433,Corsair,,fixed_wing,monoplane,military,fighter,1944,,N773RD; FG1,Mid America Flight Museum,on_display
+Boeing,B-17,G,44-85718,Flying Fortress,Thunderbird,fixed_wing,monoplane,military,bomber,1944,purchased from the Lone Star Flight Museum in 2020; airworthy,N900RW; B17; B17G,Mid America Flight Museum,on_display
+Curtiss,P-40,N,42-104977,Warhawk,,fixed_wing,monoplane,military,fighter,1942,,N977WH; P-40N-5; P40; P40N,Mid America Flight Museum,on_display
+Curtiss,P-40,K,42-10256,Warhawk,,fixed_wing,monoplane,military,fighter,1942,,N401WH; P40; P40K,Mid America Flight Museum,on_display
+Cavalier,F-51,D,N151MC,Mustang,,fixed_wing,monoplane,military,fighter,1968,a Cavalier rebuild rather than a wartime-build P-51,F51; F51D,Mid America Flight Museum,on_display
+Goodyear,FG-1,D,92433,Corsair,,fixed_wing,monoplane,military,fighter,1944,,N773RD; FG1; FG1D,Mid America Flight Museum,on_display
 Grumman,TBM,3E,85938,Avenger,,fixed_wing,monoplane,military,bomber,,,N7226C; TBM3E,Mid America Flight Museum,on_display
 Grumman,J2F,4,1649,Duck,,fixed_wing,biplane,military,utility,1939,,N63850,Mid America Flight Museum,on_display
-Douglas,A-26,B,N26BK,Invader,,fixed_wing,monoplane,military,bomber,,,c/n 28045; A26,Mid America Flight Museum,on_display
-North American,B-25,N,N1042B,Mitchell,,fixed_wing,monoplane,military,bomber,,,c/n 44-30823A; B25,Mid America Flight Museum,on_display
+Douglas,A-26,B,N26BK,Invader,,fixed_wing,monoplane,military,bomber,,,c/n 28045; A26; A26B,Mid America Flight Museum,on_display
+North American,B-25,N,N1042B,Mitchell,,fixed_wing,monoplane,military,bomber,,,c/n 44-30823A; B25; B25N,Mid America Flight Museum,on_display
 North American,SNJ,3,N696WM,Texan,,fixed_wing,monoplane,military,trainer,1942,,c/n 787045; SNJ3,Mid America Flight Museum,on_display
-North American,T-28,A,51-7789,Trojan,,fixed_wing,monoplane,military,trainer,,,N28RE; T28,Mid America Flight Museum,on_display
+North American,T-28,A,51-7789,Trojan,,fixed_wing,monoplane,military,trainer,,,N28RE; T28; T28A,Mid America Flight Museum,on_display
 Hawker,Sea Fury,Mk 10,WJ288,Sea Fury,,fixed_wing,monoplane,military,fighter,1947,,N15S,Mid America Flight Museum,on_display
 Boeing-Stearman,PT-17,,N5635V,Kaydet,,fixed_wing,biplane,military,trainer,1941,,c/n 75-1646; PT17,Mid America Flight Museum,on_display
-de Havilland Canada,DHC-1,B,N824KM,Chipmunk,,fixed_wing,monoplane,military,trainer,1950,,c/n 126-164; DHC1,Mid America Flight Museum,on_display
+de Havilland Canada,DHC-1,B,N824KM,Chipmunk,,fixed_wing,monoplane,military,trainer,1950,,c/n 126-164; DHC1; DHC1B,Mid America Flight Museum,on_display
 Antonov,An-2,,N2445,,,fixed_wing,biplane,civilian,utility,,,c/n 1G11756; An2,Mid America Flight Museum,on_display
-Douglas,DC-3,A,N41HQ,,,fixed_wing,monoplane,civilian,commercial_transport,,,c/n 2053; DC3,Mid America Flight Museum,on_display
-Douglas,DC-3,C,N5106X,,,fixed_wing,monoplane,civilian,commercial_transport,1943,,c/n 9058; DC3,Mid America Flight Museum,on_display
+Douglas,DC-3,A,N41HQ,,,fixed_wing,monoplane,civilian,commercial_transport,,,c/n 2053; DC3; DC3A,Mid America Flight Museum,on_display
+Douglas,DC-3,C,N5106X,,,fixed_wing,monoplane,civilian,commercial_transport,1943,,c/n 9058; DC3; DC3C,Mid America Flight Museum,on_display
 Lockheed,18,56,N250D,Lodestar,,fixed_wing,monoplane,civilian,commercial_transport,1952,,c/n 2597,Mid America Flight Museum,on_display
 Lockheed,18,56,N1940S,Lodestar,,fixed_wing,monoplane,civilian,commercial_transport,1943,,c/n 2509,Mid America Flight Museum,on_display
 Ford,4-AT,E,N9612,Trimotor,,fixed_wing,monoplane,civilian,commercial_transport,1929,,c/n 55,Mid America Flight Museum,on_display
@@ -34,7 +34,7 @@ Stinson,Junior,S,N12164,,,fixed_wing,monoplane,civilian,private,1931,,c/n 8102,M
 Stinson,A,,N15165,,,fixed_wing,monoplane,civilian,commercial_transport,1936,trimotor,c/n 9125,Mid America Flight Museum,on_display
 Stinson,SM-6000,B,N11153,,,fixed_wing,monoplane,civilian,commercial_transport,1931,trimotor,c/n 5021,Mid America Flight Museum,on_display
 Stinson,Reliant,SR-9F,N18422,Reliant,,fixed_wing,monoplane,civilian,private,1937,,c/n 5714,Mid America Flight Museum,on_display
-New Standard,D-25,A,N7286,,,fixed_wing,biplane,civilian,private,1941,,c/n 167W; D25,Mid America Flight Museum,on_display
+New Standard,D-25,A,N7286,,,fixed_wing,biplane,civilian,private,1941,,c/n 167W; D25; D25A,Mid America Flight Museum,on_display
 Paramount,Cabinaire,,N17M,,,fixed_wing,biplane,civilian,private,1929,,s/n 7,Mid America Flight Museum,on_display
 Cessna,C-165,,N32455,Airmaster,,fixed_wing,monoplane,civilian,private,1941,,c/n 588; C165,Mid America Flight Museum,on_display
 Ryan,SCW,145,N18900,,,fixed_wing,monoplane,civilian,private,,,c/n 214; SCW145,Mid America Flight Museum,on_display
@@ -44,7 +44,7 @@ Taylor,E-2,,N14757,,,fixed_wing,monoplane,civilian,private,,,c/n 150; E2,Mid Ame
 Beechcraft,D18,S,N90502,Twin Beech,,fixed_wing,monoplane,civilian,private,1947,,c/n A-346,Mid America Flight Museum,on_display
 Beechcraft,D17,S,N1180V,Staggerwing,,fixed_wing,biplane,civilian,private,,registration pending at Mount Pleasant so probably a recent arrival,s/n 6904,Mid America Flight Museum,on_display
 Evangel,4500,300-II,N4501L,,,fixed_wing,monoplane,civilian,utility,1968,a missionary STOL prototype,s/n 001,Mid America Flight Museum,on_display
-Cessna,L-19,A,N5563,Bird Dog,,fixed_wing,monoplane,military,recon,,,c/n 50-1567; L19,Mid America Flight Museum,on_display
+Cessna,L-19,A,N5563,Bird Dog,,fixed_wing,monoplane,military,recon,,,c/n 50-1567; L19; L19A,Mid America Flight Museum,on_display
 Piaggio,P.136,L1,N6354T,Royal Gull,,fixed_wing,monoplane,civilian,private,1955,amphibian,c/n 199,Mid America Flight Museum,on_display
 Camair,480,,N224MJ,,,fixed_wing,monoplane,civilian,private,,,c/n 1-064,Mid America Flight Museum,on_display
 Piper,PA-23,,N2108P,Apache,,fixed_wing,monoplane,civilian,private,1956,,c/n 23-698; PA23,Mid America Flight Museum,on_display
@@ -54,9 +54,9 @@ Beechcraft,T-34,C-1,N93GR,Turbo Mentor,,fixed_wing,monoplane,military,trainer,19
 Beechcraft,T-34,C-1,N903PA,Turbo Mentor,,fixed_wing,monoplane,military,trainer,1978,,c/n GM-60; T34,Mid America Flight Museum,on_display
 Beechcraft,T-34,C-1,N80GR,Turbo Mentor,,fixed_wing,monoplane,military,trainer,1978,,c/n GM-92; T34,Mid America Flight Museum,on_display
 Beechcraft,T-34,C-1,N6925Y,Turbo Mentor,,fixed_wing,monoplane,military,trainer,1978,,c/n GM-94; T34,Mid America Flight Museum,on_display
-Bell,UH-1,H,67-17238,Iroquois,,rotary_wing,,military,utility,,,N443ZB; UH1,Mid America Flight Museum,on_display
-Bell,UH-1,H,68-15419,Iroquois,,rotary_wing,,military,utility,,registration pending at Mount Pleasant so probably a recent arrival,N4439B; UH1,Mid America Flight Museum,on_display
-Bell,TAH-1,P,76-22599,Cobra,,rotary_wing,,military,ground_attack,,,N599HF; TAH1,Mid America Flight Museum,on_display
+Bell,UH-1,H,67-17238,Iroquois,,rotary_wing,,military,utility,,,N443ZB; UH1; UH1H,Mid America Flight Museum,on_display
+Bell,UH-1,H,68-15419,Iroquois,,rotary_wing,,military,utility,,registration pending at Mount Pleasant so probably a recent arrival,N4439B; UH1; UH1H,Mid America Flight Museum,on_display
+Bell,TAH-1,P,76-22599,Cobra,,rotary_wing,,military,ground_attack,,,N599HF; TAH1; TAH1P,Mid America Flight Museum,on_display
 Hughes,369,A,N387RF,,,rotary_wing,,civilian,utility,1969,,c/n 301381,Mid America Flight Museum,on_display
 Continental Copters,47,G,N6356X,,,rotary_wing,,civilian,utility,1963,,c/n CCI-563,Mid America Flight Museum,on_display
 ICA-Brasov,IS-28,B2,N777FV,,,fixed_wing,monoplane,civilian,private,1977,sailplane,c/n 102; IS28,Mid America Flight Museum,on_display

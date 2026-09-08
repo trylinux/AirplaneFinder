@@ -118,8 +118,16 @@ def db_session(app):
         original = models.Aircraft.__table__.c.full_designation.computed
         try:
             from sqlalchemy import Computed
+            # SQLite mirror of the MySQL expression in schema.sql. Both
+            # implement join_designation() in models.py; test_designation.py
+            # asserts this one agrees with the Python original.
             models.Aircraft.__table__.c.full_designation.computed = Computed(
-                "model || COALESCE('-' || variant, '')",
+                "model || CASE"
+                "  WHEN variant IS NULL OR variant = '' THEN ''"
+                "  WHEN INSTR('0123456789', SUBSTR(variant, 1, 1)) > 0 THEN '-' || variant"
+                "  WHEN INSTR('0123456789', SUBSTR(model, -1, 1)) > 0 THEN variant"
+                "  ELSE ' ' || variant"
+                " END",
                 persisted=True,
             )
             models.db.create_all()

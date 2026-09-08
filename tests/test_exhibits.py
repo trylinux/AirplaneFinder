@@ -45,7 +45,7 @@ class TestExhibitsEndpointShape:
         assert row["id"] == link.id
         assert row["display_status"] == "in_storage"
         assert row["notes"] == "hangar 3"
-        assert row["aircraft"]["full_designation"] == "F-14-A"
+        assert row["aircraft"]["full_designation"] == "F-14A"
         assert row["aircraft"]["tail_number"] == "160694"
         assert row["museum"]["name"] == "Intrepid"
 

@@ -1,11 +1,11 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Lockheed,T-33,A,58-0633,Shooting Star,,fixed_wing,monoplane,military,trainer,,previously displayed at the Tinker AFB air park; indoors since at least 1998,MSN 580-1602; T33,Science Museum Oklahoma,on_display
-Lockheed,F-104,G,D-8331,Starfighter,,fixed_wing,monoplane,military,fighter,,ex-Royal Netherlands Air Force; displayed under its Dutch serial,F104,Science Museum Oklahoma,on_display
-Grumman,A-6,E,162206,Intruder,,fixed_wing,monoplane,military,ground_attack,,US Navy BuNo 162206,A6,Science Museum Oklahoma,on_display
+Lockheed,T-33,A,58-0633,Shooting Star,,fixed_wing,monoplane,military,trainer,,previously displayed at the Tinker AFB air park; indoors since at least 1998,MSN 580-1602; T33; T33A,Science Museum Oklahoma,on_display
+Lockheed,F-104,G,D-8331,Starfighter,,fixed_wing,monoplane,military,fighter,,ex-Royal Netherlands Air Force; displayed under its Dutch serial,F104; F104G,Science Museum Oklahoma,on_display
+Grumman,A-6,E,162206,Intruder,,fixed_wing,monoplane,military,ground_attack,,US Navy BuNo 162206,A6; A6E,Science Museum Oklahoma,on_display
 Ryan,PT-22,,N7082,Recruit,,fixed_wing,monoplane,military,trainer,,,PT22,Science Museum Oklahoma,on_display
 Stinson,108,2,N435D,Voyager,,fixed_wing,monoplane,civilian,private,1946,named in the museum's own exhibit text,,Science Museum Oklahoma,on_display
-Bede,BD-5,B,N8065V,BD-5,,fixed_wing,monoplane,civilian,private,,,BD5,Science Museum Oklahoma,on_display
+Bede,BD-5,B,N8065V,BD-5,,fixed_wing,monoplane,civilian,private,,,BD5; BD5B,Science Museum Oklahoma,on_display
 Colomban,MC-15,,N32236,Cri-Cri,,fixed_wing,monoplane,civilian,experimental,,twin-engine homebuilt microlight,MC15,Science Museum Oklahoma,on_display
 Gulfstream American,Peregrine,,N28DH,Peregrine,,fixed_wing,monoplane,civilian,experimental,,prototype trainer derived from the American Jet Industries Hustler,,Science Museum Oklahoma,on_display
-Schweizer,TG-3,A,N31420,TG-3A,,fixed_wing,monoplane,military,trainer,,wartime training glider; unpowered; also listed as a Schweizer I-19,TG3,Science Museum Oklahoma,on_display
+Schweizer,TG-3,A,N31420,TG-3A,,fixed_wing,monoplane,military,trainer,,wartime training glider; unpowered; also listed as a Schweizer I-19,TG3; TG3A,Science Museum Oklahoma,on_display
 Mong,Sport,,,Mong Sport,,fixed_wing,biplane,civilian,private,,designed in Tulsa; named in the museum's own exhibit text; no registration established,,Science Museum Oklahoma,on_display

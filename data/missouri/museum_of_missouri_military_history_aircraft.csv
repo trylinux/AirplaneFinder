@@ -1,6 +1,6 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Bell,AH-1,F,67-15682,Cobra,,rotary_wing,,military,ground_attack,,,AH1,Museum of Missouri Military History,on_display
-Bell,UH-1,H,64-13644,Iroquois,,rotary_wing,,military,utility,,carried the ground-instructional designation GUH-1H,UH1,Museum of Missouri Military History,on_display
-Lockheed,C-130,A,55-0037,Hercules,,fixed_wing,monoplane,military,transport,,ex-Octave Chanute Aerospace Museum; acquired May 2016; repainted in European camouflage July 2017; carried the ground-instructional designation GC-130A,C130,Museum of Missouri Military History,on_display
-McDonnell Douglas,F-4,E,68-0465,Phantom II,,fixed_wing,monoplane,military,fighter,,arrived August 2015,F-4E-40-MC; F4,Museum of Missouri Military History,on_display
-McDonnell Douglas,F-15,A,76-0094,Eagle,,fixed_wing,monoplane,military,fighter,,displayed at the Ike Skelton Training Site,F15,Museum of Missouri Military History,on_display
+Bell,AH-1,F,67-15682,Cobra,,rotary_wing,,military,ground_attack,,,AH1; AH1F,Museum of Missouri Military History,on_display
+Bell,UH-1,H,64-13644,Iroquois,,rotary_wing,,military,utility,,carried the ground-instructional designation GUH-1H,UH1; UH1H,Museum of Missouri Military History,on_display
+Lockheed,C-130,A,55-0037,Hercules,,fixed_wing,monoplane,military,transport,,ex-Octave Chanute Aerospace Museum; acquired May 2016; repainted in European camouflage July 2017; carried the ground-instructional designation GC-130A,C130; C130A,Museum of Missouri Military History,on_display
+McDonnell Douglas,F-4,E,68-0465,Phantom II,,fixed_wing,monoplane,military,fighter,,arrived August 2015,F-4E-40-MC; F4; F4E,Museum of Missouri Military History,on_display
+McDonnell Douglas,F-15,A,76-0094,Eagle,,fixed_wing,monoplane,military,fighter,,displayed at the Ike Skelton Training Site,F15; F15A,Museum of Missouri Military History,on_display

@@ -1,52 +1,52 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
 Royal Aircraft Factory,S.E.5,a,N3922D,,,fixed_wing,biplane,military,fighter,1980,replica built by Paul E Jensen c/n 076223,,Mid-America Air Museum,on_display
 Nieuport,11,,,Bebe,,fixed_wing,biplane,military,fighter,,replica per the museum list; no registration found,,Mid-America Air Museum,on_display
-Aeronca,L-3,B,N48433,Grasshopper,,fixed_wing,monoplane,military,recon,1943,FAA type O-58B c/n 9943,L3,Mid-America Air Museum,on_display
-Beechcraft,AT-7,C,N65314,Navigator,,fixed_wing,monoplane,military,trainer,1944,USAAF 43-50128; the museum lists it as a C-45 Expeditor,43-50128; c/n 7061; AT7,Mid-America Air Museum,on_display
+Aeronca,L-3,B,N48433,Grasshopper,,fixed_wing,monoplane,military,recon,1943,FAA type O-58B c/n 9943,L3; L3B,Mid-America Air Museum,on_display
+Beechcraft,AT-7,C,N65314,Navigator,,fixed_wing,monoplane,military,trainer,1944,USAAF 43-50128; the museum lists it as a C-45 Expeditor,43-50128; c/n 7061; AT7; AT7C,Mid-America Air Museum,on_display
 Beechcraft,F17,D,N139KP,Staggerwing,,fixed_wing,biplane,civilian,private,1939,,c/n 257,Mid-America Air Museum,on_display
 Cessna,UC-78,,N711UU,Bobcat,,fixed_wing,monoplane,military,trainer,1942,USAAF 42-58275; the museum lists it as a T-50D,42-58275; c/n 3766; UC78,Mid-America Air Museum,on_display
-Fairchild,PT-19,A,N49942,Cornell,,fixed_wing,monoplane,military,trainer,,USAAF 41-20517; FAA serial field T42-1523,41-20517; PT19,Mid-America Air Museum,on_display
-Fairchild,PT-26,A,N91095,Cornell,,fixed_wing,monoplane,military,trainer,1943,FAA type M-62A-3 c/n FT-826; ex-RCAF 14665; the museum lists it as a PT-19A,14665; PT26,Mid-America Air Museum,on_display
+Fairchild,PT-19,A,N49942,Cornell,,fixed_wing,monoplane,military,trainer,,USAAF 41-20517; FAA serial field T42-1523,41-20517; PT19; PT19A,Mid-America Air Museum,on_display
+Fairchild,PT-26,A,N91095,Cornell,,fixed_wing,monoplane,military,trainer,1943,FAA type M-62A-3 c/n FT-826; ex-RCAF 14665; the museum lists it as a PT-19A,14665; PT26; PT26A,Mid-America Air Museum,on_display
 Fairchild,PT-23,,,Cornell,,fixed_wing,monoplane,military,trainer,,Wikipedia gives N63739 but the FAA shows that registration on a Pennsylvania aircraft so the identity is unverified,PT23,Mid-America Air Museum,on_display
 FEW,TF-51,,N951JH,Mustang,,fixed_wing,monoplane,civilian,experimental,2000,replica at 2/3 scale of the P-51D,c/n 68; TF51,Mid-America Air Museum,on_display
 General Motors,TBM,3,N6831C,Avenger,,fixed_wing,monoplane,military,bomber,1942,BuNo 86123 c/n 2942; listed variously as TBM-3R and TBM-3E; ex-fire tanker; marked RB-123,RB-123; RB123; TBM3,Mid-America Air Museum,on_display
 Interstate,L-6,,N37214,Cadet,,fixed_wing,monoplane,military,recon,1941,USAAF 43-2614; FAA type S-1A c/n 57,43-2614; L6,Mid-America Air Museum,on_display
-North American,B-25,J,N9462Z,Mitchell,,fixed_wing,monoplane,military,bomber,,USAAF 44-30535; TB-25N trainer conversion,44-30535; c/n 108-33810; B25,Mid-America Air Museum,on_display
+North American,B-25,J,N9462Z,Mitchell,,fixed_wing,monoplane,military,bomber,,USAAF 44-30535; TB-25N trainer conversion,44-30535; c/n 108-33810; B25; B25J,Mid-America Air Museum,on_display
 Ryan,Navion,A,N4005K,Navion,,fixed_wing,monoplane,civilian,utility,1947,the museum lists it as an L-17,c/n NAV-4-1005,Mid-America Air Museum,on_display
 Ryan,PT-22,,N46741,Recruit,,fixed_wing,monoplane,military,trainer,1941,USAAF 41-15410; FAA type ST3KR c/n 1439,41-15410; PT22,Mid-America Air Museum,on_display
 Stinson,L-5,,N66334,Sentinel,,fixed_wing,monoplane,military,recon,,USAAF 44-17668; FAA type L-5E,44-17668; c/n 76-2942; L5,Mid-America Air Museum,on_display
 Stinson,10,A,N34690,Voyager,,fixed_wing,monoplane,civilian,private,1941,the museum lists it as an L-9,c/n 7990,Mid-America Air Museum,on_display
 Stinson,V-77,,N9362H,Reliant,,fixed_wing,monoplane,military,utility,1943,Reliant I ex-Royal Navy FK953,c/n 77-140; V77,Mid-America Air Museum,on_display
-Taylorcraft,L-2,M,N49174,Grasshopper,,fixed_wing,monoplane,military,recon,1944,USAAF 43-26650; FAA type DCO-65 c/n L-5962,43-26650; L2,Mid-America Air Museum,on_display
+Taylorcraft,L-2,M,N49174,Grasshopper,,fixed_wing,monoplane,military,recon,1944,USAAF 43-26650; FAA type DCO-65 c/n L-5962,43-26650; L2; L2M,Mid-America Air Museum,on_display
 Vultee,BT-13,,N67316,Valiant,,fixed_wing,monoplane,military,trainer,1942,FAA type BT-13A c/n 7652; also recorded as BT-15 42-1995 and as an SNV-2; sub-variant unresolved,BT13,Mid-America Air Museum,on_display
 Cessna,195,A,N9864A,Businessliner,,fixed_wing,monoplane,civilian,private,1950,ex-Ada Aircraft Museum,c/n 7566,Mid-America Air Museum,on_display
 Vought,F4U,5N,N100CV,Corsair,,fixed_wing,monoplane,military,fighter,1948,F4U-5NL ex-Honduran AF FAH 602; USMC loan,BuNo 124447,Mid-America Air Museum,on_display
 Grumman,S2F,1,N5470C,Tracker,,fixed_wing,monoplane,military,recon,,BuNo 133179 c/n G-89-150; also listed as a US-2B; outdoors,,Mid-America Air Museum,on_display
-Lockheed,F-80,C,49-0710,Shooting Star,,fixed_wing,monoplane,military,fighter,,NMUSAF loan; once civil N83,c/n 080-2458; F80,Mid-America Air Museum,on_display
-North American,F-86,H,53-1501,Sabre,,fixed_wing,monoplane,military,fighter,,NMUSAF loan; once civil N9424 with the Wichita vo-tech,c/n 203-273; F86,Mid-America Air Museum,on_display
+Lockheed,F-80,C,49-0710,Shooting Star,,fixed_wing,monoplane,military,fighter,,NMUSAF loan; once civil N83,c/n 080-2458; F80; F80C,Mid-America Air Museum,on_display
+North American,F-86,H,53-1501,Sabre,,fixed_wing,monoplane,military,fighter,,NMUSAF loan; once civil N9424 with the Wichita vo-tech,c/n 203-273; F86; F86H,Mid-America Air Museum,on_display
 Cessna,337,A,N6274F,Super Skymaster,,fixed_wing,monoplane,civilian,utility,1965,,c/n 337-0274,Mid-America Air Museum,on_display
 Cessna,T-37,,54-0718,Tweet,Tweety Bird,fixed_wing,monoplane,military,trainer,,XT-37 prototype c/n 40003; NMUSAF loan,T37,Mid-America Air Museum,on_display
-LTV,A-7,D,73-1009,Corsair II,,fixed_wing,monoplane,military,ground_attack,,the museum page says A-7E but the serial is a USAF A-7D; outdoors,c/n D-405; A7,Mid-America Air Museum,on_display
-Vought,F-8,H,148693,Crusader,,fixed_wing,monoplane,military,fighter,,USMC loan,c/n 913; F8,Mid-America Air Museum,on_display
-Lockheed,F-104,C,56-0933,Starfighter,,fixed_wing,monoplane,military,fighter,,NMUSAF loan,c/n 383-1221; F104,Mid-America Air Museum,on_display
-Douglas,A-4,L,149635,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,built as an A-4C; USN loan; outdoors,c/n 12960; A4,Mid-America Air Museum,on_display
-McDonnell Douglas,F-4,D,66-7746,Phantom II,,fixed_wing,monoplane,military,fighter,,NMUSAF loan,c/n 2382; F4,Mid-America Air Museum,on_display
-North American Rockwell,OV-10,A,152880,Bronco,,fixed_wing,monoplane,military,recon,,YOV-10A prototype c/n 300-2; USMC loan,OV10,Mid-America Air Museum,on_display
-Northrop,T-38,A,60-0583,Talon,,fixed_wing,monoplane,military,trainer,,GT-38A ground trainer; NMUSAF loan; outdoors,c/n N.5156; T38,Mid-America Air Museum,on_display
-Republic,F-105,G,63-8266,Thunderchief,,fixed_wing,monoplane,military,electronic_warfare,,NMUSAF loan; outdoors,c/n F043; Wild Weasel; F105,Mid-America Air Museum,on_display
-Pereira,X-28,A,158786,Osprey,,fixed_wing,monoplane,military,experimental,,museum name Air Skimmer; Marine Corps Museum loan,X28,Mid-America Air Museum,on_display
-Grumman,F-14,A,160903,Tomcat,,fixed_wing,monoplane,military,fighter,,USN loan; outdoors,c/n 332; F14,Mid-America Air Museum,on_display
-Bell,AH-1,S,71-21038,Cobra,,rotary_wing,,military,ground_attack,,built as an AH-1G; US Army loan,c/n 21109; AH1,Mid-America Air Museum,on_display
-Bell,AH-1,S,71-21031,Cobra,,rotary_wing,,military,ground_attack,,US Army donation; Aerial Visuals shows it in storage,AH1,Mid-America Air Museum,in_storage
-Bell,AH-1,T,160817,Sea Cobra,,rotary_wing,,military,ground_attack,,Wikipedia lists it as an AH-1W,c/n 26922; AH1,Mid-America Air Museum,on_display
-Bell,OH-13,H,55-4619,Sioux,,rotary_wing,,military,utility,,US Army loan,c/n 1648; OH13,Mid-America Air Museum,on_display
-Bell,UH-1,H,66-1204,Iroquois,,rotary_wing,,military,utility,,built as a UH-1D; US Army loan,c/n 5687; UH1,Mid-America Air Museum,on_display
-Hughes,OH-6,A,66-7865,Cayuse,,rotary_wing,,military,recon,,US Army loan,c/n 0179; OH6,Mid-America Air Museum,on_display
+LTV,A-7,D,73-1009,Corsair II,,fixed_wing,monoplane,military,ground_attack,,the museum page says A-7E but the serial is a USAF A-7D; outdoors,c/n D-405; A7; A7D,Mid-America Air Museum,on_display
+Vought,F-8,H,148693,Crusader,,fixed_wing,monoplane,military,fighter,,USMC loan,c/n 913; F8; F8H,Mid-America Air Museum,on_display
+Lockheed,F-104,C,56-0933,Starfighter,,fixed_wing,monoplane,military,fighter,,NMUSAF loan,c/n 383-1221; F104; F104C,Mid-America Air Museum,on_display
+Douglas,A-4,L,149635,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,built as an A-4C; USN loan; outdoors,c/n 12960; A4; A4L,Mid-America Air Museum,on_display
+McDonnell Douglas,F-4,D,66-7746,Phantom II,,fixed_wing,monoplane,military,fighter,,NMUSAF loan,c/n 2382; F4; F4D,Mid-America Air Museum,on_display
+North American Rockwell,OV-10,A,152880,Bronco,,fixed_wing,monoplane,military,recon,,YOV-10A prototype c/n 300-2; USMC loan,OV10; OV10A,Mid-America Air Museum,on_display
+Northrop,T-38,A,60-0583,Talon,,fixed_wing,monoplane,military,trainer,,GT-38A ground trainer; NMUSAF loan; outdoors,c/n N.5156; T38; T38A,Mid-America Air Museum,on_display
+Republic,F-105,G,63-8266,Thunderchief,,fixed_wing,monoplane,military,electronic_warfare,,NMUSAF loan; outdoors,c/n F043; Wild Weasel; F105; F105G,Mid-America Air Museum,on_display
+Pereira,X-28,A,158786,Osprey,,fixed_wing,monoplane,military,experimental,,museum name Air Skimmer; Marine Corps Museum loan,X28; X28A,Mid-America Air Museum,on_display
+Grumman,F-14,A,160903,Tomcat,,fixed_wing,monoplane,military,fighter,,USN loan; outdoors,c/n 332; F14; F14A,Mid-America Air Museum,on_display
+Bell,AH-1,S,71-21038,Cobra,,rotary_wing,,military,ground_attack,,built as an AH-1G; US Army loan,c/n 21109; AH1; AH1S,Mid-America Air Museum,on_display
+Bell,AH-1,S,71-21031,Cobra,,rotary_wing,,military,ground_attack,,US Army donation; Aerial Visuals shows it in storage,AH1; AH1S,Mid-America Air Museum,in_storage
+Bell,AH-1,T,160817,Sea Cobra,,rotary_wing,,military,ground_attack,,Wikipedia lists it as an AH-1W,c/n 26922; AH1; AH1T,Mid-America Air Museum,on_display
+Bell,OH-13,H,55-4619,Sioux,,rotary_wing,,military,utility,,US Army loan,c/n 1648; OH13; OH13H,Mid-America Air Museum,on_display
+Bell,UH-1,H,66-1204,Iroquois,,rotary_wing,,military,utility,,built as a UH-1D; US Army loan,c/n 5687; UH1; UH1H,Mid-America Air Museum,on_display
+Hughes,OH-6,A,66-7865,Cayuse,,rotary_wing,,military,recon,,US Army loan,c/n 0179; OH6; OH6A,Mid-America Air Museum,on_display
 Piasecki,HUP,3,147628,Retriever,,rotary_wing,,military,utility,,also listed as a UH-25C; USMC loan,HUP3,Mid-America Air Museum,on_display
 Hindustan Aeronautics,Gnat,F.1,E1222,Gnat,,fixed_wing,monoplane,military,fighter,,Folland design built under licence,Indian AF; c/n GT.038,Mid-America Air Museum,on_display
 Radioplane,Q-19,,,Shelduck,,fixed_wing,monoplane,military,drone,,target drone; no serial found,Q19,Mid-America Air Museum,on_display
 Aero Commander,520,,N711YY,Commander,,fixed_wing,monoplane,civilian,utility,1953,last registered to museum founder Tom A Thomas Jr; the museum lists it as an L-26,c/n 520-76,Mid-America Air Museum,on_display
-CallAir,A-9,B,N671W,,,fixed_wing,monoplane,civilian,utility,1968,agricultural aircraft,c/n 1382; A9,Mid-America Air Museum,on_display
+CallAir,A-9,B,N671W,,,fixed_wing,monoplane,civilian,utility,1968,agricultural aircraft,c/n 1382; A9; A9B,Mid-America Air Museum,on_display
 Aeronca,7,AC,N2735E,Champion,,fixed_wing,monoplane,civilian,private,1946,,c/n 7AC-6316,Mid-America Air Museum,on_display
 Aeronca,65,C,N23547,Chief,,fixed_wing,monoplane,civilian,private,1939,,c/n C5119,Mid-America Air Museum,on_display
 Aeronca,K,,N19339,Scout,,fixed_wing,monoplane,civilian,private,,the FAA year field of 1945 is implausible for a Model K and is not used,c/n K-208,Mid-America Air Museum,on_display
@@ -63,15 +63,15 @@ Culver,V,,N3116K,,,fixed_wing,monoplane,civilian,private,1946,,c/n V335,Mid-Amer
 Curtiss-Wright,CW-1,,N10973,Junior,,fixed_wing,monoplane,civilian,private,1931,pusher,c/n 1151; CW1,Mid-America Air Museum,on_display
 Fairchild,24,C8F,N16852,Forwarder,,fixed_wing,monoplane,civilian,private,1936,displayed in US Coast Guard markings,c/n 3132,Mid-America Air Museum,on_display
 Funk,B,75L,N24174,,,fixed_wing,monoplane,civilian,private,1940,,c/n 200; Coffeyville-built; B75L,Mid-America Air Museum,on_display
-Globe,GC-1,B,N78159,Swift,,fixed_wing,monoplane,civilian,private,1946,,c/n 2159; GC1,Mid-America Air Museum,on_display
-Grumman,G-164,A,N7952,Ag Cat,,fixed_wing,biplane,civilian,utility,1971,still registered to a private Liberal owner so presumed a loan,c/n 831; G164,Mid-America Air Museum,on_display
+Globe,GC-1,B,N78159,Swift,,fixed_wing,monoplane,civilian,private,1946,,c/n 2159; GC1; GC1B,Mid-America Air Museum,on_display
+Grumman,G-164,A,N7952,Ag Cat,,fixed_wing,biplane,civilian,utility,1971,still registered to a private Liberal owner so presumed a loan,c/n 831; G164; G164A,Mid-America Air Museum,on_display
 Luscombe,8,A,N1172B,Silvaire,,fixed_wing,monoplane,civilian,private,1947,,c/n 5799,Mid-America Air Museum,on_display
-Luscombe,T-8,F,N1580B,Observer,,fixed_wing,monoplane,civilian,utility,1948,,c/n 6207; T8,Mid-America Air Museum,on_display
-Mooney,M-18,C,N4140,Mite,,fixed_wing,monoplane,civilian,private,1954,,c/n 307; M18,Mid-America Air Museum,on_display
+Luscombe,T-8,F,N1580B,Observer,,fixed_wing,monoplane,civilian,utility,1948,,c/n 6207; T8; T8F,Mid-America Air Museum,on_display
+Mooney,M-18,C,N4140,Mite,,fixed_wing,monoplane,civilian,private,1954,,c/n 307; M18; M18C,Mid-America Air Museum,on_display
 Porterfield,CP-65,,N32431,Collegiate,,fixed_wing,monoplane,civilian,trainer,1940,,c/n 861; CP65,Mid-America Air Museum,on_display
 Piper,PA-24,250,N110LF,Comanche,,fixed_wing,monoplane,civilian,private,,on loan from the Comanche Flyer Foundation,c/n 24-695; PA24,Mid-America Air Museum,on_display
 Piper,J-3,C-65,N26815,Cub,,fixed_wing,monoplane,civilian,trainer,1940,historic registration NC26815,c/n 4196; J3,Mid-America Air Museum,on_display
-Piper,J-4,F,N30426,Cub Coupe,,fixed_wing,monoplane,civilian,private,1940,ex-Ada Aircraft Museum,c/n 4-1209; J4,Mid-America Air Museum,on_display
+Piper,J-4,F,N30426,Cub Coupe,,fixed_wing,monoplane,civilian,private,1940,ex-Ada Aircraft Museum,c/n 4-1209; J4; J4F,Mid-America Air Museum,on_display
 Piper,PA-22,,N1129C,Tri-Pacer,,fixed_wing,monoplane,civilian,private,1953,sub-type given as both 125 and 135,c/n 22-964; PA22,Mid-America Air Museum,on_display
 Piper,PA-23,,N1015P,Apache,,fixed_wing,monoplane,civilian,private,1954,a very early Apache,c/n 23-17; PA23,Mid-America Air Museum,on_display
 Piper,PA-23,250,N4581P,Aztec,,fixed_wing,monoplane,civilian,private,1960,,c/n 27-90; PA23,Mid-America Air Museum,on_display

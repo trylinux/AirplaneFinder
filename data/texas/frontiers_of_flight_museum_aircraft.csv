@@ -1,36 +1,36 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Bell,UH-1,L,,Iroquois,,rotary_wing,,military,trainer,,TH-1L Navy training variant; serial not established,UH1,Frontiers of Flight Museum,on_display
-Bell,H-13,S,,Sioux,,rotary_wing,,military,trainer,,serial not established,TH-13S; H13; TH13S,Frontiers of Flight Museum,on_display
-Bell,UH-1,D,66-16977,Iroquois,,rotary_wing,,military,utility,,converted to JUH-1H test configuration; Vietnam-era livery; displayed outdoors,UH1,Frontiers of Flight Museum,on_display
+Bell,UH-1,L,,Iroquois,,rotary_wing,,military,trainer,,TH-1L Navy training variant; serial not established,UH1; UH1L,Frontiers of Flight Museum,on_display
+Bell,H-13,S,,Sioux,,rotary_wing,,military,trainer,,serial not established,TH-13S; H13; TH13S; H13S,Frontiers of Flight Museum,on_display
+Bell,UH-1,D,66-16977,Iroquois,,rotary_wing,,military,utility,,converted to JUH-1H test configuration; Vietnam-era livery; displayed outdoors,UH1; UH1D,Frontiers of Flight Museum,on_display
 Boeing,737,300,N300SW,,Spirit of Kitty Hawk,fixed_wing,monoplane,civilian,commercial_transport,1984,the first 737-300 built; museum-owned; about two-thirds of the airframe retained; Southwest livery,c/n 22940,Frontiers of Flight Museum,on_display
 Boeing,737,200,N102SW,,,fixed_wing,monoplane,civilian,commercial_transport,,nose and cockpit section only; Southwest livery,,Frontiers of Flight Museum,on_display
 Boeing-Stearman,PT-17,,,Kaydet,,fixed_wing,biplane,military,trainer,,serial not established,PT17,Frontiers of Flight Museum,on_display
 Bucker,Bu 133,,,Jungmeister,,fixed_wing,biplane,civilian,experimental,,replica flagged as such by the museum,,Frontiers of Flight Museum,on_display
 Culver,Dart,GC,,Dart,,fixed_wing,monoplane,civilian,private,,serial not established,,Frontiers of Flight Museum,on_display
-Curtiss,JN-4,D,4072,Jenny,,fixed_wing,biplane,military,trainer,1918,post-WWI civil registration NC3769,JN4,Frontiers of Flight Museum,on_display
+Curtiss,JN-4,D,4072,Jenny,,fixed_wing,biplane,military,trainer,1918,post-WWI civil registration NC3769,JN4; JN4D,Frontiers of Flight Museum,on_display
 de Havilland,DH.82,A,DE664,Tiger Moth,,fixed_wing,biplane,military,trainer,,ex-RAF then Australian register VH-PCC; museum-owned,N82AK,Frontiers of Flight Museum,on_display
-E-Systems,XQM-93,A,,,,fixed_wing,monoplane,military,drone,,unmanned target and recon drone; serial not established,LTV L-450; XQM93,Frontiers of Flight Museum,on_display
+E-Systems,XQM-93,A,,,,fixed_wing,monoplane,military,drone,,unmanned target and recon drone; serial not established,LTV L-450; XQM93; XQM93A,Frontiers of Flight Museum,on_display
 Glasflugel,BS-1,,,,,fixed_wing,monoplane,civilian,private,,sailplane; registration not established,BS1,Frontiers of Flight Museum,on_display
-General Dynamics,F-16,B,75-0752,Fighting Falcon,,fixed_wing,monoplane,military,fighter,1978,the pre-production YF-16B not a production F-16B; displayed outdoors in poor condition,F16,Frontiers of Flight Museum,on_display
-Grumman,EA-6,B,162228,Prowler,,fixed_wing,monoplane,military,electronic_warfare,,wears VMAQ-2 Death Jesters markings; displayed outdoors,EA6,Frontiers of Flight Museum,on_display
+General Dynamics,F-16,B,75-0752,Fighting Falcon,,fixed_wing,monoplane,military,fighter,1978,the pre-production YF-16B not a production F-16B; displayed outdoors in poor condition,F16; F16B,Frontiers of Flight Museum,on_display
+Grumman,EA-6,B,162228,Prowler,,fixed_wing,monoplane,military,electronic_warfare,,wears VMAQ-2 Death Jesters markings; displayed outdoors,EA6; EA6B,Frontiers of Flight Museum,on_display
 McDonnell Douglas,F/A-18,C,163435,Hornet,,fixed_wing,monoplane,military,fighter,,Blue Angels number 4 livery; one of the last-batch Blue Angels legacy Hornets; a recent arrival absent from published lists,,Frontiers of Flight Museum,on_display
 Stephens,Laser,200,N20JJ,,,fixed_wing,monoplane,civilian,experimental,,aerobatic,,Frontiers of Flight Museum,on_display
 LearAvia,Lear Fan,2100,,Lear Fan,,fixed_wing,monoplane,civilian,experimental,1981,Bill Lear's final design; all-composite pusher; never certified; registration not established,,Frontiers of Flight Museum,on_display
 Learjet,24,D,N281FP,,,fixed_wing,monoplane,civilian,private,,displayed outdoors,c/n 281,Frontiers of Flight Museum,on_display
-Lockheed,T-33,A,61767,Shooting Star,,fixed_wing,monoplane,military,trainer,,48th Fighter-Interceptor Squadron markings; displayed outdoors,T33,Frontiers of Flight Museum,on_display
-Vought,A-7,B,154502,Corsair II,,fixed_wing,monoplane,military,ground_attack,,VA-46 markings,A7,Frontiers of Flight Museum,on_display
+Lockheed,T-33,A,61767,Shooting Star,,fixed_wing,monoplane,military,trainer,,48th Fighter-Interceptor Squadron markings; displayed outdoors,T33; T33A,Frontiers of Flight Museum,on_display
+Vought,A-7,B,154502,Corsair II,,fixed_wing,monoplane,military,ground_attack,,VA-46 markings,A7; A7B,Frontiers of Flight Museum,on_display
 Meyer,Little Toot,,,Little Toot,,fixed_wing,biplane,civilian,experimental,,amateur-built; registration not established,,Frontiers of Flight Museum,on_display
 Northrop,T-38,,,Talon,,fixed_wing,monoplane,military,trainer,,serial not established,T38,Frontiers of Flight Museum,on_display
 Piper,PA-20,,,Pacer,,fixed_wing,monoplane,civilian,private,,least-corroborated entry in the collection,PA20,Frontiers of Flight Museum,on_display
-Pitts,S-2,B,,Special,,fixed_wing,biplane,civilian,private,,registration not established,S2,Frontiers of Flight Museum,on_display
-Republic,F-105,D,62-4346,Thunderchief,,fixed_wing,monoplane,military,ground_attack,1963,displayed outdoors,F105,Frontiers of Flight Museum,on_display
+Pitts,S-2,B,,Special,,fixed_wing,biplane,civilian,private,,registration not established,S2; S2B,Frontiers of Flight Museum,on_display
+Republic,F-105,D,62-4346,Thunderchief,,fixed_wing,monoplane,military,ground_attack,1963,displayed outdoors,F105; F105D,Frontiers of Flight Museum,on_display
 Ryan,PT-22,,,Recruit,,fixed_wing,monoplane,military,trainer,,serial not established,PT22,Frontiers of Flight Museum,on_display
 Shoestring,F1,,NX24ML,Shoestring,Time Bandit,fixed_wing,monoplane,civilian,experimental,,Formula One air racer,,Frontiers of Flight Museum,on_display
 Sopwith,Pup,,,Pup,,fixed_wing,biplane,military,fighter,,replica flagged as such by the museum,,Frontiers of Flight Museum,on_display
 Williams,Texas-Temple,,N987N,Sportsman,,fixed_wing,monoplane,civilian,private,,the sole surviving example and the first Dallas-built aircraft,,Frontiers of Flight Museum,on_display
 Thorp,T-18,,,,Frontier Flyer,fixed_wing,monoplane,civilian,experimental,,amateur-built; registration not established,T18,Frontiers of Flight Museum,on_display
-Vought,F-8,G,146882,Crusader,,fixed_wing,monoplane,military,recon,,on loan from the National Naval Aviation Museum,RF-8G; F8; RF8G,Frontiers of Flight Museum,on_display
+Vought,F-8,G,146882,Crusader,,fixed_wing,monoplane,military,recon,,on loan from the National Naval Aviation Museum,RF-8G; F8; RF8G; F8G,Frontiers of Flight Museum,on_display
 Vought,V-173,,,Flying Pancake,,fixed_wing,monoplane,military,experimental,1942,the actual flown prototype; on loan from the Smithsonian; restored by the Vought Aircraft Heritage Foundation; main hall centrepiece,V173,Frontiers of Flight Museum,on_display
 North American Rockwell,Apollo,CM-101,,Apollo 7,,spacecraft,,civilian,space,1968,the flown Apollo 7 command module; first crewed Apollo flight and first Block II spacecraft; Schirra Eisele and Cunningham; owned by the Smithsonian and displayed on loan,,Frontiers of Flight Museum,on_display
 Vought,Regulus,II,,Regulus II,,missile_rocket,,military,cruise,,serial not established,Vought-built,Frontiers of Flight Museum,on_display
-Raytheon,BGM-109,C,,Tomahawk,,missile_rocket,,military,cruise,,serial not established,BGM109,Frontiers of Flight Museum,on_display
+Raytheon,BGM-109,C,,Tomahawk,,missile_rocket,,military,cruise,,serial not established,BGM109; BGM109C,Frontiers of Flight Museum,on_display

@@ -311,6 +311,62 @@ class Museum(db.Model):
         }
 
 
+# ── Designation joining ───────────────────────────────────────────────
+#
+# ``full_designation`` used to be CONCAT(model, '-', variant), which produced
+# "SR-71-A" and "F-4-C". Aviation writes those "SR-71A" and "F-4C". The join
+# depends on what sits either side of the seam; a sweep of the catalogue put
+# every pair the database holds into one of three buckets:
+#
+#   model ends in a digit, variant starts with a letter  (2,673 rows)
+#       -> no separator:  SR-71 + A      = SR-71A
+#                         UH-1  + H      = UH-1H
+#   variant starts with a digit                            (418 rows)
+#       -> a dash:        747   + 100    = 747-100
+#                         FJ    + 1      = FJ-1
+#                         PA-28 + 180    = PA-28-180
+#   anything else (both sides alphabetic)                  (241 rows)
+#       -> a space:       Vampire + T.35 = Vampire T.35
+#                         Titan   + II   = Titan II
+#
+# The one knowingly-wrong case is a proper-name model with a numeric variant
+# ("Mercure" + "100" renders "Mercure-100", not "Mercure 100"). Telling those
+# apart from Navy short designators (FJ-1, R4D-6S, ZPG-2) needs judgement the
+# expression cannot make, and the Navy forms are far more numerous.
+#
+# SQL mirrors of this function live in schema.sql (MySQL) and
+# tests/conftest.py (SQLite). All three must agree — test_designation.py
+# checks the Python one against the SQLite one on real pairs.
+
+_DIGITS = "0123456789"
+
+
+def join_designation(model, variant):
+    """Join a model and variant the way the generated column does."""
+    model = (model or "").strip()
+    variant = (variant or "").strip()
+    if not variant:
+        return model
+    if variant[0] in _DIGITS:
+        return f"{model}-{variant}"
+    if model and model[-1] in _DIGITS:
+        return f"{model}{variant}"
+    return f"{model} {variant}"
+
+
+# Kept next to join_designation() so the two are edited together. Mirrored in
+# schema.sql; changing either means writing a migration (see
+# migrate_full_designation.sql).
+_FULL_DESIGNATION_SQL = (
+    "CONCAT(model, CASE"
+    "  WHEN variant IS NULL OR variant = '' THEN ''"
+    "  WHEN LOCATE(LEFT(variant, 1), '0123456789') > 0 THEN CONCAT('-', variant)"
+    "  WHEN LOCATE(RIGHT(model, 1), '0123456789') > 0 THEN variant"
+    "  ELSE CONCAT(' ', variant)"
+    " END)"
+)
+
+
 class Aircraft(db.Model):
     __tablename__ = "aircraft"
 
@@ -327,7 +383,7 @@ class Aircraft(db.Model):
     # CONCAT(...) on every row.
     full_designation = db.Column(
         db.String(100),
-        Computed("CONCAT(model, IFNULL(CONCAT('-', variant), ''))", persisted=True),
+        Computed(_FULL_DESIGNATION_SQL, persisted=True),
     )
     aircraft_type = db.Column(db.String(20), nullable=False, default="fixed_wing")
     wing_type = db.Column(db.String(20))          # monoplane, biplane, triplane
@@ -363,8 +419,8 @@ class Aircraft(db.Model):
             "variant": self.variant,
             # Fall back to in-Python computation for unflushed instances where
             # the DB-generated value hasn't been loaded yet.
-            "full_designation": self.full_designation or (
-                f"{self.model}-{self.variant}" if self.variant else (self.model or "")
+            "full_designation": self.full_designation or join_designation(
+                self.model, self.variant
             ),
             "aircraft_type": self.aircraft_type,
             "wing_type": self.wing_type,

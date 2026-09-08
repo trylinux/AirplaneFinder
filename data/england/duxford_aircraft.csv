@@ -15,11 +15,11 @@ BAC,Concorde,101,G-AXDN,,,fixed_wing,monoplane,civilian,commercial_transport,197
 BAC,Strikemaster,,1133,,,fixed_wing,monoplane,military,trainer,,,,Imperial War Museum Duxford,on_display
 BAC,One-Eleven,500,G-AVMU,,County of Dorset,fixed_wing,monoplane,civilian,commercial_transport,,,,Imperial War Museum Duxford,on_display
 BAC,VC10,Super,G-ASGC,,,fixed_wing,monoplane,civilian,commercial_transport,,,,Imperial War Museum Duxford,on_display
-Bell,UH-1,H,72-21605,Huey,,rotary_wing,,military,utility,,,UH1,Imperial War Museum Duxford,on_display
-Boeing,B-17,G,44-83735,Flying Fortress,Mary Alice,fixed_wing,monoplane,military,bomber,,,231983; F-BDRS; B17,Imperial War Museum Duxford,on_display
-Boeing,B-17,G,44-85784,Flying Fortress,Sally B,fixed_wing,monoplane,military,bomber,1945,airworthy,G-BEDF; B17,Imperial War Museum Duxford,on_display
-Boeing,B-52,D,56-0689,Stratofortress,,fixed_wing,monoplane,military,bomber,,,B52,Imperial War Museum Duxford,on_display
-Boeing,B-29,A,44-61748,Superfortress,It's Hawg Wild,fixed_wing,monoplane,military,bomber,,,G-BHDK; B29,Imperial War Museum Duxford,on_display
+Bell,UH-1,H,72-21605,Huey,,rotary_wing,,military,utility,,,UH1; UH1H,Imperial War Museum Duxford,on_display
+Boeing,B-17,G,44-83735,Flying Fortress,Mary Alice,fixed_wing,monoplane,military,bomber,,,231983; F-BDRS; B17; B17G,Imperial War Museum Duxford,on_display
+Boeing,B-17,G,44-85784,Flying Fortress,Sally B,fixed_wing,monoplane,military,bomber,1945,airworthy,G-BEDF; B17; B17G,Imperial War Museum Duxford,on_display
+Boeing,B-52,D,56-0689,Stratofortress,,fixed_wing,monoplane,military,bomber,,,B52; B52D,Imperial War Museum Duxford,on_display
+Boeing,B-29,A,44-61748,Superfortress,It's Hawg Wild,fixed_wing,monoplane,military,bomber,,,G-BHDK; B29; B29A,Imperial War Museum Duxford,on_display
 Boeing-Stearman,PT-17,,41-8169,Kaydet,,fixed_wing,biplane,military,trainer,,,CF-EQS; PT17,Imperial War Museum Duxford,on_display
 Bristol,Blenheim,IF,L6739,,,fixed_wing,monoplane,military,fighter,,airworthy,G-BPIV,Imperial War Museum Duxford,on_display
 Bristol,F.2B,,E2581,Fighter,,fixed_wing,biplane,military,fighter,,,,Imperial War Museum Duxford,on_display
@@ -28,21 +28,21 @@ Bristol,Beaufighter,XIc,JM135,,,fixed_wing,monoplane,military,fighter,,composite
 British Aerospace,146,CC2,ZE701,,,fixed_wing,monoplane,military,transport,,,,Imperial War Museum Duxford,on_display
 Britten-Norman,Trislander,BN-2A-III,G-BEVT,,,fixed_wing,monoplane,civilian,commercial_transport,,,,Imperial War Museum Duxford,on_display
 Commonwealth Aircraft,CA-18,Mustang 22,A68-192,,Jersey Jerk,fixed_wing,monoplane,military,fighter,,,415152; G-JERK; CA18,Imperial War Museum Duxford,on_display
-Consolidated,B-24,M,44-50493,Liberator,Dugan,fixed_wing,monoplane,military,bomber,,,B24,Imperial War Museum Duxford,on_display
+Consolidated,B-24,M,44-50493,Liberator,Dugan,fixed_wing,monoplane,military,bomber,,,B24; B24M,Imperial War Museum Duxford,on_display
 de Havilland,Mosquito,TT.35,TA719,,,fixed_wing,monoplane,military,other,,,,Imperial War Museum Duxford,on_display
 de Havilland,Sea Vixen,FAW.2,XS576,,,fixed_wing,monoplane,military,fighter,,,,Imperial War Museum Duxford,on_display
 de Havilland,Vampire,T.11,WZ590,,,fixed_wing,monoplane,military,trainer,,,,Imperial War Museum Duxford,on_display
 de Havilland,Dove,,G-ALFU,,,fixed_wing,monoplane,civilian,utility,,,,Imperial War Museum Duxford,on_display
 de Havilland,Comet,4,G-APDB,,,fixed_wing,monoplane,civilian,commercial_transport,,,,Imperial War Museum Duxford,on_display
 de Havilland Canada,DHC-2,,G-DHCZ,Beaver,,fixed_wing,monoplane,civilian,utility,,,XP772; DHC2,Imperial War Museum Duxford,on_display
-Douglas,C-47,A,43-15509,Skytrain,,fixed_wing,monoplane,military,transport,,,C47,Imperial War Museum Duxford,on_display
+Douglas,C-47,A,43-15509,Skytrain,,fixed_wing,monoplane,military,transport,,,C47; C47A,Imperial War Museum Duxford,on_display
 English Electric,Lightning,F.1,XM135,,,fixed_wing,monoplane,military,fighter,,,,Imperial War Museum Duxford,on_display
-Fairchild Republic,A-10,A,77-0259,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,,,A10,Imperial War Museum Duxford,on_display
+Fairchild Republic,A-10,A,77-0259,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,,,A10; A10A,Imperial War Museum Duxford,on_display
 Fairey,Swordfish,,NF370,,,fixed_wing,biplane,military,bomber,,,,Imperial War Museum Duxford,on_display
 Fairey,Gannet,ECM.6,XG797,,,fixed_wing,monoplane,military,electronic_warfare,,,,Imperial War Museum Duxford,on_display
 Fairey,Firefly,TT.I,Z2033,,,fixed_wing,monoplane,military,other,,,,Imperial War Museum Duxford,on_display
 FMA,IA 58,,ZD487,Pucara,,fixed_wing,monoplane,military,ground_attack,,,A-549; A549,Imperial War Museum Duxford,under_restoration
-General Dynamics,F-111,E,67-0120,Aardvark,,fixed_wing,monoplane,military,ground_attack,,,F111,Imperial War Museum Duxford,on_display
+General Dynamics,F-111,E,67-0120,Aardvark,,fixed_wing,monoplane,military,ground_attack,,,F111; F111E,Imperial War Museum Duxford,on_display
 Gloster,Javelin,FAW.9,XH897,,,fixed_wing,monoplane,military,fighter,,,,Imperial War Museum Duxford,on_display
 Gloster,Meteor,F.8,WK991,,,fixed_wing,monoplane,military,fighter,,,,Imperial War Museum Duxford,on_display
 Gloster,Gladiator,II,N5903,,,fixed_wing,biplane,military,fighter,,airworthy,G-GLAD,Imperial War Museum Duxford,on_display
@@ -65,10 +65,10 @@ Hawker,Tempest,II,MW763,,,fixed_wing,monoplane,military,fighter,,,PR533; G-TEMT,
 Hawker,Hunter,F.6A,XE627,,,fixed_wing,monoplane,military,fighter,,,,Imperial War Museum Duxford,on_display
 Heinkel,He 162,A-2,120235,Salamander,,fixed_wing,monoplane,military,fighter,,,,Imperial War Museum Duxford,under_restoration
 Lockheed,Model 12,A,G-AFTL,Electra Junior,,fixed_wing,monoplane,civilian,private,,,,Imperial War Museum Duxford,on_display
-Lockheed,U-2,C,56-6692,Dragon Lady,,fixed_wing,monoplane,military,recon,,,U2,Imperial War Museum Duxford,on_display
-Curtiss,P-40,B,G-CDWH,Tomahawk,,fixed_wing,monoplane,military,fighter,,airworthy,16073; P40,Imperial War Museum Duxford,on_display
-Curtiss,P-40,C,41-13357,Tomahawk,,fixed_wing,monoplane,military,fighter,,airworthy,G-CIIO; P40,Imperial War Museum Duxford,on_display
-Curtiss,P-40,F,41-19841,Warhawk,,fixed_wing,monoplane,military,fighter,,airworthy,G-CGZP; P40,Imperial War Museum Duxford,on_display
+Lockheed,U-2,C,56-6692,Dragon Lady,,fixed_wing,monoplane,military,recon,,,U2; U2C,Imperial War Museum Duxford,on_display
+Curtiss,P-40,B,G-CDWH,Tomahawk,,fixed_wing,monoplane,military,fighter,,airworthy,16073; P40; P40B,Imperial War Museum Duxford,on_display
+Curtiss,P-40,C,41-13357,Tomahawk,,fixed_wing,monoplane,military,fighter,,airworthy,G-CIIO; P40; P40C,Imperial War Museum Duxford,on_display
+Curtiss,P-40,F,41-19841,Warhawk,,fixed_wing,monoplane,military,fighter,,airworthy,G-CGZP; P40; P40F,Imperial War Museum Duxford,on_display
 Curtiss,Hawk 75,A,G-CCVH,,,fixed_wing,monoplane,military,fighter,,airworthy,82,Imperial War Museum Duxford,on_display
 Fiat,CR.42,,Fv2542,Falco,,fixed_wing,biplane,military,fighter,,,G-CBLS; c/n 920,Imperial War Museum Duxford,on_display
 Miles,Magister,I,G-AFBS,,,fixed_wing,monoplane,military,trainer,,,,Imperial War Museum Duxford,on_display
@@ -98,18 +98,18 @@ Westland,Whirlwind,HAS.7,XK936,,,rotary_wing,,military,recon,,,,Imperial War Mus
 Westland,Sea King,HAS.6,XV712,,,rotary_wing,,military,recon,,,,Imperial War Museum Duxford,on_display
 Westland,Wasp,HAS.1,XS567,,,rotary_wing,,military,recon,,code 434,,Imperial War Museum Duxford,on_display
 Percival,Proctor,III,LZ766,,,fixed_wing,monoplane,military,utility,,,G-ALCK,Imperial War Museum Duxford,on_display
-McDonnell Douglas,F-4,M,XV474,Phantom II,,fixed_wing,monoplane,military,fighter,,,FGR.2; F4,Imperial War Museum Duxford,on_display
+McDonnell Douglas,F-4,M,XV474,Phantom II,,fixed_wing,monoplane,military,fighter,,,FGR.2; F4; F4M,Imperial War Museum Duxford,on_display
 Messerschmitt,Bf 109,E-3,1190,,,fixed_wing,monoplane,military,fighter,,force-landed 1940; displayed as crashed,,Imperial War Museum Duxford,on_display
-Mikoyan-Gurevich,MiG-21,PF,501,Fishbed,,fixed_wing,monoplane,military,fighter,,,MiG21,Imperial War Museum Duxford,on_display
-McDonnell Douglas,F-4,J,155529,Phantom II,,fixed_wing,monoplane,military,fighter,,F-4J(UK); VF-74 markings,ZE359; F4,Imperial War Museum Duxford,on_display
-McDonnell Douglas,F-15,A,76-0020,Eagle,,fixed_wing,monoplane,military,fighter,,on loan from NMUSAF,F15,Imperial War Museum Duxford,on_display
+Mikoyan-Gurevich,MiG-21,PF,501,Fishbed,,fixed_wing,monoplane,military,fighter,,,MiG21; MiG21PF,Imperial War Museum Duxford,on_display
+McDonnell Douglas,F-4,J,155529,Phantom II,,fixed_wing,monoplane,military,fighter,,F-4J(UK); VF-74 markings,ZE359; F4; F4J,Imperial War Museum Duxford,on_display
+McDonnell Douglas,F-15,A,76-0020,Eagle,,fixed_wing,monoplane,military,fighter,,on loan from NMUSAF,F15; F15A,Imperial War Museum Duxford,on_display
 Noorduyn,AT-16,,B-168,Harvard,,fixed_wing,monoplane,military,trainer,,,Harvard IIB; AT16,Imperial War Museum Duxford,on_display
-North American,B-25,J,43-4064,Mitchell,Li'l Critter from the Moon,fixed_wing,monoplane,military,bomber,,previously displayed as 44-31171; PBJ-1J markings,B25,Imperial War Museum Duxford,on_display
-North American,P-51,D,44-11631,Mustang,Etta Jeanne II,fixed_wing,monoplane,military,fighter,,code MX-V,P51,Imperial War Museum Duxford,on_display
-North American,P-51,D,44-13521,Mustang,Marinell,fixed_wing,monoplane,military,fighter,,code 5Q-B; airworthy,G-MRLL; P51,Imperial War Museum Duxford,on_display
-North American,P-51,D,44-72216,Mustang,Miss Helen,fixed_wing,monoplane,military,fighter,,code HO-M; airworthy,G-BIXL; P51,Imperial War Museum Duxford,on_display
-Republic,P-47,D,45-49192,Thunderbolt,Nellie B,fixed_wing,monoplane,military,fighter,,code F4-J; airworthy,G-THUN; P47,Imperial War Museum Duxford,on_display
-Republic,P-47,D,42-26413,Thunderbolt,,fixed_wing,monoplane,military,fighter,,78th FG markings; composite static rebuild,P47,Imperial War Museum Duxford,on_display
+North American,B-25,J,43-4064,Mitchell,Li'l Critter from the Moon,fixed_wing,monoplane,military,bomber,,previously displayed as 44-31171; PBJ-1J markings,B25; B25J,Imperial War Museum Duxford,on_display
+North American,P-51,D,44-11631,Mustang,Etta Jeanne II,fixed_wing,monoplane,military,fighter,,code MX-V,P51; P51D,Imperial War Museum Duxford,on_display
+North American,P-51,D,44-13521,Mustang,Marinell,fixed_wing,monoplane,military,fighter,,code 5Q-B; airworthy,G-MRLL; P51; P51D,Imperial War Museum Duxford,on_display
+North American,P-51,D,44-72216,Mustang,Miss Helen,fixed_wing,monoplane,military,fighter,,code HO-M; airworthy,G-BIXL; P51; P51D,Imperial War Museum Duxford,on_display
+Republic,P-47,D,45-49192,Thunderbolt,Nellie B,fixed_wing,monoplane,military,fighter,,code F4-J; airworthy,G-THUN; P47; P47D,Imperial War Museum Duxford,on_display
+Republic,P-47,D,42-26413,Thunderbolt,,fixed_wing,monoplane,military,fighter,,78th FG markings; composite static rebuild,P47; P47D,Imperial War Museum Duxford,on_display
 Noorduyn,Harvard,IIB,FE695,,,fixed_wing,monoplane,military,trainer,1942,airworthy,G-BTXI,Imperial War Museum Duxford,on_display
 SPAD,XIII,,,,,fixed_wing,biplane,military,fighter,,replica; represents S.4513 Rickenbacker,,Imperial War Museum Duxford,on_display
 Vickers,Viscount,701,G-ALWF,,Sir John Franklin,fixed_wing,monoplane,civilian,commercial_transport,1953,,,Imperial War Museum Duxford,on_display

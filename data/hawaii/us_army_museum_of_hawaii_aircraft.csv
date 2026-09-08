@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Bell,AH-1,S,67-15796,Cobra,,rotary_wing,,military,ground_attack,,built as an AH-1G and reconfigured to S standard with TOW launchers; displayed on the museum rooftop plaza,c/n 20460; AH1,U.S. Army Museum of Hawaii,on_display
+Bell,AH-1,S,67-15796,Cobra,,rotary_wing,,military,ground_attack,,built as an AH-1G and reconfigured to S standard with TOW launchers; displayed on the museum rooftop plaza,c/n 20460; AH1; AH1S,U.S. Army Museum of Hawaii,on_display

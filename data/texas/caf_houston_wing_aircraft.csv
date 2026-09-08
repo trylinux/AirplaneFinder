@@ -1,8 +1,8 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Vultee,BT-13,A,N27003,Valiant,,fixed_wing,monoplane,military,trainer,1942,standard category with a P&W R-985-AN-1,msn 5017; BT13,CAF Houston Wing,on_display
-Lockheed,C-60,A,,Lodestar,Goodtime Gal,fixed_wing,monoplane,military,transport,1943,configured as a paratroop transport complete with jump lights and static-line hookup; registration not established,C60,CAF Houston Wing,on_display
+Vultee,BT-13,A,N27003,Valiant,,fixed_wing,monoplane,military,trainer,1942,standard category with a P&W R-985-AN-1,msn 5017; BT13; BT13A,CAF Houston Wing,on_display
+Lockheed,C-60,A,,Lodestar,Goodtime Gal,fixed_wing,monoplane,military,transport,1943,configured as a paratroop transport complete with jump lights and static-line hookup; registration not established,C60; C60A,CAF Houston Wing,on_display
 North American,AT-6,,,Texan,Ace in the Hole,fixed_wing,monoplane,military,trainer,,its former registration N97907 is deregistered so the current number is not established,AT6,CAF Houston Wing,on_display
 Naval Aircraft Factory,N3N,,,Yellow Peril,,fixed_wing,biplane,military,trainer,,registration not established,,CAF Houston Wing,on_display
-Fairchild,PT-19,A,,Cornell,,fixed_wing,monoplane,military,trainer,,registration not established,PT19,CAF Houston Wing,on_display
+Fairchild,PT-19,A,,Cornell,,fixed_wing,monoplane,military,trainer,,registration not established,PT19; PT19A,CAF Houston Wing,on_display
 Ryan,L-17,,,Navion,,fixed_wing,monoplane,military,utility,,under maintenance; registration not established,L17,CAF Houston Wing,under_restoration
 Aero Vodochody,L-39,,,Albatros,,fixed_wing,monoplane,military,trainer,,fuselage and nose section display only; serial not established,L39,CAF Houston Wing,on_display

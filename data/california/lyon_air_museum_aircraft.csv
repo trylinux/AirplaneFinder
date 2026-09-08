@@ -1,10 +1,10 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-North American,P-51,D,,Mustang,Sierra Sue II,fixed_wing,monoplane,military,fighter,1944,,P-51; Mustang; P51,Lyon Air Museum,on_display
-Boeing,PT-13,D,42-17698,Kaydet,,fixed_wing,biplane,military,trainer,1944,,PT-13; Kaydet; Stearman; PT13,Lyon Air Museum,on_display
-Boeing,B-17,G,44-83563,Flying Fortress,Fuddy Duddy,fixed_wing,monoplane,military,bomber,1945,,B-17; Flying Fortress; B17,Lyon Air Museum,on_display
-Cessna,O-1,E,,Bird Dog,,fixed_wing,monoplane,military,recon,,,O-1; L-19; Bird Dog; O1; L19,Lyon Air Museum,on_display
-Douglas,A-26,B,44-34538,Invader,Feeding Frenzy,fixed_wing,monoplane,military,ground_attack,1945,,A-26; B-26; Invader; A26; B26,Lyon Air Museum,on_display
-Douglas,C-47,B,44-76791,Skytrain,Willa Dean,fixed_wing,monoplane,military,transport,,,C-47; Skytrain; Dakota; C47,Lyon Air Museum,on_display
+North American,P-51,D,,Mustang,Sierra Sue II,fixed_wing,monoplane,military,fighter,1944,,P-51; Mustang; P51; P51D,Lyon Air Museum,on_display
+Boeing,PT-13,D,42-17698,Kaydet,,fixed_wing,biplane,military,trainer,1944,,PT-13; Kaydet; Stearman; PT13; PT13D,Lyon Air Museum,on_display
+Boeing,B-17,G,44-83563,Flying Fortress,Fuddy Duddy,fixed_wing,monoplane,military,bomber,1945,,B-17; Flying Fortress; B17; B17G,Lyon Air Museum,on_display
+Cessna,O-1,E,,Bird Dog,,fixed_wing,monoplane,military,recon,,,O-1; L-19; Bird Dog; O1; L19; O1E,Lyon Air Museum,on_display
+Douglas,A-26,B,44-34538,Invader,Feeding Frenzy,fixed_wing,monoplane,military,ground_attack,1945,,A-26; B-26; Invader; A26; B26; A26B,Lyon Air Museum,on_display
+Douglas,C-47,B,44-76791,Skytrain,Willa Dean,fixed_wing,monoplane,military,transport,,,C-47; Skytrain; Dakota; C47; C47B,Lyon Air Museum,on_display
 Douglas,DC-3,,42-100931,,Flagship Orange County,fixed_wing,monoplane,civilian,commercial_transport,,,DC-3; C-47A; DC3; C47A,Lyon Air Museum,on_display
-North American,AT-6,F,,Texan,,fixed_wing,monoplane,military,trainer,1945,,AT-6; SNJ-6; Texan; Harvard; AT6; SNJ6,Lyon Air Museum,on_display
-North American,B-25,J,44-29465,Mitchell,Guardian of Freedom,fixed_wing,monoplane,military,bomber,,,B-25; Mitchell; B25,Lyon Air Museum,on_display
+North American,AT-6,F,,Texan,,fixed_wing,monoplane,military,trainer,1945,,AT-6; SNJ-6; Texan; Harvard; AT6; SNJ6; AT6F,Lyon Air Museum,on_display
+North American,B-25,J,44-29465,Mitchell,Guardian of Freedom,fixed_wing,monoplane,military,bomber,,,B-25; Mitchell; B25; B25J,Lyon Air Museum,on_display

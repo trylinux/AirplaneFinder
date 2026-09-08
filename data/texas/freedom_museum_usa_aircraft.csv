@@ -1,6 +1,6 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Republic,F-105,D,62-4353,Thunderchief,Billie Fern,fixed_wing,monoplane,military,ground_attack,1963,redesignated GF-105D in 1983; Vietnam combat veteran; carried Billie Fern and No Guts No Glory nose art; retired at 4769 flying hours; placed here by June 2012,c/n D552; F105,Freedom Museum USA,on_display
-Bell,UH-1,H,67-17859,Iroquois,,rotary_wing,,military,utility,,outdoor static,UH1,Freedom Museum USA,on_display
-McDonnell Douglas,F-4,E,67-0384,Phantom II,,fixed_wing,monoplane,military,fighter,1968,marked HO,F4,Freedom Museum USA,on_display
-North American,B-25,D,43-3308,Mitchell,,fixed_wing,monoplane,military,bomber,1943,completeness warrants verification at a small donation-funded museum,B25,Freedom Museum USA,on_display
-Sikorsky,HH-3,F,1471,Pelican,,rotary_wing,,military,search_rescue,,US Coast Guard serial; amphibious search and rescue helicopter,HH3,Freedom Museum USA,on_display
+Republic,F-105,D,62-4353,Thunderchief,Billie Fern,fixed_wing,monoplane,military,ground_attack,1963,redesignated GF-105D in 1983; Vietnam combat veteran; carried Billie Fern and No Guts No Glory nose art; retired at 4769 flying hours; placed here by June 2012,c/n D552; F105; F105D,Freedom Museum USA,on_display
+Bell,UH-1,H,67-17859,Iroquois,,rotary_wing,,military,utility,,outdoor static,UH1; UH1H,Freedom Museum USA,on_display
+McDonnell Douglas,F-4,E,67-0384,Phantom II,,fixed_wing,monoplane,military,fighter,1968,marked HO,F4; F4E,Freedom Museum USA,on_display
+North American,B-25,D,43-3308,Mitchell,,fixed_wing,monoplane,military,bomber,1943,completeness warrants verification at a small donation-funded museum,B25; B25D,Freedom Museum USA,on_display
+Sikorsky,HH-3,F,1471,Pelican,,rotary_wing,,military,search_rescue,,US Coast Guard serial; amphibious search and rescue helicopter,HH3; HH3F,Freedom Museum USA,on_display

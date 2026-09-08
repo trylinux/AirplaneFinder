@@ -1,4 +1,4 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Sikorsky,HH-52,A,1370,Seaguard,,rotary_wing,,military,search_rescue,,US Coast Guard 1370,c/n 62-048; HH52,Freedom Park,on_display
-Vought,A-7,D,69-6191,Corsair II,,fixed_wing,monoplane,military,ground_attack,,recorded as an A-7D Plus,A7,Freedom Park,on_display
-Douglas,A-4,C,149618,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,US Navy BuNo 149618; mounted on an iron pedestal,A4,Freedom Park,on_display
+Sikorsky,HH-52,A,1370,Seaguard,,rotary_wing,,military,search_rescue,,US Coast Guard 1370,c/n 62-048; HH52; HH52A,Freedom Park,on_display
+Vought,A-7,D,69-6191,Corsair II,,fixed_wing,monoplane,military,ground_attack,,recorded as an A-7D Plus,A7; A7D,Freedom Park,on_display
+Douglas,A-4,C,149618,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,US Navy BuNo 149618; mounted on an iron pedestal,A4; A4C,Freedom Park,on_display

@@ -1,8 +1,8 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Vultee,BT-13,A,41-10683,Valiant,,fixed_wing,monoplane,military,trainer,,buzz number 683; photo-confirmed on site May 2024,BT13,Vance AFB Air Park,on_display
-North American,AT-6,D,42-44660,Texan,,fixed_wing,monoplane,military,trainer,,buzz number TA-660; photo-confirmed on site May 2024,c/n 88-14974; AT6,Vance AFB Air Park,on_display
-North American,T-28,A,49-1689,Trojan,,fixed_wing,monoplane,military,trainer,,buzz number TL-689; photo-confirmed on site May 2024,c/n 159-201; T28,Vance AFB Air Park,on_display
-Lockheed,T-33,A,51-4301,Shooting Star,,fixed_wing,monoplane,military,trainer,,buzz number TR-301; on base since at least 1985; photo-confirmed on site May 2024,c/n 580-5596; T33,Vance AFB Air Park,on_display
-Cessna,T-41,A,65-5168,Mescalero,City of Enid,fixed_wing,monoplane,military,trainer,,wears the civil registration N5168F; one source gives N5111F; photo-confirmed on site May 2024,T41,Vance AFB Air Park,on_display
-Cessna,T-37,B,68-8050,Tweet,,fixed_wing,monoplane,military,trainer,,displayed painted as 68-8041; tail code VN; photo-confirmed on site May 2024,c/n 41155; T37,Vance AFB Air Park,on_display
-Northrop,T-38,A,65-10325,Talon,,fixed_wing,monoplane,military,trainer,,photo-confirmed on site 25 September 2025; moved from the west gate to the main gate air park in 2014,T38,Vance AFB Air Park,on_display
+Vultee,BT-13,A,41-10683,Valiant,,fixed_wing,monoplane,military,trainer,,buzz number 683; photo-confirmed on site May 2024,BT13; BT13A,Vance AFB Air Park,on_display
+North American,AT-6,D,42-44660,Texan,,fixed_wing,monoplane,military,trainer,,buzz number TA-660; photo-confirmed on site May 2024,c/n 88-14974; AT6; AT6D,Vance AFB Air Park,on_display
+North American,T-28,A,49-1689,Trojan,,fixed_wing,monoplane,military,trainer,,buzz number TL-689; photo-confirmed on site May 2024,c/n 159-201; T28; T28A,Vance AFB Air Park,on_display
+Lockheed,T-33,A,51-4301,Shooting Star,,fixed_wing,monoplane,military,trainer,,buzz number TR-301; on base since at least 1985; photo-confirmed on site May 2024,c/n 580-5596; T33; T33A,Vance AFB Air Park,on_display
+Cessna,T-41,A,65-5168,Mescalero,City of Enid,fixed_wing,monoplane,military,trainer,,wears the civil registration N5168F; one source gives N5111F; photo-confirmed on site May 2024,T41; T41A,Vance AFB Air Park,on_display
+Cessna,T-37,B,68-8050,Tweet,,fixed_wing,monoplane,military,trainer,,displayed painted as 68-8041; tail code VN; photo-confirmed on site May 2024,c/n 41155; T37; T37B,Vance AFB Air Park,on_display
+Northrop,T-38,A,65-10325,Talon,,fixed_wing,monoplane,military,trainer,,photo-confirmed on site 25 September 2025; moved from the west gate to the main gate air park in 2014,T38; T38A,Vance AFB Air Park,on_display

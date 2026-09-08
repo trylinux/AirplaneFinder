@@ -1,15 +1,15 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Lockheed,F-80,C,45-8557,Shooting Star,,fixed_wing,monoplane,military,fighter,1948,wears 9853 and FT-853; sub-variant disputed between F-80C and ex-Navy TO-1,c/n 080-1771; F80,Holloman AFB Heritage Park,on_display
-Republic,F-84,F,51-9396,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,1953,buzz number FS-396,F-84F-25-GK; F84,Holloman AFB Heritage Park,on_display
-North American,F-100,D,56-3220,Super Sabre,,fixed_wing,monoplane,military,ground_attack,1957,buzz number FW-220,c/n 235-318; F100,Holloman AFB Heritage Park,on_display
-Lockheed,F-104,C,56-0886,Starfighter,,fixed_wing,monoplane,military,fighter,1957,wears 60764 and FG-764 which are not its serial,c/n 1174; F104,Holloman AFB Heritage Park,on_display
-Republic,F-105,D,61-0145,Thunderchief,,fixed_wing,monoplane,military,ground_attack,1962,,c/n D340; F105,Holloman AFB Heritage Park,on_display
-Convair,F-106,A,56-0454,Delta Dart,,fixed_wing,monoplane,military,fighter,1957,QF-106A target drone conversion; code AD102,c/n 8-24-004; AD102; F106,Holloman AFB Heritage Park,on_display
-McDonnell,F-4,C,63-7537,Phantom II,,fixed_wing,monoplane,military,fighter,1964,code HO; wears 63-535; often misreported as a QF-4E,c/n 0564; 63-535; F4,Holloman AFB Heritage Park,on_display
-Northrop,AT-38,B,60-0576,Talon,,fixed_wing,monoplane,military,trainer,1961,code HM,c/n N.1549; AT38,Holloman AFB Heritage Park,on_display
-McDonnell Douglas,F-15,A,76-0037,Eagle,,fixed_wing,monoplane,military,fighter,1977,code HO,c/n 0219/A189; F15,Holloman AFB Heritage Park,on_display
-Lockheed,F-117,A,79-10782,Nighthawk,Scorpion 3,fixed_wing,monoplane,military,ground_attack,1982,YF-117A c/n FSD-3; one of five Senior Trend full-scale development jets; returned to the park July 2014; wears markings of 85-0793 or 85-816 depending on repaint,F117,Holloman AFB Heritage Park,on_display
+Lockheed,F-80,C,45-8557,Shooting Star,,fixed_wing,monoplane,military,fighter,1948,wears 9853 and FT-853; sub-variant disputed between F-80C and ex-Navy TO-1,c/n 080-1771; F80; F80C,Holloman AFB Heritage Park,on_display
+Republic,F-84,F,51-9396,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,1953,buzz number FS-396,F-84F-25-GK; F84; F84F,Holloman AFB Heritage Park,on_display
+North American,F-100,D,56-3220,Super Sabre,,fixed_wing,monoplane,military,ground_attack,1957,buzz number FW-220,c/n 235-318; F100; F100D,Holloman AFB Heritage Park,on_display
+Lockheed,F-104,C,56-0886,Starfighter,,fixed_wing,monoplane,military,fighter,1957,wears 60764 and FG-764 which are not its serial,c/n 1174; F104; F104C,Holloman AFB Heritage Park,on_display
+Republic,F-105,D,61-0145,Thunderchief,,fixed_wing,monoplane,military,ground_attack,1962,,c/n D340; F105; F105D,Holloman AFB Heritage Park,on_display
+Convair,F-106,A,56-0454,Delta Dart,,fixed_wing,monoplane,military,fighter,1957,QF-106A target drone conversion; code AD102,c/n 8-24-004; AD102; F106; F106A,Holloman AFB Heritage Park,on_display
+McDonnell,F-4,C,63-7537,Phantom II,,fixed_wing,monoplane,military,fighter,1964,code HO; wears 63-535; often misreported as a QF-4E,c/n 0564; 63-535; F4; F4C,Holloman AFB Heritage Park,on_display
+Northrop,AT-38,B,60-0576,Talon,,fixed_wing,monoplane,military,trainer,1961,code HM,c/n N.1549; AT38; AT38B,Holloman AFB Heritage Park,on_display
+McDonnell Douglas,F-15,A,76-0037,Eagle,,fixed_wing,monoplane,military,fighter,1977,code HO,c/n 0219/A189; F15; F15A,Holloman AFB Heritage Park,on_display
+Lockheed,F-117,A,79-10782,Nighthawk,Scorpion 3,fixed_wing,monoplane,military,ground_attack,1982,YF-117A c/n FSD-3; one of five Senior Trend full-scale development jets; returned to the park July 2014; wears markings of 85-0793 or 85-816 depending on repaint,F117; F117A,Holloman AFB Heritage Park,on_display
 Panavia,Tornado,IDS,43+75,Tornado,,fixed_wing,monoplane,military,ground_attack,1983,ex-German Marineflieger; last flight July 2012 at 4324 hours; unveiled in Heritage Park 19 September 2014; not a Tornado GR1,,Holloman AFB Heritage Park,on_display
-General Atomics,MQ-9,A,02-4001,Reaper,,fixed_wing,monoplane,military,drone,,unmanned,MQ9,Holloman AFB Heritage Park,on_display
-General Atomics,MQ-1,B,03-3108,Predator,,fixed_wing,monoplane,military,drone,,unmanned; code HO; Aerial Visuals lists this as MQ-1L 03-0108 which conflicts,MQ1,Holloman AFB Heritage Park,on_display
-North American,F-86,E,51-13028,Sabre,,fixed_wing,monoplane,military,fighter,1952,buzz number FU-028; displayed in the 49th FW area rather than Heritage Park,c/n 172-319; F86,Holloman AFB Heritage Park,on_display
+General Atomics,MQ-9,A,02-4001,Reaper,,fixed_wing,monoplane,military,drone,,unmanned,MQ9; MQ9A,Holloman AFB Heritage Park,on_display
+General Atomics,MQ-1,B,03-3108,Predator,,fixed_wing,monoplane,military,drone,,unmanned; code HO; Aerial Visuals lists this as MQ-1L 03-0108 which conflicts,MQ1; MQ1B,Holloman AFB Heritage Park,on_display
+North American,F-86,E,51-13028,Sabre,,fixed_wing,monoplane,military,fighter,1952,buzz number FU-028; displayed in the 49th FW area rather than Heritage Park,c/n 172-319; F86; F86E,Holloman AFB Heritage Park,on_display

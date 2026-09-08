@@ -1,4 +1,4 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Douglas,A-26,B,43-22444,Invader,,fixed_wing,monoplane,military,bomber,,displayed marked as 44-34156; inside the base fence rather than in the public air park,A26,Vance AFB Base Displays,on_display
-Republic,F-105,D,62-4242,Thunderchief,,fixed_wing,monoplane,military,fighter,,NMUSAF loan to the 71st FTW; Southeast Asia combat veteran 1967-1970; inside the base fence,F-105D-30-RE; c/n D441; F105,Vance AFB Base Displays,on_display
-Fairchild Republic,A-10,A,,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,,NMUSAF loan; displayed by the softball fields inside the base fence; serial not published,A10,Vance AFB Base Displays,on_display
+Douglas,A-26,B,43-22444,Invader,,fixed_wing,monoplane,military,bomber,,displayed marked as 44-34156; inside the base fence rather than in the public air park,A26; A26B,Vance AFB Base Displays,on_display
+Republic,F-105,D,62-4242,Thunderchief,,fixed_wing,monoplane,military,fighter,,NMUSAF loan to the 71st FTW; Southeast Asia combat veteran 1967-1970; inside the base fence,F-105D-30-RE; c/n D441; F105; F105D,Vance AFB Base Displays,on_display
+Fairchild Republic,A-10,A,,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,,NMUSAF loan; displayed by the softball fields inside the base fence; serial not published,A10; A10A,Vance AFB Base Displays,on_display

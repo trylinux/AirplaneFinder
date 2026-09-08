@@ -1,13 +1,13 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
 Aeronca,C-2,,,Flying Bathtub,,fixed_wing,monoplane,civilian,private,1929,,C2,Museum of Flight,on_display
-Aeronca,L-3,B,N47427,Grasshopper,,fixed_wing,monoplane,military,recon,1943,,O-58B; L3; O58B,Museum of Flight,on_display
+Aeronca,L-3,B,N47427,Grasshopper,,fixed_wing,monoplane,military,recon,1943,,O-58B; L3; O58B; L3B,Museum of Flight,on_display
 Albatros,D.Va,,NX36DV,,,fixed_wing,biplane,military,fighter,1984,reproduction,,Museum of Flight,on_display
 Alexander,Eaglerock,,N4648,,,fixed_wing,biplane,civilian,private,1928,on loan to Seattle-Tacoma International Airport,,Museum of Flight,on_display
 Antonov,An-2,,N61SL,Colt,Polar 1,fixed_wing,biplane,civilian,utility,1977,,Annushka; An2,Museum of Flight,on_display
 Grumman,Lunar Module,,,Ascent Stage,,spacecraft,,civilian,space,,Apollo 17 mock-up,,Museum of Flight,on_display
 Aviatik,D.I,,101.4,Berg Scout,,fixed_wing,biplane,military,fighter,1918,,,Museum of Flight,on_display
-Beech,C-45,H,51-11696,Expeditor,,fixed_wing,monoplane,military,trainer,1942,,D18S; C45,Museum of Flight,on_display
-Bell,UH-1,H,69-15140,Huey,,rotary_wing,,military,utility,,,Iroquois; UH1,Museum of Flight,on_display
+Beech,C-45,H,51-11696,Expeditor,,fixed_wing,monoplane,military,trainer,1942,,D18S; C45; C45H,Museum of Flight,on_display
+Bell,UH-1,H,69-15140,Huey,,rotary_wing,,military,utility,,,Iroquois; UH1; UH1H,Museum of Flight,on_display
 Boeing,Model 100,,N872H,,,fixed_wing,biplane,civilian,fighter,1928,,P-12; F4B; P12,Museum of Flight,on_display
 Boeing,Model 247,D,N13347,,,fixed_wing,monoplane,civilian,commercial_transport,1933,,,Museum of Flight,on_display
 Boeing,727,100,N7001U,,,fixed_wing,monoplane,civilian,commercial_transport,1963,,727-022,Museum of Flight,on_display
@@ -16,29 +16,29 @@ Boeing,747,121,N7470,Jumbo Jet,RA001,fixed_wing,monoplane,civilian,test,1969,,,M
 Boeing,787,8,,Dreamliner,,fixed_wing,monoplane,civilian,test,2009,,ZA003,Museum of Flight,on_display
 Boeing,Model 80,A-1,N224M,,,fixed_wing,biplane,civilian,commercial_transport,1929,,,Museum of Flight,on_display
 Boeing,B&W,1A,N1916,,,fixed_wing,biplane,civilian,other,1966,reproduction,,Museum of Flight,on_display
-Boeing,B-17,F,42-29782,Flying Fortress,Boeing Bee,fixed_wing,monoplane,military,bomber,1943,,N17W; B17,Museum of Flight,on_display
+Boeing,B-17,F,42-29782,Flying Fortress,Boeing Bee,fixed_wing,monoplane,military,bomber,1943,,N17W; B17; B17F,Museum of Flight,on_display
 Boeing,B-29,,,Superfortress,T-Square 54,fixed_wing,monoplane,military,bomber,,,B29,Museum of Flight,on_display
-Boeing,B-52,G,59-2584,Stratofortress,Midnight Express,fixed_wing,monoplane,military,bomber,,,B52,Museum of Flight,on_display
-Boeing,CH-47,D,91-00261,Chinook,My Old Lady,rotary_wing,,military,transport,,,CH47,Museum of Flight,on_display
+Boeing,B-52,G,59-2584,Stratofortress,Midnight Express,fixed_wing,monoplane,military,bomber,,,B52; B52G,Museum of Flight,on_display
+Boeing,CH-47,D,91-00261,Chinook,My Old Lady,rotary_wing,,military,transport,,,CH47; CH47D,Museum of Flight,on_display
 Boeing,Inertial Upper Stage,,,,,spacecraft,,civilian,space,1982,,IUS,Museum of Flight,on_display
 Boeing,Lunar Roving Vehicle,,,,,spacecraft,,civilian,space,1971,LRV mock-up,,Museum of Flight,on_display
 Boeing,Model 40,B,,,,fixed_wing,biplane,civilian,freighter,2007,reproduction,,Museum of Flight,on_display
-Boeing,B-47,E,51-7066,Stratojet,,fixed_wing,monoplane,military,bomber,1953,,WB-47E; B47; WB47E,Museum of Flight,on_display
+Boeing,B-47,E,51-7066,Stratojet,,fixed_wing,monoplane,military,bomber,1953,,WB-47E; B47; WB47E; B47E,Museum of Flight,on_display
 Bowers,Fly Baby,1A,N4339,,,fixed_wing,monoplane,civilian,private,1971,,,Museum of Flight,on_display
 Bowers,Fly Baby,,N500F,,,fixed_wing,monoplane,civilian,private,1962,prototype,,Museum of Flight,under_restoration
 Bowlus,BA-100,,N25605,Baby Albatross,,fixed_wing,monoplane,civilian,other,1940,,BA100,Museum of Flight,under_restoration
-Canadair,CL-13,B,23363,Sabre,,fixed_wing,monoplane,military,fighter,1954,,N8686F; Mk.6; CL13,Museum of Flight,on_display
+Canadair,CL-13,B,23363,Sabre,,fixed_wing,monoplane,military,fighter,1954,,N8686F; Mk.6; CL13; CL13B,Museum of Flight,on_display
 Caproni,Ca.20,,,,,fixed_wing,monoplane,military,fighter,1914,only one built,,Museum of Flight,on_display
 Cessna,CG-2,,N178V,,,fixed_wing,monoplane,civilian,other,1930,,CG2,Museum of Flight,on_display
-Cessna,O-2,A,67-21363,Super Skymaster,,fixed_wing,monoplane,military,recon,,,N18BB; O2,Museum of Flight,under_restoration
+Cessna,O-2,A,67-21363,Super Skymaster,,fixed_wing,monoplane,military,recon,,,N18BB; O2; O2A,Museum of Flight,under_restoration
 Chanute-Herring,Biplane Glider,,,,,fixed_wing,biplane,civilian,experimental,1996,reproduction of 1896 design,,Museum of Flight,on_display
 Aerospatiale,Concorde,,G-BOAG,,Alpha Golf,fixed_wing,monoplane,civilian,commercial_transport,1978,Aerospatiale/BAC,,Museum of Flight,on_display
-Curtiss,JN-4,D,,Jenny,,fixed_wing,biplane,military,trainer,1917,reproduction,JN4,Museum of Flight,on_display
-Curtiss,P-40,N,44-4192,Warhawk,O'Reilly's Daughter,fixed_wing,monoplane,military,fighter,1944,,NL10626; P40,Museum of Flight,on_display
+Curtiss,JN-4,D,,Jenny,,fixed_wing,biplane,military,trainer,1917,reproduction,JN4; JN4D,Museum of Flight,on_display
+Curtiss,P-40,N,44-4192,Warhawk,O'Reilly's Daughter,fixed_wing,monoplane,military,fighter,1944,,NL10626; P40; P40N,Museum of Flight,on_display
 Curtiss-Robertson,Robin,C-1,N979K,,The Newsboy,fixed_wing,monoplane,civilian,private,1929,,,Museum of Flight,on_display
 de Havilland,Comet,4C,N888WA,,,fixed_wing,monoplane,civilian,commercial_transport,1959,,XA-NAR,Museum of Flight,under_restoration
-DG Flugzeugbau,DG-500,M,,Perlan,,fixed_wing,monoplane,civilian,experimental,1995,,DG500,Museum of Flight,on_display
-Douglas,A-4,F,154180,Skyhawk,,fixed_wing,monoplane,military,ground_attack,1966,,A4,Museum of Flight,on_display
+DG Flugzeugbau,DG-500,M,,Perlan,,fixed_wing,monoplane,civilian,experimental,1995,,DG500; DG500M,Museum of Flight,on_display
+Douglas,A-4,F,154180,Skyhawk,,fixed_wing,monoplane,military,ground_attack,1966,,A4; A4F,Museum of Flight,on_display
 Douglas,DC-2,,N1934D,,,fixed_wing,monoplane,civilian,commercial_transport,1934,,DC2,Museum of Flight,on_display
 Douglas,DC-3,,N138D,,,fixed_wing,monoplane,civilian,commercial_transport,1940,,DC3,Museum of Flight,on_display
 Fairchild,Model 24,W-41A,N37161,,,fixed_wing,monoplane,civilian,private,1941,,,Museum of Flight,on_display
@@ -52,12 +52,12 @@ General Motors,FM,2,74512,Wildcat,,fixed_wing,monoplane,military,fighter,1944,,F
 Goodyear,F2G,1,88454,Super Corsair,,fixed_wing,monoplane,military,fighter,1945,,NX4324,Museum of Flight,under_restoration
 Goodyear,FG,1D,88382,Corsair,,fixed_wing,monoplane,military,fighter,1945,,FG1D,Museum of Flight,on_display
 Granville Brothers,Gee Bee,Z,NR77V,Super Sportster,City of Springfield,fixed_wing,monoplane,civilian,other,1978,reproduction,Turner T4,Museum of Flight,on_display
-Grumman,A-6,E,158794,Intruder,,fixed_wing,monoplane,military,ground_attack,1970,,A6,Museum of Flight,on_display
-Grumman,EA-6,B,161884,Prowler,,fixed_wing,monoplane,military,electronic_warfare,1971,,EA6,Museum of Flight,on_display
-Grumman,F-14,A,160382,Tomcat,,fixed_wing,monoplane,military,fighter,1977,,F14,Museum of Flight,on_display
+Grumman,A-6,E,158794,Intruder,,fixed_wing,monoplane,military,ground_attack,1970,,A6; A6E,Museum of Flight,on_display
+Grumman,EA-6,B,161884,Prowler,,fixed_wing,monoplane,military,electronic_warfare,1971,,EA6; EA6B,Museum of Flight,on_display
+Grumman,F-14,A,160382,Tomcat,,fixed_wing,monoplane,military,fighter,1977,,F14; F14A,Museum of Flight,on_display
 Grumman,F9F,8,31232,Cougar,,fixed_wing,monoplane,military,fighter,1953,,,Museum of Flight,on_display
 Heath,Parasol,,,,,fixed_wing,monoplane,civilian,private,2008,reproduction,,Museum of Flight,on_display
-Howard,DGA-15,P,N52947,,,fixed_wing,monoplane,civilian,private,1946,,GH-1; DGA15; GH1,Museum of Flight,in_storage
+Howard,DGA-15,P,N52947,,,fixed_wing,monoplane,civilian,private,1946,,GH-1; DGA15; GH1; DGA15P,Museum of Flight,in_storage
 Insitu,Aerosonde,,,,Laima,fixed_wing,monoplane,civilian,drone,1998,,,Museum of Flight,on_display
 Lamson,L-106,,N924LR,Alcor,,fixed_wing,monoplane,civilian,experimental,1972,,L106,Museum of Flight,on_display
 LearAvia,Lear Fan,2100,N626BL,,,fixed_wing,monoplane,civilian,experimental,1980,,,Museum of Flight,on_display
@@ -65,40 +65,40 @@ Learjet,Model 23,,N154AG,,,fixed_wing,monoplane,civilian,private,1964,,,Museum o
 Letov,LF-107,,N2170D,Lunak,,fixed_wing,monoplane,civilian,other,1949,,LF107,Museum of Flight,under_restoration
 Lilienthal,Glider,,,,,fixed_wing,monoplane,civilian,experimental,1987,reproduction of 1893 design,,Museum of Flight,on_display
 Lockheed,Model 1049,G,CF-TGE,Super Constellation,,fixed_wing,monoplane,civilian,commercial_transport,1954,,,Museum of Flight,on_display
-Lockheed,D-21,B,90-0510,,,fixed_wing,monoplane,military,drone,1964,,D21,Museum of Flight,on_display
-Lockheed,F-104,C,,Starfighter,,fixed_wing,monoplane,military,fighter,1959,,N56-934; F104,Museum of Flight,on_display
+Lockheed,D-21,B,90-0510,,,fixed_wing,monoplane,military,drone,1964,,D21; D21B,Museum of Flight,on_display
+Lockheed,F-104,C,,Starfighter,,fixed_wing,monoplane,military,fighter,1959,,N56-934; F104; F104C,Museum of Flight,on_display
 Lockheed,JetStar,,N329J,,,fixed_wing,monoplane,civilian,experimental,1957,prototype,CL-329; CL329,Museum of Flight,under_restoration
 Lockheed,M-21,,60-6940,Blackbird,,fixed_wing,monoplane,military,recon,1963,,M21,Museum of Flight,on_display
-Lockheed Martin,RQ-3,A,,Dark Star,,fixed_wing,monoplane,military,drone,1996,,Tier III Minus; RQ3,Museum of Flight,on_display
+Lockheed Martin,RQ-3,A,,Dark Star,,fixed_wing,monoplane,military,drone,1996,,Tier III Minus; RQ3; RQ3A,Museum of Flight,on_display
 Lockheed,Model 10,E,N72GT,Electra,,fixed_wing,monoplane,civilian,commercial_transport,1935,,NC14900,Museum of Flight,on_display
-Lockheed,P-38,L,44-53097,Lightning,,fixed_wing,monoplane,military,fighter,1944,,NL3JB; P38,Museum of Flight,on_display
-Lockheed,YO-3,A,69-18005,Quiet Star,,fixed_wing,monoplane,military,recon,1968,,YO3,Museum of Flight,on_display
+Lockheed,P-38,L,44-53097,Lightning,,fixed_wing,monoplane,military,fighter,1944,,NL3JB; P38; P38L,Museum of Flight,on_display
+Lockheed,YO-3,A,69-18005,Quiet Star,,fixed_wing,monoplane,military,recon,1968,,YO3; YO3A,Museum of Flight,on_display
 Messerschmitt,Bf 109,E-3,NX109J,,,fixed_wing,monoplane,military,fighter,1940,composite airframe with HA-1112 components,,Museum of Flight,on_display
-North American,P-51,D,44-72423,Mustang,,fixed_wing,monoplane,military,fighter,1944,identity stated as likely,P51,Museum of Flight,on_display
+North American,P-51,D,44-72423,Mustang,,fixed_wing,monoplane,military,fighter,1944,identity stated as likely,P51; P51D,Museum of Flight,on_display
 Nieuport,24,bis,N24RL,,Zigomar,fixed_wing,biplane,military,fighter,1992,reproduction,,Museum of Flight,on_display
 Nieuport,27,,N5597M,,,fixed_wing,biplane,military,fighter,1980,reproduction,,Museum of Flight,on_display
 Nieuport,28,C.1,14,,,fixed_wing,biplane,military,fighter,1918,restored original,,Museum of Flight,on_display
 SPAD,XIII,,NX3883F,,,fixed_wing,biplane,military,fighter,1917,reproduction,,Museum of Flight,on_display
 Sopwith,Triplane,,N38057,,Black Prince,fixed_wing,triplane,military,fighter,1977,reproduction,,Museum of Flight,on_display
 Sopwith,Camel,F.1,NX6330,,,fixed_wing,biplane,military,fighter,1979,reproduction,,Museum of Flight,on_display
-Northrop,YF-5,A,59-4987,Freedom Fighter,,fixed_wing,monoplane,military,fighter,1959,N-156F prototype,YF5,Museum of Flight,on_display
+Northrop,YF-5,A,59-4987,Freedom Fighter,,fixed_wing,monoplane,military,fighter,1959,N-156F prototype,YF5; YF5A,Museum of Flight,on_display
 Vought,F8U,XF8U-1,138899,Crusader,,fixed_wing,monoplane,military,fighter,1955,,XF-8A; XF8A,Museum of Flight,on_display
-Mikoyan-Gurevich,MiG-17,F,,,,fixed_wing,monoplane,military,fighter,1952,ex-Royal Moroccan Air Force,Fresco-C; MiG17,Museum of Flight,on_display
-Mikoyan-Gurevich,MiG-21,PFM,5411,,,fixed_wing,monoplane,military,fighter,1967,,Fishbed-F; MiG21,Museum of Flight,on_display
-Mikoyan-Gurevich,MiG-15,bis,124079,,,fixed_wing,monoplane,military,fighter,1950,ex-PLAAF,MiG15,Museum of Flight,on_display
-McDonnell,F-4,C,64-0776,Phantom II,,fixed_wing,monoplane,military,fighter,1965,on loan from NMUSAF,F4,Museum of Flight,on_display
+Mikoyan-Gurevich,MiG-17,F,,,,fixed_wing,monoplane,military,fighter,1952,ex-Royal Moroccan Air Force,Fresco-C; MiG17; MiG17F,Museum of Flight,on_display
+Mikoyan-Gurevich,MiG-21,PFM,5411,,,fixed_wing,monoplane,military,fighter,1967,,Fishbed-F; MiG21; MiG21PFM,Museum of Flight,on_display
+Mikoyan-Gurevich,MiG-15,bis,124079,,,fixed_wing,monoplane,military,fighter,1950,ex-PLAAF,MiG15; MiG15bis,Museum of Flight,on_display
+McDonnell,F-4,C,64-0776,Phantom II,,fixed_wing,monoplane,military,fighter,1965,on loan from NMUSAF,F4; F4C,Museum of Flight,on_display
 McDonnell Douglas,F/A-18,A,163106,Hornet,,fixed_wing,monoplane,military,fighter,1978,ex-Blue Angels; on loan from NNAM,,Museum of Flight,on_display
 Supermarine,Spitfire,Mk.IX,N521R,,,fixed_wing,monoplane,military,fighter,1944,on loan from Apex Foundation,OO-ARF,Museum of Flight,on_display
-Stearman,PT-13,A,N8FL,Kaydet,,fixed_wing,biplane,military,trainer,1937,,PT13,Museum of Flight,on_display
-Stearman,C-3,B,N7550,,,fixed_wing,biplane,civilian,private,1928,,C3,Museum of Flight,on_display
-Sikorsky,HH-52,A,1415,Seaguard,,rotary_wing,,military,search_rescue,1963,,CGNR1415; HH52,Museum of Flight,on_display
+Stearman,PT-13,A,N8FL,Kaydet,,fixed_wing,biplane,military,trainer,1937,,PT13; PT13A,Museum of Flight,on_display
+Stearman,C-3,B,N7550,,,fixed_wing,biplane,civilian,private,1928,,C3; C3B,Museum of Flight,on_display
+Sikorsky,HH-52,A,1415,Seaguard,,rotary_wing,,military,search_rescue,1963,,CGNR1415; HH52; HH52A,Museum of Flight,on_display
 Stinson,Model O,,,,,fixed_wing,monoplane,military,trainer,2010,reproduction,,Museum of Flight,on_display
 Royal Aircraft Factory,S.E.5,a,NX910A,,,fixed_wing,biplane,military,fighter,1988,reproduction,,Museum of Flight,on_display
-Republic,P-47,D,NX14519,Thunderbolt,,fixed_wing,monoplane,military,fighter,1942,ex-Bolivian Air Force,P47,Museum of Flight,on_display
+Republic,P-47,D,NX14519,Thunderbolt,,fixed_wing,monoplane,military,fighter,1942,ex-Bolivian Air Force,P47; P47D,Museum of Flight,on_display
 Piper,J-3,C-65,N88023,Cub,,fixed_wing,monoplane,civilian,private,1946,,J3,Museum of Flight,on_display
-Yakovlev,Yak-9,U,,,,fixed_wing,monoplane,military,fighter,1946,reproduction,Yak9,Museum of Flight,on_display
+Yakovlev,Yak-9,U,,,,fixed_wing,monoplane,military,fighter,1946,reproduction,Yak9; Yak9U,Museum of Flight,on_display
 Nakajima,Ki-43,IIIa,,Hayabusa,,fixed_wing,monoplane,military,fighter,2008,reproduction,Oscar; Ki43,Museum of Flight,on_display
-Piasecki,H-21,B,N6794,Workhorse,,rotary_wing,,military,transport,1953,,CH-21B; H21; CH21B,Museum of Flight,under_restoration
+Piasecki,H-21,B,N6794,Workhorse,,rotary_wing,,military,transport,1953,,CH-21B; H21; CH21B; H21B,Museum of Flight,under_restoration
 Taylorcraft,Model A,,,,,fixed_wing,monoplane,civilian,private,1937,,,Museum of Flight,under_restoration
 Rutan,VariViggen,,N27MS,,,fixed_wing,monoplane,civilian,experimental,1972,,Model 27,Museum of Flight,under_restoration
 Ryan,M-1,,N46853,,,fixed_wing,monoplane,civilian,commercial_transport,1926,Ryan Airlines,M1,Museum of Flight,on_display

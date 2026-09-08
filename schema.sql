@@ -112,8 +112,16 @@ CREATE TABLE IF NOT EXISTS aircraft (
     manufacturer    VARCHAR(100) NOT NULL,
     model           VARCHAR(50)  NOT NULL,         -- base designation, e.g. "AH-1", "C-130"
     variant         VARCHAR(50)  DEFAULT NULL,     -- e.g. "D", "J", "H"
+    -- Joins model + variant the way aviation writes it: "SR-71A" not
+    -- "SR-71-A". Three cases -- see join_designation() in models.py, which
+    -- is the readable statement of this rule and must stay in agreement.
     full_designation VARCHAR(100) GENERATED ALWAYS
-                     AS (CONCAT(model, IFNULL(CONCAT('-', variant), ''))) STORED,
+                     AS (CONCAT(model, CASE
+                           WHEN variant IS NULL OR variant = '' THEN ''
+                           WHEN LOCATE(LEFT(variant, 1), '0123456789') > 0 THEN CONCAT('-', variant)
+                           WHEN LOCATE(RIGHT(model, 1), '0123456789') > 0 THEN variant
+                           ELSE CONCAT(' ', variant)
+                         END)) STORED,
     aircraft_type   ENUM('fixed_wing','rotary_wing','lighter_than_air','spacecraft','missile_rocket')
                      NOT NULL DEFAULT 'fixed_wing',
     wing_type       ENUM('monoplane','biplane','triplane') DEFAULT NULL,

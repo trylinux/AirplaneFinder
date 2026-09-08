@@ -1,6 +1,6 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Bell,UH-1,H,66-17113,Iroquois,,rotary_wing,,military,utility,,built as a UH-1D,c/n 9307; UH1,HEARTS Veterans Museum of Texas,on_display
-Bell,UH-1,H,71-20044,Iroquois,,rotary_wing,,military,utility,,,c/n 12868; UH1,HEARTS Veterans Museum of Texas,on_display
-Bell,AH-1,P,77-22748,Cobra,,rotary_wing,,military,ground_attack,,previously held near the Air Mobility Command Museum at Dover AFB,c/n 22086; AH1,HEARTS Veterans Museum of Texas,on_display
-Bell,OH-58,A,N60MP,Kiowa,,rotary_wing,,military,recon,,also catalogued as an OH-58C,OH58,HEARTS Veterans Museum of Texas,on_display
-General Dynamics,F-16,A,81-0789,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,GF-16A ground-instructional airframe; some sources record the serial as 81-0788,F16,HEARTS Veterans Museum of Texas,on_display
+Bell,UH-1,H,66-17113,Iroquois,,rotary_wing,,military,utility,,built as a UH-1D,c/n 9307; UH1; UH1H,HEARTS Veterans Museum of Texas,on_display
+Bell,UH-1,H,71-20044,Iroquois,,rotary_wing,,military,utility,,,c/n 12868; UH1; UH1H,HEARTS Veterans Museum of Texas,on_display
+Bell,AH-1,P,77-22748,Cobra,,rotary_wing,,military,ground_attack,,previously held near the Air Mobility Command Museum at Dover AFB,c/n 22086; AH1; AH1P,HEARTS Veterans Museum of Texas,on_display
+Bell,OH-58,A,N60MP,Kiowa,,rotary_wing,,military,recon,,also catalogued as an OH-58C,OH58; OH58A,HEARTS Veterans Museum of Texas,on_display
+General Dynamics,F-16,A,81-0789,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,GF-16A ground-instructional airframe; some sources record the serial as 81-0788,F16; F16A,HEARTS Veterans Museum of Texas,on_display

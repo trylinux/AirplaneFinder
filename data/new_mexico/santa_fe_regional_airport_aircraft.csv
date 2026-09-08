@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-General Dynamics,F-111,F,70-2408,Aardvark,,fixed_wing,monoplane,military,bomber,,marked City of Santa Fe; displayed outside the terminal area,c/n E2-47; F111,Santa Fe Regional Airport,on_display
+General Dynamics,F-111,F,70-2408,Aardvark,,fixed_wing,monoplane,military,bomber,,marked City of Santa Fe; displayed outside the terminal area,c/n E2-47; F111; F111F,Santa Fe Regional Airport,on_display

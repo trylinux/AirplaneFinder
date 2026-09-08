@@ -1,12 +1,12 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
 Boeing,SB-29,,44-61671,Superfortress,The Great Artiste,fixed_wing,monoplane,military,bomber,,Super Dumbo air-sea rescue conversion; painted as 44-27353; the real Great Artiste was scrapped; Spirit Gate display,44-27353; SB29,Whiteman AFB Heritage Air Park,on_display
-Boeing,B-52,D,56-0683,Stratofortress,Ebony 2,fixed_wing,monoplane,military,bomber,,Arnold Gate; memorial to Capt Robert Morris,B-52D-40-BW; B52,Whiteman AFB Heritage Air Park,on_display
-Boeing,KC-97,L,53-0327,Stratofreighter,,fixed_wing,monoplane,military,tanker,,,KC97,Whiteman AFB Heritage Air Park,on_display
-Boeing,B-47,B,51-2120,Stratojet,,fixed_wing,monoplane,military,bomber,,,B-47B-30-BW; B47,Whiteman AFB Heritage Air Park,on_display
-General Dynamics,FB-111,A,69-6509,Aardvark,,fixed_wing,monoplane,military,bomber,,,FB111,Whiteman AFB Heritage Air Park,on_display
-Northrop,T-38,A,62-3640,Talon,,fixed_wing,monoplane,military,trainer,,,T-38A-45-NO; T38,Whiteman AFB Heritage Air Park,on_display
-Fairchild Republic,A-10,A,76-0530,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,,,A10,Whiteman AFB Heritage Air Park,on_display
-Bell,AH-1,F,80-23515,Cobra,,rotary_wing,,military,ground_attack,,serial from a single source,AH1,Whiteman AFB Heritage Air Park,on_display
-North American,F-100,D,55-3667,Super Sabre,,fixed_wing,monoplane,military,fighter,,craned off its pedestal at Lambert-St. Louis in April 2015; 131st Bomb Wing Heritage Park dedicated June 2015; one press caption calls it an F-100F,F-100D-25-NA; F100,Whiteman AFB Heritage Air Park,on_display
-McDonnell Douglas,F-15,A,76-0088,Eagle,,fixed_wing,monoplane,military,fighter,,ex-Lambert pedestal; 131st Bomb Wing Heritage Park,F-15A-17-MC; F15,Whiteman AFB Heritage Air Park,on_display
-McDonnell,F-4,E,68-0338,Phantom II,,fixed_wing,monoplane,military,fighter,,two MiG-21 kills in 1972; ex-Lambert pedestal; 131st Bomb Wing Heritage Park,F-4E-37-MC; F4,Whiteman AFB Heritage Air Park,on_display
+Boeing,B-52,D,56-0683,Stratofortress,Ebony 2,fixed_wing,monoplane,military,bomber,,Arnold Gate; memorial to Capt Robert Morris,B-52D-40-BW; B52; B52D,Whiteman AFB Heritage Air Park,on_display
+Boeing,KC-97,L,53-0327,Stratofreighter,,fixed_wing,monoplane,military,tanker,,,KC97; KC97L,Whiteman AFB Heritage Air Park,on_display
+Boeing,B-47,B,51-2120,Stratojet,,fixed_wing,monoplane,military,bomber,,,B-47B-30-BW; B47; B47B,Whiteman AFB Heritage Air Park,on_display
+General Dynamics,FB-111,A,69-6509,Aardvark,,fixed_wing,monoplane,military,bomber,,,FB111; FB111A,Whiteman AFB Heritage Air Park,on_display
+Northrop,T-38,A,62-3640,Talon,,fixed_wing,monoplane,military,trainer,,,T-38A-45-NO; T38; T38A,Whiteman AFB Heritage Air Park,on_display
+Fairchild Republic,A-10,A,76-0530,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,,,A10; A10A,Whiteman AFB Heritage Air Park,on_display
+Bell,AH-1,F,80-23515,Cobra,,rotary_wing,,military,ground_attack,,serial from a single source,AH1; AH1F,Whiteman AFB Heritage Air Park,on_display
+North American,F-100,D,55-3667,Super Sabre,,fixed_wing,monoplane,military,fighter,,craned off its pedestal at Lambert-St. Louis in April 2015; 131st Bomb Wing Heritage Park dedicated June 2015; one press caption calls it an F-100F,F-100D-25-NA; F100; F100D,Whiteman AFB Heritage Air Park,on_display
+McDonnell Douglas,F-15,A,76-0088,Eagle,,fixed_wing,monoplane,military,fighter,,ex-Lambert pedestal; 131st Bomb Wing Heritage Park,F-15A-17-MC; F15; F15A,Whiteman AFB Heritage Air Park,on_display
+McDonnell,F-4,E,68-0338,Phantom II,,fixed_wing,monoplane,military,fighter,,two MiG-21 kills in 1972; ex-Lambert pedestal; 131st Bomb Wing Heritage Park,F-4E-37-MC; F4; F4E,Whiteman AFB Heritage Air Park,on_display

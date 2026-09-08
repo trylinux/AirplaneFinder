@@ -1,15 +1,15 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Cessna,T-37,B,56-3520,Tweet,,fixed_wing,monoplane,military,trainer,1957,pylon-mounted north gate guard,c/n 40092; T37,Sheppard AFB Air Park,on_display
-Northrop,T-38,A,63-8125,Talon,,fixed_wing,monoplane,military,trainer,1964,pylon-mounted north gate guard; code EN,c/n N.5472; T38,Sheppard AFB Air Park,on_display
-Boeing,B-52,G,58-0200,Stratofortress,,fixed_wing,monoplane,military,bomber,1959,GB-52G ground-instructional origin; displayed in the training centre area,c/n 464268; B52,Sheppard AFB Air Park,on_display
-Convair,F-102,A,57-0826,Delta Dagger,,fixed_wing,monoplane,military,fighter,1958,F-102A-90-CO single-seat not a TF-102A as often listed; pylon-mounted,F102,Sheppard AFB Air Park,on_display
-McDonnell,F-101,C,56-0009,Voodoo,,fixed_wing,monoplane,military,recon,1957,RF-101C carried as GF-101C; often miscatalogued as an F-101B which is impossible for this serial block,F101,Sheppard AFB Air Park,on_display
-Convair,T-29,A,49-1934,Samaritan,,fixed_wing,monoplane,military,trainer,1950,the Flying Classroom,GT-29A; T29; GT29A,Sheppard AFB Air Park,on_display
-Republic,F-105,D,61-0175,Thunderchief,,fixed_wing,monoplane,military,ground_attack,1962,the best-attested airframe on the site,F-105D-25-RE; c/n D370; F105,Sheppard AFB Air Park,on_display
-North American,F-100,D,54-2151,Super Sabre,,fixed_wing,monoplane,military,ground_attack,1956,the last airframe in its production block,GF-100D-5-NA; c/n 223-31; F100,Sheppard AFB Air Park,on_display
-General Dynamics,F-111,A,63-9773,Aardvark,,fixed_wing,monoplane,military,bomber,1967,on concrete pylons; code CC,GF-111A; F111; GF111A,Sheppard AFB Air Park,on_display
-Northrop,T-38,A,61-0858,Talon,,fixed_wing,monoplane,military,trainer,1962,pylon-mounted; wears Republic of China Air Force markings which are not its service history,c/n N.5224; T38,Sheppard AFB Air Park,on_display
-Cessna,A-37,A,62-5950,Dragonfly,,fixed_wing,monoplane,military,ground_attack,1963,built as a T-37B and converted under the A-37 prototype programme,GYA-37A; A37; GYA37A,Sheppard AFB Air Park,on_display
-General Dynamics,F-16,A,80-0481,Fighting Falcon,,fixed_wing,monoplane,military,fighter,1981,,GF-16A Block 10C; c/n 61-202; F16,Sheppard AFB Air Park,on_display
-McDonnell Douglas,F-15,B,77-0154,Eagle,,fixed_wing,monoplane,military,fighter,1978,a two-seat B model often miscatalogued as an F-15A,GF-15B-18-MC; c/n 0339/B045; F15,Sheppard AFB Air Park,on_display
-Lockheed,F-104,C,56-0912,Starfighter,,fixed_wing,monoplane,military,fighter,1958,pole-mounted gate guard; wears the compressed marking 60912; removed repainted and remounted in late 2020,c/n 183-1200; F104,Sheppard AFB Air Park,on_display
+Cessna,T-37,B,56-3520,Tweet,,fixed_wing,monoplane,military,trainer,1957,pylon-mounted north gate guard,c/n 40092; T37; T37B,Sheppard AFB Air Park,on_display
+Northrop,T-38,A,63-8125,Talon,,fixed_wing,monoplane,military,trainer,1964,pylon-mounted north gate guard; code EN,c/n N.5472; T38; T38A,Sheppard AFB Air Park,on_display
+Boeing,B-52,G,58-0200,Stratofortress,,fixed_wing,monoplane,military,bomber,1959,GB-52G ground-instructional origin; displayed in the training centre area,c/n 464268; B52; B52G,Sheppard AFB Air Park,on_display
+Convair,F-102,A,57-0826,Delta Dagger,,fixed_wing,monoplane,military,fighter,1958,F-102A-90-CO single-seat not a TF-102A as often listed; pylon-mounted,F102; F102A,Sheppard AFB Air Park,on_display
+McDonnell,F-101,C,56-0009,Voodoo,,fixed_wing,monoplane,military,recon,1957,RF-101C carried as GF-101C; often miscatalogued as an F-101B which is impossible for this serial block,F101; F101C,Sheppard AFB Air Park,on_display
+Convair,T-29,A,49-1934,Samaritan,,fixed_wing,monoplane,military,trainer,1950,the Flying Classroom,GT-29A; T29; GT29A; T29A,Sheppard AFB Air Park,on_display
+Republic,F-105,D,61-0175,Thunderchief,,fixed_wing,monoplane,military,ground_attack,1962,the best-attested airframe on the site,F-105D-25-RE; c/n D370; F105; F105D,Sheppard AFB Air Park,on_display
+North American,F-100,D,54-2151,Super Sabre,,fixed_wing,monoplane,military,ground_attack,1956,the last airframe in its production block,GF-100D-5-NA; c/n 223-31; F100; F100D,Sheppard AFB Air Park,on_display
+General Dynamics,F-111,A,63-9773,Aardvark,,fixed_wing,monoplane,military,bomber,1967,on concrete pylons; code CC,GF-111A; F111; GF111A; F111A,Sheppard AFB Air Park,on_display
+Northrop,T-38,A,61-0858,Talon,,fixed_wing,monoplane,military,trainer,1962,pylon-mounted; wears Republic of China Air Force markings which are not its service history,c/n N.5224; T38; T38A,Sheppard AFB Air Park,on_display
+Cessna,A-37,A,62-5950,Dragonfly,,fixed_wing,monoplane,military,ground_attack,1963,built as a T-37B and converted under the A-37 prototype programme,GYA-37A; A37; GYA37A; A37A,Sheppard AFB Air Park,on_display
+General Dynamics,F-16,A,80-0481,Fighting Falcon,,fixed_wing,monoplane,military,fighter,1981,,GF-16A Block 10C; c/n 61-202; F16; F16A,Sheppard AFB Air Park,on_display
+McDonnell Douglas,F-15,B,77-0154,Eagle,,fixed_wing,monoplane,military,fighter,1978,a two-seat B model often miscatalogued as an F-15A,GF-15B-18-MC; c/n 0339/B045; F15; F15B,Sheppard AFB Air Park,on_display
+Lockheed,F-104,C,56-0912,Starfighter,,fixed_wing,monoplane,military,fighter,1958,pole-mounted gate guard; wears the compressed marking 60912; removed repainted and remounted in late 2020,c/n 183-1200; F104; F104C,Sheppard AFB Air Park,on_display

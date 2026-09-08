@@ -1,2 +1,2 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Republic,RF-84,F,51-1929,Thunderflash,,fixed_wing,monoplane,military,recon,,,RF84,Neligh RF-84 Display,on_display
+Republic,RF-84,F,51-1929,Thunderflash,,fixed_wing,monoplane,military,recon,,,RF84; RF84F,Neligh RF-84 Display,on_display

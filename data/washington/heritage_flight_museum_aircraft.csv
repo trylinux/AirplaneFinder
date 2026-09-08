@@ -1,22 +1,22 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-North American,P-51,D,45-11525,Mustang,Val-Halla,fixed_wing,monoplane,military,fighter,1945,57th FIS markings; airworthy,N151AF; P51,Heritage Flight Museum,on_display
-Douglas,AD-4,NA,126965,Skyraider,The Proud American,fixed_wing,monoplane,military,ground_attack,,ex-VA-115; airworthy,N965AD; A-1D; VA-115; AD4; A1D; VA115,Heritage Flight Museum,on_display
-Northrop,F-89,J,53-2453,Scorpion,,fixed_wing,monoplane,military,fighter,,gate guardian; static,F89,Heritage Flight Museum,on_display
-Mikoyan-Gurevich,MiG-21,PFM,5409,Fishbed,,fixed_wing,monoplane,military,fighter,,ex-Czechoslovak Air Force; static,MiG21,Heritage Flight Museum,on_display
+North American,P-51,D,45-11525,Mustang,Val-Halla,fixed_wing,monoplane,military,fighter,1945,57th FIS markings; airworthy,N151AF; P51; P51D,Heritage Flight Museum,on_display
+Douglas,AD-4,NA,126965,Skyraider,The Proud American,fixed_wing,monoplane,military,ground_attack,,ex-VA-115; airworthy,N965AD; A-1D; VA-115; AD4; A1D; VA115; AD4NA,Heritage Flight Museum,on_display
+Northrop,F-89,J,53-2453,Scorpion,,fixed_wing,monoplane,military,fighter,,gate guardian; static,F89; F89J,Heritage Flight Museum,on_display
+Mikoyan-Gurevich,MiG-21,PFM,5409,Fishbed,,fixed_wing,monoplane,military,fighter,,ex-Czechoslovak Air Force; static,MiG21; MiG21PFM,Heritage Flight Museum,on_display
 Beechcraft,AT-11,,42-37240,Kansan,Buff Baby,fixed_wing,monoplane,military,trainer,,bombardier trainer; airworthy,Model 18; AT11,Heritage Flight Museum,on_display
-Beechcraft,T-34,B,N168AF,Mentor,,fixed_wing,monoplane,military,trainer,,IO-520 conversion; airworthy,T34,Heritage Flight Museum,on_display
-Beechcraft,T-34,B,N268AF,Mentor,,fixed_wing,monoplane,military,trainer,,airworthy,T34,Heritage Flight Museum,on_display
-Beechcraft,T-34,B,N34MT,Mentor,,fixed_wing,monoplane,military,trainer,,airworthy,T34,Heritage Flight Museum,on_display
-Bell,UH-1,B,,Iroquois,,rotary_wing,,military,utility,,Aircraft Garden static,Huey; UH1,Heritage Flight Museum,on_display
+Beechcraft,T-34,B,N168AF,Mentor,,fixed_wing,monoplane,military,trainer,,IO-520 conversion; airworthy,T34; T34B,Heritage Flight Museum,on_display
+Beechcraft,T-34,B,N268AF,Mentor,,fixed_wing,monoplane,military,trainer,,airworthy,T34; T34B,Heritage Flight Museum,on_display
+Beechcraft,T-34,B,N34MT,Mentor,,fixed_wing,monoplane,military,trainer,,airworthy,T34; T34B,Heritage Flight Museum,on_display
+Bell,UH-1,B,,Iroquois,,rotary_wing,,military,utility,,Aircraft Garden static,Huey; UH1; UH1B,Heritage Flight Museum,on_display
 Bell,Model 47,,,,,rotary_wing,,civilian,utility,,restored to represent an H-13G,,Heritage Flight Museum,on_display
-Stinson,L-13,B,,Grasshopper,,fixed_wing,monoplane,military,recon,,only airworthy original-configuration L-13B,L13,Heritage Flight Museum,on_display
+Stinson,L-13,B,,Grasshopper,,fixed_wing,monoplane,military,recon,,only airworthy original-configuration L-13B,L13; L13B,Heritage Flight Museum,on_display
 Cessna,O-1,,,Bird Dog,,fixed_wing,monoplane,military,recon,,airworthy,L-19; O1; L19,Heritage Flight Museum,on_display
-Cessna,O-2,A,,Skymaster,,fixed_wing,monoplane,military,recon,,ex-Hurlburt Field FAC trainer; airworthy,O2,Heritage Flight Museum,on_display
+Cessna,O-2,A,,Skymaster,,fixed_wing,monoplane,military,recon,,ex-Hurlburt Field FAC trainer; airworthy,O2; O2A,Heritage Flight Museum,on_display
 de Havilland Canada,DHC-2,,N682AF,Beaver,,fixed_wing,monoplane,military,utility,1954,USAF rescue colours; restored by Frank Borman; airworthy,L-20A; DHC2; L20A,Heritage Flight Museum,on_display
-North American,AT-6,D,,Texan,Hog Wild Gunner,fixed_wing,monoplane,military,trainer,1942,ex-Spanish Air Force; airworthy,T-6D; AT6; T6D,Heritage Flight Museum,on_display
-North American,AT-6,F,,Texan,,fixed_wing,monoplane,military,trainer,1945,ET-6F conversion; ex-race number 70 Old Betsy; airworthy,T-6F; AT6; T6F,Heritage Flight Museum,on_display
+North American,AT-6,D,,Texan,Hog Wild Gunner,fixed_wing,monoplane,military,trainer,1942,ex-Spanish Air Force; airworthy,T-6D; AT6; T6D; AT6D,Heritage Flight Museum,on_display
+North American,AT-6,F,,Texan,,fixed_wing,monoplane,military,trainer,1945,ET-6F conversion; ex-race number 70 Old Betsy; airworthy,T-6F; AT6; T6F; AT6F,Heritage Flight Museum,on_display
 Boeing-Stearman,PT-13,,,Kaydet,,fixed_wing,biplane,military,trainer,,donated by Bill Anders 2000; airworthy,PT13,Heritage Flight Museum,on_display
 Fairchild,PT-19,,,Cornell,,fixed_wing,monoplane,military,trainer,,airworthy,PT19,Heritage Flight Museum,on_display
 Interstate,S-1A,,NC37266,Cadet,The Pearl,fixed_wing,monoplane,civilian,private,1941,based Honolulu 1941; on loan from Lost Aviators of Pearl Harbor,S1A,Heritage Flight Museum,on_display
 Canadian Car & Foundry,Harvard,IV,,Texan,Tora Zero,fixed_wing,monoplane,military,trainer,,converted to represent an A6M2 Zero for Tora! Tora! Tora!,,Heritage Flight Museum,on_display
-Cessna,T-37,B,,Tweet,,fixed_wing,monoplane,military,trainer,,,T37,Heritage Flight Museum,on_display
+Cessna,T-37,B,,Tweet,,fixed_wing,monoplane,military,trainer,,,T37; T37B,Heritage Flight Museum,on_display

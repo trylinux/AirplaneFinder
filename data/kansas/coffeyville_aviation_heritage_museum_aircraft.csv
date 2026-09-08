@@ -1,5 +1,5 @@
 manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
-Republic,F-84,F,52-6675,Thunderstreak,,fixed_wing,monoplane,military,fighter,,outdoors,F84,Coffeyville Aviation Heritage Museum,on_display
+Republic,F-84,F,52-6675,Thunderstreak,,fixed_wing,monoplane,military,fighter,,outdoors,F84; F84F,Coffeyville Aviation Heritage Museum,on_display
 Funk,B,,N22678,,,fixed_wing,monoplane,civilian,private,1939,historic registration NC22678,c/n 5; Coffeyville-built,Coffeyville Aviation Heritage Museum,on_display
 Funk,B,75L,N34768,,,fixed_wing,monoplane,civilian,private,,,c/n 215; B75L,Coffeyville Aviation Heritage Museum,on_display
 Funk,B,85C,N77704,,,fixed_wing,monoplane,civilian,private,,last registered to Emil W Roesky,c/n 334; B85C,Coffeyville Aviation Heritage Museum,on_display
