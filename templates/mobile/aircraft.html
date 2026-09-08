@@ -60,11 +60,11 @@ $(function() {
             // Wrap each list item in an anchor so the whole card is a tap target.
             html += '<a class="m-list-item" href="/aircraft/' + a.id + '">'
                  + '<div class="m-list-title">'
-                 +   '<span>' + escHtml(a.full_designation || a.model) + '</span>'
+                 +   '<span>' + escHtml([a.manufacturer, a.full_designation || a.model].filter(Boolean).join(' ')) + '</span>'
                  +   '<span class="m-badge ' + milCivRaw + '">' + escHtml(prettyEnum(milCivRaw)) + '</span>'
                  + '</div>'
                  + '<div class="m-list-meta">'
-                 +   '<span><i class="fa-solid fa-industry"></i>' + escHtml(a.manufacturer) + '</span>';
+                 ;
             if (a.aircraft_name) html += '<span><i class="fa-solid fa-tag"></i>' + escHtml(a.aircraft_name) + '</span>';
             if (a.year_built) html += '<span><i class="fa-solid fa-calendar"></i>' + escHtml(a.year_built) + '</span>';
             if (a.model_name)    html += '<span><i class="fa-solid fa-tag"></i>' + escHtml(a.model_name) + '</span>';

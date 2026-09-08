@@ -1,5 +1,5 @@
 {% extends "mobile/base.html" if is_mobile else "base.html" %}
-{% set title_bits = [aircraft.full_designation or aircraft.model, aircraft.tail_number] | select | list %}
+{% set title_bits = [aircraft.manufacturer, aircraft.full_designation or aircraft.model, aircraft.tail_number] | select | list %}
 {% block title %}{{ title_bits | join(' ') }} — Aircraft Finder{% endblock %}
 {% block nav_aircraft %}active{% endblock %}
 
@@ -14,6 +14,7 @@
 <div class="d-head">
     <h1>
         <i class="fa-solid fa-jet-fighter"></i>
+        {% if aircraft.manufacturer %}<span class="d-mfr">{{ aircraft.manufacturer }}</span>{% endif %}
         {{ aircraft.full_designation or aircraft.model }}
     </h1>
     {% set subtitle = [aircraft.model_name, ('"' ~ aircraft.aircraft_name ~ '"') if aircraft.aircraft_name else None] | select | list %}

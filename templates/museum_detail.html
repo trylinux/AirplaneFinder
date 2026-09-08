@@ -33,11 +33,10 @@
             <a href="/aircraft/{{ a.id }}" class="d-item"
                data-search="{{ [a.manufacturer, a.full_designation, a.model, a.model_name, a.aircraft_name, a.tail_number] | select | join(' ') | lower }}">
                 <div class="d-item-title">
-                    <span>{{ a.full_designation or a.model }}{% if a.model_name %} <span class="d-dim">{{ a.model_name }}</span>{% endif %}</span>
+                    <span>{% if a.manufacturer %}<span class="d-mfr">{{ a.manufacturer }}</span> {% endif %}{{ a.full_designation or a.model }}{% if a.model_name %} <span class="d-dim">{{ a.model_name }}</span>{% endif %}</span>
                     {% if a.tail_number %}<span class="d-badge">{{ a.tail_number }}</span>{% endif %}
                 </div>
                 <div class="d-item-meta">
-                    <span>{{ a.manufacturer }}</span>
                     {% if a.aircraft_name %}<span>"{{ a.aircraft_name }}"</span>{% endif %}
                     {% if a.role_type %}<span>{{ a.role_type | pretty_enum }}</span>{% endif %}
                     {% if a.year_built %}<span>{{ a.year_built }}</span>{% endif %}

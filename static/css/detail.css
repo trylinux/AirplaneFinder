@@ -121,3 +121,8 @@ a.d-item:hover { border-color: var(--primary); }
    Inherit colour so the table still reads as a table, not a list of links. */
 .row-link { color: inherit; text-decoration: none; }
 .row-link:hover { color: var(--primary); }
+
+/* Manufacturer leads an aircraft title, set lighter than the designation
+   so "Lockheed SR-71-A" still reads designation-first at a glance. */
+.d-mfr { color: var(--text-dim); font-weight: 500; }
+.d-head h1 .d-mfr { font-size: .95em; }

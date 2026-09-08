@@ -105,6 +105,32 @@ def test_aliases_link_into_the_directory_search(client, blackbird):
 
 
 @pytest.mark.parametrize("ua", BOTH_UAS)
+def test_title_leads_with_the_manufacturer(client, blackbird, ua):
+    """An aircraft reads "Lockheed SR-71-A", not "SR-71-A" on its own."""
+    a, _ = blackbird
+    body = client.get(f"/aircraft/{a.id}", headers={"User-Agent": ua}).get_data(as_text=True)
+    heading = body[body.index("<h1"):body.index("</h1>")]
+    assert "Lockheed" in heading, "manufacturer missing from the page heading"
+    assert heading.index("Lockheed") < heading.index("SR-71"), \
+        "manufacturer must come before the designation"
+
+
+def test_browser_title_leads_with_the_manufacturer(client, blackbird):
+    a, _ = blackbird
+    body = client.get(f"/aircraft/{a.id}").get_data(as_text=True)
+    title = body[body.index("<title>"):body.index("</title>")]
+    assert title.index("Lockheed") < title.index("SR-71")
+
+
+def test_museum_list_items_lead_with_the_manufacturer(client, blackbird):
+    _, m = blackbird
+    body = client.get(f"/museums/{m.id}").get_data(as_text=True)
+    item = body[body.index('class="d-item-title"'):]
+    item = item[:item.index("</div>")]
+    assert item.index("Lockheed") < item.index("SR-71")
+
+
+@pytest.mark.parametrize("ua", BOTH_UAS)
 def test_full_spec_is_rendered(client, blackbird, ua):
     a, _ = blackbird
     body = client.get(f"/aircraft/{a.id}", headers={"User-Agent": ua}).get_data(as_text=True)

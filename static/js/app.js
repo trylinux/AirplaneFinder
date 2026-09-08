@@ -105,11 +105,11 @@ function renderAircraftResults(results, total, container, page, pages) {
     // wiring (templates/aircraft.html) calls attachSortableHeaders() to
     // make these headers clickable.
     html += '<table class="result-table"><thead><tr>' +
+        '<th data-sort="manufacturer">Manufacturer</th>' +
         '<th data-sort="full_designation">Designation</th>' +
         '<th data-sort="model_name">Model Name</th>' +
         '<th data-sort="aircraft_name">Aircraft Name</th>' +
         '<th data-sort="tail_number">Tail #</th>' +
-        '<th data-sort="manufacturer">Manufacturer</th>' +
         '<th data-sort="aircraft_type">Type</th>' +
         '<th data-sort="military_civilian">Mil/Civ</th>' +
         '<th data-sort="role_type">Role</th>' +
@@ -118,15 +118,19 @@ function renderAircraftResults(results, total, container, page, pages) {
 
     results.forEach(function(a) {
         var milCivRaw = a.military_civilian || 'military';   // raw, used for CSS class
+        // Manufacturer leads, then the designation — an aircraft reads
+        // "Lockheed SR-71", not "SR-71, Lockheed". Both cells are real
+        // anchors so middle-click / open-in-new-tab work and the names are
+        // crawlable; the row click handler defers to them.
+        var href = '/aircraft/' + a.id;
         html += '<tr class="aircraft-row" data-id="' + a.id + '">' +
-            // Real anchor so middle-click / open-in-new-tab work and the
-            // designation is crawlable; the row click handler defers to it.
-            '<td><a class="row-link" href="/aircraft/' + a.id + '"><strong>' +
+            '<td><a class="row-link" href="' + href + '">' +
+                escHtml(a.manufacturer || '—') + '</a></td>' +
+            '<td><a class="row-link" href="' + href + '"><strong>' +
                 escHtml(a.full_designation || a.model) + '</strong></a></td>' +
             '<td>' + escHtml(a.model_name || '—') + '</td>' +
             '<td>' + escHtml(a.aircraft_name || '—') + '</td>' +
             '<td>' + escHtml(a.tail_number || '—') + '</td>' +
-            '<td>' + escHtml(a.manufacturer) + '</td>' +
             '<td>' + escHtml(prettyEnum(a.aircraft_type || 'fixed_wing')) + '</td>' +
             '<td><span class="badge status-' + milCivRaw + '">' + escHtml(prettyEnum(milCivRaw)) + '</span></td>' +
             '<td>' + escHtml(prettyEnum(a.role_type)) + '</td>' +
