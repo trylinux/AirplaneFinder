@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+McDonnell Douglas,F-15,A,76-0018,Eagle,,fixed_wing,monoplane,military,fighter,,,c/n 197/A170;ex-Hawaii ANG 199th FS;photographed on display January 2017,Hickam Heritage Aircraft Display,on_display
+McDonnell,F-4,C,63-7540,Phantom II,,fixed_wing,monoplane,military,fighter,,,ex-18th TFW and Hawaii ANG 199th FIS;struck off charge 11 April 1986 and put on display at Hickam,Hickam Heritage Aircraft Display,on_display
+Convair,F-102,A,54-1373,Delta Dagger,,fixed_wing,monoplane,military,fighter,,,NMUSAF loan;ex-82nd FIS and Hawaii ANG 199th FIS,Hickam Heritage Aircraft Display,on_display
+North American,F-86,E,50-0625,Sabre,,fixed_wing,monoplane,military,fighter,,,painted as the 335th FS 4th FW Korean War Sabre of Maj Winton Bones Marshall;photographed November 2023;some sources give the true identity as 50-0653 or a Canadair Sabre,Hickam Heritage Aircraft Display,on_display
+Douglas,RB-26,C,44-35596,Invader,,fixed_wing,monoplane,military,recon,,,marked BC-596;ex-civil N5636V;displayed at Hickam since the 1980s,Hickam Heritage Aircraft Display,on_display

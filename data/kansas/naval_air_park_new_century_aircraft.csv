@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,A-4,L,150598,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,,NAS Olathe memorial;serial from a single source not re-verified 2025,Naval Air Park at New Century AirCenter,on_display
+LTV,TA-7,C,156782,Corsair II,,fixed_wing,monoplane,military,trainer,,,serial from a single source not re-verified 2025,Naval Air Park at New Century AirCenter,on_display
+LTV,A-7,E,158657,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,serial from a single source not re-verified 2025,Naval Air Park at New Century AirCenter,on_display

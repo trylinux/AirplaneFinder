@@ -1,0 +1,28 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,SR-71,A,61-7961,Blackbird,,fixed_wing,monoplane,military,recon,1965,,rolled out 19 October 1965;first flight 13 April 1966;last flight 2 February 1977;1601 flight hours;Grand Lobby with the building constructed around it;NMUSAF loan,Cosmosphere,on_display
+Northrop,T-38,A,,Talon,,fixed_wing,monoplane,military,trainer,,,NASA livery;suspended in the Grand Lobby;registration reported as N948NS by directories but not in the FAA register so left blank,Cosmosphere,on_display
+Lockheed,F-104,B,57-1301,Starfighter,,fixed_wing,monoplane,military,fighter,,,c/n 283-5013;ex-AFFTC Edwards AFB;NMUSAF loan via the Florence Air and Missile Museum 1991;stored at the SpaceWorks facility 707 W 2nd Avenue since about 1997;public restoration tours summer 2026,Cosmosphere,under_restoration
+Bell,X-1,,,Bell X-1,Glamorous Glennis,fixed_wing,monoplane,military,experimental,,,replica;movie prop built for The Right Stuff in 1983;painted as 46-062;displayed with a genuine flown XLR-11 engine,Cosmosphere,on_display
+Fieseler,Fi 103,A-1,,V-1,,missile_rocket,,military,cruise,,,genuine flight-ready backup per the museum;pulsejet,Cosmosphere,on_display
+Mittelwerk,A-4,,,V-2,,missile_rocket,,military,ballistic,,,genuine flight-ready backup per the museum;restored by SpaceWorks in the Peenemunde black-and-white test scheme,Cosmosphere,on_display
+Chrysler,Redstone,MRLV,,Mercury-Redstone,,missile_rocket,,civilian,launch_vehicle,,,full-height vertical display in the Rocket Gallery;the museum and Wikipedia call the airframe authentic;one visitor account calls the stack a mockup;topped by a Mercury capsule replica,Cosmosphere,on_display
+Martin,Titan II,,,Gemini-Titan,,missile_rocket,,military,launch_vehicle,,,109-foot vertical display painted as a Gemini launch vehicle;the museum says genuine and the Wikipedia Titan II GLV article says replica;most likely a genuine ex-ICBM airframe in GLV markings,Cosmosphere,on_display
+McDonnell,Mercury,,SC-11,Mercury spacecraft,Liberty Bell 7,spacecraft,,civilian,space,,,flown Mercury-Redstone 4 on 21 July 1961 with Gus Grissom;sank after splashdown and recovered from 16000 feet on 20 July 1999;restored by SpaceWorks;owned by the Cosmosphere and the only flown crewed NASA spacecraft not owned by NASA or the Smithsonian,Cosmosphere,on_display
+McDonnell,Gemini,,SC-10,Gemini spacecraft,Gemini X,spacecraft,,civilian,space,,,flown 18-21 July 1966 with John Young and Michael Collins;NASM object A19680272000 on loan,Cosmosphere,on_display
+North American Rockwell,Apollo CM,,CM-109,Apollo Command Module,Odyssey,spacecraft,,civilian,space,,,flown Apollo 13 11-17 April 1970 with Lovell Swigert and Haise;long-term Smithsonian loan;restored by SpaceWorks 1995-1997,Cosmosphere,on_display
+McDonnell,Mercury,,SC-4,Mercury spacecraft,,spacecraft,,civilian,test,,,wreckage of the uncrewed Mercury-Atlas 1 flight of 29 July 1960 which broke up 59 seconds after launch;twisted recovered capsule walls displayed,Cosmosphere,on_display
+OKB-1,Vostok,,,Vostok descent module,,spacecraft,,military,space,,,flown uncrewed in the 1980s under the Kosmos programme;restored to represent the crewed Vostok configuration;acquired about 1990,Cosmosphere,on_display
+OKB-1,Voskhod,,,Voskhod spacecraft,,spacecraft,,military,space,,,engineering model not flown;displayed with the genuine flight-ready backup Volga inflatable airlock from Voskhod 2,Cosmosphere,on_display
+Grumman,Apollo LM,,LTA-3A,Apollo Lunar Module,,spacecraft,,civilian,test,,,structural test article ascent stage;retains the early round forward hatch;the descent stage of LTA-3 is at the Franklin Institute,Cosmosphere,on_display
+North American Rockwell,Apollo CM,,,Apollo Command Module,,spacecraft,,civilian,trainer,,,genuine Johnson Space Center 1-G trainer number 2;forms the Apollo half of the Apollo-Soyuz display;its service module and docking module are SpaceWorks replicas,Cosmosphere,on_display
+OKB-1,Soyuz,7K-TM,,Soyuz spacecraft,,spacecraft,,military,space,,,replica per the museum;part of the Apollo-Soyuz Test Project display,Cosmosphere,on_display
+OKB-1,Sputnik,1,,Sputnik 1,,spacecraft,,civilian,other,,,flight-ready backup not flown,Cosmosphere,on_display
+OKB-1,Sputnik,2,,Sputnik 2,,spacecraft,,civilian,other,,,engineering model cutaway of the Laika capsule,Cosmosphere,on_display
+Hughes,Surveyor,,,Surveyor lander,,spacecraft,,civilian,other,,,engineering model,Cosmosphere,on_display
+Jet Propulsion Laboratory,Pioneer,4,,Pioneer 4,,spacecraft,,civilian,other,,,engineering model cutaway,Cosmosphere,on_display
+Rockwell,Space Shuttle,,,Space Shuttle orbiter,Endeavour,spacecraft,,civilian,space,,,replica;full-scale left-side half-orbiter facade in the Grand Lobby,Cosmosphere,on_display
+Grumman,Apollo LM,,,Apollo Lunar Module,,spacecraft,,civilian,space,,,replica;full-scale;Moonshot Gallery,Cosmosphere,on_display
+North American Rockwell,Apollo CM,,,Apollo Command Module,,spacecraft,,civilian,space,,,replica added in the 2025 renovation beside the genuine LC-39 White Room,Cosmosphere,on_display
+Naval Research Laboratory,Vanguard,1,,Vanguard 1,,spacecraft,,civilian,other,,,replica,Cosmosphere,on_display
+Jet Propulsion Laboratory,Explorer,1,,Explorer 1,,spacecraft,,civilian,other,,,replica;cutaway,Cosmosphere,on_display
+Jet Propulsion Laboratory,MER,,,Mars Exploration Rover,,spacecraft,,civilian,other,,,replica;full-scale Spirit and Opportunity rover,Cosmosphere,on_display

@@ -1,0 +1,9 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Vought,F-8,C,146973,Crusader,,fixed_wing,monoplane,military,fighter,,,marked WT-00;ex-F8U-2,Marine Corps Base Hawaii Static Displays,on_display
+McDonnell,F-4,S,153889,Phantom II,,fixed_wing,monoplane,military,fighter,,,painted as VMFA-212 WD-100 BuNo 155894;built as an F-4J,Marine Corps Base Hawaii Static Displays,on_display
+Lockheed,SP-2,H,150279,Neptune,,fixed_wing,monoplane,military,recon,,,ex-civil N3767U;VP-6 and VP-17 markings,Marine Corps Base Hawaii Static Displays,on_display
+Grumman,S-2,D,147870,Tracker,,fixed_wing,monoplane,military,recon,,,side number 22,Marine Corps Base Hawaii Static Displays,on_display
+Sikorsky,SH-60,B,161563,Seahawk,,rotary_wing,,military,utility,,,,Marine Corps Base Hawaii Static Displays,on_display
+Sikorsky,RH-53,D,158748,Sea Stallion,,rotary_wing,,military,utility,,,1st MAW markings,Marine Corps Base Hawaii Static Displays,on_display
+Sikorsky,CH-53,D,157740,Sea Stallion,,rotary_wing,,military,transport,,,side number 24;displayed separately from the flightline group,Marine Corps Base Hawaii Static Displays,on_display
+Lockheed,TP-3,A,151392,Orion,,fixed_wing,monoplane,military,trainer,,,c/n 185-5105,Marine Corps Base Hawaii Static Displays,on_display

@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Curtiss,P-40,,,Warhawk,,fixed_wing,monoplane,military,fighter,,,replica;full-size static replica built for the 1970 film Tora Tora Tora;painted as 2nd Lt George S Welch's 47th PS aircraft;restored 2008,Wheeler Army Airfield Air Park,on_display
+Hiller,OH-23,G,64-15245,Raven,,rotary_wing,,military,utility,,,,Wheeler Army Airfield Air Park,on_display
+Bell,AH-1,S,67-15744,Cobra,,rotary_wing,,military,ground_attack,,,,Wheeler Army Airfield Air Park,on_display
+Bell,UH-1,H,69-15127,Iroquois,,rotary_wing,,military,utility,,,,Wheeler Army Airfield Air Park,on_display
+Bell,OH-58,A,70-15358,Kiowa,,rotary_wing,,military,recon,,,c/n 40909,Wheeler Army Airfield Air Park,on_display
