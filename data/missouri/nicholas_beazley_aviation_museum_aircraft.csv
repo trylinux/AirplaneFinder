@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Nicholas-Beazley,NB-3,G,NC885H,,,fixed_wing,monoplane,civilian,private,,,designed by Walter H Barling;fully restored;the museum centrepiece;registration from a single source,Nicholas-Beazley Aviation Museum,on_display
+Nicholas-Beazley,NB-8,G,NC543Y,,,fixed_wing,monoplane,civilian,trainer,,,folding wings for road tow;registration from a single source,Nicholas-Beazley Aviation Museum,on_display
+Nicholas-Beazley,NB-8,G,NC583Y,,,fixed_wing,monoplane,civilian,trainer,,,folding wings for road tow;registration from a single source,Nicholas-Beazley Aviation Museum,on_display
+Mignet,HM-14,,,Pou-du-Ciel,,fixed_wing,monoplane,civilian,experimental,1937,,Flying Flea;built by Jacob Van Dyke with Nicholas-Beazley parts;a tandem-wing layout recorded as monoplane,Nicholas-Beazley Aviation Museum,on_display
+Taylorcraft,TG-6,,,,,fixed_wing,monoplane,military,trainer,,,wartime training glider;later fitted with an engine and sold into civil use,Nicholas-Beazley Aviation Museum,on_display

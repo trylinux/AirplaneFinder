@@ -1,0 +1,19 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,P-59,B,44-22656,Airacomet,,fixed_wing,monoplane,military,fighter,,,c/n 27-64;served with the 412th Fighter Group;to Purdue University 1946;acquired by Harold Warp 1956;one of six surviving P-59s;Aerial Visuals records it as US Navy BuNo 64108,Harold Warp Pioneer Village,on_display
+Curtiss,Model D,,,Pusher,,fixed_wing,biplane,civilian,private,1910,,flown by Charles K Hamilton on the first New York to Philadelphia round trip 13 June 1910;original airframe;acquired 1954,Harold Warp Pioneer Village,on_display
+Curtiss,JN-4,D,NC1350,Jenny,,fixed_wing,biplane,military,trainer,,,acquired by Warp in 1952;the type he learned to fly in 1927;Aerial Visuals lists the registration as N782,Harold Warp Pioneer Village,on_display
+Hartman,Monoplane,,N286Y,,,fixed_wing,monoplane,civilian,private,1910,,built by Arthur Hartman;the first aeroplane built and flown in Iowa;acquired 1955,Harold Warp Pioneer Village,on_display
+Swallow,Swallow,,NC5070,,,fixed_wing,biplane,civilian,private,1926,,built in Wichita Kansas;OX-5 engine,Harold Warp Pioneer Village,on_display
+Cessna,AW,,NC8141,,,fixed_wing,monoplane,civilian,private,,,c/n 156;Warner Scarab engine;one of 48 built;acquired 1962 from Chicago Sky Harbor Airport,Harold Warp Pioneer Village,on_display
+Stinson,SM-8,A,NC907W,Junior,,fixed_wing,monoplane,civilian,private,,,c/n 4080;flown to Minden in 1959;Aerial Visuals lists the registration as NC903W,Harold Warp Pioneer Village,on_display
+Taylor,J-2,,N19250,Cub,,fixed_wing,monoplane,civilian,private,,,acquired by Warp in 1969,Harold Warp Pioneer Village,on_display
+Engineering and Research Corporation,415,C,NC37100,Ercoupe,,fixed_wing,monoplane,civilian,private,,,c/n 0067;a company aircraft personally flown by Harold Warp;carries Warp's Plastics livery,Harold Warp Pioneer Village,on_display
+Piper,PA-23,,N1030P,Apache,,fixed_wing,monoplane,civilian,private,,,a company aircraft personally flown by Harold Warp;carries Warp's Plastics livery,Harold Warp Pioneer Village,on_display
+Heath,Parasol,,,,,fixed_wing,monoplane,civilian,private,1931,,restored 1970;acquired by the Foundation 1989,Harold Warp Pioneer Village,on_display
+Chotia,Weedhopper,,,Gypsy,,fixed_wing,monoplane,civilian,private,1982,,ultralight built by L Duane Life of Wichita Kansas,Harold Warp Pioneer Village,on_display
+Rand Robinson,KR-2,,,,,fixed_wing,monoplane,civilian,private,,,homebuilt by Michael Fitzsimmons of Minden Nebraska,Harold Warp Pioneer Village,on_display
+Sikorsky,HNS-1,,N75378,Hoverfly,,rotary_wing,,military,trainer,,,US Navy and Coast Guard serial 39034;the R-4 variant flown by the Coast Guard in the Second World War;the first helicopter to fly in a rainstorm,Harold Warp Pioneer Village,on_display
+Pitcairn,PAA-1,,,,,rotary_wing,,civilian,private,,,autogiro used for aerial advertising by Paramount Air Service of New Jersey;also reported as a PA-24,Harold Warp Pioneer Village,on_display
+Bensen,B-6,,,Gyro-Glider,,rotary_wing,,civilian,private,,,purchased from Robin Hermanson of Garretson South Dakota,Harold Warp Pioneer Village,on_display
+Bensen,B-7,M,N719DP,Gyrocopter,,rotary_wing,,civilian,private,,,built by Arnold Berg;acquired by Warp in 1973,Harold Warp Pioneer Village,on_display
+Wright,Flyer,,,,,fixed_wing,biplane,civilian,experimental,1962,,replica;built under the direction of H P Boen in Kobe Japan,Harold Warp Pioneer Village,on_display

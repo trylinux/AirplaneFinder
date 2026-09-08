@@ -105,12 +105,12 @@ These came out of the year research. None has been applied to the data: each
 needs a second source or a curator before the serial or type is rewritten.
 
 **Serials that cannot be right**
-- **Castle Air Museum HH-43B "62-4213"** — that serial is a Hughes YOH-6A at
-  Fort Rucker. The FY62 HH-43B blocks do not contain it. Castle's Huskie is
-  almost certainly **62-4513**. The error is upstream: castleairmuseum.org
-  prints 62-4213 itself.
-- **Castle Air Museum VC-9C "73-1781"** — the VC-9C block is 73-1681/1683.
-  Castle's aircraft is **73-1681**.
+- ~~**Castle Air Museum HH-43B "62-4213"**~~ — **RESOLVED September 2026.**
+  Confirmed as **62-4513** by an independent survey and corrected. The error is
+  upstream: castleairmuseum.org prints 62-4213 itself.
+- ~~**Castle Air Museum VC-9C "73-1781"**~~ — **RESOLVED September 2026.**
+  Confirmed as **73-1681** and corrected. 73-1682 is at the AMC Museum and
+  73-1683 at Evergreen.
 - **Gateway Freedom Monument F-4E "74-0625"** — in the FY74 list, 74-0189
   through 74-0642 is a block of AGM-69A SRAM missiles; the FY74 F-4E block is
   74-0643/0666 and those were Iranian. This serial needs re-sourcing from
@@ -157,3 +157,43 @@ FY1945-53, 1956-57, 1966-68, 1972 and 1976; those pages are reachable on the
 crouze.com mirror. Aerial Visuals is queryable at
 `aerialvisuals.ca/Airframes.php?Seeds=<serial>`, and six of its dossiers
 currently return a server-side PHP error.
+
+
+---
+
+## Addendum — Castle Air Museum audit, September 2026
+
+Prompted by the Hawaii pass, Castle's 94 rows were audited against the museum's
+current collection page and an independent survey. **Nothing had departed**, but
+**fifteen rows carried bad identifiers and two airframes were missing.**
+
+The pattern is diagnostic: seven of the fifteen errors reproduce
+castleairmuseum.org's own collection page **verbatim** — construction numbers
+sitting in the `tail_number` field (the EC-121's `1049A-4335`, the Cessna 150's
+`150-69128`, the Stinson L-5's `76-3419`, the C-56's `18-2035`), an SBD BuNo
+with an extra digit (`100508` for `10508`), and the two invalid serials above.
+That record was almost certainly scraped from that page. **Treat the museum's
+page as authoritative on what is present and unreliable on serials.**
+
+Corrected: HH-43B to 62-4513; VC-9C to 73-1681; EC-121 to 52-3417 variant T;
+SBD-4 to 10508 and `under_restoration`; L-5 to 44-18145 variant E; Cessna 150 to
+N50198, reclassified civilian, 1968; HC-131A to 53-7786; TBM to 91188 variant 3E
+and `under_restoration`; UH-12 to variant A; C-56 to N1020V.
+
+Added: **Lim-5 010** — a Polish-built MiG-17F, ex-Afghan Air Force, carried in
+the AMARC MiG disposal register as transferred to Castle but absent from the
+museum's public page — and **TF-102A 56-2364**.
+
+Left recorded with the conflict in aliases: the F-104D 57-1314, which is correct
+and painted as 57-1312 (an older museum page gave 57-1330); and three
+digit-transposition disputes between the museum and the survey — the BT-13
+(42-89678 vs 42-86978), the PT-22 (41-20850 vs 41-20580) and the A-6E (159579
+vs 157579).
+
+Not entered: a **C-130A 56-0473** on the museum's sponsorship page that may be
+the same airframe as the recorded MC-130P 66-0212, and a **PV-2 Harpoon** with
+no published serial.
+
+**The Barbers Point question that prompted this is answered**: of the five
+airframes reported in 2021 as shipping from Hawaii to Castle, only the AH-1W and
+the SH-60B are evidenced as having arrived, and both were already recorded.

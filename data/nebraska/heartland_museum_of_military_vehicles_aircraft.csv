@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,UH-1,M,66-15211,Iroquois,,rotary_wing,,military,utility,,,c/n 1939;recorded by Aerial Visuals as a QUH-1M;outdoor display,Heartland Museum of Military Vehicles,on_display
+Bell,UH-1,M,66-0513,Iroquois,,rotary_wing,,military,utility,,,indoors in the main museum building,Heartland Museum of Military Vehicles,on_display
+Bell,UH-1,H,66-1168,Iroquois,,rotary_wing,,military,utility,,,indoors in the main museum building,Heartland Museum of Military Vehicles,on_display
+Bell,UH-1,H,68-16329,Iroquois,,rotary_wing,,military,utility,,,outdoor display,Heartland Museum of Military Vehicles,on_display
+Bell,AH-1,F,79-23234,Cobra,,rotary_wing,,military,ground_attack,,,indoors in the main museum building,Heartland Museum of Military Vehicles,on_display

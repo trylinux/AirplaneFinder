@@ -1,0 +1,67 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aeronca,K,,,,,fixed_wing,monoplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Atlantic Aircraft,DH-4,M-2A,N3249H,,,fixed_wing,biplane,military,utility,,,Airco DH.4 built under licence by Atlantic,Historic Aircraft Restoration Museum,on_display
+Antonov,An-2,,N147AS,Colt,,fixed_wing,biplane,civilian,utility,,,,Historic Aircraft Restoration Museum,on_display
+Antonov,An-2,,N147SP,Colt,,fixed_wing,biplane,civilian,utility,,,,Historic Aircraft Restoration Museum,on_display
+Canadian Aeroplanes,JN-4,C,N496C,Canuck,,fixed_wing,biplane,military,trainer,,,Canadian-built Curtiss JN-4,Historic Aircraft Restoration Museum,on_display
+Culver,Cadet,LCA,N41621,,,fixed_wing,monoplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Curtiss-Robertson,Robin,,,,,fixed_wing,monoplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Curtiss-Wright,CW-16,E-3,,,,fixed_wing,biplane,civilian,private,,,also recorded as a Travel Air 16E,Historic Aircraft Restoration Museum,on_display
+Curtiss-Wright,CW-1,,N4644T,Junior,,fixed_wing,monoplane,civilian,private,,,replica,Historic Aircraft Restoration Museum,on_display
+Curtiss-Wright,CW-15,C,,Sedan,,fixed_wing,monoplane,civilian,private,,,Curtiss Air Sedan,Historic Aircraft Restoration Museum,on_display
+de Havilland,DH.89,A,N2290B,Dragon Rapide,,fixed_wing,biplane,civilian,commercial_transport,,,,Historic Aircraft Restoration Museum,on_display
+Driggs,Dart,II,,,,fixed_wing,biplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Fairchild,24,C8A,,,,fixed_wing,monoplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Fairchild,71,,,,,fixed_wing,monoplane,civilian,utility,,,,Historic Aircraft Restoration Museum,on_display
+Fairchild,KR-21,B,,,,fixed_wing,biplane,civilian,trainer,,,Kreider-Reisner design,Historic Aircraft Restoration Museum,on_display
+Fairchild,KR-31,,,,,fixed_wing,biplane,civilian,trainer,,,Kreider-Reisner design,Historic Aircraft Restoration Museum,on_display
+Flagg,F.13,,,,,fixed_wing,biplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Fleet,Fawn,,,,,fixed_wing,biplane,military,trainer,,,,Historic Aircraft Restoration Museum,on_display
+Funk,B,85-C,N1611N,Bee,,fixed_wing,monoplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Laister-Kauffman,LK-10,A,,,,fixed_wing,monoplane,military,trainer,,,TG-4 training glider,Historic Aircraft Restoration Museum,on_display
+Meyers,MAC-145,,N551,,,fixed_wing,monoplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Mono Aircraft,Monosport,2,N4799E,,,fixed_wing,monoplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Monocoupe,D-145,,,,,fixed_wing,monoplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Monocoupe,90,A8,,,,fixed_wing,monoplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Monocoupe,90,L,N119V,,,fixed_wing,monoplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Monocoupe,110,,N18642,,,fixed_wing,monoplane,civilian,private,,,clipwing,Historic Aircraft Restoration Museum,on_display
+Nicholas-Beazley,NB-8,G,,,,fixed_wing,monoplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Pietenpol,Air Camper,,N9170M,,,fixed_wing,monoplane,civilian,experimental,,,,Historic Aircraft Restoration Museum,on_display
+Piper,PA-11,,N4615M,Cub Special,,fixed_wing,monoplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Piper,PA-15,,,Vagabond,,fixed_wing,monoplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Rearwin,Sportster,,N15856,,,fixed_wing,monoplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Rutan,Long-EZ,,N422N,,,fixed_wing,monoplane,civilian,experimental,,,,Historic Aircraft Restoration Museum,on_display
+Ryan,M-1,,,,,fixed_wing,monoplane,civilian,utility,,,replica,Historic Aircraft Restoration Museum,on_display
+Ryan,ST,3KR,,,,fixed_wing,monoplane,military,trainer,,,PT-22 Recruit,Historic Aircraft Restoration Museum,on_display
+SAI,KZ III,,N76KZ,,,fixed_wing,monoplane,civilian,private,,,Skandinavisk Aero Industri,Historic Aircraft Restoration Museum,on_display
+Shavrov,Sh-2,,,,,fixed_wing,biplane,civilian,utility,,,amphibian,Historic Aircraft Restoration Museum,on_display
+Sopwith,Pup,,,,,fixed_wing,biplane,military,fighter,,,replica,Historic Aircraft Restoration Museum,on_display
+St. Louis Aircraft,C2,,,Cardinal,,fixed_wing,monoplane,civilian,private,,,,Historic Aircraft Restoration Museum,under_restoration
+Standard Aircraft,J-1,,,,,fixed_wing,biplane,military,trainer,1917,,Hisso Standard;flown in The Great Waldo Pepper and The Rocketeer,Historic Aircraft Restoration Museum,on_display
+Star,Cavalier,A,,,,fixed_wing,monoplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Star,Cavalier,E,,,,fixed_wing,monoplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Stinson,SR-6,,N15112,Reliant,,fixed_wing,monoplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Stinson,SM-8,A,,Junior,,fixed_wing,monoplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Taylor,E-2,,,Cub,,fixed_wing,monoplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Timm,Collegiate,,,,,fixed_wing,biplane,civilian,trainer,,,,Historic Aircraft Restoration Museum,on_display
+Travel Air,2000,,,,,fixed_wing,biplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Travel Air,3000,,N3947,,,fixed_wing,biplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Waco,ATO,,,,,fixed_wing,biplane,civilian,private,,,first of two examples,Historic Aircraft Restoration Museum,on_display
+Waco,ATO,,,,,fixed_wing,biplane,civilian,private,,,second of two examples,Historic Aircraft Restoration Museum,on_display
+Waco,AVN-8,,,,,fixed_wing,biplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Waco,Cootie,,,,,fixed_wing,monoplane,civilian,experimental,,,replica,Historic Aircraft Restoration Museum,on_display
+Waco,CSO,,,,,fixed_wing,biplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Waco,CTO,,,,,fixed_wing,biplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Waco,GXE,,N6675K,,,fixed_wing,biplane,civilian,private,,,Waco 10,Historic Aircraft Restoration Museum,on_display
+Waco,JWM,,,,,fixed_wing,biplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Waco,QCF-2,,,,,fixed_wing,biplane,civilian,private,,,first of two examples,Historic Aircraft Restoration Museum,on_display
+Waco,QCF-2,,,,,fixed_wing,biplane,civilian,private,,,second of two examples,Historic Aircraft Restoration Museum,on_display
+Waco,RNF,,,,,fixed_wing,biplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Waco,UBF-2,,,,,fixed_wing,biplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Waco,YKC,,N3NX,,,fixed_wing,biplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Waco,YKS-7,,,,,fixed_wing,biplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+Yakovlev,Yak-52,,N107GC,,,fixed_wing,monoplane,military,trainer,,,,Historic Aircraft Restoration Museum,on_display
+Yakovlev,Yak-52,,N203AS,,,fixed_wing,monoplane,military,trainer,,,,Historic Aircraft Restoration Museum,on_display
+Zenith,Z-6,A,,,,fixed_wing,biplane,civilian,private,,,,Historic Aircraft Restoration Museum,on_display
+de Havilland,DH.82,,,Tiger Moth,,fixed_wing,biplane,military,trainer,,,ride aircraft,Historic Aircraft Restoration Museum,on_display
+North American,SNJ,5,,Texan,,fixed_wing,monoplane,military,trainer,,,ride aircraft,Historic Aircraft Restoration Museum,on_display

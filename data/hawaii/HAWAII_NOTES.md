@@ -49,12 +49,17 @@ Kawamura Gate air park are `restricted`.
 
 - **Naval Air Museum Barbers Point, Kalaeloa — closed.** Shut November 2019,
   evicted by the state DOT on 31 October 2020. Collection dispersed: an A-4E to
-  Ford Island; an A-4E, CH-53D 156964, UH-3H 148043, SH-60B 162102 and an AH-1W
-  shipped to Castle Air Museum in late 2021; DC-8-62 N799AL moved to the
-  Kalaeloa soundstages as a film prop in February 2024; UH-1H 69-15708 relocated.
-  The remaining hulks (P-3C 160770, UP-3A 152169, F-4N 152291, an HC-130H,
-  SH-2F 150158) were slated for scrapping with no confirmation of survival.
-  **Castle Air Museum's California record should be checked for those five.**
+  Ford Island; DC-8-62 N799AL moved to the Kalaeloa soundstages as a film prop in
+  February 2024; UH-1H 69-15708 relocated. The remaining hulks (P-3C 160770,
+  UP-3A 152169, F-4N 152291, an HC-130H, SH-2F 150158) were slated for scrapping
+  with no confirmation of survival.
+  Five airframes were reported in 2021 as bound for **Castle Air Museum**, but an
+  audit of Castle in September 2026 found **only two ever arrived** — AH-1W
+  162558 and SH-60B 162102, both on Castle's own collection page and in the
+  February 2022 arrival reporting, and both already in the database. CH-53D
+  156964, UH-3H 148043 and a second A-4E rest on pre-shipment press only; the
+  CH-53D and UH-3H were Pensacola loans that would have needed re-issuing to
+  Castle, and no such re-issue is documented.
 - **PBY-5A 46602** — loaned to the museum by the Navy in 2023 but physically at
   the Air Zoo in Kalamazoo for restoration. Recorded nowhere until it moves.
 - **An A-4 Skyhawk** named in the museum's June 2025 suspension appeal — no

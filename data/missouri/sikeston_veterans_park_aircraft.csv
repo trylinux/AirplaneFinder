@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+McDonnell Douglas,F-4,J,153839,Phantom II,,fixed_wing,monoplane,military,fighter,,,c/n 2227;code NG;serial from a single source,Sikeston Veterans Park,on_display
+Bell,UH-13,P,143143,Sioux,,rotary_wing,,military,utility,,,built as an HUL-1;serial from a single source,Sikeston Veterans Park,on_display
