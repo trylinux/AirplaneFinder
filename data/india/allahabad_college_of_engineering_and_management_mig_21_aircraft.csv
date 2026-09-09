@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,MiG-21,FL,C1002,Fishbed,,fixed_wing,monoplane,military,fighter,,"Ex-scrap MiG-21FL C1002 (OCU Tezpur 2003) rebuilt privately from a stripped hulk with a Type 96 style canopy, installed Nov 2017, with dummy AAMs (WBI, 2022).",MiG21FL; C1002; C1102; MiG21; C-1002,Allahabad College of Engineering and Management MiG-21,on_display

@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Breguet,Alize,Br.1050,IN206,,,fixed_wing,monoplane,military,recon,,Partly de-skinned instructional (X-ray) Alize of INAS 310 Cobras at NIAT. Source WoI 2008.,IN-206; Br1050; IN206,Naval Institute of Aeronautical Technology Kochi,on_display
+Hughes,269,,IN086,,,rotary_wing,,military,trainer,,"Hughes 269/300 two-seat trainer, second Indian Navy survivor. Source WoI 2008.",IN-086; Hughes 300; IN086,Naval Institute of Aeronautical Technology Kochi,on_display
+HAL,Chetak,,IN406,,,rotary_wing,,military,utility,,"Cabin section only, no tail boom, rotors cut down, instructional. Source WoI 2008.",IN-406; Alouette III; IN406,Naval Institute of Aeronautical Technology Kochi,on_display

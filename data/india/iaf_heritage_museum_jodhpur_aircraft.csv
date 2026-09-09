@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,HF-24,Mk 1,D1220,Marut,,fixed_wing,monoplane,military,fighter,,Displayed on the lawns of the heritage museum opened Sept 2001 by ACM Tipnis inside AFS Jodhpur (warbirds.in).,D-1220; Marut; HF24,IAF Heritage Museum Jodhpur,on_display
+Sukhoi,Su-7,BMK,B790,Fitter,,fixed_wing,monoplane,military,ground_attack,,Desert-camouflaged Su-7 on the museum lawns; serial B-790 per warbirds.in table.,B-790; Su7BMK; Su7; B790,IAF Heritage Museum Jodhpur,on_display
+HAL,HT-2,,,,,fixed_wing,monoplane,military,trainer,,Unidentified HT-2 in front of the main building (warbirds.in).,HT2 Jodhpur; HT2,IAF Heritage Museum Jodhpur,on_display
+Mikoyan-Gurevich,MiG-27,ML,,Bahadur,,fixed_wing,monoplane,military,ground_attack,,MiG-27 reported on the lawns (Sainik Samachar via warbirds.in 2005); serial not recorded.,MiG27 Jodhpur; MiG27; MiG27ML,IAF Heritage Museum Jodhpur,on_display
+Mikoyan-Gurevich,MiG-27,ML,TS556,Flogger,,fixed_wing,monoplane,military,ground_attack,,"MiG-27ML with Cope India 2006 shark-teeth paint, park-mounted in the open at Jodhpur (Bharat Rakshak); WBI mentions a MiG-27 on the museum lawns.",MiG27ML; TS556; shark teeth; MiG27; TS-556,IAF Heritage Museum Jodhpur,on_display

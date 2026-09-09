@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,C-47,,,,Dakota,fixed_wing,monoplane,civilian,transport,,"Engineless Dakota with mock cowlings and props, at the college since ~April 2014, no identity; possibly ex-BSF VT-CYX from Yelahanka (auctioned 2011). Source WoI Jan 2024.",VT-CYX; Dakota; C47,Excel Engineering College Komarapalayam,on_display
+Mikoyan-Gurevich,MiG-23,BN,SM203,Flogger,,fixed_wing,monoplane,military,ground_attack,,"Second IAF MiG-23BN; at Excel Engineering College per WoI 2024 and BR (BR remark: derelict Nov 2008). Source WoI, BR.",SM-203; MiG23BN; MiG23; SM203,Excel Engineering College Komarapalayam,on_display

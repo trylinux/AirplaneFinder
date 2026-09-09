@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,Ajeet,Mk 1,E1990,,,fixed_wing,monoplane,military,fighter,,Late HAL Ajeet on a pedestal (WBI; Bharat Rakshak).,Ajeet; E1990; E-1990,Sainik School Chittorgarh,on_display
+North American,Harvard,,,Texan,,fixed_wing,monoplane,military,trainer,,"Yellow-painted Harvard on a platform, weathered, identity unknown (WBI).",T-6; Harvard Chittorgarh; T6,Sainik School Chittorgarh,on_display
+HAL,HPT-32,Deepak,,Deepak,,fixed_wing,monoplane,military,trainer,,HPT-32 believed installed 2021-22 (WBI); identity unknown.,HPT32 Chittorgarh; HPT32,Sainik School Chittorgarh,on_display

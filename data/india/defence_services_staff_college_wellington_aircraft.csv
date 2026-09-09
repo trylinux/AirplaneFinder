@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,Ajeet,,E1049,,,fixed_wing,monoplane,military,fighter,,"Ajeet (identity from 49 on gear door) moved 2014-15 to a plinth between administrative/study blocks. Source WoI (updated 2016), BR.",E-1049; Gnat,Defence Services Staff College Wellington,on_display
+Mikoyan-Gurevich,MiG-21,FL,C508,Fishbed,,fixed_wing,monoplane,military,fighter,,"Early Soviet-built Type 77 (No.30 Sqn 1998), displayed at a road corner opposite the College War Memorial since by Jan 2012. Source WoI, BR.",C-508; Type 77; MiG21FL; MiG21; C508,Defence Services Staff College Wellington,on_display

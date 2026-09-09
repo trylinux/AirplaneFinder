@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,MiG-21,M,C1645,Fishbed,,fixed_wing,monoplane,military,fighter,,MiG-21M preserved at AFS Adampur per Bharat Rakshak.,MiG21M; C1645; MiG21; C-1645,Air Force Station Adampur displays,on_display
+Mikoyan-Gurevich,MiG-23,BN,SM218,Flogger,,fixed_wing,monoplane,military,ground_attack,,MiG-23BN preserved at the Adampur AFS war memorial per Bharat Rakshak.,MiG23BN; SM218; MiG23; SM-218,Air Force Station Adampur displays,on_display

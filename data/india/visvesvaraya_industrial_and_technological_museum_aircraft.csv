@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,HF-24,Mk 1R,BD884,Marut,,fixed_wing,monoplane,military,experimental,,"The only surviving reheat-engined Marut prototype; displayed outdoors in front of the museum facing Kasturba Road, free to view (warbirds.in).",BD-884; Marut 1R; HF24; BD884,Visvesvaraya Industrial and Technological Museum,on_display
+Wright,Flyer,I replica,,,,fixed_wing,biplane,civilian,experimental,2003,"Full-scale replica built by local enthusiasts, unveiled 16 Dec 2003 in the engine hall; REPLICA.",Wright Flyer replica,Visvesvaraya Industrial and Technological Museum,on_display

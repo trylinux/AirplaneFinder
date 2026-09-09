@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,HT-2,,IX482,,,fixed_wing,monoplane,military,trainer,,"c/n T.019. Dilapidated HT-2 on the school playground, visible from Hosur Road. Source WoI 2008, BR.",IX-482; HT2; IX482,Rashtriya Military School Bengaluru,on_display
+Mikoyan-Gurevich,MiG-21,FL,C1158,Fishbed,,fixed_wing,monoplane,military,fighter,,Listed by BR as preserved at Military School Bangalore. Source BR only.,C-1158; Type 77; MiG21FL; MiG21,Rashtriya Military School Bengaluru,on_display

@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,Gnat,F.1,E311,,,fixed_wing,monoplane,military,fighter,,"HAL-built Gnat with two drop tanks on raised ground (WBI, 2014; Bharat Rakshak).",HALGnat; E311; E-311,The Lawrence School Sanawar Gnat,on_display

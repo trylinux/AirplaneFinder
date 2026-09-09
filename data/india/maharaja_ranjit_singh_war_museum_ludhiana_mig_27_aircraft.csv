@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-27,ML,TS541,Flogger,,fixed_wing,monoplane,military,ground_attack,,"MiG-27ML preserved at the Maharaja Ranjit Singh War Museum, Ludhiana (Bharat Rakshak).",MiG27ML; TS541; Bahadur; MiG27; TS-541,Maharaja Ranjit Singh War Museum Ludhiana MiG-27,on_display

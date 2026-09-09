@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-23,BN,SM201,Flogger,,fixed_wing,monoplane,military,ground_attack,1980,"First MiG-23BN inducted by the IAF, built 25 Aug 1980 (c/n 7542); last flight 5 Oct 2001 with 220 Sqn Halwara; seat headrest marked SM-294 (warbirds.in). Defence pavilion.",SM-201; MiG23BN; SM294; MiG23; SM201,Pushpa Gujral Science City,on_display
+BHEL,Swati,,VT-STP,,,fixed_wing,monoplane,civilian,trainer,,"DGCA-designed, BHEL-built light trainer, fewer than 20 made; displayed inside the Space hall (warbirds.in).",VT-STP; Swati,Pushpa Gujral Science City,on_display

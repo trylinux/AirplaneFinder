@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-27,ML,TS517,Flogger,,fixed_wing,monoplane,military,ground_attack,,"Kargil-veteran MiG-27ML of 222 Sqn, fire-damaged at Hasimara, rebuilt by the school founder and mounted on concrete pylons at the entrance in 2023 (WBI).",MiG27ML; TS517; Bahadur; MiG27; TS-517,Veterans Air Force School Bulandshahr MiG-27,on_display

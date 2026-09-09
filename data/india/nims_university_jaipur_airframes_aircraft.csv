@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Hawker Siddeley,HS 748,,,Avro,,fixed_wing,monoplane,civilian,transport,,"Engineless HS 748 on a concrete platform outside the engineering building since Jan 2015; unmarked, suspected ex-BSF VT-EIR disposed of at Palam (WBI, Feb 2024). tail_number blank; identity unproven.",VT-EIR possible; Avro 748 NIMS,NIMS University Jaipur airframes,on_display
+Ryan,Navion,,,,,fixed_wing,monoplane,civilian,private,,"Ryan Navion displayed beside the HS 748 as an instructional airframe (WBI, 2024). Identity unknown.",Ryan Navion NIMS,NIMS University Jaipur airframes,on_display

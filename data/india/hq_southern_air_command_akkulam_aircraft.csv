@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,Gnat,F.1,,,,fixed_wing,monoplane,military,fighter,,"Pole-mounted Gnat with drop tanks in front of SAC HQ, flanked by two SA-2 missiles; moved from earlier Kowdiar HQ site. Identity unknown. Source WoI 2009.",Folland Gnat,HQ Southern Air Command Akkulam,on_display
+Isayev,S-75,Dvina,,,SA-2 Guideline,missile_rocket,,military,surface_to_air,,First of two stripped-down SA-2 missiles pylon-mounted either side of the Gnat at SAC HQ. Source WoI 2009.,SA2; V-750; first of two; S75; V750,HQ Southern Air Command Akkulam,on_display
+Isayev,S-75,Dvina,,,SA-2 Guideline,missile_rocket,,military,surface_to_air,,Second of two SA-2 missiles at SAC HQ. Source WoI 2009.,SA2; V-750; second of two; S75; V750,HQ Southern Air Command Akkulam,on_display

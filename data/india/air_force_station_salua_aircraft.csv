@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,FL,C1117,Fishbed,,fixed_wing,monoplane,military,fighter,,MiG-21FL C1117 listed by the bharat-rakshak database as preserved at Salua AFS. Not independently verified.,C-1117; Type 77; MiG21; MiG21FL,Air Force Station Salua,on_display
+Mikoyan-Gurevich,MiG-27,ML,TS546,Flogger,,fixed_wing,monoplane,military,ground_attack,,MiG-27ML TS546 listed by the bharat-rakshak database as preserved at Salua AFS. Not independently verified.,TS-546; MiG27ML; MiG27; TS546,Air Force Station Salua,on_display

@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-23,BN,SM255,Flogger,,fixed_wing,monoplane,military,ground_attack,,"Pole-mounted nose-up with wings swept, first noted March 2011 during construction of the memorial. Source WoI 2015, BR.",SM-255; MiG23BN; MiG23; SM255,National Military Memorial Park Bengaluru,on_display
+Mikoyan-Gurevich,MiG-21,M,C1672,Fishbed,,fixed_wing,monoplane,military,fighter,,Listed by BR as preserved at the National Military Memorial. Not in WoI 2015 page; likely a later addition. Source BR only.,C-1672; MiG21M; MiG21,National Military Memorial Park Bengaluru,on_display
+Mil,Mi-8,,Z2388,Hip,,rotary_wing,,military,transport,,"Ex-IAF Communication Unit VIP-scheme Mi-8, listed by BR at the National Military Memorial. Source BR only.",Z-2388; Mi8,National Military Memorial Park Bengaluru,on_display

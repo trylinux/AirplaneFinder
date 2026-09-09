@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Hawker,Sea Hawk,FGA.6,IN252,,,fixed_wing,monoplane,military,fighter,,"Stored outdoors at MIT Chromepet next to Gnat IE1248, port wingtip missing, gunsight retained. Source WoI 2008, BR.",IN-252; Seahawk; IN252,Madras Institute of Technology Chromepet,on_display
+HAL,Gnat,F.1,IE1248,,,fixed_wing,monoplane,military,fighter,,"Early HAL-built Gnat with No.2 Sqn badge, displayed beside the Sea Hawk. Source WoI 2008, BR.",IE-1248; Folland Gnat,Madras Institute of Technology Chromepet,on_display

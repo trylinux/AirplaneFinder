@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,MiG-21,M,C1661,Fishbed,,fixed_wing,monoplane,military,fighter,,"MiG-21M recorded by Bharat Rakshak as preserved at Terminal 1D, IGI Airport. Terminal 1 was rebuilt 2019-2024; survival of the display after the rebuild not verified.",MiG21M; C1661; MiG21; C-1661,Indira Gandhi International Airport Terminal 1 MiG-21,on_display

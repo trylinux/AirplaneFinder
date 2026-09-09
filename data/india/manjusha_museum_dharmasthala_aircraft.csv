@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,C-47,A,VT-CGQ,Dakota,,fixed_wing,monoplane,civilian,transport,,"Ex-USAAF WWII Dakota, later one of two Birla group Dakotas, flown until the mid-1990s and donated to the Dharmasthala museum; red/white livery, under a purpose-built shelter (warbirds.in).",VT-CGQ; Dakota; DC3; C47; C47A,Manjusha Museum Dharmasthala,on_display
+HAL,HT-2,,,,,fixed_wing,monoplane,military,trainer,,HT-2 displayed alongside the Dakota; aviationmuseum.eu gives painted number 10; true serial unknown.,HT2 Dharmasthala; HT2,Manjusha Museum Dharmasthala,on_display
+HAL,HT-2,,IX710,,,fixed_wing,monoplane,military,trainer,,"Blue-painted HT-2 marked 10, display board says it flew from AFS Bidar; BR identifies it as IX-710. Source WoI, BR.",IX-710; HT2; IX710,Manjusha Museum Dharmasthala,on_display

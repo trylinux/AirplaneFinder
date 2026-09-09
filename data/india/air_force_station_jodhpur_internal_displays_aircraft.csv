@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,MiG-21,MF,C1498,Fishbed,,fixed_wing,monoplane,military,fighter,,"MiG-21MF at the Wing House near the library, AFS Jodhpur (Bharat Rakshak).",MiG21MF; C1498; MiG21; C-1498,Air Force Station Jodhpur internal displays,on_display
+HAL,MiG-21,MF,C1503,Fishbed,,fixed_wing,monoplane,military,fighter,,"MiG-21MF in the technical area, AFS Jodhpur (Bharat Rakshak).",MiG21MF; C1503; MiG21; C-1503,Air Force Station Jodhpur internal displays,on_display

@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+English Electric,Canberra,T.54,BQ744,,,fixed_wing,monoplane,military,trainer,,"Canberra T.4 (IAF T.54) ex-RAF WJ859, loaned to RNZAF, acquired 1963; among the last flying Canberras (106 Sqn 2004); displayed on base (WBI, Aug 2023, photo Angad Singh).",WJ859; Canberra T4; BQ744; BQ-744,Air Force Station Bathinda (Bhisiana) displays,on_display
+HAL,HF-24,Mk 1,,Marut,,fixed_wing,monoplane,military,fighter,,"Unidentified HF-24 Marut on base, seen on Google Maps photo (WBI 2023).",HF24 Bathinda; HF24,Air Force Station Bathinda (Bhisiana) displays,on_display
+Sukhoi,Su-7,BMK,,Fitter,,fixed_wing,monoplane,military,ground_attack,,Unidentified Su-7 reported on base (WBI 2023); no photo.,Su7 Bathinda; Su7; Su7BMK,Air Force Station Bathinda (Bhisiana) displays,on_display
+HAL,MiG-21,,,Fishbed,,fixed_wing,monoplane,military,fighter,,MiG-21 of unknown variant reported on base (WBI 2023); no photo.,MiG21 Bathinda AFS; MiG21,Air Force Station Bathinda (Bhisiana) displays,on_display

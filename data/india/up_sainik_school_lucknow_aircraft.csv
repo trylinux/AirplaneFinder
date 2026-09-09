@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Dassault,Ouragan,,IC567,Toofani,,fixed_wing,monoplane,military,fighter,,"Ouragan c/n 261 donated 15 May 1972, unveiled by ACM Arjan Singh; repainted by 1 BRD c.2010 with a new canopy, seen broken again 2011 (WBI; Bharat Rakshak). Wingtip tanks retained.",Toofani; 261; IC567; IC-567,UP Sainik School Lucknow,on_display
+HAL,MiG-21,M,C1669,Fishbed,,fixed_wing,monoplane,military,fighter,,MiG-21M erected 2017 with help from AFS Memaura; 3271 flight hours at retirement; serial painted over by 2022 (WBI).,MiG21M; C1669; MiG21; C-1669,UP Sainik School Lucknow,on_display
