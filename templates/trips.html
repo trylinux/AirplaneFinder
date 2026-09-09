@@ -37,11 +37,13 @@
     </div>
     <section id="trip-result" hidden>
         <h2 id="trip-summary"></h2>
-        <p class="x-intro">Suggested itinerary based on recorded on-display aircraft. Check each museum’s official site before travelling. Dashed lines and mileage are straight-line estimates; use directions for roads and driving times.</p>
+        <p class="x-intro">Suggested itinerary based on recorded on-display aircraft. Check each museum’s official site before travelling. Dashed lines and straight-line mileage show the visit order; where road routing is enabled, the solid line and driving figures come from Google.</p>
+        <div class="x-actions" id="trip-route-summary" aria-live="polite"></div>
         <div class="x-actions" id="trip-directions"></div>
+        <p class="x-status" id="trip-route-status" role="status" aria-live="polite"></p>
         <p class="x-status" id="trip-tile-status" role="status"></p>
         <div id="trip-map" class="x-map" aria-label="Suggested museum stops" data-tile-url="{{ config.MAP_TILE_URL }}" data-attribution="{{ config.MAP_ATTRIBUTION }}"></div>
-        <p class="x-map-key">Green dot: starting point · Numbers: museum stops · Dashed line: visit order</p>
+        <p class="x-map-key">Green dot: starting point · Numbers: museum stops · Dashed line: visit order · Solid line: road route</p>
         <div id="trip-unmatched" class="x-card" hidden></div>
         <div id="trip-stops"></div>
         <form class="x-card" id="trip-save-form"><h2>Save this plan</h2><p class="x-muted">Saving with an existing name replaces that plan.</p><label class="x-field">Trip name<input id="trip-name" value="My aircraft trip" maxlength="80" required></label><div class="x-actions"><button class="x-button" type="submit">Save on this device</button></div><p id="trip-save-status" class="x-status" role="status"></p></form>
@@ -51,6 +53,6 @@
 {% block scripts %}
 <script src="{{ url_for('static', filename='vendor/leaflet/leaflet.js') }}"></script>
 <script src="{{ url_for('static', filename='js/explorer.js') }}?v=explore-1"></script>
-<script src="{{ url_for('static', filename='js/museum-map.js') }}?v=explore-1"></script>
-<script src="{{ url_for('static', filename='js/trip-planner.js') }}?v=explore-1"></script>
+<script src="{{ url_for('static', filename='js/museum-map.js') }}?v=road-routes-1"></script>
+<script src="{{ url_for('static', filename='js/trip-planner.js') }}?v=road-routes-1"></script>
 {% endblock %}

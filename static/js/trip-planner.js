@@ -3,7 +3,7 @@
     const $ = selector => document.querySelector(selector);
     let targets = [], revision = 0, searchSerial = 0, currentRequest = null, map = null;
     const storageKey = 'aircraft-finder-trips-v1';
-    function invalidate() {revision++;currentRequest=null;$('#trip-result').hidden=true;message($('#trip-status'),'');}
+    function invalidate() {revision++;routeSerial++;currentRequest=null;$('#trip-result').hidden=true;message($('#trip-status'),'');}
     function targetKey(t) {return t.kind === 'airframe' ? `airframe:${t.aircraft_id}` : `model:${t.manufacturer.toLowerCase()}:${t.model.toLowerCase()}`;}
     function targetLabel(t) {return t.label || (t.kind === 'model' ? `${t.manufacturer} ${t.model} · any variant` : `Airframe #${t.aircraft_id}`);}
     function renderTargets() {
@@ -49,6 +49,7 @@
     function showPlan(plan) {
         $('#trip-result').hidden=false;
         $('#trip-summary').textContent=`${plan.stops.length} museum stop${plan.stops.length === 1 ? '' : 's'} · ${plan.targets.length-plan.unmatched.length}/${plan.targets.length} aircraft choices covered · ${plan.total_straight_line_miles.toLocaleString()} straight-line miles`;
+        message($('#trip-route-status'),'');$('#trip-route-summary').replaceChildren();
         if(!map)map=MuseumMap($('#trip-map'), {onTileError(){message($('#trip-tile-status'),'The background map could not load. Your itinerary and directions are still available.',true);}});
         map.map.invalidateSize();map.setMuseums(plan.stops.map(s=>s.museum),{numbered:true});
         const points=[plan.origin,...plan.stops.map(s=>s.museum)];if(plan.round_trip && plan.stops.length)points.push(plan.origin);
@@ -71,15 +72,51 @@
         }
         $('#trip-stops').replaceChildren();
         plan.stops.forEach((stop,index)=>{
-            const card=el('article',null,'x-card');card.append(el('h2',`${index+1}. ${stop.museum.name}`),el('p',`${stop.museum.city}, ${stop.museum.country} · ${stop.leg_straight_line_miles} straight-line miles from ${index?'previous stop':'start'}`,'x-muted'));
+            const card=el('article',null,'x-card');
+            const leg=el('p',`${stop.museum.city}, ${stop.museum.country} · ${stop.leg_straight_line_miles} straight-line miles from ${index?'previous stop':'start'}`,'x-muted');
+            leg.dataset.leg=String(index);   // loadRoadRoute() appends driving figures here
+            card.append(el('h2',`${index+1}. ${stop.museum.name}`),leg);
             const wanted=el('p');stop.target_indexes.forEach(i=>wanted.append(el('span',plan.targets[i].label,'x-tag')));card.append(wanted);
             const aircraftList=el('ul');stop.aircraft.forEach(a=>{const item=el('li');item.append(link(`${a.full_designation} · ${a.tail_number || a.aircraft_name || 'Airframe #'+a.id}`,`/aircraft/${a.id}/history`));aircraftList.append(item);});card.append(aircraftList);
             const actions=el('div',null,'x-actions');actions.append(link('Museum collection',`/museums/${stop.museum.id}`,'x-button secondary'),external('Drive to this stop',routeUrl([points[index],points[index+1]])));
             if(stop.museum.website && /^https?:\/\//i.test(stop.museum.website))actions.append(external('Official museum site',stop.museum.website));card.append(actions);$('#trip-stops').append(card);
         });
-        if(plan.round_trip && plan.stops.length)$('#trip-stops').append(el('p',`Return to start: ${plan.return_straight_line_miles} straight-line miles.`,'x-status'));
+        if(plan.round_trip && plan.stops.length){const back=el('p',`Return to start: ${plan.return_straight_line_miles} straight-line miles.`,'x-status');back.dataset.leg=String(plan.stops.length);$('#trip-stops').append(back);}
         message($('#trip-save-status'),'');
         $('#trip-result').scrollIntoView({behavior:'smooth',block:'start'});
+        loadRoadRoute(plan,points);
+    }
+    function formatDuration(minutes) {
+        const h=Math.floor(minutes/60), m=minutes%60;
+        return h ? `${h} h${m ? ' '+m+' min' : ''}` : `${m} min`;
+    }
+    /* Second pass: ask the server for Google's drivable route through the
+       same points. Purely additive — if it fails or routing isn't configured
+       the straight-line plan above is untouched and the status says why. */
+    let routeSerial=0;
+    async function loadRoadRoute(plan,points) {
+        const serial=++routeSerial, status=$('#trip-route-status');
+        if(!plan.stops.length)return;
+        if(!plan.road_routing_available){message(status,'Road routes are not enabled on this server; distances are straight-line.');return;}
+        message(status,'Fetching road route…');
+        try {
+            const route=await api('/api/v1/trips/route',{method:'POST',body:JSON.stringify({points:points.map(p=>({latitude:p.latitude,longitude:p.longitude}))})});
+            if(serial!==routeSerial)return;
+            map.setRoadRoute(route.legs);
+            route.legs.forEach((leg,index)=>{
+                const target=document.querySelector(`#trip-stops [data-leg="${index}"]`);
+                if(!target)return;
+                const strong=el('strong',` · ${leg.distance_miles.toLocaleString()} driving miles, about ${formatDuration(leg.duration_minutes)}`);
+                target.append(strong);
+            });
+            const summary=$('#trip-route-summary');summary.replaceChildren();
+            summary.append(el('span',`${route.total_miles.toLocaleString()} driving miles · about ${formatDuration(route.total_minutes)} on the road`,'x-tag'));
+            message(status,'Road route and driving times by Google. Times exclude stops and traffic; opening hours are not checked.');
+        } catch(error) {
+            if(serial!==routeSerial)return;
+            map.setRoadRoute([]);
+            message(status,`${error.message} Showing straight-line estimates instead.`,true);
+        }
     }
     async function build() {
         if(!targets.length)return message($('#trip-status'),'Add at least one aircraft or model.',true);
