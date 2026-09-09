@@ -8,36 +8,29 @@
     <p class="subtitle">Search for historic aircraft and find museums near you</p>
 </div>
 
-<!-- Stats Cards -->
+<!-- Stats Cards — each one is a link into the matching directory -->
 <div class="stats-grid" id="stats-grid">
-    <div class="stat-card">
+    <a class="stat-card stat-link" href="/aircraft" aria-label="Browse the aircraft directory">
         <div class="stat-icon"><i class="fa-solid fa-jet-fighter"></i></div>
         <div class="stat-body">
             <span class="stat-number" id="stat-aircraft">—</span>
-            <span class="stat-label">Aircraft</span>
+            <span class="stat-label">Aircraft <i class="fa-solid fa-arrow-right stat-arrow"></i></span>
         </div>
-    </div>
-    <div class="stat-card">
+    </a>
+    <a class="stat-card stat-link" href="/museums" aria-label="Browse the museum directory">
         <div class="stat-icon"><i class="fa-solid fa-building-columns"></i></div>
         <div class="stat-body">
             <span class="stat-number" id="stat-museums">—</span>
-            <span class="stat-label">Museums</span>
+            <span class="stat-label">Museums <i class="fa-solid fa-arrow-right stat-arrow"></i></span>
         </div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-icon"><i class="fa-solid fa-link"></i></div>
-        <div class="stat-body">
-            <span class="stat-number" id="stat-displays">—</span>
-            <span class="stat-label">Exhibits</span>
-        </div>
-    </div>
-    <div class="stat-card">
+    </a>
+    <a class="stat-card stat-link" href="/map" aria-label="Open the museum map">
         <div class="stat-icon"><i class="fa-solid fa-globe"></i></div>
         <div class="stat-body">
             <span class="stat-number" id="stat-countries">—</span>
-            <span class="stat-label">Countries</span>
+            <span class="stat-label">Countries <i class="fa-solid fa-arrow-right stat-arrow"></i></span>
         </div>
-    </div>
+    </a>
 </div>
 
 <!-- Proximity Search -->
@@ -90,7 +83,6 @@ $(function() {
     $.getJSON('/api/stats', function(data) {
         $('#stat-aircraft').text(data.aircraft_count);
         $('#stat-museums').text(data.museum_count);
-        $('#stat-displays').text(data.link_count);
         if (data.country_count) $('#stat-countries').text(data.country_count);
     });
 
@@ -150,6 +142,16 @@ $(function() {
             });
     }
 
+    // Whole proximity card opens the museum page; real links inside (name,
+    // website) keep their own behaviour so middle-click / new-tab work.
+    $(document).on('click', '.prox-link', function(e) {
+        if ($(e.target).closest('a').length) return;
+        window.location.href = $(this).data('href');
+    });
+    $(document).on('keydown', '.prox-link', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); window.location.href = $(this).data('href'); }
+    });
+
     function showProxError(msg) {
         $('#prox-error').html('<i class="fa-solid fa-circle-exclamation"></i> ' + msg).show();
     }
@@ -167,10 +169,10 @@ $(function() {
         (data.results || []).forEach(function(r) {
             var statusClass = 'status-' + r.display_status;   // raw, used as CSS class
             var statusLabel = prettyEnum(r.display_status);
-            html += '<div class="prox-item">' +
+            html += '<div class="prox-item prox-link" data-href="/museums/' + r.museum.id + '" role="link" tabindex="0">' +
                 '<div class="prox-distance"><span class="dist-num">' + r.distance_miles + '</span><span class="dist-unit">miles</span></div>' +
                 '<div class="prox-info">' +
-                    '<h4>' + escHtml(r.museum.name) + '</h4>' +
+                    '<h4><a class="row-link" href="/museums/' + r.museum.id + '">' + escHtml(r.museum.name) + '</a></h4>' +
                     '<p class="prox-location-text">' + escHtml(r.museum.city + (r.museum.state_province ? ', ' + r.museum.state_province : '') + ' — ' + r.museum.country) + '</p>' +
                     '<p class="prox-aircraft-text"><i class="fa-solid fa-plane"></i> ' +
                         escHtml(r.aircraft.full_designation || r.aircraft.model) +
@@ -187,10 +189,10 @@ $(function() {
         if (data.no_coordinates && data.no_coordinates.length > 0) {
             html += '<div class="prox-no-coords"><h4>Also displaying this aircraft (distance unavailable):</h4>';
             data.no_coordinates.forEach(function(r) {
-                html += '<div class="prox-item">' +
+                html += '<div class="prox-item prox-link" data-href="/museums/' + r.museum.id + '" role="link" tabindex="0">' +
                     '<div class="prox-distance"><span class="dist-num">?</span><span class="dist-unit">miles</span></div>' +
                     '<div class="prox-info">' +
-                        '<h4>' + escHtml(r.museum.name) + '</h4>' +
+                        '<h4><a class="row-link" href="/museums/' + r.museum.id + '">' + escHtml(r.museum.name) + '</a></h4>' +
                         '<p class="prox-location-text">' + escHtml(r.museum.city + ' — ' + r.museum.country) + '</p>' +
                         '<p class="prox-aircraft-text"><i class="fa-solid fa-plane"></i> ' +
                             escHtml(r.aircraft.full_designation || r.aircraft.model) +

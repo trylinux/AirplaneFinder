@@ -188,6 +188,12 @@ a:hover { text-decoration: underline; }
 }
 .stat-number { display: block; font-size: 1.75rem; font-weight: 700; line-height: 1.2; }
 .stat-label { color: var(--text-dim); font-size: .85rem; }
+/* Stat cards are links into the directories: same look at rest, obvious on hover/focus. */
+a.stat-link { color: inherit; text-decoration: none; cursor: pointer; transition: border-color .15s, transform .15s, box-shadow .15s; }
+a.stat-link:hover, a.stat-link:focus-visible { border-color: var(--primary); transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.35); text-decoration: none; color: inherit; }
+a.stat-link:active { transform: translateY(0); }
+.stat-arrow { font-size: .7rem; opacity: 0; transition: opacity .15s, transform .15s; margin-left: .2rem; }
+a.stat-link:hover .stat-arrow, a.stat-link:focus-visible .stat-arrow { opacity: 1; transform: translateX(2px); }
 
 /* ─── Forms ──────────────────────────────── */
 input[type="text"], input[type="number"], input[type="url"],
@@ -357,6 +363,10 @@ label { display: block; font-size: .85rem; font-weight: 500; margin-bottom: .3re
     transition: border-color .15s;
 }
 .prox-item:hover { border-color: var(--primary); }
+.prox-link { cursor: pointer; }
+.prox-link:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.prox-link .row-link { color: inherit; text-decoration: none; }
+.prox-link:hover .row-link { color: var(--primary); }
 .prox-distance {
     display: flex; flex-direction: column; align-items: center;
     min-width: 72px; padding: .5rem; border-radius: 8px;
