@@ -8,34 +8,27 @@
 </div>
 
 <div class="m-stats">
-    <div class="m-stat">
+    <a class="m-stat" href="/aircraft" aria-label="Browse the aircraft directory">
         <div class="m-stat-icon"><i class="fa-solid fa-jet-fighter"></i></div>
         <div>
             <div class="m-stat-num" id="stat-aircraft">—</div>
             <div class="m-stat-label">Aircraft</div>
         </div>
-    </div>
-    <div class="m-stat">
+    </a>
+    <a class="m-stat" href="/museums" aria-label="Browse the museum directory">
         <div class="m-stat-icon"><i class="fa-solid fa-building-columns"></i></div>
         <div>
             <div class="m-stat-num" id="stat-museums">—</div>
             <div class="m-stat-label">Museums</div>
         </div>
-    </div>
-    <div class="m-stat">
-        <div class="m-stat-icon"><i class="fa-solid fa-link"></i></div>
-        <div>
-            <div class="m-stat-num" id="stat-exhibits">—</div>
-            <div class="m-stat-label">Exhibits</div>
-        </div>
-    </div>
-    <div class="m-stat">
+    </a>
+    <a class="m-stat m-stat-wide" href="/map" aria-label="Open the museum map">
         <div class="m-stat-icon"><i class="fa-solid fa-globe"></i></div>
         <div>
             <div class="m-stat-num" id="stat-countries">—</div>
             <div class="m-stat-label">Countries</div>
         </div>
-    </div>
+    </a>
 </div>
 
 <div class="m-card">
@@ -73,7 +66,6 @@ $(function() {
     $.getJSON('/api/v1/stats', function(d) {
         $('#stat-aircraft').text(d.aircraft_count);
         $('#stat-museums').text(d.museum_count);
-        $('#stat-exhibits').text(d.link_count);
         $('#stat-countries').text(d.country_count);
     });
 
@@ -91,7 +83,7 @@ $(function() {
         if (m.website) {
             actions += '<a href="' + escHtml(m.website) + '" target="_blank" rel="noopener"><i class="fa-solid fa-external-link-alt"></i>Website</a>';
         }
-        return '<div class="m-list-item">'
+        return '<div class="m-list-item m-list-item-link" data-href="/museums/' + m.id + '">'
              + '<div class="m-list-title">'
              +   '<a href="/museums/' + m.id + '" style="color:inherit;">' + escHtml(m.name) + '</a>'
              +   '<span class="m-badge">' + (dist == null ? '? mi' : dist + ' mi') + '</span>'
@@ -137,6 +129,10 @@ $(function() {
         });
     }
     $('#prox-go').on('click', doProximitySearch);
+    $('#prox-results').on('click', '.m-list-item-link', function(e) {
+        if ($(e.target).closest('a').length) return;   // website / title links win
+        window.location.href = $(this).data('href');
+    });
     $('#prox-aircraft, #prox-location, #prox-museum').on('keypress', function(e) {
         if (e.which === 13) doProximitySearch();
     });
