@@ -1,0 +1,12 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aero,L-29,,744,Delfin,,fixed_wing,monoplane,military,trainer,,Displayed in the school's aircraft park.,L29; L 29; Delphin,Air Force Officers' School Museum,on_display
+Bell,UH-1,H,344,Iroquois,,rotary_wing,,military,utility,,Ex-VNAF Huey in the school's aircraft park.,UH1; UH 1; Huey; UH1H,Air Force Officers' School Museum,on_display
+Cessna,A-37,B,70-1280,Dragonfly,,fixed_wing,monoplane,military,ground_attack,,Ex-VNAF A-37; recorded with a US serial rather than a VPAF number.,A37; A 37; Dragonfly; 1280; A37B,Air Force Officers' School Museum,on_display
+Cessna,T-41,D,772,Mescalero,,fixed_wing,monoplane,military,trainer,,Ex-VNAF primary trainer in the school's aircraft park.,T41; T 41; Cessna 172; Mescalero; T41D,Air Force Officers' School Museum,on_display
+Cessna,U-17,A,767,Skywagon,,fixed_wing,monoplane,military,utility,,Ex-VNAF liaison aircraft in the school's aircraft park.,U17; U 17; Cessna 185; U17A,Air Force Officers' School Museum,on_display
+Mikoyan-Gurevich,MiG-15,UTI,263,Midget,,fixed_wing,monoplane,military,trainer,,Two-seat conversion trainer in the school's aircraft park.,MiG15; MiG 15; MiG-15UTI; Midget; MiG15UTI,Air Force Officers' School Museum,on_display
+Mikoyan-Gurevich,MiG-21,F-13,4420,Fishbed,,fixed_wing,monoplane,military,fighter,,Early MiG-21 variant in the school's aircraft park.,MiG21; MiG 21; MiG-21F13,Air Force Officers' School Museum,on_display
+Mikoyan-Gurevich,MiG-21,U,4123,Mongol,,fixed_wing,monoplane,military,trainer,,Two-seat MiG-21 trainer in the school's aircraft park.,MiG21; MiG 21; MiG-21U; Mongol; MiG21U,Air Force Officers' School Museum,on_display
+Mikoyan-Gurevich,MiG-21,U-400,4124,Mongol,,fixed_wing,monoplane,military,trainer,,Two-seat MiG-21 trainer (Type 66-400) in the school's aircraft park.,MiG21; MiG 21; MiG-21U400; Mongol,Air Force Officers' School Museum,on_display
+Nanchang,CJ-6,A,,,,fixed_wing,monoplane,military,trainer,,Chinese-built primary trainer in the school's aircraft park; no number recorded.,CJ6; CJ 6; Chujiao-6; CJ6A,Air Force Officers' School Museum,on_display
+Shenyang,J-5,,2614,Fresco,,fixed_wing,monoplane,military,fighter,,Chinese-built MiG-17 in the school's aircraft park.,J5; J 5; MiG-17; MiG17,Air Force Officers' School Museum,on_display

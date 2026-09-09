@@ -1,0 +1,10 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lisunov,Li-2,T,39,Cab,,fixed_wing,monoplane,military,transport,,Yellow bort 39.,Li2; Li2T; Cab,Museum of the Air Force and Air Defence Army Headquarters,on_display
+Aero,L-39,,55,Albatros,,fixed_wing,monoplane,military,trainer,,Yellow bort 55.,L39; Albatros,Museum of the Air Force and Air Defence Army Headquarters,on_display
+Sukhoi,Su-17,M4,17,Fitter,,fixed_wing,monoplane,military,ground_attack,,Red bort 17.,Su17; Su17M4; Fitter,Museum of the Air Force and Air Defence Army Headquarters,on_display
+Mikoyan-Gurevich,MiG-31,,23,Foxhound,,fixed_wing,monoplane,military,fighter,,Blue bort 23.,MiG31; Foxhound,Museum of the Air Force and Air Defence Army Headquarters,on_display
+Mikoyan-Gurevich,MiG-29,,54,Fulcrum,,fixed_wing,monoplane,military,fighter,,White bort 54.,MiG29; Fulcrum,Museum of the Air Force and Air Defence Army Headquarters,on_display
+Mikoyan-Gurevich,MiG-23,MLD,,Flogger,,fixed_wing,monoplane,military,fighter,,White bort 09. c/n 0390319643. Wears bort number 09; recorded without a tail number because another airframe of this type in the database already carries it.,MiG23; MiG23MLD; c/n 0390319643; Flogger; 09,Museum of the Air Force and Air Defence Army Headquarters,on_display
+Mikoyan-Gurevich,MiG-17,,,Fresco,,fixed_wing,monoplane,military,fighter,,Red bort 01. Wears bort number 01; recorded without a tail number because another airframe of this type in the database already carries it.,MiG17; Fresco; 01,Museum of the Air Force and Air Defence Army Headquarters,on_display
+Sukhoi,Su-25,,27,Frogfoot,,fixed_wing,monoplane,military,ground_attack,,Bort 27.,Su25; Frogfoot,Museum of the Air Force and Air Defence Army Headquarters,on_display
+Mil,Mi-8,,03,Hip,,rotary_wing,,military,transport,,Bort 03.,Mi8; Hip,Museum of the Air Force and Air Defence Army Headquarters,on_display

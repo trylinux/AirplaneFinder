@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,T-33,A,,Silver Star,,fixed_wing,monoplane,military,trainer,,One of six T-33s kept as museum pieces after 1990 is at the NCO school per the Museo Aeroespacial (2021); serial not established.,T-33A; T33A; T-Bird; T33,"Escuela de Suboficiales FAC Displays, Madrid",on_display
+North American,AT-6,,,Texan,,fixed_wing,monoplane,military,trainer,,"One of the last four Texans was assigned to decorate the NCO school (Museo Aeroespacial Texan page, 2021); serial not established.",AT-6; T-6; T6; T-6D; AT-6D; AT6; T6D; AT6D,"Escuela de Suboficiales FAC Displays, Madrid",on_display

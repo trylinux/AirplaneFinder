@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Santos-Dumont,14-bis,,,,,fixed_wing,biplane,civilian,experimental,,"Flying-quality replica of the 14-bis from the former Museu TAM collection - a replica, shown in the 'Santos Dumont' opening exhibition at Itu since 10 Aug 2024.",14bis,Museu Asas de um Sonho,on_display
+Santos-Dumont,Demoiselle,,,,,fixed_wing,monoplane,civilian,experimental,,"Replica Demoiselle from the former Museu TAM collection - a replica, on show at Itu since Aug 2024.",Demoiselle No.20,Museu Asas de um Sonho,on_display
+Blériot,XI,,,,,fixed_wing,monoplane,civilian,experimental,,"Replica Blériot XI from the former Museu TAM collection - a replica, on show at Itu since Aug 2024.",Bleriot XI; Bleriot 11,Museu Asas de um Sonho,on_display
+Sensaud de Lavaud,São Paulo,,,,,fixed_wing,monoplane,civilian,experimental,,"Replica of Dimitri Sensaud de Lavaud's 'São Paulo' of 1910, the first aeroplane to fly in Latin America - a replica, on show at Itu since Aug 2024.",DSL Sao Paulo; De Lavaud,Museu Asas de um Sonho,on_display

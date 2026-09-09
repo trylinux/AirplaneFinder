@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Tupolev,Tu-22M,3,11,Backfire,,fixed_wing,monoplane,military,bomber,,Red bort 11. c/n 4467413.,Tu22M; Tu22M3; c/n 4467413; Backfire,Museum of Aviation and Air Defence,on_display
+Sukhoi,Su-22,UM3K,75,Fitter,,fixed_wing,monoplane,military,ground_attack,,"Export-pattern two-seat Su-22UM3K, red bort 75. c/n 17532370302.",Su22; Su22UM3K; c/n 17532370302; Fitter,Museum of Aviation and Air Defence,on_display
+Antonov,An-12,BK,55,Cub,,fixed_wing,monoplane,military,transport,,Red bort 55. c/n 8345610.,An12; An12BK; c/n 8345610; Cub,Museum of Aviation and Air Defence,on_display
+Antonov,An-24,KPA,35,Coke,,fixed_wing,monoplane,military,utility,,"Airfield calibration An-24KPA, red bort 35. c/n 9911303.",An24; An24KPA; c/n 9911303; Coke,Museum of Aviation and Air Defence,on_display
+Sukhoi,Su-27,,23,Flanker,,fixed_wing,monoplane,military,fighter,,Moved here from Komsomolsk-on-Amur (Dzyomgi) airfield; russianplanes carries the Komsomolsk record as vacated.,Su27; Flanker,Museum of Aviation and Air Defence,on_display
+Mikoyan-Gurevich,MiG-23,M,22,Flogger,,fixed_wing,monoplane,military,fighter,,"Moved here from Tsentralnaya Uglovaya airfield, Primorsky Krai. Red bort 22. c/n 0390213256.",MiG23; MiG23M; c/n 0390213256; Flogger,Museum of Aviation and Air Defence,on_display
+Mil,Mi-24,V,573,Hind,,rotary_wing,,military,ground_attack,,Red bort 573.,Mi24; Mi24V; Hind,Museum of Aviation and Air Defence,on_display

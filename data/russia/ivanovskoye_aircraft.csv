@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Yakovlev,Yak-38,,,Forger,,fixed_wing,monoplane,military,fighter,,Works number 7977861052651; no bort number recorded.,Yak38; c/n 7977861052651,State Military-Technical Museum,on_display
+Antonov,An-2,,CCCP-16068,Colt,,fixed_wing,biplane,civilian,utility,,Works number 1G164-22.,An2; CCCP16068,State Military-Technical Museum,on_display
+EKIP,EKIP,,,,,fixed_wing,monoplane,civilian,experimental,,Lenticular ground-effect research vehicle from the EKIP programme. Recorded by russianplanes.net with a query over its identification.,,State Military-Technical Museum,on_display

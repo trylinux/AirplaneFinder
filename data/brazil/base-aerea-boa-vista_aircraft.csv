@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Embraer,A-29,B,,Super Tucano,,fixed_wing,monoplane,military,ground_attack,,"Two-seat Super Tucano preserved inside the base (AeroEntusiasta Feb 2026). The compilation gives the serial as '5525', which is an AMX serial rather than an A-29 one, so the identity is left blank.",A29B;A29;EMB-314;EMB314,Base Aérea de Boa Vista A-29 Display,on_display

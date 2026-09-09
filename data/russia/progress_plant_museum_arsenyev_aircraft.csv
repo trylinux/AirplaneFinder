@@ -1,0 +1,11 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-24,A,,Hind,,rotary_wing,,military,ground_attack,,Early Mi-24A built at Arsenyev. No bort number recorded.,Mi24; Mi24A; Hind,Progress Aircraft Plant Museum,on_display
+Mil,Mi-24,P,23,Hind,,rotary_wing,,military,ground_attack,,"Mi-24P (izdeliye 243), red bort 23. c/n 3532432724791.",Mi24; Mi24P; c/n 3532432724791; Hind,Progress Aircraft Plant Museum,on_display
+Yakovlev,Yak-18,A,25,Max,,fixed_wing,monoplane,military,trainer,,Yellow bort 25.,Yak18; Yak18A; Max,Progress Aircraft Plant Museum,on_display
+Yakovlev,UT-2,,2,Mink,,fixed_wing,monoplane,military,trainer,,Yellow bort 2. Pre-war Yakovlev primary trainer of the type built at Arsenyev; whether this airframe is original or a plant-built reproduction is not established.,UT2,Progress Aircraft Plant Museum,on_display
+Antonov,A-11,,,,,fixed_wing,monoplane,civilian,other,,Antonov A-11 sailplane. No registration recorded.,A11,Progress Aircraft Plant Museum,on_display
+Yakovlev,Yak-50,,26,,,fixed_wing,monoplane,civilian,private,,Yellow bort 26. Aerobatic single-seater.,Yak50,Progress Aircraft Plant Museum,on_display
+Kamov,Ka-50,,50,Hokum,,rotary_wing,,military,ground_attack,,"Ka-50 attack helicopter displayed on the Progress plant airfield side of the site, about 700 m north of the main plant museum group. c/n 3538052402045.",Ka50; c/n 3538052402045; Hokum,Progress Aircraft Plant Museum,on_display
+Raduga,P-270,,,Moskit,,missile_rocket,,military,anti_ship,,"P-270 Moskit anti-ship missile, a Progress plant product, displayed with the plant museum collection.",P270; SS-N-22; Sunburn,Progress Aircraft Plant Museum,on_display
+Raduga,P-15,,,Termit,,missile_rocket,,military,anti_ship,,P-15 Termit anti-ship missile. First of two examples in the plant collection.,P15; SS-N-2; Styx; first of two examples,Progress Aircraft Plant Museum,on_display
+Raduga,P-15,,,Termit,,missile_rocket,,military,anti_ship,,P-15 Termit anti-ship missile. Second of two examples in the plant collection.,P15; SS-N-2; Styx; second of two examples,Progress Aircraft Plant Museum,on_display

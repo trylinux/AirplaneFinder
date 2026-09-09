@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,47,G,,,Si Walet,rotary_wing,,civilian,utility,1958,American-built 1958 Bell 47 presented to President Sukarno in 1960; the presidential helicopter known as 'Si Walet'. Displayed in red and white with Garuda Pancasila upholstery. Registration not published by the museum.,Bell47; Si Walet; Sikok,Museum Angkut,on_display
+Boeing,737,-200,,,,fixed_wing,monoplane,civilian,commercial_transport,,"Full-size mock-up of a presidential Boeing 737-200 built as a walk-through exhibit in the museum's 'Runway 27' zone, not a real airframe.",B737; 737-200,Museum Angkut,on_display

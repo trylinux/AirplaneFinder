@@ -1,0 +1,10 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+OKB-1,Vostok,3KA,,,,spacecraft,,civilian,space,1961,"Descent module of Vostok 3KA No.2, flown on 25 March 1961 with the dog Zvezdochka on the final rehearsal before Gagarin's flight. A flown vehicle.",Vostok3KA; Vostok; 3KA No.2,Memorial Museum of Cosmonautics,on_display
+NPO Energia,Soyuz,37,,,,spacecraft,,civilian,space,,Flown descent module of Soyuz-37.,Soyuz37; Soyuz,Memorial Museum of Cosmonautics,on_display
+NPO Energia,Soyuz,TM-7,,,,spacecraft,,civilian,space,,Flown descent module of Soyuz TM-7.,SoyuzTM7; Soyuz,Memorial Museum of Cosmonautics,on_display
+NPO Energia,Raduga,,,,,spacecraft,,civilian,space,,Raduga ballistic return capsule used to bring materials back from the Mir station.,,Memorial Museum of Cosmonautics,on_display
+TsSKB-Progress,Bion,6,,,,spacecraft,,civilian,space,,Technological duplicate of the Kosmos-1514 (Bion-6) biological research satellite.,Bion6; Bion; Kosmos-1514; Kosmos1514,Memorial Museum of Cosmonautics,on_display
+OKB-1,Vostok,,,,,spacecraft,,civilian,space,,"Ejectable container for experimental animals of the type used on the Korabl-Sputnik flights, including the Belka and Strelka mission.",Vostok; animal container,Memorial Museum of Cosmonautics,on_display
+NPO Energia,LK,,,,,spacecraft,,civilian,space,,Mock-up of the Soviet crewed lunar landing craft of the N1-L3 programme.,,Memorial Museum of Cosmonautics,on_display
+NPO Energia,Mir,,,,,spacecraft,,civilian,space,,Full-scale mock-up of the Mir orbital station used as a walk-through exhibit.,Mir,Memorial Museum of Cosmonautics,on_display
+NPO Energia,Soyuz,,,,,spacecraft,,civilian,space,,Full-scale mock-up of the Soyuz spacecraft.,Soyuz,Memorial Museum of Cosmonautics,on_display

@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-4,,21,Hound,,rotary_wing,,military,transport,,Bort 21.,Mi4; Hound,Zelenogorsk Armed Forces Museum,on_display
+Sukhoi,Su-15,,65,Flagon,,fixed_wing,monoplane,military,fighter,,Bort 65.,Su15; Flagon,Zelenogorsk Armed Forces Museum,on_display
+Mil,Mi-8,,,Hip,,rotary_wing,,military,transport,,No bort number recorded.,Mi8; Hip,Zelenogorsk Armed Forces Museum,on_display
+Mikoyan-Gurevich,MiG-21,,77,Fishbed,,fixed_wing,monoplane,military,fighter,,Bort 77. Sub-variant not established.,MiG21; Fishbed,Zelenogorsk Armed Forces Museum,on_display
+Mikoyan-Gurevich,MiG-17,,12,Fresco,,fixed_wing,monoplane,military,fighter,,Bort 12.,MiG17; Fresco,Zelenogorsk Armed Forces Museum,on_display

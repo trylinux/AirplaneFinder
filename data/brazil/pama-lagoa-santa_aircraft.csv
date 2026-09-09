@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,T-6,,1378,Texan,,fixed_wing,monoplane,military,trainer,,T-6 preserved at the PAMA-LS depot; ABRAPAC 2019 and Feb 2026 lists.,T6;Texan,Parque de Material Aeronáutico de Lagoa Santa Aircraft Displays,on_display
+Embraer,C-95,,,Bandeirante,,fixed_wing,monoplane,military,transport,,"EMB-110 Bandeirante preserved inside PAMA-LS (Feb 2026 list, serial not given).",C95;EMB-110;EMB110,Parque de Material Aeronáutico de Lagoa Santa Aircraft Displays,on_display
+Neiva,T-25,,,Universal,,fixed_wing,monoplane,military,trainer,,"T-25 Universal preserved inside PAMA-LS (Feb 2026 list, serial not given).",T25;N621;Universal,Parque de Material Aeronáutico de Lagoa Santa Aircraft Displays,on_display

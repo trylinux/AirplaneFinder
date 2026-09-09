@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,A-4,S,600,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,"Outdoor exhibit at 510 Upper Jurong Road alongside an AMX-13 tank. Ex-US Navy BuNo 142850, rebuilt to Singapore's A-4S standard.",A4; A4S; 142850,Singapore Discovery Centre,on_display
+Bell,UH-1,H,259,Iroquois,,rotary_wing,,military,utility,,Outdoor exhibit alongside the Skyhawk and an AMX-13 tank.,UH1; UH1H; Huey,Singapore Discovery Centre,on_display
+Hawker,Hunter,FGA.74,505,,,fixed_wing,monoplane,military,fighter,,"Nose section only, not a complete airframe.",Hunter; FGA74; FGA74S,Singapore Discovery Centre,on_display

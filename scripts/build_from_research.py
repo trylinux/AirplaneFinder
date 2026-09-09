@@ -5,7 +5,7 @@ METHODOLOGY.md step 2: "Clean locally, never trust the agent output raw."
 
 THE FIELD-COUNT PROBLEM
 -----------------------
-Research passes are told to emit exactly 13 pipe-separated fields. In practice
+Research passes are told to emit exactly 14 pipe-separated fields. In practice
 a few lines per batch come back with 11, 12 or 14 — a field dropped, or an
 extra pipe inside a note. Importing those blind shifts every value one column
 left and writes `monoplane` into military_civilian, which the validator
@@ -16,6 +16,13 @@ missing. But three of the columns draw from small controlled vocabularies —
 aircraft_type, military_civilian, display_status — so their positions can be
 found by value rather than by index, and the rest realigned around them. A
 line whose anchors cannot be located is reported, never guessed at.
+
+DESCRIPTION VS ALIASES
+----------------------
+The contract's last two data fields are description then aliases. Before the
+14-field contract everything after year_built was treated as aliases, which is
+how research prose ended up in the search-indexed aliases table and had to be
+migrated back out in September 2026. _split_desc_aliases keeps them apart.
 
 WHAT IT WILL NOT DO
 -------------------
@@ -54,6 +61,54 @@ ROLES = {
 # Left of aircraft_type the contract has six fields.
 LEFT = ["manufacturer", "model", "variant", "tail_number", "model_name",
         "aircraft_name"]
+
+
+_DIGITS = "0123456789"
+
+
+def join_designation(model, variant):
+    """Join model and variant the way the DB's generated column does."""
+    model = (model or "").strip()
+    variant = (variant or "").strip()
+    if not variant:
+        return model
+    if variant[0] in _DIGITS:
+        return f"{model}-{variant}"
+    if model and model[-1] in _DIGITS:
+        return f"{model}{variant}"
+    return f"{model} {variant}"
+
+
+_DESIG = re.compile(r"^([A-Za-z]{1,4})-(\d{1,3}[A-Za-z]{0,3})$")
+
+
+def dashless(s):
+    """PT-22 -> PT22. Returns None if the string is not a designation."""
+    m = _DESIG.match((s or "").strip())
+    if not m:
+        return None
+    v = m.group(1) + m.group(2)
+    return v if v != s.strip() else None
+
+
+def _split_desc_aliases(tail):
+    """Map the fields after year_built onto (description, aliases).
+
+    A well-formed 14-field line leaves exactly two: description then aliases.
+    One field means the research dropped one — an aliases list is short and
+    semicolon-separated, a description is prose, so length decides. More than
+    two means an unescaped pipe inside the description, so everything but the
+    last field folds back into it.
+    """
+    tail = [t.strip() for t in tail]
+    if not tail:
+        return "", ""
+    if len(tail) == 1:
+        one = tail[0]
+        if ";" in one or len(one.split()) <= 6:
+            return "", one
+        return one, ""
+    return " ".join(t for t in tail[:-1] if t), tail[-1]
 
 
 def realign(parts):
@@ -99,14 +154,27 @@ def realign(parts):
                         if tail and tail[0].lower() in ROLES else "")
     if row["role_type"]:
         tail = tail[1:]
-    # year_built is the next field if it looks like a year; anything else
-    # there is prose that belongs in aliases.
+    # The year_built slot is always consumed, whatever is sitting in it, so
+    # that a blank year cannot shift the description/aliases split that
+    # follows. A real year is kept; anything else there is prose, which is
+    # moved to the front of the description rather than dropped or aliased.
     row["year_built"] = ""
-    if tail and re.fullmatch(r"(1[89]|20)\d{2}", tail[0]):
-        row["year_built"] = tail[0]
-        tail = tail[1:]
+    stray_year_prose = ""
+    if tail:
+        head, tail = tail[0], tail[1:]
+        if re.fullmatch(r"(1[89]|20)\d{2}", head):
+            row["year_built"] = head
+        elif head:
+            stray_year_prose = head
+    # The contract's last two data fields are description then aliases.
+    # Before the 14-field contract everything here was aliases, which is how
+    # prose ended up in the search-indexed aliases table (see the September
+    # 2026 alias migration). Split them.
+    row["description"], alias_src = _split_desc_aliases(tail)
+    if stray_year_prose:
+        row["description"] = (stray_year_prose + " " + row["description"]).strip()
     row["aliases"] = ";".join(
-        a.strip() for a in ";".join(tail).split(";") if a.strip())
+        a.strip() for a in alias_src.split(";") if a.strip())
     return row, None
 
 
@@ -141,6 +209,25 @@ def sanitise(row, museum):
         row["role_type"] = "other"
     if row["display_status"] not in STATUSES:
         row["display_status"] = "on_display"
+
+    # Dashless designation variants as aliases: a visitor searching "PT22"
+    # must find the PT-22. Established September 2026; every imported state
+    # from Ohio onward carries these.
+    al = [a.strip() for a in row.get("aliases", "").split(";") if a.strip()]
+    low = {a.lower() for a in al}
+    for src in [row.get("model", ""),
+                join_designation(row.get("model"), row.get("variant"))] + list(al):
+        d = dashless(src)
+        if d and d.lower() not in low:
+            al.append(d)
+            low.add(d.lower())
+    row["aliases"] = "; ".join(al)
+
+    # A comma anywhere in these two would need CSV quoting the importer's
+    # splitter does not expect; the research contract forbids them.
+    for f in ("description", "aliases"):
+        if "," in row.get(f, ""):
+            problems.append(f"comma in {f} — the contract forbids it")
 
     if not row.get("manufacturer") or not row.get("model"):
         problems.append("missing manufacturer or model")
@@ -180,7 +267,7 @@ def main():
         parts = line.split("|")
         # A region sweep with several small museums is easier to research as
         # one file. In that mode the museum rides along as a trailing field
-        # and is peeled off here, so realign() sees the usual 13.
+        # and is peeled off here, so realign() sees the usual 14.
         museum = args.museum
         if args.museum_in_last_field:
             museum = parts.pop().strip()

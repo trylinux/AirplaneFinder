@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+FMA,IA-58,A,A-514,Pucará,,fixed_wing,monoplane,military,ground_attack,,"Hybrid airframe (c/n 017) assembled with parts of A-505 and A-573, mounted at the brigade entrance. Photographed July 2022.",IA58; IA58A; IA-58A; A-505; A-573; c/n 017; IA-58; A505; A573,III Brigada Aérea Reconquista Gate Displays,on_display
+FMA,IA-35,,A-305,Huanquero,,fixed_wing,monoplane,military,trainer,,Preserved on the base; photographed September 2013 and again July 2022.,IA35; IA-35,III Brigada Aérea Reconquista Gate Displays,on_display

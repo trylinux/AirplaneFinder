@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Cessna,O-1,A,2807,Bird Dog,,fixed_wing,monoplane,military,recon,,Ex Royal Thai Army 51-12807; withdrawn at Lopburi in 2001 and at Camp Naresuan Maharat since about 2013.,O1A; 51-12807; O1,Third Army Area Military Museum Phitsanulok,on_display
+Bell,UH-1,H,3407,Iroquois,,rotary_wing,,military,utility,,Ex Royal Thai Army; first noted at Camp Naresuan Maharat in late 2016.,UH1H; 3407; UH1,Third Army Area Military Museum Phitsanulok,on_display

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Hughes,369,D,1013,,,rotary_wing,,civilian,utility,,"Ex Ministry of Agriculture (Kaset) helicopter, c/n 970200D; at the museum since 2003, removed for restoration in 2018 and returned mid-2019.",369D; 500D; 1013; c/n 970200D,Golden Jubilee Museum of Agriculture,on_display
+Fletcher,FU-24,A-954,605,,,fixed_wing,monoplane,civilian,utility,,"Ex Ministry of Agriculture agricultural aircraft, c/n 287 from the data plate; displayed at the Kaset Museum at Nakhon Sawan until 2018 and at Khlong Luang since November 2018.",FU24; Fletcher 24; 605; c/n 287,Golden Jubilee Museum of Agriculture,on_display

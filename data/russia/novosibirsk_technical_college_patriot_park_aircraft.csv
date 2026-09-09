@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Yakovlev,Yak-9,,43,Frank,,fixed_wing,monoplane,military,fighter,,"Full-scale reproduction in the college Patriot park, white bort 43. Not an original airframe.",Yak9; Frank,"Patriot Park, Novosibirsk Technical College",on_display
+Ilyushin,Il-10,,17,Beast,,fixed_wing,monoplane,military,ground_attack,,"Full-scale reproduction, bort 17. Not an original airframe.",Il10; Beast,"Patriot Park, Novosibirsk Technical College",on_display
+Mikoyan-Gurevich,MiG-3,,,,,fixed_wing,monoplane,military,fighter,,Full-scale reproduction. No bort number recorded.,MiG3,"Patriot Park, Novosibirsk Technical College",on_display
+Polikarpov,I-16,,21,Rata,,fixed_wing,monoplane,military,fighter,,"Full-scale reproduction, bort 21. Not an original airframe.",I16; Rata,"Patriot Park, Novosibirsk Technical College",on_display

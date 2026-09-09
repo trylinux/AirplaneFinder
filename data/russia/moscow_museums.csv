@@ -1,0 +1,19 @@
+name,city,state_province,country,postal_code,region,address,website,access_type,latitude,longitude
+Technical Museum of Vadim Zadorozhny,Arkhangelskoye,Moscow Oblast,Russia,143420,Europe,"4th km Ilyinskoye Shosse, bldg 8, Arkhangelskoye, Krasnogorsk urban district",https://tmuseum.ru/,public,55.7965,37.2988
+Patriot Park Museum Complex,Kubinka,Moscow Oblast,Russia,143070,Europe,"55 km Minskoye Shosse, Kubinka, Odintsovo urban district",https://parkpatriot.ru/,public,55.5648,36.8171
+Victory Museum,Moscow,Moscow,Russia,121170,Europe,"Ploshchad Pobedy 3, Poklonnaya Hill",https://victorymuseum.ru/,public,55.7265,37.5030
+Central Museum of the Armed Forces,Moscow,Moscow,Russia,129110,Europe,Ulitsa Sovetskoy Armii 2 bldg 1,http://www.cmaf.ru/,public,55.7848,37.6178
+Cosmonautics and Aviation Centre VDNKh,Moscow,Moscow,Russia,129223,Europe,"Prospekt Mira 119, VDNKh, pavilion 34 Kosmos",https://vdnh.ru/,public,55.8339,37.6232
+Memorial Museum of Cosmonautics,Moscow,Moscow,Russia,129223,Europe,Prospekt Mira 111,https://kosmo-museum.ru/,public,55.8228,37.6397
+Mil Moscow Helicopter Plant Museum,Tomilino,Moscow Oblast,Russia,140070,Europe,"Ulitsa Garshina 26/1, Tomilino, Lyubertsy urban district",,appointment,55.6670,37.9346
+Gromov Flight Research Institute Alley of Glory,Zhukovsky,Moscow Oblast,Russia,140180,Europe,Gromov Flight Research Institute airfield,http://lii.ru/,restricted,55.5775,38.1286
+Sukhoi Design Bureau Aircraft Display,Moscow,Moscow,Russia,125284,Europe,Ulitsa Polikarpova 23A,,restricted,55.7837,37.5435
+Moscow Aviation Institute Aircraft Collection,Moscow,Moscow,Russia,125993,Europe,Volokolamskoye Shosse 4,https://mai.ru/,restricted,55.8131,37.5027
+121st Aircraft Repair Plant Museum,Kubinka,Moscow Oblast,Russia,143070,Europe,"121st Aircraft Repair Plant, Kubinka",,restricted,55.6057,36.6931
+Kubinka Air Base Museum,Kubinka,Moscow Oblast,Russia,143070,Europe,Kubinka air base,,restricted,55.6057,36.6271
+Kubinka Air Force Aeroclub Aircraft Display,Kubinka,Moscow Oblast,Russia,143070,Europe,"Air Force aeroclub, Kubinka",,restricted,55.6179,36.6675
+State Military-Technical Museum,Ivanovskoye,Moscow Oblast,Russia,141135,Europe,"Ivanovskoye village bldg 1, Chernogolovka urban district",https://gvtm.ru/,public,56.0336,38.2901
+Museum of Industrial Culture,Moscow,Moscow,Russia,109377,Europe,"Zarechye Ulitsa 3A, Kuzminki Park",https://museum-ic.ru/,public,55.6879,37.7714
+RSK MiG Lukhovitsy Plant Aircraft Display,Lukhovitsy,Moscow Oblast,Russia,140501,Europe,"RSK MiG production complex No.1, Lukhovitsy",,restricted,54.9183,39.0429
+Air Defence Forces Museum,Balashikha,Moscow Oblast,Russia,143900,Europe,"Ulitsa Lenina 6, Zarya microdistrict, Balashikha",http://cmaf.ru/museums/muzey-voysk-protivovozdushnoy-oborony/,appointment,55.7585,38.0880
+Gagarin Cosmonaut Training Centre Museum,Star City,Moscow Oblast,Russia,141160,Europe,"Dom Kosmonavtov 6, Zvyozdny Gorodok",http://www.gctc.ru/,restricted,55.8773,38.1044

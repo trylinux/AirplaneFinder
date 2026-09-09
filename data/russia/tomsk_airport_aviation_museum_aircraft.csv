@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+LET,L-410,UVP,CCCP-67317,Turbolet,,fixed_wing,monoplane,civilian,transport,,c/n 820817.,L410; L410UVP; c/n 820817; Turbolet,Tomsk Airport Aviation Museum,on_display
+Antonov,An-2,,CCCP-07619,Colt,,fixed_wing,biplane,civilian,utility,,c/n 1G156-59.,An2; Colt,Tomsk Airport Aviation Museum,on_display
+Antonov,An-24,B,CCCP-47826,Coke,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 17307207.,An24; An24B; c/n 17307207; Coke,Tomsk Airport Aviation Museum,on_display
+Yakovlev,Yak-40,,RA-88298,Codling,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 9930160.,Yak40; c/n 9930160; Codling,Tomsk Airport Aviation Museum,on_display
+Tupolev,Tu-154,M,RA-85685,Careless,,fixed_wing,monoplane,civilian,commercial_transport,,Stands airside; russianplanes notes that access to this exhibit has to be arranged in advance. c/n 90A853.,Tu154; Tu154M; c/n 90A853; Careless,Tomsk Airport Aviation Museum,on_display

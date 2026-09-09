@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Yakovlev,Yak-38,,69,Forger,,fixed_wing,monoplane,military,fighter,,"Carrier VTOL fighter, bort 69.",Yak38; Forger,Fokino Naval Aviation Museum,on_display
+Kamov,Ka-25,,,Hormone,,rotary_wing,,military,other,,Red bort 25. Shipborne anti-submarine helicopter. Wears bort number 25; recorded without a tail number because another airframe of this type in the database already carries it.,Ka25; Hormone; 25,Fokino Naval Aviation Museum,on_display
+Mikoyan-Gurevich,MiG-21,,,Fishbed,,fixed_wing,monoplane,military,fighter,,Sub-variant and bort number not established from available photographs.,MiG21; Fishbed,Fokino Naval Aviation Museum,on_display

@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Yakovlev,Yak-18,A,,Max,,fixed_wing,monoplane,civilian,trainer,,No registration recorded. Three airframes at the Sasovo civil aviation flight college; visits by arrangement. Data from the russianplanes.net museum register (museum 321).,Yak18; Yak18A,Sasovo Flight College Aircraft Display,on_display
+LET,L-410,UVP,RA-67063,Turbolet,,fixed_wing,monoplane,civilian,trainer,,College trainer. Three airframes at the Sasovo civil aviation flight college; visits by arrangement. Data from the russianplanes.net museum register (museum 321). Construction number 810639.,L410; L410UVP; c/n 810639,Sasovo Flight College Aircraft Display,on_display
+Antonov,An-2,TP,RA-07176,Colt,,fixed_wing,biplane,civilian,utility,,Construction number 1G146-05.,An2; An2TP,Sasovo Flight College Aircraft Display,on_display

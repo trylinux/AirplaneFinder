@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-15,UTI,19,Midget,,fixed_wing,monoplane,military,trainer,,"One of the trainers used for the flight training of the first cosmonaut intake, preserved at the Gagarin Cosmonaut Training Centre. Gagarin and Colonel V.S. Seryogin were killed in a similar aircraft carrying bort 18.",MiG15; MiG15UTI,Gagarin Cosmonaut Training Centre Museum,on_display
+NPO Energia,Soyuz,2,,,,spacecraft,,civilian,space,,"Descent module of the uncrewed Soyuz-2 spacecraft, preserved at the training centre.",Soyuz2; Soyuz,Gagarin Cosmonaut Training Centre Museum,on_display

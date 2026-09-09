@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Tupolev,Tu-154,B-2,RA-85386,Careless,,fixed_wing,monoplane,civilian,commercial_transport,,Construction number 79A386.,Tu154; Tu154B2; c/n 79A386,Museum of Aviation of the North,on_display
+Tupolev,Tu-134,A,RA-65066,Crusty,,fixed_wing,monoplane,civilian,commercial_transport,,Construction number 49898.,Tu134; Tu134A; c/n 49898,Museum of Aviation of the North,on_display
+Antonov,An-26,,RA-26615,Curl,,fixed_wing,monoplane,civilian,freighter,,Construction number 5001.,An26; c/n 5001,Museum of Aviation of the North,on_display
+Ilyushin,Il-14,,CCCP-41835,Crate,,fixed_wing,monoplane,civilian,transport,,Construction number 147001824.,Il14; c/n 147001824,Museum of Aviation of the North,on_display
+Yakovlev,Yak-18,T,CCCP-81836,,,fixed_wing,monoplane,civilian,trainer,,Construction number 22202021725.,Yak18; Yak18T; c/n 22202021725,Museum of Aviation of the North,on_display
+Sukhoi,Su-9,,27,Fishpot,,fixed_wing,monoplane,military,fighter,,"Wears bort 27 red. Airframes standing around the Talagi airport aviation settlement at Arkhangelsk, free access. Data from the russianplanes.net museum register (museum 28).",Su9,Museum of Aviation of the North,on_display
+Mikoyan-Gurevich,MiG-31,,12,Foxhound,,fixed_wing,monoplane,military,fighter,,"Wears bort 12 red. Airframes standing around the Talagi airport aviation settlement at Arkhangelsk, free access. Data from the russianplanes.net museum register (museum 28).",MiG31,Museum of Aviation of the North,on_display

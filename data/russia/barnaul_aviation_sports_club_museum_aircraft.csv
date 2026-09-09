@@ -1,0 +1,13 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Sukhoi,Su-25,,01,Frogfoot,,fixed_wing,monoplane,military,ground_attack,,White bort 01. c/n 25508108042.,Su25; c/n 25508108042; Frogfoot,Barnaul Aviation Sports Club Museum,on_display
+Sukhoi,Su-17,M3,25,Fitter,,fixed_wing,monoplane,military,ground_attack,,Red bort 25. c/n 56406.,Su17; Su17M3; c/n 56406; Fitter,Barnaul Aviation Sports Club Museum,on_display
+Mikoyan-Gurevich,MiG-21,US,50,Mongol,,fixed_wing,monoplane,military,trainer,,White bort 50. c/n 07685137.,MiG21; MiG21US; c/n 07685137; Mongol,Barnaul Aviation Sports Club Museum,on_display
+Aero,L-39,C,31,Albatros,,fixed_wing,monoplane,military,trainer,,White bort 31.,L39; L39C; Albatros,Barnaul Aviation Sports Club Museum,on_display
+Mil,Mi-24,K,43,Hind,,rotary_wing,,military,recon,,"Mi-24K artillery-spotting variant (izdeliye 201), red bort 43. c/n 3532014511049.",Mi24; Mi24K; c/n 3532014511049; Hind,Barnaul Aviation Sports Club Museum,on_display
+Aero,L-29,,84,Delfin,,fixed_wing,monoplane,military,trainer,,Red bort 84. c/n 691807.,L29; c/n 691807; Delfin; Maya,Barnaul Aviation Sports Club Museum,on_display
+Mikoyan-Gurevich,MiG-17,,51,Fresco,,fixed_wing,monoplane,military,fighter,,Red bort 51. c/n 3057148.,MiG17; c/n 3057148; Fresco,Barnaul Aviation Sports Club Museum,on_display
+Mikoyan-Gurevich,MiG-23,P,,Flogger,,fixed_wing,monoplane,military,fighter,,Red bort 71. c/n 0390615376. Wears bort number 71; recorded without a tail number because another airframe of this type in the database already carries it.,MiG23; MiG23P; c/n 0390615376; Flogger; 71,Barnaul Aviation Sports Club Museum,on_display
+Mikoyan-Gurevich,MiG-29,9-12,84,Fulcrum,,fixed_wing,monoplane,military,fighter,,Blue bort 84. c/n given by russianplanes as 29605121 with batch marking 13-13.,MiG29; MiG29912; MiG2912; Fulcrum,Barnaul Aviation Sports Club Museum,on_display
+Mil,Mi-2,,07,Hoplite,,rotary_wing,,military,utility,,Bort 07.,Mi2; Hoplite,Barnaul Aviation Sports Club Museum,on_display
+Sukhoi,Su-22,UM3,49,Fitter,,fixed_wing,monoplane,military,trainer,,Red bort 49. c/n 17532384302.,Su22; Su22UM3; c/n 17532384302; Fitter,Barnaul Aviation Sports Club Museum,on_display
+Antonov,An-2,,RF-00371,Colt,,fixed_wing,biplane,civilian,utility,,c/n 114347317. Held in store rather than on the display line.,An2; c/n 114347317; Colt,Barnaul Aviation Sports Club Museum,in_storage

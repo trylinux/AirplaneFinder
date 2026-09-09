@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Hawker Siddeley,AV-8,S,3108,Matador,,fixed_wing,monoplane,military,ground_attack,,"Ex US Bu161176. Withdrawn in the U-Tapao shelters until 2013, on static display at U-Tapao in 2015 and moved to Sattahip 10 July 2020.",AV8S; Matador; Bu161176; 161176; Harrier; AV8,Sattahip Royal Thai Navy Base,on_display
+Hawker Siddeley,AV-8,S,3104,Matador,,fixed_wing,monoplane,military,ground_attack,,Ex US Bu159557. Withdrawn in the U-Tapao shelters until 2013 and at Sattahip Navy Base since October 2014.,AV8S; Matador; Bu159557; 159557; Harrier; AV8,Sattahip Royal Thai Navy Base,on_display

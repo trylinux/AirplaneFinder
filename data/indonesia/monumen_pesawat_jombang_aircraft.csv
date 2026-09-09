@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American Rockwell,OV-10,F,,Bronco,,fixed_wing,monoplane,military,ground_attack,1976,"Bronco built in 1976 that served Skadron Udara 21 at Lanud Abdulrachman Saleh, Malang; erected beside the Jombang-Surabaya road. Serial not published.",OV10; Bronco; OV10F,Jombang aircraft monuments,on_display
+GAF,N22,,P-806,Nomad,,fixed_wing,monoplane,military,recon,1974,"Indonesian Navy (Penerbal) Nomad maritime patrol aircraft, built in Australia in 1974, standing opposite the Bronco monument.",N22; Nomad; P806,Jombang aircraft monuments,on_display

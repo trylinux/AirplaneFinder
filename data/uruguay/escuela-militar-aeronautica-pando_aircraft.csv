@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,T-6,D,FAU 340,Texan,,fixed_wing,monoplane,military,trainer,,"Gate guardian on a pedestal at the school entrance (Gaceta Aeronáutica, October 2016 open day). Presence in 2025-26 not confirmed by a dated photograph.",T6D; AT-6D; AT6D; 340; T6,"Escuela Militar de Aeronáutica Displays, Pando",on_display
+Cessna,T-41,D,FAU 604,Mescalero,,fixed_wing,monoplane,military,trainer,,"Displayed in the school gardens (Gaceta Aeronáutica, October 2016).",T41D; 604; T41,"Escuela Militar de Aeronáutica Displays, Pando",on_display
+LET,L-13,,FAU 690,Blaník,,fixed_wing,monoplane,military,trainer,,"Glider on static display at the school (Gaceta Aeronáutica, October 2016).",L13; Blanik; 690,"Escuela Militar de Aeronáutica Displays, Pando",on_display

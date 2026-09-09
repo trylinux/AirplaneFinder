@@ -1,0 +1,32 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aero Spacelines,Mini Guppy,,N422AU,,,fixed_wing,monoplane,civilian,freighter,1949,Flown to the museum in September 1993 from Medford; FAA registration valid to Port of Tillamook Bay; converted from a Boeing 377 airframe which is why FAA YEAR-MFR reads 1949,c/n 15937; Boeing 377MG; 377MG,Tillamook Air Museum,on_display
+Alenia,C-27,A,,,Spartan,fixed_wing,monoplane,military,transport,,Serial not established,C27A; G.222; C27,Tillamook Air Museum,on_display
+BAC,Jet Provost,T.3A,,,,fixed_wing,monoplane,military,trainer,,Ex-Royal Air Force; owned by the Classic Aircraft Aviation Museum and relocated to Tillamook when that museum lost a hangar lease in 2016,Jet Provost Mk.3A,Tillamook Air Museum,on_display
+Boeing,B-52,G,59-2579,Stratofortress,,fixed_wing,monoplane,military,bomber,,Forward fuselage only; on loan from Scroggins Aviation Mockup and Effects since 2021,B52G; 592579; B52,Tillamook Air Museum,on_display
+Boeing,727,,,,,fixed_wing,monoplane,civilian,commercial_transport,,Cockpit section only; registration not established,B727,Tillamook Air Museum,on_display
+Bell,TH-57,C,,Sea Ranger,,rotary_wing,,military,trainer,,Serial not established,TH57C; Bell 206; TH57,Tillamook Air Museum,on_display
+Bellanca,14-13,,,Cruisair Senior,,fixed_wing,monoplane,civilian,private,,Registration not established,1413,Tillamook Air Museum,on_display
+Brown,Starlite,,,,,fixed_wing,monoplane,civilian,experimental,,Registration not established,,Tillamook Air Museum,on_display
+Cessna,180,F,,Skywagon,,fixed_wing,monoplane,civilian,private,,Registration not established,180F,Tillamook Air Museum,on_display
+Chris-Tena,Mini Coupe,,N62ME,,,fixed_wing,monoplane,civilian,experimental,1974,FAA registration cancelled 28 February 2017 with Port of Tillamook Bay as last registrant which is consistent with museum ownership,c/n MC106,Tillamook Air Museum,on_display
+Convair,880,,,,,fixed_wing,monoplane,civilian,commercial_transport,,Forward fuselage only; registration not established,,Tillamook Air Museum,on_display
+Cvjetkovic,CA-65,,N600W,Skyfly,,fixed_wing,monoplane,civilian,experimental,,FAA registration valid to Port of Tillamook Bay,c/n 1; CA65,Tillamook Air Museum,on_display
+Douglas,A-4,B,142922,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,Taken on strength with the US Navy and to VA-125 on 23 October 1958; struck off charge and placed on display at the museum in May 1998; served as the roadside gate guard on a pole until dismounted in September 2022 and replaced by a metal scale blimp model; the museum still lists it in the collection,BuNo 142922; A4B; 142922; A4,Tillamook Air Museum,on_display
+Douglas,A-26,C,,Invader,,fixed_wing,monoplane,military,bomber,,One of two A-26C tankers owned by the Classic Aircraft Aviation Museum and relocated to Tillamook in 2016; serial not established,A26C; B-26C; A26; B26C,Tillamook Air Museum,on_display
+ERCO,Ercoupe,415-C,,,,fixed_wing,monoplane,civilian,private,,Registration not established,415C,Tillamook Air Museum,on_display
+Fairchild,GK-1,,,,,fixed_wing,monoplane,military,utility,,Navy version of the Fairchild 24; registration not established,GK1; Fairchild 24,Tillamook Air Museum,on_display
+Fisher,R-80,,N34TM,Tiger Moth,,fixed_wing,biplane,civilian,experimental,,FAA registration valid to Port of Tillamook Bay,c/n TM 30; R80,Tillamook Air Museum,on_display
+Grumman,F-14,A,Tomcat,,,fixed_wing,monoplane,military,fighter,,Received by the US Navy 16 August 1976; logged 6844 landings 937 arrested landings and 925 catapult launches; flew with VF-213 the Black Lions from USS Enterprise during filming of Top Gun in 1986; arrived 17 December 1997 from NAS Oceana on loan from the National Naval Aviation Museum; the museum began fundraising for its restoration in 2025; BuNo not published,F14A; F14,Tillamook Air Museum,under_restoration
+Kaman,HTK-1,,,Huskie,,rotary_wing,,military,trainer,,Serial not established,HTK1; HH-43; HH43,Tillamook Air Museum,on_display
+Lockheed,T-33,,,Shooting Star,,fixed_wing,monoplane,military,trainer,,Serial not established,T33,Tillamook Air Museum,on_display
+Vought,A-7,E,158819,Corsair II,,fixed_wing,monoplane,military,ground_attack,,Wears markings AC/401; photographed in place 24 June 2012 and July 2014; the Wikipedia A-7 survivor list prints 158319 in its serial field but its own citation and the Aerial Visuals dossier both give 158819,BuNo 158819; A7E; 158819; A7,Tillamook Air Museum,on_display
+McDonnell,F-4,N,,Phantom II,,fixed_wing,monoplane,military,fighter,,Cockpit section only; BuNo not published,F4N; F4,Tillamook Air Museum,on_display
+McDonnell Douglas,AV-8,B,165002,Harrier II,,fixed_wing,monoplane,military,ground_attack,,Demilitarised 7 July 2025 and flown in to Tillamook Airport 4 August 2025 by VX-31; combat tested airframe,BuNo 165002; AV8B; 165002; AV8,Tillamook Air Museum,on_display
+Nieuport,11,,,Bebe,,fixed_wing,biplane,military,fighter,,Replica,Nieuport11,Tillamook Air Museum,on_display
+Nord,1101,,,Noralpha,,fixed_wing,monoplane,civilian,private,,Registration not established,Noralpha; Me 208,Tillamook Air Museum,on_display
+Rans,S-4,,N91373,Coyote,,fixed_wing,monoplane,civilian,experimental,2005,FAA registration valid to Port of Tillamook Bay,c/n 0407323; S4,Tillamook Air Museum,on_display
+Rutan,Model 61,,,Long-EZ,,fixed_wing,monoplane,civilian,experimental,,Registration not established,Long EZ; LongEZ,Tillamook Air Museum,on_display
+Rutan,Quickie,,N5588L,,,fixed_wing,monoplane,civilian,experimental,1980,Suspended above the museum cafe; FAA registration cancelled 24 July 2008 with Port of Tillamook Bay as last registrant,c/n DL1,Tillamook Air Museum,on_display
+Ryan,PT-22,,,Recruit,,fixed_wing,monoplane,military,trainer,,Registration not established,PT22; ST-3KR; ST3KR,Tillamook Air Museum,on_display
+Boeing,A75N1,,,Stearman Kaydet,,fixed_wing,biplane,military,trainer,,Registration not established,PT-17; PT17; Kaydet,Tillamook Air Museum,on_display
+WindRyder,WindRyder,,N532WE,,,fixed_wing,monoplane,civilian,experimental,,FAA registration valid to Port of Tillamook Bay; FAA records manufacturer as Hitson Stan with no model,c/n 001,Tillamook Air Museum,on_display

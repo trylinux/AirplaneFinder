@@ -1,0 +1,10 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Yakovlev,Yak-28,L,90,Brewer,,fixed_wing,monoplane,military,bomber,,"Red bort 90, raised in 1982 as a monument to the labour record of the Irkutsk aviation plant.",Yak28; Yak28L; Brewer,Irkutsk Aviation Plant Museum,on_display
+Tupolev,ANT-31,,,,,fixed_wing,monoplane,military,fighter,,"Full-scale mock-up of the ANT-31 (I-14) fighter, the first type built at the Irkutsk plant. Not an original airframe.",ANT31; I-14; I14,Irkutsk Aviation Plant Museum,on_display
+Yakovlev,Yak-112,,RA-00112,,,fixed_wing,monoplane,civilian,private,,Light four-seater built at Irkutsk. Construction number recorded only tentatively by russianplanes and therefore omitted from aliases.,Yak112,Irkutsk Aviation Plant Museum,on_display
+Irkut,A-002,,,,,rotary_wing,,civilian,experimental,,A-002 autogyro developed and built at the Irkutsk plant.,A002,Irkutsk Aviation Plant Museum,on_display
+Yakovlev,Yak-28,PP,,Brewer,,fixed_wing,monoplane,military,electronic_warfare,,Blue bort 45. c/n 9970204. Wears bort number 45; recorded without a tail number because another airframe of this type in the database already carries it.,Yak28; Yak28PP; c/n 9970204; Brewer; 45,Irkutsk Aviation Plant Museum,on_display
+Mikoyan-Gurevich,MiG-23,UB,07,Flogger,,fixed_wing,monoplane,military,trainer,,Blue bort 07. c/n 59080570.,MiG23; MiG23UB; c/n 59080570; Flogger,Irkutsk Aviation Plant Museum,on_display
+Sukhoi,Su-30,,07,Flanker,,fixed_wing,monoplane,military,fighter,,"Irkutsk-built Su-30, blue bort 07; russianplanes designates it Su-30 I-7. c/n 96310102001.",Su30; c/n 96310102001; Flanker,Irkutsk Aviation Plant Museum,on_display
+Ilyushin,Il-28,,01,Beagle,,fixed_wing,monoplane,military,bomber,,Red bort 01. c/n 56606201.,Il28; c/n 56606201; Beagle,Irkutsk Aviation Plant Museum,on_display
+Mikoyan-Gurevich,MiG-27,K,,Flogger,,fixed_wing,monoplane,military,ground_attack,,MiG-27K built at Irkutsk. No bort number recorded; construction number not established.,MiG27; MiG27K; Flogger,Irkutsk Aviation Plant Museum,on_display

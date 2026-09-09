@@ -1,0 +1,15 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Yakovlev,Yak-40,,RA-87452,Codling,,fixed_wing,monoplane,civilian,commercial_transport,,Flew its last sector from Blagoveshchensk to the museum airstrip on 7 August 2019. c/n 9430936.,Yak40; c/n 9430936,Far Eastern Aerospace Museum,on_display
+Yakovlev,Yak-28,RR,,Brewer,,fixed_wing,monoplane,military,recon,,"Radiation-reconnaissance Yak-28RR, white bort 22; previously a gate monument at the 680th aircraft repair plant at Belogorsk. c/n 4951506. Wears bort number 22; recorded without a tail number because another airframe of this type in the database already carries it.",Yak28; Yak28RR; c/n 4951506; Brewer; 22,Far Eastern Aerospace Museum,on_display
+Sukhoi,Su-24,,11,Fencer,,fixed_wing,monoplane,military,bomber,,Former 523rd bomber regiment aircraft from Vozzhayevka. White bort 11. c/n 2215311.,Su24; c/n 2215311; Fencer,Far Eastern Aerospace Museum,on_display
+Antonov,An-140,,RA-41250,,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 05A001.,An140; c/n 05A001,Far Eastern Aerospace Museum,on_display
+Mil,Mi-2,,RA-23300,Hoplite,,rotary_wing,,civilian,utility,,c/n 529121035.,Mi2; c/n 529121035; Hoplite,Far Eastern Aerospace Museum,on_display
+Antonov,An-2,R,RA-40627,Colt,,fixed_wing,biplane,civilian,utility,,Agricultural An-2R. c/n 1G213-34.,An2; An2R; Colt,Far Eastern Aerospace Museum,on_display
+Sukhoi,Su-24,,27,Fencer,,fixed_wing,monoplane,military,bomber,,Held in the museum yard rather than on the display line at the last dated report. c/n 2215317.,Su24; c/n 2215317; Fencer,Far Eastern Aerospace Museum,in_storage
+Antonov,An-24,RT,RA-48102,Coke,,fixed_wing,monoplane,civilian,transport,,c/n 1911804.,An24; An24RT; c/n 1911804; Coke,Far Eastern Aerospace Museum,on_display
+Sukhoi,Su-24,,14,Fencer,,fixed_wing,monoplane,military,bomber,,Held in the museum yard rather than on the display line at the last dated report. c/n 2215331.,Su24; c/n 2215331; Fencer,Far Eastern Aerospace Museum,in_storage
+Antonov,An-2,R,RA-02210,Colt,,fixed_wing,biplane,civilian,utility,,c/n 1G234-41. Awaiting display at the last dated report.,An2; An2R; Colt,Far Eastern Aerospace Museum,in_storage
+Antonov,An-2,R,RA-33470,Colt,,fixed_wing,biplane,civilian,utility,,c/n 1G228-20. Awaiting display at the last dated report.,An2; An2R; Colt,Far Eastern Aerospace Museum,in_storage
+Mil,Mi-8,T,50,Hip,,rotary_wing,,military,transport,,c/n 4160. Awaiting display at the last dated report.,Mi8; Mi8T; c/n 4160; Hip,Far Eastern Aerospace Museum,in_storage
+Mil,Mi-8,,,Hip,,rotary_wing,,military,transport,,"Cabin section only, no registration recorded.",Mi8; Hip,Far Eastern Aerospace Museum,in_storage
+Mil,Mi-24,V,,Hind,,rotary_wing,,military,ground_attack,,Mi-24V (izdeliye 242). c/n 3532424810869.,Mi24; Mi24V; c/n 3532424810869; Hind,Far Eastern Aerospace Museum,on_display

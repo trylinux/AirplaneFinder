@@ -1,0 +1,20 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lisunov,Li-2,,17,Cab,,fixed_wing,monoplane,military,transport,,"Works number 18438101, bort ""17 yellow"". Licence-built DC-3 displayed on the 1930s-40s equipment ground.",Li2; c/n 18438101,Victory Museum,on_display
+Ilyushin,Il-2,,21,,,fixed_wing,monoplane,military,ground_attack,,"Displayed as bort 21. The museum groups the Il-2 with its mock-ups and retro-copies, so an original identity should not be assumed; russianplanes.net carries it without a works number.",Il2,Victory Museum,on_display
+Hawker,Hurricane,Mk IIB,11,,,fixed_wing,monoplane,military,fighter,,Displayed as bort 11 on the wartime equipment ground.,HurricaneMkIIB,Victory Museum,on_display
+Bell,P-63,,08,Kingcobra,,fixed_wing,monoplane,military,fighter,,"Lend-lease American fighter, bort 08. The museum and kpopov.ru identify it as a P-63 Kingcobra; the russianplanes.net card for the same airframe calls it a P-39, and that conflict is unresolved.",P63; P-39; P39,Victory Museum,on_display
+Polikarpov,I-16,,61,,,fixed_wing,monoplane,military,fighter,,"Full-scale reproduction, bort ""61 white""; recorded by russianplanes.net with a mock-up placeholder in place of a works number.",I16,Victory Museum,on_display
+Lavochkin,La-5,,15,,,fixed_wing,monoplane,military,fighter,,"Full-scale reproduction, bort ""15 white""; russianplanes.net records it explicitly as a mock-up.",La5,Victory Museum,on_display
+Lavochkin,LaGG-3,,24,,,fixed_wing,monoplane,military,fighter,,Displayed as bort 24; the museum lists it among its mock-ups and retro-copies.,LaGG3; LaGG-3,Victory Museum,on_display
+Yakovlev,Yak-3,,7,,,fixed_wing,monoplane,military,fighter,,Displayed as bort 7; the museum lists it among its mock-ups and retro-copies.,Yak3,Victory Museum,on_display
+Messerschmitt,Bf 109,F,,,,fixed_wing,monoplane,military,fighter,,German fighter displayed on the wartime ground; the museum lists a Bf 109F-2 among its mock-ups and retro-copies.,Bf109; Bf109F; Me 109; Me109,Victory Museum,on_display
+Ilyushin,Il-4,,2,,,fixed_wing,monoplane,military,bomber,,"Works number 17404, bort ""2 white"". Long-range bomber, developed from the DB-3F.",Il4; DB-3F; DB3F; c/n 17404,Victory Museum,on_display
+Sukhoi,Su-25,,12,Frogfoot,,fixed_wing,monoplane,military,ground_attack,,"Works number 25508103012, bort ""12 light blue"", on the 1950s-80s wars and local conflicts ground.",Su25; c/n 25508103012,Victory Museum,on_display
+Mikoyan-Gurevich,MiG-29,,,Fulcrum,,fixed_wing,monoplane,military,fighter,,"Works number 2960705560, bort ""26 light blue"". Wears bort number 26; recorded without a tail number because another airframe of this type in the database already carries it.",MiG29; c/n 2960705560; 26,Victory Museum,on_display
+Mil,Mi-24,D,115,Hind,,rotary_wing,,military,ground_attack,,"Works number recorded by russianplanes.net as 0xx04274 with digits unread; bort ""115 white"".",Mi24; Mi24D,Victory Museum,on_display
+Mil,Mi-8,,68,Hip,,rotary_wing,,military,transport,,"Works number 9710819, bort ""68 red"".",Mi8; c/n 9710819,Victory Museum,on_display
+Nakajima,Ki-43,,,Hayabusa,,fixed_wing,monoplane,military,fighter,,Japanese fighter; the museum lists it among its mock-ups and retro-copies.,Ki43; Oscar,Victory Museum,on_display
+Sukhoi,Su-2,,27,,,fixed_wing,monoplane,military,bomber,,"Full-scale reproduction, bort ""27 white""; russianplanes.net records it with a mock-up placeholder in place of a works number.",Su2,Victory Museum,on_display
+Kocherigin,DI-6,,3,,,fixed_wing,biplane,military,fighter,,"Two-seat fighter of 1934, displayed as bort 3; a reproduction.",DI6,Victory Museum,on_display
+Polikarpov,I-15bis,,14,,,fixed_wing,biplane,military,fighter,,"Full-scale reproduction, bort ""14 white""; russianplanes.net records it with a mock-up placeholder in place of a works number.",I15bis; I-15; I15,Victory Museum,on_display
+Polikarpov,Po-2,,14,Mule,,fixed_wing,biplane,military,trainer,,"Bort ""14 white"". Night light bomber and trainer biplane.",Po2; U-2; U2,Victory Museum,on_display

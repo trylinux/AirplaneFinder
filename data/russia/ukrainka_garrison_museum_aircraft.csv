@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Antonov,An-26,Sh,32,Curl,,fixed_wing,monoplane,military,trainer,,"Navigator-training An-26Sh, red bort 32. c/n 1003.",An26; An26Sh; c/n 1003; Curl,Ukrainka Garrison Aviation Museum,on_display
+Antonov,An-24,RT,58,Coke,,fixed_wing,monoplane,military,transport,,Red bort 58. c/n 9911106.,An24; An24RT; c/n 9911106; Coke,Ukrainka Garrison Aviation Museum,on_display
+Myasishchev,M-4,,63,Bison,,fixed_wing,monoplane,military,bomber,,"Red bort 63. One of very few surviving Myasishchev M-4 strategic bombers, kept on the Ukrainka bomber base. c/n 5301518.",M4; c/n 5301518; Bison,Ukrainka Garrison Aviation Museum,on_display
+Antonov,An-2,,04,Colt,,fixed_wing,biplane,military,utility,,Red bort 04.,An2; Colt,Ukrainka Garrison Aviation Museum,on_display
+Antonov,An-12,B,08,Cub,,fixed_wing,monoplane,military,transport,,Yellow bort 08. c/n 3341304.,An12; An12B; c/n 3341304; Cub,Ukrainka Garrison Aviation Museum,on_display

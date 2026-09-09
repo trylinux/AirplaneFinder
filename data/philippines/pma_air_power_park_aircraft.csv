@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Northrop,F-5,A,63-8389,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,Ex-Republic of Korea Air Force F-5A transferred to the Philippine Air Force. Park blessed and inaugurated in February 2022.,F5; F5A; 638389,"Air Power Park, Philippine Military Academy",on_display
+Vought,F-8,H,148686,Crusader,,fixed_wing,monoplane,military,fighter,,"Marked 148696, which is wrong: the real 148696 never served with the Philippine Air Force. Forgotten Jets identifies the airframe as 148686.",F8; F8H; 148686; 148696; 48686,"Air Power Park, Philippine Military Academy",on_display
+SIAI-Marchetti,S.211,,022,,,fixed_wing,monoplane,military,trainer,,Displayed outdoors in Project Falcon Uniform livery.,S211; 022,"Air Power Park, Philippine Military Academy",on_display
+MBB,Bo 105,C,402,,,rotary_wing,,military,utility,,Philippine Navy Bo 105C displayed outdoors.,Bo105; Bo105C; BO-105; 402,"Air Power Park, Philippine Military Academy",on_display
+Bell,UH-1,H,13938,Iroquois,,rotary_wing,,military,utility,,Ex-Philippine Air Force Huey displayed outdoors.,UH1; UH1H; Huey; 13938,"Air Power Park, Philippine Military Academy",on_display

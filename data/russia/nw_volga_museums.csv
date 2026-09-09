@@ -1,0 +1,38 @@
+name,city,state_province,country,postal_code,region,address,website,access_type,latitude,longitude
+Engels Museum of Long-Range Aviation,Engels,Saratov Oblast,Russia,413105,Europe,"Engels-2 airbase, military unit 42152, Engels",,restricted,51.4752,46.1890
+Saratov State Museum of Military Glory,Saratov,Saratov Oblast,Russia,410004,Europe,"Sokolovaya Gora, Victory Park, Saratov",http://www.sargmbs.ru/,public,51.5427,46.0560
+Head Branch Museum of Civil Aviation History,Ulyanovsk,Ulyanovsk Oblast,Russia,432045,Europe,"ulitsa Aviatsionnaya 20a, Ulyanovsk",http://www.uvauga.ru/museum,public,54.2910,48.2347
+Sakharov Park Complex of Technology History,Togliatti,Samara Oblast,Russia,445043,Europe,"Yuzhnoye shosse 137, Togliatti",https://pkitis.tltsu.ru/,public,53.5521,49.2540
+Samara University Aviation and Cosmonautics Collection,Samara,Samara Oblast,Russia,443086,Europe,"Training airfield, Smyshlyaevka, Volzhsky district, Samara Oblast",,appointment,53.2408,50.3625
+Samara Space Museum and Exhibition Centre,Samara,Samara Oblast,Russia,443110,Europe,"prospekt Lenina 21, Samara",https://samaracosmos.ru/,public,53.2126,50.1451
+Syzran Higher Military Aviation School Aircraft Park,Syzran,Samara Oblast,Russia,446007,Europe,"Syzran Higher Military Aviation School for Pilots, Syzran",,restricted,53.1811,48.4811
+Sokol Aircraft Plant Museum,Nizhny Novgorod,Nizhny Novgorod Oblast,Russia,603035,Europe,"ulitsa Chaadaeva 1, Nizhny Novgorod",,appointment,56.3237,43.8530
+Nizhny Novgorod Victory Park,Nizhny Novgorod,Nizhny Novgorod Oblast,Russia,603000,Europe,"Victory Park, Nizhny Novgorod",http://park-pobeda-nnov.ru/,public,56.3279,44.0367
+Nizhny Novgorod Kremlin Military Equipment Exhibition,Nizhny Novgorod,Nizhny Novgorod Oblast,Russia,603082,Europe,"Nizhny Novgorod Kremlin, Nizhny Novgorod",https://kremlnn.ru/,public,56.3272,44.0048
+Chkalov Memorial Museum,Chkalovsk,Nizhny Novgorod Oblast,Russia,606540,Europe,"ulitsa Chkalova 5, Chkalovsk",http://www.vchkalov.ru/,public,56.7647,43.2661
+Savasleyka Air Defence Aviation Museum,Savasleyka,Nizhny Novgorod Oblast,Russia,607080,Europe,"Savasleyka airbase, Kulebaki district, Nizhny Novgorod Oblast",,restricted,55.4482,42.2959
+Kazan Victory Park,Kazan,Republic of Tatarstan,Russia,420124,Europe,"prospekt Yamasheva 42, Kazan",,public,55.8291,49.1069
+Kazan Helicopter Plant Museum,Kazan,Republic of Tatarstan,Russia,420006,Europe,"ulitsa Tetsevskaya 14, Kazan",,appointment,55.8524,49.0406
+Kazan Aviation Institute Tu-144 Exhibit,Kazan,Republic of Tatarstan,Russia,420015,Europe,"ulitsa Chetaeva, Kazan National Research Technical University KAI, Kazan",https://tu-144.kai.ru/,appointment,55.8217,49.1350
+Ryazan Museum of Long-Range Aviation,Ryazan,Ryazan Oblast,Russia,390015,Europe,"ulitsa Belyakova 11, military unit 41521, Dyagilevo, Ryazan",http://www.avia-ryazan.ru/,restricted,54.6512,39.5855
+Sasovo Flight College Aircraft Display,Sasovo,Ryazan Oblast,Russia,391430,Europe,"Sasovo Flight College of Civil Aviation, Sasovo",,appointment,54.3539,41.9713
+Museum of the History of the Motovilikha Plants,Perm,Perm Krai,Russia,614014,Europe,"ulitsa 1905 goda 20, Perm",,public,58.0351,56.3104
+Naval Aviation Museum of the Northern Fleet,Safonovo,Murmansk Oblast,Russia,184606,Europe,"posyolok Safonovo, ZATO Severomorsk, Murmansk Oblast",http://www.museum.ru/M2050,restricted,69.0625,33.2895
+Severomorsk Air Defence Corps Museum,Severomorsk,Murmansk Oblast,Russia,184600,Europe,"Severomorsk, Murmansk Oblast",,restricted,69.0596,33.4585
+Abram-Mys Air Defence Memorial,Murmansk,Murmansk Oblast,Russia,183034,Europe,"Abram-Mys district, Murmansk",,public,68.9747,33.0212
+Museum of the World Ocean,Kaliningrad,Kaliningrad Oblast,Russia,236006,Europe,"naberezhnaya Petra Velikogo 1, Kaliningrad",http://www.world-ocean.ru/,public,54.7065,20.4979
+Gatchina Museum of the History of Military Aviation,Gatchina,Leningrad Oblast,Russia,188309,Europe,"Baltiyskaya ulitsa 4, Gatchina",https://vk.com/aviagtn,public,59.5571,30.1034
+Gatchina Museum of the History of Aero-Engine Building and Repair,Gatchina,Leningrad Oblast,Russia,188300,Europe,"ulitsa Grigorina 7A, Gatchina",,appointment,59.5617,30.1032
+Khvoyny Open-Air Air Defence Museum,Khvoyny,Leningrad Oblast,Russia,188357,Europe,"posyolok Khvoyny, Gatchina district, Leningrad Oblast",,appointment,59.6753,30.0711
+Vyborg Aviation Technical College Training Park,Vyborg,Leningrad Oblast,Russia,188800,Europe,"Vyborg Aviation Technical College of Civil Aviation, Vyborg",https://vatuga.ru/,appointment,60.7386,28.6098
+Museum of Aviation of the North,Arkhangelsk,Arkhangelsk Oblast,Russia,163062,Europe,"Talazhsky aviagorodok 8, Arkhangelsk",https://vk.com/aviam29,public,64.5959,40.6981
+St Petersburg United Civil Aviation Museum,Saint Petersburg,Saint Petersburg,Russia,196210,Europe,"ulitsa Pilotov 38, Saint Petersburg",https://aviamuseumspb.ru/,appointment,59.8204,30.2911
+Russian State Museum of the Arctic and Antarctic,Saint Petersburg,Saint Petersburg,Russia,191040,Europe,"ulitsa Marata 24A, Saint Petersburg",https://www.polarmuseum.ru/,public,59.9274,30.3537
+Kronstadt Museum of Naval Glory,Kronstadt,Saint Petersburg,Russia,197762,Europe,"Tsitadelskoye shosse 18, Kronstadt",https://mvms.ru/,public,59.9958,29.7368
+Patriot Park Kronstadt,Kronstadt,Saint Petersburg,Russia,197760,Europe,"Sovetskaya ulitsa and Petrovskaya harbour, Kronstadt",,public,59.9939,29.7680
+Military Historical Museum of Artillery and Engineers,Saint Petersburg,Saint Petersburg,Russia,197046,Europe,"Aleksandrovsky park 7, Saint Petersburg",https://www.artillery-museum.ru/,public,59.9530,30.3137
+Museum of the 344th Army Aviation Centre,Torzhok,Tver Oblast,Russia,172007,Europe,"344th Centre for Combat Training and Aircrew Conversion, Torzhok",,restricted,57.0506,35.0117
+Torzhok Private Helicopter Museum,Torzhok,Tver Oblast,Russia,172002,Europe,"Kalininskoye shosse 8, Torzhok",https://vk.com/heli_museum,public,57.0323,34.9860
+Museum of the 514th Aircraft Repair Plant,Rzhev,Tver Oblast,Russia,172390,Europe,"514th Aircraft Repair Plant, Rzhev",,appointment,56.2612,34.3790
+Voronezh Air Force Academy Aircraft Display,Voronezh,Voronezh Oblast,Russia,394064,Europe,"Air Force Military Educational and Scientific Centre Zhukovsky and Gagarin Academy, Voronezh",,appointment,51.6386,39.1751
+Borshchevo Aviation Museum,Borshchevo,Voronezh Oblast,Russia,396335,Europe,"selo Borshchevo, Khokholsky district, Voronezh Oblast",,public,51.3391,39.0411

@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-6,,RA-21887,Hook,,rotary_wing,,civilian,transport,,c/n 7683107V. Static display at the aerodrome museum.,Mi6; Hook,Mochishche Aerodrome Aviation Museum,on_display
+Antonov,An-30,,RA-30052,Clank,,fixed_wing,monoplane,civilian,recon,,Airframe present in dismantled/partial condition at the last dated report. c/n 1007.,An30; c/n 1007; Clank,Mochishche Aerodrome Aviation Museum,under_restoration
+Antonov,An-2,,91,Colt,,fixed_wing,biplane,civilian,utility,,c/n 111947308.,An2; c/n 111947308; Colt,Mochishche Aerodrome Aviation Museum,in_storage
+Sukhoi,Su-24,M,93,Fencer,,fixed_wing,monoplane,military,bomber,,"White bort 93, also wearing RF-93803; newly recorded at Mochishche in August 2026. c/n 1141606.",Su24; Su24M; RF-93803; c/n 1141606; Fencer,Mochishche Aerodrome Aviation Museum,on_display

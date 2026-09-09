@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,UH-1,H,15780,Iroquois,,rotary_wing,,military,utility,,Ex-VNAF Huey in the museum grounds. First of two Hueys here.,UH1; UH 1; Huey; 15780; UH1H,Dong Nai Provincial Museum,on_display
+Bell,UH-1,H,831,Iroquois,,rotary_wing,,military,utility,,Ex-VNAF Huey in the museum grounds. Second of two Hueys here.,UH1; UH 1; Huey; 831; UH1H,Dong Nai Provincial Museum,on_display
+Grumman,F8F,-1B,,Bearcat,,fixed_wing,monoplane,military,fighter,,"Ex-French Armee de l'Air Bearcat left in Indochina, marked G1510 - a rare first Indochina War survivor. The marking has not been matched to a US Navy BuNo or a French serial, so it is recorded as an alias only. Worth verifying on site.",F8F; F8F1B; Bearcat; G1510,Dong Nai Provincial Museum,on_display
+Mikoyan-Gurevich,MiG-21,PFM,6144,Fishbed,,fixed_wing,monoplane,military,fighter,,VPAF MiG-21 in the museum grounds at Bien Hoa.,MiG21; MiG 21; 6144; MiG21PFM,Dong Nai Provincial Museum,on_display

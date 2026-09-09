@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Antonov,An-2,,RA-70717,Colt,,fixed_wing,biplane,civilian,utility,,c/n 1G130-18.,An2; Colt,Berezovo Aviation Museum,on_display
+Mil,Mi-8,T,RA-25873,Hip,,rotary_wing,,civilian,transport,,c/n 5141.,Mi8; Mi8T; c/n 5141; Hip,Berezovo Aviation Museum,on_display
+Mil,Mi-1,,CCCP-20214,Hare,,rotary_wing,,civilian,utility,,c/n 76800306.,Mi1; c/n 76800306; Hare,Berezovo Aviation Museum,on_display
+Yakovlev,Yak-40,,RA-88244,Codling,,fixed_wing,monoplane,civilian,commercial_transport,,"Previously an airport rescue-service training airframe elsewhere in Berezovo, moved to the museum and now a display. c/n 9641751.",Yak40; c/n 9641751; Codling,Berezovo Aviation Museum,on_display

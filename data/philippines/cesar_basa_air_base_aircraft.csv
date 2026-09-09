@@ -1,0 +1,12 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,F-86,D,51-8436,Sabre,,fixed_wing,monoplane,military,fighter,,Gate guard in 8th Fighter Interceptor Squadron 'Night Fighters' livery. Recorded on base since at least 1987.,F86; F86D; 518436,Cesar Basa Air Base,on_display
+North American,F-86,F,52-4428,Sabre,,fixed_wing,monoplane,military,fighter,,Displayed carrying the name 'Budjak'. Duncan's F-86 register queries whether this and 51-13468 have been confused with one another.,F86; F86F; 524428; Budjak,Cesar Basa Air Base,on_display
+North American,F-86,F,51-13468,Sabre,,fixed_wing,monoplane,military,fighter,,Displayed in Blue Diamonds aerobatic team livery; first noted 20 March 1993.,F86; F86F; 5113468,Cesar Basa Air Base,on_display
+North American,F-86,F,52-5158,Sabre,,fixed_wing,monoplane,military,fighter,,Mounted on a pole along the flight line in Air Superiority Silver livery.,F86; F86F; 525158,Cesar Basa Air Base,on_display
+Northrop,F-5,A,65-10499,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,"Gate guard, wearing FA-499; photographed on base during the 88th AFP anniversary flag-raising, 21 December 2023.",F5; F5A; FA-499; 10499; FA499,Cesar Basa Air Base,on_display
+Vought,F-8,H,147060,Crusader,,fixed_wing,monoplane,military,fighter,,Ex-Philippine Air Force Crusader preserved on base.,F8; F8H; 147060; 47060,Cesar Basa Air Base,on_display
+Lockheed,RT-33,A,53457,Shooting Star,,fixed_wing,monoplane,military,recon,,"Photo-reconnaissance Shooting Star displayed on base, wearing 457.",RT33; RT33A; T33; 53457; 457,Cesar Basa Air Base,on_display
+Lockheed,T-33,A,53636,Shooting Star,,fixed_wing,monoplane,military,trainer,,Displayed on base.,T33; T33A; 53636,Cesar Basa Air Base,on_display
+Bell,UH-1,H,67-9973,Iroquois,,rotary_wing,,military,utility,,Displayed on base.,UH1; UH1H; Huey; 9973,Cesar Basa Air Base,on_display
+SIAI-Marchetti,S.211,,001,,,fixed_wing,monoplane,military,trainer,,Displayed outdoors at 5th Fighter Wing headquarters in Project Falcon Uniform livery.,S211; 001,Cesar Basa Air Base,on_display
+SIAI-Marchetti,S.211,,011,,,fixed_wing,monoplane,military,trainer,,Displayed outdoors at the 430th Aircraft Maintenance Group maintenance complex in Red Aces livery; visible in a January 2023 US DoD photograph of the complex.,S211; 011,Cesar Basa Air Base,on_display

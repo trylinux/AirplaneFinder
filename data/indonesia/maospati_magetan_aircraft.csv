@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-17,,,Fresco,,fixed_wing,monoplane,military,fighter,,"MiG-17 monument at the Maospati market, maintained by Lanud Iswahjudi. Serial not published.",MiG17; Fresco,Maospati aircraft monuments,on_display
+Tupolev,Tu-16,KS,M-1614,Badger,,fixed_wing,monoplane,military,bomber,,"Ex-AURI Tu-16KS Badger preserved at Maospati beside Lanud Iswahjudi; open daily 08:00-18:00 per detikJatim. One of only two Tu-16 airframes surviving in Indonesia, the other being M-1625 at the air force museum in Yogyakarta.",Tu16; M1614; Badger; Tu16KS,Maospati aircraft monuments,on_display

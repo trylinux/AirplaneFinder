@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Tupolev,Tu-154,M,RA-85803,Careless,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 89A822.,Tu154; Tu154M; c/n 89A822; Careless,Primorskoye Koltso Sport-Technical Park Aircraft Display,on_display
+Tupolev,Tu-154,M,RA-85766,Careless,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 92A923.,Tu154; Tu154M; c/n 92A923; Careless,Primorskoye Koltso Sport-Technical Park Aircraft Display,on_display
+Sukhoi,Su-27,,29,Flanker,,fixed_wing,monoplane,military,fighter,,Bort 29; moved here from the Sumotori-Avto site further south on the Vladivostok road.,Su27; Flanker,Primorskoye Koltso Sport-Technical Park Aircraft Display,on_display
+Yakovlev,Yak-40,,RA-87518,Codling,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 9522040.,Yak40; c/n 9522040; Codling,Primorskoye Koltso Sport-Technical Park Aircraft Display,on_display

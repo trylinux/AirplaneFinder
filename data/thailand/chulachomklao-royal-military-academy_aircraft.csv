@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Short,SD3-30,UTT,3098,,,fixed_wing,monoplane,military,transport,,"Ex Royal Thai Army; withdrawn at Don Mueang from 2003, wings cut off in 2009 and moved to Nakhon Nayok by April 2010.",SD330; Sherpa; 3098,Chulachomklao Royal Military Academy,on_display
+Bell,UH-1,D,2430,Iroquois,,rotary_wing,,military,utility,,Probably ex South Vietnamese Air Force; it is not UH-1H 74-22430. Displayed since August 2005.,UH1D; 2430; UH1,Chulachomklao Royal Military Academy,on_display

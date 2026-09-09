@@ -55,13 +55,13 @@ Consolidated,PT-1,,N31PT,Husky,,fixed_wing,biplane,military,trainer,,,PT1,EAA Av
 Curtiss,P-6,E,NX606PE,Hawk,,fixed_wing,biplane,military,fighter,,Rosanik-built replica,P6; P6E,EAA Aviation Museum,on_display
 Fokker,Dr.I,,N105RF,,,fixed_wing,triplane,military,fighter,,Redfern-built replica,,EAA Aviation Museum,on_display
 Ford,Flivver,,,,,fixed_wing,monoplane,civilian,experimental,,replica by EAA Chapter 159; display number 268,,EAA Aviation Museum,on_display
-Pitts,S-1,Special,N442X,,,fixed_wing,biplane,civilian,experimental,,Red Devils formation team,S1,EAA Aviation Museum,on_display
-Pitts,S-1,Special,N9J,,,fixed_wing,biplane,civilian,experimental,,Red Devils formation team,S1,EAA Aviation Museum,on_display
-Pitts,S-1,Special,N58J,,,fixed_wing,biplane,civilian,experimental,,Red Devils formation team,S1,EAA Aviation Museum,on_display
-Pitts,S-2,Special,N22Q,,,fixed_wing,biplane,civilian,private,1966,,S2,EAA Aviation Museum,on_display
+Pitts,S-1,,N442X,Special,,fixed_wing,biplane,civilian,experimental,,Red Devils formation team,S1,EAA Aviation Museum,on_display
+Pitts,S-1,,N9J,Special,,fixed_wing,biplane,civilian,experimental,,Red Devils formation team,S1,EAA Aviation Museum,on_display
+Pitts,S-1,,N58J,Special,,fixed_wing,biplane,civilian,experimental,,Red Devils formation team,S1,EAA Aviation Museum,on_display
+Pitts,S-2,,N22Q,Special,,fixed_wing,biplane,civilian,private,1966,,S2,EAA Aviation Museum,on_display
 Monocoupe,113,,N7808,,,fixed_wing,monoplane,civilian,private,1928,,,EAA Aviation Museum,on_display
 Monocoupe,90,AW,N38904,,Little Mulligan,fixed_wing,monoplane,civilian,private,1941,,,EAA Aviation Museum,on_display
-Monocoupe,110,Clipwing,N15E,,,fixed_wing,monoplane,civilian,private,1949,,,EAA Aviation Museum,on_display
+Monocoupe,110,,N15E,Clipwing,,fixed_wing,monoplane,civilian,private,1949,,,EAA Aviation Museum,on_display
 Rasor,21,,,,,lighter_than_air,,civilian,private,,,,EAA Aviation Museum,on_display
 Spartan,C3,225,NC718N,,,fixed_wing,biplane,civilian,private,1930,,,EAA Aviation Museum,on_display
 Spartan,7W,,NC13993,Executive,,fixed_wing,monoplane,civilian,private,1937,,,EAA Aviation Museum,on_display

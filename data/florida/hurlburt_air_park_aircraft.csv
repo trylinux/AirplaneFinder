@@ -1,0 +1,24 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,A-26,A,64-17666,Counter Invader,,fixed_wing,monoplane,military,ground_attack,,On-Mark rebuild also designated B-26K,B-26K; Invader; A26; A26A; B26K,Hurlburt Field Memorial Air Park,on_display
+Sikorsky,HH-3,E,65-12784,Jolly Green Giant,,rotary_wing,,military,search_rescue,,Serial checks against the FY65 block,Jolly Green; HH3; HH3E,Hurlburt Field Memorial Air Park,on_display
+Sikorsky,MH-53,J,68-10928,Pave Low III,,rotary_wing,,military,search_rescue,,Serial checks against the FY68 block,Pave Low; MH53; MH53J,Hurlburt Field Memorial Air Park,on_display
+North American,B-25,J,43-28222,Mitchell,,fixed_wing,monoplane,military,bomber,,Serial is the final airframe of the B-25J block,Mitchell; B25; B25J,Hurlburt Field Memorial Air Park,on_display
+Curtiss,C-46,D,44-77424,Commando,,fixed_wing,monoplane,military,transport,,Serial checks against the C-46D FY44 block,Commando; C46; C46D,Hurlburt Field Memorial Air Park,on_display
+Fairchild,AC-119,G,53-3144,Shadow,,fixed_wing,monoplane,military,ground_attack,,Gunship conversion of the C-119G,C-119G; Flying Boxcar; Shadow; AC119; AC119G; C119G,Hurlburt Field Memorial Air Park,on_display
+Lockheed,AC-130,A,56-0509,Spectre,The Ultimate End,fixed_wing,monoplane,military,ground_attack,,Gunship conversion of a C-130A,C-130A; Spectre; AC130; AC130A; C130A,Hurlburt Field Memorial Air Park,on_display
+Lockheed,MC-130,E,64-0567,Combat Talon,,fixed_wing,monoplane,military,transport,,Serial checks against the C-130E FY64 block,C-130E; Combat Talon; MC130; MC130E; C130E,Hurlburt Field Memorial Air Park,on_display
+Douglas,AC-47,D,43-15510,Spooky,,fixed_wing,monoplane,military,ground_attack,,Gunship conversion of a C-47A,C-47A; Puff the Magic Dragon; Spooky; AC47; AC47D; C47A,Hurlburt Field Memorial Air Park,on_display
+Fairchild,UC-123,K,55-4533,Provider,,fixed_wing,monoplane,military,transport,,Spray-configured Provider of the Ranch Hand lineage,C-123K; Provider; UC123; UC123K; C123K,Hurlburt Field Memorial Air Park,on_display
+Douglas,A-1,E,52-132598,Skyraider,,fixed_wing,monoplane,military,ground_attack,,The USAF serial is formed from Navy Bureau Number 132598 with an FY52 prefix which is the correct convention and not a typo,132598; AD-5; Spad; A1; A1E; AD5,Hurlburt Field Memorial Air Park,on_display
+Lockheed,MC-130,P,65-0994,Combat Shadow,,fixed_wing,monoplane,military,tanker,,Special-operations tanker and the final airframe of its C-130E block,C-130E; Combat Shadow; MC130; MC130P; C130E,Hurlburt Field Memorial Air Park,on_display
+North American,T-28,A,49-1663,Trojan,,fixed_wing,monoplane,military,trainer,,The December 2025 official guide gives T-28A while an older compilation gives T-28D which would be the armed counterinsurgency conversion,T-28D; Trojan; T28; T28A; T28D,Hurlburt Field Memorial Air Park,on_display
+Bell,UH-1,P,64-15493,Iroquois,,rotary_wing,,military,utility,,Special-operations variant of the UH-1F,UH-1F; Huey; UH1; UH1P; UH1F,Hurlburt Field Memorial Air Park,on_display
+Sikorsky,MH-60,G,89-26009,Pave Hawk,,rotary_wing,,military,search_rescue,,Serial checks against the FY89 block,Pave Hawk; MH60; MH60G,Hurlburt Field Memorial Air Park,on_display
+Lockheed,AC-130,H,69-6575,Spectre,Wicked Wanda,fixed_wing,monoplane,military,ground_attack,,Serial checks against the FY69 block,Spectre; AC130; AC130H,Hurlburt Field Memorial Air Park,on_display
+Lockheed,AC-130,U,87-0128,Spooky,Big Daddy,fixed_wing,monoplane,military,ground_attack,,Serial checks against the FY87 block,Spooky; AC130; AC130U,Hurlburt Field Memorial Air Park,on_display
+Lockheed,MC-130,H,88-0283,Combat Talon II,,fixed_wing,monoplane,military,transport,,Serial checks against the FY88 block,Combat Talon II; MC130; MC130H,Hurlburt Field Memorial Air Park,on_display
+Cessna,O-1,E,56-4208,Bird Dog,,fixed_wing,monoplane,military,recon,,Serial checks against the O-1 FY56 block,L-19; Bird Dog; O1; O1E; L19,Hurlburt Field Memorial Air Park,on_display
+North American Rockwell,OV-10,A,67-14626,Bronco,,fixed_wing,monoplane,military,recon,,The guide gives a bare OV-10 and variant A is inferred from the serial falling inside the OV-10A block 67-14598 to 67-14703,Bronco; OV10; OV10A,Hurlburt Field Memorial Air Park,on_display
+Cessna,O-2,A,67-21368,Skymaster,,fixed_wing,monoplane,military,recon,,Confirmed at Hurlburt by the December 2025 official air park guide,Skymaster; O2; O2A,Hurlburt Field Memorial Air Park,on_display
+Helio,U-10,A,62-3606,Super Courier,,fixed_wing,monoplane,military,utility,,Serial checks against the FY62 block,L-28; Super Courier; U10; U10A; L28,Hurlburt Field Memorial Air Park,on_display
+Cessna,OA-37,B,70-1293,Dragonfly,,fixed_wing,monoplane,military,ground_attack,,Observation-tasked A-37B,A-37B; Super Tweet; Dragonfly; OA37; OA37B; A37B,Hurlburt Field Memorial Air Park,on_display

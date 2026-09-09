@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Cessna,A-37,B,FAE390,Dragonfly,,fixed_wing,monoplane,military,ground_attack,,"A-37B FAE 390 preserved inside a children's playground in Píllaro, alongside a T-33 (jetphotos 24 November 2022).",A37B; A37; 390,"Parque Infantil A-37 and T-33, Píllaro",on_display
+Lockheed,T-33,A,,Shooting Star,,fixed_wing,monoplane,military,trainer,,"T-33 displayed with A-37B FAE390 in the Píllaro playground (jetphotos remark, November 2022); serial not recorded.",T33A; T33,"Parque Infantil A-37 and T-33, Píllaro",on_display

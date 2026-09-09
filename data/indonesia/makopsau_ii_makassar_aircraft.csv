@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,A-4,E,TT-0402,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,First of two Skyhawks recorded in front of the Makopsau II headquarters. Serial per the p2k mirror of id.wikipedia.,A4; TT0402; Skyhawk; A4E,Air Operations Command II headquarters Skyhawk monuments,on_display
+Douglas,A-4,E,TT-0410,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,Second of two Skyhawks recorded in front of the Makopsau II headquarters. Serial per the p2k mirror of id.wikipedia.,A4; TT0410; Skyhawk; A4E,Air Operations Command II headquarters Skyhawk monuments,on_display

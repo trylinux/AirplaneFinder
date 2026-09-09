@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Dassault/Dornier,Alpha Jet,A,J7-10/44,,,fixed_wing,monoplane,military,ground_attack,,First noted at Hua Hin December 2022 and repainted in a grey and white scheme by May 2023; marked 23125. Noted May 2026.,AlphaJet; 23125,Royal Thai Air Force Resort Hua Hin,on_display
+General Dynamics,F-16,B,,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,First noted at Hua Hin December 2022 marked 87403 and repainted as 70403 by September 2023; also carries code 10321.,F16; 70403; 87403; 10321; F16B,Royal Thai Air Force Resort Hua Hin,on_display
+Cessna,T-41,D,F14-2/11,Mescalero,,fixed_wing,monoplane,military,trainer,,Ex Don Mueang store; first noted at Hua Hin April 2023. Marked 8967 and 60421.,T41D; 8967; 60421; T41,Royal Thai Air Force Resort Hua Hin,on_display
+Bell,UH-1,H,H6-30/15,Iroquois,,rotary_wing,,military,utility,,First noted at Hua Hin April 2024; marked 20342.,UH1H; 20342; UH1,Royal Thai Air Force Resort Hua Hin,on_display

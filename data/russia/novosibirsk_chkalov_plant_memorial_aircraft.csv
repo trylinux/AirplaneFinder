@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Yakovlev,Yak-9,,,Frank,,fixed_wing,monoplane,military,fighter,,Yak-9 memorial airframe on the Chkalov plant grounds; the plant built Yak fighters in the war. Original-versus-replica status not established.,Yak9; Frank,Chkalov Aircraft Plant Memorial Aircraft,on_display
+Yakovlev,Yak-28,PM,02,Firebar,,fixed_wing,monoplane,military,fighter,,Blue bort 02.,Yak28; Yak28PM; Firebar,Chkalov Aircraft Plant Memorial Aircraft,on_display
+Sukhoi,Su-15,TM,04,Flagon,,fixed_wing,monoplane,military,fighter,,Blue bort 04.,Su15; Su15TM; Flagon,Chkalov Aircraft Plant Memorial Aircraft,on_display
+Sukhoi,Su-9,,07,Fishpot,,fixed_wing,monoplane,military,fighter,,Bort 07.,Su9; Fishpot,Chkalov Aircraft Plant Memorial Aircraft,on_display
+Sukhoi,Su-34,,01,Fullback,,fixed_wing,monoplane,military,bomber,,Bort 01. The Su-34 is the plant current production type.,Su34; Fullback,Chkalov Aircraft Plant Memorial Aircraft,on_display
+Antonov,An-38,120,,,,fixed_wing,monoplane,civilian,commercial_transport,,"An-38-120, c/n 070001 — the first airframe of the type built at Novosibirsk.",An38; An38120; c/n 070001,Chkalov Aircraft Plant Memorial Aircraft,on_display

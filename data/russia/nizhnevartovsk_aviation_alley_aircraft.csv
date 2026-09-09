@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-6,A,RA-21075,Hook,,rotary_wing,,civilian,transport,,c/n 0717.,Mi6; Mi6A; c/n 0717; Hook,Nizhnevartovsk Alley of Aviation Honour,on_display
+Mil,Mi-8,T,RA-25973,Hip,,rotary_wing,,civilian,transport,,c/n 6323.,Mi8; Mi8T; c/n 6323; Hip,Nizhnevartovsk Alley of Aviation Honour,on_display
+Mil,Mi-4,,RA-36574,Hound,,rotary_wing,,civilian,transport,,c/n 17157.,Mi4; c/n 17157; Hound,Nizhnevartovsk Alley of Aviation Honour,on_display
+Mil,Mi-2,P,RA-15686,Hoplite,,rotary_wing,,civilian,utility,,,Mi2; Mi2P; Hoplite,Nizhnevartovsk Alley of Aviation Honour,on_display
+Mil,Mi-1,T,RA-68117,Hare,,rotary_wing,,civilian,utility,,c/n 96801405.,Mi1; Mi1T; c/n 96801405; Hare,Nizhnevartovsk Alley of Aviation Honour,on_display
+Antonov,An-2,P,RA-70705,Colt,,fixed_wing,biplane,civilian,utility,,c/n 1G130-06.,An2; An2P; Colt,Nizhnevartovsk Alley of Aviation Honour,on_display
+Yakovlev,Yak-3,,,,,fixed_wing,monoplane,military,fighter,,Full-scale reproduction standing with the helicopter line on the alley. Not an original airframe.,Yak3,Nizhnevartovsk Alley of Aviation Honour,on_display

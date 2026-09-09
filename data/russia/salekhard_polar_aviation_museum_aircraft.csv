@@ -1,0 +1,10 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-6,A,RA-21050,Hook,,rotary_wing,,civilian,transport,,c/n 0429.,Mi6; Mi6A; c/n 0429; Hook,Museum of Polar Aviation,on_display
+Lisunov,Li-2,T,CCCP-73956,Cab,,fixed_wing,monoplane,civilian,transport,,"Li-2T of the polar aviation era, the centrepiece type of the collection. c/n 18435804.",Li2; Li2T; c/n 18435804; Cab,Museum of Polar Aviation,on_display
+Antonov,An-2,V,CCCP-79854,Colt,,fixed_wing,biplane,civilian,utility,,Floatplane An-2V. c/n 116247314.,An2; An2V; Colt,Museum of Polar Aviation,on_display
+Yakovlev,Yak-40,,CCCP-87262,Codling,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 9321826.,Yak40; c/n 9321826; Codling,Museum of Polar Aviation,on_display
+Antonov,An-26,B,CCCP-26608,Curl,,fixed_wing,monoplane,civilian,transport,,c/n 4805.,An26; An26B; c/n 4805; Curl,Museum of Polar Aviation,on_display
+Mil,Mi-8,T,RA-25778,Hip,,rotary_wing,,civilian,transport,,c/n 4478.,Mi8; Mi8T; c/n 4478; Hip,Museum of Polar Aviation,on_display
+Mil,Mi-4,,RA-28029,Hound,,rotary_wing,,civilian,transport,,c/n 01168. russianplanes queries whether the displayed registration is the airframe own.,Mi4; c/n 01168; Hound,Museum of Polar Aviation,on_display
+Mil,Mi-1,,RA-10001,Hare,,rotary_wing,,civilian,utility,,The displayed registration RA-10001 is recorded by russianplanes as not genuine.,Mi1; Hare,Museum of Polar Aviation,on_display
+Tupolev,Tu-134,A-3,RA-65132,Crusty,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 60639.,Tu134; Tu134A3; c/n 60639; Crusty,Museum of Polar Aviation,on_display

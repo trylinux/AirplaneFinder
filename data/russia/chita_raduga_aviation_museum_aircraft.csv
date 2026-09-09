@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Tupolev,Tu-154,B-2,RA-85280,Careless,,fixed_wing,monoplane,civilian,commercial_transport,,Cabin museum of the Zabaykalsky Krai Museum of Aviation and Cosmonautics. Flown in from Chita-Kadala and opened in August 2020; gutted by an electrical fire on 25 December 2023 and under volunteer restoration since May 2024. c/n 78A280.,Tu154; Tu154B2; c/n 78A280; Careless,Raduga Aviation Museum,under_restoration
+Tupolev,Tu-154,B-2,RA-85506,Careless,,fixed_wing,monoplane,civilian,commercial_transport,,Second Tu-154 on the Raduga zoo site. c/n 81A506.,Tu154; Tu154B2; c/n 81A506; Careless,Raduga Aviation Museum,on_display
+Mil,Mi-2,,RA-20145,Hoplite,,rotary_wing,,civilian,utility,,Added to the site in January 2024. c/n 533411024.,Mi2; c/n 533411024; Hoplite,Raduga Aviation Museum,on_display

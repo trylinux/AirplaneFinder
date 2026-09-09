@@ -1,182 +1,183 @@
-# Arizona — build notes
+# Arizona
 
-Strategy shift from California: rather than sweeping a whole state, this
-phase tops up the **big museums already in the database that are showing
-almost nothing**. Arizona first, because Pima is the largest single gap
-anywhere in the dataset.
+Before this pass the database held **two** Arizona sites: Pima Air & Space
+(366 aircraft, complete) and Commemorative Air Force Airbase Arizona recorded
+with **one** aircraft. Now **17 sites and 405 aircraft**.
 
-## Pima Air & Space Museum (id 23) — 5 recorded, ~366 real
+| Site | Rows |
+|---|---|
+| Pima Air & Space Museum | 366 (pre-existing, untouched) |
+| Commemorative Air Force Airbase Arizona | 21 (was 1) |
+| Gila Bend Municipal Airport Display | 2 |
+| South Mountain High School Display Phoenix | 2 |
+| Veterans Memorial Freedom Garden Quartzsite | 2 |
+| 12 further single-airframe sites | 12 |
 
-Pima publishes a WordPress REST feed at
-`pimaair.org/wp-json/wp/v2/museum_aircraft`, which is far better than
-scraping the HTML: it exposes per-airframe Manufacturer / Markings /
-Designation / Registration / Serial Number fields. **366 aircraft records
-site-wide.** That also corrects the widely-quoted "~425" figure.
+## Planes of Fame Valle is closed and the collection has dispersed
 
-Split by manufacturer initial so each slice is a manageable research pass.
+The headline finding, and a clean example of why presence must be tested
+rather than assumed. Planes of Fame announced on **9 February 2023** that the
+Valle facility closed to the public; artefacts went to Chino or into storage.
 
-| File | Slice | Rows | Tails |
-|---|---|---|---|
-| `pima_topup_a_to_f_aircraft.csv` | manufacturers A–F | 142 | 140 (98%) |
-| `pima_topup_g_to_m_aircraft.csv` | manufacturers G–M | 112 | 106 (95%) |
-| `pima_topup_n_to_z_aircraft.csv` | manufacturers N–Z | 106 | 93 (87%) |
+This was verified independently rather than taken on the announcement: a pull
+of the live FAA releasable aircraft database shows **every one of the 70-plus
+Planes of Fame registrations now carries a Chino, California address.** The
+museum's own aircraft index returns only "Chino" or "Storage" — nothing at
+Valle.
 
-A–F and G–M are imported (259 live). N–Z completes the collection: 365 of
-366 records, the one exclusion being the MiG-21PF recorded at CAF Mesa below.
+Individual airframes traced out of the state:
 
-The feed is now parsed by `scripts/parse_pima_feed.py` and turned into CSV by
-`scripts/build_pima_csv.py`, rather than by hand.
+- **Ford 5-AT-C Trimotor N414H** -> Western Antique Aeroplane & Automobile
+  Museum, Hood River, Oregon (2022)
+- **Martin 4-0-4 N636X** -> 404 Foundation, Camarillo CA (registered
+  27 September 2025) — note the museum's *own* Martin 404 page still says it
+  "now resides at Valle, AZ", which is stale on the museum's own website
+- **AD-4N N409Z and G-32A N100TF** -> Comanche Warbirds, Houston TX
+- **BT-13B N56867** -> Mid-Atlantic Air Museum, Reading PA (2023)
+- **Convair 240 N240HH and RB-26C N8026E** -> Chino
+- **VC-121A "Bataan" 48-613** -> Air Legends Foundation, airworthy and flying
+  (Oshkosh 2023 and 2025)
 
-**98% serial coverage is the best in the whole project** — better than
-Travis or Joe Davies, and far better than the 44% California average.
-Pima publishes a serial for nearly every airframe.
+**No site record was created and no airframe recorded there.** Any directory
+still listing aircraft at Valle is at least three years out of date.
 
-Already recorded, excluded from the top-up: Boeing VC-137B 58-6971 (A–F),
-plus Lockheed C-130E 62-1787, P-38L 44-53236, F-16C 84-1301 and
-SR-71A 61-7951, which fall in the L slice.
+## Sources and their weight
 
-### A–F caveats
+**Skytamer's Arizona chain** enumerated 33 display locations and carries good
+per-airframe data — serials with construction numbers and walk-around
+photographs. But **every Arizona survey on it is dated 2007 to 2012**. It is a
+fifteen-year-old snapshot and was used for identity, never for presence.
 
-- **8 aircraft are `in_storage`** and 2 `under_restoration`, taken from
-  Pima's own "not currently on public display" wording rather than assumed.
-- **Four are on loan or displayed off Pima's own grounds** but remain in
-  their catalogue, so they are kept: the Curtiss F6C-4 Hawk (National
-  Museum of the Marine Corps), the AIR-2 Genie (NMUSAF), the Bell UH-1F
-  (physically at the adjacent **Titan Missile Museum**), and the B-17G
-  (at the **390th Memorial Museum** on the same campus). If you ever add
-  those two as separate museums, these three should move.
-- **Three are missiles**, in Pima's own aircraft catalogue: AIR-2 Genie,
-  SM-75 Thor, Fi 103 (V-1). Typed `missile_rocket`.
-- **One `lighter_than_air`** — the Avian Falcon II balloon.
-- A source bug: Pima's own Manufacturer field reads "Brewster" for the
-  Bowers Fly Baby, an obvious copy/paste error. Corrected to Bowers.
-- The Bolingbroke is recorded under **Fairchild Aircraft Ltd** (the Canadian
-  licensee), which is what Pima's page says, rather than Bristol.
-- No AMARG/boneyard aircraft appeared in this slice — the adjacent boneyard
-  is not part of the museum and is excluded by policy.
+**The live FAA registry was the currency instrument** and by far the most
+productive: 316,462 records pulled and joined locally on 2026-09-09. A live
+registration naming a museum is strong presence evidence; a registration that
+has moved to a private owner in another state is strong evidence against.
 
-### G–M caveats
+**silverhawkauthor's Mesa page is a historical accumulation, not an
+inventory.** Nine of its registrations were tested against the FAA: `N7757U`
+is a Cessna 172E in Kentucky, `N9012` an American Airlines A319, `N7436B` a
+Champion 7EC in Las Vegas, `N17357` a Ryan ST-A in Texas, `N9158B` an L-5E in
+South Dakota, and `N6735`, `N47DJ` and `N589D` are not on the register at all.
+It also lists a Canberra TT.18, a C-54, an F-16C and a DC-7 nose at CAF Mesa,
+none on the museum's own 2026 page. Not a presence source.
 
-- **One aircraft moved museums.** Pima's MiG-21PF serial **507** is on loan
-  *from* Pima *to* the CAF Arizona Wing in Mesa — it is in Pima's catalogue
-  but physically in another building. Since this app answers "where can I
-  go and see it", it is recorded at **CAF Airbase Arizona**
-  (`caf_airbase_arizona_aircraft.csv`), not Pima.
-- **One collision, dropped:** Lockheed C-130A **57-0457** is already in the
-  database under another museum. Left where it is rather than forced.
-- **On loan to Pima** (kept, since they are physically there): S-3B 160604
-  and the Blue Angels F/A-18A 163093 from Pensacola; MiG-15UTI and MiG-23MLD
-  from NMUSAF; the Mi-24D Hind from IWM Duxford.
-- In storage: Lark 95, P-2H 150281, Bf 109F-4, WB-57F.
-  Under restoration: P-38G "Dumbo", B-26B Marauder, MiG-23MLD.
-- Pima's own manufacturer field uses compound credits in two places
-  ("General Dynamics/McDonnell-Douglas" for the Gryphon,
-  "Martin/General Dynamics" for the WB-57F); recorded under the first.
-- No AMARG boneyard aircraft in this slice. Several passed through
-  Davis-Monthan storage historically, but all are museum collection now.
+**aviationmuseum.eu scrambles under naive extraction** — its registration and
+type columns are separate blocks and a summariser mis-pairs them. The raw HTML
+has to be re-aligned by hand. Same failure mode seen at Tri-State in Ohio.
 
-### N–Z caveats
+## Corrections with evidence
 
-- **Pima's two X-15s are not X-15s.** The museum's own pages call them a
-  *replica* (X-15A) and a *construction mockup* (X-15A-2), and it writes their
-  serials in quotation marks — `“56-6670”`, `“56-6671”` — to say the numbers
-  are painted on rather than the airframes' identities. The real X-15A-2
-  **56-6671 is at the National Museum of the USAF**. Both rows here carry an
-  empty `tail_number`, the marking in `aliases`, and a description saying
-  plainly that it is a replica. Importing the quoted serial would have claimed
-  a famous airframe Pima does not have *and* collided with the museum that
-  does, under the unique index on `(model, tail_number)`.
+**The Champlin Fighter Museum question is settled.** It closed 26 May 2003 and
+the collection went to the Museum of Flight in Seattle. Exactly one airframe
+demonstrably stayed in Arizona: **F-4N BuNo 153016**, photographed on
+Champlin's inventory in April 2000. No other Champlin successor collection
+survives in state.
 
-  The quoted-serial convention turns out to be reliable and rare — exactly
-  three records site-wide use it, and all three are replicas. The parser now
-  treats it as a signal.
+**Quartzsite's second Phantom is 66-0384.** One directory prints `66-038`
+(truncated) and the 1994 roadside marker prints `60384` (fiscal-year separator
+dropped). Both resolve to 66-0384, inside the RF-4C block 66-0383 to 66-0478.
 
-- **One record lists two serials:** the AGM-28A Hound Dog, `59-2866 AND
-  60-2092`. That is either two missiles on one page or uncertainty about
-  which. The row imports with a blank tail and both serials in aliases rather
-  than picking one.
+**A directory places an "NF-4E" at Quartzsite.** That is a confusion with
+**NF-4E 66-0294 at Corona de Tucson**. Quartzsite holds two RF-4Cs.
 
-- **Radioplane drones** (OQ-3, OQ-19D, MQM-57) have no serials at all in the
-  feed. Kept, untailed.
+**`N145AZ` "serial 44511"** is not a USAAF C-45 serial — the FAA gives
+construction number **A-235**. A construction number in a serial field, the
+single most common museum-page error.
 
-- **Source spellings corrected:** `SIKORKSY` → Sikorsky, `Schemmp-Hirth` →
-  Schempp-Hirth, `Rhurstahl` → Ruhrstahl, `P51D` → P-51D. The museum's own
-  typos.
+**Two FAA `YEAR MFR` values rejected as impossible:** `N3246G` (SNJ-5) reads
+1959 and `N9993Z` (AF-2S) reads 1940. Neither can be right, so both years are
+blank. The field was used only where plausible.
 
-- **Three records publish no Designation field** and are keyed on their title
-  instead: the Thiokol Space Shuttle SRB, the TL-Ultralight Stream, and the
-  Wright 1903 Flyer.
+## Two cross-museum conflicts, excluded rather than guessed
 
-- **The Taylorcraft BC-12D's Registration field contains the string
-  "BC-12D"** — its own model, not a registration. Imported with a blank tail;
-  the construction number 7243 is in aliases.
+Both surfaced through the pre-import collision check:
 
-- **Model-vs-mark corrections.** Three Westland Lynxes were being filed under
-  models `AH.1`, `AH.7` and `HMA.8`, which would scatter one type across three
-  models; they are now Lynx with those as variants. Same for the two SEPECAT
-  Jaguars (`GR3A`, `T4`) and the Short Tucano (`T1`).
+| Airframe | Database says | This research says |
+|---|---|---|
+| F-4N BuNo 153016 | Pima Air & Space | CAF Airbase Arizona (ex-Champlin) |
+| UH-1F 63-13141 | Pima Air & Space | Titan Missile Museum grounds |
 
-- **5 in storage, 1 under restoration**, from Pima's own wording.
+The UH-1F may not be a conflict at all — **the Titan Missile Museum is
+operated by Pima**, so an airframe on the Titan site could legitimately be
+recorded under the parent museum. Worth deciding as a policy question: does a
+satellite site get its own record, or roll up to its operator? Both left as
+they stand.
 
-### Caught by the pre-import audit
+## Excluded, and why
 
-An independent review of the finished file found four real errors, all now
-fixed at source and covered by tests in `tests/test_flagship_topup_files.py`:
+- **All Davis-Monthan AMARG / 309th inventory**, Pinal Air Park (Marana) and
+  the Kingman storage yard. Stored or awaiting reclamation is not display.
+- **Lauridsen Aviation Museum, Buckeye** — seven airframes are still
+  FAA-registered to Hans Lauridsen, but the museum's domain has lapsed and now
+  serves an unrelated site, there is no working phone, and no independent
+  source places any aircraft on display at Buckeye. Ownership is not presence.
+  Excluded entirely pending confirmation; this is the largest single block
+  left on the table in Arizona.
+- **Kingman Army Air Field Museum** — carries a CLOSED flag as of March 2026.
+- **Wingspan Air Museum, Mesa** — appears only in the stale compilation; long
+  defunct.
+- **Meteor Crater's Apollo boilerplate BP-29** — a genuine, still-displayed
+  exhibit, but no source names its builder (boilerplates came variously from
+  North American Aviation and General Electric) and `manufacturer` is
+  required. One citation would add it.
+- **CAF Mesa scale models**: a 1/6-scale B-24, a hanging Trimotor model, an SNJ
+  model, a child's pedal SNJ, nose-art boards, a propeller, a deck gun and a
+  Link Trainer. **The hanging P-40 and P-47 are also excluded** — they sit in
+  the museum's own list among explicitly-labelled models, and the museum
+  describes its collection as running "from full-size to scale models". If
+  either turns out to be full-size it should be added.
+- **CAF Mesa's Huey** — the museum's own page labels it "VISITING AIRCRAFT".
+- **CAF Mesa's AV-8B** — reported as arriving June 2025 on long-term loan but
+  absent from the museum's own 2026 collection page. Arrival not evidenced.
+- **Operational and private aircraft**: two PV-2 Harpoons at Falcon Field,
+  P-51D N151RJ (now privately held and off the museum's page), two L-39Cs at
+  Deer Valley, nine A-4N Skyhawks at Advanced Training Systems (a contract
+  adversary fleet), Marsh Aviation's HU-16 and ES-2D.
+- **390th Memorial Museum, Tucson** — legally separate but sits on the Pima
+  campus and its B-17G is normally counted in Pima's inventory. Left alone to
+  avoid duplicating the 366 already recorded. Flagged as the same policy
+  question as the Titan Missile Museum.
 
-- **Pitts S-1C and PZL Mielec An-2R were recorded as monoplanes.** Both are
-  biplanes. The cause was a dead lookup key: the BIPLANE table was keyed on
-  the designation `"S-1C"` while rows carry the split model `"S-1"`, so the
-  entry never matched and failed silently. Now keyed on the split model.
-- **F-105G was `fighter`.** It is the Wild Weasel SAM-suppression conversion;
-  NMUSAF's F-105G was already `electronic_warfare` and they now agree.
-- **Piper PA-48 Enforcer was `private`** because it carries a civil
-  registration. It was a turboprop COIN demonstrator built for USAF
-  evaluation — now `experimental`.
+## Deliberately blank
 
-### Still uncertain — flagged, not guessed at
+`year_built` is blank on every outdoor display and most CAF airframes: what
+was available was a fiscal-year serial prefix, which is an order year.
+`tail_number` is blank on twelve CAF airframes — the MiG-15bis, H-19, TG-3A,
+L-16, OQ-3, C-45, O-1E, Nieuport 28, Fokker Dr.I, Fokker D.VIII, S.E.5a and
+the Mesa SPAD XIII — because in each case the circulating identity failed
+verification against the FAA register or no identity exists. Coordinates are
+blank on 13 of 15 new sites; no coordinate was published that had not actually
+been fixed.
 
-- **Supermarine Spitfire MT847.** Pima's own page gives this serial, but
-  MT847 is generally recorded as a Mk XIVe at the RAF Museum Cosford. Either
-  Pima's page is wrong, or this is a different airframe, or one of them is a
-  replica. Imported as the museum states it, with no variant. Worth a look.
-- **Ryan/TEMCO D-16A Twin Navion.** The Twin Navion was a TEMCO conversion,
-  so "Temco" is arguably the better manufacturer. Recorded as **Ryan**, which
-  is the first name in Pima's own compound credit and consistent with how the
-  Gryphon and WB-57F were handled in the A–F and G–M slices.
-- **Two Yokosuka MXY7 Ohkas** (serials 62 and 1174). Two at one museum is
-  unusual, but the feed lists them as separate records with distinct serials.
-  Kept.
+## Deferred to the base pass
 
-### Corrections owed to the already-imported A–M rows
+Luke AFB Air Park (Glendale); Warrior Park at Davis-Monthan; Kurth Memorial
+Airpark, 162nd FW Tucson; 161st ARW Phoenix; Gila Bend AF Auxiliary Field;
+MCAS Yuma; **Fort Huachuca Memorial Air Park** (RQ-7B, RQ-6, RC-12G 80-23372,
+OV-1D 67-18930); and **Papago Park Military Reservation**, Phoenix, holding
+A-7D "74-1741" and AH-1S 68-15064.
 
-`pima_a_to_m_corrections.csv` lists the 15 A–M records the improved parser
-flags. Checked against live data by `scripts/apply_pima_corrections.py`,
-**14 of the 15 are already correct** — the A–F and G–M passes did capture the
-museum's status wording, so only one real correction remains:
+**Note for that pass: "74-1741" is almost certainly wrong.** A-7D production
+ended in the FY73 block, so an FY74 A-7D serial cannot exist.
 
-- **Hawker Hurricane Mk. IIB, tail `BG974`.** Pima writes this serial in
-  quotation marks, its marker for a painted-on marking rather than an
-  identity. The aircraft is a replica and should not hold `BG974` as a tail
-  number.
+## Open, ranked
 
-Two lessons worth keeping. First, a correction list generated from the source
-alone says nothing about whether the target needs correcting — it has to be
-diffed against live data, which is why the script does that and reports "N
-already correct" rather than blindly PATCHing. Second, matching has to use
-whichever identifier we actually *stored*: the builder files a civil airframe
-under its registration, so the Boeing 727 is live as `N7004U` while the feed
-calls its serial `18296`. Matching on the serial alone reported three
-already-correct records as missing.
-
-These are PATCHes against live records, not an import, so they ship as a
-script rather than a CSV.
-
-## Other Arizona museums in the database
-
-**Commemorative Air Force Airbase Arizona** (id 29, Mesa) — has 1 aircraft
-now (the MiG-21 above). Its own collection is not yet researched.
-
-Worth adding later: Titan Missile Museum (Sahuarita), Planes of Fame Valle
-— note the Valle site is the one whose aircraft were deliberately excluded
-from the Chino file, so it has a ready-made starting list in
-`../california/CALIFORNIA_NOTES.md`.
+1. **CAF Airbase Arizona, 480-924-1940.** One call settles five things: is the
+   A-26C "Miss Murphy" still there (N202R now titles to a Colorado LLP)? Is
+   the AV-8B on site? Is the Nieuport 17 N124RX still there after its October
+   2023 ownership change? Are the hanging P-40 and P-47 full-size or models?
+   Which O-1E is theirs? Asking for data plates on the MiG-15bis, H-19 and
+   SPAD XIII would close three blank tail numbers at once.
+2. **Lauridsen Aviation Museum** — no working contact. Try Buckeye Municipal
+   Airport management. Seven airframes hang on it.
+3. **Phoenix Sky Harbor SPAD XIII** — Terminal 3 was gutted and rebuilt
+   2019-2022 and no photograph after January 2012 has been found. Call the
+   Phoenix Airport Museum.
+4. **San Carlos F-86D 51-5915** — reported severely vandalised in August 2011
+   and may be scrapped. Recorded with that caveat; needs a look before it is
+   trusted.
+5. **Glendale F-100D 54-2281** — was mid-restoration in 2009.
+6. **Border Air Museum, 520-417-7344** — the city site lists opening hours
+   while a review site flags it temporarily closed. Also confirm the reported
+   An-2 used in *Indiana Jones and the Kingdom of the Crystal Skull*, which
+   could not be verified and is not recorded.

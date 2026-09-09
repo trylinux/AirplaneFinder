@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Grumman,TBF,,,Avenger,,fixed_wing,monoplane,military,bomber,,The museum publishes no Bureau Number; one compilation gives TBF-1 BuNo 01747 but that is uncorroborated,Avenger,DeLand Naval Air Station Museum,on_display
+Grumman,F-14,A,,Tomcat,,fixed_wing,monoplane,military,fighter,,The museum publishes no Bureau Number; one compilation gives 161426 uncorroborated,Tomcat; F14; F14A,DeLand Naval Air Station Museum,on_display
+Lockheed,TV,2,,,,fixed_wing,monoplane,military,trainer,,Navy designation of the T-33A; the museum publishes no serial,T-33A; Shooting Star; TV2; T33A,DeLand Naval Air Station Museum,on_display
+Sikorsky,HO5S,1,,,,rotary_wing,,military,utility,,The museum publishes no Bureau Number; one compilation gives 52068 uncorroborated,S-52; Chickasaw; S52,DeLand Naval Air Station Museum,on_display
+Curtiss,JN-4,,,Jenny,,fixed_wing,biplane,military,trainer,,A replica and not an original airframe,Jenny; JN4,DeLand Naval Air Station Museum,on_display

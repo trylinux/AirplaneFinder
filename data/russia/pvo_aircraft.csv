@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-19,P,,Farmer,,fixed_wing,monoplane,military,fighter,,Displayed as the first Soviet series-built supersonic fighter in the air defence museum. No bort number recorded in the sources used.,MiG19; MiG19P,Air Defence Forces Museum,on_display
+Mikoyan-Gurevich,MiG-31,,,Foxhound,,fixed_wing,monoplane,military,fighter,,Interceptor in the museum display (kpopov.ru). No bort number recorded in the sources used.,MiG31,Air Defence Forces Museum,on_display
+Mikoyan-Gurevich,MiG-23,P,,Flogger,,fixed_wing,monoplane,military,fighter,,"Moved to Zarya from the Military-Technical Museum at Ivanovskoye; recorded by russianplanes.net as having left Ivanovskoye for Zarya, Balashikha. No bort number recorded.",MiG23; MiG23P,Air Defence Forces Museum,on_display

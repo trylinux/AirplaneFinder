@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,T-33,A,29585,Shooting Star,,fixed_wing,monoplane,military,trainer,,Displayed near the perimeter and visible from the highway; wears 585. Unusually displayed without wingtip tanks.,T33; T33A; 29585; 585,Camp General Servillano Aquino,on_display
+Bell,UH-1,H,6002,Iroquois,,rotary_wing,,military,utility,,Displayed on base. A 2013 on-site photograph read the number as 6022; Wikipedia's UH-1 display list gives 6002.,UH1; UH1H; Huey; 6002; 6022,Camp General Servillano Aquino,on_display
+Aero Commander,681,,RP-C775,,,fixed_wing,monoplane,civilian,transport,,Civil-registered Aero Commander 681 standing on base with engines and propellers removed; how it came to be at an army camp is unexplained. Noted 2013.,681; RPC775; Commander 681,Camp General Servillano Aquino,on_display

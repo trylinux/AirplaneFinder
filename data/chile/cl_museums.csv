@@ -1,0 +1,33 @@
+name,city,state_province,country,postal_code,region,address,website,access_type,latitude,longitude
+Museo Nacional Aeronáutico y del Espacio,Santiago,Región Metropolitana de Santiago,Chile,,South America,"Avenida Pedro Aguirre Cerda 5000, Cerrillos",https://museoaeronautico.dgac.gob.cl/,public,-33.4875,-70.6975
+"Estación Cerrillos Metro T-37 Monument, Santiago",Santiago,Región Metropolitana de Santiago,Chile,,South America,"Estación Cerrillos, Línea 6, Av. Pedro Aguirre Cerda, Cerrillos",,public,-33.4993,-70.7148
+"Base Aérea El Bosque Displays, Santiago",San Bernardo,Región Metropolitana de Santiago,Chile,,South America,"Base Aérea El Bosque / Escuela de Aviación Capitán Ávalos, Av. Padre Hurtado, El Bosque",,restricted,-33.5565,-70.6779
+"Club de Campo de Oficiales FACh Displays, Lo Barnechea",Lo Barnechea,Región Metropolitana de Santiago,Chile,,South America,,,restricted,-33.3767,-70.5103
+"Edificio Delphos FACh Displays, Cerrillos",Santiago,Región Metropolitana de Santiago,Chile,,South America,,,restricted,-33.43770,-70.65107
+Museo Histórico y Centro Cultural de Carabineros de Chile,Santiago,Región Metropolitana de Santiago,Chile,,South America,"Av. Antonio Varas 1690, Providencia",https://www.museocarabineros.cl/,public,-33.44306,-70.61242
+"Base Aérea Pudahuel Displays, Santiago",Pudahuel,Región Metropolitana de Santiago,Chile,,South America,,,restricted,-33.3893,-70.7898
+"Museo de la Aviación Naval, Base Aeronaval Viña del Mar",Concón,Región de Valparaíso,Chile,,South America,"Base Aeronaval Viña del Mar (Torquemada), Concón",,restricted,-32.9471,-71.4820
+"Arizona Store Beech 18, Viña del Mar",Viña del Mar,Región de Valparaíso,Chile,,South America,,,public,-33.0351,-71.4994
+Base Aérea Quintero Hunter Gate Guard,Quintero,Región de Valparaíso,Chile,,South America,,,restricted,-32.7838,-71.5248
+"Avenida O'Higgins T-37 Monument, San Felipe",San Felipe,Región de Valparaíso,Chile,,South America,,,public,-32.7554,-70.7241
+"Catalina CC-CDT Canso 32, Aeropuerto Arturo Merino Benítez",Pudahuel,Región Metropolitana de Santiago,Chile,,South America,,,appointment,-33.3893,-70.7898
+"Aeródromo Víctor Lafón C-45, San Felipe",San Felipe,Región de Valparaíso,Chile,,South America,,,appointment,-32.7483,-70.7053
+"Base Aérea Cerro Moreno Displays, Antofagasta",Antofagasta,Región de Antofagasta,Chile,,South America,,,restricted,-23.4387,-70.4381
+"Plaza de la Cultura Pablo Neruda Aircraft, Mejillones",Mejillones,Región de Antofagasta,Chile,,South America,,,public,-23.0993,-70.4524
+"Aeropuerto Diego Aracena Hunter Display, Iquique",Iquique,Región de Tarapacá,Chile,,South America,,,public,-20.5361,-70.1919
+"Brigada de Aviación del Ejército Displays, Rancagua",Rancagua,Región del Libertador General Bernardo O'Higgins,Chile,,South America,"Aeródromo de la Independencia, Rancagua",,restricted,-34.1658,-70.7666
+"Base Aérea El Tepual Displays, Puerto Montt",Puerto Montt,Región de Los Lagos,Chile,,South America,,,restricted,-41.4398,-73.0992
+"Casa Avión C-47 FACh 960, El Amarillo, Chaitén",Chaitén,Región de Los Lagos,Chile,,South America,"Carretera Austral, sector El Amarillo, south of Chaitén",,public,-43.0128,-72.5006
+"Base Aérea Chabunco Displays, Punta Arenas",Punta Arenas,Región de Magallanes y de la Antártica Chilena,Chile,,South America,,,restricted,-53.0065,-70.8302
+"Plaza Aviadora Margot Duhalde Cessna Skylane, La Reina",La Reina,Región Metropolitana de Santiago,Chile,,South America,"Av. Alcalde Fernando Castillo Velasco, north access of Aeródromo Tobalaba, La Reina",,public,-33.44228,-70.54327
+Complejo Educacional La Reina FH-1100 Instructional Airframe,La Reina,Región Metropolitana de Santiago,Chile,,South America,,,appointment,-33.44228,-70.54327
+"Parque del Avión A-36 Halcón Monument, Alto Hospicio",Alto Hospicio,Región de Tarapacá,Chile,,South America,,,public,-20.27005,-70.10092
+"Plaza Villa Carrizo Hunter Monument, Antofagasta",Antofagasta,Región de Antofagasta,Chile,,South America,,,public,-23.64637,-70.39800
+"Plazoleta Reinaldo Martín Muller C-45 Monument, Gorbea",Gorbea,Región de La Araucanía,Chile,,South America,,,public,-39.10316,-72.67594
+"Motel Ensueño Boeing 737, Concón",Concón,Región de Valparaíso,Chile,,South America,Camino Internacional Concón-Viña del Mar,,public,-32.92200,-71.51596
+"Motel Ensueño Boeing 737, Gran Avenida, Santiago",San Bernardo,Región Metropolitana de Santiago,Chile,,South America,"Gran Avenida José Miguel Carrera, south Santiago",,public,-33.6540,-70.7154
+"Motel Ensueño DC-3, El Bosque, Santiago",El Bosque,Región Metropolitana de Santiago,Chile,,South America,,,public,-33.55615,-70.66557
+"Medialuna de San Esteban C-47 Monument, Los Andes",San Esteban,Región de Valparaíso,Chile,,South America,,,public,-32.79905,-70.57958
+"Aeródromo Capitán Fuentes Martínez Beech 18, Porvenir",Porvenir,Región de Magallanes y de la Antártica Chilena,Chile,,South America,,,appointment,-53.29567,-70.36874
+"Motel Paraíso Boeing 737, Quillota",Quillota,Región de Valparaíso,Chile,,South America,,,public,-32.88000,-71.24736
+"Liceo Industrial Alberto Widmer Instructional Airframes, Maipú",Maipú,Región Metropolitana de Santiago,Chile,,South America,,,appointment,-33.50944,-70.75618

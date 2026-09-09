@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Sukhoi,Su-27,,22,Flanker,,fixed_wing,monoplane,military,fighter,,"Delivered to the newly created Anapa military equipment park in September 2018. russianplanes.net monument and registry cards, checked September 2026.",Su27,Anapa Military Equipment Park,on_display
+Mil,Mi-8,T,62,Hip,,rotary_wing,,military,transport,,"Present in the park by January 2019. russianplanes.net monument and registry cards, checked September 2026.",Mi8; Mi8T,Anapa Military Equipment Park,on_display
+Kamov,Ka-27,PL,24,Helix,,rotary_wing,,military,other,1982,"Built 29 March 1982; anti-submarine variant, previously with the naval aviation training establishment at Syzran. russianplanes.net monument and registry cards, checked September 2026.",Ka27; Ka27PL; c/n 5235004107210,Anapa Military Equipment Park,on_display

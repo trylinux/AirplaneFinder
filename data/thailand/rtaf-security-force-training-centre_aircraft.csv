@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Hawker Siddeley,HS 748,,L5-5/26,,,fixed_wing,monoplane,military,transport,,Ex-RTAF transport placed at the training centre in August 2017; marked 60305. Noted October 2025.,HS748; 60305,Royal Thai Air Force Security Force Training Centre,on_display
+Bell,UH-1,H,,Iroquois,,rotary_wing,,military,utility,,Parachute jump trainer mounted on a raised platform; noted since September 2007 and still in place October 2025.,UH1H; UH1,Royal Thai Air Force Security Force Training Centre,on_display

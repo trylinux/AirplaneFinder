@@ -1,0 +1,10 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Polikarpov,I-16,,4,Rata,,fixed_wing,monoplane,military,fighter,,"Mounted on a tall pylon as the centrepiece of the collection; a full-scale reproduction, not an original airframe. Bort 4.",I16; Rata,"Kuzbass Museum-Polygon, Tanay Aerodrome",on_display
+Mil,Mi-24,,49,Hind,,rotary_wing,,military,ground_attack,,Bort 49. Sub-variant not established.,Mi24; Hind,"Kuzbass Museum-Polygon, Tanay Aerodrome",on_display
+Yakovlev,Yak-18,PM,10,Max,,fixed_wing,monoplane,civilian,trainer,,Bort 10.,Yak18; Yak18PM; Max,"Kuzbass Museum-Polygon, Tanay Aerodrome",on_display
+Mil,Mi-1,,,Hare,,rotary_wing,,military,utility,,Bort 01. Wears bort number 01; recorded without a tail number because another airframe of this type in the database already carries it.,Mi1; Hare; 01,"Kuzbass Museum-Polygon, Tanay Aerodrome",on_display
+Mikoyan-Gurevich,MiG-23,UB,44,Flogger,,fixed_wing,monoplane,military,trainer,,Bort 44. c/n 6902002.,MiG23; MiG23UB; c/n 6902002; Flogger,"Kuzbass Museum-Polygon, Tanay Aerodrome",on_display
+Mil,Mi-2,,,Hoplite,,rotary_wing,,civilian,utility,,Bort 03. c/n 547412111. Wears bort number 03; recorded without a tail number because another airframe of this type in the database already carries it.,Mi2; c/n 547412111; Hoplite; 03,"Kuzbass Museum-Polygon, Tanay Aerodrome",on_display
+Antonov,An-2,,RF-00477,Colt,,fixed_wing,biplane,civilian,utility,,c/n 1G85-37.,An2; Colt,"Kuzbass Museum-Polygon, Tanay Aerodrome",on_display
+Yakovlev,Yak-52,,50,,,fixed_wing,monoplane,civilian,trainer,,Bort 50.,Yak52,"Kuzbass Museum-Polygon, Tanay Aerodrome",on_display
+LET,L-410,,RF-01152,Turbolet,,fixed_wing,monoplane,civilian,transport,,c/n 841213.,L410; c/n 841213; Turbolet,"Kuzbass Museum-Polygon, Tanay Aerodrome",on_display

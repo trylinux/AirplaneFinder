@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Short,SD3-30,UTT,3102,,,fixed_wing,monoplane,military,transport,,Ex Royal Thai Army; withdrawn at Don Mueang from 2003 until August 2009 and displayed at Fort Thanarat since February 2012. Noted January 2024.,SD330; 3102,Fort Thanarat Pranburi,on_display
+Bell,UH-1,H,7751,Iroquois,,rotary_wing,,military,utility,,Ex Royal Thai Army; placed on display in late 2021 or early 2022.,UH1H; 7751; UH1,Fort Thanarat Pranburi,on_display

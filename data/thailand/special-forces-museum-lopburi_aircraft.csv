@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,UH-1,,2538,Iroquois,,rotary_wing,,military,utility,,Ex Royal Thai Army; identity uncertain. On display since December 1998 and noted January 2026.,UH1; 2538,Special Forces Museum Lopburi,on_display
+Cessna,O-1,A,6941,Bird Dog,,fixed_wing,monoplane,military,recon,,Ex Royal Thai Army; identity uncertain. On display since December 1998 and noted January 2026.,O1A; 6941; O1,Special Forces Museum Lopburi,on_display

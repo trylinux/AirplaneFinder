@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-8,T,CCCP-20432,Hip,,rotary_wing,,military,transport,,Wears the Soviet civil registration CCCP-20432.,Mi8; Mi8T; Hip,Pacific Fleet Naval Aviation Museum,on_display
+Mil,Mi-2,,CCCP-15677,Hoplite,,rotary_wing,,military,utility,,,Mi2; Hoplite,Pacific Fleet Naval Aviation Museum,on_display
+Mil,Mi-1,,CCCP-1993,Hare,,rotary_wing,,military,utility,,,Mi1; Hare,Pacific Fleet Naval Aviation Museum,on_display
+Mil,Mi-4,,,Hound,,rotary_wing,,military,transport,,No registration or bort number recorded.,Mi4; Hound,Pacific Fleet Naval Aviation Museum,on_display
+Sukhoi,Su-27,,,Flanker,,fixed_wing,monoplane,military,fighter,,Bort 28. Wears bort number 28; recorded without a tail number because another airframe of this type in the database already carries it.,Su27; Flanker; 28,Pacific Fleet Naval Aviation Museum,on_display
+Bereznyak-Isayev,BI-1,,2,,,fixed_wing,monoplane,military,fighter,,"Full-scale replica of the wartime BI rocket-powered interceptor, marked 2. Not an original airframe.",BI1,Pacific Fleet Naval Aviation Museum,on_display

@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Tupolev,Tu-124,V,CCCP-45063,Cookpot,,fixed_wing,monoplane,civilian,commercial_transport,,Rare surviving Tu-124. c/n 4351408. Acquired for the park aviation pavilion; recorded on site 2023.,Tu124; Tu124V; c/n 4351408; Cookpot,Gallery of Time Museum Park,on_display
+Tupolev,Tu-134,A,RA-65960,Crusty,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 3351806. Recorded on site 2023.,Tu134; Tu134A; c/n 3351806; Crusty,Gallery of Time Museum Park,on_display
+Yakovlev,Yak-40,,88179,Codling,,fixed_wing,monoplane,civilian,commercial_transport,,"Delivered to the museum on 3 December 2021, bought from the Sukhoi corporation. Carries 88179 without the RA- prefix as photographed. c/n 9621947.",Yak40; RA-88179; c/n 9621947,Gallery of Time Museum Park,on_display
+Mil,Mi-8,,RA-22649,Hip,,rotary_wing,,civilian,transport,,c/n 8096.,Mi8; c/n 8096; Hip,Gallery of Time Museum Park,on_display
+Mil,Mi-2,,RA-23692,Hoplite,,rotary_wing,,civilian,utility,,Cabin section only. Also wears the number 23. c/n 548146053.,Mi2; c/n 548146053; Hoplite,Gallery of Time Museum Park,on_display
+Aero,L-39,,,Albatros,,fixed_wing,monoplane,military,trainer,,Cockpit section only.,L39; Albatros,Gallery of Time Museum Park,on_display
+Antonov,An-2,,,Colt,,fixed_wing,biplane,civilian,utility,,No registration recorded.,An2; Colt,Gallery of Time Museum Park,on_display

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,PF,07,Fishbed,,fixed_wing,monoplane,military,fighter,,"Works number 76211525, bort ""07 red"".",MiG21; MiG21PF; c/n 76211525,Museum of Industrial Culture,on_display
+Mil,Mi-2,,,Hoplite,,rotary_wing,,military,trainer,,Works number 544850076; a former ROSTO training centre airframe. No bort number recorded.,Mi2; c/n 544850076,Museum of Industrial Culture,on_display

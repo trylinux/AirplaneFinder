@@ -1,0 +1,14 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-12,,,Homer,,rotary_wing,,civilian,experimental,,"The V-12 heavy-lift prototype preserved at the design bureau, works number 001. The russianplanes.net card gives the registration CCCP-21142, but that registration is also carried by the V-12 already recorded at Monino; because the two cannot both wear it, no tail number is asserted here. Only two V-12s were built.",Mi12; V-12; V12; c/n 001,Mil Moscow Helicopter Plant Museum,on_display
+Mil,Mi-6,A,16,Hook,,rotary_wing,,military,transport,,"Works number 7263048, bort 16.",Mi6; Mi6A; c/n 7263048,Mil Moscow Helicopter Plant Museum,on_display
+Mil,Mi-1,M,CCCP-68131,Hare,,rotary_wing,,civilian,utility,,Works number 96801611.,Mi1; Mi1M; CCCP68131; c/n 96801611,Mil Moscow Helicopter Plant Museum,on_display
+Mil,Mi-8,T,CCCP-27208,Hip,,rotary_wing,,civilian,transport,,Works number 2856.,Mi8; Mi8T; CCCP27208; c/n 2856,Mil Moscow Helicopter Plant Museum,on_display
+Mil,Mi-8,T,,Hip,,rotary_wing,,military,transport,,Second Mi-8T at the plant; russianplanes.net records neither bort nor construction number.,Mi8; Mi8T; second of two examples,Mil Moscow Helicopter Plant Museum,on_display
+Mil,Mi-2,,CCCP-20735,Hoplite,,rotary_wing,,civilian,utility,,Works number 31048.,Mi2; CCCP20735; c/n 31048,Mil Moscow Helicopter Plant Museum,on_display
+Mil,Mi-24,P,15,Hind,,rotary_wing,,military,ground_attack,,"Works number 3532431723858, bort ""15 yellow"".",Mi24; Mi24P; c/n 3532431723858,Mil Moscow Helicopter Plant Museum,on_display
+Mil,Mi-34,,,Hermit,,rotary_wing,,civilian,trainer,,"Prototype airframe, works number C1/OP-3.",Mi34,Mil Moscow Helicopter Plant Museum,on_display
+Mil,Mi-24,VM,51,Hind,,rotary_wing,,military,ground_attack,,"First prototype Mi-24VM (OP-1), bort ""51 yellow"".",Mi24; Mi24VM; OP-1; OP1,Mil Moscow Helicopter Plant Museum,on_display
+Mil,Mi-4,,60,Hound,,rotary_wing,,military,transport,,"Bort ""60 yellow"".",Mi4,Mil Moscow Helicopter Plant Museum,on_display
+Mil,Mi-26,,01,Halo,,rotary_wing,,military,transport,,"Bort ""01 yellow"".",Mi26,Mil Moscow Helicopter Plant Museum,on_display
+Mil,Mi-24,VP,11,Hind,,rotary_wing,,military,ground_attack,,"Works number 3532584910105, bort ""11 white"".",Mi24; Mi24VP; c/n 3532584910105,Mil Moscow Helicopter Plant Museum,on_display
+Mil,Mi-28,A,032,Havoc,,rotary_wing,,military,ground_attack,,"Prototype, works number 00-03, bort ""032 yellow"".",Mi28; Mi28A,Mil Moscow Helicopter Plant Museum,on_display

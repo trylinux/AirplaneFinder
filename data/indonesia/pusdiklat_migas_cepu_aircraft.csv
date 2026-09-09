@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,A-4,E,,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,"A-4E monument in the grounds of the state oil and gas training centre. The p2k mirror of id.wikipedia gives TT-0444; the current id.wikipedia article gives TT-0448. Unresolved, so tail_number is left blank.",A4; TT-0444; TT-0448; Skyhawk; A4E,Cepu Oil and Gas Training Centre Skyhawk monument,on_display

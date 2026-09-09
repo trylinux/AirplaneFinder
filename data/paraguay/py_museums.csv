@@ -1,0 +1,5 @@
+name,city,state_province,country,postal_code,region,address,website,access_type,latitude,longitude
+"Museo Aeronáutico de la Fuerza Aérea Paraguaya, Base Aérea Ñu Guazú",Luque,Central,Paraguay,,South America,"Base Aérea Ñu Guazú, Av. Gral. Elizardo Aquino 1792, Luque (Gran Asunción)",https://fuerzaaerea.mil.py/,restricted,-25.2641,-57.5283
+"Museo de la Historia de Líneas Aéreas Paraguayas (Hotel del Rancho), Loma Grande",Loma Grande,Cordillera,Paraguay,,South America,"Hotel del Rancho, Ruta Loma Grande - Altos (Av. Guillermo Naumann), Loma Grande",,public,-25.2005,-57.2235
+"Boeing 707 ZP-CCE Display, San Lorenzo",San Lorenzo,Central,Paraguay,,South America,"San Lorenzo, Gran Asunción",,public,-25.3228,-57.5153
+"Aeropuerto Internacional Silvio Pettirossi Access Displays, Luque",Luque,Central,Paraguay,,South America,"Av. Aviadores del Chaco, acceso al Aeropuerto Internacional Silvio Pettirossi, Luque",,public,-25.2602,-57.5176

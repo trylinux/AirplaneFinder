@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Cessna,A-37,B,14821,Dragonfly,,fixed_wing,monoplane,military,ground_attack,,Ex-VNAF A-37 in the outdoor display area at 2 Le Duan; also seen carrying a small '10'. Visible from the street.,A37; A 37; Dragonfly; 14821; 10; A37B,Ho Chi Minh Campaign Museum,on_display
+Northrop,F-5,,10272,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,"Ex-VNAF F-5 in the outdoor display area. Vietnamese sources describe it as an F-5E while photographic listings call it an F-5A, so the variant is left blank.",F5; 10272,Ho Chi Minh Campaign Museum,on_display
+McDonnell Douglas,F-4,,,Phantom II,,fixed_wing,monoplane,military,fighter,,Wreckage of a downed F-4 displayed with a Douglas A-1 Skyraider propeller; not a complete airframe.,F4; F 4; Phantom,Ho Chi Minh Campaign Museum,on_display

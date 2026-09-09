@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,UH-1,H,541,Iroquois,,rotary_wing,,military,utility,,"Ex-VNAF Huey in the museum forecourt, visible from the street.",UH1; UH 1; Huey; 541; UH1H,Ho Chi Minh City Museum,on_display
+Cessna,A-37,B,3724,Dragonfly,,fixed_wing,monoplane,military,ground_attack,,"Ex-VNAF A-37 in the museum grounds, visible from the street.",A37; A 37; Dragonfly; 3724; A37B,Ho Chi Minh City Museum,on_display
+Northrop,F-5,A,10271,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,"Ex-VNAF F-5 in the museum grounds; also read as 1271 by one visitor. Weathered, with paint streaking.",F5; F5A; 10271; 1271,Ho Chi Minh City Museum,on_display

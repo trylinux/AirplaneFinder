@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Fairchild,C-123,B,L4-3/07,Provider,,fixed_wing,monoplane,military,transport,,"Probably a composite based on L4-3/07 ex USAF 54-563, with the fin from 574 and wings from 0573 and 0564; marked 4650 under the wing. Displayed since June 2001 and noted February 2024.",C123B; 54-563; 4650; C123,Royal Thai Army Quartermaster School Bangpho,on_display
+Cessna,O-1,E,2578,Bird Dog,,fixed_wing,monoplane,military,recon,,Ex Royal Thai Army 56-2578. Displayed since January 2007.,O1E; 56-2578; O1,Royal Thai Army Quartermaster School Bangpho,on_display

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,F-104,,,,Starfighter,fixed_wing,monoplane,military,fighter,,One of the museum's two F-104 airframes; the museum states one is at Hillsboro and one at Corvallis; serial not established,F104,Classic Aircraft Aviation Museum Corvallis Annex,on_display
+Mikoyan-Gurevich,MiG-21,,,,,fixed_wing,monoplane,military,fighter,,One of the museum's two MiG-21 airframes; the museum states one is at Corvallis and one at Klamath Falls; serial not established,MiG21,Classic Aircraft Aviation Museum Corvallis Annex,on_display

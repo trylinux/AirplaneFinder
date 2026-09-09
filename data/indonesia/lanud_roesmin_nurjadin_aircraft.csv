@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+General Dynamics,F-16,A,TS-1643,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,"F-16A that was destroyed by fire during a take-off accident at Halim Perdanakusuma in April 2015; the remains were rebuilt into a monument in the base Aerospace Park, unveiled October 2019.",F16; F-16A; TS1643; Fighting Falcon; F16A,Roesmin Nurjadin Air Force Base Aerospace Park,on_display

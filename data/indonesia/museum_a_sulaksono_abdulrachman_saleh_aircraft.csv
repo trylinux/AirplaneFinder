@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,T-33,A,,Shooting Star,,fixed_wing,monoplane,military,trainer,,"One of the two airframes of the Monumen Bhakti Dirgantara behind the museum, unveiled 20 December 2018. Serial not published.",T33; T-Bird; T33A,"A. Sulaksono Aerospace Museum, Abdulrachman Saleh Air Force Base",on_display
+Mikoyan-Gurevich,MiG-19,,,Farmer,,fixed_wing,monoplane,military,fighter,,"Second airframe of the Monumen Bhakti Dirgantara, unveiled 20 December 2018. Serial not published.",MiG19; Farmer,"A. Sulaksono Aerospace Museum, Abdulrachman Saleh Air Force Base",on_display
+FFA,AS-202,,,Bravo,,fixed_wing,monoplane,military,trainer,,AS-202 Bravo donated to the base museum alongside a T-33. Serial not published.,AS202; Bravo,"A. Sulaksono Aerospace Museum, Abdulrachman Saleh Air Force Base",on_display

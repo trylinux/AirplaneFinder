@@ -1,0 +1,25 @@
+name,city,state_province,country,postal_code,region,address,website,access_type,latitude,longitude
+Museo Aeroespacial Colombiano,Tocancipá,Cundinamarca,Colombia,,South America,"Kilómetro 1 vía Briceño-Zipaquirá (Autopista Norte km 34), junto al Parque Jaime Duque, Tocancipá",https://www.museofac.mil.co/,public,4.9500,-73.9611
+Parque Jaime Duque,Tocancipá,Cundinamarca,Colombia,,South America,"Autopista Norte km 34, vereda Briceño, Tocancipá",https://parquejaimeduque.com/,public,4.96572,-73.91366
+Museo Aéreo Fénix,Palmira,Valle del Cauca,Colombia,,South America,"Entrada 9A Zona Franca de Palmaseca, junto al Aeropuerto Alfonso Bonilla Aragón, corregimiento La Esmeralda, Palmira",https://museoaereofenix.org/,public,3.53084,-76.29880
+"Escuela Militar de Aviación Marco Fidel Suárez Heritage Aircraft, Cali",Cali,Valle del Cauca,Colombia,,South America,"Base Aérea Marco Fidel Suárez, Carrera 8 con Calle 58, Cali",https://www.emavi.edu.co/,restricted,3.45200,-76.53253
+"Corredor Verde Tramo del Aire OV-10 Bronco, Cali",Cali,Valle del Cauca,Colombia,,South America,"Corredor Verde (Calles 44-59) frente a la Base Aérea Marco Fidel Suárez, Cali",,public,3.45200,-76.53253
+Comando Aéreo de Combate No. 1 Palanquero Displays,Puerto Salgar,Cundinamarca,Colombia,,South America,"Base Aérea Capitán Germán Olano, Ruta 45 (autopista Bogotá-Medellín), Puerto Salgar",,restricted,5.46369,-74.65012
+Comando Aéreo de Combate No. 2 Apiay Displays,Villavicencio,Meta,Colombia,,South America,"Base Aérea Capitán Luis F. Gómez Niño, Apiay, Villavicencio",,restricted,4.13476,-73.62015
+"Glorieta del Avión OV-10 Bronco, Villavicencio",Villavicencio,Meta,Colombia,,South America,"Glorieta Calle 1 con Carrera 22, Villavicencio",,public,4.13476,-73.62015
+"Monumento A-37 Dragonfly, Malambo",Malambo,Atlántico,Colombia,,South America,"Entrada a Malambo, vía Aeropuerto Ernesto Cortissoz - barrio El Concorde, junto al CACOM-3",,public,10.86534,-74.77462
+Comando Aéreo de Combate No. 3 Malambo Displays,Malambo,Atlántico,Colombia,,South America,"Base Aérea Mayor General Alberto Pauwels Rodríguez, Malambo",,restricted,10.86534,-74.77462
+Comando Aéreo de Combate No. 4 Melgar Displays,Melgar,Tolima,Colombia,,South America,"Base Aérea Teniente Coronel Luis F. Pinto Parra, Melgar",,restricted,4.20398,-74.64295
+"Monumento del Helicóptero UH-1H Las Delicias, Rionegro",Rionegro,Antioquia,Colombia,,South America,"Sector Las Delicias, Rionegro",,public,6.15362,-75.37417
+"Monumento a la Aviación Militar T-37, Flandes",Flandes,Tolima,Colombia,,South America,"Vía principal de Flandes, Tolima",,public,4.28650,-74.81370
+"Monumento Héroes de la Patria T-37 FAC 2120, El Cerrito",El Cerrito,Valle del Cauca,Colombia,,South America,"Parque Recreacional de El Cerrito, Valle del Cauca",,public,3.67829,-76.30045
+"Parque del Avión T-37, Villa de Leyva",Villa de Leyva,Boyacá,Colombia,,South America,"Parque del Avión, Villa de Leyva",,public,5.62959,-73.52871
+"Bosque Popular El Prado T-37, Manizales",Manizales,Caldas,Colombia,,South America,"Bosque Popular El Prado, Manizales",,public,5.03499,-75.47760
+"Grupo Aéreo del Amazonas OV-10 Bronco Monument, Leticia",Leticia,Amazonas,Colombia,,South America,"Frente a la entrada principal de la Base Aérea Coronel Herbert Boy (GAAMA), Leticia",,public,-4.21292,-69.94260
+"Grupo Aéreo del Casanare Heritage Aircraft, Yopal",Yopal,Casanare,Colombia,,South America,"Base Aérea de Yopal (GACAS), Aeropuerto El Alcaraván, Yopal",,restricted,5.33567,-72.39369
+"Comando Aéreo de Transporte Militar CATAM Displays, Bogotá",Bogotá,Bogotá D.C.,Colombia,,South America,"CATAM, Aeropuerto Internacional El Dorado, Bogotá",,restricted,4.65338,-74.08363
+"Colegio De La Salle DC-3, Bogotá",Bogotá,Bogotá D.C.,Colombia,,South America,"Colegio De La Salle, Bogotá",,appointment,4.74849,-74.03237
+"Escuela de Infantería Club Casamata T-6 Texan, Bogotá",Bogotá,Bogotá D.C.,Colombia,,South America,"Club Casamata, Escuela de Infantería, Carretera Central del Norte, Bogotá",,restricted,4.65338,-74.08363
+"OV-10 Bronco FAC 2221 Display, Los Trupillos, Santa Marta",Santa Marta,Magdalena,Colombia,,South America,"Sector Los Trupillos, Santa Marta",,restricted,11.23209,-74.19509
+"Escuela de Suboficiales FAC Displays, Madrid",Madrid,Cundinamarca,Colombia,,South America,"Escuela de Suboficiales Capitán Andrés M. Díaz, Base Aérea de Madrid, Cundinamarca",,restricted,4.73673,-74.26547
+"Comando Aéreo de Mantenimiento CAMAN Displays, Madrid",Madrid,Cundinamarca,Colombia,,South America,"Comando Aéreo de Mantenimiento, Base Aérea de Madrid, Cundinamarca",,restricted,4.73673,-74.26547

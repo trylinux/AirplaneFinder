@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+McDonnell Douglas,DC-9,-32,PK-GNT,,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-Garuda Indonesia DC-9-32 displayed outdoors at the museum entrance; visitors could formerly board it.,DC9; DC-9-32; PKGNT,"Transportation Museum, Taman Mini Indonesia Indah",on_display
+MBB,BO 105,CB,HR-1525,,,rotary_wing,,military,search_rescue,,"Indonesian Army aviation (Penerbad) NBo-105CB built at Bandung in 1982, used for SAR training and disaster relief before donation.",BO105; NBo-105; HR1525; NBo105,"Transportation Museum, Taman Mini Indonesia Indah",on_display

@@ -14,7 +14,7 @@ BAC,TSR.2,,XR222,,,fixed_wing,monoplane,military,experimental,,,,Imperial War Mu
 BAC,Concorde,101,G-AXDN,,,fixed_wing,monoplane,civilian,commercial_transport,1971,Aerospatiale/BAC; pre-production prototype,,Imperial War Museum Duxford,on_display
 BAC,Strikemaster,,1133,,,fixed_wing,monoplane,military,trainer,,,,Imperial War Museum Duxford,on_display
 BAC,One-Eleven,500,G-AVMU,,County of Dorset,fixed_wing,monoplane,civilian,commercial_transport,,,,Imperial War Museum Duxford,on_display
-BAC,VC10,Super,G-ASGC,,,fixed_wing,monoplane,civilian,commercial_transport,,,,Imperial War Museum Duxford,on_display
+BAC,VC10,,G-ASGC,Super VC10,,fixed_wing,monoplane,civilian,commercial_transport,,,,Imperial War Museum Duxford,on_display
 Bell,UH-1,H,72-21605,Huey,,rotary_wing,,military,utility,,,UH1; UH1H,Imperial War Museum Duxford,on_display
 Boeing,B-17,G,44-83735,Flying Fortress,Mary Alice,fixed_wing,monoplane,military,bomber,,,231983; F-BDRS; B17; B17G,Imperial War Museum Duxford,on_display
 Boeing,B-17,G,44-85784,Flying Fortress,Sally B,fixed_wing,monoplane,military,bomber,1945,airworthy,G-BEDF; B17; B17G,Imperial War Museum Duxford,on_display
