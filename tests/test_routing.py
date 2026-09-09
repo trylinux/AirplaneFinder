@@ -142,7 +142,12 @@ def http_error(code, message=""):
 
 
 @pytest.mark.parametrize("exc, fragment", [
-    (http_error(403, "API key not valid"), "misconfigured"),
+    (http_error(403, "API key not valid. Please pass a valid API key."), "API key is not valid"),
+    (http_error(403, "Routes API has not been used in project 123 before or it is disabled."), "Routes API is not enabled"),
+    (http_error(403, "API keys with referer restrictions cannot be used with this API."), "referrer restriction"),
+    (http_error(403, "This API method requires billing to be enabled."), "billing"),
+    (http_error(403, "Requests to this API routes.googleapis.com method are blocked."), "restricted to other APIs"),
+    (http_error(403, ""), "Google rejected the API key"),
     (http_error(429), "over quota"),
     (http_error(400, "bad"), "failed for this trip"),
     (URLError("dns"), "unavailable right now"),

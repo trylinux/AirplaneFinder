@@ -25,8 +25,11 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 from config import Config
+from logger import _make_logger
 
-log = logging.getLogger(__name__)
+# logs/routing.log — every Google failure lands here with Google's own
+# reason, since the UI only ever shows a sanitized one-liner.
+log = _make_logger("routing", "routing.log")
 
 ROUTES_URL = "https://routes.googleapis.com/directions/v2:computeRoutes"
 # Ask only for what we render — the field mask is what Google bills on.
@@ -169,6 +172,30 @@ def validate_points(points):
     return clean
 
 
+def _explain_http_error(code, detail):
+    """Map Google's error to a message safe to show visitors. The operator
+    gets the verbatim reason in logs/routing.log; visitors get enough to know
+    it's a server-side setup problem, not their trip."""
+    text = (detail or "").lower()
+    if code in (401, 403):
+        if "not been used in project" in text or "is disabled" in text or "not enabled" in text:
+            return "Road routing is misconfigured on this server (Routes API is not enabled for the key's project)."
+        if "referer" in text or "referrer" in text:
+            return "Road routing is misconfigured on this server (the API key has a browser-referrer restriction; use none or IP)."
+        if "billing" in text:
+            return "Road routing is misconfigured on this server (billing is not enabled for the key's project)."
+        if "blocked" in text or "api_key_service_blocked" in text:
+            return "Road routing is misconfigured on this server (the API key is restricted to other APIs)."
+        if "not valid" in text or "invalid" in text:
+            return "Road routing is misconfigured on this server (the API key is not valid)."
+        return "Road routing is misconfigured on this server (Google rejected the API key)."
+    if code == 429:
+        return "Road routing is temporarily over quota. Try again later."
+    if code == 400 and ("route" in text or "waypoint" in text or "location" in text):
+        return "No drivable route was found between these stops."
+    return "Road routing failed for this trip."
+
+
 def compute_route(points, *, fetch=None):
     """Driving route through ``points`` in order.
 
@@ -209,19 +236,16 @@ def compute_route(points, *, fetch=None):
     try:
         data = (fetch or (lambda b: _post(b, api_key, timeout)))(body)
     except HTTPError as exc:
-        detail = ""
+        detail, status = "", ""
         try:
-            detail = json.loads(exc.read().decode("utf-8")).get("error", {}).get("message", "")
+            err = json.loads(exc.read().decode("utf-8")).get("error", {})
+            detail, status = err.get("message", ""), err.get("status", "")
         except Exception:  # noqa: BLE001 — error body is optional
             pass
-        log.warning("Routes API HTTP %s: %s", exc.code, detail or exc.reason)
-        if exc.code in (401, 403):
-            raise RoutingError("Road routing is misconfigured on this server.") from exc
-        if exc.code == 429:
-            raise RoutingError("Road routing is temporarily over quota. Try again later.") from exc
-        raise RoutingError("Road routing failed for this trip.") from exc
+        log.warning("Routes API HTTP %s %s: %s", exc.code, status, detail or exc.reason)
+        raise RoutingError(_explain_http_error(exc.code, detail)) from exc
     except (URLError, TimeoutError, OSError, ValueError) as exc:
-        log.warning("Routes API request failed: %s", exc)
+        log.warning("Routes API request failed: %r", exc)
         raise RoutingError("Road routing is unavailable right now.") from exc
 
     routes = data.get("routes") if isinstance(data, dict) else None
