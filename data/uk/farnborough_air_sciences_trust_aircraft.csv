@@ -1,0 +1,15 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+English Electric,Canberra,B(I).6,WT309,,,fixed_wing,monoplane,military,bomber,,Nose section only of an English Electric Canberra B(I).6. Displayed outside. Confirmed Jul 2024.,,Farnborough Air Sciences Trust Museum,on_display
+Hawker,Hunter,T.7,WV383,,,fixed_wing,monoplane,military,trainer,,Hawker Hunter T.7 used by the Royal Aircraft Establishment. Displayed outside. Confirmed Jul 2026.,,Farnborough Air Sciences Trust Museum,on_display
+Hawker,Hunter,T.7,XL563,,,fixed_wing,monoplane,military,trainer,,"Hawker Hunter T.7, an Empire Test Pilots' School aircraft. Displayed outside. Confirmed Jul 2026.",,Farnborough Air Sciences Trust Museum,on_display
+Folland,Gnat,T.1,XP516,,,fixed_wing,monoplane,military,trainer,,Folland Gnat T.1 coded 16 in 4 FTS markings. Displayed outside. Confirmed Jul 2026.,8580M,Farnborough Air Sciences Trust Museum,on_display
+Westland,Scout,AH.1,XP848,,,rotary_wing,,military,utility,,Westland Scout AH.1. Displayed outside. Confirmed Jul 2026.,,Farnborough Air Sciences Trust Museum,on_display
+English Electric,Lightning,T.5,XS420,,,fixed_wing,monoplane,military,trainer,,English Electric Lightning T.5 coded 420 in 226 OCU markings. Displayed outside. Confirmed Jul 2026.,,Farnborough Air Sciences Trust Museum,on_display
+Westland,Wasp,HAS.1,XV631,,,rotary_wing,,military,anti_ship,,"Cabin only of a Westland Wasp HAS.1, held in store. Last reported Apr 2022.",,Farnborough Air Sciences Trust Museum,in_storage
+Aerospatiale,SA.330,E,XW241,Puma,,rotary_wing,,military,test,,"Aerospatiale SA.330E Puma in Royal Aircraft Establishment markings, used for research flying at Farnborough. Confirmed Jul 2026.",SA330; SA330E; F-ZJUX,Farnborough Air Sciences Trust Museum,on_display
+SEPECAT,Jaguar,B,XW566,,,fixed_wing,monoplane,military,trainer,,"The SEPECAT Jaguar B two-seat prototype, in RAE markings. Displayed outside. Confirmed Jul 2026.",,Farnborough Air Sciences Trust Museum,on_display
+Hawker Siddeley,Harrier,T.4,XW934,,,fixed_wing,monoplane,military,trainer,,Harrier T.4 coded Y in 20 Squadron and 233 OCU markings. Displayed outside. Confirmed Jul 2026.,,Farnborough Air Sciences Trust Museum,on_display
+Westland,Lynx,HAS.2,XZ166,,,rotary_wing,,military,anti_ship,,Westland Lynx HAS.2 development airframe held in store. Last reported Apr 2022.,,Farnborough Air Sciences Trust Museum,in_storage
+Westland,Lynx,AH.7,ZD280,,,rotary_wing,,military,utility,,Westland Lynx AH.7. Displayed outside. Confirmed Jul 2026.,,Farnborough Air Sciences Trust Museum,on_display
+Northrop,Chukar,D.2,ZG631,MQM-74,,fixed_wing,monoplane,military,drone,,Northrop Chukar D.2 target drone displayed inside. Last reported Apr 2022.,Chukar; MQM-74; MQM74,Farnborough Air Sciences Trust Museum,on_display
+GAF,Jindivik,900,ZJ496,,,fixed_wing,monoplane,military,drone,,"GAF Jindivik 900 target drone, ex Australian A92-901. Displayed outside. Confirmed Dec 2024.",A92-901; A92901,Farnborough Air Sciences Trust Museum,on_display

@@ -1,0 +1,53 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Blackburn,Buccaneer,S.2B,XV361,,,fixed_wing,monoplane,military,ground_attack,,"Low-level strike aircraft, one of the society's largest exhibits in the Long Kesh hangars.",Buccaneer S2B; NA.39,Ulster Aviation Society,on_display
+McDonnell Douglas,Phantom,FG.1,XT864,,,fixed_wing,monoplane,military,fighter,,"Royal Navy and RAF Spey-engined Phantom, restored by society volunteers.",Phantom FG1; F-4K; F4K,Ulster Aviation Society,on_display
+Panavia,Tornado,GR.4,ZG771,,,fixed_wing,monoplane,military,ground_attack,,RAF strike aircraft delivered to the society on retirement of the GR.4 fleet.,Tornado GR4; Tornado IDS,Ulster Aviation Society,on_display
+SEPECAT,Jaguar,GR.1,XZ389,,,fixed_wing,monoplane,military,ground_attack,,RAF ground attack aircraft.,Jaguar GR1; GR1A,Ulster Aviation Society,on_display
+British Aerospace,Harrier,GR.9,ZD465,,,fixed_wing,monoplane,military,ground_attack,,"Late-mark RAF Harrier, one of the last GR.9s in service before the type's 2010 withdrawal.",Harrier GR9; GR7; Harrier II,Ulster Aviation Society,on_display
+British Aerospace,Hawk,T.1A,XX260,,,fixed_wing,monoplane,military,trainer,,RAF advanced jet trainer.,Hawk T1A; Hawk T1; HS.1182,Ulster Aviation Society,on_display
+English Electric,Canberra,PR.9,XH131,,,fixed_wing,monoplane,military,recon,,"High-altitude photographic reconnaissance Canberra, one of the last RAF Canberras in service.",Canberra PR9; PR.9,Ulster Aviation Society,on_display
+Hawker,Sea Hawk,FB.5,WN108,,,fixed_wing,monoplane,military,ground_attack,,Fleet Air Arm carrier jet.,Sea Hawk FB5; P.1040,Ulster Aviation Society,on_display
+Fairey,Gannet,ECM.6,XA460,,,fixed_wing,monoplane,military,electronic_warfare,,"Fleet Air Arm Gannet, recorded variously as an ECM.6 and an AS.4 conversion.",Gannet ECM6; Gannet AS4; Gannet T5,Ulster Aviation Society,on_display
+Fairey,Swordfish,II,HS503,,,fixed_wing,biplane,military,anti_ship,,"Fleet Air Arm torpedo biplane, under long-term restoration by society volunteers.",Swordfish II; Stringbag,Ulster Aviation Society,under_restoration
+Grumman,F4F,Wildcat,JV482,,,fixed_wing,monoplane,military,fighter,,"Royal Navy Wildcat (Martlet), recovered and restored by the society.",F4F; F4F-4; Wildcat; Martlet,Ulster Aviation Society,on_display
+de Havilland,Vampire,T.11,WZ549,,,fixed_wing,monoplane,military,trainer,,Two-seat jet trainer.,Vampire T11; DH.115; DH115,Ulster Aviation Society,on_display
+Gloster,Meteor,T.7,WA634,,,fixed_wing,monoplane,military,trainer,,Two-seat Meteor used for Martin-Baker ejection seat trials; recorded in some lists as a T.7/8 hybrid.,Meteor T7; Meteor T7.5,Ulster Aviation Society,on_display
+Hunting,Jet Provost,T.3A,XM414,,,fixed_wing,monoplane,military,trainer,,RAF basic jet trainer.,Jet Provost T3A; JP3; P.84,Ulster Aviation Society,on_display
+Percival,Sea Prince,T.1,WF122,,,fixed_wing,monoplane,military,trainer,,Royal Navy observer and navigation trainer.,Sea Prince T1; P.57; Percival Prince,Ulster Aviation Society,on_display
+Short,Tucano,T.1,ZF378,,,fixed_wing,monoplane,military,trainer,,"Belfast-built Shorts Tucano, the RAF's basic trainer, built at Shorts under licence from Embraer.",Tucano T1; EMB-312; EMB312,Ulster Aviation Society,on_display
+Embraer,EMB-312,Tucano,G-BTUC,,,fixed_wing,monoplane,military,trainer,,Brazilian-built Tucano demonstrator used by Shorts in Belfast during the RAF trainer competition.,EMB-312; EMB312; Tucano,Ulster Aviation Society,on_display
+Short,SB.5,,WG768,,,fixed_wing,monoplane,military,experimental,,Research aircraft built at Belfast to test the low-speed handling of swept and delta wings for the English Electric Lightning programme; the sole example.,SB.5; SB5,Ulster Aviation Society,on_display
+Short,SB.4,Sherpa,G-14-1,,,fixed_wing,monoplane,civilian,experimental,,Aero-isoclinic wing research aircraft built by Short Brothers at Belfast.,SB.4; SB4; Sherpa,Ulster Aviation Society,on_display
+Short,SD.2,Stiletto,,,,fixed_wing,monoplane,military,drone,,Supersonic target drone developed by Short Brothers at Belfast.,SD.2; SD2; Stiletto,Ulster Aviation Society,on_display
+Short,330,,G-BDBS,,,fixed_wing,monoplane,civilian,commercial_transport,,Belfast-built Shorts 330 commuter airliner; the prototype of the type.,SD3-30; SD330; Shorts 330,Ulster Aviation Society,on_display
+Scottish Aviation,Bulldog,T.1,XX637,,,fixed_wing,monoplane,military,trainer,,RAF elementary trainer of the type flown by the Northern Ireland Universities Air Squadron.,Bulldog T1; Bulldog 120,Ulster Aviation Society,on_display
+Fouga,CM-170,Super Magister,,,,fixed_wing,monoplane,military,trainer,,"Ex-Irish Air Corps Fouga Magister, number 218, in Irish military markings.",CM-170; CM170; Magister; Super Magister,Ulster Aviation Society,on_display
+Sud Aviation,Alouette III,,,,,rotary_wing,,military,utility,,"Ex-Irish Air Corps Alouette III, number 202.",SA.316; SA316; Alouette 3,Ulster Aviation Society,on_display
+Fairchild,F-24,Argus,HB612,,,fixed_wing,monoplane,military,utility,,Wartime communications aircraft in RAF markings.,F-24; F24; Argus; UC-61; UC61,Ulster Aviation Society,on_display
+Reims,FR172,H Rocket,,,,fixed_wing,monoplane,military,utility,,"Ex-Irish Air Corps Reims Rocket, number 203.",FR172; FR-172; Reims Rocket; Cessna 172,Ulster Aviation Society,on_display
+Slingsby,Cadet,TX.1,XN239,,,fixed_wing,monoplane,military,trainer,,Air Training Corps primary training glider.,Cadet TX1; T.7; Slingsby Cadet,Ulster Aviation Society,on_display
+Supermarine,Spitfire,Mk IIa,,,,fixed_wing,monoplane,military,fighter,,"Full-scale replica, airframe BAPC.369, representing the Spitfires funded by Northern Ireland during the Second World War.",Spitfire IIa; Spitfire 2a; BAPC.369,Ulster Aviation Society,on_display
+Fieseler,Fi 103,V-1,,,,missile_rocket,,military,cruise,,"Full-scale model of the V-1 flying bomb, airframe BAPC.403.",Fi 103; Fi103; V-1; Doodlebug; V1,Ulster Aviation Society,on_display
+Westland,Wessex,HC.2,XR517,,,rotary_wing,,military,utility,,RAF support helicopter of the type flown extensively in Northern Ireland.,Wessex HC2; S-58; Sikorsky S-58; S58,Ulster Aviation Society,on_display
+Westland,Puma,HC.1,XW222,,,rotary_wing,,military,utility,,RAF tactical transport helicopter.,Puma HC1; SA.330; SA330,Ulster Aviation Society,on_display
+Westland,Lynx,AH.1,XZ666,,,rotary_wing,,military,utility,,Army Air Corps battlefield helicopter.,Lynx AH1; WG.13; WG13,Ulster Aviation Society,on_display
+Westland,Gazelle,AH.1,XZ332,,,rotary_wing,,military,recon,,Army Air Corps light observation and liaison helicopter.,Gazelle AH1; SA.341; SA341,Ulster Aviation Society,on_display
+Westland,Scout,AH.1,XV136,,,rotary_wing,,military,utility,,Army Air Corps light helicopter.,Scout AH1; P.531; Wasp,Ulster Aviation Society,on_display
+Bristol,Sycamore,HR.14,XJ918,,,rotary_wing,,military,search_rescue,,"RAF search and rescue helicopter, the first British-designed helicopter to enter production.",Sycamore HR14; Type 171,Ulster Aviation Society,on_display
+Robinson,R22,,G-RENT,,,rotary_wing,,civilian,private,,Light two-seat piston helicopter.,R22; R-22; Robinson R22,Ulster Aviation Society,on_display
+Air & Space,18A,,EI-CNG,,,rotary_wing,,civilian,private,,Gyroplane in Irish civil marks.,18A; Air and Space 18A; Umbaugh 18A,Ulster Aviation Society,on_display
+Ferguson,Monoplane,,G-CJEN,,,fixed_wing,monoplane,civilian,experimental,,"Flying replica of Harry Ferguson's 1909-1911 monoplane, the first aircraft designed, built and flown in Ireland.",Ferguson Flyer; Ferguson Monoplane,Ulster Aviation Society,on_display
+Beagle,A.61,Terrier,G-AVCS,,,fixed_wing,monoplane,civilian,private,,Civil conversion of an Auster AOP.6.,A.61; A61; Terrier; Auster AOP6,Ulster Aviation Society,on_display
+Pitts,S-1,A Special,N80BA,,,fixed_wing,biplane,civilian,private,,Single-seat aerobatic biplane in US marks.,S-1A; S1A; Pitts Special; S1,Ulster Aviation Society,on_display
+Aero Composites,Sea Hawker,,EI-BUO,,,fixed_wing,monoplane,civilian,private,,Amateur-built amphibian.,Sea Hawker; Aero Composites Sea Hawker,Ulster Aviation Society,on_display
+Clutton-Tabenor,FRED,Series 2,G-BNZR,,,fixed_wing,monoplane,civilian,private,,Amateur-built single-seat light aircraft; the name stands for Flying Runabout Experimental Design.,FRED; Fred Series 2,Ulster Aviation Society,on_display
+Evans,VP-2,,G-BEHX,,,fixed_wing,monoplane,civilian,private,,Amateur-built two-seat light aircraft.,VP-2; VP2; Volksplane,Ulster Aviation Society,on_display
+Eurowing,Goldwing,,G-MJWS,,,fixed_wing,monoplane,civilian,private,,Canard microlight.,Goldwing; Eurowing Goldwing,Ulster Aviation Society,on_display
+Rotec,Rally,2B,G-MBJV,,,fixed_wing,monoplane,civilian,private,,Early microlight.,Rally 2B; Rotec Rally,Ulster Aviation Society,on_display
+Team,Mini-Max,HiMax 1700R,G-MZHM,,,fixed_wing,monoplane,civilian,private,,Single-seat amateur-built microlight.,HiMax; Hi-Max 1700R; Team Himax,Ulster Aviation Society,on_display
+Aerosport,Scamp,A,,,,fixed_wing,biplane,civilian,private,,Amateur-built single-seat biplane.,Scamp A; Aerosport Scamp,Ulster Aviation Society,on_display
+Eipper,Quicksilver,,,,,fixed_wing,monoplane,civilian,private,,Early ultralight/microlight.,Quicksilver; Eipper Quicksilver,Ulster Aviation Society,on_display
+HAPI,Cygnet,SF-2A,,,,fixed_wing,monoplane,civilian,private,,Amateur-built light aircraft.,SF-2A; SF2A; Cygnet,Ulster Aviation Society,on_display
+Monnett,Monerai,,,,,fixed_wing,monoplane,civilian,private,,Amateur-built sailplane carrying British Gliding Association number BGA.2988.,Monerai; BGA.2988,Ulster Aviation Society,on_display
+Chargus,Cyclone,,,,,fixed_wing,monoplane,civilian,private,,"Hang glider, airframe BAPC.263.",Chargus Cyclone; BAPC.263,Ulster Aviation Society,on_display
+Rogallo,Hang Glider,,,,,fixed_wing,monoplane,civilian,private,,"Rogallo-wing hang glider, airframe BAPC.266.",Rogallo; BAPC.266,Ulster Aviation Society,on_display

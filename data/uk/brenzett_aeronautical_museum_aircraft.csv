@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,Dakota,C.4,KN274,,,fixed_wing,monoplane,military,transport,,Nose section only of a Douglas Dakota C.4. Confirmed on display inside Sep 2022.,C-47; C47; DC-3; DC3; Skytrain,Brenzett Aeronautical Museum,on_display
+Hawker,Hurricane,Mk I,V7350,,,fixed_wing,monoplane,military,fighter,,Cockpit section only of a Hawker Hurricane I. Confirmed on display inside Sep 2022.,,Brenzett Aeronautical Museum,on_display
+English Electric,Canberra,B.2,WH657,,,fixed_wing,monoplane,military,bomber,,"Nose section only, displayed outside. Confirmed Sep 2022.",,Brenzett Aeronautical Museum,on_display
+English Electric,Canberra,PR.9,XH136,,,fixed_wing,monoplane,military,recon,,"Nose section only, coded W. Confirmed on display inside Sep 2022.",,Brenzett Aeronautical Museum,on_display
+de Havilland,Vampire,T.11,XK625,,,fixed_wing,monoplane,military,trainer,,"de Havilland Vampire T.11 coded 12, displayed outside. Confirmed Sep 2022.",,Brenzett Aeronautical Museum,on_display

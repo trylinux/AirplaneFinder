@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+de Havilland,Sea Devon,C.20,XK896,,,fixed_wing,monoplane,military,transport,,Submerged in the flooded quarry as a diver attraction; civil registration G-RNAS. Visible only to divers.,Sea Devon C20; DH.104; Dove; G-RNAS,"National Diving and Activity Centre, Tidenham",on_display
+Westland,Wessex,HAS.3,XS122,,,rotary_wing,,military,utility,,"Submerged as a diver attraction; coded PO-655, former naval instructional airframe A2707.",Wessex HAS3; S-58; A2707; S58,"National Diving and Activity Centre, Tidenham",on_display
+Westland,Wessex,HC.2,XT607,,,rotary_wing,,military,transport,,Submerged as a diver attraction; coded P.,Wessex HC2; S-58; S58,"National Diving and Activity Centre, Tidenham",on_display

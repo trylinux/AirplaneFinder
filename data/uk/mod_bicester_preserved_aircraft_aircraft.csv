@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Westland,Scout,AH.1,XP855,,,rotary_wing,,military,utility,,Westland Scout AH.1 preserved at the southern edge of the MOD Bicester site on Murcott Road. Confirmed Jul 2026.,,"MOD Bicester Preserved Aircraft, Upper Arncott",on_display
+BAC,Jet Provost,T.5A,XW430,,,fixed_wing,monoplane,military,trainer,,BAC Jet Provost T.5A preserved at the southern edge of the MOD Bicester site. Confirmed Jul 2026.,,"MOD Bicester Preserved Aircraft, Upper Arncott",on_display
+Aerospatiale,Gazelle,HT.3,XX396,,,rotary_wing,,military,trainer,,"Aerospatiale Gazelle HT.3 coded N, preserved at Arncott. Last reported Sep 2017.",SA.341; SA341; 8718M,"MOD Bicester Preserved Aircraft, Upper Arncott",on_display

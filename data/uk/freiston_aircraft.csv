@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aerospatiale,Gazelle,AH.1,XZ337,,,rotary_wing,,military,utility,,"Preserved outside on Homer's Lane, Freiston. Confirmed 2026.",Z,Freiston Aircraft Display,on_display
+Westland,Lynx,AH.7,ZE379,,,rotary_wing,,military,utility,,Preserved outside at Freiston; fitted with the tail boom from ZD283. Confirmed 2026.,,Freiston Aircraft Display,on_display

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+British Aerospace,Sea Harrier,FA.2,ZD607,,,fixed_wing,monoplane,military,fighter,,"Gate guardian at St George's Barracks, the former RAF North Luffenham. Confirmed 2025.",,"St George's Barracks Gate Guardian, North Luffenham",on_display
+Westland,Whirlwind,HAR.10,XP344,,,rotary_wing,,military,search_rescue,,Ground instructional airframe at St George's Barracks marked H723.,8764M; H723,"St George's Barracks Gate Guardian, North Luffenham",in_storage

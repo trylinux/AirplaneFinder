@@ -1,0 +1,14 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+English Electric,Lightning,F.6,XR724,,,fixed_wing,monoplane,military,fighter,,Operated by the Lightning Association at the former RAF Binbrook and kept in ground-running condition; 11 Squadron markings. Confirmed 2026.,BC,"Lightning Association Collection, Binbrook",on_display
+English Electric,Lightning,F.6,XS897,,,fixed_wing,monoplane,military,fighter,,Preserved outside at Binbrook wearing the false serial XP765 and 29 Squadron markings. Confirmed 2026.,XP765; A,"Lightning Association Collection, Binbrook",on_display
+English Electric,Lightning,F.53,ZF580,,,fixed_wing,monoplane,military,fighter,,Ex-Royal Saudi Air Force; preserved outside at Binbrook wearing the false serial XS935 and 5 Squadron markings. Confirmed 2025.,XS935; AK,"Lightning Association Collection, Binbrook",on_display
+English Electric,Lightning,F.6,XP693,,,fixed_wing,monoplane,military,fighter,,Under restoration at Binbrook.,ZU-BEY; ZUBEY,"Lightning Association Collection, Binbrook",under_restoration
+English Electric,Lightning,T.5,XS416,,,fixed_wing,monoplane,military,fighter,,Under restoration at Binbrook in Lightning Training Flight markings.,DU,"Lightning Association Collection, Binbrook",under_restoration
+English Electric,Lightning,T.5,XS459,,,fixed_wing,monoplane,military,fighter,,Stored outside at Binbrook in 5 Squadron markings.,AW,"Lightning Association Collection, Binbrook",in_storage
+English Electric,Lightning,T.5,XS457,,,fixed_wing,monoplane,military,fighter,,"Nose section only, in 5 Squadron markings. Confirmed 2024.",,"Lightning Association Collection, Binbrook",on_display
+English Electric,Lightning,F.6,XR757,,,fixed_wing,monoplane,military,fighter,,Nose section only. Confirmed 2026.,,"Lightning Association Collection, Binbrook",on_display
+English Electric,Lightning,F.6,XS933,,,fixed_wing,monoplane,military,fighter,,Nose section only. Confirmed 2024.,,"Lightning Association Collection, Binbrook",on_display
+English Electric,Lightning,F.2A,XN728,,,fixed_wing,monoplane,military,fighter,,Nose section only.,8546M,"Lightning Association Collection, Binbrook",on_display
+English Electric,Lightning,T.55,ZF595,,,fixed_wing,monoplane,military,fighter,,"Centre fuselage only; the nose section of this airframe is at North Weald, Essex.",,"Lightning Association Collection, Binbrook",in_storage
+Gloster,Javelin,FAW.4,XA634,,,fixed_wing,monoplane,military,fighter,,Under restoration at Binbrook.,7641M,"Lightning Association Collection, Binbrook",under_restoration
+Blackburn,Buccaneer,S.2,XK526,,,fixed_wing,monoplane,military,ground_attack,,Under restoration at Binbrook in 12 Squadron markings. Confirmed 2025.,8648M,"Lightning Association Collection, Binbrook",under_restoration

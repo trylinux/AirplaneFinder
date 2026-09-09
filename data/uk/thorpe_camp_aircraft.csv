@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+English Electric,Lightning,F.1A,XM192,,,fixed_wing,monoplane,military,fighter,,Preserved outside at Thorpe Camp in 111 Squadron markings. Confirmed 2026.,8413M; K,Thorpe Camp Visitor Centre,on_display
+Westland,Wessex,HAS.1,XS887,,,rotary_wing,,military,utility,,Preserved outside at Thorpe Camp. Confirmed 2026.,A2690; FI-403; FI403,Thorpe Camp Visitor Centre,on_display
+Blackburn,Buccaneer,S.2B,XX895,,,fixed_wing,monoplane,military,ground_attack,,Nose section only. Confirmed 2024.,,Thorpe Camp Visitor Centre,on_display
+Auster,Auster,AOP.5,RT520,,,fixed_wing,monoplane,military,recon,,Under restoration at Thorpe Camp.,G-ALYB; GALYB,Thorpe Camp Visitor Centre,under_restoration
+de Havilland,Tiger Moth,Mk II,T5968,,,fixed_wing,biplane,military,trainer,,Composite rebuild; possibly incorporating BAPC.409.,BAPC.409,Thorpe Camp Visitor Centre,under_restoration

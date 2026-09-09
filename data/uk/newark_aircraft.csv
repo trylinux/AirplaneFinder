@@ -1,0 +1,98 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Armstrong Whitworth,Argosy,C.1,XN819,,,fixed_wing,monoplane,military,transport,,Cockpit section only; held in store and viewable by prior arrangement.,8205M,Newark Air Museum,in_storage
+Auster,Auster,AOP.9,XS238,,,fixed_wing,monoplane,military,recon,,"Displayed inside. The museum inventory lists its Auster AOP.9 as XR268 (fuselage and wings, in store); Euro Demobbed records XS238 at Newark. The conflict is unresolved and only one Auster AOP.9 is held.",,Newark Air Museum,on_display
+Aviasud,Sirocco,,G-MNRT,,,fixed_wing,monoplane,civilian,private,,Microlight displayed inside.,,Newark Air Museum,on_display
+Avro,Anson,C.19,VL348,,,fixed_wing,monoplane,military,transport,,Displayed inside. Confirmed present 2025.,,Newark Air Museum,on_display
+Avro,Ashton,Mk 2,WB491,,,fixed_wing,monoplane,civilian,test,,"Forward fuselage only of the Avro Ashton jet research aircraft, displayed outside.",,Newark Air Museum,on_display
+Avro,Shackleton,MR.3,WR977,,,fixed_wing,monoplane,military,recon,,Displayed outside in 42 Squadron markings. Confirmed present 2025.,8186M; B,Newark Air Museum,on_display
+Avro,Vulcan,B.2,XM594,,,fixed_wing,monoplane,military,bomber,,Displayed outside in 44 Squadron markings; flown into Newark in 1983. Confirmed present 2025.,,Newark Air Museum,on_display
+British Aerospace,Sea Harrier,FA.2,ZA176,,,fixed_wing,monoplane,military,fighter,,Displayed inside in 800 Naval Air Squadron markings.,R-126; R126,Newark Air Museum,on_display
+Bensen,B-8,B-8M,G-ASNY,,,rotary_wing,,civilian,private,,Home-built gyrocopter displayed inside.,B8,Newark Air Museum,on_display
+Blackburn,Beverley,C.1,XB261,,,fixed_wing,monoplane,military,transport,,"Cockpit section only, displayed inside.",,Newark Air Museum,on_display
+Blackburn,Buccaneer,S.1,XN964,,,fixed_wing,monoplane,military,ground_attack,,Displayed outside in 736 Naval Air Squadron markings.,LM-630; LM630,Newark Air Museum,on_display
+Boeing Vertol,Chinook,HC.1,ZA717,,,rotary_wing,,military,transport,,"Fuselage only, displayed outside in 78 Squadron markings.",9238M; C,Newark Air Museum,on_display
+Bristol,Sycamore,Mk 3,WT933,,,rotary_wing,,military,utility,,Displayed inside.,7709M,Newark Air Museum,on_display
+Cessna,310,,G-APNJ,,,fixed_wing,monoplane,civilian,private,,Displayed at the museum.,,Newark Air Museum,on_display
+Clutton,FRED,Series 2,G-BJAD,,,fixed_wing,monoplane,civilian,private,,Home-built aircraft displayed inside.,,Newark Air Museum,on_display
+Dassault,Mystere IV,,83,,,fixed_wing,monoplane,military,fighter,,Ex-Armee de l Air; displayed outside.,8-MS; 8MS,Newark Air Museum,on_display
+de Havilland Canada,Chipmunk,T.10,WB624,,,fixed_wing,monoplane,military,trainer,,Displayed inside.,,Newark Air Museum,on_display
+de Havilland,Heron,1B,G-ANXB,,,fixed_wing,monoplane,civilian,commercial_transport,,Displayed at the museum.,,Newark Air Museum,on_display
+de Havilland,Sea Venom,FAW.21,WW217,,,fixed_wing,monoplane,military,fighter,,Displayed inside in 890 Naval Air Squadron markings.,O-351; O351,Newark Air Museum,on_display
+de Havilland,Sea Vixen,FAW.2,XJ560,,,fixed_wing,monoplane,military,fighter,,Displayed outside.,8142M,Newark Air Museum,on_display
+de Havilland,Tiger Moth,Mk II,DE156,,,fixed_wing,biplane,military,trainer,,Displayed inside.,G-MAZY; GMAZY,Newark Air Museum,on_display
+de Havilland,Vampire,T.11,XD593,,,fixed_wing,monoplane,military,trainer,,Displayed inside in Central Flying School markings.,50,Newark Air Museum,on_display
+de Havilland,Venom,NF.3,WX905,,,fixed_wing,monoplane,military,fighter,,Displayed inside in 23 Squadron markings.,7458M,Newark Air Museum,on_display
+de Havilland,Dove,,G-AHRI,,,fixed_wing,monoplane,civilian,commercial_transport,,Displayed at the museum.,,Newark Air Museum,on_display
+English Electric,Canberra,B.2,WV787,,,fixed_wing,monoplane,military,bomber,,Displayed outside in Aeroplane and Armament Experimental Establishment markings.,8799M,Newark Air Museum,on_display
+English Electric,Canberra,PR.9,BAPC 518,,,fixed_wing,monoplane,military,recon,,Cockpit section only.,,Newark Air Museum,on_display
+English Electric,Canberra,PR.7,WH791,,,fixed_wing,monoplane,military,recon,,"Nose section only, displayed outside.",8187M,Newark Air Museum,on_display
+English Electric,Canberra,T.17,WH863,,,fixed_wing,monoplane,military,electronic_warfare,,"Nose section only, displayed outside.",8693M,Newark Air Museum,on_display
+English Electric,Canberra,T.19,WH904,,,fixed_wing,monoplane,military,bomber,,Displayed outside; fitted with the nose of WH651.,WH651; K,Newark Air Museum,on_display
+English Electric,Lightning,T.5,XS417,,,fixed_wing,monoplane,military,fighter,,Displayed outside in 56 Squadron markings. Confirmed present 2025.,Z,Newark Air Museum,on_display
+Fairey,Gannet,AEW.3,XP226,,,fixed_wing,monoplane,military,recon,,Displayed outside in 849 Naval Air Squadron D Flight markings.,A2667; E-073; E073,Newark Air Museum,on_display
+Government Aircraft Factories,Jindivik,Mk 203B,A92-708,,,fixed_wing,monoplane,military,drone,,"Ex-Royal Australian Air Force target drone, displayed outside.",,Newark Air Museum,on_display
+General Aircraft,Monospar ST-12,,VH-UTH,,,fixed_wing,monoplane,civilian,private,,"Rare 1930s British light twin, displayed inside.",Monospar ST12,Newark Air Museum,on_display
+Gloster,Javelin,FAW.8,XH992,,,fixed_wing,monoplane,military,fighter,,Displayed inside in 85 Squadron markings.,7829M; P,Newark Air Museum,on_display
+Gloster,Meteor,F.8,WK935,,,fixed_wing,monoplane,military,fighter,,"The unique prone-pilot Meteor F.8, taken on loan from the Royal Air Force Museum in 2024 and displayed inside.",7869M,Newark Air Museum,on_display
+Gloster,Meteor,FR.9,VZ608,,,fixed_wing,monoplane,military,fighter,,Displayed inside.,,Newark Air Museum,on_display
+Armstrong Whitworth,Meteor,NF.12,WS692,,,fixed_wing,monoplane,military,fighter,,Displayed inside in 72 Squadron markings.,7605M; C,Newark Air Museum,on_display
+Armstrong Whitworth,Meteor,NF.14,WS739,,,fixed_wing,monoplane,military,fighter,,Displayed outside in 25 Squadron markings.,7961M,Newark Air Museum,on_display
+Gloster,Meteor,T.7,VZ634,,,fixed_wing,monoplane,military,fighter,,Displayed outside in 247 Squadron markings.,,Newark Air Museum,on_display
+Handley Page,Hastings,T.5,TG517,,,fixed_wing,monoplane,military,transport,,Displayed outside in Strike Command Bombing School markings.,517,Newark Air Museum,on_display
+Scottish Aviation,Jetstream,T.1,XX492,,,fixed_wing,monoplane,military,trainer,,Displayed inside in 45 Squadron markings.,A,Newark Air Museum,on_display
+Hawker,Hunter,F.1,WT651,,,fixed_wing,monoplane,military,fighter,,Displayed inside in 222 Squadron markings.,7532M; C,Newark Air Museum,on_display
+Hawker,Hunter,T.7,XX467,,,fixed_wing,monoplane,military,fighter,,Displayed outside wearing the false serial XL605 and 92 Squadron Blue Diamonds markings.,XL605; T,Newark Air Museum,on_display
+Hawker,Sea Hawk,FB.5,WM913,,,fixed_wing,monoplane,military,ground_attack,,Displayed inside in 897 Naval Air Squadron markings.,A2510; J-456; J456,Newark Air Museum,on_display
+Hawker Siddeley,Dominie,T.1,XS726,,,fixed_wing,monoplane,military,trainer,,Displayed inside.,9273M; T,Newark Air Museum,on_display
+Hiway,Skytrike,,G-MBVE,,,fixed_wing,monoplane,civilian,private,,Microlight displayed inside.,,Newark Air Museum,on_display
+Folland,Gnat,T.1,XR534,,,fixed_wing,monoplane,military,trainer,,Displayed inside in 4 Flying Training School markings.,8578M; 65,Newark Air Museum,on_display
+Hunting,Jet Provost,T.3,XN573,,,fixed_wing,monoplane,military,trainer,,"Nose section only, displayed inside.",E,Newark Air Museum,on_display
+Hunting,Jet Provost,T.3A,XM383,,,fixed_wing,monoplane,military,trainer,,Displayed inside in 7 Flying Training School markings.,90,Newark Air Museum,on_display
+Lee-Richards,Annular Biplane,,BAPC 20,,,fixed_wing,biplane,civilian,experimental,,Full-scale replica of the 1913 Lee-Richards annular biplane; not an original airframe.,,Newark Air Museum,on_display
+Lockheed,T-33,A,19036,Shooting Star,,fixed_wing,monoplane,military,trainer,,Ex-Armee de l Air; displayed outside wearing 91007. The museum inventory gives the marking 5547.,T33; 91007; 5547; TR-007; TR007; T33A,Newark Air Museum,on_display
+Luscombe,P3 Rattler,Strike,G-BKPG,,,fixed_wing,monoplane,civilian,private,,Home-built aircraft displayed inside.,,Newark Air Museum,on_display
+Maxair,Hummer,,G-MJCF,,,fixed_wing,monoplane,civilian,private,,Microlight held in store; viewable by prior arrangement.,,Newark Air Museum,in_storage
+Micro Biplane Aviation,Tiger Cub,440,G-MBUE,,,fixed_wing,monoplane,civilian,private,,Microlight displayed inside.,,Newark Air Museum,on_display
+Mignet,HM.14 Flying Flea,,BAPC 43,,,fixed_wing,monoplane,civilian,private,,1930s Flying Flea homebuilt displayed inside.,,Newark Air Museum,on_display
+Mignet,HM.14 Flying Flea,,BAPC 101,,,fixed_wing,monoplane,civilian,private,,Cockpit section of a Flying Flea homebuilt.,,Newark Air Museum,on_display
+Mikoyan-Gurevich,MiG-23,ML,024003607,,,fixed_wing,monoplane,military,fighter,,Ex-Soviet Air Force; displayed outside marked Red 44.,MiG23; Red 44; Red 07; MiG23ML,Newark Air Museum,on_display
+Mikoyan-Gurevich,MiG-27,K,61912507006,,,fixed_wing,monoplane,military,ground_attack,,Ex-Soviet Air Force; displayed outside.,MiG27; 71 red; MiG27K,Newark Air Museum,on_display
+Mooney,M.20,M.20A,G-APVV,,,fixed_wing,monoplane,civilian,private,,Held in store; viewable by prior arrangement.,,Newark Air Museum,in_storage
+Socata,MS.880 Rallye,,G-BFTZ,,,fixed_wing,monoplane,civilian,private,,Displayed at the museum.,,Newark Air Museum,on_display
+North American,F-100,D,54-2223,Super Sabre,,fixed_wing,monoplane,military,ground_attack,,Ex-USAF and Armee de l Air; displayed outside wearing 0-63008.,F100; 0-63008; LT; 063008; F100D,Newark Air Museum,on_display
+North American,Harvard,Mk IIB,FE930,,,fixed_wing,monoplane,military,trainer,,Displayed outside.,42-12417; 4212417,Newark Air Museum,on_display
+Percival,Prentice,T.1,VR249,,,fixed_wing,monoplane,military,trainer,,Displayed inside.,FA-EL; FAEL,Newark Air Museum,on_display
+Percival,Provost,T.1,WV606,,,fixed_wing,monoplane,military,trainer,,Displayed inside.,7622M; P-B; PB,Newark Air Museum,on_display
+Powerchute,Kestrel,,G-CCLT,,,fixed_wing,monoplane,civilian,private,,Powered parachute displayed inside.,,Newark Air Museum,on_display
+Eipper,Quicksilver,MX,G-MJDW,,,fixed_wing,monoplane,civilian,private,,Microlight displayed inside.,,Newark Air Museum,on_display
+Reid and Sigrist,Desford,Bobsleigh,VZ728,,,fixed_wing,monoplane,civilian,experimental,,"The unique Reid and Sigrist Desford prone-pilot research aircraft, displayed inside.",G-AGOS; GAGOS,Newark Air Museum,on_display
+Saab,Draken,RF-35,AR-107,,,fixed_wing,monoplane,military,recon,,Ex-Royal Danish Air Force; displayed inside.,,Newark Air Museum,on_display
+Saab,Safir,S 91B-2,56321,,,fixed_wing,monoplane,military,trainer,,Ex-Royal Norwegian Air Force; displayed inside.,G-BKPY; 321; GBKPY,Newark Air Museum,on_display
+Saab,Viggen,AJSH 37,37918,,,fixed_wing,monoplane,military,ground_attack,,Ex-Swedish Air Force; displayed inside in F21 markings.,57,Newark Air Museum,on_display
+Saunders-Roe,Skeeter,AOP.12,XL764,,,rotary_wing,,military,recon,,Displayed inside.,7940M; J,Newark Air Museum,on_display
+Scottish Aviation,Bulldog,T.1,XX634,,,fixed_wing,monoplane,military,trainer,,Displayed inside in Royal Air Force College markings.,T,Newark Air Museum,on_display
+SEPECAT,Jaguar,T.2A,XX829,,,fixed_wing,monoplane,military,ground_attack,,Displayed outside in 54 Squadron markings.,GZ,Newark Air Museum,on_display
+SEPECAT,Jaguar,GR.1,XX753,,,fixed_wing,monoplane,military,ground_attack,,"Nose section only, displayed inside.",9087M,Newark Air Museum,on_display
+Sherwood,Ranger,,,,,fixed_wing,biplane,civilian,private,,"Sherwood Ranger homebuilt, unmarked, held in store; viewable by prior arrangement.",,Newark Air Museum,in_storage
+Short,Tucano,T.1,ZF372,,,fixed_wing,monoplane,military,trainer,,Displayed inside.,372,Newark Air Museum,on_display
+Slingsby,Cadet,TX.1,RA897,,,fixed_wing,monoplane,military,trainer,,Held in store; viewable by prior arrangement.,,Newark Air Museum,in_storage
+Slingsby,Motor Cadet,T.7,VM590,,,fixed_wing,monoplane,civilian,private,,Held in store; viewable by prior arrangement.,G-AXMB; BGA805; GAXMB,Newark Air Museum,in_storage
+Slingsby,Cadet,TX.2,VM637,,,fixed_wing,monoplane,military,trainer,,Displayed inside.,BGA895,Newark Air Museum,on_display
+Slingsby,Grasshopper,TX.1,XA239,,,fixed_wing,monoplane,military,trainer,,Held in store; viewable by prior arrangement.,,Newark Air Museum,in_storage
+Slingsby,T.67 Firefly,T.67,,,,fixed_wing,monoplane,civilian,trainer,,"Slingsby T.67 Firefly cockpit instructional trainer, unmarked.",,Newark Air Museum,on_display
+Aerospatiale,Gazelle,SA.341,XW276,,,rotary_wing,,military,utility,,"French-built Gazelle prototype airframe, displayed inside.",F-ZWRI; FZWRI,Newark Air Museum,on_display
+Aerospatiale,Puma,HC.1,XW208,,,rotary_wing,,military,transport,,Displayed outside.,,Newark Air Museum,on_display
+SZD,SZD-30 Pirat,,BGA1470,,,fixed_wing,monoplane,civilian,private,,Glider held in store; viewable by prior arrangement.,SZD30 Pirat,Newark Air Museum,in_storage
+Taylor,Monoplane,,G-APRT,,,fixed_wing,monoplane,civilian,private,,Home-built aircraft displayed inside.,,Newark Air Museum,on_display
+Tasuma,UAV,CSV 30,BAPC 516,,,fixed_wing,monoplane,military,drone,,Small unmanned air vehicle displayed inside.,Tasuma CSV30,Newark Air Museum,on_display
+Tasuma,UAV,CSV 30,BAPC 517,,,fixed_wing,monoplane,military,drone,,"Small unmanned air vehicle displayed inside, named Navigator.",Navigator,Newark Air Museum,on_display
+Tasuma,UAV,Observer,BAPC 515,,,fixed_wing,monoplane,military,drone,,Small unmanned air vehicle displayed inside.,,Newark Air Museum,on_display
+Vickers,Varsity,T.1,WF369,,,fixed_wing,monoplane,military,trainer,,Displayed inside in 6 Flying Training School markings.,F,Newark Air Museum,on_display
+Volmer,VJ-24,,G-MBBZ,,,fixed_wing,monoplane,civilian,private,,Microlight displayed inside.,VJ24,Newark Air Museum,on_display
+Ward,Gnome,,BAPC 330,,,fixed_wing,monoplane,civilian,private,,Home-built ultralight displayed inside.,,Newark Air Museum,on_display
+Westland,Lynx,Mk 28,QP-31,,,rotary_wing,,military,utility,,"Ex-Qatar Police Lynx, displayed outside.",,Newark Air Museum,on_display
+Westland,Sioux,AH.1,XT200,,,rotary_wing,,military,recon,,Displayed inside.,F,Newark Air Museum,on_display
+Westland,Wessex,HC.2,XV728,,,rotary_wing,,military,utility,,Displayed outside in 72 Squadron markings.,A,Newark Air Museum,on_display
+Westland,Whirlwind,HAS.7,XM685,,,rotary_wing,,military,search_rescue,,Displayed inside.,PO-513; PO513,Newark Air Museum,on_display
+Zurowski,ZP.1,,BAPC 183,,,rotary_wing,,civilian,experimental,,Home-built helicopter displayed inside.,,Newark Air Museum,on_display
+Avro,Lancaster,B.I,W4964,,,fixed_wing,monoplane,military,bomber,,"Fuselage section only, forming the museum Lancaster Corner display.",4922M; WS-J; WSJ,Newark Air Museum,on_display

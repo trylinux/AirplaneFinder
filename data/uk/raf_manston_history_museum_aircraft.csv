@@ -1,0 +1,23 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+PZL,TS-11,,1625,Iskra,,fixed_wing,monoplane,military,trainer,,"Ex Polish Air Force PZL TS-11 Iskra, displayed outside. Confirmed Jun 2024.",TS11; Iskra,RAF Manston History Museum,on_display
+Lockheed,T-33,AN,21231,Shooting Star,,fixed_wing,monoplane,military,trainer,,"Ex Royal Canadian Air Force Canadair-built T-33AN Silver Star, ex TR-415, displayed inside in USAF markings as 117415.",T33; T33AN; Silver Star; TR-415; 117415; TR415,RAF Manston History Museum,on_display
+Auster,AOP,Mk 5,RT486,,,fixed_wing,monoplane,military,recon,,Auster AOP.5 displayed inside. Confirmed Jun 2024.,Auster 5,RAF Manston History Museum,on_display
+Armstrong Whitworth,Meteor,TT.20,WD646,,,fixed_wing,monoplane,military,utility,,Armstrong Whitworth Meteor TT.20 displayed inside wearing the false serial WD615 in 85 Squadron markings.,WD615,RAF Manston History Museum,on_display
+Gloster,Meteor,T.7,WH166,,,fixed_wing,monoplane,military,trainer,,"Meteor T.7 coded A, under restoration; last reported Mar 2025.",,RAF Manston History Museum,under_restoration
+de Havilland Canada,Chipmunk,T.10,WP772,,,fixed_wing,monoplane,military,trainer,,"Chipmunk T.10 coded 4 in 1 AEF markings, displayed inside. Confirmed Jun 2024.",DHC-1; DHC1,RAF Manston History Museum,on_display
+English Electric,Canberra,B.15,WT205,,,fixed_wing,monoplane,military,bomber,,"Nose section only, in 9 Squadron markings. Confirmed on display inside Jun 2024.",,RAF Manston History Museum,on_display
+Slingsby,Grasshopper,TX.1,XA231,,,fixed_wing,monoplane,military,trainer,,Slingsby Grasshopper TX.1 primary glider displayed inside. Confirmed Jun 2024.,T.38; T38,RAF Manston History Museum,on_display
+Slingsby,Cadet,TX.3,XA312,,,fixed_wing,monoplane,military,trainer,,Slingsby Cadet TX.3 glider displayed inside. Confirmed Jun 2024.,T.31; T31,RAF Manston History Museum,on_display
+English Electric,P.1,B,XA847,,,fixed_wing,monoplane,military,experimental,,"English Electric P.1B, the first true Lightning prototype. Confirmed present Apr 2026.",8371M; Lightning,RAF Manston History Museum,on_display
+Avro,Vulcan,B.1,XA893,,,fixed_wing,monoplane,military,bomber,,Nose section only of an Avro Vulcan B.1. Confirmed on display inside Apr 2026.,8591M,RAF Manston History Museum,on_display
+Hawker,Hunter,F.6A,XG226,,,fixed_wing,monoplane,military,fighter,,"Nose section only, in 92 Squadron markings; the rear fuselage of this airframe is at the East Midlands Aeropark. Confirmed Jun 2024.",8800M,RAF Manston History Museum,on_display
+Handley Page,Victor,K.2,XL190,,,fixed_wing,monoplane,military,tanker,,Nose section only of a Handley Page Victor K.2. Confirmed on display inside Jun 2024.,,RAF Manston History Museum,on_display
+Hunting,Jet Provost,T.4,XR658,,,fixed_wing,monoplane,military,trainer,,Hunting Jet Provost T.4 displayed outside. Confirmed Jun 2024.,,RAF Manston History Museum,on_display
+English Electric,Lightning,F.6,XR770,,,fixed_wing,monoplane,military,fighter,,"Lightning F.6 coded AA in 5 Squadron special markings, displayed outside. Confirmed Jun 2024.",,RAF Manston History Museum,on_display
+Westland,Wessex,HU.5,XS482,,,rotary_wing,,military,transport,,"Westland Wessex HU.5 in 22 Squadron search and rescue markings, displayed inside. Confirmed Jun 2024.",,RAF Manston History Museum,on_display
+Hawker Siddeley,Nimrod,MR.2,XV229,,,fixed_wing,monoplane,military,recon,,"Nose section only, coded 29, displayed outside. Confirmed Jun 2024.",,RAF Manston History Museum,on_display
+Blackburn,Buccaneer,S.2B,XV352,,,fixed_wing,monoplane,military,ground_attack,,"Nose section only, in 237 OCU markings. Confirmed on display inside Jun 2024.",,RAF Manston History Museum,on_display
+Blackburn,Buccaneer,S.2B,XV864,,,fixed_wing,monoplane,military,ground_attack,,"Complete Buccaneer S.2B in 208 Squadron markings coded 864, displayed outside. Confirmed Jun 2024.",,RAF Manston History Museum,on_display
+SEPECAT,Jaguar,GR.3A,XZ106,,,fixed_wing,monoplane,military,ground_attack,,"Jaguar GR.3A coded FR in 41 Squadron markings, displayed outside. Confirmed Jun 2024.",,RAF Manston History Museum,on_display
+Panavia,Tornado,GR.1,ZA325,,,fixed_wing,monoplane,military,ground_attack,,"Nose section only, displayed outside. Confirmed Jun 2024.",,RAF Manston History Museum,on_display
+Hawker,Hunter,F.6,XF509,,,fixed_wing,monoplane,military,fighter,,"Hawker Hunter F.6 in 63 and 151 Squadron markings, held in the museum's store on Manston Airport and not normally on public view. Last reported Jun 2021.",,RAF Manston History Museum,in_storage

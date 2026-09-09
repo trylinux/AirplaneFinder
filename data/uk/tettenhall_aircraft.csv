@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+English Electric,Canberra,T.17,WJ576,,,fixed_wing,monoplane,military,electronic_warfare,,"Nose section only, displayed inside. Confirmed 2024.",,Tettenhall Transport Heritage Centre,on_display
+de Havilland Canada,Chipmunk,T.10,WK576,,,fixed_wing,monoplane,military,trainer,,Displayed inside; former ground instructional airframe. Confirmed 2024.,8357M,Tettenhall Transport Heritage Centre,on_display
+Boulton Paul,Balliol,T.2,WN516,,,fixed_wing,monoplane,military,trainer,,"Cockpit section only, displayed inside. Confirmed 2024.",,Tettenhall Transport Heritage Centre,on_display
+Slingsby,Cadet,TX.3,WT877,,,fixed_wing,monoplane,military,trainer,,Displayed inside. Confirmed 2024.,,Tettenhall Transport Heritage Centre,on_display
+Slingsby,Grasshopper,TX.1,WZ755,,,fixed_wing,monoplane,military,trainer,,Displayed inside. Confirmed 2024.,,Tettenhall Transport Heritage Centre,on_display
+de Havilland,Vampire,T.11,XD445,,,fixed_wing,monoplane,military,trainer,,"Cockpit pod only, displayed inside. Confirmed 2024.",51,Tettenhall Transport Heritage Centre,on_display

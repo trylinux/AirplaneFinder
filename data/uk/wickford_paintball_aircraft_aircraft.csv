@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Westland,Wessex,HU.5,XT467,,,rotary_wing,,military,transport,,"Ex-Royal Navy Wessex used as a prop at a paintball site near Wickford, carrying maintenance serial 8922M. Noted July 2023.",Wessex HU5; Wessex; S-58; 8922M; S58,Wickford Paintball Aircraft,on_display
+Westland,Lynx,AH.7,XZ175,,,rotary_wing,,military,utility,,Ex-Army Air Corps Lynx used as a prop at the same paintball site. Noted July 2023.,Lynx AH7; Lynx AH.7,Wickford Paintball Aircraft,on_display

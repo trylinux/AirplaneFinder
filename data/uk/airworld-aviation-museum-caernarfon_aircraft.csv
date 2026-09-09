@@ -1,0 +1,11 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+de Havilland,Tiger Moth,II,N6638,,,fixed_wing,biplane,civilian,trainer,,Dismantled; wears the false serial 'N-5137'.,DH.82A; DH82A; Tiger Moth; N-5137,"Airworld Aviation Museum, Caernarfon",on_display
+Hawker,Sea Hawk,FB.5,WM961,,,fixed_wing,monoplane,military,ground_attack,,"Coded J, in Suez invasion stripes; former naval instructional airframe A2517.",Sea Hawk FB5; Sea Hawk; A2517,"Airworld Aviation Museum, Caernarfon",on_display
+Hawker,Hunter,F.1,WT694,,,fixed_wing,monoplane,military,fighter,,"Ex-maintenance serial 7510M, in 54 Squadron markings.",Hunter F1; P.1067; 7510M,"Airworld Aviation Museum, Caernarfon",on_display
+Bristol,Sycamore,HR.12,WV781,,,rotary_wing,,military,utility,,"Cockpit only, no tail boom fitted; ex-maintenance serial 7839M.",Sycamore HR12; Type 171; 7839M,"Airworld Aviation Museum, Caernarfon",on_display
+Slingsby,Cadet,TX.3,XA282,,,fixed_wing,monoplane,military,trainer,,"Training glider in a red and white scheme, suspended from the hangar ceiling.",T.31; T31; Cadet TX3,"Airworld Aviation Museum, Caernarfon",on_display
+Gloster,Javelin,FAW.7,XH837,,,fixed_wing,monoplane,military,fighter,,Forward fuselage only; ex-maintenance serial 8032M.,Javelin FAW7; Javelin; 8032M,"Airworld Aviation Museum, Caernarfon",on_display
+Westland,Whirlwind,HAR.10,XJ726,,,rotary_wing,,military,search_rescue,,In 22 Squadron yellow search and rescue colours.,Whirlwind HAR10; WS-55; WS55,"Airworld Aviation Museum, Caernarfon",on_display
+de Havilland,Vampire,T.11,XK623,,,fixed_wing,monoplane,military,trainer,,Coded 56.,Vampire T11; DH.115; Vampire,"Airworld Aviation Museum, Caernarfon",on_display
+Hawker Siddeley,Harrier,T.4,XW269,,,fixed_wing,monoplane,military,trainer,,"Believed the only surviving Harrier T.2/T.4 two-seater; coded TB, in 4 Squadron markings.",Harrier T4; Harrier T2; P.1127,"Airworld Aviation Museum, Caernarfon",on_display
+British Aerospace,Hawk,T.1,XX309,,,fixed_wing,monoplane,military,trainer,,In special markings.,Hawk T1; HS.1182; Hawk,"Airworld Aviation Museum, Caernarfon",on_display

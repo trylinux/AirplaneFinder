@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+McDonnell Douglas,Phantom,FGR.2,XT891,,,fixed_wing,monoplane,military,fighter,,Gate guardian at RAF Coningsby in 41 Squadron markings; the last Phantom FGR.2 built. Confirmed 2024.,9136M; 891,RAF Coningsby Gate Guardians,on_display
+Panavia,Tornado,F.3,ZE760,,,fixed_wing,monoplane,military,fighter,,Gate guardian at RAF Coningsby in 5 Squadron markings. Confirmed 2024.,,RAF Coningsby Gate Guardians,on_display
+English Electric,Lightning,F.6,XR753,,,fixed_wing,monoplane,military,fighter,,Preserved outside at RAF Coningsby in 11 Squadron markings. Confirmed 2024.,8969M; XI,RAF Coningsby Gate Guardians,on_display
+Hawker Siddeley,Harrier,GR.3,XW924,,,fixed_wing,monoplane,military,ground_attack,,Stored in a hardened aircraft shelter at RAF Coningsby in 3 Squadron markings; not normally accessible to visitors.,9073M; G,RAF Coningsby Gate Guardians,in_storage

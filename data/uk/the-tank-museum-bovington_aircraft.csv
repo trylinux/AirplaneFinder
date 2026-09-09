@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+General Aircraft,Hamilcar,Mk.I,TK718,,,fixed_wing,monoplane,military,transport,,"Fuselage of the largest British assault glider, built to carry a light tank; displayed inside the museum. Last confirmed October 2022.",Hamilcar I; GAL.49; Hamilcar,"The Tank Museum, Bovington",on_display
+Saunders-Roe,Skeeter,AOP.12,XM564,,,rotary_wing,,military,recon,,Army Air Corps light observation helicopter held by the museum in store.,Skeeter AOP12; Skeeter 12,"The Tank Museum, Bovington",in_storage

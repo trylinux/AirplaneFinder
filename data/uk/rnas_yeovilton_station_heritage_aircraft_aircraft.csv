@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Westland,Wessex,HU.5,XT458,,,rotary_wing,,military,transport,,"Preserved on the station marked 'VL-P'; ex-instructional airframes A2768/A2769. Inside the wire, not reachable from a public road. Confirmed Jul 2024.",Wessex HU5; A2768; A2769,RNAS Yeovilton Station Heritage Aircraft,on_display
+Westland,Sea King,HC.4,ZF118,,,rotary_wing,,military,transport,,Preserved on the station marked 'VO' in Commando Helicopter Force colours. Inside the wire. Confirmed Jul 2024.,Sea King HC4; Commando Sea King,RNAS Yeovilton Station Heritage Aircraft,on_display
+Aerospatiale,Gazelle,HT.2,XW890,,,rotary_wing,,military,trainer,,Preserved outside on the station. Inside the wire. Confirmed Jul 2024.,Gazelle HT2; SA341; SA.341,RNAS Yeovilton Station Heritage Aircraft,on_display

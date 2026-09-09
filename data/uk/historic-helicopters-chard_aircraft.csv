@@ -1,0 +1,10 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Westland,Sea King,Mk.48,RS-02,,,rotary_wing,,military,search_rescue,,"Ex-Belgian Air Force Sea King, civil-registered G-BDNI.",Sea King 48; SH-3; G-BDNI; SH3,"Historic Helicopters, Chard",on_display
+Westland,Sea King,Mk.48,RS-04,,,rotary_wing,,military,search_rescue,,"Ex-Belgian Air Force Sea King in 40 Smaldeel markings, civil-registered OO-KNG.",Sea King 48; SH-3; OO-KNG; SH3,"Historic Helicopters, Chard",on_display
+Westland,Whirlwind,HAR.10,XJ729,,,rotary_wing,,military,search_rescue,,"Airworthy-condition Whirlwind in 22 Squadron search and rescue markings, civil-registered G-BVGE.",Whirlwind HAR10; WS-55; G-BVGE; WS55,"Historic Helicopters, Chard",on_display
+Westland,Wessex,HU.5,XT761,,,rotary_wing,,military,transport,,Civil-registered G-WSEX; former naval instructional airframes A2767 and A2678.,Wessex HU5; S-58; G-WSEX; S58,"Historic Helicopters, Chard",on_display
+Westland,Sea King,HAR.3,XZ588,,,rotary_wing,,military,search_rescue,,"Ex-RAF search and rescue Sea King, civil-registered G-SEAK.",Sea King HAR3; SH-3; G-SEAK; SH3,"Historic Helicopters, Chard",on_display
+Westland,Sea King,HAR.3,XZ597,,,rotary_wing,,military,search_rescue,,"Ex-RAF Sea King coded M, civil-registered G-SKNG.",Sea King HAR3; SH-3; G-SKNG; SH3,"Historic Helicopters, Chard",on_display
+Westland,Lynx,AH.7,XZ616,,,rotary_wing,,military,utility,,"Ex-Army Air Corps Lynx, civil-registered G-LNKX.",Lynx AH7; WG-13; G-LNKX; WG13,"Historic Helicopters, Chard",on_display
+Westland,Sea King,HC.4,ZA314,,,rotary_wing,,military,transport,,"Ex-Royal Navy Commando Sea King coded WT, civil-registered G-CMDO.",Sea King HC4; Commando; G-CMDO,"Historic Helicopters, Chard",on_display
+Westland,Lynx,HMA.8SRU,ZD252,,,rotary_wing,,military,utility,,"Ex-Royal Navy Lynx coded VL-312, civil-registered G-NCKZ. Last confirmed December 2025.",Lynx HMA8; WG-13; G-NCKZ; WG13,"Historic Helicopters, Chard",on_display

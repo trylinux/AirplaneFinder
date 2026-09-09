@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Westland,Scout,AH.1,XV141,,,rotary_wing,,military,utility,,Displayed inside the REME Museum at MoD Lyneham. Last confirmed October 2023.,Scout AH1; P.531; Wasp,"REME Museum, Lyneham",on_display
+Westland,Lynx,Mk.28,QP32,,,rotary_wing,,military,utility,,Ex-Qatar Police Lynx in a blue colour scheme; former British Army training airframe TAD016. Displayed outside the museum.,Lynx 28; WG-13; TAD016; WG13,"REME Museum, Lyneham",on_display
+BAE Systems,Phoenix,,ZJ449,,,fixed_wing,monoplane,military,drone,,Army battlefield surveillance unmanned air vehicle held by the REME Museum in store.,Phoenix UAV; Phoenix,"REME Museum, Lyneham",in_storage

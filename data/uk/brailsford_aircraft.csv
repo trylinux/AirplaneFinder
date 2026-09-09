@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Westland,Lynx,HAS.3S,XZ237,,,rotary_wing,,military,utility,,Preserved outside at the Brailsford paintball site.,631,"Lynx Helicopters, Brailsford Paintball",on_display
+Westland,Lynx,HAS.3S,XZ235,,,rotary_wing,,military,utility,,Used as a paintball prop at Brailsford; ex-Royal Navy Icelandic-modified airframe.,630,"Lynx Helicopters, Brailsford Paintball",on_display
+Westland,Lynx,HAS.3S,XZ693,,,rotary_wing,,military,utility,,Used as a paintball prop at Brailsford.,,"Lynx Helicopters, Brailsford Paintball",on_display

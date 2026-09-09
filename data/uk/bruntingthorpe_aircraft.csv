@@ -1,0 +1,28 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Handley Page,Victor,K.2,XM715,,,fixed_wing,monoplane,military,tanker,,Kept in ground-running condition by the Cold War Jets Collection and demonstrated on fast-taxi runs at public events; 55 Squadron markings. Last flew in 1993.,Teasin Tina,Bruntingthorpe Cold War Jets Collection,on_display
+English Electric,Lightning,F.6,XR728,,,fixed_wing,monoplane,military,fighter,,Lightning Preservation Group airframe kept in ground-running condition and demonstrated at LPG events; Lightning Training Flight markings.,JS,Bruntingthorpe Cold War Jets Collection,on_display
+English Electric,Lightning,F.6,XS904,,,fixed_wing,monoplane,military,fighter,,Lightning Preservation Group airframe kept in ground-running condition; 11 Squadron markings.,BQ,Bruntingthorpe Cold War Jets Collection,on_display
+English Electric,Lightning,F.3,XR713,,,fixed_wing,monoplane,military,fighter,,Preserved outside wearing the false serial XR718; 56 and 111 Squadron markings. Confirmed 2025.,XR718; C,Bruntingthorpe Cold War Jets Collection,on_display
+English Electric,Lightning,F.3,XP703,,,fixed_wing,monoplane,military,fighter,,"Cockpit section only, in 74 Squadron markings.",,Bruntingthorpe Cold War Jets Collection,on_display
+English Electric,Lightning,T.5,XV328,,,fixed_wing,monoplane,military,fighter,,Nose section only.,,Bruntingthorpe Cold War Jets Collection,on_display
+English Electric,Lightning,F.53,ZF590,,,fixed_wing,monoplane,military,fighter,,Cockpit section only; ex-Royal Saudi Air Force 53-679.,,Bruntingthorpe Cold War Jets Collection,on_display
+Hawker Siddeley,Nimrod,MR.2,XV226,,,fixed_wing,monoplane,military,recon,,"Preserved outside; the first Nimrod, flown into Bruntingthorpe in 2010.",,Bruntingthorpe Cold War Jets Collection,on_display
+de Havilland,Comet,4C,XS235,,,fixed_wing,monoplane,civilian,commercial_transport,,"Ex-Ministry of Defence trials Comet, kept in ground-running condition.",G-CPDA; Canopus; GCPDA,Bruntingthorpe Cold War Jets Collection,on_display
+de Havilland,Sea Vixen,FAW.2,XJ494,,,fixed_wing,monoplane,military,fighter,,Displayed outside in 899 Naval Air Squadron markings. Confirmed 2025.,E-121; E121,Bruntingthorpe Cold War Jets Collection,on_display
+English Electric,Canberra,B.6,WT333,,,fixed_wing,monoplane,military,bomber,,Displayed outside. Confirmed 2025.,G-BVXC; GBVXC,Bruntingthorpe Cold War Jets Collection,on_display
+Hawker,Hunter,GA.11,WT806,,,fixed_wing,monoplane,military,fighter,,Displayed outside. Confirmed 2025.,868,Bruntingthorpe Cold War Jets Collection,on_display
+Hawker,Hunter,T.7,XL565,,,fixed_wing,monoplane,military,fighter,,Displayed outside. Confirmed 2025.,Y,Bruntingthorpe Cold War Jets Collection,on_display
+Hawker,Hunter,T.8C,XF994,,,fixed_wing,monoplane,military,fighter,,Stored outside.,VL-873; VL873,Bruntingthorpe Cold War Jets Collection,in_storage
+Hunting,Jet Provost,T.3A,XM365,,,fixed_wing,monoplane,military,trainer,,Displayed outside. Confirmed 2025.,,Bruntingthorpe Cold War Jets Collection,on_display
+Hunting,Jet Provost,T.5A,XW290,,,fixed_wing,monoplane,military,trainer,,Displayed outside in Royal Air Force College markings. Confirmed 2025.,9199M; 41; MA,Bruntingthorpe Cold War Jets Collection,on_display
+Folland,Gnat,T.1,XP540,,,fixed_wing,monoplane,military,trainer,,Held at Bruntingthorpe.,8608M,Bruntingthorpe Cold War Jets Collection,in_storage
+de Havilland,Sea Venom,FAW.21,WM571,,,fixed_wing,monoplane,military,fighter,,Under restoration at Bruntingthorpe.,VL,Bruntingthorpe Cold War Jets Collection,under_restoration
+Armstrong Whitworth,Meteor,TT.20,WM167,,,fixed_wing,monoplane,military,fighter,,Displayed outside. Confirmed 2025.,G-LOSM; GLOSM,Bruntingthorpe Cold War Jets Collection,on_display
+de Havilland,Venom,FB.4,J-1542,,,fixed_wing,monoplane,military,fighter,,Ex-Swiss Air Force; displayed outside wearing the false serial WR470 and 208 Squadron markings.,G-DHVM; WR470; GDHVM,Bruntingthorpe Cold War Jets Collection,on_display
+Lockheed,F-104,G,22+35,Starfighter,,fixed_wing,monoplane,military,fighter,,Ex-West German Air Force; displayed outside. Confirmed 2025.,F104; KE+413; DD+105; F104G,Bruntingthorpe Cold War Jets Collection,on_display
+PZL-Mielec,TS-11,bis B,1018,Iskra,,fixed_wing,monoplane,military,trainer,,Ex-Polish Air Force; displayed outside. Confirmed 2025.,TS11; G-ISKA; GISKA,Bruntingthorpe Cold War Jets Collection,on_display
+Aero,L-29,M,53,Delfin,,fixed_wing,monoplane,military,trainer,,Ex-Cuban Air Force; displayed outside wearing 66654. Confirmed 2025.,L29; 66654; L29M,Bruntingthorpe Cold War Jets Collection,on_display
+Dassault,Mystere IV,IVA,85,,,fixed_wing,monoplane,military,fighter,,Ex-Armee de l Air; preserved at the entrance.,8-MV; 8MV,Bruntingthorpe Cold War Jets Collection,on_display
+SEPECAT,Jaguar,GR.1,XZ382,,,fixed_wing,monoplane,military,ground_attack,,Preserved at the entrance.,8908M,Bruntingthorpe Cold War Jets Collection,on_display
+Vickers,VC10,K.3,ZA147,,,fixed_wing,monoplane,military,tanker,,Cockpit section only; the remainder of the airframe was scrapped.,5H-MMT; N147ZA; 5HMMT,Bruntingthorpe Cold War Jets Collection,in_storage
+Lockheed,TriStar,KC.1,ZD948,,,fixed_wing,monoplane,military,tanker,,Flight deck only; the airframe was scrapped in March 2022 and the flight deck retained.,G-BFCA; N304CS; 948; GBFCA,Bruntingthorpe Cold War Jets Collection,in_storage

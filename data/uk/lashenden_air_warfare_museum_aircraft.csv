@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Focke-Achgelis,Fa 330,A-1,100549,Bachstelze,,rotary_wing,,military,recon,,"Focke-Achgelis Fa 330A-1 Bachstelze U-boat observation gyro kite, Werk Nr 100549, displayed inside. Confirmed Aug 2023.",Fa330; Fa330A1; A1,Lashenden Air Warfare Museum,on_display
+Fieseler,Fi 103R,R-4,,,,missile_rocket,,military,cruise,,"Fieseler Fi 103R-4 Reichenberg, the piloted version of the V-1 flying bomb, recovered from the Danneburg factory and restored; displayed inside.",Fi 103R; Reichenberg; V-1; V1; Fi103R4; R4,Lashenden Air Warfare Museum,on_display

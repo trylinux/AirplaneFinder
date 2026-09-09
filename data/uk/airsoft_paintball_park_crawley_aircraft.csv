@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Westland,Lynx,AH.7,XZ205,,,rotary_wing,,military,utility,,Westland Lynx AH.7 used as a game prop at the Airsoft Paintball Park in Driver Wood. Last reported Jun 2021.,UA-239; UA239,"Airsoft Paintball Park Aircraft, Crawley",on_display
+Westland,Sea King,HAS.5,XZ575,,,rotary_wing,,military,anti_ship,,Westland Sea King HAS.5 used as a game prop. Confirmed Jun 2025.,,"Airsoft Paintball Park Aircraft, Crawley",on_display
+Westland,Sea King,HC.4,ZD476,,,rotary_wing,,military,transport,,Westland Sea King HC.4 coded WZ used as a game prop. Confirmed Jun 2025.,,"Airsoft Paintball Park Aircraft, Crawley",on_display

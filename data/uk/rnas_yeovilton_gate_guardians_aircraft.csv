@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+British Aerospace,Sea Harrier,F/A.2,ZD578,,,fixed_wing,monoplane,military,fighter,,"Gate guardian at RNAS Yeovilton, marked '000' and '122' in 800/801 NAS colours. Confirmed in place Jul 2024.",Sea Harrier FA2; Sea Harrier F/A2; Harrier,RNAS Yeovilton Gate Guardians,on_display
+Westland,Lynx,AH.7,XZ670,,,rotary_wing,,military,utility,,"Preserved gate guardian at RNAS Yeovilton, marked 'A'. Army Air Corps pattern Lynx commemorating the Commando Helicopter Force. Confirmed in place Jul 2024.",Lynx AH7; WG-13; WG13,RNAS Yeovilton Gate Guardians,on_display
+Westland,Lynx,HMA.8,XZ728,,,rotary_wing,,military,utility,,"Preserved gate guardian at RNAS Yeovilton, marked 'AW-326'. HMA.8SRU standard. Confirmed in place Jul 2024.",Lynx HMA8; Lynx HMA8SRU; WG-13; WG13,RNAS Yeovilton Gate Guardians,on_display

@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Westland,Scout,AH.1,XT638,,,rotary_wing,,military,utility,,Westland Scout AH.1 coded N preserved as a gate guardian at Army Aviation Centre Middle Wallop. Confirmed Jul 2024.,,AAC Middle Wallop Gate Guardians,on_display
+Westland-Bell,Sioux,AH.1,XT827,,,rotary_wing,,military,recon,,Westland-Bell Sioux AH.1 preserved as a gate guardian wearing the false serial XT231. Confirmed Oct 2025.,Bell 47; XT231,AAC Middle Wallop Gate Guardians,on_display
+Westland,Lynx,AH.7,XZ184,,,rotary_wing,,military,utility,,Westland Lynx AH.7 coded B preserved as a gate guardian. Confirmed Jul 2024.,,AAC Middle Wallop Gate Guardians,on_display
+Aerospatiale,Gazelle,AH.1,XZ346,,,rotary_wing,,military,recon,,Aerospatiale Gazelle AH.1 preserved as a gate guardian. Confirmed Jul 2024.,SA.341; SA341,AAC Middle Wallop Gate Guardians,on_display
+Westland,Lynx,AH.9A,ZG917,,,rotary_wing,,military,utility,,"Westland Lynx AH.9A in special markings, preserved on the station. Confirmed Jul 2024.",,AAC Middle Wallop Gate Guardians,on_display
+Westland,Apache,AH.1,ZJ171,,,rotary_wing,,military,ground_attack,,Westland Apache AH.1 preserved as a gate guardian. Confirmed Oct 2025.,AH-64D; AH64D; WAH-64; WAH64,AAC Middle Wallop Gate Guardians,on_display

@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Gloster,Meteor,T.7,WA630,,,fixed_wing,monoplane,military,trainer,,"Nose section only, coded 69. Displayed inside. Last reported Apr 2023.",,Robertsbridge Aviation Society Museum,on_display
+English Electric,Canberra,PR.3,WE173,,,fixed_wing,monoplane,military,recon,,Nose section only of an English Electric Canberra PR.3. Displayed inside. Last reported Apr 2023.,,Robertsbridge Aviation Society Museum,on_display
+Hawker,Hunter,F.2,WN907,,,fixed_wing,monoplane,military,fighter,,"Nose section only, in 257 Squadron markings. Displayed inside. Last reported Apr 2023.",,Robertsbridge Aviation Society Museum,on_display
+de Havilland,Sea Vixen,FAW.1,XJ488,,,fixed_wing,monoplane,military,fighter,,Nose section only of a de Havilland Sea Vixen FAW.1. Displayed inside. Last reported Apr 2023.,,Robertsbridge Aviation Society Museum,on_display
+English Electric,Lightning,F.3,XP701,,,fixed_wing,monoplane,military,fighter,,"Nose section only, in 11 Squadron markings. Displayed outside. Last reported Apr 2023.",,Robertsbridge Aviation Society Museum,on_display
+Hunting,Jet Provost,T.4,XR681,,,fixed_wing,monoplane,military,trainer,,Nose section only of a Hunting Jet Provost T.4. Displayed inside. Last reported Apr 2023.,,Robertsbridge Aviation Society Museum,on_display

@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Hunting,Jet Provost,T.3,XN632,,,fixed_wing,monoplane,military,trainer,,Under restoration; wears the false serial XN623. Confirmed 2026.,XN623; 8352M,"Chetton Heritage Aircraft Collection, Bridgnorth",under_restoration
+Hunting,Jet Provost,T.3,XN597,,,fixed_wing,monoplane,military,trainer,,Nose section only. Confirmed 2026.,7984M; X,"Chetton Heritage Aircraft Collection, Bridgnorth",on_display
+Hawker Siddeley,Harrier,GR.3,XV808,,,fixed_wing,monoplane,military,ground_attack,,Preserved at Chetton. Confirmed 2026.,9076M; A2687; DD-08; DD08,"Chetton Heritage Aircraft Collection, Bridgnorth",on_display
+English Electric,Canberra,T.4,WT486,,,fixed_wing,monoplane,military,bomber,,Nose section only. Confirmed 2026.,,"Chetton Heritage Aircraft Collection, Bridgnorth",on_display
+Vickers,Varsity,T.1,WL627,,,fixed_wing,monoplane,military,trainer,,"Nose section only, held in store. Confirmed 2026.",8488M,"Chetton Heritage Aircraft Collection, Bridgnorth",in_storage

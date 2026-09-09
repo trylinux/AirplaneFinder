@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Westland,Lynx,AH.9A,ZG921,,,rotary_wing,,military,utility,,Westland Lynx AH.9A displayed inside the museum. Confirmed Dec 2025.,,National Army Museum,on_display
+BAE Systems,Phoenix,,,,,fixed_wing,monoplane,military,drone,,"BAE Systems Phoenix battlefield reconnaissance drone, prototype airframe BO23, displayed inside. Confirmed Dec 2025.",BO23; Phoenix UAV,National Army Museum,on_display

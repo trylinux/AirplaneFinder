@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Supermarine,Spitfire,Mk IX,ML427,,,fixed_wing,monoplane,military,fighter,,Displayed inside Thinktank; a Castle Bromwich-built Spitfire returned to Birmingham where it was made.,6457M; HK-A; HKA,Thinktank Birmingham Science Museum,on_display
+Hawker,Hurricane,Mk IV,KX829,,,fixed_wing,monoplane,military,fighter,,Displayed inside Thinktank wearing the false serial P3395.,P3395; JX-B; JXB,Thinktank Birmingham Science Museum,on_display

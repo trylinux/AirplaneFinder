@@ -1,0 +1,12 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Panavia,Tornado,GR.4,ZD744,,,fixed_wing,monoplane,military,ground_attack,,RAF strike aircraft displayed outdoors coded 092; delivered to the heritage centre on retirement of the GR.4 fleet.,Tornado GR4; Tornado IDS,Montrose Air Station Heritage Centre,on_display
+Hawker,Hunter,F.1,WT619,,,fixed_wing,monoplane,military,fighter,,Early production Hunter day fighter.,Hunter F1; P.1067,Montrose Air Station Heritage Centre,on_display
+Gloster,Meteor,T.7,WF825,,,fixed_wing,monoplane,military,trainer,,Two-seat Meteor trainer displayed coded A.,Meteor T7; Meteor T.7,Montrose Air Station Heritage Centre,on_display
+de Havilland,Sea Vampire,T.22,XA109,,,fixed_wing,monoplane,military,trainer,,Royal Navy deck-landing trainer version of the Vampire T.11.,Sea Vampire T22; DH.115; DH115,Montrose Air Station Heritage Centre,on_display
+McDonnell Douglas,Phantom,FGR.2,XT903,,,fixed_wing,monoplane,military,fighter,,Nose section only of an RAF Phantom FGR.2.,Phantom FGR2; F-4M; F4M,Montrose Air Station Heritage Centre,on_display
+Avro,Anson,C.19,TX226,,,fixed_wing,monoplane,military,transport,,Airframe/fuselage frame of an RAF Anson C.19 held for restoration and display.,Anson C19; Avro 652A,Montrose Air Station Heritage Centre,on_display
+Miles,M.2H,Hawk Major,G-ADMW,,,fixed_wing,monoplane,civilian,trainer,,"Fuselage of a 1930s Miles Hawk Major, impressed into RAF service as DG590.",M.2H; M2H; Hawk Major; DG590,Montrose Air Station Heritage Centre,on_display
+MBA,Tiger Cub,440,G-MMLM,,,fixed_wing,monoplane,civilian,private,,Single-seat microlight.,Tiger Cub 440; MBA Tiger Cub,Montrose Air Station Heritage Centre,on_display
+Royal Aircraft Factory,B.E.2,c,,,,fixed_wing,biplane,military,recon,,"Full-scale replica built to represent the B.E.2c flown from Montrose by the Royal Flying Corps, marked 471.",BE2c; BE.2c; B.E.2c,Montrose Air Station Heritage Centre,on_display
+Sopwith,Camel,F.1,,,,fixed_wing,biplane,military,fighter,,"Full-scale replica marked B5577, representing First World War fighter training at Montrose.",Camel F1; F.1 Camel; B5577,Montrose Air Station Heritage Centre,on_display
+Supermarine,Spitfire,Mk Vb,,,,fixed_wing,monoplane,military,fighter,,"Full-scale glass-fibre replica marked EP121, displayed at the heritage centre entrance.",Spitfire Vb; Spitfire V; EP121,Montrose Air Station Heritage Centre,on_display

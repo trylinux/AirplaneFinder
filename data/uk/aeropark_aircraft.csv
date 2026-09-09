@@ -1,0 +1,36 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Avro,Vulcan,B.2,XM575,,,fixed_wing,monoplane,military,bomber,,Displayed outside in 44 Squadron markings; flown into East Midlands Airport in 1983 and open to visitors on cockpit tours. Confirmed 2025.,,East Midlands Aeropark,on_display
+English Electric,Lightning,F.53,ZF588,,,fixed_wing,monoplane,military,fighter,,Ex-Royal Saudi Air Force; displayed outside in 74 Squadron markings.,L,East Midlands Aeropark,on_display
+Hawker Siddeley,Nimrod,R.1,XW664,,,fixed_wing,monoplane,military,electronic_warfare,,Displayed outside in 51 Squadron markings.,,East Midlands Aeropark,on_display
+Blackburn,Buccaneer,S.2B,XV350,,,fixed_wing,monoplane,military,ground_attack,,Displayed outside.,,East Midlands Aeropark,on_display
+SEPECAT,Jaguar,GR.3A,XZ369,,,fixed_wing,monoplane,military,ground_attack,,Displayed outside in 6 Squadron markings.,EU,East Midlands Aeropark,on_display
+English Electric,Canberra,T.17,WH740,,,fixed_wing,monoplane,military,electronic_warfare,,Displayed outside in 360 Squadron markings.,8762M; K,East Midlands Aeropark,on_display
+Vickers,Varsity,T.1,WL626,,,fixed_wing,monoplane,military,trainer,,Displayed outside.,G-BHDD; P; GBHDD,East Midlands Aeropark,on_display
+Armstrong Whitworth,Meteor,TT.20,WM224,,,fixed_wing,monoplane,military,fighter,,Displayed outside.,8177M; X,East Midlands Aeropark,on_display
+Gloster,Meteor,NF.13,WM367,,,fixed_wing,monoplane,military,fighter,,Nose section only.,,East Midlands Aeropark,on_display
+de Havilland,Vampire,T.11,XD447,,,fixed_wing,monoplane,military,trainer,,Displayed outside.,,East Midlands Aeropark,on_display
+de Havilland,Vampire,T.11,XD534,,,fixed_wing,monoplane,military,trainer,,Displayed outside; boom and wings from another airframe.,,East Midlands Aeropark,on_display
+de Havilland,Sea Venom,FAW.22,XG737,,,fixed_wing,monoplane,military,fighter,,Displayed inside.,438,East Midlands Aeropark,on_display
+Gloster,Javelin,FAW.9,XH767,,,fixed_wing,monoplane,military,fighter,,Under restoration in 11 Squadron markings.,7955M; L,East Midlands Aeropark,under_restoration
+Hawker,Sea Hawk,FB.5,WF299,,,fixed_wing,monoplane,military,ground_attack,,Under restoration; wears the false serial WN105.,A2509; 8164M; WN105,East Midlands Aeropark,under_restoration
+Hawker,Hunter,T.7,XL569,,,fixed_wing,monoplane,military,fighter,,Displayed outside.,8833M; 85,East Midlands Aeropark,on_display
+Hawker,Hunter,GA.11,WV382,,,fixed_wing,monoplane,military,fighter,,Displayed outside.,A2730; VL-830; VL830,East Midlands Aeropark,on_display
+Hawker,Hunter,FR.10,XJ714,,,fixed_wing,monoplane,military,fighter,,Complex composite airframe built from XJ714 with parts of XG226 and PH-NLH; carried on the Euro Demobbed register as BAPC548.,BAPC548; XG226; PH-NLH; PHNLH,East Midlands Aeropark,on_display
+Hunting,Jet Provost,T.4,XP568,,,fixed_wing,monoplane,military,trainer,,Displayed outside.,85,East Midlands Aeropark,on_display
+Percival,Provost,T.1,WW442,,,fixed_wing,monoplane,military,trainer,,Displayed outside.,7618M; N,East Midlands Aeropark,on_display
+de Havilland Canada,Chipmunk,T.10,WP784,,,fixed_wing,monoplane,military,trainer,,Displayed outside; composite with WZ876.,WZ876; M; RCY-E; RCYE,East Midlands Aeropark,on_display
+Auster,Auster,T.7,WE558,,,fixed_wing,monoplane,military,recon,,Cockpit area mated in 2020 to an unidentified AOP.6 fuselage; under restoration.,G-ASDL; GASDL,East Midlands Aeropark,under_restoration
+Slingsby,Cadet,TX.3,WT914,,,fixed_wing,monoplane,military,trainer,,Displayed inside.,BGA3194,East Midlands Aeropark,on_display
+Vickers,VC10,C.1K,XV108,,,fixed_wing,monoplane,military,tanker,,"Forward fuselage only, displayed outside.",,East Midlands Aeropark,on_display
+Scottish Aviation,Jetstream,T.1,XX494,,,fixed_wing,monoplane,military,trainer,,Displayed outside in 45 Squadron markings.,B,East Midlands Aeropark,on_display
+Aerospatiale,Gazelle,AH.1,XX457,,,rotary_wing,,military,utility,,Displayed outside wearing the false marking TAD001.,TAD001,East Midlands Aeropark,on_display
+Westland,Wessex,HC.2,XT604,,,rotary_wing,,military,utility,,Under restoration in 22 Squadron markings.,,East Midlands Aeropark,under_restoration
+Westland,Sea King,HC.4,ZD477,,,rotary_wing,,military,transport,,Displayed outside.,E,East Midlands Aeropark,on_display
+Westland,Lynx,HAS.3GMS,XZ721,,,rotary_wing,,military,utility,,Displayed outside.,,East Midlands Aeropark,on_display
+Westland,Whirlwind,Srs 3,XG588,,,rotary_wing,,military,search_rescue,,Ex-RAF Whirlwind HAR.3 later civil-converted as VR-BEP; displayed outside in 22 Squadron markings.,VR-BEP; VRBEP,East Midlands Aeropark,on_display
+Armstrong Whitworth,Argosy,101,G-BEOZ,,,fixed_wing,monoplane,civilian,freighter,,Ex-Elan Air freighter displayed outside and open on cockpit tours.,,East Midlands Aeropark,on_display
+Beagle,206,206X,G-ARRM,,,fixed_wing,monoplane,civilian,private,,Prototype Beagle 206 displayed outside.,,East Midlands Aeropark,on_display
+de Havilland,Dove,,G-ANUW,,,fixed_wing,monoplane,civilian,commercial_transport,,Displayed outside.,,East Midlands Aeropark,on_display
+Vickers,Vanguard,953C,G-APES,,,fixed_wing,monoplane,civilian,commercial_transport,,"Cockpit section only, displayed outside.",,East Midlands Aeropark,on_display
+Vickers,Viscount,804,G-CSZB,,,fixed_wing,monoplane,civilian,commercial_transport,,"Cockpit section only, displayed outside.",,East Midlands Aeropark,on_display
+Schleicher,Ka 8,,,,,fixed_wing,monoplane,civilian,private,,Schleicher Ka 8 glider displayed at the Aeropark; registration not established.,,East Midlands Aeropark,on_display

@@ -1,0 +1,16 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Gloster,Meteor,F.3,EE425,,,fixed_wing,monoplane,military,fighter,,Cockpit/nose section only of an early Gloster-built Meteor. Displayed inside; last confirmed April 2026.,Meteor F3; Meteor; G.41,Jet Age Museum,on_display
+Gloster,Gladiator,Mk.II,N5914,,,fixed_wing,biplane,military,fighter,,Airframe frame under long-term restoration inside the museum.,Gladiator II; Gladiator; SS.37,Jet Age Museum,under_restoration
+Hawker,Hunter,F.4,XE664,,,fixed_wing,monoplane,military,fighter,,"Original F.4 nose section, in 26 Squadron markings.",Hunter F4; P.1067; Hunter,Jet Age Museum,on_display
+Gloster,Meteor,T.7,VW453,,,fixed_wing,monoplane,military,trainer,,Ex-maintenance serial 8703M; displayed outdoors.,Meteor T7; Meteor; 8703M,Jet Age Museum,on_display
+Gloster,Meteor,F.8,WH364,,,fixed_wing,monoplane,military,fighter,,"Ex-maintenance serial 8169M, in 601 Squadron markings, coded A.",Meteor F8; Meteor; 8169M,Jet Age Museum,on_display
+Armstrong Whitworth,Meteor,NF.13,WM366,,,fixed_wing,monoplane,military,fighter,,Composite airframe rebuilt from Meteor NF components; displayed outdoors.,Meteor NF13; Meteor; AW Meteor,Jet Age Museum,on_display
+Armstrong Whitworth,Meteor,NF.14,WS807,,,fixed_wing,monoplane,military,fighter,,"Ex-maintenance serial 7973M, in 46 Squadron markings, coded N. Under restoration.",Meteor NF14; Meteor; 7973M,Jet Age Museum,under_restoration
+de Havilland,Sea Vampire,T.22,XG775,,,fixed_wing,monoplane,military,trainer,,Fuselage pod only of a Royal Navy Sea Vampire trainer.,Sea Vampire T22; Vampire T11; DH.115,Jet Age Museum,on_display
+Gloster,Javelin,FAW.9,XH903,,,fixed_wing,monoplane,military,fighter,,"Displayed inside in 33 Squadron markings, coded G.",Javelin FAW9; Javelin; G.101,Jet Age Museum,on_display
+Avro,Vulcan,B.2,XM569,,,fixed_wing,monoplane,military,bomber,,Nose section only; displayed outdoors.,Vulcan B2; Vulcan; Type 698,Jet Age Museum,on_display
+Gloster,Gamecock,Mk.I,J7904,,,fixed_wing,biplane,military,fighter,,"Full-size reproduction of the Gloster Gamecock biplane fighter, built by museum volunteers; not an original airframe.",Gamecock; Gamecock I,Jet Age Museum,on_display
+Gloster,E.28/39,,,,,fixed_wing,monoplane,military,experimental,,"Full-size replica of Britain's first jet aircraft, the Gloster-Whittle E.28/39, built by museum volunteers.",E28/39; E2839; Whittle; Pioneer,Jet Age Museum,on_display
+Hawker,Hurricane,Mk.I,V6799,,,fixed_wing,monoplane,military,fighter,,Full-size replica Hurricane; not an original airframe.,Hurricane I; Hurricane,Jet Age Museum,on_display
+Airspeed,Horsa,Mk.I,,,,fixed_wing,monoplane,military,transport,,Replica cockpit section of the Airspeed Horsa assault glider.,Horsa I; AS.51; Horsa,Jet Age Museum,on_display
+Hawker,Typhoon,Mk.IB,,,,fixed_wing,monoplane,military,ground_attack,,Cockpit/fuselage section under restoration; no confirmed individual serial published.,Typhoon IB; Typhoon,Jet Age Museum,under_restoration

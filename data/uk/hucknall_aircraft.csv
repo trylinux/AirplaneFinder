@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Armstrong Whitworth,Meteor,NF(T).14,WS760,,,fixed_wing,monoplane,military,fighter,,Held by the Hucknall flight test heritage collection; stored. Confirmed 2026.,7964M,Hucknall Flight Test Museum,in_storage
+Hunting,Jet Provost,T.3,XN492,,,fixed_wing,monoplane,military,trainer,,Nose section only. Confirmed 2025.,8079M,Hucknall Flight Test Museum,on_display
+Hawker Siddeley,Harrier,GR.1,XV798,,,fixed_wing,monoplane,military,ground_attack,,Early Harrier development airframe; stored. Confirmed 2025.,,Hucknall Flight Test Museum,in_storage

@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Avro,Shackleton,T.4,WG511,,,fixed_wing,monoplane,military,trainer,,"Forward fuselage section only of an Avro Shackleton T.4, preserved outside. Confirmed Mar 2026.",,Aces High Aviation Gallery,on_display
+Fairey,Gannet,AEW.3,XL449,,,fixed_wing,monoplane,military,recon,,Nose section only of a Fairey Gannet AEW.3. Last reported Dec 2015.,,Aces High Aviation Gallery,on_display
+Hunting,Jet Provost,T.3,XN511,,,fixed_wing,monoplane,military,trainer,,"Nose section only, coded 12. Confirmed present Aug 2026.",,Aces High Aviation Gallery,on_display
+de Havilland,Sea Vixen,FAW.2,XN647,,,fixed_wing,monoplane,military,fighter,,"Nose section only, coded 707. Last reported Feb 2015.",,Aces High Aviation Gallery,on_display
+Blackburn,Buccaneer,S.2B,XX899,,,fixed_wing,monoplane,military,ground_attack,,"Nose section only, in 12 Squadron markings. Confirmed present Aug 2026.",,Aces High Aviation Gallery,on_display

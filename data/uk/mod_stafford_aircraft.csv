@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Hawker Siddeley,Harrier,GR.3,XZ987,,,fixed_wing,monoplane,military,ground_attack,,Gate guardian at MoD Stafford in 1417 Flight markings. Confirmed 2025.,9185M; C,MoD Stafford Beacon Barracks Aircraft Display,on_display
+Westland,Wessex,HC.2,XT672,,,rotary_wing,,military,utility,,Preserved on base at MoD Stafford in 2 Flying Training School markings.,WE; Aries,MoD Stafford Beacon Barracks Aircraft Display,on_display
