@@ -22,7 +22,7 @@
 
     <!-- ?v= cache-buster: bump this string whenever style.css changes so browsers
          pick up the new file without requiring users to hard-refresh. -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=mobile-management-2">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=pager-window-1">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile-nav.css') }}?v=bottom-tabs-1">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/detail.css') }}?v=detail-1">
     {% block head %}{% endblock %}
@@ -137,7 +137,7 @@
 
     {% include "_mobile_bottomnav.html" %}
 
-    <script src="{{ url_for('static', filename='js/app.js') }}?v=catalog-pages-2"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}?v=pager-window-1"></script>
     {% block scripts %}{% endblock %}
 </body>
 </html>

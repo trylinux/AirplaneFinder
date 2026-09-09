@@ -39,7 +39,7 @@
         <div id="m-prox-results" style="margin-top:.85rem;"></div>
     </div>
 
-    <h2 class="m-section-title"><i class="fa-solid fa-magnifying-glass"></i> Browse Museums</h2>
+    <h2 class="m-section-title" id="m-browse-title"><i class="fa-solid fa-magnifying-glass"></i> Browse Museums</h2>
     <div class="m-search">
         <input type="text" aria-label="Search museums" id="m-q" placeholder="Search museums...">
         <button id="m-go" aria-label="Search museums"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -105,16 +105,19 @@ $(function() {
     // tappable cards linking to /museums/<id> instead of a modal.
     function museumCard(m, dist) {
         var loc = m.city + (m.state_province ? ', ' + m.state_province : '') + ', ' + m.country;
-        return '<a class="m-list-item" href="/museums/' + m.id + '">'
+        // Title links to the museum page; the website link (same as the
+        // desktop card) sits in its own row so the anchors don't nest.
+        return '<div class="m-list-item m-list-item-link" data-href="/museums/' + m.id + '">'
              + '<div class="m-list-title">'
-             +   '<span>' + escHtml(m.name) + '</span>'
+             +   '<a href="/museums/' + m.id + '" style="color:inherit;">' + escHtml(m.name) + '</a>'
              +   '<span class="m-badge">' + (dist == null ? '? mi' : dist + ' mi') + '</span>'
              + '</div>'
              + '<div class="m-list-meta">'
              +   '<span><i class="fa-solid fa-location-dot"></i>' + escHtml(loc) + '</span>'
              +   (m.region ? '<span><i class="fa-solid fa-globe"></i>' + escHtml(m.region) + '</span>' : '')
              + '</div>'
-             + '</a>';
+             + (m.website ? '<div class="m-list-actions"><a href="' + escHtml(m.website) + '" target="_blank" rel="noopener"><i class="fa-solid fa-external-link-alt"></i>Website</a></div>' : '')
+             + '</div>';
     }
 
     function doMuseumProximity() {
@@ -149,6 +152,11 @@ $(function() {
         });
     }
     $('#m-prox-go').on('click', doMuseumProximity);
+    // Whole card is a tap target; real links inside it win.
+    $('#m-prox-results').on('click', '.m-list-item-link', function(e) {
+        if ($(e.target).closest('a').length) return;
+        window.location.href = $(this).data('href');
+    });
     $('#m-prox-location').on('keypress', function(e) { if (e.which === 13) doMuseumProximity(); });
 
     function load(page) {
@@ -172,7 +180,7 @@ $(function() {
             $('#m-results').html('<div class="m-list-empty">No museums found.</div>');
             return;
         }
-        var html = '<div class="m-list">';
+        var html = '<div class="m-results-meta">' + d.total + ' museums found</div><div class="m-list">';
         d.results.forEach(function(m) {
             var loc = m.city + (m.state_province ? ', ' + m.state_province : '') + ', ' + m.country;
             // Whole card is a link to /museums/<id>.
@@ -187,26 +195,18 @@ $(function() {
                  + '</a>';
         });
         html += '</div>';
-        html += '<div style="font-size:.75rem;color:var(--text-dim);text-align:center;margin-top:.5rem;">' + d.total + ' total</div>';
         $('#m-results').html(html);
     }
 
     function renderPages(cur, total) {
-        if (!total || total < 2) { $('#m-pages').empty(); return; }
-        var html = '';
-        if (cur > 1)     html += '<button data-p="' + (cur-1) + '">‹</button>';
-        if (cur > 2)     html += '<button data-p="1">1</button>';
-        if (cur > 3)     html += '<span style="align-self:center;color:var(--text-dim);">…</span>';
-        for (var i = Math.max(1, cur-1); i <= Math.min(total, cur+1); i++) {
-            html += '<button class="' + (i === cur ? 'active' : '') + '" data-p="' + i + '">' + i + '</button>';
-        }
-        if (cur < total-2) html += '<span style="align-self:center;color:var(--text-dim);">…</span>';
-        if (cur < total-1) html += '<button data-p="' + total + '">' + total + '</button>';
-        if (cur < total)   html += '<button data-p="' + (cur+1) + '">›</button>';
-        $('#m-pages').html(html);
+        $('#m-pages').html(renderMobilePager(cur, total));
     }
 
-    $('#m-pages').on('click', 'button', function() { load(parseInt($(this).data('p'), 10)); });
+    $('#m-pages').on('click', 'button', function() {
+        load(parseInt($(this).data('p'), 10));
+        // Land on the Browse header, not the proximity card above it.
+        $('#m-browse-title')[0].scrollIntoView({behavior: 'smooth', block: 'start'});
+    });
     $('#m-go').on('click', function() { load(1); });
     $('#m-q').on('keypress', function(e) { if (e.which === 13) load(1); });
     $('#m-region, #m-sort, #m-sort-dir').on('change', function() { load(1); });

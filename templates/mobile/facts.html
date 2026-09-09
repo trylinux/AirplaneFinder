@@ -15,6 +15,11 @@
 <button class="m-btn m-btn-primary m-btn-block" id="btn-another">
     <i class="fa-solid fa-shuffle"></i> Another fact
 </button>
+{% if current_user.is_authenticated %}
+<a href="/admin/facts" class="m-btn m-btn-secondary m-btn-block" style="margin-top:.5rem;">
+    <i class="fa-solid fa-pen"></i> Manage facts
+</a>
+{% endif %}
 {% endblock %}
 
 {% block scripts %}

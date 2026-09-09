@@ -54,7 +54,7 @@ $(function() {
             $('#ac-results').html('<div class="m-list-empty">No aircraft found.</div>');
             return;
         }
-        var html = '<div class="m-list">';
+        var html = '<div class="m-results-meta">' + d.total + ' aircraft found</div><div class="m-list">';
         d.results.forEach(function(a) {
             var milCivRaw = (a.military_civilian || 'military');   // raw for CSS class
             // Wrap each list item in an anchor so the whole card is a tap target.
@@ -75,28 +75,18 @@ $(function() {
             html += '</a>';
         });
         html += '</div>';
-        html += '<div style="font-size:.75rem;color:var(--text-dim);text-align:center;margin-top:.5rem;">' + d.total + ' total</div>';
         $('#ac-results').html(html);
     }
 
     function renderPages(cur, total) {
-        if (!total || total < 2) { $('#ac-pages').empty(); return; }
-        var html = '';
-        // Show prev / current+/-1 / next, condensed for mobile
-        if (cur > 1)     html += '<button data-p="' + (cur-1) + '">‹</button>';
-        if (cur > 2)     html += '<button data-p="1">1</button>';
-        if (cur > 3)     html += '<span style="align-self:center;color:var(--text-dim);">…</span>';
-        for (var i = Math.max(1, cur-1); i <= Math.min(total, cur+1); i++) {
-            html += '<button class="' + (i === cur ? 'active' : '') + '" data-p="' + i + '">' + i + '</button>';
-        }
-        if (cur < total-2) html += '<span style="align-self:center;color:var(--text-dim);">…</span>';
-        if (cur < total-1) html += '<button data-p="' + total + '">' + total + '</button>';
-        if (cur < total)   html += '<button data-p="' + (cur+1) + '">›</button>';
-        $('#ac-pages').html(html);
+        $('#ac-pages').html(renderMobilePager(cur, total));
     }
 
     $('.m-search-examples button').on('click', function() { $('#ac-q').val($(this).data('q')); load(1); });
-    $('#ac-pages').on('click', 'button', function() { load(parseInt($(this).data('p'), 10)); });
+    $('#ac-pages').on('click', 'button', function() {
+        load(parseInt($(this).data('p'), 10));
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
     $('#ac-go').on('click', function() { load(1); });
     $('#ac-q').on('keypress', function(e) { if (e.which === 13) load(1); });
 

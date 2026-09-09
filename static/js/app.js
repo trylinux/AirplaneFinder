@@ -91,7 +91,64 @@ function attachSortableHeaders($container, options) {
     });
 }
 
-function renderAircraftResults(results, total, container, page, pages) {
+/* pageWindow(page, pages, radius)
+ *
+ * Which page numbers a pager should show: the first and last page, the
+ * current page and `radius` neighbours each side, with null marking a gap.
+ * e.g. pageWindow(150, 300, 2) → [1, null, 148, 149, 150, 151, 152, null, 300]
+ * Shared by the desktop pager below and templates/mobile/base.html — keep
+ * the two copies identical.
+ */
+function pageWindow(page, pages, radius) {
+    radius = radius == null ? 2 : radius;
+    var out = [], last = 0;
+    for (var i = 1; i <= pages; i++) {
+        if (i === 1 || i === pages || Math.abs(i - page) <= radius) {
+            // A one-page hole is shown as the page itself — "3 … 5" is silly.
+            if (i - last === 2) out.push(i - 1);
+            else if (i - last > 2) out.push(null);
+            out.push(i);
+            last = i;
+        }
+    }
+    return out;
+}
+
+/* renderPagination(page, pages)
+ *
+ * Windowed pager HTML: ‹ 1 … 148 149 [150] 151 152 … 300 ›. Rendering every
+ * page as a button (the old behaviour) put hundreds of buttons in a
+ * non-wrapping flex row; the row was centred, so the visible slice started
+ * somewhere in the 100s and pages 1..N were unreachable. Every button
+ * carries data-page, which the page-level click handler reads.
+ */
+function renderPagination(page, pages) {
+    if (!pages || pages < 2) return '';
+    page = Math.min(Math.max(page || 1, 1), pages);
+    var html = '<nav class="pagination" aria-label="Pagination">';
+    html += '<button class="page-btn page-nav" data-page="' + (page - 1) + '"' +
+        (page <= 1 ? ' disabled' : '') + ' aria-label="Previous page">&lsaquo;</button>';
+    pageWindow(page, pages, 2).forEach(function(n) {
+        if (n === null) { html += '<span class="page-gap" aria-hidden="true">…</span>'; return; }
+        html += '<button class="page-btn' + (n === page ? ' active' : '') + '" data-page="' + n + '"' +
+            (n === page ? ' aria-current="page"' : '') + '>' + n + '</button>';
+    });
+    html += '<button class="page-btn page-nav" data-page="' + (page + 1) + '"' +
+        (page >= pages ? ' disabled' : '') + ' aria-label="Next page">&rsaquo;</button>';
+    html += '<span class="page-status">Page ' + page + ' of ' + pages + '</span>';
+    html += '</nav>';
+    return html;
+}
+
+/* Footer for un-paged embeds (dashboard quick search): the API only sent
+ * one page, so point at the full directory when there is more. */
+function renderViewAll(results, total, url) {
+    if (!url || !results || total <= results.length) return '';
+    return '<div class="results-more"><a href="' + escHtml(url) + '">View all ' + total +
+        ' results <i class="fa-solid fa-arrow-right"></i></a></div>';
+}
+
+function renderAircraftResults(results, total, container, page, pages, viewAllUrl) {
     var $c = $(container);
 
     if (!results || results.length === 0) {
@@ -104,7 +161,7 @@ function renderAircraftResults(results, total, container, page, pages) {
     // data-sort attributes match _AIRCRAFT_SORT_COLUMNS in app.py. The page
     // wiring (templates/aircraft.html) calls attachSortableHeaders() to
     // make these headers clickable.
-    html += '<table class="result-table"><thead><tr>' +
+    html += '<div class="table-scroll"><table class="result-table"><thead><tr>' +
         '<th data-sort="manufacturer">Manufacturer</th>' +
         '<th data-sort="full_designation">Designation</th>' +
         '<th data-sort="model_name">Model Name</th>' +
@@ -138,21 +195,14 @@ function renderAircraftResults(results, total, container, page, pages) {
         '</tr>';
     });
 
-    html += '</tbody></table>';
-
-    // Pagination
-    if (pages && pages > 1) {
-        html += '<div class="pagination">';
-        for (var i = 1; i <= pages; i++) {
-            html += '<button class="page-btn' + (i === page ? ' active' : '') + '" data-page="' + i + '">' + i + '</button>';
-        }
-        html += '</div>';
-    }
+    html += '</tbody></table></div>';
+    html += renderPagination(page, pages);
+    html += renderViewAll(results, total, viewAllUrl);
 
     $c.html(html);
 }
 
-function renderMuseumResults(results, total, container, page, pages) {
+function renderMuseumResults(results, total, container, page, pages, viewAllUrl) {
     var $c = $(container);
 
     if (!results || results.length === 0) {
@@ -163,7 +213,7 @@ function renderMuseumResults(results, total, container, page, pages) {
     var html = '<div class="results-meta"><span>' + total + ' museums found</span></div>';
 
     // data-sort attributes match _MUSEUM_SORT_COLUMNS in app.py.
-    html += '<table class="result-table"><thead><tr>' +
+    html += '<div class="table-scroll"><table class="result-table"><thead><tr>' +
         '<th data-sort="name">Museum</th>' +
         '<th data-sort="city">City</th>' +
         '<th data-sort="country">Country</th>' +
@@ -182,15 +232,9 @@ function renderMuseumResults(results, total, container, page, pages) {
         '</tr>';
     });
 
-    html += '</tbody></table>';
-
-    if (pages && pages > 1) {
-        html += '<div class="pagination">';
-        for (var i = 1; i <= pages; i++) {
-            html += '<button class="page-btn' + (i === page ? ' active' : '') + '" data-page="' + i + '">' + i + '</button>';
-        }
-        html += '</div>';
-    }
+    html += '</tbody></table></div>';
+    html += renderPagination(page, pages);
+    html += renderViewAll(results, total, viewAllUrl);
 
     $c.html(html);
 }

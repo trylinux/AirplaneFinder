@@ -19,7 +19,7 @@
             integrity="sha384-CI3ELBVUz9XQO+97x6nwMDPosPR5XvsxW2ua7N1Xeygeh1IxtgqtCkGfQY9WWdHu"
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile.css') }}?v=bottom-tabs-1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile.css') }}?v=pager-window-1">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile-nav.css') }}?v=bottom-tabs-1">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/detail.css') }}?v=detail-1">
     {% block head %}{% endblock %}
@@ -92,6 +92,38 @@ function prettyEnum(s) {
     return String(s).replace(/_/g, ' ').replace(/\b\w/g, function(c) {
         return c.toUpperCase();
     });
+}
+/* Same windowing as pageWindow()/renderPagination() in app.js, sized for
+   thumbs: ‹ 1 … 149 [150] 151 … 300 ›. Buttons carry data-p; the page's
+   click handler reads it. Keep in sync with app.js. */
+function pageWindow(page, pages, radius) {
+    radius = radius == null ? 1 : radius;
+    var out = [], last = 0;
+    for (var i = 1; i <= pages; i++) {
+        if (i === 1 || i === pages || Math.abs(i - page) <= radius) {
+            // A one-page hole is shown as the page itself — "3 … 5" is silly.
+            if (i - last === 2) out.push(i - 1);
+            else if (i - last > 2) out.push(null);
+            out.push(i);
+            last = i;
+        }
+    }
+    return out;
+}
+function renderMobilePager(cur, total) {
+    if (!total || total < 2) return '';
+    cur = Math.min(Math.max(cur || 1, 1), total);
+    var html = '<button data-p="' + (cur - 1) + '"' + (cur <= 1 ? ' disabled' : '') +
+        ' aria-label="Previous page">‹</button>';
+    pageWindow(cur, total, 1).forEach(function(n) {
+        if (n === null) { html += '<span class="m-page-gap" aria-hidden="true">…</span>'; return; }
+        html += '<button class="' + (n === cur ? 'active' : '') + '" data-p="' + n + '"' +
+            (n === cur ? ' aria-current="page"' : '') + '>' + n + '</button>';
+    });
+    html += '<button data-p="' + (cur + 1) + '"' + (cur >= total ? ' disabled' : '') +
+        ' aria-label="Next page">›</button>';
+    html += '<span class="m-page-status">Page ' + cur + ' of ' + total + '</span>';
+    return html;
 }
 </script>
 {% block scripts %}{% endblock %}
