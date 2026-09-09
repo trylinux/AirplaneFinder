@@ -136,7 +136,9 @@ The museum directory links to `/map`, a conventional map with clustered markers
 and area search, and `/trips` finds museum stops for several wanted aircraft.
 Trips can target a specific airframe or any example of a model, and saved plans
 stay in the current browser. Distances are straight-line estimates; external
-directions provide road navigation.
+directions provide road navigation. Optionally, a Google Routes API key
+(`GOOGLE_MAPS_API_KEY` or `[google] api_key`) adds the drivable route to the trip
+map plus driving miles and times per stop — see the feature guide for setup.
 
 Existing installations must apply `migrate_airframe_history.sql` before using
 the new history pages. See [the feature and upgrade guide](docs/exploration.md)

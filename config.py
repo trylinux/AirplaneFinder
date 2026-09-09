@@ -25,6 +25,14 @@ class Config:
     MAP_TILE_URL = _get("map", "tile_url", "MAP_TILE_URL", "https://tile.openstreetmap.org/{z}/{x}/{y}.png")
     MAP_ATTRIBUTION = _get("map", "attribution", "MAP_ATTRIBUTION", '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors')
 
+    # Google Routes API (trip planner road routes). Leave empty to disable —
+    # the planner then falls back to straight-line estimates. Restrict the
+    # key to the Routes API in Google Cloud; it never reaches the browser.
+    GOOGLE_MAPS_API_KEY = _get("google", "api_key", "GOOGLE_MAPS_API_KEY", "").strip()
+    ROUTES_CACHE_TTL = int(_get("google", "routes_cache_ttl", "ROUTES_CACHE_TTL", str(24 * 60 * 60)))
+    ROUTES_TIMEOUT = float(_get("google", "routes_timeout", "ROUTES_TIMEOUT", "10"))
+    ROUTES_RATE_LIMIT = _get("google", "routes_rate_limit", "ROUTES_RATE_LIMIT", "20 per minute")
+
     SECRET_KEY = _get("app", "secret_key", "SECRET_KEY", "change-me-in-production")
 
     # Server (used by app.run in __main__)

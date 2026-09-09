@@ -23,3 +23,14 @@ log_dir = logs
 # Keep provider attribution visible. Do not prefetch OpenStreetMap tiles.
 tile_url = https://tile.openstreetmap.org/{z}/{x}/{y}.png
 attribution = &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors
+
+[google]
+# Optional. Enables road routes + driving times in the trip planner via the
+# Google Routes API. Leave blank to keep straight-line estimates. Create the
+# key in Google Cloud with the "Routes API" enabled and restrict it to that
+# API; it is only ever used server-side.
+api_key =
+# Seconds to cache a computed route in memory (default 24 h).
+routes_cache_ttl = 86400
+# Per-IP rate limit for POST /api/v1/trips/route (each call may bill one Routes request).
+routes_rate_limit = 20 per minute

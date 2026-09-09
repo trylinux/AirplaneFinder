@@ -10,6 +10,7 @@ from sqlalchemy.orm import joinedload
 
 from models import db, Aircraft, AircraftMuseum, AircraftHistoryEvent, Museum, haversine
 from logger import change_log
+import routing
 
 HISTORY_TYPES = ('built', 'delivered', 'service', 'registration', 'transfer',
                  'restoration', 'retirement', 'display', 'other')
@@ -209,10 +210,16 @@ def plan_trip(data, resolve_location):
             'unmatched': [{'target_index': i, 'label': normalized[i]['label'],
                            'reason': reasons.get(i, 'Not included within your stop limit.')} for i in sorted(remaining)],
             'no_coordinates': list(missing_coordinates.values()),
-            'distance_basis': 'straight_line', 'method': 'coverage_then_nearest_neighbor'}
+            'distance_basis': 'straight_line', 'method': 'coverage_then_nearest_neighbor',
+            # Tells the client whether POST /api/v1/trips/route is worth calling.
+            'road_routing_available': routing.is_enabled()}
 
 
 def register_exploration(app, api_auth_required, get_user, increment_contribution, resolve_location, limiter):
+    # Read once; Config is a class, so tests can still override before import.
+    from config import Config
+    routing_rate_limit = getattr(Config, 'ROUTES_RATE_LIMIT', '20 per minute')
+
     @app.route('/map')
     def museum_map_page():
         return render_template('museum_map.html')
@@ -243,6 +250,26 @@ def register_exploration(app, api_auth_required, get_user, increment_contributio
             return jsonify(plan_trip(request.get_json() or {}, resolve_location))
         except ValueError as exc:
             return jsonify(error=str(exc)), 400
+
+    @app.route('/api/v1/trips/route', methods=['POST'])
+    @limiter.limit(routing_rate_limit)
+    def api_trip_route():
+        """Driving route through an ordered list of points (Google Routes API).
+
+        Body: ``{"points": [{"latitude": .., "longitude": ..}, ...]}`` — the
+        plan's origin, its stops in order, and the origin again for a round
+        trip. 503 when no API key is configured, 502 when Google can't route
+        it; either way the straight-line plan still stands.
+        """
+        data = request.get_json(silent=True) or {}
+        try:
+            return jsonify(routing.compute_route(data.get('points')))
+        except ValueError as exc:
+            return jsonify(error=str(exc)), 400
+        except routing.RoutingUnavailable as exc:
+            return jsonify(error=str(exc), available=False), 503
+        except routing.RoutingError as exc:
+            return jsonify(error=str(exc), available=True), 502
 
     def events_for(aircraft_id, drafts=False):
         Aircraft.query.get_or_404(aircraft_id)

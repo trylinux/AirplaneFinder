@@ -149,5 +149,39 @@ indexes, leg mileage), `unmatched`, `no_coordinates`, return/total mileage,
 `distance_basis: "straight_line"`, and the algorithm `method`.
 
 [Google Maps URLs](https://developers.google.com/maps/documentation/urls/get-started)
-provide the external directions handoff without an API key. This application does
-not fetch or store road routes from Google.
+provide the external directions handoff without an API key.
+
+### Road routes (optional, Google Routes API)
+
+With a Google API key configured, the planner makes a second request after the
+plan renders and draws the drivable route on the map (solid line over the dashed
+visit-order guide), adds driving miles and time to each stop card, and shows the
+total in the summary. Without a key, or if Google can't route a trip, the page
+says so and the straight-line plan stands — nothing else changes.
+
+| Env var | web.config | Default | Purpose |
+| --- | --- | --- | --- |
+| `GOOGLE_MAPS_API_KEY` | `[google] api_key` | empty (disabled) | Routes API key, used server-side only |
+| `ROUTES_CACHE_TTL` | `[google] routes_cache_ttl` | `86400` | Seconds to keep a computed route in memory |
+| `ROUTES_TIMEOUT` | `[google] routes_timeout` | `10` | Seconds to wait for Google |
+| `ROUTES_RATE_LIMIT` | `[google] routes_rate_limit` | `20 per minute` | Per-IP limit on the route endpoint |
+
+Enabling it in Google Cloud: create or pick a project with billing, enable the
+**Routes API**, create an API key, and under *API restrictions* restrict it to the
+Routes API only. Because the key never leaves the server, no HTTP-referrer
+restriction is needed; an IP restriction to the server's egress address is a
+reasonable extra. Requests use `TRAFFIC_UNAWARE` routing (the cheapest SKU) and a
+minimal field mask; identical point lists are served from the in-process cache
+for the TTL, so reloading a saved plan or toggling round-trip does not bill again.
+Google's terms require attributing route data to Google when it is shown on a
+non-Google map; the planner does this in the route status line.
+
+POST `/api/v1/trips/route` takes `{"points": [{"latitude", "longitude"}, ...]}`
+— 2 to 10 points in visit order (origin, stops, and the origin again for a round
+trip). It returns `provider`, `total_miles`, `total_minutes`, `points` (the whole
+route as `[lat, lon]` pairs), and `legs` — one per consecutive pair with
+`distance_miles`, `duration_minutes`, and its own `points`. A `cached: true`
+flag marks a cache hit. Responses: 400 for bad input, 503 (`available: false`)
+when no key is configured, 502 (`available: true`) when Google could not route
+the trip. The plan response includes `road_routing_available` so clients know
+whether to call it.
