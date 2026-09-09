@@ -10,7 +10,7 @@
 
 <div class="card">
     <div id="contributors-container">
-        <p style="color:#888;"><i class="fa-solid fa-spinner fa-spin"></i> Loading...</p>
+        <p class="muted"><i class="fa-solid fa-spinner fa-spin"></i> Loading...</p>
     </div>
 </div>
 {% endblock %}
@@ -26,7 +26,7 @@ $(function() {
             return;
         }
 
-        var html = '<table class="result-table"><thead><tr>' +
+        var html = '<div class="table-scroll"><table class="result-table"><thead><tr>' +
             '<th style="width:60px;text-align:center;">#</th>' +
             '<th>User</th><th>Role</th>' +
             '<th style="text-align:center;">Contributions</th>' +
@@ -40,7 +40,7 @@ $(function() {
             else if (rank === 3) medal = '<i class="fa-solid fa-medal" style="color:#cd7f32;font-size:1.1em;"></i>';
             else medal = rank;
 
-            var roleBadge = u.role === 'admin' ? 'status-on_display' : (u.role === 'manager' ? 'status-on_loan' : 'status-in_storage');
+            var roleBadge = 'role-' + escHtml(u.role);
 
             // Simple bar chart
             var maxContrib = data[0].contributions;
@@ -49,11 +49,10 @@ $(function() {
             html += '<tr>' +
                 '<td style="text-align:center;">' + medal + '</td>' +
                 '<td><strong>' + escHtml(u.username) + '</strong></td>' +
-                '<td><span class="badge ' + roleBadge + '">' + u.role + '</span></td>' +
+                '<td><span class="badge ' + roleBadge + '">' + escHtml(prettyEnum(u.role)) + '</span></td>' +
                 '<td style="min-width:200px;">' +
                     '<div style="display:flex;align-items:center;gap:10px;">' +
-                        '<div style="flex:1;background:#1a1a2e;border-radius:4px;height:20px;overflow:hidden;">' +
-                            '<div style="width:' + pct + '%;height:100%;background:linear-gradient(90deg,#4caf50,#8bc34a);border-radius:4px;"></div>' +
+                        '<div class="contrib-bar"><div class="contrib-bar-fill" style="width:' + pct + '%;"></div></div>' +
                         '</div>' +
                         '<strong>' + u.contributions + '</strong>' +
                     '</div>' +
@@ -61,7 +60,7 @@ $(function() {
             '</tr>';
         });
 
-        html += '</tbody></table>';
+        html += '</tbody></table></div>';
         $('#contributors-container').html(html);
     });
 });

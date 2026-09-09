@@ -141,7 +141,16 @@ $(function() {
         if (e.which === 13) doProximitySearch();
     });
 
-    // Quick search — runs both searches and lists the top 3 of each
+    // Quick search — runs both searches and lists the top 3 of each.
+    // Rows link straight to the detail page (same as the desktop table);
+    // a "See all N" link opens the full directory search when there's more.
+    function sectionHead(label) {
+        return '<div style="font-size:.78rem;color:var(--text-dim);margin:.6rem 0 .35rem;text-transform:uppercase;letter-spacing:.05em;">' + label + '</div>';
+    }
+    function seeAll(total, shown, url) {
+        if (total <= shown) return '';
+        return '<a class="m-see-all" href="' + url + '">See all ' + total + ' <i class="fa-solid fa-arrow-right"></i></a>';
+    }
     function runQuick() {
         var q = $('#quick-q').val().trim();
         if (!q) return;
@@ -150,34 +159,45 @@ $(function() {
             $.getJSON('/api/v1/aircraft/search', {q: q, per_page: 3}),
             $.getJSON('/api/v1/museums/search',  {q: q, per_page: 3})
         ).done(function(aRes, mRes) {
-            var ac = aRes[0].results || [];
-            var mu = mRes[0].results || [];
+            var ac = aRes[0].results || [], acTotal = aRes[0].total || ac.length;
+            var mu = mRes[0].results || [], muTotal = mRes[0].total || mu.length;
             if (!ac.length && !mu.length) {
                 $('#quick-results').html('<div class="m-list-empty">Nothing found for "' + escHtml(q) + '".</div>');
                 return;
             }
             var html = '';
             if (ac.length) {
-                html += '<div style="font-size:.78rem;color:var(--text-dim);margin:.4rem 0 .35rem;text-transform:uppercase;letter-spacing:.05em;">Aircraft</div><div class="m-list">';
+                html += sectionHead('Aircraft') + '<div class="m-list">';
                 ac.forEach(function(a) {
-                    html += '<a class="m-list-item" href="/aircraft?q=' + encodeURIComponent(a.full_designation || a.model) + '">'
-                         +   '<div class="m-list-title">' + escHtml(a.full_designation || a.model) + '</div>'
-                         +   '<div class="m-list-meta"><span>' + escHtml(a.manufacturer) + '</span></div>'
+                    var milCivRaw = a.military_civilian || 'military';
+                    var meta = [];
+                    if (a.aircraft_name) meta.push('<span><i class="fa-solid fa-tag"></i>' + escHtml(a.aircraft_name) + '</span>');
+                    if (a.tail_number)   meta.push('<span><i class="fa-solid fa-id-card"></i>' + escHtml(a.tail_number) + '</span>');
+                    if (a.year_built)    meta.push('<span><i class="fa-solid fa-calendar"></i>' + escHtml(a.year_built) + '</span>');
+                    html += '<a class="m-list-item" href="/aircraft/' + a.id + '">'
+                         +   '<div class="m-list-title">'
+                         +     '<span>' + escHtml([a.manufacturer, a.full_designation || a.model].filter(Boolean).join(' ')) + '</span>'
+                         +     '<span class="m-badge ' + milCivRaw + '">' + escHtml(prettyEnum(milCivRaw)) + '</span>'
+                         +   '</div>'
+                         +   (meta.length ? '<div class="m-list-meta">' + meta.join('') + '</div>' : '')
                          + '</a>';
                 });
-                html += '</div>';
+                html += '</div>' + seeAll(acTotal, ac.length, '/aircraft?q=' + encodeURIComponent(q));
             }
             if (mu.length) {
-                html += '<div style="font-size:.78rem;color:var(--text-dim);margin:.6rem 0 .35rem;text-transform:uppercase;letter-spacing:.05em;">Museums</div><div class="m-list">';
+                html += sectionHead('Museums') + '<div class="m-list">';
                 mu.forEach(function(m) {
-                    html += '<a class="m-list-item" href="/museums?q=' + encodeURIComponent(m.name) + '">'
-                         +   '<div class="m-list-title">' + escHtml(m.name) + '</div>'
-                         +   '<div class="m-list-meta"><span>' + escHtml(m.city + ', ' + m.country) + '</span></div>'
+                    var loc = m.city + (m.state_province ? ', ' + m.state_province : '') + ', ' + m.country;
+                    html += '<a class="m-list-item" href="/museums/' + m.id + '">'
+                         +   '<div class="m-list-title"><span>' + escHtml(m.name) + '</span></div>'
+                         +   '<div class="m-list-meta"><span><i class="fa-solid fa-location-dot"></i>' + escHtml(loc) + '</span></div>'
                          + '</a>';
                 });
-                html += '</div>';
+                html += '</div>' + seeAll(muTotal, mu.length, '/museums?q=' + encodeURIComponent(q));
             }
             $('#quick-results').html(html);
+        }).fail(function() {
+            $('#quick-results').html('<div class="m-alert error"><i class="fa-solid fa-circle-exclamation"></i><span>Search failed. Please try again.</span></div>');
         });
     }
     $('#quick-go').on('click', runQuick);

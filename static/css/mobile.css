@@ -241,6 +241,16 @@ a:active { opacity: .7; }
 .m-pagination button.active {
     background: var(--primary); color: white; border-color: var(--primary);
 }
+.m-pagination button:disabled { opacity: .35; }
+.m-pagination .m-page-gap { align-self: center; color: var(--text-dim); padding: 0 .15rem; }
+.m-pagination .m-page-status {
+    flex-basis: 100%; text-align: center;
+    font-size: .75rem; color: var(--text-dim); margin-top: .25rem;
+}
+.m-results-meta { font-size: .78rem; color: var(--text-dim); margin: 0 0 .5rem; }
+.m-see-all { display: block; text-align: center; font-size: .85rem; padding: .5rem; min-height: 44px; line-height: 1.8; }
+/* Scroll targets sit below the fixed topbar instead of under it. */
+.m-section-title, .m-page-header { scroll-margin-top: calc(var(--topbar-h) + .5rem); }
 
 /* ─── Tab toggle (List / Globe on Museums page) ──── */
 .m-tabs {
@@ -364,7 +374,7 @@ a:active { opacity: .7; }
 }
 .m-globe-controls button { width: 44px; height: 44px; }
 .m-globe-pin-info a { min-height: 44px; display: inline-flex; align-items: center; }
-.m-list-title > span, .m-page-header h1, .m-museum-title, .m-card { overflow-wrap: anywhere; min-width: 0; }
+.m-list-title > span, .m-list-title > a, .m-page-header h1, .m-museum-title, .m-card { overflow-wrap: anywhere; min-width: 0; }
 .m-museum-head { flex-wrap: wrap; }
 .m-museum-meta { flex-wrap: wrap; }
 .m-actions .m-btn { width: auto; }

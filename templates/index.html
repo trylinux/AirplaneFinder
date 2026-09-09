@@ -98,12 +98,16 @@ $(function() {
     function doQuickSearch() {
         var q = $('#quick-search').val().trim();
         if (!q) return;
+        // Un-paged embeds: only the first page is shown here, so both
+        // renderers get a "view all" link into the full directory.
         $.getJSON('/api/aircraft/search', {q: q}, function(data) {
-            renderAircraftResults(data.results, data.total, '#quick-aircraft-results');
+            renderAircraftResults(data.results, data.total, '#quick-aircraft-results',
+                undefined, undefined, '/aircraft?q=' + encodeURIComponent(q));
         });
         $.getJSON('/api/museums/search', {q: q}, function(data) {
             if (data.results.length > 0) {
-                renderMuseumResults(data.results, data.total, '#quick-museum-results');
+                renderMuseumResults(data.results, data.total, '#quick-museum-results',
+                    undefined, undefined, '/museums?q=' + encodeURIComponent(q));
             } else {
                 $('#quick-museum-results').html('');
             }

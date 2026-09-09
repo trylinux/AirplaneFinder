@@ -309,6 +309,13 @@ label { display: block; font-size: .85rem; font-weight: 500; margin-bottom: .3re
 .status-under_restoration { background: rgba(6,182,212,.15); color: var(--accent); }
 .status-military { background: rgba(239,68,68,.12); color: #f87171; }
 .status-civilian { background: rgba(96,165,250,.12); color: #60a5fa; }
+/* User roles (contributors leaderboard) — mirror .m-badge.<role> in mobile.css */
+.role-admin          { background: rgba(239,68,68,.2);   color: #f87171; }
+.role-aircraft_admin { background: rgba(245,158,11,.2);  color: #fcd34d; }
+.role-manager        { background: rgba(59,130,246,.2);  color: #60a5fa; }
+.role-viewer         { background: rgba(148,163,184,.2); color: #cbd5e1; }
+.contrib-bar { flex: 1; height: 20px; border-radius: 4px; overflow: hidden; background: var(--bg-input); }
+.contrib-bar-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--success), #86efac); }
 
 /* Role badges: rendered by users.html / _admin_nav.html as
    <span class="badge status-{{ user.role }}">{{ user.role }}</span> */
@@ -318,14 +325,27 @@ label { display: block; font-size: .85rem; font-weight: 500; margin-bottom: .3re
 .status-viewer         { background: rgba(148,163,184,.18); color: #cbd5e1; }
 
 /* ─── Pagination ─────────────────────────── */
-.pagination { display: flex; justify-content: center; gap: .3rem; margin-top: 1rem; }
+/* Windowed pager (see renderPagination in app.js). flex-wrap is the safety
+   net: a pager must never become a horizontal-scroll strip. */
+.pagination {
+    display: flex; justify-content: center; align-items: center;
+    gap: .3rem; margin-top: 1rem; flex-wrap: wrap;
+}
 .page-btn {
     background: var(--bg-input); color: var(--text-dim); border: 1px solid var(--border);
-    padding: .35rem .7rem; border-radius: 6px; font-size: .85rem;
+    min-width: 2.2rem; padding: .35rem .7rem; border-radius: 6px; font-size: .85rem;
     cursor: pointer; font-family: inherit; transition: all .15s;
 }
-.page-btn:hover { border-color: var(--primary); color: var(--primary); }
+.page-btn:hover:not(:disabled) { border-color: var(--primary); color: var(--primary); }
 .page-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.page-btn:disabled { opacity: .35; cursor: default; }
+.page-gap { color: var(--text-dim); padding: 0 .2rem; user-select: none; }
+.page-status { flex-basis: 100%; text-align: center; color: var(--text-dim); font-size: .78rem; margin-top: .35rem; }
+.results-more { text-align: center; margin-top: .75rem; font-size: .9rem; }
+
+/* Only the table scrolls sideways on narrow screens; the meta row, pager and
+   "view all" link stay put. */
+.table-scroll { max-width: 100%; overflow-x: auto; }
 
 /* ─── Proximity Results ──────────────────── */
 .prox-origin { color: var(--text-dim); font-size: .9rem; margin-bottom: 1rem; }
