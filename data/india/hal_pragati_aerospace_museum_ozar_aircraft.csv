@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-27,ML,TS539,Bahadur,,fixed_wing,monoplane,military,ground_attack,,"Pole-mounted, floodlit, desert camouflage (warbirds.in, aviationmuseum.eu).",TS-539; MiG27ML; MiG27; TS539,HAL Pragati Aerospace Museum Ozar,on_display
+Mikoyan-Gurevich,MiG-21,FL,C1175,Fishbed,,fixed_wing,monoplane,military,fighter,,Last HAL-built MiG-21FL; pylon-mounted (warbirds.in).,C-1175; MiG21FL; MiG21,HAL Pragati Aerospace Museum Ozar,on_display
+Mikoyan-Gurevich,MiG-21,bis,C2836,Fishbed,,fixed_wing,monoplane,military,fighter,,Believed the last HAL-built MiG-21bis; pylon-mounted (warbirds.in).,C-2836; MiG21bis; MiG21,HAL Pragati Aerospace Museum Ozar,on_display

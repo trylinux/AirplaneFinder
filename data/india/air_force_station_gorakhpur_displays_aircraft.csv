@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,MiG-21,FL,C1141,Fishbed,,fixed_wing,monoplane,military,fighter,,MiG-21FL at the AFS Gorakhpur gate (Bharat Rakshak).,MiG21FL; C1141; MiG21; C-1141,Air Force Station Gorakhpur displays,on_display
+English Electric,Canberra,T.4,Q1791,,,fixed_wing,monoplane,military,trainer,,"Canberra T.4 ex-RAF WE193, TOC 23 Jul 1975, 106 Sqn in 2004; preserved AFS Gorakhpur (Bharat Rakshak).",WE193; Canberra T4; Q1791; Q-1791,Air Force Station Gorakhpur displays,on_display
+Mil,Mi-8,,Z1364,Hip,,rotary_wing,,military,transport,,Mi-8 preserved at AFS Gorakhpur (Bharat Rakshak).,Mi8; Z1364; Z-1364,Air Force Station Gorakhpur displays,on_display

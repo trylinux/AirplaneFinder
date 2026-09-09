@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,HF-24,Mk 1T,BD888,Marut,,fixed_wing,monoplane,military,trainer,1976,"First two-seat Marut inducted (1976, 10 Sqn); on stilts outdoors, poor condition, pitot bent (warbirds.in 2008).",BD-888; Marut 1T; HF24; BD888,Periyar Science and Technology Centre Chennai,on_display
+HAL,HT-2,,IX741,,,fixed_wing,monoplane,military,trainer,,Displayed indoors on pedestals; nose section reconstructed without engine (warbirds.in).,IX-741; HT2; IX741,Periyar Science and Technology Centre Chennai,on_display

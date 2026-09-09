@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,HF-24,Mk 1,D1277,Marut,,fixed_wing,monoplane,military,fighter,,"Marut at the Air Force School inside AFS Agra (WBI, Simon Watson photo; Bharat Rakshak).",HF24; D1277; D-1277,Air Force Station Agra displays,on_display
+Douglas,C-47,,HJ905,Dakota,,fixed_wing,monoplane,military,transport,,Dakota c/n 13272 fuselage preserved at AFS Agra without wings or engines (WBI; Bharat Rakshak).,C47; Dakota; HJ905; 13272; HJ-905,Air Force Station Agra displays,on_display
+Mikoyan-Gurevich,MiG-23,BN,SM250,Flogger,,fixed_wing,monoplane,military,ground_attack,,"MiG-23BN gate guardian at AFS Agra (Bharat Rakshak, ex-221 Sqn seen Nov 2008).",MiG23BN; SM250; MiG23; SM-250,Air Force Station Agra displays,on_display
+English Electric,Canberra,T.4,IQ996,,,fixed_wing,monoplane,military,trainer,,Canberra T.4 preserved in the station per Bharat Rakshak.,Canberra T4; IQ996; IQ-996,Air Force Station Agra displays,on_display
+Mil,Mi-8,,Z1379,Hip,,rotary_wing,,military,transport,,Mi-8 at the Senior Citizen Park inside AFS Agra (Bharat Rakshak).,Mi8; Z1379; Z-1379,Air Force Station Agra displays,on_display
+Dassault,Mystere IV,A,IA1317,,,fixed_wing,monoplane,military,fighter,,"Mystere IVA c/n 389 at the Senior Citizen Park, AFS Agra (Bharat Rakshak).",MystereIVA; 389; IA1317; IA-1317,Air Force Station Agra displays,on_display
+Mil,Mi-4,,,Hound,,rotary_wing,,military,transport,,"Unidentified Mi-4 displayed at one of the AFS Agra gates (WBI, 2008). Currency unverified.",Mi4 Agra; Mi4,Air Force Station Agra displays,on_display

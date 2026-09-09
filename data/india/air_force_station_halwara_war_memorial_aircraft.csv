@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Hawker,Hunter,F.56,BA233,,,fixed_wing,monoplane,military,fighter,,"Ex-RAF XE537, delivered 6 Feb 1958; silver, at the station war memorial (WBI, 2008; Bharat Rakshak).",XE537; BA233; BA-233,Air Force Station Halwara War Memorial,on_display
+Sukhoi,Su-7,BMK,B785,Fitter,,fixed_wing,monoplane,military,ground_attack,,Su-7BMK silver with drop tanks at the Halwara war memorial (WBI; Bharat Rakshak).,Su7BMK; B785; Su7; B-785,Air Force Station Halwara War Memorial,on_display
+Mikoyan-Gurevich,MiG-23,BN,SM276,Flogger,,fixed_wing,monoplane,military,ground_attack,,"MiG-23BN on concrete pedestals on the Officers Mess lawns, grey scheme, wings swept (WBI, 2008; Bharat Rakshak).",MiG23BN; SM276; MiG23; SM-276,Air Force Station Halwara War Memorial,on_display

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Hawker,Hunter,F.56,BA357,,,fixed_wing,monoplane,military,fighter,,"Hunter TOC 3 Nov 1960, presented by ACM N C Suri; blue-green camouflage (WBI; Bharat Rakshak).",BA357; Hunter RIMC; BA-357,Rashtriya Indian Military College Dehradun,on_display
+HAL,Chetak,SA 316B,Z928,Chetak,,rotary_wing,,military,utility,,Chetak recorded by Bharat Rakshak as preserved at RIMC Dehradun.,Alouette III; Z928; Z-928,Rashtriya Indian Military College Dehradun,on_display

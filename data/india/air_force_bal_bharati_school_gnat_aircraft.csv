@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Folland,Gnat,F.1,IE1113,,,fixed_wing,monoplane,military,fighter,,"Folland-built Gnat c/n GT-010, 23 Sqn in the 1965 war, preserved at Air Force Bal Bharati School, Lodhi Road (Bharat Rakshak).",GT-010; FollandGnat; IE1113; GT010; IE-1113,Air Force Bal Bharati School Gnat,on_display

@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+SEPECAT,Jaguar,A,,,,fixed_wing,monoplane,military,ground_attack,,"Ex-French Air Force Jaguar A, arrived with A-160 on the tail; now painted as A090 near 3 ASC Chakeri (WBI, 2022). tail_number left blank; French A160 identity per tail marking.",A160; A-160; A090; Jaguar A,3 Airmen Selection Centre Kanpur Jaguar,on_display

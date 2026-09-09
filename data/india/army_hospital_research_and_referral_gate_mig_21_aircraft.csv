@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,MiG-21,Bison,CU2106,Fishbed,,fixed_wing,monoplane,military,fighter,,"MiG-21 Bison CU2106 pole-mounted at the hospital gate; confirmed via Google Maps photos in 2022 (WBI, Aug 2022). Unusual in lacking the over-wing chaff/flare launcher fairings. Visible from the approach road at the gate.",MiG21Bison; CU2106; C-2106; MiG21; CU-2106,Army Hospital (Research and Referral) gate MiG-21,on_display

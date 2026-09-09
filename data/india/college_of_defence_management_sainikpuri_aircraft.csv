@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,U,U660,Mongol,,fixed_wing,monoplane,military,trainer,,"Inducted 1966, 2984 hrs, ex-No.8 Sqn; installed June 2001 on a platform in front of the CDM entrance alongside Army howitzers and an INS Vikrant anchor. Source WoI, BR.",U-660; MiG21U; MiG21; U660,College of Defence Management Sainikpuri,on_display
+PZL-Mielec,TS-11,Iskra,W1783,,,fixed_wing,monoplane,military,trainer,,c/n 3H-1523. Listed by BR at the College of Defence Management. Source BR only.,W-1783; 3H-1523; TS11,College of Defence Management Sainikpuri,on_display
+HAL,HPT-32,Deepak,X3220,,,fixed_wing,monoplane,military,trainer,,"Listed by BR at the College of Defence Management, Secunderabad. Source BR only.",X-3220; HPT32,College of Defence Management Sainikpuri,on_display

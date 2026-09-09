@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,Harvard,IIB,,,,fixed_wing,monoplane,military,trainer,,"Yellow Harvard in front of the main building, no visible serial. Source WoI 2009.",T-6; Harvard; T6,Sainik School Bijapur,on_display
+HAL,HT-2,,IX500,,,fixed_wing,monoplane,military,trainer,,"Pole-mounted, original serial retained. Source WoI 2009, BR.",IX-500; HT2; IX500,Sainik School Bijapur,on_display
+PZL-Mielec,TS-11,Iskra,W1789,,,fixed_wing,monoplane,military,trainer,,"c/n 3H-1604, delivered May 1976. Cradle-mounted near basketball court opposite Wodeyar House, installed by 2011. Source WoI 2011, BR.",W-1789; 3H-1604; TS11,Sainik School Bijapur,on_display
+Mikoyan-Gurevich,MiG-27,ML,TS563,Flogger,,fixed_wing,monoplane,military,ground_attack,,Listed by BR as preserved at Sainik School Bijapur (Oct 201x). Source BR only.,TS-563; MiG27ML; MiG27; TS563,Sainik School Bijapur,on_display

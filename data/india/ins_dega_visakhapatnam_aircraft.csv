@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+PZL-Mielec,TS-11,Iskra,W1790,,,fixed_wing,monoplane,military,trainer,,"c/n 3H-1605, delivered May 1976; IAF Iskra displayed wheels-down on a plinth at INS Dega with a fake nose cone. Source WoI Mar 2024, BR.",W-1790; 3H-1605; TS11,INS Dega Visakhapatnam,on_display
+HAL,HJT-16,Mk I,IN076,Kiran,,fixed_wing,monoplane,military,trainer,,"Naval Kiran in Sagar Pawan aerobatic team scheme, pylon-mounted, no seats. Source WoI Mar 2024.",IN-076; HJT16; IN076,INS Dega Visakhapatnam,on_display
+Kamov,Ka-25,,IN577,Hormone,,rotary_wing,,military,recon,,"Ex-INAS 333, still carrying VVZ Visakhapatnam code. Source WoI Mar 2024.",IN-577; Ka25; IN577,INS Dega Visakhapatnam,on_display

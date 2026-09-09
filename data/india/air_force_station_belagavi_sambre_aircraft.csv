@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,HT-2,,IX747,,,fixed_wing,monoplane,military,trainer,,Listed by BR at AFS Belgaum (Sambra). Source BR only.,IX-747; HT2; IX747,Air Force Station Belagavi Sambre,on_display
+PZL-Mielec,TS-11,Iskra,W1753,,,fixed_wing,monoplane,military,trainer,,c/n 3H-1428. Listed by BR at AFS Belgaum. Source BR only.,W-1753; 3H-1428; TS11,Air Force Station Belagavi Sambre,on_display

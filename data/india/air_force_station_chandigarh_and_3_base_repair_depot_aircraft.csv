@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-8,,Z1380,Hip,,rotary_wing,,military,transport,,"20th IAF Mi-8, pylon-mounted with rocket pods in the 3 BRD / sports complex area since May 2011 (WBI, Jan 2024).",Mi8; Z1380; Z-1380,Air Force Station Chandigarh and 3 Base Repair Depot,on_display
+HAL,HF-24,Mk 1,D1209,Marut,,fixed_wing,monoplane,military,fighter,,"Marut on a traffic triangle inside the airfield environs, in excellent condition (WBI).",HF24; D1209; D-1209,Air Force Station Chandigarh and 3 Base Repair Depot,on_display
+Mil,Mi-4,,,Hound,,rotary_wing,,military,transport,,"Unidentified Mi-4 displayed at the entrance to the 3 BRD technical area (WBI, Rahul Devnath report).",Mi4 3BRD; Mi4,Air Force Station Chandigarh and 3 Base Repair Depot,on_display
+HAL,Ajeet,Mk 1,,,,fixed_wing,monoplane,military,fighter,,Unidentified Ajeet reported at the 3 BRD entrance (WBI).,Ajeet 3BRD,Air Force Station Chandigarh and 3 Base Repair Depot,on_display
+Mil,Mi-8,,,Hip,,rotary_wing,,military,transport,,First of two Mi-8s installed at the 12 Wing war memorial (WBI); identities unknown. 12 Wing memorial Mi-8 first.,Mi8,Air Force Station Chandigarh and 3 Base Repair Depot,on_display
+Mil,Mi-8,,,Hip,,rotary_wing,,military,transport,,Second of two Mi-8s at the 12 Wing war memorial (WBI); identity unknown. 12 Wing memorial Mi-8 second.,Mi8,Air Force Station Chandigarh and 3 Base Repair Depot,on_display

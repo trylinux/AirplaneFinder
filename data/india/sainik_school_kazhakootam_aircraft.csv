@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,HF-24,Mk 1,D1227,Marut,,fixed_wing,monoplane,military,fighter,,"Pedestal-mounted Marut, identity D1227 established from photo album; has worn light blue, red-white Surya Kiran style and later silver schemes. Source WoI (updated Feb 2026), BR.",D-1227; HF24,Sainik School Kazhakootam,on_display
+North American,Harvard,IIB,,,,fixed_wing,monoplane,military,trainer,,"Harvard on pedestal near the auditorium, no serial survives; formerly yellow, repainted red-white. Source WoI.",T-6; Harvard; T6,Sainik School Kazhakootam,on_display
+HAL,HPT-32,Deepak,X3147,,,fixed_wing,monoplane,military,trainer,,"Erected 2013, one of the first Deepak gate guards after the 2009 grounding. Source WoI.",X-3147; HPT32,Sainik School Kazhakootam,on_display

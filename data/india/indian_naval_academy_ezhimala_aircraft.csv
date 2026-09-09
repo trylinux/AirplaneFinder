@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+BAE Systems,Sea Harrier,FRS.51,IN603,,,fixed_wing,monoplane,military,fighter,1983,"Built early 1983, delivered Dec 1983, damaged on ground 17 May 2005, trucked to Ezhimala 2008. Mounted near the main parade ground, ejection seat removed. Source WoI 2017.",IN-603; Sea Harrier FRS51; IN603,Indian Naval Academy Ezhimala,on_display
+Breguet,Alize,Br.1050,IN209,,,fixed_wing,monoplane,military,recon,,Displayed wings folded at a road corner in the academy; previously briefly on museum ship Vikrant. Source WoI 2017.,IN-209; Br1050; IN209,Indian Naval Academy Ezhimala,on_display
+Kamov,Ka-25,,,,Hormone,rotary_wing,,military,recon,,"Ka-25 on display at the academy, identity not recorded. Source WoI 2017.",Ka25,Indian Naval Academy Ezhimala,on_display
+Westland,Sea King,Mk 42,,,,rotary_wing,,military,search_rescue,,"Sea King marked 01 near the parade grounds, identity not recorded. Source WoI 2017.",Sea King 01,Indian Naval Academy Ezhimala,on_display

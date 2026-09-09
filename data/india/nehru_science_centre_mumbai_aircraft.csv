@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,HF-24,Mk 1,BR463,Marut,,fixed_wing,monoplane,military,experimental,,"Second HF-24 prototype to fly, the oldest surviving Marut; displayed outdoors under a shed (warbirds.in, aerialvisuals).",BR-463; Marut prototype; HF24; BR463,Nehru Science Centre Mumbai,on_display
+de Havilland,DH.82,A,,Tiger Moth,,fixed_wing,biplane,civilian,trainer,,"Unmarked Tiger Moth on a pedestal in the Aerospace Hall, spurious DH82 on the tail; identity unknown (warbirds.in 2013/2015).",Tiger Moth; DH82A,Nehru Science Centre Mumbai,on_display

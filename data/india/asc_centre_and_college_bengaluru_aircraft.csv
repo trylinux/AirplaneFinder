@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,C-47,,VT606,Dakota,,fixed_wing,monoplane,military,transport,,"Fuselage with wing centre-section and nacelles preserved in a heritage park inside the ASC Centre, used for years as a driver-training prop; wears spurious marking VT-606, true identity unknown. Photos emerged Dec 2023. Source WoI Dec 2023.",VT606; Dakota fuselage; C47; VT-606,ASC Centre and College Bengaluru,on_display
+Mil,Mi-17,,Z3043,Hip,,rotary_wing,,military,transport,,"VIP-scheme Mi-17 with square windows, listed by BR at ASC Centre Bangalore. Source BR only.",Z-3043; Mi17,ASC Centre and College Bengaluru,on_display

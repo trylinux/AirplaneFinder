@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,MiG-21,M,C1586,Fishbed,,fixed_wing,monoplane,military,fighter,,"One of twin MiG-21M gate guards outside the main gate since c.2018, visible from the road (WBI, Jan 2024).",MiG21M; C1586; MiG21; C-1586,Air Force Station Nal Bikaner displays,on_display
+HAL,MiG-21,M,C1608,Fishbed,,fixed_wing,monoplane,military,fighter,,Second of the twin gate-guard MiG-21Ms outside the Nal main gate (WBI 2024).,MiG21M; C1608; MiG21; C-1608,Air Force Station Nal Bikaner displays,on_display
+Mikoyan-Gurevich,MiG-23,BN,SM286,Flogger,,fixed_wing,monoplane,military,ground_attack,,"Silver MiG-23BN with 221 Sqn badge just inside the base opposite KV No.3, placard says 200th MiG-23 overhauled; flying Nov 2008 (WBI; Bharat Rakshak). Inside the gate: restricted.",MiG23BN; SM286; MiG23; SM-286,Air Force Station Nal Bikaner displays,on_display
+Sukhoi,Su-7,BMK,,Fitter,,fixed_wing,monoplane,military,ground_attack,,Unidentified Su-7 inside AFS Nal (WBI 2024).,Su7 Nal; Su7; Su7BMK,Air Force Station Nal Bikaner displays,on_display
+HAL,MiG-21,,,Fishbed,,fixed_wing,monoplane,military,fighter,,"Third MiG-21 inside AFS Nal, identity unknown (WBI 2024).",MiG21 Nal third; MiG21,Air Force Station Nal Bikaner displays,on_display
+HAL,MiG-21,,,Fishbed,,fixed_wing,monoplane,military,fighter,,"Fourth MiG-21 inside AFS Nal, identity unknown (WBI 2024).",MiG21 Nal fourth; MiG21,Air Force Station Nal Bikaner displays,on_display

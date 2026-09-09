@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,HPT-32,Deepak,X3267,,,fixed_wing,monoplane,military,trainer,,Repainted and displayed on the ground under a shelter at IARE. Source WoI Jan 2024.,X-3267; HPT32,Institute of Aeronautical Engineering Dundigal,on_display
+Beechcraft,Baron,,,,,fixed_wing,monoplane,civilian,private,,Beech Baron instructional airframe at IARE. Source WoI Jan 2024.,Beech 55,Institute of Aeronautical Engineering Dundigal,on_display

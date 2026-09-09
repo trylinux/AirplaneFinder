@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-27,ML,TS531,Flogger,,fixed_wing,monoplane,military,ground_attack,,"MiG-27ML TS531 in camouflage listed by the bharat-rakshak database as preserved at 11 Airmen Selection Centre, Guwahati. Not independently verified.",TS-531; MiG27ML; MiG27; TS531,11 Airmen Selection Centre Guwahati,on_display

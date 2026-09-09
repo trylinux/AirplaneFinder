@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,Ajeet,Mk 1,E1978,,,fixed_wing,monoplane,military,fighter,,"Ajeet painted ""E-1978"", which WBI notes may not be the true identity (2022).",Gnat II; E1978; E-1978,Sainik School Kunjpura,on_display
+Mikoyan-Gurevich,MiG-23,BN,SM206,Flogger,,fixed_wing,monoplane,military,ground_attack,,"All-silver MiG-23BN; identity from ""206"" on the nose gear. Assembled with wings at different sweep angles (WBI, 2022). Bharat Rakshak lists SM-206 here.",MiG23BN; SM206; MiG23; SM-206,Sainik School Kunjpura,on_display

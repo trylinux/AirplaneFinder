@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+HAL,MiG-21,bis,,Fishbed,,fixed_wing,monoplane,military,fighter,,"MiG-21bis bought privately from a scrap dealer and painted for display at the Siswan branch school; no serial, identity unknown (WBI, Sept 2023).",MiG21bis Siswan; MiG21; MiG21bis,Dalhousie Public School Siswan MiG-21,on_display
