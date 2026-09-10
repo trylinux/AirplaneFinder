@@ -1,0 +1,15 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Antonov,An-2,,RA-70623,Colt,,fixed_wing,biplane,civilian,utility,,Held disassembled in the museum yard awaiting assembly.,An2; An-2; Antonov An2; Colt,Karjalan Ilmailumuseo,in_storage
+Folland,Folland Gnat,Mk.1,GN-103,Gnat,,fixed_wing,monoplane,military,fighter,,Displayed in the museum yard.,FollandGnat; Gnat Mk1,Karjalan Ilmailumuseo,on_display
+Folland,Folland Gnat,Mk.1,GN-106,Gnat,,fixed_wing,monoplane,military,fighter,,On display.,FollandGnat; Gnat Mk1,Karjalan Ilmailumuseo,on_display
+Fouga,Fouga CM 170,Magister,FM-42,Magister,,fixed_wing,monoplane,military,trainer,,Partially disassembled.,FougaCM170; CM.170; Magister,Karjalan Ilmailumuseo,on_display
+Fouga,Fouga CM 170,Magister,FM-50,Magister,,fixed_wing,monoplane,military,trainer,,Partially disassembled.,FougaCM170; CM.170; Magister,Karjalan Ilmailumuseo,on_display
+Mikoyan-Gurevich,MiG-21,bis,MG-127,Fishbed,,fixed_wing,monoplane,military,fighter,,Displayed in the museum yard. Note that the museum also holds MiG-21F-13 MG-77 repainted as MG-127.,MiG21; MiG-21BIS; MiG21bis; Fishbed,Karjalan Ilmailumuseo,on_display
+Mikoyan-Gurevich,MiG-21,F-13,MG-77,Fishbed,,fixed_wing,monoplane,military,fighter,,Displayed in the museum yard converted and painted to resemble a MiG-21bis wearing the false serial MG-127. True identity is MG-77.,MiG21; MiG-21F-13; MiG21F13; MG-127; MG127,Karjalan Ilmailumuseo,on_display
+Mikoyan-Gurevich,MiG-21,UM,MK-106,Mongol,,fixed_wing,monoplane,military,trainer,,Displayed in the museum outdoor area.,MiG21; MiG-21UM; MiG21UM; Mongol,Karjalan Ilmailumuseo,on_display
+Mil,Mi-8,T,HS-4,Hip,,rotary_wing,,military,transport,,Displayed in the museum yard.,Mi8; Mi-8T; Mi8T; Hip,Karjalan Ilmailumuseo,on_display
+Nieuport,Nieuport 17,,1.D.453,,,fixed_wing,biplane,military,fighter,,Replica. Also carries OH-U323.,Nieuport17; OH-U323,Karjalan Ilmailumuseo,on_display
+Saab,Saab 35,S,DK-213,Draken,,fixed_wing,monoplane,military,fighter,,Displayed in the museum outdoor area.,Saab35; J 35; J35; Draken; Saab 35S,Karjalan Ilmailumuseo,on_display
+Saab,Saab 91,D,SF-31,Safir,,fixed_wing,monoplane,military,trainer,,Civil marks OH-SFB.,Saab91; Saab 91D; Safir; OH-SFB,Karjalan Ilmailumuseo,on_display
+Polikarpov,I-15,bis,,Chaika,,fixed_wing,biplane,military,fighter,,Wreck held in store. No serial established.,I15; I-15bis; I15bis; Chaika,Karjalan Ilmailumuseo,in_storage
+Mil,Mi-4,,HR-2,Hound,,rotary_wing,,military,utility,,Wreck held in store.,Mi4; Hound,Karjalan Ilmailumuseo,in_storage

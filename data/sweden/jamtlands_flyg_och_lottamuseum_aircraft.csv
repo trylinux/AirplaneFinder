@@ -1,0 +1,15 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+De Havilland,J 28,B,28311,Vampire,,fixed_wing,monoplane,military,fighter,,,DH.100; DH100; D.H.100; Vampire; J28; c/n V.0590,Jämtlands flyg- och lottamuseum,on_display
+Saab,J 29,F,29373,Tunnan,,fixed_wing,monoplane,military,fighter,,This airframe appeared in the film Gula divisionen. Preserved at the museum since the mid-1990s.,Tunnan; Saab 29; Saab29; J29; J29F; J29-F,Jämtlands flyg- och lottamuseum,on_display
+Saab,J 32,E,32601,Lansen,,fixed_wing,monoplane,military,fighter,,On loan here since 2008. Restored in 2017 to original J 32B configuration but not airworthy.,Lansen; Saab 32; Saab32; J32; J32E; J32-E,Jämtlands flyg- och lottamuseum,on_display
+Saab,J 35,D,35392,Draken,,fixed_wing,monoplane,military,fighter,,,Draken; Saab 35; Saab35; J35; J35D; J35-D,Jämtlands flyg- och lottamuseum,on_display
+Saab,AJ 37,,37097,Viggen,,fixed_wing,monoplane,military,ground_attack,,,Viggen; Saab 37; Saab37; AJ37,Jämtlands flyg- och lottamuseum,on_display
+Saab,JA 37,C,37392,Viggen,,fixed_wing,monoplane,military,fighter,,,Viggen; Saab 37; Saab37; JA37; JA37C; JA37-C,Jämtlands flyg- och lottamuseum,on_display
+Saab,JA 37,DI,37412,Viggen,,fixed_wing,monoplane,military,fighter,,,Viggen; Saab 37; Saab37; JA37; JA37DI; JA37-DI,Jämtlands flyg- och lottamuseum,on_display
+Saab,JA 37,C,37448,Viggen,,fixed_wing,monoplane,military,fighter,,Mounted as a landmark and sign at the E14 / road 45 junction at Optand immediately beside the museum.,Viggen; Saab 37; Saab37; JA37; JA37C; JA37-C,Jämtlands flyg- och lottamuseum,on_display
+Saab,SK 37,,37803,Viggen,,fixed_wing,monoplane,military,trainer,,Marked 4-67.,Viggen; Saab 37; Saab37; SK37,Jämtlands flyg- och lottamuseum,on_display
+Saab,AJSF 37,,37950,Viggen,,fixed_wing,monoplane,military,recon,,Forward fuselage only.,Viggen; Saab 37; Saab37; AJSF37,Jämtlands flyg- och lottamuseum,on_display
+Saab,Sk 50,B,50020,Safir,,fixed_wing,monoplane,military,trainer,,,Safir; Saab 91; Saab91; Sk50; Sk50B; Sk50-B,Jämtlands flyg- och lottamuseum,on_display
+Saab,SK 60,B,60056,Saab 105,,fixed_wing,monoplane,military,trainer,,,Saab 105; Saab105; SK60; SK60B; SK60-B,Jämtlands flyg- och lottamuseum,on_display
+Scottish Aviation,SK 61,A,61055,Bulldog,,fixed_wing,monoplane,military,trainer,,,B.125; B125; Bulldog; Sk 61; Sk61; SK61; c/n BH 100-173,Jämtlands flyg- och lottamuseum,on_display
+Agusta-Bell,Hkp 3,B,03427,AB 204B,,rotary_wing,,military,search_rescue,,,AB 204B; AB 204; AB204; Bell 204; Bell204; HKP 3; Hkp3,Jämtlands flyg- och lottamuseum,on_display

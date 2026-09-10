@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Commonwealth Aircraft Corporation,CA-30,,A7-014,Macchi,,fixed_wing,monoplane,military,trainer,,Acquired by Wellington Shire Council for pole mounting at Sale; found too costly to mount and now displayed at the museum with A7-015.,CA30; MB-326; MB326; MB326H; Macchi,Gippsland Armed Forces Museum,on_display
+Commonwealth Aircraft Corporation,CA-30,,A7-015,Macchi,,fixed_wing,monoplane,military,trainer,,Acquired by Wellington Shire Council and displayed at the museum alongside A7-014.,CA30; MB-326; MB326; MB326H; Macchi,Gippsland Armed Forces Museum,on_display
+Department of Aircraft Production,152,Mk VA,A9-164,Beaufort,,fixed_wing,monoplane,military,bomber,,Cockpit section under restoration at the museum per ADF-Serials.,152; Beaufort; DAP Beaufort,Gippsland Armed Forces Museum,under_restoration
+Avro,652,A,MG872,Anson,,fixed_wing,monoplane,military,trainer,,Recovered Anson I remains held by the museum.,652A; Anson,Gippsland Armed Forces Museum,under_restoration
+Airspeed,AS.10,,HN631,Oxford,,fixed_wing,monoplane,military,trainer,,Wreck recovered and held by the museum.,AS10; Oxford,Gippsland Armed Forces Museum,in_storage

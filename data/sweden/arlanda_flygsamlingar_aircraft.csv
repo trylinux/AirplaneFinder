@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,AD-4,W,SE-EBB,Skyraider,,fixed_wing,monoplane,civilian,utility,,,AD-4W; AD4W; Skyraider; A-1; A1; c/n 127947; AD4,Arlanda Flygsamlingar,in_storage
+Junkers,Tp 2,,6,W 34,,fixed_wing,monoplane,military,transport,,Ex SE-BYA. Built by AB Flygindustri at Limhamn. Former F 4 red W.,W 34; W34; Trp 2; Tp2; c/n 2835,Arlanda Flygsamlingar,in_storage
+Klemm,Sk 15,A,5049,Kl 35,,fixed_wing,monoplane,military,trainer,,Ex SE-BHF.,Kl 35; Kl35; Sk15,Arlanda Flygsamlingar,in_storage
+Nord,NC.701,,SE-KAL,Martinet,,fixed_wing,monoplane,civilian,transport,,,NC701; NC.701; Martinet; Siebel Si 204; Si204; c/n 159,Arlanda Flygsamlingar,in_storage

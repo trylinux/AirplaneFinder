@@ -1,0 +1,67 @@
+name,city,state_province,country,postal_code,region,address,website,access_type,latitude,longitude
+Aeroseum,Göteborg,Västra Götaland,Sweden,417 46,Europe,Nya Bergets väg 50,https://aeroseum.se,public,57.7707666,11.8805734
+Arboga Robotmuseum,Arboga,Västmanland,Sweden,732 31,Europe,Glasbruksgatan 1,https://robotmuseum.se,public,59.3968437,15.8556466
+Arlanda Flygsamlingar,Rosersberg,Stockholm,Sweden,195 72,Europe,Metallvägen 45C,https://arlandaflygsamlingar.se,restricted,59.5693178,17.8782024
+Autoseum,Simrishamn,Skåne,Sweden,272 36,Europe,Fabriksgatan 10,https://autoseum.se,public,55.5491755,14.3419649
+Blekinge flygflottilj F 17,Kallinge,Blekinge,Sweden,372 50,Europe,Hangarvägen,,restricted,56.2599906,15.2788400
+Bunge Flygmuseum,Fårösund,Gotland,Sweden,624 64,Europe,Bunge Flygfältet 500,https://www.bungeflygfalt.se,public,57.8500000,19.0383333
+Eurostop Arlandastad,Märsta,Stockholm,Sweden,195 60,Europe,Arlandastad,,public,,
+F 14 Förbandsmuseum,Halmstad,Halland,Sweden,301 80,Europe,Halmstads garnison,https://fkvf.se,restricted,56.6888671,12.8325064
+F 15 Flygmuseum,Söderhamn,Gävleborg,Sweden,826 70,Europe,Byggnad 81 Flygstaden,https://www.soderhamnflygmuseum.se,public,61.2720991,17.0933301
+F 16 Flygmuseum,Uppsala,Uppsala,Sweden,755 94,Europe,Uppsala-Ärna flygplats,https://www.arnakamratveteran.se,restricted,59.8998300,17.6010728
+F 7 Gårds- och Flottiljmuseum,Såtenäs,Västra Götaland,Sweden,531 96,Europe,Gyllene Vingen Såtenäs,https://f7museum.se,appointment,58.4311669,12.7067895
+F11 Museum,Nyköping,Södermanland,Sweden,611 57,Europe,Stockholm Skavsta flygplats,https://www.f11museum.se,public,58.7876951,16.9317736
+Flygmuseet F 21,Luleå,Norrbotten,Sweden,,Europe,Kallax,https://www.flygmuseetf21.se,public,65.5478388,22.1167123
+Flygteknikcentrum Västerås,Västerås,Västmanland,Sweden,721 34,Europe,Hässlögatan,,restricted,59.6020356,16.6265900
+Flygvapenmuseum,Linköping,Östergötland,Sweden,586 63,Europe,Carl Cederströms gata 2,https://flygvapenmuseum.se,public,58.4099354,15.5244644
+Försvarsmuseum Boden,Boden,Norrbotten,Sweden,961 43,Europe,Granatvägen,https://forsvarsmuseumboden.se,public,65.8052755,21.6790694
+GKN Aerospace Trollhättan,Trollhättan,Västra Götaland,Sweden,,Europe,Flygmotorvägen,,restricted,58.3063492,12.3183162
+Gotlands Försvarsmuseum,Tingstäde,Gotland,Sweden,624 44,Europe,Förrådsvägen 4,https://www.gotlandsforsvarsmuseum.se,public,57.7347427,18.6132035
+Grenna Museum – Andréexpeditionen Polarcenter,Gränna,Jönköping,Sweden,563 32,Europe,Brahegatan 38,https://www.grennamuseum.se,public,58.0218981,14.4675270
+High Chaparral,Hillerstorp,Jönköping,Sweden,330 33,Europe,Kulltorp,https://highchaparral.se,public,57.2630546,13.8337218
+Jämtlands flyg- och lottamuseum,Optand,Jämtland,Sweden,834 98,Europe,Optands flygfält,,public,63.1272011,14.8041386
+Jämtlands flygflottilj F 4 Frösön,Frösön,Jämtland,Sweden,832 96,Europe,Frösö läger,,public,63.1938659,14.4855779
+Kalixlinjens Museum,Kalix,Norrbotten,Sweden,952 92,Europe,Marieberg 22,https://kalixlinjen.se,public,65.9589310,22.8787933
+Kalmar Öland Airport,Kalmar,Kalmar,Sweden,392 41,Europe,Flygplatsvägen,,public,56.6776124,16.2879332
+Karlsborgs fästning,Karlsborg,Västra Götaland,Sweden,546 30,Europe,Sjukhusvägen 8,https://www.fallskarmsjagarna.se,public,58.5347557,14.5282696
+Karlsborgs garnison F 6,Karlsborg,Västra Götaland,Sweden,546 30,Europe,Före detta F 6 Karlsborg,,restricted,58.5158249,14.5110517
+Kreativum Science Center,Karlshamn,Blekinge,Sweden,374 32,Europe,Strömmavägen 28,https://kreativum.se,public,56.1928147,14.8533126
+Krigsflygfält 16 Brattforsheden,Molkom,Värmland,Sweden,,Europe,Brattforsheden,https://sfhm.se/utstallning/krigsflygfalt-16/,public,59.6083333,13.9122222
+Le Caravelle Club Arlanda,Stockholm-Arlanda,Stockholm,Sweden,190 45,Europe,Stockholm Arlanda flygplats,,appointment,59.6467921,17.9370443
+Ljungbyheds Militärhistoriska Museum,Ljungbyhed,Skåne,Sweden,264 51,Europe,Tummelisas väg 4,http://www.lmhm.se,public,56.0790490,13.2315258
+Luleå Airport,Luleå,Norrbotten,Sweden,972 54,Europe,Lulviksvägen,,public,65.5478388,22.1167123
+Malmens flygplats,Linköping,Östergötland,Sweden,584 22,Europe,Malmen Malmslätt,,restricted,58.3977814,15.5227728
+Mannaminne,Nordingrå,Västernorrland,Sweden,873 99,Europe,Häggvik,https://mannaminne.se,public,62.9111393,18.3037744
+RFN Museum Vidsel,Vidsel,Norrbotten,Sweden,942 95,Europe,Bredsel 105 Vidsels flygplats,https://www.storforsen.se/rfn-museum/,restricted,65.8752778,20.1500000
+Rinkaby skjutfält,Kristianstad,Skåne,Sweden,,Europe,Rinkaby,,restricted,55.9204673,14.4100615
+Saab AB Linköping,Linköping,Östergötland,Sweden,,Europe,Bröderna Ugglas gata,,restricted,58.4013161,15.6539605
+Saab Car Museum Innovatum,Trollhättan,Västra Götaland,Sweden,461 53,Europe,Nohabgatan Innovatum,https://saabcarmuseum.se,public,58.2716942,12.2783987
+Scandinavian Manufacturing SCAMA,Väderstad,Östergötland,Sweden,590 21,Europe,,,restricted,58.3114358,14.9236438
+Segelflygmuseet på Ålleberg,Falköping,Västra Götaland,Sweden,521 91,Europe,Ålleberg,https://klubbhus.flygsport.se/segelflygets-veteransallskap/segelflygmuseum,public,58.1347222,13.6025000
+Siljan Airpark Museum,Siljansnäs,Dalarna,Sweden,793 97,Europe,Siljansnäs flygfält ESVS,https://www.siljanairpark.se,public,60.7850000,14.8272222
+Stenbäcks Flygmuseum,Skurup,Skåne,Sweden,274 94,Europe,Eksmadsvägen 323,https://www.stenbacksflygmuseum.com,appointment,55.4978455,13.4376142
+Svedinos Bil- och Flygmuseum,Ugglarp,Halland,Sweden,311 69,Europe,,https://www.svedinos.se,public,56.8213112,12.6309244
+Swedish Forced Landing Collection,Morup,Halland,Sweden,311 90,Europe,Långås 120,https://www.forcedlandingcollection.se,appointment,56.9833073,12.3853619
+Teknikland,Optand,Jämtland,Sweden,834 98,Europe,Optand 918,https://teknikland.se,public,63.1264272,14.7969214
+Tekniska museet,Stockholm,Stockholm,Sweden,115 27,Europe,Museivägen 7,https://www.tekniskamuseet.se,public,59.3325149,18.1188400
+Valhall Park,Ängelholm,Skåne,Sweden,262 74,Europe,Valhall Park före detta F 10,,public,56.2886548,12.8463847
+Visby flygplats,Visby,Gotland,Sweden,621 40,Europe,,,restricted,57.6654377,18.3470586
+Vännäs Motor- och Flygmuseum,Vännäs,Västerbotten,Sweden,911 33,Europe,Lägervägen 3,https://www.vannasmotormuseum.se,public,63.9085176,19.7338051
+Västerås Flygmuseum,Västerås,Västmanland,Sweden,721 31,Europe,Hässlögatan 16,https://www.flygmuseum.com,public,59.5942943,16.6258317
+Ängelholms Flygmuseum,Ängelholm,Skåne,Sweden,262 74,Europe,Drakenvägen 5 Valhall Park,https://flygmuseum.engelholm.se,public,56.2883514,12.8463258
+Örnsköldsvik Airport,Örnsköldsvik,Västernorrland,Sweden,,Europe,,,public,63.4098700,18.9889223
+Österlens Flygmuseum,Gärsnäs,Skåne,Sweden,272 97,Europe,Karlabyvägen Östra Vemmerlöv,https://www.osterlensflygmuseum.se,public,55.5746028,14.2478625
+Viggen Rest Area Monument -- Grästorp,Grästorp,Västra Götalands län,Sweden,,Europe,Rastplats Viggen Riksväg 44 near the Tun exit,,public,,
+Lansen Roundabout Monument -- Halmstad,Halmstad,Hallands län,Sweden,302 39,Europe,Karlsrovägen roundabout at the Flygstaden entrance,,public,56.675347,12.838356
+Viggen Rest Area Monument -- Ronneby,Ronneby,Blekinge län,Sweden,,Europe,Sörby rest area E22 interchange 56,,public,,
+Viggen Plinth -- Biltema Luleå,Luleå,Norrbottens län,Sweden,973 45,Europe,Betongvägen 1 Storheden,,public,65.618461,22.054953
+Kareby Bil Aircraft Pylons -- Kungälv,Kungälv,Västra Götalands län,Sweden,,Europe,Prästvägen Kareby along the old E6,,public,57.905878,11.924686
+Viggen Plinth -- Söderhamn,Söderhamn,Gävleborgs län,Sweden,,Europe,E4 Söderhamn Södra interchange,,public,61.295509,17.023145
+Saab Aircraft Pylons -- Linköping E4,Linköping,Östergötlands län,Sweden,,Europe,Pylons at the three E4 interchanges serving Linköping,,public,,
+Police Helicopter Display -- Polismuseet Stockholm,Stockholm,Stockholms län,Sweden,115 27,Europe,Djurgårdsbrunnsvägen Ladugårdsgärdet,https://polismuseet.se/,public,59.333116,18.118473
+Viggen Campus Airframe -- Fyrisskolan Uppsala,Uppsala,Uppsala län,Sweden,,Europe,Fyrisskolan Götgatan,,restricted,,
+Aviation Training Airframes -- Klippans Gymnasieskola Ljungbyhed,Ljungbyhed,Skåne län,Sweden,,Europe,Klippans gymnasieskola aviation programme Ljungbyhed,,restricted,56.0829887,13.2119429
+SK 60 Campus Airframe -- Hässlögymnasiet Västerås,Västerås,Västmanlands län,Sweden,,Europe,Hässlögymnasiet former F 1 Hässlö,,restricted,,
+Lansen Campus Airframe -- Arvidsjaur,Arvidsjaur,Norrbottens län,Sweden,,Europe,Lapplands flygtekniska gymnasium,,restricted,65.592028,19.2765977
+Bloodhound Missile Monument -- Norrtälje,Norrtälje,Stockholms län,Sweden,,Europe,Former Lv 3 barracks area,,public,,
+Rb 340 Missile Monument -- Vidsel,Vidsel,Norrbottens län,Sweden,,Europe,Vidsel village square,,public,65.833606,20.520088

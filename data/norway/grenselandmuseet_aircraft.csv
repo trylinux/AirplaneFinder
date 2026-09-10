@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Ilyushin,Il-2,M,3035560,Shturmovik,,fixed_wing,monoplane,military,ground_attack,,Soviet ground attack aircraft that crashed at Sennagress on 22 October 1944. Recovered and restored in 1984.,Il2; Il-2M; Il-2; Shturmovik; Sturmovik; White 2; Il2M,Grenselandmuseet,on_display

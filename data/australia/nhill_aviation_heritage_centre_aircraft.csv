@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Avro,652,A,W2364,Anson,,fixed_wing,monoplane,military,trainer,,Long-term restoration begun 2009; moved into the Ahrens Hangar February 2014 and first engine run September 2014. Restoration described by the centre as almost complete.,652A; Anson,Nhill Aviation Heritage Centre,under_restoration
+Commonwealth Aircraft Corporation,CA-16,,A20-722,Wirraway,,fixed_wing,monoplane,military,trainer,,Flown from Tyabb to Nhill in April 2018 as a permanent static exhibit.,CA16; Wirraway,Nhill Aviation Heritage Centre,on_display
+de Havilland Australia,DH.82,A,A17-588,Tiger Moth,,fixed_wing,biplane,military,trainer,,Privately owned airworthy Tiger Moth (VH-RIN) added to the display in November 2017.,DH82; Tiger Moth; VH-RIN,Nhill Aviation Heritage Centre,on_display
+Desoutter,Desoutter,Mk II,VH-UPR,,,fixed_wing,monoplane,civilian,commercial_transport,,"1930s Desoutter monoplane on loan from the Australian National Aviation Museum, Moorabbin.",Desoutter,Nhill Aviation Heritage Centre,on_display

@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bleriot,XI,,,,,fixed_wing,monoplane,civilian,other,,Full-scale replica of the Bleriot XI.,Bleriot XI; Bleriot,Southward Car Museum,on_display
+de Havilland,DH.82,A,ZK-AOX,Tiger Moth,,fixed_wing,biplane,civilian,trainer,1941,Listed in the museum's aircraft catalogue as a 1941 Tiger Moth.,Tiger Moth; DH82A,Southward Car Museum,on_display
+de Havilland,DH.100,FB.5,NZ5770,Vampire,,fixed_wing,monoplane,military,fighter,1952,Ex-RAF WA444. Listed by the museum as a 1952 aircraft.,Vampire; WA444; DH100,Southward Car Museum,on_display
+Vickers,No. 22,,,,,fixed_wing,monoplane,civilian,other,1910,Reproduction of the 1910 Vickers monoplane.,Vickers 22; Vickers monoplane,Southward Car Museum,on_display

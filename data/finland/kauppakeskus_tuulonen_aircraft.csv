@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,DC-2,,DO-1,,Hanssin-Jukka,fixed_wing,monoplane,military,transport,,Restored and displayed in its own glazed hangar opened to the public in June 2015. Owned by the Sotamuseo collection.,DC2; DO-1; Hanssin-Jukka; Hanssin Jukka; DO1,Kauppakeskus Tuulonen,on_display
+Focke-Wulf,Fw 44,J,SZ-18,Stieglitz,,fixed_wing,biplane,military,trainer,,Restored and suspended from the roof of the Tuulosraitti mall walkway since autumn 2016.,Fw44; FW 44J; Stieglitz,Kauppakeskus Tuulonen,on_display
+Mikoyan-Gurevich,MiG-21,bis,MG-124,Fishbed,,fixed_wing,monoplane,military,fighter,,Unveiled in the yard beside highway 12 in autumn 2016.,MiG21; MiG-21BIS; MiG21bis; Fishbed,Kauppakeskus Tuulonen,on_display
+Mil,Mi-8,P,HS-6,Hip,,rotary_wing,,military,transport,,Displayed on the lawn in the shopping centre yard.,Mi8; Mi-8P; Mi8P; Hip,Kauppakeskus Tuulonen,on_display
+Saab,Saab 35,FS,DK-247,Draken,,fixed_wing,monoplane,military,fighter,,Unveiled in the shopping centre yard on 30 September 2016.,Saab35; J 35; J35; Draken; Saab 35FS,Kauppakeskus Tuulonen,on_display
+BAE Systems,Hawk,Mk 51,HW-338,Hawk,,fixed_wing,monoplane,military,trainer,,Fuselage only with no wings or engine because the type remained in Finnish Air Force service. Flew with the Midnight Hawks display team. Served 1985 to 2017.,Hawk Mk.51; HW338,Kauppakeskus Tuulonen,on_display

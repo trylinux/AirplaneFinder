@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Northrop,F-5,A,563,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,Preserved in the Sessvollmoen camp area. Previously held at Norsk Luftfartsmuseum.,F5; F-5A; Freedom Fighter; c/n N.7011; F5A,Sessvollmoen Leir Preserved Aircraft -- Sessvollmoen,on_display
+Northrop,F-5,A,898,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,Held in the Sessvollmoen camp area.,F5; F-5A; Freedom Fighter; c/n N.7061; F5A,Sessvollmoen Leir Preserved Aircraft -- Sessvollmoen,on_display

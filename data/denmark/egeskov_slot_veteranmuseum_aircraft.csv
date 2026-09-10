@@ -1,0 +1,11 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Saab,F-35,XD,A-012,Draken,,fixed_wing,monoplane,military,fighter,,Displayed in the courtyard outside the veteran museum.,A35XD; 35-1012; F35; F35XD,Egeskov Slot Veteranmuseum,on_display
+Lockheed,F-104,G,R-814,Starfighter,,fixed_wing,monoplane,military,fighter,,Canadair-built CF-104 in Danish markings.,CF-104; 683A-1114; 104814; F104; F104G; CF104,Egeskov Slot Veteranmuseum,on_display
+Sud Aviation,SE.3160,,M-388,Alouette III,,rotary_wing,,military,utility,,Royal Danish Navy helicopter.,SE3160; Alouette 3; 1388,Egeskov Slot Veteranmuseum,on_display
+de Havilland Canada,DHC-1,Mk.20,P-127,Chipmunk,,fixed_wing,monoplane,military,trainer,,Danish Air Force primary trainer.,DHC1; C1/0106,Egeskov Slot Veteranmuseum,on_display
+Focke-Achgelis,Fa 330,A-1,100032,Bachstelze,,rotary_wing,,military,recon,,German submarine-towed observation rotor kite.,Fa-330; Fa330; 60127,Egeskov Slot Veteranmuseum,on_display
+de Havilland,DH.82,A,OY-BAK,Tiger Moth,,fixed_wing,biplane,civilian,trainer,,Danish-registered Tiger Moth.,DH82; 86425,Egeskov Slot Veteranmuseum,on_display
+Schneider,Grunau Baby,IIb,OY-BCX,Grunau Baby,,fixed_wing,monoplane,civilian,private,,Training glider.,02,Egeskov Slot Veteranmuseum,on_display
+Schleicher,Ka 6,CR,OY-XGM,Rhoensegler,,fixed_wing,monoplane,civilian,private,,Single-seat glider wearing competition code F6.,Ka-6; K6; F6; 6640/SI; Ka6,Egeskov Slot Veteranmuseum,on_display
+Schleicher,K 8,B,OY-XFK,K 8,,fixed_wing,monoplane,civilian,private,,Single-seat training glider.,K8; 8496,Egeskov Slot Veteranmuseum,on_display
+Goppingen,Go 5,,,Go 5,,fixed_wing,monoplane,civilian,private,,Glider registered OY-61.,Gö-5; OY-61; 186; OY61,Egeskov Slot Veteranmuseum,on_display

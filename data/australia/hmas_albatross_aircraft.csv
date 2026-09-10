@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Sikorsky,S-70,B-2,N24-009,Seahawk,,rotary_wing,,military,recon,,Deployed to Darwin for Exercise Pitch Black and displayed at the 2010 Defence Force Airshow at Williamtown; withdrawn from service 29 July 2016 and now the gate guard at Naval Air Station Nowra.,S70; S70B2; Seahawk,HMAS Albatross,on_display
+Aerospatiale,AS350,B,N22-018,Squirrel,,rotary_wing,,military,utility,,Ex-723 Squadron Squirrel retired in 2015 and placed as a gate guard at HMAS Albatross in December 2017.,AS350; AS350B; Squirrel,HMAS Albatross,on_display

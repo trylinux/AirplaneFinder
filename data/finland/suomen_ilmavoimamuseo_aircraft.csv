@@ -1,0 +1,68 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Breguet,Breguet 14,A2,3C30,,,fixed_wing,biplane,military,recon,,Conserved airframe in the main hall. Wings carry the marking BR-30 which is not the airframe true identity.,Breguet14; BR-30; BR30,Suomen Ilmavoimamuseo,on_display
+Brewster,Brewster 239,,BW-372,,,fixed_wing,monoplane,military,fighter,,Sole surviving Brewster Model 239 in the world. Recovered from a Russian lake and conserved rather than restored.,Brewster Buffalo; B-239; B239; Brewster239,Suomen Ilmavoimamuseo,on_display
+Bristol,Bristol Blenheim,Mk IV,BL-200,Blenheim,,fixed_wing,monoplane,military,bomber,,Only original Bristol Blenheim Mk IV surviving anywhere. Restored.,BristolBlenheim; Blenheim IV,Suomen Ilmavoimamuseo,on_display
+DFS,DFS Weihe,,OH-WAB,Weihe,,fixed_wing,monoplane,civilian,other,,Glider on display. Earlier markings OH-JÄMI 3 and OH-133.,DFSWeihe; OH-JÄMI 3; OH-133; OH133,Suomen Ilmavoimamuseo,on_display
+Douglas,DC-3,C,OH-LCF,Dakota,,fixed_wing,monoplane,military,transport,,Finnish Air Force serial DO-4. USAAF serial 43-48254.,DC3; DO-4; 43-48254; C-47; DC3C; DO4; C47,Suomen Ilmavoimamuseo,on_display
+Focke-Wulf,Fw 44,J,SZ-4,Stieglitz,,fixed_wing,biplane,military,trainer,,Restored biplane trainer.,Fw44; FW 44J; Stieglitz,Suomen Ilmavoimamuseo,on_display
+Fokker,Fokker D.XXI,,FR-110,,,fixed_wing,monoplane,military,fighter,,Finnish built Fokker D.XXI fighter in the Air Force Museum collection.,FokkerD.XXI; Fokker DXXI; D.XXI; DXXI,Suomen Ilmavoimamuseo,on_display
+Folland,Folland Gnat,Mk.1,GN-101,Gnat,,fixed_wing,monoplane,military,fighter,,Unrestored. Displayed indoors.,FollandGnat; Gnat Mk1,Suomen Ilmavoimamuseo,on_display
+Folland,Folland Gnat,Mk.1,GN-104,Gnat,,fixed_wing,monoplane,military,fighter,,Mounted as a memorial in front of the museum building.,FollandGnat; Gnat Mk1,Suomen Ilmavoimamuseo,on_display
+Fouga,Fouga CM 170,Magister,FM-45,Magister,,fixed_wing,monoplane,military,trainer,,Jet trainer on display indoors.,FougaCM170; CM.170; Magister,Suomen Ilmavoimamuseo,on_display
+Gourdou-Leseurre,Gourdou-Leseurre GL.22,,8F.12,,,fixed_wing,monoplane,military,fighter,,Restored parasol fighter of the early Finnish Air Force.,GourdouLeseurre; GL22; GL.22,Suomen Ilmavoimamuseo,on_display
+Hawker,Hawker Hurricane,Mk I,HC-452,Hurricane,,fixed_wing,monoplane,military,fighter,,One of the oldest surviving Hurricane Mk I airframes. Conserved not restored.,HawkerHurricane; Hurricane I,Suomen Ilmavoimamuseo,on_display
+Ilyushin,Il-28,R,NH-4,Beagle,,fixed_wing,monoplane,military,recon,,Reconnaissance version of the Soviet jet bomber used by Finland for target towing and survey work.,Il28; Iljushin Il-28; IL-28R; Beagle; Il28R,Suomen Ilmavoimamuseo,on_display
+Martinsyde,Martinsyde F.4,Buzzard,MA-24,Buzzard,,fixed_wing,biplane,military,fighter,,Only surviving Martinsyde F.4 Buzzard in the world.,MartinsydeF.4; F4 Buzzard; Buzzard,Suomen Ilmavoimamuseo,on_display
+Messerschmitt,Bf 109,G-6,MT-507,,,fixed_wing,monoplane,military,fighter,,Restored. In 2025 the airframe was moved to the museum conservation facility for maintenance so it may be off the floor temporarily.,Bf109; Me 109; Messerschmitt Bf109G,Suomen Ilmavoimamuseo,on_display
+Mikoyan-Gurevich,MiG-15,UTI,MU-4,Midget,,fixed_wing,monoplane,military,trainer,,Two seat jet conversion trainer.,MiG15; MiG-15UTI; MiG15UTI; Midget,Suomen Ilmavoimamuseo,on_display
+Mikoyan-Gurevich,MiG-17,Lim-5,1C-1709,Fresco,,fixed_wing,monoplane,military,fighter,,Polish built Lim-5 displayed in the museum outdoor area. Never served with the Finnish Air Force.,MiG17; Lim5; Lim-5; Fresco,Suomen Ilmavoimamuseo,on_display
+Mikoyan-Gurevich,MiG-21,bis,MG-136,Fishbed,,fixed_wing,monoplane,military,fighter,,Only the cockpit section survives.,MiG21; MiG-21BIS; MiG21bis; Fishbed,Suomen Ilmavoimamuseo,on_display
+Mikoyan-Gurevich,MiG-21,bis,MG-138,Fishbed,,fixed_wing,monoplane,military,fighter,,Displayed in the museum outdoor area.,MiG21; MiG-21BIS; MiG21bis; Fishbed,Suomen Ilmavoimamuseo,on_display
+Mikoyan-Gurevich,MiG-21,F-13,MG-92,Fishbed,,fixed_wing,monoplane,military,fighter,,Unrestored early Finnish MiG-21.,MiG21; MiG-21F-13; MiG21F13; Fishbed,Suomen Ilmavoimamuseo,on_display
+Mikoyan-Gurevich,MiG-21,U,MK-103,Mongol,,fixed_wing,monoplane,military,trainer,,Two seat trainer displayed in the museum yard.,MiG21; MiG-21U; MiG21U; Mongol,Suomen Ilmavoimamuseo,on_display
+Mikoyan-Gurevich,MiG-21,UM,MK-126,Mongol,,fixed_wing,monoplane,military,trainer,,Displayed in the museum outdoor area.,MiG21; MiG-21UM; MiG21UM; Mongol,Suomen Ilmavoimamuseo,on_display
+Mil,Mi-1,,OH-HRC,Hare,,rotary_wing,,civilian,utility,,Licence built PZL SM-1. Former Finnish civil helicopter.,Mi1; PZL SM-1; SM1; Hare,Suomen Ilmavoimamuseo,on_display
+Mil,Mi-4,,HR-1,Hound,,rotary_wing,,military,utility,,First Finnish Air Force Mi-4.,Mi4; Hound,Suomen Ilmavoimamuseo,on_display
+Mil,Mi-8,T,HS-1,Hip,,rotary_wing,,military,transport,,Displayed in the museum outdoor area.,Mi8; Mi-8T; Mi8T; Hip,Suomen Ilmavoimamuseo,on_display
+SZD,SZD-22,C,OH-258,Mucha Standard,,fixed_wing,monoplane,civilian,other,,Polish glider. Also registered OH-MSE.,SZD22; SZD-22C; Mucha; OH-MSE; SZD22C,Suomen Ilmavoimamuseo,on_display
+Saab,Saab 35,CS,DK-270,Draken,,fixed_wing,monoplane,military,fighter,,Displayed in the museum outdoor area.,Saab35; J 35; J35; Draken; Saab 35CS,Suomen Ilmavoimamuseo,on_display
+Saab,Saab 35,FS,DK-233,Draken,,fixed_wing,monoplane,military,fighter,,Nose section only.,Saab35; J 35; J35; Draken; Saab 35FS,Suomen Ilmavoimamuseo,on_display
+Saab,Saab 35,S,DK-223,Draken,,fixed_wing,monoplane,military,fighter,,Finnish assembled Draken on indoor display.,Saab35; J 35; J35; Draken; Saab 35S,Suomen Ilmavoimamuseo,on_display
+Saab,Saab 91,D,SF-2,Safir,,fixed_wing,monoplane,military,trainer,,Complete airframe on display.,Saab91; Saab 91D; Safir,Suomen Ilmavoimamuseo,on_display
+Saab,Saab 91,D,SF-8,Safir,,fixed_wing,monoplane,military,trainer,,Cockpit section only.,Saab91; Saab 91D; Safir,Suomen Ilmavoimamuseo,on_display
+Thulin,Thulin Typ D,,F1,,,fixed_wing,monoplane,military,trainer,,Flying replica of the first aircraft of the Finnish Air Force. Built as a replica not an original airframe.,ThulinTypD; Thulin D; Typ D,Suomen Ilmavoimamuseo,on_display
+VL,VL Pyörremyrsky,,PM-1,Pyörremyrsky,,fixed_wing,monoplane,military,fighter,,Sole prototype of the Finnish designed fighter. Restored.,VLPyörremyrsky; Pyorremyrsky; Pyörremyrsky,Suomen Ilmavoimamuseo,on_display
+Valmet,Valmet Vihuri,II,VH-18,Vihuri,,fixed_wing,monoplane,military,trainer,,Only surviving complete Vihuri.,ValmetVihuri; Vihuri II,Suomen Ilmavoimamuseo,on_display
+de Havilland,DH.115,Vampire Mk.55,VT-8,Vampire Trainer,,fixed_wing,monoplane,military,trainer,,Two seat Vampire trainer.,DH115; D.H.115; Vampire T.55; Vampire Mk 55,Suomen Ilmavoimamuseo,on_display
+de Havilland,DH.60,X Moth,OH-EJA,Moth,,fixed_wing,biplane,civilian,trainer,,Restored. Earlier marks OH-MAH OH-ILC and K-SILC.,DH60; D.H.60X; Moth; OH-MAH; OH-ILC; K-SILC,Suomen Ilmavoimamuseo,on_display
+VL,VL Tiira,,,Tiira,,fixed_wing,monoplane,military,other,,Finnish designed aircraft displayed in the museum. Identity marks not published by the museum.,Tiira,Suomen Ilmavoimamuseo,on_display
+Avro,Avro 504,K,AV-57,,,fixed_wing,biplane,military,trainer,,Restored but held in store rather than on the exhibition floor.,Avro504; 504K,Suomen Ilmavoimamuseo,in_storage
+Morane-Saulnier,M.S.50,C,MS-52,,,fixed_wing,monoplane,military,trainer,,Restored airframe held in store.,MS50; M.S.50C; MS.50,Suomen Ilmavoimamuseo,in_storage
+IVL,IVL C.24,,8F.4,,,fixed_wing,biplane,military,fighter,,Prototype. Restored but probably fitted with a wrong wing.,IVLC.24; I.V.L. C.24; C24,Suomen Ilmavoimamuseo,in_storage
+VL,VL Sääski,I,SÄ-95,Sääski,,fixed_wing,biplane,military,trainer,,Prototype. Unrestored and missing its wings. Also carried K-SASA.,VLSääski; Saaski; SA-95; K-SASA; SA95,Suomen Ilmavoimamuseo,in_storage
+VL,VL Pyry,,PY-35,Pyry,,fixed_wing,monoplane,military,trainer,,Stored airframe.,VLPyry; Pyry,Suomen Ilmavoimamuseo,in_storage
+VL,VL Pyry,,PY-5,Pyry,,fixed_wing,monoplane,military,trainer,,Wreck consisting of the steel tube fuselage frame only.,VLPyry; Pyry,Suomen Ilmavoimamuseo,in_storage
+Messerschmitt,Bf 109,F-4,,,,fixed_wing,monoplane,military,fighter,,German airframe recovered as a wreck. Wears the factory code NE+MH which is the only identity known.,Bf109; Me 109; NE+MH,Suomen Ilmavoimamuseo,in_storage
+VL,VL Humu,,HM-671,Humu,,fixed_wing,monoplane,military,fighter,,Sole Finnish built Brewster derivative. Restored but held in store.,VLHumu; Humu,Suomen Ilmavoimamuseo,in_storage
+VL,VL Myrsky,II,MY-9,Myrsky,,fixed_wing,monoplane,military,fighter,,Wreck consisting of the steel tube fuselage frame.,VLMyrsky; Myrsky II,Suomen Ilmavoimamuseo,in_storage
+Hunting Percival,Pembroke,Mk.53,PR-2,Pembroke,,fixed_wing,monoplane,military,transport,,Restored once. Held in store.,Pembroke C.53; Percival Pembroke; Pembroke53,Suomen Ilmavoimamuseo,in_storage
+de Havilland,DH.100,Vampire Mk.52,VA-6,Vampire,,fixed_wing,monoplane,military,fighter,,Stored single seat Vampire.,DH100; D.H.100; Vampire FB.52; Vampire Mk 52,Suomen Ilmavoimamuseo,in_storage
+Fokker,Fokker C.X,,FK-113,,,fixed_wing,biplane,military,recon,,Wreck in store.,FokkerC.X; Fokker CX; C.X; CX,Suomen Ilmavoimamuseo,in_storage
+Fokker,Fokker C.X,,FK-115,,,fixed_wing,biplane,military,recon,,Wreck in store.,FokkerC.X; Fokker CX; C.X; CX,Suomen Ilmavoimamuseo,in_storage
+Fokker,Fokker C.V,,,,,fixed_wing,biplane,military,recon,,Unidentified Fokker C.V wreck in the museum store. Distinct from the Fokker C.V FO-75 held at Vesivehmaa.,FokkerC.V; Fokker CV; C.V; CV,Suomen Ilmavoimamuseo,in_storage
+Fokker,Fokker D.X,,8E.3,,,fixed_wing,biplane,military,fighter,,Wreck consisting of the fuselage frame only.,FokkerD.X; Fokker DX; D.X; DX,Suomen Ilmavoimamuseo,in_storage
+Arado,Ar 66,c,,,,fixed_wing,biplane,military,trainer,,Wreck consisting of the fuselage only. No serial recorded by the museum.,Ar66; Arado Ar66,Suomen Ilmavoimamuseo,in_storage
+Tupolev,SB-2,bis,,,,fixed_wing,monoplane,military,bomber,,Rear fuselage only. Distinct from the SB-2M-103 rear fuselage at Vesivehmaa.,SB2; SB-2bis; SB2bis; ANT-40; ANT40,Suomen Ilmavoimamuseo,in_storage
+Caudron,Caudron G.3,,,,,fixed_wing,biplane,military,trainer,,Unidentified second Caudron G.3. Fuselage only. Distinct from 1E.18 at Hallinportti.,CaudronG.3; Caudron G3; G.3; G3,Suomen Ilmavoimamuseo,in_storage
+de Havilland,DH.60,Moth,OH-ILA,Moth,,fixed_wing,biplane,civilian,trainer,,Stored. Earlier marks K-SILA and K-SALF.,DH60; D.H.60; Moth; K-SILA; K-SALF,Suomen Ilmavoimamuseo,in_storage
+Noorduyn,C-64,A,OH-NOA,Norseman,,fixed_wing,monoplane,civilian,utility,,Wreck. Earlier identities 44-70381 and HB-UIK.,C64; Norseman; 44-70381; HB-UIK; C64A,Suomen Ilmavoimamuseo,in_storage
+Ilyushin,Il-2,M3,,Sturmovik,,fixed_wing,monoplane,military,ground_attack,,Wreck consisting of wings only.,Il2; Iljushin Il-2; IL-2M3; Sturmovik,Suomen Ilmavoimamuseo,in_storage
+Polikarpov,Po-2,,,,,fixed_wing,biplane,military,trainer,,Restored but held in store. Museum records the identity only as 1.,Po2; U-2; U2,Suomen Ilmavoimamuseo,in_storage
+Mil,Mi-1,,HK-2,,,rotary_wing,,military,utility,,Licence built PZL SM-1/600 SZ. Stored.,Mi1; SM-1; SM1; PZL SM-1/600 SZ,Suomen Ilmavoimamuseo,in_storage
+Valmet,LEKO-70,,70,,,fixed_wing,monoplane,military,trainer,,Prototype of the Valmet Vinka. Stored.,LEKO70; Leko 70; L-70 prototype,Suomen Ilmavoimamuseo,in_storage
+Douglas,DC-2,,DO-3,,,fixed_wing,monoplane,military,transport,,Wreck. Fuselage used for many years as a playhouse then used as a spares source for the restoration of DO-1. Held on the museum storage area.,DC2; DO-3; DO3,Suomen Ilmavoimamuseo,in_storage
+Piper,PA-31,310 Navajo,OH-PRA,Navajo,,fixed_wing,monoplane,civilian,transport,,Fuselage only. Wreck on the museum storage area at Tikkakoski.,PA31; PA-31-310; Navajo,Suomen Ilmavoimamuseo,in_storage
+Mikoyan-Gurevich,MiG-21,UM,MK-105,Mongol,,fixed_wing,monoplane,military,trainer,,Stored.,MiG21; MiG-21UM; MiG21UM; Mongol,Suomen Ilmavoimamuseo,in_storage
+Saab,Saab 35,CS,DK-262,Draken,,fixed_wing,monoplane,military,fighter,,Stored.,Saab35; J 35; J35; Draken; Saab 35CS,Suomen Ilmavoimamuseo,in_storage
+Saab,Saab 91,D,SF-34,Safir,,fixed_wing,monoplane,military,trainer,,Stored. Civil marks OH-SFD.,Saab91; Saab 91D; Safir; OH-SFD,Suomen Ilmavoimamuseo,in_storage
+Saab,Saab 91,D,SF-35,Safir,,fixed_wing,monoplane,military,trainer,,Stored. Civil marks OH-SFE.,Saab91; Saab 91D; Safir; OH-SFE,Suomen Ilmavoimamuseo,in_storage

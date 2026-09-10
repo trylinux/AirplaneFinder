@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Saab,J 35,F-2,35551,Draken,,fixed_wing,monoplane,military,fighter,,Displayed as a simulated crash site.,Draken; Saab 35; Saab35; J35; J35F-2; J35-F-2,Kalixlinjens Museum,on_display
+Agusta-Bell,Hkp 6,A,06269,AB 206 JetRanger,,rotary_wing,,military,utility,,Displayed outdoors.,AB 206 JetRanger; AB 206; AB206; Bell 206; JetRanger; HKP 6; Hkp6; c/n 8091,Kalixlinjens Museum,on_display

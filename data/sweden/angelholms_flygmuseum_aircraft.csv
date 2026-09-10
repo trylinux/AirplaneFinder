@@ -1,0 +1,14 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+FFVS,J 22,A,22185,,,fixed_wing,monoplane,military,fighter,,On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,J22,Ängelholms Flygmuseum,on_display
+Reggiane,J 20,,2305,Re.2000 Falco,,fixed_wing,monoplane,military,fighter,,Preserved tail section from a crashed aircraft; not a complete airframe. On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Re.2000 Falco; Re.2000; Re2000; Falco; J20; c/n 352,Ängelholms Flygmuseum,on_display
+Saab,J 29,F,29575,Tunnan,,fixed_wing,monoplane,military,fighter,,On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Tunnan; Saab 29; Saab29; J29; J29F; J29-F,Ängelholms Flygmuseum,on_display
+Saab,J 35,J,35606,Draken,,fixed_wing,monoplane,military,fighter,,Nose section with cockpit only. On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Draken; Saab 35; Saab35; J35; J35J; J35-J,Ängelholms Flygmuseum,on_display
+Saab,J 35,J,35630,Draken,,fixed_wing,monoplane,military,fighter,,On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Draken; Saab 35; Saab35; J35; J35J; J35-J,Ängelholms Flygmuseum,on_display
+Saab,AJSF 37,,37976,Viggen,,fixed_wing,monoplane,military,recon,,,Viggen; Saab 37; Saab37; AJSF37,Ängelholms Flygmuseum,on_display
+Saab,JAS 39,A,39101,Gripen,,fixed_wing,monoplane,military,fighter,,The first production Gripen.,Gripen; Saab 39; Saab39; JAS39; JAS39A; JAS39-A,Ängelholms Flygmuseum,on_display
+Saab,JAS 39,A,39150,Gripen,,fixed_wing,monoplane,military,fighter,,Forward fuselage only.,Gripen; Saab 39; Saab39; JAS39; JAS39A; JAS39-A,Ängelholms Flygmuseum,on_display
+Saab,Sk 50,B,50007,Safir,,fixed_wing,monoplane,military,trainer,,,Safir; Saab 91; Saab91; Sk50; Sk50B; Sk50-B,Ängelholms Flygmuseum,on_display
+Saab,SK 60,B,60082,Saab 105,,fixed_wing,monoplane,military,trainer,,On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Saab 105; Saab105; SK60; SK60B; SK60-B,Ängelholms Flygmuseum,on_display
+Scottish Aviation,SK 61,A,61006,Bulldog,,fixed_wing,monoplane,military,trainer,,On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,B.125; B125; Bulldog; Sk 61; Sk61; SK61; c/n BH 100-106,Ängelholms Flygmuseum,on_display
+Agusta-Bell,Hkp 3,B,03424,AB 204B,,rotary_wing,,military,search_rescue,,,AB 204B; AB 204; AB204; Bell 204; Bell204; HKP 3; Hkp3,Ängelholms Flygmuseum,on_display
+Bristol,Rb 68,,,Bloodhound,,missile_rocket,,military,other,,surface_to_air Bloodhound Mk 2 surface-to-air missile displayed outdoors beside the museum building. Listed in the IPMS Stockholm museum report; no individual number recorded.,Bloodhound; Bloodhound Mk 2; Luftvarnsrobot 68; Rb68,Ängelholms Flygmuseum,on_display

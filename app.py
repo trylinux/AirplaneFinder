@@ -41,6 +41,7 @@ from models import (
     Museum, Aircraft, AircraftAlias, AircraftMuseum, AircraftFact, ZipCode, haversine,
     UserMuseumAssignment, UserCountryAssignment,
     AircraftTemplate, AircraftTemplateAlias,
+    join_designation,
 )
 from geocoder import resolve_location
 from config import Config
@@ -1657,6 +1658,9 @@ def _validate_text_fields(row, fields, errors):
     return row
 
 
+_OPERATOR_COUNTRY_RE = re.compile(r"^[A-Z]{2}$")
+
+
 def _validate_aircraft_row(row):
     """Return (clean_dict, errors). clean_dict is None if errors is non-empty."""
     errors = []
@@ -1664,6 +1668,7 @@ def _validate_aircraft_row(row):
         "manufacturer", "model", "variant", "model_name", "aircraft_name",
         "aircraft_type", "wing_type", "military_civilian", "role_type",
         "description", "museum_name", "display_status",
+        "construction_number", "operator_country",
     ), errors)
     # Trim every string field for safety.
     g = lambda k: (row.get(k) or "").strip() if isinstance(row.get(k), str) else row.get(k)
@@ -1692,6 +1697,17 @@ def _validate_aircraft_row(row):
 
     year_built = _coerce_int(row.get("year_built"), "year_built", errors)
 
+    # Part of the uniqueness key, so it is a controlled code and not free
+    # text: ISO 3166-1 alpha-2, uppercased, or blank for unknown. Shape only
+    # -- validating against the real ISO list would mean carrying the list,
+    # and a well-formed wrong code is a research error, not a schema one.
+    operator_country = (g("operator_country") or "").upper() or None
+    if operator_country and not _OPERATOR_COUNTRY_RE.match(operator_country):
+        errors.append({"field": "operator_country",
+                       "message": "must be a 2-letter ISO 3166-1 alpha-2 code "
+                                  "(the operator's nationality, not the "
+                                  "display country) or empty"})
+
     # Optional museum link. A row may name the museum by id OR by name, not
     # both — accepting both invites a row where they disagree, and silently
     # picking one would link the aircraft somewhere the curator didn't mean.
@@ -1717,6 +1733,8 @@ def _validate_aircraft_row(row):
         "manufacturer": manufacturer,
         "model": model,
         "variant": g("variant") or None,
+        "construction_number": g("construction_number") or None,
+        "operator_country": operator_country,
         "tail_number": _normalize_tail_number(g("tail_number")),
         "model_name": g("model_name") or None,
         "aircraft_name": g("aircraft_name") or None,
@@ -1844,6 +1862,28 @@ def _resolve_import_museum(clean, row_index, report):
     return museum_id
 
 
+def _warn_near_duplicate(report, i, clean):
+    """Note, without blocking, a row that shares designation + tail with an
+    airframe recorded under a different operator. See
+    _find_aircraft_near_duplicate for why this is a warning and not an error."""
+    near = _find_aircraft_near_duplicate(
+        clean["model"], clean["tail_number"],
+        variant=clean.get("variant"),
+        operator_country=clean.get("operator_country"),
+    )
+    if near is not None:
+        report["warnings"].append({
+            "row": i,
+            "field": "(full_designation, tail_number)",
+            "message": (
+                f"id={near.id} has the same designation and tail number under "
+                f"operator_country={near.operator_country!r}. Distinct national "
+                f"serials, or the same airframe entered twice? Check before "
+                f"trusting this row."
+            ),
+        })
+
+
 def _bulk_import_aircraft(rows, dry_run):
     """Validate + (optionally) insert aircraft rows. Atomic: any error
     triggers rollback so an import never half-applies.
@@ -1852,11 +1892,12 @@ def _bulk_import_aircraft(rows, dry_run):
     ``display_status``) to create the exhibit link in the same pass — so one
     file can populate both the aircraft and where to go see it.
     """
-    report = {"created": 0, "skipped": 0, "linked": 0, "errors": [], "dry_run": dry_run}
+    report = {"created": 0, "skipped": 0, "linked": 0, "errors": [],
+              "warnings": [], "dry_run": dry_run}
 
     # First pass: validate every row, collect errors with row indices.
     cleaned = []
-    seen_pairs = set()  # (model, tail) duplicates within the batch
+    seen_pairs = set()  # uq_airframe key collisions within the batch
     for i, raw in enumerate(rows):
         clean, errs = _validate_aircraft_row(raw)
         if errs:
@@ -1866,10 +1907,11 @@ def _bulk_import_aircraft(rows, dry_run):
         # Within-batch duplicate detection (DB unique index would catch it too,
         # but we want a clean error report instead of an opaque IntegrityError).
         if clean["tail_number"]:
-            pair = (clean["model"], clean["tail_number"])
+            pair = _airframe_key(clean)
             if pair in seen_pairs:
                 report["errors"].append({
-                    "row": i, "field": "(model, tail_number)",
+                    "row": i,
+                    "field": "(full_designation, tail_number, operator_country)",
                     "message": f"duplicate of an earlier row in this batch: {pair}",
                 })
                 continue
@@ -1889,11 +1931,21 @@ def _bulk_import_aircraft(rows, dry_run):
 
     if dry_run:
         for i, clean in cleaned:
-            existing = _find_aircraft_duplicate(clean["model"], clean["tail_number"])
+            existing = _find_aircraft_duplicate(
+                clean["model"], clean["tail_number"],
+                variant=clean.get("variant"),
+                operator_country=clean.get("operator_country"),
+                manufacturer=clean.get("manufacturer"),
+                construction_number=clean.get("construction_number"),
+            )
             if existing is not None:
                 report["skipped"] += 1
-                report["errors"].append({"row": i, "field": "(model, tail_number)",
-                                         "message": f"already exists in DB (id={existing.id}); skipped"})
+                report["errors"].append({
+                    "row": i,
+                    "field": "(full_designation, tail_number, operator_country)",
+                    "message": f"already exists in DB (id={existing.id}); skipped"})
+            else:
+                _warn_near_duplicate(report, i, clean)
         if report["errors"]:
             return report
         report["created"] = len(cleaned)
@@ -1903,14 +1955,22 @@ def _bulk_import_aircraft(rows, dry_run):
     # Second pass: insert. Existing-DB duplicate check uses our helper.
     try:
         for i, clean in cleaned:
-            existing = _find_aircraft_duplicate(clean["model"], clean["tail_number"])
+            existing = _find_aircraft_duplicate(
+                clean["model"], clean["tail_number"],
+                variant=clean.get("variant"),
+                operator_country=clean.get("operator_country"),
+                manufacturer=clean.get("manufacturer"),
+                construction_number=clean.get("construction_number"),
+            )
             if existing is not None:
                 report["skipped"] += 1
                 report["errors"].append({
-                    "row": i, "field": "(model, tail_number)",
+                    "row": i,
+                    "field": "(full_designation, tail_number, operator_country)",
                     "message": f"already exists in DB (id={existing.id}); skipped",
                 })
                 continue
+            _warn_near_duplicate(report, i, clean)
             aliases = clean.pop("aliases")
             # Link fields aren't Aircraft columns — pull them out before
             # constructing the model.
@@ -2117,19 +2177,88 @@ def _normalize_tail_number(raw):
     return s or None
 
 
-def _find_aircraft_duplicate(model, tail_number, exclude_id=None):
-    """Return the existing Aircraft that would conflict with (model, tail_number),
-    or None. tail_number must already be normalized — passing None means "no
-    tail number, no conflict possible" (NULL doesn't collide with NULL).
+def _airframe_key(clean):
+    """The identity tuple uq_airframe is built on, computed from a validated
+    row the same way MySQL computes it from the stored columns."""
+    return (
+        join_designation(clean.get("model"), clean.get("variant")),
+        clean.get("tail_number"),
+        clean.get("operator_country"),
+    )
+
+
+def _find_aircraft_duplicate(model, tail_number, exclude_id=None, variant=None,
+                             operator_country=None, manufacturer=None,
+                             construction_number=None):
+    """Return the existing Aircraft that is the same airframe as the one
+    described, or None.
+
+    Two ways a row can be the same airframe:
+
+      1. Same manufacturer and construction number. A c/n identifies one
+         physical airframe for life, so this holds even when the tail numbers
+         differ — which is exactly the case that matters, because an airframe
+         that changed hands changes registration. This is why the c/n is worth
+         having as a column at all.
+
+      2. The uq_airframe key: same full designation, same tail number, same
+         operator country. Matching is strict — an unknown operator (NULL)
+         matches only another unknown, never a known one — so that the answer
+         here always agrees with what the database will do on insert. Rows
+         with no tail number never collide, as before.
+
+    Callers that don't pass variant/operator_country get the old, narrower
+    behaviour, which is a subset of this one.
+    """
+    if manufacturer and construction_number:
+        q = Aircraft.query.filter(
+            Aircraft.manufacturer == manufacturer,
+            Aircraft.construction_number == construction_number,
+        )
+        if exclude_id is not None:
+            q = q.filter(Aircraft.id != exclude_id)
+        hit = q.first()
+        if hit is not None:
+            return hit
+
+    if not tail_number:
+        return None
+    q = Aircraft.query.filter(
+        Aircraft.full_designation == join_designation(model, variant),
+        Aircraft.tail_number == tail_number,
+    )
+    if operator_country:
+        q = q.filter(Aircraft.operator_country == operator_country)
+    else:
+        q = q.filter(Aircraft.operator_country.is_(None))
+    if exclude_id is not None:
+        q = q.filter(Aircraft.id != exclude_id)
+    return q.first()
+
+
+def _find_aircraft_near_duplicate(model, tail_number, variant=None,
+                                  operator_country=None):
+    """Return an Aircraft sharing designation + tail but recorded under a
+    DIFFERENT operator country, or None.
+
+    Not a duplicate — that is the whole point of the new key — but worth
+    saying out loud. Either it is two genuinely different national airframes
+    that happen to share a serial (fine, and the reason the key changed), or
+    it is one airframe being entered twice because the earlier pass didn't
+    know the operator. Only a human can tell those apart, so this is reported
+    as a warning and never blocks an import.
     """
     if not tail_number:
         return None
     q = Aircraft.query.filter(
-        Aircraft.model == model,
+        Aircraft.full_designation == join_designation(model, variant),
         Aircraft.tail_number == tail_number,
     )
-    if exclude_id is not None:
-        q = q.filter(Aircraft.id != exclude_id)
+    if operator_country:
+        q = q.filter(db.or_(Aircraft.operator_country.is_(None),
+                            Aircraft.operator_country != operator_country))
+    else:
+        q = q.filter(Aircraft.operator_country.isnot(None))
     return q.first()
 
 
@@ -2158,15 +2287,24 @@ def api_create_aircraft():
         if not _user_can_write_museum(museum_id):
             return jsonify({"error": "You do not have access to that museum."}), 403
 
-    # Sanity check: refuse to create a duplicate (same model + tail number).
-    # Empty/missing tail numbers are treated as "unknown" and never collide.
+    # Sanity check: refuse to create a duplicate. Identity is the uq_airframe
+    # key (designation + tail + operator country) or a matching construction
+    # number. Unknown tails and unknown operators never collide.
     tail = _normalize_tail_number(data.get("tail_number"))
-    dup = _find_aircraft_duplicate(data["model"], tail)
+    designation = join_designation(data["model"], data.get("variant"))
+    dup = _find_aircraft_duplicate(
+        data["model"], tail,
+        variant=data.get("variant"),
+        operator_country=data.get("operator_country"),
+        manufacturer=data.get("manufacturer"),
+        construction_number=data.get("construction_number"),
+    )
     if dup:
         return jsonify({
             "error": (
-                f"An aircraft with model '{data['model']}' and tail number "
-                f"'{tail}' already exists (id={dup.id})."
+                f"An aircraft matching '{designation}' / tail '{tail}' / "
+                f"operator '{data.get('operator_country')}' already exists "
+                f"(id={dup.id})."
             ),
             "existing_id": dup.id,
         }), 409
@@ -2178,6 +2316,8 @@ def api_create_aircraft():
         manufacturer=data["manufacturer"],
         model=data["model"],
         variant=data.get("variant"),
+        construction_number=data.get("construction_number"),
+        operator_country=data.get("operator_country"),
         aircraft_type=data.get("aircraft_type", "fixed_wing"),
         wing_type=data.get("wing_type") or None,
         military_civilian=data.get("military_civilian", "military"),
@@ -2230,26 +2370,41 @@ def api_update_aircraft(aircraft_id):
         return jsonify({"error": "Invalid aircraft fields.", "errors": errors}), 400
     data = {field: clean[field] for field in data if field in clean}
 
-    # Pre-flight uniqueness check: figure out what the (model, tail_number)
-    # would be after this update and reject if it would clash with another row.
-    new_model = data["model"] if "model" in data and data["model"] else aircraft.model
+    # Pre-flight uniqueness check: figure out what the uq_airframe key would
+    # be after this update and reject if it would clash with another row.
+    # Every component can be edited, so every one has to be resolved here.
+    def _after(field):
+        return data[field] if field in data and data[field] else getattr(aircraft, field)
+
+    new_model = _after("model")
+    new_variant = data["variant"] if "variant" in data else aircraft.variant
+    new_country = (data["operator_country"] if "operator_country" in data
+                   else aircraft.operator_country)
+    new_cn = (data["construction_number"] if "construction_number" in data
+              else aircraft.construction_number)
     new_tail = (
         _normalize_tail_number(data["tail_number"])
         if "tail_number" in data
         else aircraft.tail_number
     )
-    dup = _find_aircraft_duplicate(new_model, new_tail, exclude_id=aircraft.id)
+    dup = _find_aircraft_duplicate(
+        new_model, new_tail, exclude_id=aircraft.id,
+        variant=new_variant, operator_country=new_country,
+        manufacturer=_after("manufacturer"), construction_number=new_cn,
+    )
     if dup:
         return jsonify({
             "error": (
-                f"Another aircraft (id={dup.id}) already has model '{new_model}' "
-                f"and tail number '{new_tail}'."
+                f"Another aircraft (id={dup.id}) is already recorded as "
+                f"'{join_designation(new_model, new_variant)}' / tail "
+                f"'{new_tail}' / operator '{new_country}'."
             ),
             "existing_id": dup.id,
         }), 409
 
     for field in ["tail_number", "model_name", "aircraft_name",
                    "manufacturer", "model", "variant",
+                   "construction_number", "operator_country",
                    "aircraft_type", "wing_type", "military_civilian", "role_type",
                    "year_built", "description"]:
         if field in data:

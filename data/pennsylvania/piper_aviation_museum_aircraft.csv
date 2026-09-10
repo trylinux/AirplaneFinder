@@ -1,0 +1,29 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Piper,J-2,,N19555,Cub,,fixed_wing,monoplane,civilian,private,,Taylor-built J-2; c/n 1755; Aerial Visuals dossier,c/n 1755; Taylor J-2; J2,Piper Aviation Museum,on_display
+Piper,J-3,C-65,N2038M,Cub,,fixed_wing,monoplane,civilian,private,,FAA registry confirms PIPER J3C-65 c/n 20806 to Piper Aviation Museum,c/n 20806; J3,Piper Aviation Museum,on_display
+Piper,J-3,C-65,N33523,Cub,,fixed_wing,monoplane,civilian,private,,Donated 2013 as a historic L-4; FAA confirms PIPER J3C-65 c/n 2357A,c/n 2357A; L-4; J3; L4,Piper Aviation Museum,on_display
+Piper,J-3,C-65,N3393N,Cub,,fixed_wing,monoplane,civilian,private,,Donated by the family of Ray Gorham in May 2022; FAA confirms PIPER J3C-65 c/n 22595,c/n 22595; J3,Piper Aviation Museum,on_display
+Piper,J-3,C-65,N6653H,Cub,,fixed_wing,monoplane,civilian,private,,FAA confirms PIPER J3C-65 c/n 19856,c/n 19856; J3,Piper Aviation Museum,on_display
+Piper,J-3,C-65,N70676,Cub,,fixed_wing,monoplane,civilian,private,,Appears in the FAA owner search for Piper Aviation Museum but not in the Wikipedia list; c/n 17696; presence on display needs confirmation,c/n 17696; J3,Piper Aviation Museum,on_display
+Piper,J-4,A,N22881,Cub Coupe,,fixed_wing,monoplane,civilian,private,,FAA confirms PIPER J4A c/n 4-502,c/n 4-502; J4; J4A,Piper Aviation Museum,on_display
+Piper,PA-8,,replica,Skycycle,,fixed_wing,monoplane,civilian,experimental,,Hand-built replica of the one-off Piper Skycycle; donated July 2020; flagged as a replica not an original airframe,Skycycle replica; PA8,Piper Aviation Museum,on_display
+Piper,PA-12,,N8671M,Super Cruiser,,fixed_wing,monoplane,civilian,private,,FAA confirms PIPER PA-12 c/n 12-2623,c/n 12-2623; PA12,Piper Aviation Museum,on_display
+Piper,PA-15,,N4355H,Vagabond,,fixed_wing,monoplane,civilian,private,,FAA confirms PIPER PA-15 c/n 15-140,c/n 15-140; PA15,Piper Aviation Museum,on_display
+Piper,PA-16,,N5754H,Clipper,,fixed_wing,monoplane,civilian,private,,FAA owner search returns two PA-16s to the museum; c/n 16-365,c/n 16-365; PA16,Piper Aviation Museum,on_display
+Piper,PA-16,,N5817H,Clipper,,fixed_wing,monoplane,civilian,private,,Second PA-16; c/n 16-434,c/n 16-434; PA16,Piper Aviation Museum,on_display
+Piper,PA-22,108,N5545Z,Colt,,fixed_wing,monoplane,civilian,private,,Returned to the former Piper factory in May 2022; FAA confirms PIPER PA-22-108 c/n 22-9337,c/n 22-9337; Colt; PA22,Piper Aviation Museum,on_display
+Piper,PA-22,135,N1301C,Tri-Pacer,,fixed_wing,monoplane,civilian,private,,FAA confirms PIPER PA-22-135 c/n 22-1095,c/n 22-1095; PA22,Piper Aviation Museum,on_display
+Piper,PA-22,150,N3840P,Tri-Pacer,,fixed_wing,monoplane,civilian,private,,FAA confirms PIPER PA-22-150 c/n 22-3530,c/n 22-3530; PA22,Piper Aviation Museum,on_display
+Piper,PA-22,160,N9243D,Tri-Pacer,,fixed_wing,monoplane,civilian,private,,FAA confirms PIPER PA-22-160 c/n 22-6303,c/n 22-6303; PA22,Piper Aviation Museum,on_display
+Piper,PA-23,235,N4916P,Apache,,fixed_wing,monoplane,civilian,private,,FAA confirms PIPER PA-23-235 c/n 27-506,c/n 27-506; PA23,Piper Aviation Museum,on_display
+Piper,PA-23,250,N14230,Aztec,,fixed_wing,monoplane,civilian,private,,Aerial Visuals dossier gives c/n 27-4788; not returned by the FAA owner search so ownership may have changed,c/n 27-4788; PA23,Piper Aviation Museum,on_display
+Piper,PA-24,400,N8400P,Comanche,,fixed_wing,monoplane,civilian,private,,Rare Comanche 400 gifted to the museum; FAA confirms PIPER PA-24-400 c/n 26-3,c/n 26-3; Comanche 400; PA24,Piper Aviation Museum,on_display
+Piper,PA-25,,N6560Z,Pawnee,,fixed_wing,monoplane,civilian,private,,FAA confirms PIPER PA-25 c/n 25-711,c/n 25-711; PA25,Piper Aviation Museum,on_display
+Piper,PA-29,,N2900M,Papoose,,fixed_wing,monoplane,civilian,experimental,,The one-off all-fibreglass Piper Papoose prototype; c/n 29-01; Aerial Visuals dossier; not returned by the FAA owner search,c/n 29-01; Papoose; PA29,Piper Aviation Museum,on_display
+Piper,PA-30,,N8515Y,Twin Comanche,,fixed_wing,monoplane,civilian,private,,FAA confirms PIPER PA-30 c/n 30-1676,c/n 30-1676; PA30,Piper Aviation Museum,on_display
+Piper,PA-31P,350,N9198Y,Mojave,,fixed_wing,monoplane,civilian,private,,Aerial Visuals dossier gives c/n 31P8414002; Wikipedia records it as in storage,c/n 31P8414002; PA31P,Piper Aviation Museum,in_storage
+Piper,PA-31T,3,N7500L,Cheyenne,,fixed_wing,monoplane,civilian,private,,Aerial Visuals dossier gives c/n 31T-1 making this the Cheyenne III prototype; Wikipedia records it as in storage,c/n 31T-1; Cheyenne III; PA31T,Piper Aviation Museum,in_storage
+Piper,PA-38,112,N2476D,Tomahawk,,fixed_wing,monoplane,civilian,trainer,,Aerial Visuals dossier gives c/n 38-79A0328,c/n 38-79A0328; PA38,Piper Aviation Museum,on_display
+Piper,PA-41,P,N9941P,Pressurized Aztec,,fixed_wing,monoplane,civilian,experimental,,The sole PA-41P pressurised Aztec prototype; c/n 41P-1,c/n 41P-1; PA41; PA41P,Piper Aviation Museum,on_display
+Piper,PA-47,,,PiperJet,,fixed_wing,monoplane,civilian,experimental,,PiperJet prototype/mockup; no registration recorded; identity and whether this is a flying prototype or a mockup need confirmation,PiperJet; PA47,Piper Aviation Museum,on_display
+Piper,PT-1,,N4300,,,fixed_wing,monoplane,civilian,experimental,,The one-off Piper PT-1 trainer prototype; FAA confirms PIPER PT1 c/n PT-1,c/n PT-1; PT1,Piper Aviation Museum,on_display

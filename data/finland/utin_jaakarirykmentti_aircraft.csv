@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Messerschmitt,Bf 109,G-6,MT-452,,,fixed_wing,monoplane,military,fighter,,Restored and shown in a glazed display cabinet at Utti.,Bf109; Me 109; Messerschmitt Bf109G-6,Utin Jääkärirykmentti,on_display
+Mil,Mi-8,T,HS-14,Hip,,rotary_wing,,military,transport,,Stored at the Utti Jaeger Regiment.,Mi8; Mi-8T; Mi8T; Hip,Utin Jääkärirykmentti,in_storage
+Mil,Mi-1,,HK-3,,,rotary_wing,,military,utility,,Licence built PZL SM-1/600 W under restoration by the Helicopter Guild at Utti.,Mi1; SM-1; SM1; PZL SM-1/600 W,Utin Jääkärirykmentti,under_restoration

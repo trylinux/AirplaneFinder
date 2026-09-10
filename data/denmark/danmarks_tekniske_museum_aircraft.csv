@@ -1,0 +1,33 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Saab,F-35,XD,A-001,Draken,,fixed_wing,monoplane,military,fighter,,First Danish Draken delivered. Displayed indoors.,A35XD; 35-1001; F35; F35XD,Danmarks Tekniske Museum,on_display
+Lockheed,F-104,G,R-896,Starfighter,,fixed_wing,monoplane,military,fighter,,Canadair-built CF-104 in Danish markings.,CF-104; 683A-1196; 104896; F104; F104G; CF104,Danmarks Tekniske Museum,on_display
+Republic,F-84,G,A-777,Thunderjet,,fixed_wing,monoplane,military,ground_attack,,Wears squadron code SY-H. USAF serial 51-10777.,F84; 51-10777; SY-H; 2542-1230B; F84G,Danmarks Tekniske Museum,on_display
+Gloster,Meteor,F.4,43-461,Meteor,,fixed_wing,monoplane,military,fighter,,Early Danish jet fighter.,461,Danmarks Tekniske Museum,on_display
+Lockheed,T-33,A,DT-491,Shooting Star,T-bird,fixed_wing,monoplane,military,trainer,,Danish jet trainer.,T33; 580-5786; T33A,Danmarks Tekniske Museum,on_display
+Lockheed,T-33,A,DT-923,Shooting Star,T-bird,fixed_wing,monoplane,military,trainer,,Held in the museum store.,T33; 580-6707; T33A,Danmarks Tekniske Museum,in_storage
+Douglas,C-47,A,K-681,Dakota,,fixed_wing,monoplane,military,transport,,Danish Air Force Dakota.,C47; 9664; 42-23802; C47A,Danmarks Tekniske Museum,on_display
+Sikorsky,S-55,C,S-883,Chickasaw,,rotary_wing,,military,search_rescue,,Early Danish rescue helicopter.,S55; 55.1031; S55C,Danmarks Tekniske Museum,on_display
+Fokker,D.XXI,IIIJ,J-49,D.XXI,,fixed_wing,monoplane,military,fighter,,Danish-built Fokker D.XXI fighter. Reconstructed airframe.,DXXI; L-49; 109; L49,Danmarks Tekniske Museum,on_display
+Percival,P-34,A,62-605,Proctor,,fixed_wing,monoplane,military,trainer,,Danish Air Force communications and training aircraft.,Proctor Mk.3; P34; H.274; H274; P34A,Danmarks Tekniske Museum,on_display
+Percival,Pembroke,Mk.52,69-697,Pembroke,,fixed_wing,monoplane,military,transport,,Danish Air Force light transport.,P66/79,Danmarks Tekniske Museum,on_display
+SAI,KZ II,Traener,11-113,KZ II,,fixed_wing,monoplane,military,trainer,,Danish Air Force primary trainer.,KZ-IIT; KZ-II; 121,Danmarks Tekniske Museum,on_display
+SAI,KZ IV,,OY-DZU,KZ IV,,fixed_wing,monoplane,civilian,utility,,Danish-built twin air ambulance.,KZ-IV; 70,Danmarks Tekniske Museum,on_display
+SAI,KZ III,,SE-ANY,KZ III,,fixed_wing,monoplane,civilian,private,,Swedish-registered Danish-built tourer.,KZ-III; 45,Danmarks Tekniske Museum,on_display
+Blohm und Voss,BV 138,C-1,,BV 138,,fixed_wing,monoplane,military,recon,,German maritime patrol flying boat recovered in Danish waters. Wears code NJ-HE.,BV138; 310050; NJ-HE,Danmarks Tekniske Museum,on_display
+Donnet-Leveque,Type A,,,Maagen 2,Maagen 2,fixed_wing,biplane,military,recon,,Early Danish naval flying boat.,FBA Type A; Maagen II; Mågen 2,Danmarks Tekniske Museum,on_display
+Sud Aviation,SE.210,III,OY-KRD,Caravelle,Ulf Viking,fixed_wing,monoplane,civilian,commercial_transport,,Former SAS Caravelle jet airliner.,SE210; Caravelle III; 047,Danmarks Tekniske Museum,on_display
+Douglas,DC-7,C,OY-KNB,Seven Seas,Rolf Viking,fixed_wing,monoplane,civilian,commercial_transport,,Former SAS long-range piston airliner. Forward fuselage.,DC7; 44929; DC7C,Danmarks Tekniske Museum,on_display
+de Havilland,DH.89,A,OY-AAO,Dragon Rapide,,fixed_wing,biplane,civilian,commercial_transport,,Danish-registered biplane airliner.,DH89; 6775,Danmarks Tekniske Museum,on_display
+de Havilland,DH.82,A,SE-GXO,Tiger Moth,,fixed_wing,biplane,civilian,trainer,,Swedish-registered Tiger Moth.,DH82; 82869,Danmarks Tekniske Museum,on_display
+Fairchild,PT-26,FA,LN-BIF,Cornell,,fixed_wing,monoplane,civilian,trainer,,Norwegian-registered Cornell wearing code 179.,PT26; T43-4640; 179; PT26FA,Danmarks Tekniske Museum,on_display
+Fairchild,F.24,R-46A,OY-EAZ,Argus,,fixed_wing,monoplane,civilian,private,,Danish-registered Fairchild 24.,F24; 962,Danmarks Tekniske Museum,on_display
+Saab,B 17,C,,B 17,,fixed_wing,monoplane,military,bomber,,Swedish Air Force dive bomber wearing code E and serial 17320.,B17; 17320; 17-320,Danmarks Tekniske Museum,on_display
+Saab,J 29,F,,Tunnan,,fixed_wing,monoplane,military,fighter,,Swedish Air Force jet fighter wearing code 07 and serial 29487.,J29; 29487; 29-487,Danmarks Tekniske Museum,in_storage
+Cessna,337,,OY-CBB,Skymaster,,fixed_wing,monoplane,civilian,private,,Centre-line twin.,Ce.337; 337-01000,Danmarks Tekniske Museum,on_display
+Jodel,D.112,,OY-CMH,Jodel,,fixed_wing,monoplane,civilian,private,,French-designed single-seat tourer.,D112; 1491,Danmarks Tekniske Museum,on_display
+Bell,47,G,OY-HDH,Sioux,,rotary_wing,,civilian,private,,Ex-military Sioux HT.2 on the Danish register.,Sioux HT.2; Bell 47; WA571,Danmarks Tekniske Museum,on_display
+Schneider,Grunau Baby,IIb,OY-ABX,Grunau Baby,,fixed_wing,monoplane,civilian,private,,Training glider wearing competition number 87.,87,Danmarks Tekniske Museum,on_display
+Polyteknisk Flyvegruppe,Polyt,II,OY-55,Polyt,,fixed_wing,monoplane,civilian,private,,Danish student-built glider.,Polyt-II; 91-912; PFG11,Danmarks Tekniske Museum,on_display
+Hogslund,2G,,OY-100,Hogslund 2G,,fixed_wing,monoplane,civilian,private,,Danish-built glider by Hogslund and Traugott-Olsen.,Høgslund 2G; 1,Danmarks Tekniske Museum,on_display
+General Aircraft,ST-25,,OY-DAZ,Monospar,,fixed_wing,monoplane,civilian,private,,General Aircraft Monospar ST-25 c/n 95 confirmed by the Danish civil aircraft register oy-reg.dk entry for OY-DAZ.,Monospar; Monospar ST-25; ST25; c/n 95,Danmarks Tekniske Museum,on_display
+Halbronn,Polliwagen,,OY-CYS,Polliwagen,,fixed_wing,monoplane,civilian,private,,Composite homebuilt.,8607-1794N,Danmarks Tekniske Museum,on_display

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+General Dynamics,F-16,AM,669,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,Retained on the air station after the type left Norwegian service.,F16; F-16AM; Fighting Falcon; Viper; c/n 6K-41; F16AM,Bodø Flystasjon Preserved Aircraft -- Bodø,in_storage
+Canadair,CF-104,,870,Starfighter,,fixed_wing,monoplane,military,fighter,,Retained on the air station in a red and blue special colour scheme.,CF104; CF-104; F-104; Starfighter; 104870; c/n 683A-1170; F104,Bodø Flystasjon Preserved Aircraft -- Bodø,on_display

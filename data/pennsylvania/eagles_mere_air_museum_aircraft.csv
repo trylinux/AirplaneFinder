@@ -1,0 +1,23 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Franklin,Sport,90,N10779,,,fixed_wing,biplane,civilian,private,,FAA registry confirms FRANKLIN 90 c/n 103 to Eagles Mere Air Museum Foundation,c/n 103,Eagles Mere Air Museum,on_display
+Curtiss-Wright,CW-1,,N10939,Junior,,fixed_wing,monoplane,civilian,private,,FAA confirms CURTISS WRIGHT JR CW1 c/n 1118,c/n 1118; CW1,Eagles Mere Air Museum,on_display
+Travel Air,10,D,N418N,,,fixed_wing,biplane,civilian,private,,FAA confirms TRAVEL AIR 10-D c/n 10-2011,c/n 10-2011,Eagles Mere Air Museum,on_display
+Curtiss-Wright,Fledgling,,N656M,,,fixed_wing,biplane,civilian,trainer,,FAA confirms CURTISS WRIGHT FLEDGLING c/n B-109,c/n B-109,Eagles Mere Air Museum,on_display
+Aeronca,C-3,,,,,fixed_wing,monoplane,civilian,private,,Listed on the museum's own 2019 collection page; registration unresolved,C-3; C3,Eagles Mere Air Museum,on_display
+Aeronca,L-3,,,Grasshopper,,fixed_wing,monoplane,military,recon,,Listed on the museum's own 2019 collection page; registration unresolved,L-3; L3,Eagles Mere Air Museum,on_display
+Alexander,Eaglerock,,,,,fixed_wing,biplane,civilian,private,,Listed on the museum's own 2019 collection page; registration unresolved,Eaglerock,Eagles Mere Air Museum,on_display
+Boeing,75,,,Kaydet,Stearman,fixed_wing,biplane,military,trainer,,Boeing-Stearman Model 75 listed on the museum's own 2019 collection page; registration unresolved,Stearman; PT-17; PT17,Eagles Mere Air Museum,on_display
+Brunner-Winkle,Bird,,,,,fixed_wing,biplane,civilian,private,,Listed on the museum's own 2019 collection page; registration unresolved,Bird,Eagles Mere Air Museum,on_display
+Cessna,Model A,,,,,fixed_wing,monoplane,civilian,private,,Listed on the museum's own 2019 collection page; registration unresolved,Cessna A,Eagles Mere Air Museum,on_display
+Curtiss,Robin,,,,,fixed_wing,monoplane,civilian,private,,Listed on the museum's own 2019 collection page; registration unresolved,Robin,Eagles Mere Air Museum,on_display
+de Havilland,DH.82,A,,Tiger Moth,,fixed_wing,biplane,military,trainer,,Listed on the museum's own 2019 collection page; registration unresolved,Tiger Moth,Eagles Mere Air Museum,on_display
+Pitcairn,PA-3,,,Orowing,,fixed_wing,biplane,civilian,private,,Pitcairn built at Bryn Athyn Pennsylvania; listed on the museum's own 2019 collection page,Orowing; PA3,Eagles Mere Air Museum,on_display
+Pitcairn,PA-4,,,Fleetwing II,,fixed_wing,biplane,civilian,private,,Listed on the museum's own 2019 collection page; registration unresolved,Fleetwing II; PA4,Eagles Mere Air Museum,on_display
+Piper,J-3,,,Cub,,fixed_wing,monoplane,civilian,private,,Listed on the museum's own 2019 collection page; registration unresolved,J-3 Cub; J3,Eagles Mere Air Museum,on_display
+Swanson,Coupe,,,,,fixed_wing,monoplane,civilian,private,,Listed on the museum's own 2019 collection page; registration unresolved,Swanson Coupe,Eagles Mere Air Museum,on_display
+Taylor,J-2,,,Cub,,fixed_wing,monoplane,civilian,private,,Listed on the museum's own 2019 collection page; registration unresolved,J-2 Cub; J2,Eagles Mere Air Museum,on_display
+Travel Air,2000,,,,,fixed_wing,biplane,civilian,private,,Listed on the museum's own 2019 collection page; registration unresolved,Travel Air 2000,Eagles Mere Air Museum,on_display
+Travel Air,5000,,,,,fixed_wing,monoplane,civilian,commercial_transport,,Listed on the museum's own 2019 collection page; registration unresolved,Travel Air 5000,Eagles Mere Air Museum,on_display
+Kinner,Sportwing,,,,,fixed_wing,biplane,civilian,private,,Listed on the museum's own 2019 collection page; registration unresolved,Sportwing,Eagles Mere Air Museum,on_display
+Waco,GXE,,,,,fixed_wing,biplane,civilian,private,,Waco 10 listed on the museum's own 2019 collection page; registration unresolved,Waco 10,Eagles Mere Air Museum,on_display
+Waco,Standard Cabin,,,,,fixed_wing,biplane,civilian,private,,Listed on the museum's own 2019 collection page; registration unresolved,Waco Standard,Eagles Mere Air Museum,on_display

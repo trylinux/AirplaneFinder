@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Saab,F-35,XD,A-007,Draken,,fixed_wing,monoplane,military,fighter,,Draken displayed indoors above the museum cafe seating.,A35XD; 35-1007; F35; F35XD,Egholm Museum,on_display
+Saab,F-35,XD,A-014,Draken,,fixed_wing,monoplane,military,fighter,,Second Draken in the collection. Formerly displayed at the Gedhus museum at Karup.,A35XD; 35-1014; F35; F35XD,Egholm Museum,on_display
+SAI,KZ III,,OY-DSI,KZ III,,fixed_wing,monoplane,civilian,private,,Danish-built two-seat tourer.,KZ-III; 64,Egholm Museum,on_display

@@ -1,0 +1,79 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+AB Enoch Thulins Aeroplanfabrik,Typ G,,15,Thulin G,,fixed_wing,monoplane,military,trainer,,The only surviving example.,Thulin G; Thulin Typ G,Flygvapenmuseum,on_display
+Albatros Flugzeugwerke,Sk 1,,464/04,Albatros B.II,,fixed_wing,biplane,military,trainer,,Swedish-built.,Albatros B.II; Albatros 120; Sk1; c/n 464,Flygvapenmuseum,on_display
+Bücker,Sk 25,,25000,Bü 181 Bestmann,,fixed_wing,monoplane,military,trainer,,An original German-built Bücker rather than a Swedish licence-built aircraft.,Bü 181 Bestmann; Bu 181; Bestmann; Sk25; c/n 5001,Flygvapenmuseum,on_display
+Canadian Vickers,Tp 47,,47001,Canso A,,fixed_wing,monoplane,military,search_rescue,,Ex-RCAF 9810.,PBY-5A; PBY5A; Catalina; Canso A; Tp47; c/n CV-244,Flygvapenmuseum,on_display
+De Havilland,J 28,A,28001,Vampire,,fixed_wing,monoplane,military,fighter,,,DH.100; DH100; D.H.100; Vampire; J28,Flygvapenmuseum,on_display
+De Havilland,J 28,C-2,28451,Vampire,,fixed_wing,monoplane,military,fighter,,In storage; not on public display.,DH.100; DH100; D.H.100; Vampire; J28; c/n V.15745,Flygvapenmuseum,in_storage
+De Havilland,J 33,,33025,Venom,,fixed_wing,monoplane,military,fighter,,,DH.112; DH112; D.H.112; Venom; J33; c/n 12374,Flygvapenmuseum,on_display
+Donnet-Lévêque,Type A,,L II,,,fixed_wing,biplane,military,other,,,Donnet-Leveque Type A,Flygvapenmuseum,on_display
+Dornier,Fpl 53,,53273,Do 27,,fixed_wing,monoplane,military,utility,,In storage; not on public display.,Do 27; Do27; Do 27A-4; Fpl53,Flygvapenmuseum,in_storage
+Douglas,Tp 79,,79001,DC-3,,fixed_wing,monoplane,military,transport,,Conserved wreck; the aircraft was shot down and later salvaged.,DC-3; DC3; C-47; C47; Dakota; Tp79; c/n 9001,Flygvapenmuseum,on_display
+Douglas,Tp 79,,79007,DC-3,,fixed_wing,monoplane,military,transport,,Displayed outdoors.,DC-3; DC3; C-47; C47; Dakota; Tp79; c/n 13647,Flygvapenmuseum,on_display
+English Electric,Tp 52,,52002,Canberra,,fixed_wing,monoplane,military,electronic_warfare,,Ex-RAF WH905.,Canberra; Canberra B.2; Canberra B2; Tp52; c/n SH1648,Flygvapenmuseum,on_display
+FFVS,J 22,B,22280,,,fixed_wing,monoplane,military,fighter,,,J22,Flygvapenmuseum,on_display
+Fiat,J 11,,2543,CR.42 Falco,,fixed_wing,biplane,military,fighter,,,CR.42 Falco; CR.42; CR42; Falco; J11; c/n 921,Flygvapenmuseum,on_display
+Fieseler,S 14,,3815,Fi 156 Storch,,fixed_wing,monoplane,military,recon,,Composite airframe assembled from two different S 14 aircraft.,Fi 156 Storch; Fi 156; Fi156; Storch; S14,Flygvapenmuseum,on_display
+Focke-Wulf,Sk 12,,670,Fw 44 Stieglitz,,fixed_wing,biplane,military,trainer,,Ex SE-EGB. Swedish-built by CVV.,Fw 44 Stieglitz; Fw 44; Fw44; Stieglitz; Sk12; c/n 52,Flygvapenmuseum,on_display
+Fokker,S 6,A,3386,C.V-E,,fixed_wing,biplane,military,recon,,,C.V-E; C.V; CV-E; S6; c/n 207,Flygvapenmuseum,on_display
+Flygkompaniets verkstäder Malmslätt,Ö 1,,056,Tummelisa,,fixed_wing,biplane,military,trainer,,,FVM Ö 1; O 1; Tummelisa; c/n 147,Flygvapenmuseum,on_display
+Gloster,J 8,A,278,Gladiator,,fixed_wing,biplane,military,fighter,,Wears the markings F 19 H of the Swedish volunteer wing in Finland.,Gladiator; Gladiator Mk.II; Gladiator MkII; J8; c/n G559066,Flygvapenmuseum,on_display
+Gloster,Meteor,T.7,SE-CAS,Meteor,,fixed_wing,monoplane,civilian,trainer,,In storage; not on public display.,Meteor; Meteor T.7; Meteor T7; Meteor TT.20; c/n 1496,Flygvapenmuseum,in_storage
+Hawker,B 4,,714,Hart,,fixed_wing,biplane,military,bomber,,Wears the markings F 19 M of the Swedish volunteer wing in Finland.,Hart; B4; c/n 52,Flygvapenmuseum,on_display
+Hawker,S 9,,,Osprey,,fixed_wing,biplane,military,recon,,In storage; only wreck components survive.,Osprey; S9; c/n ???,Flygvapenmuseum,in_storage
+Hawker,J 34,,34016,Hunter,,fixed_wing,monoplane,military,fighter,,,Hunter; Hunter Mk.50; Hunter Mk50; J34,Flygvapenmuseum,on_display
+Heinkel,Sk 5,,66,HD 35,,fixed_wing,biplane,military,trainer,,Ex SE-SAM.,HD 35; HD35; Sk5; c/n 235,Flygvapenmuseum,on_display
+Junkers,B 3,,155,Ju 86K,,fixed_wing,monoplane,military,bomber,,An original German-built Junkers and the only surviving Ju 86 in the world.,Ju 86; Ju86; Ju 86K; B3; c/n 0860422,Flygvapenmuseum,on_display
+Lockheed,Tp 84,,841,C-130 Hercules,,fixed_wing,monoplane,military,transport,,Swedish Air Force code 841. Flown to Aeroseum from Cambridge in July 2022 and dismantled there under Armed Forces contract after nearly 50 years of service and withdrawal in 2014; per Aeroseum's own July 2022 release the forward fuselage was to be preserved for Flygvapenmuseum in Linkoping. Present location and display state not confirmed on site. Earlier Swedish Wikipedia text listing a complete aircraft at Aeroseum is superseded.,C-130 Hercules; C-130; C130; C-130E; Hercules; Tp84; c/n 4039; C130E,Flygvapenmuseum,in_storage
+Macchi,M.7,,945,,,fixed_wing,biplane,military,fighter,,The only surviving Macchi M.7 in the world. Restored and on display.,M7; Macchi M.7,Flygvapenmuseum,on_display
+Malmö Flygindustri,Fpl 801,,801-42,MFI-9 Junior,,fixed_wing,monoplane,military,trainer,,Ex SE-EUK. In storage.,MFI-9 Junior; MFI-9; MFI9; MFI-9B; Fpl801; c/n 04; MFI9B,Flygvapenmuseum,in_storage
+Malmö Flygindustri,Fpl 54,,54382,MFI-10 Vipan,,fixed_wing,monoplane,military,utility,,In storage; not on public display.,MFI-10 Vipan; MFI-10; MFI10; Vipan; Fpl54; c/n 03,Flygvapenmuseum,in_storage
+Nieuport,IV.G,,M 1,,,fixed_wing,monoplane,military,other,,The Swedish Army's first aeroplane and the only surviving Nieuport IV in the world.,Nieuport IV; Nieuport IVG,Flygvapenmuseum,on_display
+Noorduyn,Tp 78,,78001,Norseman,,fixed_wing,monoplane,military,transport,,In storage. Ex-USAAF 43-35418.,Norseman; UC-64; UC64; Tp78; c/n 492,Flygvapenmuseum,in_storage
+Nord,NC.701,,SE-KAE,Martinet,,fixed_wing,monoplane,civilian,transport,,In storage; not on public display.,NC701; NC.701; Martinet; Siebel Si 204; Si204; c/n 264,Flygvapenmuseum,in_storage
+Noorduyn,Sk 16,A,16109,Harvard,,fixed_wing,monoplane,military,trainer,,In storage; not on public display.,AT-16; AT16; Harvard; T-6; T6; Texan; Sk16; c/n 14-366,Flygvapenmuseum,in_storage
+North American,J 26,,26020,P-51 Mustang,,fixed_wing,monoplane,military,fighter,,Gift from the Israeli Air Force; ex-IDF/AF 54. Its true identity is disputed and the quoted Swedish serial should be treated with caution.,P-51 Mustang; P-51; P51; P-51D; Mustang; J26; c/n 122-31718; P51D,Flygvapenmuseum,on_display
+Percival,Tp 83,,83008,Pembroke,,fixed_wing,monoplane,military,transport,,Under restoration.,P-66; P66; Pembroke; Tp83; c/n P66/52,Flygvapenmuseum,under_restoration
+Phönix Flugzeug-Werke,J 1,,947,D.III,,fixed_wing,biplane,military,fighter,,,D.III; Phonix D.III; Phoenix D.III; DIII; J1,Flygvapenmuseum,on_display
+Raab-Katzenstein,Sk 10,,536,RK-26 Tigerschwalbe,,fixed_wing,biplane,military,trainer,,The only surviving RK-26 in the world. Swedish-built.,RK-26 Tigerschwalbe; RK-26; RK26; Tigerschwalbe; Sk10; c/n 20,Flygvapenmuseum,on_display
+Reggiane,J 20,,2340,Re.2000 Falco,,fixed_wing,monoplane,military,fighter,,,Re.2000 Falco; Re.2000; Re2000; Falco; J20; c/n 405,Flygvapenmuseum,on_display
+Saab,S 17,BL,17005,Saab 17,,fixed_wing,monoplane,military,recon,,,Saab 17; Saab17; S17; S17BL; S17-BL,Flygvapenmuseum,on_display
+Saab,B 18,B,18172,Saab 18,,fixed_wing,monoplane,military,bomber,,Displayed while restoration continues. The only surviving Saab 18.,Saab 18; Saab18; B18; B18B; B18-B,Flygvapenmuseum,under_restoration
+Saab,A 21,A-3,21364,Saab 21,,fixed_wing,monoplane,military,ground_attack,,,Saab 21; Saab21; A21; A21A-3; A21-A-3,Flygvapenmuseum,on_display
+Saab,A 21,R,21286,Saab 21,,fixed_wing,monoplane,military,ground_attack,,Rebuilt from a J 21A-3 airframe.,Saab 21; Saab21; A21; A21R(A21A-3); A21-R(A21A-3),Flygvapenmuseum,on_display
+Saab,J 29,B,29398,Tunnan,,fixed_wing,monoplane,military,fighter,,Marked white E in F 22 Congo markings. In storage.,Tunnan; Saab 29; Saab29; J29; J29B; J29-B,Flygvapenmuseum,in_storage
+Saab,J 29,F,29507,Tunnan,Jubileumsflygplanet,fixed_wing,monoplane,military,fighter,,In storage. Made the type's last flight at Malmen on 29 August 1976 during the Swedish Air Force 50th anniversary; hence its name Jubileumsflygplanet.,Tunnan; Saab 29; Saab29; J29; J29F; J29-F,Flygvapenmuseum,in_storage
+Saab,S 29,C,29969,Tunnan,,fixed_wing,monoplane,military,recon,,Displayed outdoors in front of the museum. Previously stood at Vasteras flygmuseum and moved to Linkoping on 23 June 2021.,Tunnan; Saab 29; Saab29; S29; S29C; S29-C,Flygvapenmuseum,on_display
+Saab,S 29,C,29970,Tunnan,,fixed_wing,monoplane,military,recon,,,Tunnan; Saab 29; Saab29; S29; S29C; S29-C,Flygvapenmuseum,on_display
+Saab,A 32,A,32197,Lansen,,fixed_wing,monoplane,military,ground_attack,,,Lansen; Saab 32; Saab32; A32; A32A; A32-A,Flygvapenmuseum,on_display
+Saab,J 32,E,32541,Lansen,,fixed_wing,monoplane,military,fighter,,In storage; not on public display.,Lansen; Saab 32; Saab32; J32; J32E; J32-E,Flygvapenmuseum,in_storage
+Saab,S 32,C,32917,Lansen,,fixed_wing,monoplane,military,recon,,In storage; not on public display.,Lansen; Saab 32; Saab32; S32; S32C; S32-C,Flygvapenmuseum,in_storage
+Saab,J 35,D,35375,Draken,,fixed_wing,monoplane,military,fighter,,,Draken; Saab 35; Saab35; J35; J35D; J35-D,Flygvapenmuseum,on_display
+Saab,J 35,F-1,35410,Draken,,fixed_wing,monoplane,military,fighter,,Forward fuselage only.,Draken; Saab 35; Saab35; J35; J35F-1; J35-F-1,Flygvapenmuseum,on_display
+Saab,J 35,J,35539,Draken,,fixed_wing,monoplane,military,fighter,,In storage; not on public display.,Draken; Saab 35; Saab35; J35; J35J; J35-J,Flygvapenmuseum,in_storage
+Saab,Sk 35,C,35811,Draken,,fixed_wing,monoplane,military,trainer,,Converted from J 35A 35017. In storage.,Draken; Saab 35; Saab35; Sk35; Sk35C; Sk35-C,Flygvapenmuseum,in_storage
+Saab,AJS 37,,37108,Viggen,,fixed_wing,monoplane,military,ground_attack,,,Viggen; Saab 37; Saab37; AJS37,Flygvapenmuseum,on_display
+Saab,JA 37,,37301,Viggen,,fixed_wing,monoplane,military,fighter,,On loan to an upper-secondary technical school.,Viggen; Saab 37; Saab37; JA37,Flygvapenmuseum,on_display
+Saab,JA 37,C,37449,Viggen,,fixed_wing,monoplane,military,fighter,,In storage; not on public display.,Viggen; Saab 37; Saab37; JA37; JA37C; JA37-C,Flygvapenmuseum,in_storage
+Saab,JAS 39,B,39813,Gripen,,fixed_wing,monoplane,military,fighter,,Part of the Cold War exhibition; displayed between a Lansen and a Viggen.,Gripen; Saab 39; Saab39; JAS39; JAS39B; JAS39-B,Flygvapenmuseum,on_display
+Saab,Sk 50,B,50046,Safir,,fixed_wing,monoplane,military,trainer,,In storage; not on public display.,Safir; Saab 91; Saab91; Sk50; Sk50B; Sk50-B,Flygvapenmuseum,in_storage
+Saab,SK 60,B,60086,Saab 105,,fixed_wing,monoplane,military,trainer,,,Saab 105; Saab105; SK60; SK60B; SK60-B,Flygvapenmuseum,on_display
+Saab,SK 60,B,60091,Saab 105,,fixed_wing,monoplane,military,trainer,,In storage; not on public display.,Saab 105; Saab105; SK60; SK60B; SK60-B,Flygvapenmuseum,in_storage
+Saab,SK 60,A,60113,Saab 105,,fixed_wing,monoplane,military,trainer,,,Saab 105; Saab105; SK60; SK60A; SK60-A,Flygvapenmuseum,on_display
+Seversky,J 9,,2134,EP-1,,fixed_wing,monoplane,military,fighter,,,EP-1; EP1; EP-106; Model 106; J9; c/n 282-19; EP106,Flygvapenmuseum,on_display
+Scottish Aviation,SK 61,A,61030,Bulldog,,fixed_wing,monoplane,military,trainer,,In storage; not on public display.,B.125; B125; Bulldog; Sk 61; Sk61; SK61; c/n BH 100-137,Flygvapenmuseum,in_storage
+Scottish Aviation,SK 61,C,61070,Bulldog,,fixed_wing,monoplane,military,trainer,,Civil registration SE-MEK; airworthy.,B.125; B125; Bulldog; Sk 61; Sk61; SK61; c/n BH 100-188,Flygvapenmuseum,on_display
+Sparmann,P 1,,814,S 1-A,,fixed_wing,monoplane,military,trainer,,In storage; not on public display.,S 1-A; S1A; P1; c/n 8,Flygvapenmuseum,in_storage
+Sud Aviation,Tp 85,,85172,Caravelle,,fixed_wing,monoplane,military,transport,,Ex-SAS SE-DAG.,Caravelle; SE-210; SE210; Caravelle III; Tp85; c/n 172,Flygvapenmuseum,on_display
+Vickers-Armstrongs,Tp 82,,82001,Varsity,,fixed_wing,monoplane,military,trainer,,,Varsity; Varsity T.1; Varsity T1; Tp82; c/n 622,Flygvapenmuseum,on_display
+Agusta-Bell,Hkp 3,C,03306,AB 204B,,rotary_wing,,military,search_rescue,,,AB 204B; AB 204; AB204; Bell 204; Bell204; HKP 3; Hkp3,Flygvapenmuseum,on_display
+Agusta-Bell,Hkp 3,B,03422,AB 204B,,rotary_wing,,military,search_rescue,,In storage; not on public display.,AB 204B; AB 204; AB204; Bell 204; Bell204; HKP 3; Hkp3,Flygvapenmuseum,in_storage
+Agusta-Bell,Hkp 6,B,06054,AB 206 JetRanger,,rotary_wing,,military,utility,,Civil registration SE-HGX; kept in flying condition.,AB 206 JetRanger; AB 206; AB206; Bell 206; JetRanger; HKP 6; Hkp6; c/n 8555,Flygvapenmuseum,on_display
+Agusta-Bell,Hkp 6,A,06274,AB 206 JetRanger,,rotary_wing,,military,utility,,In storage; not on public display.,AB 206 JetRanger; AB 206; AB206; Bell 206; JetRanger; HKP 6; Hkp6; c/n 8115,Flygvapenmuseum,in_storage
+Boeing Vertol,Hkp 4,B,04064,Vertol 107,,rotary_wing,,military,search_rescue,,,Vertol 107; Vertol107; KV-107; KV107; Sea Knight; HKP 4; Hkp4; c/n 10,Flygvapenmuseum,on_display
+Hughes,Hkp 5,B,05245,Hughes 269,,rotary_wing,,military,trainer,,Operated by the Flygvapenmuseum Helicopter Lovers group; civil registration SE-JIR; kept in flying condition.,Hughes 269; Schweizer 300; Schweizer 300C; HKP 5; Hkp5,Flygvapenmuseum,on_display
+Hughes,Hkp 5,B,05246,Hughes 269,,rotary_wing,,military,trainer,,Operated by the Flygvapenmuseum Helicopter Lovers group; civil registration SE-JIS; kept in flying condition.,Hughes 269; Schweizer 300; Schweizer 300C; HKP 5; Hkp5,Flygvapenmuseum,on_display
+Messerschmitt-Bölkow-Blohm,Hkp 9,A,09209,Bo 105,,rotary_wing,,military,other,,anti_tank,Bo 105; Bo105; MBB Bo 105; HKP 9; Hkp9,Flygvapenmuseum,on_display
+Messerschmitt-Bölkow-Blohm,Hkp 9,A,09219,Bo 105,,rotary_wing,,military,other,,anti_tank In storage; not on public display.,Bo 105; Bo105; MBB Bo 105; HKP 9; Hkp9,Flygvapenmuseum,in_storage
+Vertol,Hkp 1,,01001,Vertol 44A,,rotary_wing,,military,search_rescue,,Intended to be restored for the Swedish Navy 500th anniversary; current condition unclear.,Vertol 44A; Vertol 44; Vertol44; V-44; H-21; Hkp1; c/n 497; V44; H21,Flygvapenmuseum,on_display
+Sud Aviation,Hkp 2,,02406,Alouette II,,rotary_wing,,military,utility,,Originally carried serial 02202.,SE.3130; SE3130; Alouette II; Alouette 2; Hkp2; c/n 1279,Flygvapenmuseum,on_display

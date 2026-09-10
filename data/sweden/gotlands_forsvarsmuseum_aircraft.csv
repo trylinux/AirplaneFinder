@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Saab,J 32,B,32502,Lansen,,fixed_wing,monoplane,military,fighter,,Production prototype for the J 32B variant.,Lansen; Saab 32; Saab32; J32; J32B; J32-B,Gotlands Försvarsmuseum,on_display
+Saab,J 35,F-1,35429,Draken,,fixed_wing,monoplane,military,fighter,,Delivered 1966. Displayed for some years at the now-closed Gotlands flygmuseum in Visby and moved here in 2011. On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Draken; Saab 35; Saab35; J35; J35F-1; J35-F-1,Gotlands Försvarsmuseum,on_display
+Saab,J 35,J,35545,Draken,,fixed_wing,monoplane,military,fighter,,On loan to the museum since 2011. On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Draken; Saab 35; Saab35; J35; J35J; J35-J,Gotlands Försvarsmuseum,on_display
+Saab,AJSF 37,,37972,Viggen,,fixed_wing,monoplane,military,recon,,,Viggen; Saab 37; Saab37; AJSF37,Gotlands Försvarsmuseum,on_display
+Agusta-Bell,Hkp 3,C,03421,AB 204B,,rotary_wing,,military,search_rescue,,,AB 204B; AB 204; AB204; Bell 204; Bell204; HKP 3; Hkp3,Gotlands Försvarsmuseum,on_display
+Vertol,Hkp 1,,01009,Vertol 44A,,rotary_wing,,military,search_rescue,,Displayed in the aviation and naval section of the museum about 2 km south of the army section.,Vertol 44A; Vertol 44; Vertol44; V-44; H-21; Hkp1; c/n 607; V44; H21,Gotlands Försvarsmuseum,on_display

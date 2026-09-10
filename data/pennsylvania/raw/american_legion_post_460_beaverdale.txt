@@ -1,0 +1,1 @@
+Bell|AH-1|G|68-15085|Cobra||rotary_wing||military|ground_attack||68-15085 falls in the FY68 AH-1G block; construction number 20619; Aerial Visuals lists it only as AH-1 so the G suffix is the as-built variant and the airframe may wear a later S/F configuration; displayed at the post at 400 Cedar Street in Summerhill Township|AH1G; c/n 20619; HueyCobra|on_display

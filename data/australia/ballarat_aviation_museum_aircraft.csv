@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Commonwealth Aircraft Corporation,CA-9,,A20-511,Wirraway,,fixed_wing,monoplane,military,trainer,,On static display painted as A20-502; the real A20-502 was destroyed at Piva in 1946.,CA9; Wirraway; A20-502; A20502,Ballarat Aviation Museum,on_display
+PZL Mielec,TS-11,,,Iskra,,fixed_wing,monoplane,military,trainer,,Cockpit section only.,TS11; Iskra,Ballarat Aviation Museum,on_display
+de Havilland,DH.104,,,Dove,,fixed_wing,monoplane,civilian,commercial_transport,,Listed by the museum among its airframes; registration not published.,DH104; Dove,Ballarat Aviation Museum,on_display
+Mignet,HM.14,,,Flying Flea,,fixed_wing,monoplane,civilian,private,,1930s homebuilt Pou-du-Ciel rebuilt by museum members using patterns taken from the original ribs.,HM14; Flying Flea; Pou du Ciel,Ballarat Aviation Museum,on_display
+Ligeti,Stratos,,,,,fixed_wing,monoplane,civilian,experimental,,Australian-designed tandem-wing experimental ultralight.,Stratos; Ligeti Stratos,Ballarat Aviation Museum,on_display
+Bensen,Gyrocopter,,,,,rotary_wing,,civilian,private,,Described by the museum as the first Australian-registered gyroplane; registration not published.,Bensen; gyroplane,Ballarat Aviation Museum,on_display
+Government Aircraft Factories,Ikara,,,,,missile_rocket,,military,anti_ship,,Australian-designed anti-submarine missile.,Ikara,Ballarat Aviation Museum,on_display

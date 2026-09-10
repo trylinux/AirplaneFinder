@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Republic,RF-84,F,C-581,Thunderflash,,fixed_wing,monoplane,military,recon,,Stored under a tent at the Gedhus museum.,RF84; 53-7581; RF84F,Flymuseet Gedhusvagten,in_storage
+Republic,F-84,G,,Thunderjet,,fixed_wing,monoplane,military,ground_attack,,USAF serial 51-9978 wearing code FS-978. Stored under a tent.,F84; 51-9978; FS-978; 2142-431B; F84G; FS978,Flymuseet Gedhusvagten,in_storage
+Gloster,Meteor,F.8,44-491,Meteor,,fixed_wing,monoplane,military,fighter,,Danish Meteor F.8 stored under a tent.,491,Flymuseet Gedhusvagten,in_storage
+North American,F-100,F,GT-961,Super Sabre,,fixed_wing,monoplane,military,trainer,,Cockpit section on display.,TF-100F; F100; 56-3961; 243-237; F100F; TF100F,Flymuseet Gedhusvagten,on_display
+SAI,KZ VII,U-4,OY-ATK,Laerke,,fixed_wing,monoplane,civilian,private,,Danish-built four-seat tourer displayed in the exhibition hall.,KZ-VII; 182,Flymuseet Gedhusvagten,on_display

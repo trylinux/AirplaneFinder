@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+de Havilland,DH.114,,VH-CLV,Heron,,fixed_wing,monoplane,civilian,commercial_transport,,Held in QVMAG storage at Inveresk rather than on display.,DH114; Heron,Queen Victoria Museum and Art Gallery,in_storage
+de Havilland,DH.114,,VH-CLZ,Heron,,fixed_wing,monoplane,civilian,commercial_transport,,"Forward fuselage only, held in QVMAG storage at Inveresk.",DH114; Heron,Queen Victoria Museum and Art Gallery,in_storage

@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Canadair,CF-104,,755,Starfighter,,fixed_wing,monoplane,military,fighter,,Held indoors at Kjeller in 334 Squadron markings.,CF104; CF-104; F-104; Starfighter; 104755; c/n 683A-1055; F104,Kjeller Flyhistoriske Forening,on_display
+de Havilland,DH.82,A,189,Tiger Moth,,fixed_wing,biplane,military,trainer,,Kept in running condition by the association at Kjeller.,DH82; DH.82A; Tiger Moth,Kjeller Flyhistoriske Forening,on_display
+de Havilland,DH.60,,LN-KFM,Moth,,fixed_wing,biplane,civilian,trainer,,Kept in running condition by the association at Kjeller.,DH60; DH.60; Moth; Gipsy Moth,Kjeller Flyhistoriske Forening,on_display

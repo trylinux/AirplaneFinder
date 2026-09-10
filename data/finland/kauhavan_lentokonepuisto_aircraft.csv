@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+BAe,Hawk,Mk.51,HW-303,Hawk,,fixed_wing,monoplane,military,trainer,,Mounted on a plinth in the aircraft park in the centre of Kauhava. One of the first two Hawks delivered to Finland in December 1980.,BAeHawk; Hawk Mk51; Hawk 51,Kauhavan Lentokonepuisto,on_display
+Focke-Wulf,Fw 44,J,SZ-25,Stieglitz,,fixed_wing,biplane,military,trainer,,Conserved and shown in a glazed display cabinet.,Fw44; FW 44J; Stieglitz,Kauhavan Lentokonepuisto,on_display
+Fouga,Fouga CM 170,Magister,FM-12,Magister,,fixed_wing,monoplane,military,trainer,,Displayed as a monument in the aircraft park.,FougaCM170; CM.170; Magister,Kauhavan Lentokonepuisto,on_display
+Saab,Saab 91,D,SF-7,Safir,,fixed_wing,monoplane,military,trainer,,Restored and shown in a glazed display cabinet in the centre of Kauhava.,Saab91; Saab 91D; Safir,Kauhavan Lentokonepuisto,on_display
+Valmet,L-70,Vinka,VN-9,Vinka,,fixed_wing,monoplane,military,trainer,,Shown in a glazed display cabinet.,L70; L-70 Vinka; Vinka; Miltrainer,Kauhavan Lentokonepuisto,on_display
+VL,VL Pyry,,PY-1,Pyry,,fixed_wing,monoplane,military,trainer,,Shown in a glazed display cabinet.,VLPyry; Pyry,Kauhavan Lentokonepuisto,on_display
+VL,VL Viima,II,VI-6,Viima,,fixed_wing,biplane,military,trainer,,Shown in a glazed display cabinet. Restored from the 1980s onward and fitted with new Lithuanian built wings in the 1990s. Also carried OH-ILN and OH-VID.,VLViima; Viima II; OH-VID; OH-ILN,Kauhavan Lentokonepuisto,on_display

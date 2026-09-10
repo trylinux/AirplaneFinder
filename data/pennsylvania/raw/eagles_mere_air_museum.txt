@@ -1,0 +1,22 @@
+Franklin|Sport|90|N10779|||fixed_wing|biplane|civilian|private||FAA registry confirms FRANKLIN 90 c/n 103 to Eagles Mere Air Museum Foundation|c/n 103|on_display
+Curtiss-Wright|CW-1||N10939|Junior||fixed_wing|monoplane|civilian|private||FAA confirms CURTISS WRIGHT JR CW1 c/n 1118|c/n 1118|on_display
+Travel Air|10|D|N418N|||fixed_wing|biplane|civilian|private||FAA confirms TRAVEL AIR 10-D c/n 10-2011|c/n 10-2011|on_display
+Curtiss-Wright|Fledgling||N656M|||fixed_wing|biplane|civilian|trainer||FAA confirms CURTISS WRIGHT FLEDGLING c/n B-109|c/n B-109|on_display
+Aeronca|C-3|||||fixed_wing|monoplane|civilian|private||Listed on the museum's own 2019 collection page; registration unresolved|C-3|on_display
+Aeronca|L-3|||Grasshopper||fixed_wing|monoplane|military|recon||Listed on the museum's own 2019 collection page; registration unresolved|L-3|on_display
+Alexander|Eaglerock|||||fixed_wing|biplane|civilian|private||Listed on the museum's own 2019 collection page; registration unresolved|Eaglerock|on_display
+Boeing|75|||Kaydet|Stearman|fixed_wing|biplane|military|trainer||Boeing-Stearman Model 75 listed on the museum's own 2019 collection page; registration unresolved|Stearman; PT-17|on_display
+Brunner-Winkle|Bird|||||fixed_wing|biplane|civilian|private||Listed on the museum's own 2019 collection page; registration unresolved|Bird|on_display
+Cessna|Model A|||||fixed_wing|monoplane|civilian|private||Listed on the museum's own 2019 collection page; registration unresolved|Cessna A|on_display
+Curtiss|Robin|||||fixed_wing|monoplane|civilian|private||Listed on the museum's own 2019 collection page; registration unresolved|Robin|on_display
+de Havilland|DH.82|A||Tiger Moth||fixed_wing|biplane|military|trainer||Listed on the museum's own 2019 collection page; registration unresolved|Tiger Moth|on_display
+Pitcairn|PA-3|||Orowing||fixed_wing|biplane|civilian|private||Pitcairn built at Bryn Athyn Pennsylvania; listed on the museum's own 2019 collection page|Orowing|on_display
+Pitcairn|PA-4|||Fleetwing II||fixed_wing|biplane|civilian|private||Listed on the museum's own 2019 collection page; registration unresolved|Fleetwing II|on_display
+Piper|J-3|||Cub||fixed_wing|monoplane|civilian|private||Listed on the museum's own 2019 collection page; registration unresolved|J-3 Cub|on_display
+Swanson|Coupe|||||fixed_wing|monoplane|civilian|private||Listed on the museum's own 2019 collection page; registration unresolved|Swanson Coupe|on_display
+Taylor|J-2|||Cub||fixed_wing|monoplane|civilian|private||Listed on the museum's own 2019 collection page; registration unresolved|J-2 Cub|on_display
+Travel Air|2000|||||fixed_wing|biplane|civilian|private||Listed on the museum's own 2019 collection page; registration unresolved|Travel Air 2000|on_display
+Travel Air|5000|||||fixed_wing|monoplane|civilian|commercial_transport||Listed on the museum's own 2019 collection page; registration unresolved|Travel Air 5000|on_display
+Kinner|Sportwing|||||fixed_wing|biplane|civilian|private||Listed on the museum's own 2019 collection page; registration unresolved|Sportwing|on_display
+Waco|GXE|||||fixed_wing|biplane|civilian|private||Waco 10 listed on the museum's own 2019 collection page; registration unresolved|Waco 10|on_display
+Waco|Standard Cabin|||||fixed_wing|biplane|civilian|private||Listed on the museum's own 2019 collection page; registration unresolved|Waco Standard|on_display

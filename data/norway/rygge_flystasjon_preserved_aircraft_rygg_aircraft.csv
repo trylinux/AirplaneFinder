@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Northrop,F-5,A,895,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,Displayed on the air station wearing code DP-B.,F5; F-5A; Freedom Fighter; c/n N.7058; DP-B; F5A,Rygge Flystasjon Preserved Aircraft -- Rygge,on_display
+Northrop,F-5,A,896,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,Displayed on the air station.,F5; F-5A; Freedom Fighter; c/n N.7059; F5A,Rygge Flystasjon Preserved Aircraft -- Rygge,on_display
+Northrop,F-5,B,906,Freedom Fighter,,fixed_wing,monoplane,military,trainer,,Held in a hangar on the air station.,F5; F-5B; Freedom Fighter; c/n N.9009; F5B,Rygge Flystasjon Preserved Aircraft -- Rygge,in_storage
+Northrop,F-5,B,909,Freedom Fighter,,fixed_wing,monoplane,military,trainer,,Held in a hangar on the air station.,F5; F-5B; Freedom Fighter; c/n N.9012; F5B,Rygge Flystasjon Preserved Aircraft -- Rygge,in_storage
+Bell,UH-1,B,025,Iroquois,,rotary_wing,,military,utility,,Held on the air station.,UH1; UH-1B; Huey; Iroquois; c/n 545; UH1B,Rygge Flystasjon Preserved Aircraft -- Rygge,in_storage
+Bell,UH-1,B,961,Iroquois,,rotary_wing,,military,utility,,Preserved on the air station.,UH1; UH-1B; Huey; Iroquois; c/n 1085; UH1B,Rygge Flystasjon Preserved Aircraft -- Rygge,on_display

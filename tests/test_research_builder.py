@@ -258,3 +258,138 @@ class TestEndToEnd:
         rows = list(csv.DictReader(out.open(encoding="utf-8")))
         assert len(rows) == 1, "the ---NOTES--- block must not become a row"
         assert list(rows[0].keys()) == B.HEADER
+
+
+class TestConstructionNumberAndOperatorCountry:
+    """Both were added to the contract in September 2026, alongside the
+    database's `uq_airframe` key change.
+
+    They go AFTER display_status, at the very end of the line, for one
+    reason: every research file written before then ends at display_status,
+    and all of them have to keep parsing byte-for-byte unchanged. realign
+    finds display_status by value and treats whatever follows it as these
+    two — a bare two-letter token is the country, anything else is the c/n.
+    """
+
+    def run(self, tmp_path, lines, extra=()):
+        src = tmp_path / "raw.txt"
+        src.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        out = tmp_path / "out.csv"
+        sys.argv = ["prog", "--in", str(src), "--museum", "M",
+                    "--out", str(out), *extra]
+        B.main()
+        return list(csv.DictReader(out.open(encoding="utf-8")))
+
+    def test_a_legacy_line_still_parses_unchanged(self):
+        """The whole point of putting them last."""
+        row, problem = one(GOOD)
+        assert problem is None
+        assert row["display_status"] == "on_display"
+        assert row["construction_number"] == ""
+        assert row["operator_country"] == ""
+        assert row["description"] == "Flown by the Thunderbirds"
+        # sanitise still adds the dashless designation variants on top.
+        assert row["aliases"].startswith("Thunderbirds")
+
+    def test_country_alone(self):
+        row, problem = one(GOOD + "|ZA")
+        assert problem is None
+        assert row["operator_country"] == "ZA"
+        assert row["construction_number"] == ""
+        assert row["display_status"] == "on_display"
+
+    def test_construction_number_and_country(self):
+        row, _ = one(GOOD + "|14072|GB")
+        assert row["construction_number"] == "14072"
+        assert row["operator_country"] == "GB"
+
+    def test_order_does_not_matter(self):
+        """They are told apart by shape, not position — a c/n is never two
+        bare letters and a country code always is."""
+        row, _ = one(GOOD + "|GB|14072")
+        assert row["construction_number"] == "14072"
+        assert row["operator_country"] == "GB"
+
+    def test_a_hyphenated_construction_number_survives(self):
+        row, _ = one(GOOD + "|680-537-206|AR")
+        assert row["construction_number"] == "680-537-206"
+        assert row["operator_country"] == "AR"
+
+    def test_lowercase_country_is_normalised(self):
+        row, _ = one(GOOD + "|za")
+        assert row["operator_country"] == "ZA"
+
+    def test_a_country_name_is_rejected(self):
+        """Free text here would defeat the key it feeds."""
+        row, problem = one(GOOD + "|South Africa")
+        # Not two letters, so it is read as a construction number instead —
+        # wrong, but visibly wrong in the output rather than silently
+        # corrupting the key.
+        assert row["operator_country"] == ""
+        assert row["construction_number"] == "South Africa"
+
+    def test_file_level_default_applies(self, tmp_path):
+        rows = self.run(tmp_path, [GOOD], extra=["--operator-country", "us"])
+        assert rows[0]["operator_country"] == "US"
+
+    def test_a_per_row_code_beats_the_default(self, tmp_path):
+        rows = self.run(tmp_path, [GOOD + "|ZA"],
+                        extra=["--operator-country", "US"])
+        assert rows[0]["operator_country"] == "ZA"
+
+    def test_a_bad_default_is_refused_outright(self, tmp_path):
+        with pytest.raises(SystemExit):
+            self.run(tmp_path, [GOOD], extra=["--operator-country", "USA"])
+
+    def test_the_columns_reach_the_csv(self, tmp_path):
+        rows = self.run(tmp_path, [GOOD + "|14072|GB"])
+        assert "construction_number" in rows[0]
+        assert "operator_country" in rows[0]
+
+
+class TestDedupeFollowsTheNewKey:
+    """The dedupe key moved with the database's: designation + tail +
+    operator country, not (model, tail). These are the airframes the old
+    key merged."""
+
+    def run(self, tmp_path, lines):
+        src = tmp_path / "raw.txt"
+        src.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        out = tmp_path / "out.csv"
+        sys.argv = ["prog", "--in", str(src), "--museum", "M", "--out", str(out)]
+        B.main()
+        return list(csv.DictReader(out.open(encoding="utf-8")))
+
+    def test_variant_separates_two_national_207s(self, tmp_path):
+        """Mirage F1CZ 207 at Swartkop is not Mirage F1C-200 207 at
+        Le Bourget. Under (model, tail) both are 'Mirage F1' + '207' and one
+        was thrown away."""
+        rows = self.run(tmp_path, [
+            "Dassault|Mirage F1|CZ|207|||fixed_wing|monoplane|military|fighter|||on_display|ZA",
+            "Dassault|Mirage F1|C-200|207|||fixed_wing|monoplane|military|fighter|||on_display|FR",
+        ])
+        assert len(rows) == 2
+
+    def test_the_trainer_is_not_the_fighter(self, tmp_path):
+        """MiG-15 '03' at Aden vs MiG-15UTI '03' at Monino."""
+        rows = self.run(tmp_path, [
+            "Mikoyan-Gurevich|MiG-15|||||fixed_wing|monoplane|military|fighter|||on_display",
+            "Mikoyan-Gurevich|MiG-15|UTI|03|||fixed_wing|monoplane|military|trainer|||on_display",
+        ])
+        assert len(rows) == 2
+
+    def test_operator_separates_identical_designations(self, tmp_path):
+        """Saudi F-86F 709 is not another air force's F-86F 709 — the case
+        that needs the country, because the designations match exactly."""
+        rows = self.run(tmp_path, [
+            "North American|F-86|F|709|||fixed_wing|monoplane|military|fighter|||on_display|SA",
+            "North American|F-86|F|709|||fixed_wing|monoplane|military|fighter|||on_display|PK",
+        ])
+        assert len(rows) == 2
+
+    def test_a_true_duplicate_is_still_caught(self, tmp_path):
+        rows = self.run(tmp_path, [
+            "North American|F-86|F|709|||fixed_wing|monoplane|military|fighter|||on_display|SA",
+            "North American|F-86|F|709|||fixed_wing|monoplane|military|fighter|||on_display|SA",
+        ])
+        assert len(rows) == 1

@@ -1,0 +1,9 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Saab,F-35,XD,A-010,Draken,,fixed_wing,monoplane,military,fighter,,Outdoor Draken at the garrison museum. Condition reported poor and presence not confirmed in recent surveys.,A35XD; 35-1010; F35; F35XD,Aalborg Forsvars- og Garnisonsmuseum,on_display
+Lockheed,F-104,G,R-851,Starfighter,,fixed_wing,monoplane,military,fighter,,Canadair-built CF-104 in Danish markings.,CF-104; 683A-1151; 104851; F104; F104G; CF104,Aalborg Forsvars- og Garnisonsmuseum,on_display
+North American,F-86,D,F-028,Sabre,,fixed_wing,monoplane,military,fighter,,Wears squadron code AL-E. USAF serial 51-6028.,F86; AL-E; 51-6028; 173-172; F86D,Aalborg Forsvars- og Garnisonsmuseum,on_display
+Republic,F-84,G,,Thunderjet,,fixed_wing,monoplane,military,ground_attack,,Displayed on the museum playground. USAF serial 51-9966 and code KR-A.,F84; 51-9966; KR-A; 2142-419B; F84G,Aalborg Forsvars- og Garnisonsmuseum,on_display
+Gloster,Meteor,NF.11,51-504,Meteor,,fixed_wing,monoplane,military,fighter,,Danish night fighter later converted to TT.20 target tug standard. Ex-RAF WM387.,WM387; Meteor TT.20; 504; 5545,Aalborg Forsvars- og Garnisonsmuseum,on_display
+Lockheed,T-33,A,DT-289,Shooting Star,T-bird,fixed_wing,monoplane,military,trainer,,Danish jet trainer.,T33; 580-7073; T33A,Aalborg Forsvars- og Garnisonsmuseum,on_display
+Polyteknisk Flyvegruppe,Polyt,III,Z-931,Polyt,,fixed_wing,monoplane,military,trainer,,Danish student-built glider used by the air force. Civil registration OY-XFA.,OY-XFA; Polyt-III; 92-931; 1,Aalborg Forsvars- og Garnisonsmuseum,on_display
+SAI,KZ VII,,O-622,Laerke,,fixed_wing,monoplane,military,utility,,Danish Army artillery observation aircraft.,KZ-VII; 184,Aalborg Forsvars- og Garnisonsmuseum,on_display

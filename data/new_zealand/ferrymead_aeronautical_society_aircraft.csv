@@ -1,0 +1,22 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bristol,170,Mk.21,ZK-AYG,Freighter,,fixed_wing,monoplane,civilian,freighter,,Cockpit section only.,Bristol Freighter; Bristol 170; Freighter,Ferrymead Aeronautical Society,on_display
+Bristol,170,Mk.31E,ZK-CRK,Freighter,,fixed_wing,monoplane,civilian,freighter,,Cockpit section only; ex Safe Air Ltd.,Bristol Freighter; Bristol 170; Freighter,Ferrymead Aeronautical Society,on_display
+de Havilland,DH.98,FB.VI,NZ2328,Mosquito,,fixed_wing,monoplane,military,bomber,,"Static restoration combining ex-RNZAF NZ2328 and NZ2382 into one airframe, marked HR339.",Mosquito; NZ2382; HR339; DH98,Ferrymead Aeronautical Society,under_restoration
+de Havilland,DH.100,FB.5,NZ5775,Vampire,,fixed_wing,monoplane,military,fighter,,"Composite airframe. The society's own collection page gives NZ5775; aviationmuseum.eu and Kiwi Aircraft Images both record the Ferrymead Vampire as NZ5758 (ex VZ838, INST196).",Vampire; NZ5758; INST196,Ferrymead Aeronautical Society,under_restoration
+Douglas,LC-47,H,17221,Dakota,,fixed_wing,monoplane,military,transport,,"Ex-US Navy ski-equipped Antarctic Dakota, marked JD-14.",Dakota; C47; LC47; LC47H,Ferrymead Aeronautical Society,on_display
+Fairchild Hiller,FH-1100,,CC-CCO,,,rotary_wing,,civilian,utility,,Rare light turbine helicopter carrying a Chilean registration.,FH1100; Hiller FH1100,Ferrymead Aeronautical Society,on_display
+Fokker,F.27,-100,ZK-BXG,Friendship,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-New Zealand National Airways Corporation Friendship.,Friendship; F27; F27100; NAC,Ferrymead Aeronautical Society,on_display
+Hiller,UH-12,E,ZK-HIK,Raven,,rotary_wing,,civilian,utility,,Piston-engined agricultural and utility helicopter.,Hiller 12E; UH12; UH12E; Raven,Ferrymead Aeronautical Society,on_display
+Hughes,269,C,ZK-HSJ,,,rotary_wing,,civilian,trainer,,Hughes 300C; composite airframe.,Hughes 300; Hughes 300C; 269C,Ferrymead Aeronautical Society,on_display
+Lockheed,Hudson,Mk.III,NZ2035,,,fixed_wing,monoplane,military,bomber,,"Ex-RNZAF Hudson, RAF serial AE503; long-running restoration on site.",Hudson; AE503,Ferrymead Aeronautical Society,under_restoration
+Lockheed,L-188,,ZK-TEA,Electra,,fixed_wing,monoplane,civilian,freighter,,"Cockpit section only, ex Air New Zealand.",Electra; L188; L188C,Ferrymead Aeronautical Society,on_display
+North American,Harvard,Mk.III,NZ1058,,,fixed_wing,monoplane,military,trainer,,Composite airframe.,Harvard; Texan,Ferrymead Aeronautical Society,on_display
+Piper,PA-23,,ZK-BLO,Apache,,fixed_wing,monoplane,civilian,private,,Light twin.,Apache; PA23,Ferrymead Aeronautical Society,on_display
+Piper,PA-25,,ZK-BZK,Pawnee,,fixed_wing,monoplane,civilian,utility,,Agricultural aircraft and glider tug.,Pawnee; PA25,Ferrymead Aeronautical Society,on_display
+Robinson,R22,Beta,ZK-HDB,,,rotary_wing,,civilian,trainer,,Composite airframe.,R22; Robinson R22,Ferrymead Aeronautical Society,on_display
+Robinson,R44,Raven II,ZK-HQV,,,rotary_wing,,civilian,utility,,Composite airframe. The society's own page gives ZK-HQV; aviationmuseum.eu lists ZK-IRF.,R44; Robinson R44; ZK-IRF,Ferrymead Aeronautical Society,on_display
+Short Brothers,S.25,Mk.5,NZ4112,Sunderland,,fixed_wing,monoplane,military,recon,,Cockpit section only of an RNZAF Sunderland.,Sunderland; S25,Ferrymead Aeronautical Society,on_display
+Transavia,PL-12,,ZK-DMX,Airtruk,,fixed_wing,monoplane,civilian,utility,,Composite airframe.,Airtruk; PL12,Ferrymead Aeronautical Society,on_display
+Vickers-Armstrongs,Viscount,807,ZK-BRF,,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-New Zealand National Airways Corporation Viscount; work has been carried out at the Air New Zealand workshops.,Viscount; Viscount 807; NAC,Ferrymead Aeronautical Society,under_restoration
+Westland,Wessex,Mk.60,G-AZBY,,,rotary_wing,,civilian,transport,,Civil Wessex; also carried the New Zealand registration ZK-IBL.,Wessex; Wessex 60; ZK-IBL,Ferrymead Aeronautical Society,on_display
+Bell,206,,,JetRanger,,rotary_wing,,civilian,utility,,Airframe listed in the society's collection without a registration.,JetRanger; Bell 206,Ferrymead Aeronautical Society,on_display

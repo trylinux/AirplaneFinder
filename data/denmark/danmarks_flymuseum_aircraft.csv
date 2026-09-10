@@ -1,0 +1,61 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Saab,F-35,XD,A-009,Draken,,fixed_wing,monoplane,military,fighter,,Danish Air Force single-seat Draken strike fighter displayed in the Flyvevaabenmuseet hall.,A35XD; 35-1009; F35; F35XD,Danmarks Flymuseum,on_display
+Saab,RF-35,XD,AR-109,Draken,,fixed_wing,monoplane,military,recon,,Danish reconnaissance Draken. Previously used for battle damage repair training at Karup.,S35XD; RF35; 35-1109; RF35XD,Danmarks Flymuseum,on_display
+General Dynamics,F-16,AM,E-174,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,Royal Danish Air Force F-16 in the Flyvevaabenmuseet hall. Danish F-16 fleet was retired in January 2026.,F16; 78-0174; 6F-1; F16AM,Danmarks Flymuseum,on_display
+Lockheed,F-104,G,R-888,Starfighter,,fixed_wing,monoplane,military,fighter,,Canadair-built CF-104 delivered to Denmark in 1971 from Canadian stocks.,CF-104; F104; 683A-1188; F104G; CF104,Danmarks Flymuseum,on_display
+Republic,F-84,G,A-665,Thunderjet,,fixed_wing,monoplane,military,ground_attack,,Danish Thunderjet fighter-bomber.,F84; 2842-1725B; F84G,Danmarks Flymuseum,in_storage
+Republic,F-84,G,A-515,Thunderjet,,fixed_wing,monoplane,military,ground_attack,,Danish Thunderjet fighter-bomber.,F84; 2442-968B; F84G,Danmarks Flymuseum,on_display
+Republic,F-84,G,A-047,Thunderjet,,fixed_wing,monoplane,military,ground_attack,,Cockpit section only.,F84; F84G,Danmarks Flymuseum,on_display
+Republic,F-84,G,,Thunderjet,,fixed_wing,monoplane,military,ground_attack,,Airframe carrying USAF serial 51-9792 and squadron code KP-K.,F84; 51-9792; KP-K; 2336-245B; F84G,Danmarks Flymuseum,on_display
+Republic,RF-84,F,C-264,Thunderflash,,fixed_wing,monoplane,military,recon,,Danish photo-reconnaissance Thunderflash.,RF84; RF84F,Danmarks Flymuseum,on_display
+North American,F-86,D,F-421,Sabre,,fixed_wing,monoplane,military,fighter,,All-weather interceptor known in Danish service as the Sabre Dog.,F86; 173-554; F86D,Danmarks Flymuseum,on_display
+North American,F-100,D,55-2739,Super Sabre,,fixed_wing,monoplane,military,ground_attack,,Ex-French Air Force airframe rebuilt by Team Tordenjet and painted as Danish F-100D G-183. Denmark passed its own F-100D fleet to Turkey so no original Danish airframe survives.,F100; 52739; G-183; 224-6; F100D; G183,Danmarks Flymuseum,on_display
+Hawker,Hunter,F.51,E-401,Hunter,,fixed_wing,monoplane,military,fighter,,Danish-operated Hunter day fighter.,41H/680260; 41H680260,Danmarks Flymuseum,on_display
+Gloster,Meteor,F.8,44-499,Meteor,,fixed_wing,monoplane,military,fighter,,Danish Meteor F.8 day fighter.,G5/373; 499,Danmarks Flymuseum,on_display
+Lockheed,T-33,A,DT-102,Shooting Star,T-bird,fixed_wing,monoplane,military,trainer,,Danish jet trainer.,T33; 580-6886; T33A,Danmarks Flymuseum,on_display
+Lockheed,T-33,A,DT-884,Shooting Star,T-bird,fixed_wing,monoplane,military,trainer,,Restored from the Skrydstrup restoration project.,T33; 580-6216; T33A,Danmarks Flymuseum,on_display
+Consolidated,PBY,6A,L-861,Catalina,,fixed_wing,monoplane,military,search_rescue,,Amphibian used for Greenland fishery inspection and search and rescue.,PBY-6A; 2105; PBY6A,Danmarks Flymuseum,on_display
+Douglas,C-47,A,K-687,Dakota,,fixed_wing,monoplane,military,transport,,Danish Air Force Dakota transport.,C47; 19200; 42-100737; C47A,Danmarks Flymuseum,on_display
+Sikorsky,S-61,A,U-240,Sea King,,rotary_wing,,military,search_rescue,,Danish Air Force search and rescue helicopter.,S61; 61.240; S61A,Danmarks Flymuseum,on_display
+Sikorsky,S-55,C,S-884,Chickasaw,,rotary_wing,,military,search_rescue,,Early Danish rescue helicopter.,S55; 55.1032; S55C,Danmarks Flymuseum,on_display
+Hughes,500,M,H-245,Cayuse,,rotary_wing,,military,recon,,Danish Army observation helicopter.,OH-6; H.369HM; 369HM; 24-0245M; OH6,Danmarks Flymuseum,on_display
+Supermarine,Spitfire,LF Mk.IX,41-401,Spitfire,,fixed_wing,monoplane,military,fighter,,Post-war Danish Air Force Spitfire. Carries the RAF serial MA298.,MA298; MA-298,Danmarks Flymuseum,on_display
+North American,Harvard,Mk.IIB,31-306,Harvard,,fixed_wing,monoplane,military,trainer,,Danish advanced trainer.,14-748; 306,Danmarks Flymuseum,on_display
+Saab,Sk 16,,16126,Harvard,,fixed_wing,monoplane,military,trainer,,Ex-Swedish Air Force Harvard.,Sk-16; 14-426; Sk16,Danmarks Flymuseum,on_display
+Avro,504,N,110,Avro 504,,fixed_wing,biplane,military,trainer,,Danish Army Flying Troops licence-built trainer known as L.B.I.,LB I; L.B.I; OV.50,Danmarks Flymuseum,on_display
+Hawker,Dankok,,158,Dankok,,fixed_wing,biplane,military,fighter,,Danish-built Hawker Woodcock derivative also known as L.B.II.,LB II; L.B.II; Danecock; OV.54,Danmarks Flymuseum,on_display
+Fouga,CM.170,,OY-FGA,Magister,,fixed_wing,monoplane,civilian,trainer,,Ex-military jet trainer on the Danish civil register. Wears code 2-HA.,CM170; 2-HA; 230,Danmarks Flymuseum,on_display
+de Havilland Canada,DHC-1,Mk.22,OY-FLV,Chipmunk,,fixed_wing,monoplane,civilian,trainer,,Ex-Danish Air Force Chipmunk P-143 on the civil register.,DHC1; C1/0878; P-143; P143,Danmarks Flymuseum,on_display
+de Havilland,DH.82,A,OY-ECH,Tiger Moth,,fixed_wing,biplane,civilian,trainer,,Civil-registered Tiger Moth.,DH82; 85234,Danmarks Flymuseum,on_display
+de Havilland,DH.87,B,OY-DEZ,Hornet Moth,,fixed_wing,biplane,civilian,private,,Danish-registered Hornet Moth.,DH87; 8040,Danmarks Flymuseum,on_display
+de Havilland,DH.104,,OY-DHZ,Dove,,fixed_wing,monoplane,civilian,commercial_transport,,Danish-registered Dove feederliner.,DH104; 04476,Danmarks Flymuseum,on_display
+Piper,J-3,F-50,OY-ABT,Cub,,fixed_wing,monoplane,civilian,private,,Pre-war Danish-registered Piper Cub.,J3; 2475,Danmarks Flymuseum,on_display
+Piper,PA-16,,OY-AKM,Clipper,,fixed_wing,monoplane,civilian,private,,Danish-registered Piper Clipper.,PA16; 16-101,Danmarks Flymuseum,on_display
+Piper,PA-23,250B,OY-DCC,Aztec,,fixed_wing,monoplane,civilian,private,,Danish-registered light twin.,PA23; 27-2473,Danmarks Flymuseum,on_display
+Taylorcraft,Plus,D,OY-DSH,Taylorcraft,,fixed_wing,monoplane,civilian,private,,British-built Taylorcraft Plus D.,228,Danmarks Flymuseum,on_display
+Druine,D.31,,OY-AMG,Turbulent,,fixed_wing,monoplane,civilian,private,,Single-seat homebuilt.,D31; 274,Danmarks Flymuseum,on_display
+Stampe,SV.4,B,OY-DBC,Stampe,,fixed_wing,biplane,civilian,trainer,,Belgian-built aerobatic biplane trainer.,SV4; 1204,Danmarks Flymuseum,on_display
+Aerospatiale,SN.601,,OY-SBR,Corvette,,fixed_wing,monoplane,civilian,commercial_transport,,French business jet on the Danish register.,SN601; 23,Danmarks Flymuseum,on_display
+Enstrom,F-28,A,SE-HFX,Enstrom,,rotary_wing,,civilian,private,,Swedish-registered light helicopter.,F28; 116; F28A,Danmarks Flymuseum,on_display
+Fairey,Firefly,TT.1,SE-CAW,Firefly,,fixed_wing,monoplane,civilian,utility,,Ex-Swedish civil target tug Firefly.,F.6121,Danmarks Flymuseum,on_display
+Transavia,PL-12,,OY-DVZ,Airtruk,,fixed_wing,biplane,civilian,utility,,Australian agricultural aircraft.,PL12; 1238,Danmarks Flymuseum,on_display
+Bucker,Bu 181,,OY-AVZ,Bestmann,,fixed_wing,monoplane,civilian,trainer,,Swedish-built Sk 25 version. Wears code 273.,Sk 25; Sk-25; Bu181; 25073; 273; Sk25,Danmarks Flymuseum,on_display
+SAI,KZ II,Sport,OY-AEA,KZ II,,fixed_wing,monoplane,civilian,private,,Danish-designed Kramme og Zeuthen sportsplane.,KZ-II; KZII; 27,Danmarks Flymuseum,on_display
+SAI,KZ II,Sport,OY-DOU,KZ II,,fixed_wing,monoplane,civilian,private,,Danish-designed Kramme og Zeuthen two-seater.,KZ-IIS; KZ-II; 13,Danmarks Flymuseum,on_display
+SAI,KZ II,Traener,OY-FAK,KZ II,,fixed_wing,monoplane,civilian,trainer,,Danish-built military trainer variant on the civil register.,KZ-IIT; KZ-II; 115,Danmarks Flymuseum,on_display
+SAI,KZ III,,61-611,KZ III,,fixed_wing,monoplane,military,utility,,Danish Air Force liaison aircraft.,KZ-III; KZIII; 50,Danmarks Flymuseum,on_display
+SAI,KZ III,,OY-DZA,KZ III,,fixed_wing,monoplane,civilian,private,,Danish-built two-seat tourer.,KZ-III; 66,Danmarks Flymuseum,on_display
+SAI,KZ IV,,OY-DIZ,KZ IV,,fixed_wing,monoplane,civilian,utility,,Danish-built twin-engine air ambulance.,KZ-IV; 43,Danmarks Flymuseum,on_display
+SAI,KZ VII,U-4,OY-AAD,Laerke,,fixed_wing,monoplane,civilian,private,,Danish-built four-seat tourer.,KZ-VII; KZVII; 157,Danmarks Flymuseum,on_display
+SAI,KZ VII,,OY-ATJ,Laerke,,fixed_wing,monoplane,civilian,private,,Danish-built four-seat tourer.,KZ-VII; 186,Danmarks Flymuseum,on_display
+SAI,KZ VII,,OY-AVH,Laerke,,fixed_wing,monoplane,civilian,private,,Danish-built four-seat tourer.,KZ-VII; 183,Danmarks Flymuseum,in_storage
+SAI,KZ VIII,,OY-DRR,KZ VIII,,fixed_wing,monoplane,civilian,private,,Danish-built single-seat aerobatic aircraft.,KZ-VIII; 203,Danmarks Flymuseum,on_display
+SAI,KZ X,Mk.2,OY-AOL,KZ X,,fixed_wing,monoplane,civilian,private,,Danish-built observation and liaison prototype.,KZ-X; 205,Danmarks Flymuseum,on_display
+Scheibe,Muu 13,E,OY-AXS,Bergfalke,,fixed_wing,monoplane,civilian,private,,Two-seat training glider.,Mu-13E; Mu 13; 01; Mu13E,Danmarks Flymuseum,on_display
+Scheibe,Muu 13,E,OY-REX,Bergfalke,,fixed_wing,monoplane,civilian,private,,Two-seat training glider.,Mu-13E; Mu 13; 102; Mu13E,Danmarks Flymuseum,on_display
+Scheibe,Spatz,B,OY-AXU,Spatz,,fixed_wing,monoplane,civilian,private,,Single-seat glider.,B-Spatz; 524,Danmarks Flymuseum,on_display
+Schneider,Grunau Baby,IIb,OY-AUX,Grunau Baby,,fixed_wing,monoplane,civilian,private,,Classic training glider.,PFG8,Danmarks Flymuseum,on_display
+Raab,Doppelraab,IV,OY-XIT,Doppelraab,,fixed_wing,monoplane,civilian,private,,Two-seat primary glider.,Doppel Raab 4; 03,Danmarks Flymuseum,on_display
+Hollschmidt,HT-1,,OY-FAI,HT-1,,fixed_wing,monoplane,civilian,private,,Danish-built glider also known as Hollschmidt 222.,Hollschmidt 222; 1; HT1,Danmarks Flymuseum,on_display
+Ellehammer,1906,,,,Ellehammer,fixed_wing,biplane,civilian,experimental,,Full-size replica of Ellehammers 1906 machine.,Ellehammer 1906 replika,Danmarks Flymuseum,on_display
+Berg og Storm,Monoplan,III,,Monoplan,,fixed_wing,monoplane,civilian,experimental,,Early Danish-built monoplane also credited as B og S Monoplan III. Also referred to as the B and S Monoplan III.,3,Danmarks Flymuseum,on_display

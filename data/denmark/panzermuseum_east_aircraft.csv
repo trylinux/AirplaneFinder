@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+BAC,1-11,510ED,G-AVMN,One-Eleven,,fixed_wing,monoplane,civilian,commercial_transport,,British-built jet airliner preserved at the cold war museum.,BAC1-11; BAC 111; 142,Panzermuseum East,on_display
+Mil,Mi-8,T,D-HOXB,Hip,,rotary_wing,,civilian,transport,,Former East German transport helicopter on the German civil register.,Mi8; 0623; Mi8T,Panzermuseum East,on_display
+Mil,Mi-24,P,,Hind,,rotary_wing,,military,ground_attack,,Former East German attack helicopter serial 9649.,Mi24; 9649; 340339; Mi24P,Panzermuseum East,on_display

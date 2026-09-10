@@ -377,6 +377,12 @@ class Aircraft(db.Model):
     manufacturer = db.Column(db.String(100), nullable=False)
     model = db.Column(db.String(50), nullable=False)
     variant = db.Column(db.String(50))
+    # Manufacturer's construction number / msn. Not part of any unique key --
+    # see the note on uq_airframe in schema.sql.
+    construction_number = db.Column(db.String(50))
+    # ISO 3166-1 alpha-2 of the operator whose marks the airframe wears, not
+    # the country it sits in today. Part of uq_airframe.
+    operator_country = db.Column(db.String(2))
     # MySQL-side STORED generated column (see schema.sql). Declared via Computed
     # so SQLAlchemy excludes it from INSERT/UPDATE but lets queries reference it
     # in filters — letting searches hit idx_full_desig instead of computing
@@ -417,6 +423,8 @@ class Aircraft(db.Model):
             "manufacturer": self.manufacturer,
             "model": self.model,
             "variant": self.variant,
+            "construction_number": self.construction_number,
+            "operator_country": self.operator_country,
             # Fall back to in-Python computation for unflushed instances where
             # the DB-generated value hasn't been loaded yet.
             "full_designation": self.full_designation or join_designation(

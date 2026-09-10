@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Saab,35,F-35,A-019,Draken,,fixed_wing,monoplane,military,ground_attack,,Nose section only from an ex Royal Danish Air Force Draken.,F35; F-35; Draken; c/n 35-1019,Åmli Cockpit Collection -- Åmli,on_display
+Mikoyan-Gurevich,MiG-23,BN,695,Flogger,,fixed_wing,monoplane,military,ground_attack,,Nose section only from an ex East German Air Force aircraft.,MiG23; MiG-23BN; Flogger; c/n 0393214211; MiG23BN,Åmli Cockpit Collection -- Åmli,on_display
+Northrop,RF-5,A,101,Freedom Fighter,,fixed_wing,monoplane,military,recon,,Cockpit section only.,RF5; RF-5A; Freedom Fighter; c/n RFG.1002; RF5A,Åmli Cockpit Collection -- Åmli,on_display
+McDonnell Douglas,Phantom,FGR.2,XV399,Phantom II,,fixed_wing,monoplane,military,fighter,,Nose section only from an ex Royal Air Force Phantom.,Phantom FGR2; Phantom FGR.2; F-4M; Phantom II; c/n 2869; F4M,Åmli Cockpit Collection -- Åmli,on_display

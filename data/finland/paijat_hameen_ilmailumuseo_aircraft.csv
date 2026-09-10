@@ -1,0 +1,21 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aero,Aero A-32,GR,AEj-59,,,fixed_wing,biplane,military,recon,,Unrestored and missing its engine.,AeroA-32; Aero A32; A-32; A32,Päijät-Hämeen Ilmailumuseo,on_display
+Blackburn,Ripon,IIF,RI-140,Ripon,,fixed_wing,biplane,military,bomber,,Only surviving Blackburn Ripon in the world.,BlackburnRipon; Ripon II; Ripon IIF,Päijät-Hämeen Ilmailumuseo,on_display
+Caudron,Caudron C.59,,CA-50,,,fixed_wing,biplane,military,trainer,,Probably the only surviving example of the type. Displayed without wings. Also carried 2E.5.,CaudronC.59; Caudron C59; C.59; C59; 2E.5,Päijät-Hämeen Ilmailumuseo,on_display
+Folland,Folland Gnat,Mk.1,GN-112,Gnat,,fixed_wing,monoplane,military,fighter,,On display.,FollandGnat; Gnat Mk1,Päijät-Hämeen Ilmailumuseo,on_display
+Fouga,Fouga CM 170,Magister,FM-71,Magister,,fixed_wing,monoplane,military,trainer,,On display.,FougaCM170; CM.170; Magister,Päijät-Hämeen Ilmailumuseo,on_display
+IVL,IVL D.26,Haukka I,HA-39,Haukka,,fixed_wing,biplane,military,fighter,,Prototype. Conserved.,IVLD.26; I.V.L. D.26; D26; Haukka I,Päijät-Hämeen Ilmailumuseo,on_display
+IVL,IVL K.1,Kurki,,Kurki,,fixed_wing,monoplane,military,trainer,,Conserved and displayed without its engine. No serial recorded.,IVLK.1; I.V.L. K.1; K1; Kurki,Päijät-Hämeen Ilmailumuseo,on_display
+Mikoyan-Gurevich,MiG-15,UTI,MU-2,Midget,,fixed_wing,monoplane,military,trainer,,Unrestored.,MiG15; MiG-15UTI; MiG15UTI; Midget,Päijät-Hämeen Ilmailumuseo,on_display
+Mikoyan-Gurevich,MiG-21,bis,MG-131,Fishbed,,fixed_wing,monoplane,military,fighter,,Displayed unrestored in the museum outdoor area.,MiG21; MiG-21BIS; MiG21bis; Fishbed,Päijät-Hämeen Ilmailumuseo,on_display
+Mikoyan-Gurevich,MiG-21,bis,MG-140,Fishbed,,fixed_wing,monoplane,military,fighter,,Unrestored.,MiG21; MiG-21BIS; MiG21bis; Fishbed,Päijät-Hämeen Ilmailumuseo,on_display
+Mil,Mi-8,P,HS-5,Hip,,rotary_wing,,military,transport,,On display.,Mi8; Mi-8P; Mi8P; Hip,Päijät-Hämeen Ilmailumuseo,on_display
+Saab,Saab 35,S,DK-207,Draken,,fixed_wing,monoplane,military,fighter,,Unrestored.,Saab35; J 35; J35; Draken; Saab 35S,Päijät-Hämeen Ilmailumuseo,on_display
+Schleicher,Rhönbussard,,OH-RAA,Rhönbussard,,fixed_wing,monoplane,civilian,other,,Damaged fuselage on display. Also carried OH-JÄMI 4.,Rhonbussard; Rhönbussard; OH-JÄMI 4,Päijät-Hämeen Ilmailumuseo,on_display
+Tupolev,SB-2,M-103,16/250,,,fixed_wing,monoplane,military,bomber,,Wreck consisting of the rear fuselage only. The identity 16/250 is the Soviet construction batch number.,SB2; SB-2M-103; ANT-40; ANT40,Päijät-Hämeen Ilmailumuseo,on_display
+VL,VL E.31,Kotka II,KA-148,Kotka,,fixed_wing,biplane,military,recon,,Only surviving example of the type. A wreck.,VLE.31; E.31; E31; Kotka II; VL E.30,Päijät-Hämeen Ilmailumuseo,on_display
+VL,VL Pyry,,PY-26,Pyry,,fixed_wing,monoplane,military,trainer,,Wreck consisting of the steel tube fuselage frame mounted on a factory production line dolly with plywood wheels.,VLPyry; Pyry,Päijät-Hämeen Ilmailumuseo,on_display
+de Havilland,DH.100,Vampire Mk.52,VA-3,Vampire,,fixed_wing,monoplane,military,fighter,,A wreck.,DH100; D.H.100; Vampire FB.52; Vampire Mk 52,Päijät-Hämeen Ilmailumuseo,on_display
+de Havilland,DH.115,Vampire Mk.55,VT-6,Vampire Trainer,,fixed_wing,monoplane,military,trainer,,Unrestored front fuselage only.,DH115; D.H.115; Vampire T.55; Vampire Mk 55,Päijät-Hämeen Ilmailumuseo,on_display
+Fokker,Fokker C.V,,FO-75,,,fixed_wing,biplane,military,recon,,Wreck held in store at Vesivehmaa.,FokkerC.V; Fokker CV; C.V; CV,Päijät-Hämeen Ilmailumuseo,in_storage
+Mikoyan-Gurevich,MiG-3,,,,,fixed_wing,monoplane,military,fighter,,Only the wings of this recovered MiG-3 are held here. The rear fuselage and small parts are at the Ilmatorjuntamuseo. No Soviet serial is established.,MiG3,Päijät-Hämeen Ilmailumuseo,on_display

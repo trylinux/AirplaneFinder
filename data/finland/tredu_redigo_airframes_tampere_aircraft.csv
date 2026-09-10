@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Valmet,L-90,Redigo,RG-5,Redigo,,fixed_wing,monoplane,military,trainer,,Instructional airframe at the Tredu vocational college in Tampere. Described as a wreck used for training.,L90; RG5,Tredu Redigo Airframes -- Tampere,on_display
+Valmet,L-90,Redigo,RG-7,Redigo,,fixed_wing,monoplane,military,trainer,,Instructional airframe at the Tredu vocational college in Tampere.,L90; RG7,Tredu Redigo Airframes -- Tampere,on_display

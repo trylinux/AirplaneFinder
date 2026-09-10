@@ -1,0 +1,2 @@
+Piper|J-3|C-65||Cub||fixed_wing|monoplane|civilian|private||Restored Cub in Lock Haven Yellow; registration not published in any source found|J-3 Cub; Lock Haven Yellow|on_display
+Knepper|KA-1|||Crusader||fixed_wing|monoplane|civilian|experimental||Sole example built; donated to the State Museum by Ruth Knepper after her husband's death in 1989|KA-1 Crusader|on_display

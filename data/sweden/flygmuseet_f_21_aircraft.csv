@@ -1,0 +1,14 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,J 26,,26084,P-51 Mustang,,fixed_wing,monoplane,military,fighter,,The only known surviving example of the reconnaissance S 26 conversion. Designated a national reference example (riksexemplar). On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,P-51 Mustang; P-51; P51; P-51D; Mustang; J26; c/n 122-31971; P51D,Flygmuseet F 21,on_display
+Saab,S 29,C,29929,Tunnan,,fixed_wing,monoplane,military,recon,,Gate guard at the entrance to F 21 Kallax.,Tunnan; Saab 29; Saab29; S29; S29C; S29-C,Flygmuseet F 21,on_display
+Saab,S 29,C,29937,Tunnan,,fixed_wing,monoplane,military,recon,,On loan to the museum since 2008.,Tunnan; Saab 29; Saab29; S29; S29C; S29-C,Flygmuseet F 21,on_display
+Saab,J 32,E,32529,Lansen,,fixed_wing,monoplane,military,fighter,,,Lansen; Saab 32; Saab32; J32; J32E; J32-E,Flygmuseet F 21,on_display
+Saab,S 35,E,35937,Draken,,fixed_wing,monoplane,military,recon,,Forward fuselage only. Converted from J 35D 35296. On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Draken; Saab 35; Saab35; S35; S35E; S35-E,Flygmuseet F 21,on_display
+Saab,S 35,E,35952,Draken,,fixed_wing,monoplane,military,recon,,Converted from J 35D 35290. On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Draken; Saab 35; Saab35; S35; S35E; S35-E,Flygmuseet F 21,on_display
+Saab,JA 37,C,37362,Viggen,,fixed_wing,monoplane,military,fighter,,,Viggen; Saab 37; Saab37; JA37; JA37C; JA37-C,Flygmuseet F 21,on_display
+Saab,SK 37,E,37817,Viggen,,fixed_wing,monoplane,military,trainer,,,Viggen; Saab 37; Saab37; SK37; SK37E; SK37-E,Flygmuseet F 21,on_display
+Saab,SF 37,,37977,Viggen,,fixed_wing,monoplane,military,recon,,,Viggen; Saab 37; Saab37; SF37,Flygmuseet F 21,on_display
+Saab,SK 60,C,60004,Saab 105,,fixed_wing,monoplane,military,trainer,,,Saab 105; Saab105; SK60; SK60C; SK60-C,Flygmuseet F 21,on_display
+Agusta-Bell,Hkp 3,B,03426,AB 204B,,rotary_wing,,military,search_rescue,,,AB 204B; AB 204; AB204; Bell 204; Bell204; HKP 3; Hkp3,Flygmuseet F 21,on_display
+Boeing Vertol,Hkp 4,A,04451,Vertol 107,,rotary_wing,,military,search_rescue,,,Vertol 107; Vertol107; KV-107; KV107; Sea Knight; HKP 4; Hkp4; c/n 401,Flygmuseet F 21,on_display
+Eurocopter,Hkp 10,A,10401,AS332 Super Puma,,rotary_wing,,military,search_rescue,,Crashed on 1 November 2005; the wreck is preserved. On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,AS332 Super Puma; AS332; AS 332; Super Puma; HKP 10; Hkp10; c/n 2230,Flygmuseet F 21,on_display

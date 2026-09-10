@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+VL,VL Sääski,II,LK-1,Sääski,,fixed_wing,biplane,civilian,trainer,,Restored. Moved from Hallinportti to Kotka in 2007.,VLSääski; Saaski; LK-1; LK1,Merikeskus Vellamo,on_display
+de Havilland Canada,DHC-2,Beaver,OH-MVM,Beaver,,fixed_wing,monoplane,civilian,search_rescue,,Unrestored former Finnish Border Guard Beaver displayed in the Merivartiomuseo section.,DHC2; DHC-2 Beaver; Beaver,Merikeskus Vellamo,on_display

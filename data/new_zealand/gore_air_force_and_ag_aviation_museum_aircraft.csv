@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Cessna,188,,ZK-CQZ,AgWagon,,fixed_wing,monoplane,civilian,utility,,Agricultural topdressing aircraft.,AgWagon; Cessna 188,Gore Air Force and Ag-Aviation Museum,on_display
+de Havilland,DH.82,A,ZK-BLM,Tiger Moth,,fixed_wing,biplane,military,trainer,,Ex-RNZAF NZ1484.,Tiger Moth; NZ1484; DH82A,Gore Air Force and Ag-Aviation Museum,on_display
+Evans,VP-2,,ZK-EEN,Volksplane,,fixed_wing,monoplane,civilian,private,,Two-seat homebuilt.,VP2; Volksplane; Evans VP2,Gore Air Force and Ag-Aviation Museum,on_display
+Fisher,FP-202,,ZK-FMK,Koala,,fixed_wing,monoplane,civilian,private,,Wooden homebuilt ultralight.,Koala; FP202; FP-202,Gore Air Force and Ag-Aviation Museum,on_display
+Hughes,269,,,,,rotary_wing,,civilian,trainer,,Hughes 300 light helicopter listed without a registration.,Hughes 300; 269,Gore Air Force and Ag-Aviation Museum,on_display
+Hughes,369,,ZK-HHK,,,rotary_wing,,civilian,utility,,Hughes 500 turbine helicopter.,Hughes 500; 369; MD500,Gore Air Force and Ag-Aviation Museum,on_display

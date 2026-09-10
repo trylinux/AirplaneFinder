@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,P-39,Q Airacobra,,Airacobra,,fixed_wing,monoplane,military,fighter,,Restored Airacobra recovered in Russia and displayed at the Anti-Aircraft Museum. No serial published.,P39; P-39Q; Airacobra; P39Q,Ilmatorjuntamuseo,on_display
+Mikoyan-Gurevich,MiG-3,,,,,fixed_wing,monoplane,military,fighter,,Rear fuselage tail and small parts only. The wings of the same wreck are at the Päijät-Hämeen Ilmailumuseo.,MiG3,Ilmatorjuntamuseo,on_display

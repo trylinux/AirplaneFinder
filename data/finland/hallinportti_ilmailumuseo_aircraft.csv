@@ -1,0 +1,9 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aero,Aero A-11,HS,AE-47,,,fixed_wing,biplane,military,recon,,Only surviving Aero A-11 in the world. Restored.,AeroA-11; Aero A11; A-11; A11,Hallinportti Ilmailumuseo,on_display
+Bristol,Bulldog,IVA,BU-59,Bulldog,,fixed_wing,biplane,military,fighter,,One of two surviving Bristol Bulldogs in the world. Restored.,BristolBulldog; Bulldog IV; Bulldog IVA,Hallinportti Ilmailumuseo,on_display
+Caudron,Caudron G.3,,1E.18,,,fixed_wing,biplane,military,trainer,,Restored.,CaudronG.3; Caudron G3; G.3; G3,Hallinportti Ilmailumuseo,on_display
+Karhumäki,Karhu 48,,OH-VKK,Karhu,Nalle,fixed_wing,monoplane,civilian,utility,,Wreck consisting of the fuselage frame. Used as a spares source for its sister aircraft and scrapped in 1960.,Karhu48; Nalle,Hallinportti Ilmailumuseo,on_display
+Mikoyan-Gurevich,MiG-15,UTI,MU-1,Midget,,fixed_wing,monoplane,military,trainer,,Displayed outdoors in the museum yard.,MiG15; MiG-15UTI; MiG15UTI; Midget,Hallinportti Ilmailumuseo,on_display
+Rumpler,Rumpler 6B,,5A.1,,,fixed_wing,biplane,military,fighter,,Restoration incomplete.,Rumpler6B; 6B; 6.B,Hallinportti Ilmailumuseo,on_display
+VL,VL D.27,Haukka II,HA-41,Haukka,,fixed_wing,biplane,military,fighter,,Prototype. Restored. Also referenced as I.V.L. D.26 Haukka II.,VLD.27; D.27; D27; Haukka II; IVL D.26,Hallinportti Ilmailumuseo,on_display
+Cessna,C-37,,OH-VKF,,Kymppi,fixed_wing,monoplane,civilian,private,,Bought from Sweden in 2008 and under restoration at Halli. Earlier identities SE-ANP and Finnish Air Force CE-1.,C37; Cessna C-37; SE-ANP; CE-1; Kymppi; CE1,Hallinportti Ilmailumuseo,under_restoration

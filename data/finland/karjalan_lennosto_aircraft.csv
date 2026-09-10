@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,bis,MG-119,Fishbed,,fixed_wing,monoplane,military,fighter,,Unrestored airframe mounted as a memorial on the parade square of the Karelia Air Wing at Rissala.,MiG21; MiG-21BIS; MiG21bis; Fishbed,Karjalan Lennosto,on_display
+Mikoyan-Gurevich,MiG-21,bis,MG-134,Fishbed,,fixed_wing,monoplane,military,fighter,,Cockpit section only kept as a presentation aircraft at the Karelia Air Wing.,MiG21; MiG-21BIS; MiG21bis; Fishbed,Karjalan Lennosto,on_display

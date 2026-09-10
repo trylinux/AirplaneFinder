@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,F-86,K,41313,Sabre,,fixed_wing,monoplane,military,fighter,,Held on Bardufoss air station wearing code SI-O. USAF serial 54-1313.,F86; F-86K; Sabre; 54-1313; SI-O; c/n 213-83; F86K,Bardufoss Flystasjon Preserved Aircraft -- Bardufoss,in_storage
+Westland,Lynx,Mk.86,237,Lynx,,rotary_wing,,military,search_rescue,,Coast guard Lynx preserved at Bardufoss where 337 Squadron was based.,Lynx Mk86; Lynx Mk.86,Bardufoss Flystasjon Preserved Aircraft -- Bardufoss,on_display
+Bell,UH-1,B,591,Iroquois,,rotary_wing,,military,utility,,Preserved at Bardufoss air station.,UH1; UH-1B; Huey; Iroquois; c/n 237; UH1B,Bardufoss Flystasjon Preserved Aircraft -- Bardufoss,on_display

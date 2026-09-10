@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Avro,Baby,,G-EACQ,,,fixed_wing,biplane,civilian,private,,"The Avro Baby Bert Hinkler used for his 1920-21 record flights, including the Sydney to Bundaberg flight of 1921. Held and displayed by the Queensland Museum.",Avro Baby; G-EACQ; Avro 534,Queensland Museum,on_display
+Avro,Avian,,G-EBOV,,,fixed_wing,biplane,civilian,private,,The Avian in which Bert Hinkler made the first solo flight from England to Australia in February 1928. Held and displayed by the Queensland Museum.,Avian; Avro Avian; G-EBOV,Queensland Museum,on_display

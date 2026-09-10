@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Saab,F-35,XD,A-005,Draken,,fixed_wing,monoplane,military,fighter,,Single-seat Draken inside Hangar 2. Visitors may sit in the cockpit and the afterburner section was being refitted in 2026.,A35XD; 35-1005; F35; F35XD,Værløse Flyhistoriske Hangar,on_display
+Saab,TF-35,XD,AT-160,Draken,,fixed_wing,monoplane,military,trainer,,Two-seat Draken conversion trainer.,SK-35XD; TF35; 35-1160; TF35XD; SK35XD,Værløse Flyhistoriske Hangar,on_display
+Lockheed,F-104,D,RT-654,Starfighter,,fixed_wing,monoplane,military,trainer,,Two-seat Canadair-built CF-104D. Previously on loan to Hjallerup Mekaniske Museum and later restored at Aalborg.,CF-104D; 583A-5324; 104654; F104; F104D; CF104D,Værløse Flyhistoriske Hangar,on_display
+North American,F-100,F,GT-927,Super Sabre,,fixed_wing,monoplane,military,trainer,,Two-seat Danish Super Sabre. Previously stored at the former Flyvestation Tirstrup.,TF-100F; F100; 56-3927; 243-203; F100F; TF100F,Værløse Flyhistoriske Hangar,on_display
+Republic,F-84,G,,Thunderjet,,fixed_wing,monoplane,military,ground_attack,,Thunderjet displayed in Hangar 2 wearing squadron code SE-G. Airframe identity not confirmed.,F84; SE-G; F84G,Værløse Flyhistoriske Hangar,on_display
+Westland,Lynx,Mk.90B,S-134,Lynx,,rotary_wing,,military,utility,,Royal Danish Navy Super Lynx. Rotor blades refitted in 2026.,Super Lynx Mk.90B; 425,Værløse Flyhistoriske Hangar,on_display
+General Dynamics,F-16,AM,E-176,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,Returned to Hangar 2 in March 2026 after a Jutland tour.,F16; 78-0176; 6F-3; F16AM,Værløse Flyhistoriske Hangar,on_display

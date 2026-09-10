@@ -1,0 +1,39 @@
+Franklin|Sport|A|N10147|||fixed_wing|biplane|civilian|private||FAA registry confirms FRANKLIN A c/n 8 to Golden Age Air Museum|c/n 8; Franklin Sport|on_display
+Travel Air|2000||N1081|||fixed_wing|biplane|civilian|private||FAA confirms TRAVEL AIR MFG CO 2000 c/n 206|c/n 206|on_display
+Monocoupe|90|A|N11750|||fixed_wing|monoplane|civilian|private||FAA confirms MONOCOUPE 90A c/n A-679|c/n A-679|on_display
+Aeronca|C-3||N17404|||fixed_wing|monoplane|civilian|private||FAA confirms AERONCA C-3 c/n A-717|c/n A-717|on_display
+Aeronca|7|AC|N1885E|Champion||fixed_wing|monoplane|civilian|private||FAA confirms AERONCA 7AC c/n 7AC5452 to Golden Age Air Museum Inc; not named in the Wikipedia list|c/n 7AC5452; Champ|on_display
+Fairchild|24|H|N19128|||fixed_wing|monoplane|civilian|private||FAA confirms FAIRCHILD 24 H c/n 3223; the Wikipedia list calls this a Fairchild 24R so the sub-model is disputed|c/n 3223; 24R|on_display
+Slingsby|Rumpler|C.V|N1915E|||fixed_wing|biplane|military|recon||Replica Rumpler C.V built by Slingsby; FAA confirms SLINGSBY AIRCRAFT CO LTD RUMPLER MK C5 c/n 1704; flagged as a replica|c/n 1704; Rumpler C.V replica|on_display
+Dart|GK||N20999|||fixed_wing|biplane|civilian|private||FAA confirms DART GK c/n GK-18; not named in the Wikipedia list|c/n GK-18|on_display
+RLU|Breezy|GE-1|N2766|||fixed_wing|monoplane|civilian|experimental||FAA confirms ECONOMOS BREEZY GE-1 c/n GE-1|c/n GE-1; RLU-1 Breezy|on_display
+Bellanca|7|GCBC|N345FD|Citabria||fixed_wing|monoplane|civilian|private||FAA confirms BELLANCA 7GCBC c/n 820-75; not named in the Wikipedia list|c/n 820-75; Citabria|on_display
+SPAD|XIII||N4489|||fixed_wing|biplane|military|fighter||Museum-built replica; FAA registers the type as GOLDEN AGE AIR MUSEUM SPAD XIII c/n 4489; flagged as a replica|c/n 4489; SPAD XIII replica|on_display
+White|WW-1||N49JA|Der Jaeger D.IX||fixed_wing|biplane|civilian|experimental||FAA lists ALAGO JAMES L DER JAEGER D XII c/n 174 registered to Golden Age Air Museum; the museum and Wikipedia call it a Der Jaeger D.IX so the designation is disputed|c/n 174; Der Jaeger|on_display
+Sopwith|Pup||N6183|||fixed_wing|biplane|military|fighter||Museum-built replica; FAA registers GOLDEN AGE AIR MUSEUM SOPWITH PUP c/n GA6183; flagged as a replica|c/n GA6183; Sopwith Pup replica|on_display
+Monocoupe|70||N6731|||fixed_wing|monoplane|civilian|private||1928 Velie Monocoupe 70; FAA lists UNIVERSAL MOULDED PRODUCTS MONOCOUPE 70 c/n 134|c/n 134; Velie Monocoupe|on_display
+Brunner-Winkle|Bird|CK|N726N|||fixed_wing|biplane|civilian|private||FAA lists PERTH AMBOY BIRD CK c/n 4037|c/n 4037; Bird CK|on_display
+Waco|GXE||N760E|||fixed_wing|biplane|civilian|private||FAA confirms WACO GXE/ASO c/n 1998 to Golden Age Air Museum Inc|c/n 1998; ASO; Waco 10|on_display
+Waco|RTO||N810TW|Taperwing||fixed_wing|biplane|civilian|private||FAA lists WILLIAMS-WACO RTO c/n 101; not named in the Wikipedia list|c/n 101; Taperwing|on_display
+Swallow|TP||N8744|||fixed_wing|biplane|civilian|private||FAA confirms SWALLOW TP c/n 144|c/n 144|on_display
+Curtiss|JN-4|D|||Jenny|fixed_wing|biplane|military|trainer||Named on the museum's own collection page per Wikipedia; no registration found in the FAA owner search so identity unresolved|Jenny; JN4D|on_display
+Fokker|Dr.I||replica|||fixed_wing|triplane|military|fighter||Replica triplane named on the museum's own collection page; no registration found under the museum in the FAA registry|Dr.I replica; Triplane|on_display
+Great Lakes|2T-1|A||Sport Trainer||fixed_wing|biplane|civilian|private||Wikipedia lists both a Great Lakes Sport Trainer replica and a Great Lakes Trainer; registrations unresolved|Sport Trainer|on_display
+Cessna|AW|||||fixed_wing|monoplane|civilian|private||Named on the museum's own collection page per Wikipedia; registration unresolved|Cessna AW|on_display
+Cessna|195|||Businessliner||fixed_wing|monoplane|civilian|private||1949 Cessna 195 named on the museum's own collection page; registration unresolved|Businessliner|on_display
+Christen|Eagle|II||||fixed_wing|biplane|civilian|private||Named on the museum's own collection page; registration unresolved|Christen Eagle|on_display
+Culver|Cadet|||||fixed_wing|monoplane|civilian|private||Named on the museum's own collection page; registration unresolved|Culver Cadet|on_display
+Curtiss-Wright|Fledgling|||||fixed_wing|biplane|civilian|trainer||Named on the museum's own collection page; registration unresolved|Fledgling|on_display
+Dormoy|Bathtub||replica|||fixed_wing|monoplane|civilian|experimental||Replica; named on the museum's own collection page|Bathtub replica|on_display
+Fleet|7|||||fixed_wing|biplane|civilian|trainer||Named on the museum's own collection page; registration unresolved|Fleet 7|on_display
+Heath|Parasol|||||fixed_wing|monoplane|civilian|private||Named on the museum's own collection page; registration unresolved|Heath Parasol|on_display
+Pietenpol|Air Camper|||||fixed_wing|monoplane|civilian|experimental||1932 Pietenpol named on the museum's own collection page; registration unresolved|Air Camper|on_display
+Sperry|Messenger||replica|||fixed_wing|biplane|military|utility||Replica; named on the museum's own collection page|Messenger replica|on_display
+Stampe|SV.4|||||fixed_wing|biplane|civilian|trainer||Named on the museum's own collection page; registration unresolved|Stampe SV-4|on_display
+Star|Cavalier|B||||fixed_wing|monoplane|civilian|private||1929 Star Cavalier Model B named on the museum's own collection page|Star Cavalier B|on_display
+Star|Cavalier|E||||fixed_wing|monoplane|civilian|private||1930 Star Cavalier Model E named on the museum's own collection page|Star Cavalier E|on_display
+Taylor|E-2|||Cub||fixed_wing|monoplane|civilian|private||1932 Taylor E-2 Cub named on the museum's own collection page; registration unresolved|E-2 Cub|on_display
+Taylorcraft|BC-12|D||||fixed_wing|monoplane|civilian|private||Named on the museum's own collection page; registration unresolved|BC-12D|on_display
+Taylor-Young|Model A|||||fixed_wing|monoplane|civilian|private||Named on the museum's own collection page; registration unresolved|Taylor-Young A|on_display
+Alexander|Eaglerock|||||fixed_wing|biplane|civilian|private||Listed by Wikipedia as "Allison Sport" which is probably a mis-parse; the museum's collection page needs re-reading|Allison Sport|on_display
+Winstead|Special|||||fixed_wing|biplane|civilian|experimental||1926 Winstead Special named on the museum's own collection page; registration unresolved|Winstead Special|on_display

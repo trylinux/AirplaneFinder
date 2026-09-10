@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Commonwealth Aircraft Corporation,CA-30,,A7-081,Macchi,,fixed_wing,monoplane,military,trainer,,"Gate guard, positioned by the Air Force History and Heritage Branch 25 November 2019 and painted in Roulettes markings.",CA30; MB-326; MB326; MB326H; Macchi,RAAF Base East Sale,on_display
+Commonwealth Aircraft Corporation,CA-25,,A85-405,Winjeel,,fixed_wing,monoplane,military,trainer,,"Long-standing East Sale gate guard, issued as an exhibit 18 December 1986 and since refurbished.",CA25; Winjeel,RAAF Base East Sale,on_display
+Pilatus,PC-9,A,A23-036,,,fixed_wing,monoplane,military,trainer,,Placed in position as a gate guard by the Air Force History and Heritage Branch 25 November 2019.,PC9; PC9A,RAAF Base East Sale,on_display
+Pilatus,PC-9,A,A23-030,,,fixed_wing,monoplane,military,trainer,,Transferred to Air Force History and Heritage and displayed on the parade ground inside RAAF Base East Sale.,PC9; PC9A,RAAF Base East Sale,on_display

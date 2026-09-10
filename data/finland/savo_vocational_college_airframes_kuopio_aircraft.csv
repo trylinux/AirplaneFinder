@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Valmet,L-90,Redigo,RG-8,Redigo,,fixed_wing,monoplane,military,trainer,,Instructional airframe of the Savo Consortium for Education in Kuopio.,L90; RG8,Savo Vocational College Airframes -- Kuopio,on_display
+Cessna,402,B,CB-52,Businessliner,,fixed_wing,monoplane,military,transport,,Ex-Finnish Air Force liaison and transport Cessna 402B used as an instructional airframe by the Savo Consortium for Education. Also registered OH-CHS.,OH-CHS; Cessna 402B; CB52,Savo Vocational College Airframes -- Kuopio,on_display
+Fouga,CM.170,Magister,FM-33,Magister,,fixed_wing,monoplane,military,trainer,,Only the front section survives and it is used as a simulator at the Savo Vocational College in Kuopio.,CM170; Fouga Magister; FM33,Savo Vocational College Airframes -- Kuopio,on_display

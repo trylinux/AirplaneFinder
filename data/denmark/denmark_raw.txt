@@ -1,0 +1,147 @@
+Saab|F-35|XD|A-009|Draken||fixed_wing|monoplane|military|fighter||Danish Air Force single-seat Draken strike fighter displayed in the Flyvevaabenmuseet hall.|A35XD;35-1009|on_display|Danmarks Flymuseum
+Saab|RF-35|XD|AR-109|Draken||fixed_wing|monoplane|military|recon||Danish reconnaissance Draken. Previously used for battle damage repair training at Karup.|S35XD;RF35;35-1109|on_display|Danmarks Flymuseum
+General Dynamics|F-16|AM|E-174|Fighting Falcon||fixed_wing|monoplane|military|fighter||Royal Danish Air Force F-16 in the Flyvevaabenmuseet hall. Danish F-16 fleet was retired in January 2026.|F16;78-0174;6F-1|on_display|Danmarks Flymuseum
+Lockheed|F-104|G|R-888|Starfighter||fixed_wing|monoplane|military|fighter||Canadair-built CF-104 delivered to Denmark in 1971 from Canadian stocks.|CF-104;F104;683A-1188|on_display|Danmarks Flymuseum
+Republic|F-84|G|A-665|Thunderjet||fixed_wing|monoplane|military|ground_attack||Danish Thunderjet fighter-bomber.|F84;2842-1725B|in_storage|Danmarks Flymuseum
+Republic|F-84|G|A-515|Thunderjet||fixed_wing|monoplane|military|ground_attack||Danish Thunderjet fighter-bomber.|F84;2442-968B|on_display|Danmarks Flymuseum
+Republic|F-84|G|A-047|Thunderjet||fixed_wing|monoplane|military|ground_attack||Cockpit section only.|F84|on_display|Danmarks Flymuseum
+Republic|F-84|G||Thunderjet||fixed_wing|monoplane|military|ground_attack||Airframe carrying USAF serial 51-9792 and squadron code KP-K.|F84;51-9792;KP-K;2336-245B|on_display|Danmarks Flymuseum
+Republic|RF-84|F|C-264|Thunderflash||fixed_wing|monoplane|military|recon||Danish photo-reconnaissance Thunderflash.|RF84|on_display|Danmarks Flymuseum
+North American|F-86|D|F-421|Sabre||fixed_wing|monoplane|military|fighter||All-weather interceptor known in Danish service as the Sabre Dog.|F86;173-554|on_display|Danmarks Flymuseum
+North American|F-100|D|55-2739|Super Sabre||fixed_wing|monoplane|military|ground_attack||Ex-French Air Force airframe rebuilt by Team Tordenjet and painted as Danish F-100D G-183. Denmark passed its own F-100D fleet to Turkey so no original Danish airframe survives.|F100;52739;G-183;224-6|on_display|Danmarks Flymuseum
+Hawker|Hunter|F.51|E-401|Hunter||fixed_wing|monoplane|military|fighter||Danish-operated Hunter day fighter.|41H/680260;41H680260|on_display|Danmarks Flymuseum
+Gloster|Meteor|F.8|44-499|Meteor||fixed_wing|monoplane|military|fighter||Danish Meteor F.8 day fighter.|G5/373;499|on_display|Danmarks Flymuseum
+Lockheed|T-33|A|DT-102|Shooting Star|T-bird|fixed_wing|monoplane|military|trainer||Danish jet trainer.|T33;580-6886|on_display|Danmarks Flymuseum
+Lockheed|T-33|A|DT-884|Shooting Star|T-bird|fixed_wing|monoplane|military|trainer||Restored from the Skrydstrup restoration project.|T33;580-6216|on_display|Danmarks Flymuseum
+Consolidated|PBY|6A|L-861|Catalina||fixed_wing|monoplane|military|search_rescue||Amphibian used for Greenland fishery inspection and search and rescue.|PBY-6A;2105|on_display|Danmarks Flymuseum
+Douglas|C-47|A|K-687|Dakota||fixed_wing|monoplane|military|transport||Danish Air Force Dakota transport.|C47;19200;42-100737|on_display|Danmarks Flymuseum
+Sikorsky|S-61|A|U-240|Sea King||rotary_wing||military|search_rescue||Danish Air Force search and rescue helicopter.|S61;61.240|on_display|Danmarks Flymuseum
+Sikorsky|S-55|C|S-884|Chickasaw||rotary_wing||military|search_rescue||Early Danish rescue helicopter.|S55;55.1032|on_display|Danmarks Flymuseum
+Hughes|500|M|H-245|Cayuse||rotary_wing||military|recon||Danish Army observation helicopter.|OH-6;H.369HM;369HM;24-0245M|on_display|Danmarks Flymuseum
+Supermarine|Spitfire|LF Mk.IX|41-401|Spitfire||fixed_wing|monoplane|military|fighter||Post-war Danish Air Force Spitfire. Carries the RAF serial MA298.|MA298;MA-298|on_display|Danmarks Flymuseum
+North American|Harvard|Mk.IIB|31-306|Harvard||fixed_wing|monoplane|military|trainer||Danish advanced trainer.|14-748;306|on_display|Danmarks Flymuseum
+Saab|Sk 16||16126|Harvard||fixed_wing|monoplane|military|trainer||Ex-Swedish Air Force Harvard.|Sk-16;14-426|on_display|Danmarks Flymuseum
+Avro|504|N|110|Avro 504||fixed_wing|biplane|military|trainer||Danish Army Flying Troops licence-built trainer known as L.B.I.|LB I;L.B.I;OV.50|on_display|Danmarks Flymuseum
+Hawker|Dankok||158|Dankok||fixed_wing|biplane|military|fighter||Danish-built Hawker Woodcock derivative also known as L.B.II.|LB II;L.B.II;Danecock;OV.54|on_display|Danmarks Flymuseum
+Fouga|CM.170||OY-FGA|Magister||fixed_wing|monoplane|civilian|trainer||Ex-military jet trainer on the Danish civil register. Wears code 2-HA.|CM170;2-HA;230|on_display|Danmarks Flymuseum
+de Havilland Canada|DHC-1|Mk.22|OY-FLV|Chipmunk||fixed_wing|monoplane|civilian|trainer||Ex-Danish Air Force Chipmunk P-143 on the civil register.|DHC1;C1/0878;P-143|on_display|Danmarks Flymuseum
+de Havilland|DH.82|A|OY-ECH|Tiger Moth||fixed_wing|biplane|civilian|trainer||Civil-registered Tiger Moth.|DH82;85234|on_display|Danmarks Flymuseum
+de Havilland|DH.87|B|OY-DEZ|Hornet Moth||fixed_wing|biplane|civilian|private||Danish-registered Hornet Moth.|DH87;8040|on_display|Danmarks Flymuseum
+de Havilland|DH.104||OY-DHZ|Dove||fixed_wing|monoplane|civilian|commercial_transport||Danish-registered Dove feederliner.|DH104;04476|on_display|Danmarks Flymuseum
+Piper|J-3|F-50|OY-ABT|Cub||fixed_wing|monoplane|civilian|private||Pre-war Danish-registered Piper Cub.|J3;2475|on_display|Danmarks Flymuseum
+Piper|PA-16||OY-AKM|Clipper||fixed_wing|monoplane|civilian|private||Danish-registered Piper Clipper.|PA16;16-101|on_display|Danmarks Flymuseum
+Piper|PA-23|250B|OY-DCC|Aztec||fixed_wing|monoplane|civilian|private||Danish-registered light twin.|PA23;27-2473|on_display|Danmarks Flymuseum
+Taylorcraft|Plus|D|OY-DSH|Taylorcraft||fixed_wing|monoplane|civilian|private||British-built Taylorcraft Plus D.|228|on_display|Danmarks Flymuseum
+Druine|D.31||OY-AMG|Turbulent||fixed_wing|monoplane|civilian|private||Single-seat homebuilt.|D31;274|on_display|Danmarks Flymuseum
+Stampe|SV.4|B|OY-DBC|Stampe||fixed_wing|biplane|civilian|trainer||Belgian-built aerobatic biplane trainer.|SV4;1204|on_display|Danmarks Flymuseum
+Aerospatiale|SN.601||OY-SBR|Corvette||fixed_wing|monoplane|civilian|commercial_transport||French business jet on the Danish register.|SN601;23|on_display|Danmarks Flymuseum
+Enstrom|F-28|A|SE-HFX|Enstrom||rotary_wing||civilian|private||Swedish-registered light helicopter.|F28;116|on_display|Danmarks Flymuseum
+Fairey|Firefly|TT.1|SE-CAW|Firefly||fixed_wing|monoplane|civilian|utility||Ex-Swedish civil target tug Firefly.|F.6121|on_display|Danmarks Flymuseum
+Transavia|PL-12||OY-DVZ|Airtruk||fixed_wing|biplane|civilian|utility||Australian agricultural aircraft.|PL12;1238|on_display|Danmarks Flymuseum
+Bucker|Bu 181||OY-AVZ|Bestmann||fixed_wing|monoplane|civilian|trainer||Swedish-built Sk 25 version. Wears code 273.|Sk 25;Sk-25;Bu181;25073;273|on_display|Danmarks Flymuseum
+SAI|KZ II|Sport|OY-AEA|KZ II||fixed_wing|monoplane|civilian|private||Danish-designed Kramme og Zeuthen sportsplane.|KZ-II;KZII;27|on_display|Danmarks Flymuseum
+SAI|KZ II|Sport|OY-DOU|KZ II||fixed_wing|monoplane|civilian|private||Danish-designed Kramme og Zeuthen two-seater.|KZ-IIS;KZ-II;13|on_display|Danmarks Flymuseum
+SAI|KZ II|Traener|OY-FAK|KZ II||fixed_wing|monoplane|civilian|trainer||Danish-built military trainer variant on the civil register.|KZ-IIT;KZ-II;115|on_display|Danmarks Flymuseum
+SAI|KZ III||61-611|KZ III||fixed_wing|monoplane|military|utility||Danish Air Force liaison aircraft.|KZ-III;KZIII;50|on_display|Danmarks Flymuseum
+SAI|KZ III||OY-DZA|KZ III||fixed_wing|monoplane|civilian|private||Danish-built two-seat tourer.|KZ-III;66|on_display|Danmarks Flymuseum
+SAI|KZ IV||OY-DIZ|KZ IV||fixed_wing|monoplane|civilian|utility||Danish-built twin-engine air ambulance.|KZ-IV;43|on_display|Danmarks Flymuseum
+SAI|KZ VII|U-4|OY-AAD|Laerke||fixed_wing|monoplane|civilian|private||Danish-built four-seat tourer.|KZ-VII;KZVII;157|on_display|Danmarks Flymuseum
+SAI|KZ VII||OY-ATJ|Laerke||fixed_wing|monoplane|civilian|private||Danish-built four-seat tourer.|KZ-VII;186|on_display|Danmarks Flymuseum
+SAI|KZ VII||OY-AVH|Laerke||fixed_wing|monoplane|civilian|private||Danish-built four-seat tourer.|KZ-VII;183|in_storage|Danmarks Flymuseum
+SAI|KZ VIII||OY-DRR|KZ VIII||fixed_wing|monoplane|civilian|private||Danish-built single-seat aerobatic aircraft.|KZ-VIII;203|on_display|Danmarks Flymuseum
+SAI|KZ X|Mk.2|OY-AOL|KZ X||fixed_wing|monoplane|civilian|private||Danish-built observation and liaison prototype.|KZ-X;205|on_display|Danmarks Flymuseum
+Scheibe|Muu 13|E|OY-AXS|Bergfalke||fixed_wing|monoplane|civilian|private||Two-seat training glider.|Mu-13E;Mu 13;01|on_display|Danmarks Flymuseum
+Scheibe|Muu 13|E|OY-REX|Bergfalke||fixed_wing|monoplane|civilian|private||Two-seat training glider.|Mu-13E;Mu 13;102|on_display|Danmarks Flymuseum
+Scheibe|Spatz|B|OY-AXU|Spatz||fixed_wing|monoplane|civilian|private||Single-seat glider.|B-Spatz;524|on_display|Danmarks Flymuseum
+Schneider|Grunau Baby|IIb|OY-AUX|Grunau Baby||fixed_wing|monoplane|civilian|private||Classic training glider.|PFG8|on_display|Danmarks Flymuseum
+Raab|Doppelraab|IV|OY-XIT|Doppelraab||fixed_wing|monoplane|civilian|private||Two-seat primary glider.|Doppel Raab 4;03|on_display|Danmarks Flymuseum
+Hollschmidt|HT-1||OY-FAI|HT-1||fixed_wing|monoplane|civilian|private||Danish-built glider also known as Hollschmidt 222.|Hollschmidt 222;1|on_display|Danmarks Flymuseum
+Ellehammer|1906||||Ellehammer|fixed_wing|biplane|civilian|experimental||Full-size replica of Ellehammers 1906 machine.|Ellehammer 1906 replika|on_display|Danmarks Flymuseum
+Berg og Storm|Monoplan|III||Monoplan||fixed_wing|monoplane|civilian|experimental||Early Danish-built monoplane also credited as B og S Monoplan III. Also referred to as the B and S Monoplan III.|3|on_display|Danmarks Flymuseum
+Saab|F-35|XD|A-001|Draken||fixed_wing|monoplane|military|fighter||First Danish Draken delivered. Displayed indoors.|A35XD;35-1001|on_display|Danmarks Tekniske Museum
+Lockheed|F-104|G|R-896|Starfighter||fixed_wing|monoplane|military|fighter||Canadair-built CF-104 in Danish markings.|CF-104;683A-1196;104896|on_display|Danmarks Tekniske Museum
+Republic|F-84|G|A-777|Thunderjet||fixed_wing|monoplane|military|ground_attack||Wears squadron code SY-H. USAF serial 51-10777.|F84;51-10777;SY-H;2542-1230B|on_display|Danmarks Tekniske Museum
+Gloster|Meteor|F.4|43-461|Meteor||fixed_wing|monoplane|military|fighter||Early Danish jet fighter.|461|on_display|Danmarks Tekniske Museum
+Lockheed|T-33|A|DT-491|Shooting Star|T-bird|fixed_wing|monoplane|military|trainer||Danish jet trainer.|T33;580-5786|on_display|Danmarks Tekniske Museum
+Lockheed|T-33|A|DT-923|Shooting Star|T-bird|fixed_wing|monoplane|military|trainer||Held in the museum store.|T33;580-6707|in_storage|Danmarks Tekniske Museum
+Douglas|C-47|A|K-681|Dakota||fixed_wing|monoplane|military|transport||Danish Air Force Dakota.|C47;9664;42-23802|on_display|Danmarks Tekniske Museum
+Sikorsky|S-55|C|S-883|Chickasaw||rotary_wing||military|search_rescue||Early Danish rescue helicopter.|S55;55.1031|on_display|Danmarks Tekniske Museum
+Fokker|D.XXI|IIIJ|J-49|D.XXI||fixed_wing|monoplane|military|fighter||Danish-built Fokker D.XXI fighter. Reconstructed airframe.|DXXI;L-49;109|on_display|Danmarks Tekniske Museum
+Percival|P-34|A|62-605|Proctor||fixed_wing|monoplane|military|trainer||Danish Air Force communications and training aircraft.|Proctor Mk.3;P34;H.274;H274|on_display|Danmarks Tekniske Museum
+Percival|Pembroke|Mk.52|69-697|Pembroke||fixed_wing|monoplane|military|transport||Danish Air Force light transport.|P66/79|on_display|Danmarks Tekniske Museum
+SAI|KZ II|Traener|11-113|KZ II||fixed_wing|monoplane|military|trainer||Danish Air Force primary trainer.|KZ-IIT;KZ-II;121|on_display|Danmarks Tekniske Museum
+SAI|KZ IV||OY-DZU|KZ IV||fixed_wing|monoplane|civilian|utility||Danish-built twin air ambulance.|KZ-IV;70|on_display|Danmarks Tekniske Museum
+SAI|KZ III||SE-ANY|KZ III||fixed_wing|monoplane|civilian|private||Swedish-registered Danish-built tourer.|KZ-III;45|on_display|Danmarks Tekniske Museum
+Blohm und Voss|BV 138|C-1||BV 138||fixed_wing|monoplane|military|recon||German maritime patrol flying boat recovered in Danish waters. Wears code NJ-HE.|BV138;310050;NJ-HE|on_display|Danmarks Tekniske Museum
+Donnet-Leveque|Type A|||Maagen 2|Maagen 2|fixed_wing|biplane|military|recon||Early Danish naval flying boat.|FBA Type A;Maagen II;Mågen 2|on_display|Danmarks Tekniske Museum
+Sud Aviation|SE.210|III|OY-KRD|Caravelle|Ulf Viking|fixed_wing|monoplane|civilian|commercial_transport||Former SAS Caravelle jet airliner.|SE210;Caravelle III;047|on_display|Danmarks Tekniske Museum
+Douglas|DC-7|C|OY-KNB|Seven Seas|Rolf Viking|fixed_wing|monoplane|civilian|commercial_transport||Former SAS long-range piston airliner. Forward fuselage.|DC7;44929|on_display|Danmarks Tekniske Museum
+de Havilland|DH.89|A|OY-AAO|Dragon Rapide||fixed_wing|biplane|civilian|commercial_transport||Danish-registered biplane airliner.|DH89;6775|on_display|Danmarks Tekniske Museum
+de Havilland|DH.82|A|SE-GXO|Tiger Moth||fixed_wing|biplane|civilian|trainer||Swedish-registered Tiger Moth.|DH82;82869|on_display|Danmarks Tekniske Museum
+Fairchild|PT-26|FA|LN-BIF|Cornell||fixed_wing|monoplane|civilian|trainer||Norwegian-registered Cornell wearing code 179.|PT26;T43-4640;179|on_display|Danmarks Tekniske Museum
+Fairchild|F.24|R-46A|OY-EAZ|Argus||fixed_wing|monoplane|civilian|private||Danish-registered Fairchild 24.|F24;962|on_display|Danmarks Tekniske Museum
+Saab|B 17|C||B 17||fixed_wing|monoplane|military|bomber||Swedish Air Force dive bomber wearing code E and serial 17320.|B17;17320;17-320|on_display|Danmarks Tekniske Museum
+Saab|J 29|F||Tunnan||fixed_wing|monoplane|military|fighter||Swedish Air Force jet fighter wearing code 07 and serial 29487.|J29;29487;29-487|in_storage|Danmarks Tekniske Museum
+Cessna|337||OY-CBB|Skymaster||fixed_wing|monoplane|civilian|private||Centre-line twin.|Ce.337;337-01000|on_display|Danmarks Tekniske Museum
+Jodel|D.112||OY-CMH|Jodel||fixed_wing|monoplane|civilian|private||French-designed single-seat tourer.|D112;1491|on_display|Danmarks Tekniske Museum
+Bell|47|G|OY-HDH|Sioux||rotary_wing||civilian|private||Ex-military Sioux HT.2 on the Danish register.|Sioux HT.2;Bell 47;WA571|on_display|Danmarks Tekniske Museum
+Schneider|Grunau Baby|IIb|OY-ABX|Grunau Baby||fixed_wing|monoplane|civilian|private||Training glider wearing competition number 87.|87|on_display|Danmarks Tekniske Museum
+Polyteknisk Flyvegruppe|Polyt|II|OY-55|Polyt||fixed_wing|monoplane|civilian|private||Danish student-built glider.|Polyt-II;91-912;PFG11|on_display|Danmarks Tekniske Museum
+Hogslund|2G||OY-100|Hogslund 2G||fixed_wing|monoplane|civilian|private||Danish-built glider by Hogslund and Traugott-Olsen.|Høgslund 2G;1|on_display|Danmarks Tekniske Museum
+General Aircraft|ST-25||OY-DAZ|Monospar||fixed_wing|monoplane|civilian|private||General Aircraft Monospar ST-25 c/n 95 confirmed by the Danish civil aircraft register oy-reg.dk entry for OY-DAZ.|Monospar;Monospar ST-25;ST25;c/n 95|on_display|Danmarks Tekniske Museum
+Halbronn|Polliwagen||OY-CYS|Polliwagen||fixed_wing|monoplane|civilian|private||Composite homebuilt.|8607-1794N|on_display|Danmarks Tekniske Museum
+Saab|F-35|XD|A-010|Draken||fixed_wing|monoplane|military|fighter||Outdoor Draken at the garrison museum. Condition reported poor and presence not confirmed in recent surveys.|A35XD;35-1010|on_display|Aalborg Forsvars- og Garnisonsmuseum
+Lockheed|F-104|G|R-851|Starfighter||fixed_wing|monoplane|military|fighter||Canadair-built CF-104 in Danish markings.|CF-104;683A-1151;104851|on_display|Aalborg Forsvars- og Garnisonsmuseum
+North American|F-86|D|F-028|Sabre||fixed_wing|monoplane|military|fighter||Wears squadron code AL-E. USAF serial 51-6028.|F86;AL-E;51-6028;173-172|on_display|Aalborg Forsvars- og Garnisonsmuseum
+Republic|F-84|G||Thunderjet||fixed_wing|monoplane|military|ground_attack||Displayed on the museum playground. USAF serial 51-9966 and code KR-A.|F84;51-9966;KR-A;2142-419B|on_display|Aalborg Forsvars- og Garnisonsmuseum
+Gloster|Meteor|NF.11|51-504|Meteor||fixed_wing|monoplane|military|fighter||Danish night fighter later converted to TT.20 target tug standard. Ex-RAF WM387.|WM387;Meteor TT.20;504;5545|on_display|Aalborg Forsvars- og Garnisonsmuseum
+Lockheed|T-33|A|DT-289|Shooting Star|T-bird|fixed_wing|monoplane|military|trainer||Danish jet trainer.|T33;580-7073|on_display|Aalborg Forsvars- og Garnisonsmuseum
+Polyteknisk Flyvegruppe|Polyt|III|Z-931|Polyt||fixed_wing|monoplane|military|trainer||Danish student-built glider used by the air force. Civil registration OY-XFA.|OY-XFA;Polyt-III;92-931;1|on_display|Aalborg Forsvars- og Garnisonsmuseum
+SAI|KZ VII||O-622|Laerke||fixed_wing|monoplane|military|utility||Danish Army artillery observation aircraft.|KZ-VII;184|on_display|Aalborg Forsvars- og Garnisonsmuseum
+Sud Aviation|SE.3160||M-070|Alouette III||rotary_wing||military|utility||Royal Danish Navy shipboard helicopter displayed indoors.|SE3160;Alouette 3;1070|on_display|Springeren Maritimt Oplevelsescenter
+Saab|F-35|XD|A-012|Draken||fixed_wing|monoplane|military|fighter||Displayed in the courtyard outside the veteran museum.|A35XD;35-1012|on_display|Egeskov Slot Veteranmuseum
+Lockheed|F-104|G|R-814|Starfighter||fixed_wing|monoplane|military|fighter||Canadair-built CF-104 in Danish markings.|CF-104;683A-1114;104814|on_display|Egeskov Slot Veteranmuseum
+Sud Aviation|SE.3160||M-388|Alouette III||rotary_wing||military|utility||Royal Danish Navy helicopter.|SE3160;Alouette 3;1388|on_display|Egeskov Slot Veteranmuseum
+de Havilland Canada|DHC-1|Mk.20|P-127|Chipmunk||fixed_wing|monoplane|military|trainer||Danish Air Force primary trainer.|DHC1;C1/0106|on_display|Egeskov Slot Veteranmuseum
+Focke-Achgelis|Fa 330|A-1|100032|Bachstelze||rotary_wing||military|recon||German submarine-towed observation rotor kite.|Fa-330;Fa330;60127|on_display|Egeskov Slot Veteranmuseum
+de Havilland|DH.82|A|OY-BAK|Tiger Moth||fixed_wing|biplane|civilian|trainer||Danish-registered Tiger Moth.|DH82;86425|on_display|Egeskov Slot Veteranmuseum
+Schneider|Grunau Baby|IIb|OY-BCX|Grunau Baby||fixed_wing|monoplane|civilian|private||Training glider.|02|on_display|Egeskov Slot Veteranmuseum
+Schleicher|Ka 6|CR|OY-XGM|Rhoensegler||fixed_wing|monoplane|civilian|private||Single-seat glider wearing competition code F6.|Ka-6;K6;F6;6640/SI|on_display|Egeskov Slot Veteranmuseum
+Schleicher|K 8|B|OY-XFK|K 8||fixed_wing|monoplane|civilian|private||Single-seat training glider.|K8;8496|on_display|Egeskov Slot Veteranmuseum
+Goppingen|Go 5|||Go 5||fixed_wing|monoplane|civilian|private||Glider registered OY-61.|Gö-5;OY-61;186|on_display|Egeskov Slot Veteranmuseum
+Saab|F-35|XD|A-005|Draken||fixed_wing|monoplane|military|fighter||Single-seat Draken inside Hangar 2. Visitors may sit in the cockpit and the afterburner section was being refitted in 2026.|A35XD;35-1005|on_display|Værløse Flyhistoriske Hangar
+Saab|TF-35|XD|AT-160|Draken||fixed_wing|monoplane|military|trainer||Two-seat Draken conversion trainer.|SK-35XD;TF35;35-1160|on_display|Værløse Flyhistoriske Hangar
+Lockheed|F-104|D|RT-654|Starfighter||fixed_wing|monoplane|military|trainer||Two-seat Canadair-built CF-104D. Previously on loan to Hjallerup Mekaniske Museum and later restored at Aalborg.|CF-104D;583A-5324;104654|on_display|Værløse Flyhistoriske Hangar
+North American|F-100|F|GT-927|Super Sabre||fixed_wing|monoplane|military|trainer||Two-seat Danish Super Sabre. Previously stored at the former Flyvestation Tirstrup.|TF-100F;F100;56-3927;243-203|on_display|Værløse Flyhistoriske Hangar
+Republic|F-84|G||Thunderjet||fixed_wing|monoplane|military|ground_attack||Thunderjet displayed in Hangar 2 wearing squadron code SE-G. Airframe identity not confirmed.|F84;SE-G|on_display|Værløse Flyhistoriske Hangar
+Westland|Lynx|Mk.90B|S-134|Lynx||rotary_wing||military|utility||Royal Danish Navy Super Lynx. Rotor blades refitted in 2026.|Super Lynx Mk.90B;425|on_display|Værløse Flyhistoriske Hangar
+General Dynamics|F-16|AM|E-176|Fighting Falcon||fixed_wing|monoplane|military|fighter||Returned to Hangar 2 in March 2026 after a Jutland tour.|F16;78-0176;6F-3|on_display|Værløse Flyhistoriske Hangar
+Saab|F-35|XD|A-002|Draken||fixed_wing|monoplane|military|fighter||Draken on loan from Flyvevaabnets Historiske Samling displayed in its own hall. Previously the landmark aircraft at the air force officer school at Jonstruplejren.|A35XD;35-1002|on_display|Koldkrigsmuseum Langelandsfort
+Mikoyan-Gurevich|MiG-23|MF||Flogger||fixed_wing|monoplane|military|fighter||Ex-Polish Air Force Flogger displayed as the Warsaw Pact opponent. Wears number 010.|MiG23;010;0390221010|on_display|Koldkrigsmuseum Langelandsfort
+Saab|F-35|XD|A-007|Draken||fixed_wing|monoplane|military|fighter||Draken displayed indoors above the museum cafe seating.|A35XD;35-1007|on_display|Egholm Museum
+Saab|F-35|XD|A-014|Draken||fixed_wing|monoplane|military|fighter||Second Draken in the collection. Formerly displayed at the Gedhus museum at Karup.|A35XD;35-1014|on_display|Egholm Museum
+SAI|KZ III||OY-DSI|KZ III||fixed_wing|monoplane|civilian|private||Danish-built two-seat tourer.|KZ-III;64|on_display|Egholm Museum
+BAC|1-11|510ED|G-AVMN|One-Eleven||fixed_wing|monoplane|civilian|commercial_transport||British-built jet airliner preserved at the cold war museum.|BAC1-11;BAC 111;142|on_display|Panzermuseum East
+Mil|Mi-8|T|D-HOXB|Hip||rotary_wing||civilian|transport||Former East German transport helicopter on the German civil register.|Mi8;0623|on_display|Panzermuseum East
+Mil|Mi-24|P||Hind||rotary_wing||military|ground_attack||Former East German attack helicopter serial 9649.|Mi24;9649;340339|on_display|Panzermuseum East
+Saab|F-35|XD|A-006|Draken||fixed_wing|monoplane|military|fighter||Displayed indoors. Selected because it served with the Bornholm quick reaction alert detachment.|A35XD;35-1006|on_display|Bornholms Tekniske Samling
+Saab|RF-35|XD|AR-115|Draken||fixed_wing|monoplane|military|recon||Reconnaissance Draken placed at the fort in 2023.|S35XD;RF35;35-1115|on_display|Koldkrigsmuseum Stevnsfort
+Scheibe|Muu 13|E|OY-XES|Bergfalke||fixed_wing|monoplane|civilian|private||Two-seat training glider.|Mu-13E;Mu 13;107|on_display|Stevns Museum -- Højerup
+PZL Mielec|SBLim-2||014|Midget||fixed_wing|monoplane|military|trainer||Polish-built two-seat MiG-15UTI derivative.|MiG-15UTI;SB Lim-2;1A-06014|on_display|Bornholmertårnet -- Nexø
+Saab|F-35|XD|A-017|Draken||fixed_wing|monoplane|military|fighter||Displayed at the museum entrance. Previously the landmark aircraft at Skive Kaserne.|A35XD;35-1017|on_display|Hjallerup Mekaniske Museum
+Republic|RF-84|F|C-581|Thunderflash||fixed_wing|monoplane|military|recon||Stored under a tent at the Gedhus museum.|RF84;53-7581|in_storage|Flymuseet Gedhusvagten
+Republic|F-84|G||Thunderjet||fixed_wing|monoplane|military|ground_attack||USAF serial 51-9978 wearing code FS-978. Stored under a tent.|F84;51-9978;FS-978;2142-431B|in_storage|Flymuseet Gedhusvagten
+Gloster|Meteor|F.8|44-491|Meteor||fixed_wing|monoplane|military|fighter||Danish Meteor F.8 stored under a tent.|491|in_storage|Flymuseet Gedhusvagten
+North American|F-100|F|GT-961|Super Sabre||fixed_wing|monoplane|military|trainer||Cockpit section on display.|TF-100F;F100;56-3961;243-237|on_display|Flymuseet Gedhusvagten
+SAI|KZ VII|U-4|OY-ATK|Laerke||fixed_wing|monoplane|civilian|private||Danish-built four-seat tourer displayed in the exhibition hall.|KZ-VII;182|on_display|Flymuseet Gedhusvagten
+Transavia|PL-12||OY-DRL|Airtruk||fixed_wing|biplane|civilian|utility||Australian agricultural aircraft in a farm machinery museum.|PL12;1135|on_display|Baks Traktor- og Landbrugsmaskinmuseum
+Saab|RF-35|XD|AR-112|Draken||fixed_wing|monoplane|military|recon||Mounted on a pylon at the main gate of Flyvestation Karup.|S35XD;RF35;35-1112|on_display|Flyvestation Karup Hovedvagt -- Karup
+Lockheed|T-33|A|DT-497|Shooting Star|T-bird|fixed_wing|monoplane|military|trainer||Gate guard outside the flying school at Karup.|T33;51-6497;580-5829|on_display|Flyveskolen Karup portvagt -- Karup
+Republic|F-84|G||Thunderjet||fixed_wing|monoplane|military|ground_attack||Playground aircraft at a kindergarten in Karup. Fuselage is 51-9838 and the tail comes from 51-10752. Wears code SI-A.|F84;51-9838;SI-A;2436-291B|on_display|Børnehaven Lynghuset -- Karup
+Republic|F-84|G|A-603|Thunderjet||fixed_wing|monoplane|military|ground_attack||Gate guard at Fighter Wing Skrydstrup wearing code SK-P. USAF serial 51-10603.|F84;SK-P;51-10603;2442-1056B|on_display|Fighter Wing Skrydstrup portvagt -- Vojens
+General Dynamics|F-16|AM|E-177|Fighting Falcon||fixed_wing|monoplane|military|fighter||Preserved F-16 at Fighter Wing Skrydstrup.|F16;78-0177;6F-4|on_display|Fighter Wing Skrydstrup portvagt -- Vojens
+Lockheed|F-104|G|R-771|Starfighter||fixed_wing|monoplane|military|fighter||Gate guard at Flyvestation Aalborg.|CF-104;683A-1071;104771|on_display|Flyvestation Aalborg portvagt -- Aalborg
+Lockheed|F-104|D|RT-657|Starfighter||fixed_wing|monoplane|military|trainer||Two-seat CF-104D gate guard at Flyvestation Aalborg.|CF-104D;583A-5327;104657|on_display|Flyvestation Aalborg portvagt -- Aalborg
+Saab|RF-35|XD|AR-105|Draken||fixed_wing|monoplane|military|recon||Mounted on a hydraulic rig on the workshop roof of the youth club and used as a moving flight simulator since December 2003.|S35XD;RF35;35-1105|on_display|Fritidsklubben Viadukten -- Roskilde
+Antonov|An-2||LY-ACR|Colt||fixed_wing|biplane|civilian|utility||Lithuanian-registered biplane placed at the Flyvergrillen cafeteria overlooking Copenhagen Airport in June 2023.|An2;1G173-14|on_display|Flyvergrillen -- Kastrup
+Hughes|269|A1|OY-HAD|Hughes 300||rotary_wing||civilian|trainer||Mounted outside the restaurant as a sign.|H.269;269A;25-0031|on_display|Restaurant Air Pub -- Odense

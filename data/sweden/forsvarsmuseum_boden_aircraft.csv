@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Agusta-Bell,Hkp 3,,03301,AB 204B,,rotary_wing,,military,search_rescue,,Gate guard at the museum on the site of the former Boden helicopter airfield.,AB 204B; AB 204; AB204; Bell 204; Bell204; HKP 3; Hkp3,Försvarsmuseum Boden,on_display
+Agusta-Bell,Hkp 3,C,03315,AB 204B,,rotary_wing,,military,search_rescue,,,AB 204B; AB 204; AB204; Bell 204; Bell204; HKP 3; Hkp3,Försvarsmuseum Boden,on_display

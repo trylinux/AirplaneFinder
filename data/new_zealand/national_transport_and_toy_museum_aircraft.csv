@@ -1,0 +1,21 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Antonov,An-2,T,LY-AKH,,,fixed_wing,biplane,civilian,utility,,Soviet-designed utility biplane on a Lithuanian registration.,An2; An 2; Colt; An2T,National Transport and Toy Museum,on_display
+Auster Aircraft,J/1,,ZK-BJL,Autocrat,,fixed_wing,monoplane,civilian,private,,British light touring aircraft.,Autocrat; Auster J1,National Transport and Toy Museum,on_display
+Convair,580,,ZK-CIB,,,fixed_wing,monoplane,civilian,commercial_transport,,Turboprop conversion of the Convair 340/440 airliner.,Convair 580; CV580; Convair,National Transport and Toy Museum,on_display
+de Havilland,DH.104,1B,ZK-RNG,Dove,,fixed_wing,monoplane,civilian,transport,,Manufacturer's no. 04323; displayed as RNZAF Devon NZ1807.,Dove; Devon; NZ1807; DH104,National Transport and Toy Museum,on_display
+Mignet,HM.14,,ZM-AAC,Pou-du-Ciel,,fixed_wing,monoplane,civilian,private,,New Zealand built Flying Flea.,Flying Flea; Pou du Ciel; HM14,National Transport and Toy Museum,on_display
+Fokker,F.27,-100,ZK-BXH,Friendship,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-New Zealand National Airways Corporation Friendship.,Friendship; F27; F27100; NAC,National Transport and Toy Museum,on_display
+Government Aircraft Factories,Canberra,B.20,A84-207,,,fixed_wing,monoplane,military,bomber,,Australian-built GAF Canberra wearing its RAAF serial.,Canberra; GAF Canberra; A84207,National Transport and Toy Museum,on_display
+Hiller,UH-12,J-3,ZK-HGB,,,rotary_wing,,civilian,utility,,Hiller-Soloy turbine conversion.,Hiller 12J; UH12; UH12J; UH12J3,National Transport and Toy Museum,on_display
+Mikoyan-Gurevich,MiG-21,US,5141,,,fixed_wing,monoplane,military,trainer,,Ex-Polish Air Force two-seat trainer.,MiG21; MiG 21; Mongol; MiG21US,National Transport and Toy Museum,on_display
+Lockheed,C-60,A,VH-XUS,Lodestar,,fixed_wing,monoplane,military,transport,,"Ex-USAAF 42-55951, later Australian civil VH-XUS.",Lodestar; C60; C60A; 42-55951,National Transport and Toy Museum,on_display
+Percival,P.40,T.1,ZK-DJC,Prentice,,fixed_wing,monoplane,military,trainer,,British post-war basic trainer.,Prentice; P40; Percival Prentice,National Transport and Toy Museum,on_display
+Royal Aircraft Factory,S.E.5,a,,,,fixed_wing,biplane,military,fighter,,Full-scale replica marked B4863/G.,SE5; SE5a; B4863,National Transport and Toy Museum,on_display
+Team,Max,103R,ZK-DJW,,,fixed_wing,monoplane,civilian,private,,Single-seat microlight.,Team Max; Max 103R; Mini Max; Max103R,National Transport and Toy Museum,on_display
+Victa,Airtourer,115,ZK-CLF,,,fixed_wing,monoplane,civilian,trainer,,Australian-built light trainer.,Airtourer; Victa Airtourer,National Transport and Toy Museum,on_display
+Victa,Airtourer,115,ZK-COW,,,fixed_wing,monoplane,civilian,trainer,,Second Victa Airtourer in the collection.,Airtourer; Victa Airtourer,National Transport and Toy Museum,on_display
+Mikoyan-Gurevich,MiG-15,UTI,,,,fixed_wing,monoplane,military,trainer,,"Two-seat trainer, construction number 712277, displayed as red 777.",MiG15; MiG 15; Midget; MiG15UTI,National Transport and Toy Museum,on_display
+Piaggio,P.166,,,,,fixed_wing,monoplane,civilian,transport,,"Italian pusher-engined light transport, construction number 400, ex Australian VH-GOB.",P166; Piaggio P166; VH-GOB,National Transport and Toy Museum,on_display
+Sikorsky,S-55,,,,,rotary_wing,,civilian,transport,,"Construction number 55-102, ex Australian VH-ORA.",S55; H-19; Whirlwind; VH-ORA; H19,National Transport and Toy Museum,on_display
+Aero Commander,500,,ZK-CWP,,,fixed_wing,monoplane,civilian,private,,Construction number 500-842-90.,Aero Commander; Commander 500,National Transport and Toy Museum,on_display
+de Havilland,DH.82,A,ZK-TTM,Tiger Moth,,fixed_wing,biplane,civilian,trainer,,Replica Tiger Moth.,Tiger Moth; DH82A,National Transport and Toy Museum,on_display

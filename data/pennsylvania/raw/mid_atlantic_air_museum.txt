@@ -1,0 +1,133 @@
+Wright|Model B|Flyer|||1903 Flyer|fixed_wing|biplane|civilian|experimental|1903|Half-scale reproduction of the 1903 Wright Flyer; not registered; museum's own collection table|1903 Flyer reproduction|on_display
+Curtiss|Model D||||Headless Pusher|fixed_wing|biplane|civilian|experimental|1911|Reproduction; not registered; museum's own collection table|Headless Pusher reproduction|on_display
+Hild-Marshonet|No. 17|||||fixed_wing|biplane|civilian|experimental|1917|Reproduction; c/n 001; not registered; recorded as a reproduction not an original airframe|c/n 001|on_display
+Dormoy|Bathtub||||Bathtub Racer|fixed_wing|monoplane|civilian|experimental|1924|Replica under restoration; not registered; recorded as a replica not an original airframe|Bathtub Racer|under_restoration
+Elias|EC-1||NX3981|Aircoupe||fixed_wing|monoplane|civilian|private|1928|Factory prototype; c/n 401|c/n 401; EC1 Aircoupe|on_display
+Brunner-Winkle|Bird|A|NC15K|||fixed_wing|biplane|civilian|private|1929|OX-5 tank-engine powered; c/n 1062; FAA registry lists BIRD A-T c/n 1062 to Mid Atlantic Air Museum|c/n 1062; Bird A-T|on_display
+Rogers|Sea Eagle|RBX|N9735|||fixed_wing|biplane|civilian|private|1929|c/n 1|c/n 1|on_display
+American Eagle|Eaglet|321|NC467V|||fixed_wing|monoplane|civilian|private|1930|c/n 1022|c/n 1022; Model 321|on_display
+Brewster Fleet|Model 7|Deluxe|NC63V|||fixed_wing|biplane|civilian|private|1931|c/n 402|c/n 402|on_display
+Curtiss-Wright|CW-1||N665V|Junior||fixed_wing|monoplane|civilian|private|1931|c/n 1047|c/n 1047|on_display
+Curtiss-Wright|CW-1|S|N1098T|Junior||fixed_wing|monoplane|civilian|private|1931|Salmson powered; c/n 1164|c/n 1164; CW-1S|on_display
+Heath|LNA-40||NC15792|Parasol||fixed_wing|monoplane|civilian|private|1932|Factory built; c/n 1006; FAA registry lists HEATH AVIATION LNB-4 c/n 1006 to the museum so the model designation is disputed between museum and FAA|c/n 1006; Heath Parasol; LNB-4|on_display
+Kinner|K||||Sportster|fixed_wing|monoplane|civilian|private|1932|Not registered; c/n 60|c/n 60; K Sportster|on_display
+Corbin|Junior Ace|||Jr Ace||fixed_wing|monoplane|civilian|private|1932|Not registered|Jr Ace|on_display
+Heath|CNA-40||N12282|Center Wing||fixed_wing|monoplane|civilian|private|1933|Chicago World's Fair demonstrator; c/n C52|c/n C52|on_display
+Pietenpol|Air Camper||N433V|||fixed_wing|monoplane|civilian|private|1933|Ford Model A powered; FAA registry lists PIETENPOL AIRCAMPER c/n 1-1933 to the museum|c/n 1-1933|on_display
+Arup|S2|||||fixed_wing|monoplane|civilian|experimental|1933|Not registered; low-aspect-ratio lifting-body research aircraft|Arup S-2|on_display
+Kinner|B-1||N727W|Sportster||fixed_wing|monoplane|civilian|private|1934|c/n 138|c/n 138|on_display
+Kellett|KD-1|A|N14742|Autogiro||rotary_wing||civilian|experimental|1935|Prototype; c/n 101; FAA registry confirms KELLETT KD-1A c/n 101 to the museum; Kellett was a Philadelphia builder|c/n 101; KD1 Autogiro|on_display
+Aeronca|C-3||N15252|Master||fixed_wing|monoplane|civilian|private|1935|c/n A572; FAA confirms|c/n A-572|on_display
+Taylor|J-2||N16330|Cub||fixed_wing|monoplane|civilian|private|1936|c/n 567; Taylor became Piper|c/n 567; Piper J-2|on_display
+Aeronca|C-3||N16259|Master||fixed_wing|monoplane|civilian|private|1936|c/n A647|c/n A-647|on_display
+Arrow|Sport|F|NC16470|||fixed_wing|monoplane|civilian|private|1936|Flathead Ford V-8 powered; museum gives c/n 2 but FAA lists SWEET-ROGER ARROW SPORT-S c/n 001 for N16470 — c/n disputed|Model F; Arrow Sport|on_display
+Aeronca|K||N17495|||fixed_wing|monoplane|civilian|private|1937|c/n K13|c/n K13|on_display
+Aeronca|K||N18834|||fixed_wing|monoplane|civilian|private|1937|c/n K100|c/n K100|on_display
+Aeronca|K||N19336|||fixed_wing|monoplane|civilian|private|1937|c/n K204|c/n K204|on_display
+Taylor-Young|Model A||N18339|||fixed_wing|monoplane|civilian|private|1937|Built at Butler Pennsylvania; c/n 72|c/n 72|on_display
+Fairchild|24|G|N19139|||fixed_wing|monoplane|civilian|private|1937|Civil Air Patrol aircraft in WWII; c/n 2987; FAA confirms FAIRCHILD 24 G c/n 2987|c/n 2987; 24-G Deluxe|on_display
+Troyer|VX||N18471|||fixed_wing|monoplane|civilian|experimental|1939|Homebuilt; c/n 1|c/n 1|on_display
+Aeronca|65|TC|N31749|||fixed_wing|monoplane|civilian|private|1940|c/n 6200T|c/n 6200T; 65TC|on_display
+Rearwin|8135||N25546|Cloudster||fixed_wing|monoplane|civilian|private|1940|c/n 823; FAA confirms REARWIN 8135 c/n 823|c/n 823|on_display
+Culver|LCA||N34781|Cadet||fixed_wing|monoplane|civilian|private|1941|c/n 237; FAA lists SUPERIOR CULVER LCA c/n 237|c/n 237|on_display
+Meyers|OTW||N46275|||fixed_wing|biplane|civilian|trainer|1940|Civilian Pilot Training Program aircraft; c/n 28; FAA lists MEYERS OTW c/n 28 as N26475 — museum's table gives N46275 so the registration digits are transposed in one of the two sources|c/n 28; N26475|on_display
+Fairchild|PT-19||N119EC|Cornell||fixed_wing|monoplane|military|trainer|1940|Museum claims oldest surviving PT-19; military serial 40-2594; c/n T40-308; FAA confirms FAIRCHILD M-62A c/n T40-308 as N119EC|40-2594; c/n T40-308; M-62|on_display
+Boeing|A75N1||N26M|Kaydet|Stearman|fixed_wing|biplane|military|trainer|1940|USAAC serial 41-8366; c/n 75-1925; USN service 1942|41-8366; c/n 75-1925; Stearman; PT-17|on_display
+Piper|J-3|C-65|N41529|Cub|NE-1|fixed_wing|monoplane|military|trainer|1941|USN NE-1; BuNo 26276; c/n 8187; Philadelphia Navy Yard aircraft|BuNo 26276; c/n 8187; NE-1|on_display
+Ryan|PT-22||N49049|Recruit|ST-3KR|fixed_wing|monoplane|military|trainer|1941|USAAC serial 41-15553; served Visalia Field; c/n 1582; FAA confirms RYAN PT-22 c/n 1582|41-15553; c/n 1582; ST-3KR|on_display
+Naval Aircraft Factory|N3N|3|N44718|Yellow Peril||fixed_wing|biplane|military|trainer|1941|BuNo 2782; c/n 357; NAF Boston 1941; FAA confirms NAF N3N-3 serial 2782|BuNo 2782; c/n 357; Yellow Peril|on_display
+Vultee|BT-13|A|N60277|Valiant|SNV-1|fixed_wing|monoplane|military|trainer|1942|USAAF serial 41-22441; c/n 6519; ex-USMA West Point|41-22441; c/n 6519; SNV-1|on_display
+Aeronca|O-58|B|N47608|Defender||fixed_wing|monoplane|military|recon|1942|USAAF serial 42-14426; c/n 5442; FAA lists AERONCA 0-58B c/n 058B-5442|42-14426; c/n 5442; L-3|on_display
+Aeronca|O-58|B|N46179|||fixed_wing|monoplane|military|recon|1942|c/n 2142; no military serial recorded by the museum|c/n 2142|on_display
+Fairchild|PT-23||N50024|Cornell|M-62C|fixed_wing|monoplane|military|trainer|1942|Aeronca built; c/n 6143AE; museum's military serial column reads 42-47-65 which is malformed — probably 42-4765 but left blank rather than guessed|c/n 6143AE; M-62C|on_display
+Fairchild|PT-23|A|N5427N|Cornell|M-62|fixed_wing|monoplane|military|trainer|1942|Aeronca built; c/n 2873AE|c/n 2873AE|on_display
+Fairchild|PT-19|A|N57621|Cornell|M-62A|fixed_wing|monoplane|military|trainer|1942|c/n T42-3923|c/n T42-3923; M-62A|on_display
+Schweizer|TG-3|A|N52183|||fixed_wing|monoplane|military|trainer|1942|Military training glider; c/n 87|c/n 87; TG3A|on_display
+Pratt-Read|TG-32||N60999|||fixed_wing|monoplane|military|trainer|1942|Military training glider; c/n 65; museum's serial column reads 315709 which is not a valid USAAF serial in that form so it is left out of tail_number|c/n 65; 315709|on_display
+Fairchild|PT-23||N3925M|Cornell|M-62|fixed_wing|monoplane|military|trainer|1943|Howard built; c/n HO-155; FAA confirms FAIRCHILD(HOWARD) M-62C(PT-23A) c/n HO-155|c/n HO-155|on_display
+Fairchild|PT-26||N60651|Cornell|M-62|fixed_wing|monoplane|military|trainer|1943|c/n T43-5651|c/n T43-5651|on_display
+Taylorcraft|L-2|M|N47021|Grasshopper|DCO-65|fixed_wing|monoplane|military|recon|1943|USAAF serial 43-25966; c/n L5531; FAA confirms TAYLORCRAFT DCO-65 c/n L-5531|43-25966; c/n L-5531; DCO-65|on_display
+Cessna|UC-78|B|N41793|Bobcat|T-50|fixed_wing|monoplane|military|transport|1943|USAAF serial 43-31917; c/n 5855; fuselage only — museum's own table notes FUSELAGE|43-31917; c/n 5855; T-50|under_restoration
+Cessna|UC-78|B|N53664|Bobcat|T-50|fixed_wing|monoplane|military|transport|1943|USAAF serial 43-81935; c/n 5873|43-81935; c/n 5873; T-50|on_display
+North American|SNJ|4B|N24554|Texan||fixed_wing|monoplane|military|trainer|1943|BuNo 27753; NA-88 c/n 88-12281; USN 1943|BuNo 27753; c/n 88-12281; T-6|on_display
+North American|B-25|J|N9456Z|Mitchell|Briefing Time|fixed_wing|monoplane|military|bomber|1943|B-25J-1-NC serial 44-29939; c/n 108-33214; EAA Best Restored Bomber 1982 and Best B-25 2017; airworthy museum-owned airframe resident at Reading and flown at WWII Weekend|44-29939; c/n 108-33214|on_display
+Aeronca|L-3|B|N39563|Grasshopper||fixed_wing|monoplane|military|recon|1943|c/n F5664TA; FAA lists AERONCA 65-TAC c/n F5664TA|c/n F5664TA|on_display
+Aeronca|TG-5|||||fixed_wing|monoplane|military|trainer|1943|Training glider; not registered; also designated JG-5 in USN service|TG-5; JG-5|on_display
+Stinson|L-5|E||Sentinel||fixed_wing|monoplane|military|recon|1943|Not registered; no serial recorded by the museum|Sentinel|on_display
+Vultee|BT-13|B|N56867|Valiant|SNV-2|fixed_wing|monoplane|military|trainer|1943|Airframe converted into an Aichi D3A Val replica for the film Tora Tora Tora; c/n 79-1220|c/n 79-1220; SNV-2; Val replica|on_display
+Northrop|P-61|B|42-39445|Black Widow||fixed_wing|monoplane|military|fighter|1944|P-61B-1-NO recovered from Mount Cyclops New Guinea in 1989; served 13th AF 13th FG 550th Night Fighter Squadron; long-running restoration toward flying condition; civil registration N550NF reserved; c/n 964|N550NF; c/n 964; Black Widow|under_restoration
+Douglas|R4D|6|N229GB|Skytrain|DC-3|fixed_wing|monoplane|military|transport|1944|BuNo 50819; c/n 26874; EAA Grand Champion 1983 and Sun n Fun Best Transport 1991; FAA lists DOUGLAS DC3C-1830-94 c/n 26874; airworthy museum-owned airframe|BuNo 50819; c/n 26874; DC-3|on_display
+Stinson|L-5|E||Sentinel||fixed_wing|monoplane|military|recon|1944|Second L-5E in the collection; no registration or serial recorded by the museum|Sentinel|on_display
+Aeronca|65|TF||||fixed_wing|monoplane|civilian|private|1944|Not registered|65-TF|on_display
+Grumman|TBM|3|N109K|Avenger||fixed_wing|monoplane|military|bomber|1945|Eastern Aircraft built; BuNo 53638; c/n 3800; USN VT-23 aboard USS Langley; FAA confirms GRUMMAN TBM-3 serial 53638|BuNo 53638; c/n 3800; Eastern|on_display
+Republic|F-84|B|46-666|Thunderjet||fixed_wing|monoplane|military|fighter|1946|c/n 219; not registered; museum's table gives only THUNDERJET as the model — variant B inferred from the FY46 serial block and needs confirmation against Baugher|c/n 219; Thunderjet|on_display
+North American|F-86|F|N51RS|Sabre||fixed_wing|monoplane|military|fighter|1951|F-86F-25-NA serial 51-13417; c/n 176-348; ex-Spanish Air Force|51-13417; c/n 176-348|on_display
+Piasecki|H-21|B|N4361M|Shawnee|Flying Banana|rotary_wing||military|transport|1953|USAF serial 53-4367; museum's c/n column is ambiguous giving 209 OR 117|53-4367; c/n 209; c/n 117; Flying Banana|on_display
+Fairchild|C-119|F|N175ML|Boxcar|R4Q-2|fixed_wing|monoplane|military|transport|1953|USMC R4Q-2 BuNo 131677; c/n 10844; FAA confirms FAIRCHILD C-119 serial 131677; airworthy museum-owned airframe|BuNo 131677; c/n 10844; R4Q-2|on_display
+Piper|L-21|B|N50084|Super Cub||fixed_wing|monoplane|military|utility|1953|USAF serial 53-7720; c/n 18-3320; FAA confirms PIPER L-21B serial 53-7720|53-7720; c/n 18-3320; PA-18|on_display
+Lockheed|P2V|7S|N45309|Neptune||fixed_wing|monoplane|military|recon|1957|BuNo 145915; c/n 7180; EAA Best Restored Bomber 1985; FAA lists LOCKHEED SP-2H c/n 7180|BuNo 145915; c/n 7180; SP-2H|on_display
+Sikorsky|UH-34|J|N46922|Seahorse|S-58|rotary_wing||military|utility|1958|BuNo 145712; c/n 58-1069; USN HT-8; FAA confirms SIKORSKY S-58 serial 145712|BuNo 145712; c/n 58-1069; S-58|on_display
+Sikorsky|HH-52|A|1394|Seaguard|S-62|rotary_wing||military|search_rescue|1964|USCG serial 1394; c/n 62075; served USCG Air Station Chicago; civil registration N1394|N1394; c/n 62075; S-62|on_display
+Martin|404||N450A|Silver Falcon||fixed_wing|monoplane|civilian|commercial_transport|1952|c/n 14141; EAA Best Classic Airliner 1995; FAA confirms MARTIN 404 c/n 14141|c/n 14141|on_display
+de Havilland|DH.104|Dove 5A|N557JC|Dove||fixed_wing|monoplane|civilian|commercial_transport|1952|c/n 4380|c/n 4380; Dove 5A|on_display
+Vickers-Armstrongs|Viscount|745D|N7471|Viscount||fixed_wing|monoplane|civilian|commercial_transport|1957|c/n 233; ex-Capital Airlines type|c/n 233; V745D|on_display
+Zuck|Plane-Mobile||N30031|||fixed_wing|monoplane|civilian|experimental|1946|Roadable aircraft; c/n 01; FAA lists ZUCK DANIEL R PLANE-MOBILE c/n 01|c/n 01|on_display
+Auster|J/1||N22443|Autocrat||fixed_wing|monoplane|civilian|private|1946|c/n 2034; FAA lists AUSTER 5J1 c/n 2034|c/n 2034; MKVJ/1|on_display
+Commonwealth|185||NC93248|Skyranger||fixed_wing|monoplane|civilian|private|1946|c/n 1753|c/n 1753|on_display
+Bellanca|14-13|2|N74223|Cruisair||fixed_wing|monoplane|civilian|private|1946|c/n 1336|c/n 1336|on_display
+Aeronca|11|AC||Chief||fixed_wing|monoplane|civilian|private|1946|Not registered|11AC Chief|on_display
+North American|Navion|A|N91528|||fixed_wing|monoplane|civilian|private|1946|c/n NAV-4-1487|c/n NAV-4-1487|on_display
+North American|Navion|A|N91410|||fixed_wing|monoplane|civilian|private|1947|c/n 4-73|c/n 4-73|on_display
+Republic|RC-3||N6202K|Seabee||fixed_wing|monoplane|civilian|private|1947|c/n 398|c/n 398|on_display
+Stinson|108|3|N6729M|Voyager||fixed_wing|monoplane|civilian|private|1948|c/n 108-4729; built after Piper acquired Stinson|c/n 108-4729|on_display
+Piper|PA-22|125|N600A|Tri-Pacer||fixed_wing|monoplane|civilian|private|1950|William T. Piper Senior's personal aircraft; c/n 22-3|c/n 22-3|on_display
+Erco|415|G|N3430H|Ercoupe||fixed_wing|monoplane|civilian|private|1950|Sanders built; c/n 5055; FAA lists ERCOUPE 415-G c/n 4055 so the c/n is disputed between museum and FAA|c/n 5055; c/n 4055|on_display
+Taylor|JT-1||N4991C|Monoplane||fixed_wing|monoplane|civilian|experimental|1952|Homebuilt; c/n JT1-89|c/n JT1-89|on_display
+Temco|D-16||N4487K|Twin Navion||fixed_wing|monoplane|civilian|private|1953|Riley conversion; c/n TTN-24; FAA lists TEMCO D-16 c/n NAV-4-1487 which duplicates the N91528 c/n — one of the two FAA rows is wrong|c/n TTN-24; Twin Navion|on_display
+Bensen|B-8|||Gyro-Glider||rotary_wing||civilian|experimental|1954|Homebuilt gyroglider; not registered|B8 Gyro-Glider|on_display
+Camair|480|B|N214N|||fixed_wing|monoplane|civilian|private|1955|c/n 1-058; FAA confirms CAMAIR 480 c/n 1-058|c/n 1-058|on_display
+Midget Mustang|MC-4||N15J|||fixed_wing|monoplane|civilian|experimental|1955|San Antonio Aviation production prototype; c/n 55-1; FAA confirms MIDGET MUSTANG MC-4 c/n 55-1|c/n 55-1|on_display
+Camair|480|B|N234|||fixed_wing|monoplane|civilian|private|1956|c/n 1-070|c/n 1-070|on_display
+Camair|480|B|N243|||fixed_wing|monoplane|civilian|private|1957|c/n 1-077|c/n 1-077|on_display
+Bensen|B-8|V|||Gyrocopter|rotary_wing||civilian|experimental|1957|Homebuilt; also styled KB-2; no registration recorded|KB-2; B8V|on_display
+Piper|PA-22|160|N8620D|Tri-Pacer||fixed_wing|monoplane|civilian|private|1958|c/n 22-5823|c/n 22-5823|on_display
+Piper|PA-22|150|N3601Z|Caribbean||fixed_wing|monoplane|civilian|private|1960|c/n 22-7489; FAA confirms PIPER PA-22-150 c/n 22-7489|c/n 22-7489|on_display
+Beechcraft|18|G18S|N404H|Super 18||fixed_wing|monoplane|civilian|commercial_transport|1961|Reading Business Show winner; c/n BA590; FAA confirms BEECH G18S c/n BA-590|c/n BA-590|on_display
+Reid|RFS-1|||Flying Submarine||fixed_wing|monoplane|civilian|experimental|1962|One-off prototype; not FAA registered; carried New Jersey watercraft registration NJ18S|NJ18S; RFS-1|on_display
+Romano-Bushby|MM-1||N12RR|Midget Mustang||fixed_wing|monoplane|civilian|experimental|1963|Homebuilt; c/n 1; FAA lists ROMANO BUSHBY c/n 1|c/n 1; MM1|on_display
+Custer|CCW-5||N5855V|Channel Wing||fixed_wing|monoplane|civilian|experimental|1964|Production prototype completed 4 July 1964; c/n 001|c/n 001; Channel Wing|on_display
+Beechcraft|18|H18|N5959F|Trigear||fixed_wing|monoplane|civilian|commercial_transport|1965|Reading Business Show winner; c/n 721|c/n 721; H18|on_display
+Mignet|HM-162||N1841|Flying Flea||fixed_wing|monoplane|civilian|experimental|1967|c/n 1; FAA lists FLYING FLEA HM162 c/n 1|c/n 1; Pou du Ciel|on_display
+Cessna|172|L|N80522|Skyhawk||fixed_wing|monoplane|civilian|private|1967|c/n 17256252|c/n 17256252|on_display
+Moravan|Z-526||N888EE|Trener||fixed_wing|monoplane|civilian|private|1969|c/n 1077|c/n 1077; Zlin 526|on_display
+McCulloch|J-2||N4322G|Super J2||rotary_wing||civilian|private|1971|Gyroplane; c/n 38; FAA lists MCCULLOCH J-2 c/n 032 for N4322G so the c/n is disputed|c/n 38; c/n 032|on_display
+American Aviation|AA-1|A|N9210L|||fixed_wing|monoplane|civilian|private|1971|c/n 0110|c/n 0110|on_display
+McCulloch|J-2||N4362G|Super J2||rotary_wing||civilian|private|1972|Gyroplane; c/n 72|c/n 72|on_display
+Piper|PA-34|200|N5297T|Seneca||fixed_wing|monoplane|civilian|private|1972|c/n 72-50245; variant inferred from the 1972 Seneca production and needs confirmation|c/n 72-50245|on_display
+Bede|BD-5|B|N472MA|Micro||fixed_wing|monoplane|civilian|experimental|1973|Homebuilt; c/n 472; FAA lists DAVIS MARION L BD 5B c/n 472|c/n 472|on_display
+Bede|BD-5|B|N5BE|Micro||fixed_wing|monoplane|civilian|experimental|1973|Homebuilt; c/n 2931B|c/n 2931B|on_display
+Monerai|Sailplane|||||fixed_wing|monoplane|civilian|private|1973|Not registered|Monerai sailplane|on_display
+Pitts|S-1|C|N2AH|Special||fixed_wing|biplane|civilian|experimental|1974|Homebuilt; c/n 12449|c/n 12449; S1C|on_display
+Marske|Pioneer|II|N4RE|||fixed_wing|monoplane|civilian|private|1975|Tailless glider built by Ree; c/n R-4|c/n R-4; Marske Pioneer|on_display
+Teeter|BG-12||N4105G|Sailplane||fixed_wing|monoplane|civilian|experimental|1975|Homebuilt sailplane; c/n GET 004|c/n GET-004|on_display
+Rutan|VariEze||N95E|||fixed_wing|monoplane|civilian|experimental|1975|Built by Boyer; c/n 107|c/n 107; Vari Eze|on_display
+Steen|Skybolt||N827DH|||fixed_wing|biplane|civilian|experimental|1976|Homebuilt by Holt; Oldsmobile V8 powered; c/n 001|c/n 001|on_display
+Jeffair|Barracuda|||||fixed_wing|monoplane|civilian|experimental|1976|Not registered|Barracuda|on_display
+Mitchell|B-10|||Motor Glider||fixed_wing|monoplane|civilian|experimental|1976|Ultralight; not registered|B-10|on_display
+Cessna|150|M|N714GR|Commuter||fixed_wing|monoplane|civilian|private|1977|c/n 15079169|c/n 15079169|on_display
+Spratt|108||N49888|Control Wing||fixed_wing|monoplane|civilian|experimental|1977|Spratt control-wing design|Spratt 108|on_display
+Cassutt|IIIM||N77KL|||fixed_wing|monoplane|civilian|experimental|1978|Racer; c/n 1|c/n 1; Cassutt III M|on_display
+Monnett|Sonerai|II|N86FF|||fixed_wing|monoplane|civilian|experimental|1982|Homebuilt; c/n 37; museum's table spells the manufacturer MONET-FLYNN|c/n 37; Sonerai II|on_display
+American Aerolights|Double Eagle||N749AA|||fixed_wing|monoplane|civilian|experimental|1982|Ultralight; c/n 400164|c/n 400164|on_display
+American Aerolights|Eagle|||||fixed_wing|monoplane|civilian|experimental|1983|Ultralight; not registered|Eagle|on_display
+Corbin|Baby Ace|D|N4259T|||fixed_wing|monoplane|civilian|experimental|1983|Homebuilt; c/n 324; FAA lists ARMSTRONG ROBERT C BABY ACE D c/n 324|c/n 324|on_display
+Barnett|J4B|2|N174HM|||rotary_wing||civilian|experimental|1987|Gyroplane; coast-to-coast speed record holder 1989; c/n J4B-2; FAA lists MERKEL HOWARD H J4B-2 c/n HM-174|c/n HM-174|on_display
+Bensen|B-8|M||Gyrocopter||rotary_wing||civilian|experimental|1988|Not registered|B8M|on_display
+Pioneer|Flightstar|||Ultralight||fixed_wing|monoplane|civilian|experimental|1989|Ultralight; not registered|Flight Star|on_display
+Fisher|FP-404|||||fixed_wing|biplane|civilian|experimental|1992|Ultralight; c/n 4160; not registered|c/n 4160; FP404|on_display
+Fisher|Avenger|V||||fixed_wing|monoplane|civilian|experimental|1995|Ultralight; not registered|Avenger V|on_display
+Van's|RV-6|A|N333JA|||fixed_wing|monoplane|civilian|experimental|2000|Homebuilt; c/n 24339; FAA lists ABELL JOHN B VANS RV-6A c/n 24339|c/n 24339|on_display
+Rand|KR-2||N303JV|||fixed_wing|monoplane|civilian|experimental|2006|Homebuilt; museum gives c/n 5907 but FAA lists VANCE JAMES C KR 2 c/n 001 for N303JV so the c/n is disputed|c/n 5907; c/n 001|on_display
+SAL|P-51||N836PD|2/3 scale Mustang||fixed_wing|monoplane|civilian|experimental|2006|Two-thirds scale P-51 homebuilt; PT-6 powered; c/n F836; replica not an original Mustang|c/n F836; 2/3 scale P-51 replica|on_display
+Sonex|Model A||N285SN|||fixed_wing|monoplane|civilian|experimental|2008|Homebuilt; c/n 0723; FAA lists MCFARLAND LEE SONEX c/n 0723|c/n 0723|on_display
+Mitchell Wing|A-10|D|N484SM|||fixed_wing|monoplane|civilian|experimental|2011|Ultralight; c/n 275; FAA confirms MITCHELL WING A-10D c/n 275|c/n 275|on_display

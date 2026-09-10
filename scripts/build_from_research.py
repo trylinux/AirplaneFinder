@@ -24,9 +24,31 @@ The contract's last two data fields are description then aliases. Before the
 how research prose ended up in the search-indexed aliases table and had to be
 migrated back out in September 2026. _split_desc_aliases keeps them apart.
 
+CONSTRUCTION NUMBER AND OPERATOR COUNTRY
+----------------------------------------
+Both are optional and both go AFTER display_status, at the very end of the
+line — never in the middle, because every research file written before
+September 2026 ends at display_status and has to keep parsing unchanged.
+realign finds display_status by value and treats whatever follows it as these
+two: a bare two-letter token is the operator country, anything else is the
+construction number.
+
+    ...|on_display                      legacy, both blank
+    ...|on_display|ZA                   operator country only
+    ...|on_display|14072|GB             both
+
+--operator-country sets it for a whole file, which is usually what a
+country-scoped sweep wants; a per-row value overrides it.
+
+The operator country is the nationality of the operator whose marks the
+airframe wears — SAAF is ZA wherever it stands today. It is part of the
+database's uniqueness key, so a WRONG code is worse than a blank: it splits
+one airframe into two records instead of merging two into one.
+
 WHAT IT WILL NOT DO
 -------------------
-Invent a tail number or a year. Rows arrive with those blank on purpose.
+Invent a tail number, a year, or an operator country. Rows arrive with those
+blank on purpose.
 
 Usage:
     python3 scripts/build_from_research.py --in raw.txt \\
@@ -41,10 +63,15 @@ import re
 import sys
 from pathlib import Path
 
-HEADER = ["manufacturer", "model", "variant", "tail_number", "model_name",
+HEADER = ["manufacturer", "model", "variant", "tail_number",
+          "construction_number", "operator_country", "model_name",
           "aircraft_name", "aircraft_type", "wing_type", "military_civilian",
           "role_type", "year_built", "description", "aliases",
           "museum_name", "display_status"]
+
+# ISO 3166-1 alpha-2. Shape only -- a well-formed wrong code is a research
+# error, not something this script can catch.
+OPERATOR_COUNTRY_RE = re.compile(r"^[A-Za-z]{2}$")
 
 AIRCRAFT_TYPES = {"fixed_wing", "rotary_wing", "lighter_than_air",
                   "spacecraft", "missile_rocket"}
@@ -135,12 +162,27 @@ def realign(parts):
     if not rest:
         return None, "nothing after aircraft_type"
 
-    # display_status is the last field, but may be missing entirely.
-    if rest and rest[-1].lower() in STATUSES:
-        row["display_status"] = rest[-1].lower()
-        rest = rest[:-1]
-    else:
+    # display_status used to be the last field. Since September 2026 an
+    # optional construction number and operator country may follow it, so
+    # find it by value from the right rather than assuming it is last, and
+    # treat anything after it as those two. A file written to the old
+    # contract has nothing after it and parses exactly as before.
+    row["construction_number"] = ""
+    row["operator_country"] = ""
+    si = next((i for i in range(len(rest) - 1, -1, -1)
+               if rest[i].lower() in STATUSES), None)
+    if si is None:
         row["display_status"] = "on_display"
+    else:
+        row["display_status"] = rest[si].lower()
+        for extra in rest[si + 1:]:
+            if not extra:
+                continue
+            if OPERATOR_COUNTRY_RE.match(extra):
+                row["operator_country"] = extra.upper()
+            else:
+                row["construction_number"] = extra
+        rest = rest[:si]
 
     mi = next((i for i, p in enumerate(rest) if p.lower() in MIL_CIV), None)
     if mi is None:
@@ -178,11 +220,21 @@ def realign(parts):
     return row, None
 
 
-def sanitise(row, museum):
+def sanitise(row, museum, operator_country=""):
     """Enforce the schema's rules regardless of what the research said."""
     problems = []
     row.setdefault("description", "")
     row["museum_name"] = museum
+
+    # A per-row code beats the file-level default; the default is there
+    # because a country-scoped sweep is nearly always one operator.
+    row.setdefault("construction_number", "")
+    if not row.get("operator_country") and operator_country:
+        row["operator_country"] = operator_country
+    oc = (row.get("operator_country") or "").strip().upper()
+    if oc and not OPERATOR_COUNTRY_RE.match(oc):
+        problems.append(f"operator_country {oc!r} is not a 2-letter ISO code")
+    row["operator_country"] = oc
 
     # Folding surplus fields with " ".join produces a lone space when the
     # surplus fields were all empty, which then imports as a one-character
@@ -247,7 +299,18 @@ def main():
                    help="each line carries its museum as a 14th, final field; "
                         "write one <slug>_aircraft.csv per museum into --out-dir")
     p.add_argument("--out-dir", help="directory for per-museum files")
+    p.add_argument("--operator-country", default="",
+                   help="ISO 3166-1 alpha-2 for every row that does not carry "
+                        "its own -- the nationality of the OPERATOR whose "
+                        "marks the airframe wears, not the country it stands "
+                        "in. Leave unset rather than guessing: this is part "
+                        "of the database's uniqueness key, and a wrong code "
+                        "splits one airframe into two records.")
     args = p.parse_args()
+    args.operator_country = (args.operator_country or "").strip().upper()
+    if args.operator_country and not OPERATOR_COUNTRY_RE.match(args.operator_country):
+        p.error(f"--operator-country {args.operator_country!r} is not a "
+                f"2-letter ISO 3166-1 alpha-2 code")
     if args.museum_in_last_field:
         if not args.out_dir:
             p.error("--museum-in-last-field needs --out-dir")
@@ -278,7 +341,7 @@ def main():
         if problem:
             rejected.append((lineno, problem, line[:90]))
             continue
-        row, problems = sanitise(row, museum)
+        row, problems = sanitise(row, museum, args.operator_country)
         if problems:
             rejected.append((lineno, "; ".join(problems), line[:90]))
             continue
@@ -298,7 +361,11 @@ def main():
         # "01". Keying on tail alone threw away 39 real aircraft.
         tail = row["tail_number"].strip().lower()
         if tail:
-            key = (row["model"].strip().lower(), tail)
+            # Keyed the way uq_airframe is keyed: designation + tail +
+            # operator country. Keying on (model, tail) merged Mirage F1CZ 207
+            # with Mirage F1C-200 207, and MiG-15 "03" with MiG-15UTI "03".
+            key = (join_designation(row["model"], row.get("variant", "")).lower(),
+                   tail, row.get("operator_country", ""))
             if key in seen_tail:
                 deduped.append((row, seen_tail[key]))
                 continue

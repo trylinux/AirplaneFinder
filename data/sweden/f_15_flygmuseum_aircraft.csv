@@ -1,0 +1,16 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+De Havilland,J 28,B,28219,Vampire,,fixed_wing,monoplane,military,fighter,,Wears the false markings F 15 yellow I and the serial 28391; the real 28391 survives separately at Vannas.,DH.100; DH100; D.H.100; Vampire; J28; c/n V.0364,F 15 Flygmuseum,on_display
+Saab,J 21,A-3,21311,Saab 21,,fixed_wing,monoplane,military,fighter,,,Saab 21; Saab21; J21; J21A-3; J21-A-3,F 15 Flygmuseum,on_display
+Saab,J 29,F,29666,Tunnan,,fixed_wing,monoplane,military,fighter,,,Tunnan; Saab 29; Saab29; J29; J29F; J29-F,F 15 Flygmuseum,on_display
+Saab,A 32,A,32085,Lansen,,fixed_wing,monoplane,military,ground_attack,,Withdrawn from use in 1973 and then displayed as gate guard outside the guardhouse at F 7 Satenas. At F 15 Flygmuseum since 2008. On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Lansen; Saab 32; Saab32; A32; A32A; A32-A,F 15 Flygmuseum,on_display
+Saab,J 32,B,32530,Lansen,,fixed_wing,monoplane,military,fighter,,,Lansen; Saab 32; Saab32; J32; J32B; J32-B,F 15 Flygmuseum,on_display
+Saab,J 35,F-1,35496,Draken,,fixed_wing,monoplane,military,fighter,,Delivered 1967. Ownership passed from the Armed Forces to Flygvapenmuseum in autumn 2017 while the aircraft stood outdoors at Vasteras; moved to Soderhamn in autumn 2018 where it is displayed outdoors. On loan from Flygvapenmuseum (Statens forsvarshistoriska museer). The dedicated Draken list still shows this aircraft at Vasteras; the more detailed main list records the 2018 move to Soderhamn which is followed here.,Draken; Saab 35; Saab35; J35; J35F-1; J35-F-1,F 15 Flygmuseum,on_display
+Saab,AJS 37,,37009,Viggen,,fixed_wing,monoplane,military,ground_attack,,On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Viggen; Saab 37; Saab37; AJS37,F 15 Flygmuseum,on_display
+Saab,AJS 37,,37056,Viggen,,fixed_wing,monoplane,military,ground_attack,,,Viggen; Saab 37; Saab37; AJS37,F 15 Flygmuseum,on_display
+Saab,AJ 37,,37067,Viggen,,fixed_wing,monoplane,military,ground_attack,,,Viggen; Saab 37; Saab37; AJ37,F 15 Flygmuseum,on_display
+Saab,AJS 37,,37081,Viggen,,fixed_wing,monoplane,military,ground_attack,,Forward fuselage only; used as a simulator at the museum.,Viggen; Saab 37; Saab37; AJS37,F 15 Flygmuseum,on_display
+Saab,SK 37,,37805,Viggen,,fixed_wing,monoplane,military,trainer,,,Viggen; Saab 37; Saab37; SK37,F 15 Flygmuseum,on_display
+Saab,Sk 50,B,50006,Safir,,fixed_wing,monoplane,military,trainer,,,Safir; Saab 91; Saab91; Sk50; Sk50B; Sk50-B,F 15 Flygmuseum,on_display
+Saab,SK 60,E,60145,Saab 105,,fixed_wing,monoplane,military,trainer,,,Saab 105; Saab105; SK60; SK60E; SK60-E,F 15 Flygmuseum,on_display
+Scottish Aviation,SK 61,A,61015,Bulldog,,fixed_wing,monoplane,military,trainer,,,B.125; B125; Bulldog; Sk 61; Sk61; SK61; c/n BH 100-117,F 15 Flygmuseum,on_display
+Agusta-Bell,Hkp 3,B,03423,AB 204B,,rotary_wing,,military,search_rescue,,,AB 204B; AB 204; AB204; Bell 204; Bell204; HKP 3; Hkp3,F 15 Flygmuseum,on_display

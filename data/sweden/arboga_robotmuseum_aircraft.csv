@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Saab,J 35,B,35244,Draken,,fixed_wing,monoplane,military,fighter,,Forward fuselage only; preserved as a simulator.,Draken; Saab 35; Saab35; J35; J35B; J35-B,Arboga Robotmuseum,on_display
+Saab,J 35,Ö,35373,Draken,,fixed_wing,monoplane,military,fighter,,Ex-Austrian Air Force J 35OE; wore the number 19 and Austrian serial 351419,Draken; Saab 35; Saab35; J35; J35Ö; J35-Ö,Arboga Robotmuseum,on_display
+Saab,AJSH 37,,37910,Viggen,,fixed_wing,monoplane,military,recon,,Forward fuselage only.,Viggen; Saab 37; Saab37; AJSH37,Arboga Robotmuseum,on_display

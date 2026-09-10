@@ -1,0 +1,25 @@
+name,city,state_province,country,postal_code,region,address,website,access_type,latitude,longitude
+Danmarks Flymuseum,Stauning,Region Midtjylland,Denmark,6900,Europe,Lufthavnsvej 1,https://www.flymuseum.dk,public,55.99184,8.34632
+Danmarks Tekniske Museum,Helsingør,Region Hovedstaden,Denmark,3000,Europe,Fabriksvej 25,https://tekniskmuseum.dk,public,56.02183,12.56289
+Aalborg Forsvars- og Garnisonsmuseum,Aalborg,Region Nordjylland,Denmark,9000,Europe,Skydebanevej 22,https://www.forsvarsmuseum.dk,public,57.05595,9.88286
+Springeren Maritimt Oplevelsescenter,Aalborg,Region Nordjylland,Denmark,9000,Europe,,https://springeren-maritimt.dk,public,57.05794,9.89217
+Egeskov Slot Veteranmuseum,Kværndrup,Region Syddanmark,Denmark,5772,Europe,Egeskov Gade 18,https://egeskov.dk,public,55.17657,10.48643
+Værløse Flyhistoriske Hangar,Værløse,Region Hovedstaden,Denmark,3500,Europe,,https://historiskhangar.dk,public,55.76477,12.32228
+Koldkrigsmuseum Langelandsfort,Bagenkop,Region Syddanmark,Denmark,5935,Europe,Vognsbjergvej 4B,https://www.langelandsfortet.dk,public,54.75066,10.71506
+Egholm Museum,Kirke Hyllinge,Region Sjælland,Denmark,4070,Europe,Trehøjevej 47,https://egholmmuseum.dk,public,55.73296,11.91482
+Panzermuseum East,Slagelse,Region Sjælland,Denmark,4200,Europe,,https://panzermuseumeast.dk,public,55.34926,11.50555
+Bornholms Tekniske Samling,Allinge,Region Hovedstaden,Denmark,3770,Europe,,https://bornteksamling.dk,public,55.25004,14.76463
+Koldkrigsmuseum Stevnsfort,Rødvig Stevns,Region Sjælland,Denmark,4673,Europe,,https://www.stevnsfort.dk,public,55.26528,12.40978
+Stevns Museum -- Højerup,Store Heddinge,Region Sjælland,Denmark,4660,Europe,,,public,55.27891,12.44266
+Bornholmertårnet -- Nexø,Nexø,Region Hovedstaden,Denmark,3730,Europe,,,public,55.00186,15.07279
+Hjallerup Mekaniske Museum,Hjallerup,Region Nordjylland,Denmark,9320,Europe,,https://hjallerup-museum.dk,public,57.15987,10.15538
+Flymuseet Gedhusvagten,Karup,Region Midtjylland,Denmark,7470,Europe,,,public,56.27922,9.12059
+Baks Traktor- og Landbrugsmaskinmuseum,Erslev,Region Nordjylland,Denmark,7950,Europe,,,public,56.84516,8.70144
+Flyvestation Karup Hovedvagt -- Karup,Karup,Region Midtjylland,Denmark,7470,Europe,,,restricted,56.29583,9.14103
+Flyveskolen Karup portvagt -- Karup,Karup,Region Midtjylland,Denmark,7470,Europe,,,restricted,56.29163,9.12059
+Børnehaven Lynghuset -- Karup,Karup,Region Midtjylland,Denmark,7470,Europe,,,restricted,56.30843,9.18125
+Fighter Wing Skrydstrup portvagt -- Vojens,Vojens,Region Syddanmark,Denmark,6500,Europe,,,restricted,55.23716,9.25534
+Flyvestation Aalborg portvagt -- Aalborg,Aalborg,Region Nordjylland,Denmark,9400,Europe,,,restricted,57.10926,9.85713
+Fritidsklubben Viadukten -- Roskilde,Roskilde,Region Sjælland,Denmark,4000,Europe,,,restricted,55.64583,12.11086
+Flyvergrillen -- Kastrup,Kastrup,Region Hovedstaden,Denmark,2770,Europe,,,public,55.61360,12.63002
+Restaurant Air Pub -- Odense,Odense,Region Syddanmark,Denmark,5000,Europe,,,public,55.39704,10.38116

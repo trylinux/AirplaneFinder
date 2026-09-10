@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+de Havilland,DH.82,A,ZK-TGR,Tiger Moth,,fixed_wing,biplane,civilian,trainer,,Elementary trainer biplane.,Tiger Moth; DH82A,South Canterbury Aviation Heritage Centre,on_display
+de Havilland Canada,DHC-1,22A,ZK-CHP,Chipmunk,,fixed_wing,monoplane,civilian,trainer,,Also wears RAF serial WB660.,Chipmunk; DHC1; WB660; DHC122A,South Canterbury Aviation Heritage Centre,on_display
+Elliotts of Newbury,Olympia,2,ZK-GLY,,,fixed_wing,monoplane,civilian,private,,British single-seat sailplane.,Olympia; EoN Olympia,South Canterbury Aviation Heritage Centre,on_display
+Fokker,F.27,-500,VT-NED,Friendship,,fixed_wing,monoplane,civilian,commercial_transport,,"Cockpit section only, on an Indian registration.",Friendship; F27; F27500,South Canterbury Aviation Heritage Centre,on_display
+Richard Pearse,Monoplane,,,,,fixed_wing,monoplane,civilian,experimental,,"Full-scale replica of the Pearse monoplane. The centre stands at Timaru's Richard Pearse Airport, named for the South Canterbury pioneer.",Pearse Monoplane; Pearse Plane,South Canterbury Aviation Heritage Centre,on_display
+Sopwith,F.1,,ZK-JKE,Camel,,fixed_wing,biplane,military,fighter,,Full-scale replica.,Camel; Sopwith Camel; F1 Camel,South Canterbury Aviation Heritage Centre,on_display

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aero,L-29,,59,Delfín,,fixed_wing,monoplane,military,trainer,,Ex Romanian Air Force jet trainer displayed alongside the vehicle collection.,L29; L-29; Delfin; Maya; c/n 395195,Veteranbilmuseet Førresfjorden,on_display
+Scheibe,SF-25,C,LN-GBD,Falke,,fixed_wing,monoplane,civilian,other,,Motor glider displayed alongside the vehicle collection.,SF25; SF-25C; Falke; c/n 4499; SF25C,Veteranbilmuseet Førresfjorden,on_display

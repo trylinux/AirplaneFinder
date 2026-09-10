@@ -1,0 +1,12 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Piper,Fpl 51,B,51256,PA-18 Super Cub,,fixed_wing,monoplane,military,utility,,,PA-18 Super Cub; PA-18; PA18; Super Cub; Fpl51,F11 Museum,on_display
+Saab,S 29,C,29902,Tunnan,,fixed_wing,monoplane,military,recon,,On loan to the museum since 2008.,Tunnan; Saab 29; Saab29; S29; S29C; S29-C,F11 Museum,on_display
+Saab,S 32,C,32940,Lansen,,fixed_wing,monoplane,military,recon,,One of only two surviving S 32C reconnaissance Lansens; the other is in storage at Flygvapenmuseum.,Lansen; Saab 32; Saab32; S32; S32C; S32-C,F11 Museum,in_storage
+Saab,J 35,F-2,35597,Draken,,fixed_wing,monoplane,military,fighter,,Delivered 1969 and served with F 10 until struck off charge. On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Draken; Saab 35; Saab35; J35; J35F-2; J35-F-2,F11 Museum,on_display
+Saab,S 35,E,35916,Draken,,fixed_wing,monoplane,military,recon,,Delivered 1966 and withdrawn in 1979 with just over 1500 flying hours. On loan to F11 Museum since 2008. On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Draken; Saab 35; Saab35; S35; S35E; S35-E,F11 Museum,on_display
+Saab,S 35,E,35959,Draken,,fixed_wing,monoplane,military,recon,,Converted from J 35D 35281. Placed as gate guard at the northern end of the runway by the museum on 22 October 2018. On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Draken; Saab 35; Saab35; S35; S35E; S35-E,F11 Museum,on_display
+Saab,AJSH 37,,37903,Viggen,,fixed_wing,monoplane,military,recon,,Forward fuselage only.,Viggen; Saab 37; Saab37; AJSH37,F11 Museum,on_display
+Saab,AJSF 37,,37958,Viggen,,fixed_wing,monoplane,military,recon,,Forward fuselage only; converted into a simulator. Its wings and fin were reused on 37072.,Viggen; Saab 37; Saab37; AJSF37,F11 Museum,on_display
+Scottish Aviation,SK 61,C,61061,Bulldog,,fixed_wing,monoplane,military,trainer,,,B.125; B125; Bulldog; Sk 61; Sk61; SK61; c/n BH 100-179,F11 Museum,on_display
+Scheibe,Bergfalke,,,Bergfalke,,fixed_wing,monoplane,civilian,other,,Two-seat sailplane listed by the museum among its seven aircraft. Registration not verified.,Bergfalke II,F11 Museum,on_display
+Holmberg,Racer,,,Holmberg Racer,,fixed_wing,monoplane,civilian,experimental,,Swedish homebuilt racer listed by the museum among its seven aircraft. Registration not verified.,Holmberg Racer; Racer,F11 Museum,on_display

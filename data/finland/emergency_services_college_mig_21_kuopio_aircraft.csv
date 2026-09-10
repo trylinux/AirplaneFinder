@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,bis,MG-125,,,fixed_wing,monoplane,military,fighter,,Ex-Finnish Air Force photo-reconnaissance modified MiG-21bis used as a rescue and firefighting practice airframe at the Emergency Services College in Kuopio.,MiG21bis; MG125; MiG21,Emergency Services College MiG-21 -- Kuopio,on_display

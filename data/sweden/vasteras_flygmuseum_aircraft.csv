@@ -1,0 +1,16 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bücker,Sk 25,,25114,Bü 181 Bestmann,,fixed_wing,monoplane,military,trainer,,Swedish-built. On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Bü 181 Bestmann; Bu 181; Bestmann; Sk25; c/n 114,Västerås Flygmuseum,on_display
+De Havilland,J 33,,33015,Venom,,fixed_wing,monoplane,military,fighter,,Ex SE-DCA.,DH.112; DH112; D.H.112; Venom; J33; c/n 12364,Västerås Flygmuseum,on_display
+Saab,S 29,C,29974,Tunnan,,fixed_wing,monoplane,military,recon,,,Tunnan; Saab 29; Saab29; S29; S29C; S29-C,Västerås Flygmuseum,on_display
+Saab,J 32,E,32612,Lansen,,fixed_wing,monoplane,military,fighter,,,Lansen; Saab 32; Saab32; J32; J32E; J32-E,Västerås Flygmuseum,on_display
+Saab,J 35,F-2,35555,Draken,,fixed_wing,monoplane,military,fighter,,Displayed in the museum's indoor collection.,Draken; Saab 35; Saab35; J35; J35F-2; J35-F-2,Västerås Flygmuseum,on_display
+Saab,Saab 37,,37-6,Viggen,,fixed_wing,monoplane,military,experimental,,,Viggen; Saab37,Västerås Flygmuseum,on_display
+Saab,AJ 37,,37025,Viggen,,fixed_wing,monoplane,military,ground_attack,,Forward fuselage only; originally marked 7-25 6-25 7-02 and 10-25 and now incorrectly marked in the 16 series. Previously at Arboga Robotmuseum; taken over in 2020 for conversion to a simulator.,Viggen; Saab 37; Saab37; AJ37,Västerås Flygmuseum,on_display
+Saab,AJS 37,,37080,Viggen,,fixed_wing,monoplane,military,ground_attack,,,Viggen; Saab 37; Saab37; AJS37,Västerås Flygmuseum,on_display
+Agusta-Bell,Hkp 3,C,03311,AB 204B,,rotary_wing,,military,search_rescue,,,AB 204B; AB 204; AB204; Bell 204; Bell204; HKP 3; Hkp3,Västerås Flygmuseum,on_display
+Agusta-Bell,Hkp 6,A,06262,AB 206 JetRanger,,rotary_wing,,military,utility,,,AB 206 JetRanger; AB 206; AB206; Bell 206; JetRanger; HKP 6; Hkp6; c/n 8070,Västerås Flygmuseum,on_display
+De Havilland Canada,DHC-1,,,Chipmunk,,fixed_wing,monoplane,civilian,trainer,,Listed in the Swedish Wikipedia article on Vasteras flygmuseum. Registration not verified.,DHC1; Chipmunk,Västerås Flygmuseum,on_display
+Piper,PA-23,,,Apache,,fixed_wing,monoplane,civilian,utility,,Listed in the Swedish Wikipedia article on Vasteras flygmuseum. Registration not verified.,PA23; Apache,Västerås Flygmuseum,on_display
+De Havilland,D.H.114,,,Heron,,fixed_wing,monoplane,civilian,commercial_transport,,Listed in the Swedish Wikipedia article on Vasteras flygmuseum. Registration not verified.,DH.114; DH114; Heron,Västerås Flygmuseum,on_display
+Yakovlev,Yak-52,,,Yak-52,,fixed_wing,monoplane,civilian,trainer,,Listed in the Swedish Wikipedia article on Vasteras flygmuseum. Registration not verified.,Yak52,Västerås Flygmuseum,on_display
+Schleicher,Anfänger,,,Anfanger,,fixed_wing,monoplane,civilian,trainer,,Primary training glider listed in the Swedish Wikipedia article on Vasteras flygmuseum. Registration not verified.,Anfanger; Anfänger,Västerås Flygmuseum,on_display

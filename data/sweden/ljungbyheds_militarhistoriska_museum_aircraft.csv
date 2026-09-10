@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Saab,Sk 50,B,50039,Safir,,fixed_wing,monoplane,military,trainer,,,Safir; Saab 91; Saab91; Sk50; Sk50B; Sk50-B,Ljungbyheds Militärhistoriska Museum,on_display
+Saab,SK 60,D,60132,Saab 105,,fixed_wing,monoplane,military,trainer,,Gate guard beside the golf course on the old F 5 wing area.,Saab 105; Saab105; SK60; SK60D; SK60-D,Ljungbyheds Militärhistoriska Museum,on_display
+Saab,SK 60,E,60142,Saab 105,,fixed_wing,monoplane,military,trainer,,,Saab 105; Saab105; SK60; SK60E; SK60-E,Ljungbyheds Militärhistoriska Museum,on_display
+Scottish Aviation,SK 61,A,61001,Bulldog,,fixed_wing,monoplane,military,trainer,,,B.125; B125; Bulldog; Sk 61; Sk61; SK61; c/n BH 100-102,Ljungbyheds Militärhistoriska Museum,on_display
+Scottish Aviation,SK 61,A,61033,Bulldog,,fixed_wing,monoplane,military,trainer,,Displayed outdoors.,B.125; B125; Bulldog; Sk 61; Sk61; SK61; c/n BH 100-141,Ljungbyheds Militärhistoriska Museum,on_display

@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Consolidated,B-24,M,A72-176,Liberator,,fixed_wing,monoplane,military,bomber,,"The only Liberator in the southern hemisphere; long-term restoration in a WWII-era hangar at Werribee, about 90 per cent of the airframe recovered. USAAF serial 44-41956.",B24; B24M; Liberator; 44-41956; 4441956,B-24 Liberator Memorial Australia,under_restoration
+Airspeed,AS.10,,,Oxford,,fixed_wing,monoplane,military,trainer,,Under restoration as a representative Liberator crew trainer; identity not published.,AS10; Oxford,B-24 Liberator Memorial Australia,under_restoration
+Avro,652,A,,Anson,,fixed_wing,monoplane,military,trainer,,Under restoration as a representative Liberator crew trainer; identity not published.,652A; Anson,B-24 Liberator Memorial Australia,under_restoration
+Commonwealth Aircraft Corporation,CA-13,,A46-147,Boomerang,,fixed_wing,monoplane,military,fighter,,Under restoration in the B-24 hangar at Werribee per ADF-Serials.,CA13; Boomerang,B-24 Liberator Memorial Australia,under_restoration

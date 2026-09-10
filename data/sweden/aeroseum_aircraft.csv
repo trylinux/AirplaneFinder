@@ -1,0 +1,41 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Albatros Flugzeugwerke,Sk 1,,05/03,Albatros B.II,,fixed_wing,biplane,military,trainer,,Stored dismantled. Ex SE-ACR previously SE-94.,Albatros B.II; Albatros 120; Sk1; c/n 799/17,Aeroseum,in_storage
+Reims-Cessna,F337,,SE-GMM,Super Skymaster,,fixed_wing,monoplane,civilian,utility,,Kept in flyable condition but not airworthy-certified.,F337G; Cessna 337; Cessna337; Super Skymaster; c/n F337-0077,Aeroseum,on_display
+Dornier,Fpl 53,,53271,Do 27,,fixed_wing,monoplane,military,utility,,Kept in flyable condition but not airworthy-certified. On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Do 27; Do27; Do 27A-4; Fpl53,Aeroseum,on_display
+Focke-Wulf,Sk 12,,647,Fw 44 Stieglitz,,fixed_wing,biplane,military,trainer,,Ex SE-BWZ. Owned by Svedinos and on loan to Aeroseum. Swedish-built by CVV.,Fw 44 Stieglitz; Fw 44; Fw44; Stieglitz; Sk12; c/n 29,Aeroseum,on_display
+Lockheed,Tp 84,,843,C-130 Hercules,,fixed_wing,monoplane,military,transport,,Swedish Air Force code 843. Flown to Aeroseum from Cambridge in July 2022 and largely scrapped there; per Aeroseum's own July 2022 release usable sections were being evaluated for public display at the museum. Extent of the surviving airframe not confirmed on site. Earlier Swedish Wikipedia text listing a complete aircraft on display is superseded.,C-130 Hercules; C-130; C130; C-130H; Hercules; Tp84; c/n 4628; C130H,Aeroseum,in_storage
+Saab,J 29,F,29624,Tunnan,,fixed_wing,monoplane,military,fighter,,,Tunnan; Saab 29; Saab29; J29; J29F; J29-F,Aeroseum,on_display
+Saab,J 32,E,32512,Lansen,,fixed_wing,monoplane,military,fighter,,,Lansen; Saab 32; Saab32; J32; J32E; J32-E,Aeroseum,on_display
+Saab,J 35,F-1,35415,Draken,,fixed_wing,monoplane,military,fighter,,On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Draken; Saab 35; Saab35; J35; J35F-1; J35-F-1,Aeroseum,on_display
+Saab,J 35,F-1,35482,Draken,,fixed_wing,monoplane,military,fighter,,Forward fuselage only. On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Draken; Saab 35; Saab35; J35; J35F-1; J35-F-1,Aeroseum,on_display
+Saab,J 35,F-2,35528,Draken,,fixed_wing,monoplane,military,fighter,,Wears fictitious markings F 9 - 00.,Draken; Saab 35; Saab35; J35; J35F-2; J35-F-2,Aeroseum,on_display
+Saab,J 35,J,35586,Draken,,fixed_wing,monoplane,military,fighter,,On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Draken; Saab 35; Saab35; J35; J35J; J35-J,Aeroseum,on_display
+Saab,J 35,J,35598,Draken,,fixed_wing,monoplane,military,fighter,,Displayed as gate guard outside the museum entrance. On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Draken; Saab 35; Saab35; J35; J35J; J35-J,Aeroseum,on_display
+Saab,AJ 37,,37094,Viggen,,fixed_wing,monoplane,military,ground_attack,,,Viggen; Saab 37; Saab37; AJ37,Aeroseum,on_display
+Saab,JA 37,D,37397,Viggen,,fixed_wing,monoplane,military,fighter,,Forward fuselage only; fitted with a wheelchair ramp for visitors.,Viggen; Saab 37; Saab37; JA37; JA37D; JA37-D,Aeroseum,on_display
+Saab,JA 37,DI,37401,Viggen,,fixed_wing,monoplane,military,fighter,,Forward fuselage only.,Viggen; Saab 37; Saab37; JA37; JA37DI; JA37-DI,Aeroseum,on_display
+Saab,JA 37,DI,37405,Viggen,,fixed_wing,monoplane,military,fighter,,Forward fuselage only.,Viggen; Saab 37; Saab37; JA37; JA37DI; JA37-DI,Aeroseum,on_display
+Saab,JA 37,DI,37427,Viggen,,fixed_wing,monoplane,military,fighter,,Forward fuselage only.,Viggen; Saab 37; Saab37; JA37; JA37DI; JA37-DI,Aeroseum,on_display
+Saab,AJSH 37,,37911,Viggen,,fixed_wing,monoplane,military,recon,,,Viggen; Saab 37; Saab37; AJSH37,Aeroseum,on_display
+Saab,JAS 39,,39-2,Gripen,,fixed_wing,monoplane,military,experimental,,Second Gripen prototype; handed to Flygvapenmuseum in 1999 after 461 flying hours and transferred on loan to Aeroseum on 16 November 2022.,Gripen; Saab 39; Saab39; JAS39,Aeroseum,on_display
+Saab,Sk 50,B,50036,Safir,,fixed_wing,monoplane,military,trainer,,,Safir; Saab 91; Saab91; Sk50; Sk50B; Sk50-B,Aeroseum,on_display
+Agusta-Bell,Hkp 3,C,03310,AB 204B,,rotary_wing,,military,search_rescue,,,AB 204B; AB 204; AB204; Bell 204; Bell204; HKP 3; Hkp3,Aeroseum,on_display
+Agusta-Bell,Hkp 3,B,03425,AB 204B,,rotary_wing,,military,search_rescue,,,AB 204B; AB 204; AB204; Bell 204; Bell204; HKP 3; Hkp3,Aeroseum,on_display
+Agusta-Bell,Hkp 6,B,06051,AB 206 JetRanger,,rotary_wing,,military,utility,,Designated a national reference example (riksexemplar).,AB 206 JetRanger; AB 206; AB206; Bell 206; JetRanger; HKP 6; Hkp6; c/n 8218,Aeroseum,on_display
+Agusta-Bell,Hkp 6,B,06052,AB 206 JetRanger,,rotary_wing,,military,utility,,,AB 206 JetRanger; AB 206; AB206; Bell 206; JetRanger; HKP 6; Hkp6; c/n 8219,Aeroseum,on_display
+Agusta-Bell,Hkp 6,,06554,AB 206 JetRanger,,rotary_wing,,military,utility,,,AB 206 JetRanger; AB 206; AB206; Bell 206; JetRanger; HKP 6; Hkp6,Aeroseum,on_display
+Boeing Vertol,Hkp 4,C,04069,Vertol 107,,rotary_wing,,military,search_rescue,,Displayed indoors in the underground hangar.,Vertol 107; Vertol107; KV-107; KV107; Sea Knight; HKP 4; Hkp4; c/n 4082,Aeroseum,on_display
+Boeing Vertol,Hkp 4,C,04070,Vertol 107,,rotary_wing,,military,search_rescue,,Kept in flyable condition and operated by Aeroseum. Civil registration SE-JLY.,Vertol 107; Vertol107; KV-107; KV107; Sea Knight; HKP 4; Hkp4; c/n 4083,Aeroseum,on_display
+Boeing Vertol,Hkp 4,C,04072,Vertol 107,,rotary_wing,,military,search_rescue,,Displayed indoors in the underground hangar.,Vertol 107; Vertol107; KV-107; KV107; Sea Knight; HKP 4; Hkp4; c/n 4093,Aeroseum,on_display
+Eurocopter,Hkp 10,B,10406,AS332 Super Puma,,rotary_wing,,military,search_rescue,,On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,AS332 Super Puma; AS332; AS 332; Super Puma; HKP 10; Hkp10; c/n 2284,Aeroseum,on_display
+Messerschmitt-Bölkow-Blohm,Hkp 9,A,09218,Bo 105,,rotary_wing,,military,other,,anti_tank,Bo 105; Bo105; MBB Bo 105; HKP 9; Hkp9,Aeroseum,on_display
+Messerschmitt-Bölkow-Blohm,Hkp 9,A,09221,Bo 105,,rotary_wing,,military,other,,anti_tank,Bo 105; Bo105; MBB Bo 105; HKP 9; Hkp9,Aeroseum,on_display
+Vertol,Hkp 1,,01007,Vertol 44A,,rotary_wing,,military,search_rescue,,,Vertol 44A; Vertol 44; Vertol44; V-44; H-21; Hkp1; c/n 608; V44; H21,Aeroseum,on_display
+Sud Aviation,Hkp 2,,02034,Alouette II,,rotary_wing,,military,utility,,,SE.3130; SE3130; Alouette II; Alouette 2; Hkp2; c/n 1175,Aeroseum,on_display
+Sud Aviation,Hkp 2,,02036,Alouette II,,rotary_wing,,military,utility,,,SE.3130; SE3130; Alouette II; Alouette 2; Hkp2; c/n 1246,Aeroseum,on_display
+Sud Aviation,Hkp 2,,02407,Alouette II,,rotary_wing,,military,utility,,Originally carried serial 02207. Held by the Swedish Air Force Historic Flight and currently stored at Aeroseum.,SE.3130; SE3130; Alouette II; Alouette 2; Hkp2; c/n 1291,Aeroseum,on_display
+Beechcraft,Model 50,,,Twin Bonanza,,fixed_wing,monoplane,civilian,utility,,Listed in the Swedish Wikipedia article on Aeroseum as part of the collection. Registration and serial not verified.,Twin Bonanza; Beech 50; Beech Model 50,Aeroseum,on_display
+Saab,MFI-15,,,Safari,,fixed_wing,monoplane,civilian,trainer,,Listed in the Swedish Wikipedia article on Aeroseum as part of the collection. Registration and serial not verified.,MFI15; Safari; Supporter,Aeroseum,on_display
+De Havilland,D.H.60,Moth Major,,Moth Major,,fixed_wing,biplane,civilian,private,,Listed in the Swedish Wikipedia article on Aeroseum as part of the collection. Registration and serial not verified.,DH.60; DH60; Moth; Moth Major,Aeroseum,on_display
+BHT,BHT-1,,,Beauty,,fixed_wing,monoplane,civilian,experimental,,Swedish homebuilt design listed in the Swedish Wikipedia article on Aeroseum. Registration not verified.,BHT1; BHT-1 Beauty; Beauty,Aeroseum,on_display
+Schneider,SG 38,,,Schulgleiter,,fixed_wing,monoplane,civilian,trainer,,Primary training glider listed in the Swedish Wikipedia article on Aeroseum as GV 38. Registration not verified.,SG38; Schulgleiter SG 38; GV 38; GV38,Aeroseum,on_display

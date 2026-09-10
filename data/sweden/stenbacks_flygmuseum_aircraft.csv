@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Saab,J 35,J,35612,Draken,,fixed_wing,monoplane,military,fighter,,,Draken; Saab 35; Saab35; J35; J35J; J35-J,Stenbäcks Flygmuseum,on_display
+Saab,AJS 37,,37027,Viggen,,fixed_wing,monoplane,military,ground_attack,,Previously on loan to Teknikens och sjofartens hus in Malmo; moved in 2019 and now stored at Stenbacks Flygmuseum.,Viggen; Saab 37; Saab37; AJS37,Stenbäcks Flygmuseum,in_storage
+Saab,SK 37,,37800,Viggen,,fixed_wing,monoplane,military,trainer,,,Viggen; Saab 37; Saab37; SK37,Stenbäcks Flygmuseum,on_display
+Saab,Sk 50,B,50003,Safir,,fixed_wing,monoplane,military,trainer,,,Safir; Saab 91; Saab91; Sk50; Sk50B; Sk50-B,Stenbäcks Flygmuseum,on_display

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Republic,F-84,G,A-603,Thunderjet,,fixed_wing,monoplane,military,ground_attack,,Gate guard at Fighter Wing Skrydstrup wearing code SK-P. USAF serial 51-10603.,F84; SK-P; 51-10603; 2442-1056B; F84G,Fighter Wing Skrydstrup portvagt -- Vojens,on_display
+General Dynamics,F-16,AM,E-177,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,Preserved F-16 at Fighter Wing Skrydstrup.,F16; 78-0177; 6F-4; F16AM,Fighter Wing Skrydstrup portvagt -- Vojens,on_display

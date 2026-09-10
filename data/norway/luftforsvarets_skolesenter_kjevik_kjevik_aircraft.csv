@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Republic,RF-84,F,17055,Thunderflash,,fixed_wing,monoplane,military,recon,,Preserved on the Kjevik training centre site wearing code AZ-H.,RF84; RF-84F; Thunderflash; AZ-H; RF84F,Luftforsvarets skolesenter Kjevik -- Kjevik,on_display
+Northrop,F-5,A,902,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,Held at the Kjevik training centre and also reported as preserved rather than purely instructional.,F5; F-5A; Freedom Fighter; c/n N.7065; F5A,Luftforsvarets skolesenter Kjevik -- Kjevik,on_display

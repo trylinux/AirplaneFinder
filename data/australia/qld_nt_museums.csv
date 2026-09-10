@@ -1,0 +1,27 @@
+name,city,state_province,country,postal_code,region,address,website,access_type,latitude,longitude
+Queensland Air Museum,Caloundra,QLD,Australia,4551,Oceania,7 Pathfinder Drive,https://www.qldair.museum/,public,-26.7980,153.1096
+Australian Army Flying Museum,Oakey,QLD,Australia,4401,Oceania,Museum Drive,https://www.armyflyingmuseum.com.au/,public,-27.4114,151.7353
+RAAF Base Amberley Aviation Heritage Centre,Amberley,QLD,Australia,4306,Oceania,"RAAF Base Amberley, South Amberley Road",https://www.airforce.gov.au/community/visit-and-learn/heritage-centres/raaf-base-amberley-heritage-centre,restricted,-27.6302,152.6994
+RAAF Townsville Aviation Heritage Centre,Garbutt,QLD,Australia,4814,Oceania,487 Ingham Road,https://www.airforce.gov.au/community/visit-and-learn/heritage-centres/raaf-base-townsville-heritage-centre,public,-19.2631,146.7667
+RAAF Base Townsville gate guardians,Garbutt,QLD,Australia,4814,Oceania,"RAAF Base Townsville, Ingham Road",,restricted,-19.2533,146.7650
+Lavarack Barracks 2 RAR Historical Collection,Townsville,QLD,Australia,4813,Oceania,Lavarack Barracks,,restricted,-19.3300,146.7951
+Australian Aviation Heritage Centre Queensland,Caboolture,QLD,Australia,4510,Oceania,"Hangar 104, 157 McNaught Road",http://www.aahcqld.org.au/,public,-27.0767,152.9867
+Far North Queensland Aviation Museum,Mareeba,QLD,Australia,4880,Oceania,"JRM Braes Road, Mareeba Airport West",https://www.fnqam.com.au/,appointment,-17.0692,145.4192
+Warbird Adventures Aviation Museum,Mareeba,QLD,Australia,4880,Oceania,"Vicary Road, Mareeba Airport",https://www.warbirdadventures.com.au/,public,-17.0692,145.4192
+Qantas Founders Museum,Longreach,QLD,Australia,4730,Oceania,Sir Hudson Fysh Drive,https://www.qfom.com.au/,public,-23.4399,144.2706
+Royal Flying Doctor Service Visitor Centre Longreach,Longreach,QLD,Australia,4730,Oceania,Sir Hudson Fysh Drive,https://www.flyingdoctor.org.au/,public,-23.4314,144.2781
+Hinkler Hall of Aviation,Bundaberg,QLD,Australia,4670,Oceania,"Bundaberg Botanic Gardens, Mount Perry Road",https://www.bundaberg.qld.gov.au/community/hinkler-hall-aviation,public,-24.8522,152.3361
+Queensland Museum,South Brisbane,QLD,Australia,4101,Oceania,"Corner Grey Street and Melbourne Street, South Bank",https://www.museum.qld.gov.au/,public,-27.4734,153.0184
+Sir Charles Kingsford Smith Memorial,Brisbane Airport,QLD,Australia,4008,Oceania,Airport Drive,https://www.bne.com.au/passenger/shop-dine-explore/explore/kingsford-smith-memorial,public,-27.3970,153.1110
+Meandarra ANZAC Memorial Museum,Meandarra,QLD,Australia,4422,Oceania,Sara Street,,public,-27.3228,149.8824
+Willowbank Canberra display,Willowbank,QLD,Australia,4306,Oceania,"Willowbank Caravan Park, Cunningham Highway",,public,-27.6820,152.6746
+Alex Campbell Park,Brymaroo,QLD,Australia,4403,Oceania,Brymaroo Kelvinhaugh Road,,public,-27.2281,151.6269
+Caloundra RSL,Caloundra,QLD,Australia,4551,Oceania,19 West Terrace,,public,-26.8030,153.1202
+Bribie Island Vietnam Veterans Memorial Park,Ningi,QLD,Australia,4511,Oceania,Caboolture Bribie Island Road,,public,-27.0660,153.1110
+Gallipoli Barracks Enoggera,Enoggera,QLD,Australia,4051,Oceania,"Gallipoli Barracks, Lloyd Street",,restricted,-27.4250,152.9833
+Army Aviation Training Centre Oakey,Oakey,QLD,Australia,4401,Oceania,"Army Aviation Training Centre, Oakey Army Airfield",,restricted,-27.4114,151.7353
+Calvert Field Model Aircraft Club,Calvert,QLD,Australia,4340,Oceania,Calvert,,restricted,-27.6675,152.5078
+Darwin Aviation Museum,Winnellie,NT,Australia,0820,Oceania,557 Stuart Highway,https://www.darwinaviationmuseum.com.au/,public,-12.4254,130.8957
+Central Australian Aviation Museum,Alice Springs,NT,Australia,0870,Oceania,"Memorial Avenue, Gillen",https://www.centralaustralianaviationmuseum.org.au/,public,-23.7026,133.8643
+RAAF Base Tindal,Tindal,NT,Australia,0853,Oceania,RAAF Base Tindal,,restricted,-14.5211,132.3778
+Robertson Barracks,Holtze,NT,Australia,0829,Oceania,"Robertson Barracks, Thorngate Road",,restricted,-12.4450,130.9744

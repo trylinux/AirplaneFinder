@@ -1,0 +1,24 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+De Havilland,J 28,B,28307,Vampire,,fixed_wing,monoplane,military,fighter,,,DH.100; DH100; D.H.100; Vampire; J28; c/n V.0578,Svedinos Bil- och Flygmuseum,on_display
+De Havilland,J 28,C-2,28444,Vampire,,fixed_wing,monoplane,military,fighter,,,DH.100; DH100; D.H.100; Vampire; J28; c/n V.15738,Svedinos Bil- och Flygmuseum,on_display
+Douglas,AD-4,W,SE-EBC,Skyraider,,fixed_wing,monoplane,civilian,utility,,Currently under restoration.,AD-4W; AD4W; Skyraider; A-1; A1; c/n 127960; AD4,Svedinos Bil- och Flygmuseum,under_restoration
+English Electric,Tp 52,,52001,Canberra,,fixed_wing,monoplane,military,electronic_warfare,,Ex-RAF WH711.,Canberra; Canberra B.2; Canberra B2; Tp52; c/n 71180,Svedinos Bil- och Flygmuseum,on_display
+Gloster,Meteor,T.7,SE-DCC,Meteor,,fixed_wing,monoplane,civilian,trainer,,,Meteor; Meteor T.7; Meteor T7; Meteor TT.20; c/n 1525,Svedinos Bil- och Flygmuseum,on_display
+Hawker,J 34,,34070,Hunter,,fixed_wing,monoplane,military,fighter,,,Hunter; Hunter Mk.50; Hunter Mk50; J34,Svedinos Bil- och Flygmuseum,on_display
+Klemm,Sk 15,A,5025,Kl 35,,fixed_wing,monoplane,military,trainer,,Ex SE-BGF.,Kl 35; Kl35; Sk15,Svedinos Bil- och Flygmuseum,on_display
+Noorduyn,Sk 16,A,16033,Harvard,,fixed_wing,monoplane,military,trainer,,,AT-16; AT16; Harvard; T-6; T6; Texan; Sk16; c/n 14-772,Svedinos Bil- och Flygmuseum,on_display
+Percival,Tp 83,,83007,Pembroke,,fixed_wing,monoplane,military,transport,,,P-66; P66; Pembroke; Tp83; c/n P66/51,Svedinos Bil- och Flygmuseum,on_display
+Saab,J 29,A,29203,Tunnan,,fixed_wing,monoplane,military,fighter,,,Tunnan; Saab 29; Saab29; J29; J29A; J29-A,Svedinos Bil- och Flygmuseum,on_display
+Saab,J 32,B,32559,Lansen,,fixed_wing,monoplane,military,fighter,,,Lansen; Saab 32; Saab32; J32; J32B; J32-B,Svedinos Bil- och Flygmuseum,on_display
+Saab,J 32,E,32569,Lansen,,fixed_wing,monoplane,military,fighter,,,Lansen; Saab 32; Saab32; J32; J32E; J32-E,Svedinos Bil- och Flygmuseum,on_display
+Saab,Saab 35,,35-1,Draken,,fixed_wing,monoplane,military,experimental,,The first Draken prototype.,Draken; Saab35,Svedinos Bil- och Flygmuseum,on_display
+Saab,J 35,F-2,35542,Draken,,fixed_wing,monoplane,military,fighter,,Forward fuselage only. On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Draken; Saab 35; Saab35; J35; J35F-2; J35-F-2,Svedinos Bil- och Flygmuseum,on_display
+Saab,J 35,F,35576,Draken,,fixed_wing,monoplane,military,fighter,,On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Draken; Saab 35; Saab35; J35; J35F; J35-F,Svedinos Bil- och Flygmuseum,on_display
+Saab,AJ 37,,37016,Viggen,,fixed_wing,monoplane,military,ground_attack,,Forward fuselage only; the serial number is uncertain.,Viggen; Saab 37; Saab37; AJ37,Svedinos Bil- och Flygmuseum,on_display
+Saab,JA 37,DI,37326,Viggen,,fixed_wing,monoplane,military,fighter,,,Viggen; Saab 37; Saab37; JA37; JA37DI; JA37-DI,Svedinos Bil- och Flygmuseum,on_display
+Saab,JA 37,DI,37386,Viggen,,fixed_wing,monoplane,military,fighter,,Forward fuselage only.,Viggen; Saab 37; Saab37; JA37; JA37DI; JA37-DI,Svedinos Bil- och Flygmuseum,on_display
+Saab,Saab 105,,105-2,Saab 105,,fixed_wing,monoplane,military,experimental,,Civil registered SE-XBZ. Second Saab 105 prototype.,Saab 105; Saab105,Svedinos Bil- och Flygmuseum,on_display
+Scottish Aviation,SK 61,A,61005,Bulldog,,fixed_wing,monoplane,military,trainer,,,B.125; B125; Bulldog; Sk 61; Sk61; SK61; c/n BH 100-105,Svedinos Bil- och Flygmuseum,on_display
+Agusta-Bell,Hkp 3,C,03139,AB 204B,,rotary_wing,,military,search_rescue,,,AB 204B; AB 204; AB204; Bell 204; Bell204; HKP 3; Hkp3,Svedinos Bil- och Flygmuseum,on_display
+Agusta-Bell,Hkp 3,B,03189,AB 204B,,rotary_wing,,military,search_rescue,,,AB 204B; AB 204; AB204; Bell 204; Bell204; HKP 3; Hkp3,Svedinos Bil- och Flygmuseum,on_display
+Hughes,Hkp 5,B,05215,Hughes 269,,rotary_wing,,military,trainer,,,Hughes 269; Schweizer 300; Schweizer 300C; HKP 5; Hkp5,Svedinos Bil- och Flygmuseum,on_display

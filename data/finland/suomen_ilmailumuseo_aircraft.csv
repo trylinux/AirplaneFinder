@@ -1,0 +1,64 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Thulin,Thulin Typ D,,F3,,,fixed_wing,monoplane,military,trainer,,Original airframe held as a wreck in the Finnish Aviation Museum store at Vantaa. The Finnish Aviation Museums index also lists it under the Air Force Museum exhibition category which is contradictory.,ThulinTypD; Thulin D; Typ D,Suomen Ilmailumuseo,in_storage
+IVL,IVL A.22,Hansa,IL-2,Hansa,,fixed_wing,biplane,military,recon,,Only surviving aircraft of its type in the world. Finnish licence built Hansa-Brandenburg W.33. Restored.,IVLA.22; I.V.L. A.22; A22; Hansa-Brandenburg W.33,Suomen Ilmailumuseo,on_display
+Adaridi,Adaridi AD 3,,,,,fixed_wing,monoplane,civilian,experimental,,Prototype light aircraft designed by Boris Adaridi. Restored. No registration was ever carried.,AdaridiAD3; AD 3; AD3,Suomen Ilmailumuseo,on_display
+Caudron,Caudron C.60,,CA-84,,,fixed_wing,biplane,military,trainer,,Restored.,CaudronC.60; Caudron C60; C.60; C60,Suomen Ilmailumuseo,on_display
+Gloster,Gamecock,II,GA-58,Gamecock,,fixed_wing,biplane,military,fighter,,Wreck on display.,GlosterGamecock; Gamecock II,Suomen Ilmailumuseo,on_display
+VL,VL Sääski,II,SÄ-122,Sääski,,fixed_wing,biplane,military,trainer,,Restored. The right side of the fuselage is left open to show the structure.,VLSääski; Saaski; SA-122; SA122,Suomen Ilmailumuseo,on_display
+Letov,Letov S.218,A,SM-153,Smolik,,fixed_wing,biplane,military,trainer,,Restored and largely rebuilt during restoration.,LetovS.218; S218; S.218A; Smolik,Suomen Ilmailumuseo,on_display
+VL,VL Tuisku,II,TU-178,Tuisku,,fixed_wing,biplane,military,trainer,,Only surviving example of the type. Restored.,VLTuisku; Tuisku II,Suomen Ilmailumuseo,on_display
+VL,VL Viima,II,OH-VII,Viima,,fixed_wing,biplane,civilian,trainer,,Former Air Force VI-21.,VLViima; Viima II; VI-21; VI21,Suomen Ilmailumuseo,on_display
+Messerschmitt,Bf 109,G-2,MT-208,,,fixed_wing,monoplane,military,fighter,,Front fuselage only. Conserved and displayed alongside a Bf 109 simulator.,Bf109; Me 109; Messerschmitt Bf109G-2,Suomen Ilmailumuseo,on_display
+Polikarpov,I-16,Type 15 UTI-4,UT-1,,,fixed_wing,monoplane,military,trainer,,Only surviving original UTI-4 two seat trainer version of the I-16. Restored.,I16; UTI-4; UTI4; Polikarpov UTI-4,Suomen Ilmailumuseo,on_display
+VL,VL Pyry,,PY-27,Pyry,,fixed_wing,monoplane,military,trainer,,On display in the main hall.,VLPyry; Pyry,Suomen Ilmailumuseo,on_display
+Douglas,DC-3,A,OH-VKB,,,fixed_wing,monoplane,civilian,commercial_transport,,Unrestored. Displayed indoors.,DC3; DC-3A; DC3A,Suomen Ilmailumuseo,on_display
+Douglas,DC-3,C,OH-LCD,,,fixed_wing,monoplane,civilian,commercial_transport,,Displayed outdoors in Aero Oy colours. Earlier identities DO-8 and 42-100846.,DC3; DC-3C; DO-8; 42-100846; DC3C; DO8,Suomen Ilmailumuseo,on_display
+de Havilland Canada,DHC-2,Beaver,OH-MVL,Beaver,,fixed_wing,monoplane,civilian,utility,,Former Finnish Border Guard Beaver.,DHC2; DHC-2 Beaver; Beaver,Suomen Ilmailumuseo,on_display
+de Havilland,DH.100,Vampire Mk.52,VA-2,Vampire,,fixed_wing,monoplane,military,fighter,,Restored.,DH100; D.H.100; Vampire FB.52; Vampire Mk 52,Suomen Ilmailumuseo,on_display
+de Havilland,DH.115,Vampire Mk.55,VT-9,Vampire Trainer,,fixed_wing,monoplane,military,trainer,,Restored.,DH115; D.H.115; Vampire T.55; Vampire Mk 55,Suomen Ilmailumuseo,on_display
+Mikoyan-Gurevich,MiG-21,bis,MG-135,Fishbed,,fixed_wing,monoplane,military,fighter,,Displayed in the museum outdoor area.,MiG21; MiG-21BIS; MiG21bis; Fishbed,Suomen Ilmailumuseo,on_display
+Saab,Saab 35,BS,DK-206,Draken,,fixed_wing,monoplane,military,fighter,,Ex Swedish J 35B rebuilt for Finland. Displayed indoors.,Saab35; J 35; J35; Draken; Saab 35BS,Suomen Ilmailumuseo,on_display
+Saab,Saab 35,A,,Draken,,fixed_wing,monoplane,military,fighter,,Nose section used as a flight simulator. Not a complete airframe and carries no Finnish serial.,Saab35; J 35; J35; Draken; Saab 35A,Suomen Ilmailumuseo,on_display
+Fieseler,Fi 156,K-1,OH-FSA,Storch,,fixed_wing,monoplane,military,utility,,Restored. Earlier identities OH-VSF and Finnish Air Force ST-112.,Fi156; Fieseler Fi156; Storch; ST-112; OH-VSF; ST112,Suomen Ilmailumuseo,on_display
+Bell,Bell 47,D-1,OH-HIA,,,rotary_wing,,civilian,utility,,Early Finnish civil helicopter.,Bell47; 47D-1; 47D1,Suomen Ilmailumuseo,on_display
+Mil,Mi-1,,HK-1,,,rotary_wing,,military,utility,,Licence built PZL SM-1/600 SZ.,Mi1; SM-1; SM1; PZL SM-1/600 SZ,Suomen Ilmailumuseo,on_display
+Mil,Mi-4,,HR-3,Hound,,rotary_wing,,military,utility,,On display indoors.,Mi4; Hound,Suomen Ilmailumuseo,on_display
+Kokkola,Ko-04,Super Upstart,OH-XYY,Super Upstart,,rotary_wing,,civilian,experimental,,Finnish built prototype light helicopter.,Ko04; KO-04; Kokkola KO-04,Suomen Ilmailumuseo,on_display
+Piper,PA-28R,180 Cherokee Arrow,OH-PJN,Cherokee Arrow,,fixed_wing,monoplane,civilian,private,,On display indoors.,PA28R; PA-28R-180; Cherokee Arrow,Suomen Ilmailumuseo,on_display
+Lockheed,Model 18,L-18-56 Lodestar,OH-VKU,Lodestar,Kultakuokka,fixed_wing,monoplane,civilian,commercial_transport,,Finnish nickname Kultakuokka. Earlier identities N9955F N9965F and F-ARTF.,Lodestar; L-18; L18; Model18; N9955F; F-ARTF,Suomen Ilmailumuseo,on_display
+Karhumäki,Karhu 48,B,OH-VKL,Karhu,Tavi,fixed_wing,monoplane,civilian,utility,,Prototype. Restored. Also carried OH-KUA.,Karhu48; Karhu 48B; OH-KUA; Tavi,Suomen Ilmailumuseo,on_display
+Convair,CV-440,Metropolitan,OH-LRB,Metropolitan,,fixed_wing,monoplane,civilian,commercial_transport,,Displayed in the museum outdoor area.,CV440; Convair 440; Convair 340; Metropolitan,Suomen Ilmailumuseo,on_display
+Beechcraft,Baron,A55,OH-BBA,Baron,,fixed_wing,monoplane,civilian,private,,Also carried OH-APU.,Baron A55; Beech 95-A55; OH-APU,Suomen Ilmailumuseo,on_display
+Blomqvist & Nyberg,Blomqvist-Nyberg,,,,,fixed_wing,biplane,civilian,experimental,,Early Finnish homebuilt. Restored. No registration carried.,BlomqvistNyberg; Blomqvist ja Nyberg,Suomen Ilmailumuseo,on_display
+Klemm,Klemm L 25,,OH-KLA,,,fixed_wing,monoplane,civilian,private,,Conserved. Earlier marks OH-ABA and K-SABA.,KlemmL25; Klemm Kl 25; L 25; OH-ABA; K-SABA,Suomen Ilmailumuseo,on_display
+Junkers,A 50,Junior,OH-ABB,Junior,,fixed_wing,monoplane,civilian,private,,On display indoors.,A50; Junkers A50; Junior,Suomen Ilmailumuseo,on_display
+PIK,PIK-10,,OH-PXA,Moottoribaby,,fixed_wing,monoplane,civilian,experimental,,Prototype powered version of the Grunau Baby. Also known as Paukkulauta.,PIK10; Moottoribaby; Paukkulauta,Suomen Ilmailumuseo,on_display
+Cessna,172,C Skyhawk,OH-COO,Skyhawk,,fixed_wing,monoplane,civilian,private,,Displayed in the museum outdoor area. Earlier marks SE-CYN and N8535X range.,Cessna172; 172C; Skyhawk; SE-CYN,Suomen Ilmailumuseo,on_display
+Mignet,HM-14,Pou du Ciel,OH-BFA,Pou du Ciel,,fixed_wing,monoplane,civilian,experimental,,The last Flying Flea built in Finland. Often described as a replica.,HM14; Pou du Ciel; Taivaankirppu; Flying Flea,Suomen Ilmailumuseo,on_display
+Eklund,TE-1,,OH-TEA,,,fixed_wing,monoplane,civilian,experimental,,Finnish designed light aircraft.,TE1; Eklund TE-1,Suomen Ilmailumuseo,on_display
+Heinonen,HK-1,,OH-HKA,Keltiäinen,,fixed_wing,monoplane,civilian,experimental,,Named Keltiäinen after its original yellow colour. Registered 18 October 1954 and deregistered 3 December 1981.,HK1; Heinonen HK-1; Keltiäinen,Suomen Ilmailumuseo,on_display
+Kassel,Kassel 12,A,13,,,fixed_wing,monoplane,civilian,other,,Glider stored at Vesivehmaa from the late 1940s and conserved by the Aviation Museum Society Tuesday Club in 2014 and 2015.,Kassel12; Kassel 12A,Suomen Ilmailumuseo,on_display
+JT,JT-6,,OH-520X,,,fixed_wing,monoplane,civilian,experimental,,Motor glider derived from the PIK-20E. Displayed with wings removed.,JT6; PIK-20E; PIK20E,Suomen Ilmailumuseo,on_display
+PIK,PIK-3,a,OH-YKA,Kanttikolmonen,,fixed_wing,monoplane,civilian,other,,Prototype glider. Also carried OH-PCA and P-162.,PIK3; PIK-3a; OH-PCA; P-162; PIK3a; P162,Suomen Ilmailumuseo,on_display
+LET,L-13,N-10 Blanik,,Blanik,,fixed_wing,monoplane,civilian,other,,Glider displayed wearing the marks OH-VLK which are not its true identity. Ex DOSAAF airframe.,L13; L-13N-10; Blanik; OH-VLK,Suomen Ilmailumuseo,on_display
+Schneider,Grunau Baby,IIb,OH-BAA,Grunau Baby,,fixed_wing,monoplane,civilian,other,,Also carried OH-JÄMI 5 and P-99.,GrunauBaby; Baby IIb; OH-JÄMI 5; P-99; P99,Suomen Ilmailumuseo,on_display
+Schneider,Grunau Baby,IIb,OH-BAR,Grunau Baby,,fixed_wing,monoplane,civilian,other,,Also carried OH-HIK 2 and P-114.,GrunauBaby; Baby IIb; OH-HIK 2; P-114; P114,Suomen Ilmailumuseo,on_display
+Schneider,Grunau 9,,G-36,,,fixed_wing,monoplane,civilian,other,,Primary glider. Also carried P-76.,Grunau9; P-76; P76,Suomen Ilmailumuseo,on_display
+WWS,WWS-1,Salamandra,OH-SAA,Salamandra,,fixed_wing,monoplane,civilian,other,,Polish training glider. Also carried OH-PIK 6 and P-124.,WWS1; W.W.S.1; Salamandra; P-124; P124,Suomen Ilmailumuseo,on_display
+DFS,SG 38,Schulgleiter,SG-1,Schulgleiter,,fixed_wing,monoplane,civilian,other,,Primary training glider.,SG38; DFS 108-14; Schulgleiter,Suomen Ilmailumuseo,on_display
+Harakka,Harakka,I,H-5,Harakka,,fixed_wing,monoplane,civilian,other,,Finnish primary glider.,HarakkaI; Harakka 1,Suomen Ilmailumuseo,on_display
+PIK,PIK-7,Harakka II,H-56,Harakka II,,fixed_wing,monoplane,civilian,other,,Finnish primary glider.,PIK7; PIK-7; Harakka II,Suomen Ilmailumuseo,on_display
+PIK,PIK-5,b,OH-PAR,,,fixed_wing,monoplane,civilian,other,,Also carried OH-152 and P-152.,PIK5; PIK-5b; P-152; PIK5b; P152,Suomen Ilmailumuseo,on_display
+SZD,SZD-10,bis Czapla,OH-KCC,Czapla,Vanerikotka,fixed_wing,monoplane,civilian,other,,Polish glider nicknamed Vanerikotka in Finland.,SZD10; SZD-10bis; Czapla; SZD10bis,Suomen Ilmailumuseo,on_display
+Fibera,KK-1,e Utu,OH-368,Utu,,fixed_wing,monoplane,civilian,other,,Finnish glass fibre glider. Also carried OH-LKI.,KK1; KK-1e; Utu; OH-LKI; KK1e,Suomen Ilmailumuseo,on_display
+Fibera,KK-1,e Utu,OH-355,Utu,,fixed_wing,monoplane,civilian,other,,Displayed without wings. Also carried OH-LKE.,KK1; KK-1e; Utu; OH-LKE; KK1e,Suomen Ilmailumuseo,on_display
+PIK,PIK-12,Gabriel,OH-KYC,Gabriel,,fixed_wing,monoplane,civilian,other,,Also carried OH-318.,PIK12; PIK-12; Gabriel; OH-318; OH318,Suomen Ilmailumuseo,on_display
+PIK,PIK-20,,OH-425X,,,fixed_wing,monoplane,civilian,other,,Prototype of the PIK-20 glider.,PIK20; PIK-20 prototype,Suomen Ilmailumuseo,on_display
+Mahe,Scout,,OH-U017,Scout,,fixed_wing,monoplane,civilian,private,,Microlight on display.,MaheScout; Mahe Scout,Suomen Ilmailumuseo,on_display
+Schleicher,Ka 6,E Rhönsegler,,Rhönsegler,,fixed_wing,monoplane,civilian,other,,Fuselage only. No registration recorded by the museum.,Ka6; Ka-6E; Rhönsegler; Rhonsegler; Ka6E,Suomen Ilmailumuseo,on_display
+PIK,PIK-3,c Kajava,OH-YKY,Kajava,,fixed_wing,monoplane,civilian,other,,Also carried OH-201.,PIK3; PIK-3c; Kajava; OH-201; PIK3c; OH201,Suomen Ilmailumuseo,on_display
+PIK,PIK-16,C Vasama,OH-571,Vasama,,fixed_wing,monoplane,civilian,other,,Also carried D-8016.,PIK16; PIK-16c; Vasama; D-8016; PIK16c,Suomen Ilmailumuseo,on_display
+VL,VL Tuisku,II,TU-169,Tuisku,,fixed_wing,biplane,military,trainer,,Wreck consisting of the steel tube fuselage frame.,VLTuisku; Tuisku II,Suomen Ilmailumuseo,in_storage
+VL,VL Myrsky,II,MY-5,Myrsky,,fixed_wing,monoplane,military,fighter,,Wreck consisting mainly of the steel tube fuselage frame.,VLMyrsky; Myrsky II,Suomen Ilmailumuseo,in_storage
+Zlin,Z-37,Čmelák,OH-CMB,Cmelak,,fixed_wing,monoplane,civilian,utility,,Restored agricultural aircraft held in store.,Z37; Zlin Z-37; LET Z-37; Cmelak,Suomen Ilmailumuseo,in_storage
+Kyrölä,Kyrölä,,,,,fixed_wing,monoplane,civilian,experimental,,Early Finnish homebuilt held in store. No registration recorded.,Kyrola,Suomen Ilmailumuseo,in_storage

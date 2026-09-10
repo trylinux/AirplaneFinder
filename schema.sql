@@ -112,6 +112,15 @@ CREATE TABLE IF NOT EXISTS aircraft (
     manufacturer    VARCHAR(100) NOT NULL,
     model           VARCHAR(50)  NOT NULL,         -- base designation, e.g. "AH-1", "C-130"
     variant         VARCHAR(50)  DEFAULT NULL,     -- e.g. "D", "J", "H"
+    -- Manufacturer's construction number / msn. The only genuinely unique
+    -- airframe identifier there is, but inconsistently transcribed between
+    -- sources, so it informs duplicate detection rather than constraining it.
+    construction_number VARCHAR(50) DEFAULT NULL,
+    -- ISO 3166-1 alpha-2 of the operator whose marks the airframe wears --
+    -- SAAF is ZA regardless of where it is displayed today. Two letters and
+    -- not a country name because this one is part of a key: "USA"/"United
+    -- States"/"US" as three spellings would defeat it. NULL = unknown.
+    operator_country CHAR(2)     DEFAULT NULL,
     -- Joins model + variant the way aviation writes it: "SR-71A" not
     -- "SR-71-A". Three cases -- see join_designation() in models.py, which
     -- is the readable statement of this rule and must stay in agreement.
@@ -139,11 +148,20 @@ CREATE TABLE IF NOT EXISTS aircraft (
     INDEX idx_model      (model),
     INDEX idx_variant    (variant),
     INDEX idx_full_desig (full_designation),
-    -- Prevent duplicate airframes: same model + same tail number is a dupe.
-    -- MySQL allows multiple NULLs through UNIQUE, so aircraft without a tail
-    -- number don't collide with each other (the API normalizes "" to NULL
-    -- before insert).
-    UNIQUE KEY uq_model_tail (model, tail_number),
+    INDEX idx_mfr_cn     (manufacturer, construction_number),
+    -- Prevent duplicate airframes. Serial numbers are NATIONAL, so the key
+    -- needs the full designation (F1CZ is not F1C-200; MiG-15UTI is not
+    -- MiG-15) and the operator's country (Saudi F-86F 709 is not some other
+    -- air force's F-86F 709). (model, tail_number) alone was false, and the
+    -- only escape it left the importer was to blank the tail -- which cost 99
+    -- of 1,072 Russian bort numbers. See migrate_airframe_identity.sql.
+    --
+    -- MySQL allows multiple NULLs through UNIQUE, so aircraft with an unknown
+    -- tail number or unknown operator don't collide with each other (the API
+    -- normalizes "" to NULL before insert). construction_number is
+    -- deliberately NOT here: a fourth mostly-NULL column would gut the
+    -- constraint. The application's duplicate finder uses it instead.
+    UNIQUE KEY uq_airframe (full_designation, tail_number, operator_country),
     FULLTEXT idx_ft_search (model_name, aircraft_name, model, variant, tail_number, manufacturer)
 ) ENGINE=InnoDB;
 

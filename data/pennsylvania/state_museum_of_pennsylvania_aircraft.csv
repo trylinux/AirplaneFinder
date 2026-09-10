@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Piper,J-3,C-65,,Cub,,fixed_wing,monoplane,civilian,private,,Restored Cub in Lock Haven Yellow; registration not published in any source found,J-3 Cub; Lock Haven Yellow; J3,The State Museum of Pennsylvania,on_display
+Knepper,KA-1,,,Crusader,,fixed_wing,monoplane,civilian,experimental,,Sole example built; donated to the State Museum by Ruth Knepper after her husband's death in 1989,KA-1 Crusader; KA1,The State Museum of Pennsylvania,on_display

@@ -1,0 +1,48 @@
+name,city,state_province,country,postal_code,region,address,website,access_type,latitude,longitude
+Suomen Ilmailumuseo,Vantaa,Uusimaa,Finland,01530,Europe,Karhumäentie 12,https://ilmailumuseo.fi/,public,60.30422,24.96087
+Suomen Ilmavoimamuseo,Jyväskylä,Keski-Suomi,Finland,41160,Europe,Tikkakoskentie 125,https://ilmavoimamuseo.fi/,public,62.38722,25.68194
+Hallinportti Ilmailumuseo,Jämsä,Keski-Suomi,Finland,35600,Europe,Haukilahdentie 3,https://www.ilmailumuseot.fi/museot/hallinportti-ilmailumuseo--hallinportti-aviation-museum,public,61.85722,24.82111
+Päijät-Hämeen Ilmailumuseo,Asikkala,Päijät-Häme,Finland,17130,Europe,Lentotie 89c,https://www.lahdenilmasilta.fi/museo/paijat-hameen-ilmailumuseo,public,61.1444196,25.6872502
+Karjalan Ilmailumuseo,Lappeenranta,Etelä-Karjala,Finland,53600,Europe,Lentokentäntie 37,https://www.karjalanilmailumuseo.fi/,public,61.04097,28.14083
+Karhulan Ilmailukerhon Lentomuseo,Kotka,Kymenlaakso,Finland,48720,Europe,Lentokentäntie 234,https://karhulanilmailukerho.fi/lentomuseo/,public,60.57500,26.89750
+Caravelle-näyttely Turun lentoasema,Turku,Varsinais-Suomi,Finland,20360,Europe,Lentoasemantie 150,https://www.caravelle-projekti.fi/,public,60.5112651,22.2738831
+Ilmatorjuntamuseo,Tuusula,Uusimaa,Finland,04300,Europe,Klaavolantie 2,https://ilmatorjuntamuseo.fi/,public,60.4009194,25.0363676
+Merikeskus Vellamo,Kotka,Kymenlaakso,Finland,48100,Europe,Tornatorintie 99,https://www.merikeskusvellamo.fi/,public,60.47278,26.94500
+Museokeskus Vapriikki,Tampere,Pirkanmaa,Finland,33100,Europe,Alaverstaanraitti 5,https://www.vapriikki.fi/,public,61.50306,23.76028
+Suomen Metsämuseo Lusto,Punkaharju,Etelä-Savo,Finland,58450,Europe,Lustontie 1,https://www.lusto.fi/,public,61.7990986,29.3220777
+Uudenkaupungin Automuseo,Uusikaupunki,Varsinais-Suomi,Finland,,Europe,,,public,60.8092067,21.4496776
+Kauhavan Lentokonepuisto,Kauhava,Etelä-Pohjanmaa,Finland,,Europe,Kauppatie 86,,public,63.1002033,23.0585657
+Kauppakeskus Tuulonen,Hämeenlinna,Kanta-Häme,Finland,14820,Europe,,https://www.tuulonen.fi,public,61.10602,24.86445
+Torpin Tykit,Inkoo,Uusimaa,Finland,,Europe,,,appointment,,
+Verkkokauppa.com Jätkäsaari,Helsinki,Uusimaa,Finland,00220,Europe,Tyynenmerenkatu 11,https://www.verkkokauppa.com/fi/myymalat/jatkasaari,public,60.1563521,24.920937
+PowerPark,Kauhava,Etelä-Pohjanmaa,Finland,,Europe,,,public,63.2298352,22.8569755
+Patria Halli,Jämsä,Keski-Suomi,Finland,35600,Europe,,,restricted,61.8623384,24.8180269
+Karjalan Lennosto,Kuopio,Pohjois-Savo,Finland,,Europe,Rissala,https://ilmavoimat.fi/,restricted,63.0056381,27.7995671
+Satakunnan Lennosto,Pirkkala,Pirkanmaa,Finland,,Europe,,https://ilmavoimat.fi/,restricted,61.4141119,23.6044558
+Lapin Lennosto,Rovaniemi,Lappi,Finland,,Europe,,https://ilmavoimat.fi/,restricted,66.5647648,25.8311615
+Ilmasotakoulu Tikkakoski,Jyväskylä,Keski-Suomi,Finland,41160,Europe,,https://ilmavoimat.fi/,restricted,62.3992586,25.6759251
+Utin Jääkärirykmentti,Kouvola,Kymenlaakso,Finland,,Europe,Utti,https://maavoimat.fi/,restricted,,
+Fouga Magister Monument -- Kauhava,Kauhava,Etelä-Pohjanmaa,Finland,,Europe,Lentosotakoulun perinneaukio,https://lentosotakoulunkilta.fi/fouga-magister-muistomerkki/,public,63.11341,23.04090
+Draken Monument -- Halli,Jämsä,Keski-Suomi,Finland,35600,Europe,Hallin taajaman keskusta,https://www.hallinseutu.net/,public,61.86131,24.82839
+Draken Monument -- Kittilä Airport,Kittilä,Lappi,Finland,,Europe,Kittilän lentoasema,https://www.finavia.fi/,public,67.70037,24.84983
+Draken Monument -- Turku Airport,Turku,Varsinais-Suomi,Finland,,Europe,Käärmekallio roundabout Urusvuori,https://www.finavia.fi/,public,60.50616,22.30088
+Draken Monument -- Pudasjärvi Airfield,Pudasjärvi,Pohjois-Pohjanmaa,Finland,,Europe,Pudasjärven lentokenttä,https://www.pudasjarvi.fi/,public,65.39845,26.96254
+Gnat Air Defence Monument -- Rovaniemi,Rovaniemi,Lappi,Finland,96900,Europe,Someronharju,https://www.rovaniemi.fi/,public,66.56772,25.80650
+Vampire Monument -- Koskue,Kurikka,Etelä-Pohjanmaa,Finland,61720,Europe,Koskuen kylä entisen Esso-huoltoaseman lähellä,https://www.kurikka.fi/,public,62.35984,22.84494
+WinNova Aviation Training Airframes -- Pori,Pori,Satakunta,Finland,,Europe,,https://www.winnova.fi/koulutustarjonta/lentokonetekniikka/,appointment,61.460778,21.7968878
+Tredu Aviation Campus Airframes -- Pirkkala,Pirkkala,Pirkanmaa,Finland,33960,Europe,Myötätuuli 71,https://www.tredu.fi/tredu/kampuksemme/pirkkala/,appointment,61.41773,23.60107
+Tredu Redigo Airframes -- Tampere,Tampere,Pirkanmaa,Finland,,Europe,,https://www.tredu.fi/,appointment,61.417785,23.6013024
+Savo Vocational College Airframes -- Kuopio,Kuopio,Pohjois-Savo,Finland,,Europe,,https://sakky.fi/,appointment,,
+Emergency Services College MiG-21 -- Kuopio,Kuopio,Pohjois-Savo,Finland,70821,Europe,Hulkontie 83,https://pelastusopisto.fi/,restricted,62.83625,27.65287
+Kouvola Region Vocational College Airframes -- Kouvola,Kouvola,Kymenlaakso,Finland,,Europe,,https://www.ksao.fi/,appointment,,
+Lapland Vocational College Redigo -- Rovaniemi,Rovaniemi,Lappi,Finland,,Europe,,https://www.redu.fi/,appointment,,
+VL Viima Vitrine -- Tampere,Tampere,Pirkanmaa,Finland,,Europe,Valmetinkatu and Lentovarikonkatu corner,https://www.tampere.fi/,public,61.47258,23.72584
+K-Citymarket Viri Replica -- Jyväskylä,Jyväskylä,Keski-Suomi,Finland,40320,Europe,Vasarakatu 29 Seppälänkangas,https://www.k-citymarket.fi/,public,62.26427,25.77489
+Crazyland Grumman Display -- Nivala,Nivala,Pohjois-Pohjanmaa,Finland,,Europe,Makkaratie 1311 Maliskylä,https://crazyland.fi/,public,63.94826,25.15659
+Jämi Areena Piper Display -- Jämijärvi,Jämijärvi,Satakunta,Finland,,Europe,Jämi Areena,https://jamiareena.fi/,public,61.77818,22.71637
+ABC Service Station Aztec -- Pirkkala,Pirkkala,Pirkanmaa,Finland,,Europe,ABC-huoltoaseman piha,https://www.abcasemat.fi/,public,,
+Mil Mi-2 Service Station Display -- Hyrynsalmi,Hyrynsalmi,Kainuu,Finland,,Europe,Huoltoaseman piha,https://hyrynsalmi.fi/,public,64.67452,28.50791
+Kamov Ka-26 Service Station Display -- Revonlahti,Siikajoki,Pohjois-Pohjanmaa,Finland,,Europe,Valtatie 8 varrella oleva huoltoasema,https://www.siikajoki.fi/,public,,
+ABC Rantinhovi Mi-8 Display -- Suomenniemi,Mikkeli,Etelä-Savo,Finland,,Europe,ABC Rantinhovi,https://www.abcasemat.fi/,public,,
+Antique Shop Rooftop Jet Ranger -- Tuusula,Tuusula,Uusimaa,Finland,,Europe,Antiikkiliikkeen katto,https://www.tuusula.fi/,public,,
+Kindergarten Pou du Ciel -- Kurikka,Kurikka,Etelä-Pohjanmaa,Finland,,Europe,Päiväkodin leikkipiha,https://www.kurikka.fi/,restricted,,

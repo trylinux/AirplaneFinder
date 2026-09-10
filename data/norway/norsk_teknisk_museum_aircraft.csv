@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,47,J,LN-ORD,Ranger,,rotary_wing,,civilian,utility,,Norwegian civil helicopter.,Bell47; Bell 47J; Ranger; c/n 1562,Norsk Teknisk Museum,on_display
+Raab-Flugzeugbau,Doppelraab,V,LN-GAT,Doppelraab,,fixed_wing,monoplane,civilian,other,,Two seat training glider of the Raab Doppelraab pattern designed by Fritz Raab.,Doppelraab; Doppelraab V; c/n 548,Norsk Teknisk Museum,on_display
+Sud Aviation,SE.210,III,LN-KLH,Caravelle,Finn Viking,fixed_wing,monoplane,civilian,commercial_transport,,First Caravelle delivered to SAS in April 1959. Forward fuselage displayed in the transport hall.,SE210; SE.210-III; Caravelle; Caravelle III; c/n 003; Finn Viking,Norsk Teknisk Museum,on_display
+de Havilland,Vampire,F.3,P42459,Vampire,,fixed_wing,monoplane,military,fighter,,Nose section only. Wears code PX-H.,Vampire F3; Vampire F.3; DH 100; c/n EEP42459; PX-H,Norsk Teknisk Museum,on_display

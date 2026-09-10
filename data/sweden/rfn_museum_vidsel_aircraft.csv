@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Saab,J 32,D,32615,Lansen,,fixed_wing,monoplane,military,fighter,,,Lansen; Saab 32; Saab32; J32; J32D; J32-D,RFN Museum Vidsel,on_display
+Saab,J 32,D,32616,Lansen,,fixed_wing,monoplane,military,fighter,,,Lansen; Saab 32; Saab32; J32; J32D; J32-D,RFN Museum Vidsel,on_display
+Saab,J 35,J,35604,Draken,,fixed_wing,monoplane,military,fighter,,Delivered 1970 as a J 35F-2 and rebuilt to J 35J. Used as a rescue training airframe at Ostersund after withdrawal then at Jamtlands flyg- och lottamuseum; at RFN museum since 2008. On loan from Flygvapenmuseum (Statens forsvarshistoriska museer).,Draken; Saab 35; Saab35; J35; J35J; J35-J,RFN Museum Vidsel,on_display
+Saab,JA 37,C,37378,Viggen,,fixed_wing,monoplane,military,fighter,,,Viggen; Saab 37; Saab37; JA37; JA37C; JA37-C,RFN Museum Vidsel,on_display
+Agusta-Bell,Hkp 3,,03156,AB 204B,,rotary_wing,,military,search_rescue,,,AB 204B; AB 204; AB204; Bell 204; Bell204; HKP 3; Hkp3,RFN Museum Vidsel,on_display
+Sud Aviation,Hkp 2,,02403,Alouette II,,rotary_wing,,military,utility,,Painted as 02203 / 02409; the true identity is 02403.,SE.3130; SE3130; Alouette II; Alouette 2; Hkp2,RFN Museum Vidsel,on_display

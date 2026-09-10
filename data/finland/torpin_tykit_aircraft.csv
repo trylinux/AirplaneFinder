@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,bis,MG-114,Fishbed,,fixed_wing,monoplane,military,fighter,,On display at the Torpin Tykit museum in Inkoo.,MiG21; MiG-21BIS; MiG21bis; Fishbed,Torpin Tykit,on_display
+Mil,Mi-8,T,CCCP-25267,Hip,,rotary_wing,,civilian,transport,1968,One of the oldest surviving Mi-8 helicopters. Former Aeroflot machine brought to Finland by road and displayed at Liedenpohja during the 1990s before moving to Inkoo.,Mi8; Mi-8T; Mi8T; Hip; RA-25267,Torpin Tykit,on_display
