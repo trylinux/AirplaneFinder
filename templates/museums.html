@@ -211,7 +211,7 @@ $(function() {
         $('.tab-panel').removeClass('active');
         $('#' + tab).addClass('active');
         if (tab === 'tab-discovery') {
-            if (!globe) globe = initMuseumGlobe({onSelect: openMuseum});
+            if (!globe) globe = initMuseumGlobe({onSelect: function(id) { window.location.href = '/museums/' + id; }});
             if (globe) globe.resize();
         }
     });
