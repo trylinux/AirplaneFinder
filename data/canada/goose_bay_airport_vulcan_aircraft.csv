@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Avro,Vulcan,B.2,XL361,Vulcan,,fixed_wing,monoplane,military,bomber,,"Preserved at Goose Bay Airport, where the aircraft was damaged and left behind after a 1981 deployment. One of very few Vulcans preserved outside the United Kingdom.",Vulcan;XL361;Avro 698,Goose Bay Airport Vulcan,on_display
+Douglas,DC-3,,,DC-3,,fixed_wing,monoplane,civilian,transport,,A DC-3 recorded at a second site on the Goose Bay airport property by Aerial Visuals. Serial and registration not recorded; condition and access unconfirmed.,C-47;C47;DC3;Dakota,Goose Bay Airport Vulcan,on_display

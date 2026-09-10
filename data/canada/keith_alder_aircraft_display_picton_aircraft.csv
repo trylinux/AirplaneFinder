@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Canadair,CT-133,Silver Star 3,133238,Silver Star,,fixed_wing,monoplane,military,trainer,,"Displayed in silver on a private front lawn at Picton, visible from the road.",CT133;T-33;T33;Silver Star;T-Bird;21238,"Keith Alder Aircraft Display, Picton",on_display
+Beechcraft,CT-134,Musketeer,134211,Musketeer,,fixed_wing,monoplane,military,trainer,,"Displayed on a private front lawn at Picton, visible from the road.",CT134;Musketeer;Beech 23;Model 23,"Keith Alder Aircraft Display, Picton",on_display

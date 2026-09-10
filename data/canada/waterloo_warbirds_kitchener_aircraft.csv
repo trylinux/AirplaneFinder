@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Canadair,CT-133,Silver Star 3,133577,Silver Star,,fixed_wing,monoplane,military,trainer,,Registered C-FRGA. Operated by Waterloo Warbirds at Region of Waterloo International Airport.,CT133;T-33;T33;Silver Star;T-Bird;C-FRGA,"Waterloo Warbirds, Kitchener",on_display
+Canadair,CT-133,Silver Star 3,133656,Silver Star,,fixed_wing,monoplane,military,trainer,,Registered C-FOHX.,CT133;T-33;T33;Silver Star;T-Bird;C-FOHX,"Waterloo Warbirds, Kitchener",on_display
+Aero,L-29,Delfin,,Delfin,,fixed_wing,monoplane,military,trainer,,Registered C-FCVN. Former East German air force.,L29;Delfin;Maya;C-FCVN,"Waterloo Warbirds, Kitchener",on_display
+de Havilland,DH-115,Vampire T.55,U-1213,Vampire,,fixed_wing,monoplane,military,trainer,,Registered VH-T55. Former Swiss Air Force U-1213. Painted as RCAF 17021 in No. 442 Squadron markings.,DH115;Vampire;T-55;T55;17021,"Waterloo Warbirds, Kitchener",on_display
+Noorduyn,Harvard,Mk IIB,3327,Harvard,,fixed_wing,monoplane,military,trainer,,Registered C-FMTW.,AT-6;AT6;T-6;T6;Harvard;C-FMTW,"Waterloo Warbirds, Kitchener",on_display
+Mikoyan-Gurevich,SBLim-2A,,017,SBLim-2A,,fixed_wing,monoplane,military,trainer,,Registered N35BG. Polish-built two-seat MiG-15UTI derivative.,MiG-15;MiG15;SBLim-2A;Midget;N35BG,"Waterloo Warbirds, Kitchener",on_display

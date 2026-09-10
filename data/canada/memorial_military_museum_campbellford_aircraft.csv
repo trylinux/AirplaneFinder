@@ -1,0 +1,18 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Avro Canada,CF-100,Mk 2,18106,Canuck,,fixed_wing,monoplane,military,fighter,,Outdoor display. Mark 2 airframe.,CF100; Canuck; Clunk; 18106,"Memorial Military Museum, Campbellford",on_display
+Canadair,CT-133,Silver Star 3,133303,Silver Star,,fixed_wing,monoplane,military,trainer,,Outdoor display in No. 414 Squadron markings.,CT133; T-33; T33; Silver Star; T-Bird; 21303,"Memorial Military Museum, Campbellford",on_display
+Canadair,CT-133,Silver Star 3,133497,Silver Star,,fixed_wing,monoplane,military,trainer,,Outdoor display.,CT133; T-33; T33; Silver Star; T-Bird; 21497,"Memorial Military Museum, Campbellford",on_display
+Canadair,CT-114,Tutor,114063,Tutor,,fixed_wing,monoplane,military,trainer,,Outdoor display.,CT114; CL-41; CL41; Tutor,"Memorial Military Museum, Campbellford",on_display
+Canadair,CT-114,Tutor,114180,Tutor,,fixed_wing,monoplane,military,trainer,,Outdoor display.,CT114; CL-41; CL41; Tutor,"Memorial Military Museum, Campbellford",on_display
+Canadair,CT-114,Tutor,114024,Tutor,,fixed_wing,monoplane,military,trainer,,Outdoor display.,CT114; CL-41; CL41; Tutor,"Memorial Military Museum, Campbellford",on_display
+Beechcraft,CT-134,Musketeer,134219,Musketeer,,fixed_wing,monoplane,military,trainer,,Outdoor display.,CT134; Musketeer; Beech 23; Model 23,"Memorial Military Museum, Campbellford",on_display
+Beechcraft,CT-134,Musketeer,134206,Musketeer,,fixed_wing,monoplane,military,trainer,,Outdoor display. Skaarup lists 134206 at Frankford rather than Campbellford; unresolved.,CT134; Musketeer; Beech 23; Model 23,"Memorial Military Museum, Campbellford",on_display
+Beechcraft,CT-134,Musketeer,134212,Musketeer,,fixed_wing,monoplane,military,trainer,,Outdoor display.,CT134; Musketeer; Beech 23; Model 23,"Memorial Military Museum, Campbellford",on_display
+Beechcraft,CT-134,Musketeer II,134220,Musketeer,,fixed_wing,monoplane,military,trainer,,Outdoor display. CT-134A Musketeer II.,CT134; Musketeer; Beech 23; Model 23,"Memorial Military Museum, Campbellford",on_display
+Beechcraft,CT-134,Musketeer,134223,Musketeer,,fixed_wing,monoplane,military,trainer,,Outdoor display.,CT134; Musketeer; Beech 23; Model 23,"Memorial Military Museum, Campbellford",on_display
+Canadair,CF-5,A,116730,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,Outdoor display.,CF5; CF-116; CF116; F-5; F5; Freedom Fighter; CF5A,"Memorial Military Museum, Campbellford",on_display
+Canadair,CF-5,A,116738,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,Outdoor display.,CF5; CF-116; CF116; F-5; F5; Freedom Fighter; CF5A,"Memorial Military Museum, Campbellford",on_display
+Canadian Vickers,Canso,A,9825,Canso,,fixed_wing,monoplane,military,recon,,Outdoor display. Canadian Vickers-built Canso A.,PBY; Catalina; PBV-1A; PBV1A; Canso; c/n CV-259,"Memorial Military Museum, Campbellford",on_display
+Cessna,Crane,IA,8841,Crane,,fixed_wing,monoplane,military,trainer,,Outdoor display. Canadian designation of the Cessna T-50 Bobcat.,T-50; T50; Bobcat; Crane,"Memorial Military Museum, Campbellford",on_display
+Beechcraft,Model 18,,,Beech 18,,fixed_wing,monoplane,civilian,utility,,Outdoor display. Serial not recorded by the sources consulted.,Beech 18; C-45; C45; Expeditor,"Memorial Military Museum, Campbellford",on_display
+Avro,Anson,Mk I,,Anson,,fixed_wing,monoplane,military,trainer,,Outdoor display. Serial not recorded by the sources consulted.,Anson; Avro 652A,"Memorial Military Museum, Campbellford",on_display

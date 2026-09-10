@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Taylorcraft,Auster,AOP.5,,,,fixed_wing,monoplane,military,recon,,"Air observation post aircraft in the Royal Canadian Artillery Museum collection, representing the artillery air observation role. Serial not established.",Auster;AOP5;Auster AOP.5,"Royal Canadian Artillery Museum, CFB Shilo",on_display
+Cessna,L-19,Bird Dog,,,,fixed_wing,monoplane,military,recon,,Reported in the Royal Canadian Artillery Museum collection by the Aerial Visuals locator without a serial. Needs confirmation on site.,L19;Bird Dog;O-1;O1;Cessna 305,"Royal Canadian Artillery Museum, CFB Shilo",on_display

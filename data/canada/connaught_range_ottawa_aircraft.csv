@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Canadair,CT-133,Silver Star 3,133606,,,fixed_wing,monoplane,military,trainer,,Displayed at the Connaught Range and Primary Training Centre at Shirley's Bay.,CT133;Silver Star;T-33;T33;T-Bird,"Connaught Range and Primary Training Centre Displays, Ottawa",on_display
+Bell,CH-136,Kiowa,136203,,,rotary_wing,,military,recon,,Displayed at the Connaught Range and Primary Training Centre at Shirley's Bay.,CH136;Kiowa;OH-58A;OH58A,"Connaught Range and Primary Training Centre Displays, Ottawa",on_display

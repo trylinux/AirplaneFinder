@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Sopwith,1 1/2 Strutter,,,1 1/2 Strutter,,fixed_wing,biplane,military,fighter,,Flying full-scale replica registered C-FSOP.,Strutter;Sopwith Strutter;C-FSOP,"Great War Flying Museum, Caledon",on_display
+Fokker,Dr.I,,,Dr.I,Fokker Dr.I replica 1,fixed_wing,triplane,military,fighter,,Flying full-scale replica. Two are operated by the museum; this is the first.,Dr1;Fokker Triplane;Dreidecker,"Great War Flying Museum, Caledon",on_display
+Fokker,Dr.I,,,Dr.I,Fokker Dr.I replica 2,fixed_wing,triplane,military,fighter,,Flying full-scale replica. Second of the two operated by the museum.,Dr1;Fokker Triplane;Dreidecker,"Great War Flying Museum, Caledon",on_display
+Royal Aircraft Factory,S.E.5,a,,S.E.5a,S.E.5a replica 1,fixed_wing,biplane,military,fighter,,Flying full-scale replica. First of two operated by the museum.,SE5;SE-5a;SE5a,"Great War Flying Museum, Caledon",on_display
+Royal Aircraft Factory,S.E.5,a,,S.E.5a,S.E.5a replica 2,fixed_wing,biplane,military,fighter,,Flying full-scale replica. Second of two operated by the museum.,SE5;SE-5a;SE5a,"Great War Flying Museum, Caledon",on_display
+Nieuport,28,,,Nieuport 28,,fixed_wing,biplane,military,fighter,,Flying full-scale replica.,Nieuport 28;N28,"Great War Flying Museum, Caledon",on_display

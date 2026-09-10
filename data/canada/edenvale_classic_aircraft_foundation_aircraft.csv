@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+de Havilland Canada,DH-82,C Tiger Moth,NM201,Tiger Moth,,fixed_wing,biplane,military,trainer,,Registered C-GSTP. RAF serial NM201.,DH82;Tiger Moth;C-GSTP,Edenvale Classic Aircraft Foundation,on_display
+Fairchild,PT-26,Cornell II,FV720,Cornell,,fixed_wing,monoplane,military,trainer,,Registered CF-CVT.,PT26;Cornell;M-62;M62;CF-CVT,Edenvale Classic Aircraft Foundation,on_display
+Bellanca,14-19,Cruisemaster,,Cruisemaster,,fixed_wing,monoplane,civilian,private,,Registered N4974A.,N4974A;Bellanca 14-19;Cruisemaster,Edenvale Classic Aircraft Foundation,on_display
+Fleet,80,Canuck,,Canuck,,fixed_wing,monoplane,civilian,private,,Registered C-FDPV. Aerial Visuals also lists this construction number with Vintage Wings of Canada; unresolved.,Fleet 80;Canuck;C-FDPV,Edenvale Classic Aircraft Foundation,on_display
+Stinson,105,Voyager,,Voyager,,fixed_wing,monoplane,civilian,private,,Under restoration from the parts of three aircraft.,Stinson 105;HW-75;HW75;Voyager,Edenvale Classic Aircraft Foundation,under_restoration

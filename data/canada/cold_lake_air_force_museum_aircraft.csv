@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Canadair,CF-116,A,116704,,,fixed_wing,monoplane,military,fighter,,"Outdoor air park aircraft displayed at ground level. Served with 433, 434 and 419 Squadrons and was repainted in CAF-era markings in 2007.",CF116; CF-5; CF5; Freedom Fighter; CF116A,Cold Lake Air Force Museum,on_display
+Canadair,CT-114,Tutor,114114,,,fixed_wing,monoplane,military,trainer,,"Flown by the Snowbirds as Snowbird 9 in 1977, Snowbird 10 in 1978 and Snowbird 3 from 1979 to 1986. Finished in CAF-era markings in the outdoor air park.",CT114; Tutor; CL-41; CL41; Snowbird 3,Cold Lake Air Force Museum,on_display
+Beechcraft,CT-134,Musketeer,134241,,,fixed_wing,monoplane,military,trainer,,Displayed at ground level in the museum air park.,CT134; Musketeer; Beech Musketeer,Cold Lake Air Force Museum,on_display

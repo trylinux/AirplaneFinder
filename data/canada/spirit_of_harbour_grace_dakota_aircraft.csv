@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,C-47,A,41-38720,Dakota,,fixed_wing,monoplane,civilian,transport,,"Pole-mounted at Harbour Grace as the Spirit of Harbour Grace, marking the town airstrip used by Amelia Earhart and other transatlantic pioneers. Registered CF-QBI and later C-FQBI; former Labrador Airways.",C47; DC-3; DC3; Dakota; CF-QBI; C47A,Spirit of Harbour Grace Dakota,on_display

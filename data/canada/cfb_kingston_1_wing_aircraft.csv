@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,CH-136,Kiowa,136257,,,rotary_wing,,military,recon,,Mounted on a pylon in front of 1 Wing Headquarters at CFB Kingston.,CH136; Kiowa; OH-58A; OH58A,CFB Kingston and 1 Wing Headquarters Displays,on_display
+Canadair,CF-116,A,116715,,,fixed_wing,monoplane,military,fighter,,"Camouflaged, mounted on a pylon near 1 Canadian Division Headquarters at CFB Kingston.",CF116; CF-5; CF5; Freedom Fighter; CF116A,CFB Kingston and 1 Wing Headquarters Displays,on_display

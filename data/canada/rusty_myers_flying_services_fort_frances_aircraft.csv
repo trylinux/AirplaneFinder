@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Beechcraft,C-45,F Expeditor,44-47428,Expeditor,,fixed_wing,monoplane,civilian,utility,,Displayed at the Fort Frances water aerodrome. Registered C-FRVL. Former USAAF 44-47428.,C45;Beech 18;Expeditor;C-FRVL,"Rusty Myers Flying Services, Fort Frances",on_display
+Beechcraft,Expeditor,Mk 3NM,,Expeditor,,fixed_wing,monoplane,civilian,utility,,Displayed at the Fort Frances water aerodrome. Registered CF-ZRI. Construction number A-0940.,C-45;C45;Beech 18;Expeditor;CF-ZRI,"Rusty Myers Flying Services, Fort Frances",on_display

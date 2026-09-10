@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,CH-136,Kiowa,136207,,,rotary_wing,,military,recon,,Mounted on a pylon at the Garrison Petawawa Military Museum and Canadian Airborne Forces Museum. Photographed in place on 11 October 2019.,CH136; Kiowa; OH-58A; OH58A,Garrison Petawawa Military Museums,on_display
+Douglas,CC-129,Dakota,12924,,,fixed_wing,monoplane,military,transport,,Dakota 3FP displayed in Second World War camouflage painted as KG455 at the Garrison Petawawa and Canadian Airborne Forces Museum.,CC129; Dakota; C-47; C47; DC-3; KG455; DC3,Garrison Petawawa Military Museums,on_display

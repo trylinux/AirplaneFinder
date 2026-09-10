@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+McDonnell,CF-101,F,101002,Voodoo,,fixed_wing,monoplane,military,fighter,,Ex-USAF 56-260. Served with No. 410 and No. 425 Squadrons at CFB Bagotville and flew with the 1972 Alouette Reds demonstration team. Became instructional airframe 874B in May 1987.,CF101; F-101; F101; Voodoo; 874B; 56-260; CF101F,Canadian War Museum,on_display
+Bell,CH-136,Kiowa,136274,Kiowa,,rotary_wing,,military,recon,,Displayed in the LeBreton Gallery.,CH136; OH-58; OH58; Kiowa; Bell 206,Canadian War Museum,on_display
+Junkers,Ju 88,A-1,,Ju 88,,fixed_wing,monoplane,military,bomber,,German wartime bomber held by the museum. Serial not recorded by the sources consulted.,Ju88; Ju-88,Canadian War Museum,on_display
+Nieuport,17,,,Nieuport 17,,fixed_wing,biplane,military,fighter,,Full-scale replica registered CF-DDK.,Nieuport 17; CF-DDK,Canadian War Museum,on_display

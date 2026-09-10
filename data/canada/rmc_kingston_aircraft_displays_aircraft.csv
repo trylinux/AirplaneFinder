@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Canadair,F-86,Mk 6,23221,,,fixed_wing,monoplane,military,fighter,,Mounted on a pylon in 441 Squadron RCAF colours. Previously displayed at Royal Roads Military College in Victoria before moving to RMC.,F86;Sabre;CL-13;CL13,"Royal Military College of Canada Aircraft Displays, Kingston",on_display
+Avro Canada,CF-100,Mk 5,18731,,,fixed_wing,monoplane,military,fighter,,Displayed near the Land Forces Technical Staff College at RMC; renumbered 100731 after unification.,CF100;Canuck;Clunk;100731,"Royal Military College of Canada Aircraft Displays, Kingston",on_display

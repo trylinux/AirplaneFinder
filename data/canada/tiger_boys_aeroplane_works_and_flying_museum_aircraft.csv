@@ -1,0 +1,15 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Taylorcraft,BC-12,D-85,,,,fixed_wing,monoplane,civilian,private,,Registered C-FFVP.,BC12; Taylorcraft BC-12D; C-FFVP,Tiger Boys Aeroplane Works and Flying Museum,on_display
+de Havilland,DH-82,A Tiger Moth,DE253,Tiger Moth,,fixed_wing,biplane,military,trainer,,Registered CF-WHC. Former RAF DE253.,DH82; Tiger Moth; CF-WHC,Tiger Boys Aeroplane Works and Flying Museum,on_display
+de Havilland,DH-60,G Gypsy Moth,,Gypsy Moth,,fixed_wing,biplane,civilian,private,,Registered NC373H.,DH60; Gypsy Moth; Moth,Tiger Boys Aeroplane Works and Flying Museum,on_display
+de Havilland Canada,DH-82,C Tiger Moth,4882,Tiger Moth,,fixed_wing,biplane,military,trainer,,Registered CF-DGD.,DH82; Tiger Moth; CF-DGD,Tiger Boys Aeroplane Works and Flying Museum,on_display
+de Havilland Canada,DH-82,C Tiger Moth,5884,Tiger Moth,,fixed_wing,biplane,military,trainer,,Registered CF-CTN.,DH82; Tiger Moth; CF-CTN,Tiger Boys Aeroplane Works and Flying Museum,on_display
+de Havilland Canada,DH-82,C Tiger Moth,5882,Tiger Moth,,fixed_wing,biplane,military,trainer,,Registered CF-TBS.,DH82; Tiger Moth; CF-TBS,Tiger Boys Aeroplane Works and Flying Museum,on_display
+Fleet,16B,Finch II,4488,Finch,,fixed_wing,biplane,military,trainer,,Registered CF-GER.,Fleet 16B; Finch; CF-GER,Tiger Boys Aeroplane Works and Flying Museum,on_display
+Fairchild,PT-26,A Cornell II,10687,Cornell,,fixed_wing,monoplane,military,trainer,,Registered CF-ECI. Under restoration.,PT26; Cornell; CF-ECI,Tiger Boys Aeroplane Works and Flying Museum,under_restoration
+Avro,Anson,Mk II,,Anson,,fixed_wing,monoplane,military,trainer,,Under restoration. Serial not recorded.,Anson; Avro 652A,Tiger Boys Aeroplane Works and Flying Museum,under_restoration
+Curtiss,JN-4,Canuck,,Canuck,,fixed_wing,biplane,military,trainer,,Under restoration. Serial not recorded.,JN4; Jenny; Canuck,Tiger Boys Aeroplane Works and Flying Museum,under_restoration
+Thruxton,Jackaroo,,,Jackaroo,,fixed_wing,biplane,civilian,private,,Registered C-FPHZ. Four-seat Tiger Moth conversion; one of two still flying.,Jackaroo; Thruxton Jackaroo; C-FPHZ,Tiger Boys Aeroplane Works and Flying Museum,on_display
+Aeronca,7AC,Champion,,Champ,,fixed_wing,monoplane,civilian,private,,Registered CF-OTD. Airworthy.,7AC; Champ; Champion; CF-OTD,Tiger Boys Aeroplane Works and Flying Museum,on_display
+Corben,Baby Ace,,,Baby Ace,,fixed_wing,monoplane,civilian,private,,Registered CF-RAC. Canada's oldest registered flying homebuilt.,Baby Ace; Corben Baby Ace; CF-RAC,Tiger Boys Aeroplane Works and Flying Museum,on_display
+Taylorcraft,E-2,Cub,,Cub,,fixed_wing,monoplane,civilian,private,,Registered CF-ANT.,E2; Taylor Cub; CF-ANT; E2Cub,Tiger Boys Aeroplane Works and Flying Museum,on_display

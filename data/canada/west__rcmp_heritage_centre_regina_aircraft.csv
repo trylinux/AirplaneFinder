@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Beechcraft,D18S,Expeditor Mk 3N,CF-MPH,,,fixed_wing,monoplane,civilian,transport,,RCMP Air Division Expeditor mounted on a pylon at the heritage centre.,Beech 18; Beech18; D18S; Expeditor; C-45; C45; CF-MPH,"RCMP Heritage Centre, Regina",on_display
+de Havilland Canada,DHC-3,Otter,CF-MPW,,,fixed_wing,monoplane,civilian,utility,,"Cockpit section only of the RCMP Otter CF-MPW, displayed inside the museum. The aircraft appears in RCMP photographs on river ice in March 1969.",DHC3; Otter; U-1; CC-123; CF-MPW; U1; CC123,"RCMP Heritage Centre, Regina",on_display

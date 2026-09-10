@@ -1,0 +1,26 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Hawker,Hurricane,Mk XII,5447,Hurricane,,fixed_wing,monoplane,military,fighter,,Canadian Car and Foundry built. Registered CF-TPM.,Hurricane;CF-TPM;CCF/46002,Vintage Wings of Canada,on_display
+North American,Mustang,Mk IV,9575,Mustang,,fixed_wing,monoplane,military,fighter,,Registered CF-VPM.,P-51;P51;Mustang;CF-VPM,Vintage Wings of Canada,on_display
+Supermarine,Spitfire,HF.IX,5519,Spitfire,,fixed_wing,monoplane,military,fighter,,Former South African Air Force 5519. Registered C-GYQQ.,Spitfire;C-GYQQ,Vintage Wings of Canada,on_display
+Supermarine,Spitfire,XVI,SL721,Spitfire,,fixed_wing,monoplane,military,fighter,,Registered OO-XVI.,Spitfire;SL721;OO-XVI,Vintage Wings of Canada,on_display
+Supermarine,Spitfire,XIVe,U14-6,Spitfire,,fixed_wing,monoplane,military,fighter,,Former Royal Thai Air Force U14-6.,Spitfire;U14-6,Vintage Wings of Canada,on_display
+Westland,Lysander,IIIA,2365,Lysander,,fixed_wing,monoplane,military,utility,,Registered C-FVZZ.,Lysander;C-FVZZ,Vintage Wings of Canada,on_display
+Curtiss,Kittyhawk,IV,A29-414,Kittyhawk,,fixed_wing,monoplane,military,fighter,,Former RAAF A29-414. Registered N740PN.,P-40;P40;Warhawk;Kittyhawk;N740PN,Vintage Wings of Canada,on_display
+Vought,F4U,-4B Corsair,97359,Corsair,,fixed_wing,monoplane,military,fighter,,Registered N240CF.,F4U;Corsair;N240CF,Vintage Wings of Canada,on_display
+Goodyear,FG-1,D Corsair,92106,Corsair,,fixed_wing,monoplane,military,fighter,,Registered N106FG.,FG1;F4U;Corsair;N106FG,Vintage Wings of Canada,on_display
+Fairey,Swordfish,IV,HS554,Swordfish,,fixed_wing,biplane,military,bomber,,Former Royal Canadian Navy HS554. Registered G-RNMZ.,Swordfish;Stringbag;G-RNMZ,Vintage Wings of Canada,on_display
+Hawker,Hurricane,Mk IV,KZ321,Hurricane,,fixed_wing,monoplane,military,fighter,,Registered OO-HUR.,Hurricane;KZ321;OO-HUR,Vintage Wings of Canada,on_display
+Canadair,F-86,Mk 5,23314,Sabre,,fixed_wing,monoplane,military,fighter,,Registered C-GSBR and flown as Hawk One in Golden Hawks colours. Reported sold; presence at Gatineau needs confirmation.,F86;Sabre;CL-13;CL13;C-GSBR;Hawk One,Vintage Wings of Canada,on_display
+Consolidated,Fleet,Finch II,4462,Finch,,fixed_wing,biplane,military,trainer,,Registered C-FPFF.,Fleet 16B;Finch;C-FPFF,Vintage Wings of Canada,on_display
+Fairchild,PT-26,Cornell II,10712,Cornell,,fixed_wing,monoplane,military,trainer,,Registered CF-YQR.,PT26;Cornell;M-62;M62;CF-YQR;FC213,Vintage Wings of Canada,on_display
+de Havilland,DH-83,Fox Moth,,Fox Moth,,fixed_wing,biplane,civilian,private,,Registered CF-YPM.,DH83;Fox Moth;CF-YPM,Vintage Wings of Canada,on_display
+Canadian Car and Foundry,Harvard,Mk 4,20451,Harvard,,fixed_wing,monoplane,military,trainer,,Registered CF-ROA.,AT-6;AT6;T-6;T6;Texan;Harvard;CCF-4-242;CF-ROA,Vintage Wings of Canada,on_display
+de Havilland Canada,DH-82,C Tiger Moth,8869,Tiger Moth,,fixed_wing,biplane,military,trainer,,Registered CF-DHQ.,DH82;Tiger Moth;CF-DHQ,Vintage Wings of Canada,on_display
+de Havilland Canada,DH-82,C Tiger Moth,4947,Tiger Moth,,fixed_wing,biplane,military,trainer,,Registered CF-ANN.,DH82;Tiger Moth;CF-ANN,Vintage Wings of Canada,on_display
+de Havilland Canada,DHC-1,B-2 Chipmunk,18025,Chipmunk,,fixed_wing,monoplane,military,trainer,,Registered CF-RRI.,DHC1;Chipmunk;CF-RRI,Vintage Wings of Canada,on_display
+de Havilland Canada,DHC-2,Beaver I,111,Beaver,,fixed_wing,monoplane,military,utility,,Former Kenya Air Force 111. Registered N542RP.,DHC2;Beaver;N542RP,Vintage Wings of Canada,on_display
+Beechcraft,UC-43,Traveler,43-10826,Traveler,,fixed_wing,biplane,military,utility,,Registered CF-GKY. Beech Staggerwing.,UC43;Staggerwing;Model 17;CF-GKY,Vintage Wings of Canada,on_display
+Boeing,PT-27,Kaydet,42-15736,Kaydet,,fixed_wing,biplane,military,trainer,,Registered C-GKUE. Stearman-built.,PT27;Stearman;Kaydet;C-GKUE,Vintage Wings of Canada,on_display
+Waco,ASO,,,Waco ASO,,fixed_wing,biplane,civilian,private,,Registered CF-BPM.,Waco;ASO;CF-BPM,Vintage Wings of Canada,on_display
+Aeronca,7AC,Champion,,Champ,,fixed_wing,monoplane,civilian,private,,Registered C-FBSY.,7AC;Champ;Champion;C-FBSY,Vintage Wings of Canada,on_display
+American Champion,8KCAB,Decathlon,,Decathlon,,fixed_wing,monoplane,civilian,private,,Registered N8505.,8KCAB;Decathlon;N8505,Vintage Wings of Canada,on_display

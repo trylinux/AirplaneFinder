@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Canadian Vickers,Canso,A,9830,Canso,,fixed_wing,monoplane,military,recon,,Registered N983CF. Displayed at Saint-Hubert Airport.,PBY;Catalina;PBV-1A;PBV1A;Canso;N983CF;c/n CV-264,"Musée de l'aérospatiale du Québec, Saint-Hubert",on_display
+Douglas,DC-3,,42-92451,DC-3,,fixed_wing,monoplane,civilian,commercial_transport,,Registered C-FDTD. Former USAAF C-47 42-92451.,C-47;C47;DC3;Dakota;C-FDTD,"Musée de l'aérospatiale du Québec, Saint-Hubert",on_display
+Vickers,Viscount,757,,Viscount,,fixed_wing,monoplane,civilian,commercial_transport,,Registered C-FTID. Former Trans-Canada Air Lines. Construction number 384.,Viscount;V757;C-FTID,"Musée de l'aérospatiale du Québec, Saint-Hubert",on_display
+Beechcraft,Expeditor,Mk 3T,HB109,Expeditor,,fixed_wing,monoplane,military,utility,,Registered CF-ZWY.,C-45;C45;Beech 18;Model 18;Expeditor;CF-ZWY,"Musée de l'aérospatiale du Québec, Saint-Hubert",on_display

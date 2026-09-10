@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+McDonnell,CF-101,F,101003,,,fixed_wing,monoplane,military,fighter,,"Ex-USAF 56-0262, a dual-control CF-101F flown by 416 Lynx Squadron from CFB Chatham. Preserved with the Labrador Military Museum at 5 Wing Goose Bay.",CF101; Voodoo; F-101B; F101B; 56-0262; CF-101F; CF101F,"Labrador Military Museum, 5 Wing Goose Bay",on_display

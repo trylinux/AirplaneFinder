@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Supermarine,Spitfire,Mk IX,,Spitfire,,fixed_wing,monoplane,military,fighter,,"Pole-mounted full-scale replica in Jackson Park, Windsor, beside a Hurricane replica. Not an original airframe.",Spitfire;Mk IX,"Jackson Park Spitfire and Hurricane, Windsor",on_display
+Hawker,Hurricane,Mk XII,,Hurricane,,fixed_wing,monoplane,military,fighter,,"Pole-mounted full-scale replica in Jackson Park, Windsor, beside a Spitfire replica. Not an original airframe.",Hurricane;Mk XII,"Jackson Park Spitfire and Hurricane, Windsor",on_display
