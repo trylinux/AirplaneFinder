@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Dornier,UH-1,D,72+56,Iroquois,,rotary_wing,,military,utility,,"Licence-built Dornier UH-1D, c/n 8376, gate guardian at Fliegerhorst Diepholz.",UH1D; UH-1D; Huey; Iroquois; UH1,Fliegerhorst Diepholz Torwächter,on_display
+Sikorsky,CH-53,G,84+36,Stallion,,rotary_wing,,military,transport,,"Ex-Heeresflieger CH-53G, c/n V034, held at Diepholz as a ground instructional airframe.",CH53G; CH-53G; Stallion; Sea Stallion; CH53,Fliegerhorst Diepholz Torwächter,on_display
+MBB,Bo 105,P,86+46,,,rotary_wing,,military,utility,,"MBB Bo 105 P, c/n 6046, held at Diepholz as a ground instructional airframe.",Bo105P; Bo 105P; BO105,Fliegerhorst Diepholz Torwächter,on_display

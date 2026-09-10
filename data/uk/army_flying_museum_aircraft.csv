@@ -1,0 +1,33 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Cessna,L-19,A,51-11989,Bird Dog,,fixed_wing,monoplane,military,recon,,"Ex US Army Cessna L-19A Bird Dog, later N33600. On display inside; confirmed Jul 2024.",L19; L19A; O-1; O1; 111989; N33600; O-1A; O1A,Army Flying Museum,on_display
+Bell,AH-1,F,70-15990,Cobra,,rotary_wing,,military,ground_attack,,Ex US Army AH-1F Cobra. On display inside; confirmed Jul 2024.,AH1F; HueyCobra; AH1,Army Flying Museum,on_display
+Bell,UH-1,H,AE-409,Iroquois,,rotary_wing,,military,utility,,"Ex Argentine Army UH-1H captured or acquired after the 1982 Falklands conflict, coded 656; ex US Army. On display inside; confirmed Jul 2024.",UH1H; Huey; 656; UH1,Army Flying Museum,on_display
+General Aircraft,Hotspur,Mk II,HH379,,,fixed_wing,monoplane,military,transport,,"General Aircraft Hotspur II training glider, a composite airframe wearing the serial HH268. Confirmed on display Jul 2024.",HH268; BAPC-261; BAPC261,Army Flying Museum,on_display
+Airspeed,Horsa,Mk I,LH208,,,fixed_wing,monoplane,military,transport,,Airspeed Horsa I assault glider displayed wearing the serial KJ351. Confirmed on display Jul 2024.,AS.51; AS51; KJ351,Army Flying Museum,on_display
+Sopwith,Pup,,N5195,,,fixed_wing,biplane,military,fighter,,"Sopwith Pup, civil registration G-ABOX, representing the Royal Flying Corps origins of Army aviation. Confirmed on display Jul 2024.",G-ABOX; GABOX,Army Flying Museum,on_display
+Auster,AOP,Mk 5,TJ569,,,fixed_wing,monoplane,military,recon,,"Auster AOP.5, civil registration G-AKOW. Confirmed on display Jul 2024.",Auster 5; G-AKOW; GAKOW,Army Flying Museum,on_display
+General Aircraft,Hamilcar,Mk I,TK777,,,fixed_wing,monoplane,military,transport,,Forward fuselage of a General Aircraft Hamilcar I heavy assault glider. Confirmed on display Jul 2024.,,Army Flying Museum,on_display
+Waco,CG-4,A,,Hadrian,,fixed_wing,monoplane,military,transport,,Waco CG-4A Hadrian assault glider displayed wearing the false serial 243809; the airframe's true identity is not recorded. Confirmed on display Jul 2024.,CG4; CG4A; Hadrian; 243809; BAPC-185; Waco Hadrian; BAPC185,Army Flying Museum,on_display
+de Havilland Canada,Chipmunk,T.10,WG432,,,fixed_wing,monoplane,military,trainer,,Chipmunk T.10 coded L. Confirmed on display Jul 2024.,DHC-1; DHC1,Army Flying Museum,on_display
+Auster,AOP,Mk 6,WJ358,,,fixed_wing,monoplane,military,recon,,Auster AOP.6. Confirmed on display Jul 2024.,Auster 6,Army Flying Museum,on_display
+Auster,AOP,Mk 9,WZ721,,,fixed_wing,monoplane,military,recon,,Auster AOP.9. Confirmed on display Jul 2024.,Auster 9,Army Flying Museum,on_display
+Auster,AOP,Mk 9,WZ724,,,fixed_wing,monoplane,military,recon,,Auster AOP.9 under long-term restoration and not on public display; last reported Jun 2017.,Auster 9,Army Flying Museum,under_restoration
+Bristol,Sycamore,HR.14,XG502,,,rotary_wing,,military,search_rescue,,Bristol Sycamore HR.14. Confirmed on display inside Jul 2024.,,Army Flying Museum,on_display
+ML Aviation,Utility,Mk 1,XK776,,,fixed_wing,monoplane,military,experimental,,"ML Aviation Utility Mk 1 inflatable-wing powered aircraft, an experimental Army air-portable type. Confirmed on display Jul 2024.",ML Utility; Inflatable Wing,Army Flying Museum,on_display
+Saro,Skeeter,AOP.12,XL813,,,rotary_wing,,military,recon,,Saro Skeeter AOP.12. Confirmed on display Jul 2024.,Saunders-Roe Skeeter; SaundersRoe Skeeter,Army Flying Museum,on_display
+Saro,Skeeter,AOP.12,XL814,,,rotary_wing,,military,recon,,Saro Skeeter AOP.12 held in store and not on public display; last reported Mar 2018.,Saunders-Roe Skeeter; SaundersRoe Skeeter,Army Flying Museum,in_storage
+de Havilland Canada,Beaver,AL.1,XP821,,,fixed_wing,monoplane,military,utility,,DHC Beaver AL.1. Confirmed on display Jul 2024.,DHC-2; DHC2,Army Flying Museum,on_display
+de Havilland Canada,Beaver,AL.1,XP822,,,fixed_wing,monoplane,military,utility,,DHC Beaver AL.1 displayed at the museum entrance. Confirmed Jul 2024.,DHC-2; DHC2,Army Flying Museum,on_display
+Westland,Scout,AH.1,XP847,,,rotary_wing,,military,utility,,Westland Scout AH.1. Confirmed on display Jul 2024.,,Army Flying Museum,on_display
+Westland,Scout,AH.1,XP910,,,rotary_wing,,military,utility,,"Westland Scout AH.1 coded D, under restoration; last reported Oct 2025.",,Army Flying Museum,under_restoration
+Sud Aviation,Alouette,AH.2,XR232,,,rotary_wing,,military,utility,,Sud Aviation Alouette AH.2. Confirmed on display Jul 2024.,SE.3130; SE3130,Army Flying Museum,on_display
+Agusta-Bell,Sioux,AH.1,XT108,,,rotary_wing,,military,recon,,Agusta-Bell Sioux AH.1 coded U. Confirmed on display Jul 2024.,AB.47; AB47; Bell 47,Army Flying Museum,on_display
+Westland,Scout,AH.1,XV127,,,rotary_wing,,military,utility,,Westland Scout AH.1. Confirmed on display Jul 2024.,,Army Flying Museum,on_display
+Westland,Lynx,AH.1,XX153,,,rotary_wing,,military,utility,,"Westland Lynx AH.1, the first Lynx delivered to the Army Air Corps. Confirmed on display Jul 2024.",,Army Flying Museum,on_display
+Westland,Lynx,AH.7,XZ675,,,rotary_wing,,military,utility,,Westland Lynx AH.7 coded H. Confirmed on display Jul 2024.,,Army Flying Museum,on_display
+Northrop,Shelduck,D.1,XZ795,MQM-36,,fixed_wing,monoplane,military,drone,,Northrop Shelduck D.1 target drone held in store off site; not visible to visitors. Last reported Mar 2018.,Shelduck; MQM-36; MQM36,Army Flying Museum,in_storage
+Short,MATS-B,Mk 1,ZA209,,,fixed_wing,monoplane,military,drone,,Short MATS-B target drone held in store; last reported Oct 2021.,MATSB,Army Flying Museum,in_storage
+Aerospatiale,Gazelle,AH.1,ZA737,,,rotary_wing,,military,recon,,Aerospatiale Gazelle AH.1. Confirmed on display Jul 2024.,SA.341; SA341,Army Flying Museum,on_display
+Agusta,A.109,A,ZE410,Hirundo,,rotary_wing,,military,utility,,Agusta A.109A captured from Argentine forces in the Falklands and flown by the Army Air Corps; displayed in light grey and black. Confirmed Jul 2024.,A109; A109A; AE-331; AE331,Army Flying Museum,on_display
+Britten-Norman,Islander,AL.1,ZG993,,,fixed_wing,monoplane,military,utility,,Britten-Norman Islander AL.1. Confirmed on display Jul 2024.,BN-2; BN2,Army Flying Museum,on_display
+Westland,Apache,AH.1,ZJ224,,,rotary_wing,,military,ground_attack,,Westland Apache AH.1 (WAH-64D). Confirmed on display Jul 2024.,AH-64D; AH64D; WAH-64; WAH64,Army Flying Museum,on_display

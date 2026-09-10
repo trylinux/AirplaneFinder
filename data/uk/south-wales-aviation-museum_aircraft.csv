@@ -1,0 +1,78 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Westland,Lynx,SH-14D,272,,,rotary_wing,,military,utility,,Ex-Royal Netherlands Navy Lynx; displayed inside.,Lynx SH-14D; SH14D; WG-13; WG13,South Wales Aviation Museum,on_display
+Mikoyan-Gurevich,MiG-29,,2960525887,,,fixed_wing,monoplane,military,fighter,,"Cockpit section only of an ex-Soviet Air Force MiG-29, coded 526 and previously '26 red'.",MiG-29; MiG29; Fulcrum; MiG-29A; MiG29A,South Wales Aviation Museum,on_display
+Lockheed,T-33,A,54439,,,fixed_wing,monoplane,military,trainer,,"Ex-French Air Force and USAF Shooting Star, coded WI; also quoted as USAF 55-4439. Displayed outdoors.",T-33A; T33A; T33; Shooting Star; 55-4439,South Wales Aviation Museum,on_display
+Aero Spacelines,Super Guppy,Turbine,F-BTGV,,,fixed_wing,monoplane,civilian,freighter,,"Nose section only of the outsize cargo transport, converted from a Boeing C-97/Stratocruiser airframe.",Super Guppy; B-377-SGT; Guppy; KC-97; KC97,South Wales Aviation Museum,on_display
+Scottish Aviation,Bulldog,Mk.102,FM1224,,,fixed_wing,monoplane,military,trainer,,Ex-Royal Malaysian Air Force Bulldog; stored outside.,Bulldog 102; Bulldog T1; SA.120,South Wales Aviation Museum,in_storage
+Beagle,Terrier,1,VX113,,,fixed_wing,monoplane,civilian,private,,"Civil-registered G-ARNO, coded 36; rebuilt from an Auster AOP.6.",Terrier 1; Auster; G-ARNO,South Wales Aviation Museum,on_display
+Gloster,Meteor,T.7,WF784,,,fixed_wing,monoplane,military,trainer,,"Ex-maintenance serial 7895M; displayed outdoors. Previously at the Jet Age Museum, Gloucestershire.",Meteor T7; Meteor; 7895M,South Wales Aviation Museum,on_display
+Vickers,Varsity,T.1,WJ945,,,fixed_wing,monoplane,military,trainer,,Civil-registered G-BEDV. Moved here from the Cornwall Aviation Heritage Centre after that museum lost its lease.,Varsity T1; Varsity; G-BEDV,South Wales Aviation Museum,in_storage
+English Electric,Canberra,T.4,WJ992,,,fixed_wing,monoplane,military,trainer,,"Cockpit section only, in Royal Aircraft Establishment markings; stored outside.",Canberra T4; Canberra; T.4,South Wales Aviation Museum,in_storage
+English Electric,Canberra,TT.18,WK126,,,fixed_wing,monoplane,military,drone,,"Ex-US registration N2138J, coded 843; stored outside. Previously on loan to the Jet Age Museum.",Canberra TT18; Canberra B2; N2138J,South Wales Aviation Museum,in_storage
+English Electric,Canberra,B.2,WK128,,,fixed_wing,monoplane,military,bomber,,Nose section only; displayed inside.,Canberra B2; Canberra; B.2,South Wales Aviation Museum,on_display
+Supermarine,Swift,FR.5,WK277,,,fixed_wing,monoplane,military,recon,,"Ex-maintenance serial 7719M, coded N, in 2 Squadron markings; in store.",Swift FR5; Type 549; 7719M,South Wales Aviation Museum,in_storage
+Gloster,Meteor,T.7,WL405,,,fixed_wing,monoplane,military,trainer,,In Royal Aircraft Establishment markings; in store.,Meteor T7; Meteor; T.7,South Wales Aviation Museum,in_storage
+Percival,Sea Prince,T.1,WP321,,,fixed_wing,monoplane,military,trainer,,Civil-registered G-BRFC; displayed inside.,Sea Prince T1; P.57; G-BRFC,South Wales Aviation Museum,on_display
+Avro,Shackleton,MR.3,WR974,,,fixed_wing,monoplane,military,recon,,"Ex-maintenance serial 8117M, coded K; displayed outdoors.",Shackleton MR3; Shackleton; 8117M,South Wales Aviation Museum,on_display
+Hawker,Hunter,T.8C,WV322,,,fixed_wing,monoplane,military,trainer,,"Ex-maintenance serial 9096M, civil-registered G-BZSE, coded LM.",Hunter T8C; Hunter T7; G-BZSE,South Wales Aviation Museum,on_display
+de Havilland Canada,Chipmunk,T.10,WZ869,,,fixed_wing,monoplane,military,trainer,,"Ground instructional (PAX) airframe 8019M, coded 6.",DHC-1; DHC1; Chipmunk T10; 8019M,South Wales Aviation Museum,on_display
+de Havilland,Vampire,T.11,XE956,,,fixed_wing,monoplane,military,trainer,,Civil-registered G-OBLN; wears the false serial 'XD601' in 614 Squadron markings.,Vampire T11; DH.115; XD601; G-OBLN,South Wales Aviation Museum,on_display
+Percival,Provost,T.1,XF690,,,fixed_wing,monoplane,military,trainer,,"Ex-maintenance serial 8041M, civil-registered G-MOOS.",Provost T1; P.56; G-MOOS,South Wales Aviation Museum,on_display
+Handley Page,Victor,B.2,XH670,,,fixed_wing,monoplane,military,bomber,,Nose section only; displayed outdoors.,Victor B2; Victor; HP.80,South Wales Aviation Museum,on_display
+de Havilland,Sea Devon,C.20,XK895,,,fixed_wing,monoplane,military,transport,,Civil-registered G-SDEV; displayed inside.,Sea Devon C20; DH.104; Dove; G-SDEV,South Wales Aviation Museum,on_display
+Fairey,Gannet,AEW.3,XL500,,,fixed_wing,monoplane,military,recon,,"Civil-registered G-KAEW, coded CU; former naval instructional airframe A2701.",Gannet AEW3; Gannet; G-KAEW,South Wales Aviation Museum,on_display
+Hawker,Hunter,T.7,XL573,,,fixed_wing,monoplane,military,trainer,,Civil-registered G-BVGH; displayed inside.,Hunter T7; P.1067; G-BVGH,South Wales Aviation Museum,on_display
+Percival,Pembroke,C.1,XL929,,,fixed_wing,monoplane,military,transport,,Civil-registered G-BNPU; stored outside.,Pembroke C1; P.66; G-BNPU,South Wales Aviation Museum,in_storage
+de Havilland,Comet,Srs.1XB,XM823,,,fixed_wing,monoplane,military,transport,,"Fuselage of the world's first jet airliner type, civil-registered G-APAS; ex-maintenance serial 8351M. Transferred from the RAF Museum and delivered to St Athan in September 2025; stored outside pending display.",Comet 1XB; DH.106; G-APAS; 8351M,South Wales Aviation Museum,in_storage
+Westland,Wessex,HAS.3,XM833,,,rotary_wing,,military,utility,,Displayed inside.,Wessex HAS3; S-58; S58,South Wales Aviation Museum,on_display
+Hunting,Jet Provost,T.3A,XN584,,,fixed_wing,monoplane,military,trainer,,"Ex-maintenance serial 9014M, coded E, in Central Flying School markings; displayed outdoors.",Jet Provost T3A; JP; 9014M,South Wales Aviation Museum,on_display
+Scottish Aviation,Twin Pioneer,CC.2,XP295,,,fixed_wing,monoplane,military,transport,,"Fuselage only, civil-registered G-AZHJ; stored outside.",Twin Pioneer; Twin Pin; G-AZHJ,South Wales Aviation Museum,in_storage
+Folland,Gnat,T.1,XP534,,,fixed_wing,monoplane,military,trainer,,"Ex-maintenance serial 8620M, civil-registered G-BVPP; wears the false serial 'XR993' in Red Arrows markings. Stored outside.",Gnat T1; Gnat; XR993; G-BVPP,South Wales Aviation Museum,in_storage
+Hunting,Jet Provost,T.4,XP672,,,fixed_wing,monoplane,military,trainer,,"Ex-maintenance serial 8458M, civil-registered G-RAFI, coded 03, in 79 Squadron markings.",Jet Provost T4; JP; G-RAFI,South Wales Aviation Museum,on_display
+Westland,Wessex,HU.5,XT771,,,rotary_wing,,military,transport,,Coded PO-620; former naval instructional airframes A2761 and A2673.,Wessex HU5; S-58; A2673; S58,South Wales Aviation Museum,on_display
+Vickers,VC10,C.1K,XV104,,,fixed_wing,monoplane,military,tanker,,Nose section only; in store.,VC10 C1K; VC-10; VC10,South Wales Aviation Museum,in_storage
+Vickers,VC10,C.1K,XV109,,,fixed_wing,monoplane,military,tanker,,"Cockpit section only, named 'Arthur Scarf VC'; in store.",VC10 C1K; VC-10; VC10,South Wales Aviation Museum,in_storage
+Hawker Siddeley,Nimrod,MR.2,XV254,,,fixed_wing,monoplane,military,recon,,"Forward fuselage only, coded 54; stored outside.",Nimrod MR2; HS.801; Comet,South Wales Aviation Museum,in_storage
+McDonnell Douglas,Phantom,FGR.2,XV499,,,fixed_wing,monoplane,military,fighter,,"Nose section only, in 23 Squadron markings; in store.",Phantom FGR2; F-4M; F4M; F4; F-4FGR.2; F4FGR.2,South Wales Aviation Museum,in_storage
+McDonnell Douglas,Phantom,FG.1,XV582,,,fixed_wing,monoplane,military,fighter,,"'Black Mike', in an all-black scheme with 111 Squadron special markings, coded M. Displayed inside.",Phantom FG1; F-4K; F4K; F4; Black Mike; F-4FG.1; F4FG.1,South Wales Aviation Museum,on_display
+Westland,Sea King,HU.5,XV647,,,rotary_wing,,military,search_rescue,,"Civil-registered G-CMFN, coded GJ-28; displayed inside.",Sea King HU5; SH-3; G-CMFN; SH3,South Wales Aviation Museum,on_display
+Aerospatiale,Puma,HC.2,XW209,,,rotary_wing,,military,transport,,Ex-RAF Puma; stored outside.,Puma HC2; SA330; SA-330,South Wales Aviation Museum,in_storage
+Hunting,Jet Provost,T.5A,XW320,,,fixed_wing,monoplane,military,trainer,,"Ex-maintenance serial 9016M, coded 71, in 1 Flying Training School markings. Some records quote 9015M.",Jet Provost T5A; JP; 9016M,South Wales Aviation Museum,on_display
+Hunting,Jet Provost,T.5A,XW420,,,fixed_wing,monoplane,military,trainer,,"Ex-maintenance serial 9194M, coded 83 and MU, in 1 Flying Training School markings.",Jet Provost T5A; JP; 9194M,South Wales Aviation Museum,on_display
+Hunting,Jet Provost,T.5A,XW436,,,fixed_wing,monoplane,military,trainer,,"Ex-maintenance serial 9148M, coded 68, in 1 Flying Training School markings.",Jet Provost T5A; JP; 9148M,South Wales Aviation Museum,on_display
+British Aerospace,Hawk,T.1A,XX263,,,fixed_wing,monoplane,military,trainer,,In store.,Hawk T1A; Hawk T1; HS.1182,South Wales Aviation Museum,in_storage
+SEPECAT,Jaguar,GR.1,XX727,,,fixed_wing,monoplane,military,ground_attack,,"Ex-maintenance serial 8951M, coded ER; displayed inside.",Jaguar GR1; Jaguar; 8951M,South Wales Aviation Museum,on_display
+SEPECAT,Jaguar,T.4,XX845,,,fixed_wing,monoplane,military,trainer,,"Coded EV, in 6 Squadron markings; stored outside.",Jaguar T4; Jaguar T2; Jaguar,South Wales Aviation Museum,in_storage
+Blackburn,Buccaneer,S.2B,XX889,,,fixed_wing,monoplane,military,bomber,,Coded T; displayed outdoors.,Buccaneer S2B; Buccaneer; NA.39,South Wales Aviation Museum,on_display
+Westland,Lynx,AH.7,XZ191,,,rotary_wing,,military,utility,,Coded R; displayed outdoors.,Lynx AH7; WG-13; WG13,South Wales Aviation Museum,on_display
+Hawker Siddeley,Harrier,GR.3,XZ969,,,fixed_wing,monoplane,military,ground_attack,,Coded DD-69; stored outside.,Harrier GR3; P.1127; Harrier,South Wales Aviation Museum,in_storage
+Vickers,VC10,K.3,ZA148,,,fixed_wing,monoplane,military,tanker,,Nose section only; displayed inside. Moved here from the Cornwall Aviation Heritage Centre.,VC10 K3; VC-10; VC10,South Wales Aviation Museum,on_display
+British Aerospace,Sea Harrier,FA.2,ZA195,,,fixed_wing,monoplane,military,fighter,,"Coded 710, in 899 Naval Air Squadron markings; displayed inside.",Sea Harrier FA2; FRS2; SHAR,South Wales Aviation Museum,on_display
+Panavia,Tornado,GR.1,ZA326,,,fixed_wing,monoplane,military,test,,In QinetiQ markings; displayed inside.,Tornado GR1; Tornado; GR.1,South Wales Aviation Museum,on_display
+Panavia,Tornado,GR.4,ZA612,,,fixed_wing,monoplane,military,ground_attack,,In special markings; displayed inside.,Tornado GR4; Tornado; GR.4,South Wales Aviation Museum,on_display
+Westland,Sea King,HC.4,ZD627,,,rotary_wing,,military,transport,,Cockpit section only; stored outside.,Sea King HC4; Commando; SH-3; SH3,South Wales Aviation Museum,in_storage
+British Aerospace,146,CC.2,ZE700,,,fixed_wing,monoplane,military,transport,,"Ex-32 (The Royal) Squadron VIP transport, civil-registered G-CMFY, in special markings; stored outside.",BAe 146; 146-100; Avro RJ; G-CMFY,South Wales Aviation Museum,in_storage
+Grob,Vigilant,T.1,ZH115,,,fixed_wing,monoplane,military,trainer,,"Ex-Air Cadet motor glider, coded TA; stored outside.",Vigilant T1; G109; G-109,South Wales Aviation Museum,in_storage
+Grob,Vigilant,T.1,ZH117,,,fixed_wing,monoplane,military,trainer,,"Ex-Air Cadet motor glider, coded TC; stored outside.",Vigilant T1; G109; G-109,South Wales Aviation Museum,in_storage
+Grob,Vigilant,T.1,ZH120,,,fixed_wing,monoplane,military,trainer,,"Ex-Air Cadet motor glider, coded TF; stored outside.",Vigilant T1; G109; G-109,South Wales Aviation Museum,in_storage
+Grob,Vigilant,T.1,ZH122,,,fixed_wing,monoplane,military,trainer,,"Ex-Air Cadet motor glider, coded TH; stored outside.",Vigilant T1; G109; G-109,South Wales Aviation Museum,in_storage
+Grob,Vigilant,T.1,ZH209,,,fixed_wing,monoplane,military,trainer,,"Fuselage only, coded UQ; displayed inside.",Vigilant T1; G109; G-109,South Wales Aviation Museum,on_display
+Grob,Vigilant,T.1,ZH249,,,fixed_wing,monoplane,military,trainer,,"Ex-Air Cadet motor glider, coded UU; stored outside.",Vigilant T1; G109; G-109,South Wales Aviation Museum,in_storage
+Grob,Vigilant,T.1,ZH264,,,fixed_wing,monoplane,military,trainer,,"Ex-Air Cadet motor glider, coded UW; stored outside.",Vigilant T1; G109; G-109,South Wales Aviation Museum,in_storage
+Grob,Vigilant,T.1,ZH269,,,fixed_wing,monoplane,military,trainer,,"Ex-Air Cadet motor glider, coded SB; stored outside.",Vigilant T1; G109; G-109,South Wales Aviation Museum,in_storage
+Boeing,747,467,B-HUI,,,fixed_wing,monoplane,civilian,commercial_transport,,Cockpit/forward fuselage section of an ex-Cathay Pacific Boeing 747-400.,747-400; 747400; B747; Jumbo Jet,South Wales Aviation Museum,on_display
+Boeing,707,436,G-APFG,,,fixed_wing,monoplane,civilian,commercial_transport,,Cockpit section only of a former BOAC Boeing 707.,707-436; 707436; B707; Intercontinental,South Wales Aviation Museum,on_display
+Boeing,747,236B,G-BDXH,,,fixed_wing,monoplane,civilian,commercial_transport,,Nose section of the British Airways 747 'City of Edinburgh' that flew through volcanic ash as BA Flight 9 in 1982. A museum project airframe.,747-200; 747200; B747; Speedbird 9,South Wales Aviation Museum,on_display
+Boeing,737,3L9,N470AC,,,fixed_wing,monoplane,civilian,commercial_transport,,Boeing 737-300 used for cabin and evacuation exhibits.,737-300; 737300; B737,South Wales Aviation Museum,on_display
+Douglas,DC-6,A,G-APSA,,,fixed_wing,monoplane,civilian,commercial_transport,,"Preserved Douglas DC-6A, one of very few complete examples in Europe.",DC-6A; DC6A; DC6; Liftmaster,South Wales Aviation Museum,on_display
+Evans,VP-1,Volksplane,G-BCTT,,,fixed_wing,monoplane,civilian,private,,Home-built single-seat light aircraft.,VP-1; VP1; Volksplane,South Wales Aviation Museum,on_display
+Evans,VP-2,Volksplane,G-BVPM,,,fixed_wing,monoplane,civilian,private,,Home-built two-seat light aircraft.,VP-2; VP2; Volksplane,South Wales Aviation Museum,on_display
+Clutton,FRED,Series II,G-BMMF,,,fixed_wing,monoplane,civilian,private,,British home-built single-seat light aircraft.,FRED; Fred Srs 2; Clutton FRED,South Wales Aviation Museum,on_display
+Whittaker,MW7,,G-BTUS,,,fixed_wing,monoplane,civilian,private,,Home-built single-seat microlight.,MW7; MW-7; Whittaker MW7,South Wales Aviation Museum,on_display
+Cyclone Airsports,Pegasus Quantum,15-912,G-BYMT,,,fixed_wing,monoplane,civilian,private,,Flex-wing microlight.,Quantum 15; Pegasus Quantum; Q15,South Wales Aviation Museum,on_display
+Federov,Me7,Mechta,G-CHPT,,,fixed_wing,monoplane,civilian,private,,"Russian-designed light aircraft, coded HPT.",Me7; Me-7; Mechta,South Wales Aviation Museum,on_display
+Federov,Me7,Mechta,G-CHUO,,,fixed_wing,monoplane,civilian,private,,"Second Federov Mechta in the collection, coded DP.",Me7; Me-7; Mechta,South Wales Aviation Museum,on_display
+Jurca,MJ5,Sirocco F.2,G-CLAX,,,fixed_wing,monoplane,civilian,private,,Home-built Jurca Sirocco.,MJ5; MJ-5; Sirocco,South Wales Aviation Museum,on_display
+Sherry,Buzzard,,G-MMNN,,,fixed_wing,monoplane,civilian,private,,British home-built microlight.,Buzzard; Sherry Buzzard,South Wales Aviation Museum,on_display
+Cameron Balloons,N-90,,G-ELLE,,,lighter_than_air,,civilian,private,,Hot air balloon envelope and basket displayed as an exhibit.,N-90; N90; Cameron N-90,South Wales Aviation Museum,on_display
+Hiway,Spectrum,,BAPC.251,,,fixed_wing,monoplane,civilian,private,,Hang glider displayed as an exhibit.,Spectrum; Hiway Spectrum; BAPC 251,South Wales Aviation Museum,on_display

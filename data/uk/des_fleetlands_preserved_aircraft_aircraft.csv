@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Westland,Wasp,HAS.1,XS539,,,rotary_wing,,military,anti_ship,,Westland Wasp HAS.1 coded 435 preserved on site at the former Royal Naval Aircraft Yard Fleetlands. Last reported Apr 2022.,,DE&S Fleetlands Preserved Aircraft,on_display
+Aerospatiale,Gazelle,AH.1,XW844,,,rotary_wing,,military,recon,,Aerospatiale Gazelle AH.1 preserved on site. Last reported Apr 2022.,SA.341; SA341,DE&S Fleetlands Preserved Aircraft,on_display
+Westland,Lynx,HMA.8SRU,XZ697,,,rotary_wing,,military,anti_ship,,"Westland Lynx HMA.8SRU in special markings, preserved on site. Last reported Nov 2023.",Lynx HMA8; Lynx HMA8SRU,DE&S Fleetlands Preserved Aircraft,on_display
+Westland,Sea King,HC.4,ZD480,,,rotary_wing,,military,transport,,"Westland Sea King HC.4 coded J in arctic camouflage, preserved on site. Confirmed Jul 2025.",,DE&S Fleetlands Preserved Aircraft,on_display

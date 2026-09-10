@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,C-54,G Skymaster,45-0557,,,fixed_wing,monoplane,military,transport,,Berlin Airlift Rosinenbomber displayed at the former airport; ex-USAF C-54G.,C54; C54G; DC-4; DC4; Skymaster,Flughafen Berlin-Tempelhof,on_display
+Focke-Wulf,Fw 200,Condor,,,,fixed_wing,monoplane,civilian,commercial_transport,,Fragments/structure of a Fw 200 Condor associated with the Tempelhof site; no registration displayed.,Fw200; Condor,Flughafen Berlin-Tempelhof,on_display
+Nord,262,A-21,N106TA,,,fixed_wing,monoplane,civilian,commercial_transport,,Nord 262 twin turboprop preserved at the site.,N262; Nord 262A,Flughafen Berlin-Tempelhof,on_display

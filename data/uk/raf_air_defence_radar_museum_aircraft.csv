@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+English Electric,Lightning,F.2A,XN795,,,fixed_wing,monoplane,military,fighter,,"RAF Air Defence Radar Museum, RRH Neatishead. Nose section only, displayed outdoors. Noted October 2022.",Lightning F2A; Lightning F.2A,RAF Air Defence Radar Museum,on_display
+SEPECAT,Jaguar,GR.1A,XX979,,,fixed_wing,monoplane,military,ground_attack,,"RAF Air Defence Radar Museum, RRH Neatishead. Nose section only, displayed indoors, carrying maintenance serial 9306M. Noted June 2024.",Jaguar GR1A; Jaguar GR.1A; 9306M,RAF Air Defence Radar Museum,on_display
+Panavia,Tornado,F.3,ZE936,,,fixed_wing,monoplane,military,fighter,,"RAF Air Defence Radar Museum, RRH Neatishead. Nose section only, displayed indoors. Noted June 2024.",Tornado F3; Tornado F.3; Tornado ADV,RAF Air Defence Radar Museum,on_display

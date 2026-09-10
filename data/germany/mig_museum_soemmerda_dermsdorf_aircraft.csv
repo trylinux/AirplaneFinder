@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,U,251,,,fixed_wing,monoplane,military,trainer,,Ex-NVA two-seat MiG-21U. Identity from the NVA MiG-21 fate register at mig-21.de.,MiG21; MiG21U; Mongol,MiG-Museum Sömmerda-Dermsdorf,on_display
+Mikoyan-Gurevich,MiG-21,U,289,,,fixed_wing,monoplane,military,trainer,,Ex-NVA two-seat MiG-21U. Identity from the NVA MiG-21 fate register at mig-21.de.,MiG21; MiG21U; Mongol,MiG-Museum Sömmerda-Dermsdorf,on_display
+Mikoyan-Gurevich,MiG-21,M,560,,,fixed_wing,monoplane,military,fighter,,"Ex-NVA MiG-21M, previously a ground instructional airframe at the LSK/LV officer school. Identity from the NVA MiG-21 fate register at mig-21.de.",MiG21; MiG21M; Fishbed,MiG-Museum Sömmerda-Dermsdorf,on_display
+Mikoyan-Gurevich,MiG-21,PFM,771,,,fixed_wing,monoplane,military,fighter,,Ex-NVA MiG-21PFM. Identity from the NVA MiG-21 fate register at mig-21.de.,MiG21; MiG21PFM; Fishbed,MiG-Museum Sömmerda-Dermsdorf,on_display
+Sukhoi,Su-22,M4,25+17,,,fixed_wing,monoplane,military,ground_attack,,"Ex-NVA Su-22M4, NVA tactical number 682, wearing the Bundeswehr code 25+17.",Su22; Su22M4; Fitter; 682,MiG-Museum Sömmerda-Dermsdorf,on_display

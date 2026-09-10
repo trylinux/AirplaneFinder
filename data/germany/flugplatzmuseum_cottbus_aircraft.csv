@@ -1,0 +1,54 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Antonov,An-2,T,801,,,fixed_wing,biplane,military,utility,,Ex-NVA An-2T with tactical number 801. Photographed on site 15 August 2024.,An2; Colt; An2T,Flugplatzmuseum Cottbus,on_display
+Antonov,An-2,T,826,,,fixed_wing,biplane,military,utility,,"Ex-NVA An-2T; the museum inventory renders the number 9826, dated photographs read 826. Photographed on site 15 August 2024.",An2; Colt; An2T,Flugplatzmuseum Cottbus,on_display
+Antonov,An-14,A,996,,,fixed_wing,monoplane,military,transport,,"Ex-NVA An-14 Pchelka light transport, tactical number 996.",An14; Bienchen; Clod; An14A,Flugplatzmuseum Cottbus,on_display
+Dornier,UH-1,D,71+01,,,rotary_wing,,military,transport,,"Licence-built Bell UH-1D of the Bundeswehr, taktisches Kennzeichen 71+01.",UH1D; Bell UH-1D; Iroquois; Huey; UH-1D; UH1,Flugplatzmuseum Cottbus,on_display
+Dornier,UH-1,D,72+77,,,rotary_wing,,military,transport,,Licence-built Bell UH-1D of the Bundeswehr. Photographed on site 15 August 2024.,UH1D; Bell UH-1D; Iroquois; Huey; UH-1D; UH1,Flugplatzmuseum Cottbus,on_display
+Canadair,CL-13,A Sabre Mk 5,BB+237,,,fixed_wing,monoplane,military,fighter,,Ex-Bundesluftwaffe Sabre in Waffenschule 10 markings BB+237. Photographed on site 15 August 2024.,CL13; Sabre; F-86; F86,Flugplatzmuseum Cottbus,on_display
+Canadair,CL-13,B Sabre Mk 6,JA+111,,,fixed_wing,monoplane,military,fighter,,Ex-Bundesluftwaffe Sabre Mk 6 in Jagdgeschwader 71 markings JA+111.,CL13; Sabre; F-86; F86,Flugplatzmuseum Cottbus,on_display
+Ilyushin,Il-28,,205,,,fixed_wing,monoplane,military,bomber,,Ex-NVA Il-28 with tactical number 205.,Il28; Beagle,Flugplatzmuseum Cottbus,on_display
+Fiat,G.91,R/3,32+15,,,fixed_wing,monoplane,military,ground_attack,,Ex-Bundesluftwaffe Fiat G.91R/3 light strike aircraft.,G91; Gina,Flugplatzmuseum Cottbus,on_display
+Focke-Wulf,Fw 190,F-3,,,,fixed_wing,monoplane,military,ground_attack,,"Excavated wreck of a Fw 190 F-3 recovered on the airfield; displayed as recovered remains, not a complete airframe.",Fw190; FW190F3,Flugplatzmuseum Cottbus,on_display
+Aero,L-29,Delfin,370,,,fixed_wing,monoplane,military,trainer,,"Ex-NVA jet trainer, tactical number 370.",L29; Delphin; Maya,Flugplatzmuseum Cottbus,on_display
+Let,L-200,A Morava,D-GWLB,,,fixed_wing,monoplane,civilian,private,,Czechoslovak light twin in German civil markings.,L200; Morava,Flugplatzmuseum Cottbus,on_display
+Lockheed,F-104,G,21+56,,,fixed_wing,monoplane,military,fighter,,Ex-Bundesluftwaffe Starfighter. Photographed on site 15 August 2024.,F104; F104G; Starfighter,Flugplatzmuseum Cottbus,on_display
+Lockheed,F-104,G,25+12,,,fixed_wing,monoplane,military,fighter,,Ex-Bundesluftwaffe Starfighter. Photographed on site 15 August 2024.,F104; F104G; Starfighter,Flugplatzmuseum Cottbus,on_display
+Lockheed,T-33,A,94+69,,,fixed_wing,monoplane,military,trainer,,"Ex-Bundesluftwaffe T-33A. Dated 2024 photographs read 94+69; an older museum list gives EB+399, which may be an earlier marking worn. Photographed on site 15 August 2024.",T33; T33A; EB+399; Shooting Star,Flugplatzmuseum Cottbus,on_display
+Lommatzsch,FES-530,Lehrmeister II,DM-3267,,,fixed_wing,monoplane,civilian,trainer,,East German two-seat training glider.,FES530; Lehrmeister,Flugplatzmuseum Cottbus,on_display
+Mikoyan-Gurevich,MiG-17,,226,,,fixed_wing,monoplane,military,fighter,,Ex-NVA MiG-17 restored by the museum; photographed with number 226 in 2018 and 2024.,MiG17; Fresco,Flugplatzmuseum Cottbus,on_display
+Mikoyan-Gurevich,MiG-21,F-13,1015,,,fixed_wing,monoplane,military,fighter,,"Ex-NVA MiG-21F-13, number 1015.",MiG21; MiG21F13; Fishbed,Flugplatzmuseum Cottbus,on_display
+Mikoyan-Gurevich,MiG-21,US,215,,,fixed_wing,monoplane,military,trainer,,"Ex-NVA two-seat MiG-21US, number 215. Photographed on site 15 August 2024.",MiG21; MiG21US; Mongol,Flugplatzmuseum Cottbus,on_display
+Mikoyan-Gurevich,MiG-21,MF,653,,,fixed_wing,monoplane,military,fighter,,"Ex-NVA MiG-21MF, number 653. Photographed on site 15 August 2024.",MiG21; MiG21MF; Fishbed,Flugplatzmuseum Cottbus,on_display
+Mikoyan-Gurevich,MiG-21,PFM,821,,,fixed_wing,monoplane,military,fighter,,"Ex-NVA MiG-21PFM, number 821.",MiG21; MiG21PFM; Fishbed,Flugplatzmuseum Cottbus,on_display
+Mikoyan-Gurevich,MiG-21,bis,848,,,fixed_wing,monoplane,military,fighter,,"Ex-NVA MiG-21bis, number 848.",MiG21; MiG21bis; Fishbed,Flugplatzmuseum Cottbus,on_display
+Mikoyan-Gurevich,MiG-21,SPS-K,981,,,fixed_wing,monoplane,military,fighter,,Ex-NVA MiG-21SPS-K. A 2002 photograph of this airframe was captioned 986; the museum list gives 981.,MiG21; MiG21SPS; Fishbed,Flugplatzmuseum Cottbus,on_display
+Mikoyan-Gurevich,MiG-21,MF,584,,,fixed_wing,monoplane,military,fighter,,"Ex-NVA MiG-21MF, number 584 per the museum inventory; the same number is listed for a MiG-23MF here and one of the two readings is likely wrong.",MiG21; MiG21MF; Fishbed,Flugplatzmuseum Cottbus,on_display
+Mikoyan-Gurevich,MiG-23,BN,696,,,fixed_wing,monoplane,military,ground_attack,,Ex-NVA MiG-23BN restored by the museum. Photographed on site 9 June 2024.,MiG23; MiG23BN; Flogger,Flugplatzmuseum Cottbus,on_display
+Mikoyan-Gurevich,MiG-23,MF,20+04,,,fixed_wing,monoplane,military,fighter,,Ex-NVA MiG-23MF wearing the Bundeswehr taktisches Kennzeichen 20+04; an older museum list gives the NVA number 584.,MiG23; MiG23MF; Flogger; 584,Flugplatzmuseum Cottbus,on_display
+Mikoyan-Gurevich,MiG-23,UB,104,,,fixed_wing,monoplane,military,trainer,,"Ex-NVA two-seat MiG-23UB, number 104.",MiG23; MiG23UB; Flogger,Flugplatzmuseum Cottbus,on_display
+Mikoyan-Gurevich,MiG-23,UB,20+62,,,fixed_wing,monoplane,military,trainer,,Ex-NVA MiG-23UB wearing the Bundeswehr taktisches Kennzeichen 20+62 applied in 1990.,MiG23; MiG23UB; Flogger,Flugplatzmuseum Cottbus,on_display
+PZL-Mielec,Lim-5,,502,,,fixed_wing,monoplane,military,fighter,,"Polish-built MiG-17F, ex-NVA, number 502.",Lim5; MiG-17; MiG17; Fresco,Flugplatzmuseum Cottbus,on_display
+PZL-Mielec,Lim-5,,537,,,fixed_wing,monoplane,military,fighter,,"Polish-built MiG-17F, number 537. Photographed on site 15 August 2024.",Lim5; MiG-17; MiG17; Fresco,Flugplatzmuseum Cottbus,on_display
+PZL-Mielec,Lim-5,P,437,,,fixed_wing,monoplane,military,fighter,,"Rear fuselage section only of a Lim-5P (Polish-built MiG-17PF), number 437.",Lim5P; MiG-17PF; MiG17PF; Lim5,Flugplatzmuseum Cottbus,on_display
+Mil,Mi-2,,32,,,rotary_wing,,military,utility,,Ex-Soviet Mi-2 carrying yellow bort number 32. An older museum list renders this 02. Photographed on site 15 August 2024.,Mi2; Hoplite,Flugplatzmuseum Cottbus,on_display
+Mil,Mi-2,,380,,,rotary_wing,,military,utility,,"Ex-NVA Mi-2, tactical number 380. Photographed on site 9 June 2024.",Mi2; Hoplite,Flugplatzmuseum Cottbus,on_display
+Mil,Mi-2,,401,,,rotary_wing,,military,utility,,"Ex-NVA Mi-2 401, later German civil registration D-HZPM.",Mi2; Hoplite; D-HZPM,Flugplatzmuseum Cottbus,on_display
+Mil,Mi-4,A,785,,,rotary_wing,,military,transport,,"Ex-NVA Mi-4A, tactical number 785. Photographed on site 9 June 2024.",Mi4; Hound; Mi4A,Flugplatzmuseum Cottbus,on_display
+Mil,Mi-4,A,792,,,rotary_wing,,military,transport,,"Second Mi-4A; dated 2024 photographs read 792, an older museum list gives 538. Photographed on site 15 August 2024.",Mi4; Hound; Mi4A,Flugplatzmuseum Cottbus,on_display
+Mil,Mi-8,TB,93+60,,,rotary_wing,,military,transport,,Ex-NVA Mi-8TB in Bundeswehr markings 93+60.,Mi8; Mi8TB; Hip,Flugplatzmuseum Cottbus,on_display
+Mil,Mi-9,,482,,,rotary_wing,,military,other,,"Ex-NVA Mi-9 airborne command post variant of the Mi-8, number 482. Photographed 9 June 2024.",Mi9; Mi-8IV; Hip-G; Mi8IV,Flugplatzmuseum Cottbus,on_display
+Mil,Mi-24,D,98+32,,,rotary_wing,,military,ground_attack,,Ex-NVA Mi-24D gunship in Bundeswehr markings 98+32.,Mi24; Mi24D; Hind,Flugplatzmuseum Cottbus,on_display
+WSK-Swidnik,SM-1,300,,,,rotary_wing,,military,utility,,Polish-built Mil Mi-1; no tactical number displayed.,SM1; Mi-1; Mi1; Hare,Flugplatzmuseum Cottbus,on_display
+Piaggio,P.149,D,92+13,,,fixed_wing,monoplane,military,trainer,,Ex-Bundesluftwaffe Piaggio FWP.149D liaison and training aircraft.,P149; FWP149D; P149D,Flugplatzmuseum Cottbus,on_display
+Republic,F-84,F Thunderstreak,DD+339,,,fixed_wing,monoplane,military,ground_attack,,Ex-Bundesluftwaffe F-84F. Dated 2024 photographs read DD-339; an older museum list gives DD+313. Photographed on site 15 August 2024.,F84; F84F; Thunderstreak; DD+313,Flugplatzmuseum Cottbus,on_display
+Sud Aviation,Alouette II,SE 3130,76+22,,,rotary_wing,,military,utility,,Ex-Bundeswehr Alouette II.,Alouette 2; SE3130; SE 3130,Flugplatzmuseum Cottbus,on_display
+Sukhoi,Su-22,M4,25+04,,,fixed_wing,monoplane,military,ground_attack,,Ex-NVA Su-22M4 wearing the Bundeswehr code applied in 1990; carried NVA number 365 earlier and was photographed as 365 in 2002. Photographed on site 15 August 2024.,Su22; Su22M4; Fitter,Flugplatzmuseum Cottbus,on_display
+Sukhoi,Su-22,UM3K,137,,,fixed_wing,monoplane,military,trainer,,"Ex-NVA two-seat Su-22UM3K, number 137 per the museum inventory.",Su22; Su22UM3K; Fitter,Flugplatzmuseum Cottbus,on_display
+Tupolev,Tu-134,A,CCCP-65745,,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-Aeroflot Tu-134A acquired in 2017 and being fitted out as a walk-through cabin exhibit. Photographed on site 15 August 2024.,Tu134; Tu134A; Crusty,Flugplatzmuseum Cottbus,on_display
+Yakovlev,Yak-11,,98,,,fixed_wing,monoplane,military,trainer,,"Ex-NVA Yak-11 advanced trainer, number 98.",Yak11; Moose,Flugplatzmuseum Cottbus,on_display
+Orlican,L-60,Brigadyr,OE-BVL,,,fixed_wing,monoplane,civilian,utility,,Czechoslovak L-60 in Austrian civil markings; a recent acquisition. Photographed on site 15 August 2024.,L60; Brigadyr,Flugplatzmuseum Cottbus,on_display
+Mikoyan-Gurevich,MiG-15,UTI,,,,fixed_wing,monoplane,military,trainer,,Two-seat MiG-15UTI reported under restoration by the museum; no tactical number confirmed.,MiG15; MiG15UTI; Midget,Flugplatzmuseum Cottbus,under_restoration
+Zlin,Z-37,Cmelak,,,,fixed_wing,monoplane,civilian,utility,,Agricultural Cmelak on the outdoor grounds; no registration confirmed.,Z37; Cmelak,Flugplatzmuseum Cottbus,on_display
+Zlin,Z-42,M,,,,fixed_wing,monoplane,civilian,trainer,,Light trainer previously displayed at Flugplatz Neuhausen and moved to Cottbus; no registration confirmed.,Z42; Z42M,Flugplatzmuseum Cottbus,on_display
+PZL-Mielec,PZL-106,Kruk,,,,fixed_wing,monoplane,civilian,utility,,Polish agricultural aircraft on the outdoor grounds; no registration confirmed.,PZL106; Kruk,Flugplatzmuseum Cottbus,on_display
+PZL-Warszawa,PZL-104,Wilga,,,,fixed_wing,monoplane,civilian,utility,,Recent acquisition; no registration confirmed.,PZL104; Wilga,Flugplatzmuseum Cottbus,on_display

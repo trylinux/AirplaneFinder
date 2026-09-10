@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+de Havilland,Blue Streak,,,,,missile_rocket,,military,launch_vehicle,,Genuine Blue Streak rocket stage displayed upright in the 42-metre Rocket Tower; British intermediate-range ballistic missile design later used as the first stage of the Europa launcher.,Europa,National Space Centre,on_display
+Douglas,Thor Able,,,,,missile_rocket,,military,launch_vehicle,,Genuine Thor Able rocket displayed upright in the Rocket Tower.,Thor; PGM-17; PGM17,National Space Centre,on_display
+RKK Energia,Soyuz,,,,,spacecraft,,civilian,space,,Soyuz spacecraft displayed in the entrance area of the National Space Centre.,,National Space Centre,on_display

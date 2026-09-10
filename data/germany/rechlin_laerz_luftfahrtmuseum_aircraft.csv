@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Beechcraft,King Air,C90,D-ILHA,,,fixed_wing,monoplane,civilian,private,,Light business turboprop in German civil markings.,King Air; C90; BE9L,Rechlin-Lärz Luftfahrtmuseum,on_display
+Breguet,Atlantic,Br 1150,61+05,,,fixed_wing,monoplane,military,recon,,Ex-Marineflieger maritime patrol aircraft.,Br1150; Atlantique; Atlantic,Rechlin-Lärz Luftfahrtmuseum,on_display
+Fiat,G.91,R/3,35+99,,,fixed_wing,monoplane,military,ground_attack,,Ex-Bundesluftwaffe G.91R/3.,G91; Gina,Rechlin-Lärz Luftfahrtmuseum,on_display
+Mikoyan-Gurevich,MiG-17,F,,,,fixed_wing,monoplane,military,fighter,,MiG-17F displayed with bort number 07. Tail left blank in this database because the two-digit bort number 07 is not unique - it collides with a Soviet-operated airframe of the same type already recorded elsewhere.,MiG17; MiG17F; Fresco; bort 07,Rechlin-Lärz Luftfahrtmuseum,on_display
+Mikoyan-Gurevich,MiG-21,U-600,23+96,,,fixed_wing,monoplane,military,trainer,,Ex-NVA two-seat MiG-21U-600 in Bundeswehr markings 23+96.,MiG21; MiG21U; Mongol,Rechlin-Lärz Luftfahrtmuseum,on_display
+Mil,Mi-8,TB,94+10,,,rotary_wing,,military,transport,,Ex-NVA Mi-8TB in Bundeswehr markings.,Mi8; Mi8TB; Hip,Rechlin-Lärz Luftfahrtmuseum,on_display
+PZL-Warszawa,PZL-104,Wilga 35A,D-EOXS,,,fixed_wing,monoplane,civilian,utility,,Polish utility aircraft in German civil markings.,PZL104; Wilga,Rechlin-Lärz Luftfahrtmuseum,on_display

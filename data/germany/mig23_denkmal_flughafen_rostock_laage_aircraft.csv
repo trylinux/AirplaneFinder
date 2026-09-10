@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-23,ML,20+11,,,fixed_wing,monoplane,military,fighter,,"Ex-NVA MiG-23ML preserved at Rostock-Laage airport, the former NVA base of JG-77 and today Fliegerhorst Laage.",MiG23; MiG23ML; Flogger,"MiG-23 Denkmal, Flughafen Rostock-Laage",on_display

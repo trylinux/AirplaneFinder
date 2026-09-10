@@ -1,0 +1,10 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+British Aerospace,Hawk,T.1A,XX190,,,fixed_wing,monoplane,military,trainer,,Preserved outside at RAF Syerston in 100 Squadron markings. Confirmed 2026.,CN,RAF Syerston Aircraft Display,on_display
+Panavia,Tornado,ADV,ZA267,,,fixed_wing,monoplane,military,fighter,,Preserved outside at RAF Syerston in 25 Squadron markings. Confirmed 2026.,9284M; FA,RAF Syerston Aircraft Display,on_display
+Panavia,Tornado,GR.1,ZA357,,,fixed_wing,monoplane,military,ground_attack,,Preserved outside at RAF Syerston in 15 Squadron markings. Confirmed 2026.,TTV,RAF Syerston Aircraft Display,on_display
+McDonnell Douglas,Phantom,FG.1,XV581,,,fixed_wing,monoplane,military,fighter,,"Nose section and intakes only, preserved in a hangar in 43 Squadron markings. Confirmed 2026.",AE,RAF Syerston Aircraft Display,on_display
+de Havilland Canada,Chipmunk,T.10,WG418,,,fixed_wing,monoplane,military,trainer,,Preserved inside; ground instructional airframe. Confirmed 2026.,8209M,RAF Syerston Aircraft Display,on_display
+Short,Tucano,T.1,ZF202,,,fixed_wing,monoplane,military,trainer,,Preserved outside at RAF Syerston in 1 Flying Training School markings. Confirmed 2026.,202,RAF Syerston Aircraft Display,on_display
+Grob,Viking,T.1,ZE550,,,fixed_wing,monoplane,military,trainer,,"Fuselage only, stored in a hangar.",VX,RAF Syerston Aircraft Display,in_storage
+Grob,Vigilant,T.1,ZH185,,,fixed_wing,monoplane,military,trainer,,"Retained for museum use, stored in a hangar.",TX,RAF Syerston Aircraft Display,in_storage
+Grob,Vigilant,T.1,ZJ963,,,fixed_wing,monoplane,military,trainer,,"Retained for museum use, stored in a hangar.",SL,RAF Syerston Aircraft Display,in_storage

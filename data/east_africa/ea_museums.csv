@@ -1,0 +1,19 @@
+name,city,state_province,country,postal_code,region,address,website,access_type,latitude,longitude
+Base Aerienne 188 Djibouti,Djibouti,,Djibouti,,Africa,"Route Nationale 2, Cite Gabode",,restricted,11.55509,43.15766
+Asmara Expo Park,Asmara,Maekel,Eritrea,,Africa,,,public,15.31698,38.91755
+Massawa An-12 Roadside Display,Massawa,Northern Red Sea,Eritrea,,Africa,Massawa-Asmara road,,public,15.60866,39.44496
+Addis Ababa Bole International Airport DC-3 Display,Addis Ababa,Addis Ababa,Ethiopia,1044,Africa,"Ring Road, Bole",,public,8.98479,38.79210
+Adwa Victory Memorial Museum,Addis Ababa,Addis Ababa,Ethiopia,3578,Africa,"Dejazmach Belay Zeleke Street, Piasa, Arada",https://adwavictorymemorial.et/,public,9.03438,38.75246
+Amhara People's Martyrs' Memorial Monument,Bahir Dar,Amhara,Ethiopia,6000,Africa,East bank of the Blue Nile near the Adewa Road bridge,,public,11.60065,37.41259
+Tigray Martyrs' Memorial Monument,Mekelle,Tigray,Ethiopia,1547,Africa,Avenue Tegadaly Asmelash,,public,13.49238,39.46076
+Aero Club of East Africa,Nairobi,Nairobi,Kenya,00202,Africa,"Wilson Airport, Langata Road",,appointment,-1.32229,36.80906
+Club 034 Kitengela,Kitengela,Kajiado,Kenya,00204,Africa,,,public,-1.52156,36.94529
+Laikipia Air Base,Nanyuki,Laikipia,Kenya,10400,Africa,,,restricted,0.03421,37.03851
+Mang'u High School,Juja,Kiambu,Kenya,,Africa,"Thika Road, Witeithie",,restricted,-1.07109,37.04554
+Moi Air Base,Nairobi,Nairobi,Kenya,00611,Africa,Eastleigh,,restricted,-1.26638,36.85980
+Moi Forces Academy Lanet,Nakuru,Nakuru,Kenya,,Africa,"Moi Forces Road, Lanet",,restricted,-0.28588,36.16982
+Stanley's Haven,Murang'a,Murang'a,Kenya,10200,Africa,,,public,-0.73230,37.15420
+Presidential Palace Museum,Kigali,Kigali,Rwanda,,Africa,"KK 106 Street, Kanombe, Kicukiro",,public,-1.97527,30.17302
+Guluf Airline Restaurant,Hargeisa,Somaliland,Somalia,,Africa,,,public,9.49552,44.06465
+Hargeisa War Memorial,Hargeisa,Somaliland,Somalia,,Africa,"Freedom Square, Independence Avenue",,public,9.56154,44.06537
+Aero Beach,Entebbe,Central Region,Uganda,,Africa,"Sports Beach Road, Bugonga, off Airport Road",,public,0.03903,32.46106

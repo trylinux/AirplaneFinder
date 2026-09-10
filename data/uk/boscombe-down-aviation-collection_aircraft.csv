@@ -1,0 +1,49 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,C-47,A,42-93510,,,fixed_wing,monoplane,military,transport,,"Nose section only; ex-USAAF and French Air Force, coded CM.",C-47A; C47A; C47; Dakota; Skytrain,Boscombe Down Aviation Collection,on_display
+Government Aircraft Factories,Jindivik,Mk.103A,A92-664,,,fixed_wing,monoplane,military,drone,,Ex-Royal Australian Air Force target drone; wears the false serial 'A92-466'.,Jindivik 103A; Jindivik; A92-466,Boscombe Down Aviation Collection,on_display
+de Havilland,Tiger Moth,II,DE524,,,fixed_wing,biplane,civilian,trainer,,Civil-registered G-ANNG.,DH.82A; DH82A; Tiger Moth; G-ANNG,Boscombe Down Aviation Collection,on_display
+Auster,AOP.5,,MS968,,,fixed_wing,monoplane,military,recon,,Civil-registered G-ALYG.,Auster 5; AOP5; G-ALYG,Boscombe Down Aviation Collection,on_display
+Bristol,Sycamore,Mk.3,WA577,,,rotary_wing,,military,utility,,Ex-maintenance serial 7718M.,Sycamore 3; Type 171; 7718M,Boscombe Down Aviation Collection,on_display
+de Havilland Canada,Chipmunk,T.10,WD321,,,fixed_wing,monoplane,military,trainer,,Civil-registered G-BDCC.,DHC-1; DHC1; Chipmunk T10; G-BDCC,Boscombe Down Aviation Collection,on_display
+Armstrong Whitworth,Meteor,NF.12,WD790,,,fixed_wing,monoplane,military,fighter,,"Nose section only in a red, white and blue scheme; ex-maintenance serial 8743M. Also quoted as NF.11.",Meteor NF12; Meteor NF11; 8743M,Boscombe Down Aviation Collection,on_display
+English Electric,P.1,A,WG763,,,fixed_wing,monoplane,military,experimental,,"Second English Electric P.1A research aircraft, the Lightning's forerunner; ex-maintenance serial 7816M.",P.1A; P1A; P.1; Lightning; 7816M,Boscombe Down Aviation Collection,on_display
+English Electric,Canberra,U.14,WH876,,,fixed_wing,monoplane,military,drone,,Nose section only.,Canberra U14; Canberra B2; Canberra,Boscombe Down Aviation Collection,on_display
+English Electric,Canberra,T.4,WJ865,,,fixed_wing,monoplane,military,trainer,,Nose section only.,Canberra T4; Canberra; T.4,Boscombe Down Aviation Collection,on_display
+Gloster,Meteor,U.16,WK800,,,fixed_wing,monoplane,military,drone,,"Target drone conversion, coded Z.",Meteor U16; Meteor F8; Meteor,Boscombe Down Aviation Collection,on_display
+Hawker,Hunter,F.2,WN890,,,fixed_wing,monoplane,military,fighter,,Nose section only.,Hunter F2; P.1067; Hunter,Boscombe Down Aviation Collection,on_display
+Hawker,Hunter,F.1,WT648,,,fixed_wing,monoplane,military,fighter,,Nose section only; ex-maintenance serial 7530M.,Hunter F1; P.1067; 7530M,Boscombe Down Aviation Collection,on_display
+Supermarine,Scimitar,F.1,WT859,,,fixed_wing,monoplane,military,fighter,,Nose section only; former naval instructional airframe A2499.,Scimitar F1; Type 544; A2499,Boscombe Down Aviation Collection,on_display
+Hawker,Sea Hawk,FGA.4,WV910,,,fixed_wing,monoplane,military,ground_attack,,Nose section only.,Sea Hawk FGA4; Sea Hawk; P.1040,Boscombe Down Aviation Collection,on_display
+Avro,707,A,WZ736,,,fixed_wing,monoplane,military,experimental,,Delta-wing research aircraft built to test the Vulcan's wing; ex-maintenance serial 7868M.,Avro 707A; 707A; 707; 7868M,Boscombe Down Aviation Collection,on_display
+Supermarine,Swift,F.7,XF113,,,fixed_wing,monoplane,military,fighter,,Nose section only.,Swift F7; Type 552; Swift,Boscombe Down Aviation Collection,on_display
+Hawker,Hunter,F.6,XF375,,,fixed_wing,monoplane,military,fighter,,"Ex-maintenance serial 8736M, coded 6; displayed outdoors.",Hunter F6; P.1067; 8736M,Boscombe Down Aviation Collection,on_display
+Hawker,Hunter,F.6,XG290,,,fixed_wing,monoplane,military,fighter,,Nose section only; ex-maintenance serial 8711M.,Hunter F6; P.1067; 8711M,Boscombe Down Aviation Collection,on_display
+de Havilland,Sea Vixen,FAW.1,XJ476,,,fixed_wing,monoplane,military,fighter,,Nose section only.,Sea Vixen FAW1; DH.110; Sea Vixen,Boscombe Down Aviation Collection,on_display
+de Havilland,Comet,C.2,XK699,,,fixed_wing,monoplane,military,transport,,Forward fuselage only; ex-maintenance serial 7971M. Displayed outdoors.,Comet C2; DH.106; Comet; 7971M,Boscombe Down Aviation Collection,on_display
+English Electric,Lightning,F.2A,XN726,,,fixed_wing,monoplane,military,fighter,,"Nose section only, in 19 and 92 Squadron markings.",Lightning F2A; P.1B; Lightning,Boscombe Down Aviation Collection,on_display
+Westland,Scout,AH.1,XP899,,,rotary_wing,,military,utility,,Rebuilt by museum volunteers; coded D.,Scout AH1; P.531; Wasp,Boscombe Down Aviation Collection,on_display
+Hunting,Jet Provost,T.4,XR650,,,fixed_wing,monoplane,military,trainer,,"Ex-maintenance serial 8459M, coded 28; displayed outdoors.",Jet Provost T4; JP; 8459M,Boscombe Down Aviation Collection,on_display
+Northrop,Shelduck,D.1,XR898,,,fixed_wing,monoplane,military,drone,,Wears the false serial 'XT005'.,Shelduck D1; MQM-57; XT005; MQM57,Boscombe Down Aviation Collection,on_display
+Hunting,Jet Provost,T.5P,XS230,,,fixed_wing,monoplane,military,trainer,,Civil-registered G-VIVM; ex-Empire Test Pilots' School.,Jet Provost T5; JP; G-VIVM,Boscombe Down Aviation Collection,on_display
+Hunting,Jet Provost,T.5,XS231,,,fixed_wing,monoplane,military,trainer,,Nose section only.,Jet Provost T5; JP; Provost,Boscombe Down Aviation Collection,on_display
+Beagle,B.206,Z,XS743,,,fixed_wing,monoplane,military,transport,,Beagle Basset development aircraft.,B206; B.206; Basset,Boscombe Down Aviation Collection,on_display
+Hawker Siddeley,Andover,CC.2,XS790,,,fixed_wing,monoplane,military,transport,,Nose section only.,Andover CC2; HS.748; Andover,Boscombe Down Aviation Collection,on_display
+Westland,Wasp,HAS.1,XT437,,,rotary_wing,,military,utility,,Coded 423; former naval instructional airframes A2721 and A2641.,Wasp HAS1; P.531; A2641,Boscombe Down Aviation Collection,on_display
+Hawker Siddeley,Nimrod,MR.1,XV148,,,fixed_wing,monoplane,military,recon,,Cockpit section only of the second Nimrod prototype.,Nimrod MR1; HS.801; Comet,Boscombe Down Aviation Collection,on_display
+Hawker Siddeley,Harrier,GR.3,XV784,,,fixed_wing,monoplane,military,ground_attack,,Nose section only.,Harrier GR3; P.1127; Harrier,Boscombe Down Aviation Collection,on_display
+SEPECAT,Jaguar,S,XW560,,,fixed_wing,monoplane,military,test,,Nose section only of a Jaguar development aircraft.,Jaguar S; Jaguar GR1; Jaguar,Boscombe Down Aviation Collection,on_display
+Aerospatiale,Gazelle,HT.3,XW852,,,rotary_wing,,military,trainer,,Ex-maintenance serial 9331M. Last confirmed November 2025.,Gazelle HT3; SA341; 9331M,Boscombe Down Aviation Collection,on_display
+SEPECAT,Jaguar,T.2A,XX145,,,fixed_wing,monoplane,military,test,,In Empire Test Pilots' School markings; displayed outdoors.,Jaguar T2A; Jaguar T2; Jaguar,Boscombe Down Aviation Collection,on_display
+British Aerospace,Hawk,T.1,XX154,,,fixed_wing,monoplane,military,trainer,,"The first Hawk built, in special markings.",Hawk T1; HS.1182; Hawk,Boscombe Down Aviation Collection,on_display
+British Aerospace,Hawk,T.1,XX343,,,fixed_wing,monoplane,military,test,,"Nose section only, in Empire Test Pilots' School markings. Last confirmed August 2026.",Hawk T1; HS.1182; Hawk,Boscombe Down Aviation Collection,on_display
+SEPECAT,Jaguar,GR.1,XX734,,,fixed_wing,monoplane,military,ground_attack,,"Ex-maintenance serial 8816M, coded 734, in 6 Squadron markings.",Jaguar GR1; Jaguar; 8816M,Boscombe Down Aviation Collection,on_display
+SEPECAT,Jaguar,GR.1,XX761,,,fixed_wing,monoplane,military,ground_attack,,Nose section only; ex-maintenance serial 8600M.,Jaguar GR1; Jaguar; 8600M,Boscombe Down Aviation Collection,on_display
+BAC,One-Eleven,Series 402AP,XX919,,,fixed_wing,monoplane,military,test,,Nose section only of a former Royal Aircraft Establishment BAC 1-11.,BAC 1-11; One-Eleven; OneEleven; 1-11; 111,Boscombe Down Aviation Collection,on_display
+British Aerospace,Sea Harrier,FA.2,XZ457,,,fixed_wing,monoplane,military,fighter,,"In 899 Naval Air Squadron markings, coded VL-104.",Sea Harrier FA2; FRS1; SHAR,Boscombe Down Aviation Collection,on_display
+Short Brothers,MATS-B,Mk.1,ZA242,,,fixed_wing,monoplane,military,drone,,Target drone; wears the false serial 'ZA220'.,MATS-B; MATSB; ZA220,Boscombe Down Aviation Collection,on_display
+Panavia,Tornado,GR.1,ZA319,,,fixed_wing,monoplane,military,ground_attack,,Ex-maintenance serial 9315M; displayed outdoors.,Tornado GR1; Tornado; 9315M,Boscombe Down Aviation Collection,on_display
+Panavia,Tornado,F.2,ZD936,,,fixed_wing,monoplane,military,fighter,,"Nose section only, in 229 Operational Conversion Unit markings.",Tornado F2; Tornado ADV; Tornado,Boscombe Down Aviation Collection,on_display
+BAE Systems,Phoenix,,ZJ477,,,fixed_wing,monoplane,military,drone,,Army battlefield surveillance unmanned air vehicle.,Phoenix UAV; Phoenix,Boscombe Down Aviation Collection,on_display
+Meteor,Mirach,100/5,ZJ748,,,fixed_wing,monoplane,military,drone,,Aerial target drone.,Mirach 100/5; Mirach; Mirach 100,Boscombe Down Aviation Collection,on_display
+Avro,Lancaster,B.I,,,,fixed_wing,monoplane,military,bomber,,Full-size front-section recreation built by museum volunteers; not an original airframe.,Lancaster; Lancaster I; Type 683,Boscombe Down Aviation Collection,on_display
+Royal Aircraft Factory,B.E.2,B,,,,fixed_wing,biplane,military,recon,,Full-size replica built by museum volunteers.,BE2B; BE.2b; BE2; B.E.2,Boscombe Down Aviation Collection,on_display

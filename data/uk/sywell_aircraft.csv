@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Hawker,Hunter,F.2,WN904,,,fixed_wing,monoplane,military,fighter,,Displayed outside the museum wearing the false serial WN921 and 257 and 263 Squadron markings.,7544M; WN921; Heidi,Sywell Aviation Museum,on_display
+de Havilland,Vampire,T.11,XD599,,,fixed_wing,monoplane,military,trainer,,"Cockpit pod only, displayed inside.",Vicky; A,Sywell Aviation Museum,on_display
+de Havilland Canada,Chipmunk,T.10,WG419,,,fixed_wing,monoplane,military,trainer,,"Cockpit section only, displayed inside; former ground instructional airframe.",8206M; Clare,Sywell Aviation Museum,on_display
+de Havilland,Tiger Moth,Mk II,T6056,,,fixed_wing,biplane,military,trainer,,Cockpit section only; stored and under restoration.,G-AOES; Tara; GAOES,Sywell Aviation Museum,under_restoration
+Slingsby,Grasshopper,TX.1,WZ820,,,fixed_wing,monoplane,military,trainer,,Held in store by the museum.,,Sywell Aviation Museum,in_storage
+Scottish Aviation,Jetstream,200,G-RAVL,,,fixed_wing,monoplane,military,trainer,,Under restoration by the museum.,Jenny,Sywell Aviation Museum,under_restoration
+de Havilland,DH.89 Dragon Rapide,DH.89A,G-AJHO,,,fixed_wing,biplane,civilian,commercial_transport,,Replica cockpit section built by the museum; not an original airframe.,Rachel,Sywell Aviation Museum,on_display

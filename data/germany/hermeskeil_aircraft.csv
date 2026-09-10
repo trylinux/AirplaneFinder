@@ -1,0 +1,124 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aero,L-39,ZO,28+30,Albatros,,fixed_wing,monoplane,military,trainer,,Ex-NVA L-39ZO taken over by the Bundeswehr.,L-39; L39; Albatros; L39ZO,Flugausstellung Hermeskeil,on_display
+Sud Aviation,Alouette II,SE 3130,D-HBUR,Alouette II,,rotary_wing,,military,utility,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",Alouette II; SE 3130; SE3130,Flugausstellung Hermeskeil,on_display
+Sud Aviation,Alouette III,SA 316B,V-248,Alouette III,,rotary_wing,,military,utility,,Ex-Swiss Air Force.,Alouette III; SA 316; SA316,Flugausstellung Hermeskeil,on_display
+Aérospatiale/BAC,Concorde,,,Concorde,,fixed_wing,monoplane,civilian,commercial_transport,,"Full-scale reproduction of a Concorde nose/forward fuselage in the markings of the pre-production aircraft F-WTSA. This exhibit is a replica/reproduction, not an original airframe. Displayed in the markings F-WTSA.",Concorde; F-WTSA; FWTSA,Flugausstellung Hermeskeil,on_display
+Antonov,An-2,,HA-ANA,,,fixed_wing,biplane,military,utility,,Ex-Hungarian.,An-2; An2; Colt,Flugausstellung Hermeskeil,on_display
+Antonov,An-2,,52+08,,,fixed_wing,biplane,military,utility,,Ex-NVA An-26 taken over by the Bundeswehr.,An-2; An2; Colt,Flugausstellung Hermeskeil,on_display
+Hawker Siddeley,Harrier,GR.3,XZ135,,,fixed_wing,monoplane,military,ground_attack,,Cockpit section only. Cockpit section only.,Harrier,Flugausstellung Hermeskeil,on_display
+Hawker Siddeley,Harrier,GR.3,XZ998,,,fixed_wing,monoplane,military,ground_attack,,"Ex-Royal Air Force, coded V.",Harrier,Flugausstellung Hermeskeil,on_display
+British Aerospace,Jetstream,T.2,XX476,,,fixed_wing,monoplane,military,trainer,,"Ex-Royal Navy, code 561-CU.",Jetstream,Flugausstellung Hermeskeil,on_display
+Bell,UH-1,D,D-HBZV,Iroquois,,rotary_wing,,military,utility,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",UH-1; UH1; Huey; Iroquois; UH1D,Flugausstellung Hermeskeil,on_display
+Blériot,XI,,,,,fixed_wing,monoplane,civilian,experimental,,"Full-scale reproduction of the 1909 Blériot XI. This exhibit is a replica/reproduction, not an original airframe. Displayed in the markings D-EHCI.",Bleriot XI; Bleriot 11; D-EHCI; DEHCI,Flugausstellung Hermeskeil,on_display
+Brantly,B-2,B,D-HOBC,,,rotary_wing,,civilian,private,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",B-2B; B2B; Brantly B2; B2,Flugausstellung Hermeskeil,on_display
+Bristol,171,Sycamore Mk 52,D-HFUM,Sycamore,,rotary_wing,,military,search_rescue,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",Bristol 171; Sycamore,Flugausstellung Hermeskeil,on_display
+Canadair,CL-13,B Sabre Mk 6,JC+101,Sabre,,fixed_wing,monoplane,military,fighter,,Early Bundesluftwaffe code.,CL-13; CL13; F-86; F86; Sabre,Flugausstellung Hermeskeil,on_display
+CASA,2.111,,G1+FL,Heinkel He 111,,fixed_wing,monoplane,military,bomber,,Spanish-built He 111 licence airframe in Luftwaffe markings.,CASA 2.111; He 111; Casa 2111,Flugausstellung Hermeskeil,on_display
+Junkers,Ju 52,3m,T.2B-127,Tante Ju,,fixed_wing,monoplane,military,transport,,Spanish-built Ju 52/3m licence airframe.,Ju 52; Ju52; Iron Annie; Ju 52/3m,Flugausstellung Hermeskeil,on_display
+Convair,F-102,A,56-1125,Delta Dagger,,fixed_wing,monoplane,military,fighter,,Ex-United States Air Force.,F-102; F102; F102A; Delta Dagger,Flugausstellung Hermeskeil,on_display
+Dassault,Mirage III,R,304,,,fixed_wing,monoplane,military,recon,,"Ex-French Air Force, code 33-TN.",Mirage III; Mirage 3,Flugausstellung Hermeskeil,on_display
+Dassault,Mirage 5,BA,13-PL,,,fixed_wing,monoplane,military,ground_attack,,Ex-Belgian Air Force.,Mirage 5,Flugausstellung Hermeskeil,on_display
+Dassault,Super Mystère,B2,173,,,fixed_wing,monoplane,military,fighter,,"Ex-French Air Force, code 12-YP.",Super Mystere; SMB2,Flugausstellung Hermeskeil,on_display
+de Havilland,DH.106,Comet 4C,G-BDIW,Comet,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-Dan-Air Comet 4C.,DH.106; Comet,Flugausstellung Hermeskeil,on_display
+de Havilland,DH.104,Sea Devon C.20,XJ348,Devon,,fixed_wing,monoplane,military,transport,,"Ex-Royal Navy, coded 37.",DH.104; Devon; Dove,Flugausstellung Hermeskeil,on_display
+de Havilland,Venom,FB.50,J-1797,,,fixed_wing,monoplane,military,ground_attack,,Ex-Swiss Air Force.,Venom,Flugausstellung Hermeskeil,on_display
+Dassault-Breguet/Dornier,Alpha Jet,A,40+61,,,fixed_wing,monoplane,military,trainer,,Bundesluftwaffe Alpha Jet.,Alpha Jet; AlphaJet,Flugausstellung Hermeskeil,on_display
+Dornier,Do 27,A-4,D-EFSV,,,fixed_wing,monoplane,military,utility,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",Do 27; Do27,Flugausstellung Hermeskeil,on_display
+Dornier,Do 28,D-2,D-IFMP,Skyservant,,fixed_wing,monoplane,military,utility,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",Do 28; Do28; Skyservant,Flugausstellung Hermeskeil,on_display
+Douglas,C-47,,111,Dakota,,fixed_wing,monoplane,military,transport,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",C-47; C47; DC-3; DC3; Dakota; Skytrain,Flugausstellung Hermeskeil,on_display
+English Electric,Canberra,B.2,XM264,,,fixed_wing,monoplane,military,bomber,,Ex-Royal Air Force.,Canberra,Flugausstellung Hermeskeil,on_display
+English Electric,Lightning,F.2A,XN782,,,fixed_wing,monoplane,military,fighter,,"Ex-Royal Air Force, coded H.",Lightning,Flugausstellung Hermeskeil,on_display
+English Electric,Lightning,F.2A,ZF585,,,fixed_wing,monoplane,military,fighter,,"Cockpit section only, ex-Royal Saudi Air Force. Cockpit section only.",Lightning,Flugausstellung Hermeskeil,on_display
+Fairey,Gannet,AS.4,XL450,,,fixed_wing,monoplane,military,anti_ship,,"Ex-Royal Navy, code R-042.",Gannet,Flugausstellung Hermeskeil,on_display
+Fiat,G.91,R/3,30+86,Gina,,fixed_wing,monoplane,military,ground_attack,,Front fuselage only. Front fuselage / nose section only.,G.91; G91; Gina,Flugausstellung Hermeskeil,on_display
+Fiat,G.91,R/3,31+70,Gina,,fixed_wing,monoplane,military,ground_attack,,Bundesluftwaffe G.91.,G.91; G91; Gina,Flugausstellung Hermeskeil,on_display
+Fiat,G.91,R/3,,Gina,,fixed_wing,monoplane,military,ground_attack,,"Ex-Italian Air Force, code 5-257; MM serial not legible in the source list.",G.91; G91; Gina,Flugausstellung Hermeskeil,on_display
+Focke-Hartz,FoHa 1,,,,,fixed_wing,monoplane,civilian,private,,Homebuilt German light aircraft.,FoHa 1; FoHa1,Flugausstellung Hermeskeil,on_display
+Piaggio,P.149,D,91+90,,,fixed_wing,monoplane,military,trainer,,Bundesluftwaffe trainer.,P.149; P149D; FWP 149,Flugausstellung Hermeskeil,on_display
+Braunschweig,LF 1,Zaunkönig,,Zaunkönig,,fixed_wing,monoplane,civilian,experimental,,Focke-Wulf Fw 190 A-8.,LF 1; LF1; Zaunkoenig,Flugausstellung Hermeskeil,on_display
+Fokker,Dr.I,,,Dreidecker,,fixed_wing,triplane,military,fighter,,"Full-scale reproduction of the Fokker triplane. This exhibit is a replica/reproduction, not an original airframe. Displayed in the markings 152/17.",Fokker DrI; Dr.1; Triplane; 152/17,Flugausstellung Hermeskeil,on_display
+Fouga,CM.170,Magister,MT-31,Magister,,fixed_wing,monoplane,military,trainer,,Ex-Belgian Air Force.,CM 170; Magister; Fouga,Flugausstellung Hermeskeil,on_display
+Fouga,CM.170,Magister,MT-43,Magister,,fixed_wing,monoplane,military,trainer,,Ex-Belgian Air Force.,CM 170; Magister; Fouga,Flugausstellung Hermeskeil,on_display
+Hawker,Hunter,F.6,XF418,,,fixed_wing,monoplane,military,fighter,,Ex-Royal Air Force.,Hunter,Flugausstellung Hermeskeil,on_display
+Hawker,Hunter,F.6,J-4098,,,fixed_wing,monoplane,military,fighter,,Ex-Swiss Air Force.,Hunter,Flugausstellung Hermeskeil,on_display
+Hawker,Sea Hawk,FGA.6,XE327,,,fixed_wing,monoplane,military,ground_attack,,"Ex-Royal Navy, code LH-644.",Sea Hawk; Seahawk,Flugausstellung Hermeskeil,on_display
+Hunting Percival,Jet Provost,T.4,XR670,,,fixed_wing,monoplane,military,trainer,,Ex-Royal Air Force.,Jet Provost,Flugausstellung Hermeskeil,on_display
+Hütter,H 17,,D-8045,,,fixed_wing,monoplane,civilian,private,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",H 17; H17; Hutter 17,Flugausstellung Hermeskeil,on_display
+Ilyushin,Il-18,,DDR-STH,,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-Interflug Il-18.,Il-18; Il18; Coot,Flugausstellung Hermeskeil,on_display
+Junkers,Ju 52,3m,D-CIAD,Tante Ju,,fixed_wing,monoplane,military,transport,,Spanish-built CASA 352L in Ju 52 configuration.,Ju 52; Ju52; Iron Annie; Ju 52/3m,Flugausstellung Hermeskeil,on_display
+Junkers,Ju 87,B,,Stuka,,fixed_wing,monoplane,military,ground_attack,,Recovered Ju 87 airframe/parts.,Ju 87; Ju87; Stuka,Flugausstellung Hermeskeil,on_display
+Junkers,Ju 88,A-4,,,,fixed_wing,monoplane,military,bomber,,Recovered Ju 88 airframe/parts.,Ju 88; Ju88,Flugausstellung Hermeskeil,on_display
+Kamov,Ka-26,,D-HZPS,,,rotary_wing,,civilian,utility,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",Ka-26; Ka26; Hoodlum,Flugausstellung Hermeskeil,on_display
+F+W Emmen,C-3605,,C-541,Schlepp,,fixed_wing,monoplane,military,utility,,Ex-Swiss Air Force target tug.,C-3605; C3605; Alpine Anteater,Flugausstellung Hermeskeil,on_display
+Landmann,La.11,,,,,fixed_wing,monoplane,civilian,private,,"Homebuilt reproduction. This exhibit is a replica/reproduction, not an original airframe. Displayed in the markings D-YLAS.",La.11; La11; D-YLAS; DYLAS,Flugausstellung Hermeskeil,on_display
+Lockheed,F-104,G,20+43,Starfighter,,fixed_wing,monoplane,military,fighter,,Bundesluftwaffe Starfighter.,F-104; F104; F104G; Starfighter,Flugausstellung Hermeskeil,on_display
+Lockheed,F-104,G,26+61,Starfighter,,fixed_wing,monoplane,military,fighter,,Bundesluftwaffe Starfighter.,F-104; F104; F104G; Starfighter,Flugausstellung Hermeskeil,on_display
+Lockheed,F-104,G,24+91,Starfighter,,fixed_wing,monoplane,military,fighter,,Bundesluftwaffe reconnaissance Starfighter.,F-104; F104; F104G; Starfighter,Flugausstellung Hermeskeil,on_display
+Lockheed,F-104,G,FX-60,Starfighter,,fixed_wing,monoplane,military,fighter,,Ex-Belgian Air Force.,F-104; F104; F104G; Starfighter,Flugausstellung Hermeskeil,on_display
+Lockheed,L-1049,G,D-ALIN,Super Constellation,,fixed_wing,monoplane,civilian,commercial_transport,,"Ex-Lufthansa Super Constellation, one of very few preserved in Germany.",L-1049; L1049; Super Constellation; Connie,Flugausstellung Hermeskeil,on_display
+Lockheed,T-33,A,393,Shooting Star,,fixed_wing,monoplane,military,trainer,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",T-33; T33; T33A; T-Bird; TBird,Flugausstellung Hermeskeil,on_display
+Lockheed,T-33,A,,Shooting Star,,fixed_wing,monoplane,military,trainer,,"Second T-33A; the source list repeats the serial 393 for both, so no serial is recorded here.",T-33; T33; T33A; T-Bird; TBird,Flugausstellung Hermeskeil,on_display
+MBB,Bo 105,P,D-HMUY,,,rotary_wing,,military,utility,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",Bo 105; Bo105,Flugausstellung Hermeskeil,on_display
+MBB,Bo 105,P,87+08,,,rotary_wing,,military,utility,,German Army PAH-1.,Bo 105; Bo105,Flugausstellung Hermeskeil,on_display
+McDonnell Douglas,F-4,C,63-7421,Phantom II,,fixed_wing,monoplane,military,fighter,,"Ex-United States Air Force, code SA.",F-4; F4; F4C; Phantom,Flugausstellung Hermeskeil,on_display
+McDonnell Douglas,F-4,C,63-7583,Phantom II,,fixed_wing,monoplane,military,fighter,,Ex-United States Air Force.,F-4; F4; F4C; Phantom,Flugausstellung Hermeskeil,on_display
+McDonnell Douglas,F-4,RF-4C,68-0587,Phantom II,,fixed_wing,monoplane,military,recon,,"Ex-United States Air Force, code SW.",F-4; F4; RF-4C; RF4C; Phantom,Flugausstellung Hermeskeil,on_display
+Messerschmitt,Bf 108,B,KG+EM,Taifun,,fixed_wing,monoplane,military,utility,,"French-built Nord 1002 Pingouin, the post-war licence version of the Bf 108.",Bf 108; Bf108; Taifun,Flugausstellung Hermeskeil,on_display
+Mikoyan-Gurevich,MiG-21,bis,853,,,fixed_wing,monoplane,military,fighter,,Ex-NVA.,MiG-21; MiG21; Fishbed; MiG21bis,Flugausstellung Hermeskeil,on_display
+Mikoyan-Gurevich,MiG-21,F-13,1217,,,fixed_wing,monoplane,military,fighter,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",MiG-21; MiG21; Fishbed,Flugausstellung Hermeskeil,on_display
+Mikoyan-Gurevich,MiG-21,MF,775,,,fixed_wing,monoplane,military,fighter,,Ex-NVA.,MiG-21; MiG21; Fishbed; MiG21MF,Flugausstellung Hermeskeil,on_display
+Mikoyan-Gurevich,MiG-21,SPS,889,,,fixed_wing,monoplane,military,fighter,,Ex-NVA.,MiG-21; MiG21; Fishbed; MiG21SPS,Flugausstellung Hermeskeil,on_display
+Mikoyan-Gurevich,MiG-21,SPS-K,979,,,fixed_wing,monoplane,military,fighter,,"Cockpit section only, ex-NVA. Cockpit section only.",MiG-21; MiG21; Fishbed,Flugausstellung Hermeskeil,on_display
+Mikoyan-Gurevich,MiG-21,US,24+08,,,fixed_wing,monoplane,military,trainer,,Ex-NVA two-seater recoded by the Bundeswehr.,MiG-21; MiG21; Mongol; MiG21US,Flugausstellung Hermeskeil,on_display
+Mikoyan-Gurevich,MiG-23,BN,698,,,fixed_wing,monoplane,military,ground_attack,,Ex-NVA.,MiG-23; MiG23; Flogger; MiG23BN,Flugausstellung Hermeskeil,on_display
+Mikoyan-Gurevich,MiG-23,MF,568,,,fixed_wing,monoplane,military,fighter,,"Ex-NVA MiG-23MF, East German 568, Bundeswehr 20+01.",MiG-23; MiG23; Flogger; MiG23MF,Flugausstellung Hermeskeil,on_display
+Mikoyan-Gurevich,MiG-23,ML,343,,,fixed_wing,monoplane,military,fighter,,Ex-NVA.,MiG-23; MiG23; Flogger; MiG23ML,Flugausstellung Hermeskeil,on_display
+Mil,Mi-2,,D-HZPQ,,,rotary_wing,,military,utility,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",Mi-2; Mi2; Hoplite,Flugausstellung Hermeskeil,on_display
+Mil,Mi-4,A,02139,,,rotary_wing,,military,transport,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",Mi-4; Mi4; Hound; Mi4A,Flugausstellung Hermeskeil,on_display
+Mil,Mi-6,A,RA-21133,,,rotary_wing,,military,transport,,Ex-Russian Mi-6 heavy-lift helicopter.,Mi-6; Mi6; Hook; Mi6A,Flugausstellung Hermeskeil,on_display
+Mil,Mi-8,T,94+20,,,rotary_wing,,military,transport,,Ex-NVA Mi-8T recoded by the Bundeswehr.,Mi-8; Mi8; Hip; Mi8T,Flugausstellung Hermeskeil,on_display
+Mil,Mi-9,,402,,,rotary_wing,,military,electronic_warfare,,Ex-NVA airborne command post.,Mi-9; Mi9; Hip-G; HipG,Flugausstellung Hermeskeil,on_display
+Mil,Mi-14,PL,618,,,rotary_wing,,military,anti_ship,,Ex-East German Navy.,Mi-14; Mi14; Haze; Mi14PL,Flugausstellung Hermeskeil,on_display
+Mil,Mi-2,,96+50,,,rotary_wing,,military,utility,,Ex-NVA Mi-24P recoded by the Bundeswehr.,Mi-2; Mi2; Hoplite,Flugausstellung Hermeskeil,on_display
+Nord,Noratlas,N.2501D,D-ACUT,Noratlas,,fixed_wing,monoplane,military,transport,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",N 2501; Noratlas,Flugausstellung Hermeskeil,on_display
+North American,T-6,,D-FDEM,Harvard,,fixed_wing,monoplane,military,trainer,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",T-6; T6; AT-6; AT6; Harvard; Texan,Flugausstellung Hermeskeil,on_display
+North American,F-100,F,56-3944,Super Sabre,,fixed_wing,monoplane,military,fighter,,Ex-United States Air Force.,F-100; F100; F100F; Super Sabre,Flugausstellung Hermeskeil,on_display
+Panavia,Tornado,IDS,XX948,,,fixed_wing,monoplane,military,ground_attack,,"Ex-Royal Air Force Tornado, coded P.",Tornado IDS; Tornado,Flugausstellung Hermeskeil,on_display
+Percival,Pembroke,C.54,54+21,Pembroke,,fixed_wing,monoplane,military,transport,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",P.66; Pembroke,Flugausstellung Hermeskeil,on_display
+Percival,Pembroke,C.54,54+24,Pembroke,,fixed_wing,monoplane,military,transport,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",P.66; Pembroke,Flugausstellung Hermeskeil,on_display
+Piper,PA-18,Super Cub,D-EDEW,Super Cub,,fixed_wing,monoplane,military,utility,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",PA-18; PA18; L-18; L18; Super Cub,Flugausstellung Hermeskeil,on_display
+Mil,Mi-1,,031,,,rotary_wing,,military,utility,,Polish-built Mi-1.,Mi-1; Mi1; Hare; SM-1; SM1,Flugausstellung Hermeskeil,on_display
+PZL-Mielec,Lim-5,,413,,,fixed_wing,monoplane,military,fighter,,"Polish-built MiG-17, coded C.",Lim-5; Lim5; MiG-17; MiG17; Fresco,Flugausstellung Hermeskeil,on_display
+Raab,Doppelraab,IV,D-8752,Doppelraab,,fixed_wing,monoplane,civilian,trainer,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",Doppelraab,Flugausstellung Hermeskeil,on_display
+Republic,F-84,F,BF+105,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,Early Bundesluftwaffe code.,F-84; F84; F84F; Thunderstreak,Flugausstellung Hermeskeil,on_display
+Republic,F-84,F,DD+380,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,Early Bundesluftwaffe code.,F-84; F84; F84F; Thunderstreak,Flugausstellung Hermeskeil,on_display
+Republic,F-84,RF-84F,EA+241,Thunderflash,,fixed_wing,monoplane,military,recon,,Early Bundesluftwaffe code.,F-84; F84; RF-84F; RF84F; Thunderflash,Flugausstellung Hermeskeil,on_display
+Republic,F-105,F,62-4417,Thunderchief,,fixed_wing,monoplane,military,ground_attack,,Ex-United States Air Force.,F-105; F105; F105F; Thunderchief,Flugausstellung Hermeskeil,on_display
+Rockwell,OV-10,B,99+16,Bronco,,fixed_wing,monoplane,military,utility,,Bundesluftwaffe target tug.,OV-10; OV10; OV10B; Bronco,Flugausstellung Hermeskeil,on_display
+Saab,35,Draken,35931,Draken,,fixed_wing,monoplane,military,fighter,,"Ex-Swedish Air Force, codes 60 / F21.",Saab 35; J 35; Draken,Flugausstellung Hermeskeil,on_display
+Saab,37,AJSF 37 Viggen,37974,Viggen,,fixed_wing,monoplane,military,recon,,"Ex-Swedish Air Force, code 64.",Saab 37; Viggen; AJSF37,Flugausstellung Hermeskeil,on_display
+PZL-Mielec,Lim-2,,301,,,fixed_wing,monoplane,military,fighter,,Polish-built two-seat MiG-15UTI derivative.,Lim-2; Lim2; MiG-15bis; MiG15bis; Fagot,Flugausstellung Hermeskeil,on_display
+SEPECAT,Jaguar,GR.1A,XX955,,,fixed_wing,monoplane,military,ground_attack,,"Ex-Royal Air Force, coded GK.",Jaguar,Flugausstellung Hermeskeil,on_display
+Scheibe,Bergfalke,II,D-8518,Bergfalke,,fixed_wing,monoplane,civilian,trainer,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",Bergfalke; Mü 13,Flugausstellung Hermeskeil,on_display
+Schleicher,Ka 4,Rhönlerche II,OO-ZOR,Rhönlerche,,fixed_wing,monoplane,civilian,trainer,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",Ka 4; Ka4; Rhonlerche,Flugausstellung Hermeskeil,on_display
+Schneider,Grunau Baby,IIb,D-7160,Grunau Baby,,fixed_wing,monoplane,civilian,trainer,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",Grunau Baby,Flugausstellung Hermeskeil,on_display
+Schneider,ESG 9,,,Schädelspalter,,fixed_wing,monoplane,civilian,trainer,,Early German primary glider.,ESG 9; ESG9,Flugausstellung Hermeskeil,on_display
+Sikorsky,S-64,,D-9511,Skycrane,,rotary_wing,,civilian,utility,,Cockpit section only. Cockpit section only.,S-64; S64; Skycrane; Tarhe,Flugausstellung Hermeskeil,on_display
+Stamer-Lippisch,Zögling,,,Zögling,,fixed_wing,monoplane,civilian,trainer,,Primary glider.,Zoegling; Zogling,Flugausstellung Hermeskeil,on_display
+Boeing,PT-17,,N56786,Kaydet,,fixed_wing,biplane,military,trainer,,Also marked 40-1964.,PT-17; PT17; Stearman; Kaydet; N2S,Flugausstellung Hermeskeil,on_display
+Sukhoi,Su-7,BM,09,,,fixed_wing,monoplane,military,ground_attack,,Ex-Soviet/Warsaw Pact Su-7.,Su-7; Su7; Fitter; Su7BM,Flugausstellung Hermeskeil,on_display
+Sukhoi,Su-22,M4,678,,,fixed_wing,monoplane,military,ground_attack,,Ex-NVA.,Su-22; Su22; Fitter,Flugausstellung Hermeskeil,on_display
+Tupolev,Tu-134,A,DDR-SCK,,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-Interflug Tu-134.,Tu-134; Tu134; Crusty; Tu134A,Flugausstellung Hermeskeil,on_display
+VEB Flugzeugwerke Dresden,Il-14,P,3076,,,fixed_wing,monoplane,civilian,commercial_transport,,East German VEB-built Il-14P.,Il-14; Il14; VEB 14P; Il14P,Flugausstellung Hermeskeil,on_display
+Piasecki,H-21,C,83+21,Shawnee,,rotary_wing,,military,transport,,Bundeswehr H-21C.,H-21; H21; H21C; Workhorse; Shawnee,Flugausstellung Hermeskeil,on_display
+Vickers,VC10,1101,G-ARVF,VC10,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-British United/Gulf Air VC10.,VC10; VC-10,Flugausstellung Hermeskeil,on_display
+Vickers,Viscount,814,D-ANAM,Viscount,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-Lufthansa Viscount.,Viscount; V.814,Flugausstellung Hermeskeil,on_display
+de Havilland,Venom,FB.50,G55-2,,,fixed_wing,monoplane,military,ground_attack,,Venom-based target/reconnaissance conversion.,Venom,Flugausstellung Hermeskeil,on_display
+Westland,Lynx,AH.7,XZ221,,,rotary_wing,,military,utility,,"Ex-British Army, coded Z.",Lynx,Flugausstellung Hermeskeil,on_display
+Westland,Wasp,HAS.1,XS569,,,rotary_wing,,military,anti_ship,,Ex-Royal Navy.,Wasp,Flugausstellung Hermeskeil,on_display
+Westland,Wessex,HC.2,XR527,,,rotary_wing,,military,transport,,"Ex-Royal Air Force, coded K.",Wessex,Flugausstellung Hermeskeil,on_display
+Westland,Wessex,HC.2,XT670,,,rotary_wing,,military,transport,,Ex-Royal Air Force.,Wessex,Flugausstellung Hermeskeil,on_display
+Westland,Whirlwind,HAR.10,XP352,,,rotary_wing,,military,search_rescue,,Ex-Royal Air Force.,Whirlwind,Flugausstellung Hermeskeil,on_display
+Westland,Scout,AH.1,XR597,,,rotary_wing,,military,utility,,Ex-British Army.,Scout,Flugausstellung Hermeskeil,on_display
+Westland,Scout,AH.1,XW799,,,rotary_wing,,military,utility,,Ex-British Army.,Scout,Flugausstellung Hermeskeil,on_display
+Zlín,Z-37,A,D-ESSJ,Čmelák,,fixed_wing,monoplane,civilian,utility,,"In the privately run Flugausstellung L. + P. Junior at Hermeskeil, one of the largest private aircraft collections in Europe with around 100 airframes in two halls and on the open-air site.",Z-37; Z37; Cmelak; Zlin 37; Z37A,Flugausstellung Hermeskeil,on_display

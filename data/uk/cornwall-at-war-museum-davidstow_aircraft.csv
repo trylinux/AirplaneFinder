@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Hawker,Hunter,F.6,XG164,,,fixed_wing,monoplane,military,fighter,,Displayed inside in 111 Squadron markings; ex-maintenance serial 8681M.,Hunter F6; 8681M; P.1067,"Cornwall At War Museum, Davidstow",on_display
+Fairey,Gannet,ECM.6,XG831,,,fixed_wing,monoplane,military,electronic_warfare,,Coded 396 in 831 Naval Air Squadron markings; former naval instructional airframe A2539.,Gannet ECM6; AS.4; A2539,"Cornwall At War Museum, Davidstow",on_display
+de Havilland,Vampire,T.11,XK627,,,fixed_wing,monoplane,military,trainer,,"Nose section only, in 56 Squadron markings.",Vampire T11; DH.115; Vampire,"Cornwall At War Museum, Davidstow",on_display
+Northrop,Chukar,D.1,XW999,,,fixed_wing,monoplane,military,drone,,Target drone displayed indoors.,Chukar D1; MQM-74; MQM74,"Cornwall At War Museum, Davidstow",on_display
+Northrop,Shelduck,D.1,XZ791,,,fixed_wing,monoplane,military,drone,,Target drone displayed indoors.,Shelduck D1; MQM-57; MQM57,"Cornwall At War Museum, Davidstow",on_display
+Northrop,Chukar,D.2,ZG347,,,fixed_wing,monoplane,military,drone,,Target drone displayed indoors.,Chukar D2; MQM-74; MQM74,"Cornwall At War Museum, Davidstow",on_display
+Westland,Sea King,HAS.6,ZG461,,,rotary_wing,,military,utility,,Rear-crew procedures trainer airframe; displayed inside.,Sea King HAS6; SH-3; SH3,"Cornwall At War Museum, Davidstow",on_display

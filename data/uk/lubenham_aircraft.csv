@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Hawker,Sea Hawk,FGA.6,XE368,,,fixed_wing,monoplane,military,ground_attack,,Preserved outside at Papillon Hall Farm. Confirmed 2026.,A2534; J-200; J200,"Papillon Hall Farm Aircraft Collection, Lubenham",on_display
+Avro,Vulcan,K.2,XH560,,,fixed_wing,monoplane,military,bomber,,"Nose section only, preserved outside. Confirmed 2026.",,"Papillon Hall Farm Aircraft Collection, Lubenham",on_display
+Hunting,Jet Provost,T.3A,XM405,,,fixed_wing,monoplane,military,trainer,,Preserved outside in 1 Flying Training School markings. Confirmed 2026.,42,"Papillon Hall Farm Aircraft Collection, Lubenham",on_display
+Hawker,Hunter,T.7,XL587,,,fixed_wing,monoplane,military,fighter,,Stored outside. Confirmed 2025.,8807M; G-HPUX; GHPUX,"Papillon Hall Farm Aircraft Collection, Lubenham",in_storage

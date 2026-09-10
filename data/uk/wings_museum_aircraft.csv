@@ -1,0 +1,26 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,A-20,C,41-19393,Havoc,,fixed_wing,monoplane,military,bomber,,"Douglas A-20C Havoc, a composite airframe rebuilt with 43-21664. Displayed inside. Confirmed Aug 2021.",A20; A20C; Boston,Wings Museum,on_display
+Douglas,C-47,A,42-100611,Skytrain,,fixed_wing,monoplane,military,transport,,"Nose section only, in 4U-D markings; the fuselage came from a separate airframe and it is displayed as 2100766.",C47; C47A; DC-3; DC3; Dakota; 2100766; 4U-D; 4UD,Wings Museum,on_display
+Bell,P-63,C,43-11137,Kingcobra,,fixed_wing,monoplane,military,fighter,,Cockpit section only; the fuselage of this Bell P-63C Kingcobra is held in store. Confirmed Apr 2025.,P63; P63C,Wings Museum,on_display
+Douglas,A-20,G,43-21664,Havoc,,fixed_wing,monoplane,military,bomber,,"Douglas A-20G Havoc, a composite airframe rebuilt with 41-19393. Displayed inside. Confirmed Apr 2025.",A20; A20G; Boston,Wings Museum,on_display
+North American,B-25,J,43-36140,Mitchell,,fixed_wing,monoplane,military,bomber,,Nose section only of a North American B-25J Mitchell. Confirmed on display inside Apr 2025.,B25; B25J,Wings Museum,on_display
+North American,TB-25,J,44-30861,Mitchell,Bedsheet Bomber,fixed_wing,monoplane,military,trainer,,North American TB-25J Mitchell named 'Bedsheet Bomber'; under restoration with the fuselage outside. Last reported Apr 2025.,TB25; TB25J; B-25; B25,Wings Museum,under_restoration
+Bell,P-63,C,44-4315,Kingcobra,,fixed_wing,monoplane,military,fighter,,"Bell P-63C Kingcobra coded 17, displayed inside. Confirmed Apr 2025.",P63; P63C,Wings Museum,on_display
+Bell,P-63,C,44-4368,Kingcobra,,fixed_wing,monoplane,military,fighter,,"Fuselage only of a Bell P-63C Kingcobra, stored outside and not on public display.",P63; P63C,Wings Museum,in_storage
+Nakajima,B5N,2,5353,Kate,,fixed_wing,monoplane,military,bomber,,Recovered wreckage of a Japanese Navy Nakajima B5N2 Kate. Displayed inside. Confirmed Apr 2025.,B5N2,Wings Museum,on_display
+Douglas,B-26,K,64-17657,Invader,,fixed_wing,monoplane,military,bomber,,Nose section only of a Douglas B-26K Invader. Confirmed on display inside Apr 2025.,B26; B26K; A-26; A26,Wings Museum,on_display
+Bristol,Beaufort,Mk VIII,A9-555,,,fixed_wing,monoplane,military,bomber,,Nose section only of an ex Royal Australian Air Force Bristol Beaufort VIII. Confirmed on display inside Apr 2025.,,Wings Museum,on_display
+Hawker,Hurricane,Mk IIc,BD731,,,fixed_wing,monoplane,military,fighter,,Recovered wreckage of a Hawker Hurricane IIc. Displayed inside. Confirmed Apr 2025.,,Wings Museum,on_display
+Avro,Lancaster,MR.7,NE135,,,fixed_wing,monoplane,military,bomber,,Rear fuselage section only of an Avro Lancaster MR.7. Confirmed on display inside Apr 2025.,,Wings Museum,on_display
+Handley Page,Hampden,B.I,P1273,,,fixed_wing,monoplane,military,bomber,,Recovered wreckage of a Handley Page Hampden B.I. Displayed inside. Confirmed Apr 2025.,,Wings Museum,on_display
+Bell,P-63,C,,Kingcobra,,fixed_wing,monoplane,military,fighter,,"Fuselage of a Bell P-63C Kingcobra stored outside; one of two unidentified Kingcobra fuselages at the museum, this one last reported Jun 2021.",P63; P63C; Kingcobra fuselage,Wings Museum,in_storage
+Bell,P-63,C,,Kingcobra,,fixed_wing,monoplane,military,fighter,,"Second unidentified Bell P-63C Kingcobra fuselage stored outside, last reported Oct 2021.",P63; P63C; Kingcobra hulk,Wings Museum,in_storage
+Miles,Magister,Mk I,T9768,,,fixed_wing,monoplane,military,trainer,,"Fuselage only of a Miles Magister I, civil registration G-AIUA. Displayed inside. Confirmed Apr 2025.",Hawk Trainer; G-AIUA,Wings Museum,on_display
+Bristol,Beaufighter,Mk If,,,,fixed_wing,monoplane,military,fighter,,Cockpit section only of an ex Royal Australian Air Force Bristol Beaufighter If; individual identity not recorded. Confirmed on display inside Apr 2025.,,Wings Museum,on_display
+Curtiss,SB2C,,,Helldiver,,fixed_wing,monoplane,military,bomber,,"Cockpit section only of a Curtiss Helldiver, held in a store container and not normally on public view.",SB2C,Wings Museum,in_storage
+de Havilland Canada,Chipmunk,T.10,WD377,,,fixed_wing,monoplane,military,trainer,,Chipmunk T.10 fuselage used as a walk-in exhibit. Confirmed on display inside Apr 2025.,DHC-1; DHC1,Wings Museum,on_display
+English Electric,Canberra,TT.18,WK127,,,fixed_wing,monoplane,military,utility,,"Nose section only, coded FO; held in store. Last reported Apr 2025.",,Wings Museum,in_storage
+Hunting,Jet Provost,T.3,XM468,,,fixed_wing,monoplane,military,trainer,,"Cockpit section only, coded B; held in a store container.",,Wings Museum,in_storage
+Hunting,Jet Provost,T.3A,XN495,,,fixed_wing,monoplane,military,trainer,,Nose section only; the survivors database flags its presence here as needing confirmation.,,Wings Museum,in_storage
+Hawker Siddeley,Kestrel,FGA.1,XS694,,,fixed_wing,monoplane,military,experimental,,Hawker Siddeley Kestrel FGA.1 fuselage held in a container under restoration. Last reported Apr 2025.,,Wings Museum,under_restoration
+Hawker Siddeley,Harrier,GR.3,XV786,,,fixed_wing,monoplane,military,ground_attack,,"Nose section only, coded 123, in HMS Prince of Wales markings. Confirmed Jul 2026.",,Wings Museum,on_display

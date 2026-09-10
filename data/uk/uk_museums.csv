@@ -1,0 +1,301 @@
+name,city,state_province,country,postal_code,region,address,website,access_type,latitude,longitude
+Royal Air Force Museum Midlands,Cosford,England,United Kingdom,TF11 8UP,Europe,"RAF Cosford, Shifnal, Shropshire",https://www.rafmuseum.org.uk/midlands/,public,52.64442,-2.31162
+"Fleet Air Arm Museum, Yeovilton",Ilchester,England,United Kingdom,BA22 8HT,Europe,"RNAS Yeovilton, Ilchester, Somerset",https://www.royalnavymuseums.org.uk/visit-us/fleet-air-arm-museum,public,51.01179,-2.64673
+RNAS Yeovilton Gate Guardians,Ilchester,England,United Kingdom,BA22 8HT,Europe,"RNAS Yeovilton (HMS Heron) main gate, B3151, Ilchester, Somerset",,public,51.01179,-2.64673
+"Navy Wings Collection, RNAS Yeovilton",Ilchester,England,United Kingdom,BA22 8HT,Europe,"Navy Wings hangar, RNAS Yeovilton, Ilchester, Somerset",https://navywings.org.uk/,restricted,51.01179,-2.64673
+RNAS Yeovilton Station Heritage Aircraft,Ilchester,England,United Kingdom,BA22 8HT,Europe,"RNAS Yeovilton (HMS Heron), Ilchester, Somerset",,restricted,51.01179,-2.64673
+RNAS Culdrose Gate Guardians,Helston,England,United Kingdom,TR12 7RH,Europe,"RNAS Culdrose (HMS Seahawk) main gate, Helston, Cornwall",,public,50.08253,-5.25802
+RNAS Culdrose Station Heritage Aircraft,Helston,England,United Kingdom,TR12 7RH,Europe,"RNAS Culdrose (HMS Seahawk), Helston, Cornwall",,restricted,50.08253,-5.25802
+"National Museum of the Royal Navy, Portsmouth",Portsmouth,England,United Kingdom,PO1 3LJ,Europe,"Portsmouth Historic Dockyard, Main Road, HM Naval Base, Portsmouth",https://www.royalnavymuseums.org.uk/visit-us/portsmouth-historic-dockyard,public,50.79913,-1.10708
+Explosion Museum of Naval Firepower,Gosport,England,United Kingdom,PO12 4LE,Europe,"Priddy's Hard, Heritage Way, Gosport, Hampshire",https://www.royalnavymuseums.org.uk/visit-us/explosion-museum-naval-firepower,public,50.80714,-1.12655
+"HMS Sultan Gate Guardian, Gosport",Gosport,England,United Kingdom,PO12 3BY,Europe,"HMS Sultan main gate, Military Road, Gosport, Hampshire",,public,50.80229,-1.15988
+"Science Museum, London",London,England,United Kingdom,SW7 2DD,Europe,"Exhibition Road, South Kensington, London",https://www.sciencemuseum.org.uk/,public,51.49730,-0.17649
+Imperial War Museum London,London,England,United Kingdom,SE1 6HZ,Europe,"Lambeth Road, London",https://www.iwm.org.uk/visits/iwm-london,public,51.49601,-0.10833
+Imperial War Museum North,Manchester,England,United Kingdom,M17 1TZ,Europe,"The Quays, Trafford Wharf Road, Trafford Park, Greater Manchester",https://www.iwm.org.uk/visits/iwm-north,public,53.46978,-2.29888
+Shuttleworth Collection,Biggleswade,England,United Kingdom,SG18 9EP,Europe,"Old Warden Park, Old Warden, Biggleswade, Bedfordshire",https://www.shuttleworth.org,public,52.090184,-0.322598
+RAF Henlow Gate Guardian,Henlow,England,United Kingdom,SG16 6DN,Europe,"Former RAF Henlow, Henlow, Bedfordshire",,public,52.016896,-0.295966
+Cranfield University Aircraft Collection,Cranfield,England,United Kingdom,MK43 0AL,Europe,"Cranfield Airport, Cranfield, Bedfordshire",https://www.cranfield.ac.uk,appointment,52.06691,-0.63137
+Bottisham Airfield Museum,Bottisham,England,United Kingdom,CB25 9DU,Europe,"Bottisham Airfield, Bottisham, Cambridgeshire",https://bottishamairfieldmuseum.com,public,52.217060,0.264804
+RAF Wittering Heritage Museum,Peterborough,England,United Kingdom,PE8 6HB,Europe,"RAF Wittering, Wittering, Peterborough, Cambridgeshire",,restricted,52.615378,-0.446398
+RAF Wittering Gate Guardian,Peterborough,England,United Kingdom,PE8 6HB,Europe,"Main gate, RAF Wittering, Wittering, Peterborough, Cambridgeshire",,public,52.61411,-0.44715
+RAF Wyton Gate Guardian,Huntingdon,England,United Kingdom,PE28 2EA,Europe,"RAF Wyton, Huntingdon, Cambridgeshire",,public,52.347488,-0.121133
+Abbots Ripton Paintball Jet Provost,Abbots Ripton,England,United Kingdom,PE28 2LE,Europe,"Abbots Ripton, Huntingdon, Cambridgeshire",,public,52.4005691,-0.2327519
+de Havilland Aircraft Museum,London Colney,England,United Kingdom,AL2 1BU,Europe,"Salisbury Hall, London Colney, St Albans, Hertfordshire",https://www.dehavillandmuseum.co.uk,public,51.714109,-0.268864
+City of Norwich Aviation Museum,Norwich,England,United Kingdom,NR10 3JF,Europe,"Old Norwich Road, Horsham St Faith, Norwich, Norfolk",https://www.cnam.org.uk,public,52.68050,1.27726
+RAF Air Defence Radar Museum,Neatishead,England,United Kingdom,NR12 8YB,Europe,"RRH Neatishead, Horning Road, Neatishead, Norwich, Norfolk",https://www.radarmuseum.co.uk,public,52.712974,1.471660
+Muckleburgh Military Collection,Weybourne,England,United Kingdom,NR25 7EG,Europe,"Weybourne Military Camp, Weybourne, Holt, Norfolk",https://www.muckleburgh.co.uk,public,52.941795,1.131195
+Spirit of Coltishall Association,Coltishall,England,United Kingdom,NR10 5FB,Europe,"Badersfield, former RAF Coltishall, Coltishall, Norfolk",https://www.spiritofcoltishall.co.uk,appointment,52.76181401,1.37193758
+Marham Aviation Heritage Centre,King's Lynn,England,United Kingdom,PE33 9NP,Europe,"RAF Marham, Marham, King's Lynn, Norfolk",,restricted,52.658463,0.543668
+RAF Marham Preserved Aircraft,King's Lynn,England,United Kingdom,PE33 9NP,Europe,"RAF Marham, Marham, King's Lynn, Norfolk",,restricted,52.658591,0.579817
+Norwich County Hall Jaguar Monument,Norwich,England,United Kingdom,NR1 2DH,Europe,"County Hall, Martineau Lane, Norwich, Norfolk",,public,52.61587,1.30893
+"Jaguar GR.3A Monument, Tattersett",Tattersett,England,United Kingdom,PE31 8RH,Europe,"Tattersett Business Park, Tattersett, King's Lynn, Norfolk",,public,52.835862,0.736586
+RAF West Raynham Preserved Aircraft,West Raynham,England,United Kingdom,NR21 7ES,Europe,"Former RAF West Raynham, Fakenham, Norfolk",,appointment,52.791653,0.731610
+Swaffham Air Cadets Auster,Swaffham,England,United Kingdom,PE37 7DF,Europe,"Air Training Corps squadron site, Swaffham, Norfolk",,public,52.651002,0.693249
+Thetford Paintball Whirlwind,Thetford,England,United Kingdom,IP24 2RL,Europe,"Thetford, Norfolk",,public,52.454209,0.869762
+Norfolk and Suffolk Aviation Museum,Bungay,England,United Kingdom,NR35 1NZ,Europe,"The Street, Flixton, Bungay, Suffolk",https://nasam-flixton.com,public,52.43492032,1.39997566
+Bentwaters Cold War Museum,Woodbridge,England,United Kingdom,IP12 2TW,Europe,"Bentwaters Parks, Rendlesham, Woodbridge, Suffolk",https://bcwm.org.uk,public,52.131383,1.432491
+Suffolk Aviation Heritage Museum,Ipswich,England,United Kingdom,IP10 0AH,Europe,"Foxhall Road, Kesgrave, Ipswich, Suffolk",https://suffolkaviationheritage.org,public,52.05176,1.24006
+Wattisham Station Heritage Museum,Ipswich,England,United Kingdom,IP7 7RA,Europe,"Wattisham Airfield, Wattisham, Ipswich, Suffolk",https://www.wattishamstationheritage.org,appointment,52.132230,0.958874
+RAF Honington Gate Guardian,Bury St Edmunds,England,United Kingdom,IP31 1EE,Europe,"RAF Honington, Honington, Bury St Edmunds, Suffolk",,public,52.335021,0.775643
+RAF Lakenheath Preserved Aircraft,Brandon,England,United Kingdom,IP27 9PN,Europe,"RAF Lakenheath, Lakenheath, Brandon, Suffolk",,restricted,52.41997,0.5794306
+Halesworth Airfield Memorial Museum,Halesworth,England,United Kingdom,IP19 8HX,Europe,"Sparrowhawk Way, Holton, Halesworth, Suffolk",https://halesworthairfieldmuseum.co.uk,public,52.351250,1.532477
+"Hawker Hunter Gate Guard, Beck Row",Beck Row,England,United Kingdom,IP28 8AA,Europe,"Beck Row, Bury St Edmunds, Suffolk",,public,52.387229,0.503572
+Stow Maries Great War Aerodrome,Chelmsford,England,United Kingdom,CM3 6RN,Europe,"Hackmans Lane, Purleigh, Chelmsford, Essex",https://www.stowmaries.org.uk,public,51.670917,0.629463
+East Essex Aviation Museum,Clacton-on-Sea,England,United Kingdom,CO16 8NA,Europe,"Martello Tower, Point Clear, St Osyth, Clacton-on-Sea, Essex",,public,51.801029,1.019913
+Boxted Airfield Museum,Colchester,England,United Kingdom,CO4 5HU,Europe,"Langham Lane, Boxted, Colchester, Essex",https://boxted-airfield.com,public,51.937515,0.922099
+Vulcan Restoration Trust,Southend-on-Sea,England,United Kingdom,SS2 6YF,Europe,"London Southend Airport, Southend-on-Sea, Essex",https://www.avrovulcan.com,appointment,51.567887,0.692522
+Hangar 11 Collection,North Weald,England,United Kingdom,CM16 6AA,Europe,"North Weald Airfield, Epping, Essex",https://www.hangar11.co.uk,appointment,51.71549369,0.15889395
+Gnat Display Team,North Weald,England,United Kingdom,CM16 6AA,Europe,"North Weald Airfield, Epping, Essex",https://www.gnatdisplayteam.co.uk,appointment,51.71549369,0.15889395
+Merville Barracks Dakota Gate Guardian,Colchester,England,United Kingdom,CO2 7UT,Europe,"Merville Barracks, Colchester, Essex",,restricted,51.876828,0.891962
+Wickford Paintball Aircraft,Wickford,England,United Kingdom,SS11 7QU,Europe,"Wickford, Essex",,public,51.60378,0.55292
+"Gloster Meteor T.7, Thornwood",Epping,England,United Kingdom,CM16 6LU,Europe,"Thornwood Common, Epping, Essex",,appointment,51.724013,0.152880
+"511 Squadron ATC Chipmunk, Ramsey",Ramsey,England,United Kingdom,PE26 2PB,Europe,"511 (Ramsey) Squadron Air Training Corps, Redebourne Lane, Ramsey, Huntingdon, Cambridgeshire",,restricted,52.437505,-0.121743
+"Blue Bell Inn Lynx, Werrington",Peterborough,England,United Kingdom,PE4 6RU,Europe,"Blue Bell Inn, The Green, Werrington, Peterborough, Cambridgeshire",,public,52.614911,-0.268843
+High Harthay Outdoor Pursuits Aircraft Display,Huntingdon,England,United Kingdom,PE28 4NQ,Europe,"High Harthay Outdoor Pursuits, High Harthay Farm, Brampton, Huntingdon, Cambridgeshire",,public,52.325140,-0.267040
+Delta Force Paintball Bovingdon Lynx,Hemel Hempstead,England,United Kingdom,HP1 2RR,Europe,"Delta Force Paintball, Upper Bourne End Lane, Bovingdon, Hemel Hempstead, Hertfordshire",,public,51.732803,-0.541006
+"Mayhem Paintball Aircraft, Abridge",Abridge,England,United Kingdom,,Europe,"Mayhem Paintball, Pryors Farm, Patch Park, Abridge, Essex",,public,51.654208,0.144892
+"Four Acre Farm Aircraft Collection, Billericay",Billericay,England,United Kingdom,CM12 9SN,Europe,"Four Acre Farm, Blind Lane, Billericay, Essex",,public,51.603016,0.379780
+"Jet Provost XM473, Wethersfield",Wethersfield,England,United Kingdom,,Europe,"Toppesfield Road, Wethersfield, Braintree, Essex",,public,51.964998,0.514350
+"308 Squadron ATC Viking, Colchester",Colchester,England,United Kingdom,CO2 7SZ,Europe,"308 (Colchester) Squadron Air Training Corps, Circular Road East Lower, Colchester, Essex",,restricted,51.879856,0.901526
+"Dassault Mystere IVA, Andrewsfield",Braintree,England,United Kingdom,,Europe,"Andrewsfield Aerodrome, Saling, Braintree, Essex",,public,51.895000,0.442766
+Chippenham Lodge Aircraft Display,Newmarket,England,United Kingdom,,Europe,"Chippenham Lodge, Chippenham, Newmarket, Cambridgeshire",,public,52.299620,0.447130
+"Rock Barracks Lynx Display, Woodbridge",Woodbridge,England,United Kingdom,,Europe,"Rock Barracks, former MoD Woodbridge airfield, Sutton Heath, Woodbridge, Suffolk",,restricted,52.079828,1.386087
+"Blenheim Camp Aircraft Display, Bury St Edmunds",Bury St Edmunds,England,United Kingdom,IP33 3SW,Europe,"Blenheim Camp, Out Risbygate, Bury St Edmunds, Suffolk",,restricted,52.248678,0.692877
+"Lynx Helicopter Glamping Pod, Kessingland",Kessingland,England,United Kingdom,,Europe,"Kessingland, Lowestoft, Suffolk",,appointment,52.419358,1.705544
+"Sim2do Flight Simulators Lynx Nose, Mildenhall",Mildenhall,England,United Kingdom,IP28 7DF,Europe,"Unit 1B, Gregory Road, Mildenhall, Bury St Edmunds, Suffolk",https://www.sim2do.com,appointment,52.353798,0.500796
+RAF Sculthorpe Heritage Centre,Fakenham,England,United Kingdom,NR21 7LX,Europe,"Sculthorpe Airfield, Sculthorpe, Fakenham, Norfolk",https://www.rafsculthorpeheritagecentre.org,public,52.85288,0.74056
+Dumfries and Galloway Aviation Museum,Dumfries,Scotland,United Kingdom,DG1 3PH,Europe,"Former Control Tower, Heathhall Industrial Estate, Heathhall, Dumfriesshire",https://www.dumfriesaviationmuseum.com/,public,55.08987,-3.56233
+Montrose Air Station Heritage Centre,Montrose,Scotland,United Kingdom,DD10 9BB,Europe,"Waldron Road, Broomfield, Montrose, Angus",https://rafmontrose.org.uk/,public,56.72346,-2.46594
+Morayvia Sci-Tech Experience,Kinloss,Scotland,United Kingdom,IV36 3YA,Europe,"Abbey Road, Kinloss, Forres, Moray",https://morayvia.org.uk/,public,57.63533,-3.55081
+Kelvingrove Art Gallery and Museum,Glasgow,Scotland,United Kingdom,G3 8AG,Europe,"Argyle Street, Kelvingrove, Glasgow",https://www.glasgowlife.org.uk/museums/venues/kelvingrove-art-gallery-and-museum,public,55.86859,-4.29057
+National Museum of Scotland,Edinburgh,Scotland,United Kingdom,EH1 1JF,Europe,"Chambers Street, Edinburgh, Midlothian",https://www.nms.ac.uk/national-museum-of-scotland,public,55.94717,-3.18974
+RAF Lossiemouth Gate Guardian,Lossiemouth,Scotland,United Kingdom,IV31 6SD,Europe,"Main gate, RAF Lossiemouth, Lossiemouth, Moray",https://www.raf.mod.uk/our-organisation/stations/raf-lossiemouth/,public,57.71033,-3.30789
+"Meteor NF.14 WS792, Brighouse Bay Holiday Park",Kirkcudbright,Scotland,United Kingdom,DG6 4TS,Europe,"Brighouse Bay Holiday Park, Borgue, Kirkcudbright, Kirkcudbrightshire",https://www.gillespie-leisure.co.uk/,public,54.78344,-4.12139
+Ulster Aviation Society,Lisburn,Northern Ireland,United Kingdom,BT27 5RF,Europe,"Gate 3, Maze Long Kesh, 94b Halftown Road, Lisburn, County Down",https://www.ulsteraviationsociety.org/,appointment,54.4923707,-6.0971965
+Ulster Transport Museum,Holywood,Northern Ireland,United Kingdom,BT18 0EU,Europe,"Cultra, Holywood, County Down",https://www.ulsterfolkandtransportmuseum.org/,public,54.64951,-5.79799
+Crumlin Road Gaol Wessex Helicopter,Belfast,Northern Ireland,United Kingdom,BT14 6ST,Europe,"Crumlin Road Gaol, 53-55 Crumlin Road, Belfast, County Antrim",https://www.crumlinroadgaol.com/,public,54.60938,-5.94215
+Manx Aviation and Military Museum,Ballasalla,,Isle of Man,IM9 2AT,Europe,"Ronaldsway Airport, Ballasalla",https://www.maps.org.im/,public,54.08673,-4.63428
+"Oaty and Joey's Playbarn, Oatlands Village",St Sampson,,Guernsey,GY2 3TF,Europe,"Oatlands Village, Les Gigands, St Sampson",https://www.oatlands.gg/,public,49.48531,-2.54270
+Yorkshire Air Museum and Allied Air Forces Memorial,York,England,United Kingdom,YO41 4AU,Europe,"Halifax Way, Elvington, York, North Yorkshire",https://yorkshireairmuseum.org,public,53.92677,-0.96438
+South Yorkshire Aircraft Museum,Doncaster,England,United Kingdom,DN4 7FB,Europe,"Dakota Way, Doncaster, South Yorkshire",https://www.southyorkshireaircraftmuseum.org.uk,public,53.513670,-1.108766
+North East Land Sea and Air Museums,Sunderland,England,United Kingdom,SR5 3HZ,Europe,"Old Washington Road, Sunderland, Tyne and Wear",https://www.nelsam.org.uk,public,54.92379492,-1.46929255
+Solway Aviation Museum,Carlisle,England,United Kingdom,CA6 4NW,Europe,"Carlisle Lake District Airport, Crosby-on-Eden, Carlisle, Cumbria",https://www.solway-aviation-museum.co.uk,public,54.943545,-2.805668
+"The Griffin Trust, Hooton Park",Ellesmere Port,England,United Kingdom,CH65 1BQ,Europe,"Hooton Park Hangars, Hooton Road, Ellesmere Port, Cheshire",https://www.hootonparkhangars.org.uk,public,53.303466,-2.944766
+Avro Heritage Museum,Stockport,England,United Kingdom,SK7 1QR,Europe,"Chester Road, Woodford, Stockport, Cheshire",https://avroheritagemuseum.co.uk,public,53.333056,-2.165380
+"Real Aeroplane Museum, Breighton",Selby,England,United Kingdom,YO8 6DS,Europe,"Breighton Aerodrome, Breighton, Selby, East Riding of Yorkshire",https://www.realaero.com,public,53.802720,-0.923073
+"Runway Visitor Park, Manchester Airport",Altrincham,England,United Kingdom,WA15 8XQ,Europe,"Sunbank Lane, Altrincham, Greater Manchester",https://www.runwayvisitorpark.co.uk,public,53.354885,-2.284120
+"Lakes Lightnings Collection, Spark Bridge",Ulverston,England,United Kingdom,,Europe,"Spark Bridge, Ulverston, Cumbria",,appointment,54.252465,-3.065366
+"Holmside Park Sea King Collection, Edmondsley",Durham,England,United Kingdom,DH7 6QF,Europe,"Holmside Park, Edmondsley, Durham, County Durham",https://www.holmsidepark.co.uk,public,54.835896,-1.657070
+Hartlepool College of Further Education Jet Provosts,Hartlepool,England,United Kingdom,TS24 7NT,Europe,"Stockton Street, Hartlepool, County Durham",,public,54.68446,-1.21012
+"Bawtry Paintball Helicopters, Doncaster",Doncaster,England,United Kingdom,,Europe,"Bawtry, Doncaster, South Yorkshire",,public,53.4551,-1.02834
+"Vulcan XH558 Hangar, Doncaster",Doncaster,England,United Kingdom,DN9 3RH,Europe,"Doncaster Sheffield Airport, Heyford House, Doncaster, South Yorkshire",https://www.vulcantothesky.org,appointment,53.49032,-1.00780
+Hack Green Secret Nuclear Bunker,Nantwich,England,United Kingdom,CW5 8AP,Europe,"French Lane, Hack Green, Nantwich, Cheshire",https://www.hackgreen.co.uk,public,53.029353,-2.532634
+"Sea Harrier Gate Guard, Winsford",Winsford,England,United Kingdom,,Europe,"Winsford, Cheshire",,public,53.1841,-2.55308
+BAE Systems Brough Gate Guardian,Brough,England,United Kingdom,HU15 1EQ,Europe,"BAE Systems, Brough, East Riding of Yorkshire",,restricted,53.7248,-0.582468
+RAF Leeming Gate Guardian and Station Aircraft,Northallerton,England,United Kingdom,DL7 9NJ,Europe,"RAF Leeming, Northallerton, North Yorkshire",,restricted,54.295728,-1.546813
+"Red Arrows Hawk, Coneygarth",Northallerton,England,United Kingdom,,Europe,"Coneygarth, near Leeming Bar, North Yorkshire",,public,54.312504,-1.567674
+RAF Boulmer Gate Guardian,Alnwick,England,United Kingdom,NE66 3JF,Europe,"RAF Boulmer, Alnwick, Northumberland",,public,55.424137,-1.603880
+RAF Spadeadam Gate Guardian,Brampton,England,United Kingdom,CA8 7AA,Europe,"RAF Spadeadam, Brampton, Cumbria",,public,55.026275,-2.600921
+RAF Woodvale Gate Guardian,Formby,England,United Kingdom,L37 7AD,Europe,"RAF Woodvale, Formby, Merseyside",,public,53.583507,-3.045602
+BAE Systems Warton Lightning,Preston,England,United Kingdom,PR4 1AX,Europe,"BAE Systems Warton Aerodrome, Warton, Preston, Lancashire",,restricted,53.74686984,-2.86960781
+"247 Squadron Air Training Corps, Ashton-under-Lyne",Ashton-under-Lyne,England,United Kingdom,,Europe,"Ashton-under-Lyne, Greater Manchester",,restricted,53.487012,-2.098924
+Newcastle Airport Instructional Jet Provosts,Newcastle upon Tyne,England,United Kingdom,NE13 8BU,Europe,"Newcastle Airport, Woolsington, Newcastle upon Tyne, Tyne and Wear",,restricted,55.032370,-1.696648
+Newcastle Paintball Lynx,Newcastle upon Tyne,England,United Kingdom,,Europe,"North of Newcastle upon Tyne, Tyne and Wear",,public,55.071739,-1.639527
+"Delta Force Paintball Lynx, Knowsley",Prescot,England,United Kingdom,L34 4AN,Europe,"Knowsley Safari Park, Prescot, Merseyside",,public,53.436261,-2.813801
+"East Rounton Paintball Aircraft, Yarm",Yarm,England,United Kingdom,,Europe,"East Rounton, Yarm, North Yorkshire",,public,54.44297,-1.33080
+Burnley Paintball Wessex,Burnley,England,United Kingdom,,Europe,"Burnley, Lancashire",,public,53.813090,-2.246992
+"Meteor F.8 Display, Speke",Liverpool,England,United Kingdom,,Europe,"Speke, Liverpool, Merseyside",,public,53.34819,-2.88117
+"Fort Perch Rock, New Brighton",Wallasey,England,United Kingdom,CH45 2JU,Europe,"Marine Promenade, New Brighton, Wallasey, Merseyside",http://www.fortperchrock.org.uk,public,53.442430,-3.040996
+"Blue Lagoon Diving Centre, Womersley",Doncaster,England,United Kingdom,DN6 9BB,Europe,"Womersley, near Pontefract, North Yorkshire",,public,53.670869,-1.206291
+"Sea King Display, Wykeham",Scarborough,England,United Kingdom,,Europe,"Wykeham, near Scarborough, North Yorkshire",,public,54.226902,-0.485519
+Strensall Barracks Puma,York,England,United Kingdom,YO32 5SW,Europe,"Queen Elizabeth Barracks, Strensall, York, North Yorkshire",,restricted,54.018348,-1.031841
+University of Sheffield Laboratory for Verification and Validation,Sheffield,England,United Kingdom,S9 1ZA,Europe,"Advanced Manufacturing Park, Europa Avenue, Sheffield, South Yorkshire",https://lvv.ac.uk,appointment,53.393939,-1.384856
+"Vampire T.11 Display, Patrington",Hull,England,United Kingdom,,Europe,"Patrington, East Riding of Yorkshire",,public,53.687568,-0.019096
+"Ream Hills Holiday Park, Weeton",Preston,England,United Kingdom,PR4 3NJ,Europe,"Ream Hills Farm, Mythop Road, Weeton, Preston, Lancashire",https://reamhills.co.uk,public,53.802981,-2.955801
+Blackpool Campsite Aircraft Display,Blackpool,England,United Kingdom,,Europe,"East of Blackpool Airport, Blackpool, Lancashire",,public,53.778426,-3.007371
+Fishburn Airfield Preserved Aircraft,Sedgefield,England,United Kingdom,TS21 4EU,Europe,"Fishburn Airfield, Fishburn, Stockton-on-Tees, County Durham",http://www.fishburnairfield.co.uk,public,54.68712,-1.46267
+Eden Camp Modern History Museum,Malton,England,United Kingdom,YO17 6RT,Europe,"Eden Camp, Old Malton, Malton, North Yorkshire",https://edencamp.co.uk,public,54.16027,-0.77893
+Hangar 42 Spitfire Visitor Centre,Blackpool,England,United Kingdom,FY4 2QY,Europe,"Hangar 42 South, Blackpool Airport, Squires Gate Lane, Blackpool, Lancashire",https://spitfirevisitorcentre.co.uk,public,53.77867,-3.04230
+Wirral Transport Museum,Birkenhead,England,United Kingdom,CH41 1BG,Europe,"1 Taylor Street, Birkenhead, Merseyside",,public,53.396411,-3.019627
+Lincolnshire Aviation Heritage Centre,East Kirkby,England,United Kingdom,PE23 4DE,Europe,"Former RAF East Kirkby, Spilsby Road, East Kirkby, Lincolnshire",https://www.lincsaviation.co.uk/,public,53.142270,-0.002092
+Battle of Britain Memorial Flight Visitor Centre,Coningsby,England,United Kingdom,LN4 4SY,Europe,"RAF Coningsby, Dogdyke Road, Coningsby, Lincolnshire",https://www.rafbf.org/battle-britain-memorial-flight-visitor-centre,public,53.0919,-0.185485
+RAF Coningsby Gate Guardians,Coningsby,England,United Kingdom,LN4 4SY,Europe,"RAF Coningsby main gate, Coningsby, Lincolnshire",,public,53.0919,-0.185485
+RAF Cranwell Gate Guardians,Cranwell,England,United Kingdom,NG34 8HB,Europe,"RAF College Cranwell, Sleaford, Lincolnshire",,restricted,53.027341,-0.515793
+Cranwell Aviation Heritage Centre,Cranwell,England,United Kingdom,NG34 8EW,Europe,"Heath Farm, North Rauceby, Sleaford, Lincolnshire",,public,53.0153,-0.477266
+Metheringham Airfield Visitor Centre,Metheringham,England,United Kingdom,LN4 3BQ,Europe,"Westmoor Farm, Martin Moor, Metheringham, Lincolnshire",https://www.metheringhamairfield.co.uk/,public,53.1229,-0.34772
+Thorpe Camp Visitor Centre,Tattershall Thorpe,England,United Kingdom,LN4 4PL,Europe,"Thorpe Camp, Tattershall Thorpe, Woodhall Spa, Lincolnshire",https://www.thorpecamp.org.uk/,public,53.1208,-0.182865
+RAF Waddington Gate Guardians,Waddington,England,United Kingdom,LN5 9NB,Europe,"RAF Waddington, Lincoln, Lincolnshire",,public,53.175804,-0.513060
+"Lightning Association Collection, Binbrook",Binbrook,England,United Kingdom,LN8 6HF,Europe,"Binbrook Technical Park, former RAF Binbrook, Market Rasen, Lincolnshire",,appointment,53.4458,-0.196352
+"Lightning F.6 XR725, Binbrook Village",Binbrook,England,United Kingdom,LN8 6BW,Europe,"Binbrook village, Market Rasen, Lincolnshire",,public,53.4246,-0.178865
+"Hunter F.1 Gate Guard, Fleet Hargate",Fleet Hargate,England,United Kingdom,PE12 8LN,Europe,"Fleet Hargate, Holbeach, Lincolnshire",,public,52.807036,0.058830
+"Jet Provost, Hemswell Antiques Centres",Hemswell Cliff,England,United Kingdom,DN21 5TJ,Europe,"Hemswell Antiques Centres, Caenby Corner Estate, Hemswell Cliff, Lincolnshire",,public,53.400263,-0.572546
+"Lightning T.5 XS456, Skegness",Skegness,England,United Kingdom,PE25 1JF,Europe,"Skegness Water Leisure Park, Walls Lane, Ingoldmells, Lincolnshire",,public,53.18003,0.33293
+Humberside Airport Aircraft Displays,Kirmington,England,United Kingdom,DN39 6YH,Europe,"Humberside Airport, Kirmington, North Lincolnshire",,public,53.58367,-0.34902
+Wainfleet Control Tower Aircraft Display,Wainfleet,England,United Kingdom,,Europe,"Former RAF Wainfleet control tower, Wainfleet St Mary, Lincolnshire",,appointment,53.061506,0.236454
+"Sea King ZG822, Friskney",Friskney,England,United Kingdom,,Europe,"The Lake, Friskney, Lincolnshire",,public,53.078126,0.214222
+Freiston Aircraft Display,Freiston,England,United Kingdom,,Europe,"Homer's Lane, Freiston, Boston, Lincolnshire",,public,52.987098,0.054866
+"Whirlwind Collection, Salt Box Farm, North Somercotes",North Somercotes,England,United Kingdom,LN11 7PP,Europe,"Salt Box Farm, North Somercotes, Louth, Lincolnshire",,appointment,53.438271,0.159335
+Newark Air Museum,Winthorpe,England,United Kingdom,NG24 2NY,Europe,"The Airfield, Lincoln Road, Winthorpe, Newark-on-Trent, Nottinghamshire",https://www.newarkairmuseum.org/,public,53.097324,-0.759932
+RAF Syerston Aircraft Display,Syerston,England,United Kingdom,NG23 5NB,Europe,"RAF Syerston, Newark-on-Trent, Nottinghamshire",,restricted,53.0233649,-0.90239056
+Hucknall Flight Test Museum,Hucknall,England,United Kingdom,NG15 6EU,Europe,"Former Rolls-Royce Hucknall flight test airfield, Hucknall, Nottinghamshire",,appointment,53.01996,-1.21908
+Rolls-Royce Heritage Trust Derby,Derby,England,United Kingdom,DE24 8BJ,Europe,"Wilmore Road, Sinfin, Derby, Derbyshire",https://www.rolls-royce.com/about/heritage-trust.aspx,appointment,52.883227,-1.459861
+"Puma Glamping Pod, Melbourne Hall",Melbourne,England,United Kingdom,DE73 8EN,Europe,"Melbourne Hall, Church Square, Melbourne, Derbyshire",,appointment,52.82141,-1.42349
+"Jet Provost XM480, Sheepbridge",Chesterfield,England,United Kingdom,S41 9RE,Europe,"Sheepbridge, Chesterfield, Derbyshire",,public,53.277404,-1.439193
+"Lynx Helicopters, Brailsford Paintball",Brailsford,England,United Kingdom,DE6 3BU,Europe,"Paintball park, Brailsford, Ashbourne, Derbyshire",,public,52.95626,-1.61399
+East Midlands Aeropark,Castle Donington,England,United Kingdom,DE74 2SA,Europe,"East Midlands Airport, Castle Donington, Derby, Leicestershire",http://www.eastmidlandsaeropark.org/,public,52.83250174,-1.34892051
+Bruntingthorpe Cold War Jets Collection,Bruntingthorpe,England,United Kingdom,LE17 5QS,Europe,"Bruntingthorpe Aerodrome, Bath Lane, Bruntingthorpe, Lutterworth, Leicestershire",https://www.lightnings.org.uk/,appointment,52.4982844,-1.1085385
+"Papillon Hall Farm Aircraft Collection, Lubenham",Lubenham,England,United Kingdom,LE16 9TR,Europe,"Papillon Hall Farm, Lubenham, Market Harborough, Leicestershire",,appointment,52.475452,-0.988112
+National Space Centre,Leicester,England,United Kingdom,LE4 5NS,Europe,"Exploration Drive, Leicester",https://www.spacecentre.co.uk/,public,52.65367,-1.13238
+"St George's Barracks Gate Guardian, North Luffenham",North Luffenham,England,United Kingdom,LE15 8RL,Europe,"St George's Barracks, former RAF North Luffenham, Rutland",,restricted,52.632225,-0.625262
+Sywell Aviation Museum,Sywell,England,United Kingdom,NN6 0BN,Europe,"Sywell Aerodrome, Sywell, Northampton, Northamptonshire",https://www.sywellaviationmuseum.org.uk/,public,52.301654,-0.787313
+"Wessex XV726, Kestrel Caravans, Warkton",Kettering,England,United Kingdom,NN16 9XA,Europe,"Kestrel Caravans, Warkton, Kettering, Northamptonshire",,public,52.401334,-0.681916
+Wellesbourne Wartime Museum,Wellesbourne,England,United Kingdom,CV35 9EU,Europe,"Wellesbourne Mountford Airfield, Loxley Lane, Wellesbourne, Warwickshire",https://wellesbournewartimemuseum.org/,public,52.190908,-1.618630
+"Vulcan XM655, Wellesbourne Mountford",Wellesbourne,England,United Kingdom,CV35 9EU,Europe,"Wellesbourne Mountford Airfield, Loxley Lane, Wellesbourne, Warwickshire",https://www.xm655.com/,appointment,52.190908,-1.618630
+"Holly Berry Farm Aircraft Display, Corley Moor",Corley,England,United Kingdom,CV7 8AZ,Europe,"Holly Berry Farm, Corley Moor, Coventry, Warwickshire",,appointment,52.451013,-1.589163
+"Sea Prince WM735, Red Hill, Alcester",Alcester,England,United Kingdom,B49 6NQ,Europe,"Red Hill Farmyard, Red Hill, Alcester, Warwickshire",,public,52.202054,-1.795198
+Midland Air Museum,Baginton,England,United Kingdom,CV3 4FR,Europe,"Rowley Road, Baginton, Coventry, Warwickshire",https://midlandairmuseum.co.uk/,public,52.374451,-1.479066
+Thinktank Birmingham Science Museum,Birmingham,England,United Kingdom,B4 7XG,Europe,"Millennium Point, Curzon Street, Birmingham, West Midlands",https://www.birminghammuseums.org.uk/thinktank,public,52.48159,-1.88643
+"Hunter PR.11 WT723, Birmingham Tyseley",Birmingham,England,United Kingdom,B11 2BH,Europe,"Tyseley, Birmingham, West Midlands",,public,52.452856,-1.854292
+"Nimrod XV232, Coventry Airport",Baginton,England,United Kingdom,CV8 3AZ,Europe,"Coventry Airport, Rowley Road, Baginton, Warwickshire",,appointment,52.365807,-1.491778
+Tettenhall Transport Heritage Centre,Wolverhampton,England,United Kingdom,WV6 8UA,Europe,"Wolverhampton Road, Tettenhall, Wolverhampton, West Midlands",https://tettenhalltransportheritagecentre.co.uk/,public,52.596643,-2.162146
+"Lynx ZG884, Fourways Bar and Grill, Rowley Regis",Rowley Regis,England,United Kingdom,B65 9AN,Europe,"Fourways Bar and Grill, Rowley Regis, West Midlands",,public,52.494035,-2.041117
+"Jaguar GR.1 XX739, Birmingham Paintball",Birmingham,England,United Kingdom,,Europe,"Paintball park south of Birmingham, West Midlands",,public,52.355471,-1.805760
+The Potteries Museum and Art Gallery,Stoke-on-Trent,England,United Kingdom,ST1 3DW,Europe,"Bethesda Street, Hanley, Stoke-on-Trent, Staffordshire",https://www.stokemuseums.org.uk/pmag/,public,53.023210,-2.177486
+MoD Stafford Beacon Barracks Aircraft Display,Stafford,England,United Kingdom,ST18 0AQ,Europe,"Beacon Barracks, Stafford, Staffordshire",,restricted,52.82278207,-2.10432596
+"Puma ZE449, Whittington Barracks, Lichfield",Lichfield,England,United Kingdom,WS14 9PY,Europe,"Whittington Barracks, Lichfield, Staffordshire",,restricted,52.657009,-1.775164
+"Lynx ZG887, Alton Towers",Alton,England,United Kingdom,ST10 4DB,Europe,"Alton Towers Resort, Farley Lane, Alton, Staffordshire",,public,52.989355,-1.889086
+"Jet Provost Gate Guard, Wolverhampton Halfpenny Green Airport",Bobbington,England,United Kingdom,DY7 5DY,Europe,"Wolverhampton Halfpenny Green Airport, Bobbington, Staffordshire",,public,52.513164,-2.263137
+"Jet Provost XM425, Longton",Stoke-on-Trent,England,United Kingdom,ST3 4AD,Europe,"Trentham Road, Longton, Stoke-on-Trent, Staffordshire",,public,52.983251,-2.134347
+"Whirlwind XP350, Bassetts Pole Paintball",Sutton Coldfield,England,United Kingdom,B75 5SA,Europe,"Bassetts Pole, Sutton Coldfield, Staffordshire",,public,52.59102,-1.78051
+RAF Cosford Defence College of Technical Training,Cosford,England,United Kingdom,TF11 8UP,Europe,"RAF Cosford, Shifnal, Shropshire",,restricted,52.645929,-2.298827
+"Chetton Heritage Aircraft Collection, Bridgnorth",Bridgnorth,England,United Kingdom,WV16 6UG,Europe,"Chetton, Bridgnorth, Shropshire",,appointment,52.501102,-2.481096
+RAF Shawbury Gate Guardian,Shawbury,England,United Kingdom,SY4 4DZ,Europe,"RAF Shawbury, Shrewsbury, Shropshire",,public,52.793870,-2.654877
+"Harrier XZ971, MoD Donnington",Telford,England,United Kingdom,TF2 8JT,Europe,"MoD Donnington, Telford, Shropshire",,restricted,52.723646,-2.445504
+"Wartime Aircraft Recovery Group Museum, Sleap",Sleap,England,United Kingdom,SY4 3HE,Europe,"Sleap Airfield, Harmer Hill, Shrewsbury, Shropshire",,public,52.836123,-2.761806
+"Gazelle XZ318, Tong Paintball",Tong,England,United Kingdom,TF11 8PW,Europe,"Tong Wood Paintball, Tong, Shifnal, Shropshire",,public,52.65804,-2.30278
+"Wessex XT480, Rednal Paintball",Rednal,England,United Kingdom,SY11 4HZ,Europe,"Rednal, West Felton, Oswestry, Shropshire",,public,52.82326,-2.96923
+"Agusta A109 ZE412, Stirling Lines, Credenhill",Credenhill,England,United Kingdom,HR4 7BR,Europe,"Stirling Lines, Credenhill, Hereford, Herefordshire",,public,52.078625,-2.798774
+"Whirlwind XP360, Bicton Paintball",Bicton,England,United Kingdom,HR6 9HZ,Europe,"Bicton, Leominster, Herefordshire",,public,52.20525,-2.92015
+"Defford Airfield Heritage Group Museum, Croome",Croome,England,United Kingdom,WR8 9DW,Europe,"National Trust Croome, near High Green, Worcester, Worcestershire",https://deffordairfieldheritagegroup.co.uk/,public,52.099847,-2.1674234
+"Whirlwind XP346, Honeybourne",Honeybourne,England,United Kingdom,WR11 7QF,Europe,"Honeybourne, Evesham, Worcestershire",,appointment,52.07803,-1.83100
+"Lynx XZ193, Kidderminster Paintball",Kidderminster,England,United Kingdom,DY11 5SN,Europe,"Paintball park near Kidderminster, Worcestershire",,public,52.42989,-2.26610
+Brooklands Museum,Weybridge,England,United Kingdom,KT13 0QN,Europe,"Brooklands Road, Weybridge, Surrey",https://www.brooklandsmuseum.com,public,51.35252402,-0.45947649
+Army Flying Museum,Stockbridge,England,United Kingdom,SO20 8FB,Europe,"Middle Wallop, Stockbridge, Hampshire",https://armyflying.com,public,51.149799,-1.573677
+Tangmere Military Aviation Museum,Chichester,England,United Kingdom,PO20 2ES,Europe,"Tangmere Airfield, Tangmere, Chichester, West Sussex",https://www.tangmere-museum.org.uk,public,50.84653499,-0.71571744
+RAF Manston History Museum,Ramsgate,England,United Kingdom,CT12 5DF,Europe,"Manston Road, Manston, Ramsgate, Kent",https://www.rafmanston.co.uk,public,51.349335,1.347616
+Spitfire and Hurricane Memorial Museum,Ramsgate,England,United Kingdom,CT12 5DF,Europe,"The Airfield, Manston Road, Manston, Ramsgate, Kent",https://www.spitfiremuseum.org.uk,public,51.350123,1.349305
+Kent Battle of Britain Museum,Folkestone,England,United Kingdom,CT18 7AG,Europe,"Aerodrome Road, Hawkinge, Folkestone, Kent",https://www.kbobm.org,public,51.113372,1.151627
+Brenzett Aeronautical Museum,Romney Marsh,England,United Kingdom,TN29 0EE,Europe,"Ivychurch Road, Brenzett, Romney Marsh, Kent",https://brenzettaeronauticalmuseum.com,public,51.00898471,0.86254954
+Lashenden Air Warfare Museum,Ashford,England,United Kingdom,TN27 9HX,Europe,"Headcorn Aerodrome, Shenley Road, Headcorn, Ashford, Kent",https://www.lashendenairwarfaremuseum.co.uk,public,51.15430373,0.64401548
+Shoreham Aircraft Museum,Sevenoaks,England,United Kingdom,TN14 7TB,Europe,"High Street, Shoreham, Sevenoaks, Kent",https://www.shoreham-aircraft-museum.co.uk,public,51.334267,0.17762313
+Royal Engineers Museum,Gillingham,England,United Kingdom,ME4 4UG,Europe,"Prince Arthur Road, Gillingham, Kent",https://www.re-museum.co.uk,public,51.39229,0.533542
+The Historic Dockyard Chatham,Chatham,England,United Kingdom,ME4 4TE,Europe,"The Historic Dockyard, Chatham, Kent",https://thedockyard.co.uk,public,51.39363,0.5262296
+Gatwick Aviation Museum,Charlwood,England,United Kingdom,RH6 0BT,Europe,"Lowfield Heath Road, Charlwood, Surrey",https://www.gamc.org.uk,public,51.152824,-0.217844
+Wings Museum,Haywards Heath,England,United Kingdom,RH17 6JT,Europe,"Unit 1, Bucklands Farm, Brantridge Lane, Balcombe, West Sussex",https://www.wingsmuseum.co.uk,public,51.060724,-0.167768
+Solent Sky Museum,Southampton,England,United Kingdom,SO14 3FR,Europe,"Albert Road South, Southampton, Hampshire",https://www.solentskymuseum.org,public,50.89790913,-1.39246475
+Farnborough Air Sciences Trust Museum,Farnborough,England,United Kingdom,GU14 6TF,Europe,"Trenchard House, 85 Farnborough Road, Farnborough, Hampshire",https://www.airsciences.org.uk,public,51.282900,-0.752977
+Museum of Berkshire Aviation,Reading,England,United Kingdom,RG5 4UE,Europe,"Mohawk Way, Woodley, Reading, Berkshire",https://www.museumofberkshireaviation.co.uk,public,51.4507,-0.88321
+Wight Aviation Museum,Sandown,England,United Kingdom,PO36 0JP,Europe,"Sandown Airport, Scotchells Brook Lane, Sandown, Isle of Wight",https://www.wightaviationmuseum.co.uk,public,50.648206,-1.186409
+Robertsbridge Aviation Society Museum,Robertsbridge,England,United Kingdom,TN32 5PA,Europe,"Bush Barn, Robertsbridge, East Sussex",,appointment,50.9995,0.477103
+Amberley Museum,Arundel,England,United Kingdom,BN18 9LT,Europe,"New Barn Road, Amberley, Arundel, West Sussex",https://www.amberleymuseum.co.uk,public,50.897169,-0.541322
+National Army Museum,London,England,United Kingdom,SW3 4HT,Europe,"Royal Hospital Road, Chelsea, London",https://www.nam.ac.uk,public,51.486519,-0.160752
+Biggin Hill Heritage Hangar,Biggin Hill,England,United Kingdom,TN16 3BN,Europe,"Hangar 5, Biggin Hill Airport, Main Road, Biggin Hill, London",https://www.bigginhillheritagehangar.co.uk,appointment,51.3263,0.0356
+"St George's RAF Chapel of Remembrance, Biggin Hill",Biggin Hill,England,United Kingdom,TN16 3EJ,Europe,"Main Road, Biggin Hill, London",https://www.rafchapelbigginhill.com,public,51.3312,0.0325
+"Hawker Hunter Monument, Staples Corner",London,England,United Kingdom,NW2 7AH,Europe,"North Circular Road, Staples Corner, London",,public,51.570115,-0.239754
+Battersea Park Children's Zoo Lynx,London,England,United Kingdom,SW11 4NJ,Europe,"Battersea Park, Chelsea Bridge Gate, London",https://batterseaparkzoo.co.uk,public,51.481019,-0.155470
+"Vanguard Storage Scout, Greenford",Greenford,England,United Kingdom,UB6 8AA,Europe,"Vanguard Storage, Alperton Lane, Greenford, London",,public,51.532725,-0.308186
+RAF Northolt Gate Guardians,Ruislip,England,United Kingdom,HA4 6NG,Europe,"RAF Northolt, West End Road, Ruislip, London",,restricted,51.555560,-0.405432
+Dunsfold Aerodrome Preserved Aircraft,Godalming,England,United Kingdom,GU8 4BS,Europe,"Dunsfold Park, Stovolds Hill, Cranleigh, Surrey",https://www.dunsfoldpark.com,restricted,51.1215,-0.529137
+"Hawker Hunter Gate Guard, Dunsfold",Cranleigh,England,United Kingdom,GU6 8TB,Europe,"Dunsfold Road, south-west edge of Dunsfold Park, Surrey",,public,51.109571,-0.536675
+"Gibraltar Barracks Puma, Camberley",Camberley,England,United Kingdom,GU17 9LP,Europe,"Gibraltar Barracks, Blackwater, Camberley, Surrey",,restricted,51.318227,-0.821145
+AAC Middle Wallop Gate Guardians,Stockbridge,England,United Kingdom,SO20 8DY,Europe,"Army Aviation Centre Middle Wallop, Stockbridge, Hampshire",,restricted,51.154039,-1.568314
+RAF Odiham Gate Guardians,Hook,England,United Kingdom,RG29 1QT,Europe,"RAF Odiham, Odiham, Hook, Hampshire",,restricted,51.225291,-0.953728
+DE&S Fleetlands Preserved Aircraft,Gosport,England,United Kingdom,PO13 0AW,Europe,"DE&S Fleetlands, Fareham Road, Gosport, Hampshire",,restricted,50.830588,-1.169696
+QinetiQ Farnborough Buccaneer,Farnborough,England,United Kingdom,GU14 0LX,Europe,"QinetiQ site, Farnborough, Hampshire",,restricted,51.2808,-0.791824
+"Gnat Monument, Hamble",Southampton,England,United Kingdom,SO31 4RA,Europe,"Hamble-le-Rice, Southampton, Hampshire",,public,50.86244399,-1.3289238
+"424 Squadron ATC Gnat, Southampton",Southampton,England,United Kingdom,SO15 3AA,Europe,"424 Squadron ATC, Blightmont Barracks, Southampton, Hampshire",,restricted,50.914704,-1.439244
+"John Moore Barracks Gazelle, Winchester",Winchester,England,United Kingdom,SO22 6NQ,Europe,"John Moore Barracks, Andover Road, Winchester, Hampshire",,restricted,51.0906,-1.33779
+RAF Swanwick Harrier,Southampton,England,United Kingdom,SO31 7AY,Europe,"Swanwick Air Traffic Control Centre, Sopwith Way, Swanwick, Hampshire",,restricted,50.885649,-1.283514
+Iron Curtain Museum,Alton,England,United Kingdom,GU34 4AB,Europe,"Keepers Lodge, Alton, Hampshire",,appointment,51.148711,-1.003934
+Gliding Heritage Centre,Alton,England,United Kingdom,GU34 5SS,Europe,"Lasham Airfield, Lasham, Alton, Hampshire",https://www.glidingheritage.org.uk,public,51.1903,-1.0326
+"Vickers Valetta, Blackbushe",Camberley,England,United Kingdom,GU17 9LQ,Europe,"Blackbushe Airport, Yateley, Hampshire",,restricted,51.322196,-0.840310
+"Trenchard Museum, RAF Halton",Aylesbury,England,United Kingdom,HP22 5PG,Europe,"RAF Halton, Halton Camp, Wendover, Aylesbury, Buckinghamshire",https://www.trenchardmuseum.org.uk,appointment,51.78765465,-0.74129967
+RAF Halton Instructional Airframes,Aylesbury,England,United Kingdom,HP22 5PG,Europe,"RAF Halton, Halton Camp, Wendover, Aylesbury, Buckinghamshire",,restricted,51.78765465,-0.74129967
+Delta Force Paintball Berkshire Lynx,Maidenhead,England,United Kingdom,SL6 3ST,Europe,"Delta Force Paintball Berkshire, Maidenhead, Berkshire",,appointment,51.468667,-0.779376
+RAF Benson Gate Guardian,Wallingford,England,United Kingdom,OX10 6AA,Europe,"RAF Benson, Benson, Wallingford, Oxfordshire",,restricted,51.61719203,-1.10231953
+RAF Brize Norton Gate Guardian,Carterton,England,United Kingdom,OX18 3LX,Europe,"RAF Brize Norton, Brize Norton, Carterton, Oxfordshire",,restricted,51.753173,-1.558255
+Aces High Aviation Gallery,Abingdon,England,United Kingdom,OX13 6AT,Europe,"Steventon, Abingdon, Oxfordshire",,appointment,51.619096,-1.331477
+Oxford Adventure Park Paintball Aircraft,Abingdon,England,United Kingdom,OX14 3DA,Europe,"Oxford Adventure Park, Furze Brake Woodland, Culham, Oxfordshire",,appointment,51.663460,-1.226268
+"Venom Monument, Grove Technology Park",Wantage,England,United Kingdom,OX12 9FA,Europe,"Grove Technology Park, Downsview Road, Grove, Wantage, Oxfordshire",,public,51.599408,-1.433335
+"Vampire Monument, Henley-on-Thames",Henley-on-Thames,England,United Kingdom,RG9 1SU,Europe,"Polo field off Bolney Lane, Henley-on-Thames, Oxfordshire",,public,51.521126,-0.887146
+"447 Squadron ATC Jet Provost, Henley-on-Thames",Henley-on-Thames,England,United Kingdom,RG9 1DB,Europe,"447 Squadron ATC, Friday Street, Henley-on-Thames, Oxfordshire",,restricted,51.536466,-0.902082
+"Jet Provost Monument, Thame",Thame,England,United Kingdom,OX9 3RR,Europe,"Thame, Oxfordshire",,public,51.758266,-0.985276
+"Jaguar Gate Guard, Enstone",Chipping Norton,England,United Kingdom,OX7 4NP,Europe,"Enstone Aerodrome, Enstone, Chipping Norton, Oxfordshire",,public,51.932547,-1.441440
+"MOD Bicester Preserved Aircraft, Upper Arncott",Bicester,England,United Kingdom,OX25 1PP,Europe,"Murcott Road, Upper Arncott, Bicester, Oxfordshire",,public,51.844546,-1.119106
+Defence Academy Shrivenham Aircraft,Swindon,England,United Kingdom,SN6 8LA,Europe,"Defence Academy of the United Kingdom, Shrivenham, Oxfordshire",,restricted,51.61381,-1.635017
+"Hawker Hunter Gate Guard, Ford",Arundel,England,United Kingdom,BN18 0BX,Europe,"Ford, Arundel, West Sussex",,public,50.821297,-0.580886
+"Lynx Monument, East Grinstead",East Grinstead,England,United Kingdom,RH19 3QF,Europe,"Fairlight House, Holtye Road, East Grinstead, West Sussex",,public,51.132538,0.014279
+"Airsoft Paintball Park Aircraft, Crawley",Crawley,England,United Kingdom,RH10 4NF,Europe,"Airsoft Paintball Park, Driver Wood, Old Hollow, Crawley, West Sussex",,appointment,51.128739,-0.130976
+"Holmbush Paintball Puma, Faygate",Horsham,England,United Kingdom,RH12 4SE,Europe,"Holmbush Paintball, Faygate, Horsham, West Sussex",https://www.holmbushpaintball.co.uk,appointment,51.095885,-0.248283
+Blackberry Wood Campsite Wessex,Ditchling,England,United Kingdom,BN6 8XS,Europe,"Blackberry Wood, Streat Lane, Streat, Ditchling, East Sussex",https://blackberrywood.com,appointment,50.916819,-0.079162
+"225 Squadron ATC Chipmunk, Brighton",Brighton,England,United Kingdom,BN1 4JN,Europe,"225 Squadron ATC, Brighton, East Sussex",,restricted,50.83752497,-0.12457797
+Haywards Heath ATC Bulldog,Haywards Heath,England,United Kingdom,RH16 3AN,Europe,"Air Training Corps, Eastern Road, Haywards Heath, West Sussex",,restricted,50.996078,-0.092175
+"Windmill Campersite Wessex, Clatterford",Newport,England,United Kingdom,PO30 1UH,Europe,"Windmill Campersite, Froglands Farm, Clatterford, Newport, Isle of Wight",,appointment,50.683103,-1.317525
+"Jet Provost Monument, Erith",Erith,England,United Kingdom,DA8 1AS,Europe,"Erith, Kent",,public,51.477761,0.212987
+"Buccaneer Nose Monument, Gravesend",Gravesend,England,United Kingdom,DA11 0DL,Europe,"Gravesend, Kent",,public,51.423879,0.371418
+Medway Aircraft Preservation Society,Rochester,England,United Kingdom,ME5 9SD,Europe,"Rochester Airport, Chatham, Kent",https://www.mapsl.co.uk,public,51.356018,0.508860
+Battle of Britain Bunker,Uxbridge,England,United Kingdom,UB10 0FQ,Europe,"Wren Avenue, Uxbridge, London",https://www.battleofbritainbunker.co.uk,public,51.5474,-0.4726
+Aerospace Bristol,Bristol,England,United Kingdom,BS34 5BZ,Europe,"Hayes Way, Patchway, Filton, Bristol, South Gloucestershire",https://aerospacebristol.org,public,51.523933,-2.578297
+"Lightning F.3 XP745, Vanguard Self Storage Bristol",Bristol,England,United Kingdom,BS5 9JY,Europe,"Vanguard Self Storage, 22 Church Road, Redfield, Bristol",,appointment,51.457862,-2.562244
+"Jet Provost Gate Guard, Felton",Felton,England,United Kingdom,,Europe,"West Lane, Felton, near Bristol Airport, North Somerset",,public,51.388231,-2.696808
+Bristol Activity Centre Paintball,Bristol,England,United Kingdom,BS10 7TW,Europe,"Hollywood Lane, Cribbs Causeway, Bristol, South Gloucestershire",,appointment,51.528208,-2.615894
+"Cornwall At War Museum, Davidstow",Camelford,England,United Kingdom,PL32 9YF,Europe,"Davidstow Airfield, Davidstow, Camelford, Cornwall",,public,50.647000,-4.632410
+"Lightning F.6 XS936, Castle Motors Liskeard",Liskeard,England,United Kingdom,,Europe,"Castle Motors, Dobwalls, Liskeard, Cornwall",,public,50.415700,-4.395410
+RAF St Mawgan Sea King Gate Guardian,Newquay,England,United Kingdom,TR8 4HP,Europe,"RAF St Mawgan, St Mawgan, Newquay, Cornwall",,restricted,50.435081,-5.013054
+"On Target Outdoor Paintball, Trebudannon",Newquay,England,United Kingdom,,Europe,"Trebudannon, St Columb, Cornwall",,appointment,50.412737,-4.972828
+Britannia Royal Naval College Dartmouth,Dartmouth,England,United Kingdom,TQ6 0HJ,Europe,"Britannia Royal Naval College, College Way, Dartmouth, Devon",,restricted,50.355890,-3.589287
+"Bogey Knights, Devonport",Plymouth,England,United Kingdom,PL1 4LB,Europe,"Bogey Knights, Devonport, Plymouth, Devon",,public,50.365999,-4.176628
+"Hunter GA.11 WT744, Braunton",Braunton,England,United Kingdom,,Europe,"Braunton, north Devon",,public,51.109071,-4.190353
+20 (Bideford) Squadron Air Training Corps,Bideford,England,United Kingdom,,Europe,"20 (Bideford) Squadron ATC, Bideford, Devon",,restricted,51.024390,-4.204980
+Bournemouth Aviation Museum,Christchurch,England,United Kingdom,BH23 6BA,Europe,"Merritown Lane, Hurn, Christchurch, Dorset",https://www.bamhurn.org,public,50.776300,-1.845880
+"The Tank Museum, Bovington",Wareham,England,United Kingdom,BH20 6JG,Europe,"Linsay Road, Bovington, Wareham, Dorset",https://tankmuseum.org,public,50.695931,-2.244216
+"Lynx HAS.3 XZ250, Portland Marina",Portland,England,United Kingdom,DT5 1DX,Europe,"Portland Marina, Osprey Quay, Portland, Dorset",,public,50.570000,-2.452074
+Jet Age Museum,Gloucester,England,United Kingdom,GL2 9QL,Europe,"Meteor Business Park, Cheltenham Road East, Staverton, Gloucester, Gloucestershire",https://jetagemuseum.org,public,51.895913,-2.174722
+"Cotswold Airport Aircraft Collection, Kemble",Cirencester,England,United Kingdom,GL7 6BA,Europe,"Cotswold Airport, Kemble, Cirencester, Gloucestershire",,appointment,51.670033,-2.058082
+Thornbury Paintball,Thornbury,England,United Kingdom,GL12 8EA,Europe,"Gloucester Road, Thornbury, South Gloucestershire",,appointment,51.625278,-2.477866
+37 (Frampton Cotterell) Squadron Air Training Corps,Bristol,England,United Kingdom,BS36 2HW,Europe,"Ryecroft Road, Frampton Cotterell, South Gloucestershire",,restricted,51.531265,-2.475204
+"National Diving and Activity Centre, Tidenham",Chepstow,England,United Kingdom,NP16 7LH,Europe,"Tidenham, Chepstow, Gloucestershire",,appointment,51.654789,-2.647699
+Cromhall Quarry Dive Site,Wotton-under-Edge,England,United Kingdom,GL12 8AA,Europe,"Cromhall Quarry, Cromhall, South Gloucestershire",,appointment,51.621266,-2.427369
+"Hamburger Hill Paintball, Marksbury",Bath,England,United Kingdom,,Europe,"Common Wood, Marksbury, Bath and North East Somerset",,appointment,51.355600,-2.505200
+"Gazelle Gate Guardian, Taunton",Taunton,England,United Kingdom,,Europe,"Army Reserve Centre, Taunton, Somerset",,public,51.014746,-3.122585
+"Sea Harrier XZ494, Castle Farm Campsite Wedmore",Wedmore,England,United Kingdom,,Europe,"Castle Farm Campsite, Wedmore, Somerset",,public,51.213595,-2.833197
+Bridgwater and Taunton College,Bridgwater,England,United Kingdom,TA6 4PZ,Europe,"Bath Road, Bridgwater, Somerset",,restricted,51.131180,-2.982570
+Yeovil College,Yeovil,England,United Kingdom,BA21 4DR,Europe,"Mudford Road, Yeovil, Somerset",,restricted,50.949700,-2.636270
+Leonardo Helicopters Yeovil Gate Guardian,Yeovil,England,United Kingdom,BA20 2YB,Europe,"Lysander Road, Yeovil, Somerset",,public,50.939114,-2.646168
+Vobster Quay Inland Diving Centre,Radstock,England,United Kingdom,BA3 5TP,Europe,"Upper Vobster, Radstock, Somerset",,appointment,51.245756,-2.424888
+"Vampire T.11 WZ450, Vanguard Self Storage Bath",Bath,England,United Kingdom,BA2 3BX,Europe,"Vanguard Self Storage, Lower Bristol Road, Bath",,appointment,51.381380,-2.376430
+"Historic Helicopters, Chard",Chard,England,United Kingdom,TA20 4BP,Europe,"Higher Purtington Showfield, Chard, Somerset",,appointment,50.881391,-2.859195
+"Meteor T.7 WL345, Middlezoy Aerodrome",Bridgwater,England,United Kingdom,,Europe,"Middlezoy Aerodrome, Middlezoy, Somerset",,appointment,51.102400,-2.901700
+Boscombe Down Aviation Collection,Salisbury,England,United Kingdom,SP4 6DZ,Europe,"Hangar 1, Old Sarum Airfield, Old Sarum, Salisbury, Wiltshire",https://www.bdac.co.uk,public,51.100478,-1.786781
+MoD Boscombe Down Lightning Gate Guardian,Amesbury,England,United Kingdom,SP4 0JF,Europe,"MoD Boscombe Down, Amesbury, Salisbury, Wiltshire",,public,51.165542,-1.726967
+"Gazelle HT.3 ZA804, Amesbury",Amesbury,England,United Kingdom,,Europe,"Amesbury, Wiltshire",,public,51.176370,-1.757910
+Melksham Squadron Air Training Corps,Melksham,England,United Kingdom,SN12 6TL,Europe,"33 Lancaster Road, Bowerhill, Melksham, Wiltshire",,restricted,51.357044,-2.132297
+"REME Museum, Lyneham",Chippenham,England,United Kingdom,SN15 4XX,Europe,"MoD Lyneham, Lyneham, Chippenham, Wiltshire",https://rememuseum.org.uk,public,51.497717,-1.985439
+South Wales Aviation Museum,St Athan,Wales,United Kingdom,CF62 4JN,Europe,"Hangar 872, Picketston Site, Bro Tathan, St Athan, Vale of Glamorgan",https://www.southwalesaviationmuseum.com,public,51.419250,-3.440482
+"Airworld Aviation Museum, Caernarfon",Caernarfon,Wales,United Kingdom,LL54 5TP,Europe,"Caernarfon Airport, Dinas Dinlle, Caernarfon, Gwynedd",https://www.airworldmuseum.com,public,53.100000,-4.337500
+Carew Cheriton Control Tower,Tenby,Wales,United Kingdom,SA70 8SL,Europe,"Carew Cheriton, Tenby, Pembrokeshire",,public,51.692134,-4.818137
+"Welsh Spitfire Museum, Haverfordwest",Haverfordwest,Wales,United Kingdom,SA61 2AL,Europe,"7 Bridge Street, Haverfordwest, Pembrokeshire",,public,51.802578,-4.968579
+Tacla Taid Anglesey Transport Museum,Llangefni,Wales,United Kingdom,LL61 6TH,Europe,"Newborough, Anglesey",,public,53.173787,-4.348292
+RAF Valley Gate Guardian,Holyhead,Wales,United Kingdom,LL65 3NY,Europe,"RAF Valley, Caergeiliog, Holyhead, Anglesey",,public,53.255775,-4.547783
+MoD Sealand Tornado Gate Guardian,Deeside,Wales,United Kingdom,CH5 2LS,Europe,"MoD Sealand, Deeside, Flintshire",,public,53.227642,-2.991748
+2247 (Hawarden) Squadron Air Training Corps,Hawarden,Wales,United Kingdom,,Europe,"Manor Lane, Hawarden, Flintshire",,restricted,53.178764,-2.993679
+2475 (Ammanford) Squadron Air Training Corps,Ammanford,Wales,United Kingdom,,Europe,"Pen-y-Banc Road, Ammanford, Carmarthenshire",,restricted,51.787323,-4.002477
+2445 (Llanbedr) Squadron Air Training Corps,Llanbedr,Wales,United Kingdom,,Europe,"Former RAE Llanbedr airfield, Llanbedr, Gwynedd",,restricted,52.818057,-4.118761
+Cardiff and Vale College Aerospace Centre,Barry,Wales,United Kingdom,CF62 3BR,Europe,"Cardiff Airport Business Park, Rhoose, Vale of Glamorgan",,restricted,51.400960,-3.336470
+"Draken Gate Guard, Llangeinor",Bridgend,Wales,United Kingdom,,Europe,"Llangeinor, Bridgend, Glamorgan",,public,51.577422,-3.568565
+"Jet Provost XM358, Newmead Farm Newbridge on Wye",Llandrindod Wells,Wales,United Kingdom,,Europe,"Newmead Farm, Newbridge on Wye, Powys",,public,52.218690,-3.429451
+"Outpost Paintball Chester, Higher Kinnerton",Higher Kinnerton,Wales,United Kingdom,CH4 9AQ,Europe,"Moor Lane, Higher Kinnerton, Flintshire",,appointment,53.147516,-2.984369
+Cowbridge Paintball,Cowbridge,Wales,United Kingdom,,Europe,"Cowbridge, Vale of Glamorgan",,appointment,51.469467,-3.478478
+"Radyr Paintball, Tyla-morris Farm",Cardiff,Wales,United Kingdom,,Europe,"Tyla-morris Farm, Pentyrch, Cardiff",,appointment,51.519880,-3.278513
+Coleg Cambria Connah's Quay,Connah's Quay,Wales,United Kingdom,CH5 4BR,Europe,"Coleg Cambria, Kelsterton Road, Connah's Quay, Flintshire",,restricted,53.225218,-3.081450
+Hawarden Airport Preserved Aircraft,Broughton,Wales,United Kingdom,CH4 0GZ,Europe,"Hawarden Airport, Broughton, Flintshire",,restricted,53.188959,-2.977521

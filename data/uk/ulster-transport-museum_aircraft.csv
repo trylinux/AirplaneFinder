@@ -1,0 +1,14 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Short,SC.1,,XG905,,,fixed_wing,monoplane,military,experimental,,"One of only two Short SC.1 vertical take-off research aircraft built at Belfast. This aircraft crashed in 1963, killing its pilot, and was rebuilt and flown again before preservation.",SC.1; SC1; Short SC.1,Ulster Transport Museum,on_display
+Short,S.16,Scion I,G-ACUX,,,fixed_wing,monoplane,civilian,transport,,1930s Belfast-built light feederliner; later flown in Australia as VH-UUP.,S.16; S16; Scion; VH-UUP,Ulster Transport Museum,on_display
+Short,SA.6,Sealand,G-AKLW,,,fixed_wing,monoplane,civilian,transport,,Belfast-built amphibian airliner.,SA.6; SA6; Sealand,Ulster Transport Museum,on_display
+Short,360,,G-BKMW,,,fixed_wing,monoplane,civilian,commercial_transport,,Cockpit section only of a Belfast-built Shorts 360 commuter airliner.,SD3-60; SD360; Shorts 360,Ulster Transport Museum,on_display
+Short,Nimbus,I,,,,fixed_wing,monoplane,civilian,private,,Sailplane built by Short Brothers.,Nimbus I; Short Nimbus,Ulster Transport Museum,on_display
+Ferguson,Monoplane,,,,,fixed_wing,monoplane,civilian,experimental,,"Replica of Harry Ferguson's 1909-1911 monoplane, the first aeroplane designed, built and flown in Ireland; airframe IAHC.6.",Ferguson Flyer; Ferguson Monoplane; IAHC.6,Ulster Transport Museum,on_display
+de Havilland,Tiger Moth,DH.82A,G-AOUR,,,fixed_wing,biplane,civilian,trainer,,Ex-RAF elementary trainer in civil marks.,DH.82A; DH82A; Tiger Moth,Ulster Transport Museum,on_display
+Miles,M.38,Messenger 2A,G-AJOC,,,fixed_wing,monoplane,civilian,private,,Post-war four-seat light touring aircraft.,M.38; M38; Messenger,Ulster Transport Museum,on_display
+Miles,M.65,Gemini 1A,G-AKEL,,,fixed_wing,monoplane,civilian,private,,Twin-engined light touring aircraft.,M.65; M65; Gemini,Ulster Transport Museum,on_display
+Miles,M.65,Gemini 3C,G-AKGE,,,fixed_wing,monoplane,civilian,private,,Fuselage only.,M.65; M65; Gemini 3C,Ulster Transport Museum,on_display
+Miles,M.65,Gemini 3C,G-ALCS,,,fixed_wing,monoplane,civilian,private,,Cockpit section only.,M.65; M65; Gemini 3C,Ulster Transport Museum,on_display
+McCandless,M2,,G-ARTZ,,,rotary_wing,,civilian,private,,Single-seat gyroplane designed and built in Northern Ireland by W. R. McCandless.,M2; McCandless M2,Ulster Transport Museum,on_display
+McCandless,M4,,G-ATXX,,,rotary_wing,,civilian,private,,Single-seat gyroplane designed and built in Northern Ireland by W. R. McCandless.,M4; McCandless M4,Ulster Transport Museum,on_display

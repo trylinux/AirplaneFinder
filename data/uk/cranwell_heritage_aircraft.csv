@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+de Havilland,Vampire,T.11,XE946,,,fixed_wing,monoplane,military,trainer,,"Cockpit pod only, displayed inside the heritage centre.",7473M,Cranwell Aviation Heritage Centre,on_display
+Hunting,Jet Provost,T.4,XP556,,,fixed_wing,monoplane,military,trainer,,Displayed outside the heritage centre in Royal Air Force College markings.,9027M; B,Cranwell Aviation Heritage Centre,on_display

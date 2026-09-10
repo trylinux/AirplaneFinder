@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Supermarine,Spitfire,Mk Ia,,,,fixed_wing,monoplane,military,fighter,,"Full-size glass-fibre replica Spitfire Mk I standing as the RAF Northolt gate guardian beside the A40, commemorating the Polish squadrons that flew from the station. Replica, not an airframe.",Northolt Spitfire,RAF Northolt Gate Guardians,on_display
+British Aerospace,BAe 125,CC.3,ZD621,,,fixed_wing,monoplane,military,transport,,"BAe 125 CC.3, a former 32 (The Royal) Squadron VIP aircraft, preserved on the station. Confirmed Sep 2025.",BAe 125; HS.125; BAe125; HS125; Dominie,RAF Northolt Gate Guardians,on_display

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Dornier,UH-1,D,71+68,Iroquois,,rotary_wing,,military,utility,,"Licence-built Dornier UH-1D, c/n 8228, held at the NATO E-3A Component base at Geilenkirchen as a ground instructional airframe.",UH1D; UH-1D; Huey; Iroquois; UH1,NATO Air Base Geilenkirchen Lehrsammlung,on_display
+Sikorsky,CH-53,G,84+04,Stallion,,rotary_wing,,military,transport,,"Fuselage only of CH-53G, c/n V002, retained at Geilenkirchen for ground instruction. Recorded here as a fuselage section rather than a complete aircraft.",CH53G; CH-53G; Stallion; CH53,NATO Air Base Geilenkirchen Lehrsammlung,on_display

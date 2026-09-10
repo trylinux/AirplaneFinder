@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,UH-1,D,47586,,,rotary_wing,,military,utility,,"US Army Huey in the outdoor display at the US Camp. Former US Army observation post on the inner-German border, now a memorial site; open daily.",UH1;UH1D;Huey;Iroquois,Grenzmuseum Point Alpha,on_display
+Sud Aviation,SE 3130,Alouette II,D-HIBE,,,rotary_wing,,civilian,utility,,"Former US Army observation post on the inner-German border, now a memorial site; open daily.",Alouette;SE3130;Alouette 2,Grenzmuseum Point Alpha,on_display

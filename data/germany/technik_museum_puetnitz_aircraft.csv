@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Zlin,Z-37,A Cmelak,D-ESUK,,,fixed_wing,monoplane,civilian,utility,,"Agricultural Cmelak in German civil markings, in the aviation section of Halle 3.",Z37; Cmelak,Technik-Museum Pütnitz,on_display
+Mikoyan-Gurevich,MiG-21,F-13,677,,,fixed_wing,monoplane,military,fighter,,Ex-NVA MiG-21F-13.,MiG21; MiG21F13; Fishbed,Technik-Museum Pütnitz,on_display
+Mikoyan-Gurevich,MiG-21,F-13,693,,,fixed_wing,monoplane,military,fighter,,Ex-NVA MiG-21F-13.,MiG21; MiG21F13; Fishbed,Technik-Museum Pütnitz,on_display
+Mikoyan-Gurevich,MiG-21,PFM,934,,,fixed_wing,monoplane,military,fighter,,Ex-NVA MiG-21PFM.,MiG21; MiG21PFM; Fishbed,Technik-Museum Pütnitz,on_display
+Mil,Mi-8,T,93+18,,,rotary_wing,,military,transport,,Ex-NVA Mi-8T in Bundeswehr markings; Pütnitz was a Soviet air base and the museum shows Eastern Bloc technology.,Mi8; Mi8T; Hip,Technik-Museum Pütnitz,on_display

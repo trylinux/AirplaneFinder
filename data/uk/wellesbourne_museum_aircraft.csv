@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Percival,Provost,T.1,WV679,,,fixed_wing,monoplane,military,trainer,,Displayed by the Wellesbourne Wartime Museum. Confirmed 2026.,7615M; O-J; OJ,Wellesbourne Wartime Museum,on_display
+de Havilland,Vampire,T.11,XK590,,,fixed_wing,monoplane,military,trainer,,Displayed by the Wellesbourne Wartime Museum. Confirmed 2026.,V,Wellesbourne Wartime Museum,on_display
+de Havilland,Sea Vixen,FAW.2,XJ575,,,fixed_wing,monoplane,military,fighter,,Nose section only. Confirmed 2026.,A2611; SAH13,Wellesbourne Wartime Museum,on_display
+Yakovlev,Yak-52,,833004,,,fixed_wing,monoplane,military,trainer,,Ex-Soviet Air Force Yak-52 held by the museum. Confirmed 2026.,Yak52; RA-01378; 14; RA01378,Wellesbourne Wartime Museum,on_display

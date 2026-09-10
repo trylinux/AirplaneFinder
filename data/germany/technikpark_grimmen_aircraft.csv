@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Antonov,An-2,R,LY-ADM,,,fixed_wing,biplane,civilian,utility,,An-2R in Lithuanian civil markings.,An2; Colt; An2R,Technikpark Grimmen,on_display
+Ilyushin,Il-14,P,DM-SAD,,,fixed_wing,monoplane,civilian,commercial_transport,,East German-built VEB Il-14P in Deutsche Lufthansa (Ost)/Interflug era markings.,Il14; Il14P; Crate,Technikpark Grimmen,on_display
+Zlin,Z-37,A Cmelak,HA-MFI,,,fixed_wing,monoplane,civilian,utility,,Agricultural Cmelak in Hungarian civil markings.,Z37; Cmelak,Technikpark Grimmen,on_display
+Mikoyan-Gurevich,MiG-21,SPS-K,479,,,fixed_wing,monoplane,military,fighter,,Ex-NVA MiG-21SPS-K.,MiG21; MiG21SPS; Fishbed,Technikpark Grimmen,on_display
+Mil,Mi-8,T,93+75,,,rotary_wing,,military,transport,,Ex-NVA Mi-8T in Bundeswehr markings.,Mi8; Mi8T; Hip,Technikpark Grimmen,on_display
+PZL-Swidnik,Mi-2,,HA-BCI,,,rotary_wing,,civilian,utility,,Polish-built Mi-2 in Hungarian civil markings.,Mi2; Hoplite,Technikpark Grimmen,on_display

@@ -1,0 +1,9 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Slingsby,Cadet,TX.1,RA905,,,fixed_wing,monoplane,military,trainer,,"Slingsby Cadet TX.1 glider, BGA1143/BQE, displayed inside the museum. Confirmed Feb 2024.",T.7; T7; BGA1143; BQE,"Trenchard Museum, RAF Halton",on_display
+Gloster,Meteor,F.8,VZ568,,,fixed_wing,monoplane,military,fighter,,"Nose section only of a Gloster Meteor F.8, under restoration at the museum. Last reported Feb 2024.",7741M,"Trenchard Museum, RAF Halton",under_restoration
+de Havilland Canada,Chipmunk,T.10,WB626,,,fixed_wing,monoplane,military,trainer,,"Chipmunk T.10 fuselage coded 19, used as a walk-in exhibit. Confirmed on display inside Feb 2024.",DHC-1; DHC1,"Trenchard Museum, RAF Halton",on_display
+Slingsby,Grasshopper,TX.1,WZ772,,,fixed_wing,monoplane,military,trainer,,Slingsby Grasshopper TX.1 primary glider displayed inside. Confirmed Feb 2024.,T.38; T38,"Trenchard Museum, RAF Halton",on_display
+Hawker,Hunter,F.6,XF522,,,fixed_wing,monoplane,military,fighter,,"Nose section only, in 92 Squadron markings. Confirmed on display inside Feb 2024.",,"Trenchard Museum, RAF Halton",on_display
+Hawker,Hunter,F.6,XF527,,,fixed_wing,monoplane,military,fighter,,Hawker Hunter F.6 preserved outside at RAF Halton. Confirmed Feb 2024.,,"Trenchard Museum, RAF Halton",on_display
+Folland,Gnat,T.1,XR574,,,fixed_wing,monoplane,military,trainer,,"Folland Gnat T.1 coded 72, displayed inside the museum. Confirmed Feb 2024.",8631M,"Trenchard Museum, RAF Halton",on_display
+Eurofighter,Typhoon,FGR.4,ZJ911,,,fixed_wing,monoplane,military,fighter,,"Eurofighter Typhoon FGR.4 coded QO-Z in 3 Squadron markings, preserved outside as the RAF Halton gate guardian. Confirmed Mar 2025.",,"Trenchard Museum, RAF Halton",on_display

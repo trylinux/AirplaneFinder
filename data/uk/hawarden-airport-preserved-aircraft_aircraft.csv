@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Sukhoi,Su-17,M3,25102,,,fixed_wing,monoplane,military,ground_attack,,"Ex-Soviet Air Force Fitter preserved outdoors at Hawarden, previously '35 red'.",Su-17M3; Su17M3; Su17; Fitter,Hawarden Airport Preserved Aircraft,on_display
+Sukhoi,Su-17,M,69004,,,fixed_wing,monoplane,military,ground_attack,,"Ex-Soviet Air Force Fitter preserved outdoors, previously '54 red'.",Su-17M; Su17M; Su17; Fitter,Hawarden Airport Preserved Aircraft,on_display
+Panavia,Tornado,F.3,ZE966,,,fixed_wing,monoplane,military,fighter,,"Preserved outdoors in 56 Squadron markings, coded VT.",Tornado F3; Tornado ADV; Tornado,Hawarden Airport Preserved Aircraft,on_display
+Hunting,Jet Provost,T.4,XP585,,,fixed_wing,monoplane,military,trainer,,"Ex-maintenance serial 8407M, coded 24; preserved outdoors.",Jet Provost T4; JP; 8407M,Hawarden Airport Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-27,M,83712515040,,,fixed_wing,monoplane,military,ground_attack,,"Ex-Soviet Air Force Flogger stored outdoors, previously '23 red'.",MiG-27M; MiG27M; MiG27; Flogger,Hawarden Airport Preserved Aircraft,in_storage

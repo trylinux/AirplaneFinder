@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Morane-Saulnier,Rallye,E,12571,,,fixed_wing,monoplane,military,utility,,"Marked G-BFGS, ex AdlA. Used as scenery on the paintball site at East Rounton south of Yarm. Last confirmed present Jul 2026.",MS.893; MS893; G-BFGS,"East Rounton Paintball Aircraft, Yarm",on_display
+Westland,Whirlwind,HAS.7,XN385,,,rotary_wing,,military,search_rescue,,Used as scenery on the paintball site at East Rounton south of Yarm. Last confirmed present Jul 2026.,S-55; S55,"East Rounton Paintball Aircraft, Yarm",on_display

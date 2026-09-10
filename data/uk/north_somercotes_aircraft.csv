@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Westland,Whirlwind,HAR.10,XJ407,,,rotary_wing,,military,search_rescue,,Preserved outside at Salt Box Farm in 22 Squadron markings. Confirmed 2024.,N7013H,"Whirlwind Collection, Salt Box Farm, North Somercotes",on_display
+Westland,Whirlwind,HAR.10,XP328,,,rotary_wing,,military,search_rescue,,Preserved outside at Salt Box Farm. Confirmed 2024.,G-BKHC; GBKHC,"Whirlwind Collection, Salt Box Farm, North Somercotes",on_display
+Westland,Whirlwind,HAR.10,XP329,,,rotary_wing,,military,search_rescue,,Preserved outside at Salt Box Farm in 84 Squadron markings. Confirmed 2024.,V,"Whirlwind Collection, Salt Box Farm, North Somercotes",on_display

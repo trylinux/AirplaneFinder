@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,AH-1,F,69-16445,Cobra,,rotary_wing,,military,ground_attack,,Ex US Army Bell AH-1F Cobra held at the Defence Academy of the United Kingdom. Last reported May 2019.,AH1F; HueyCobra; AH1,Defence Academy Shrivenham Aircraft,on_display
+Westland,Scout,AH.1,XV122,,,rotary_wing,,military,utility,,"Westland Scout AH.1 coded A, preserved at the Defence Academy. Last reported May 2014.",,Defence Academy Shrivenham Aircraft,on_display
+Panavia,Tornado,GR.4,ZA556,,,fixed_wing,monoplane,military,ground_attack,,Panavia Tornado GR.4 coded 047 used for ground instruction at the Defence Academy. Last reported May 2019.,,Defence Academy Shrivenham Aircraft,on_display
+BAE Systems,Phoenix,,ZJ369,,,fixed_wing,monoplane,military,drone,,BAE Systems Phoenix battlefield reconnaissance drone held at the Defence Academy. Last reported May 2019.,,Defence Academy Shrivenham Aircraft,on_display

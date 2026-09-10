@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Miles,Martinet,TT.1,MS902,,,fixed_wing,monoplane,military,utility,,"Miles Martinet TT.1, recovered from Iceland where it flew as TF-SHC. Displayed inside. Last reported Jun 2022.",TF-SHC; TFSHC,Museum of Berkshire Aviation,on_display
+Miles,Magister,Mk I,T9841,,,fixed_wing,monoplane,military,trainer,,"Miles Magister I, civil registration G-AKKY, displayed inside wearing the false serial L6906.",Hawk Trainer; G-AKKY; L6906,Museum of Berkshire Aviation,on_display
+Fairey,Gannet,T.5,XG883,,,fixed_wing,monoplane,military,trainer,,"Fairey Gannet T.5 coded 773/BY, displayed outside. Last reported Jun 2022.",,Museum of Berkshire Aviation,on_display
+Fairey,Jet Gyrodyne,,XJ389,,,rotary_wing,,civilian,experimental,,"The Fairey Jet Gyrodyne experimental rotorcraft, civil registration G-AJJP. Displayed inside. Last reported Jun 2022.",G-AJJP,Museum of Berkshire Aviation,on_display
+Westland,Scout,AH.1,XP895,,,rotary_wing,,military,utility,,Westland Scout AH.1 displayed inside wearing the false serial XP849.,XP849,Museum of Berkshire Aviation,on_display
+Miles,M.100,Student 2,XS941,,,fixed_wing,monoplane,military,trainer,,"Miles M.100 Student Mk 2 jet trainer prototype, civil registration G-MIOO. Displayed inside. Last reported Jun 2022.",M100; Student; G-MIOO; G-APLK,Museum of Berkshire Aviation,on_display

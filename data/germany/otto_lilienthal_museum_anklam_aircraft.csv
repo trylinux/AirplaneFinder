@@ -1,0 +1,17 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lilienthal,Normalsegelapparat,,,,,fixed_wing,monoplane,civilian,experimental,,Full-scale reproduction of Otto Lilienthal's series-built glider of 1894. The museum holds several Lilienthal reproductions.,Lilienthal glider; Normalsegelapparat,Otto-Lilienthal-Museum Anklam,on_display
+Lilienthal,Derwitzer Apparat,,,,,fixed_wing,monoplane,civilian,experimental,,Full-scale reproduction of Lilienthal's 1891 Derwitz glider.,Lilienthal glider; Derwitzer Apparat,Otto-Lilienthal-Museum Anklam,on_display
+Lilienthal,Maihöhe Rhinow Apparat,,,,,fixed_wing,monoplane,civilian,experimental,,Full-scale reproduction of Lilienthal's 1893 Maihöhe/Rhinow glider.,Lilienthal glider; Rhinow Apparat,Otto-Lilienthal-Museum Anklam,on_display
+Lilienthal,Vorflügelapparat,,,,,fixed_wing,monoplane,civilian,experimental,,Full-scale reproduction of Lilienthal's slotted-wing glider.,Lilienthal glider; Vorfluegelapparat,Otto-Lilienthal-Museum Anklam,on_display
+Lilienthal,Großer Doppeldecker,,,,,fixed_wing,biplane,civilian,experimental,,Full-scale reproduction of Lilienthal's large biplane glider.,Lilienthal glider; Grosser Doppeldecker,Otto-Lilienthal-Museum Anklam,on_display
+Lilienthal,Kleiner Doppeldecker,,,,,fixed_wing,biplane,civilian,experimental,,Full-scale reproduction of Lilienthal's small biplane glider.,Lilienthal glider; Kleiner Doppeldecker,Otto-Lilienthal-Museum Anklam,on_display
+Lilienthal,Sturmflügelapparat,,,,,fixed_wing,monoplane,civilian,experimental,,Full-scale reproduction of Lilienthal's storm-wing glider.,Lilienthal glider; Sturmfluegel,Otto-Lilienthal-Museum Anklam,on_display
+Lilienthal,Kleiner Schlagflügelapparat,,,,,fixed_wing,monoplane,civilian,experimental,,Full-scale reproduction of Lilienthal's small flapping-wing machine.,Lilienthal glider; Schlagfluegelapparat,Otto-Lilienthal-Museum Anklam,on_display
+Lilienthal,Südende Apparat,,,,,fixed_wing,monoplane,civilian,experimental,,Full-scale reproduction of Lilienthal's Südende glider.,Lilienthal glider; Suedende Apparat,Otto-Lilienthal-Museum Anklam,on_display
+Antonov,An-2,TD,D-FONG,,,fixed_wing,biplane,civilian,utility,,An-2TD in German civil markings.,An2; Colt; An2TD,Otto-Lilienthal-Museum Anklam,on_display
+High Performance Aircraft,TT62,Alekto,D-IXTT,,,fixed_wing,monoplane,civilian,private,,German light twin prototype.,TT62; Alekto,Otto-Lilienthal-Museum Anklam,on_display
+Kamov,Ka-26,,D-HOAG,,,rotary_wing,,civilian,utility,,Ka-26 in German civil markings.,Ka26; Hoodlum,Otto-Lilienthal-Museum Anklam,on_display
+Zlin,Z-37,A Cmelak,D-ESOT,,,fixed_wing,monoplane,civilian,utility,,Agricultural Cmelak in German civil markings.,Z37; Cmelak,Otto-Lilienthal-Museum Anklam,on_display
+PZL-Mielec,PZL-106,Kruk,DDR-TED,,,fixed_wing,monoplane,civilian,utility,,Polish agricultural aircraft in East German markings.,PZL106; Kruk,Otto-Lilienthal-Museum Anklam,on_display
+Raab,RK-9,Grasmücke,,,,fixed_wing,monoplane,civilian,private,,German homebuilt light aircraft; no registration listed.,RK9; Grasmuecke,Otto-Lilienthal-Museum Anklam,on_display
+PZL-Bielsko,SZD-24,Foka,,,,fixed_wing,monoplane,civilian,private,,Polish single-seat glider; no registration listed.,SZD24; Foka,Otto-Lilienthal-Museum Anklam,on_display

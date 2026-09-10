@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Vickers,Valetta,C.2,VX573,,,fixed_wing,monoplane,military,transport,,Vickers Valetta C.2 preserved at Blackbushe Airport. Confirmed in place Jun 2026.,,"Vickers Valetta, Blackbushe",on_display
+Vickers,Viking,1,XF640,,Vagabond,fixed_wing,monoplane,civilian,commercial_transport,,"Vickers Viking 1 'Vagabond', a former Royal Flight aircraft, under restoration in a hangar at Blackbushe. Last reported Jun 2025.",Vagabond; G-AJPH,"Vickers Valetta, Blackbushe",under_restoration

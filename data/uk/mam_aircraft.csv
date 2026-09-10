@@ -1,0 +1,72 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Avro,Vulcan,B.2,XL360,,,fixed_wing,monoplane,military,bomber,,"Displayed outside in 617 Squadron markings; open to visitors on cockpit tours. A Blue Steel missile, a 1000lb bomb and a WE.177 tactical nuclear bomb are displayed alongside it.",,Midland Air Museum,on_display
+Armstrong Whitworth,Argosy,101,G-APRL,,,fixed_wing,monoplane,civilian,freighter,,Ex-Armstrong Whitworth Argosy freighter displayed outside and frequently open for cockpit tours.,,Midland Air Museum,on_display
+Hawker,Sea Hawk,FGA.6,WV797,,,fixed_wing,monoplane,military,ground_attack,,Displayed outside.,A2637; J-491; J491,Midland Air Museum,on_display
+British Aerospace,Sea Harrier,FA.2,ZE694,,,fixed_wing,monoplane,military,fighter,,Displayed outside in 801 Naval Air Squadron markings.,N-004; N004,Midland Air Museum,on_display
+Beagle,206,206,G-ASWJ,,,fixed_wing,monoplane,civilian,private,,Displayed at the museum.,,Midland Air Museum,on_display
+Boulton Paul,P.111,A,VT935,,,fixed_wing,monoplane,military,experimental,,"The unique Boulton Paul P.111A delta research aircraft, displayed outside.",,Midland Air Museum,on_display
+Chargus,Vortex,Vortex 120,G-MJWH,,,fixed_wing,monoplane,civilian,private,,Microlight displayed inside.,,Midland Air Museum,on_display
+Chichester-Miles,Leopard,,G-BRNM,,,fixed_wing,monoplane,civilian,experimental,,"Chichester-Miles Leopard prototype business jet, displayed inside.",CMC Leopard,Midland Air Museum,on_display
+de Havilland Canada,U-6,U-6A,58-2062,Beaver,,fixed_wing,monoplane,military,utility,,Ex-US Army; displayed outside.,U6; 0-82062; 082062,Midland Air Museum,on_display
+de Havilland,Dove,,G-ALCU,,,fixed_wing,monoplane,civilian,commercial_transport,,Displayed at the museum; under restoration in 2026.,,Midland Air Museum,under_restoration
+de Havilland,Vampire,F.1,VF301,,,fixed_wing,monoplane,military,fighter,,Displayed inside.,7060M; RAL-G; RALG,Midland Air Museum,on_display
+de Havilland,Vampire,T.11,XD626,,,fixed_wing,monoplane,military,trainer,,Displayed at the museum.,,Midland Air Museum,on_display
+de Havilland,Vampire,T.11,XE855,,,fixed_wing,monoplane,military,trainer,,Under restoration.,,Midland Air Museum,under_restoration
+de Havilland,Sea Vixen,FAW.2,XN685,,,fixed_wing,monoplane,military,fighter,,Displayed outside in 890 Naval Air Squadron markings.,8173M; VL-703; VL703,Midland Air Museum,on_display
+de Havilland,Sea Vixen,FAW.2,XJ579,,,fixed_wing,monoplane,military,fighter,,"Nose section only, under restoration.",121,Midland Air Museum,under_restoration
+Druine,Turbulent,,BAPC126,,,fixed_wing,monoplane,civilian,private,,Druine Turbulent homebuilt displayed inside.,,Midland Air Museum,on_display
+Dassault,Mystere IV,IVA,70,,,fixed_wing,monoplane,military,fighter,,Ex-Armee de l Air; displayed outside.,8-NV; 8NV,Midland Air Museum,on_display
+English Electric,Canberra,PR.3,WF922,,,fixed_wing,monoplane,military,recon,,Displayed outside.,,Midland Air Museum,on_display
+English Electric,Canberra,T.17,WH646,,,fixed_wing,monoplane,military,electronic_warfare,,"Nose section only, displayed inside.",,Midland Air Museum,on_display
+English Electric,Lightning,F.6,XR771,,,fixed_wing,monoplane,military,fighter,,Displayed outside in 5 Squadron markings.,AN,Midland Air Museum,on_display
+English Electric,Lightning,T.55,ZF598,,,fixed_wing,monoplane,military,fighter,,Ex-Royal Saudi Air Force; displayed outside.,55-713; C; 55713,Midland Air Museum,on_display
+Elliotts of Newbury,Olympia,2B,BGA538,,,fixed_wing,monoplane,civilian,private,,Elliotts of Newbury Olympia glider displayed at the museum.,,Midland Air Museum,on_display
+Fairey,Ultralight,,G-APJJ,,,rotary_wing,,civilian,experimental,,"The unique Fairey Ultralight Helicopter, displayed inside.",,Midland Air Museum,on_display
+Fairey,Gannet,T.2,XA508,,,fixed_wing,monoplane,military,trainer,,Displayed outside.,A2472; GN-627; GN627,Midland Air Museum,on_display
+Flettner,Fl 282,Fl 282 B-0,28200020,,,rotary_wing,,military,recon,,"Ex-Luftwaffe Flettner Kolibri, one of very few survivors; displayed inside. The museum inventory gives the identity 282V-20 / 28368.",GF+YF,Midland Air Museum,on_display
+Folland,Gnat,F.1,XK724,,,fixed_wing,monoplane,military,fighter,,Displayed inside.,7715M,Midland Air Museum,on_display
+Folland,Gnat,F.1,XK741,,,fixed_wing,monoplane,military,fighter,,"Fuselage only, held in store.",,Midland Air Museum,in_storage
+Gloster,Javelin,FAW.5,XA699,,,fixed_wing,monoplane,military,fighter,,Displayed outside.,7809M,Midland Air Museum,on_display
+Gloster,Meteor,F.4,EE531,,,fixed_wing,monoplane,military,fighter,,Displayed inside.,,Midland Air Museum,on_display
+Armstrong Whitworth,Meteor,NF.14,WS838,,,fixed_wing,monoplane,military,fighter,,Displayed outside in 64 Squadron markings.,D,Midland Air Museum,on_display
+Gloster,Meteor,F.8,VZ477,,,fixed_wing,monoplane,military,fighter,,"Nose section only, displayed inside.",,Midland Air Museum,on_display
+Hawker,Hunter,F.6A,XF382,,,fixed_wing,monoplane,military,fighter,,Displayed outside in 234 Squadron markings.,15,Midland Air Museum,on_display
+Hawker Siddeley,HS.125,Series 1,G-ARYB,,,fixed_wing,monoplane,civilian,private,,Prototype de Havilland DH.125 displayed at the museum.,,Midland Air Museum,on_display
+Mignet,HM.14 Flying Flea,HM.14,G-AEGV,,,fixed_wing,monoplane,civilian,private,,1930s Flying Flea homebuilt displayed inside.,,Midland Air Museum,on_display
+Humber,Monoplane,,BAPC9,,,fixed_wing,monoplane,civilian,private,,Full-scale replica of the 1910 Humber monoplane; not an original airframe.,,Midland Air Museum,on_display
+Kaman,HH-43,HH-43B,62-4535,,,rotary_wing,,military,search_rescue,,"Ex-USAF Kaman Huskie; under restoration. The museum inventory records it as an HH-43B, Euro Demobbed as an HH-43F.",24535; HH43,Midland Air Museum,under_restoration
+Lockheed,F-104,G,R-756,Starfighter,,fixed_wing,monoplane,military,fighter,,Ex-Royal Danish Air Force; displayed outside.,F104; F104G,Midland Air Museum,on_display
+Lockheed,T-33,A,51-4419,Shooting Star,,fixed_wing,monoplane,military,trainer,,Ex-USAF and Armee de l Air; displayed inside in 57 Fighter Interceptor Squadron markings.,T33; 0-14419; 14419; 014419; T33A,Midland Air Museum,on_display
+Lockheed,T-33,A,51-7473,Shooting Star,,fixed_wing,monoplane,military,trainer,,Ex-Armee de l Air; displayed outside wearing 117529.,T33; 117529; TR-529; 17473; TR529; T33A,Midland Air Museum,on_display
+McDonnell Douglas,F-4,C,63-7699,Phantom II,,fixed_wing,monoplane,military,fighter,,Ex-USAF Phantom credited with a MiG kill in Vietnam; displayed outside in 366 Tactical Fighter Wing markings.,F4; 37699; CG; F4C,Midland Air Museum,on_display
+McDonnell Douglas,F-4,C,63-7414,Phantom II,,fixed_wing,monoplane,military,fighter,,Ex-USAF; held in store in 136 Fighter Interceptor Squadron markings.,F4; 37414; F4C,Midland Air Museum,in_storage
+McDonnell,F-101,TF-101B,56-0312,Voodoo,,fixed_wing,monoplane,military,fighter,,Ex-USAF; displayed outside wearing Royal Canadian Air Force markings as 17447.,F101; 17447; 447,Midland Air Museum,on_display
+McDonnell,F-101,F-101B,57-0270,Voodoo,,fixed_wing,monoplane,military,fighter,,"Nose section only, held in store.",F101,Midland Air Museum,in_storage
+North American,F-86,A,48-0242,Sabre,,fixed_wing,monoplane,military,fighter,,Ex-USAF Sabre displayed outside.,F86; FU-242; N196B; 8242; FU242; F86A,Midland Air Museum,on_display
+North American,F-100,D,54-2174,Super Sabre,,fixed_wing,monoplane,military,ground_attack,,Ex-USAF and Armee de l Air; displayed outside.,F100; SM; 42174; F100D,Midland Air Museum,on_display
+Mikoyan-Gurevich,MiG-21,SPS-K,959,,,fixed_wing,monoplane,military,fighter,,Ex-East German Air Force; displayed outside.,MiG21,Midland Air Museum,on_display
+Mil,Mi-24,D,3532464505029,,,rotary_wing,,military,ground_attack,,Ex-Soviet Air Force; displayed outside. The museum inventory gives the construction number as 353246405029.,06 red; Mi24; Mi24D,Midland Air Museum,on_display
+Panavia,Tornado,GR.4,ZA452,,,fixed_wing,monoplane,military,ground_attack,,Displayed outside in 2 Squadron markings.,021,Midland Air Museum,on_display
+Percival,Prentice,T.1,VS623,,,fixed_wing,monoplane,military,trainer,,Displayed outside.,,Midland Air Museum,on_display
+Saab,J 29,J 29F,29640,Tunnan,,fixed_wing,monoplane,military,fighter,,Ex-Swedish Air Force Tunnan; displayed inside in F20 markings.,J,Midland Air Museum,on_display
+Slingsby,Cadet,TX.1,,,,fixed_wing,monoplane,military,trainer,,"Slingsby Cadet TX.1 glider displayed at the museum, carried on the inventory as BGA.804; military serial not established.",BGA804,Midland Air Museum,on_display
+Slingsby,Grasshopper,TX.1,XK789,,,fixed_wing,monoplane,military,trainer,,Displayed inside.,,Midland Air Museum,on_display
+PZL-Mielec,TS-11,100bis,408,Iskra,,fixed_wing,monoplane,military,trainer,,Ex-Polish Air Force Iskra; displayed outside wearing 1706.,TS11; 1706,Midland Air Museum,on_display
+Vickers,Viscount,708,F-BGNR,,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-Air Inter Viscount displayed at the museum.,,Midland Air Museum,on_display
+Westland,Scout,AH.1,XR635,,,rotary_wing,,military,utility,,Displayed outside.,,Midland Air Museum,on_display
+Westland,Whirlwind,Srs 3,G-APWN,,,rotary_wing,,civilian,transport,,Civil Westland Whirlwind; under restoration in 2026.,,Midland Air Museum,under_restoration
+Westland,Whirlwind,HAS.7,XK907,,,rotary_wing,,military,search_rescue,,Held in store.,U,Midland Air Museum,in_storage
+Handley Page,Victor,B.1A,XH592,,,fixed_wing,monoplane,military,bomber,,"Nose section only, under restoration.",8429M,Midland Air Museum,under_restoration
+Lockheed,L-188,L-188,N5535,Electra,,fixed_wing,monoplane,civilian,commercial_transport,,"Cockpit section only, displayed at the museum.",L188,Midland Air Museum,on_display
+British Aerospace,Harrier,GR.5,,,,fixed_wing,monoplane,military,ground_attack,,British Aerospace Harrier II cockpit section displayed at the museum; no serial is quoted on the museum inventory.,,Midland Air Museum,on_display
+Canadair,Sabre,Mk 5,23140,,,fixed_wing,monoplane,military,fighter,,"Ex-Royal Canadian Air Force; rear fuselage only, under restoration.",A,Midland Air Museum,under_restoration
+Auster,Auster,T.7,WE600,,,fixed_wing,monoplane,military,recon,,Held in store.,7602M,Midland Air Museum,in_storage
+Armstrong Whitworth,Whitley,Mk V,N1498,,,fixed_wing,monoplane,military,bomber,,"Fuselage section only, displayed inside.",,Midland Air Museum,on_display
+Bristol,Beaufighter,Mk I,T5298,,,fixed_wing,monoplane,military,fighter,,"Cockpit section only, displayed inside.",4552M,Midland Air Museum,on_display
+Avro,Blue Steel,,,,,missile_rocket,,military,air_to_surface,,Avro Blue Steel stand-off nuclear missile displayed beside Vulcan XL360.,,Midland Air Museum,on_display
+English Electric,Thunderbird,,,,,missile_rocket,,military,surface_to_air,,English Electric Thunderbird surface-to-air missile displayed outside the museum entrance.,,Midland Air Museum,on_display
+Hawker Siddeley,Red Top,,,,,missile_rocket,,military,air_to_air,,de Havilland Red Top air-to-air missile displayed at the museum.,,Midland Air Museum,on_display
+de Havilland,Firestreak,,,,,missile_rocket,,military,air_to_air,,de Havilland Firestreak air-to-air missile displayed at the museum.,,Midland Air Museum,on_display
+Fairey,Fireflash,,,,,missile_rocket,,military,air_to_air,,Fairey Fireflash beam-riding air-to-air missile displayed at the museum.,,Midland Air Museum,on_display
+Vickers,Red Dean,,,,,missile_rocket,,military,air_to_air,,"Vickers Red Dean air-to-air missile, a cancelled 1950s programme; displayed at the museum.",,Midland Air Museum,on_display
+British Aerospace,Skyflash,,,,,missile_rocket,,military,air_to_air,,Skyflash semi-active radar-homing air-to-air missile displayed at the museum.,,Midland Air Museum,on_display

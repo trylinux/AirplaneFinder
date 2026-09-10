@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Sud Aviation,SA318,C,75+48,,,rotary_wing,,military,utility,,"Ex-German Army Alouette II ground instructional airframe, previously 2-STEV.",SA318C; SA318; Alouette II,Cardiff and Vale College Aerospace Centre,on_display
+Scottish Aviation,Jetstream,T.2,XX487,,,fixed_wing,monoplane,military,trainer,,"Ex-Royal Navy Jetstream in blue and white Fleet Air Arm colours, coded CU-568; ground instructional airframe.",Jetstream T2; Jetstream 200; HP.137,Cardiff and Vale College Aerospace Centre,on_display
+Scottish Aviation,Bulldog,T.1,XX687,,,fixed_wing,monoplane,military,trainer,,"Ground instructional airframe in the red and white training scheme, coded F.",Bulldog T1; Bulldog; SA.120,Cardiff and Vale College Aerospace Centre,on_display

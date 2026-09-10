@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Westland,Scout,AH.1,XV123,,,rotary_wing,,military,utility,,"Westland Scout AH.1 coded V, mounted outside the Vanguard Storage building and visible from Alperton Lane. Confirmed Mar 2024.",,"Vanguard Storage Scout, Greenford",on_display
+de Havilland,Vampire,T.11,XK632,,,fixed_wing,monoplane,military,trainer,,Pod only of a de Havilland Vampire T.11 held inside the building; not on public view. Last reported Mar 2015.,,"Vanguard Storage Scout, Greenford",in_storage

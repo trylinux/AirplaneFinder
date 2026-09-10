@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Westland,Wessex,HC.2,XR506,,,rotary_wing,,military,utility,,Preserved outside at Holly Berry Farm in 72 Squadron markings. Confirmed 2026.,9343M; V,"Holly Berry Farm Aircraft Display, Corley Moor",on_display
+Hawker Siddeley,Harrier,GR.3,XV783,,,fixed_wing,monoplane,military,ground_attack,,Preserved outside at Holly Berry Farm in 233 Operational Conversion Unit markings. Confirmed 2026.,A2608; A2609; N,"Holly Berry Farm Aircraft Display, Corley Moor",on_display
+Westland,Lynx,AH.7,ZD284,,,rotary_wing,,military,utility,,Preserved outside at Holly Berry Farm. Confirmed 2026.,,"Holly Berry Farm Aircraft Display, Corley Moor",on_display

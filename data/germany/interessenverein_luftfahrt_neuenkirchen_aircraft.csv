@@ -1,0 +1,26 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aero,L-39,ZO Albatros,12,,,fixed_wing,monoplane,military,trainer,,Jet trainer displayed with the number 12.,L39; Albatros,Interessenverein Luftfahrt Neuenkirchen,on_display
+Antonov,An-2,TD,D-FONB,,,fixed_wing,biplane,civilian,utility,,"An-2TD in German civil markings, ex-NVA 799; previously displayed at the Historisch-Technisches Informationszentrum Peenemünde, where it was photographed in August 2006.",An2; Colt; 799; An2TD,Interessenverein Luftfahrt Neuenkirchen,on_display
+Fiat,G.91,R/3,31+62,,,fixed_wing,monoplane,military,ground_attack,,Ex-Bundesluftwaffe G.91R/3.,G91; Gina,Interessenverein Luftfahrt Neuenkirchen,on_display
+High Performance Aircraft,TT62,Alekto,D-ITTX,,,fixed_wing,monoplane,civilian,private,,German light twin prototype.,TT62; Alekto,Interessenverein Luftfahrt Neuenkirchen,on_display
+Kamov,Ka-26,,DDR-SPQ,,,rotary_wing,,civilian,utility,,Ex-Interflug Agrarflug Ka-26.,Ka26; Hoodlum,Interessenverein Luftfahrt Neuenkirchen,on_display
+Kamov,Ka-26,,DDR-SPW,,,rotary_wing,,civilian,utility,,Ex-Interflug Agrarflug Ka-26.,Ka26; Hoodlum,Interessenverein Luftfahrt Neuenkirchen,on_display
+Zlin,Z-37,Cmelak,DM-SLW,,,fixed_wing,monoplane,civilian,utility,,Agricultural Cmelak in East German markings.,Z37; Cmelak,Interessenverein Luftfahrt Neuenkirchen,on_display
+Letov,KT-04,,09-21,,,fixed_wing,monoplane,civilian,private,,Czech ultralight.,KT04; Letov KT-04,Interessenverein Luftfahrt Neuenkirchen,on_display
+McDonnell Douglas,F-4,F Phantom II,37+58,,,fixed_wing,monoplane,military,fighter,,Ex-Luftwaffe F-4F Phantom II.,F4; F4F; Phantom,Interessenverein Luftfahrt Neuenkirchen,on_display
+Mikoyan-Gurevich,MiG-17,F,009,,,fixed_wing,monoplane,military,fighter,,MiG-17F displayed with the number 009.,MiG17; MiG17F; Fresco,Interessenverein Luftfahrt Neuenkirchen,on_display
+Mikoyan-Gurevich,MiG-17,F,781,,,fixed_wing,monoplane,military,fighter,,MiG-17F displayed with the number 781; the same number is listed here for a MiG-21MF-75 and one reading may be wrong.,MiG17; MiG17F; Fresco,Interessenverein Luftfahrt Neuenkirchen,on_display
+Mikoyan-Gurevich,MiG-21,M,438,,,fixed_wing,monoplane,military,fighter,,Ex-NVA MiG-21M.,MiG21; MiG21M; Fishbed,Interessenverein Luftfahrt Neuenkirchen,on_display
+Mikoyan-Gurevich,MiG-21,MF-75,781,,,fixed_wing,monoplane,military,fighter,,Ex-NVA MiG-21MF-75.,MiG21; MiG21MF; Fishbed,Interessenverein Luftfahrt Neuenkirchen,on_display
+Mikoyan-Gurevich,MiG-21,PFM,825,,,fixed_wing,monoplane,military,fighter,,Ex-NVA MiG-21PFM.,MiG21; MiG21PFM; Fishbed,Interessenverein Luftfahrt Neuenkirchen,on_display
+Mikoyan-Gurevich,MiG-23,ML,20+10,,,fixed_wing,monoplane,military,fighter,,Ex-NVA MiG-23ML in Bundeswehr markings 20+10.,MiG23; MiG23ML; Flogger,Interessenverein Luftfahrt Neuenkirchen,on_display
+Mil,Mi-8,TB,93+86,,,rotary_wing,,military,transport,,Ex-NVA Mi-8TB in Bundeswehr markings.,Mi8; Mi8TB; Hip,Interessenverein Luftfahrt Neuenkirchen,on_display
+Ostmecklenburgische Flugzeugbau,OMF-100,160 Symphony,D-EMVP,,,fixed_wing,monoplane,civilian,private,,Light aircraft built locally in Neubrandenburg.,OMF100; Symphony,Interessenverein Luftfahrt Neuenkirchen,on_display
+Panavia,Tornado,IDS,43+73,,,fixed_wing,monoplane,military,ground_attack,,Ex-Luftwaffe Tornado.,Tornado IDS; TornadoIDS,Interessenverein Luftfahrt Neuenkirchen,on_display
+PZL-Bielsko,SZD-9,Bocian,D-6249,,,fixed_wing,monoplane,civilian,trainer,,Two-seat training glider.,SZD9; Bocian,Interessenverein Luftfahrt Neuenkirchen,on_display
+PZL-Bielsko,SZD-30,Pirat,D-1705,,,fixed_wing,monoplane,civilian,private,,Single-seat glider.,SZD30; Pirat,Interessenverein Luftfahrt Neuenkirchen,on_display
+PZL-Warszawa,PZL-104,Wilga 35A,DDR-VPT,,,fixed_wing,monoplane,civilian,utility,,Ex-GST Wilga in East German markings.,PZL104; Wilga,Interessenverein Luftfahrt Neuenkirchen,on_display
+Sukhoi,Su-7,U,,,,fixed_wing,monoplane,military,trainer,,Two-seat Su-7U displayed with bort number 07. Tail left blank in this database because the two-digit bort number 07 is not unique - it collides with a Soviet-operated airframe of the same type already recorded elsewhere.,Su7; Su7U; Moujik; bort 07,Interessenverein Luftfahrt Neuenkirchen,on_display
+Sukhoi,Su-22,M4,362,,,fixed_wing,monoplane,military,ground_attack,,Ex-NVA Su-22M4.,Su22; Su22M4; Fitter,Interessenverein Luftfahrt Neuenkirchen,on_display
+Zlin,Z-37,A Cmelak,D-ESLW,,,fixed_wing,monoplane,civilian,utility,,Agricultural Cmelak in German civil markings.,Z37; Cmelak,Interessenverein Luftfahrt Neuenkirchen,on_display
+Zlin,Z-37,A Cmelak,,,,fixed_wing,monoplane,civilian,utility,,Second Z-37A on site; its German civil registration is truncated in the published inventory and is not confirmed.,Z37; Cmelak,Interessenverein Luftfahrt Neuenkirchen,on_display

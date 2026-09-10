@@ -1,0 +1,19 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Antonov,An-2,T,D-FOFM,,,fixed_wing,biplane,civilian,utility,,An-2T in German civil markings.,An2; Colt; An2T,Fliegendes Museum Großenhain,on_display
+Antonov,An-2,T,D-FOJN,,,fixed_wing,biplane,civilian,utility,,An-2T in German civil markings.,An2; Colt; An2T,Fliegendes Museum Großenhain,on_display
+Blériot,XI,,D-EEXI,,,fixed_wing,monoplane,civilian,private,,Flying Blériot XI reproduction.,Bleriot XI; BleriotXI,Fliegendes Museum Großenhain,on_display
+Bölkow,Bo 207,,,,,fixed_wing,monoplane,civilian,private,,Bölkow Bo 207 light aircraft; registration truncated in the published inventory.,Bo207; Bolkow 207,Fliegendes Museum Großenhain,on_display
+Bücker,Bü 131,B Jungmann,D-EAZO,,,fixed_wing,biplane,civilian,trainer,,Ex-Swiss Air Force Jungmann A-41.,Bu131; Jungmann; A-41; A41,Fliegendes Museum Großenhain,on_display
+de Havilland,DH.89,A Dragon Rapide,D-ILIT,,,fixed_wing,biplane,civilian,commercial_transport,,Airworthy Dragon Rapide.,DH89; Dragon Rapide,Fliegendes Museum Großenhain,on_display
+de Havilland,DH.82,A Tiger Moth,D-EFTN,,,fixed_wing,biplane,civilian,trainer,,Airworthy Tiger Moth.,DH82; Tiger Moth,Fliegendes Museum Großenhain,on_display
+Fokker,Dr.I,,D-EFTJ,,,fixed_wing,triplane,civilian,private,,Flying Dr.I reproduction marked 425/17.,DrI; Dr1; Triplane,Fliegendes Museum Großenhain,on_display
+Klemm,L 25,,D-EFTE,,,fixed_wing,monoplane,civilian,private,,Vintage Klemm light aircraft.,L25; Klemm L25,Fliegendes Museum Großenhain,on_display
+Klemm,Kl 35,D,D-EFTG,,,fixed_wing,monoplane,civilian,trainer,,"Klemm Kl 35D, also marked WL+TY.",Kl35; Klemm 35,Fliegendes Museum Großenhain,on_display
+Mikoyan-Gurevich,MiG-17,F,47,,,fixed_wing,monoplane,military,fighter,,MiG-17F displayed with the number 47.,MiG17; MiG17F; Fresco,Fliegendes Museum Großenhain,on_display
+Mikoyan-Gurevich,MiG-21,PFM,780,,,fixed_wing,monoplane,military,fighter,,"Ex-NVA MiG-21PFM, previously at Dresden. Identity from the NVA MiG-21 fate register at mig-21.de.",MiG21; MiG21PFM; Fishbed,Fliegendes Museum Großenhain,on_display
+Mil,Mi-24,,0142,,,rotary_wing,,military,ground_attack,,"Mi-24 gunship on the airfield, number 0142.",Mi24; Hind,Fliegendes Museum Großenhain,on_display
+Morane-Saulnier,MS.317,,F-BBQE,,,fixed_wing,monoplane,civilian,trainer,,Vintage French parasol trainer.,MS317; Morane 317,Fliegendes Museum Großenhain,on_display
+Morane-Saulnier,MS.505,Criquet,D-EGTY,,,fixed_wing,monoplane,civilian,utility,,"French-built Fieseler Storch derivative, marked 73.",MS505; Criquet; Fi 156; Storch,Fliegendes Museum Großenhain,on_display
+North American,T-6,J Harvard 4,D-FABE,,,fixed_wing,monoplane,military,trainer,,Also marked 52-8578.,T6; AT-6; AT6; Harvard; Texan,Fliegendes Museum Großenhain,on_display
+Piper,PA-18,95 Super Cub,D-EKYL,,,fixed_wing,monoplane,civilian,private,,Super Cub.,PA18; Super Cub,Fliegendes Museum Großenhain,on_display
+Stampe et Vertongen,SV.4,C,D-EJKA,,,fixed_wing,biplane,civilian,trainer,,Belgian-designed biplane trainer marked 396.,SV4; SV4C; Stampe,Fliegendes Museum Großenhain,on_display

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Boeing,CH-47,F,03-08003,Chinook,,rotary_wing,,military,transport,,"Ex US Army Boeing CH-47F Chinook coded DT, preserved as the RAF Odiham gate guardian. Confirmed Jul 2026.",CH47; CH47F,RAF Odiham Gate Guardians,on_display
+Westland,Whirlwind,HAR.10,XR453,,,rotary_wing,,military,search_rescue,,"Westland Whirlwind HAR.10 coded A in 230 Squadron markings, preserved as a gate guardian. Confirmed Aug 2024.",8674M,RAF Odiham Gate Guardians,on_display

@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Hawker,Sea Hawk,FGA.6,WV795,,,fixed_wing,monoplane,military,ground_attack,,"Hawker Sea Hawk FGA.6 in 806 NAS markings, displayed just inside the aerodrome gate; photographed in place Jun 2021 and still listed Dec 2022.",,Dunsfold Aerodrome Preserved Aircraft,on_display
+Hawker,Hunter,T.7,XL621,,,fixed_wing,monoplane,military,trainer,,"Hawker Hunter T.7 in Empire Test Pilots' School markings, civil registration G-BNCX, displayed outside. Last reported Dec 2022.",G-BNCX,Dunsfold Aerodrome Preserved Aircraft,on_display
+Hawker,Hunter,T.7,XL623,,,fixed_wing,monoplane,military,trainer,,Hawker Hunter T.7 held dismantled outside; not on display. Last reported Dec 2022.,,Dunsfold Aerodrome Preserved Aircraft,in_storage
+Vickers,VC10,K.3,ZA150,,,fixed_wing,monoplane,military,tanker,,"Vickers VC10 K.3 tanker in 101 Squadron markings coded J, later N150ZA, parked on the Dunsfold ramp. Last reported Dec 2022.",VC-10; N150ZA; 5H-MOG; VC10; 5HMOG,Dunsfold Aerodrome Preserved Aircraft,on_display
