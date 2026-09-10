@@ -2,3 +2,6 @@
 __pycache__
 .*
 logs/*
+
+# scratch: transfer archives staged from Cowork sessions
+_to_delete/
