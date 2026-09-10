@@ -1299,7 +1299,7 @@ def api_museums_globe():
         )
         .all()
     )
-    return jsonify([
+    resp = jsonify([
         {
             "id": mid,
             "name": name,
@@ -1311,6 +1311,12 @@ def api_museums_globe():
         }
         for (mid, name, city, country, lat, lon, count) in rows
     ])
+    # The globe preloads this on page load; let the browser reuse it across
+    # page views and revalidate cheaply (304) once it goes stale.
+    resp.cache_control.public = True
+    resp.cache_control.max_age = 300
+    resp.add_etag()
+    return resp.make_conditional(request)
 
 
 @app.route("/api/v1/museums/countries")

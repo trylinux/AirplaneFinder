@@ -1,4 +1,105 @@
 /* Shared desktop and mobile museum Discovery view. */
+
+/* ── Data preload ────────────────────────────────────────────────────────
+   Everything the globe plots is fetched as soon as the page has loaded and
+   pre-baked into flat Float32Arrays during browser idle time — long before
+   the Discovery tab is opened. initMuseumGlobe() then only wraps those
+   arrays in BufferGeometry, so opening the tab doesn't wait on the network
+   or on per-point object construction.
+   Border GeoJSON is vendored under /static/data (no third-party CDN). */
+var MuseumGlobeData = (function() {
+    var R = 1;
+    var PIN_R = R * 1.004, COUNTRY_R = R * 1.002, STATE_R = R * 1.003;
+    var URLS = {
+        pins: '/api/v1/museums/globe',
+        countries: '/static/data/world-countries.geo.json?v=1',
+        states: '/static/data/us-states.geo.json?v=1'
+    };
+
+    function writeXYZ(lat, lon, radius, out, i) {
+        var phi = (90 - lat) * Math.PI / 180;
+        var theta = (lon + 180) * Math.PI / 180;
+        out[i]     = -radius * Math.sin(phi) * Math.cos(theta);
+        out[i + 1] =  radius * Math.cos(phi);
+        out[i + 2] =  radius * Math.sin(phi) * Math.sin(theta);
+    }
+
+    function fetchJSON(url) {
+        return fetch(url, {credentials: 'same-origin'}).then(function(r) {
+            if (!r.ok) throw new Error(url + ' → HTTP ' + r.status);
+            return r.json();
+        });
+    }
+
+    // Yield to the browser so baking never blocks first paint or input.
+    function idle() {
+        return new Promise(function(resolve) {
+            if (window.requestIdleCallback) window.requestIdleCallback(resolve, {timeout: 1500});
+            else setTimeout(resolve, 16);
+        });
+    }
+
+    function bakePins(museums) {
+        var positions = new Float32Array(museums.length * 3);
+        museums.forEach(function(m, k) { writeXYZ(m.latitude, m.longitude, PIN_R, positions, k * 3); });
+        return {museums: museums, positions: positions};
+    }
+
+    // Every ring of every feature becomes line-segment pairs in ONE array,
+    // so the whole border layer is a single draw call instead of thousands.
+    function bakeBorders(geo, radius) {
+        var segments = 0, labels = [];
+        var feats = (geo && geo.features) || [];
+        var rings = [];
+        feats.forEach(function(feat) {
+            var g = feat.geometry;
+            if (!g) return;
+            var polys = g.type === 'Polygon' ? [g.coordinates] :
+                        g.type === 'MultiPolygon' ? g.coordinates : [];
+            var cx = 0, cy = 0, n = 0;
+            polys.forEach(function(poly) {
+                poly.forEach(function(ring) {
+                    if (ring.length > 1) { rings.push(ring); segments += ring.length - 1; }
+                    ring.forEach(function(c) { cx += c[0]; cy += c[1]; n++; });
+                });
+            });
+            var props = feat.properties || {};
+            var name = props.name || props.ADMIN || props.NAME || props.name_long || props.STATE_NAME || '';
+            if (n && name) labels.push({name: name, lat: cy / n, lon: cx / n});
+        });
+        var positions = new Float32Array(segments * 6), o = 0;
+        rings.forEach(function(ring) {
+            for (var k = 0; k < ring.length - 1; k++) {
+                writeXYZ(ring[k][1], ring[k][0], radius, positions, o); o += 3;
+                writeXYZ(ring[k + 1][1], ring[k + 1][0], radius, positions, o); o += 3;
+            }
+        });
+        return {positions: positions, labels: labels};
+    }
+
+    var cache = null;
+    function preload() {
+        if (cache) return cache;
+        cache = {
+            pins: fetchJSON(URLS.pins).then(function(m) { return idle().then(function() { return bakePins(m); }); }),
+            // Borders are decoration: a failure just means no borders.
+            countries: fetchJSON(URLS.countries).then(function(g) {
+                return idle().then(function() { return bakeBorders(g, COUNTRY_R); });
+            }).catch(function() { return null; }),
+            states: fetchJSON(URLS.states).then(function(g) {
+                return idle().then(function() { return bakeBorders(g, STATE_R); });
+            }).catch(function() { return null; })
+        };
+        return cache;
+    }
+
+    // Kick off as soon as the page has finished its own first-load work.
+    if (document.readyState === 'complete') setTimeout(preload, 0);
+    else window.addEventListener('load', function() { setTimeout(preload, 0); });
+
+    return {preload: preload, R: R};
+})();
+
 function initMuseumGlobe(options) {
     var prefix = options.prefix || "";
     var wrap = document.getElementById(prefix + 'globe-wrap');
@@ -38,7 +139,7 @@ function initMuseumGlobe(options) {
     var surfaceMat = new THREE.MeshBasicMaterial({
         color: 0x0a1b3a, transparent: true, opacity: 0.92
     });
-    var surface = new THREE.Mesh(new THREE.SphereGeometry(R * 0.995, 256, 128), surfaceMat);
+    var surface = new THREE.Mesh(new THREE.SphereGeometry(R * 0.995, 96, 64), surfaceMat);
     globeGroup.add(surface);
 
     // Wireframe overlay — latitude/longitude grid in dim blue
@@ -96,7 +197,14 @@ function initMuseumGlobe(options) {
     var activePinMat = pinMat.clone();
     activePinMat.color.setHex(0x38bdf8);
     var activePinId = null;
-    var pins = [];
+    var pinTexture = pinMat.map;
+    var pinData = [];            // museum records, index-aligned with pinPositions
+    var pinPositions = null;     // Float32Array of local xyz, baked in preload
+    var pinPoints = null;
+    var activePin = new THREE.Sprite(activePinMat);
+    activePin.visible = false;
+    activePin.renderOrder = 2;
+    globeGroup.add(activePin);
 
     // Country borders + labels
     var borderMat = new THREE.LineBasicMaterial({
@@ -157,84 +265,41 @@ function initMuseumGlobe(options) {
         return (s || '').toLowerCase().replace(/^the /, '').replace(/\./g, '').trim();
     }
 
-    function addCountriesGeoJSON(geo, countryHasMuseum) {
-        var feats = geo.features || [];
-        feats.forEach(function(feat) {
-            var props = feat.properties || {};
-            var cname = props.name || props.ADMIN || props.NAME || props.name_long || '';
-            var g = feat.geometry;
-            if (!g) return;
-            var polys = g.type === 'Polygon' ? [g.coordinates] :
-                        g.type === 'MultiPolygon' ? g.coordinates : [];
-            var all = [];
-            polys.forEach(function(poly) {
-                poly.forEach(function(ring) {
-                    var pts = ring.map(function(c) {
-                        all.push(c);
-                        return latLonToVec3(c[1], c[0], R * 1.002);
-                    });
-                    if (pts.length > 1) {
-                        var bg = new THREE.BufferGeometry().setFromPoints(pts);
-                        globeGroup.add(new THREE.Line(bg, borderMat));
-                    }
-                });
-            });
+    function addBorders(baked, material, parent) {
+        var geom = new THREE.BufferGeometry();
+        geom.setAttribute('position', new THREE.BufferAttribute(baked.positions, 3));
+        var lines = new THREE.LineSegments(geom, material);
+        lines.renderOrder = 1;   // after the translucent surface, so it occludes the far side
+        parent.add(lines);
+    }
 
-            // Label if this country has at least one museum
-            var nc = normCountry(cname);
-            var match = countryHasMuseum[nc];
-            if (!match) {
-                // Loose match: check if any museum country contains / is contained in this name
-                for (var k in countryHasMuseum) {
-                    if (k && (k.indexOf(nc) >= 0 || nc.indexOf(k) >= 0)) { match = true; break; }
-                }
-            }
-            if (match && all.length) {
-                var cx = 0, cy = 0;
-                all.forEach(function(c) { cx += c[0]; cy += c[1]; });
-                cx /= all.length; cy /= all.length;
-                var sprite = makeLabelSprite(cname);
-                sprite.position.copy(latLonToVec3(cy, cx, R * 1.004));
-                globeGroup.add(sprite);
-                labelSprites.push(sprite);
-            }
+    function addCountries(baked, countryHasMuseum) {
+        addBorders(baked, borderMat, globeGroup);
+        var keys = Object.keys(countryHasMuseum);
+        baked.labels.forEach(function(l) {
+            var nc = normCountry(l.name);
+            // Loose match: any museum country containing / contained in this name
+            var match = countryHasMuseum[nc] || keys.some(function(k) {
+                return k && (k.indexOf(nc) >= 0 || nc.indexOf(k) >= 0);
+            });
+            if (!match) return;
+            var sprite = makeLabelSprite(l.name);
+            sprite.position.copy(latLonToVec3(l.lat, l.lon, R * 1.004));
+            globeGroup.add(sprite);
+            labelSprites.push(sprite);
         });
     }
 
-    function addStatesGeoJSON(geo) {
-        var feats = geo.features || [];
-        feats.forEach(function(feat) {
-            var props = feat.properties || {};
-            var sname = props.name || props.NAME || props.STATE_NAME || '';
-            var g = feat.geometry;
-            if (!g) return;
-            var polys = g.type === 'Polygon' ? [g.coordinates] :
-                        g.type === 'MultiPolygon' ? g.coordinates : [];
-            var all = [];
-            polys.forEach(function(poly) {
-                poly.forEach(function(ring) {
-                    var pts = ring.map(function(c) {
-                        all.push(c);
-                        return latLonToVec3(c[1], c[0], R * 1.003);
-                    });
-                    if (pts.length > 1) {
-                        var bg = new THREE.BufferGeometry().setFromPoints(pts);
-                        stateGroup.add(new THREE.Line(bg, stateBorderMat));
-                    }
-                });
+    function addStates(baked) {
+        addBorders(baked, stateBorderMat, stateGroup);
+        baked.labels.forEach(function(l) {
+            var sprite = makeLabelSprite(l.name, {
+                fontSize: 36, fontWeight: '500',
+                color: '#b8d0f5', worldScale: 0.00045
             });
-            if (all.length && sname) {
-                var cx = 0, cy = 0;
-                all.forEach(function(c) { cx += c[0]; cy += c[1]; });
-                cx /= all.length; cy /= all.length;
-                var sprite = makeLabelSprite(sname, {
-                    fontSize: 36, fontWeight: '500',
-                    color: '#b8d0f5', worldScale: 0.00045
-                });
-                sprite.position.copy(latLonToVec3(cy, cx, R * 1.004));
-                stateGroup.add(sprite);
-                stateLabelSprites.push(sprite);
-            }
+            sprite.position.copy(latLonToVec3(l.lat, l.lon, R * 1.004));
+            stateGroup.add(sprite);
+            stateLabelSprites.push(sprite);
         });
     }
 
@@ -251,29 +316,35 @@ function initMuseumGlobe(options) {
     var pointers = new Map();
     var press = null, didDrag = false, pinch = null;
 
+    var pickVec = new THREE.Vector3();
+    var pickCam = new THREE.Vector3();
     function pickPin(clientX, clientY, radius) {
+        if (!pinPositions) return null;
         scene.updateMatrixWorld(true);
         camera.updateMatrixWorld(true);
         var rect = canvas.getBoundingClientRect();
-        var best = null, bestDistance = radius;
-        pins.forEach(function(pin) {
-            var world = pin.getWorldPosition(new THREE.Vector3());
-            var direction = world.clone().sub(camera.position).normalize();
-            raycaster.set(camera.position, direction);
-            var surfaceHit = raycaster.ray.intersectSphere(occluder, new THREE.Vector3());
-            if (surfaceHit && camera.position.distanceTo(surfaceHit) < camera.position.distanceTo(world) - 0.02) return;
-            var projected = world.clone().project(camera);
-            if (projected.z < -1 || projected.z > 1) return;
-            var x = rect.left + (projected.x + 1) * rect.width / 2;
-            var y = rect.top + (1 - projected.y) * rect.height / 2;
+        var m = globeGroup.matrixWorld;
+        pickCam.copy(camera.position);
+        var best = -1, bestDistance = radius;
+        for (var i = 0, n = pinData.length; i < n; i++) {
+            pickVec.fromArray(pinPositions, i * 3).applyMatrix4(m);
+            // Back-face test: normal · (camera − point) must be positive.
+            var dx = pickCam.x - pickVec.x, dy = pickCam.y - pickVec.y, dz = pickCam.z - pickVec.z;
+            if (pickVec.x * dx + pickVec.y * dy + pickVec.z * dz <= 0) continue;
+            pickVec.project(camera);
+            if (pickVec.z < -1 || pickVec.z > 1) continue;
+            var x = rect.left + (pickVec.x + 1) * rect.width / 2;
+            var y = rect.top + (1 - pickVec.y) * rect.height / 2;
             var distance = Math.hypot(clientX - x, clientY - y);
-            if (distance < bestDistance) { best = pin.userData; bestDistance = distance; }
-        });
-        return best;
+            if (distance < bestDistance) { best = i; bestDistance = distance; }
+        }
+        return best < 0 ? null : pinData[best];
     }
 
     function showPin(m) {
         activePinId = m ? m.id : null;
+        activePin.visible = !!m;
+        if (m) activePin.position.copy(latLonToVec3(m.latitude, m.longitude, R * 1.004));
         if (!m) { tooltip.classList.remove('show'); return; }
         tooltip.innerHTML =
             '<div class="t-name pin-name">' + escHtml(m.name) + '</div>' +
@@ -368,31 +439,32 @@ function initMuseumGlobe(options) {
         zoomBy(Math.exp(e.deltaY * (e.ctrlKey ? 0.015 : 0.0015)));
     }, {passive: false});
 
-    // ── Fetch museums and place pins, then fetch country geometry ──
-    $.getJSON('/api/v1/museums/globe', function(museums) {
+    // ── Place pre-baked data (fetched/baked at page load; instant if ready) ──
+    var data = MuseumGlobeData.preload();
+    var countryHasMuseum = {};
+    data.pins.then(function(baked) {
         loadingEl.style.display = 'none';
-        var countryHasMuseum = {};
-        museums.forEach(function(m) {
-            var pos = latLonToVec3(m.latitude, m.longitude, R * 1.004);
-            var pin = new THREE.Sprite(pinMat);
-            pin.position.copy(pos);
-            pin.userData = m;
-            globeGroup.add(pin);
-            pins.push(pin);
-            countryHasMuseum[normCountry(m.country)] = true;
-        });
+        pinData = baked.museums;
+        pinPositions = baked.positions;
+        pinData.forEach(function(m) { countryHasMuseum[normCountry(m.country)] = true; });
 
-        // Country borders + labels (lightweight world GeoJSON via jsDelivr)
-        $.getJSON('https://cdn.jsdelivr.net/gh/johan/world.geo.json@master/countries.geo.json')
-            .done(function(geo) { addCountriesGeoJSON(geo, countryHasMuseum); })
-            .fail(function() { /* silently skip borders if CDN blocked */ });
+        var geom = new THREE.BufferGeometry();
+        geom.setAttribute('position', new THREE.BufferAttribute(pinPositions, 3));
+        pinPoints = new THREE.Points(geom, new THREE.PointsMaterial({
+            size: 6, sizeAttenuation: false,   // six CSS px at every zoom, on the GPU
+            map: pinTexture, transparent: true, alphaTest: 0.5, depthWrite: false
+        }));
+        pinPoints.renderOrder = 1;   // draw after the surface so far-side pins stay hidden
+        globeGroup.add(pinPoints);
 
-        // US state borders + labels (loaded lazily; shown when zoomed in)
-        $.getJSON('https://cdn.jsdelivr.net/gh/PublicaMundi/MappingAPI@master/data/geojson/us-states.json')
-            .done(function(geo) { addStatesGeoJSON(geo); })
-            .fail(function() { /* silently skip states if CDN blocked */ });
-    }).fail(function() {
-        loadingEl.textContent = 'Failed to load museum data.';
+        return data.countries;
+    }).then(function(countries) {
+        if (countries) addCountries(countries, countryHasMuseum);
+        return data.states;
+    }).then(function(states) {
+        if (states) addStates(states);
+    }).catch(function() {
+        if (!pinData.length) loadingEl.textContent = 'Failed to load museum data.';
     });
 
     // ── Resize handler ──
@@ -424,12 +496,8 @@ function initMuseumGlobe(options) {
 
         scene.updateMatrixWorld(true);
         camera.updateMatrixWorld(true);
-        // Six CSS pixels at every distance, with only the active dot accented.
-        pins.forEach(function(p) {
-            var active = p.userData.id === activePinId;
-            p.scale.setScalar((active ? 8 : 6) * worldUnitsPerPixel(p));
-            p.material = active ? activePinMat : pinMat;
-        });
+        // Regular pins are sized by the GPU; only the accented one is scaled here.
+        if (activePin.visible) activePin.scale.setScalar(8 * worldUnitsPerPixel(activePin));
         // Labels also stop growing when zoomed in to an individual region.
         labelSprites.concat(stateLabelSprites).forEach(function(label) {
             var baseScale = label.userData.labelScale;
