@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aero,L-29,,,Delfin,,fixed_wing,monoplane,military,trainer,,No serial recorded. One of a display pair at the Egyptian Air Force Academy mapped by Wrecks and Relics Online. Distinct from the row of thirteen withdrawn L-29s parked on the south side of the field which are stored airframes.,L29;L-29;Delfin;Maya,Bilbeis Air Force Academy Display,on_display
+Hispano Aviacion,HA-200,,,Saeta,Al Kahira,fixed_wing,monoplane,military,trainer,,No serial recorded. Displayed alongside the L-29 at the Egyptian Air Force Academy.,HA200;Saeta;Al Kahira,Bilbeis Air Force Academy Display,on_display
