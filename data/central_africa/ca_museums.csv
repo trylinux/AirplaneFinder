@@ -1,0 +1,10 @@
+name,city,state_province,country,postal_code,region,address,website,access_type,latitude,longitude
+Base Aérienne Adji Kosseï,N'Djaména,N'Djaména,Chad,,Africa,"Base Adji Kosseï, N'Djaména",,restricted,12.12873,15.01666
+Aéroport de Kinshasa-N'Dolo,Kinshasa,Kinshasa,Democratic Republic of the Congo,,Africa,"Commune de Barumbu, Kinshasa",,restricted,-4.32859,15.32871
+Base Aérienne de N'Djili,Kinshasa,Kinshasa,Democratic Republic of the Congo,,Africa,"Boulevard Lumumba, N'Djili, Commune de la Nsele, Kinshasa",,restricted,-4.38678,15.45383
+Parc de la Vallée de la N'Sele,Kinshasa,Kinshasa,Democratic Republic of the Congo,,Africa,"Commune de Maluku, Kinshasa",https://parcdelavalleedelansele.com/,public,-4.30655,15.72524
+Université de Kinshasa,Kinshasa,Kinshasa,Democratic Republic of the Congo,,Africa,"Route de Matadi, Mbanza-Lemba, Commune de Lemba, Kinshasa",https://www.unikin.ac.cd/,public,-4.41873,15.30731
+Base Aérienne de Libreville,Libreville,Estuaire,Gabon,,Africa,"Aéroport international Léon-Mba, Libreville",,restricted,0.45199,9.41266
+Monument Fouga Magister de Mvengue,Mvengue,Haut-Ogooué,Gabon,,Africa,"Route Économique, Benguia",,public,-1.62240,13.44431
+Base Aérienne de Pointe-Noire,Pointe-Noire,Pointe-Noire,Republic of the Congo,,Africa,"Aéroport international Agostinho-Neto, Pointe-Noire",,restricted,-4.81028,11.88238
+Asas d'Avião,São Tomé,Água Grande,São Tomé and Príncipe,,Africa,"Bairro do Aeroporto, São Tomé",,public,0.37324,6.71375

@@ -1,0 +1,10 @@
+name,city,state_province,country,postal_code,region,address,website,access_type,latitude,longitude
+Avion de l'Avenue de la Révolution,Ouagadougou,Centre,Burkina Faso,,Africa,"Avenue de la Révolution, Kalgodin",,restricted,12.34740,-1.52525
+Base Aérienne 210 de Bobo-Dioulasso,Bobo-Dioulasso,Hauts-Bassins,Burkina Faso,,Africa,"Rue du Baobab, Base Aérienne 210",,restricted,11.17264,-4.32855
+Base Aérienne de Ouagadougou,Ouagadougou,Centre,Burkina Faso,,Africa,"Avenue de l'Aéroport, Kalgodin",,restricted,12.36170,-1.51296
+Aéronefs de la Cité Mangou,Abidjan,Abidjan,Côte d'Ivoire,,Africa,"Rue Grah Segui, Andokoi, Yopougon",,restricted,5.36220,-4.06495
+Base Aérienne d'Abidjan,Abidjan,Abidjan,Côte d'Ivoire,,Africa,"Aéroport International Félix-Houphouët-Boigny, Port-Bouët",,restricted,5.26065,-3.93125
+Base Aérienne de Bouaké,Bouaké,Vallée du Bandama,Côte d'Ivoire,,Africa,"Route de l'Aéroport, Gnankoukro",,restricted,7.74804,-5.06110
+Aeroporto Internacional Osvaldo Vieira,Bissau,Bissau,Guinea-Bissau,,Africa,Avenida dos Combatentes da Liberdade da Pátria,,public,11.88775,-15.65105
+Base Aérienne 101 de Niamey,Niamey,Niamey,Niger,,Africa,"Base Aérienne 101, Boulevard Mali Bero",,restricted,13.48902,2.16435
+Air Force Roundabout Jos,Jos,Plateau State,Nigeria,930253,Africa,"Air Force Roundabout, Barakin Lerawi, Jos North",,public,9.870953,8.886656
