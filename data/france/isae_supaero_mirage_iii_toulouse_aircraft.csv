@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Dassault,Mirage III,A,02,,,fixed_wing,monoplane,military,test,,"Second Mirage IIIA pre-production aircraft, long displayed at the Ecole nationale superieure de l'aeronautique and now on the ISAE-SUPAERO campus at Rangueil.",Mirage IIIA;Mirage 3A;Supaero,"ISAE-SUPAERO Mirage III Display, Toulouse",on_display
+Dassault,Mirage III,A,10,,,fixed_wing,monoplane,military,test,,"Mirage IIIA pre-production aircraft moved to its final position on the ISAE-SUPAERO campus in 2017, as announced by the school itself.",Mirage IIIA;Mirage 3A;Supaero,"ISAE-SUPAERO Mirage III Display, Toulouse",on_display

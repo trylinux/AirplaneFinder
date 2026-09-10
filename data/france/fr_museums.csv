@@ -1,0 +1,114 @@
+name,city,state_province,country,postal_code,region,address,website,access_type,latitude,longitude
+Aeroscopia,Blagnac,Occitanie,France,31700,Europe,"6 rue Roger Beteille, Haute-Garonne",https://www.musee-aeroscopia.fr,public,43.6598667,1.36053056
+Ailes Anciennes Toulouse,Blagnac,Occitanie,France,31700,Europe,"4 rue Roger Beteille, Haute-Garonne",https://aatlse.org,public,43.65795,1.35868
+Musée européen de l'Aviation de Chasse,Montélimar,Auvergne-Rhône-Alpes,France,26200,Europe,"Aérodrome de Montélimar-Ancône, Drôme",https://www.meacmtl.com,public,44.58024,4.73755
+Espace Air Passion,Marcé,Pays de la Loire,France,49140,Europe,"Angers Loire Aéroport, Maine-et-Loire",https://www.musee-aviation-angers.fr,public,47.562769,-0.315317
+Musée de l'Aéronautique Navale,Rochefort,Nouvelle-Aquitaine,France,17300,Europe,"Ancienne base d'aéronautique navale de Rochefort-Soubise, Charente-Maritime",https://www.anaman.fr,public,45.934374,-0.990239
+Musée du Château de Savigny-lès-Beaune,Savigny-lès-Beaune,Bourgogne-Franche-Comté,France,21420,Europe,"Rue du Château, Côte-d'Or",https://www.chateau-savigny.com,public,47.061667,4.818611
+Musée Volant Jean-Baptiste Salis,Cerny,Île-de-France,France,91590,Europe,"Aérodrome de Cerny - La Ferté-Alais, Essonne",https://ajbs.fr,public,48.49780,2.33991
+Musée de l'Hydraviation,Biscarrosse,Nouvelle-Aquitaine,France,40600,Europe,"332 rue Louis Breguet, Landes",https://www.hydravions-biscarrosse.com,public,44.38939,-1.18242
+Conservatoire de l'Air et de l'Espace d'Aquitaine,Mérignac,Nouvelle-Aquitaine,France,33700,Europe,"Base aérienne 106 Bordeaux-Mérignac, Gironde",https://www.caea.fr,appointment,44.83231,-0.68182
+Musée de l'ALAT et de l'Hélicoptère,Dax,Nouvelle-Aquitaine,France,40100,Europe,"58 avenue de l'Aérodrome, Landes",https://museealathelicopteredax.fr,public,43.69194,-1.06435
+Musée Aéronautique Presqu'île Côte d'Amour,La Baule-Escoublac,Pays de la Loire,France,44500,Europe,"Aérodrome de La Baule-Escoublac, Loire-Atlantique",https://www.mapica.fr,appointment,47.28616,-2.34879
+Musée de l'Aviation Clément Ader,Corbas,Auvergne-Rhône-Alpes,France,69960,Europe,"Aérodrome de Lyon-Corbas, Rhône",https://museeaviationlyon.fr,appointment,45.66833,4.90852
+Morbihan Aéro Musée,Monterblanc,Bretagne,France,56250,Europe,"Aéroport de Vannes-Golfe du Morbihan, Morbihan",https://morbihan-aero-musee.com,public,47.72411,-2.72425
+Hangar Y,Meudon,Île-de-France,France,92190,Europe,"9 avenue de Trivaux, Hauts-de-Seine",https://hangar-y.com,public,48.80393,2.23443
+Cité de l'espace,Toulouse,Occitanie,France,31500,Europe,"Avenue Jean Gonord, Haute-Garonne",https://www.cite-espace.com,public,43.586961,1.493164
+Musée Aéronautique et Spatial Safran,Réau,Île-de-France,France,77550,Europe,"Rond-point René Ravaud, Seine-et-Marne",https://www.museesafran.com,appointment,48.606582,2.670364
+Conservatoire CANOPEE Châteaudun,Châteaudun,Centre-Val de Loire,France,28200,Europe,"2 route d'Orléans, ancienne base aérienne 279, Eure-et-Loir",https://canopeechateaudun.fr,public,48.07522,1.36744
+Musée de l'Aviation de Melun-Villaroche,Montereau-sur-le-Jard,Île-de-France,France,77950,Europe,"Hangar Daydé-Geumont, aérodrome de Melun-Villaroche, Seine-et-Marne",https://www.mamv.fr,public,48.57406,2.69870
+"Mémorial Normandie-Niémen, Les Andelys",Les Andelys,Normandie,France,27700,Europe,"Mémorial du Normandie-Niémen, Eure",,public,49.24515,1.40653
+Base d'Aéronautique Navale de Hyères Aircraft Collection,Hyères,Provence-Alpes-Côte d'Azur,France,83400,Europe,"Base d'Aéronautique Navale Hyères-Le Palyvestre, 83400 Hyères, Var",https://www.defense.gouv.fr/marine,restricted,43.10165,6.18978
+Base d'Aéronautique Navale de Landivisiau Aircraft Displays,Landivisiau,Bretagne,France,29400,Europe,"Base d'Aéronautique Navale Landivisiau, 29400 Landivisiau, Finistère",https://www.defense.gouv.fr/marine,restricted,48.49901,-4.09263
+Base d'Aéronautique Navale de Lann-Bihoué Aircraft Displays,Ploemeur,Bretagne,France,56270,Europe,"Base d'Aéronautique Navale Lann-Bihoué, 56270 Ploemeur, Morbihan",https://www.defense.gouv.fr/marine,restricted,47.73247,-3.44221
+Base d'Aéronautique Navale de Lanvéoc-Poulmic Aircraft Displays,Lanvéoc,Bretagne,France,29160,Europe,"Base d'Aéronautique Navale Lanvéoc-Poulmic, 29160 Lanvéoc, Finistère",https://www.defense.gouv.fr/marine,restricted,48.25090,-4.48311
+École navale Super Étendard Display,Lanvéoc,Bretagne,France,29160,Europe,"École navale, Lanvéoc-Poulmic, 29160 Lanvéoc, Finistère",https://www.ecole-navale.fr/,restricted,48.25090,-4.48311
+École des Fusiliers Marins Lorient Aircraft Displays,Lorient,Bretagne,France,56100,Europe,"École des Fusiliers Marins, Base navale de Lorient, 56100 Lorient, Morbihan",,restricted,47.75101,-3.37815
+Atelier Industriel de l'Aéronautique Cuers-Pierrefeu Displays,Cuers,Provence-Alpes-Côte d'Azur,France,83390,Europe,"Atelier Industriel de l'Aéronautique, Base Aéronautique Navale de Cuers-Pierrefeu, 83390 Cuers, Var",,restricted,43.24746,6.13323
+DGA Techniques Aéronautiques Toulouse Displays,Balma,Occitanie,France,31130,Europe,"DGA Techniques Aéronautiques, 47 rue Saint-Jean, 31130 Balma, Haute-Garonne",https://www.defense.gouv.fr/dga,restricted,43.60425,1.52862
+Lycée Frédéric Mistral Nîmes Super Étendard Cockpit,Nîmes,Occitanie,France,,Europe,"Lycée Frédéric Mistral, Nîmes, Gard",,restricted,43.82286,4.36072
+Lycée Jean Zay Jarny Super Étendard,Jarny,Grand Est,France,54800,Europe,"Lycée Jean Zay, 54800 Jarny, Meurthe-et-Moselle",,restricted,49.15350,5.84706
+Lycée Val de Lys Estaires Aircraft,Estaires,Hauts-de-France,France,59940,Europe,"Lycée Val de Lys, 59940 Estaires, Nord",,restricted,50.66640,2.70140
+Lycée Aristide Briand Houilles Super Étendards,Houilles,Île-de-France,France,78800,Europe,"Lycée Aristide Briand, 78800 Houilles, Yvelines",,restricted,48.92657,2.18723
+Lycée Tristan Corbière Morlaix Aircraft,Morlaix,Bretagne,France,29600,Europe,"Lycée Tristan Corbière, Saint-Martin-des-Champs, 29600 Morlaix, Finistère",,restricted,48.55604,-3.82463
+Lycée Alexandre Denis Cerny Super Étendard,Cerny,Île-de-France,France,91590,Europe,"Lycée Alexandre Denis, 91590 Cerny, Essonne",,restricted,48.47611,2.34333
+Lycée Charles Jully Saint-Avold Alouette III,Saint-Avold,Grand Est,France,57500,Europe,"Lycée Charles Jully, 57500 Saint-Avold, Moselle",,restricted,49.12832,6.71220
+"Conservatoire d'Aéronefs CANOPEE, Châteaudun",Châteaudun,Centre-Val de Loire,France,28200,Europe,"2 route d'Orléans, entrée de l'ancienne Base Aérienne 279, 28200 Châteaudun, Eure-et-Loir",https://canopeechateaudun.fr/,appointment,48.07522,1.36744
+"Espace Patrimonial Rozanoff, Base Aérienne 118 Mont-de-Marsan",Mont-de-Marsan,Nouvelle-Aquitaine,France,40000,Europe,"1279 avenue de Nonères, Base Aérienne 118 Colonel Rozanoff, 40000 Mont-de-Marsan, Landes",https://epr118.fr/,appointment,43.905806,-0.498303
+Pôle Aéronautique d'Avord,Avord,Centre-Val de Loire,France,18520,Europe,"5 rue d'Aindling, 18520 Avord, Cher",http://www.poleaeronautiqueavord.fr/,appointment,47.0356638,2.6534963
+Base Aérienne 721 Rochefort Aircraft Displays,Saint-Agnant,Nouvelle-Aquitaine,France,17620,Europe,"Base Aérienne 721 Adjudant Pierre Gémot, 17620 Saint-Agnant, Charente-Maritime",https://www.defense.gouv.fr/air/presentation-base-ecole-721-rochefort,restricted,45.84636,-0.95732
+Base Aérienne 113 Saint-Dizier-Robinson Aircraft Displays,Saint-Dizier,Grand Est,France,52100,Europe,"Base Aérienne 113 Commandant Antoine de Saint-Exupéry, 52100 Saint-Dizier, Haute-Marne",,restricted,48.64649,4.91170
+Base Aérienne 120 Cazaux Mirage IV,La Teste-de-Buch,Nouvelle-Aquitaine,France,33260,Europe,"Base Aérienne 120 Commandant Marzac, Cazaux, 33260 La Teste-de-Buch, Gironde",,restricted,44.55849,-1.17603
+Base Aérienne 702 Avord Mirage IV,Avord,Centre-Val de Loire,France,18520,Europe,"Base Aérienne 702 Capitaine Georges Madon, 18520 Avord, Cher",,restricted,47.01409,2.70282
+Base Aérienne 125 Istres-Le Tubé Mirage IV,Istres,Provence-Alpes-Côte d'Azur,France,13800,Europe,"Base Aérienne 125 Charles Monier, Istres-Le Tubé, 13800 Istres, Bouches-du-Rhône",,restricted,43.55053,4.95062
+Base Aérienne 115 Orange-Caritat Aircraft Displays,Orange,Provence-Alpes-Côte d'Azur,France,84100,Europe,"Base Aérienne 115 Capitaine de Seynes, Orange-Caritat, 84100 Orange, Vaucluse",,restricted,44.14644,4.80858
+Base Aérienne 110 Creil Aircraft Displays,Creil,Hauts-de-France,France,60100,Europe,"Base Aérienne 110 Lieutenant-colonel Georges Guiraute, 60100 Creil, Oise",,restricted,49.25318,2.48414
+Base Aérienne 106 Bordeaux-Mérignac Aircraft Displays,Mérignac,Nouvelle-Aquitaine,France,33700,Europe,"Base Aérienne 106 Capitaine Michel Croci, 33700 Mérignac, Gironde",,restricted,44.83231,-0.68182
+Base Aérienne 133 Nancy-Ochey Aircraft Displays,Ochey,Grand Est,France,54170,Europe,"Base Aérienne 133 Commandant Henri Jeandet, 54170 Ochey, Meurthe-et-Moselle",,restricted,48.53654,5.91114
+Base Aérienne 105 Évreux-Fauville Aircraft Displays,Évreux,Normandie,France,27000,Europe,"Base Aérienne 105 Commandant Viot, Évreux-Fauville, 27000 Évreux, Eure",,restricted,49.01982,1.14152
+Base Aérienne 123 Orléans-Bricy Noratlas,Bricy,Centre-Val de Loire,France,45310,Europe,"Base Aérienne 123 Commandant Charles Paoli, 45310 Bricy, Loiret",,restricted,48.01402,1.66950
+Toulouse-Francazal Noratlas,Cugnaux,Occitanie,France,31270,Europe,"Ancienne Base Aérienne 101, aérodrome de Toulouse-Francazal, 31270 Cugnaux, Haute-Garonne",,restricted,43.53423,1.33469
+Musée de la Base Aérienne 102 Dijon-Longvic,Longvic,Bourgogne-Franche-Comté,France,21600,Europe,"Base Aérienne 102 Capitaine Georges Guynemer, BP 90102, 21600 Longvic, Côte-d'Or",,appointment,47.26355,5.06264
+Base Aérienne 943 Roquebrune-Cap-Martin Mirage III,Roquebrune-Cap-Martin,Provence-Alpes-Côte d'Azur,France,06190,Europe,"Base Aérienne 943 Mont-Agel, 06190 Roquebrune-Cap-Martin, Alpes-Maritimes",,restricted,43.76402,7.45851
+Base Aérienne 901 Drachenbronn Mirage III,Drachenbronn-Birlenbach,Grand Est,France,67160,Europe,"Base Aérienne 901 Lieutenant Robert Bertrand, 67160 Drachenbronn-Birlenbach, Bas-Rhin",,restricted,48.99363,7.97104
+Champ de Tir et Polygone d'Essais de Captieux Aircraft,Captieux,Nouvelle-Aquitaine,France,33840,Europe,"Champ de Tir et Polygone d'Essais de Captieux, 33840 Captieux, Gironde",,restricted,44.28306,-0.22565
+"Conservatoire Historique de l'Aéronautique Navale, Nîmes-Garons",Garons,Occitanie,France,30128,Europe,"Enclos visible depuis la D42, ancienne Base d'Aéronautique Navale de Nîmes-Garons, 30128 Garons, Gard",,public,43.77169,4.43839
+École d'Enseignement Technique de l'Armée de l'Air 722 Saintes Aircraft,Saintes,Nouvelle-Aquitaine,France,17100,Europe,"EETAAE 722, Base Aérienne 722, 17100 Saintes, Charente-Maritime",https://eetaa722.fr/,restricted,45.75728,-0.60411
+Musée de l'Épopée de l'Industrie et de l'Aéronautique,Albert,Hauts-de-France,France,80300,Europe,"17 rue de l'Industrie, Somme",https://www.musee-eia.com/,public,50.00108,2.63616
+"Potez 36 Monument, Gare d'Albert",Albert,Hauts-de-France,France,80300,Europe,"Gare d'Albert, place du Général de Gaulle, Somme",,public,50.02272,2.66104
+La Coupole,Wizernes,Hauts-de-France,France,62570,Europe,"Rue André Clabaux, Pas-de-Calais",https://www.lacoupole-france.com/,public,50.70641,2.23440
+Musée de l'Aviation de Warluis,Warluis,Hauts-de-France,France,60430,Europe,"Rue des Bruyères, Oise",http://museedelaviation-warluis.com/,public,49.39495,2.14884
+Historial de la Grande Guerre - Musée de Thiepval,Thiepval,Hauts-de-France,France,80300,Europe,"8 rue de l'Ancre, Somme",https://www.historial.fr/,public,50.05186,2.68865
+Airborne Museum,Sainte-Mère-Église,Normandie,France,50480,Europe,"14 rue Eisenhower, Manche",https://airborne-museum.org/,public,49.40828,-1.31632
+Musée du Débarquement Utah Beach,Sainte-Marie-du-Mont,Normandie,France,50480,Europe,"La Madeleine, Manche",https://www.utah-beach.com/,public,49.41608,-1.18714
+D-Day Experience - Dead Man's Corner Museum,Saint-Côme-du-Mont,Normandie,France,50500,Europe,"2 Vierge de l'Amont, Manche",https://dday-experience.com/,public,49.28735,-1.26589
+D-Day Wings Museum,Bretteville-sur-Odon,Normandie,France,14760,Europe,"Aéroport de Caen-Carpiquet, bâtiment 17, 485 rue Jules Védrines, Calvados",https://www.ddaywingsmuseum.com/,public,49.17348,-0.42198
+Mémorial de Caen,Caen,Normandie,France,14050,Europe,"Esplanade Général Eisenhower, Calvados",https://www.memorial-caen.fr/,public,49.19788,-0.38372
+Mémorial Pegasus,Ranville,Normandie,France,14860,Europe,"Avenue du Major Howard, Calvados",https://musee.memorial-pegasus.com/,public,49.24381,-0.27117
+Overlord Museum,Colleville-sur-Mer,Normandie,France,14710,Europe,"Lotissement Omaha Center, Calvados",https://www.overlordmuseum.com/,public,49.31716,-0.91523
+Musée Delta,Athis-Mons,Île-de-France,France,91200,Europe,"40 avenue Jean-Pierre Bénard, Essonne",https://museedelta.wixsite.com/musee-delta,public,48.71204,2.38042
+Musée des Arts et Métiers,Paris,Île-de-France,France,75003,Europe,"60 rue Réaumur, Paris",https://www.arts-et-metiers.net/,public,48.86610,2.35541
+Musée de la Grande Guerre du Pays de Meaux,Meaux,Île-de-France,France,77100,Europe,"Rue Lazare Ponticelli, Seine-et-Marne",https://www.museedelagrandeguerre.com/,public,48.97014,2.90540
+"Concorde F-BVFF, Paris-Charles de Gaulle",Roissy-en-France,Île-de-France,France,95700,Europe,"Aéroport Paris-Charles de Gaulle, Val-d'Oise",,public,49.00664,2.51373
+"Noratlas Monument, ArianeGroup Les Mureaux",Les Mureaux,Île-de-France,France,78130,Europe,"Site ArianeGroup, Yvelines",,restricted,48.98310,1.92135
+"Fouga Magister Monument, Morlaix Airport",Saint-Martin-des-Champs,Bretagne,France,29600,Europe,"Entrée de la zone aéroportuaire de Morlaix-Ploujean, Finistère",,public,48.55604,-3.82463
+"Super Étendard Monument, Thales Brest",Brest,Bretagne,France,29200,Europe,"Site Thales, Finistère",,restricted,48.40015,-4.50194
+"Musée de l'Officier, Académie Militaire de Saint-Cyr Coëtquidan",Guer,Bretagne,France,56380,Europe,"Cour Rivoli, Morbihan",https://www.museedelofficier-asso.fr/,restricted,47.94476,-2.16012
+Le Grenier de l'Aviation,Saint-Herblain,Pays de la Loire,France,44800,Europe,"Centre commercial Le Sillon, 8 avenue des Thébaudières, Loire-Atlantique",https://grenier-aviation.jimdofree.com/,public,47.22489,-1.63411
+Historial de la Vendée,Les Lucs-sur-Boulogne,Pays de la Loire,France,85170,Europe,"Allée Paul Bazin, Vendée",https://nossites.vendee.fr/historial-de-vendee,public,46.84741,-1.48090
+"Camping du Haut Village Aircraft, Saint-Michel-Chef-Chef",Saint-Michel-Chef-Chef,Pays de la Loire,France,44730,Europe,"4 route de l'Étang, Loire-Atlantique",https://www.camping-hautvillage.fr/,public,47.17085,-2.13690
+MM Park France,La Wantzenau,Grand Est,France,67610,Europe,"4 rue Gutenberg, Bas-Rhin",https://www.mmpark.fr/,public,48.66542,7.80980
+Musée de l'Abri de Hatten,Hatten,Grand Est,France,67690,Europe,"Rue de l'Abri, Bas-Rhin",https://abrihatten.fr/,public,48.90019,7.96991
+Musée des Débuts de l'Aviation Roger Sommer,Douzy,Grand Est,France,08140,Europe,"Le Pré du Roy, Ardennes",http://www.musee-sommer.fr/,public,49.66011,5.03770
+Musée de l'Aéronautique Locale de Bétheny,Bétheny,Grand Est,France,51450,Europe,"Place de la Mairie, Marne",https://ville-betheny.fr/musee-de-laeronautique/,public,49.28585,4.05858
+Musée France 40 Véhicules,Fismes,Grand Est,France,51170,Europe,"7 rue de la Sucrerie, Marne",https://www.museefrance40v.fr/,public,49.30929,3.68552
+Musée Aéronautique d'Orange,Orange,Provence-Alpes-Côte d'Azur,France,84100,Europe,"Avenue de la Grèce, zone industrielle Sud, Vaucluse",http://www.musee-a5e.com/,public,44.14644,4.80858
+Musée de l'Aviation de Saint-Victoret,Saint-Victoret,Provence-Alpes-Côte d'Azur,France,13730,Europe,"Boulevard Barthélémy Abbadie, behind the mairie, Bouches-du-Rhône",https://musee-aviation-saint-victoret.fr/,public,43.42028,5.23611
+"Ailes Anciennes de Haute-Savoie, Excenevex",Excenevex,Auvergne-Rhône-Alpes,France,74140,Europe,"Rond-point de la Fattaz, 92 route de Morzy, La Croix des Ellandes, Haute-Savoie",https://ailes-anciennes74.com/,public,46.30180,6.32065
+"Mirage III Monument, Montélimar",Montélimar,Auvergne-Rhône-Alpes,France,26200,Europe,"Rond-point de Villepré, RN7 towards Rochemaure, Drôme",,public,44.55468,4.74740
+"Mirage III Monument, Orange",Orange,Provence-Alpes-Côte d'Azur,France,84100,Europe,"Roundabout at the Orange Sud motorway exit on the RN7, Vaucluse",,public,44.14644,4.80858
+Le Surplus Portes-lès-Valence Zéphyr,Portes-lès-Valence,Auvergne-Rhône-Alpes,France,26800,Europe,"Le Surplus, rue Pierre Seghers, beside the A7 motorway, Drôme",https://lesurplus.fr/,public,44.83303,4.89031
+Centre d'Études et de Loisirs Aérospatiaux de Grenoble,Le Versoud,Auvergne-Rhône-Alpes,France,38420,Europe,"Aérodrome de Grenoble-Le Versoud, Isère",http://celag.free.fr/,appointment,45.21917,5.84972
+"Fouga Magister Monument, Loudes",Loudes,Auvergne-Rhône-Alpes,France,43320,Europe,"On the RN102 (former RD906) at the entrance to Loudes, by the Le Puy-Loudes aerodrome, Haute-Loire",,public,45.07317,3.72835
+"Fouga Magister, Saint-Dalmas-de-Tende",Tende,Provence-Alpes-Côte d'Azur,France,06430,Europe,"At the foot of the HLM block in the former Vallaure ore-washing plant, Saint-Dalmas-de-Tende, Roya valley, Alpes-Maritimes",,public,44.08999,7.57858
+"AéroRétro, Saint-Rambert-d'Albon",Albon,Auvergne-Rhône-Alpes,France,26140,Europe,"Aérodrome de Saint-Rambert-d'Albon (LFLR), 1692 RN7 Nord, Drôme",http://www.aeroretro.fr/,appointment,45.26219,4.86702
+"Collection Castel-Mauboussin, Cuers",Cuers,Provence-Alpes-Côte d'Azur,France,83390,Europe,"Aérodrome de Cuers-Pierrefeu, Var",https://www.castel-mauboussin.fr/,appointment,43.24746,6.13323
+"Alizé du Rond-Point de l'Avion, Rochefort",Rochefort,Nouvelle-Aquitaine,France,17300,Europe,"Rond-point Albert Bignon (""rond-point de l'avion""), Charente-Maritime",,public,45.936856,-0.984295
+"Étendard IV et Flamant, Caserne des Batteries, Fréjus",Fréjus,Provence-Alpes-Côte d'Azur,France,83600,Europe,"SDIS 83 fire station, rue des Batteries, Var",,public,43.53410,6.74411
+"ISAE-SUPAERO Mirage III Display, Toulouse",Toulouse,Occitanie,France,31400,Europe,"ISAE-SUPAERO campus, 10 avenue Édouard Belin, Rangueil, Haute-Garonne",https://www.isae-supaero.fr/,restricted,43.56863,1.46530
+"Aérocampus Aquitaine, Latresne",Latresne,Nouvelle-Aquitaine,France,33360,Europe,"Aérocampus Aquitaine, 1 route de Cénac, Gironde",https://aerocampus.com/,appointment,44.78344,-0.47162
+"Mirage III Monument, Aérodrome de Montceau-les-Mines",Pouilloux,Bourgogne-Franche-Comté,France,71230,Europe,"Aérodrome de Montceau-les-Mines-Pouilloux, Saône-et-Loire",,public,46.60259,4.33702
+"Mirage III, Château Pas de Loup, Saix",Saix,Occitanie,France,81710,Europe,"Château Pas de Loup, Tarn",,appointment,43.57591,2.19091
+"Mirage F1 Gate Guard, Aérodrome d'Avignon",Avignon,Provence-Alpes-Côte d'Azur,France,84140,Europe,"Aéroclub Vauclusien, aérodrome d'Avignon-Provence (Caumont), Vaucluse",https://aeroclubvauclusien.com/,public,43.94925,4.80590
+"Le Noratlas de Provence, Marseille-Provence",Marignane,Provence-Alpes-Côte d'Azur,France,13700,Europe,"Aéroport de Marseille-Provence, Bouches-du-Rhône",http://noratlas-de-provence.com/,appointment,43.43752,5.21303
+"Chapelle Noratlas ECAUT, Viuz-en-Sallaz",Viuz-en-Sallaz,Auvergne-Rhône-Alpes,France,74250,Europe,"École de production ECAUT, at the school entrance, Haute-Savoie",http://www.ecaut.com/,public,46.15063,6.40067
+"Noratlas du Quartier Soult, Tarbes",Tarbes,Occitanie,France,65000,Europe,"Entrance to the Quartier Soult, garrison of the 35e Régiment d'Artillerie Parachutiste, Hautes-Pyrénées",,public,43.23467,0.06616
+"Noratlas du 1er RCP, Pamiers",Pamiers,Occitanie,France,09100,Europe,"1er Régiment de Chasseurs Parachutistes, Ariège",,restricted,43.12462,1.60388
+Noratlas du Camp de Caylus,Caylus,Occitanie,France,82160,Europe,"Entrance to the Camp de Caylus, Tarn-et-Garonne",,restricted,44.26177,1.79474
+"Caravelle Guyane, Aéroport d'Avignon-Provence",Avignon,Provence-Alpes-Côte d'Azur,France,84140,Europe,"Aéroport d'Avignon-Provence (Caumont), Vaucluse",https://www.caravelleguyane.fr/,appointment,43.94925,4.80590
+"Les Ailes de la Mer, Saint-Pierre-d'Irube",Saint-Pierre-d'Irube,Nouvelle-Aquitaine,France,64990,Europe,"Association Les Ailes de la Mer, near Bayonne, Pyrénées-Atlantiques",,appointment,43.46322,-1.40735
+"Natura Lodge Cessna, Barjac",Barjac,Occitanie,France,30430,Europe,"Natura Lodge, Barjac, Gard",https://www.natura-lodge.com/,public,44.31599,4.35328
+"Nostalgic'Aéro, Saint-Yan",Saint-Yan,Bourgogne-Franche-Comté,France,71600,Europe,"Aéroport de Saint-Yan, Saône-et-Loire",,appointment,46.41237,4.01815
+"Héritage Avions Morane-Saulnier, Tarbes",Tarbes,Occitanie,France,65000,Europe,"Association Héritage Avions Morane-Saulnier, Tarbes, Hautes-Pyrénées",,appointment,43.23467,0.06616
+"Escadrille du Souvenir, Niort-Souché",Niort,Nouvelle-Aquitaine,France,79000,Europe,"Aérodrome de Niort-Souché, Deux-Sèvres",,appointment,46.31226,-0.39970
+"Fouga Magister Monument, Salon-de-Provence",Salon-de-Provence,Provence-Alpes-Côte d'Azur,France,13300,Europe,"Roundabout on the D538, Bouches-du-Rhône",,public,43.64627,5.06776

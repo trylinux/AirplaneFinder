@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Airspeed,Horsa,Mk I,,,,fixed_wing,monoplane,military,transport,,Original Horsa fuselage wreckage recovered locally.,Horsa I; AS.51,Mémorial Pegasus,on_display
+Airspeed,Horsa,,PF800,,,fixed_wing,monoplane,military,transport,,"Full-size replica assault glider marked PF800, displayed in the museum grounds.",Horsa; AS.51,Mémorial Pegasus,on_display

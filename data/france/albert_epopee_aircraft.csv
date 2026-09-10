@@ -1,0 +1,66 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aérospatiale,SA 365,C-3,F-GCQR,,,rotary_wing,,civilian,utility,,Dauphin 2 in the Bétrancourt collection at Albert.,SA365C; SA365C3; Dauphin 2,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Agusta-Bell,AB 47,G,046,,,rotary_wing,,military,utility,,French Army/Navy Agusta-Bell 47G coded BDS.,AB47; AB47G; Bell 47,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Arsenal,SA 103,,F-CAXX,,,fixed_wing,monoplane,civilian,private,,Émouchet training glider. The source list shows F-CAXX against both an Arsenal and a Guerchais-Roche SA-103; only one aircraft can carry the mark.,SA103; Emouchet,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Arsenal,SA 103,,F-CRHI,,,fixed_wing,monoplane,civilian,private,,Émouchet training glider.,SA103; Emouchet,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Guerchais-Roche,SA 103,,,,,fixed_wing,monoplane,civilian,private,,"Second SA-103 Émouchet in the collection, listed by the source as Guerchais-Roche built; registration not recorded here because the source repeats F-CAXX for two airframes.",SA103; Emouchet,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Boeing,727,228,F-BPJR,,,fixed_wing,monoplane,civilian,commercial_transport,,"Forward fuselage / cockpit section only, ex-Air France.",B727; 727-228,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Canadair,T-33,AN Silver Star 3,21255,,,fixed_wing,monoplane,military,trainer,,Ex-Canadian Silver Star coded 314-VH in French service.,T33; T33AN; CT-133; Silver Star; 314-VH; CT133,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Castel,C-25,S,F-CRMI,,,fixed_wing,monoplane,civilian,private,,Castel C-25S Biarritz glider.,C25; C25S; Biarritz,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Caudron,C-800,,,,,fixed_wing,monoplane,civilian,private,,Épervier two-seat glider; no registration recorded.,C800; Epervier,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Dassault,MD 311,,148,,,fixed_wing,monoplane,military,trainer,,Flamant coded 319-DE.,MD311; Flamant; 319-DE,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Dassault,MD 311,,275,,,fixed_wing,monoplane,military,trainer,,Flamant coded 316-KC.,MD311; Flamant; 316-KC,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Dassault,MD 450,,8,,,fixed_wing,monoplane,military,fighter,,"Ouragan, France's first indigenous jet fighter.",MD450; Ouragan,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Dassault,Mercure,100,F-BTTG,,,fixed_wing,monoplane,civilian,commercial_transport,,"Forward fuselage section only, ex-Air Inter.",Mercure 100,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Dassault,Mirage III,C,27,,,fixed_wing,monoplane,military,fighter,,Coded 3.10-LE.,MirageIII; Mirage 3C; MirageIIIC; 3-LE,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Dassault,Mirage III,E,515,,,fixed_wing,monoplane,military,fighter,,Coded 3-JN.,MirageIII; Mirage 3E; MirageIIIE; 3-JN,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Dassault,Mirage III,RD,358,,,fixed_wing,monoplane,military,recon,,Coded 128-TG.,MirageIII; Mirage 3RD; MirageIIIRD; 128-TG,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Dassault,Mirage IV,P,25,,,fixed_wing,monoplane,military,bomber,,Strategic bomber coded AX.,MirageIV; Mirage 4P; MirageIVP; AX,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Dassault,Mirage F1,C,20,,,fixed_wing,monoplane,military,fighter,,Coded 12-ZN.,MirageF1; Mirage F1C; MirageF1C; 12-ZN,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Dassault,Super Mystère,B2,113,,,fixed_wing,monoplane,military,fighter,,Coded 12-YQ.,Super Mystere B2; SMB2; Mystere,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+de Havilland,Vampire,FB.52,IB427,,,fixed_wing,monoplane,military,fighter,,Ex-foreign air force Vampire; the marks IB427 are as recorded by the source and have not been resolved to an original serial.,Vampire FB52; DH100,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Douglas,C-47,A,42-108979,,,fixed_wing,monoplane,military,transport,,Displayed in June 1944 US invasion markings as H2-K. ARDHAN records the Albert C-47 as ex-Aéronavale n°720.,C47; C47A; DC-3; Dakota; 720; H2-K; 282; DC3,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Fiat,G91,R/3,30+93,,,fixed_wing,monoplane,military,ground_attack,,Ex-Luftwaffe Gina.,G91; G91R3; Gina,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Fouga,CM.170,R Magister,24,,,fixed_wing,monoplane,military,trainer,,Coded 3-KB.,CM170; CM170R; Magister; 3-KB,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Fouga,CM.170,R Magister,459,,,fixed_wing,monoplane,military,trainer,,Magister trainer.,CM170; CM170R; Magister,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Fouga,CM.175,Zéphyr,24,,,fixed_wing,monoplane,military,trainer,,"Naval carrier trainer transferred from the Musée de l'Aéronautique Navale at Rochefort; restoration completed July 2024 (ARDHAN, February 2025).",CM175; Zephyr,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Hawker,Hunter,F.58A,J-4107,,,fixed_wing,monoplane,military,fighter,,Ex-Swiss Air Force Hunter.,Hunter F58; Hunter F58A,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Lockheed,F-104,G,21+96,,,fixed_wing,monoplane,military,fighter,,Ex-Luftwaffe Starfighter.,F104; F104G; Starfighter,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Lockheed,T-33,A,35339,,,fixed_wing,monoplane,military,trainer,,Coded 314-WF; also carries XC.,T33; T33A; T-Bird; 314-WF,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Max Holste,MH.1521,M Broussard,198,,,fixed_wing,monoplane,military,utility,,Broussard liaison aircraft.,MH1521; MH1521M; Broussard,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Max Holste,MH.1521,M Broussard,290,,,fixed_wing,monoplane,military,utility,,Coded 11-OB.,MH1521; MH1521M; Broussard; 11-OB,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Max Holste,MH.1521,M Broussard,315,,,fixed_wing,monoplane,military,utility,,Civil-registered F-GIFZ.,MH1521; MH1521M; Broussard; F-GIFZ,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Mignet,HM-290,,,,,fixed_wing,monoplane,civilian,private,,Pou-du-Ciel type homebuilt; no registration recorded.,HM290; Pou du Ciel; Flying Flea,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Mikoyan-Gurevich,MiG-21,SPS,882,,,fixed_wing,monoplane,military,fighter,,Ex-East German Air Force.,MiG21; MiG21SPS; Fishbed,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Morane-Saulnier,MS 733,Alcyon,173,,,fixed_wing,monoplane,military,trainer,,ARDHAN also lists MS 733 n°173 with the Albert Vintage Aircraft flying association at Albert aerodrome; which of the two sites holds it needs on-site confirmation.,MS733; Alcyon,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Morane-Saulnier,MS 733,Alcyon,131,,,fixed_wing,monoplane,military,trainer,,Wears the civil registration F-BLXT.,MS733; Alcyon; F-BLXT,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Morane-Saulnier,MS 880,B Rallye Club,F-BKYD,,,fixed_wing,monoplane,civilian,private,,Rallye Club light aircraft.,MS880; MS880B; Rallye,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Nord Aviation,1101,Noralpha,143,,,fixed_wing,monoplane,military,utility,,French-built Messerschmitt Bf 108 derivative; wears F-BLQV.,N1101; Noralpha; Me208; F-BLQV,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Nord Aviation,1203,Norécrin II,F-BBET,,,fixed_wing,monoplane,civilian,private,,Norécrin touring aircraft.,N1203; Norecrin,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Nord Aviation,1300,,F-CRNT,,,fixed_wing,monoplane,civilian,private,,French-built Grunau Baby glider.,N1300; Nord 1300,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Nord Aviation,2501,F Noratlas,54,,,fixed_wing,monoplane,military,transport,,Coded 63-WX.,N2501; Noratlas; 2501F; 63-WX,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Nord Aviation,2501,F Noratlas,125,,,fixed_wing,monoplane,military,transport,,Noratlas tactical transport.,N2501; Noratlas; 2501F,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Nord Aviation,2501,F Noratlas,184,,,fixed_wing,monoplane,military,transport,,Coded 328-EO.,N2501; Noratlas; 2501F; 328-EO,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Nord Aviation,2501,F Noratlas,189,,,fixed_wing,monoplane,military,transport,,Coded 316-FN.,N2501; Noratlas; 2501F; 316-FN,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Nord Aviation,3400,Norbarbe,20,,,fixed_wing,monoplane,military,recon,,Army observation aircraft.,N3400; Norbarbe,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Nord Aviation,3400,Norbarbe,100,,,fixed_wing,monoplane,military,recon,,Coded FIA.,N3400; Norbarbe; FIA,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Nord Aviation,NC.856,A Norvigie,26,,,fixed_wing,monoplane,military,utility,,Army liaison and observation aircraft.,NC856; NC856A; Norvigie,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Nord Aviation,NC.856,A Norvigie,108,,,fixed_wing,monoplane,military,utility,,Army liaison and observation aircraft.,NC856; NC856A; Norvigie,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+North American,F-100,D,42272,,,fixed_wing,monoplane,military,fighter,,Coded 11-EF; the source records the serial as 42272 (an F-100D USAF serial in the 54-2xxx range) and it has not been resolved further.,F100; F100D; Super Sabre; 11-EF,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Republic,F-84,F,28946,,,fixed_wing,monoplane,military,ground_attack,,Coded FU-76; the source records the serial as 28946.,F84; F84F; Thunderstreak; FU-76; FU76,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Schleicher,Ka 6,,333,,,fixed_wing,monoplane,civilian,private,,Ka 6 glider marked K33.,Ka6; K33,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+SEPECAT,Jaguar,A,A15,,,fixed_wing,monoplane,military,ground_attack,,Single-seat strike Jaguar.,Jaguar A; A15,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+SEPECAT,Jaguar,E,E35,,,fixed_wing,monoplane,military,trainer,,Two-seat Jaguar coded 7-HY.,Jaguar E; E35; 7-HY,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Sikorsky,H-19,D,55-3181,,,rotary_wing,,military,utility,,Chickasaw coded APY.,H19; H19D; S-55; Chickasaw; APY; S55,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Sikorsky,H-34,A,SA59,,,rotary_wing,,military,utility,,Choctaw coded 68-DK.,H34; H34A; S-58; Choctaw; 68-DK; S58,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Siren,C30,Edelweiss,F-CCUA,,,fixed_wing,monoplane,civilian,private,,Edelweiss competition glider.,C30; Edelweiss,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+SNCASO,Vautour,II N,355,,,fixed_wing,monoplane,military,fighter,,All-weather interceptor coded 92-NB.,SO4050; Vautour IIN; Vautour 2N; 92-NB,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Sud Aviation,Alouette II,,65,,,rotary_wing,,military,utility,,Coded 67-JL.,Alouette 2; SE3130; 67-JL,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Sud Aviation,SE 210,Caravelle III,F-BHRY,,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-Air France Caravelle III preserved at Albert.,SE210; Caravelle 3,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Sud-Ouest,SO.1221,S Djinn,FR144,,,rotary_wing,,military,utility,,Tip-jet driven Djinn light helicopter.,SO1221; Djinn,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Wassmer,WA.21,Javelot,F-CCEU,,,fixed_wing,monoplane,civilian,private,,Javelot glider.,WA21; Javelot,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Wassmer,WA.30,Bijave,F-CCYK,,,fixed_wing,monoplane,civilian,private,,Bijave two-seat glider.,WA30; WA30N; Bijave,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Wassmer,WA.30,Bijave,F-CDJU,,,fixed_wing,monoplane,civilian,private,,Bijave two-seat glider.,WA30; WA30N; Bijave,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Westland,Lynx,HAS.2(FN),03,,,rotary_wing,,military,anti_ship,,"Ex-Aéronavale Lynx transferred from the Musée de l'Aéronautique Navale at Rochefort (ARDHAN, February 2025).",Lynx HAS2; WG13,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Aérospatiale,Alouette III,,160,,,rotary_wing,,military,utility,,Ex-Aéronautique navale Alouette III recorded at Albert by the ARDHAN census of February 2025.,Alouette 3; SA316; SA319,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display
+Zodiac,UltraStar,,,,,fixed_wing,monoplane,civilian,private,,Microlight; no registration recorded.,UltraStar,Musée de l'Épopée de l'Industrie et de l'Aéronautique,on_display

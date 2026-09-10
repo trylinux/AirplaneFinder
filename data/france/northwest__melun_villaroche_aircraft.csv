@@ -1,0 +1,30 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bristol,Blenheim,Mk IV,10040,,,fixed_wing,monoplane,military,bomber,,Recovered Blenheim airframe under long-term restoration.,Blenheim IV; Blenheim Mk4; Bolingbroke,Musée de l'Aviation de Melun-Villaroche,on_display
+Bristol,Blenheim,Mk IV,10184,,,fixed_wing,monoplane,military,bomber,,Second Blenheim airframe held for restoration.,Blenheim IV; Blenheim Mk4; Bolingbroke,Musée de l'Aviation de Melun-Villaroche,on_display
+Bücker,Bü 181,Bestmann,321,,,fixed_wing,monoplane,military,trainer,,Egyptian-built Heliopolis Gomhouria version of the Bestmann.,Bu181; Bestmann; Gomhouria,Musée de l'Aviation de Melun-Villaroche,on_display
+Castel,C-25,S,F-CRHD,,,fixed_wing,monoplane,civilian,private,,Two-seat training glider.,C25; C25S,Musée de l'Aviation de Melun-Villaroche,on_display
+Caudron,C-800,,,,,fixed_wing,monoplane,civilian,private,,Épervier glider; no registration recorded.,C800; Epervier,Musée de l'Aviation de Melun-Villaroche,on_display
+de Havilland,DH.82,C Tiger Moth,F-AZDH,,,fixed_wing,biplane,military,trainer,,Canadian-built Tiger Moth.,DH82; DH82C; Tiger Moth,Musée de l'Aviation de Melun-Villaroche,on_display
+DFS,230,,,,,fixed_wing,monoplane,military,transport,,German assault glider.,DFS230,Musée de l'Aviation de Melun-Villaroche,on_display
+Douglas,AD-4,N Skyraider,F-AZFN,,,fixed_wing,monoplane,military,ground_attack,,Skyraider attack aircraft.,AD4; AD-4N; A-1 Skyraider; AD4N,Musée de l'Aviation de Melun-Villaroche,on_display
+Fauvel,AV 36,,F-CBRS,,,fixed_wing,monoplane,civilian,private,,Tailless flying-wing glider.,AV36; Fauvel AV-36,Musée de l'Aviation de Melun-Villaroche,on_display
+Fieseler,Fi 103,,,,,missile_rocket,,military,cruise,,V-1 flying bomb.,Fi103; V-1; V1,Musée de l'Aviation de Melun-Villaroche,on_display
+Fieseler,Fi 156,Storch,505,,,fixed_wing,monoplane,military,utility,,"Storch or French-built Morane derivative, registered F-BEJF.",Fi156; Storch; MS500; F-BEJF,Musée de l'Aviation de Melun-Villaroche,on_display
+Grumman,TBM,3E Avenger,F-AZJA,,,fixed_wing,monoplane,military,bomber,,Avenger torpedo bomber.,TBM; TBM-3E; Avenger; TBF; TBM3E,Musée de l'Aviation de Melun-Villaroche,on_display
+Hanriot,HD.14,,,,,fixed_wing,biplane,military,trainer,,Early Hanriot-Dupont trainer.,HD14; Hanriot-Dupont HD14,Musée de l'Aviation de Melun-Villaroche,on_display
+Hurel-Dubois,HD.34,,F-BHOO,,,fixed_wing,monoplane,civilian,recon,,High-aspect-ratio survey aircraft used by the IGN.,HD34; Hurel Dubois HD-34,Musée de l'Aviation de Melun-Villaroche,on_display
+Avia,B-33,,1087,,,fixed_wing,monoplane,military,ground_attack,,Czech-built Ilyushin Il-10 Sturmovik.,B33; Avia B33; Il-10; Il10; Sturmovik,Musée de l'Aviation de Melun-Villaroche,on_display
+Avia,B-33,,DD-39,,,fixed_wing,monoplane,military,ground_attack,,Czech-built Ilyushin Il-10 Sturmovik.,B33; Avia B33; Il-10; Il10; Sturmovik,Musée de l'Aviation de Melun-Villaroche,on_display
+Latécoère,28,,F-AJNQ,,,fixed_wing,monoplane,civilian,commercial_transport,,Aéropostale-era mail and passenger aircraft.,Late 28; Latecoere 28,Musée de l'Aviation de Melun-Villaroche,on_display
+Max Holste,MH.1521,Broussard,64,,,fixed_wing,monoplane,military,utility,,Broussard liaison aircraft.,MH1521; Broussard,Musée de l'Aviation de Melun-Villaroche,on_display
+Morane-Saulnier,MS 317,,F-BCBQ,,,fixed_wing,biplane,civilian,trainer,,Parasol trainer.,MS317; MS-317,Musée de l'Aviation de Melun-Villaroche,on_display
+Morane-Saulnier,MS 317,,F-BFZH,,,fixed_wing,biplane,civilian,trainer,,Parasol trainer.,MS317; MS-317,Musée de l'Aviation de Melun-Villaroche,on_display
+Morane-Saulnier,MS 472,Vanneau 2,,,,fixed_wing,monoplane,military,trainer,,Vanneau advanced trainer.,MS472; Vanneau,Musée de l'Aviation de Melun-Villaroche,on_display
+Morane-Saulnier,MS 733,Alcyon,F-BLYG,,,fixed_wing,monoplane,military,trainer,,Alcyon trainer.,MS733; Alcyon,Musée de l'Aviation de Melun-Villaroche,on_display
+Nord Aviation,1002,Pingouin,,,,fixed_wing,monoplane,military,utility,,French-built Messerschmitt Bf 108.,N1002; Pingouin; Me108; Bf108,Musée de l'Aviation de Melun-Villaroche,on_display
+Nord Aviation,1101,Noralpha,F-WDMU,,,fixed_wing,monoplane,military,utility,,French-built Me 208 derivative.,N1101; Noralpha; Me208,Musée de l'Aviation de Melun-Villaroche,on_display
+North American,T-6,G Texan,F-AZEF,,,fixed_wing,monoplane,military,trainer,,Texan advanced trainer.,T6; T-6G; Harvard; Texan; T6G,Musée de l'Aviation de Melun-Villaroche,on_display
+Polikarpov,Po-2,,F-AZPO,,,fixed_wing,biplane,military,trainer,,Soviet Po-2 biplane.,Po2; U-2; Kukuruznik; U2,Musée de l'Aviation de Melun-Villaroche,on_display
+Yakovlev,Yak-11,,F-AZOK,,,fixed_wing,monoplane,military,trainer,,Yak-11 advanced trainer.,Yak11; Moose; C-11; C11,Musée de l'Aviation de Melun-Villaroche,on_display
+Yakovlev,Yak-18,,RA1091K,,,fixed_wing,monoplane,military,trainer,,Yak-18 primary trainer.,Yak18; Max,Musée de l'Aviation de Melun-Villaroche,on_display
+de Rougé,Élytroplane,,,,,fixed_wing,monoplane,civilian,experimental,,Baron Charles de Rougé's experimental Élytroplane.,Elytroplane; de Rouge Elytroplane,Musée de l'Aviation de Melun-Villaroche,on_display

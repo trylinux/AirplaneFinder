@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Fieseler,Fi 103,,,,,missile_rocket,,military,cruise,,V-1 flying bomb displayed in the former V-weapons bunker complex at Wizernes.,Fi103; V-1; V1; Vergeltungswaffe 1; Buzz Bomb,La Coupole,on_display
+Fieseler,Fi 103,R Reichenberg,126,,,missile_rocket,,military,cruise,,"Piloted version of the V-1, works number 126.",Fi103R; Reichenberg; V-1 piloted,La Coupole,on_display
+Mittelwerk,V-2,,,,,missile_rocket,,military,ballistic,,"A-4/V-2 ballistic missile, the weapon the Wizernes bunker was built to launch.",V2; A-4; A4; Aggregat 4,La Coupole,on_display

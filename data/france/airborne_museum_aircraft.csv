@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,C-47,B,315159,,,fixed_wing,monoplane,military,transport,,"Displayed in its own Dakota building in June 1944 invasion markings, coded Z-D8. ARDHAN records the museum's C-47 as ex-Aéronautique navale n°25 repainted in US colours.",C47; C47B; DC-3; Dakota; Skytrain; 25; Z-D8; DC3,Airborne Museum,on_display
+Piper,L-4,J Grasshopper,624,,,fixed_wing,monoplane,military,utility,,Artillery-spotting Grasshopper coded D-39.,L4; L-4J; J-3 Cub; Grasshopper; D-39; L4J; D39,Airborne Museum,on_display
+Waco,CG-4,A,45-17241,,,fixed_wing,monoplane,military,transport,,"Assault glider, displayed in a parachute-shaped building; the museum describes it as the only example in France.",CG4; CG-4A; Hadrian; Waco Hadrian; CG4A,Airborne Museum,on_display

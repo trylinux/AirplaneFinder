@@ -1,0 +1,14 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aeronca,65,TAC,N36857,,,fixed_wing,monoplane,civilian,private,,Aeronca 65-TAC light aircraft.,Aeronca 65; 65TAC; Aeronca Defender,D-Day Wings Museum,on_display
+Consolidated,B-24,D Liberator,41-30188,,,fixed_wing,monoplane,military,bomber,,Cockpit section only.,B24; B-24D; Liberator; B24D,D-Day Wings Museum,on_display
+Dassault,Mirage 5,BR,,,,fixed_wing,monoplane,military,recon,,Ex-Belgian Air Force Mirage 5BR coded BR-08.,Mirage5; Mirage 5BR; BR-08; BR08,D-Day Wings Museum,on_display
+Douglas,C-47,B,43-49297,,,fixed_wing,monoplane,military,transport,,"Complete airframe, civil-registered N514AC.",C47; C47B; DC-3; Dakota; Skytrain; N514AC; DC3,D-Day Wings Museum,on_display
+Douglas,C-47,B,,,,fixed_wing,monoplane,military,transport,,"Cockpit section only, marked N2-123.",C47; C47B; Dakota; N2-123,D-Day Wings Museum,on_display
+Hawker,Typhoon,Mk IB,JP843,,,fixed_wing,monoplane,military,ground_attack,,"Composite airframe built from original Typhoon parts, marked JP843 Y-T.",Typhoon IB; Typhoon Mk1B; Y-T,D-Day Wings Museum,on_display
+Hawker,Typhoon,Mk IB,,,,fixed_wing,monoplane,military,ground_attack,,Cockpit section only; distinct from the composite Typhoon JP843 also held here.,Typhoon IB; Typhoon Mk1B,D-Day Wings Museum,on_display
+Nord Aviation,1101,Noralpha,87,,,fixed_wing,monoplane,military,utility,,"French-built Me 208 derivative, coded BE and registered F-BEEV.",N1101; Noralpha; Me208; F-BEEV; BE,D-Day Wings Museum,on_display
+North American,B-25,D Mitchell,,,,fixed_wing,monoplane,military,bomber,,Cockpit section only.,B25; B-25D; Mitchell; B25D,D-Day Wings Museum,on_display
+Ryan,PT-22,A Recruit,R-089,,,fixed_wing,monoplane,military,trainer,,Registered F-AZZY.,PT22; PT-22A; Recruit; ST3KR; F-AZZY; PT22A,D-Day Wings Museum,on_display
+Supermarine,Spitfire,Mk IX,,,,fixed_wing,monoplane,military,fighter,,"Full-size replica marked EN398 JE-J, Johnnie Johnson's wartime aircraft; not an original airframe.",Spitfire IX; Spitfire Mk9; EN398; JE-J,D-Day Wings Museum,on_display
+Vought,F4U,Corsair,,,,fixed_wing,monoplane,military,fighter,,Tail section only.,F4U; Corsair,D-Day Wings Museum,on_display
+Vultee,BT-13,Valiant,TA-385,,,fixed_wing,monoplane,military,trainer,,Basic trainer.,BT13; BT-13; Valiant; Vibrator,D-Day Wings Museum,on_display

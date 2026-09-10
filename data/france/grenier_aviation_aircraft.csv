@@ -1,0 +1,12 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Croses,LC-6,Criquet,F-PYYR,,,fixed_wing,monoplane,civilian,private,,Tandem-wing homebuilt.,LC6; Croses Criquet,Le Grenier de l'Aviation,on_display
+Fouga,CM.170,Magister,126,,,fixed_wing,monoplane,military,trainer,,Magister jet trainer.,CM170; Magister,Le Grenier de l'Aviation,on_display
+Le Castel,310,P,F-CRCR,,,fixed_wing,monoplane,civilian,private,,Castel glider.,Castel 310; Le Castel 310P,Le Grenier de l'Aviation,on_display
+Mauboussin,129,,F-BBSK,,,fixed_wing,monoplane,civilian,private,,Mauboussin 129 light aircraft.,Mauboussin 129; M129,Le Grenier de l'Aviation,on_display
+Mignet,HM-14,,,,,fixed_wing,monoplane,civilian,private,,Pou-du-Ciel fuselage only.,HM14; Pou du Ciel; Flying Flea,Le Grenier de l'Aviation,on_display
+Mignet,HM-14,,166,,,fixed_wing,monoplane,civilian,private,,Complete Pou-du-Ciel.,HM14; Pou du Ciel; Flying Flea,Le Grenier de l'Aviation,on_display
+Mignet,HM-290,,F-PERF,,,fixed_wing,monoplane,civilian,private,,Post-war Pou-du-Ciel development.,HM290; Pou du Ciel,Le Grenier de l'Aviation,on_display
+Mignet,HM-350,,F-PHQT,,,fixed_wing,monoplane,civilian,private,,Mignet HM-350.,HM350; Pou du Ciel,Le Grenier de l'Aviation,on_display
+Piel,CP.30,Émeraude,,,,fixed_wing,monoplane,civilian,private,,Fuselage only.,Emeraude; CP30; Piel Emeraude,Le Grenier de l'Aviation,on_display
+Adam,RA-14,,F-PJCN,,,fixed_wing,monoplane,civilian,private,,Roger Adam RA-14 Loisirs.,RA14; Adam RA-14,Le Grenier de l'Aviation,on_display
+Schleicher,SG 38,,F-CBHK,,,fixed_wing,monoplane,civilian,trainer,,SG 38 Schulgleiter primary training glider.,SG38; Schulgleiter,Le Grenier de l'Aviation,on_display

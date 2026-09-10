@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Hawker,Typhoon,Mk IB,JP656,,,fixed_wing,monoplane,military,ground_attack,,Full-size replica marked JP656 BR-S; no original Typhoon airframe.,Typhoon IB; Typhoon Mk1B; BR-S,Mémorial de Caen,on_display
+Mikoyan-Gurevich,MiG-21,R,,,,fixed_wing,monoplane,military,recon,,Displayed in the Cold War section. Tail left blank because the two-digit bort number 45 is not unique and is already held by a Soviet-operated MiG-21 recorded elsewhere.,MiG21; MiG21R; Fishbed; 45,Mémorial de Caen,on_display

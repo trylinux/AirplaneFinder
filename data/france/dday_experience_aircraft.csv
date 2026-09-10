@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,C-47,Dakota IV,224319,,,fixed_wing,monoplane,military,transport,,"Fuselage only, fitted out as a briefing/flight-simulator experience.",C47; C-47; Dakota; DC-3; DC3,D-Day Experience - Dead Man's Corner Museum,on_display
+Waco,CG-4,A,,,,fixed_wing,monoplane,military,transport,,Cockpit section only.,CG4; CG-4A; Hadrian; CG4A,D-Day Experience - Dead Man's Corner Museum,on_display

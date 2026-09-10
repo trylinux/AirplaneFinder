@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Socata,Rallye,MS.880,68,,,fixed_wing,monoplane,civilian,private,,Ex-Aeronautique navale Rallye held by the Association Castel-Mauboussin at Cuers; returned to flying condition in June 2024 (ARDHAN February 2025).,Rallye;MS880;MS.880,"Collection Castel-Mauboussin, Cuers",on_display
+Castel,C.301,,1057,,,fixed_wing,monoplane,civilian,private,,Wooden training glider in the association's Cuers collection (ARDHAN February 2025 census).,C301;C.301;Castel 301,"Collection Castel-Mauboussin, Cuers",on_display
+Caudron,C.800,,288,,,fixed_wing,monoplane,civilian,private,,Two-seat wooden training glider in the association's Cuers collection (ARDHAN February 2025 census).,C800;C.800;Caudron 800,"Collection Castel-Mauboussin, Cuers",on_display
+Nord Aviation,Nord 2000,,48,,,fixed_wing,monoplane,civilian,private,,French-built Grunau Baby derivative glider in the association's Cuers collection (ARDHAN February 2025 census).,Nord 2000;N2000;Nord2000,"Collection Castel-Mauboussin, Cuers",on_display

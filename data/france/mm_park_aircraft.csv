@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Antonov,An-2,R,SP-WWW,,,fixed_wing,biplane,civilian,utility,,Fuselage only.,An2; An-2R; Colt; An2R,MM Park France,on_display
+Douglas,C-47,DL,2100811,,,fixed_wing,monoplane,military,transport,,Displayed in June 1944 invasion markings coded Q7-K.,C47; C-47-DL; DC-3; Dakota; Skytrain; Q7-K; 42-100811; C47DL; DC3,MM Park France,on_display
+Nord Aviation,1101,Noralpha,103,,,fixed_wing,monoplane,military,utility,,French-built Me 208 derivative.,N1101; Noralpha; Me208,MM Park France,on_display

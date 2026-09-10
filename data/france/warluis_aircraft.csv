@@ -1,0 +1,9 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aérospatiale,SA 341,F Gazelle,1117,,,rotary_wing,,military,utility,,French Army Gazelle.,SA341; SA341F; Gazelle,Musée de l'Aviation de Warluis,on_display
+Beechcraft,C-45,3T Expeditor,122,,,fixed_wing,monoplane,military,transport,,Expeditor light transport.,C45; C-45; Beech 18; Expeditor,Musée de l'Aviation de Warluis,on_display
+Dassault,Mirage III,E,573,,,fixed_wing,monoplane,military,fighter,,Mirage IIIE.,MirageIII; MirageIIIE; Mirage 3E,Musée de l'Aviation de Warluis,on_display
+Dassault,Mirage F1,CT,253,,,fixed_wing,monoplane,military,ground_attack,,Coded 132-QU.,MirageF1; MirageF1CT; 132-QU,Musée de l'Aviation de Warluis,on_display
+Fouga,CM.170,Magister,438,,,fixed_wing,monoplane,military,trainer,,Magister jet trainer.,CM170; Magister,Musée de l'Aviation de Warluis,on_display
+Max Holste,MH.1521,M Broussard,173,,,fixed_wing,monoplane,military,utility,,Coded 41-AL.,MH1521; MH1521M; Broussard; 41-AL,Musée de l'Aviation de Warluis,on_display
+Nord Aviation,1101,Noralpha,184,,,fixed_wing,monoplane,military,utility,,French-built Messerschmitt Bf 108/Me 208 derivative.,N1101; Noralpha; Me208,Musée de l'Aviation de Warluis,on_display
+Piper,PA-18,150 Super Cub,3205,,,fixed_wing,monoplane,military,utility,,Super Cub liaison aircraft.,PA18; PA-18-150; Super Cub,Musée de l'Aviation de Warluis,on_display

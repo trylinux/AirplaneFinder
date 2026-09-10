@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aérospatiale-BAC,Concorde,102,F-WTSA,,,fixed_wing,monoplane,civilian,commercial_transport,,"Concorde 02, the second pre-production aircraft and the first with the definitive production shape; flew 314 times. Bought from Aéroports de Paris for a symbolic one franc and the centrepiece of the museum; the cabin is open to visitors.",Concorde 02; Concorde 102,Musée Delta,on_display
+Dassault,Mirage III,B-RV,245,,,fixed_wing,monoplane,military,trainer,,Two-seat in-flight-refuelling trainer coded 13-FB.,MirageIII; MirageIIIB; Mirage 3BRV; 13-FB,Musée Delta,on_display
+Dassault,Mirage III,E,530,,,fixed_wing,monoplane,military,fighter,,Coded 4-BJ.,MirageIII; MirageIIIE; Mirage 3E; 4-BJ,Musée Delta,on_display
+Dassault,Mirage III,RD,352,,,fixed_wing,monoplane,military,recon,,Camera-nosed reconnaissance Mirage coded 33-TA.,MirageIII; MirageIIIRD; Mirage 3RD; 33-TA,Musée Delta,on_display
+Aviasud,Sirocco,,,,,fixed_wing,monoplane,civilian,private,,Microlight; no registration recorded.,Sirocco,Musée Delta,on_display
+Visair,1,,001,,,fixed_wing,monoplane,civilian,private,,"Microlight, construction number 001.",Visair 1,Musée Delta,on_display

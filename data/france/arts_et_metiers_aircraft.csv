@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Blériot,XI,,,,,fixed_wing,monoplane,civilian,experimental,,The original Blériot XI in which Louis Blériot crossed the English Channel on 25 July 1909; suspended in the museum's church nave.,Bleriot XI; Bleriot 11,Musée des Arts et Métiers,on_display
+Breguet,Gyroplane,Type R.U1,40,,,rotary_wing,,civilian,experimental,,"Breguet-Richet rotorcraft, works number 40.",Breguet Richet; Gyroplane; Breguet RU1,Musée des Arts et Métiers,on_display
+Ader,Avion III,,,,,fixed_wing,monoplane,civilian,experimental,,"Clément Ader's steam-powered Avion III of 1897, on permanent display.",Ader Avion 3; Avion III; Ader Avion,Musée des Arts et Métiers,on_display
+R.E.P.,Type A,,,,,fixed_wing,monoplane,civilian,experimental,,Robert Esnault-Pelterie Type A monoplane of 1907.,REP Type A; Esnault-Pelterie,Musée des Arts et Métiers,on_display

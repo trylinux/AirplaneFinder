@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Dassault,Mirage III,B-RV,250,,,fixed_wing,monoplane,military,trainer,,Two-seat in-flight-refuelling trainer coded DD.,MirageIII; MirageIIIB; Mirage 3BRV; DD,Musée de l'Abri de Hatten,on_display
+Mikoyan-Gurevich,MiG-21,SPS,869,,,fixed_wing,monoplane,military,fighter,,Ex-East German Air Force.,MiG21; MiG21SPS; Fishbed,Musée de l'Abri de Hatten,on_display
+Mil,Mi-8,S,396,,,rotary_wing,,military,transport,,Ex-East German Mi-8.,Mi8; Mi-8S; Hip; Mi8S,Musée de l'Abri de Hatten,on_display

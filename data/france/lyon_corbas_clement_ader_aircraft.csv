@@ -1,0 +1,47 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aérospatiale,SE.3130,,238,Alouette II,,rotary_wing,,military,utility,,Alouette II number 238 in the museum's collection.,SE3130; Alouette II; AlouetteII,Musée de l'Aviation Clément Ader,on_display
+Aérospatiale,SA 316,,1412,Alouette III,,rotary_wing,,military,utility,,Alouette III number 1412.,SA316; Alouette III; AlouetteIII,Musée de l'Aviation Clément Ader,on_display
+Zipfel,Aéroplane,,,,,fixed_wing,biplane,civilian,experimental,1908,Half-scale reproduction of Armand Zipfel's 1908 aeroplane.,Zipfel; Zipfel 1908,Musée de l'Aviation Clément Ader,on_display
+Breguet,1050,,47,Alizé,,fixed_wing,monoplane,military,anti_ship,,Alizé number 47.,Br1050; Br.1050; Alizé,Musée de l'Aviation Clément Ader,on_display
+Croses,Pou du Ciel,,,,,fixed_wing,monoplane,civilian,private,,Amateur-built Pou-du-Ciel type in the collection.,Pou du Ciel; PouduCiel; Croses,Musée de l'Aviation Clément Ader,on_display
+Dassault-Dornier,Alpha Jet,,8,,,fixed_wing,monoplane,military,trainer,,Alpha Jet number 8 in Patrouille de France colours.,Alpha Jet; AlphaJet; PAF,Musée de l'Aviation Clément Ader,on_display
+Dassault,Étendard IV,M,34,,,fixed_wing,monoplane,military,fighter,,Étendard IV M number 34.,Etendard IVM; Étendard IVM; EtendardIVM,Musée de l'Aviation Clément Ader,on_display
+Dassault,MD 450,,297,Ouragan,,fixed_wing,monoplane,military,fighter,,Ouragan number 297; its restoration won the Grand Prix de l'Aéro-Club de France in 2020 and it was displayed on the forecourt of the Invalides in Paris for three months in 2022.,MD450; MD 450; Ouragan,Musée de l'Aviation Clément Ader,on_display
+Dassault,Mirage III,B,001,,,fixed_wing,monoplane,military,trainer,,Mirage III B 001.,Mirage IIIB; MirageIIIB,Musée de l'Aviation Clément Ader,on_display
+Dassault,Mirage III,C,30,,,fixed_wing,monoplane,military,fighter,,Mirage III C number 30.,Mirage IIIC; MirageIIIC,Musée de l'Aviation Clément Ader,on_display
+Dassault,Mirage III,E,,,,fixed_wing,monoplane,military,ground_attack,,Mirage III E 001. Tail left blank because the museum also holds Mirage IIIB 001 and the database keys aircraft on model plus tail.,Mirage IIIE; MirageIIIE; 001,Musée de l'Aviation Clément Ader,on_display
+Dassault,Mirage III,R,,,,fixed_wing,monoplane,military,recon,,"Mirage III R prototype number 02, a unique airframe. Tail left blank because the short French number 02 is shared with the Mirage IIIA 02 displayed at ISAE-SUPAERO and the database keys aircraft on model plus tail.",Mirage IIIR; MirageIIIR; 02,Musée de l'Aviation Clément Ader,on_display
+Dassault,Mirage IV,P,28,,,fixed_wing,monoplane,military,bomber,,Mirage IV P number 28; listed as a monument historique in April 2015.,Mirage IVP; MirageIVP,Musée de l'Aviation Clément Ader,on_display
+Dassault,Mirage 2000,B,519,,,fixed_wing,monoplane,military,trainer,,Mirage 2000 B number 519.,Mirage 2000B; Mirage2000B,Musée de l'Aviation Clément Ader,on_display
+Dassault,Mirage 2000,C,,,,fixed_wing,monoplane,military,fighter,,Mirage 2000 C; serial not published by the museum.,Mirage 2000C; Mirage2000C,Musée de l'Aviation Clément Ader,on_display
+Dassault,Super Étendard,,71,,,fixed_wing,monoplane,military,ground_attack,,Super Étendard number 71.,Super Etendard; SuperEtendard; SEM,Musée de l'Aviation Clément Ader,on_display
+Dassault,Mirage F1,B,518,,,fixed_wing,monoplane,military,trainer,,Mirage F1 B number 518.,Mirage F1B; MirageF1B,Musée de l'Aviation Clément Ader,on_display
+Dassault,Mirage F1,C-200,264,,,fixed_wing,monoplane,military,fighter,,Mirage F1 C-200 number 264.,Mirage F1C; MirageF1C; F1C-200,Musée de l'Aviation Clément Ader,on_display
+Dassault,Mystère 20,,167,,,fixed_wing,monoplane,military,transport,,Mystère XX number 167.,Mystère 20; Mystere20; Falcon 20,Musée de l'Aviation Clément Ader,on_display
+Dassault,MD 452,A,245,Mystère IV,,fixed_wing,monoplane,military,fighter,,Mystère IV A number 245.,Mystère IVA; MystereIVA; MD452,Musée de l'Aviation Clément Ader,on_display
+Dassault,Super Mystère,B2,145,,,fixed_wing,monoplane,military,fighter,,Super Mystère B2 number 145.,SMB2; Super Mystère B2; SuperMystere,Musée de l'Aviation Clément Ader,on_display
+Déchaux,Hélicop-Jet,,,,,rotary_wing,,civilian,experimental,,Unique French tip-jet helicopter prototype.,Helicop-Jet; HelicopJet; Déchaux,Musée de l'Aviation Clément Ader,on_display
+de Havilland,Vampire,,110,,,fixed_wing,monoplane,military,fighter,,Vampire number 110.,Vampire; DH100; DH.100,Musée de l'Aviation Clément Ader,on_display
+Marula,Drone,,,,,fixed_wing,monoplane,military,drone,,Marula target/reconnaissance drone.,Marula; Drone Marula,Musée de l'Aviation Clément Ader,on_display
+Evans,VP-1,,,Volksplane,,fixed_wing,monoplane,civilian,private,,Amateur-built Volksplane.,VP1; VP-1; Volksplane,Musée de l'Aviation Clément Ader,on_display
+Fouga,CM.170,,124,Magister,,fixed_wing,monoplane,military,trainer,,Fouga Magister number 124.,CM170; CM.170; Magister,Musée de l'Aviation Clément Ader,on_display
+Jodel,D.9,,,Bébé,,fixed_wing,monoplane,civilian,private,,Jodel D9 Bébé.,D9; D.9; Bébé,Musée de l'Aviation Clément Ader,on_display
+Lockheed,T-33,,21021,Shooting Star,,fixed_wing,monoplane,military,trainer,,T-33 number 21021.,T33; T-33; T-Bird,Musée de l'Aviation Clément Ader,on_display
+Colomban,MC 15,,,Cri-Cri,,fixed_wing,monoplane,civilian,private,,Colomban MC 15 Cri-Cri light twin.,MC15; MC 15; Cri-Cri,Musée de l'Aviation Clément Ader,on_display
+Morane-Saulnier,MS.760,,31,Paris,,fixed_wing,monoplane,military,transport,,MS 760 Paris number 31.,MS760; MS.760; Paris,Musée de l'Aviation Clément Ader,on_display
+Morane-Saulnier,MS.733,,67,Alcyon,,fixed_wing,monoplane,military,trainer,,MS 733 Alcyon number 67.,MS733; MS.733; Alcyon,Musée de l'Aviation Clément Ader,on_display
+Mudry,CAP 10,,,,,fixed_wing,monoplane,civilian,private,,Mudry CAP 10 aerobatic trainer.,CAP10; CAP 10; Cap-10,Musée de l'Aviation Clément Ader,on_display
+Nord Aviation,262,,60,Frégate,,fixed_wing,monoplane,military,transport,,Nord 262 Frégate number 60.,N262; Nord 262; Frégate,Musée de l'Aviation Clément Ader,on_display
+Nord Aviation,1101,,123,Ramier,,fixed_wing,monoplane,military,transport,,Nord 1101 Ramier number 123. The museum's own list gives number 123 while the February 2025 ARDHAN naval inventory gives 125; the museum's figure is used here.,N1101; Nord 1101; Ramier; Noralpha,Musée de l'Aviation Clément Ader,on_display
+Nord Aviation,1200,,,Norécrin,,fixed_wing,monoplane,civilian,private,,Nord 1200 Norécrin.,N1200; Nord 1200; Norécrin,Musée de l'Aviation Clément Ader,on_display
+Wassmer,WA-30,,,Bijave,,fixed_wing,monoplane,civilian,private,,Wassmer Bijave training glider.,WA30; WA-30; Bijave,Musée de l'Aviation Clément Ader,on_display
+Wassmer,WA-22,,,Super Javelot,,fixed_wing,monoplane,civilian,private,,Wassmer Super Javelot glider.,WA22; WA-22; Super Javelot,Musée de l'Aviation Clément Ader,on_display
+Santos-Dumont,Demoiselle,,,,,fixed_wing,monoplane,civilian,experimental,,Replica of the 1909 Santos-Dumont Demoiselle.,Demoiselle; Santos Demoiselle,Musée de l'Aviation Clément Ader,on_display
+SEPECAT,Jaguar,A,141,,,fixed_wing,monoplane,military,ground_attack,,Jaguar A number 141.,JaguarA; Jaguar A,Musée de l'Aviation Clément Ader,on_display
+SEPECAT,Jaguar,E,37,,,fixed_wing,monoplane,military,trainer,,"Jaguar E number 37, presented in a 30th-anniversary scheme noted for the quality of its presentation.",JaguarE; Jaguar E,Musée de l'Aviation Clément Ader,on_display
+Sikorsky,H-19,,957,,,rotary_wing,,military,utility,,Sikorsky H-19 / S-55 number 957.,H19; H-19; S-55; Chickasaw; S55,Musée de l'Aviation Clément Ader,on_display
+SNCASO,SO.1221,,,Djinn,,rotary_wing,,military,utility,,SNCASO Djinn light helicopter.,SO1221; SO.1221; Djinn,Musée de l'Aviation Clément Ader,on_display
+Socata,TB-30,,47,Epsilon,,fixed_wing,monoplane,military,trainer,,TB-30 Epsilon number 47.,TB30; TB-30; Epsilon,Musée de l'Aviation Clément Ader,on_display
+Supermarine,Spitfire,Mk IX,ML407,,,fixed_wing,monoplane,military,fighter,,Spitfire Mark IX ML407.,Spitfire IX; SpitfireIX; ML407,Musée de l'Aviation Clément Ader,on_display
+Aérospatiale,Concorde,,,,,fixed_wing,monoplane,civilian,commercial_transport,,"Concorde test fuselage section only, not a complete aircraft.",Concorde; Concorde section,Musée de l'Aviation Clément Ader,on_display
+SNCAN,2200,,01,,,fixed_wing,monoplane,military,fighter,,"Fin only, displayed in the exhibition hall; not a complete airframe. Serial from the ARDHAN inventory of preserved French naval aircraft dated February 2025.",N2200; Nord 2200,Musée de l'Aviation Clément Ader,on_display

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Dassault,Super Étendard,M,01,,,fixed_wing,monoplane,military,test,,Super Étendard prototype number 01. Held at the DGA Techniques Aéronautiques establishment at Toulouse/Balma. Listed by ARDHAN (Claude Morin) August 2025.,Super Etendard; SEM; SE 01,DGA Techniques Aéronautiques Toulouse Displays,on_display
+Dassault,Étendard IV,M,26,,,fixed_wing,monoplane,military,ground_attack,,Held at the DGA Techniques Aéronautiques establishment at Toulouse/Balma. Listed by ARDHAN (Claude Morin) August 2025.,Etendard IV; EtendardIV,DGA Techniques Aéronautiques Toulouse Displays,on_display
