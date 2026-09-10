@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,TF-104,G,5722,Starfighter,,fixed_wing,monoplane,military,trainer,,"Two-seat Starfighter mounted on a pole as a gate guard, wearing the code 8-722 and an F-16 style camouflage applied after retirement. Construction number 583D-5722. spottingmode status preserved.",TF-104G;TF104;TF104G;F-104;F104;Starfighter;8-722,Afyonkarahisar TF-104G Monument,on_display

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+McDonnell Douglas,F-4,E,702,Kurnass 2000,Kurnass 2000 702,fixed_wing,monoplane,military,fighter,,Construction number 4289. Outdoor exhibit of the Technoda science centre and mapped in OpenStreetMap as a public attraction.,F4E;F4;Kurnass 2000;Phantom II;4289,Technoda -- Hadera,on_display
+Hughes,500,MD,220,Defender,Lahatut 220,rotary_wing,,military,ground_attack,,Construction number 50-0645D.,500MD;MD500;Defender;Lahatut,Technoda -- Hadera,on_display

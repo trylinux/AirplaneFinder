@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+IAI,Tzukit,,,Tzukit,Givatayim Tzukit,fixed_wing,monoplane,military,trainer,,Displayed wearing the serial 095; the true airframe is not established so tail_number is left blank. Last noted January 2024 which is the most recent dated sighting in the spottingmode Israel dataset.,Tzukit;AMIT;CM.170;CM170;095,Givatayim Fouga Monument,on_display

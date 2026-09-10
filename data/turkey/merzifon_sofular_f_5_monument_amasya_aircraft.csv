@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Northrop,F-5,A,,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,"Freedom Fighter displayed in Sofular, in Merzifon town some 6 km northwest of the air base. No serial has been read on this airframe by any contributor so tail_number is deliberately blank. spottingmode status preserved last updated 8 August 2018.",F-5A;F5;F5A;Freedom Fighter,Merzifon Sofular F-5 Monument -- Amasya,on_display

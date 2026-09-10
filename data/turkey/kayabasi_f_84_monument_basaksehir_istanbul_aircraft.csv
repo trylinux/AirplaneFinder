@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Republic,F-84,F,,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,Thunderstreak displayed on Eski Edirne Asfaltı Caddesi at Kayabaşı Mahallesi in Başakşehir. No serial has been read so tail_number is deliberately blank. spottingmode status preserved last updated 4 June 2020.,F-84F;F84;F84F;Thunderstreak;Başakşehir example,"Kayabaşı F-84 Monument -- Başakşehir, İstanbul",on_display

@@ -1,0 +1,18 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,A-4,H,215,Skyhawk,Ayit 215,fixed_wing,monoplane,military,ground_attack,,No construction number recorded.,A4H;A4;Ayit;Skyhawk,Israeli Air Force Technical School -- Haifa,on_display
+Bell,AH-1,G,130,Cobra,Tzefa 130,rotary_wing,,military,ground_attack,,Construction number 19296. Displayed wearing the false serial 160.,AH1G;AH1;Cobra;Tzefa;19296,Israeli Air Force Technical School -- Haifa,on_display
+Bell,AH-1,E,667,Cobra,Tzefa 667,rotary_wing,,military,ground_attack,,No construction number recorded.,AH1E;AH1;Cobra;Tzefa,Israeli Air Force Technical School -- Haifa,on_display
+IAI,Tzukit,,647,Tzukit,Tzukit 647,fixed_wing,monoplane,military,trainer,,Construction number 47.,Tzukit;AMIT;CM.170;CM170,Israeli Air Force Technical School -- Haifa,on_display
+Dornier,Do 27,B1,039,Do 27,Do 27 039,fixed_wing,monoplane,military,utility,,Construction number 204.,Do27B1;Do27;Dornier 27,Israeli Air Force Technical School -- Haifa,on_display
+McDonnell Douglas,F-15,A,393,Baz,Baz 393,fixed_wing,monoplane,military,fighter,,Construction number 0034. Displayed wearing the false serial 021.,F15A;F15;Baz;Eagle,Israeli Air Force Technical School -- Haifa,on_display
+IAI,Kfir,C2,821,Kfir,Kfir C2 821,fixed_wing,monoplane,military,fighter,,Construction number 44.,Kfir C2;KfirC2;Kfir,Israeli Air Force Technical School -- Haifa,on_display
+Dassault,MD.450,,65,Ouragan,Sufa 65,fixed_wing,monoplane,military,fighter,,Displayed wearing the false serial 85; the true airframe is 65.,MD450;Ouragan;Sufa,Israeli Air Force Technical School -- Haifa,on_display
+Dassault,Mystère IV,A,37,Mystere,Mystere IVA 37,fixed_wing,monoplane,military,fighter,,No construction number recorded.,Mystere IVA;MD.454;MD454;Mystere IV,Israeli Air Force Technical School -- Haifa,on_display
+Nord,N.2501,D,056,Noratlas,Noratlas 056,fixed_wing,monoplane,military,transport,,Construction number D167.,N2501D;N2501;Noratlas,Israeli Air Force Technical School -- Haifa,on_display
+Piper,PA-18,,058,Super Cub,Super Cub 058,fixed_wing,monoplane,military,utility,,No construction number recorded and the exact PA-18 sub-variant is not established.,PA18;PA-18;Super Cub,Israeli Air Force Technical School -- Haifa,on_display
+Boeing,PT-17,,55,Stearman,Stearman 55,fixed_wing,biplane,military,trainer,,Construction number 75-1846.,PT17;Stearman;Kaydet,Israeli Air Force Technical School -- Haifa,on_display
+Fokker,S.11,,12,Instructor,Instructor 12,fixed_wing,monoplane,military,trainer,,No construction number recorded.,S11;S.11;Instructor,Israeli Air Force Technical School -- Haifa,on_display
+Aérospatiale,SA.321,Kb,008,Super Frelon,Tzir'a 008,rotary_wing,,military,transport,,Construction number 110.,SA321Kb;SA321;Super Frelon;Tzir'a,Israeli Air Force Technical School -- Haifa,on_display
+Sud-Ouest,SO.4050,IIA,12,Vautour,Vautour 12,fixed_wing,monoplane,military,ground_attack,,Construction number 41.,SO4050;Vautour IIA;Vautour,Israeli Air Force Technical School -- Haifa,on_display
+North American,AT-6,D,1110,Harvard,Harvard 1110,fixed_wing,monoplane,military,trainer,,Construction number 78-6169. Displayed wearing the false serial 10.,AT6D;AT6;Harvard;Texan,Israeli Air Force Technical School -- Haifa,on_display
+McDonnell Douglas,F-4,E,304,Kurnass 2000,Kurnass 2000 304,fixed_wing,monoplane,military,fighter,,Displayed on a separate plinth at the southern end of the school campus wearing the false serial 001. Confirmed present by the spottingmode Israel review of 22 May 2026.,F4E;F4;Kurnass 2000;Phantom II,Israeli Air Force Technical School -- Haifa,on_display

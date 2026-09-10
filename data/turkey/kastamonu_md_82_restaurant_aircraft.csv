@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+McDonnell Douglas,MD-82,,TC-TUA,,,fixed_wing,monoplane,civilian,commercial_transport,,"Former airliner in use as a restaurant at Aktekke in Kastamonu, described by spottingmode as a DC-9 in its location text but linked as an MD-82. Construction number 49138. Last updated 18 March 2025.",MD-82;MD82;Super 80;DC-9;cn 49138;DC9,Kastamonu MD-82 Restaurant,on_display

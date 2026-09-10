@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+McDonnell Douglas,F-4,E,66-0293,Phantom II,,fixed_wing,monoplane,military,fighter,,"Phantom displayed at Köyceğiz Mahallesi in Meram, southwest Konya. Construction number 2373. Last updated 12 June 2022.",F-4E;F4;F4E;Phantom II;cn 2373,Meram Phantom and Dauphin Monument -- Konya,on_display
+Eurocopter,AS 365,N2,OR-2434,Dauphin,,rotary_wing,,civilian,search_rescue,,Turkish forestry service Dauphin displayed alongside the Phantom at Meram. Construction number 6434.,AS 365N2;AS365;AS365N2;Dauphin,Meram Phantom and Dauphin Monument -- Konya,on_display

@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,A-4,,,Skyhawk,Nevatim gate Skyhawk,fixed_wing,monoplane,military,ground_attack,,Composite Skyhawk displayed wearing the number 116; the sub-variant and the true airframe are not established so tail_number is left blank. Confirmed present by the spottingmode Israel review of 22 May 2026.,A4;Ayit;Skyhawk;116,Nevatim Airbase Skyhawk Display,on_display

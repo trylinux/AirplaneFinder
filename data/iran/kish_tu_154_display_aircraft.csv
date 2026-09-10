@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Tupolev,Tu-154,M,EP-LBR,Careless,,fixed_wing,monoplane,civilian,commercial_transport,,"Tupolev Tu-154M, c/n 90A838, preserved as a roadside display on western Kish Island. A large rear-engined tri-jet with a T-tail is unmistakably present at these coordinates on Esri World Imagery, confirming retention long after the 2017 database entry.",Tu154;Tu154M;Careless;90A838,Kish Tu-154 Display,on_display

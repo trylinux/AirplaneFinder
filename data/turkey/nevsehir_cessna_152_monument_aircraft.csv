@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Cessna,152,,,,,fixed_wing,monoplane,civilian,trainer,,Light trainer displayed at Bahçelievler on Mustafa Parmaksız Caddesi in Nevşehir. No registration has been linked so tail_number is deliberately blank. Last updated 8 August 2018.,Cessna 152;C152;Ce.152;Nevşehir example,Nevşehir Cessna 152 Monument,on_display

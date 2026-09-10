@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Northrop,F-5,E,,Tiger II,,fixed_wing,monoplane,military,fighter,,"F-5E monument at Takestan. The source notes explicitly that it carries the same serial as the Qazvin F-5, namely 3-7150; tail number left blank for that reason.",F5;F5E;Tiger II;3-7150,Takestan F-5 Monument,on_display

@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,AH-1,,,Cobra,,rotary_wing,,military,ground_attack,,Cobra gunship displayed on the İskenderun Teknik Üniversitesi campus. No serial or sub-type has been linked so tail_number is deliberately blank. spottingmode status preserved last updated 5 August 2020.,AH-1;AH1;Cobra;HueyCobra,İskenderun Teknik Üniversitesi AH-1 Cobra -- Hatay,on_display

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Agusta-Bell,AB 204,AS,TCB-33,,,rotary_wing,,military,search_rescue,,Turkish Navy Agusta-Bell 204 at Gölcük naval base. Construction number 3238. Last updated 5 February 2016.,AB 204AS;AB204;AB204AS;Huey;TCB-33;TCB33,Gölcük Naval Base Aircraft Displays -- Kocaeli,on_display
+Grumman,S-2,A,147644,Tracker,,fixed_wing,monoplane,military,recon,,"Turkish Navy Tracker at Gölcük, wearing the code TCB-154. Construction number G-715.",S-2A;S2;S2A;Tracker;TCB-154;TCB154,Gölcük Naval Base Aircraft Displays -- Kocaeli,on_display

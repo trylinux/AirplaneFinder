@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+McDonnell Douglas,F-4,E,68-0313,Phantom II,,fixed_wing,monoplane,military,fighter,,Phantom in the Konya base air park at Büyükkayacık Mahallesi. Construction number 3335.,F-4E;F4;F4E;Phantom II;cn 3335,Konya Air Base Air Park,on_display
+Northrop,F-5,A,13344,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,Freedom Fighter in the Konya base air park. Construction number N.6113.,F-5A;F5;F5A;Freedom Fighter;cn N.6113,Konya Air Base Air Park,on_display
+Republic,F-84,G,51-10133,Thunderjet,,fixed_wing,monoplane,military,ground_attack,,Straight-wing Thunderjet in the Konya base air park.,F-84G;F84;F84G;Thunderjet,Konya Air Base Air Park,on_display
+Republic,F-84,F,53-7026,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,Swept-wing Thunderstreak in the Konya base air park.,F-84F;F84;F84F;Thunderstreak,Konya Air Base Air Park,on_display
+North American,F-100,D,55-2748,Super Sabre,,fixed_wing,monoplane,military,ground_attack,,Super Sabre in the Konya base air park. Construction number 224-15.,F-100D;F100;F100D;Super Sabre;cn 224-15,Konya Air Base Air Park,on_display
+McDonnell Douglas,F-4,E,67-0217,Phantom II,,fixed_wing,monoplane,military,fighter,,"Second Konya base Phantom, at 37.99162 32.55960. Construction number 2848.",F-4E;F4;F4E;Phantom II;cn 2848,Konya Air Base Air Park,on_display
+North American,F-100,D,55-2910,Super Sabre,,fixed_wing,monoplane,military,ground_attack,,Super Sabre at 37.99016 32.55960 in the Konya base area. Construction number 224-177.,F-100D;F100;F100D;Super Sabre;cn 224-177,Konya Air Base Air Park,on_display

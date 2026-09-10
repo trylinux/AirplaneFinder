@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Cessna,U-17,,,Skywagon,,fixed_wing,monoplane,military,utility,,"Skywagon displayed at Cevatpaşa Mahallesi in Yeşilyurt, Malatya. spottingmode records the type with a question mark and links no identity, so tail_number and variant are deliberately blank. Last updated 29 July 2018.",U-17;U17;Skywagon;Malatya example,Malatya Cevatpaşa U-17 Monument,on_display

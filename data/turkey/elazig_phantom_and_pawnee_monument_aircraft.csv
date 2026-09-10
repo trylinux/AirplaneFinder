@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+McDonnell Douglas,F-4,E,67-0251,Phantom II,,fixed_wing,monoplane,military,fighter,,Phantom displayed in central Elazığ. Construction number 2950. spottingmode status preserved last updated 25 September 2020.,F-4E;F4;F4E;Phantom II;cn 2950,Elazığ Phantom and Pawnee Monument,on_display
+Piper,PA-25,,,Pawnee,,fixed_wing,monoplane,civilian,utility,,Agricultural Pawnee displayed alongside the Phantom at Elazığ. No registration has been read by any contributor so tail_number is deliberately blank.,PA-25;PA25;Pawnee,Elazığ Phantom and Pawnee Monument,on_display

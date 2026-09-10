@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,UH-1,,,Iroquois,,rotary_wing,,military,utility,,"Helicopter monument at Menderes Mahallesi in Erzincan, added to spottingmode on 21 August 2026. No serial or sub-type recorded so tail_number is deliberately blank. Distinguished from the Bingöl example by its location.",UH-1;UH1;Iroquois;Huey;Erzincan example,Erzincan Menderes UH-1 Monument,on_display

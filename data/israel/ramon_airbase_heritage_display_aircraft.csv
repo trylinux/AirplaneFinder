@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,A-4,F,603,Skyhawk,Ayit 603,fixed_wing,monoplane,military,ground_attack,,No construction number recorded.,A4F;A4;Ayit;Skyhawk,Ramon Airbase Heritage Display,on_display
+Hughes,500,MD,299,Defender,Lahatut 299,rotary_wing,,military,ground_attack,,Construction number 100-0723D. Displayed wearing the false serial 622.,500MD;MD500;Defender;Lahatut,Ramon Airbase Heritage Display,on_display
+IAI,Kfir,C1P,703,Kfir,Kfir C1P 703,fixed_wing,monoplane,military,fighter,,No construction number recorded.,Kfir C1P;KfirC1P;Kfir,Ramon Airbase Heritage Display,on_display

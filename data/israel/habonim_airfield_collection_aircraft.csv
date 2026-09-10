@@ -1,0 +1,10 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-23,ML,2410,Flogger,MiG-23ML 2410,fixed_wing,monoplane,military,fighter,,Construction number 0390322410. Ex-Czech Air Force airframe held in the private collection at Habonim airfield.,MiG23ML;MiG23;Flogger,Habonim Airfield Collection,on_display
+IAI,Tzukit,,564,Tzukit,Tzukit 564,fixed_wing,monoplane,military,trainer,,Construction number 34.,Tzukit;AMIT;CM.170;CM170,Habonim Airfield Collection,on_display
+de Havilland,DH.82,A,4X-AAT,Tiger Moth,Tiger Moth 4X-AAT,fixed_wing,biplane,civilian,trainer,,Construction number DHA61 indicating Australian manufacture.,DH82A;DH82;Tiger Moth,Habonim Airfield Collection,on_display
+Dornier,Do 28,B1,020,Do 28,Do 28 020,fixed_wing,monoplane,military,utility,,Construction number 3109. Five further ex-IAF Do 28B1 airframes at Habonim are recorded as stored rather than preserved and are excluded.,Do28B1;Do28;Dornier 28,Habonim Airfield Collection,on_display
+Fairchild,24,J,4X-AAR,Argus,Fairchild 24J,fixed_wing,monoplane,civilian,utility,,Construction number 3400. Airframe only - fuselage frame without covering.,F.24J;F24J;Fairchild 24;Argus,Habonim Airfield Collection,on_display
+Schempp-Hirth,HP-18,,4X-GHD,HP-18,HP-18 4X-GHD,fixed_wing,monoplane,civilian,private,,Construction number 60-2. Single-seat sailplane.,HP18;HP-18,Habonim Airfield Collection,on_display
+Fleet,1,,4X-AAF,Fleet 1,Fleet 1 4X-AAF,fixed_wing,biplane,civilian,trainer,,Construction number 200; registered 4X-AAF.,Fleet 1;Fleet Model 1;4X-AAF,Habonim Airfield Collection,on_display
+Taylorcraft,BL-65,,4X-AAI,Taylorcraft,Taylorcraft 4X-AAI,fixed_wing,monoplane,civilian,private,,Construction number 2327.,BL65;BL-65;Taylorcraft,Habonim Airfield Collection,on_display
+Porterfield,35-70,,NC14479,Flyabout,Porterfield NC14479,fixed_wing,monoplane,civilian,private,,Construction number 136. United States registration NC14479.,35-70;3570;Porterfield 35;Flyabout,Habonim Airfield Collection,on_display

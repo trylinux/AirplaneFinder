@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,A-4,N,328,Skyhawk,Ayit 328,fixed_wing,monoplane,military,ground_attack,,No construction number recorded.,A4N;A4;Ayit;Skyhawk,Ramat David Airbase Heritage Display,on_display
+McDonnell Douglas,F-4,E,144,Kurnass,Kurnass 144,fixed_wing,monoplane,military,fighter,,Construction number 3989 recorded in the spottingmode remarks field.,F4E;F4;Kurnass;Phantom II;3989,Ramat David Airbase Heritage Display,on_display
+Hughes,500,MD,210,Defender,Lahatut 210,rotary_wing,,military,ground_attack,,Construction number 0571.,500MD;MD500;Defender;Lahatut,Ramat David Airbase Heritage Display,on_display
+IAI,Kfir,C2,865,Kfir,Kfir C2 865,fixed_wing,monoplane,military,fighter,,Displayed wearing the false serial 814; the true airframe is 865.,Kfir C2;KfirC2;Kfir,Ramat David Airbase Heritage Display,on_display
+Dassault,Mystère IV,A,,Mystere,Ramat David Mystere,fixed_wing,monoplane,military,fighter,,Displayed wearing the serial 44; the true airframe is not established so tail_number is left blank.,Mystere IVA;MD.454;MD454;Mystere IV,Ramat David Airbase Heritage Display,on_display
+Gloster,Meteor,FR.9,31,Meteor,Meteor FR.9 31,fixed_wing,monoplane,military,recon,,Fighter reconnaissance Meteor. No construction number recorded.,Meteor FR9,Ramat David Airbase Heritage Display,on_display

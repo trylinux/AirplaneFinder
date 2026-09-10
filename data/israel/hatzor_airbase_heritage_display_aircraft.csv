@@ -1,0 +1,9 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-15,UTI,,Midget,Hatzor MiG-15UTI,fixed_wing,monoplane,military,trainer,,Displayed in Egyptian Air Force markings with no serial recorded. Israel never operated the type.,MiG15UTI;MiG15;Midget,Hatzor Airbase Heritage Display,on_display
+McDonnell Douglas,F-4,E,202,Kurnass,Kurnass 202,fixed_wing,monoplane,military,fighter,,No construction number recorded.,F4E;F4;Kurnass;Phantom II,Hatzor Airbase Heritage Display,on_display
+IAI,Kfir,C2,869,Kfir,Kfir C2 869,fixed_wing,monoplane,military,fighter,,No construction number recorded.,Kfir C2;KfirC2;Kfir,Hatzor Airbase Heritage Display,on_display
+Dassault,MD.450,,10,Ouragan,Hatzor Ouragan,fixed_wing,monoplane,military,fighter,,IAF serial 10 displayed wearing the false serial 70.,MD450;Ouragan;Sufa,Hatzor Airbase Heritage Display,on_display
+Dassault,Mystère IV,A,80,Mystere,Mystere IVA 80,fixed_wing,monoplane,military,fighter,,No construction number recorded.,Mystere IVA;MD.454;MD454;Mystere IV,Hatzor Airbase Heritage Display,on_display
+Dassault,Mirage III,CJ,44,Shahak,Shahak 44,fixed_wing,monoplane,military,fighter,,No construction number recorded.,Mirage IIICJ;Shahak,Hatzor Airbase Heritage Display,on_display
+Dassault,Super Mystère,B2,060,Sa'ar,Super Mystere 060,fixed_wing,monoplane,military,fighter,,Construction number 141.,Super Mystere B2;SMB2;Sa'ar,Hatzor Airbase Heritage Display,on_display
+Douglas,A-4,C,,Skyhawk,Hatzor A-4C,fixed_wing,monoplane,military,ground_attack,,Ex-United States Navy A-4C displayed in IAF markings as 01. No serial recorded so tail_number is left blank.,A4C;A4;Skyhawk;Ayit,Hatzor Airbase Heritage Display,on_display

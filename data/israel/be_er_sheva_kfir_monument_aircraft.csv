@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+IAI,Kfir,C1P,,Kfir,Be'er Sheva Kfir,fixed_wing,monoplane,military,fighter,,Kfir mounted in the Tet quarter of Be'er Sheva and displayed wearing the serial 664. The true airframe identity is not established so tail_number is left blank.,Kfir C1P;KfirC1P;Kfir;664,Be'er Sheva Kfir Monument,on_display

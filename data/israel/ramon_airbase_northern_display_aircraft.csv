@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+General Dynamics,F-16,A,757,Netz,Netz 757,fixed_wing,monoplane,military,fighter,,Construction number 61-212. Confirmed present by the spottingmode Israel review of 22 May 2026.,F16A;F16;Netz;Fighting Falcon,Ramon Airbase Northern Display,on_display
+IAI,Kfir,C1P,,Kfir,Ramon Kfir,fixed_wing,monoplane,military,fighter,,Displayed wearing the numbers 253 and 179; the true airframe is not established so tail_number is left blank.,Kfir C1P;KfirC1P;Kfir;253;179,Ramon Airbase Northern Display,on_display

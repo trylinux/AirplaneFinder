@@ -307,7 +307,10 @@ def main():
 
     def write(path, subset):
         with open(path, "w", newline="", encoding="utf-8") as f:
-            w = csv.DictWriter(f, fieldnames=HEADER)
+            # lineterminator="\n": csv defaults to "\r\n", which would make every
+            # generated file CRLF while every existing data/ file is LF - see
+            # METHODOLOGY.md "If you rewrite existing CSVs programmatically".
+            w = csv.DictWriter(f, fieldnames=HEADER, lineterminator="\n")
             w.writeheader()
             w.writerows(subset)
         tails = sum(1 for r in subset if r["tail_number"])

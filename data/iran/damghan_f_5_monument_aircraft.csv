@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Northrop,F-5,E,,Tiger II,,fixed_wing,monoplane,military,fighter,,"F-5E monument at Shahrak-e Golestan in Damghan. The contributor database carries this one as 3-7150 in the identity field rather than as an observed marking, but because two further F-5s in Qazvin province wear the same number the serial is not safe to assert and is left blank.",F5;F5E;Tiger II;3-7150,Damghan F-5 Monument,on_display

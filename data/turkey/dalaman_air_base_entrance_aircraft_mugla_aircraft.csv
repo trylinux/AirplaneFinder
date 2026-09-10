@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Northrop,F-5,A,69224,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,Freedom Fighter at the Dalaman base entrance. Construction number N.7047.,F-5A;F5;F5A;Freedom Fighter;cn N.7047,Dalaman Air Base Entrance Aircraft -- Muğla,on_display
+Lockheed,F-104,G,8060,Starfighter,,fixed_wing,monoplane,military,fighter,,"Starfighter on a pole at the Dalaman airport entrance, wearing the code 9-2000. Construction number 683D-8060.",F-104G;F104;F104G;Starfighter;9-2000,Dalaman Air Base Entrance Aircraft -- Muğla,on_display

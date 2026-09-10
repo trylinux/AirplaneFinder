@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,C-47,B,026,Dakota,Dakota 026,fixed_wing,monoplane,military,transport,,Construction number 32837; also carried the civil marks 4X-FNS. Displayed at the Mitzpe Revivim heritage site.,C47B;C47;Dakota;DC-3;DC3;4X-FNS,Mitzpe Revivim Museum,on_display
+Piper,PA-18,150,,Super Cub,Revivim Super Cub,fixed_wing,monoplane,military,utility,,Displayed wearing the marking A-13. No construction number recorded and the true airframe is not established so tail_number is left blank.,PA18150;PA-18;PA18;Super Cub;A-13;A13,Mitzpe Revivim Museum,on_display

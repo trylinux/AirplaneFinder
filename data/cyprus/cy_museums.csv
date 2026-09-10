@@ -1,0 +1,10 @@
+name,city,state_province,country,postal_code,region,address,website,access_type,latitude,longitude
+Alsancak National Freedom Park,Alsancak,Kyrenia,Cyprus,99350,Europe,"Yavuz Cikarma Plaji, Caglayan Mahallesi, Alsancak, Girne",,public,35.34531021,33.23533630
+Cengiz Topel Monument,Gemikonagi,Lefke,Cyprus,99800,Europe,"Cemal Oruc Caddesi, Gemikonagi, Lefke",,public,35.14724731,32.84706879
+Cyprus Car Museum,Nicosia,Nicosia,Cyprus,99138,Europe,"Taskinkoy Mahallesi, Kizilbas, Lefkosa",,public,35.22512436,33.32245636
+Cyprus Historic and Classic Motor Museum,Limassol,Limassol,Cyprus,3056,Europe,"6 Epimitheos Street, Limassol Industrial Area, Ypsonas",https://cyprusmotormuseum.com.cy,public,34.66534805,32.99320984
+Kato Deftera Sea Harrier,Kato Deftera,Nicosia,Cyprus,2450,Europe,"Kato Deftera, Tamassos, Nicosia District",,appointment,35.08938599,33.28891754
+Lakatamia Airfield,Lakatamia,Nicosia,Cyprus,2326,Europe,"Nikou Karantoni, Agia Paraskevi, Lakatamia",,public,35.10515976,33.32739639
+Larnaca International Airport,Dromolaxia,Larnaca,Cyprus,6650,Europe,"Larnaca International Airport, Dromolaxia",,restricted,34.87416840,33.61820602
+Makedonitissa Tomb,Nicosia,Nicosia,Cyprus,2402,Europe,"Evagelou Tsakona, Makedonitissa, Engomi, Nicosia",,public,35.15407944,33.30734634
+RAF Akrotiri,Akrotiri,Akrotiri Sovereign Base Area,Cyprus,4640,Europe,"Flamingo Way, RAF Akrotiri, Western Sovereign Base Area",https://www.raf.mod.uk/our-organisation/stations/raf-akrotiri/,restricted,34.58503723,32.97781372

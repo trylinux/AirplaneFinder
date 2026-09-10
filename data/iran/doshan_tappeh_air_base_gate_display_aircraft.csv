@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Northrop,F-5,,,Tiger II,,fixed_wing,monoplane,military,fighter,,"F-5 mounted at Doshan Tappeh Air Base, the historic home of Iranian military aviation in east Tehran. No serial recorded by any source reached.",F5;Tiger II;Freedom Fighter,Doshan Tappeh Air Base Gate Display,on_display
+Lockheed,T-33,A,,Shooting Star,,fixed_wing,monoplane,military,trainer,,T-33A jet trainer displayed at Doshan Tappeh Air Base some 20 metres from the F-5. No serial recorded.,T33;T33A;Shooting Star;T-Bird,Doshan Tappeh Air Base Gate Display,on_display

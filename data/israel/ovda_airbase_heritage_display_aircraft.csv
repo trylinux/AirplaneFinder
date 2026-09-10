@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,A-4,N,338,Skyhawk,Ayit 338,fixed_wing,monoplane,military,ground_attack,,No construction number recorded.,A4N;A4;Ayit;Skyhawk,Ovda Airbase Heritage Display,on_display
+McDonnell Douglas,F-4,E,632,Kurnass 2000,Kurnass 2000 632,fixed_wing,monoplane,military,fighter,,Construction number 3842.,F4E;F4;Kurnass 2000;Phantom II;3842,Ovda Airbase Heritage Display,on_display
+McDonnell Douglas,F-15,A,301,Baz,Baz 301,fixed_wing,monoplane,military,fighter,,Construction number 0044.,F15A;F15;Baz;Eagle,Ovda Airbase Heritage Display,on_display
+McDonnell Douglas,F-15,A,312,Baz,Baz 312,fixed_wing,monoplane,military,fighter,,Construction number 0098. Note the construction number resembles the USAF serial 73-0098 of the Israeli Air Force Museum F-15A but the two are different airframes.,F15A;F15;Baz;Eagle,Ovda Airbase Heritage Display,on_display
+General Dynamics,F-16,A,264,Netz,Netz 264,fixed_wing,monoplane,military,fighter,,Construction number 6V-47.,F16A;F16;Netz;Fighting Falcon,Ovda Airbase Heritage Display,on_display
+IAI,Kfir,C1,841,Kfir,Kfir C1 841,fixed_wing,monoplane,military,fighter,,Displayed wearing the false serial 827; the true airframe is 841.,Kfir C1;KfirC1;Kfir,Ovda Airbase Heritage Display,on_display

@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,A-4,H,211,Skyhawk,Gil Blau memorial Skyhawk,fixed_wing,monoplane,military,ground_attack,,Withdrawn Skyhawk donated by the Israeli Air Force and erected in the centre of Karmiel as the memorial to Corporal Gil Blau. Mapped in OpenStreetMap with the memorial text and an image from the national Izkor memorial register.,A4H;A4;Ayit;Skyhawk,Karmiel Skyhawk Memorial,on_display
