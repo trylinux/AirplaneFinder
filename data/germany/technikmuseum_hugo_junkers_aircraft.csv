@@ -1,0 +1,19 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Antonov,An-2,,D-FWJD,,,fixed_wing,biplane,civilian,utility,,An-2 in German civil markings on the outdoor grounds.,An2; Colt,Technikmuseum Hugo Junkers,on_display
+Ilyushin,Il-14,P,DM-SAF,,,fixed_wing,monoplane,civilian,commercial_transport,,East German-built VEB Il-14P; brought from Dresden and the best-preserved aircraft on the outdoor grounds.,Il14; Il14P; Crate,Technikmuseum Hugo Junkers,on_display
+Junkers,F 13,,,,,fixed_wing,monoplane,civilian,commercial_transport,,Full-scale replica built by the museum's Ju 52 / F 13 / J 1 working group.,F13; Junkers F13,Technikmuseum Hugo Junkers,on_display
+Junkers,J 1,,,,,fixed_wing,monoplane,military,ground_attack,,Full-scale replica of the all-metal Junkers J 1 armoured ground-attack biplane.,J1; Junkers J1; Blechesel,Technikmuseum Hugo Junkers,on_display
+Junkers,Ju 52,3m g4e,,,,fixed_wing,monoplane,military,transport,,"Original airframe, Werknummer 6134, displayed in the markings 1Z+BY; force-landed on a frozen lake near Narvik in Norway in 1940, recovered in 1986 and acquired by the museum in 1995.",Ju52; Ju 52/3m; Tante Ju; Wnr 6134,Technikmuseum Hugo Junkers,on_display
+Kamov,Ka-26,,D-HZPT,,,rotary_wing,,civilian,utility,,Ka-26 in German civil markings.,Ka26; Hoodlum,Technikmuseum Hugo Junkers,on_display
+Lommatzsch,Meise,,DM-2052,,,fixed_wing,monoplane,civilian,private,,East German-built DFS Olympia Meise glider.,Meise; Olympia Meise; DFS Olympia,Technikmuseum Hugo Junkers,on_display
+Mikoyan-Gurevich,MiG-15,UTI,16,,,fixed_wing,monoplane,military,trainer,,Two-seat MiG-15UTI displayed indoors with the number 16.,MiG15; MiG15UTI; Midget,Technikmuseum Hugo Junkers,on_display
+Mikoyan-Gurevich,MiG-21,U-400,258,,,fixed_wing,monoplane,military,trainer,,Ex-NVA two-seat MiG-21U-400.,MiG21; MiG21U; Mongol,Technikmuseum Hugo Junkers,on_display
+Mikoyan-Gurevich,MiG-23,MF,585,,,fixed_wing,monoplane,military,fighter,,Ex-NVA MiG-23MF; also recorded wearing the Bundeswehr code 20+05.,MiG23; MiG23MF; Flogger; 20+05,Technikmuseum Hugo Junkers,on_display
+PZL-Swidnik,Mi-2,,D-HZPE,,,rotary_wing,,civilian,utility,,Polish-built Mi-2 in German civil markings.,Mi2; Hoplite,Technikmuseum Hugo Junkers,on_display
+Sud Aviation,Alouette II,SE 3130,75+26,,,rotary_wing,,military,utility,,Ex-Bundeswehr Alouette II.,Alouette 2; SE3130; SE 3130,Technikmuseum Hugo Junkers,on_display
+Sukhoi,Su-22,M4,25+09,,,fixed_wing,monoplane,military,ground_attack,,Ex-NVA Su-22M4 in Bundeswehr markings.,Su22; Su22M4; Fitter,Technikmuseum Hugo Junkers,on_display
+Sukhoi,Su-22,UM3K,127,,,fixed_wing,monoplane,military,trainer,,Ex-NVA two-seat Su-22UM3K.,Su22; Su22UM3K; Fitter,Technikmuseum Hugo Junkers,on_display
+PZL-Bielsko,SZD-9,bis Bocian,D-8245,,,fixed_wing,monoplane,civilian,trainer,,Two-seat training glider.,SZD9; Bocian,Technikmuseum Hugo Junkers,on_display
+Yakovlev,Yak-27,R,77,,,fixed_wing,monoplane,military,recon,,Ex-Soviet Yak-27R reconnaissance aircraft displayed with bort number 77.,Yak27; Mangrove; Yak27R,Technikmuseum Hugo Junkers,on_display
+Zlin,Z-37,Cmelak,D-ESMX,,,fixed_wing,monoplane,civilian,utility,,Agricultural Cmelak in German civil markings.,Z37; Cmelak,Technikmuseum Hugo Junkers,on_display
+Spalinger,S.18,,D-0280,,,fixed_wing,monoplane,civilian,private,,Vintage glider listed in the museum inventory as Spaltz A / D-0280; type attribution uncertain.,S18; Spalinger,Technikmuseum Hugo Junkers,on_display

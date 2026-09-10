@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,F-104,G,23+36,,,fixed_wing,monoplane,military,fighter,,On a pole at Roth in the false code 23+99 with AKG 51 markings; repainted with AG 51 tail markings in 2012 (International F-104 Society).,F104;F104G;Starfighter;23+99;cn 8011,Fliegerhorst Roth,on_display
+Lockheed,F-104,RF-104G,25+07,,,fixed_wing,monoplane,military,recon,,"Cockpit section at the Offizierschule der Luftwaffe, Roth (916-starfighter German fate list, 2025).",F104;RF104G;Starfighter;cn 8265;F104RF104G,Fliegerhorst Roth,on_display

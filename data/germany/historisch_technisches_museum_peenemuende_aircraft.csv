@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Fieseler,Fi 103,,,,,missile_rocket,,military,cruise,,"Full-scale replica of the V-1 flying bomb, displayed on a launch ramp in the outdoor area of the former power station.",Fi103; V-1; V1; Buzz Bomb,Historisch-Technisches Museum Peenemünde,on_display
+Peenemünde,A4,,,,,missile_rocket,,military,ballistic,,Full-scale replica of the A4 (V-2) ballistic rocket in the outdoor area. The original A4 was developed on this site.,A4; V-2; V2; Aggregat 4,Historisch-Technisches Museum Peenemünde,on_display

@@ -1,0 +1,30 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aero,L-29,Delphin,340,,,fixed_wing,monoplane,military,trainer,,"Ex-NVA jet trainer displayed with East German tactical number 340. Museum inventory list, confirmed 2025.",L29; L-29 Delfin; Maya,Luftfahrtmuseum Finowfurt,on_display
+Antonov,An-2,T,DM-SKO,,,fixed_wing,biplane,civilian,utility,,"Ex-DDR agricultural/utility An-2 in Interflug-era markings. Museum inventory list, confirmed 2025.",An2; Colt; An2T,Luftfahrtmuseum Finowfurt,on_display
+Antonov,An-2,T,RA-05825,,,fixed_wing,biplane,civilian,utility,,"Second An-2 at the museum, carrying a Russian registration from its post-1990 civil career. Museum inventory list, confirmed 2025.",An2; Colt; An2T,Luftfahrtmuseum Finowfurt,on_display
+Ilyushin,Il-2,M3,,,,fixed_wing,monoplane,military,ground_attack,,Recovered wreck/relic of a Soviet Il-2 Sturmovik shot down in the area; displayed unrestored. No tactical number carried.,Il2; Il-2M3; Sturmovik; Shturmovik,Luftfahrtmuseum Finowfurt,on_display
+Ilyushin,Il-14,P,DM-VAD,,,fixed_wing,monoplane,civilian,transport,,Ex-DDR Il-14 displayed in East German civil markings; identity as listed in the museum inventory and not independently confirmed.,Il14; Crate; Il14P,Luftfahrtmuseum Finowfurt,on_display
+Focke-Wulf,Fw 190,A-9,,,,fixed_wing,monoplane,military,fighter,,Relic/recovered airframe carrying Werknummer 560024; displayed as a Fw 190 A-9. Museum inventory list.,Fw190; Wnr 560024; FW190A9,Luftfahrtmuseum Finowfurt,on_display
+Kamov,Ka-26,,DM-SPU,,,rotary_wing,,civilian,utility,,Ex-DDR agricultural helicopter in Interflug Agrarflug markings.,Ka26; Hoodlum,Luftfahrtmuseum Finowfurt,on_display
+Kamov,Ka-26,,D-HOAU,,,rotary_wing,,civilian,utility,,Second Ka-26 carrying a post-reunification German civil registration.,Ka26; Hoodlum,Luftfahrtmuseum Finowfurt,on_display
+Let,L-200,A Morava,DM-WLA,,,fixed_wing,monoplane,civilian,private,,Czechoslovak-built light twin in East German civil markings.,L200; Morava,Luftfahrtmuseum Finowfurt,on_display
+Mikoyan-Gurevich,MiG-15,UTI,135,,,fixed_wing,monoplane,military,trainer,,Ex-NVA two-seat trainer displayed with tactical number 135.,MiG15; MiG15UTI; Midget,Luftfahrtmuseum Finowfurt,on_display
+Mikoyan-Gurevich,MiG-17,F,08,,,fixed_wing,monoplane,military,fighter,,Ex-NVA MiG-17F displayed with the number 08.,MiG17; Fresco; MiG17F,Luftfahrtmuseum Finowfurt,on_display
+Mikoyan-Gurevich,MiG-21,F-13,708,,,fixed_wing,monoplane,military,fighter,,Ex-NVA first-generation MiG-21 with tactical number 708.,MiG21; MiG21F13; Fishbed,Luftfahrtmuseum Finowfurt,on_display
+Mikoyan-Gurevich,MiG-21,M,589,,,fixed_wing,monoplane,military,fighter,,Ex-NVA MiG-21M with tactical number 589.,MiG21; MiG21M; Fishbed,Luftfahrtmuseum Finowfurt,on_display
+Mikoyan-Gurevich,MiG-21,SPS,22+38,,,fixed_wing,monoplane,military,fighter,,Ex-NVA MiG-21SPS wearing the Bundeswehr taktisches Kennzeichen 22+38 applied after the 1990 takeover.,MiG21; MiG21SPS; Fishbed,Luftfahrtmuseum Finowfurt,on_display
+Mikoyan-Gurevich,MiG-21,UM,23+61,,,fixed_wing,monoplane,military,trainer,,Ex-NVA two-seat MiG-21UM in Bundeswehr markings 23+61.,MiG21; MiG21UM; Mongol,Luftfahrtmuseum Finowfurt,on_display
+Mikoyan-Gurevich,MiG-23,BN,20+57,,,fixed_wing,monoplane,military,ground_attack,,Ex-NVA MiG-23BN fighter-bomber wearing Bundeswehr code 20+57.,MiG23; MiG23BN; Flogger,Luftfahrtmuseum Finowfurt,on_display
+Mikoyan-Gurevich,MiG-23,S,08,,,fixed_wing,monoplane,military,fighter,,Ex-Soviet MiG-23S displayed with bort number 08; distinct from the MiG-17F also numbered 08.,MiG23; MiG23S; Flogger,Luftfahrtmuseum Finowfurt,on_display
+Mikoyan-Gurevich,MiG-23,UB,720,,,fixed_wing,monoplane,military,trainer,,Ex-NVA two-seat MiG-23UB with tactical number 720.,MiG23; MiG23UB; Flogger,Luftfahrtmuseum Finowfurt,on_display
+Mil,Mi-8,T,D-HOXA,,,rotary_wing,,civilian,transport,,Ex-NVA Mi-8T later civil-registered in Germany as D-HOXA.,Mi8; Hip; Mi8T,Luftfahrtmuseum Finowfurt,on_display
+PZL-Mielec,M-18,A Dromader,D-FOLO,,,fixed_wing,monoplane,civilian,utility,,Polish agricultural aircraft in German civil markings.,M18; Dromader; M18A,Luftfahrtmuseum Finowfurt,on_display
+PZL-Swidnik,Mi-2,,D-HZPL,,,rotary_wing,,civilian,utility,,Polish-built Mi-2 in German civil markings.,Mi2; Hoplite,Luftfahrtmuseum Finowfurt,on_display
+Sud Aviation,Alouette II,SE 3130,76+80,,,rotary_wing,,military,utility,,Ex-Bundeswehr Heeresflieger Alouette II with taktisches Kennzeichen 76+80.,Alouette 2; SE3130; SE 3130,Luftfahrtmuseum Finowfurt,on_display
+Sukhoi,Su-22,M4,741,,,fixed_wing,monoplane,military,ground_attack,,Ex-NVA Su-22M4 fighter-bomber with tactical number 741.,Su22; Su22M4; Fitter,Luftfahrtmuseum Finowfurt,on_display
+Tupolev,Tu-134,A,DDR-SCH,,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-Interflug Tu-134A in East German airline markings; walk-through cabin exhibit.,Tu134; Tu134A; Crusty,Luftfahrtmuseum Finowfurt,on_display
+Yakovlev,Yak-28,R,91,,,fixed_wing,monoplane,military,recon,,"Ex-Soviet Yak-28R reconnaissance aircraft with bort number 91, left behind by the Western Group of Forces.",Yak28; Brewer; Yak28R,Luftfahrtmuseum Finowfurt,on_display
+Yakovlev,Yak-52,A,RA-70977,,,fixed_wing,monoplane,civilian,trainer,,Yak-52 in Russian civil markings.,Yak52; Yak52A,Luftfahrtmuseum Finowfurt,on_display
+Zlin,Z-37,Cmelak,DM-SVT,,,fixed_wing,monoplane,civilian,utility,,Agricultural Cmelak in East German civil markings.,Z37; Cmelak; Z-37A; Z37A,Luftfahrtmuseum Finowfurt,on_display
+Zlin,Z-37,Cmelak,D-ESLZ,,,fixed_wing,monoplane,civilian,utility,,Agricultural Cmelak in German civil markings.,Z37; Cmelak; Z-37A; Z37A,Luftfahrtmuseum Finowfurt,on_display
+Zlin,Z-37,Cmelak,D-ESQT,,,fixed_wing,monoplane,civilian,utility,,Agricultural Cmelak in German civil markings.,Z37; Cmelak; Z-37A; Z37A,Luftfahrtmuseum Finowfurt,on_display

@@ -1,0 +1,152 @@
+name,city,state_province,country,postal_code,region,address,website,access_type,latitude,longitude
+Deutsches Museum,München,Bayern,Germany,80538,Europe,Museumsinsel 1,https://www.deutsches-museum.de,public,48.12977,11.58348
+Militärhistorisches Museum der Bundeswehr – Flugplatz Berlin-Gatow,Berlin,Berlin,Germany,14089,Europe,Am Flugplatz Gatow 33,https://gatow.mhmbw.de,public,52.47194,13.13873
+Technik Museum Speyer,Speyer,Rheinland-Pfalz,Germany,67346,Europe,Am Technik Museum 1,https://speyer.technik-museum.de,public,49.31250,8.44639
+Technik Museum Sinsheim,Sinsheim,Baden-Württemberg,Germany,74889,Europe,Museumsplatz 1,https://sinsheim.technik-museum.de,public,49.23861,8.89667
+Flugausstellung Hermeskeil,Hermeskeil,Rheinland-Pfalz,Germany,54411,Europe,Habersberg 1,https://www.flugausstellung.de,public,49.68567,6.96134
+Luftfahrtmuseum Wernigerode,Wernigerode,Sachsen-Anhalt,Germany,38855,Europe,Gießerweg 1,https://www.luftfahrtmuseum-wernigerode.de,public,51.83951,10.77306
+Luftfahrtmuseum Laatzen-Hannover,Laatzen,Niedersachsen,Germany,30880,Europe,Ulmer Straße 2,https://luftfahrtmuseum-hannover.de,public,52.32263,9.79224
+Hubschraubermuseum Bückeburg,Bückeburg,Niedersachsen,Germany,31675,Europe,Sablé-Platz 6,https://www.hubschraubermuseum.de,public,52.26148,9.04701
+Militärhistorisches Museum der Bundeswehr Dresden,Dresden,Sachsen,Germany,01099,Europe,Olbrichtplatz 2,https://dresden.mhmbw.de,public,51.07856,13.76015
+Deutsches Technikmuseum Berlin,Berlin,Berlin,Germany,10963,Europe,Trebbiner Straße 9,https://technikmuseum.berlin,public,52.49740,13.37674
+Zeppelin Museum Friedrichshafen,Friedrichshafen,Baden-Württemberg,Germany,88045,Europe,Seestraße 22,https://www.zeppelin-museum.de,public,47.65079,9.48317
+Dornier Museum Friedrichshafen,Friedrichshafen,Baden-Württemberg,Germany,88046,Europe,Claude-Dornier-Platz 1,https://www.dorniermuseum.de,public,47.67049,9.51750
+Luftfahrtmuseum Finowfurt,Schorfheide,Brandenburg,Germany,16244,Europe,Museumsstraße 1,https://luftfahrtmuseum-finowfurt.de/,public,52.831971,13.676791
+Flugplatzmuseum Cottbus,Cottbus,Brandenburg,Germany,03046,Europe,Fichtestraße 1,https://www.flugplatzmuseumcottbus.de/,public,51.765503,14.295296
+Luftfahrttechnisches Museum Rothenburg,Rothenburg/Oberlausitz,Sachsen,Germany,02929,Europe,Friedensstraße 105a,https://luftfahrtmuseum-rothenburg.de/,public,51.36419,14.95409
+Luftfahrttechnisches Museum Rechlin,Rechlin,Mecklenburg-Vorpommern,Germany,17248,Europe,Am Claassee 1,https://www.luftfahrttechnisches-museum-rechlin.de/,public,53.35055,12.72750
+Airpark Zehdenick,Zehdenick,Brandenburg,Germany,16792,Europe,Gewerbegebiet Karlshof,,appointment,52.99395,13.34133
+Rechlin-Lärz Luftfahrtmuseum,Lärz,Mecklenburg-Vorpommern,Germany,17248,Europe,Flugplatz Rechlin-Lärz,,public,53.30499,12.74077
+Interessenverein Luftfahrt Neuenkirchen,Neuenkirchen,Mecklenburg-Vorpommern,Germany,17039,Europe,Am Gutshaus 17,https://www.ivln.de/,appointment,53.61186,13.32035
+Technikpark Grimmen,Grimmen,Mecklenburg-Vorpommern,Germany,18507,Europe,,https://www.technikpark-mv.de/,public,54.11905,13.04965
+Flugwelt Altenburg-Nobitz,Nobitz,Thüringen,Germany,04603,Europe,Am Flughafen 3,https://www.flugwelt-altenburg-nobitz.de/,public,50.98205,12.51707
+Hans-Grade-Museum Borkheide,Borkheide,Brandenburg,Germany,14822,Europe,,https://www.grade-museum.de/,public,52.20038,12.76612
+Shelter Albrecht,Niedergörsdorf,Brandenburg,Germany,14913,Europe,"Niedergörsdorfer Allee 4, Altes Lager",https://shelter-albrecht.de/,appointment,51.99838,13.00256
+Flughafen Berlin-Tempelhof,Berlin,Berlin,Germany,12101,Europe,Tempelhofer Damm 45,https://www.thf-berlin.de/,public,52.47683,13.38767
+Technikmuseum Hugo Junkers,Dessau-Roßlau,Sachsen-Anhalt,Germany,06846,Europe,Kühnauer Straße 161a,https://technikmuseum-dessau.org/,public,51.83639,12.20889
+Grenzlandmuseum Eichsfeld,Teistungen,Thüringen,Germany,37339,Europe,,https://www.grenzlandmuseum.de/,public,51.44560,10.35147
+Otto-Lilienthal-Verein Stölln,Gollenberg,Brandenburg,Germany,14728,Europe,"Otto-Lilienthal-Straße 50, OT Stölln",https://www.otto-lilienthal.de/,public,52.745250,12.384056
+Technik-Museum Pütnitz,Ribnitz-Damgarten,Mecklenburg-Vorpommern,Germany,18311,Europe,Flugplatzallee 5,https://technikmuseum-puetnitz.de/,public,54.26621,12.41685
+Verkehrsmuseum Dresden,Dresden,Sachsen,Germany,01067,Europe,Augustusstraße 1,https://www.verkehrsmuseum-dresden.de/,public,51.052069,13.739503
+Baade 152 Flughafen Dresden,Dresden,Sachsen,Germany,01109,Europe,"Flughafen Dresden, Wilhelmine-Reichard-Ring 1",https://www.verkehrsmuseum-dresden.de/,appointment,51.12461,13.76602
+Flugsportinformationszentrum Gellmersdorf,Angermünde,Brandenburg,Germany,16278,Europe,"Flugplatz Crussow, OT Gellmersdorf",,appointment,53.04324,13.97454
+Flugzeugmuseum Cämmerswalde,Neuhausen/Erzgebirge,Sachsen,Germany,09544,Europe,"Hauptstraße 104, OT Cämmerswalde",https://www.gaststaetteamflugzeug.de/,public,50.68177,13.49230
+Otto-Lilienthal-Museum Anklam,Anklam,Mecklenburg-Vorpommern,Germany,17389,Europe,Ellbogenstraße 1,https://www.lilienthal-museum.de/,public,53.85379,13.70458
+Hangar 10,Zirchow,Mecklenburg-Vorpommern,Germany,17419,Europe,Flughafen Heringsdorf,https://www.hangar10.de/,public,53.87853,14.15102
+Fliegendes Museum Großenhain,Großenhain,Sachsen,Germany,01558,Europe,Zum Fliegerhorst 13,https://www.fliegendes-museum.de/,public,51.30448,13.54662
+MiG-Museum Sömmerda-Dermsdorf,Kölleda,Thüringen,Germany,99625,Europe,"Flugplatz Sömmerda-Dermsdorf, OT Dermsdorf",https://flugservice-soemmerda.de/,public,51.20804,11.27048
+Eisenbahn- und Technikmuseum Rügen,Binz,Mecklenburg-Vorpommern,Germany,18609,Europe,Prora,http://www.etm-ruegen.de/,public,54.43269,13.57963
+Deutsche Raumfahrtausstellung Morgenröthe-Rautenkranz,Muldenhammer,Sachsen,Germany,08262,Europe,"Bahnhofstraße 4, OT Morgenröthe-Rautenkranz",https://deutsche-raumfahrtausstellung.de/,public,50.42865,12.49523
+"MiG-21 Denkmal, Flugplatz Peenemünde",Peenemünde,Mecklenburg-Vorpommern,Germany,17449,Europe,Flugplatz Peenemünde,,public,54.15944,13.76836
+"MiG-21 Denkmal, Flugplatz Neuhardenberg",Neuhardenberg,Brandenburg,Germany,15320,Europe,Flugplatz Neuhardenberg,,public,52.61415,14.24280
+"MiG-21 Denkmal, Flugplatz Welzow",Welzow,Brandenburg,Germany,03119,Europe,Flugplatz Welzow,,public,51.56039,14.21038
+"MiG-21 Denkmal, Flugplatz Kamenz",Kamenz,Sachsen,Germany,01917,Europe,Flugplatz Kamenz,,public,51.29683,14.12635
+"MiG-21 Denkmal, Finsterwalde",Finsterwalde,Brandenburg,Germany,03238,Europe,,,public,51.59594,13.72474
+"MiG-21 Denkmal, Grießen bei Forst",Forst (Lausitz),Brandenburg,Germany,03149,Europe,OT Grießen,,public,51.72608,14.60134
+Sammlung Kleber Neugersdorf,Ebersbach-Neugersdorf,Sachsen,Germany,02727,Europe,,,appointment,50.97474,14.61023
+"MiG-21 Denkmal, Allstedt",Allstedt,Sachsen-Anhalt,Germany,06542,Europe,,,public,51.43930,11.40736
+"MiG-21 Denkmal, Flugplatz Stendal",Stendal,Sachsen-Anhalt,Germany,39576,Europe,Flugplatz Stendal-Borstel,,public,52.58516,11.78388
+"MiG-21 Denkmal, Staffelde bei Tangermünde",Tangermünde,Sachsen-Anhalt,Germany,39590,Europe,"Abschleppdienst Freytag, OT Staffelde",,public,52.54111,11.94537
+"MiG-21 Denkmal, MaxCar Blankenburg",Blankenburg (Harz),Sachsen-Anhalt,Germany,38889,Europe,,,public,51.78152,10.92255
+"MiG-21 Denkmal, Autohaus Grieb Miesitz",Triptis,Thüringen,Germany,07819,Europe,OT Miesitz,,public,50.74632,11.84114
+Eisenbahnmuseum Insel Usedom,Zinnowitz,Mecklenburg-Vorpommern,Germany,17454,Europe,,,public,54.07154,13.90261
+AlliiertenMuseum,Berlin,Berlin,Germany,14195,Europe,Clayallee 135,https://www.alliiertenmuseum.de/,public,52.45569,13.27232
+Da Capo Oldtimermuseum,Leipzig,Sachsen,Germany,04229,Europe,Karl-Heine-Straße 105,https://www.dacapo-leipzig.de/,public,51.32898,12.32597
+phanTECHNIKUM,Wismar,Mecklenburg-Vorpommern,Germany,23970,Europe,Zum Festplatz 3,https://www.landesmuseum-mv.de/,public,53.89363,11.43126
+Fliegerhorst Holzdorf,Jessen (Elster),Sachsen-Anhalt,Germany,06917,Europe,"Fliegerhorst Holzdorf, OT Holzdorf",,restricted,51.81888,12.97077
+"MiG-23 Denkmal, Flughafen Rostock-Laage",Laage,Mecklenburg-Vorpommern,Germany,18299,Europe,Flughafen Rostock-Laage,,public,53.91909,12.27716
+Ostdeutsches Fahrzeug- und Technikmuseum Benneckenstein,Oberharz am Brocken,Sachsen-Anhalt,Germany,38877,Europe,OT Benneckenstein,http://mts-oldtimermuseum.de/,public,51.66136,10.72416
+AGRONEUM Alt Schwerin,Alt Schwerin,Mecklenburg-Vorpommern,Germany,17214,Europe,Dorfstraße 33,https://www.agroneum-altschwerin.de/,public,53.51100,12.35463
+Traditionssammlung Fliegerhorst Laage,Laage,Mecklenburg-Vorpommern,Germany,18299,Europe,Fliegerhorst Laage,,restricted,53.91848,12.33698
+Historisch-Technisches Museum Peenemünde,Peenemünde,Mecklenburg-Vorpommern,Germany,17449,Europe,Im Kraftwerk,https://museum-peenemuende.de/,public,54.137778,13.768889
+Aeronauticum Deutsches Luftschiff- und Marinefliegermuseum,Wurster Nordseeküste,Niedersachsen,Germany,27639,Europe,"Peter-Strasser-Platz 3, Nordholz",https://www.aeronauticum.de,public,53.7751,8.6389
+Ju52-Halle Wunstorf,Wunstorf,Niedersachsen,Germany,31515,Europe,"Fliegerhorst Wunstorf, Am Flugplatz",https://www.ju52-halle.de,public,52.43723,9.39293
+Bremenhalle Bremen Airport,Bremen,Bremen,Germany,28199,Europe,"Flughafenallee 20, Terminal 3",https://www.bremen-airport.com,public,53.0475,8.7867
+Quax-Hangar Paderborn-Lippstadt,Büren,Nordrhein-Westfalen,Germany,33142,Europe,"Flughafen Paderborn-Lippstadt, Flughafenstraße 33",https://www.quax-flieger.de,public,51.6141,8.6163
+Airbus Museumsinsel Hamburg-Finkenwerder,Hamburg,Hamburg,Germany,21129,Europe,"Airbus Werk Finkenwerder, Kreetslag 10",https://werksfuehrung.de,appointment,53.5333,9.8353
+Luftbrückenmuseum Faßberg,Faßberg,Niedersachsen,Germany,29328,Europe,"Fliegerhorst Faßberg, Zum Fliegerhorst",https://luftbrueckenmuseum.de,public,52.88500,10.18162
+Flugplatzmuseum Gütersloh,Gütersloh,Nordrhein-Westfalen,Germany,33334,Europe,"Marienfelder Straße, ehem. RAF Gütersloh",https://www.flugplatzmuseum-guetersloh.de,appointment,51.91975,8.37284
+Royal Air Force Museum Laarbruch-Weeze,Weeze,Nordrhein-Westfalen,Germany,47652,Europe,Flughafen-Ring 6,https://laarbruch-museum.net,public,51.59459,6.16268
+Deutsches Marinemuseum Wilhelmshaven,Wilhelmshaven,Niedersachsen,Germany,26382,Europe,Südstrand 125,https://www.marinemuseum.de,public,53.51304,8.14076
+Traditionsgemeinschaft Jagdbombergeschwader 41 Husum,Rantrum,Schleswig-Holstein,Germany,25873,Europe,Osterkoppeln 9,,appointment,54.43815,9.13500
+Traditionsgemeinschaft Jagdbombergeschwader 43 Oldenburg,Oldenburg,Niedersachsen,Germany,26127,Europe,"Alexanderstraße 461, ehem. Fliegerhorst Oldenburg",https://fliegerhorst-oldenburg.de,appointment,53.17287,8.19534
+Fliegerhorst Wittmundhafen Torwächter,Wittmund,Niedersachsen,Germany,26409,Europe,"Fliegerhorst Wittmundhafen, Webershausen",,restricted,53.54812,7.66200
+Fliegerhorst Schleswig-Jagel Torwächter,Jagel,Schleswig-Holstein,Germany,24888,Europe,"Fliegerhorst Schleswig, Jagel",,public,54.46204,9.51869
+Fliegerhorst Hohn Torwächter,Hohn,Schleswig-Holstein,Germany,24806,Europe,Fliegerhorst Hohn,,public,54.31370,9.53953
+Fliegerhorst Nörvenich Torwächter,Nörvenich,Nordrhein-Westfalen,Germany,52388,Europe,Fliegerhorst Nörvenich,,public,50.82921,6.65226
+Heeresflugplatz Celle Torwächter,Celle,Niedersachsen,Germany,29223,Europe,Heeresflugplatz Celle-Wietzenbruch,,restricted,52.59511,10.03257
+Fliegerhorst Diepholz Torwächter,Diepholz,Niedersachsen,Germany,49356,Europe,Fliegerhorst Diepholz,,public,52.58555,8.34089
+Heeresflugplatz Faßberg Traditionssammlung,Faßberg,Niedersachsen,Germany,29328,Europe,Heeresflugplatz Faßberg,,restricted,52.88500,10.18162
+NATO Air Base Geilenkirchen Lehrsammlung,Geilenkirchen,Nordrhein-Westfalen,Germany,52511,Europe,NATO Air Base Geilenkirchen,,restricted,50.95554,6.05618
+Flughafen Köln/Bonn Flugbereitschaft Denkmalflugzeuge,Köln,Nordrhein-Westfalen,Germany,51147,Europe,"Flughafen Köln/Bonn, Fliegerhorst Wahn",,restricted,50.86887,7.10753
+Marinefliegerstützpunkt Nordholz Torwächter,Wurster Nordseeküste,Niedersachsen,Germany,27639,Europe,Marinefliegerstützpunkt Nordholz,,public,53.72083,8.58137
+Militärgeschichtliche Sammlung Westfalengeschwader Rheine-Bentlage,Rheine,Nordrhein-Westfalen,Germany,48431,Europe,"Theodor-Blank-Kaserne, Schüttorfer Damm 1",https://westfalengeschwader.com,restricted,52.27423,7.42775
+Fliegerhorst Wunstorf Lehrsammlung,Wunstorf,Niedersachsen,Germany,31515,Europe,Fliegerhorst Wunstorf,,restricted,52.45526,9.42821
+"F-104 Starfighter Denkmal, Kropp",Kropp,Schleswig-Holstein,Germany,24848,Europe,Ortslage Kropp,,public,54.40502,9.48832
+Marseille-Kaserne Appen Starfighter,Appen,Schleswig-Holstein,Germany,25482,Europe,"Marseille-Kaserne, Unteroffizierschule der Luftwaffe",,restricted,53.65227,9.73717
+"F-104 Starfighter Denkmal, Auenhausen",Borgentreich,Nordrhein-Westfalen,Germany,34434,Europe,Auenhausen,,public,51.57649,9.25584
+"Movie Park Germany Starfighter, Bottrop",Bottrop,Nordrhein-Westfalen,Germany,46244,Europe,"Warner-Allee 1, Kirchhellen",https://www.movieparkgermany.de,public,51.62232,6.97492
+Von-Seydlitz-Kaserne Kalkar Starfighter,Kalkar,Nordrhein-Westfalen,Germany,47546,Europe,Von-Seydlitz-Kaserne,,restricted,51.73399,6.26848
+Fliegerhorst Jever Torwächter,Schortens,Niedersachsen,Germany,26419,Europe,Fliegerhorst Upjever,,restricted,53.53637,7.88704
+"Transall Damme, Flugplatz Damme",Damme,Niedersachsen,Germany,49401,Europe,"Flugplatz Damme, Osterfeine",https://www.flugplatz-damme.de,public,52.52630,8.23966
+"Transall Rotenburg, Flugplatz Rotenburg (Wümme)",Rotenburg (Wümme),Niedersachsen,Germany,27356,Europe,Flugplatz Rotenburg (Wümme),https://edxq.de,appointment,53.12972,9.35138
+Flugplatz Uetersen-Heist Sabre,Heist,Schleswig-Holstein,Germany,25491,Europe,Flugplatz Uetersen/Heist,https://edhe.jimdofree.com,public,53.64695,9.70373
+Deutsches Panzermuseum Munster,Munster,Niedersachsen,Germany,29633,Europe,Hans-Krüger-Straße 33,https://daspanzermuseum.de,public,52.98667,10.10898
+Internationales Luftfahrtmuseum Manfred Pflumm,Villingen-Schwenningen,Baden-Württemberg,Germany,78056,Europe,Spittelbronner Weg 78,https://www.sfg-schwenningen.de/flugplatz/museum/,public,48.06709,8.56923
+Luftraum Süd,Neresheim-Elchingen,Baden-Württemberg,Germany,73450,Europe,"Römerstraße 22, Flugplatz Aalen-Heidenheim-Elchingen",https://www.luftraum-sued.de/,appointment,48.78002,10.33025
+Deutsch-Kanadisches Luftwaffenmuseum Baden-Söllingen,Rheinmünster,Baden-Württemberg,Germany,77836,Europe,"Baden Airpark, Victoria Boulevard E 8",https://www.airforcemuseumsoellingen.de/,public,48.75964,8.04761
+Fahrzeugmuseum Marxzell,Marxzell,Baden-Württemberg,Germany,76359,Europe,Albtalstraße 2,https://www.fahrzeugmuseum-marxzell.de/,public,48.86127,8.44833
+Schwäbisches Bauern- und Technikmuseum Seifertshofen,Eschach,Baden-Württemberg,Germany,73569,Europe,Seifertshofen 3,https://www.museum-kiemele.de/,public,48.90923,9.83784
+Militärgeschichtliche Sammlung des Standortes Stetten am kalten Markt,Stetten am kalten Markt,Baden-Württemberg,Germany,72510,Europe,Albkaserne,https://www.bundeswehr.de/,appointment,48.12962,9.06364
+Motorworld Region Stuttgart,Böblingen,Baden-Württemberg,Germany,71034,Europe,Graf-Zeppelin-Platz 1,https://www.motorworld.de/region-stuttgart/,public,48.69156,9.00423
+Starfighter-Denkmal Stuttgart-Zuffenhausen,Stuttgart,Baden-Württemberg,Germany,70435,Europe,Zahn-Nopper-Straße (Firma Merkle),https://starfighter-stuttgart.de/,public,48.83099,9.16175
+F-104 Denkmal Ummendorf,Ummendorf,Baden-Württemberg,Germany,88444,Europe,,,public,48.05512,9.84058
+CF-104 Denkmal Black Forest Airport Lahr,Lahr/Schwarzwald,Baden-Württemberg,Germany,77933,Europe,Flugplatz Lahr,,public,48.36089,7.82703
+CF-104 Denkmal Söllingen,Rheinmünster,Baden-Württemberg,Germany,77836,Europe,,,public,48.75964,8.04761
+Traditionsverein Immelmann Sammlung Eschbach,Eschbach,Baden-Württemberg,Germany,79427,Europe,Gewerbepark Breisgau (ehem. Fliegerhorst Bremgarten),,appointment,47.89484,7.63544
+Gerhard Neumann Museum,Niederalteich,Bayern,Germany,94557,Europe,Hengersberger Straße 5,https://www.f-104.de/,appointment,48.76650,13.02578
+Flugmuseum Messerschmitt,Manching,Bayern,Germany,85077,Europe,"Rechlinerstraße, Flugplatz Manching",https://www.flugmuseum-messerschmitt.com/,appointment,48.71543,11.50208
+Militärgeschichtliche Sammlung Lechfeld,Graben,Bayern,Germany,86836,Europe,"Landsberger Straße 7, Lagerlechfeld",https://mgs-lechfeld.de/,appointment,48.17952,10.84328
+Fliegerhorst Lechfeld,Graben,Bayern,Germany,86836,Europe,Fliegerhorst Lechfeld,,restricted,48.18175,10.85885
+Fliegerhorstmuseum Leipheim,Leipheim,Bayern,Germany,89340,Europe,Albert-Einstein-Straße,https://www.fliegerhorstmuseum-leipheim.de/,public,48.44692,10.23726
+Museum für Zivil- und Wehrtechnik Uffenheim,Uffenheim,Bayern,Germany,97215,Europe,Wiesenstraße 20,https://zivilundwehrtechnik.de/,public,49.54838,10.23336
+Museum Stammheim,Kolitzheim,Bayern,Germany,97509,Europe,"Waldweg 3, Stammheim am Main",https://www.museum-stammheim.de/,public,49.92991,10.25171
+Muna-Museum Marktbergel,Marktbergel,Bayern,Germany,91613,Europe,Hennenfeld 18,https://www.muna-museum.de/,public,49.44224,10.36612
+Franks Fahrendes Militärmuseum,Betzenstein,Bayern,Germany,91282,Europe,Hüll 27,https://www.fahrendes-militaermuseum.de/,public,49.69881,11.42972
+Deutsches Fahrzeugmuseum Fichtelberg,Fichtelberg,Bayern,Germany,95686,Europe,Nagler Weg 9-10,https://www.amf-museum.de/,public,49.99837,11.85398
+Fliegermuseum Bad Wörishofen,Bad Wörishofen,Bayern,Germany,86825,Europe,Kemptener Straße 1A,https://www.fliegermuseum-badwoerishofen.com/,public,48.01128,10.60262
+Besucherpark des Flughafens München,München-Flughafen,Bayern,Germany,85356,Europe,Nordallee 7,https://www.munich-airport.de/besucherpark-90422,public,48.37980,11.76783
+Deutsch-Deutsches Museum Mödlareuth,Töpen,Bayern,Germany,95183,Europe,Mödlareuth 13,https://www.moedlareuth.de/,public,50.41484,11.88348
+Deutsches Flugpioniermuseum Gustav Weißkopf,Leutershausen,Bayern,Germany,91578,Europe,Plan 6,https://www.weisskopf.de/,public,49.30058,10.40904
+Fliegerhorstmuseum Jagdgeschwader 74 Neuburg,Neuburg an der Donau,Bayern,Germany,86633,Europe,"Flugplatz Neuburg, Alte Neuburger Straße",,restricted,48.73637,11.19488
+Starfighter-Denkmal Wilhelm-Frank-Kaserne Neuburg,Neuburg an der Donau,Bayern,Germany,86633,Europe,Wilhelm-Frank-Kaserne,,restricted,48.73637,11.19488
+Traditionsgemeinschaft Jagdbombergeschwader 34 Allgäu,Benningen,Bayern,Germany,87766,Europe,Junkersstraße 9,https://jabog34allgaeu.de/,public,47.98149,10.23452
+Starfighter-Denkmal Allgäu Airport Memmingen,Memmingerberg,Bayern,Germany,87766,Europe,Am Flughafen,,public,47.99059,10.23026
+Bundeswehr-Standort Memmingen TF-104G Cockpit,Memmingen,Bayern,Germany,87700,Europe,,,restricted,47.97883,10.16306
+Lehrsammlung Technisches Ausbildungszentrum der Luftwaffe Kaufbeuren,Kaufbeuren,Bayern,Germany,87600,Europe,"Fliegerhorst Kaufbeuren, Apfeltranger Straße 15",https://zms.bundeswehr.de/,appointment,47.88035,10.61651
+Fliegerhorst Manching,Manching,Bayern,Germany,85077,Europe,Fliegerhorst Manching,,restricted,48.71543,11.50208
+Militärgeschichtliche Sammlung Manching,Manching,Bayern,Germany,85077,Europe,"Waffensystemunterstützungszentrum 1, Fliegerhorst Manching",,restricted,48.71543,11.50208
+RF-104G Denkmal WIWeB Erding,Erding,Bayern,Germany,85435,Europe,,,restricted,48.30639,11.91419
+Fliegerhorst Roth,Roth,Bayern,Germany,91154,Europe,Otto-Lilienthal-Kaserne,,restricted,49.21243,11.09845
+Universität der Bundeswehr München,Neubiberg,Bayern,Germany,85577,Europe,Werner-Heisenberg-Weg 39,https://www.unibw.de/,restricted,48.08021,11.63837
+Starfighter-Denkmal Flugplatz Haßfurt,Haßfurt,Bayern,Germany,97437,Europe,Flugplatz Haßfurt-Schweinfurt,,public,50.04624,10.50699
+Starfighter-Denkmal Aich,Bodenkirchen,Bayern,Germany,84155,Europe,"Am Hubfeld 14, Aich",,public,48.42308,12.40953
+Starfighter-Denkmal Haldenwang,Haldenwang,Bayern,Germany,87490,Europe,Maschinenbau Haldenwang,,public,47.79839,10.33371
+Traditionsgemeinschaft Fursty Fliegerhorst Fürstenfeldbruck,Fürstenfeldbruck,Bayern,Germany,82242,Europe,"Straße der Luftwaffe 209, Gebäude 227",https://www.tg-fursty.de/,restricted,48.17947,11.25472
+Deutsches Segelflugmuseum mit Modellflug,Gersfeld (Rhön),Hessen,Germany,36129,Europe,Wasserkuppe 46,https://www.segelflugmuseum.de/,public,50.49842,9.94594
+Curioseum Willingen,Willingen (Upland),Hessen,Germany,34508,Europe,Düdinghäuser Straße 1,https://www.curioseum-willingen.de/,public,51.28013,8.67933
+August-Euler-Flugplatz Museum,Griesheim,Hessen,Germany,64295,Europe,Flughafenstraße 20,https://www.august-euler-museum.de/,appointment,49.85794,8.59087
+Grenzmuseum Point Alpha,Rasdorf,Hessen,Germany,36169,Europe,Platz der Deutschen Einheit 1,https://pointalpha.com/,public,50.71724,9.89720
+Rolls-Royce Deutschland Museum Oberursel,Oberursel (Taunus),Hessen,Germany,61440,Europe,Hohemarkstraße 60-70,https://www.gkmo.net/,appointment,50.20528,8.57896
+Lufthansa Group Hangar One,Frankfurt am Main,Hessen,Germany,60549,Europe,Flughafen Frankfurt Main,https://lufthansagrouphangar-one.com/,public,50.02441,8.55520
+Luftbrückendenkmal Frankfurt am Main,Frankfurt am Main,Hessen,Germany,60549,Europe,"Am Luftbrückendenkmal, ehem. Rhein-Main Air Base",,public,50.04272,8.56735
+Luftfahrzeugsammlung Bad Wildungen-Wega,Bad Wildungen,Hessen,Germany,34537,Europe,Ederstraße 3,,public,51.13045,9.17540
+Wehrtechnische Studiensammlung Koblenz,Koblenz,Rheinland-Pfalz,Germany,56070,Europe,Mayener Straße 85,https://www.vffwts.de/,public,50.36906,7.58536
+Starfighter-Denkmal Germersheim,Germersheim,Rheinland-Pfalz,Germany,76726,Europe,General-Kammhuber-Kaserne,,restricted,49.21373,8.37170
+Fliegerhorst Büchel Torwächter,Büchel,Rheinland-Pfalz,Germany,56823,Europe,,,public,50.18006,7.08335
+Fliegerhorst Büchel,Büchel,Rheinland-Pfalz,Germany,56823,Europe,Fliegerhorst Büchel,,restricted,50.18006,7.08335
+Starfighter-Denkmal Brauheck Cochem,Cochem,Rheinland-Pfalz,Germany,56812,Europe,Kaserne Brauheck,,restricted,50.13463,7.13704
+Pfalz-Flugzeugwerke Speyer,Speyer,Rheinland-Pfalz,Germany,67346,Europe,Flugplatz Speyer,,public,49.30229,8.45307
+Ramstein Air Base F-4 Phantom Display,Ramstein-Miesenbach,Rheinland-Pfalz,Germany,66877,Europe,Ramstein Air Base,https://www.ramstein.af.mil/,restricted,49.45403,7.59663
+Militärgeschichtliche Sammlung Hubschraubergeschwader 64,Laupheim,Baden-Württemberg,Germany,88471,Europe,"Kurt-Georg-Kiesinger-Kaserne, Walpertshofer Straße 13",https://zms.bundeswehr.de/,appointment,48.22772,9.86434
+Traditionsgemeinschaft Lufttransport LTG 61 Penzing,Penzing,Bayern,Germany,86929,Europe,Ehemaliger Fliegerhorst Landsberg/Lech,https://www.tg-ltg61.de/,appointment,48.07207,10.91243

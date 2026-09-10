@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,SPS,,,,fixed_wing,monoplane,military,fighter,,Ex-NVA MiG-21SPS shown with the cockpit and engine opened up; tactical number not confirmed. Seen June 2022.,MiG21; MiG21SPS; Fishbed,phanTECHNIKUM,on_display
+Fokker,Dr.I,,,,,fixed_wing,triplane,military,fighter,,Full-scale replica triplane.,DrI; Dr1; Triplane,phanTECHNIKUM,on_display
+Heinkel,He 178,,,,,fixed_wing,monoplane,military,experimental,,"Full-scale mock-up of the world's first turbojet aircraft, built to show its size rather than as an accurate reconstruction.",He178,phanTECHNIKUM,on_display
+Schneider,SG 38,,,,,fixed_wing,monoplane,civilian,trainer,,Schulgleiter SG 38 primary training glider.,SG38; Schulgleiter,phanTECHNIKUM,on_display

@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Ilyushin,Il-14,P,,,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-Interflug Il-14 standing at the Gaststätte Zum Flugzeug since 1973 and open to visitors inside; registration not confirmed and needs checking on site.,Il14; Il14P; Crate,Flugzeugmuseum Cämmerswalde,on_display
+Mikoyan-Gurevich,MiG-21,,,,,fixed_wing,monoplane,military,fighter,,Ex-NVA MiG-21 taken on charge in January 1968 and added to the display in 2001; variant and tactical number not confirmed.,MiG21; Fishbed,Flugzeugmuseum Cämmerswalde,on_display
+Mil,Mi-2,,,,,rotary_wing,,civilian,utility,,Mi-2 added to the display in 2006; registration not confirmed.,Mi2; Hoplite,Flugzeugmuseum Cämmerswalde,on_display

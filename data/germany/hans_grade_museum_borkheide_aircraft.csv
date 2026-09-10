@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Ilyushin,Il-18,V,DDR-STE,,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-Interflug Il-18V preserved beside the museum.,Il18; Il18V; Coot,Hans-Grade-Museum Borkheide,on_display
+Kamov,Ka-26,,D-HOAJ,,,rotary_wing,,civilian,utility,,Ka-26 in German civil markings.,Ka26; Hoodlum,Hans-Grade-Museum Borkheide,on_display
+Zlin,Z-37,A-2 Cmelak,D-EOYX,,,fixed_wing,monoplane,civilian,utility,,Agricultural Cmelak in German civil markings.,Z37; Cmelak,Hans-Grade-Museum Borkheide,on_display

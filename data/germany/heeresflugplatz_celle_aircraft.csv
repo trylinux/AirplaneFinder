@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+MBB,Bo 105,,88+12,,,rotary_wing,,military,utility,,"MBB Bo 105 of the German Army, c/n 6212, gate guardian at the Heeresflugplatz Celle-Wietzenbruch.",Bo105; Bo 105; BO105,Heeresflugplatz Celle Torwächter,on_display
+Sud-Aviation,Alouette II,SE 3130,75+95,,,rotary_wing,,military,utility,,"Sud-Aviation Alouette II, c/n 1530, preserved at Celle. Sources place this airframe both at Celle and at Köln-Wahn; it is recorded here at Celle and the conflict is flagged in the notes.",Alouette II; AlouetteII; SE3130,Heeresflugplatz Celle Torwächter,on_display
+Transall,C-160,D,50+81,,,fixed_wing,monoplane,military,transport,,Ex-Luftwaffe Transall C-160D held at Celle as a ground instructional airframe inside the airfield.,C160D; C-160D; Transall; C160,Heeresflugplatz Celle Torwächter,on_display

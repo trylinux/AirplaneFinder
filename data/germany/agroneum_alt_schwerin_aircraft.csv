@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Antonov,An-2,R,,,,fixed_wing,biplane,civilian,utility,,Agricultural An-2 in the open-air agricultural museum; registration not confirmed.,An2; Colt; An2R,AGRONEUM Alt Schwerin,on_display
+Kamov,Ka-26,,,,,rotary_wing,,civilian,utility,,Agricultural Ka-26 in the open-air agricultural museum; registration not confirmed.,Ka26; Hoodlum,AGRONEUM Alt Schwerin,on_display

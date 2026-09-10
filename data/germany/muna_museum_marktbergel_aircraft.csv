@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,UH-1,D,70+92,,,rotary_wing,,military,utility,,Ex-Bundeswehr Huey at the former Munitionsanstalt museum; open April to October.,UH1;UH1D;Huey;Iroquois,Muna-Museum Marktbergel,on_display
+Sud Aviation,Alouette II,,75+20,,,rotary_wing,,military,utility,,Ex-Bundeswehr Alouette II at the former Munitionsanstalt museum.,Alouette;SE3130;Alouette 2,Muna-Museum Marktbergel,on_display

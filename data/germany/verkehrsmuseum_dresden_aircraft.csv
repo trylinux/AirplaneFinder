@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aero,Aero 45,S,DM-SGE,,,fixed_wing,monoplane,civilian,private,,Czechoslovak light twin displayed in Deutsche Lufthansa (Ost) livery; earlier registered DM-VMD.,Aero45; Super Aero; DM-VMD,Verkehrsmuseum Dresden,on_display
+Grade,Eindecker,,,,,fixed_wing,monoplane,civilian,experimental,,"Hans Grade monoplane, one of the earliest German powered aircraft; no registration.",Grade Eindecker; Grade Libelle,Verkehrsmuseum Dresden,on_display
+Blériot,XI,,,,,fixed_wing,monoplane,civilian,experimental,,Full-scale replica of the 1909 Blériot XI.,Bleriot XI; BleriotXI,Verkehrsmuseum Dresden,on_display

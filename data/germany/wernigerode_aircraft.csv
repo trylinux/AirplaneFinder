@@ -1,0 +1,62 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Let,Ae-45,S,HA-OMD,,,fixed_wing,monoplane,civilian,private,,Ex-Hungarian.,Ae-45; Ae45; Aero 45; Ae45S,Luftfahrtmuseum Wernigerode,on_display
+Sud Aviation,Alouette III,SA 316B,V-256,Alouette III,,rotary_wing,,military,utility,,Ex-Swiss Air Force.,Alouette III; SA 316; SA316,Luftfahrtmuseum Wernigerode,on_display
+Agusta-Bell,AB 47,G-2,MM80478,Sioux,,rotary_wing,,military,utility,,"Ex-Italian, coded L.",AB 47; Bell 47; Sioux,Luftfahrtmuseum Wernigerode,on_display
+Antonov,An-2,,SP-WOS,,,fixed_wing,biplane,military,utility,,Cockpit section only. Cockpit section only.,An-2; An2; Colt,Luftfahrtmuseum Wernigerode,on_display
+Antonov,An-2,,HA-MER,,,fixed_wing,biplane,military,utility,,Ex-Hungarian.,An-2; An2; Colt,Luftfahrtmuseum Wernigerode,on_display
+Beechcraft,Queen Air,80,5X-SEM,Queen Air,,fixed_wing,monoplane,civilian,commercial_transport,,In the Luftfahrtmuseum Wernigerode (also published as Museum für Luftfahrt und Technik Wernigerode) in the Harz.,Queen Air; Beech 65,Luftfahrtmuseum Wernigerode,on_display
+Bell,UH-1,D,73+01,Iroquois,,rotary_wing,,military,utility,,Bundeswehr UH-1D.,UH-1; UH1; Huey; Iroquois; UH1D,Luftfahrtmuseum Wernigerode,on_display
+Bell,UH-1,D,73+05,Iroquois,,rotary_wing,,military,utility,,Bundeswehr UH-1D.,UH-1; UH1; Huey; Iroquois; UH1D,Luftfahrtmuseum Wernigerode,on_display
+Breguet,Br.1150,Atlantic,61+09,Atlantic,,fixed_wing,monoplane,military,recon,,Cockpit section of a German Navy Atlantic. Cockpit section only.,Br 1150; Atlantic; Atlantique,Luftfahrtmuseum Wernigerode,on_display
+Blackburn,Buccaneer,S.2B,XX892,,,fixed_wing,monoplane,military,ground_attack,,Fuselage of an ex-Royal Air Force Buccaneer. Fuselage only.,Buccaneer,Luftfahrtmuseum Wernigerode,on_display
+Bücker,Bü 181,B-1,D-EBUC,Bestmann,,fixed_wing,monoplane,military,trainer,,Also marked VN174.,Bü 181; Bu 181; Bestmann,Luftfahrtmuseum Wernigerode,on_display
+Canadair,CL-13,B Sabre Mk 6,FU-972,Sabre,,fixed_wing,monoplane,military,fighter,,Ex-Belgian Air Force Sabre.,CL-13; CL13; F-86; F86; Sabre,Luftfahrtmuseum Wernigerode,on_display
+Bücker,Bü 131,B,,Jungmann,,fixed_wing,biplane,military,trainer,,Spanish-built Bücker Bü 131 Jungmann.,Bü 131; Bu 131; Jungmann,Luftfahrtmuseum Wernigerode,on_display
+Cessna,T-37,B,66-8002,Tweety Bird,,fixed_wing,monoplane,military,trainer,,"Ex-United States Air Force, code EN.",T-37; T37; T37B; Tweet,Luftfahrtmuseum Wernigerode,on_display
+Dassault,Mirage III,R,R-2113,,,fixed_wing,monoplane,military,recon,,Ex-Swiss Air Force.,Mirage III; Mirage 3,Luftfahrtmuseum Wernigerode,on_display
+de Havilland,Vampire,FB.6,XE995,,,fixed_wing,monoplane,military,fighter,,Ex-Royal Air Force.,Vampire,Luftfahrtmuseum Wernigerode,on_display
+de Havilland,Venom,FB.50,J-1635,,,fixed_wing,monoplane,military,ground_attack,,Ex-Swiss Air Force.,Venom,Luftfahrtmuseum Wernigerode,on_display
+Dornier,Do 27,A-4,D-EITE,,,fixed_wing,monoplane,military,utility,,In the Luftfahrtmuseum Wernigerode (also published as Museum für Luftfahrt und Technik Wernigerode) in the Harz.,Do 27; Do27,Luftfahrtmuseum Wernigerode,on_display
+Dornier,Do 28,D-2,D-IBSW,Skyservant,,fixed_wing,monoplane,military,utility,,In the Luftfahrtmuseum Wernigerode (also published as Museum für Luftfahrt und Technik Wernigerode) in the Harz.,Do 28; Do28; Skyservant,Luftfahrtmuseum Wernigerode,on_display
+Fiat,G.91,R/3,31+00,Gina,,fixed_wing,monoplane,military,ground_attack,,Front fuselage only.,G.91; G91; Gina,Luftfahrtmuseum Wernigerode,on_display
+Fiat,G.91,R/3,,Gina,,fixed_wing,monoplane,military,ground_attack,,"Serial not recorded: the source list gives 75+00, a code that belongs to the Alouette II series.",G.91; G91; Gina,Luftfahrtmuseum Wernigerode,on_display
+Fiat,G.91,R/4,31+39,Gina,,fixed_wing,monoplane,military,ground_attack,,Bundesluftwaffe G.91R/4.,G.91; G91; Gina,Luftfahrtmuseum Wernigerode,on_display
+Piaggio,P.149,D,62+50,,,fixed_wing,monoplane,military,trainer,,Bundesluftwaffe trainer.,P.149; P149D; FWP 149,Luftfahrtmuseum Wernigerode,on_display
+General Dynamics,F-16,A,FA02,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,Fuselage of an ex-Belgian Air Force F-16A. Fuselage only.,F-16; F16; F16A; Falcon,Luftfahrtmuseum Wernigerode,on_display
+General Dynamics,F-16,A,FA26,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,Front fuselage of an ex-Belgian Air Force F-16A. Front fuselage / nose section only.,F-16; F16; F16A; Falcon,Luftfahrtmuseum Wernigerode,on_display
+Hawker,Hunter,F.6,WV276,,,fixed_wing,monoplane,military,fighter,,"Ex-Royal Air Force, coded JE.",Hunter,Luftfahrtmuseum Wernigerode,on_display
+Hindustan Aeronautics,HF-24,Marut Mk.1,,Marut,,fixed_wing,monoplane,military,ground_attack,,Indian-built HF-24 Marut. Serial left blank: the D-1256 quoted by the source list is a German glider-style registration and cannot be right for this type.,HF-24; HF24; Marut,Luftfahrtmuseum Wernigerode,on_display
+Hughes,TH-55,A,D-HABN,Osage,,rotary_wing,,military,trainer,,In the Luftfahrtmuseum Wernigerode (also published as Museum für Luftfahrt und Technik Wernigerode) in the Harz.,TH-55; TH55; TH55A; Osage,Luftfahrtmuseum Wernigerode,on_display
+Hunting Percival,Jet Provost,T.4,XS217,,,fixed_wing,monoplane,military,trainer,,Ex-Royal Air Force.,Jet Provost,Luftfahrtmuseum Wernigerode,on_display
+Hunting Percival,Jet Provost,T.4,XW328,,,fixed_wing,monoplane,military,trainer,,Ex-Royal Air Force.,Jet Provost,Luftfahrtmuseum Wernigerode,on_display
+Jodel,D.11,,,,,fixed_wing,monoplane,civilian,private,,In the Luftfahrtmuseum Wernigerode (also published as Museum für Luftfahrt und Technik Wernigerode) in the Harz.,D.11; Jodel D11,Luftfahrtmuseum Wernigerode,on_display
+Let,Ae-45,S,DM-SGF,,,fixed_wing,monoplane,civilian,private,,Ex-East German registration.,Ae-45; Ae45; Aero 45; Ae45S,Luftfahrtmuseum Wernigerode,on_display
+Lockheed,F-104,G,22+45,Starfighter,,fixed_wing,monoplane,military,fighter,,In the Luftfahrtmuseum Wernigerode (also published as Museum für Luftfahrt und Technik Wernigerode) in the Harz.,F-104; F104; F104G; Starfighter,Luftfahrtmuseum Wernigerode,on_display
+Lockheed,F-104,G,23+09,Starfighter,,fixed_wing,monoplane,military,fighter,,In the Luftfahrtmuseum Wernigerode (also published as Museum für Luftfahrt und Technik Wernigerode) in the Harz.,F-104; F104; F104G; Starfighter,Luftfahrtmuseum Wernigerode,on_display
+Lockheed,F-104,G,25+29,Starfighter,,fixed_wing,monoplane,military,fighter,,Cockpit section only. Cockpit section only.,F-104; F104; F104G; Starfighter,Luftfahrtmuseum Wernigerode,on_display
+Lockheed,F-104,G,25+40,Starfighter,,fixed_wing,monoplane,military,fighter,,Cockpit section only. Cockpit section only.,F-104; F104; F104G; Starfighter,Luftfahrtmuseum Wernigerode,on_display
+Lockheed,T-33,A,140153,Shooting Star,,fixed_wing,monoplane,military,trainer,,"US Navy Bureau Number, code NF-203.",T-33; T33; T33A; T-Bird; TBird,Luftfahrtmuseum Wernigerode,on_display
+Lockheed,T-33,A,58-2098,Shooting Star,,fixed_wing,monoplane,military,trainer,,Cockpit section only. Cockpit section only.,T-33; T33; T33A; T-Bird; TBird,Luftfahrtmuseum Wernigerode,on_display
+MBB,Bo 105,,D-HDEG,,,rotary_wing,,civilian,utility,,In the Luftfahrtmuseum Wernigerode (also published as Museum für Luftfahrt und Technik Wernigerode) in the Harz.,Bo 105; Bo105,Luftfahrtmuseum Wernigerode,on_display
+Mikoyan-Gurevich,MiG-15,,,,,fixed_wing,monoplane,military,fighter,,Polish-built Lim-2.,MiG-15; MiG15; Fagot,Luftfahrtmuseum Wernigerode,on_display
+Mikoyan-Gurevich,MiG-21,PF,0907,,,fixed_wing,monoplane,military,fighter,,Cockpit section only. Cockpit section only.,MiG-21; MiG21; Fishbed; MiG21PF,Luftfahrtmuseum Wernigerode,on_display
+Mikoyan-Gurevich,MiG-21,SPS,703,,,fixed_wing,monoplane,military,fighter,,Ex-NVA.,MiG-21; MiG21; Fishbed; MiG21SPS,Luftfahrtmuseum Wernigerode,on_display
+Mikoyan-Gurevich,MiG-23,MF,586,,,fixed_wing,monoplane,military,fighter,,Ex-NVA.,MiG-23; MiG23; Flogger; MiG23MF,Luftfahrtmuseum Wernigerode,on_display
+Mil,Mi-2,,555,,,rotary_wing,,military,utility,,Ex-NVA.,Mi-2; Mi2; Hoplite,Luftfahrtmuseum Wernigerode,on_display
+Nord,N.1101,Noralpha,81,Noralpha,,fixed_wing,monoplane,military,utility,,In the Luftfahrtmuseum Wernigerode (also published as Museum für Luftfahrt und Technik Wernigerode) in the Harz.,N 1101; Noralpha,Luftfahrtmuseum Wernigerode,on_display
+Piaggio,P.149,D,91+88,,,fixed_wing,monoplane,military,trainer,,Bundesluftwaffe trainer.,P.149; P149D; FWP 149,Luftfahrtmuseum Wernigerode,on_display
+PZL-Mielec,Lim-2,,106,,,fixed_wing,monoplane,military,fighter,,Polish-built MiG-15bis.,Lim-2; Lim2; MiG-15bis; MiG15bis; Fagot,Luftfahrtmuseum Wernigerode,on_display
+PZL-Okęcie,PZL-104,Wilga 35A,SP-EBA,Wilga,,fixed_wing,monoplane,civilian,utility,,In the Luftfahrtmuseum Wernigerode (also published as Museum für Luftfahrt und Technik Wernigerode) in the Harz.,PZL-104; PZL104; Wilga,Luftfahrtmuseum Wernigerode,on_display
+Scheibe,L-Spatz,55,D-6223,,,fixed_wing,monoplane,civilian,private,,In the Luftfahrtmuseum Wernigerode (also published as Museum für Luftfahrt und Technik Wernigerode) in the Harz.,L-Spatz; LSpatz; LSpatz 55,Luftfahrtmuseum Wernigerode,on_display
+Sikorsky,CH-53,G,84+12,,,rotary_wing,,military,transport,,Cockpit section only. Cockpit section only.,CH-53; CH53; CH53G; Sea Stallion,Luftfahrtmuseum Wernigerode,on_display
+Sportavia,C1,,,,,fixed_wing,monoplane,civilian,private,,"Registration not recorded: the source repeats D-EBUC, which belongs to the museum's Bücker Bestmann.",Sportavia C1,Luftfahrtmuseum Wernigerode,on_display
+Sud Aviation,Alouette II,SE 3130,75+32,Alouette II,,rotary_wing,,military,utility,,Cabin section only.,Alouette II; SE 3130; SE3130,Luftfahrtmuseum Wernigerode,on_display
+Sud Aviation,Alouette II,SE 3130,76+68,Alouette II,,rotary_wing,,military,utility,,In the Luftfahrtmuseum Wernigerode (also published as Museum für Luftfahrt und Technik Wernigerode) in the Harz.,Alouette II; SE 3130; SE3130,Luftfahrtmuseum Wernigerode,on_display
+Sud Aviation,Alouette II,SE 3130,77+10,Alouette II,,rotary_wing,,military,utility,,In the Luftfahrtmuseum Wernigerode (also published as Museum für Luftfahrt und Technik Wernigerode) in the Harz.,Alouette II; SE 3130; SE3130,Luftfahrtmuseum Wernigerode,on_display
+Sud Aviation,Alouette II,SE 3130,77+16,Alouette II,,rotary_wing,,military,utility,,In the Luftfahrtmuseum Wernigerode (also published as Museum für Luftfahrt und Technik Wernigerode) in the Harz.,Alouette II; SE 3130; SE3130,Luftfahrtmuseum Wernigerode,on_display
+Sukhoi,Su-22,M4,2543,,,fixed_wing,monoplane,military,ground_attack,,Cockpit section only. Cockpit section only.,Su-22; Su22; Fitter,Luftfahrtmuseum Wernigerode,on_display
+Transall,C-160,D,51+01,Transall,,fixed_wing,monoplane,military,transport,,Bundesluftwaffe Transall.,C-160; C160; C160D; Transall,Luftfahrtmuseum Wernigerode,on_display
+Viking,Dragonfly,Mk.I,D-EJUL,,,fixed_wing,monoplane,civilian,private,,In the Luftfahrtmuseum Wernigerode (also published as Museum für Luftfahrt und Technik Wernigerode) in the Harz.,Viking Dragonfly; Dragonfly,Luftfahrtmuseum Wernigerode,on_display
+Westland,Whirlwind,HAR.10,XP339,,,rotary_wing,,military,search_rescue,,Ex-Royal Air Force.,Whirlwind,Luftfahrtmuseum Wernigerode,on_display
+Zlín,Z-37,A,DM-SUW,Čmelák,,fixed_wing,monoplane,civilian,utility,,Ex-East German agricultural aircraft.,Z-37; Z37; Cmelak; Zlin 37; Z37A,Luftfahrtmuseum Wernigerode,on_display
+Zlín,Z-42,,D-EWNQ,,,fixed_wing,monoplane,civilian,trainer,,In the Luftfahrtmuseum Wernigerode (also published as Museum für Luftfahrt und Technik Wernigerode) in the Harz.,Z-42; Z42; Zlin 42,Luftfahrtmuseum Wernigerode,on_display
