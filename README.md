@@ -90,6 +90,12 @@ migration files for an older installation:
 - `migrate_aircraft_facts.sql`
 - `migrate_airframe_history.sql`
 - `migrate_full_designation.sql`
+- `migrate_airframe_identity.sql` — replaces `uq_model_tail` with
+  `uq_airframe (full_designation, tail_number, operator_country)` and adds the
+  `construction_number` and `operator_country` columns. **Apply this one before
+  deploying the matching code**, which writes both columns. It is guarded and
+  re-runnable, and it adds the new unique key before dropping the old one, so a
+  failure leaves the database untouched.
 
 Apply one with, for example:
 
