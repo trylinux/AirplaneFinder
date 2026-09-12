@@ -17,9 +17,13 @@ SNAP = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),".
 
 
 def call(method, path, body=None):
+    # Content-Type only when there is a body - Werkzeug 400s a bodyless request
+    # that declares application/json, which would break every exists() check.
     data = json.dumps(body).encode() if body is not None else None
-    r = urllib.request.Request(H + path, data=data, method=method,
-        headers={"Authorization": f"Bearer {KEY}", "Content-Type": "application/json"})
+    headers = {"Authorization": f"Bearer {KEY}"}
+    if data is not None:
+        headers["Content-Type"] = "application/json"
+    r = urllib.request.Request(H + path, data=data, method=method, headers=headers)
     for a in range(4):
         try:
             with urllib.request.urlopen(r, timeout=90) as f:

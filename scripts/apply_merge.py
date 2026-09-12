@@ -23,9 +23,14 @@ if os.path.exists(DONE):
 
 
 def call(method, path, body=None):
+    # Content-Type is set ONLY when there is a body. Werkzeug rejects a request
+    # that declares application/json and carries nothing to parse, so sending
+    # the header on a bodyless DELETE returns 400 before the view ever runs.
     data = json.dumps(body).encode() if body is not None else None
-    r = urllib.request.Request(H + path, data=data, method=method,
-        headers={"Authorization": f"Bearer {KEY}", "Content-Type": "application/json"})
+    headers = {"Authorization": f"Bearer {KEY}"}
+    if data is not None:
+        headers["Content-Type"] = "application/json"
+    r = urllib.request.Request(H + path, data=data, method=method, headers=headers)
     for a in range(5):
         try:
             with urllib.request.urlopen(r, timeout=90) as f:
@@ -99,10 +104,18 @@ for p in sel:
             bad = True
             print("  delete aircraft failed", i, s, r, flush=True)
     for rl in p["relink_links"]:
-        s, r = call("POST", "/exhibits", {"aircraft_id": rl["aircraft_id"],
-                                          "museum_id": p["keep"]["id"],
-                                          "display_status": rl.get("display_status") or "on_display"})
-        LOG.write(f"RELINK {rl['aircraft_id']}->{p['keep']['id']} {s}\n")
+        # Idempotent: an earlier run may have created the new link and then
+        # failed to drop the old one, leaving the aircraft at both sites.
+        sa, da = call("GET", f"/aircraft/{rl['aircraft_id']}")
+        already = (sa == 200 and any(m.get("id") == p["keep"]["id"]
+                                     for m in (da.get("museums") or [])))
+        if already:
+            s, r = 201, {"note": "link already present"}
+        else:
+            s, r = call("POST", "/exhibits", {"aircraft_id": rl["aircraft_id"],
+                                              "museum_id": p["keep"]["id"],
+                                              "display_status": rl.get("display_status") or "on_display"})
+        LOG.write(f"RELINK {rl['aircraft_id']}->{p['keep']['id']} {s}{' (already)' if already else ''}\n")
         if s in (200, 201):
             s2, _ = call("DELETE", f"/exhibits/{rl['link_id']}")
             LOG.write(f"DEL_LINK {rl['link_id']} {s2}\n")
