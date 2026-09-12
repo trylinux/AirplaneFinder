@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Kawasaki,OH-6,D,31148,,JP,Cayuse,,rotary_wing,,military,recon,,At 34.4916N 135.4419E; present since 2007,OH6D; OH6,JGSDF Camp Shinodayama,on_display
+Kawasaki,V-107,A,51807,,JP,,,rotary_wing,,military,transport,,At 34.4910N 135.4406E; present since 2009,V107A; KV107; V107,JGSDF Camp Shinodayama,on_display
+Fuji,UH-1,H,41682,,JP,Iroquois,,rotary_wing,,military,utility,,At 34.4918N 135.4418E; present since 2009,UH1H; Huey; UH1,JGSDF Camp Shinodayama,on_display
+Fuji,UH-1,H,41696,,JP,Iroquois,,rotary_wing,,military,utility,,Training airframe at 34.4897N 135.4408E without main rotor; present since 2009,UH1H; Huey; UH1,JGSDF Camp Shinodayama,on_display
+Fuji,UH-1,B,41559,,JP,Iroquois,,rotary_wing,,military,utility,,Training airframe at 34.4895N 135.4407E; present since 2007 and last confirmed 1 Jun 2025,UH1B; Huey; UH1,JGSDF Camp Shinodayama,on_display

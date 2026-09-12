@@ -1,0 +1,22 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Sukhoi,Su-27,P,598-серый,36911037820,,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 10981,Su27; Su27P,Vorotynsk Aircraft Monuments,on_display
+Mil,Mi-8,T,RA-24642,9815702,RU,,,rotary_wing,,military,utility,,russianplanes.net monument point 10984,Mi8; Mi8T,Vorotynsk Aircraft Monuments,on_display
+Sukhoi,Su-17,M,60 Red,5701,RU,,,fixed_wing,monoplane,military,ground_attack,,russianplanes.net monument point 10986; source records the bort as 60-красный,Su17; Su17M,Vorotynsk Aircraft Monuments,on_display
+Aero,L-29,,32 Red,194514,RU,Delfin,,fixed_wing,monoplane,military,trainer,,russianplanes.net monument point 23458; source records the bort as 32-красный,Delfin; L29,Vorotynsk Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-17,,547 Red,1015316,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 23459; source records the bort as 547-красный,MiG17,Vorotynsk Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-25,PD,23 Red,84015096,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 23651; source records the bort as 23-красный,MiG25; MiG25PD,Vorotynsk Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-23,S,45 Red,220000918,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 23971; source records the bort as 45-красный,MiG23; MiG23S,Vorotynsk Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-15,Rbis,05 Red,55210490,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 24199; source records the bort as 05-красный,MiG15,Vorotynsk Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-15,UTI,,1315341,,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 24231,MiG15; MiG15UTI,Vorotynsk Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-27,ML,23 Blue,1080101,RU,,,fixed_wing,monoplane,military,ground_attack,,russianplanes.net monument point 24287; source records the bort as 23-синий,MiG27; MiG27ML,Vorotynsk Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-23,UB,42 Blue,5901812,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 24290; source records the bort as 42-синий,MiG23; MiG23UB,Vorotynsk Aircraft Monuments,on_display
+Sukhoi,Su-27,K,39 Blue,Т10К-2,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 24355; source records the bort as 39-синий,Su27; Su27K,Vorotynsk Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-29,B (9.12B),42 White,2960530005,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 24364; source records the bort as 42-белый,MiG29,Vorotynsk Aircraft Monuments,on_display
+Aero,L-39,C,RF-00101 / 1-белый,270489,RU,Albatros,,fixed_wing,monoplane,military,trainer,,russianplanes.net monument point 24681,Albatros; L39; L39C,Vorotynsk Aircraft Monuments,on_display
+Mil,Mi-8,T,,98520571,,,,rotary_wing,,military,utility,,russianplanes.net monument point 24682,Mi8; Mi8T,Vorotynsk Aircraft Monuments,on_display
+Sukhoi,Su-27,UB LL-UV(PS),08 Blue,49021002502 / Т10У-ПС,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 24685; source records the bort as 08-синий,Su27,Vorotynsk Aircraft Monuments,on_display
+Sukhoi,Su-27,M (T-10M/Su-35),2 Blue,79871011205 / Т-10М-12,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 24699; source records the bort as 2-синий,Su27,Vorotynsk Aircraft Monuments,on_display
+Aero,L-39,C,1 White,734010,RU,Albatros,,fixed_wing,monoplane,military,trainer,,russianplanes.net monument point 24751; source records the bort as 1-белый,Albatros; L39; L39C,Vorotynsk Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-31,,32 Blue,,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 24767; contributor note (ru): Ранее в Саваслейке.; source records the bort as 32-синий,MiG31,Vorotynsk Aircraft Monuments,on_display
+Mil,Mi-26,,,,,,,rotary_wing,,military,transport,,russianplanes.net monument point 24883,Mi26,Vorotynsk Aircraft Monuments,on_display
+PZL,Lim-2,,1416,1B-01416,,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 24896,Lim2,Vorotynsk Aircraft Monuments,on_display

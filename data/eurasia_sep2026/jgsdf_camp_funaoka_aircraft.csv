@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Kawasaki,OH-6,D,31127,,JP,Cayuse,,rotary_wing,,military,recon,,At 38.0477N 140.7796E; present since 2004; the data plate was not checked but the panel radio call reads JG1127; an interpretive board is set so close in front that a clean three-quarter shot is impossible,OH6D; OH6,JGSDF Camp Funaoka,on_display
+Fuji,UH-1,H,41694,,JP,Iroquois,,rotary_wing,,military,utility,,At 38.0476N 140.7796E; on satellite imagery since 2009,UH1H; Huey; UH1,JGSDF Camp Funaoka,on_display
+Kawasaki,V-107,A,51812,,JP,,,rotary_wing,,military,transport,,At 38.0477N 140.7795E; on satellite imagery since 2004; photographable from outside the fence when the cherry trees allow,V107A; KV107; V107,JGSDF Camp Funaoka,on_display

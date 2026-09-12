@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Airco,DH-4,,,DH-4,,fixed_wing,biplane,civilian,transport,,REPLICA de Havilland DH-4 air-mail biplane; registration N249B c/n 249 per Aerial Visuals; hangs in the museum atrium at 38.89798 -77.00832,N249B; DH-4; DH4,Smithsonian National Postal Museum,on_display
+Stinson,SR-10,F,N2311,Reliant,,fixed_wing,monoplane,civilian,transport,,c/n F7-5910; air-mail pick-up aircraft displayed in the atrium,N2311; SR-10F; SR10; SR10F,Smithsonian National Postal Museum,on_display
+Wiseman-Cooke,Wiseman,,,,,fixed_wing,biplane,civilian,transport,,c/n 02; Fred Wiseman's 1911 biplane which carried the first authorised US air mail,Wiseman-Cooke,Smithsonian National Postal Museum,on_display

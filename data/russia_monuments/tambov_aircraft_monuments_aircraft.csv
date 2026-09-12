@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Tupolev,Tu-134,Sh,RA-19,03551115,RU,,,fixed_wing,monoplane,military,commercial_transport,,russianplanes.net monument point 190,Tu134; Tu134Sh,Tambov Aircraft Monuments,on_display
+Tupolev,Tu-134,UB-L,30 Red,03551127,RU,,,fixed_wing,monoplane,military,commercial_transport,,russianplanes.net monument point 192; source records the bort as 30-красный,Tu134,Tambov Aircraft Monuments,on_display
+Raduga,KSR-5,,56,,,,,missile_rocket,,military,air_to_surface,,russianplanes.net monument point 193,KSR5,Tambov Aircraft Monuments,on_display
+Yakovlev,Yak-52,,32 Red,,RU,,,fixed_wing,monoplane,military,trainer,,russianplanes.net monument point 199; source records the bort as 32-красный,Yak52,Tambov Aircraft Monuments,on_display
+Mil,Mi-24,,229 Yellow,,RU,,,rotary_wing,,military,ground_attack,,russianplanes.net monument point 4891; source records the bort as 229-желтый,Mi24,Tambov Aircraft Monuments,on_display

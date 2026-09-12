@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Max Holste,MH.1521,M,TR-KAB,,GA,Broussard,,fixed_wing,monoplane,military,utility,,c/n 101M,MH1521; MH.1521M; Broussard; TRKAB,Libreville Air Base Displays,on_display
+Embraer,EMB-110,P,TR-KNC,,GA,Bandeirante,,fixed_wing,monoplane,military,transport,,c/n 110360,Emb.110P; EMB110; Bandeirante; TRKNC; EMB110P,Libreville Air Base Displays,on_display

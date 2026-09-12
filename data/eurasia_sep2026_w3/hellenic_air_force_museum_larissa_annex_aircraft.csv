@@ -1,0 +1,10 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Canadair,CL-13,Sabre Mk.2,19409,,GR,Sabre,,fixed_wing,monoplane,military,fighter,,c/n 309,CL13; Sabre Mk 2; F-86E; F86E,Hellenic Air Force Museum Larissa Annex,on_display
+Convair,F-102,A,61232,,GR,Delta Dagger,,fixed_wing,monoplane,military,fighter,,c/n 8-10-449,F102A; F102; Delta Dagger,Hellenic Air Force Museum Larissa Annex,on_display
+Republic,F-84,F,37050,,GR,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,Carries the code 050,F84F; F84; Thunderstreak; 050,Hellenic Air Force Museum Larissa Annex,on_display
+Republic,F-84,G,19752,,GR,Thunderjet,,fixed_wing,monoplane,military,ground_attack,,Carries the code FS-752-B,F84G; F84; Thunderjet; FS-752-B,Hellenic Air Force Museum Larissa Annex,on_display
+Republic,RF-84,F,28728,,GR,Thunderflash,,fixed_wing,monoplane,military,recon,,,RF84F; RF84; Thunderflash,Hellenic Air Force Museum Larissa Annex,on_display
+Northrop,F-5,A,69209,,GR,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,c/n N.7032,F5A; F5; Freedom Fighter,Hellenic Air Force Museum Larissa Annex,on_display
+McDonnell Douglas,F-4,E,68-0481,,GR,Phantom II,,fixed_wing,monoplane,military,fighter,,c/n 3651,F4E; F4; Phantom; Phantom II,Hellenic Air Force Museum Larissa Annex,on_display
+McDonnell Douglas,RF-4,E,7507,,GR,Phantom II,,fixed_wing,monoplane,military,recon,,c/n 4140,RF4E; RF4; Phantom; Phantom II,Hellenic Air Force Museum Larissa Annex,on_display
+LTV,A-7,E,159285,,GR,Corsair II,,fixed_wing,monoplane,military,ground_attack,,c/n E-423,A7E; A7; Corsair II,Hellenic Air Force Museum Larissa Annex,on_display

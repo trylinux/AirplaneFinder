@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,bis,,,HU,Fishbed,,fixed_wing,monoplane,military,fighter,,"Mapped in OSM as ""MIG-21BISZ multirole fighter aircraft"" and named again in the September 2025 handover report",MiG21; MiG-21bisz; Fishbed; MiG21bis,Zánkai Haditechnikai Park,on_display
+Mil,Mi-24,D,,,HU,Hind,,rotary_wing,,military,ground_attack,,"Mapped in OSM as ""MI-24D combat helicopter"" and named in the September 2025 handover report",Mi24; Mi-24D; Hind; Mi24D,Zánkai Haditechnikai Park,on_display
+Mil,Mi-8,T,,,HU,Hip,,rotary_wing,,military,transport,,"Mapped in OSM as ""MI-8T transport helicopter""",Mi8; Mi-8T; Hip; Mi8T,Zánkai Haditechnikai Park,on_display
+Almaz,V-750,VU,,,HU,,,missile_rocket,,military,other,,surface_to_air S-75 Dvina/Volhov surface-to-air missile displayed on an SZM-63 launcher,V750VU; V-750; SA-2; Guideline; V750; SA2,Zánkai Haditechnikai Park,on_display

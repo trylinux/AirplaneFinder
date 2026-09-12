@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Sukhoi,Su-17,UM3,804 Red,17532364717,RU,,,fixed_wing,monoplane,military,ground_attack,,russianplanes.net monument point 24746; source records the bort as 804-красный,Su17,Komsomolsk-on-Amur Aircraft Monuments (3),on_display
+Sukhoi,Su-27,SM,27 Red,36911026002,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 24747; source records the bort as 27-красный,Su27; Su27SM,Komsomolsk-on-Amur Aircraft Monuments (3),on_display

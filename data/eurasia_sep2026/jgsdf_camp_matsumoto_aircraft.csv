@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Fuji,UH-1,H,41625,,JP,Iroquois,,rotary_wing,,military,utility,,Present since 2017 and confirmed at the 19 Apr 2026 camp festival,UH1H; Huey; c/n 41625; UH1,JGSDF Camp Matsumoto,on_display
+Kawasaki,V-107,A,51712,,JP,,,rotary_wing,,military,transport,,Present since the open day of 24 Apr 2002; replaced 51739,V107A; KV107; c/n 4026; V107,JGSDF Camp Matsumoto,on_display
+Kawasaki,CH-47,J,52909,,JP,Chinook,,rotary_wing,,military,transport,,Boarding and cargo-loading training airframe at 36.2109N 137.9544E,CH47J; Chinook; c/n 5011; CH47,JGSDF Camp Matsumoto,on_display
+Fuji,UH-1,B,41563,,JP,Iroquois,,rotary_wing,,military,utility,,Recorded at Matsumoto as a training airframe of uncertain current status,UH1B; Huey; c/n MH-64; UH1,JGSDF Camp Matsumoto,in_storage

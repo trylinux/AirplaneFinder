@@ -1,0 +1,16 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aermacchi,MB.308,,,,IT,,,fixed_wing,monoplane,civilian,private,,Light touring aircraft; registration not published by the museum,MB308; MB-308,Museo dell'Aria e dello Spazio -- Castello di San Pelagio,on_display
+Aermacchi,MB-326,,,,IT,,,fixed_wing,monoplane,military,trainer,,Serial not published by the museum,MB326; MB-326,Museo dell'Aria e dello Spazio -- Castello di San Pelagio,on_display
+Avia,FL.3,,,,IT,,,fixed_wing,monoplane,civilian,trainer,,Registration not published by the museum,FL3; FL.3,Museo dell'Aria e dello Spazio -- Castello di San Pelagio,on_display
+Fairchild,UC-61,K,,,US,Forwarder,,fixed_wing,monoplane,military,utility,,Argus/Forwarder liaison aircraft; serial not published,UC61; UC-61K; Argus; Forwarder; UC61K,Museo dell'Aria e dello Spazio -- Castello di San Pelagio,on_display
+North American,T-6,,,,IT,Texan,,fixed_wing,monoplane,military,trainer,,Wears code SC-70; MM serial not published,T6; T-6; Texan; Harvard; SC-70; SC70,Museo dell'Aria e dello Spazio -- Castello di San Pelagio,on_display
+Republic,RF-84,F,,,IT,Thunderflash,,fixed_wing,monoplane,military,recon,,Displayed outdoors as a gate guardian within the museum grounds; serial not published,RF84F; RF-84F; Thunderflash; RF84,Museo dell'Aria e dello Spazio -- Castello di San Pelagio,on_display
+Agusta-Bell,AB.47,,,,IT,,,rotary_wing,,military,utility,,Serial not published by the museum,AB47; AB-47; Bell 47,Museo dell'Aria e dello Spazio -- Castello di San Pelagio,on_display
+Agusta-Bell,AB.204,,,,IT,,,rotary_wing,,military,utility,,Serial not published by the museum,AB204; AB-204,Museo dell'Aria e dello Spazio -- Castello di San Pelagio,on_display
+Western Electric,MIM-3,Nike Ajax,,,IT,,Nike Ajax,missile_rocket,,military,other,,surface_to_air Surface-to-air missile displayed in the grounds,Nike Ajax; MIM3; MIM-3,Museo dell'Aria e dello Spazio -- Castello di San Pelagio,on_display
+Western Electric,MIM-14,Nike Hercules,,,IT,,Nike Hercules,missile_rocket,,military,other,,surface_to_air Surface-to-air missile displayed in the grounds,Nike Hercules; MIM14; MIM-14,Museo dell'Aria e dello Spazio -- Castello di San Pelagio,on_display
+Costruzioni Aeronautiche Taliedo,CAT-20,,I-LAUS,,IT,,,fixed_wing,monoplane,civilian,other,,Sailplane; the sister airframe I-ZAGO is at Volandia,CAT20; CAT-20; C.T.20,Museo dell'Aria e dello Spazio -- Castello di San Pelagio,on_display
+SSVV,Urendo,EC-38/56,,,IT,,,fixed_wing,monoplane,civilian,other,,Urendo C sailplane; serial not published,Urendo; Urendo C; EC38/56,Museo dell'Aria e dello Spazio -- Castello di San Pelagio,on_display
+Fauvel,AV-36,,,,,,,fixed_wing,monoplane,civilian,other,,Tailless sailplane; registration not published,AV36; AV-36,Museo dell'Aria e dello Spazio -- Castello di San Pelagio,on_display
+SAI Ambrosini,CVV 6,,,,IT,,Canguro,fixed_wing,monoplane,civilian,other,,Sailplane; serial not published,CVV6; CVV 6; Canguro,Museo dell'Aria e dello Spazio -- Castello di San Pelagio,on_display
+AM,10,,,,IT,,Trieste,fixed_wing,monoplane,civilian,other,,AM 10 Trieste sailplane; serial not published,AM10; AM 10; Trieste,Museo dell'Aria e dello Spazio -- Castello di San Pelagio,on_display

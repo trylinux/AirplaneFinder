@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Euro-Enaer,EE-10,,PH-EAG,,NL,Eaglet,Flight Lab,fixed_wing,monoplane,civilian,private,,Mounted on the roof of the faculty building on the Anthony Fokkerweg and named Flight Lab,EE10; EE-10; Eaglet,TU Delft Aerospace Faculty Aircraft Displays,on_display
+Boeing,737,,,,,,,fixed_wing,monoplane,civilian,commercial_transport,,Mapped as a jet attraction at the aerospace faculty; almost certainly a fuselage or cockpit section used for teaching,B737; 737,TU Delft Aerospace Faculty Aircraft Displays,on_display
+Unidentified,Helicopter,,,,,,,rotary_wing,,civilian,other,,OSM maps a helicopter at the faculty display without a type; recorded rather than dropped so the site inventory is complete,,TU Delft Aerospace Faculty Aircraft Displays,on_display
+Unidentified,Light aircraft,,,,,,,fixed_wing,monoplane,civilian,other,,A fourth untyped fixed-wing exhibit mapped at the faculty,,TU Delft Aerospace Faculty Aircraft Displays,on_display

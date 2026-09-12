@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-17,,FR-77,,DZ,,,fixed_wing,monoplane,military,fighter,,Displayed at the territorial information centre in Oran; logged 1 Jan 2026,MiG17; MiG-17; Fresco; FR77,Centre d'Information Territorial Chahid Mohamed Boubarnasse -- Oran,on_display
+Saab,91,,7T-WQB,,DZ,Safir,,fixed_wing,monoplane,military,trainer,,"c/n 0115; recorded by the source as a ""Safir 43""; displayed alongside the MiG-17; logged 1 Jan 2026",Saab 91; Safir; 7TWQB; c/n 0115,Centre d'Information Territorial Chahid Mohamed Boubarnasse -- Oran,on_display

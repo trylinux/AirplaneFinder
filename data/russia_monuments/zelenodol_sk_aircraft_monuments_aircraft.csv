@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-24,V,,,,,,rotary_wing,,military,ground_attack,,russianplanes.net monument point 2308,Mi24; Mi24V,Zelenodol'sk Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-21,bis (tip-75) (Polet OI),93 Red,75024608,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 2309; source records the bort as 93-красный,MiG21,Zelenodol'sk Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-27,K,49 Red,76802630207,RU,,,fixed_wing,monoplane,military,ground_attack,,russianplanes.net monument point 2310; source records the bort as 49-красный,MiG27; MiG27K,Zelenodol'sk Aircraft Monuments,on_display

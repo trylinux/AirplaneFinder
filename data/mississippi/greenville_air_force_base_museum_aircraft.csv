@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,T-33,A,51-6601,Shooting Star,,fixed_wing,monoplane,military,trainer,,Block-check passes for the FY51 T-33A run. Aerial Visuals fix 33.481947 -90.989906 at the former Greenville AFB passenger terminal,T-33A; T33; T33A,Greenville Air Force Base Museum,on_display
+Lockheed,T-33,A,52-9608,Shooting Star,,fixed_wing,monoplane,military,trainer,,Block-check passes for the FY52 T-33A run; Aerial Visuals flags this second Shooting Star as unconfirmed,T-33A; T33; T33A,Greenville Air Force Base Museum,on_display
+North American,T-6,,,Texan,,fixed_wing,monoplane,military,trainer,,Aerial Visuals gives an identifier GN53 which is not a recognisable USAAF or BuNo serial so tail_number is left blank; presence unconfirmed,Texan; T6,Greenville Air Force Base Museum,on_display

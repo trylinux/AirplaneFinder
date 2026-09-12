@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-8,TV,077 White,,RU,,,rotary_wing,,military,utility,,russianplanes.net monument point 7054; source records the bort as 077-белый,Mi8; Mi8TV,Cherkessk Aircraft Monuments,on_display
+Aero,L-39,C,595 White,,RU,Albatros,,fixed_wing,monoplane,military,trainer,,russianplanes.net monument point 7055; source records the bort as 595-белый,Albatros; L39; L39C,Cherkessk Aircraft Monuments,on_display
+Mil,Mi-24,V,920 White,,RU,,,rotary_wing,,military,ground_attack,,russianplanes.net monument point 7990; contributor note (ru): Вертолёт установлен на постамент в честь 30-летия вывода советских войск из Афганистана и открыт 15 февраля 2019 года; source records the bort as 920-белый,Mi24; Mi24V,Cherkessk Aircraft Monuments,on_display

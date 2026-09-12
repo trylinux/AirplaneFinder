@@ -1,0 +1,18 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Goodyear,FG-1,D,92460,Corsair,,fixed_wing,monoplane,military,fighter,,Long-running volunteer restoration of a Corsair built in Stratford by Chance Vought's neighbours; the centre's own 2026 aircraft page still leads with it,BuNo 92460; FG1; FG1D,Connecticut Air & Space Center,under_restoration
+Whitehead,No. 21,,,,,fixed_wing,monoplane,civilian,experimental,,Replica of Gustave Whitehead's 1901 machine; flagged as a replica; the centre's own 2026 page dates it 1901,,Connecticut Air & Space Center,on_display
+Lockheed,T-33,B,57-6558,Shooting Star,,fixed_wing,monoplane,military,trainer,,Wikipedia gives 57-6558; the centre's own page calls the airframe a TV-2 / T-33; the T-33A block 57-6558 is not a known Navy TV-2 number so the variant is flagged,TV-2; T33; T33B; TV2,Connecticut Air & Space Center,on_display
+Cessna,T-37,B,57-2346,Tweet,,fixed_wing,monoplane,military,trainer,,On the centre's own 2026 aircraft list,Tweety Bird; T37; T37B,Connecticut Air & Space Center,on_display
+Northrop,T-38,A,60-0900,Talon,,fixed_wing,monoplane,military,trainer,,On the centre's own 2026 aircraft list,T38; T38A,Connecticut Air & Space Center,on_display
+Cessna,O-2,A,67-21318,Skymaster,,fixed_wing,monoplane,military,recon,,On the centre's own 2026 aircraft list,O2; O2A,Connecticut Air & Space Center,on_display
+Beechcraft,A23,,,Musketeer,,fixed_wing,monoplane,civilian,private,,On the centre's own 2026 aircraft list; registration not established,,Connecticut Air & Space Center,on_display
+Bede,BD-5,,,,,fixed_wing,monoplane,civilian,experimental,,On the centre's own 2026 aircraft list; registration not established,BD5,Connecticut Air & Space Center,on_display
+Cessna,150,L,,,,fixed_wing,monoplane,civilian,private,,Wikipedia gives construction number 15074606; registration not established,c/n 15074606,Connecticut Air & Space Center,on_display
+Christen,Eagle,II,,,,fixed_wing,monoplane,civilian,private,,On the centre's own 2026 aircraft list; Wikipedia records serial 1,c/n 1,Connecticut Air & Space Center,on_display
+Sikorsky,S-76,A,N5415X,,,rotary_wing,,civilian,transport,1981,FAA registry September 2026 shows N5415X registered to Connecticut Air and Space Center at Stratford - strong currency evidence,c/n 760199; S76; S76A,Connecticut Air & Space Center,on_display
+Sikorsky,S-55,,52-7573,Chickasaw,,rotary_wing,,military,utility,,On Wikipedia's collection list; held in the centre's storage annex rather than the main hall - presence needs a visit check,H-19; S55; H19,Connecticut Air & Space Center,in_storage
+Sikorsky,S-52,,,,,rotary_wing,,civilian,utility,,On Wikipedia's collection list; storage annex,S52,Connecticut Air & Space Center,in_storage
+Sikorsky,S-58,,,,,rotary_wing,,military,utility,,On Wikipedia's collection list; storage annex,S58,Connecticut Air & Space Center,in_storage
+Sikorsky,S-60,,,,,rotary_wing,,civilian,experimental,,On Wikipedia's collection list; a flying-crane test airframe; storage annex,S60,Connecticut Air & Space Center,in_storage
+Hughes,OH-6,A,67-16477,Cayuse,,rotary_wing,,military,utility,,On Wikipedia's collection list; storage annex,OH6; OH6A,Connecticut Air & Space Center,in_storage
+Bell,47,,,,,rotary_wing,,civilian,utility,,On Wikipedia's collection list; storage annex,,Connecticut Air & Space Center,in_storage

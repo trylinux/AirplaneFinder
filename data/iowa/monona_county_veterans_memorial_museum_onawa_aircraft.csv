@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Vought,A-7,D,70-1008,Corsair II,,fixed_wing,monoplane,military,ground_attack,,Corsair II outside the county veterans memorial museum; NMUSAF loan register of July 2015 confirms A-7D 70-1008 on loan to the City of Onawa,c/n D-154; A7; A7D,Monona County Veterans Memorial Museum -- Onawa,on_display
+Bell,UH-1,H,64-13601,Iroquois,Huey,rotary_wing,,military,utility,,Huey beside the Corsair II; older directories misplace this airframe at American Legion Post 286 Clarence Iowa - Aerial Visuals corrects it to Onawa,c/n 4308; UH1; UH1H,Monona County Veterans Memorial Museum -- Onawa,on_display

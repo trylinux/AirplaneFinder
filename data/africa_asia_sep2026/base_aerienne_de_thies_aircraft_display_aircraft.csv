@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Socata,Rallye,235G,6W-SAW,,SN,Guerrier,,fixed_wing,monoplane,military,trainer,,c/n 3381,Rallye 235G; Rallye; Guerrier; 6WSAW,Base Aérienne de Thiès Aircraft Display,on_display
+Socata,TB-30,,6W-SAY,,SN,Epsilon,,fixed_wing,monoplane,military,trainer,,Second production Epsilon; c/n 2,TB30; TB-30; Epsilon; 6WSAY,Base Aérienne de Thiès Aircraft Display,on_display

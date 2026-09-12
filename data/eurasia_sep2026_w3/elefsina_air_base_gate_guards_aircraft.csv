@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,F-104,G,7435,,GR,Starfighter,,fixed_wing,monoplane,military,fighter,,c/n 683D-7435; carries the code FG-435; stood as a monument in the town of Acharnai until removed in June 2016 and has been the Elefsis gate guard since 2024,F104G; F104; Starfighter; FG-435; FG435,Elefsina Air Base Gate Guards,on_display
+Northrop,F-5,A,69136,,GR,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,c/n N.6240; last noted April 2025,F5A; F5; Freedom Fighter,Elefsina Air Base Gate Guards,on_display

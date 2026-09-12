@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Gloster,Meteor,T.7,I-320,,NL,,,fixed_wing,monoplane,military,trainer,,Mapped in a detailed OSM survey of the static line at the Keegsdijkje,Meteor T7,Vliegbasis Leeuwarden Static Aircraft Park,on_display
+Hawker,Hunter,F.4,4R-15,,NL,,,fixed_wing,monoplane,military,fighter,,Mapped in a detailed OSM survey of the static line at the Keegsdijkje,Hunter F4,Vliegbasis Leeuwarden Static Aircraft Park,on_display
+Lockheed,F-104,G,D-8318,,NL,,,fixed_wing,monoplane,military,fighter,,Fokker-built; listed by the International F-104 Society as a pole-mounted gate guard at Leeuwarden,F104; F-104G; F104G,Vliegbasis Leeuwarden Static Aircraft Park,on_display
+General Dynamics,F-16,A,J-228,,NL,,,fixed_wing,monoplane,military,fighter,,,F16; F-16A; F16A,Vliegbasis Leeuwarden Static Aircraft Park,on_display
+Sud Aviation,SE 3160,,H-08,,NL,Alouette III,,rotary_wing,,military,utility,,,SE3160; Alouette III; SA316,Vliegbasis Leeuwarden Static Aircraft Park,on_display
+Mikoyan-Gurevich,MiG-21,SPS,919,,DE,,,fixed_wing,monoplane,military,fighter,,OSM describes it as a fighter of the former German Democratic Republic so the operator is recorded as East Germany's successor code DE,MiG21; MiG-21SPS; Fishbed; MiG21SPS,Vliegbasis Leeuwarden Static Aircraft Park,on_display
+Sukhoi,Su-22,,56,,DE,,,fixed_wing,monoplane,military,ground_attack,,Mapped alongside the MiG-21SPS; both are ex-East German aircraft on the west side of the base,Su22; Su-22; Fitter,Vliegbasis Leeuwarden Static Aircraft Park,on_display

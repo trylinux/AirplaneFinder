@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Ilyushin,Il-76,MD,CCCP-86913,0023438108,RU,,,fixed_wing,monoplane,military,transport,,russianplanes.net monument point 315,Il76; Il76MD,Ivanovo Aircraft Monuments,on_display
+Antonov,An-12,BK-PP(S),06 Red,01347904,RU,,,fixed_wing,monoplane,military,transport,,russianplanes.net monument point 316; source records the bort as 06-красный,An12,Ivanovo Aircraft Monuments,on_display
+Antonov,An-22,A,RA-08830,053483308,RU,,,fixed_wing,monoplane,military,transport,,russianplanes.net monument point 317,An22; An22A,Ivanovo Aircraft Monuments,on_display
+Antonov,An-26,,RA-47403,5006,RU,,,fixed_wing,monoplane,military,transport,,russianplanes.net monument point 321,An26,Ivanovo Aircraft Monuments,on_display
+Antonov,An-12,BK,RA-11666,8345904,RU,,,fixed_wing,monoplane,military,transport,,russianplanes.net monument point 322,An12; An12BK,Ivanovo Aircraft Monuments,on_display
+Mil,Mi-9,,,?,,,,rotary_wing,,military,utility,,russianplanes.net monument point 11027; source records the bort as ?,Mi9,Ivanovo Aircraft Monuments,on_display

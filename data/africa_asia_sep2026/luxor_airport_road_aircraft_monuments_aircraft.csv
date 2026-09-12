@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-15,UTI,,,EG,,,fixed_wing,monoplane,military,trainer,,Displayed wearing 2357; true serial not recorded; sighting refreshed Aug 2026,MiG15; MiG-15UTI; Midget; 2357; MiG15UTI,Luxor Airport Road Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-21,PF,,,EG,,,fixed_wing,monoplane,military,fighter,,Displayed wearing 2358; true serial not recorded; sighting refreshed Aug 2026,MiG21; MiG-21PF; Fishbed; 2358; MiG21PF,Luxor Airport Road Aircraft Monuments,on_display
+Sukhoi,Su-17,K,,,EG,,,fixed_wing,monoplane,military,ground_attack,,Displayed wearing 2356; true serial not recorded; sighting refreshed Aug 2026,Su17; Su-17K; Fitter; 2356; Su17K,Luxor Airport Road Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-17,F,,,EG,,,fixed_wing,monoplane,military,fighter,,Displayed wearing 2355; sited about 1.7 km from the other three on the same road; logged 8 Dec 2015,MiG17; MiG-17F; Fresco; 2355; MiG17F,Luxor Airport Road Aircraft Monuments,on_display

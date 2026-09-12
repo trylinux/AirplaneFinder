@@ -1,0 +1,15 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,C-47,D,43-16277,Skytrain,,fixed_wing,monoplane,military,transport,,Recorded by Aerial Visuals as SC-47D; museum text confirms a wartime C-47 in the collection,N236GB; c/n 20743; C47; C47D,Indiana Military Museum,on_display
+Beechcraft,C-45,,51244,Expeditor,,fixed_wing,monoplane,military,transport,,Ex-Coast Guard UC-45J; museum text confirms a C-45 in the collection,UC-45J; c/n 5571; C45; UC45J,Indiana Military Museum,on_display
+Douglas,A-26,C,44-35326,Invader,,fixed_wing,monoplane,military,bomber,,On Mark Marketeer executive conversion of an Invader; museum text confirms an A-26 that served from the Second World War to Vietnam,N401Y; c/n 28605; A26; A26C,Indiana Military Museum,on_display
+Mikoyan-Gurevich,MiG-17,,,Fresco,,fixed_wing,monoplane,military,fighter,,WSK-Mielec built Lim-5R with Polish serial 1906; museum text confirms a MiG-17,Lim-5R; c/n 1C 19-06; MiG17; Lim5R,Indiana Military Museum,on_display
+Mikoyan-Gurevich,MiG-21,,,Fishbed,,fixed_wing,monoplane,military,fighter,,Museum text confirms a MiG-21 in the collection; no serial published,MiG21,Indiana Military Museum,on_display
+General Dynamics,F-16,A,80-0507,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,Museum text confirms an F-16 in the collection,c/n 61-228; F16; F16A,Indiana Military Museum,on_display
+McDonnell,F-4,D,66-7626,Phantom II,,fixed_wing,monoplane,military,fighter,,Vietnam-era Phantom; museum text confirms an F-4 in the collection,c/n 2195; F4; F4D,Indiana Military Museum,on_display
+Douglas,A-4,B,144906,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,Recorded by Aerial Visuals as A4D-2,c/n 12152; A4; A4B,Indiana Military Museum,on_display
+Douglas,A-4,,148234,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,Second Skyhawk recorded by Aerial Visuals at the same site,A4,Indiana Military Museum,on_display
+Lockheed,T-33,A,56-1669,Shooting Star,,fixed_wing,monoplane,military,trainer,,Museum text confirms a T-33 in the collection,N391P; c/n 580-1018; T33; T33A,Indiana Military Museum,on_display
+Lockheed,T-33,B,141547,Shooting Star,,fixed_wing,monoplane,military,trainer,,Navy TV-2 recorded by Aerial Visuals as stored and not on display,c/n 580-9603; T33; T33B,Indiana Military Museum,in_storage
+PZL Mielec,TS-11,,,Iskra,,fixed_wing,monoplane,military,trainer,,Polish jet trainer recorded by Aerial Visuals at the museum,TS11,Indiana Military Museum,on_display
+Bell,UH-1,,65-09628,Iroquois,,rotary_wing,,military,utility,,Museum text confirms a Huey in the collection,c/n 4672; UH1,Indiana Military Museum,on_display
+Martin,MGM-13,B,59-4870,Mace,,missile_rocket,,military,cruise,,Cold War nuclear-armed cruise missile; museum text confirms a Cold War nuclear missile on display,MGM13; MGM13B,Indiana Military Museum,on_display

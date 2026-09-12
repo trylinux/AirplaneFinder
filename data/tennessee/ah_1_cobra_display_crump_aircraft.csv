@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,AH-1,F,70-16053,Cobra,,rotary_wing,,military,ground_attack,,Roadside display at Crump on US-64; delivered as AH-1G; block check passes for FY70 70-15936 to 70-16107,Cobra; AH1; AH1F,AH-1 Cobra Display -- Crump,on_display
+Bell,AH-1,F,67-15473,Cobra,,rotary_wing,,military,ground_attack,,Roadside display at Crab Orchard; delivered as AH-1G; block check passes for FY67 67-15450 to 67-15895,Cobra; AH1; AH1F,AH-1 Cobra Display -- Crump,on_display

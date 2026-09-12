@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Kawasaki,OH-6,D,31133,,JP,Cayuse,,rotary_wing,,military,recon,,At about 34.5920N 135.7016E; on satellite imagery since March 2010,OH6D; OH6,Nara Prefectural Oji Technical High School,on_display
+Fuji,T-1,B,35-5863,,JP,,,fixed_wing,monoplane,military,trainer,,JASDF free-loan airframe installed 22 Jul 2007 at about 34.5921N 135.7021E; one of the four T-1Bs that made the type's final flight on 3 Mar 2006; the blog has never visited,T1B; T1,Nara Prefectural Oji Technical High School,on_display

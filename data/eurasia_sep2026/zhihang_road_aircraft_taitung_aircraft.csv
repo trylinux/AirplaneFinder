@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Unidentified,Aircraft,,,,TW,,,fixed_wing,monoplane,military,other,,One of three historic=aircraft nodes in a line on Zhihang Road (OSM 9659046897 to 9659046899); no types recorded,,Zhihang Road Aircraft -- Taitung,on_display
+Unidentified,Aircraft,,,,TW,,,fixed_wing,monoplane,military,other,,Second of the three aircraft nodes on Zhihang Road,,Zhihang Road Aircraft -- Taitung,on_display
+Unidentified,Aircraft,,,,TW,,,fixed_wing,monoplane,military,other,,Third of the three aircraft nodes on Zhihang Road,,Zhihang Road Aircraft -- Taitung,on_display

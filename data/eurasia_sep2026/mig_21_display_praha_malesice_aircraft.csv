@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,,,,CZ,,,fixed_wing,monoplane,military,fighter,,MiG-21 on Polygrafická in Praha-Malešice; sub-variant and tactical number not recorded,MiG-21; MiG21; Fishbed,MiG-21 Display -- Praha-Malešice,on_display
+Unidentified,Aircraft,,,,,,,fixed_wing,monoplane,military,other,,Second airframe mapped alongside the MiG-21 at the same Polygrafická address with no type recorded; entered as unidentified rather than guessed,,MiG-21 Display -- Praha-Malešice,on_display

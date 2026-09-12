@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Percival,Pembroke,C.1,AF-201,,ZM,,,fixed_wing,monoplane,military,transport,,c/n P66/10; Zambian Air Force Pembroke; logged 21 Mar 2019,Pembroke C.1; Pembroke; AF201; c/n P66/10,Livingstone Airport Preserved Aircraft,on_display
+Saab,MFI-15,-200A,AF-532,,ZM,Safari,,fixed_wing,monoplane,military,trainer,,c/n 15-269; logged 19 Mar 2019,MFI15; MFI-15-200A; Safari; AF532; c/n 15-269,Livingstone Airport Preserved Aircraft,on_display

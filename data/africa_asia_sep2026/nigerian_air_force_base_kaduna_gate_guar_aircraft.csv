@@ -1,0 +1,20 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Scottish Aviation,Bulldog,123,NAF229,,NG,Bulldog,,fixed_wing,monoplane,military,trainer,,Plinthed; c/n BH.120/267,Bulldog 123; BH.120/267,Nigerian Air Force Base Kaduna Gate Guards,on_display
+Scottish Aviation,Bulldog,123,NAF233,,NG,Bulldog,,fixed_wing,monoplane,military,trainer,,Plinthed; c/n BH.120/271,Bulldog 123; BH.120/271,Nigerian Air Force Base Kaduna Gate Guards,on_display
+Scottish Aviation,Bulldog,123,NAF235,,NG,Bulldog,,fixed_wing,monoplane,military,trainer,,Held instructionally at the Kaduna technical school group; c/n BH.120/279,Bulldog 123; BH.120/279,Nigerian Air Force Base Kaduna Gate Guards,in_storage
+Scottish Aviation,Bulldog,123,NAF244,,NG,Bulldog,,fixed_wing,monoplane,military,trainer,,Instructional; c/n BH.120/397,Bulldog 123; BH.120/397,Nigerian Air Force Base Kaduna Gate Guards,in_storage
+Mikoyan-Gurevich,MiG-17,F,NAF619,,NG,Fresco,,fixed_wing,monoplane,military,fighter,,Instructional airframe in the technical school group,MiG17; MiG-17F; Fresco; MiG17F,Nigerian Air Force Base Kaduna Gate Guards,in_storage
+Piper,PA-23,-250,NAF001,,NG,Aztec,,fixed_wing,monoplane,military,utility,,Instructional airframe,PA23; PA-23-250; Aztec,Nigerian Air Force Base Kaduna Gate Guards,in_storage
+Van's Aircraft,RV-6,A,NAF049,,NG,,,fixed_wing,monoplane,military,trainer,,Instructional airframe; the Nigerian Air Force assembled RV-6As locally,RV6; RV-6A; RV6A,Nigerian Air Force Base Kaduna Gate Guards,in_storage
+Van's Aircraft,RV-6,A,NAF053,,NG,,,fixed_wing,monoplane,military,trainer,,Instructional airframe,RV6; RV-6A; RV6A,Nigerian Air Force Base Kaduna Gate Guards,in_storage
+Dornier,Do 27,A-4,NAF153,,NG,,,fixed_wing,monoplane,military,utility,,Plinthed; c/n 478,Do27; Do.27A4; Do-27,Nigerian Air Force Base Kaduna Gate Guards,on_display
+Dornier,Do 27,A-4,NAF157,,NG,,,fixed_wing,monoplane,military,utility,,Plinthed; c/n 487,Do27; Do.27A4; Do-27,Nigerian Air Force Base Kaduna Gate Guards,on_display
+Dornier,Do 28,D-2,NAF177,,NG,Skyservant,,fixed_wing,monoplane,military,utility,,Plinthed; c/n 4350,Do28; Do.28D2; Skyservant,Nigerian Air Force Base Kaduna Gate Guards,on_display
+Dornier,Do 28,D-2,NAF198,,NG,Skyservant,,fixed_wing,monoplane,military,utility,,Plinthed; c/n 4324,Do28; Do.28D2; Skyservant,Nigerian Air Force Base Kaduna Gate Guards,on_display
+Mikoyan-Gurevich,MiG-21,bis,NAF684,,NG,Fishbed,,fixed_wing,monoplane,military,fighter,,The single Kaduna MiG-21 gate guard; the rest of the Nigerian MiG-21 fleet is stored at Makurdi and Maiduguri and was advertised for sale in December 2020; c/n 75097106,MiG21; MiG-21bis; Fishbed; MiG21bis,Nigerian Air Force Base Kaduna Gate Guards,on_display
+Fokker,F.27,,NAF907,,NG,Friendship,,fixed_wing,monoplane,military,transport,,c/n 10653,F27; F-27; Friendship; Troopship,Nigerian Air Force Base Kaduna Gate Guards,on_display
+Aero,L-39,ZA,NAF363,,NG,Albatros,,fixed_wing,monoplane,military,ground_attack,,,L39; L-39ZA; Albatros; L39ZA,Nigerian Air Force Base Kaduna Gate Guards,on_display
+Mil,Mi-34,S,NAF555,,NG,Hermit,,rotary_wing,,military,trainer,,,Mi34; Mi-34S; Hermit; Mi34S,Nigerian Air Force Base Kaduna Gate Guards,on_display
+Mikoyan-Gurevich,MiG-17,F,NAF630,,NG,Fresco,,fixed_wing,monoplane,military,fighter,,Plinthed 6 km south of the main base group,MiG17; MiG-17F; Fresco; MiG17F,Nigerian Air Force Base Kaduna Gate Guards,on_display
+Mikoyan-Gurevich,MiG-17,,NAF634,,NG,Fresco,,fixed_wing,monoplane,military,fighter,,Plinthed,MiG17; MiG-17; Fresco,Nigerian Air Force Base Kaduna Gate Guards,on_display
+Piaggio,P.149,D,NAF210,,NG,,,fixed_wing,monoplane,military,trainer,,Plinthed; c/n 277,P149; P.149D; P-149,Nigerian Air Force Base Kaduna Gate Guards,on_display

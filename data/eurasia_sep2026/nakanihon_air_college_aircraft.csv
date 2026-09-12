@@ -1,0 +1,16 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mitsubishi,F-104,J,76-8710,,JP,Starfighter,,fixed_wing,monoplane,military,fighter,,JASDF free-loan instructional airframe,F104J; F104,Nakanihon Air College,on_display
+Mitsubishi,S-62,A,JA9005,,JP,,,rotary_wing,,civilian,search_rescue,,,S62A; c/n M-62001; S62,Nakanihon Air College,on_display
+Beechcraft,E33,,JA3434,,JP,Bonanza,,fixed_wing,monoplane,civilian,private,,,E33; c/n CD-1206,Nakanihon Air College,on_display
+Cessna,310,,N5077N,,JP,,,fixed_wing,monoplane,civilian,private,,,C310; c/n 38702,Nakanihon Air College,on_display
+Bell,206,B,JA9157,,JP,Jet Ranger,,rotary_wing,,civilian,utility,,,Bell206; 206B; c/n 1998,Nakanihon Air College,on_display
+Bell,206,B,JA9158,,JP,Jet Ranger,,rotary_wing,,civilian,utility,,,Bell206; 206B; c/n 2202,Nakanihon Air College,on_display
+Bell,206,B,JA9178,,JP,Jet Ranger,,rotary_wing,,civilian,utility,,,Bell206; 206B; c/n 2205,Nakanihon Air College,on_display
+Bell,206,B,JA9179,,JP,Jet Ranger,,rotary_wing,,civilian,utility,,,Bell206; 206B; c/n 2209,Nakanihon Air College,on_display
+Bell,206,B,JA9180,,JP,Jet Ranger,,rotary_wing,,civilian,utility,,,Bell206; 206B; c/n 2211,Nakanihon Air College,on_display
+Bell,206,B,JA9205,,JP,Jet Ranger,,rotary_wing,,civilian,utility,,,Bell206; 206B; c/n 2411,Nakanihon Air College,on_display
+Bell,206,B,JA9206,,JP,Jet Ranger,,rotary_wing,,civilian,utility,,,Bell206; 206B; c/n 2414,Nakanihon Air College,on_display
+Kawasaki,Bell 47,G-2,JA7491,,JP,,,rotary_wing,,civilian,utility,,,Bell47; 47G-2; c/n 277,Nakanihon Air College,on_display
+Kawasaki,OH-6,D,31162,,JP,Cayuse,,rotary_wing,,military,recon,,Ex-JGSDF instructional airframe confirmed 2010 and 2019,OH6D; c/n 6463; OH6,Nakanihon Air College,on_display
+Kawasaki,OH-6,D,31168,,JP,Cayuse,,rotary_wing,,military,recon,,Ex-JGSDF instructional airframe confirmed 2010 and 2019,OH6D; c/n 6472; OH6,Nakanihon Air College,on_display
+Cessna,172,K,JA3458,,JP,Skyhawk,,fixed_wing,monoplane,civilian,trainer,,,C172K; c/n 17257744,Nakanihon Air College,on_display

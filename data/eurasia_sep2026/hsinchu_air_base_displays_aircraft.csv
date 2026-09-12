@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,TF-104,G,4171,,TW,Starfighter,,fixed_wing,monoplane,military,trainer,,Inside the base; open days only; from the Chinese Wikipedia F-104 survivor table,TF104G; 4171; TF104,Hsinchu Air Base Displays,on_display
+Lockheed,F-104,A,4255,,TW,Starfighter,,fixed_wing,monoplane,military,fighter,,Inside the base; open days only; from the Chinese Wikipedia F-104 survivor table,F104A; 4255; F104,Hsinchu Air Base Displays,on_display
+Lockheed,F-104,G,4393,,TW,Starfighter,,fixed_wing,monoplane,military,fighter,,Inside the base; open days only; from the Chinese Wikipedia F-104 survivor table,F104G; 4393; F104,Hsinchu Air Base Displays,on_display

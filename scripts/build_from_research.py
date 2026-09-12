@@ -387,14 +387,31 @@ def main():
     if args.museum_in_last_field:
         # One file per museum, as everywhere else: the importer is atomic per
         # request, so a bad row can only ever take down its own museum.
+        import hashlib
         import unicodedata
         outdir = Path(args.out_dir); outdir.mkdir(parents=True, exist_ok=True)
         by_museum = {}
         for r in rows:
             by_museum.setdefault(r["museum_name"], []).append(r)
+        # Two failure modes, both of which silently DESTROYED data before
+        # September 2026 by writing several museums to one filename:
+        #   1. A name with no Latin characters at all -- Cyrillic, Greek,
+        #      Japanese -- folds to the empty string, so 14 Bulgarian and
+        #      Macedonian sites all became "_aircraft.csv" and overwrote each
+        #      other, losing 119 rows without a warning.
+        #   2. Two long names sharing their first 40 slug characters.
+        # So: fall back to a hash when the fold is empty, and disambiguate any
+        # slug that is already taken by a DIFFERENT museum.
+        used = {}
         for name, subset in by_museum.items():
             slug = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
             slug = re.sub(r"[^a-z0-9]+", "_", slug.lower()).strip("_")[:40]
+            digest = hashlib.sha1(name.encode("utf-8")).hexdigest()[:8]
+            if not slug:
+                slug = f"site_{digest}"
+            if used.get(slug, name) != name:
+                slug = f"{slug[:31]}_{digest}"
+            used[slug] = name
             write(outdir / f"{slug}_aircraft.csv", subset)
     else:
         write(args.out, rows)

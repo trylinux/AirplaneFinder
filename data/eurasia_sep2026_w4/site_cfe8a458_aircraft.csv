@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan,MiG-29,,,,BY,,,fixed_wing,monoplane,military,fighter,,OpenStreetMap node/8898722967. The node has no name tag; the type MiG-29 comes from its description tag alone,MiG-29; MiG29; Fulcrum,Літакі-пам'ятнікі -- Бяроза (сельсавет),on_display
+Unidentified,Aircraft,,,,,,,fixed_wing,monoplane,military,other,,OpenStreetMap node/6934765589. Untagged airframe node; Unidentified,,Літакі-пам'ятнікі -- Бяроза (сельсавет),on_display

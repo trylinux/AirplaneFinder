@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Sukhoi,Su-24,,,,BY,,,fixed_wing,monoplane,military,bomber,,OpenStreetMap node/6072906647. One of two airframes side by side near Hrodna,Su-24; Su24; Fencer,Помнік Су-24 -- Копцеўка (Гродзенскі раён),on_display
+Unidentified,Aircraft,,,,,,,fixed_wing,monoplane,military,other,,OpenStreetMap node/10098230681. The second node of the Koptsyeuka pair carries NO TYPE; Unidentified,,Помнік Су-24 -- Копцеўка (Гродзенскі раён),on_display

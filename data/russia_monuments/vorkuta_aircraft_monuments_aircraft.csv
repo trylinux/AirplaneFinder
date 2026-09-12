@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-4,,05,,,,,rotary_wing,,military,utility,,russianplanes.net monument point 2865; contributor note (ru): Установлен возле КПП перрона базирования погранавиации ФСБ Росии аэропорта Воркута,Mi4,Vorkuta Aircraft Monuments,on_display
+Ilyushin,Il-14,P,20,,,,,fixed_wing,monoplane,military,transport,,russianplanes.net monument point 2866; contributor note (ru): Установлен возле КПП перрона базирования погранавиации ФСБ Росии аэропорта Воркута,Il14; Il14P,Vorkuta Aircraft Monuments,on_display

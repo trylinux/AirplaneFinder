@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+McDonnell,F-4,C,64-0844,Phantom II,,fixed_wing,monoplane,military,fighter,,Recorded by Aerial Visuals as EF-4C Wild Weasel conversion; displayed outdoors across the street from the museum,EF-4C; c/n 1197; F4; F4C; EF4C,Atterbury-Bakalar Air Museum,on_display
+Fairchild,C-119,G,N3003,Flying Boxcar,City of Columbus,fixed_wing,monoplane,military,transport,,Long restoration project; outer wings were reinstalled in a project reported by the aviation press; FAA registry September 2026 shows N3003 current to Atterbury-Bakalar Air Museum Inc with serial 10737,c/n 10737; C119; C119G,Atterbury-Bakalar Air Museum,under_restoration
+Waco,CG-4,A,,Hadrian,,fixed_wing,monoplane,military,transport,,Nose section only; displayed indoors,CG4; CG4A,Atterbury-Bakalar Air Museum,on_display

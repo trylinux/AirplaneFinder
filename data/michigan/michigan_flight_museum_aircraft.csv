@@ -1,0 +1,27 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,B-25,D,43-3634,Mitchell,Rosie's Reply,fixed_wing,monoplane,military,bomber,1943,Airworthy museum-operated bomber offering ride flights; FAA registry September 2026 shows N3774 current to Yankee Air Force Inc of Belleville,N3774; Mitchell II KL148; B25; B25D,Michigan Flight Museum,on_display
+Douglas,C-47,A,44-76716,Skytrain,Hairless Joe,fixed_wing,monoplane,military,transport,1944,Airworthy museum-operated transport; FAA registry September 2026 shows N8704 current to Yankee Air Force Inc; recorded by Aerial Visuals as TC-47D,N8704; c/n 33048; C47; C47A,Michigan Flight Museum,on_display
+Ford,4-AT,B,N9610,Tri-Motor,,fixed_wing,monoplane,civilian,commercial_transport,,Airworthy museum-operated Tri-Motor; FAA registry September 2026 shows N9610 current to Yankee Air Force Inc with serial 42,c/n 42; 4AT; 4ATB,Michigan Flight Museum,on_display
+Bell,UH-1,H,66-01126,Iroquois,,rotary_wing,,military,utility,1966,Airworthy museum-operated Huey; FAA registry September 2026 shows N240GH current to Yankee Air Force Inc,N240GH; UH1; UH1H,Michigan Flight Museum,on_display
+Boeing,B-52,D,55-0677,Stratofortress,,fixed_wing,monoplane,military,bomber,,Outdoor display at Willow Run,c/n 464024; B52; B52D,Michigan Flight Museum,on_display
+Consolidated,PB4Y,2G,59876,Privateer,,fixed_wing,monoplane,military,recon,,Ex-Coast Guard Privateer; outdoor display,N6813D,Michigan Flight Museum,on_display
+Lockheed,EC-121,K,141311,Warning Star,,fixed_wing,monoplane,military,recon,,Radar picket Constellation; outdoor display,c/n 4435; EC121; EC121K,Michigan Flight Museum,on_display
+Lockheed,P2V,7,140443,Neptune,,fixed_wing,monoplane,military,anti_ship,,Maritime patrol aircraft; outdoor display,,Michigan Flight Museum,on_display
+Grumman,A-6,A,152933,Intruder,,fixed_wing,monoplane,military,ground_attack,,Recorded by Aerial Visuals in the collection; presence not reconfirmed against a 2023-2026 museum source,c/n I-237; A6; A6A,Michigan Flight Museum,on_display
+Convair,C-131,B,53-7813,Samaritan,,fixed_wing,monoplane,military,transport,,Outdoor display,C131; C131B,Michigan Flight Museum,on_display
+Douglas,DC-8,63CF,N865F,,,fixed_wing,monoplane,civilian,freighter,,Former freighter airframe used as an exhibit and education space,DC8; DC863CF,Michigan Flight Museum,on_display
+Douglas,A-4,C,148543,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,Outdoor display,A4; A4C,Michigan Flight Museum,on_display
+Douglas,SBD,3,06626,Dauntless,,fixed_wing,monoplane,military,ground_attack,,Lake Michigan recovery airframe held by the museum; note the Air Zoo holds SBD-3 06624 - the two serials are adjacent and worth re-checking,SBD3,Michigan Flight Museum,under_restoration
+Martin,RB-57,A,52-1426,Canberra,,fixed_wing,monoplane,military,recon,,Outdoor display,RB57; RB57A,Michigan Flight Museum,on_display
+McDonnell,F-101,B,56-0235,Voodoo,,fixed_wing,monoplane,military,fighter,,Recorded by Aerial Visuals as NF-101B test airframe,c/n 145; F101; F101B,Michigan Flight Museum,on_display
+McDonnell,F-4,C,63-7555,Phantom II,,fixed_wing,monoplane,military,fighter,,Outdoor display,c/n 0592; F4; F4C,Michigan Flight Museum,on_display
+McDonnell Douglas,F/A-18,C,163485,Hornet,,fixed_wing,monoplane,military,fighter,,Outdoor display,c/n 717; F/A18; F/A18C,Michigan Flight Museum,on_display
+North American,F-86,L,53-1060,Sabre,,fixed_wing,monoplane,military,fighter,,All-weather Sabre interceptor; outdoor display,c/n 201-504; F86; F86L,Michigan Flight Museum,on_display
+North American,F-100,C,54-1785,Super Sabre,,fixed_wing,monoplane,military,fighter,,Outdoor display,c/n 217-46; F100; F100C,Michigan Flight Museum,on_display
+Republic,F-84,F,51-9501,Thunderstreak,,fixed_wing,monoplane,military,fighter,,Outdoor display,N5006; F84; F84F,Michigan Flight Museum,on_display
+Republic,RF-84,F,52-7421,Thunderflash,,fixed_wing,monoplane,military,recon,,Outdoor display,RF84; RF84F,Michigan Flight Museum,on_display
+Lockheed,T-33,A,58-0492,Shooting Star,,fixed_wing,monoplane,military,trainer,,Recorded by Aerial Visuals in the collection; presence not reconfirmed against a 2023-2026 museum source,N24837; c/n 580-1541; T33; T33A,Michigan Flight Museum,on_display
+Beechcraft,AT-11,,43-10404,Kansan,,fixed_wing,monoplane,military,trainer,,Recorded by Aerial Visuals in the collection; presence not reconfirmed against a 2023-2026 museum source,N7340C; c/n 5097; AT11,Michigan Flight Museum,on_display
+Schweizer,TG-3,A,42-52948,,,fixed_wing,monoplane,military,trainer,,Training glider recorded by Aerial Visuals in the collection,N4808N; TG3; TG3A,Michigan Flight Museum,in_storage
+Bell,AH-1,J,159212,SeaCobra,,rotary_wing,,military,ground_attack,,Outdoor display,AH1; AH1J,Michigan Flight Museum,on_display
+SPAD,S.XIII,,,,,fixed_wing,biplane,military,fighter,,Replica; displayed carrying the number 4523,,Michigan Flight Museum,on_display

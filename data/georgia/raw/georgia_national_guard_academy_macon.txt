@@ -1,0 +1,1 @@
+Grumman|OV-1|D|62-5875|Mohawk||fixed_wing|monoplane|military|recon||Serial falls in the OV-1 FY62 62-5859 to 62-5899 block which was built as OV-1B/C - conversion to OV-1D is plausible but unconfirmed; Aerial Visuals places the display in Macon while silverhawkauthor places a Georgia National Guard Academy Mohawk at Sparta; the Macon coordinate is used here|Mohawk|on_display

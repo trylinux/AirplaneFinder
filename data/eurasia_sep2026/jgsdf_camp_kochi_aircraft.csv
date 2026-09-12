@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Kawasaki,OH-6,D,31200,,JP,Cayuse,,rotary_wing,,military,recon,,At 33.5573N 133.7526E; recorded 16 Apr 2013 at a camp that only opened in March 2010,OH6D; OH6,JGSDF Camp Kochi,on_display
+Fuji,UH-1,H,41715,,JP,Iroquois,,rotary_wing,,military,utility,,At 33.5573N 133.7526E; recorded April 2013 but absent from the Street View imagery consulted in April 2020 so its survival is doubtful,UH1H; Huey; UH1,JGSDF Camp Kochi,on_display

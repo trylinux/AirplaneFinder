@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,TF-104,G,MM54226,,IT,Starfighter,Spillone,fixed_wing,monoplane,military,trainer,,Gate display at the Air Force science institute; wears 20-1; serial agreed by alatricolore and the International F-104 Society,TF104; TF-104G; F-104; Starfighter; 20-1; TF104G; F104,Istituto di Scienze Militari Aeronautiche -- Firenze,on_display
+Aermacchi,MB-326,,MM54373,,IT,,,fixed_wing,monoplane,military,trainer,,Displayed at the institute per alatricolore,MB326,Istituto di Scienze Militari Aeronautiche -- Firenze,on_display
+SAI Ambrosini,S.7,Super,MM53852,,IT,,,fixed_wing,monoplane,military,trainer,,Displayed at the institute wearing code SG-7,S7; S.7; Super S.7; SG-7; SG7,Istituto di Scienze Militari Aeronautiche -- Firenze,on_display

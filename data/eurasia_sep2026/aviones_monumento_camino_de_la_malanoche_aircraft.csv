@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,T-33,,,,ES,Shooting Star,,fixed_wing,monoplane,military,trainer,,Mapped with manufacturer and model on the Camino de la Malanoche along the Los Llanos base perimeter; serial not recorded,T33; Shooting Star,Aviones Monumento Camino de la Malanoche -- Albacete,on_display
+Unidentified,Military aircraft,,,,,,,fixed_wing,monoplane,military,other,,Second airframe mapped on the same road; no type recorded,,Aviones Monumento Camino de la Malanoche -- Albacete,on_display
+Unidentified,Military aircraft,,,,,,,fixed_wing,monoplane,military,other,,Third airframe mapped on the same road; no type recorded,,Aviones Monumento Camino de la Malanoche -- Albacete,on_display

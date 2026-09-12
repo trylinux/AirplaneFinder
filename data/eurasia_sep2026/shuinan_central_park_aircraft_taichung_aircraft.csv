@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+AIDC,PL-1,,5823,,TW,Chieh Shou,,fixed_wing,monoplane,military,trainer,,介壽號 primary trainer; tactical number 5823 from OSM node 7935098806,PL1; 5823; 介壽號,Shuinan Central Park Aircraft -- Taichung,on_display
+AIDC,T-CH-1,,0701,,TW,Chung Hsing,,fixed_wing,monoplane,military,trainer,,中興號 turboprop trainer; tactical number 0701 from OSM node 7935098807,TCH1; T-CH-1; 0701; 中興號,Shuinan Central Park Aircraft -- Taichung,on_display
+AIDC,AT-3,,0802,,TW,Tzu Chung,,fixed_wing,monoplane,military,trainer,,Tactical number 0802 from OSM node 7935098808,AT3; AT-3; 0802; 自強號,Shuinan Central Park Aircraft -- Taichung,on_display
+AIDC,XC-2,,,,TW,XC-2,,fixed_wing,monoplane,military,transport,,Indigenous twin-turboprop transport prototype; only two were built and this is one of the very few survivors; no tactical number recorded by the surveyor,XC2; XC-2,Shuinan Central Park Aircraft -- Taichung,on_display
+Unidentified,Aircraft,,,,TW,,,fixed_wing,monoplane,military,other,,A fifth historic=aircraft node (OSM 7935098884) mapped 300 m north of the other four with no name or type,,Shuinan Central Park Aircraft -- Taichung,on_display

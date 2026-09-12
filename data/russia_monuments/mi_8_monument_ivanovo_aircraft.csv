@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-8,,,?,,,,rotary_wing,,military,utility,,russianplanes.net monument point 11028; wears bort 61 -- an airframe already in the database elsewhere carries that same number so it is recorded here as a marking rather than as an identity,Mi-9; Mi-17; Mi-18; Mi-19; Mi-171; Mi-172; Mi8; Mi9; Mi17; Mi18; Mi19; Mi171; Mi172,Mi-8 Monument -- Ivanovo,on_display

@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Dassault,Mirage III,,,,CH,,,fixed_wing,monoplane,military,fighter,,"Converted into the ""Mirage Bar"" at the Runway 34 venue; OSM records a start_date of 1965 for the airframe; variant and serial unknown",Mirage 3,Runway 34 Aircraft Bars -- Glattbrugg,on_display

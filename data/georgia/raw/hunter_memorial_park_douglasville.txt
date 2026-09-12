@@ -1,0 +1,1 @@
+Republic|F-105|D|61-0164|Thunderchief||fixed_wing|monoplane|military|ground_attack||Serial checks against the F-105D FY61 block; the Wikipedia surviving-F-105 list records that this airframe is PAINTED to represent 59-1746 so the wearing serial is not the identity; silverhawkauthor mis-prints the serial as 64-0164 which is not a valid F-105D serial|Thud; 59-1746|on_display

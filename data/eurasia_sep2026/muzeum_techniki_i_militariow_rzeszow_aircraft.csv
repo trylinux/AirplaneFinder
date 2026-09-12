@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikojan-Guriewicz,MiG-21,U,2719,,PL,,,fixed_wing,monoplane,military,trainer,,s/n 662719 per pl.wikipedia citing valka.cz,MiG21; MiG-21U; Mongol A; c/n 662719; MiG21U,Muzeum Techniki i Militariów -- Rzeszów,on_display
+PZL,I-22,Iryda,,,PL,,,fixed_wing,monoplane,military,trainer,,Fuselage of AN001-04 after additional testing per the pl.wikipedia I-22 status list for 2025; recorded as an incomplete airframe,I22; Iryda; AN001-04,Muzeum Techniki i Militariów -- Rzeszów,on_display
+PZL,I-22,Iryda,,,PL,,,fixed_wing,monoplane,military,trainer,,Airframe ANA004-04 per the pl.wikipedia I-22 status list for 2025,I22; Iryda; ANA004-04,Muzeum Techniki i Militariów -- Rzeszów,on_display

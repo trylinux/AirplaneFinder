@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Republic,P-47,D,44-90368,Thunderbolt,Hoosier Spirit II,fixed_wing,monoplane,military,fighter,1945,Evansville-built P-47D-40-RA returned to flight and displayed at the museum; FAA registry September 2026 shows N4747P current to Evansville P-47 Foundation Inc with serial 44-90368; the P-47 is Indiana's official state aircraft,N4747P; P47; P47D,Evansville Wartime Museum,on_display
+Boeing,PT-17,,N50142,Kaydet,,fixed_wing,biplane,military,trainer,1940,FAA registry September 2026 shows N50142 current to Evansville P-47 Foundation Inc with serial 75-962,c/n 75-962; PT17,Evansville Wartime Museum,on_display

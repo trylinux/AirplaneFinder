@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Antonov,An-2,P,7P-AND,,LS,Colt,,fixed_wing,biplane,civilian,utility,,Ex-Lesotho civil An-2; c/n 1G162-37,An2; An-2P; Colt; 7PAND; An2P,Private Aviation Collection -- Kameeldrift Pretoria,on_display
+Douglas,A-26,A,ZS-CVD,,ZA,Invader,,fixed_wing,monoplane,civilian,bomber,,c/n 27846,A26; A-26A; B-26; Invader; ZSCVD; A26A; B26,Private Aviation Collection -- Kameeldrift Pretoria,on_display
+Douglas,DC-6,B,ZS-MUL,,ZA,,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 45329,DC6; DC-6B; ZSMUL; DC6B,Private Aviation Collection -- Kameeldrift Pretoria,on_display
+Aerospatiale,SA-330,L,171,,ZA,Puma,,rotary_wing,,military,transport,,c/n 1348,SA.330L; SA330L; Puma; SA330,Private Aviation Collection -- Kameeldrift Pretoria,on_display
+Aerospatiale,SA-330,L,183,,ZA,Puma,,rotary_wing,,military,transport,,c/n 1364,SA.330L; SA330L; Puma; SA330,Private Aviation Collection -- Kameeldrift Pretoria,on_display

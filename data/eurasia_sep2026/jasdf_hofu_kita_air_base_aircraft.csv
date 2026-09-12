@@ -1,0 +1,9 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Fuji,T-34,A,51-0372,,JP,Mentor,,fixed_wing,monoplane,military,trainer,,Was the National Defense Academy instructional airframe marked Bodai 0782; moved here by the end of FY2018 and repainted with its true serial; replaced 41-0309 which was scrapped; at 34.0311N 131.5412E,T34A; Bodai 0782; T34,JASDF Hofu-Kita Air Base,on_display
+Fuji,T-3,,81-5506,,JP,,,fixed_wing,monoplane,military,trainer,,The first T-3 to be struck off charge on 18 Oct 2001; at 34.0312N 131.5412E,T3,JASDF Hofu-Kita Air Base,on_display
+Kawasaki,T-33,A,51-5632,,JP,Shooting Star,,fixed_wing,monoplane,military,trainer,,At 34.0310N 131.5411E; OSM records the serial in the inscription tag,T33A; T33,JASDF Hofu-Kita Air Base,on_display
+Fuji,T-1,A,15-5816,,JP,,,fixed_wing,monoplane,military,trainer,,At about 34.0308N 131.5409E; OSM records the serial in the inscription tag,T1A; T1,JASDF Hofu-Kita Air Base,on_display
+North American,F-86,D,04-8203,,JP,Sabre Dog,,fixed_wing,monoplane,military,fighter,,At 34.0309N 131.5410E; OSM records the serial in the inscription tag,F86D; F-86D-50; F86,JASDF Hofu-Kita Air Base,on_display
+Mitsubishi,F-104,J,36-8537,,JP,Starfighter,,fixed_wing,monoplane,military,fighter,,At 34.0320N 131.5375E,F104J; F104,JASDF Hofu-Kita Air Base,on_display
+Mitsubishi,F-1,,10-8256,,JP,,,fixed_wing,monoplane,military,ground_attack,,At 34.0318N 131.5374E,F1,JASDF Hofu-Kita Air Base,on_display
+Kawasaki,OH-6,D,31313,,JP,Cayuse,,rotary_wing,,military,recon,,The last OH-6D built; fitted with an IR light and a FLIR mount; made its final flight 6 Mar 2020 and was announced as displayed here on 26 Mar 2021; at 34.0340N 131.5367E,OH6D; OH6,JASDF Hofu-Kita Air Base,on_display

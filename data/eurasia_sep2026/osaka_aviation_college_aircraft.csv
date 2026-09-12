@@ -1,0 +1,13 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Cessna,A150,K,JA3596,,JP,,,fixed_wing,monoplane,civilian,trainer,,Deregistered 6 Oct 1994,A150K; c/n A1500223,Osaka Aviation College,on_display
+Cessna,152,,JA3964,,JP,,,fixed_wing,monoplane,civilian,trainer,,Deregistered 29 May 1996,C152; c/n 15286000,Osaka Aviation College,on_display
+Cessna,150,L,N1626Q,,US,,,fixed_wing,monoplane,civilian,trainer,,US registration cancelled 23 Jul 2012,C150L; c/n 15072926,Osaka Aviation College,on_display
+Cessna,150,L,N18507,,US,,,fixed_wing,monoplane,civilian,trainer,,US registration cancelled 20 Dec 1990,C150L; c/n 15073899,Osaka Aviation College,on_display
+Cessna,152,,N4785P,,US,,,fixed_wing,monoplane,civilian,trainer,,US registration cancelled 7 Jan 2004,C152; c/n 15284815,Osaka Aviation College,on_display
+Cessna,152,,N47346,,US,,,fixed_wing,monoplane,civilian,trainer,,US registration cancelled 24 Mar 2004,C152; c/n 15283218,Osaka Aviation College,on_display
+Cessna,172,K,N84702,,US,Skyhawk,,fixed_wing,monoplane,civilian,trainer,,US registration cancelled 11 May 2015,C172K; c/n 17258585,Osaka Aviation College,on_display
+Cessna,172,M,N15MJ,,US,Skyhawk,,fixed_wing,monoplane,civilian,trainer,,US registration cancelled 4 Sep 2014,C172M; c/n 17263238,Osaka Aviation College,on_display
+Piper,PA-44,180,N2095K,,US,Seminole,,fixed_wing,monoplane,civilian,trainer,,Still current on the US register,PA44; PA-44-180; c/n 44-7995180,Osaka Aviation College,on_display
+Robinson,R22,Beta,JA7703,,JP,,,rotary_wing,,civilian,trainer,,Deregistered 18 Apr 1997,R22; c/n 0530,Osaka Aviation College,on_display
+Robinson,R22,Beta,JA7897,,JP,,,rotary_wing,,civilian,trainer,,Deregistered 12 Dec 2000,R22; c/n 2263,Osaka Aviation College,on_display
+Kawasaki,OH-6,J,31704,,JP,Cayuse,,rotary_wing,,military,recon,,Confirmed present 29 Jan 2010; current status unknown,OH6J; OH6,Osaka Aviation College,in_storage

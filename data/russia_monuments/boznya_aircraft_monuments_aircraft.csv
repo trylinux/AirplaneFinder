@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-17,,53,,,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 3528,MiG17,Boznya Aircraft Monuments,on_display
+Mil,Mi-8,,41,,,,,rotary_wing,,military,utility,,russianplanes.net monument point 8072; contributor note (ru): Установлен осенью 2018г.,Mi-9; Mi-17; Mi-18; Mi-19; Mi-171; Mi-172; Mi8; Mi9; Mi17; Mi18; Mi19; Mi171; Mi172,Boznya Aircraft Monuments,on_display
+Mil,Mi-24,,10,,,,,rotary_wing,,military,ground_attack,,russianplanes.net monument point 8141; contributor note (ru): Вертолет Ми-24П Вяземского полка установленна памятник осенью 2018г.,Mi-25; Mi-35; Mi24; Mi25; Mi35,Boznya Aircraft Monuments,on_display

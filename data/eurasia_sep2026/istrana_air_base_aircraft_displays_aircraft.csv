@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aeritalia,F-104,S,MM6750,,IT,Starfighter,Spillone,fixed_wing,monoplane,military,fighter,,Preserved at the 51 Stormo base; alatricolore records it as a composite with the nose of MM 6824 and codes 3-32; the International F-104 Society gives 51-07,F104; F-104S; Starfighter; 3-32; 51-07; F104S,Istrana Air Base Aircraft Displays,on_display
+Aeritalia,F-104,S,MM6804,,IT,Starfighter,Spillone,fixed_wing,monoplane,military,fighter,,Gate guard at the 51 Stormo base wearing 51-22 and 51-55,F104; F-104S; Starfighter; 51-22; 51-55; F104S,Istrana Air Base Aircraft Displays,on_display
+AMX International,AMX,,MM7101,,IT,,,fixed_wing,monoplane,military,ground_attack,,Preserved at the 51 Stormo base per alatricolore,AMX; A-11; A11,Istrana Air Base Aircraft Displays,on_display
+Aermacchi,MB-326,,MM54217,,IT,,,fixed_wing,monoplane,military,trainer,,Preserved at the 51 Stormo base wearing 51-75,MB326; 51-75,Istrana Air Base Aircraft Displays,on_display
+Aermacchi,MB-326,,MM54374,,IT,,,fixed_wing,monoplane,military,trainer,,Preserved at the 51 Stormo base wearing 51-77,MB326; 51-77,Istrana Air Base Aircraft Displays,on_display

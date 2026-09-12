@@ -1,0 +1,1 @@
+Lockheed|T-33|A|51-6612|Shooting Star||fixed_wing|monoplane|military|trainer||Serial checks against the T-33A FY51 block; displayed on Main Street at US Route 82; the Wikipedia list of displayed T-33s places it at the Masonic Lodge in Willacoochee and notes a T-33 crashed near the town in the 1960s; a current OpenStreetMap node sits at the Aerial Visuals fix|T-Bird|on_display

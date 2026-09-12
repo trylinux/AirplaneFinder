@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Tupolev,Tu-134,B-3,RA-65694,63235,RU,,,fixed_wing,monoplane,military,commercial_transport,,russianplanes.net monument point 10982,Tu134,Vorotynsk Aircraft Monuments (3),on_display
+Sukhoi,Su-27,K,109 Blue,49051003604 / Т10К-9,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 24356; source records the bort as 109-синий,Su27; Su27K,Vorotynsk Aircraft Monuments (3),on_display
+Aero,L-29,,RA-1612K,194564,RU,Delfin,,fixed_wing,monoplane,military,trainer,,russianplanes.net monument point 24684,Delfin; L29,Vorotynsk Aircraft Monuments (3),on_display

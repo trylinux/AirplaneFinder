@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-19,PM,19 Blue,,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 327; source records the bort as 19-синий,MiG19; MiG19PM,Gorodetsky District Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-17,,09 Blue,,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 328; source records the bort as 09-синий,MiG17,Gorodetsky District Aircraft Monuments,on_display
+Tupolev,Tu-104,A,03 Blue,86601303,RU,,,fixed_wing,monoplane,military,commercial_transport,,russianplanes.net monument point 329; contributor note (ru): Серийник 86601303; source records the bort as 03-синий,Tu104; Tu104A,Gorodetsky District Aircraft Monuments,on_display
+Lisunov,Li-2,,CCCP-13358,23441706,RU,,,fixed_wing,monoplane,military,transport,,russianplanes.net monument point 331; contributor note (ru): s/n 23441706,Li2,Gorodetsky District Aircraft Monuments,on_display

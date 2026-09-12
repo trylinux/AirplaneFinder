@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Yakovlev,Yak-12,A,СССР-14222,,RU,,,fixed_wing,monoplane,military,other,,russianplanes.net monument point 4929,Yak12; Yak12A,Magan Aircraft Monuments,on_display
+Mil,Mi-1,M,СССР-13315,401024,RU,,,rotary_wing,,military,utility,,russianplanes.net monument point 4930,Mi1; Mi1M,Magan Aircraft Monuments,on_display

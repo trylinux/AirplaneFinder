@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bolkow,Bo 105,C,NAF512,,NG,,,rotary_wing,,military,utility,,c/n S-291,Bo105; Bo.105C; BO-105,Bo 105 and Mi-24 Display -- Port Harcourt,on_display
+Mil,Mi-24,V,NAF537,,NG,Hind,,rotary_wing,,military,ground_attack,,,Mi24; Mi-24V; Hind; Mi24V,Bo 105 and Mi-24 Display -- Port Harcourt,on_display

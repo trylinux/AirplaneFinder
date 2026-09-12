@@ -1,0 +1,10 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mitsubishi,F-1,,70-8277,,JP,,,fixed_wing,monoplane,military,ground_attack,,The last F-1 built and the second F-1 displayed at Tsuiki,F1,JASDF Tsuiki Air Base,on_display
+North American,F-86,D,84-8115,,JP,Sabre Dog,,fixed_wing,monoplane,military,fighter,,Moved for construction work and currently not viewable,F86D; F86,JASDF Tsuiki Air Base,on_display
+Mitsubishi,F-86,F,92-7938,,JP,Sabre,,fixed_wing,monoplane,military,fighter,,,F86F; F86,JASDF Tsuiki Air Base,on_display
+Mitsubishi,F-104,J,36-8546,,JP,Starfighter,,fixed_wing,monoplane,military,fighter,,,F104J; F104,JASDF Tsuiki Air Base,on_display
+Kawasaki,T-33,A,51-5627,,JP,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T33A; T33,JASDF Tsuiki Air Base,on_display
+Mitsubishi,F-86,F,92-7922,,JP,Sabre,,fixed_wing,monoplane,military,fighter,,,F86F; F86,JASDF Tsuiki Air Base,on_display
+Mitsubishi,F-4,EJ,07-8429,,JP,Phantom II,,fixed_wing,monoplane,military,fighter,,Flown in from Gifu on 15 Mar 2021 and struck off here; parked behind the hangars pending a permanent display site and moved from time to time; around 33.6763N 131.04E in late 2024,F4EJ; Phantom; F4,JASDF Tsuiki Air Base,on_display
+Boeing,F-15,J,,,JP,Eagle,,fixed_wing,monoplane,military,fighter,,Fin of the aircraft that crashed off Hagi on 11 Sep 2008 with the pilot surviving; kept as a monument that visitors tend to sit on,F15J; 72-8883; F15,JASDF Tsuiki Air Base,on_display
+Mitsubishi,Nike-J,,,,JP,Nike-J,,missile_rocket,,military,other,,surface_to_air Complete round with booster and launcher inside the 7th Fire Unit compound at 33.6764N 131.6928E about 1.5 km SW of the runway,NikeJ,JASDF Tsuiki Air Base,on_display

@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Malmo,MFI-9,B,BB-905,,NG,Minicon,,fixed_wing,monoplane,military,ground_attack,,A Biafran Air Force MFI-9B Minicon; the type used in Carl Gustaf von Rosen's 1969 rocket raids; c/n 44,MFI9; MFI-9B; Minicon; MiniCOIN; Biafra Baby; MFI9B,National War Museum Umuahia,on_display
+Dornier,Do 27,A-4,NAF102,,NG,,,fixed_wing,monoplane,military,utility,,c/n 523,Do27; Do.27A4; Do-27,National War Museum Umuahia,on_display
+Dornier,Do 28,D-1,NAF181,,NG,Skyservant,,fixed_wing,monoplane,military,utility,,c/n 4056,Do28; Do.28D1; Skyservant,National War Museum Umuahia,on_display
+Ilyushin,Il-28,,NAF805,,NG,Beagle,,fixed_wing,monoplane,military,bomber,,Nigerian Air Force Il-28; the type that bombed Biafran targets in 1967-70,Il28; Il-28; Beagle,National War Museum Umuahia,on_display
+Mikoyan-Gurevich,MiG-17,F,NAF624,,NG,Fresco,,fixed_wing,monoplane,military,fighter,,,MiG17; MiG-17F; Fresco; MiG17F,National War Museum Umuahia,on_display

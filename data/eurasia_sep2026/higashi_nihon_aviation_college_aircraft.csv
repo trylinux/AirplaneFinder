@@ -1,0 +1,14 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Cessna,172,M,JA3695,,JP,Skyhawk,,fixed_wing,monoplane,civilian,trainer,,Deregistered 22 May 2012; nose section displayed in the entrance lobby with the cockpit visible,C172M; c/n 17262184,Higashi-Nihon Aviation College,on_display
+Cessna,172,K,JA3560,,JP,Skyhawk,,fixed_wing,monoplane,civilian,trainer,,Deregistered 3 Aug 2021,C172K; c/n 17259192,Higashi-Nihon Aviation College,on_display
+Cessna,172,M,JA3709,,JP,Skyhawk,,fixed_wing,monoplane,civilian,trainer,,Deregistered 9 May 2008; damaged as a college airframe in the 2011 tsunami and retained with a cracked windscreen,C172M; c/n 17262210,Higashi-Nihon Aviation College,on_display
+Cessna,172,M,JA3894,,JP,Skyhawk,,fixed_wing,monoplane,civilian,trainer,,Deregistered 31 May 1994; tsunami-damaged and missing wings tail engine cowling and doors,C172M; c/n 17263820,Higashi-Nihon Aviation College,on_display
+Cessna,172,M,JA3697,,JP,Skyhawk,,fixed_wing,monoplane,civilian,trainer,,Ram conversion; deregistered 22 May 2012,C172M; c/n 17262758,Higashi-Nihon Aviation College,on_display
+Cessna,172,P,JA3883,,JP,Skyhawk,,fixed_wing,monoplane,civilian,trainer,,Damaged at Sendai airport in the 2011 tsunami and deregistered 8 Apr 2011; wingtips fin top and doors missing,C172P; c/n 17274609,Higashi-Nihon Aviation College,on_display
+Cessna,172,P,JA3905,,JP,Skyhawk,,fixed_wing,monoplane,civilian,trainer,,Damaged at Sendai airport in the 2011 tsunami; wingtips missing,C172P; c/n 17275106,Higashi-Nihon Aviation College,on_display
+Cessna,172,P,JA3935,,JP,Skyhawk,,fixed_wing,monoplane,civilian,trainer,,Deregistered 13 Jul 2011,C172P; c/n 17276245,Higashi-Nihon Aviation College,on_display
+Cessna,172,P,JA3936,,JP,Skyhawk,,fixed_wing,monoplane,civilian,trainer,,Deregistered 13 Jul 2011,C172P; c/n 17276246,Higashi-Nihon Aviation College,on_display
+Cessna,172,P,JA3937,,JP,Skyhawk,,fixed_wing,monoplane,civilian,trainer,,Deregistered 13 Jul 2011,C172P; c/n 17276248,Higashi-Nihon Aviation College,on_display
+Cessna,172,P,JA3938,,JP,Skyhawk,,fixed_wing,monoplane,civilian,trainer,,Deregistered 24 Oct 2012,C172P; c/n 17276249,Higashi-Nihon Aviation College,on_display
+Beechcraft,95,B55,JA5206,,JP,Baron,,fixed_wing,monoplane,civilian,trainer,,Deregistered 10 Dec 2012,Baron; 95-B55; c/n TC-1480,Higashi-Nihon Aviation College,on_display
+Kawasaki,OH-6,D,31204,,JP,Cayuse,,rotary_wing,,military,recon,,Ex-JGSDF instructional airframe confirmed 16 Apr 2018,OH6D; c/n 6510; OH6,Higashi-Nihon Aviation College,on_display

@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Atlas Aircraft Corporation,Cheetah,C,341,,ZA,Cheetah,,fixed_wing,monoplane,military,fighter,,Held as a ground-instructional airframe,Cheetah C; CheetahC,SAAF College Instructional Airframes -- Lyttelton,in_storage
+Atlas Aircraft Corporation,Cheetah,C,355,,ZA,Cheetah,,fixed_wing,monoplane,military,fighter,,Held as a ground-instructional airframe,Cheetah C; CheetahC,SAAF College Instructional Airframes -- Lyttelton,in_storage
+Atlas Aircraft Corporation,Cheetah,C,373,,ZA,Cheetah,,fixed_wing,monoplane,military,fighter,,Held as a ground-instructional airframe,Cheetah C; CheetahC,SAAF College Instructional Airframes -- Lyttelton,in_storage
+Atlas Aircraft Corporation,Cheetah,D,844,,ZA,Cheetah,,fixed_wing,monoplane,military,fighter,,Two-seat Cheetah D held as a ground-instructional airframe,Cheetah D; CheetahD,SAAF College Instructional Airframes -- Lyttelton,in_storage
+Atlas Aircraft Corporation,Impala,Mk II,1061,,ZA,Impala,,fixed_wing,monoplane,military,ground_attack,,Licence-built Aermacchi MB-326K; c/n 62,MB-326K; MB326K; Impala Mk2,SAAF College Instructional Airframes -- Lyttelton,in_storage
+Aerospatiale,SA-330,L,141,,ZA,Puma,,rotary_wing,,military,transport,,c/n 1290,SA.330L; SA330L; Puma; SA330,SAAF College Instructional Airframes -- Lyttelton,in_storage
+Aerospatiale,SA-330,L,170,,ZA,Puma,,rotary_wing,,military,transport,,c/n 1485,SA.330L; SA330L; Puma; SA330,SAAF College Instructional Airframes -- Lyttelton,in_storage

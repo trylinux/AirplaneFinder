@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mitsubishi,F-86,F,82-7777,,JP,Sabre,,fixed_wing,monoplane,military,fighter,,Just inside the main gate and only glimpsed from outside; photographable at the summer Bon dance and the November open day,F86F; F86,JASDF Kasuga Air Base,on_display
+Mitsubishi,F-104,J,46-8603,,JP,Starfighter,,fixed_wing,monoplane,military,fighter,,Just inside the main gate with the F-86F,F104J; F104,JASDF Kasuga Air Base,on_display
+Mitsubishi,F-1,,90-8234,,JP,,,fixed_wing,monoplane,military,ground_attack,,On rising ground beside Prefectural Route 31 and visible from the public road all year,F1,JASDF Kasuga Air Base,on_display
+Mitsubishi,Nike-J,,,,JP,Nike-J,,missile_rocket,,military,other,,surface_to_air Missile-body monument at 33.5319N 130.4660E,NikeJ,JASDF Kasuga Air Base,on_display
+Mitsubishi,F-4,EJ Kai,57-8353,,JP,Phantom II,,fixed_wing,monoplane,military,fighter,,A cut section of skin from the fin of this airframe was worked into a memorial unveiled 2 Oct 2020 marking the Phantom's retirement; the donor aircraft had been parked behind the flight line at Hyakuri,F4EJ; Phantom; F4,JASDF Kasuga Air Base,on_display

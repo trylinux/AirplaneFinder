@@ -1,0 +1,1 @@
+Bell|AH-1|F|68-15110|HueyCobra|Cobra|rotary_wing||military|ground_attack||Serial checks against the FY68 AH-1G block; the post building is named in OpenStreetMap as American Legion Post #1376 at 8616 Clinton Street; Aerial Visuals dossier 3228 arc-second fix; also carried by the silverhawkauthor compilation as New Hartford|AH-1G; Cobra|on_display

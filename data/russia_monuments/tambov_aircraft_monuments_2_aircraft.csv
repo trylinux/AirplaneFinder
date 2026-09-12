@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Ilyushin,Il-28,R,01 Red,,RU,,,fixed_wing,monoplane,military,bomber,,russianplanes.net monument point 194; source records the bort as 01-красный,Il28; Il28R,Tambov Aircraft Monuments (2),on_display
+Antonov,An-12,B,31 Yellow,5343010,RU,,,fixed_wing,monoplane,military,transport,,russianplanes.net monument point 196; source records the bort as 31-желтый,An12; An12B,Tambov Aircraft Monuments (2),on_display

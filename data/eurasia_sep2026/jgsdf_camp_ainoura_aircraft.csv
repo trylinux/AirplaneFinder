@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Kawasaki,OH-6,J,31104,,JP,Cayuse,,rotary_wing,,military,recon,,At 33.1765N 129.6587E; present since 2013,OH6J; OH6,JGSDF Camp Ainoura,on_display
+Kawasaki,V-107,A,51705,,JP,,,rotary_wing,,military,transport,,At 33.1765N 129.6584E; on satellite imagery since 2003,V107A; KV107; V107,JGSDF Camp Ainoura,on_display
+Fuji,UH-1,H,41635,,JP,Iroquois,,rotary_wing,,military,utility,,At 33.1765N 129.6586E; present since 2013,UH1H; Huey; UH1,JGSDF Camp Ainoura,on_display
+Fuji,UH-1,H,,,JP,Iroquois,,rotary_wing,,military,utility,,Unidentified training airframe moved beside the swimming pool at 33.1751N 129.6502E between May and Oct 2022,UH1H; Huey; UH1,JGSDF Camp Ainoura,on_display

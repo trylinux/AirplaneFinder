@@ -1,0 +1,13 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lisunov,Li-2,T,HA-LIQ,,HU,,,fixed_wing,monoplane,civilian,commercial_transport,1952,Licence-built DC-3; year is the year the airframe entered the fleet per the Wikipedia table,Li2; HA-LIQ; DC-3 licensz; Li2T,Aeropark Budapest,on_display
+Ilyushin,Il-14,T,HA-MAL,,HU,,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-Malév freighter,Il14; IL-14T; HA-MAL; Crate; Il14T,Aeropark Budapest,on_display
+Ilyushin,Il-18,V,HA-MOA,,HU,,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-Malév airliner,Il18; IL-18V; HA-MOA; Coot; Il18V,Aeropark Budapest,on_display
+Ilyushin,Il-18,V,HA-MOG,,HU,,,fixed_wing,monoplane,civilian,freighter,,Latterly flown in Air Cargo configuration,Il18; IL-18V; HA-MOG; Coot; Il18V,Aeropark Budapest,on_display
+Tupolev,Tu-134,,HA-LBE,,HU,,,fixed_wing,monoplane,civilian,commercial_transport,1973,Ex-Malév; OSM gives a start_date of 1973 and links the museum's own page,Tu134; HA-LBE; Crusty,Aeropark Budapest,on_display
+Tupolev,Tu-154,B-2,HA-LCG,,HU,,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-Malév; the museum publishes a dedicated page,Tu154; Tu-154B-2; HA-LCG; Careless,Aeropark Budapest,on_display
+Yakovlev,Yak-40,,HA-LRA,,HU,,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-Malév regional jet,Jak-40; Yak40; HA-LRA; Codling; Jak40,Aeropark Budapest,on_display
+Yakovlev,Yak-40,E,HA-YLR,,HU,,,fixed_wing,monoplane,civilian,commercial_transport,,OSM maps this airframe as Jak-40 HA-YLR; en.wikipedia's table instead lists a Yak-40 OK-EED so the two sources disagree on the second Yak-40's identity,Jak-40; Yak40; HA-YLR; OK-EED; Yak40E; Jak40,Aeropark Budapest,on_display
+Antonov,An-2,R,HA-YHF,,HU,,,fixed_wing,biplane,civilian,utility,,Formerly with the Malév Aero Club,An2; An-2TD; HA-YHF; Colt; An2R; An2TD,Aeropark Budapest,on_display
+Antonov,An-2,M,HA-MHI,,HU,,,fixed_wing,biplane,civilian,utility,,Agricultural An-2M,An2; An-2M; HA-MHI; Colt; An2M,Aeropark Budapest,on_display
+Mil,Mi-2,,HA-BCB,,HU,Hoplite,,rotary_wing,,civilian,utility,1979,OSM gives a start_date of 1979 and links the museum's page for HA-BCB,Mi2; HA-BCB; Hoplite,Aeropark Budapest,on_display
+Let,L-410,,,,HU,,Turbolet,fixed_wing,monoplane,civilian,commercial_transport,,Registration not recorded by the sources read,L410; Turbolet,Aeropark Budapest,on_display

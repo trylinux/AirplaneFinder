@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Unidentified,Helicopter,,,,,,,rotary_wing,,military,other,,"One of three airframes mapped within 110 m in Ak-Orgo; OSM names it only ""Вертолёт / Helicopter""; type genuinely unknown",,Ak-Orgo Aircraft Park -- Bishkek,on_display
+Unidentified,Light aircraft,,,,,,,fixed_wing,monoplane,military,other,,"Second of three airframes in the Ak-Orgo cluster; OSM names it only ""Самолёт / Airplane""",,Ak-Orgo Aircraft Park -- Bishkek,on_display
+Unidentified,Light aircraft,,,,,,,fixed_wing,monoplane,military,other,,"Third of three airframes in the Ak-Orgo cluster; OSM names it only ""Самолёт / Airplane""",,Ak-Orgo Aircraft Park -- Bishkek,on_display

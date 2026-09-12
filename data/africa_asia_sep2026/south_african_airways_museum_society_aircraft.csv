@@ -1,0 +1,13 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Boeing,707,-344C,ZS-SAI,,ZA,,,fixed_wing,monoplane,civilian,commercial_transport,,Forward fuselage section only; c/n 20283,B707; B-707; 707-344C; ZSSAI,South African Airways Museum Society,on_display
+Boeing,737,-219,ZS-SMD,,ZA,,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 23472,B737; B-737; 737-200; ZSSMD,South African Airways Museum Society,on_display
+Boeing,747,-244B,ZS-SAN,,ZA,Lebombo,,fixed_wing,monoplane,civilian,commercial_transport,,Named Lebombo; c/n 20239,B747; B-747; 747-200; ZSSAN,South African Airways Museum Society,on_display
+Boeing,747,SP-44,ZS-SPC,,ZA,Maluti,,fixed_wing,monoplane,civilian,commercial_transport,,Named Maluti; the shortened long-range 747SP used on SAA's apartheid-era Cape route; c/n 21134,B747SP; 747SP; B-747SP; ZSSPC,South African Airways Museum Society,on_display
+Douglas,DC-3,,ZS-BXF,,ZA,,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 12107,DC3; DC-3; C-47; ZSBXF; C47,South African Airways Museum Society,on_display
+Douglas,DC-4,,ZS-AUB,,ZA,Outeniqua,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 42984,DC4; DC-4; ZSAUB,South African Airways Museum Society,on_display
+Douglas,C-54,D,ZS-PAJ,,ZA,,,fixed_wing,monoplane,civilian,commercial_transport,,Military-pattern DC-4; c/n 22192,C54; C-54D; DC-4; ZSPAJ; C54D; DC4,South African Airways Museum Society,on_display
+de Havilland,DH.104,,ZS-BCC,,ZA,Dove,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 04079,DH104; DH.104; Dove; ZSBCC,South African Airways Museum Society,on_display
+Vickers,Viking,C-352L,ZS-AFA,,ZA,Viking,,fixed_wing,monoplane,civilian,commercial_transport,,Recorded by the source as C-352L; c/n 164,Viking; C.352L; ZSAFA,South African Airways Museum Society,on_display
+Piper,L-18,-08,ZS-ASN,,ZA,Super Cub,,fixed_wing,monoplane,civilian,private,,c/n 18-2026,L18; L-18; PA-18; Super Cub; ZSASN; PA18,South African Airways Museum Society,on_display
+Lockheed,L-1649,A,ZS-DVJ,,ZA,Starliner,,fixed_wing,monoplane,civilian,commercial_transport,,Lockheed Starliner; the final Constellation development; c/n 1649A-1042,L1649; L-1649A; Starliner; Super Constellation; ZSDVJ,South African Airways Museum Society,on_display
+Piper,PA-23,-250,ZS-CWL,,ZA,Aztec,,fixed_wing,monoplane,civilian,private,,c/n 27-2142,PA23; PA-23-250; Aztec; ZSCWL,South African Airways Museum Society,on_display

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Sukhoi,Su-2,,39 White,НеизвЗав2-Макет-39ж-Волгоград,RU,,,fixed_wing,monoplane,military,other,,russianplanes.net monument point 3407; source records the bort as 39 белый,Su2,Volgograd Aircraft Monuments,on_display
+Yakovlev,Yak-3,maket,,,,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 3408,Yak3,Volgograd Aircraft Monuments,on_display

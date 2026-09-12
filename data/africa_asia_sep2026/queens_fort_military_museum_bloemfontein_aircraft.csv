@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Atlas Aircraft Corporation,Impala,Mk I,591,,ZA,Impala,,fixed_wing,monoplane,military,trainer,,Licence-built Aermacchi MB-326M; c/n A116,MB-326M; MB326M; Impala Mk1,Queens Fort Military Museum -- Bloemfontein,on_display
+Atlas Aircraft Corporation,Impala,Mk II,1032,,ZA,Impala,,fixed_wing,monoplane,military,ground_attack,,Licence-built Aermacchi MB-326K; c/n 33,MB-326K; MB326K; Impala Mk2,Queens Fort Military Museum -- Bloemfontein,on_display
+Dassault,Mirage III,RZ,837,,ZA,Mirage III,,fixed_wing,monoplane,military,recon,,,Mirage 3RZ; Mirage3RZ,Queens Fort Military Museum -- Bloemfontein,on_display

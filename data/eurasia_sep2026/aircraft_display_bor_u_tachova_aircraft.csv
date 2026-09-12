@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Unidentified,Jet aircraft,,,,,,,fixed_wing,monoplane,military,other,,"One of two airframes displayed in the Bor industrial zone; the surveyor tagged the object ""jet"" with an explicit fixme asking for the type so nothing beyond the airframe class is known",,Aircraft Display -- Bor u Tachova,on_display
+Unidentified,Helicopter,,,,,,,rotary_wing,,military,other,,"Second airframe at the same Bor industrial-zone location; tagged ""helicopter"" with an explicit fixme asking for the type",,Aircraft Display -- Bor u Tachova,on_display

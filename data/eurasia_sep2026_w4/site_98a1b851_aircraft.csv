@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-24,,,,BY,,,rotary_wing,,military,ground_attack,,OpenStreetMap node/9318765644. One of four airframes in a 45 m line in Vitebsk,Mi-24; Mi24; Hind,Верталётны мемарыял -- Віцебск,on_display
+Mil,Mi-2,,,,BY,,,rotary_wing,,military,utility,,OpenStreetMap node/9320125423. One of four airframes in the Vitebsk line,Mi-2; Mi2; Hoplite,Верталётны мемарыял -- Віцебск,on_display
+Mil,Mi-8,,,,BY,,,rotary_wing,,military,transport,,OpenStreetMap node/9320125425. One of four airframes in the Vitebsk line; Russian-spelling OSM label,Mi-8; Mi8; Hip,Верталётны мемарыял -- Віцебск,on_display
+Unidentified,Aircraft,,,,,,,fixed_wing,monoplane,military,other,,OpenStreetMap node/9320125424. The fourth node in the Vitebsk line carries NO TYPE; Unidentified,,Верталётны мемарыял -- Віцебск,on_display

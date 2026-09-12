@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Unidentified,Aircraft,,,,TW,,,fixed_wing,monoplane,military,other,,One of two historic=aircraft nodes inside the Zhongzhuang West army camp (OSM 5642429180 and 5651896066); no types recorded,,Zhongzhuang West Camp Aircraft -- Chiayi,on_display
+Unidentified,Aircraft,,,,TW,,,fixed_wing,monoplane,military,other,,Second of the two aircraft nodes inside the Zhongzhuang West camp,,Zhongzhuang West Camp Aircraft -- Chiayi,on_display

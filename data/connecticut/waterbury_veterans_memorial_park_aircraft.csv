@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,AH-1,F,70-15986,Cobra,,rotary_wing,,military,ground_attack,,Baugher's 1970 page states plainly that 70-15986 is on display at the war memorial park in Waterbury Connecticut; an OSM historic=aircraft / memorial=aircraft node in the current extract fixes it at 41.59381 -73.05649. Block check passes for the FY70 AH-1G run.,c/n 20930; AH1; AH1F,Waterbury Veterans Memorial Park,on_display

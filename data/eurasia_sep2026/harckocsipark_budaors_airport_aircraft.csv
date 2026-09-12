@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,,,,HU,Fishbed,,fixed_wing,monoplane,military,fighter,,OSM maps four MiG-21 airframes inside the park; no tactical numbers published,MiG21; Fishbed,HarckocsiPark -- Budaörs Airport,on_display
+Mikoyan-Gurevich,MiG-23,,,,HU,Flogger,,fixed_wing,monoplane,military,fighter,,Single MiG-23 mapped in OSM,MiG23; Flogger,HarckocsiPark -- Budaörs Airport,on_display
+Aero,L-39,,,,HU,,Albatros,fixed_wing,monoplane,military,trainer,,"Mapped in OSM as ""L–39""",L39; Albatros,HarckocsiPark -- Budaörs Airport,on_display
+Mil,Mi-8,,,,HU,Hip,,rotary_wing,,military,transport,,OSM maps three Mi-8 airframes at the same address,Mi8; Hip,HarckocsiPark -- Budaörs Airport,on_display

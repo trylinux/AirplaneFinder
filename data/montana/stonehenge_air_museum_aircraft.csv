@@ -1,0 +1,9 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Cessna,A-37,B,N437B,Dragonfly,,fixed_wing,monoplane,military,ground_attack,,Private collection at Crystal Lakes Resort Airport shown by appointment on 406-882-4114; ex South Vietnamese Air Force 69-6439,69-6439; c/n 43284; A37; A37B,Stonehenge Air Museum,on_display
+Curtiss,P-40,Kittyhawk I,N440PE,Warhawk,,fixed_wing,monoplane,military,fighter,,Ex Royal Canadian Air Force 1028; part of the appointment-only Stonehenge collection,RCAF 1028; c/n 15133; P40; P40Kittyhawk I,Stonehenge Air Museum,on_display
+Supermarine,Seafire,FR.47,N47SF,,,fixed_wing,monoplane,military,fighter,,Ex Royal Navy VP441; the rarest airframe in the Stonehenge collection,VP441,Stonehenge Air Museum,on_display
+Vought,F4U,5,N65WF,Corsair,,fixed_wing,monoplane,military,fighter,,US Navy BuNo 122184; part of the appointment-only Stonehenge collection,BuNo 122184,Stonehenge Air Museum,on_display
+Lockheed,T-33,A,N22ES,Shooting Star,,fixed_wing,monoplane,military,trainer,,USAF 57-0565; Wikipedia's displayed-T-33 list records 57-0565 as privately owned in Flathead County Montana which corroborates the Stonehenge listing,57-0565; c/n 580-1214; T33; T33A,Stonehenge Air Museum,on_display
+North American,Harvard,4,N600LM,,,fixed_wing,monoplane,military,trainer,,Canadian Car and Foundry built; ex Royal Canadian Air Force 20400,RCAF 20400; c/n CCF-4-191,Stonehenge Air Museum,on_display
+Boeing,PT-27,,N77AA,Kaydet,,fixed_wing,monoplane,military,trainer,,Stearman-built PT-27; USAAF 42-15591,42-15591; c/n 75-3780; PT27,Stonehenge Air Museum,on_display
+Curtiss,JN-4,D,N400JN,Jenny,,fixed_wing,monoplane,military,trainer,,Part of the appointment-only Stonehenge collection; a second Jenny is also reported at the site,Jenny; JN4; JN4D,Stonehenge Air Museum,on_display

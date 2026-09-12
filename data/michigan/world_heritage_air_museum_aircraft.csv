@@ -1,0 +1,10 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aero Vodochody,L-29,,,Delfin,,fixed_wing,monoplane,military,trainer,,Part of a Cold War jet-trainer collection kept at Coleman A. Young Municipal Airport and viewable by arrangement; no serial published,L29,World Heritage Air Museum,on_display
+Aero Vodochody,L-39,,,Albatros,,fixed_wing,monoplane,military,trainer,,Collection jet trainer; no serial published,L39,World Heritage Air Museum,on_display
+Fouga,CM-170,,,Magister,,fixed_wing,monoplane,military,trainer,,Collection jet trainer; no serial published,CM170,World Heritage Air Museum,on_display
+Hispano Aviacion,HA-200,,,Saeta,,fixed_wing,monoplane,military,trainer,,Collection jet trainer; no serial published,HA200,World Heritage Air Museum,on_display
+PZL Mielec,TS-11,,,Iskra,,fixed_wing,monoplane,military,trainer,,Collection jet trainer; no serial published,TS11,World Heritage Air Museum,on_display
+Mikoyan-Gurevich,MiG-15,UTI,,Midget,,fixed_wing,monoplane,military,trainer,,Collection jet trainer; no serial published,MiG15; MiG15UTI,World Heritage Air Museum,on_display
+de Havilland,Vampire,T.55,,,,fixed_wing,monoplane,military,trainer,,Collection jet trainer; no serial published,,World Heritage Air Museum,on_display
+de Havilland,Venom,FB.54,,,,fixed_wing,monoplane,military,fighter,,Collection jet; no serial published,,World Heritage Air Museum,on_display
+Temco,TT-1,,,Pinto,,fixed_wing,monoplane,military,trainer,,Collection jet trainer; no serial published,TT1,World Heritage Air Museum,on_display

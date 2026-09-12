@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,C-47,B,KN542,,GR,Dakota,,fixed_wing,monoplane,military,transport,,c/n 33146; ex-RAF serial retained; last noted February 2025,C47B; C47; Dakota; Skytrain,Sedes Air Base Display Line,on_display
+Nord,N.2501,D,53-241,,GR,Noratlas,,fixed_wing,monoplane,military,transport,,c/n D164; last noted February 2025,N2501; N2501D; Noratlas,Sedes Air Base Display Line,on_display
+Convair,F-102,A,61031,,GR,Delta Dagger,,fixed_wing,monoplane,military,fighter,,c/n 8-10-248; last noted February 2025,F102A; F102; Delta Dagger,Sedes Air Base Display Line,on_display
+Lockheed,TF-104,G,5708,,GR,Starfighter,,fixed_wing,monoplane,military,trainer,,"c/n 583D-5708; wears the blue ""Galaxy"" artificial colour scheme; last noted February 2025",TF104G; TF104; Starfighter; Galaxy,Sedes Air Base Display Line,on_display
+Northrop,F-5,A,065,,GR,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,c/n N.6436; last noted February 2025,F5A; F5; Freedom Fighter,Sedes Air Base Display Line,on_display
+Lockheed,T-33,A,35629,,GR,Shooting Star,,fixed_wing,monoplane,military,trainer,,c/n 580-8968; displayed wearing the false serial 626; last noted February 2025,T33A; T33; Shooting Star; 626,Sedes Air Base Display Line,on_display
+Canadair,T-33,AN,21367,,GR,Silver Star,,fixed_wing,monoplane,military,trainer,,c/n T33-367; a Canadair-built Silver Star rather than a Lockheed T-33A; carries the code TR-367; last noted February 2025,T33AN; T33; Silver Star; TR-367; TR367,Sedes Air Base Display Line,on_display

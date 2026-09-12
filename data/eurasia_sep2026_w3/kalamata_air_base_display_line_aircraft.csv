@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,T-33,A,35786,,GR,Shooting Star,,fixed_wing,monoplane,military,trainer,,c/n 580-9125; carries the code TR-786; last noted September 2024,T33A; T33; TR-786; Shooting Star; TR786,Kalamata Air Base Display Line,on_display
+Cessna,T-37,B,051,,GR,Tweet,,fixed_wing,monoplane,military,trainer,,c/n 41156; last noted September 2024,T37B; T37; Tweet,Kalamata Air Base Display Line,on_display
+Cessna,T-37,C,12502,,GR,Tweet,,fixed_wing,monoplane,military,trainer,,c/n 40785; carries the code TE-502; last noted September 2024,T37C; T37; Tweet; TE-502; TE502,Kalamata Air Base Display Line,on_display

@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-24,,,,HU,Hind,,rotary_wing,,military,ground_attack,,One of three airframes mapped together on Weiss Manfréd út in 2025,Mi24; Hind,Csepel Aircraft Displays -- Budapest XXI,on_display
+Mil,Mi-8,,,,HU,Hip,,rotary_wing,,military,transport,,One of three airframes mapped together on Weiss Manfréd út in 2025,Mi8; Hip,Csepel Aircraft Displays -- Budapest XXI,on_display
+Mikoyan-Gurevich,MiG-21,,,,HU,Fishbed,,fixed_wing,monoplane,military,fighter,,One of three airframes mapped together on Weiss Manfréd út in 2025,MiG21; Fishbed,Csepel Aircraft Displays -- Budapest XXI,on_display

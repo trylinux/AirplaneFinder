@@ -1,0 +1,29 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Schneider,SG 38,Schulgleiter,OE-0107,,AT,,,fixed_wing,monoplane,civilian,trainer,,Primary training glider,SG38; Schulgleiter,Flugmuseum Aviaticum,on_display
+Hütter,H 17,,OE-0050,,AT,,,fixed_wing,monoplane,civilian,private,,Austrian-registered glider,H17,Flugmuseum Aviaticum,on_display
+Hütter,H 17,b,OE-0350,,AT,,,fixed_wing,monoplane,civilian,private,,Austrian-registered glider,H17b; H 17b,Flugmuseum Aviaticum,on_display
+DFS,Olympia Meise,,OE-0124,,AT,,,fixed_wing,monoplane,civilian,private,,Austrian-registered glider,Olympia Meise; DFS Meise,Flugmuseum Aviaticum,on_display
+Schempp-Hirth,Göppingen Gö 4,Goevier II,OE-0104,,AT,,,fixed_wing,monoplane,civilian,trainer,,Two-seat training glider,Goevier; Go 4; Gö 4,Flugmuseum Aviaticum,on_display
+Raab,Doppelraab,IV,OE-0333,,AT,,,fixed_wing,monoplane,civilian,trainer,,Austrian-registered glider,Doppelraab 4,Flugmuseum Aviaticum,on_display
+Dittmar,Condor,IV,OE-0981,,AT,,,fixed_wing,monoplane,civilian,private,,Austrian-registered glider,Condor 4,Flugmuseum Aviaticum,on_display
+SZD,SZD-9,bis Bocian 1D,OE-0562,,AT,,,fixed_wing,monoplane,civilian,trainer,,Polish-built two-seat training glider,SZD9; Bocian,Flugmuseum Aviaticum,on_display
+Schleicher,Rhönlerche,II,OE-0884,,AT,,,fixed_wing,monoplane,civilian,trainer,,Austrian-registered glider,Rhonlerche; Ka 4,Flugmuseum Aviaticum,on_display
+Scheibe,Mü 18,B-Spatz,OE-0387,,AT,,,fixed_wing,monoplane,civilian,private,,Austrian-registered glider,Mu 18; B-Spatz,Flugmuseum Aviaticum,on_display
+Scheibe,Specht,,OE-0291,,AT,,,fixed_wing,monoplane,civilian,trainer,,Austrian-registered glider,Scheibe Specht,Flugmuseum Aviaticum,on_display
+Scheibe,Bergfalke,IV,OE-0307,,AT,,,fixed_wing,monoplane,civilian,trainer,,Austrian-registered glider,Bergfalke 4,Flugmuseum Aviaticum,on_display
+Scheibe,Mü 18,L-Spatz W,OE-0699,,AT,,,fixed_wing,monoplane,civilian,private,,Austrian-registered glider,Mu 18; L-Spatz,Flugmuseum Aviaticum,on_display
+Air Fouga,SA 104,Emouchet,OE-0215,,AT,,,fixed_wing,monoplane,civilian,trainer,,French-designed training glider,SA104; Emouchet,Flugmuseum Aviaticum,on_display
+SZD,SZD-22,Mucha Standard,,,,,,fixed_wing,monoplane,civilian,private,,Polish glider; registration not recorded by the source,SZD22; Mucha,Flugmuseum Aviaticum,on_display
+Akaflieg Wien,AFW 8,,OE-0523,,AT,,,fixed_wing,monoplane,civilian,experimental,,Viennese academic flying group design,AFW8,Flugmuseum Aviaticum,on_display
+Schneider,Grunau Baby,III,OE-0236,,AT,,,fixed_wing,monoplane,civilian,trainer,,Austrian-registered glider,Grunau Baby 3,Flugmuseum Aviaticum,on_display
+Musger,Mg 19,a,OE-0197,,AT,Steinadler,,fixed_wing,monoplane,civilian,private,,Austrian-designed glider,Mg19a; Steinadler,Flugmuseum Aviaticum,on_display
+Musger,Mg 23,,OE-0425,,AT,,,fixed_wing,monoplane,civilian,private,,Austrian-designed glider,Mg23,Flugmuseum Aviaticum,on_display
+Musger,Mg 23,SL,OE-0690,,AT,,,fixed_wing,monoplane,civilian,private,,Austrian-designed glider,Mg23SL,Flugmuseum Aviaticum,on_display
+Lohner,Etrich Taube,,OE-CET,,AT,,,fixed_wing,monoplane,civilian,private,,Austrian pioneer-era monoplane; almost certainly a reproduction given the OE-C registration,Etrich Taube; Lohner-Etrich,Flugmuseum Aviaticum,on_display
+Messerschmitt,Bf 109,,,,DE,,,fixed_wing,monoplane,military,fighter,,Works number 784998 per the museum inventory; a Luftwaffe airframe,784998; Me 109; Bf109,Flugmuseum Aviaticum,on_display
+Westermayer,B8M,,OE-AXW,,AT,Austria,,fixed_wing,monoplane,civilian,private,,Austrian light aircraft,B8M; Austria,Flugmuseum Aviaticum,on_display
+Pischof,Autoplan,,,,AT,,,fixed_wing,monoplane,civilian,experimental,,Austrian pioneer-era design; almost certainly a reproduction,Pischof Autoplan,Flugmuseum Aviaticum,on_display
+Meteor,FL 54,,OE-ABA,,AT,,,fixed_wing,monoplane,civilian,private,,Austrian light aircraft,FL54; Meteor FL-54,Flugmuseum Aviaticum,on_display
+Santos-Dumont,Demoiselle,,OK-XUD8,,,,,fixed_wing,monoplane,civilian,experimental,,Reproduction wearing a Czech microlight registration,Demoiselle; Santos Dumont 20,Flugmuseum Aviaticum,on_display
+Bell,47,G4,,,,,,rotary_wing,,civilian,utility,,Registration not recorded by the source,Bell 47G4,Flugmuseum Aviaticum,on_display
+Pipistrel,Spider,Trike,OE-8113,,AT,,,fixed_wing,monoplane,civilian,private,,Microlight trike,Spider Trike,Flugmuseum Aviaticum,on_display

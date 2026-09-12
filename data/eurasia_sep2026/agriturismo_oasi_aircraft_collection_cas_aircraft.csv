@@ -1,0 +1,11 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,F-104,G,MM6595,,IT,Starfighter,Spillone,fixed_wing,monoplane,military,fighter,,Painted in the 3 Stormo Strega scheme; wears 3-36; serial agreed by alatricolore and the International F-104 Society,F104; F-104G; Starfighter; 3-36; F104G,Agriturismo Oasi Aircraft Collection -- Cassano Magnago,on_display
+Aeritalia,G.91,Y,,,IT,,Yankee,fixed_wing,monoplane,military,ground_attack,,Held in the farm collection; no serial published,G91; G-91; G.91Y,Agriturismo Oasi Aircraft Collection -- Cassano Magnago,on_display
+Agusta-Bell,AB-204,B,MM80382,,IT,,,rotary_wing,,military,utility,,Ex-Army machine wearing EI-228,AB204; AB-204B; EI-228; AB204B; EI228,Agriturismo Oasi Aircraft Collection -- Cassano Magnago,on_display
+Agusta-Bell,AB-212,,,,IT,,,rotary_wing,,military,utility,,Held in the farm collection; serial not recorded,AB212,Agriturismo Oasi Aircraft Collection -- Cassano Magnago,on_display
+Antonov,An-2,,RA-2015,,RU,Colt,,fixed_wing,biplane,civilian,utility,,Ex-Soviet biplane in the farm collection carrying a Russian registration,An2; An-2; Colt,Agriturismo Oasi Aircraft Collection -- Cassano Magnago,on_display
+North American,T-6,G,MM53665,,IT,Texan,Harvard,fixed_wing,monoplane,military,trainer,,Wears code RR-66,T6; T-6G; Texan; RR-66; T6G; RR66,Agriturismo Oasi Aircraft Collection -- Cassano Magnago,on_display
+Piaggio,P.166,M,MM61911,,IT,,,fixed_wing,monoplane,military,utility,,Wears code SP-36,P166; P.166M; SP-36; SP36,Agriturismo Oasi Aircraft Collection -- Cassano Magnago,on_display
+Piaggio,P.166,DL-3,,,IT,,,fixed_wing,monoplane,military,utility,,Wears code 8-09; MM serial not recorded by the source,P166; P.166DL-3; 8-09,Agriturismo Oasi Aircraft Collection -- Cassano Magnago,on_display
+SIAI-Marchetti,S.211,,,,IT,,,fixed_wing,monoplane,military,trainer,,Two S.211 airframes in the collection including one static test fuselage,S211; S.211,Agriturismo Oasi Aircraft Collection -- Cassano Magnago,on_display
+SIAI-Marchetti,SM.1019,E,MM57195,,IT,,,fixed_wing,monoplane,military,recon,,Ex-Army machine wearing EI-402,SM1019; SM.1019E; EI-402; EI402,Agriturismo Oasi Aircraft Collection -- Cassano Magnago,on_display

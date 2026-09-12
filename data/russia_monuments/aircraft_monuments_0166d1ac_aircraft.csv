@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Tupolev,Tu-22,M3,50,1251324,,,,fixed_wing,monoplane,military,bomber,,russianplanes.net monument point 10340,Tu22,Среднинское городское поселение Aircraft Monuments,on_display
+Sukhoi,Su-17,M,01 Red,6511,RU,,,fixed_wing,monoplane,military,ground_attack,,russianplanes.net monument point 23754; source records the bort as 01-красный,Su17; Su17M,Среднинское городское поселение Aircraft Monuments,on_display
+Sukhoi,Su-24,,57 White,,RU,,,fixed_wing,monoplane,military,ground_attack,,russianplanes.net monument point 23755; source records the bort as 57-белый,Su24,Среднинское городское поселение Aircraft Monuments,on_display

@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,PFM,C50,,AO,Fishbed,,fixed_wing,monoplane,military,fighter,,Originally recorded as a MiG-21MF and corrected to PFM in 2019; OpenStreetMap carries the same airframe with the inscription Avião,MiG21; MiG-21PFM; Fishbed; C-50; MiG21PFM; C50,MiG-21 Monument -- Lubango,on_display

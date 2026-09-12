@@ -1,0 +1,46 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+McDonnell Douglas,F-15,A,75-0084,Eagle,,fixed_wing,monoplane,military,fighter,,Outdoor display at the museum on US Highway 41,c/n B020; F15; F15A,Russell Military Museum,on_display
+General Dynamics,F-16,B,81-0817,Fighting Falcon,,fixed_wing,monoplane,military,fighter,,Two-seat Fighting Falcon on outdoor display,c/n 62-86; F16; F16B,Russell Military Museum,on_display
+Republic,F-84,F,51-9524,Thunderstreak,,fixed_wing,monoplane,military,fighter,,Fisher Body built F-84F-40-GK on outdoor display,N2250Q; F84; F84F,Russell Military Museum,on_display
+Lockheed,T-33,A,52-9526,Shooting Star,,fixed_wing,monoplane,military,trainer,,Outdoor display,c/n 580-7661; T33; T33A,Russell Military Museum,on_display
+Northrop,T-38,A,61-0941,Talon,,fixed_wing,monoplane,military,trainer,,Recorded as GT-38A ground instructional airframe,c/n N.5307; T38; T38A,Russell Military Museum,on_display
+Northrop,T-38,B,61-0923,Talon,,fixed_wing,monoplane,military,trainer,,Recorded as GAT-38B ground instructional airframe,c/n N.5289; T38; T38B,Russell Military Museum,on_display
+Northrop,T-38,N,N910NA,Talon,,fixed_wing,monoplane,military,trainer,,Former NASA T-38N carried as NASA 910,NASA 910; c/n N.5771; T38; T38N,Russell Military Museum,on_display
+Vought,A-7,D,69-6190,Corsair II,,fixed_wing,monoplane,military,ground_attack,,Displayed inside the museum building,c/n D-020; A7; A7D,Russell Military Museum,on_display
+Vought,TA-7,C,156751,Corsair II,,fixed_wing,monoplane,military,trainer,,Two-seat Corsair II on outdoor display,c/n E-018; TA7; TA7C,Russell Military Museum,on_display
+Grumman,OV-1,D,67-18900,Mohawk,,fixed_wing,monoplane,military,recon,,Outdoor display,c/n 101C; OV1; OV1D,Russell Military Museum,on_display
+Grumman,OV-1,D,68-16992,Mohawk,,fixed_wing,monoplane,military,recon,,Recorded as JOV-1D armed variant,c/n 62D; OV1; OV1D,Russell Military Museum,on_display
+Rockwell,OV-10,D,N615NA,Bronco,,fixed_wing,monoplane,military,recon,,Former NASA Bronco on outdoor display,OV10; OV10D,Russell Military Museum,on_display
+Aero Commander,U-9,C,56-4026,,,fixed_wing,monoplane,military,utility,,Military Aero Commander on outdoor display,c/n 680-344-36; U9; U9C,Russell Military Museum,on_display
+Cessna,T-41,A,N992KM,Mescalero,,fixed_wing,monoplane,military,trainer,,Former USAF T-41A 67-14992,T41; T41A,Russell Military Museum,on_display
+Mil,Mi-24,V,,Hind,,rotary_wing,,military,ground_attack,,Soviet-built attack helicopter carrying the number 12; a rare survivor in a United States collection,c/n 3532424015870; Mi24; Mi24V,Russell Military Museum,on_display
+Boeing Vertol,CH-47,D,85-24365,Chinook,,rotary_wing,,military,transport,,Outdoor display,c/n B174; CH47; CH47D,Russell Military Museum,on_display
+Boeing Vertol,CH-47,D,82-23766,Chinook,,rotary_wing,,military,transport,,Outdoor display,c/n B316; CH47; CH47D,Russell Military Museum,on_display
+Boeing Vertol,CH-46,E,N952AW,Sea Knight,,rotary_wing,,military,transport,,Outdoor display; the FAA registry also shows CH-46E N307CX BuNo 153395 registered to the museum,CH46; CH46E,Russell Military Museum,on_display
+Sikorsky,CH-54,B,70-18486,Tarhe,,rotary_wing,,military,transport,,Heavy-lift crane helicopter on outdoor display,c/n 64-094; CH54; CH54B,Russell Military Museum,on_display
+Sikorsky,CH-53,A,67-30044,Sea Stallion,,rotary_wing,,military,transport,,Recorded as TH-53A,c/n 65.061; CH53; CH53A,Russell Military Museum,on_display
+Sikorsky,CH-3,E,65-12789,Jolly Green Giant,,rotary_wing,,military,search_rescue,,Outdoor display,c/n 61-564; CH3; CH3E,Russell Military Museum,on_display
+Sikorsky,HH-3,F,1480,Pelican,,rotary_wing,,military,search_rescue,,Coast Guard rescue helicopter,c/n 61-657; HH3; HH3F,Russell Military Museum,on_display
+Sikorsky,HH-3,F,1492,Pelican,,rotary_wing,,military,search_rescue,,Second Coast Guard Pelican,N492KM; c/n 61-669; HH3; HH3F,Russell Military Museum,on_display
+Sikorsky,CH-34,C,54-0914,Choctaw,,rotary_wing,,military,transport,,Outdoor display,c/n 58-0194; CH34; CH34C,Russell Military Museum,on_display
+Bell,AH-1,F,68-17067,Cobra,,rotary_wing,,military,ground_attack,,Outdoor display,c/n 20795; AH1; AH1F,Russell Military Museum,on_display
+Bell,AH-1,F,70-15993,Cobra,,rotary_wing,,military,ground_attack,,Outdoor display,c/n 20937; AH1; AH1F,Russell Military Museum,on_display
+Bell,AH-1,E,78-23050,Cobra,,rotary_wing,,military,ground_attack,,Outdoor display,c/n 22156; AH1; AH1E,Russell Military Museum,on_display
+Bell,AH-1,F,78-23095,Cobra,,rotary_wing,,military,ground_attack,,Outdoor display,c/n 22201; AH1; AH1F,Russell Military Museum,on_display
+Bell,OH-58,A,71-20829,Kiowa,,rotary_wing,,military,recon,,Recorded as GOH-58A ground instructional airframe,c/n 41690; OH58; OH58A,Russell Military Museum,on_display
+Hughes,OH-6,A,67-16017,Cayuse,,rotary_wing,,military,recon,,Displayed inside the museum building,c/n 0402; OH6; OH6A,Russell Military Museum,on_display
+Hughes,OH-6,A,65-12974,Cayuse,,rotary_wing,,military,recon,,Outdoor display,c/n 0059; OH6; OH6A,Russell Military Museum,on_display
+Hughes,TH-55,A,67-16879,Osage,,rotary_wing,,military,trainer,,Outdoor display,c/n 78-0986; TH55; TH55A,Russell Military Museum,on_display
+Hiller,OH-23,B,51-16226,Raven,,rotary_wing,,military,utility,,Displayed inside the museum building,c/n 0408; OH23; OH23B,Russell Military Museum,on_display
+Bell,UH-1,A,59-1710,Iroquois,,rotary_wing,,military,utility,,Displayed inside the museum building,c/n 0169; UH1; UH1A,Russell Military Museum,on_display
+Bell,UH-1,H,69-15598,Iroquois,,rotary_wing,,military,utility,,Displayed inside the museum building,c/n 11886; UH1; UH1H,Russell Military Museum,on_display
+Bell,UH-1,H,74-22371,Iroquois,,rotary_wing,,military,utility,,Displayed inside the museum building,c/n 13685; UH1; UH1H,Russell Military Museum,on_display
+Bell,UH-1,H,74-22397,Iroquois,,rotary_wing,,military,utility,,Displayed inside the museum building,c/n 13721; UH1; UH1H,Russell Military Museum,on_display
+Gyrodyne,QH-50,C,001261,DASH,,rotary_wing,,military,drone,,Unmanned anti-submarine drone helicopter on outdoor display,c/n DS-1261; QH50; QH50C,Russell Military Museum,on_display
+Alenia,C-27,A,90-1073,Spartan,,fixed_wing,monoplane,military,transport,,FAA registry September 2026 shows N2286K current to Russell Military Museum; one of a group of ex-USAF Spartans held at the site,N2286K; C27; C27A,Russell Military Museum,in_storage
+Alenia,C-27,A,90-0172,Spartan,,fixed_wing,monoplane,military,transport,,FAA registry September 2026 shows N47612 current to Russell Military Museum,N47612; c/n 4099; C27; C27A,Russell Military Museum,in_storage
+Alenia,C-27,A,90-0174,Spartan,,fixed_wing,monoplane,military,transport,,FAA registry September 2026 shows N2290J current to Russell Military Museum,N2290J; C27; C27A,Russell Military Museum,in_storage
+Alenia,C-27,A,91-0104,Spartan,,fixed_wing,monoplane,military,transport,,FAA registry September 2026 shows N47892 current to Russell Military Museum,N47892; c/n 4103; C27; C27A,Russell Military Museum,in_storage
+Alenia,C-27,A,91-0105,Spartan,,fixed_wing,monoplane,military,transport,,FAA registry September 2026 shows N2286Y current to Russell Military Museum; Aerial Visuals notes this one stored off-site,N2286Y; c/n 4104; C27; C27A,Russell Military Museum,in_storage
+Alenia,C-27,A,91-0106,Spartan,,fixed_wing,monoplane,military,transport,,FAA registry September 2026 shows N12310 current to Russell Military Museum,N12310; C27; C27A,Russell Military Museum,in_storage
+Beechcraft,T-34,A,52-8276,Mentor,,fixed_wing,monoplane,military,trainer,,FAA registry September 2026 shows N234TX current to Russell Military Museum with serial 52-8276,N234TX; T34; T34A,Russell Military Museum,on_display

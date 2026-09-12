@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Fouga,CM.170,,TJX-BD,,CM,Magister,,fixed_wing,monoplane,military,trainer,,First Cameroonian Magister; c/n 4,CM170; CM.170; Magister; Fouga; TJXBD,Garoua Fouga Magister Display,on_display
+Fouga,CM.170,,TJX-BK,,CM,Magister,,fixed_wing,monoplane,military,trainer,,c/n 5,CM170; CM.170; Magister; Fouga; TJXBK,Garoua Fouga Magister Display,on_display
+Humbert,Tetras,912,TJX-CU,,CM,Tetras,,fixed_wing,monoplane,military,trainer,,French-built ultralight in Cameroonian air force use; c/n 15,Tetras 912; Tetras; TJXCU,Garoua Fouga Magister Display,on_display

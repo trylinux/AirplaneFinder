@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Unidentified,Aircraft,,,,MY,,,fixed_wing,monoplane,military,other,,TOP-UP ROW. OSM node 8232242334 historic=aircraft + tourism=attraction; no type tag. One of four separately surveyed airframes in a line at RMAF Kuantan,,Kuantan Air Base Aircraft Display,on_display
+Unidentified,Aircraft,,,,MY,,,fixed_wing,monoplane,military,other,,TOP-UP ROW. OSM node 8232242335; no type tag,,Kuantan Air Base Aircraft Display,on_display
+Unidentified,Aircraft,,,,MY,,,fixed_wing,monoplane,military,other,,TOP-UP ROW. OSM node 8232242336; no type tag,,Kuantan Air Base Aircraft Display,on_display
+Unidentified,Aircraft,,,,MY,,,fixed_wing,monoplane,military,other,,TOP-UP ROW. OSM node 8232242337; sits about 130 m south of the other three so it may be a separate gate guard rather than part of the same line,,Kuantan Air Base Aircraft Display,on_display

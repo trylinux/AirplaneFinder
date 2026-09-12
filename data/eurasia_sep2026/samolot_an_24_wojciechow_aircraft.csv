@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Antonov,An-24,,,,,Coke,,fixed_wing,monoplane,civilian,transport,,Complete An-24 standing at Borki in Wojciechów near Olesno; tagged with manufacturer and transport role by the mapper. No registration; unusual enough to warrant a second source which was not found,An24; Coke,Samolot An-24 -- Wojciechów,on_display

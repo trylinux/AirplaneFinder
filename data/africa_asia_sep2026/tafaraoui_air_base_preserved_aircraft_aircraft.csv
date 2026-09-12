@@ -1,0 +1,14 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Fouga,CM.170,,483,,DZ,Magister,,fixed_wing,monoplane,military,trainer,,Plinthed at Tafaraoui; logged 25 Apr 2019,CM170; CM.170; Magister; Fouga,Tafaraoui Air Base Preserved Aircraft,on_display
+Fouga,CM.170,,NT-34,,DZ,Magister,,fixed_wing,monoplane,military,trainer,,Plinthed at Tafaraoui; logged 25 Apr 2019,CM170; CM.170; Magister; NT34,Tafaraoui Air Base Preserved Aircraft,on_display
+Fouga,CM.170,,NT-96,,DZ,Magister,,fixed_wing,monoplane,military,trainer,,Plinthed at Tafaraoui; logged 5 May 2018,CM170; CM.170; Magister; NT96,Tafaraoui Air Base Preserved Aircraft,on_display
+Fouga,CM.170,,,,DZ,Magister,,fixed_wing,monoplane,military,trainer,,A further Fouga logged at Tafaraoui on 31 Dec 2025; serial not recorded,CM170; CM.170; Magister,Tafaraoui Air Base Preserved Aircraft,on_display
+Mil,Mi-4,,FE-86,,DZ,,,rotary_wing,,military,utility,,Plinthed at Tafaraoui; logged 25 Apr 2019,Mi4; Mi-4; Hound; FE86,Tafaraoui Air Base Preserved Aircraft,on_display
+Sukhoi,Su-7,BMK,FG-98,,DZ,,,fixed_wing,monoplane,military,ground_attack,,Plinthed at Tafaraoui; logged 25 Apr 2019,Su7; Su-7BMK; Fitter; FG98; Su7BMK,Tafaraoui Air Base Preserved Aircraft,on_display
+Sukhoi,Su-7,UMK,GL-55,,DZ,,,fixed_wing,monoplane,military,trainer,,The source notes the serial may read SL-55 rather than GL-55; logged 25 Apr 2019,Su7; Su-7UMK; Moujik; GL55; SL-55; SL55; Su7UMK,Tafaraoui Air Base Preserved Aircraft,on_display
+Beechcraft,T-34,C-1,7T-WPJ,,DZ,Turbo Mentor,,fixed_wing,monoplane,military,trainer,,c/n GP-5; logged 25 Apr 2019,T34; T-34C-1; Turbo Mentor; 7TWPJ; c/n GP-5,Tafaraoui Air Base Preserved Aircraft,on_display
+Beechcraft,T-34,C-1,7T-WPD,,DZ,Turbo Mentor,,fixed_wing,monoplane,military,trainer,,c/n GP-1; displayed wearing 7T-WBD which is not its own registration; logged 25 Apr 2019,T34; T-34C-1; Turbo Mentor; 7TWPD; 7T-WBD; c/n GP-1,Tafaraoui Air Base Preserved Aircraft,on_display
+Beechcraft,B24,R,7T-WCL,,DZ,Sierra,,fixed_wing,monoplane,military,trainer,,Recorded by the source as Be.B24R; logged 25 Apr 2019,Beech B24R; Sierra; 7TWCL,Tafaraoui Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-15,UTI,FG-73,,DZ,,,fixed_wing,monoplane,military,trainer,,Plinthed at Tafaraoui; logged 15 May 2025,MiG15; MiG-15UTI; Midget; FG73; MiG15UTI,Tafaraoui Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-17,,FG-51,,DZ,,,fixed_wing,monoplane,military,fighter,,Plinthed at Tafaraoui; logged 15 May 2025,MiG17; MiG-17; Fresco; FG51,Tafaraoui Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-21,MF,FD-39,,DZ,,,fixed_wing,monoplane,military,fighter,,Plinthed at Tafaraoui; logged 15 May 2025,MiG21; MiG-21MF; Fishbed; FD39; MiG21MF,Tafaraoui Air Base Preserved Aircraft,on_display

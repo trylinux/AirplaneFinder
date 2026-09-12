@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,F-13,21,,,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 3233,MiG21,Armavir Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-17,,713,,,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 3234; contributor note (ru): Сформированный в 1951 г.; полк первым в стране приступил к обучению курсантов на реактивной технике.,MiG17,Armavir Aircraft Monuments,on_display

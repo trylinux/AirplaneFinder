@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Atlas Aircraft Corporation,Impala,Mk I,486,,ZA,Impala,,fixed_wing,monoplane,military,trainer,,Licence-built Aermacchi MB-326M; wears code 4; c/n 6362,MB-326M; MB326M; Impala Mk1,Impala Pair -- Olifantsfontein,on_display
+Atlas Aircraft Corporation,Impala,Mk I,541,,ZA,Impala,,fixed_wing,monoplane,military,trainer,,Licence-built Aermacchi MB-326M; c/n A66,MB-326M; MB326M; Impala Mk1,Impala Pair -- Olifantsfontein,on_display
+North American,AT-6,G,7716,,ZA,Harvard,,fixed_wing,monoplane,military,trainer,,Held as an instructional airframe alongside the two Impalas; c/n SA-073,AT6; AT-6G; T-6; Harvard; AT6G; T6,Impala Pair -- Olifantsfontein,in_storage
+Cessna,150,M,ZS-JDC,,ZA,,,fixed_wing,monoplane,civilian,trainer,,Recorded 100 m from the Impalas; c/n 150-76837,Ce.150; Ce150; C-150; ZSJDC; C150,Impala Pair -- Olifantsfontein,on_display

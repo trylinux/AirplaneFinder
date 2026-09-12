@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,F-100,D,56-3208,Super Sabre,,fixed_wing,monoplane,military,fighter,,Super Sabre on display at Fessenden; still mapped as an OSM historic=aircraft node in the current extract read September 2026 at 47.6463N 99.6251W which matches the Aerial Visuals fix to the arc-second; serial sits in the F-100D-90-NA block,c/n 235-306; F100; F100D,Fessenden Veterans Display -- Fessenden,on_display

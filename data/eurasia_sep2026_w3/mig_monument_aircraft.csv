@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG,,,,BG,,,fixed_wing,monoplane,military,fighter,,"""MIG fighter monument in the central square of Dabravite"" per a Wikimedia Commons photograph of 29 Jan 2011; the description names the MiG family but not the type so the model is left at the family name and the variant blank rather than guessed",MiG,Дъбравите MiG Monument,on_display

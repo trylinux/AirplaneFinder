@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-8,T,10 Yellow,4249,RU,,,rotary_wing,,military,utility,,russianplanes.net monument point 7731; source records the bort as 10-жёлтый,Mi8; Mi8T,Одинцовский городской округ Aircraft Monuments,on_display
+Mil,Mi-8,T,,,,,,rotary_wing,,military,utility,,russianplanes.net monument point 22872,Mi8; Mi8T,Одинцовский городской округ Aircraft Monuments,on_display
+Sukhoi,Su-27,UBP,,96310422069,,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 22874,Su27; Su27UBP,Одинцовский городской округ Aircraft Monuments,on_display
+Kamov,Ka-27,PL,,5235001414208,,,,rotary_wing,,military,search_rescue,,russianplanes.net monument point 23690; wears bort 14 -- an airframe already in the database at a different site carries that same number so it is recorded here as a marking rather than as an identity,Ka27; Ka27PL,Одинцовский городской округ Aircraft Monuments,on_display

@@ -1,0 +1,16 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Scottish Aviation,Bulldog,122,G-101,,GH,Bulldog,,fixed_wing,monoplane,military,trainer,,Instructional airframe; c/n BH.120/225,Bulldog 122; BH.120/225; G101,Ghana Air Force Base Accra Displays,in_storage
+de Havilland Canada,Chipmunk,T.10,G-162,,GH,Chipmunk,,fixed_wing,monoplane,military,trainer,,Instructional airframe; c/n C1/0535,Chipmunk T10; DHC-1; DHC1; G162,Ghana Air Force Base Accra Displays,in_storage
+Hughes,269,A,G-614,,GH,,,rotary_wing,,military,trainer,,Instructional airframe; c/n 73-0249,H.269A; H269A; Hughes 269; TH-55; G614; TH55,Ghana Air Force Base Accra Displays,in_storage
+Hindustan Aeronautics,HT-2,,PT211,,IN,,,fixed_wing,monoplane,military,trainer,,Indian-built primary trainer; instructional airframe; wears the Indian-pattern serial PT211,HT2; HT-2; HAL HT-2,Ghana Air Force Base Accra Displays,in_storage
+Aero,L-29,,G-960,,GH,Delfin,,fixed_wing,monoplane,military,trainer,,Instructional airframe,L29; L-29; Delfin; G960,Ghana Air Force Base Accra Displays,in_storage
+Aermacchi,MB-326,F,G-700,,GH,,,fixed_wing,monoplane,military,trainer,,Instructional airframe; c/n 6312,MB326; MB-326F; G700; MB326F,Ghana Air Force Base Accra Displays,in_storage
+Aermacchi,MB-326,F,G-702,,GH,,,fixed_wing,monoplane,military,trainer,,Instructional airframe; c/n 6317,MB326; MB-326F; G702; MB326F,Ghana Air Force Base Accra Displays,in_storage
+Aermacchi,MB-326,F,G-708,,GH,,,fixed_wing,monoplane,military,trainer,,Instructional airframe; c/n 6405,MB326; MB-326F; G708; MB326F,Ghana Air Force Base Accra Displays,in_storage
+Aermacchi,MB-326,F,G-716,,GH,,,fixed_wing,monoplane,military,trainer,,Instructional airframe; c/n 6750,MB326; MB-326F; G716; MB326F,Ghana Air Force Base Accra Displays,in_storage
+Short,SC.7,3M-400,G-455,,GH,Skyvan,,fixed_wing,monoplane,military,transport,,Instructional airframe; wears code F; c/n SH.1933,SC7; SC.7; Skyvan; G455,Ghana Air Force Base Accra Displays,in_storage
+Aero,L-39,ZO,G-900,,GH,Albatros,,fixed_wing,monoplane,military,trainer,,Plinthed; c/n 931438,L39; L-39ZO; Albatros; G900; L39ZO,Ghana Air Force Base Accra Displays,on_display
+Aero,L-39,ZO,G-901,,GH,Albatros,,fixed_wing,monoplane,military,trainer,,Plinthed; c/n 931450,L39; L-39ZO; Albatros; G901; L39ZO,Ghana Air Force Base Accra Displays,on_display
+Aermacchi,MB-326,F,G-706,,GH,,,fixed_wing,monoplane,military,trainer,,Plinthed; c/n 6328,MB326; MB-326F; G706; MB326F,Ghana Air Force Base Accra Displays,on_display
+Agusta,A.109,A,G-670,,GH,Hirundo,,rotary_wing,,military,utility,,Plinthed; c/n 7242,A109; A.109A; Hirundo; G670,Ghana Air Force Base Accra Displays,on_display
+Aermacchi,MB-339,A,G-801,,GH,,,fixed_wing,monoplane,military,trainer,,Plinthed; c/n 6777/AH002,MB339; MB-339A; G801; MB339A,Ghana Air Force Base Accra Displays,on_display

@@ -1,0 +1,23 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Hawker,Hunter,,,,CH,,,fixed_wing,monoplane,military,fighter,,Serial not published by the sources read,Hunter,FFA Museum Altenrhein,on_display
+de Havilland,DH-100,Vampire,,,CH,,,fixed_wing,monoplane,military,fighter,,Serial not published,DH100; Vampire,FFA Museum Altenrhein,on_display
+de Havilland,DH-115,Vampire T.55,,,CH,,,fixed_wing,monoplane,military,trainer,,Serial not published,DH115; Vampire Trainer,FFA Museum Altenrhein,on_display
+Dassault,Mirage III,,,,CH,,,fixed_wing,monoplane,military,fighter,,Variant and serial not published,Mirage 3,FFA Museum Altenrhein,on_display
+Pilatus,P-3,,,,CH,,,fixed_wing,monoplane,military,trainer,,Serial not published,P3,FFA Museum Altenrhein,on_display
+Pilatus,PC-7,,,,CH,,,fixed_wing,monoplane,military,trainer,,Serial not published,PC7,FFA Museum Altenrhein,on_display
+Pilatus,PC-9,,,,CH,,,fixed_wing,monoplane,military,trainer,,Serial not published,PC9,FFA Museum Altenrhein,on_display
+Boeing,PT-17,,,,,,Stearman,fixed_wing,biplane,civilian,trainer,,Registration not published,Stearman; PT17,FFA Museum Altenrhein,on_display
+Dornier,Do 27,,,,,,,fixed_wing,monoplane,civilian,utility,,Registration not published,Do27,FFA Museum Altenrhein,on_display
+Piaggio,P.149,,,,,,,fixed_wing,monoplane,civilian,trainer,,Registration not published,P149,FFA Museum Altenrhein,on_display
+Aeronca,7,AC,,,,,Champion,fixed_wing,monoplane,civilian,private,,Registration not published,Aeronca Champ; 7AC,FFA Museum Altenrhein,on_display
+Aeronca,11,AC,,,,,Chief,fixed_wing,monoplane,civilian,private,,Registration not published,11AC; Aeronca Chief,FFA Museum Altenrhein,on_display
+Waco,YMF,5,,,,,,fixed_wing,biplane,civilian,private,,Registration not published,YMF-5; YMF5,FFA Museum Altenrhein,on_display
+Zivko,Edge,540,,,,,,fixed_wing,monoplane,civilian,private,,Registration not published,Edge 540; Edge540,FFA Museum Altenrhein,on_display
+Beechcraft,35,,,,,,Bonanza,fixed_wing,monoplane,civilian,private,,Registration not published,Bonanza,FFA Museum Altenrhein,on_display
+Cessna,152,,,,,,,fixed_wing,monoplane,civilian,trainer,,Registration not published,C152,FFA Museum Altenrhein,on_display
+Cessna,172,,,,,,,fixed_wing,monoplane,civilian,private,,Registration not published,C172,FFA Museum Altenrhein,on_display
+Piper,J-3,,,,,,Cub,fixed_wing,monoplane,civilian,private,,Registration not published,J3; Piper Cub,FFA Museum Altenrhein,on_display
+Aérospatiale,SE 3130,Alouette II,,,,,,rotary_wing,,civilian,utility,,Registration not published,Alouette 2,FFA Museum Altenrhein,on_display
+Aérospatiale,SE 3160,Alouette III,,,,,,rotary_wing,,civilian,utility,,Registration not published,Alouette 3,FFA Museum Altenrhein,on_display
+Hughes,369,,,,,,500,rotary_wing,,civilian,utility,,Registration not published,Hughes 500; MD500,FFA Museum Altenrhein,on_display
+Nord,1203,Norécrin II,,,,,,fixed_wing,monoplane,civilian,private,,Registration not published,Norecrin; Nord 1203,FFA Museum Altenrhein,on_display

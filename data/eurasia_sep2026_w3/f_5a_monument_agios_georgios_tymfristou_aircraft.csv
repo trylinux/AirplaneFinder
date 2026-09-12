@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Northrop,F-5,A,,,GR,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,No serial is published by either source for this airframe so tail_number is deliberately blank; the type is agreed by OpenStreetMap and the wrecks-and-relics register at the same coordinate,F5A; F5; Freedom Fighter,F-5A Monument -- Agios Georgios Tymfristou,on_display

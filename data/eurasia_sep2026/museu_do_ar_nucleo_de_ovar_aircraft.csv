@@ -1,0 +1,16 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+LTV,A-7,P,,,PT,Corsair II,,fixed_wing,monoplane,military,ground_attack,,Mapped on Rua da Base Aérea at Ovar; the published Ovar inventory gives an A-7P without a serial so none is carried,A7P; A-7; Corsair II; A7,Museu do Ar -- Núcleo de Ovar,on_display
+LTV,TA-7,P,15550,,PT,Corsair II,,fixed_wing,monoplane,military,trainer,,Two-seat Corsair II; Portuguese Air Force serial 15550,TA7P; TA-7; Corsair II; TA7,Museu do Ar -- Núcleo de Ovar,on_display
+Republic,F-84,G,5201,,PT,Thunderjet,,fixed_wing,monoplane,military,ground_attack,,Portuguese Air Force serial 5201,F84; F-84G; Thunderjet; F84G,Museu do Ar -- Núcleo de Ovar,on_display
+Fiat,G.91,R/3,5452,,PT,,,fixed_wing,monoplane,military,ground_attack,,Portuguese Air Force serial 5452,G91; Gina,Museu do Ar -- Núcleo de Ovar,on_display
+Northrop,T-38,A,2603,,PT,Talon,,fixed_wing,monoplane,military,trainer,,Portuguese Air Force serial 2603,T38; Talon; T38A,Museu do Ar -- Núcleo de Ovar,on_display
+Cessna,T-37,C,2427,,PT,Tweety Bird,,fixed_wing,monoplane,military,trainer,,Portuguese Air Force serial 2427,T37; Tweet; T37C,Museu do Ar -- Núcleo de Ovar,on_display
+Beagle,Auster D-5,160,3208,,PT,,,fixed_wing,monoplane,military,utility,,Portuguese Air Force serial 3208,Auster D5; D-5/160,Museu do Ar -- Núcleo de Ovar,on_display
+CASA,C-212,100,,,PT,Aviocar,,fixed_wing,monoplane,military,transport,,Listed in the published Ovar inventory without a serial,C212; Aviocar,Museu do Ar -- Núcleo de Ovar,on_display
+Piper,PA-18,,,,PT,Super Cub,,fixed_wing,monoplane,military,utility,,Portuguese L-21B listed in the published Ovar inventory without a serial,L-21B; Super Cub; PA18; L21B,Museu do Ar -- Núcleo de Ovar,on_display
+Cessna,337,FTB-337G,,,PT,Skymaster,,fixed_wing,monoplane,military,recon,,Listed in the published Ovar inventory without a serial,FTB-337; Skymaster; FTB337,Museu do Ar -- Núcleo de Ovar,on_display
+Mikoyan-Gurevich,MiG-21,PFM,6614,,,Fishbed,,fixed_wing,monoplane,military,fighter,,Transferred from the Polish Aviation Museum; listed among the museum's stored aircraft so recorded in storage; 6614 is quoted as its Portuguese inventory serial and its original operator was not established,MiG21; MiG-21PFM; Fishbed; MiG21PFM,Museu do Ar -- Núcleo de Ovar,in_storage
+Dassault,Mirage III,R,313,,FR,,,fixed_wing,monoplane,military,recon,,Listed among the museum's stored aircraft; 313 is a French Armée de l'Air style Mirage IIIR serial and Portugal never operated the Mirage III,Mirage 3; MirageIII; Mirage IIIR,Museu do Ar -- Núcleo de Ovar,in_storage
+Canadair,CF-104,D,104750,,CA,Starfighter,,fixed_wing,monoplane,military,trainer,,Listed among the museum's stored aircraft; 104750 is a Canadian Armed Forces CF-104D serial,CF104; CF-104D; Starfighter; CF104D,Museu do Ar -- Núcleo de Ovar,in_storage
+Max Holste,MH.1521,,3301,,PT,Broussard,,fixed_wing,monoplane,military,utility,,Listed among the museum's stored aircraft,Broussard; MH1521,Museu do Ar -- Núcleo de Ovar,in_storage
+Max Holste,MH.1521,,3303,,PT,Broussard,,fixed_wing,monoplane,military,utility,,Listed among the museum's stored aircraft,Broussard; MH1521,Museu do Ar -- Núcleo de Ovar,in_storage

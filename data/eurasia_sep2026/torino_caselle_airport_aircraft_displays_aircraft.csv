@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,DC-3,,,,,,Dakota,fixed_wing,monoplane,civilian,commercial_transport,,Displayed landside at Torino-Caselle; OSM records the airport operator SAGAT as owner; registration not published,DC3; DC-3; Dakota,Torino-Caselle Airport Aircraft Displays,on_display
+Lockheed,TF-104,G,MM54228,,IT,Starfighter,Spillone,fixed_wing,monoplane,military,trainer,,On a pole at the airport; the International F-104 Society records MM54228 in 4-28 markings at Caselle,TF104; TF-104G; F-104; Starfighter; 4-28; TF104G; F104,Torino-Caselle Airport Aircraft Displays,on_display

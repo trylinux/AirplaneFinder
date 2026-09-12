@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,UH-1,H,65-9559,Iroquois,Huey,rotary_wing,,military,utility,,Gate guard at Simmons Army Airfield on Fort Bragg; Aerial Visuals fix only - no 2023-2026 confirmation found; variant reported only as UH-1,Huey; UH1; UH1H,Simmons Army Airfield Gate Guards -- Fort Bragg,on_display
+Bell,AH-1,E,77-22784,Cobra,,rotary_wing,,military,ground_attack,,Gate guard beside the UH-1 at Simmons Army Airfield; Aerial Visuals fix only - no 2023-2026 confirmation found,AH1; AH1E,Simmons Army Airfield Gate Guards -- Fort Bragg,on_display

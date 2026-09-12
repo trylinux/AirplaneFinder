@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Ilyushin,Il-28,,1772,,EG,,,fixed_wing,monoplane,military,bomber,,Plinthed at Cairo West; logged 17 Oct 2017,Il28; Il-28; Beagle,Cairo West Air Base Preserved Aircraft,on_display
+McDonnell Douglas,F-4,E,7808,,EG,,,fixed_wing,monoplane,military,fighter,,c/n 3260; plinthed at Cairo West; logged 16 Mar 2016; a further seven F-4Es are stored elsewhere on the field and are deliberately excluded,F4; F-4E; Phantom II; c/n 3260; F4E,Cairo West Air Base Preserved Aircraft,on_display

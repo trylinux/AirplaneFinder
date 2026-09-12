@@ -1,0 +1,14 @@
+Consolidated|PBY|5A|N4582T||Catalina|fixed_wing|monoplane|military|search_rescue||Hangar B; confirmed present in an August 2024 press report|Catalina|on_display
+Douglas|C-47|B|44-76457||Skytrain|fixed_wing|monoplane|military|transport||Hangar B; confirmed present in an August 2024 press report|Dakota; Gooney Bird|on_display
+Douglas|A-4|B|142829||Skyhawk|fixed_wing|monoplane|military|ground_attack||Hangar B; A4D-2; wears AB-500; confirmed present in an August 2024 press report|A4D-2; AB-500; Scooter|on_display
+Grumman|HU-16|E|7216||Albatross|fixed_wing|monoplane|military|search_rescue||Hangar B; US Coast Guard number 7216; confirmed present in an August 2024 press report|Albatross|on_display
+Grumman|JRF|5|N644R||Goose|fixed_wing|monoplane|military|utility||Hangar B; confirmed present in an August 2024 press report|Goose; G-21|on_display
+Lockheed|SP-2|E|131542||Neptune|fixed_wing|monoplane|military|recon||Hangar B; wears 210; confirmed present in an August 2024 press report as an SP2H/SP-2E|P2V; Neptune; 210|on_display
+Sikorsky|HH-3|F|1434||Pelican|rotary_wing||military|search_rescue||Hangar B; US Coast Guard number 1434; confirmed present in an August 2024 press report|Pelican; Jolly Green|on_display
+Beechcraft|SNB|5|90536||Expeditor|fixed_wing|monoplane|military|transport||Hangar B; wears 119; confirmed present in an August 2024 press report|Expeditor; C-45; Twin Beech|on_display
+Fairchild|PT-26|B|N1321V||Cornell|fixed_wing|monoplane|military|trainer||Hangar B; confirmed present in an August 2024 press report|Cornell II; M-62|on_display
+Lockheed|Vega|5C|NR105W||Winnie Mae|fixed_wing|monoplane|civilian|private||FULL-SCALE REPLICA of Wiley Post's Winnie Mae which departed Floyd Bennett Field on his 1933 solo round-the-world flight; the original is in the Smithsonian|Winnie Mae|on_display
+Wright|Flyer||||Wright Flyer|fixed_wing|biplane|civilian|experimental||REPLICA 1903 Wright Flyer; confirmed present in an August 2024 press report|1903 Flyer|on_display
+Boeing|PT-13||||Kaydet|fixed_wing|biplane|military|trainer||Stearman Kaydet reported present in an August 2024 press report; serial not established|Stearman; Kaydet|on_display
+North American|SNJ||||Texan|fixed_wing|monoplane|military|trainer||SNJ/AT-6 trainer reported present in an August 2024 press report; serial not established|AT-6; Texan|on_display
+Boeing|C-97||||Stratofreighter|fixed_wing|monoplane|military|transport||A USAF C-97 is reported present in an August 2024 press report; almost certainly a fuselage or cockpit section given the hangar footprint; serial not established — verify|Stratofreighter; KC-97|on_display

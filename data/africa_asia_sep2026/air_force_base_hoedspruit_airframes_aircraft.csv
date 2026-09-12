@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Boeing,727,-91,J2-KBA,,DJ,,,fixed_wing,monoplane,civilian,transport,,Ex-Djibouti government 727 at AFB Hoedspruit; coded preserved by the source but the likeliest role is fire and rescue training; c/n 19394,B727; B-727; 727-100; J2KBA,Air Force Base Hoedspruit Airframes,on_display
+Boeing,737,-277,ZS-BIL,,ZA,,,fixed_wing,monoplane,civilian,transport,,Same doubt as the 727 above; c/n 22650,B737; B-737; 737-200; ZSBIL,Air Force Base Hoedspruit Airframes,on_display

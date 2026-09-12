@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Antonov,An-24,,,,RO,,,fixed_wing,monoplane,civilian,commercial_transport,,Romanian civil registration YR-BMC recorded on OSM node 13351985550,An24; YR-BMC; Coke,Muzeul Aviatic „Dumitru Dorin Prunariu”,on_display
+Mikoyan-Gurevich,MiG-15,,204,,RO,,,fixed_wing,monoplane,military,fighter,,Tactical number 204 recorded on OSM node 13351985551; no sub-variant recorded,MiG15,Muzeul Aviatic „Dumitru Dorin Prunariu”,on_display
+Aero,45,,YR-SAA,,RO,,,fixed_wing,monoplane,civilian,private,,Czechoslovak light twin; Romanian registration YR-SAA recorded on OSM node 13351985552,Aero 45; Aero45; YR-SAA,Muzeul Aviatic „Dumitru Dorin Prunariu”,on_display
+Zlin,Z-526,,YR-ZLK,,RO,,Trenér Master,fixed_wing,monoplane,civilian,trainer,,Romanian registration YR-ZLK recorded on OSM node 13351985553 which names the type as Zlin Z-526 Trener-Master,Z526; Z-526; Trener Master; YR-ZLK,Muzeul Aviatic „Dumitru Dorin Prunariu”,on_display

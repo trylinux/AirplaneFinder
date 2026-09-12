@@ -1,0 +1,10 @@
+Lockheed|P-2|V-7|147966|Neptune||fixed_wing|monoplane|military|recon||Maritime patrol aircraft; Aerial Visuals maps it to its own fix at site A; ex-civil N4602X which is no longer in the FAA register; presence not confirmed since the Aerial Visuals compilation|BuNo 147966; c/n 726-7216; N4602X; SP-2H|on_display
+Boeing|N2S|||Kaydet||fixed_wing|biplane|military|trainer||Stearman 75 BuNo 43163 c/n 75-8257; hangared per Aerial Visuals site B; presence not confirmed since|BuNo 43163; c/n 75-8257; PT-17|in_storage
+Beech|UC-45|J|N3752|Expeditor||fixed_wing|monoplane|military|transport||US Navy BuNo 140987; kept outside in the compound per Aerial Visuals site C|BuNo 140987|in_storage
+Beech|UC-45|J|N3753|Expeditor||fixed_wing|monoplane|military|transport||US Navy BuNo 67208; kept outside in the compound per Aerial Visuals site C|BuNo 67208|in_storage
+Beech|D45|||Mentor||fixed_wing|monoplane|military|trainer||US Navy BuNo 140875 c/n BG-209 ex-N85995; the D45 is the Navy T-34B; kept outside per Aerial Visuals site C|BuNo 140875; c/n BG-209; N85995; T-34B|in_storage
+Bell|UH-1|B|62-1900|Iroquois||rotary_wing||military|utility||UH-1B-BF c/n 0420 ex-N9066D; kept outside in the compound per Aerial Visuals site C|c/n 0420; N9066D; Huey|in_storage
+Bell|UH-1|B|62-1953|Iroquois||rotary_wing||military|utility||UH-1B-BF c/n 0473 ex-N50023; kept outside in the compound per Aerial Visuals site C|c/n 0473; N50023; Huey|in_storage
+Bell|UH-1|B|64-13940|Iroquois||rotary_wing||military|utility||UH-1B-BF c/n 1064 ex-N91259; kept outside in the compound per Aerial Visuals site C|c/n 1064; N91259; Huey|in_storage
+Cessna|O-2|A|68-11149|Super Skymaster||fixed_wing|monoplane|military|recon||Forward air control aircraft ex-N8481L; kept outside per Aerial Visuals site C|N8481L; Skymaster; Oscar Deuce|in_storage
+Hiller|H-23|B|51-16208|Raven||rotary_wing||military|trainer||c/n 0388; kept outside in the compound per Aerial Visuals site C|c/n 0388; OH-23B; Raven|in_storage

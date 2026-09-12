@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Boeing,727,284,SX-CBA,,GR,727,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 20003; ex-Olympic Airways; moved from the old airport for preservation; last noted November 2025,B727; 727-284; Boeing 727,Hellinikon Preserved Airliners,on_display
+Boeing,747,284B,SX-OAB,,GR,747,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 20825; ex-Olympic Airways; last noted November 2025,B747; 747-284B; Jumbo; Boeing 747,Hellinikon Preserved Airliners,on_display
+Douglas,C-47,A,SX-ECD,,GR,Dakota,,fixed_wing,monoplane,civilian,transport,,c/n 26232; last noted November 2025,C47; C47A; Dakota; DC-3; DC3,Hellinikon Preserved Airliners,on_display

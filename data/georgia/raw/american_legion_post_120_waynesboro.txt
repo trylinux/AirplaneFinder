@@ -1,0 +1,1 @@
+Lockheed|T-33|A|51-6635|Shooting Star||fixed_wing|monoplane|military|trainer||Serial checks against the T-33A-1-LO FY51 block and c/n 580-5967 is consistent; carried on the Wikipedia list of displayed T-33s at American Legion Post 120 Waynesboro and corroborated by silverhawkauthor as a city static display|c/n 580-5967; T-33A-1-LO; T-Bird|on_display

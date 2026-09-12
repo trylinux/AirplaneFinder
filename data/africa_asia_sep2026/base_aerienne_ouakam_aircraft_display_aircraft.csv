@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Britten-Norman,BN-2,T-21,6V-AHW,,SN,Defender,,fixed_wing,monoplane,military,recon,,Turbine Defender of the Senegalese air force; c/n 2146,BN2; BN-2T; Defender; Islander; 6VAHW; BN2T,Base Aérienne Ouakam Aircraft Display,on_display
+CASA,CN-235,-220AT,6W-TTB,,SN,,,fixed_wing,monoplane,military,transport,,c/n N-015,CN235; CN-235; 6WTTB,Base Aérienne Ouakam Aircraft Display,on_display
+Fokker,F.27,-400M,6W-STC,,SN,Troopship,,fixed_wing,monoplane,military,transport,,c/n 10582,F27; F-27; Troopship; Friendship; 6WSTC,Base Aérienne Ouakam Aircraft Display,on_display
+Mil,Mi-2,,6W-SHR,,SN,Hoplite,,rotary_wing,,military,utility,,Also carries the number 4030,Mi2; Mi-2; Hoplite; 4030; 6WSHR,Base Aérienne Ouakam Aircraft Display,on_display

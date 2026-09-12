@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Fuji,UH-1,H,41656,,JP,Iroquois,,rotary_wing,,military,utility,,At 36.5384N 136.6670E; present since 2003 and confirmed 23 May 2022,UH1H; Huey; UH1,JGSDF Camp Kanazawa,on_display
+Fuji,UH-1,J,41840,,JP,Iroquois,,rotary_wing,,military,utility,,Confirmed at the FY2024 camp anniversary event; main and tail rotors and engine removed so it is a boarding and loading trainer,UH1J; Huey; UH1,JGSDF Camp Kanazawa,on_display

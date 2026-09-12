@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Kawasaki,OH-6,D,31149,,JP,Cayuse,,rotary_wing,,military,recon,,Training airframe; the serials on the engine mount and tail boom have been erased and only the nose number 49 can be read; present since 2003,OH6D; OH6,JGSDF Camp Yonago,on_display
+Fuji,UH-1,H,41676,,JP,Iroquois,,rotary_wing,,military,utility,,Training airframe at 35.4582N 133.3273E; present since 2012,UH1H; Huey; UH1,JGSDF Camp Yonago,on_display
+Kawasaki,V-107,A,51742,,JP,,,rotary_wing,,military,transport,,Training airframe at 35.4582N 133.3275E; the rear code JG-1742 has been painted out; present since 2003,V107A; KV-107II-4; JG-1742; V107,JGSDF Camp Yonago,on_display

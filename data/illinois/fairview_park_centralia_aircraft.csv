@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Republic,F-105,D,62-4318,Thunderchief,,fixed_wing,monoplane,military,fighter,,Ground-instructional GF-105D on a park plinth; NMUSAF loan register and an Aerial Visuals fix agree,GF-105D; c/n D517; F105; F105D; GF105D,Fairview Park -- Centralia,on_display
+Lockheed,T-33,A,52-9651,Shooting Star,,fixed_wing,monoplane,military,trainer,,Moved to Fairview Park from Foundation Park; NMUSAF loan register books it to the City of Centralia,c/n 580-7836; T33; T33A,Fairview Park -- Centralia,on_display

@@ -1,0 +1,10 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Beech,UC-45,F,N701FY,Expeditor,,fixed_wing,monoplane,military,transport,,USAF 52-10690; inside the museum's geodesic dome in Pioneer Park; the museum is seasonal and closed over winter,52-10690; c/n AF-620; UC45; UC45F,Pioneer Air Museum,on_display
+Bell,UH-1,H,66-0934,Iroquois,,rotary_wing,,military,utility,,Displayed with the Pioneer Air Museum collection in Pioneer Park Fairbanks,Huey; UH1; UH1H,Pioneer Air Museum,on_display
+de Havilland Canada,C-7,A,61-2600,Caribou,,fixed_wing,monoplane,military,transport,,Ex US Army Caribou later carried on a foreign registration; displayed with the Pioneer Air Museum collection,c/n 078; C9-ATV; C7; C7A,Pioneer Air Museum,on_display
+Fairchild,F-24,J,N20617,Argus,,fixed_wing,monoplane,civilian,private,,Displayed with the Pioneer Air Museum collection,c/n 3409; F24; F24J,Pioneer Air Museum,on_display
+Noorduyn,UC-64,A,N55555,Norseman,,fixed_wing,monoplane,military,utility,,USAAF 43-5237; the classic Alaskan bush transport; displayed with the Pioneer Air Museum collection,43-5237; c/n 228; UC64; UC64A,Pioneer Air Museum,on_display
+Ryan,PT-22,,N50880,Recruit,,fixed_wing,monoplane,military,trainer,,USAAF 41-15744; the September 2026 FAA bulk file shows the type as ST3KR registered to the Interior and Arctic Alaska Aeronautical Foundation which is the museum's parent body,41-15744; c/n 1773; PT22,Pioneer Air Museum,on_display
+Stinson,SR,Junior,N13482,Reliant,,fixed_wing,monoplane,civilian,private,,Displayed with the Pioneer Air Museum collection,c/n 8734,Pioneer Air Museum,on_display
+Stinson,V-77,,N60924,Reliant,,fixed_wing,monoplane,civilian,private,,Displayed with the Pioneer Air Museum collection,c/n 1425; V77,Pioneer Air Museum,on_display
+Piper,PA-18,150,N2586P,Super Cub,,fixed_wing,monoplane,civilian,private,,Taylorcraft-Piper built; displayed with the Pioneer Air Museum collection,c/n 18-4328; PA18; PA18150,Pioneer Air Museum,on_display

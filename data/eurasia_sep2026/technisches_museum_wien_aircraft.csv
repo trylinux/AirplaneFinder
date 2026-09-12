@@ -1,0 +1,11 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Etrich,Taube,II,,,AT,,,fixed_wing,monoplane,civilian,private,,Austrian pioneer-era monoplane; the museum's best-known aviation exhibit,Etrich Taube; Etrich II,Technisches Museum Wien,on_display
+Aviatik,D.I,,101.37,,AT,,,fixed_wing,biplane,military,fighter,,k.u.k. Luftfahrtruppen fighter; the 101.37 style is the correct Austro-Hungarian serial form,Berg D.I; 101.37; Aviatik Berg,Technisches Museum Wien,on_display
+de Havilland,DH.104,Dove 5,OE-BVM,,AT,,,fixed_wing,monoplane,civilian,commercial_transport,,Austrian-registered light airliner,DH104; Dove,Technisches Museum Wien,on_display
+Diamond,DA42,Twin Star,OE-VPS,,AT,,,fixed_wing,monoplane,civilian,private,,Austrian-built light twin; OE-V is the correct Austrian prototype/test block,DA-42; DA42; Twin Star,Technisches Museum Wien,on_display
+Schneider,Grunau Baby,,OE-0341,,AT,,,fixed_wing,monoplane,civilian,trainer,,Austrian-registered glider,Grunau Baby,Technisches Museum Wien,on_display
+Bell,OH-13,H,3B-HO,,AT,Sioux,,rotary_wing,,military,utility,,Ex-Austrian Air Force; the 3B- block is correct for the Austrian OH-13H,OH13; Bell 47; OH13H,Technisches Museum Wien,on_display
+Westermayer,WE.4,Gyrocopter,OE-XAW,,AT,,,rotary_wing,,civilian,experimental,,Austrian gyrocopter; OE-X is the correct Austrian rotorcraft block,WE4; WE.4,Technisches Museum Wien,on_display
+Hütter,H 17,B,,,AT,,,fixed_wing,monoplane,civilian,private,,Glider; registration not reliably established,H17B,Technisches Museum Wien,on_display
+Lilienthal,Sturmflügel,,,,DE,,,fixed_wing,monoplane,civilian,experimental,,Lilienthal storm-wing glider; a reproduction,Storm Wing; Sturmfluegel,Technisches Museum Wien,on_display
+Gumpert,G2,,OE-0017,,AT,,,fixed_wing,monoplane,civilian,private,,Austrian-registered glider,G2; Gumpert G2,Technisches Museum Wien,on_display

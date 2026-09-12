@@ -1,0 +1,18 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Blackburn,Buccaneer,S.50,416,,ZA,Buccaneer,,fixed_wing,monoplane,military,ground_attack,,c/n B3-01-64,Buccaneer S50; S.50,South African Air Force Museum Ysterplaat,on_display
+Douglas,C-47,A,6832,,ZA,Dakota,,fixed_wing,monoplane,military,transport,,c/n 12478,C47; C-47A; Dakota; C47A,South African Air Force Museum Ysterplaat,on_display
+Canadair,Sabre,Mk 6,372,,ZA,Sabre,,fixed_wing,monoplane,military,fighter,,Wears code A; c/n 1481,Sabre Mk.6; CL-13B; F-86; CL13B; F86,South African Air Force Museum Ysterplaat,on_display
+Atlas Aircraft Corporation,Impala,Mk I,460,,ZA,Impala,,fixed_wing,monoplane,military,trainer,,Licence-built Aermacchi MB-326M; c/n 6332,MB-326M; MB326M; Impala Mk1,South African Air Force Museum Ysterplaat,on_display
+Atlas Aircraft Corporation,Impala,Mk I,502,,ZA,Impala,,fixed_wing,monoplane,military,trainer,,Licence-built Aermacchi MB-326M; c/n 6398,MB-326M; MB326M; Impala Mk1,South African Air Force Museum Ysterplaat,on_display
+Atlas Aircraft Corporation,Impala,Mk I,531,,ZA,Impala,,fixed_wing,monoplane,military,trainer,,Licence-built Aermacchi MB-326M; recorded at a second Ysterplaat coordinate 250 m from the main group; c/n A56,MB-326M; MB326M; Impala Mk1,South African Air Force Museum Ysterplaat,on_display
+Dassault,Mirage III,RZ,857,,ZA,Mirage III,,fixed_wing,monoplane,military,recon,,,Mirage 3RZ; Mirage3RZ,South African Air Force Museum Ysterplaat,on_display
+Dassault,Mirage F1,CZ,213,,ZA,Mirage F1,,fixed_wing,monoplane,military,fighter,,c/n 213,Mirage F1CZ; MirageF1CZ,South African Air Force Museum Ysterplaat,on_display
+Piaggio,P.166,S,896,,ZA,Albatross,,fixed_wing,monoplane,military,search_rescue,,c/n 458,P166; P.166S; Albatross,South African Air Force Museum Ysterplaat,on_display
+Lockheed,Ventura,GR.V,6447,,ZA,Ventura,,fixed_wing,monoplane,military,recon,,Wears code V; c/n 237-5855,Ventura GR5; GR.V; PV-1; PV1,South African Air Force Museum Ysterplaat,on_display
+Aerospatiale,SA-321,L,314,,ZA,Super Frelon,,rotary_wing,,military,transport,,c/n 140,SA.321L; SA321L; Super Frelon; SA321,South African Air Force Museum Ysterplaat,on_display
+Aerospatiale,SA-316,B,611,,ZA,Alouette III,,rotary_wing,,military,utility,,c/n 1629,SA.316B; SA316B; Alouette 3; SA316,South African Air Force Museum Ysterplaat,on_display
+Avro,Shackleton,MR.3,1722,,ZA,Shackleton,,fixed_wing,monoplane,military,recon,,Wears code P; Ysterplaat was the SAAF's Shackleton base; c/n 1532,Shackleton MR3; MR.3,South African Air Force Museum Ysterplaat,on_display
+North American,Harvard,Mk IIA,7293,,ZA,Harvard,,fixed_wing,monoplane,military,trainer,,c/n 88-10644,AT-6; T-6; Harvard IIA; AT6; T6,South African Air Force Museum Ysterplaat,on_display
+de Havilland,Vampire,FB.5,208,,ZA,Vampire,,fixed_wing,monoplane,military,fighter,,Wears the code AX-D; c/n EEP42917,Vampire FB5; FB.5; AX-D,South African Air Force Museum Ysterplaat,on_display
+Westland,Wasp,HAS.1,93,,ZA,Wasp,,rotary_wing,,military,search_rescue,,South African Navy Wasp; c/n F.9755; HAS.1,Wasp HAS1,South African Air Force Museum Ysterplaat,on_display
+Westland,Whirlwind,HAS.22,WV224,,GB,Whirlwind,,rotary_wing,,military,search_rescue,,Royal Navy Whirlwind; c/n 55.499; HAS.22,Whirlwind HAS22,South African Air Force Museum Ysterplaat,on_display

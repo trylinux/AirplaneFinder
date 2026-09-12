@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+WSK PZL-Mielec,TS-11,Iskra,812,,PL,,,fixed_wing,monoplane,military,trainer,,s/n 1HO-0812 per pl.wikipedia TS-11 preserved list,TS11; Iskra; c/n 1HO-0812,Muzeum Techniki Wojskowej -- Zabrze,on_display
+Mikojan-Guriewicz,MiG-21,PFM,04,,PL,,,fixed_wing,monoplane,military,fighter,,sslwrp.goleniow.net.pl MiG-21 census places MiG-21PFM nb 04 at this museum,MiG21; MiG-21PFM; Fishbed F; MiG21PFM,Muzeum Techniki Wojskowej -- Zabrze,on_display
+WSK PZL-Mielec,An-2,,SP-WPA,,PL,,,fixed_wing,biplane,civilian,transport,,c/n 1G-16307 per pl.wikipedia An-2 preserved list,An2; An-2; Colt; c/n 1G-16307,Muzeum Techniki Wojskowej -- Zabrze,on_display

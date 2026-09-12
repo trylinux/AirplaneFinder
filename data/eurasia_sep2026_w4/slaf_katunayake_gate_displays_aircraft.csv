@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Unidentified,Aircraft,,,,LK,,,fixed_wing,monoplane,military,other,,First of two untagged OSM historic=aircraft nodes at Andiambalama inside the SLAF Katunayake perimeter; type unknown,,SLAF Katunayake Gate Displays,on_display
+Unidentified,Aircraft,,,,LK,,,fixed_wing,monoplane,military,other,,Second of two untagged OSM historic=aircraft nodes at Andiambalama 350 m from the first; type unknown,,SLAF Katunayake Gate Displays,on_display

@@ -1,0 +1,1 @@
+Lockheed|T-33|A|53-6096|Shooting Star||fixed_wing|monoplane|military|trainer||Serial checks against the T-33A FY53 block 53-4886 to 53-6144 and c/n 580-9717 is consistent; mounted on pylons as a city static display at the airport entrance on Huff Deland Circle; corroborated by silverhawkauthor|c/n 580-9717; T-Bird|on_display

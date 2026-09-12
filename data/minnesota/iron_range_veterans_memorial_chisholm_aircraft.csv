@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,F-94,C,51-13570,Starfire,,fixed_wing,monoplane,military,fighter,,All-weather interceptor at the Iron Range Veterans Memorial beside American Legion Post 247; moved a few blocks from its earlier Chisholm site; 51-13570 lies inside the F-94C-1-LO block,c/n 880-8354; F94; F94C,Iron Range Veterans Memorial -- Chisholm,on_display
+Bell,UH-1,H,69-15916,Iroquois,Huey,rotary_wing,,military,utility,,Huey at the Iron Range Veterans Memorial; identity from the Aerial Visuals location dossier,c/n 12204; UH1; UH1H,Iron Range Veterans Memorial -- Chisholm,on_display

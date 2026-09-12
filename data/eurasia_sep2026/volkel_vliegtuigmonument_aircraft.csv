@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+General Dynamics,F-16,A,J-240,,NL,,,fixed_wing,monoplane,military,fighter,,OSM node 6269669837 records the type and serial in its aircraft:type tag and classes the display as tourism=artwork,F16; F-16A; F16A,Volkel Vliegtuigmonument,on_display
+Lockheed,F-104,G,D-8279,,NL,,,fixed_wing,monoplane,military,fighter,,Fokker-built; listed by the International F-104 Society as a gate guard at Volkel and mapped in OSM with the same serial,F104; F-104G; F104G,Volkel Vliegtuigmonument,on_display
+Republic,F-84,F,P-248,,NL,,,fixed_wing,monoplane,military,ground_attack,,Mapped in OSM with the serial in the ref tag,F84; F-84F; Thunderstreak; F84F,Volkel Vliegtuigmonument,on_display

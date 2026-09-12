@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-15,,,,RO,,,fixed_wing,monoplane,military,fighter,,OSM node 13348630979 on Strada Condorilor at the Aerostar works; no serial recorded,MiG15,Aerostar Bacău Works Display,on_display
+Mikoyan-Gurevich,MiG-21,,,,RO,,,fixed_wing,monoplane,military,fighter,,OSM node 13348630980 at the Aerostar works; Aerostar performed the LanceR conversion of the Romanian MiG-21 fleet so a works airframe here is very likely a LanceR but that is not confirmed; no serial recorded,MiG21; Fishbed,Aerostar Bacău Works Display,on_display

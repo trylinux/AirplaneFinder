@@ -1,0 +1,15 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-25,PU,17 Red,,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 281; source records the bort as 17-красный,MiG25; MiG25PU,Perm Aircraft Monuments,on_display
+Mil,Mi-24,A,41 Red,,RU,,,rotary_wing,,military,ground_attack,,russianplanes.net monument point 282; source records the bort as 41-красный,Mi24; Mi24A,Perm Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-29,,04 Red,2960507053,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 283; source records the bort as 04-красный,MiG29,Perm Aircraft Monuments,on_display
+Sukhoi,Su-27,,26 Blue,36911007x02,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 284; source records the bort as 26-синий,Su27,Perm Aircraft Monuments,on_display
+Mil,Mi-8,,RA-22541,4016,RU,,,rotary_wing,,military,utility,,russianplanes.net monument point 287,Mi8,Perm Aircraft Monuments,on_display
+Antonov,An-2,,RA-33353,1Г226-12,RU,Colt,,fixed_wing,biplane,military,utility,,russianplanes.net monument point 288,Colt; An2,Perm Aircraft Monuments,on_display
+Mil,Mi-2,,CCCP-20019,,RU,,,rotary_wing,,military,utility,,russianplanes.net monument point 351,Mi2,Perm Aircraft Monuments,on_display
+Antonov,An-2,P,CCCP-77530,,RU,,,fixed_wing,biplane,military,utility,,russianplanes.net monument point 352,An2; An2P,Perm Aircraft Monuments,on_display
+Yakovlev,Yak-40,,RA-87418,9421034,RU,,,fixed_wing,monoplane,military,commercial_transport,,russianplanes.net monument point 10523,Yak40,Perm Aircraft Monuments,on_display
+Mil,Mi-2,,RA-20893,538332093,RU,,,rotary_wing,,military,utility,,russianplanes.net monument point 10524,Mi2,Perm Aircraft Monuments,on_display
+Tupolev,Tu-134,,RA-65064,49886,RU,,,fixed_wing,monoplane,military,commercial_transport,,russianplanes.net monument point 10526,Tu134,Perm Aircraft Monuments,on_display
+Mil,Mi-2,,RA-20782,527824092,RU,,,rotary_wing,,military,utility,,russianplanes.net monument point 10527; contributor note (ru): Нанесенная регистрация СССР-20019 борту по факту не принадлежит,Mi2,Perm Aircraft Monuments,on_display
+Antonov,An-2,R,RA-33564,1Г230-01,RU,,,fixed_wing,biplane,military,utility,,russianplanes.net monument point 23315,An2; An2R,Perm Aircraft Monuments,on_display
+Antonov,An-24,B,RA-47756,79901209,RU,,,fixed_wing,monoplane,military,commercial_transport,,russianplanes.net monument point 24104,An24; An24B,Perm Aircraft Monuments,on_display

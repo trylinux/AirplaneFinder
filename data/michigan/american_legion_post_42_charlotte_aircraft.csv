@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,UH-1,H,,Iroquois,,rotary_wing,,military,utility,,Post display; serial from an Aerial Visuals arc-second fix; tail_number blank - this serial is also claimed by American Legion Post 423 -- Orland in this batch and the conflict is unresolved,Huey; c/n 9760; UH1; UH1H; 67-17562,American Legion Post 42 -- Charlotte,on_display
+Bell,AH-1,F,67-15805,Cobra,,rotary_wing,,military,ground_attack,,Post display; serial from an Aerial Visuals arc-second fix,Cobra; c/n 20469; AH1; AH1F,American Legion Post 42 -- Charlotte,on_display

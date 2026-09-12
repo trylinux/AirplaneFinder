@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Hawker,Sea Fury,FB.11,541,,CU,Sea Fury,,fixed_wing,monoplane,military,fighter,,TOP-UP. Displayed outdoors in front of the museum; flown by the Fuerza Aerea Revolucionaria against the Brigade 2506 landing in April 1961; the OSM airframe node and the museum building node are 20 m apart,SeaFury; Sea Fury FB11; FB11; FB.11,Museo Girón,on_display

@@ -1,0 +1,34 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-2,,27 Yellow,542739013,RU,,,rotary_wing,,military,utility,,russianplanes.net monument point 4665; source records the bort as 27-жёлтый,Mi2,Medyn Aircraft Monuments,on_display
+Sukhoi,Su-7,,12 Red,1228,RU,,,fixed_wing,monoplane,military,ground_attack,,russianplanes.net monument point 7514; source records the bort as 12-красный,Su7,Medyn Aircraft Monuments,on_display
+Sukhoi,Su-7,U,16 Red,2502,RU,,,fixed_wing,monoplane,military,ground_attack,,russianplanes.net monument point 7515; source records the bort as 16-красный,Su7; Su7U,Medyn Aircraft Monuments,on_display
+Sukhoi,Su-9,,10 Red,0815348,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 7516; source records the bort as 10-красный,Su9,Medyn Aircraft Monuments,on_display
+Sukhoi,Su-15,UT,50 Red,1015310,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 7517; source records the bort as 50-красный,Su15; Su15UT,Medyn Aircraft Monuments,on_display
+Sukhoi,Su-15,T,37 Red,0115305,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 7518; source records the bort as 37-красный,Su15; Su15T,Medyn Aircraft Monuments,on_display
+Sukhoi,Su-15,,85 Blue,0815344,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 7519; source records the bort as 85-синий,Su15,Medyn Aircraft Monuments,on_display
+Sukhoi,Su-15,,42 Red,0615342,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 7520; source records the bort as 42-красный,Su15,Medyn Aircraft Monuments,on_display
+Sukhoi,Su-17,M4,71 Red,50820,RU,,,fixed_wing,monoplane,military,ground_attack,,russianplanes.net monument point 7521; source records the bort as 71-красный,Su17,Medyn Aircraft Monuments,on_display
+Sukhoi,Su-17,M3,95 Red,26918,RU,,,fixed_wing,monoplane,military,ground_attack,,russianplanes.net monument point 7522; source records the bort as 95-красный,Su17,Medyn Aircraft Monuments,on_display
+Sukhoi,Su-22,UM3,99 Red,17532389606,RU,,,fixed_wing,monoplane,military,ground_attack,,russianplanes.net monument point 7523; source records the bort as 99-красный,Su22,Medyn Aircraft Monuments,on_display
+Yakovlev,Yak-28,R,05 Red,6960604,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 7524; source records the bort as 05-красный,Yak28; Yak28R,Medyn Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-17,,111 Blue,54211768,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 7527; source records the bort as 111-синий,MiG17,Medyn Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-17,,17 Red,1215391,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 7528; source records the bort as 17-красный,MiG17,Medyn Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-17,,93 Yellow,,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 7529; source records the bort as 93-желтый,MiG17,Medyn Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-21,PF,98 Red,76212122,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 7530; source records the bort as 98-красный,MiG21; MiG21PF,Medyn Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-21,R,30 Red,030AT22,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 7531; source records the bort as 30-красный,MiG21; MiG21R,Medyn Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-23,S,25 Red,229000615,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 7532; source records the bort as 25-красный,MiG23; MiG23S,Medyn Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-23,M,,0390206759,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 7533; source records the bort as 21-синий; wears bort 21 Blue -- that number recurs at other Russian sites so it is recorded here as a marking rather than as an identity,MiG23; MiG23M,Medyn Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-23,M,11 Blue,0390209445,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 7534; source records the bort as 11-синий,MiG23; MiG23M,Medyn Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-23,B,321 Green,32-24/1,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 7535; source records the bort as 321-зеленый,MiG23; MiG23B,Medyn Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-25,P,38 Red,84028605,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 7545; source records the bort as 38-красный,MiG25; MiG25P,Medyn Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-25,RB,55 Red,02007033,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 7546; source records the bort as 55-красный,MiG25; MiG25RB,Medyn Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-25,PU,90 Blue,22040418,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 7547; source records the bort as 90-синий,MiG25; MiG25PU,Medyn Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-25,PD,08 Blue,84018081,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 7548; source records the bort as 08-синий,MiG25; MiG25PD,Medyn Aircraft Monuments,on_display
+Mil,Mi-1,,,0302,,,,rotary_wing,,military,utility,,russianplanes.net monument point 7549,Mi1,Medyn Aircraft Monuments,on_display
+Mil,Mi-2,U,03 Yellow,541835031,RU,,,rotary_wing,,military,utility,,russianplanes.net monument point 7550; source records the bort as 03-жёлтый,Mi2; Mi2U,Medyn Aircraft Monuments,on_display
+Mil,Mi-24,A,33 Red,3201902,RU,,,rotary_wing,,military,ground_attack,,russianplanes.net monument point 7551; source records the bort as 33-красный,Mi24; Mi24A,Medyn Aircraft Monuments,on_display
+Aero,L-29,,74 Blue,395106,RU,Delfin,,fixed_wing,monoplane,military,trainer,,russianplanes.net monument point 7553; source records the bort as 74-синий,Delfin; L29,Medyn Aircraft Monuments,on_display
+Tupolev,Tu-241,,12 Red,,RU,,,fixed_wing,monoplane,military,other,,russianplanes.net monument point 7554; source records the bort as 12-красный,Tu241,Medyn Aircraft Monuments,on_display
+Mikoyan-Gurevich,KS-1,,,,,Kometa,,missile_rocket,,military,air_to_surface,,russianplanes.net monument point 7555,Kometa; KS1,Medyn Aircraft Monuments,on_display
+Lavochkin,La-17,,,50115,,,,fixed_wing,monoplane,military,other,,russianplanes.net monument point 7556,La17,Medyn Aircraft Monuments,on_display
+Sukhoi,Su-17,,101 Blue,9011,RU,,,fixed_wing,monoplane,military,ground_attack,,russianplanes.net monument point 24269; contributor note (ru): Прежде был в г. Кирсанов.; source records the bort as 101-синий,Su17,Medyn Aircraft Monuments,on_display

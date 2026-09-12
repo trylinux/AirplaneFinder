@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Fiat,G.91,R,MM6241,,IT,Gina,,fixed_wing,monoplane,military,ground_attack,,Ex-Frecce Tricolori aircraft on static display at the 313 Gruppo base,G91; G-91; G.91R; G.91 PAN,Rivolto Air Base Frecce Tricolori Displays,on_display
+Aermacchi,MB-339,A,MM54542,,IT,,,fixed_wing,monoplane,military,trainer,,Ex-Frecce Tricolori aircraft displayed before the 313 Gruppo command building,MB339; MB-339PAN; MB339PAN; MB339A,Rivolto Air Base Frecce Tricolori Displays,on_display
+Aermacchi,MB-339,A,MM54547,,IT,,,fixed_wing,monoplane,military,trainer,,Ex-Frecce Tricolori aircraft displayed near the base museum,MB339; MB-339PAN; MB339PAN; MB339A,Rivolto Air Base Frecce Tricolori Displays,on_display

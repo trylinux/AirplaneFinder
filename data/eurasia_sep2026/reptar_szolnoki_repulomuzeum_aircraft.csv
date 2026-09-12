@@ -1,0 +1,45 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-15,bis,912,,HU,Fagot,,fixed_wing,monoplane,military,fighter,,Hungarian tactical number from a lead-list inventory; the type's presence is confirmed by OSM and the museum's own pages,MiG15; MiG15bis; Fagot,RepTár Szolnoki Repülőmúzeum,on_display
+Mikoyan-Gurevich,MiG-15,UTI,203,,HU,Midget,,fixed_wing,monoplane,military,trainer,,Two-seat trainer version,MiG15UTI; Midget; MiG15,RepTár Szolnoki Repülőmúzeum,on_display
+Mikoyan-Gurevich,MiG-17,PF,405,,HU,Fresco,,fixed_wing,monoplane,military,fighter,,Radar-equipped night fighter; the museum publishes a dedicated page for this airframe,MiG17; MiG17PF; Fresco,RepTár Szolnoki Repülőmúzeum,on_display
+Mikoyan-Gurevich,MiG-19,PM,28,,HU,Farmer,,fixed_wing,monoplane,military,fighter,,Hungary's first supersonic fighter type,MiG19; MiG19PM; Farmer,RepTár Szolnoki Repülőmúzeum,on_display
+Mikoyan-Gurevich,MiG-21,F-13,813,,HU,Fishbed,,fixed_wing,monoplane,military,fighter,,Tactical number from a lead-list inventory,MiG21; MiG21F13; Fishbed,RepTár Szolnoki Repülőmúzeum,on_display
+Mikoyan-Gurevich,MiG-21,PF,1512,,HU,Fishbed,,fixed_wing,monoplane,military,fighter,,Tactical number from a lead-list inventory,MiG21; MiG21PF; Fishbed,RepTár Szolnoki Repülőmúzeum,on_display
+Mikoyan-Gurevich,MiG-21,MF,9309,,HU,Fishbed,,fixed_wing,monoplane,military,fighter,,Tactical number from a lead-list inventory,MiG21; MiG21MF; Fishbed,RepTár Szolnoki Repülőmúzeum,on_display
+Mikoyan-Gurevich,MiG-21,MF,9512,,HU,Fishbed,,fixed_wing,monoplane,military,fighter,,Tactical number from a lead-list inventory,MiG21; MiG21MF; Fishbed,RepTár Szolnoki Repülőmúzeum,on_display
+Mikoyan-Gurevich,MiG-21,MF,8111,,HU,Fishbed,,fixed_wing,monoplane,military,fighter,,Cockpit section only,MiG21; MiG21MF; Fishbed,RepTár Szolnoki Repülőmúzeum,on_display
+Mikoyan-Gurevich,MiG-21,bis,1904,,HU,Fishbed,,fixed_wing,monoplane,military,fighter,,MiG-21bis-SAU; tactical number from a lead-list inventory,MiG21; MiG21bis; MiG-21bisz; Fishbed,RepTár Szolnoki Repülőmúzeum,on_display
+Mikoyan-Gurevich,MiG-21,bis,5721,,HU,Fishbed,,fixed_wing,monoplane,military,fighter,,MiG-21bis-SAU,MiG21; MiG21bis; MiG-21bisz; Fishbed,RepTár Szolnoki Repülőmúzeum,on_display
+Mikoyan-Gurevich,MiG-21,bis,3945,,HU,Fishbed,,fixed_wing,monoplane,military,fighter,,MiG-21bis-Lazur; the museum's own page for the type describes it as a MiG-21bisz 75A,MiG21; MiG21bis; MiG-21bisz; Fishbed,RepTár Szolnoki Repülőmúzeum,on_display
+Mikoyan-Gurevich,MiG-21,bis,4029,,HU,Fishbed,,fixed_wing,monoplane,military,fighter,,Cockpit section only,MiG21; MiG21bis; Fishbed,RepTár Szolnoki Repülőmúzeum,on_display
+Mikoyan-Gurevich,MiG-21,U-400,1319,,HU,Mongol,,fixed_wing,monoplane,military,trainer,,Two-seat trainer,MiG21; MiG21U; Mongol,RepTár Szolnoki Repülőmúzeum,on_display
+Mikoyan-Gurevich,MiG-21,U-600,4419,,HU,Mongol,,fixed_wing,monoplane,military,trainer,,Two-seat trainer,MiG21; MiG21U; Mongol,RepTár Szolnoki Repülőmúzeum,on_display
+Mikoyan-Gurevich,MiG-21,UM,3041,,HU,Mongol,,fixed_wing,monoplane,military,trainer,,Two-seat trainer,MiG21; MiG21UM; Mongol,RepTár Szolnoki Repülőmúzeum,on_display
+Mikoyan-Gurevich,MiG-23,MF,06,,HU,Flogger,,fixed_wing,monoplane,military,fighter,,OSM maps five MiG-23 airframes on the museum site so more than the two listed here are present; only two tactical numbers were found,MiG23; MiG23MF; Flogger,RepTár Szolnoki Repülőmúzeum,on_display
+Mikoyan-Gurevich,MiG-23,UB,15,,HU,Flogger,,fixed_wing,monoplane,military,trainer,,Two-seat trainer version,MiG23; MiG23UB; Flogger,RepTár Szolnoki Repülőmúzeum,on_display
+Mikoyan-Gurevich,MiG-29,B,05,,HU,Fulcrum,,fixed_wing,monoplane,military,fighter,,Mapped in OSM with a 2017 check date and a reptar.hu link,MiG29; MiG29B; Fulcrum,RepTár Szolnoki Repülőmúzeum,on_display
+Sukhoi,Su-22,M-3,10,,HU,Fitter,,fixed_wing,monoplane,military,ground_attack,,Hungarian Su-22M3 fighter-bomber,Szu-22; Su22; Su-22M3; Fitter; Szu22,RepTár Szolnoki Repülőmúzeum,on_display
+Sukhoi,Su-22,M-3,12,,HU,Fitter,,fixed_wing,monoplane,military,ground_attack,,Hungarian Su-22M3 fighter-bomber,Szu-22; Su22; Su-22M3; Fitter; Szu22,RepTár Szolnoki Repülőmúzeum,on_display
+Aero,L-29,,379,,HU,Delfín,,fixed_wing,monoplane,military,trainer,,Czechoslovak jet trainer,L29; Delfin; Maya,RepTár Szolnoki Repülőmúzeum,on_display
+Aero,L-39,ZO,018,,,Albatros,,fixed_wing,monoplane,military,trainer,,hu.wikipedia notes that the airframe numbered 018 never flew in Hungary,L39; L39ZO; Albatros,RepTár Szolnoki Repülőmúzeum,on_display
+Aero,L-39,ZO,119,,HU,Albatros,Cápeti II,fixed_wing,monoplane,military,trainer,,"Named ""Cápeti II""; the museum publishes a dedicated page for this airframe",L39; L39ZO; Albatros,RepTár Szolnoki Repülőmúzeum,on_display
+Lisunov,Li-2,T,301,,HU,,Teve,fixed_wing,monoplane,military,transport,,OSM records the civil registration HA-LIS alongside the military side number 301,HA-LIS; Li2; Li-2T; Teve; Li2T,RepTár Szolnoki Repülőmúzeum,on_display
+Ilyushin,Il-2,M3,,,RU,,Sturmovik,fixed_wing,monoplane,military,ground_attack,,Wreck recovered from Lake Balaton; the most complete of several wartime wrecks in the collection,Il2; IL-2M3; Sturmovik,RepTár Szolnoki Repülőmúzeum,on_display
+Nord,1002,,,,,,Pingouin,fixed_wing,monoplane,military,utility,,French-built Messerschmitt Bf 108 Taifun,Bf 108; Me 108; Taifun; Nord 1002,RepTár Szolnoki Repülőmúzeum,on_display
+Kvasz,Kvasz I,,,,HU,,,fixed_wing,biplane,civilian,experimental,,Full-size reconstruction of the pioneer aircraft of András Kvasz; delivered to the museum in 2012,Kvasz-1; Kvasz I,RepTár Szolnoki Repülőmúzeum,on_display
+Aero,Ae-45,,,,HU,,,fixed_wing,monoplane,civilian,private,,Czechoslovak light twin,Ae45; Aero 45,RepTár Szolnoki Repülőmúzeum,on_display
+Let,L-200,D,,,HU,,Morava,fixed_wing,monoplane,civilian,private,,The museum publishes a dedicated page for this airframe; a lead list gives the code R-05,R-05; L200; L-200D; Morava; L200D; R05,RepTár Szolnoki Repülőmúzeum,on_display
+Let,C-11,,19,,HU,,,fixed_wing,monoplane,military,trainer,,Czechoslovak-built Yak-11; the museum lost its first C-11 in a 2006 sale and acquired a replacement in 2011,Jak-11; Yak-11; C11; Jak11; Yak11,RepTár Szolnoki Repülőmúzeum,on_display
+Yakovlev,Yak-52,,04,,HU,,,fixed_wing,monoplane,military,trainer,,Hungarian trainer,Jak-52; Yak52; Jak52,RepTár Szolnoki Repülőmúzeum,on_display
+Yakovlev,Yak-52,,12,,HU,,,fixed_wing,monoplane,military,trainer,,Hungarian trainer,Jak-52; Yak52; Jak52,RepTár Szolnoki Repülőmúzeum,on_display
+Mil,Mi-1,M,,,HU,,Hare,rotary_wing,,military,utility,,Liaison helicopter,Mi1; Mi-1M; Hare; Mi1M,RepTár Szolnoki Repülőmúzeum,on_display
+Mil,Mi-2,,9410,,HU,Hoplite,,rotary_wing,,military,utility,,PZL-built light helicopter,Mi2; Hoplite,RepTár Szolnoki Repülőmúzeum,on_display
+Mil,Mi-8,T,,,HU,Hip,,rotary_wing,,military,transport,,The museum publishes a dedicated page for this airframe,Mi8; Mi-8T; Hip; Mi8T,RepTár Szolnoki Repülőmúzeum,on_display
+Mil,Mi-24,D,,,HU,Hind,Csőrike,rotary_wing,,military,ground_attack,,OSM maps two Mi-24 airframes on the museum site; one is nicknamed Csőrike,Mi24; Mi-24D; Hind; Mi24D,RepTár Szolnoki Repülőmúzeum,on_display
+Kamov,Ka-26,,505,,HU,Hoodlum,,rotary_wing,,military,utility,,Light utility helicopter,Ka26; Hoodlum,RepTár Szolnoki Repülőmúzeum,on_display
+Rubik,R-26,S,,,HU,,Góbé,fixed_wing,monoplane,civilian,trainer,,Hungarian training glider,R26S; Gobe; R26,RepTár Szolnoki Repülőmúzeum,on_display
+Rubik,R-22,S,,,HU,,Június 18,fixed_wing,monoplane,civilian,private,,Hungarian glider,R22S; Junius 18; R22,RepTár Szolnoki Repülőmúzeum,on_display
+Rubik,R-16,,,,HU,,Lepke,fixed_wing,monoplane,civilian,private,,Hungarian glider,R16; Lepke,RepTár Szolnoki Repülőmúzeum,on_display
+Meteor,Meteor-3,MA,,,HU,,,fixed_wing,monoplane,military,drone,,Hungarian target drone,Meteor 3MA; Meteor-3MA,RepTár Szolnoki Repülőmúzeum,on_display
+Nemere,R01,Nemere,,,HU,,,fixed_wing,monoplane,military,drone,,Hungarian reconnaissance unmanned aircraft,R01 Nemere; R-01; R01,RepTár Szolnoki Repülőmúzeum,on_display
+Denevér,K-001,Denevér,,,HU,,,fixed_wing,monoplane,military,experimental,,Hungarian unmanned-aircraft project that in practice only ever flew with a pilot aboard,K001; K-001; Denever,RepTár Szolnoki Repülőmúzeum,on_display

@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,F-104,G,22307,,GR,Starfighter,,fixed_wing,monoplane,military,fighter,,c/n 683D-6006; ex-USAF 62-12307; pole-mounted in the 335 Mira area and displayed wearing the false serial 12307,F104G; F104; Starfighter; 62-12307; 12307,Araxos Air Base Display Line,on_display
+Republic,F-84,F,37230,,GR,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,,F84F; F84; Thunderstreak,Araxos Air Base Display Line,on_display
+Lockheed,T-33,A,58646,,GR,Shooting Star,,fixed_wing,monoplane,military,trainer,,c/n 580-1615; carries the code TR-646,T33A; T33; TR-646; Shooting Star; TR646,Araxos Air Base Display Line,on_display
+LTV,A-7,E,159648,,GR,Corsair II,,fixed_wing,monoplane,military,ground_attack,,c/n E-457,A7E; A7; Corsair II,Araxos Air Base Display Line,on_display

@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+PZL Mielec,TS-11,,1231,,PL,,Iskra,fixed_wing,monoplane,military,trainer,,Tactical number 1231; housing-estate monument on Osiedle Jana Zamoyskiego. Manufacturer and model tagged explicitly by the mapper,TS11; Iskra; 1231,TS-11 Iskra 1231 Monument -- Zamość,on_display

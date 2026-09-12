@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Pilatus,PC-7,,,,AO,Turbo Trainer,,fixed_wing,monoplane,military,trainer,,Photographically confirmed 2019; the source cannot settle whether the airframe is R-417 or R-419 so tail_number is deliberately blank,PC7; PC-7; Turbo Trainer; R-417; R-419; R417; R419,PC-7 Monument -- Lobito,on_display

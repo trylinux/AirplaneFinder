@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+WSK Mielec,MiG-17,,,,PL,Fresco,Lim-5R,fixed_wing,monoplane,military,recon,,Described by the surveying mapper as a reconnaissance MiG-17F/Lim-5R. Polish Lim-5R airframes were WSK Mielec-built; no works or tactical number recorded,MiG17; Lim-5; Lim5; Lim-5R; Fresco; Lim5R,MiG-17F/Lim-5R and Mi-2T -- Dębica,on_display
+Mil,Mi-2,T,,,PL,Hoplite,,rotary_wing,,military,utility,,PZL-Świdnik-built Mi-2T beside the MiG-17; no serial recorded,Mi2; Hoplite; PZL Mi-2; Mi2T,MiG-17F/Lim-5R and Mi-2T -- Dębica,on_display

@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Sukhoi,Su-24,,,,BY,,,fixed_wing,monoplane,military,bomber,,OpenStreetMap node/7555202692. One of five airframes in a 25 m line south-west of Vitebsk,Su-24; Su24; Fencer,Мемарыял авіятараў -- Наўкі (Віцебскі раён),on_display
+Sukhoi,Su-27,,,,BY,,,fixed_wing,monoplane,military,fighter,,OpenStreetMap node/7555202693. One of five airframes in the Naŭki line; Belarus operates the Su-27 to this day,Su-27; Su27; Flanker,Мемарыял авіятараў -- Наўкі (Віцебскі раён),on_display
+Yakovlev,Yak-52,,,,BY,,,fixed_wing,monoplane,civilian,trainer,,OpenStreetMap node/11263391209. One of five airframes in the Naŭki line; a piston trainer among the jets,Yak-52; Yak52,Мемарыял авіятараў -- Наўкі (Віцебскі раён),on_display
+Mil,Mi-1,,,,RU,,,rotary_wing,,military,utility,,OpenStreetMap node/11263391210. One of five airframes in the Naŭki line; the Mi-1 left service long before 1991,Mi-1; Mi1; Hare,Мемарыял авіятараў -- Наўкі (Віцебскі раён),on_display
+Mil,Mi-2,,,,BY,,,rotary_wing,,military,utility,,OpenStreetMap node/11263391211. One of five airframes in the Naŭki line,Mi-2; Mi2; Hoplite,Мемарыял авіятараў -- Наўкі (Віцебскі раён),on_display

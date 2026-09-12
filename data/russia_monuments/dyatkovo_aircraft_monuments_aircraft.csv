@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Yakovlev,Yak-40,,RA-87373,9410732,RU,,,fixed_wing,monoplane,military,commercial_transport,,russianplanes.net monument point 4799,Yak40,Dyatkovo Aircraft Monuments,on_display
+Aero,L-29,,41,,,Delfin,,fixed_wing,monoplane,military,trainer,,russianplanes.net monument point 4800,Delfin; L29,Dyatkovo Aircraft Monuments,on_display
+Yakovlev,Yak-52,,,,,,,fixed_wing,monoplane,military,trainer,,russianplanes.net monument point 4801; source records the bort as ?,Yak52,Dyatkovo Aircraft Monuments,on_display
+Mil,Mi-2,,,,,,,rotary_wing,,military,utility,,russianplanes.net monument point 4802; source records the bort as ?,Mi2,Dyatkovo Aircraft Monuments,on_display

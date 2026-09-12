@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-15,,,,CZ,,,fixed_wing,monoplane,military,fighter,,MiG-15 erected in Příbor on 6 May 2011 per the start_date recorded in the map object; Czechoslovak licence-built MiG-15 carried the designation S-102; no tactical number recorded,MiG-15; MiG15; S-102; S102; Fagot,MiG-15 Monument -- Příbor,on_display

@@ -1,0 +1,11 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikojan-Guriewicz,MiG-21,PFM,4106,,PL,,,fixed_wing,monoplane,military,fighter,,s/n 94A4106 per pl.wikipedia MiG-21 preserved list citing the museum's own park page,MiG21; MiG-21PFM; Fishbed F; c/n 94A4106; MiG21PFM,Muzeum Uzbrojenia -- Poznań,on_display
+Suchoj,Su-20,,4245,,PL,,,fixed_wing,monoplane,military,ground_attack,,s/n 6605 per pl.wikipedia Su-17 preserved list,Su20; Su-17; Fitter; c/n 6605; Su17,Muzeum Uzbrojenia -- Poznań,on_display
+Iliuszyn,Ił-28,R,4,,PL,,,fixed_wing,monoplane,military,recon,,s/n 1910 per pl.wikipedia Il-28 preserved list,Il28; Il-28R; Beagle; c/n 1910; Il28R,Muzeum Uzbrojenia -- Poznań,on_display
+WSK PZL-Mielec,TS-11,Iskra,710,,PL,,,fixed_wing,monoplane,military,trainer,,s/n 1H-0710 per pl.wikipedia TS-11 preserved list,TS11; Iskra; c/n 1H-0710,Muzeum Uzbrojenia -- Poznań,on_display
+WSK PZL-Mielec,An-2,T,9863,,PL,,,fixed_wing,biplane,military,transport,,c/n 1G98-63 per pl.wikipedia An-2 preserved list; Polish-built at WSK Mielec,An2; An-2T; Colt; c/n 1G98-63; An2T,Muzeum Uzbrojenia -- Poznań,on_display
+PZL-Świdnik,Mi-2,,3649,,PL,,,rotary_wing,,military,transport,,pl.wikipedia Mi-2 preserved list gives nb 3649,Mi2; Mi-2; Hoplite,Muzeum Uzbrojenia -- Poznań,on_display
+WSK PZL-Mielec,Lim-1,,,,PL,,,fixed_wing,monoplane,military,fighter,,The museum's park page lists a MiG-15; the pl.wikipedia MiG-15 gallery captions the Poznań aircraft simply MiG-15; whether it is a Soviet MiG-15 or a Polish-built Lim-1 is unresolved,Lim1; MiG-15; MiG15; Fagot,Muzeum Uzbrojenia -- Poznań,on_display
+WSK PZL-Mielec,Lim-5,,,,PL,,,fixed_wing,monoplane,military,fighter,,Listed on the museum's own outdoor park page as a Lim-5,Lim5; Lim-5; MiG-17F; Fresco; MiG17F,Muzeum Uzbrojenia -- Poznań,on_display
+WSK PZL-Świdnik,SM-1,,,,PL,,,rotary_wing,,military,utility,,Listed on the museum's own outdoor park page,SM1; SM-1; Mi-1; Hare; Mi1,Muzeum Uzbrojenia -- Poznań,on_display
+WSK PZL-Świdnik,SM-2,,,,PL,,,rotary_wing,,military,utility,,Listed on the museum's own outdoor park page,SM2; SM-2,Muzeum Uzbrojenia -- Poznań,on_display

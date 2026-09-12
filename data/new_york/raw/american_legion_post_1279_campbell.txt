@@ -1,0 +1,1 @@
+Bell|AH-1|F|67-15688|HueyCobra|Cobra|rotary_wing||military|ground_attack||Serial checks against the FY67 AH-1G block 67-15450 to 67-15905; c/n 20352 is consistent with the 67-15690/c-n-20354 pairing seen elsewhere in New York; Aerial Visuals dossier 3142 arc-second fix on the post lawn at 4735 Tannery Road|c/n 20352; AH-1G; Cobra|on_display

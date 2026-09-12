@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-27,,49,61912515015,,,,fixed_wing,monoplane,military,ground_attack,,russianplanes.net monument point 376,MiG27,Moscow Aircraft Monuments (3),on_display
+Mikoyan-Gurevich,MiG-29,B (9.12B),51 White,2960526305,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 377; source records the bort as 51-белый,MiG29,Moscow Aircraft Monuments (3),on_display

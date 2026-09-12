@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,R4D,6,50837,Skytrain,,fixed_wing,monoplane,military,transport,,Navy R4D-6 BuNo 50837 c/n 15563 later civil N375AS; the museum's own site advertises a C-47 Exhibit which is very likely this airframe; currency otherwise unconfirmed,N375AS; C-47; C47,Millville Army Air Field Museum,on_display
+Douglas,A-4,F,154200,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,Gate-guard Skyhawk at the museum entrance per Aerial Visuals; currency unconfirmed since about 2012,A-4F; A4; A4F,Millville Army Air Field Museum,on_display
+Short,C-23,B,85-25343,Sherpa,,fixed_wing,monoplane,military,transport,,Serial fits the FY1985 C-23B block; currency unconfirmed since about 2012,C-23B; Sherpa; C23; C23B,Millville Army Air Field Museum,on_display

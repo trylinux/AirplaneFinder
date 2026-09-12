@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+McDonnell,F-4,D,66-8755,Phantom II,,fixed_wing,monoplane,military,fighter,,Ground-instructional GF-4D on a county park plinth; NMUSAF loan register books it to Macomb County,GF-4D; c/n 2588; F4; F4D; GF4D,Freedom Hill Park -- Sterling Heights,on_display
+Bell,UH-1,K,157197,Iroquois,,rotary_wing,,military,search_rescue,,Navy HH-1K rescue Huey beside the Phantom; serial from an Aerial Visuals arc-second fix,HH-1K; BuNo 157197; c/n 6321; UH1; UH1K; HH1K,Freedom Hill Park -- Sterling Heights,on_display

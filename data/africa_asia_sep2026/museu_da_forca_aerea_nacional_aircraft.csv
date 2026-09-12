@@ -1,0 +1,12 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Antonov,An-32,,T-252,,AO,Cline,,fixed_wing,monoplane,military,transport,,c/n 2102,An32; An-32; Cline,Museu da Força Aérea Nacional,on_display
+Cessna,172,,I-117,,AO,Skyhawk,,fixed_wing,monoplane,military,trainer,,,Ce.172; Ce172; C-172; Skyhawk; C172,Museu da Força Aérea Nacional,on_display
+Mil,Mi-8,MTV-1,H-619,,AO,Hip,,rotary_wing,,military,transport,,,Mi8; Mi-8MTV-1; Hip,Museu da Força Aérea Nacional,on_display
+Mil,Mi-25,,H-339,,AO,Hind,,rotary_wing,,military,ground_attack,,Export Mi-24D,Mi25; Mi-25; Mi-24D; Hind; Mi24D,Museu da Força Aérea Nacional,on_display
+Mikoyan-Gurevich,MiG-21,bis,C369,,AO,Fishbed,,fixed_wing,monoplane,military,fighter,,,MiG21; MiG-21bis; Fishbed; C-369; MiG21bis; C369,Museu da Força Aérea Nacional,on_display
+Pilatus,PC-7,,,,AO,Turbo Trainer,,fixed_wing,monoplane,military,trainer,,Serial not recorded by the source and deliberately blank,PC7; PC-7; Turbo Trainer,Museu da Força Aérea Nacional,on_display
+Aerospatiale,SA-342,M,H-400,,AO,Gazelle,,rotary_wing,,military,other,,anti_tank,SA.342M; SA342M; Gazelle; SA342,Museu da Força Aérea Nacional,on_display
+Aerospatiale,SA-365,F,H-452,,AO,Dauphin,,rotary_wing,,military,other,,anti_ship c/n 6206,SA.365F; SA365F; Dauphin; SA365,Museu da Força Aérea Nacional,on_display
+Aerospatiale,SA-316,B,H-224,,AO,Alouette III,,rotary_wing,,military,utility,,c/n 5416,SA.316B; SA316B; Alouette 3; SA316,Museu da Força Aérea Nacional,on_display
+Yakovlev,Yak-40,,T-450,,AO,Codling,,fixed_wing,monoplane,military,transport,,Recorded as T-450; c/n 9820558,Yak40; Yak-40; Codling; T-450; T450,Museu da Força Aérea Nacional,on_display
+Mikoyan-Gurevich,MiG-17,,C22,,AO,Fresco,,fixed_wing,monoplane,military,fighter,,Recorded 130 m from the museum group; the source's own comment thread notes it has also been reported as a MiG-15UTI so the type is not certain,MiG17; MiG-17; Fresco; C-22; C22,Museu da Força Aérea Nacional,on_display

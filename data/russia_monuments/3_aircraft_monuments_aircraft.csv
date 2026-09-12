@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-24,,15,,,,,rotary_wing,,military,ground_attack,,russianplanes.net monument point 22888,Mi24,Чехов-3 Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-29,,24,,,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 22889,MiG29,Чехов-3 Aircraft Monuments,on_display

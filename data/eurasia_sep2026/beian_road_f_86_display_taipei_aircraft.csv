@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,F-86,F,6134,,TW,Sabre,,fixed_wing,monoplane,military,fighter,,Surveyed as OSM node 8892192519 with model F-86F Sabre and ref=6134; the host institution on Beian Road could not be identified,F86F; 6134; F86,Beian Road F-86 Display -- Taipei,on_display
+North American,F-86,,,,TW,Sabre,,fixed_wing,monoplane,military,fighter,,Second Sabre surveyed 100 m from the first as OSM node 6037086309 with model F-86 Sabre; sub-variant and number not recorded,F86; Sabre,Beian Road F-86 Display -- Taipei,on_display

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Murphy,Rebel,912,102,,DZ,,,fixed_wing,monoplane,military,utility,,One of two Murphy Rebel 912 light aircraft displayed at an Algiers military compound; logged 15 May 2025,Rebel 912; Murphy Rebel,Algiers Air Base Rebel 912 Display,on_display
+Murphy,Rebel,912,103,,DZ,,,fixed_wing,monoplane,military,utility,,Second of two Murphy Rebel 912 light aircraft; logged 15 May 2025,Rebel 912; Murphy Rebel,Algiers Air Base Rebel 912 Display,on_display

@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,F-86,F,62-7417,,JP,Sabre,,fixed_wing,monoplane,military,fighter,,Early F-86F-25 with wing fences; carries the 7 Sqn badge of Matsushima; parked in a corner of the base and described by the blog as neither clearly a display nor clearly an instructional airframe; at 34.8132N 138.2890E,F86F; F-86F-25; ex 51-13361; F86,JASDF Shizuhama Air Base,on_display
+Fuji,T-3,,91-5501,,JP,,,fixed_wing,monoplane,military,trainer,,The first T-3 built; a JASDF designated preservation airframe kept in a hangar,T3; c/n 001,JASDF Shizuhama Air Base,in_storage
+Fuji,T-3,,91-5511,,JP,,,fixed_wing,monoplane,military,trainer,,Outdoors in front of the base headquarters building,T3; c/n 011,JASDF Shizuhama Air Base,on_display
+North American,T-6,F,52-0011,,JP,Texan,,fixed_wing,monoplane,military,trainer,,Hangar-kept and shown at the late-May air festival,T6F; ex 44-81679; T6,JASDF Shizuhama Air Base,in_storage
+Fuji,T-34,A,61-0390,,JP,Mentor,,fixed_wing,monoplane,military,trainer,,A JASDF designated preservation airframe kept in a hangar and shown at the air festival,T34A; c/n FM-30; T34,JASDF Shizuhama Air Base,in_storage

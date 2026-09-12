@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mitsubishi,T-2,,79-5193,,JP,,,fixed_wing,monoplane,military,trainer,,JASDF free-loan airframe,T2; c/n 170,Teikyo University Utsunomiya Campus,on_display
+Fuji,T-3,,01-5529,,JP,,,fixed_wing,monoplane,military,trainer,,JASDF free-loan airframe seen at the campus festival,T3,Teikyo University Utsunomiya Campus,on_display
+Robinson,R22,Beta,JA01TU,,JP,,,rotary_wing,,civilian,trainer,,,R22,Teikyo University Utsunomiya Campus,on_display

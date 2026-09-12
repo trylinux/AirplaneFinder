@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikojan-Guriewicz,MiG-21,PFM,7502,,PL,,,fixed_wing,monoplane,military,fighter,,s/n 02695175 per pl.wikipedia citing the school's own site,MiG21; MiG-21PFM; Fishbed F; c/n 02695175; MiG21PFM,Lotnicze Zakłady Naukowe -- Wrocław,on_display
+Mikojan-Guriewicz,MiG-21,UM,5609,,PL,,,fixed_wing,monoplane,military,trainer,,s/n 94A5609 per pl.wikipedia citing the school's own site,MiG21; MiG-21UM; Mongol B; c/n 94A5609; MiG21UM,Lotnicze Zakłady Naukowe -- Wrocław,on_display
+WSK PZL-Mielec,TS-11,Iskra,706,,PL,,,fixed_wing,monoplane,military,trainer,,pl.wikipedia TS-11 preserved list,TS11; Iskra,Lotnicze Zakłady Naukowe -- Wrocław,on_display

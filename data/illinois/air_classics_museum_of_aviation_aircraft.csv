@@ -1,0 +1,17 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Republic,F-105,D,61-0099,Thunderchief,,fixed_wing,monoplane,military,ground_attack,,Outdoor display at Aurora Municipal Airport,c/n D294; F105; F105D,Air Classics Museum of Aviation,on_display
+McDonnell,F-4,B,148407,Phantom II,,fixed_wing,monoplane,military,fighter,,Outdoor display,c/n 0092; F4; F4B,Air Classics Museum of Aviation,on_display
+Douglas,F3D,2,124620,Skyknight,,fixed_wing,monoplane,military,fighter,,Rare Korean War night fighter; recorded by Aerial Visuals at this site,,Air Classics Museum of Aviation,on_display
+Douglas,TA-4,J,153678,Skyhawk,,fixed_wing,monoplane,military,trainer,,Outdoor display,c/n 13616; TA4; TA4J,Air Classics Museum of Aviation,on_display
+Douglas,A-4,M,158148,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,Outdoor display,A4; A4M,Air Classics Museum of Aviation,on_display
+Vought,A-7,E,158842,Corsair II,,fixed_wing,monoplane,military,ground_attack,,Outdoor display,c/n E-398; A7; A7E,Air Classics Museum of Aviation,on_display
+Vought,A-7,D,75-0408,Corsair II,,fixed_wing,monoplane,military,ground_attack,,Air Force Corsair II recorded by Aerial Visuals at this site,A7; A7D,Air Classics Museum of Aviation,on_display
+North American,RF-86,F,62-6421,Sabre,,fixed_wing,monoplane,military,recon,,Ex-Japan Air Self Defence Force reconnaissance Sabre,c/n 176-321; RF86; RF86F,Air Classics Museum of Aviation,on_display
+North American,T-39,A,60-3503,Sabreliner,,fixed_wing,monoplane,military,transport,,Recorded by Aerial Visuals as GCT-39A ground instructional airframe,c/n 265-31; T39; T39A,Air Classics Museum of Aviation,on_display
+Bell,UH-1,H,68-16215,Iroquois,,rotary_wing,,military,utility,,Outdoor display,c/n 10874; UH1; UH1H,Air Classics Museum of Aviation,on_display
+Bell,UH-1,H,68-16265,Iroquois,,rotary_wing,,military,utility,,Second Huey recorded by Aerial Visuals at this site,c/n 10924; UH1; UH1H,Air Classics Museum of Aviation,on_display
+Bell,UH-1,B,61-16825,Iroquois,,rotary_wing,,military,utility,,Third Huey recorded by Aerial Visuals at this site,c/n 9019; UH1; UH1B,Air Classics Museum of Aviation,on_display
+Curtiss,P-40,,,Warhawk,,fixed_wing,monoplane,military,fighter,,Replica; listed in the collection by Wikipedia but recorded as departed by Aerial Visuals; presence uncertain,P40,Air Classics Museum of Aviation,on_display
+North American,P-51,D,,Mustang,,fixed_wing,monoplane,military,fighter,,Replica; listed in the collection by Wikipedia but recorded as departed by Aerial Visuals; presence uncertain,P51; P51D,Air Classics Museum of Aviation,on_display
+Republic,P-47,D,,Thunderbolt,,fixed_wing,monoplane,military,fighter,,Replica; listed in the collection by Wikipedia but recorded as departed by Aerial Visuals; presence uncertain,P47; P47D,Air Classics Museum of Aviation,on_display
+Messerschmitt,Bf 109,,,,,fixed_wing,monoplane,military,fighter,,Replica; listed in the collection by Wikipedia but recorded as departed by Aerial Visuals; presence uncertain,,Air Classics Museum of Aviation,on_display

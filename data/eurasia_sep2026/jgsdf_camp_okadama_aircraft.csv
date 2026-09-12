@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Kawasaki,OH-6,D,31294,,JP,Cayuse,,rotary_wing,,military,recon,,Maintenance training airframe of the Northern Army field maintenance unit kept in a hangar and shown at open days,OH6D; OH6,JGSDF Camp Okadama,on_display
+Fuji,UH-1,H,41727,,JP,Iroquois,,rotary_wing,,military,utility,,The last UH-1H retired in Hokkaido; a training airframe behind the Tsudome sports complex; moved to 43.1204N 141.3756E by mid-June 2026,UH1H; Huey; UH1,JGSDF Camp Okadama,on_display

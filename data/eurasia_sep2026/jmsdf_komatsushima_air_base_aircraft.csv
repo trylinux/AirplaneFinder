@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mitsubishi,HSS-2,B,8161,,JP,Sea King,,rotary_wing,,military,other,,anti_ship,HSS2B; HSS-2B; Sea King; HSS2,JMSDF Komatsushima Air Base,on_display
+Mitsubishi,SH-60,J,8273,,JP,Seahawk,,rotary_wing,,military,other,,anti_ship Renumbered 8224 on the airframe as a nod to 24 Air Squadron; the true serial is 8273; rear fuselage painted black; put on display after being shown on the apron at the 2017 summer festival,SH60J; 8224; SH60,JMSDF Komatsushima Air Base,on_display

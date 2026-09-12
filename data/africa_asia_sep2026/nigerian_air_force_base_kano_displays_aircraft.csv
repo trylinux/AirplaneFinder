@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aero,L-29,,NAF409,,NG,Delfin,,fixed_wing,monoplane,military,trainer,,c/n 993330,L29; L-29; Delfin; Maya,Nigerian Air Force Base Kano Displays,on_display
+Mikoyan-Gurevich,MiG-17,F,NAF605,,NG,Fresco,,fixed_wing,monoplane,military,fighter,,,MiG17; MiG-17F; Fresco; MiG17F,Nigerian Air Force Base Kano Displays,on_display

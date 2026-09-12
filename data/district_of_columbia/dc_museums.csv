@@ -1,0 +1,6 @@
+name,city,state_province,country,postal_code,region,address,website,access_type,latitude,longitude
+Armed Forces Retirement Home -- Washington,Washington,District of Columbia,United States,20011,North America,140 Rock Creek Church Road NW,,restricted,38.940672,-77.008728
+Joint Base Anacostia-Bolling,Washington,District of Columbia,United States,20032,North America,,,restricted,38.845233,-77.011675
+National Museum of the United States Navy,Washington,District of Columbia,United States,20374,North America,736 Sicard Street SE Washington Navy Yard,https://www.history.navy.mil/museums/nmusn,restricted,38.87319,-76.99536
+Smithsonian National Museum of American History,Washington,District of Columbia,United States,20560,North America,1300 Constitution Avenue NW,https://americanhistory.si.edu,public,38.89124,-77.03002
+Smithsonian National Postal Museum,Washington,District of Columbia,United States,20002,North America,2 Massachusetts Avenue NE,https://postalmuseum.si.edu,public,38.89807,-77.00821

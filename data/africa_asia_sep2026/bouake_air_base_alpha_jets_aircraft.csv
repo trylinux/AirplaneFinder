@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Dassault-Dornier,Alpha Jet,,TU-VCB,,CI,Alpha Jet,,fixed_wing,monoplane,military,ground_attack,,Ivorian air force Alpha Jet; NOT one of the aircraft destroyed in the November 2004 French retaliatory strike; those hulks were cleared,Alpha Jet; AlphaJet; TUVCB,Bouaké Air Base Alpha Jets,on_display
+Dassault-Dornier,Alpha Jet,,TU-VCC,,CI,Alpha Jet,,fixed_wing,monoplane,military,ground_attack,,,Alpha Jet; AlphaJet; TUVCC,Bouaké Air Base Alpha Jets,on_display
+Dassault-Dornier,Alpha Jet,,TU-VCG,,CI,Alpha Jet,,fixed_wing,monoplane,military,ground_attack,,Recorded at a second Bouaké coordinate 100 m from the pair,Alpha Jet; AlphaJet; TUVCG,Bouaké Air Base Alpha Jets,on_display

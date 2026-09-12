@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Antonov,An-2,,,,,Colt,,fixed_wing,biplane,civilian,utility,,Type inferred ONLY from the OpenStreetMap model:wikidata link Q207700 on node/9897094506; the node has no name tag and no photograph. Lowest-confidence airframe row in the Latvian section,An2; Colt,Antonov An-2 -- Bārbele (Bauska),on_display

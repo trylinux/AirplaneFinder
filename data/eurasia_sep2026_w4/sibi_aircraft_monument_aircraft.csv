@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Unidentified,Aircraft,,,,,,,fixed_wing,monoplane,military,other,,Mapped as an OSM historic=aircraft node sourced from Bing imagery at Gharib Abad in Sibi; type unknown,,Sibi Aircraft Monument,on_display

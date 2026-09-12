@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Avioane Craiova,IAR 93,B,222,,RO,,,fixed_wing,monoplane,military,ground_attack,1988,Single-seat afterburning B-series airframe; left the factory 13 Sep 1988; year_built from the published factory roll-out date,IAR-93; IAR93; Vultur; SC 222,Aerodromul Şiria Aircraft Display,on_display
+Mikoyan-Gurevich,MiG-21,F-13,,,RO,,,fixed_wing,monoplane,military,fighter,,Sub-variant F-13 recorded on OSM node 13340447357; no tactical number recorded; tagged access=private,MiG21; MiG-21F13; MiG21F13; Fishbed-C,Aerodromul Şiria Aircraft Display,on_display

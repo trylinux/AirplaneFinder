@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,UH-1,H,66-17019,,,Iroquois,Huey,rotary_wing,,military,utility,,Serial checks against the FY66 UH-1H block 66-16000 to 66-17138; Aerial Visuals records the operator as USAF which is wrong - this is a US Army airframe; arc-second fix at 202 Geneva Street,c/n 9213; Huey; UH1; UH1H,VFW Post 5092 -- Lyons,on_display

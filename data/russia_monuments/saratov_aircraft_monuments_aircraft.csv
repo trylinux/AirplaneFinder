@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Antonov,An-24,B,RA-46331,97305508,RU,,,fixed_wing,monoplane,military,commercial_transport,,russianplanes.net monument point 4645,An24; An24B,Saratov Aircraft Monuments,on_display
+Yakovlev,Yak-42,D,RA-42344,,RU,,,fixed_wing,monoplane,military,commercial_transport,,russianplanes.net monument point 22359,Yak42; Yak42D,Saratov Aircraft Monuments,on_display

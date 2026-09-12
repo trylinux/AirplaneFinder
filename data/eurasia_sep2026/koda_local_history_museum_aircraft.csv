@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mitsubishi,F-86,F,92-7910,,JP,Sabre,,fixed_wing,monoplane,military,fighter,,JASDF free-loan airframe painted as 72-7743 which is NOT its identity; the blog warns that many Japanese F-86F displays were renumbered this way,F86F; 72-7743; F86,Koda Local History Museum,on_display
+Kawasaki,H-13,H,30120,,JP,Sioux,,rotary_wing,,military,trainer,,Ex-JGSDF; displayed with the F-86F in the museum grounds,H13H; Bell 47G-2; H13,Koda Local History Museum,on_display

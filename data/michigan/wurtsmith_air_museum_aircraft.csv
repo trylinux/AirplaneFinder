@@ -1,0 +1,22 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,T-33,A,52-9843,Shooting Star,,fixed_wing,monoplane,military,trainer,,Displayed at Oscoda-Wurtsmith Airport on the former Wurtsmith AFB,N58417; c/n 580-8149; T33; T33A,Wurtsmith Air Museum,on_display
+Lockheed,T-33,A,53-5948,Shooting Star,,fixed_wing,monoplane,military,trainer,,Second Shooting Star in the collection,N62519; c/n 580-9424; T33; T33A,Wurtsmith Air Museum,on_display
+Bell,UH-1,H,66-16048,Iroquois,,rotary_wing,,military,utility,,Displayed at the museum,N876EM; c/n 5742; UH1; UH1H,Wurtsmith Air Museum,on_display
+Cessna,L-19,A,51-12107,Bird Dog,,fixed_wing,monoplane,military,recon,,Cessna 305A observation aircraft,N3302T; c/n 22421; L19; L19A,Wurtsmith Air Museum,on_display
+Royal Aircraft Factory,S.E.5,A,N1031G,,,fixed_wing,biplane,military,fighter,,Replica; three-quarter scale reproduction,,Wurtsmith Air Museum,on_display
+Sperry,Messenger,,,,,fixed_wing,biplane,military,utility,,Replica; half-scale reproduction,,Wurtsmith Air Museum,on_display
+Baker,Special,,N3203,,,fixed_wing,biplane,civilian,experimental,,Homebuilt sport aircraft,c/n 001,Wurtsmith Air Museum,on_display
+Jeffair,Barracuda,,,,,fixed_wing,monoplane,civilian,experimental,,Wooden homebuilt,,Wurtsmith Air Museum,on_display
+Rand,KR-2,,,,,fixed_wing,monoplane,civilian,experimental,,Small composite homebuilt,KR2,Wurtsmith Air Museum,on_display
+Pereira,Osprey,2,,,,fixed_wing,monoplane,civilian,experimental,,Homebuilt amphibian,,Wurtsmith Air Museum,on_display
+Piper,L-4,,,Grasshopper,,fixed_wing,monoplane,military,utility,,Wartime liaison aircraft listed in the collection,L4,Wurtsmith Air Museum,on_display
+Waco,CG-4,A,,Hadrian,,fixed_wing,monoplane,military,transport,,Assault glider listed as a restoration project,CG4; CG4A,Wurtsmith Air Museum,under_restoration
+Waco,CG-4,A,,Hadrian,,fixed_wing,monoplane,military,transport,,Assault glider in the museum collection; no serial recovered,Hadrian; CG4; CG4A,Wurtsmith Air Museum,on_display
+Piper,J-3,,,Cub,,fixed_wing,monoplane,civilian,private,,Listed as a J-3 Cub or L-4 Grasshopper by the museum; no registration recovered,L-4; Grasshopper; J3; L4,Wurtsmith Air Museum,on_display
+Howard,DGA-3,,,Pete,,fixed_wing,monoplane,civilian,private,,Racing aircraft in the museum collection; no registration recovered,Pete; DGA3,Wurtsmith Air Museum,on_display
+Royal Aircraft Factory,SE.5,A,,,,fixed_wing,biplane,military,fighter,,Three-quarter scale replica - clearly flagged as a replica by the museum,SE.5a; N1031G,Wurtsmith Air Museum,on_display
+Sperry,Messenger,,,,,fixed_wing,biplane,military,utility,,Half scale replica - clearly flagged as a replica by the museum,Messenger,Wurtsmith Air Museum,on_display
+Baker,Special,,,,,fixed_wing,monoplane,civilian,experimental,,Homebuilt in the museum collection,c/n 001; N3203,Wurtsmith Air Museum,on_display
+Jeffair,Barracuda,,,,,fixed_wing,monoplane,civilian,experimental,,Homebuilt in the museum collection; no registration recovered,Barracuda,Wurtsmith Air Museum,on_display
+Rand,KR-2,,,,,fixed_wing,monoplane,civilian,experimental,,Homebuilt in the museum collection; no registration recovered,KR-2; KR2,Wurtsmith Air Museum,on_display
+Pereira,Osprey,2,,,,fixed_wing,monoplane,civilian,experimental,,Homebuilt amphibian in the museum collection; no registration recovered,Osprey II,Wurtsmith Air Museum,on_display

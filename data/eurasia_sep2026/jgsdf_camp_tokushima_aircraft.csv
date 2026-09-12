@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Kawasaki,OH-6,D,31147,,JP,Cayuse,,rotary_wing,,military,recon,,At 33.9734N 134.6500E; confirmed March 2014,OH6D; OH6,JGSDF Camp Tokushima,on_display
+Fuji,UH-1,H,41690,,JP,Iroquois,,rotary_wing,,military,utility,,At 33.9719N 134.6478E; described in the census as abandoned with the main rotor removed rather than displayed; confirmed March 2014,UH1H; Huey; UH1,JGSDF Camp Tokushima,in_storage

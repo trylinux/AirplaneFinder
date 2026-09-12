@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+LTV,A-7,P,,,PT,Corsair II,,fixed_wing,monoplane,military,ground_attack,,Mapped beside the IC3 and EN118 at Samora Correia and explicitly recorded by the mapper as not derelict; serial not recorded,A7P; A-7; Corsair II; A7,LTV A-7P Corsair II Monumento -- Samora Correia,on_display

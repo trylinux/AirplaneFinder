@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+LET,L-410,,RA-67079,810716,RU,Turbolet,,fixed_wing,monoplane,military,commercial_transport,,russianplanes.net monument point 2200,Turbolet; L410,Nizhneudinsk Aircraft Monuments,on_display
+Mil,Mi-4,,CCCP-14247,17187,RU,,,rotary_wing,,military,utility,,russianplanes.net monument point 2201,Mi4,Nizhneudinsk Aircraft Monuments,on_display
+Mil,Mi-2,,,,,,,rotary_wing,,military,utility,,russianplanes.net monument point 7483; source records the bort as ?,Mi2,Nizhneudinsk Aircraft Monuments,on_display

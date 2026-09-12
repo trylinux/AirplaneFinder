@@ -1,0 +1,12 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Grumman,F-14,D,161163,Tomcat,,fixed_wing,monoplane,military,fighter,,Outdoor display beside the museum at Central Illinois Regional Airport; Bureau Number agrees between the museum list and Aerial Visuals,c/n 390; F14; F14D,Prairie Aviation Museum,on_display
+McDonnell,F-4,N,150444,Phantom II,,fixed_wing,monoplane,military,fighter,,Outdoor display; Bureau Number agrees between the museum list and Aerial Visuals,c/n 0230; F4; F4N,Prairie Aviation Museum,on_display
+Douglas,A-4,M,160036,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,Outdoor display; Bureau Number agrees between sources,c/n 14538; A4; A4M,Prairie Aviation Museum,on_display
+Vought,A-7,A,152681,Corsair II,,fixed_wing,monoplane,military,ground_attack,,Outdoor display; a second A-7A 152668 once listed here is at the Griffin Museum of Science and Industry in Chicago,c/n A-038; A7; A7A,Prairie Aviation Museum,on_display
+North American,F-100,C,54-1784,Super Sabre,,fixed_wing,monoplane,military,fighter,,Recorded by Aerial Visuals as GF-100C ground instructional airframe; museum list gives only F-100,c/n 217-45; F100; F100C,Prairie Aviation Museum,on_display
+Northrop,T-38,A,60-0549,Talon,,fixed_wing,monoplane,military,trainer,,Recorded by Aerial Visuals as GT-38A,c/n N.5122; T38; T38A,Prairie Aviation Museum,on_display
+Lockheed,T-33,A,53-5979,Shooting Star,,fixed_wing,monoplane,military,trainer,,Museum list prints 35979 which is a truncation of 53-5979; FAA registry September 2026 shows N4698T current to Prairie Aviation Museum Inc with serial 9461,N4698T; c/n 580-9461; T33; T33A,Prairie Aviation Museum,on_display
+Cessna,310,B,N900S,,,fixed_wing,monoplane,civilian,private,1958,FAA registry September 2026 shows N900S current to Prairie Aviation Museum with serial 35742; displayed inside the museum building,c/n 35742,Prairie Aviation Museum,on_display
+Aero Commander,680,F,N6272X,,,fixed_wing,monoplane,civilian,private,,FAA registry September 2026 shows N6272X current to Prairie Aviation Museum Inc,c/n 680F-1159-83,Prairie Aviation Museum,on_display
+Bell,UH-1,H,67-17832,Iroquois,,rotary_wing,,military,utility,,Outdoor display,c/n 10030; UH1; UH1H,Prairie Aviation Museum,on_display
+Bell,AH-1,J,157771,SeaCobra,,rotary_wing,,military,ground_attack,,Outdoor display,c/n 26015; AH1; AH1J,Prairie Aviation Museum,on_display

@@ -1,0 +1,15 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aermacchi,MB-326,B,MM54268,,IT,,,fixed_wing,monoplane,military,trainer,,Reported wearing unit code 68; serial reported by a single compilation and not confirmed against a museum publication,MB326; MB-326B; MB326B,Museo Piana delle Orme,on_display
+Antonov,An-2,R,SP-TCG,,PL,Colt,,fixed_wing,biplane,civilian,utility,,Polish civil registration reported by a single compilation,An2; An-2R; Colt; An2R,Museo Piana delle Orme,on_display
+Curtiss,P-40,L,42-10857,,US,Warhawk,,fixed_wing,monoplane,military,fighter,,Reported as ex-USAAF 42-10857 and displayed with code X-4; serial reported by a single compilation,P40; P-40L; Warhawk; Kittyhawk; X-4; P40L; X4,Museo Piana delle Orme,on_display
+Fairchild,C-119,G,MM53-8146,,IT,Flying Boxcar,,fixed_wing,monoplane,military,transport,,Reported as an EC-119G wearing code 46-35; serial reported by a single compilation,C119; C-119G; EC-119G; Flying Boxcar; 46-35; C119G; EC119G,Museo Piana delle Orme,on_display
+Fiat,G.91,T,MM6288,,IT,,,fixed_wing,monoplane,military,trainer,,Reported wearing code RS-01 of the Reparto Sperimentale di Volo,G91T; G.91T; RS-01; RS01,Museo Piana delle Orme,on_display
+Helio,H-395,,MM91001,,IT,Courier,,fixed_wing,monoplane,military,utility,,Reported as a Helio H-359/H-395 Courier wearing the number 19,Helio Courier; H359; H-395; U-10; H395; U10,Museo Piana delle Orme,on_display
+Aeritalia,F-104,S,MM6939,,IT,Starfighter,,fixed_wing,monoplane,military,fighter,,F-104S ASA-M reported wearing code 9-35 of 9 Stormo,F104; F-104S; ASA-M; Starfighter; 9-35; F104S,Museo Piana delle Orme,on_display
+Lockheed,PV-2,,MM80058,,IT,Harpoon,,fixed_wing,monoplane,military,recon,,Reported wearing code 87-2; described in several reports as the only PV-2 preserved in Europe,PV2; PV-2; Harpoon; 87-2,Museo Piana delle Orme,on_display
+Breda Nardi,NH-500,MC,MM81004,,IT,,,rotary_wing,,military,utility,,Guardia di Finanza machine reported wearing code GdiF-80,NH500; NH-500MC; Hughes 500; GF-80; NH500MC; GF80,Museo Piana delle Orme,on_display
+North American,F-86,K,MM53-8299,,IT,Sabre,,fixed_wing,monoplane,military,fighter,,Fiat-assembled F-86K reported wearing code 51-6,F86K; F-86K; Sabre; 51-6; F86,Museo Piana delle Orme,on_display
+North American,T-6,H,MM54143,,IT,Texan,,fixed_wing,monoplane,military,trainer,,T-6H-2M reported wearing code RR-50,T6; T-6H; Texan; Harvard; RR-50; T6H; RR50,Museo Piana delle Orme,on_display
+Piaggio,P.166,DL-3,MM25178,,IT,,,fixed_wing,monoplane,military,utility,,Guardia di Finanza machine reported wearing code GF-08,P166; P.166DL3; GF-08; GF08,Museo Piana delle Orme,on_display
+Piaggio,P.166,ML-1,MM61882,,IT,,,fixed_wing,monoplane,military,utility,,Aeronautica Militare P.166ML-1,P166; P.166ML1,Museo Piana delle Orme,on_display
+SIAI-Marchetti,S-211,,,,IT,,,fixed_wing,monoplane,military,trainer,,One of the few S-211 built; no serial reported,S211; S-211,Museo Piana delle Orme,on_display

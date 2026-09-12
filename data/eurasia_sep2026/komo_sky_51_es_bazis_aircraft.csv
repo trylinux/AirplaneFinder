@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-15,,,,HU,Fagot,,fixed_wing,monoplane,military,fighter,,Individually mapped in OSM within the park; no tactical number published,MiG15; Fagot,KOMO-Sky 51-es Bázis,on_display
+Mikoyan-Gurevich,MiG-21,,,,HU,Fishbed,,fixed_wing,monoplane,military,fighter,,OSM maps seven separate MiG-21 airframes in the park; variants and tactical numbers are not published,MiG21; Fishbed,KOMO-Sky 51-es Bázis,on_display
+Mikoyan-Gurevich,MiG-23,,,,HU,Flogger,,fixed_wing,monoplane,military,fighter,,OSM maps two MiG-23 airframes; the type served Hungary until the turn of the millennium,MiG23; Flogger,KOMO-Sky 51-es Bázis,on_display
+Mil,Mi-24,,,,HU,Hind,Csőrike,rotary_wing,,military,ground_attack,,"Mapped in OSM as ""Mi-24 Hind Csőrike""",Mi24; Hind,KOMO-Sky 51-es Bázis,on_display
+Antonov,An-2,,,,HU,Colt,Ancsa,fixed_wing,biplane,military,utility,,"Mapped in OSM as ""An-2 Ancsa ANTONOV""",An2; Colt,KOMO-Sky 51-es Bázis,on_display

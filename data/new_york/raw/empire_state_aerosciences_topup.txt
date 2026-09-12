@@ -1,0 +1,31 @@
+Convair|F-102|A|56-1219||Delta Dagger|fixed_wing|monoplane|military|fighter||Agneta Airpark; FY56 F-102A block 56-0956/56-1544|Deuce; Delta Dagger|on_display
+McDonnell|F-101|F|59-0413||Voodoo|fixed_wing|monoplane|military|fighter||Agneta Airpark; FY59 F-101B block 59-0391/59-0483; the F-101F is the dual-control F-101B|Voodoo; F-101B|on_display
+McDonnell Douglas|F-4|D|65-0626||Phantom II|fixed_wing|monoplane|military|fighter||Agneta Airpark; FY65 F-4D block 65-0580/65-0801|Phantom|on_display
+Republic|F-84|F|51-1620||Thunderstreak|fixed_wing|monoplane|military|ground_attack||Agneta Airpark; FY51 F-84F block 51-1346/51-1786|Thunderstreak|on_display
+Republic|F-105|G|62-4444||Thunderchief|fixed_wing|monoplane|military|electronic_warfare||Agneta Airpark; FY62 F-105F block 62-4412/62-4447 from which the G Wild Weasels were converted; Wikipedia's F-105 survivor list places 62-4444 at ESAM|Thud; Wild Weasel|on_display
+Fairchild Republic|A-10|A|75-0263||Thunderbolt II|fixed_wing|monoplane|military|ground_attack||Agneta Airpark; FY75 A-10A block 75-0258/75-0309; wears 263|Warthog|on_display
+Northrop|F-5|E|162307||Tiger II|fixed_wing|monoplane|military|fighter||Agneta Airpark; ex-US Navy adversary aircraft; wears 06; the BuNo is reported by silverhawkauthor only and is not independently confirmed|Tiger II|on_display
+Grumman|F-14|A|160411||Tomcat|fixed_wing|monoplane|military|fighter||Agneta Airpark; BuNo checks against the F-14A block 160379-160414; wears 201|Tomcat|on_display
+Grumman|A-6|E|152935||Intruder|fixed_wing|monoplane|military|ground_attack||Agneta Airpark; built as an A-6A in the 152583-152954 block and rebuilt as an A-6E; wears 501 in VA-176 markings|Intruder; 501|on_display
+Grumman|S-2|A|133264||Tracker|fixed_wing|monoplane|military|recon||Agneta Airpark; TS-2A trainer conversion; wears AF-405 in USS Intrepid markings; silverhawkauthor prints the truncated 3264 on its ESAM page and the full 133264 on its Intrepid page|TS-2A; S2F; AF-405|on_display
+North American|RA-5|C|156621||Vigilante|fixed_wing|monoplane|military|recon||Agneta Airpark; BuNo checks against the RA-5C block 156608-156643; wears 614 in RVAH-5 markings|Vigilante; 614|on_display
+North American|T-2|C|156730||Buckeye|fixed_wing|monoplane|military|trainer||Agneta Airpark; BuNo checks against the T-2C block 156693-156733; wears 802|Buckeye|on_display
+LTV|A-7|E|160613||Corsair II|fixed_wing|monoplane|military|ground_attack||Agneta Airpark; BuNo checks against the A-7E block 160537-160618; wears 306 in VA-46 Clansmen markings|Corsair II; SLUF; 306|on_display
+Douglas|A-4|F|155009||Skyhawk|fixed_wing|monoplane|military|ground_attack||Agneta Airpark; BuNo checks against the A-4F block 154970-155069; wears AF-05 in VFC-12 markings|Scooter; AF-05|on_display
+Douglas|F3D|2T|127074||Skyknight|fixed_wing|monoplane|military|fighter||Agneta Airpark; BuNo falls in the F3D-2 block 124595-127086; displayed in USMC VMF(N)-513 Korean War colours|F-10; Skyknight; Whale|on_display
+Douglas|C-47|A|43-12061||Skytrain|fixed_wing|monoplane|military|transport||Agneta Airpark; the serial is reported by silverhawkauthor only and does not sit cleanly in a published C-47A block — treat as unverified|Dakota; Gooney Bird|on_display
+Supermarine|Scimitar|F1|XD220|||fixed_wing|monoplane|military|fighter||Agneta Airpark; Royal Navy Scimitar; wears 608; one of very few Scimitars outside the UK|608; Scimitar F.1|on_display
+Mikoyan-Gurevich|MiG-15||624||Fagot|fixed_wing|monoplane|military|fighter||Agneta Airpark; airframe number 624; formerly reported at the Intrepid before ESAM acquired several ex-Intrepid airframes|Fagot|on_display
+Mikoyan-Gurevich|MiG-17|F|605||Fresco|fixed_wing|monoplane|military|fighter||Agneta Airpark; ex-Polish Air Force; airframe number 605|Fresco C; Lim-5|on_display
+Mikoyan-Gurevich|MiG-21|MF|2406||Fishbed|fixed_wing|monoplane|military|fighter||Agneta Airpark; ex-Polish Air Force; airframe number 2406|Fishbed J|on_display
+Bell|UH-1|M|65-9435||Iroquois|rotary_wing||military|utility||FY65 UH-1C block 65-9416/65-9587 from which UH-1M gunships were converted; wears 513 and the name Proud Mary|Huey; Proud Mary; 513|on_display
+Bell|UH-1|||15623|Iroquois|rotary_wing||military|utility||A second Huey reported by silverhawkauthor with the bare number 15623 which is probably the tail-number portion of a FY-prefixed serial — serial not established so left in aliases only|15623; Huey|on_display
+Hughes|OH-6|A|68-17343||Cayuse|rotary_wing||military|recon||FY68 OH-6A block 68-17145/68-17360; displayed in USMC markings|Loach; Cayuse|on_display
+Folland|Gnat|F1|||Gnat|fixed_wing|monoplane|military|fighter||Serial not established|Gnat FM Mk 1|on_display
+Lockheed|10|E|||Electra|fixed_wing|monoplane|civilian|commercial_transport||Fuselage section only|Electra 10E|on_display
+Heath|Super Parasol||N598K|||fixed_wing|monoplane|civilian|private||Indoor gallery; c/n 39|c/n 39|on_display
+Mooney|M-18|LA|N4089|Mite||fixed_wing|monoplane|civilian|private|1952|Indoor gallery; c/n 128|Mite; c/n 128|on_display
+Stits|Skycoupe||N3834|||fixed_wing|monoplane|civilian|private||Indoor gallery|Stitts Skycoupe|on_display
+Schweizer|RP-1||N8482U|||fixed_wing|monoplane|civilian|research||Ex-NASA research glider|NASA glider|on_display
+Nieuport|Scout|||||fixed_wing|biplane|military|fighter||REPRODUCTION Nieuport scout; indoor gallery|Nieuport Scout|on_display
+Huntington|Chum||||Chum|fixed_wing|monoplane|civilian|experimental||Experimental homebuilt; indoor gallery|Huntington Chum|on_display

@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Kawasaki,V-107,A,51701,,JP,,,rotary_wing,,military,transport,,At 43.8209N 144.1585E; confirmed at the July 2024 open day,V107A; KV107; V107,JGSDF Camp Bihoro,on_display
+Kawasaki,OH-6,J,31055,,JP,Cayuse,,rotary_wing,,military,recon,,At 43.8209N 144.1585E; present since August 2006,OH6J; OH6,JGSDF Camp Bihoro,on_display
+Fuji,UH-1,B,41543,,JP,Iroquois,,rotary_wing,,military,utility,,Training airframe at 43.8205N 144.1603E; present since August 2006,UH1B; Huey; UH1,JGSDF Camp Bihoro,on_display

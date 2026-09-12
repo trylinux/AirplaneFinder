@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,,,,EG,,,fixed_wing,monoplane,military,fighter,,One of two MiG-21s logged at this Nasr City point on 16 Aug 2017; serial not recorded,MiG21; MiG-21; Fishbed,Nasr City Aircraft Monument Group -- Cairo,on_display
+Mikoyan-Gurevich,MiG-21,,,,EG,,,fixed_wing,monoplane,military,fighter,,Second of two MiG-21s logged at this Nasr City point on 16 Aug 2017; serial not recorded,MiG21; MiG-21; Fishbed,Nasr City Aircraft Monument Group -- Cairo,on_display
+Sukhoi,Su-7,,,,EG,,,fixed_wing,monoplane,military,ground_attack,,One of two Su-7s logged at this Nasr City point on 16 Aug 2017; serial not recorded,Su7; Su-7; Fitter,Nasr City Aircraft Monument Group -- Cairo,on_display
+Sukhoi,Su-7,,,,EG,,,fixed_wing,monoplane,military,ground_attack,,Second of two Su-7s logged at this Nasr City point on 16 Aug 2017; serial not recorded,Su7; Su-7; Fitter,Nasr City Aircraft Monument Group -- Cairo,on_display

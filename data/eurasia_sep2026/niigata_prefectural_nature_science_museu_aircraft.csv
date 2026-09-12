@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mitsubishi,MU-2,,JA8620,,JP,,,fixed_wing,monoplane,civilian,private,,The first MU-2 prototype; converted to MU-2B standard after deregistration and shown at the New York World's Fair as a US sales exhibit; the registration has been painted out,MU2; c/n MU-2-001,Niigata Prefectural Nature Science Museum,on_display
+Bell,206,B,JA9141,,JP,Jet Ranger,,rotary_wing,,civilian,utility,,Operated as Niigata Prefectural Police Koshikaze 2 from Dec 1975 to Apr 1996,Bell206; 206B; Koshikaze,Niigata Prefectural Nature Science Museum,on_display

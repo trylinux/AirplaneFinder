@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Antonov,An-12,B,14,01348001,,,,fixed_wing,monoplane,military,transport,,russianplanes.net monument point 8435; contributor note (ru): перенесен (прежняя метка id5852),An12; An12B,Yermolino Aircraft Monuments,on_display
+Mil,Mi-2,,,,,,,rotary_wing,,military,utility,,russianplanes.net monument point 11003,Mi2,Yermolino Aircraft Monuments,on_display
+Aero,L-39,C,30 Red,,RU,Albatros,,fixed_wing,monoplane,military,trainer,,russianplanes.net monument point 11004; source records the bort as 30-красный,Albatros; L39; L39C,Yermolino Aircraft Monuments,on_display

@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Tupolev,Tu-104,,,,RU,,,fixed_wing,monoplane,civilian,commercial_transport,,OpenStreetMap way/809972465. Mapped as a way rather than a node — the airframe has enough footprint to be traced; stands in the Old Town near the Shodoiar park. No serial; construction number or erection date recorded,Tu-104; Tu104; Camel,Пам'ятник Ту-104 -- Житомир,on_display

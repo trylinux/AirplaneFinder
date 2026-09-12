@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aermacchi,MB-326,B,Y81503,,TN,,,fixed_wing,monoplane,military,trainer,,Also carried TS-BFC; c/n 6311; logged 25 Apr 2019,MB326; MB-326B; TS-BFC; TSBFC; c/n 6311; MB326B,Sfax El Maou Air Base Preserved Aircraft,on_display
+Aero,L-59,T,Y95071,,TN,Albatros,,fixed_wing,monoplane,military,trainer,,Recorded as Y95071/JK; c/n 585811; logged 17 Oct 2021,L59; L-59T; Albatros; JK; c/n 585811; L59T,Sfax El Maou Air Base Preserved Aircraft,on_display

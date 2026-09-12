@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,C-47,A,5R-MMG,,MG,Skytrain,,fixed_wing,monoplane,military,transport,,c/n 19525; Malagasy Air Force Dakota; logged 23 May 2020,C47; C-47A; DC-3; DC3; Dakota; 5RMMG; c/n 19525; C47A,Arivonimamo Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-17,F,242,,MG,,,fixed_wing,monoplane,military,fighter,,Malagasy Air Force MiG-17F; logged 23 May 2020,MiG17; MiG-17F; Fresco; MiG17F,Arivonimamo Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-21,bis,204,,MG,,,fixed_wing,monoplane,military,fighter,,Malagasy Air Force MiG-21bis; logged 23 May 2020,MiG21; MiG-21bis; Fishbed; MiG21bis,Arivonimamo Air Base Preserved Aircraft,on_display

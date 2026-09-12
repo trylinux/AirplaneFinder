@@ -1,0 +1,16 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Grumman,F-14,A,158998,Tomcat,,fixed_wing,monoplane,military,fighter,,c/n 59; named by a February 2026 TripAdvisor review as still on display,F-14A; F14; F14A,Air Victory Museum,on_display
+Grumman,E-2,B,152484,Hawkeye,,fixed_wing,monoplane,military,recon,,Displayed outdoors at 39.93988 -74.84414 per the Aerial Visuals fix,E-2B; E2; E2B,Air Victory Museum,on_display
+McDonnell,F-4,A,148273,Phantom II,,fixed_wing,monoplane,military,fighter,,Named by a February 2026 TripAdvisor review; an early F-4A is a rare survivor,F-4A; F4; F4A,Air Victory Museum,on_display
+Douglas,A-4,C,145072,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,Named by a February 2026 TripAdvisor review,A-4C; A4; A4C,Air Victory Museum,on_display
+Vought,A-7,B,154550,Corsair II,,fixed_wing,monoplane,military,ground_attack,,,A-7B; A7; A7B,Air Victory Museum,on_display
+North American,F-86,L,53-0635,Sabre,,fixed_wing,monoplane,military,fighter,,All-weather rocket-armed Sabre conversion; serial fits the FY1953 F-86D block,F-86L; F86; F86L,Air Victory Museum,on_display
+Lockheed,F-80,A,44-85391,Shooting Star,,fixed_wing,monoplane,military,fighter,,FORWARD FUSELAGE only per Wikipedia; serial fits the FY1944 P-80A block,F-80A; F80; F80A,Air Victory Museum,on_display
+Sikorsky,RH-53,D,158690,Sea Stallion,,rotary_wing,,military,other,,Airborne mine countermeasures helicopter; displayed outdoors at 39.94040 -74.84488,RH-53D; RH53; RH53D,Air Victory Museum,on_display
+Beechcraft,T-34,B,140942,Mentor,,fixed_wing,monoplane,military,trainer,,c/n BG-276 later civil N4028Y,N4028Y; T-34B; T34; T34B,Air Victory Museum,on_display
+Wright,Flyer,,,1903 Flyer,,fixed_wing,biplane,civilian,experimental,,REPLICA of the 1903 Wright Flyer; named by a February 2026 TripAdvisor review,1903 Flyer,Air Victory Museum,on_display
+Messerschmitt,Bf 109,G,,,,fixed_wing,monoplane,military,fighter,,REPLICA Bf 109G per Wikipedia,Bf 109G; Me 109,Air Victory Museum,on_display
+Aereon,26,,,Aereon 26,,fixed_wing,monoplane,civilian,experimental,,Lifting-body research aircraft built in New Jersey; listed by Wikipedia,Aereon 26,Air Victory Museum,on_display
+Northrop,OQ-19,A,,,,fixed_wing,monoplane,military,drone,,Target drone; Q-designated drones are recorded as fixed_wing,OQ-19A; OQ19; OQ19A,Air Victory Museum,on_display
+Ryan,Navion,,,Navion,,fixed_wing,monoplane,civilian,private,,Listed by Wikipedia; no identity data found,Navion,Air Victory Museum,on_display
+Fisher,FP-404,,,,,fixed_wing,biplane,civilian,private,,Homebuilt; listed by Wikipedia; no identity data found,FP-404; FP404,Air Victory Museum,on_display

@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,SNJ,5,6164,,JP,Texan,,fixed_wing,monoplane,military,trainer,,,SNJ5; SNJ-5,JMSDF Ozuki Air Base,on_display
+Fuji,T-34,A,9005,,JP,Mentor,,fixed_wing,monoplane,military,trainer,,,T34A; T34,JMSDF Ozuki Air Base,on_display
+Fuji,T-5,,6334,,JP,,,fixed_wing,monoplane,military,trainer,,,T5,JMSDF Ozuki Air Base,on_display
+Fuji,KM-2,,6292,,JP,,,fixed_wing,monoplane,military,trainer,,,KM2,JMSDF Ozuki Air Base,on_display
+Fuji,KM-2,,6293,,JP,,,fixed_wing,monoplane,military,trainer,,One of the two KM-2s that came from the JGSDF,KM2,JMSDF Ozuki Air Base,on_display
+Fuji,KM-2,,6282,,JP,,,fixed_wing,monoplane,military,trainer,,Recorded at Ozuki in a separate group from the two display KM-2s,KM2,JMSDF Ozuki Air Base,in_storage

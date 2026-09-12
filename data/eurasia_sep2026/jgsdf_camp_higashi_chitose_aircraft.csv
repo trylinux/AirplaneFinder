@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Fuji,UH-1,H,,,JP,Iroquois,,rotary_wing,,military,utility,,One of three unidentified UH-1H training airframes at 42.8433N 141.7242E inside the exercise area; the serials have never been read,UH1H; Huey; UH1,JGSDF Camp Higashi-Chitose,in_storage
+Kawasaki,V-107,A,51707,,JP,,,rotary_wing,,military,transport,,Training airframe at 42.8430N 141.7183E; on satellite imagery since 2002,V107A; KV107; V107,JGSDF Camp Higashi-Chitose,on_display

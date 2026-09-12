@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Jakowlew,Jak-40,,047,,PL,,,fixed_wing,monoplane,military,transport,,Government VIP Jak-40 of the 36th Special Air Transport Regiment; displayed at the Koszalin air defence branch of Muzeum Sił Powietrznych,Jak40; Yak-40; Codling; Yak40,Muzeum Obrony Przeciwlotniczej -- Koszalin,on_display
+WSK PZL-Mielec,TS-11,Iskra,,,PL,,,fixed_wing,monoplane,military,trainer,,Displayed in naval markings per pl.wikipedia Muzeum Sił Powietrznych article; no tactical number published,TS11; Iskra,Muzeum Obrony Przeciwlotniczej -- Koszalin,on_display

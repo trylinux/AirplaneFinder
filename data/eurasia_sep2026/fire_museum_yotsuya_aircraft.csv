@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Sud Aviation,SE.3160,,,,JP,Alouette III,,rotary_wing,,civilian,search_rescue,,Tokyo Fire Department Chidori,SE3160; Alouette III; JA9020; Chidori; No.1376,Fire Museum -- Yotsuya,on_display
+Aerospatiale,SA365,N,JA9569,,JP,Dauphin 2,,rotary_wing,,civilian,search_rescue,,The second Tokyo Fire Department Chidori,SA365N; Dauphin; Chidori; No.6029,Fire Museum -- Yotsuya,on_display

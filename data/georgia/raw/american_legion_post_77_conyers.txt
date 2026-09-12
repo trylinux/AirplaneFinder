@@ -1,0 +1,1 @@
+Bell|UH-1|H|66-16405|Iroquois||rotary_wing||military|utility||Serial checks against the UH-1H FY66 block; mounted at the post on American Legion Road NE; OpenStreetMap carries a current node named Huey Helicopter (016405) at the Aerial Visuals coordinate which independently confirms both the airframe and its presence|c/n 8599; Huey; 016405|on_display

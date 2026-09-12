@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Fuji,UH-1,H,41712,,JP,Iroquois,,rotary_wing,,military,utility,,At 43.0056N 141.3560E; present since 2011,UH1H; Huey; UH1,JGSDF Camp Makomanai,on_display
+Fuji,UH-1,H,41658,,JP,Iroquois,,rotary_wing,,military,utility,,Training airframe at 43.0141N 141.3563E; moved from 43.0062N 141.3602E when the ground was regraded and in place since 2013,UH1H; Huey; UH1,JGSDF Camp Makomanai,on_display

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Republic,F-84,F,52-6993,Thunderstreak,,fixed_wing,monoplane,military,fighter,,Displayed on the grounds of the Wilbur Wright birthplace state historic site,F84; F84F,Wilbur Wright Birthplace and Museum,on_display
+Wright,Flyer,,,,,fixed_wing,biplane,civilian,experimental,,Replica; full-scale reproduction of the 1903 Wright Flyer displayed in the museum building,,Wilbur Wright Birthplace and Museum,on_display

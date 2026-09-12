@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Fuji,UH-1,B,41558,,JP,Iroquois,,rotary_wing,,military,utility,,At 44.0543N 143.5461E; present since June 2008,UH1B; Huey; UH1,JGSDF Camp Engaru,on_display
+Fuji,UH-1,J,41801,,JP,Iroquois,,rotary_wing,,military,utility,,The first UH-1J built; at 44.0562N 143.5479E with main and tail rotors removed and the nose panel lifting; the blog reads it as pre-disposal parking rather than display,UH1J; Huey; UH1,JGSDF Camp Engaru,in_storage

@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,PF,43 Red,796210502,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 1035; source records the bort as 43-красный,MiG21; MiG21PF,Kostroma Aircraft Monuments,on_display
+Antonov,An-2,,,,,Colt,,fixed_wing,biplane,military,utility,,russianplanes.net monument point 1038; contributor note (ru): Парк Победы,Colt; An2,Kostroma Aircraft Monuments,on_display
+Aero,L-29,,31 Red,295015,RU,Delfin,,fixed_wing,monoplane,military,trainer,,russianplanes.net monument point 1040; contributor note (ru): Парк Победы; source records the bort as 31-красный,Delfin; L29,Kostroma Aircraft Monuments,on_display
+Aero,L-29,,62 Red,294876,RU,Delfin,,fixed_wing,monoplane,military,trainer,,russianplanes.net monument point 1042; source records the bort as 62-красный,Delfin; L29,Kostroma Aircraft Monuments,on_display

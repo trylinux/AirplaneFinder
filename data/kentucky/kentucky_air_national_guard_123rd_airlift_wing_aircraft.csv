@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+McDonnell,RF-101,H,56-0001,Voodoo,,fixed_wing,monoplane,military,recon,,Base display at the Kentucky ANG compound; RF-101H was the ANG reconnaissance conversion of the F-101B; NMUSAF April 2016 loan list books it to 123 AW/CCE,c/n 138; RF101; RF101H,Kentucky Air National Guard 123rd Airlift Wing,on_display
+McDonnell,RF-4,C,64-1081,Phantom II,,fixed_wing,monoplane,military,recon,,Second base display; NMUSAF April 2016 loan list books it to 123 AW/CCE; block check passes for RF-4C FY64 64-1017 to 64-1085,c/n 1168; RF4; RF4C,Kentucky Air National Guard 123rd Airlift Wing,on_display

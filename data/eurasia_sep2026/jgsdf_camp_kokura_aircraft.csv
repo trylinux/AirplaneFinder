@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Kawasaki,OH-6,D,31251,,JP,Cayuse,,rotary_wing,,military,recon,,At 33.8439N 130.8802E; present since Oct 2017,OH6D; OH6,JGSDF Camp Kokura,on_display
+Fuji,UH-1,H,41711,,JP,Iroquois,,rotary_wing,,military,utility,,Training airframe at 33.8411N 130.8813E; on satellite imagery since 2014,UH1H; Huey; UH1,JGSDF Camp Kokura,on_display

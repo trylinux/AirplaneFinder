@@ -1,0 +1,9 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Boeing,B-52,D,55-0062,Stratofortress,,fixed_wing,monoplane,military,bomber,,Former K. I. Sawyer AFB alert bomber displayed outdoors at the former base,c/n 464014; B52; B52D,K. I. Sawyer Heritage Air Museum,on_display
+Convair,F-106,A,56-0461,Delta Dart,,fixed_wing,monoplane,military,fighter,,Interceptor of the type flown from K. I. Sawyer; a secondary compilation gives 57-0231 instead so the serial needs a photo check,c/n 8-24-011; F106; F106A,K. I. Sawyer Heritage Air Museum,on_display
+McDonnell,F-101,B,58-0291,Voodoo,,fixed_wing,monoplane,military,fighter,,Interceptor displayed outdoors at the former base,c/n 663; F101; F101B,K. I. Sawyer Heritage Air Museum,on_display
+General Dynamics,FB-111,A,68-0239,Aardvark,,fixed_wing,monoplane,military,bomber,,Strategic Air Command bomber variant displayed outdoors,c/n 11; FB111; FB111A,K. I. Sawyer Heritage Air Museum,on_display
+Lockheed,T-33,A,51-4263,Shooting Star,,fixed_wing,monoplane,military,trainer,,Displayed at the former base,c/n 580-5558; T33; T33A,K. I. Sawyer Heritage Air Museum,on_display
+McDonnell,ADM-20,,,Quail,,missile_rocket,,military,cruise,,Decoy missile carried by the B-52; displayed with the bomber,ADM20,K. I. Sawyer Heritage Air Museum,on_display
+General Dynamics,F-111,A,68-0239,Aardvark,,fixed_wing,monoplane,military,bomber,,FB-111A strategic variant; NMUSAF loan register and an Aerial Visuals fix agree,FB-111A; c/n 11; F111; F111A; FB111A,K. I. Sawyer Heritage Air Museum,on_display
+McDonnell,ADM-20,,,Quail,,missile_rocket,,military,cruise,,Air-launched decoy displayed beside the B-52; no serial recovered,Quail; ADM20,K. I. Sawyer Heritage Air Museum,on_display

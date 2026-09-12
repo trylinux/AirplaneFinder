@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,UH-1,H,69-16652,Iroquois,,rotary_wing,,military,utility,,On the Camp Grayling display row; serial from Aerial Visuals; behind a controlled gate and not re-confirmed since,Huey; UH1; UH1H,Camp Grayling,on_display
+Bell,OH-58,A,71-20502,Kiowa,,rotary_wing,,military,recon,,On the Camp Grayling display row; serial from Aerial Visuals,Kiowa; OH58; OH58A,Camp Grayling,on_display
+Lockheed,T-33,A,58-0510,Shooting Star,,fixed_wing,monoplane,military,trainer,,On the Camp Grayling display row; serial from Aerial Visuals,c/n 580-1559; T33; T33A,Camp Grayling,on_display
+LTV,A-7,D,70-0967,Corsair II,,fixed_wing,monoplane,military,ground_attack,,On the Camp Grayling display row; serial from Aerial Visuals,Corsair II; c/n D-113; A7; A7D,Camp Grayling,on_display
+Bell,UH-1,B,,Iroquois,,rotary_wing,,military,utility,,A second Huey recorded by Aerial Visuals at Grayling Army Airfield about 16 km south west of the main row; no serial recovered,Huey; UH1; UH1B,Camp Grayling,on_display

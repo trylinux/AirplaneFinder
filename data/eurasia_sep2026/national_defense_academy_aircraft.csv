@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mitsubishi,F-1,,20-8263,,JP,,,fixed_wing,monoplane,military,ground_attack,,At 35.2572N 139.7229E; the only F-1 in Japan displayed with a rocket pod,F1,National Defense Academy,on_display
+Mitsubishi,F-104,J,46-8609,,JP,Starfighter,,fixed_wing,monoplane,military,fighter,,At 35.2587N 139.7198E,F104J; F104,National Defense Academy,on_display

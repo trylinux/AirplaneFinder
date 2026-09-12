@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Northrop,F-5,A,97108,,MA,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,c/n N.6474; plinthed at Meknes; logged 5 Sep 2018,F5; F-5A; Freedom Fighter; c/n N.6474; F5A,Meknes Air Base Preserved Aircraft,on_display
+Northrop,F-5,A,69119,,MA,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,c/n N.6226; plinthed at Meknes; logged 9 Aug 2018,F5; F-5A; Freedom Fighter; c/n N.6226; F5A,Meknes Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-17,,CNA-FE,,MA,,,fixed_wing,monoplane,military,fighter,,Recorded as CNA-FE/05; c/n 1406029; a survivor of the small Soviet batch delivered to Morocco in 1961; logged 5 Sep 2018,MiG17; MiG-17; Fresco; CNAFE; 05; c/n 1406029,Meknes Air Base Preserved Aircraft,on_display

@@ -1,0 +1,1 @@
+Republic|F-84|F|51-1653|Thunderstreak||fixed_wing|monoplane|military|fighter||Serial falls in the F-84F-25-RE FY51 block; mounted on a pylon at the post on Sunset Drive; the display is mapped in OpenStreetMap as the Frank E Mitchell Memorial which is a current extract and is the strongest currency evidence found|F-84F-25-RE; Frank E Mitchell Memorial|on_display

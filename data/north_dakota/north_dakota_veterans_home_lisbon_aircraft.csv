@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,UH-1,H,66-16278,Iroquois,Huey,rotary_wing,,military,utility,,Huey on the grounds of the North Dakota Veterans Home; still mapped as an OSM historic=aircraft node tagged helicopter in the current extract read September 2026 at 46.4283N 97.6780W matching the Aerial Visuals fix,c/n 5972; UH1; UH1H,North Dakota Veterans Home -- Lisbon,on_display

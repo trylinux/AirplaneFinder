@@ -1,0 +1,16 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Atlas Aircraft Corporation,Bosbok,AM.3C,938,,ZA,Bosbok,,fixed_wing,monoplane,military,recon,,Atlas-built Aermacchi AM.3C observation aircraft; c/n 2019,AM.3C; AM3C; Bosbok,South African Air Force Museum Port Elizabeth,on_display
+Atlas Aircraft Corporation,Impala,Mk II,1037,,ZA,Impala,,fixed_wing,monoplane,military,ground_attack,,Licence-built Aermacchi MB-326K; c/n 38,MB-326K; MB326K; Impala Mk2,South African Air Force Museum Port Elizabeth,on_display
+Dassault,Mirage F1,CZ,201,,ZA,Mirage F1,,fixed_wing,monoplane,military,fighter,,c/n 58,Mirage F1CZ; MirageF1CZ,South African Air Force Museum Port Elizabeth,on_display
+Aerospatiale,SA-316,B,632,,ZA,Alouette III,,rotary_wing,,military,utility,,c/n 2287,SA.316B; SA316B; Alouette 3; SA316,South African Air Force Museum Port Elizabeth,on_display
+North American,Harvard,Mk IIA,7289,,ZA,Harvard,,fixed_wing,monoplane,military,trainer,,c/n 88-10648,AT-6; T-6; Harvard IIA; AT6; T6,South African Air Force Museum Port Elizabeth,on_display
+de Havilland,Vampire,FB.5,205,,ZA,Vampire,,fixed_wing,monoplane,military,fighter,,c/n EEP42784,Vampire FB5; FB.5,South African Air Force Museum Port Elizabeth,on_display
+Airspeed,Oxford,Mk 1,ED290,,GB,Oxford,,fixed_wing,monoplane,military,trainer,,RAF Oxford; the type flown at 42 Air School on this site during the Joint Air Training Scheme,Oxford I; AS.10,South African Air Force Museum Port Elizabeth,on_display
+Westland,Scout,AH.1,BSP-1,,BH,Scout,,rotary_wing,,military,utility,,Ex-Bahrain Public Security Police Scout; wears code GT; c/n F.9619,Scout AH1; AH.1,South African Air Force Museum Port Elizabeth,on_display
+Westland,Sioux,AH.1,XT562,,GB,Sioux,,rotary_wing,,military,utility,,British Army Air Corps Sioux; the licence-built Bell 47G-3B-1; wears code B; c/n WA451,Sioux AH1; Bell 47; Bell47; AH.1,South African Air Force Museum Port Elizabeth,on_display
+Cessna,FA152,Aerobat,TR-LZM,,GA,Aerobat,,fixed_wing,monoplane,civilian,trainer,,Ex-Gabonese civil Aerobat; c/n 0371,Ce.FA152; FA152; F152; Aerobat,South African Air Force Museum Port Elizabeth,on_display
+Atlas Aircraft Corporation,Impala,Mk I,507,,ZA,Impala,,fixed_wing,monoplane,military,trainer,,Licence-built Aermacchi MB-326M; c/n A32,MB-326M; MB326M; Impala Mk1,South African Air Force Museum Port Elizabeth,in_storage
+Piaggio,P.166,S,887,,ZA,Albatross,,fixed_wing,monoplane,military,search_rescue,,c/n 449,P166; P.166S; Albatross,South African Air Force Museum Port Elizabeth,in_storage
+Atlas Aircraft Corporation,Bosbok,AM.3C,948,,ZA,Bosbok,,fixed_wing,monoplane,military,recon,,In the museum's restoration hangar 300 m from the display area; c/n 2029,AM.3C; AM3C; Bosbok,South African Air Force Museum Port Elizabeth,under_restoration
+Britten-Norman,BN-2,A-26,ZS-LSE,,ZA,Islander,,fixed_wing,monoplane,civilian,utility,,In the restoration hangar; c/n 834,BN2; BN-2A-26; Islander; ZSLSE,South African Air Force Museum Port Elizabeth,under_restoration
+Aerospatiale,SA-330,C,123,,ZA,Puma,,rotary_wing,,military,transport,,In the restoration hangar; c/n 1030,SA.330C; SA330C; Puma; SA330,South African Air Force Museum Port Elizabeth,under_restoration

@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+ATR,ATR 72,-212A,9G-SBF,,GH,,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-Starbow Airlines; acquired as public art; c/n 743,ATR72; ATR-72; 9GSBF,Red Clay Savannah Centre for Contemporary Art,on_display
+British Aerospace,BAe 146,-300,9G-SBB,,GH,,,fixed_wing,monoplane,civilian,commercial_transport,,c/n E3123,BAe146; BAe.146; BAE 146; 9GSBB,Red Clay Savannah Centre for Contemporary Art,on_display
+British Aerospace,BAe 146,-200,9G-SBD,,GH,,,fixed_wing,monoplane,civilian,commercial_transport,,c/n E2059,BAe146; BAe.146; BAE 146; 9GSBD,Red Clay Savannah Centre for Contemporary Art,on_display
+Let,L-410,UVP-E20,9G-LET,,GH,Turbolet,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 871922,L410; L-410; Turbolet; 9GLET,Red Clay Savannah Centre for Contemporary Art,on_display
+Antonov,An-2,R,LY-AVI,,LT,Colt,,fixed_wing,biplane,civilian,utility,,Ex-Lithuanian An-2; c/n 1G220-14,An2; An-2R; Colt; LYAVI; An2R,Red Clay Savannah Centre for Contemporary Art,on_display
+Cessna,414,,N747SD,,US,Chancellor,,fixed_wing,monoplane,civilian,private,,c/n 414-0934,Ce.414; Ce414; C-414; Chancellor; N747SD; C414,Red Clay Savannah Centre for Contemporary Art,on_display

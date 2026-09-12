@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bushby,Mustang,II,N1855M,,,fixed_wing,monoplane,civilian,private,,Suspended in the museum atrium. An OSM node tagged 'Bushby Midget Mustang' at 38.25748 -85.7627 in the 2026 extract confirms an airframe is still hanging there,Midget Mustang,Kentucky Science Center,on_display
+Bushby,Mustang,II,,,,fixed_wing,monoplane,civilian,private,,A second Bushby Mustang II recorded by Aerial Visuals with no registration known,Midget Mustang,Kentucky Science Center,on_display
+Sellers,Quadruplane,,,,,fixed_wing,monoplane,civilian,experimental,,REPLICA - reproduction of the 1908 Sellers quadruplane. A Sellers reproduction is also claimed by the Aviation Museum of Kentucky in Lexington - TWO-SITE CLAIM flagged,1908 Quadruplane,Kentucky Science Center,on_display

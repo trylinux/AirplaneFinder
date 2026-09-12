@@ -1,0 +1,9 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-15,UTI,1717,,DZ,,,fixed_wing,monoplane,military,trainer,,Plinthed at Mecheria; logged 30 Dec 2025,MiG15; MiG-15UTI; Midget; MiG15UTI,Mecheria Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-15,UTI,FB-40,,DZ,,,fixed_wing,monoplane,military,trainer,,Plinthed at Mecheria; logged 30 Dec 2025,MiG15; MiG-15UTI; Midget; FB40; MiG15UTI,Mecheria Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-15,UTI,1755,,DZ,,,fixed_wing,monoplane,military,trainer,,Plinthed at Mecheria; logged 15 May 2025,MiG15; MiG-15UTI; Midget; MiG15UTI,Mecheria Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-17,,FR-75,,DZ,,,fixed_wing,monoplane,military,fighter,,Plinthed at Mecheria; logged 15 May 2025,MiG17; MiG-17; Fresco; FR75,Mecheria Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-21,MF,FD-25,,DZ,,,fixed_wing,monoplane,military,fighter,,Plinthed at Mecheria; logged 15 May 2025,MiG21; MiG-21MF; Fishbed; FD25; MiG21MF,Mecheria Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-21,MF,FD-49,,DZ,,,fixed_wing,monoplane,military,fighter,,Plinthed at Mecheria; logged 23 Feb 2023,MiG21; MiG-21MF; Fishbed; FD49; MiG21MF,Mecheria Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-23,BN,FM-57,,DZ,,,fixed_wing,monoplane,military,ground_attack,,Plinthed at Mecheria; logged 15 May 2025,MiG23; MiG-23BN; Flogger; FM57; MiG23BN,Mecheria Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-23,MF,FP-85,,DZ,,,fixed_wing,monoplane,military,fighter,,c/n 0390220107; plinthed at Mecheria; logged 23 Feb 2023,MiG23; MiG-23MF; Flogger; FP85; c/n 0390220107; MiG23MF,Mecheria Air Base Preserved Aircraft,on_display

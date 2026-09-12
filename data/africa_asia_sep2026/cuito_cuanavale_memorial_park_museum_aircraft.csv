@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-8,MTV-1,H-577,,AO,Hip,,rotary_wing,,military,transport,,Angolan Air Force Hip displayed as a trophy of the 1987-88 battle,Mi8; Mi-8MTV-1; Hip,Cuito Cuanavale Memorial Park Museum,on_display
+Mikoyan-Gurevich,MiG-21,bis,C340,,AO,Fishbed,,fixed_wing,monoplane,military,fighter,,c/n 75096900,MiG21; MiG-21bis; Fishbed; C-340; MiG21bis; C340,Cuito Cuanavale Memorial Park Museum,on_display
+Mikoyan-Gurevich,MiG-23,ML,C441,,AO,Flogger,,fixed_wing,monoplane,military,fighter,,The MiG-23ML was the type that contested air superiority over Cuito Cuanavale against SAAF Mirage F1s,MiG23; MiG-23ML; Flogger; C-441; MiG23ML; C441,Cuito Cuanavale Memorial Park Museum,on_display
+Sud Aviation,Alouette III,SE.3160,H-238,,AO,Alouette III,,rotary_wing,,military,utility,,,SE.3160; SE3160; Alouette 3,Cuito Cuanavale Memorial Park Museum,on_display
+Sukhoi,Su-22,M4,4016,,AO,Fitter,,fixed_wing,monoplane,military,ground_attack,,Wears 4016 with the code O; c/n 40716,Su22; Su-22M4; Su-17; Fitter; Su17,Cuito Cuanavale Memorial Park Museum,on_display

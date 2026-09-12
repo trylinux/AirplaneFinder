@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Sikorsky,SH-3,D,MM80972,,IT,Sea King,,rotary_wing,,military,search_rescue,,Displayed at the 31 Stormo; OSM records the serial and links a JetPhotos registration page; Italian SH-3D/TS airframes were built under licence by Agusta,SH3; SH-3D; Sea King; SH-3D/TS; SH3D,31 Stormo Ciampino Aircraft Displays,on_display
+Unidentified,Aircraft,,,,IT,,,fixed_wing,monoplane,military,other,,A second airframe mapped at the 31 Stormo site with no type recorded,,31 Stormo Ciampino Aircraft Displays,on_display

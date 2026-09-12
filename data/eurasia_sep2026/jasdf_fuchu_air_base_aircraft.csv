@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mitsubishi,F-104,J,56-8662,,JP,Starfighter,,fixed_wing,monoplane,military,fighter,,Faces WSW and can be shot through the fence from the perimeter road south of the aircraft,F104J; F104,JASDF Fuchu Air Base,on_display
+Mitsubishi,F-1,,60-8275,,JP,,,fixed_wing,monoplane,military,ground_attack,,Canopy painted black from about 2024,F1,JASDF Fuchu Air Base,on_display
+Unidentified,UAV,,1004,,JP,,,fixed_wing,monoplane,military,drone,,Unmanned vehicle displayed with the two fighters; the blog records only the number 1004,UAV,JASDF Fuchu Air Base,on_display

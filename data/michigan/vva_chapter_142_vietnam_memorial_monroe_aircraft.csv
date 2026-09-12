@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,AH-1,S,68-15074,Cobra,,rotary_wing,,military,ground_attack,,Vietnam memorial display at Captain Norman W Heck Park; serial from an Aerial Visuals arc-second fix,Cobra; c/n 20608; AH1; AH1S,VVA Chapter 142 Vietnam Memorial -- Monroe,on_display
+Bell,UH-1,C,66-0632,Iroquois,,rotary_wing,,military,utility,,Second airframe at the Vietnam memorial; serial from an Aerial Visuals arc-second fix,Huey; c/n 1614; UH1; UH1C,VVA Chapter 142 Vietnam Memorial -- Monroe,on_display

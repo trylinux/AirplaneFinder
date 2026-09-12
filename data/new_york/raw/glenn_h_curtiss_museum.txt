@@ -1,0 +1,23 @@
+Standard|J-1|||||fixed_wing|biplane|military|trainer|1917|Original WWI-era trainer listed under Originals on the museum's own exhibits page fetched Sept 2026; on loan to the museum; no serial published||on_display
+Curtiss|MF|||Seagull||fixed_wing|biplane|civilian|private|1919|Original Curtiss MF Seagull flying boat on loan; listed under Originals on the museum exhibits page Sept 2026; museum publishes no serial|Model 25 Seagull|on_display
+Curtiss|Robin|B||Robin||fixed_wing|monoplane|civilian|private|1927|Original Curtiss Robin; lead lists give registration NC924K but N924K is now assigned to an unrelated ultralight in Michigan so the marking is not re-anchored and is left out of tail_number|NC924K|on_display
+Mercury|Chic|T-2||Chic||fixed_wing|monoplane|civilian|private|1929|Built by Mercury Aircraft of Hammondsport; on loan; listed under Originals Sept 2026|Mercury T-2|on_display
+Curtiss-Wright|Chicago Pusher|||||fixed_wing|biplane|civilian|experimental|1929|Listed by the museum as 1929 CW Chicago Pusher; original airframe on loan; no serial published||on_display
+Curtiss|C-46|||Commando||fixed_wing|monoplane|military|transport|1943|Original C-46 listed under Originals Sept 2026; Warbirds Resource Group gives 44-78772 but Aerial Visuals maps that serial to a UH-1B so the identity is unresolved and tail_number is deliberately blank|44-78772; N800FA|on_display
+Scheibe|Doppelraab|||||fixed_wing|monoplane|civilian|other|1951|Original German-designed Doppelraab training glider; listed under Originals Sept 2026||on_display
+Curtiss|D|||Headless Pusher||fixed_wing|biplane|civilian|experimental|1912|Listed by the museum under Restorations Sept 2026; early Curtiss pusher||under_restoration
+Curtiss|JN-4|D||Jenny||fixed_wing|biplane|military|trainer|1917|Listed under Restorations Sept 2026; lead lists quote serial 5086 but this is not re-anchored|5086|under_restoration
+Curtiss|Oriole|||||fixed_wing|biplane|civilian|private|1919|Listed under Restorations on the museum exhibits page Sept 2026||under_restoration
+Curtiss|Fledgling|||||fixed_wing|biplane|civilian|trainer|1929|Listed under Restorations Sept 2026||under_restoration
+Travel Air|2000|||||fixed_wing|biplane|civilian|private|1929|On loan; listed under Restorations Sept 2026; lead lists quote NC477N but FAA shows N477N is a Travel Air D-4000 held by Owls Head Transportation Museum in Maine so that marking is rejected|NC477N rejected|under_restoration
+Mercury|S-1|||Racer||fixed_wing|monoplane|civilian|experimental|1931|Mercury Aircraft racer built at Hammondsport; on loan; listed under Restorations Sept 2026||under_restoration
+Curtiss-Wright|CW-1|||Junior||fixed_wing|monoplane|civilian|private|1931|On loan; one of two Curtiss-Wright Juniors listed under Restorations Sept 2026||under_restoration
+Curtiss|P-40|E||Warhawk||fixed_wing|monoplane|military|fighter||Under long-term restoration in the museum's own shop; Vintage Aviation News reports the shop bought the remnants of three P-40s and is rebuilding one; no serial published||under_restoration
+Baldwin|Dirigible|||California Arrow||lighter_than_air||civilian|experimental||Reproduction of the 1904 Baldwin dirigible gondola; flagged as a reproduction by the museum||on_display
+AEA|Glider|||||fixed_wing|biplane|civilian|experimental||Reproduction of the 1907 Aerial Experiment Association glider; flagged as a reproduction by the museum||on_display
+AEA|June Bug|||June Bug||fixed_wing|biplane|civilian|experimental|1976|Flying reproduction of the 1908 AEA June Bug built by Mercury Aircraft Inc of Hammondsport; FAA registry shows N1908C Mercury Aircraft Inc MAJB-01 year 1976 still current and on loan to the museum; REPRODUCTION|N1908C; c/n MAJB-01|on_display
+AEA|Silver Dart|||Silver Dart||fixed_wing|biplane|civilian|experimental||Reproduction of the 1909 AEA Silver Dart; flagged as a reproduction by the museum||on_display
+Curtiss|Albany Flyer|||||fixed_wing|biplane|civilian|experimental||Reproduction of the 1910 Curtiss Albany Flyer; flagged as a reproduction by the museum||on_display
+Curtiss|A-1|||Triad||fixed_wing|biplane|military|trainer||Reproduction of the 1911 Curtiss A-1 Triad the US Navy's first aircraft; flagged as a reproduction by the museum; lead lists quote N511GC but that N-number is not in the current FAA registry|N511GC not current|on_display
+Curtiss|E|||Flying Boat||fixed_wing|biplane|civilian|experimental||Reproduction of the 1913 Curtiss Model E flying boat; flagged as a reproduction by the museum||on_display
+Curtiss|H|||America||fixed_wing|biplane|civilian|experimental||Reproduction of the 1914 Curtiss Model H America transatlantic flying boat; flagged as a reproduction by the museum||on_display

@@ -1,0 +1,1 @@
+Republic|F-84|F|51-9382|Thunderstreak||fixed_wing|monoplane|military|fighter||Serial checks against the F-84F FY51 block; displayed under an overhead cover on the Cheatham Hill Drive campus; Aerial Visuals carries two overlapping dossiers for this site - one flags the airframe as not on-site and the other as present - so status needs a local check|F-84F; Thunderstreak|on_display

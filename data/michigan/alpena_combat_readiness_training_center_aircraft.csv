@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,C-130,E,62-1798,Hercules,,fixed_wing,monoplane,military,transport,,Displayed at the Alpena CRTC; serial from an Aerial Visuals arc-second fix; behind a controlled gate and not re-confirmed since,Hercules; C130; C130E,Alpena Combat Readiness Training Center,on_display
+Bell,UH-1,H,68-16088,Iroquois,,rotary_wing,,military,utility,,Displayed at the Alpena CRTC on a separate pad; serial from an Aerial Visuals arc-second fix,Huey; UH1; UH1H,Alpena Combat Readiness Training Center,on_display

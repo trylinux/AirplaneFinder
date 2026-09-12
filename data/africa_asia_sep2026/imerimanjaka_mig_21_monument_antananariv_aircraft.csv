@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,bis,169,,MG,,,fixed_wing,monoplane,military,fighter,,One of two MiG-21s at a compound south of Antananarivo; logged 9 Mar 2018,MiG21; MiG-21bis; Fishbed; MiG21bis,Imerimanjaka MiG-21 Monument -- Antananarivo,on_display
+Mikoyan-Gurevich,MiG-21,UM,291,,MG,,,fixed_wing,monoplane,military,trainer,,c/n 516999291; sighting refreshed Jul 2022,MiG21; MiG-21UM; Mongol; c/n 516999291; MiG21UM,Imerimanjaka MiG-21 Monument -- Antananarivo,on_display

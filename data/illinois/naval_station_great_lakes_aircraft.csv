@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Grumman,F-14,A,160386,Tomcat,,fixed_wing,monoplane,military,fighter,,Displayed on the training station; an OpenStreetMap node at this fix is current in the September 2026 extract,BuNo 160386; c/n 242; F14; F14A,Naval Station Great Lakes,on_display
+Douglas,A-4,C,148463,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,Recorded on the station by Aerial Visuals; no arc-second fix and no 2023-2026 confirmation - presence should be re-checked,BuNo 148463; c/n 12656; A4; A4C,Naval Station Great Lakes,on_display

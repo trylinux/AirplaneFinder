@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+McDonnell,RF-4,C,62-12201,Phantom II,,fixed_wing,monoplane,military,recon,,Ground-instructional GRF-4C; c/n 0268; block-check passes for the FY62 RF-4C run. Aerial Visuals fix 29.588642 -90.720836,c/n 0268; GRF-4C; RF4; RF4C; GRF4C,Regional Military Museum,on_display
+Aero Commander,U-4,B,55-4648,,,fixed_wing,monoplane,military,transport,,c/n 317; block-check passes. Previously recorded at the Wedell-Williams museum in Patterson; Aerial Visuals places it at Houma so the two-site claim resolves in Houma's favour,c/n 317; U4; U4B,Regional Military Museum,on_display

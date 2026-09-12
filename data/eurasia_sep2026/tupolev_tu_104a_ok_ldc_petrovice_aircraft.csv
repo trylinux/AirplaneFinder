@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Tupolev,Tu-104,A,OK-LDC,,CZ,,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-ČSA Tupolev Tu-104A displayed at Petrovice on the German border in the Ústí nad Labem district; the registration OK-LDC is carried in the map object as ref,Tu-104; Tu104; Tu-104A; OK-LDC; Camel; Tu104A,Tupolev Tu-104A OK-LDC -- Petrovice,on_display

@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Kawasaki,V-107,A,51717,,JP,,,rotary_wing,,military,transport,,At 38.4024N 140.3851E in the outdoor equipment park; on satellite imagery since 2010,V107A; KV107; V107,JGSDF Camp Jinmachi -- Equipment Display Park,on_display
+Kawasaki,OH-6,D,31175,,JP,Cayuse,,rotary_wing,,military,recon,,At 38.4024N 140.3854E; on satellite imagery since 2010,OH6D; OH6,JGSDF Camp Jinmachi -- Equipment Display Park,on_display
+Fuji,UH-1,H,41704,,JP,Iroquois,,rotary_wing,,military,utility,,At 38.4025N 140.3859E; appeared between the August 2010 and June 2011 satellite passes,UH1H; Huey; UH1,JGSDF Camp Jinmachi -- Equipment Display Park,on_display
+Fuji,LR-1,,22014,,JP,,,fixed_wing,monoplane,military,recon,,At 38.4025N 140.3861E; on satellite imagery since 2010; both main tyres flat when seen,LR1; LR-1; MU-2; MU2,JGSDF Camp Jinmachi -- Equipment Display Park,on_display
+Kawasaki,V-107,A,51730,,JP,,,rotary_wing,,military,transport,,Inside the camp at 38.4034N 140.4050E paired with UH-1H 41708; visible on open days,V107A; KV107; V107,JGSDF Camp Jinmachi -- Equipment Display Park,on_display
+Fuji,UH-1,H,41708,,JP,Iroquois,,rotary_wing,,military,utility,,Inside the camp at 38.4034N 140.4052E beside V-107 51730,UH1H; Huey; UH1,JGSDF Camp Jinmachi -- Equipment Display Park,on_display
+Fuji,UH-1,H,41719,,JP,Iroquois,,rotary_wing,,military,utility,,Inside the camp at about 38.4002N 140.3998E; appeared between the 2015 and 2019 satellite passes and is probably inside a closed area even on open days,UH1H; Huey; UH1,JGSDF Camp Jinmachi -- Equipment Display Park,in_storage

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-24,V,22,3532421014322,,,,rotary_wing,,military,ground_attack,,"russianplanes.net monument point 8664; contributor note (ru): Парк ""Патриот"".",Mi24; Mi24V,Engels Aircraft Monuments (3),on_display
+Ilyushin,Il-62,,RA-86557,2725456,RU,,,fixed_wing,monoplane,military,commercial_transport,,russianplanes.net monument point 23001; contributor note (ru): https://nversia.ru/news/po-nochnym-ulicam-engelsa-provezli-ogromnyy-samolet-takogo-ne-bylo-esche-nikogda-v-istorii/,Il62,Engels Aircraft Monuments (3),on_display

@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,AH-1,,,,PK,Cobra,,rotary_wing,,military,other,,"anti_tank Recorded as an OSM node named ""Bell AH-1 Cobra"" with a Wikidata type link 130 m from the museum building; the Pakistan Army operates AH-1F and AH-1S Cobras but the displayed sub-variant is untagged and I have not guessed it",AH1; AH-1; Cobra; HueyCobra,Army Museum Lahore,on_display

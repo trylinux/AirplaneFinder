@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-17,F,2961,,EG,,,fixed_wing,monoplane,military,fighter,,Logged at the October War Memorial; last confirmed sighting May 2023,MiG17; MiG-17F; Fresco; MiG17F,October War Panorama,on_display
+Mikoyan-Gurevich,MiG-21,PFS,8040,,EG,,,fixed_wing,monoplane,military,fighter,,Logged at the October War Memorial; sighting refreshed Oct 2025,MiG21; MiG-21PFS; Fishbed; MiG21PFS,October War Panorama,on_display
+Sukhoi,Su-20,,,,EG,7771,,fixed_wing,monoplane,military,ground_attack,,c/n 5901; last confirmed sighting May 2023,Su20; Su-20; Fitter; c/n 5901,October War Panorama,on_display

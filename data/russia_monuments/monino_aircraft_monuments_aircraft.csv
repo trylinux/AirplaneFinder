@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-25,RBV,02 Light Blue,020СЛ02,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 848; source records the bort as 02-голубой,MiG25; MiG25RBV,Monino Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-23,ML,125 Light Blue,0390206625,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 866; source records the bort as 125-голубой,MiG23; MiG23ML,Monino Aircraft Monuments,on_display
+Yakovlev,Yak-28,U,63 Blue,2930105,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 869; source records the bort as 63-синий,Yak28; Yak28U,Monino Aircraft Monuments,on_display
+Yakovlev,Yak-28,PP,45 Light Blue,0970603,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 870; source records the bort as 45-голубой,Yak28; Yak28PP,Monino Aircraft Monuments,on_display
+Yakovlev,Yak-28,PP,53 Light Blue,1971105,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 871; source records the bort as 53-голубой,Yak28; Yak28PP,Monino Aircraft Monuments,on_display
+Yakovlev,Yak-28,PP,43 Light Blue,1971002,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 872; source records the bort as 43-голубой,Yak28; Yak28PP,Monino Aircraft Monuments,on_display
+Mil,Mi-24,P,37 White,3532431622374,RU,,,rotary_wing,,military,ground_attack,,russianplanes.net monument point 7641; source records the bort as 37-белый,Mi24; Mi24P,Monino Aircraft Monuments,on_display

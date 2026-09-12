@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,F-13,,,CZ,,,fixed_wing,monoplane,military,fighter,,MiG-21F-13 monument at Roudnice in the Urbanice municipality; the sub-variant is recorded in the map object which implies a placard; no tactical number,MiG-21F-13; MiG21F13; Fishbed-C; MiG21,MiG-21F-13 Monument -- Urbanice,on_display

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-24,D,,,RU,Hind,,rotary_wing,,military,ground_attack,,The museum states this is the first export Mi-24 built,Mi24; Mi-24D; Hind; Mi24D,A szovjet repülőtér titkai -- Berekfürdő,on_display
+Mikoyan-Gurevich,MiG-21,MF,,,HU,Fishbed,,fixed_wing,monoplane,military,fighter,,Restored between 2021 and 2024; no tactical number published,MiG21; MiG21MF; Fishbed,A szovjet repülőtér titkai -- Berekfürdő,on_display

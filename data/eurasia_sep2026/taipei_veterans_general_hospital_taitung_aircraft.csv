@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Northrop,F-5,E,5119,,TW,Tiger II,,fixed_wing,monoplane,military,fighter,,Tactical number 5119 from OSM node 8892481131,F5E; 5119; F5,Taipei Veterans General Hospital Taitung Branch F-5E,on_display

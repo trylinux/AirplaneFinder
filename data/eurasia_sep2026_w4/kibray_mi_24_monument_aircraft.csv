@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-24,,,,,Mil Mi-24,,rotary_wing,,military,ground_attack,,Named on the OSM node as an Mi-24 and tagged as a memorial aircraft and tourist attraction; no serial known,Mi24; Hind,Kibray Mi-24 Monument,on_display

@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aeritalia,F-104,S,MM6941,,IT,Starfighter,Spillone,fixed_wing,monoplane,military,fighter,,Plaque at the school reads 4-10 and Matricola MM6941; confirmed by the International F-104 Society,F104; F-104S; Starfighter; 4-10; F104S,Istituto Tecnico Industriale Pisa Aircraft,on_display
+Aermacchi,MB-326,,MM54153,,IT,,,fixed_wing,monoplane,military,trainer,,Plaque at the school reads Matricola MM 54153,MB326,Istituto Tecnico Industriale Pisa Aircraft,on_display
+Canadair,CL-13,,MM19782,,IT,Sabre,,fixed_wing,monoplane,military,fighter,,Plaque at the school reads Matricola MM 19782; Canadair-built Sabres served the Aeronautica Militare from 1956,CL13; CL-13; Sabre; Canadair Sabre; F-86; F86,Istituto Tecnico Industriale Pisa Aircraft,on_display

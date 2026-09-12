@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,Ventura,GR.V,6432,,ZA,Ventura,,fixed_wing,monoplane,military,recon,,c/n 237-5649,Ventura GR5; GR.V; PV-1; PV1,Ventura and Puma Display -- Edenvale,on_display
+Aerospatiale,SA-330,C,126,,ZA,Puma,,rotary_wing,,military,transport,,c/n 1053,SA.330C; SA330C; Puma; SA330,Ventura and Puma Display -- Edenvale,on_display

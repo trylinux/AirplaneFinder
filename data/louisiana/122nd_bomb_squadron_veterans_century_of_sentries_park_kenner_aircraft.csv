@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,A-4,C,145082,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,Park display beside Louis Armstrong New Orleans International Airport; BuNo within the A-4C block 145062-145146,Skyhawk; A4; A4C,122nd Bomb Squadron Veterans Century of Sentries Park -- Kenner,on_display
+Grumman,F-14,D,159629,Tomcat,,fixed_wing,monoplane,military,fighter,,Rebuild - delivered as an F-14A in the block 159588-159637 and later converted to F-14D(R); c/n 176/DR-7,F-14D(R); c/n 176/DR-7; F14; F14D,122nd Bomb Squadron Veterans Century of Sentries Park -- Kenner,on_display

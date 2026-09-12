@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Agusta-Bell,AB 206,,EB-16,,DZ,JetRanger,,rotary_wing,,military,utility,,Plinthed at Ain Arnat; logged 4 Jul 2018,AB206; AB.206; JetRanger; EB16,Ain Arnat Air Base Preserved Helicopters,on_display
+Mil,Mi-2,,ST-27,,DZ,,,rotary_wing,,military,utility,,c/n 5110808128; an Algerian police Mi-2; logged 5 Jul 2018,Mi2; Mi-2; Hoplite; ST27; c/n 5110808128,Ain Arnat Air Base Preserved Helicopters,on_display
+Mil,Mi-8,T,SV-97,,DZ,,,rotary_wing,,military,transport,,Plinthed at Ain Arnat; logged 5 Jul 2018,Mi8; Mi-8T; Hip; SV97; Mi8T,Ain Arnat Air Base Preserved Helicopters,on_display
+Mil,Mi-8,T,SV-32,,DZ,,,rotary_wing,,military,transport,,Plinthed at Ain Arnat; logged 15 Sep 2022,Mi8; Mi-8T; Hip; SV32; Mi8T,Ain Arnat Air Base Preserved Helicopters,on_display

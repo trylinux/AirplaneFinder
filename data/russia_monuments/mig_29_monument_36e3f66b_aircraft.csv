@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-29,,,,,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 11009; wears bort 29 -- an airframe already in the database at a different site carries that same number so it is recorded here as a marking rather than as an identity,MiG29,MiG-29 Monument -- Тренёвское сельское поселение,on_display

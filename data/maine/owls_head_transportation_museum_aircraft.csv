@@ -1,0 +1,32 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Curtiss,JN-4,D,N2086,Jenny,,fixed_wing,monoplane,military,trainer,1917,FAA registry September 2026 shows N2086 to Owls Head Transportation Museum - current; many of the museum's aircraft are maintained airworthy and flown at summer events,c/n 34094; JN4; JN4D,Owls Head Transportation Museum,on_display
+Standard,J-1,,N22581,,,fixed_wing,monoplane,military,trainer,1918,FAA registry September 2026 shows N22581 to Owls Head Transportation Museum,c/n 581; J1,Owls Head Transportation Museum,on_display
+Pitcairn,PA-7,S,N13158,Super Mailwing,,fixed_wing,monoplane,civilian,transport,1930,FAA registry September 2026 shows N13158 to Owls Head Transportation Museum,c/n 151; PA7; PA7S,Owls Head Transportation Museum,on_display
+Travel Air,D-4000,,N477N,,,fixed_wing,monoplane,civilian,private,1930,FAA registry September 2026 shows N477N to Owls Head Transportation Museum,c/n 1379; E-4000; D4000,Owls Head Transportation Museum,on_display
+Waco,UBF,,N13442,,,fixed_wing,monoplane,civilian,private,1932,FAA registry September 2026 shows N13442 to Owls Head Transportation Museum,c/n 3766; UBF-2; UBF2,Owls Head Transportation Museum,on_display
+Boeing,PT-17,,N55361,Kaydet,,fixed_wing,monoplane,military,trainer,1941,USAAF 41-8236; FAA registry September 2026 shows N55361 to Owls Head Transportation Museum,c/n 75-1795; 41-8236; PT17,Owls Head Transportation Museum,on_display
+Boeing,PT-17,,N75980,Kaydet,,fixed_wing,monoplane,military,trainer,1942,Second Stearman; FAA registry September 2026 shows N75980 to Owls Head Transportation Museum typed B75N1,c/n 75-6746; B75N1; PT17,Owls Head Transportation Museum,on_display
+Fokker,C.V,,N439FK,,,fixed_wing,monoplane,military,recon,1923,FAA registry September 2026 shows N439FK to Owls Head Transportation Museum typed Fokker C-4,c/n 4127; C-4; C4,Owls Head Transportation Museum,on_display
+Fokker,Dr.I,,N425FK,,,fixed_wing,monoplane,military,fighter,1974,Flying replica triplane built by Cianchette; FAA registry September 2026 shows N425FK to Owls Head Transportation Museum,c/n 2001,Owls Head Transportation Museum,on_display
+Nieuport,28,,N27226,,,fixed_wing,monoplane,military,fighter,1976,Replica built by Swanson; FAA registry September 2026 shows N27226 to Owls Head Transportation Museum,c/n C-1,Owls Head Transportation Museum,on_display
+SPAD,XIII,,N14574,,,fixed_wing,monoplane,military,fighter,1975,Replica built by Swanson; FAA registry September 2026 shows N14574 to Owls Head Transportation Museum,c/n C-1,Owls Head Transportation Museum,on_display
+Sopwith,Pup,,N5138,,,fixed_wing,monoplane,military,fighter,2016,Replica built by Brian T Coughlin; FAA registry September 2026 shows N5138 to Owl Head Transportation Museum - the registry misspells the owner name,c/n 1916,Owls Head Transportation Museum,on_display
+Curtiss,Model D,,N1GJ,,,fixed_wing,monoplane,civilian,private,1967,Replica pusher; FAA registry September 2026 shows N1GJ to Owls Head Transportation Museum,c/n M-4,Owls Head Transportation Museum,on_display
+Etrich,Taube,,N11D,,,fixed_wing,monoplane,civilian,private,,Reproduction; FAA registry September 2026 shows N11D to Owls Head Transportation Museum with the museum itself as manufacturer,c/n D2,Owls Head Transportation Museum,on_display
+Bleriot,XI,,N7899C,,,fixed_wing,monoplane,civilian,private,,Replica flown at museum events; Aerial Visuals gives construction number 3,c/n 3,Owls Head Transportation Museum,on_display
+Deperdussin,B,,N78TJ,,,fixed_wing,monoplane,civilian,private,,Replica; recorded by Aerial Visuals at the main museum building,c/n 01,Owls Head Transportation Museum,on_display
+Farman,III,,N9168X,,,fixed_wing,monoplane,civilian,private,,Replica; recorded by Aerial Visuals at the main museum building,c/n 1,Owls Head Transportation Museum,on_display
+Royal Aircraft Factory,F.E.8,,N928,,,fixed_wing,monoplane,military,fighter,,Replica built by Gardiner; FAA registry September 2026 shows N928 to Owls Head Transportation Museum,c/n 298,Owls Head Transportation Museum,on_display
+Zlin,526,,N104GC,,,fixed_wing,monoplane,civilian,private,,FAA registry September 2026 shows N104GC to Owls Head Transportation Museum,c/n 1065,Owls Head Transportation Museum,on_display
+Pietenpol,Air Camper,,N767F,,,fixed_wing,monoplane,civilian,experimental,1962,FAA registry September 2026 shows N767F to Owls Head Transportation Museum typed P-4,c/n 3712,Owls Head Transportation Museum,on_display
+Wright,Flyer,,,,,fixed_wing,monoplane,civilian,experimental,,Replica of the 1903 Flyer; recorded by Aerial Visuals at the main museum building,,Owls Head Transportation Museum,on_display
+de Havilland,DH.82,A,,Tiger Moth,,fixed_wing,monoplane,military,trainer,,On Wikipedia's collection list; registration not established,,Owls Head Transportation Museum,on_display
+North American,T-6,G,,Texan,,fixed_wing,monoplane,military,trainer,,On Wikipedia's collection list; registration not established,T6; T6G,Owls Head Transportation Museum,on_display
+Piper,J-3,,,Cub,,fixed_wing,monoplane,civilian,private,,On Wikipedia's collection list and in Aerial Visuals' unconfirmed tail; registration not established,J3,Owls Head Transportation Museum,on_display
+Mooney,M-18,,,Mite,,fixed_wing,monoplane,civilian,private,,On Wikipedia's collection list; registration not established,M18,Owls Head Transportation Museum,on_display
+Great Lakes,2T-1,A,,,,fixed_wing,monoplane,civilian,private,,On Wikipedia's collection list; registration not established,2T1; 2T1A,Owls Head Transportation Museum,on_display
+Bushmaster,2000,,,,,fixed_wing,monoplane,civilian,transport,,Ford Trimotor derivative; on Wikipedia's collection list; registration not established,,Owls Head Transportation Museum,on_display
+Clark,Ornithopter,,,,,fixed_wing,monoplane,civilian,experimental,,Early Maine-built ornithopter; on Wikipedia's collection list,,Owls Head Transportation Museum,on_display
+Domenjoz,Glider,,,Sailing Glider,,fixed_wing,monoplane,civilian,experimental,,On Wikipedia's collection list and in the Aerial Visuals unconfirmed tail as Damenjoz,,Owls Head Transportation Museum,on_display
+Milliken,Special,,,,,fixed_wing,monoplane,civilian,experimental,,On Wikipedia's collection list,,Owls Head Transportation Museum,on_display
+Keane,Ace,,,,,fixed_wing,monoplane,civilian,experimental,,On Wikipedia's collection list,,Owls Head Transportation Museum,on_display

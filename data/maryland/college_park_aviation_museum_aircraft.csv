@@ -1,0 +1,12 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Wright,Model B,,,Wright Model B,,fixed_wing,biplane,civilian,trainer,,REPRODUCTION built by the Virginia Aviation and Machine Company; the Wright Model B was the type flown at the Signal Corps aviation school here in 1911,Wright Model B,College Park Aviation Museum,on_display
+Curtiss,D,,,Curtiss Model D,,fixed_wing,biplane,civilian,experimental,,REPRODUCTION built in the museum's own restoration shop,Curtiss Model D,College Park Aviation Museum,on_display
+Bleriot,XI,,,Bleriot XI,,fixed_wing,monoplane,civilian,private,2002,REPRODUCTION completed in the museum's restoration shop in 2002,Blériot XI,College Park Aviation Museum,on_display
+Curtiss,JN-4,D,,,Jenny,fixed_wing,biplane,military,trainer,,ORIGINAL airframe on loan from the US Army Center of Military History,JN-4D; Jenny; JN4; JN4D,College Park Aviation Museum,on_display
+Berliner,Helicopter,No. 5,,,,rotary_wing,,civilian,experimental,1924,ORIGINAL 1924 Berliner helicopter on loan from the Smithsonian National Air and Space Museum — an airframe owned by one site and displayed at another; recorded where it IS,Berliner No. 5,College Park Aviation Museum,on_display
+Monocoupe,110,,,Monocoupe 110,,fixed_wing,monoplane,civilian,private,1932,Original; c/n 6W-43; Aerial Visuals gives the registration as NC12345,c/n 6W-43; NC12345,College Park Aviation Museum,on_display
+Taylor,J-2,,NC16769,Cub,,fixed_wing,monoplane,civilian,private,1936,Original; serial 771; on loan from the Tom Hillier estate,NC16769; J-2 Cub; J2,College Park Aviation Museum,on_display
+Taylorcraft,BL-65,,N23624,,,fixed_wing,monoplane,civilian,private,1939,Original; serial 1349,N23624; BL-65; BL65,College Park Aviation Museum,on_display
+Boeing-Stearman,PT-17,,N8NP,Kaydet,,fixed_wing,biplane,civilian,trainer,1941,A75N1/PT-17 donated by Gus McLeod; Aerial Visuals adds USAAF serial 41-25229 and c/n 75-2718 — the serial fits the FY1941 PT-17 block,N8NP; 41-25229; PT17,College Park Aviation Museum,on_display
+Erco,415,D,NC93942,Ercoupe,,fixed_wing,monoplane,civilian,private,1946,Original; c/n 1265; on loan from Pat and Andy Gravatt,NC93942; Ercoupe,College Park Aviation Museum,on_display
+Erco,415,C,N99182,Ercoupe,,fixed_wing,monoplane,civilian,private,,CUTAWAY — a half Ercoupe sectioned to show construction; not a complete airframe,N99182; Ercoupe,College Park Aviation Museum,on_display

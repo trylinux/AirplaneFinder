@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,F-13,0210,,,,,fixed_wing,monoplane,military,fighter,,Mapped near Tilburg with the serial 0210 in the ref tag; the number has the shape of a Czechoslovak-built S-106 construction block but I could not confirm that so no build year is given,MiG21; MiG-21F-13; Fishbed; S-106; S106,MiG-21F-13 Display -- Tilburg,on_display

@@ -1,0 +1,13 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,T-2,C,158908,Buckeye,,fixed_wing,monoplane,military,trainer,,On loan from the National Museum of Naval Aviation; displayed outside at Clow International Airport,c/n 352-33; T2; T2C,Illinois Aviation Museum at Bolingbrook,on_display
+Lockheed,T-33,A,58-0632,Shooting Star,,fixed_wing,monoplane,military,trainer,,On loan from the National Museum of Naval Aviation; Aerial Visuals earlier recorded this airframe at the Air Classics Museum so the move should be confirmed,c/n 580-1681; T33; T33A,Illinois Aviation Museum at Bolingbrook,on_display
+Lockheed,T-33,,,Shooting Star,Stubby,fixed_wing,monoplane,military,trainer,,Second T-33 in the collection listed by the museum as Stubby; no serial published,T33,Illinois Aviation Museum at Bolingbrook,on_display
+Beechcraft,C-45,,N2808J,Expeditor,,fixed_wing,monoplane,military,transport,1951,FAA registry September 2026 shows N2808J current to Illinois Aviation Museum at Bolingbrook as a UC-45J with serial 51-262,UC-45J; C45; UC45J,Illinois Aviation Museum at Bolingbrook,on_display
+Douglas,A-4,,,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,Listed on the museum collection page; no serial published,A4,Illinois Aviation Museum at Bolingbrook,on_display
+Bell,UH-1,C,,Iroquois,,rotary_wing,,military,ground_attack,,Gunship-configured Huey listed on the museum collection page; no serial published,UH1; UH1C,Illinois Aviation Museum at Bolingbrook,on_display
+Pitts,Special,S-1S,,,,fixed_wing,biplane,civilian,private,,Aerobatic biplane listed on the museum collection page,SpecialS1S,Illinois Aviation Museum at Bolingbrook,on_display
+Fokker,E.III,,,Eindecker,,fixed_wing,monoplane,military,fighter,,Replica; listed on the museum collection page,,Illinois Aviation Museum at Bolingbrook,on_display
+Nieuport,11,,,Bebe,,fixed_wing,biplane,military,fighter,,Replica; on loan from a private owner per the museum collection page,,Illinois Aviation Museum at Bolingbrook,on_display
+Nieuport,12,,,,,fixed_wing,biplane,military,fighter,,Replica; listed on the museum collection page,,Illinois Aviation Museum at Bolingbrook,on_display
+Fokker,Dr.I,,,Dreidecker,,fixed_wing,monoplane,military,fighter,,Replica; triplane listed on the museum collection page,,Illinois Aviation Museum at Bolingbrook,on_display
+Pacific,D-8,,,,,fixed_wing,monoplane,civilian,other,,Glider listed on the museum collection page,D8,Illinois Aviation Museum at Bolingbrook,on_display

@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Blackburn,Buccaneer,S.2B,ZU-AVI,,ZA,Buccaneer,,fixed_wing,monoplane,civilian,ground_attack,,Ex-RAF Buccaneer on the South African civil register; c/n B3-03-72,Buccaneer S2B; S.2B; ZUAVI,Diemerskraal Airfield Jets,in_storage
+Hawker,Hunter,T.8C,ZU-ATH,,ZA,Hunter,,fixed_wing,monoplane,civilian,trainer,,c/n 41H/693836,Hunter T8C; T.8C; ZUATH,Diemerskraal Airfield Jets,in_storage
+BAC,Jet Provost,T.3A,ZU-JPR,,ZA,Jet Provost,,fixed_wing,monoplane,civilian,trainer,,Wears code 12; c/n PAC/W/9278,Jet Provost T3A; T.3A; ZUJPR,Diemerskraal Airfield Jets,in_storage
+Aerospatiale,SA-330,L,ZU-PUM,,ZA,Puma,,rotary_wing,,civilian,transport,,c/n 1405,SA.330L; SA330L; Puma; ZUPUM; SA330,Diemerskraal Airfield Jets,in_storage

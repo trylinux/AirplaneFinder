@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-25,,106,,MZ,,,rotary_wing,,military,ground_attack,,Mozambique Air Force Mi-25; logged 17 Oct 2018,Mi25; Mi-25; Mi-24D; Hind; Mi24D,Beira Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-15,UTI,20,,MZ,,,fixed_wing,monoplane,military,trainer,,Displayed wearing 180; the true serial is recorded as 20; logged 17 Oct 2018,MiG15; MiG-15UTI; Midget; 180; MiG15UTI,Beira Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-17,F,01,,MZ,,,fixed_wing,monoplane,military,fighter,,Mozambique Air Force MiG-17F; logged 17 Oct 2018,MiG17; MiG-17F; Fresco; MiG17F,Beira Air Base Preserved Aircraft,on_display

@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+General Dynamics,F-16,A,,,BE,,,fixed_wing,monoplane,military,fighter,,"Mapped on the Rue de la Grande Lecke at Beauvechain as a tourist attraction named ""Avion de chasse F16""; no serial recorded and the variant is assumed from the single-seat description in the OSM name",F16; F-16A; F16A,F-16 Monument -- Beauvechain,on_display

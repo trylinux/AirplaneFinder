@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,F-104,G,,,DE,,Starfighter,fixed_wing,monoplane,military,fighter,,On the Test-Fuchs staff car park; present before the Tornado arrived in May 2015; no serial published,F104; F-104G; Starfighter; F104G,Test-Fuchs Aircraft Displays -- Groß-Siegharts,on_display
+Panavia,Tornado,IDS,,,DE,,,fixed_wing,monoplane,military,ground_attack,,Bought already demilitarised from the German Luftwaffe and installed on the car park in May 2015; OSM tags it PA-200 Tornado,PA-200; PA200; Tornado IDS,Test-Fuchs Aircraft Displays -- Groß-Siegharts,on_display

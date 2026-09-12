@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Ilyushin,Il-28,,,,RU,Ilyushin Il-28,,fixed_wing,monoplane,military,bomber,,Named on the OSM node as an Il-28; stands at the Lenin/Gorky junction in Tokmok; the Il-28 was retired from Soviet service well before 1991 and independent Kyrgyzstan never operated it so a Soviet operator is recorded; no serial known,Il28; Beagle,Tokmok Il-28 Monument,on_display

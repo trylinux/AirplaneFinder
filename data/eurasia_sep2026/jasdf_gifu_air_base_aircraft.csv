@@ -1,0 +1,14 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Curtiss,C-46,D,91-1141,,JP,Commando,,fixed_wing,monoplane,military,transport,,,C46D; C-46A-40CU; 42-107366; C46,JASDF Gifu Air Base,on_display
+Mitsubishi,F-4,EJ,87-8409,,JP,Phantom II,,fixed_wing,monoplane,military,fighter,,,F4EJ; Phantom; F4,JASDF Gifu Air Base,on_display
+Mitsubishi,F-86,F,92-7897,,JP,Sabre,,fixed_wing,monoplane,military,fighter,,Displayed repainted as 62-7427; the real 62-7427 was an F-86F-30 with wing fences that was displayed here until it was swapped for this fence-less F-86F-40 between 1980 and 1986 and then scrapped; shown clean with no tanks or pylons,F86F; 62-7427; F86,JASDF Gifu Air Base,on_display
+Mitsubishi,F-104,J,36-8540,,JP,Starfighter,,fixed_wing,monoplane,military,fighter,,Previously displayed at Izu Bio Park and at Meitec in Hyogo before coming to Gifu,F104J; F104,JASDF Gifu Air Base,on_display
+Mitsubishi,T-2,,59-5107,,JP,,,fixed_wing,monoplane,military,trainer,,The T-2 special-specification aircraft and the last JASDF T-2 flown; final flight 2 Mar 2006; stored until put on outdoor display 20 Feb 2017,T2; FS-T2改,JASDF Gifu Air Base,on_display
+Kawasaki,T-33,A,51-5663,,JP,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T33A; T33,JASDF Gifu Air Base,on_display
+Fuji,T-34,A,61-0406,,JP,Mentor,,fixed_wing,monoplane,military,trainer,,Part of the PR display group at the SW of the base,T34A; T34,JASDF Gifu Air Base,on_display
+Mitsubishi,Nike-J,,,,JP,Nike-J,,missile_rocket,,military,other,,surface_to_air Live-configuration round near the display group at 35.3920N 136.8499E,NikeJ,JASDF Gifu Air Base,on_display
+Mitsubishi,F-4,EJ,17-8301,,JP,Phantom II,,fixed_wing,monoplane,military,fighter,,The first JASDF Phantom; retained at Gifu after the type's retirement in March 2021,F4EJ; Phantom; F4,JASDF Gifu Air Base,in_storage
+Mitsubishi,F-86,F,72-7723,,JP,Sabre,,fixed_wing,monoplane,military,fighter,,Held at Gifu outside the main display group,F86F; F86,JASDF Gifu Air Base,in_storage
+Mitsubishi,F-4,EJ,47-8336,,JP,Phantom II,,fixed_wing,monoplane,military,fighter,,The last flying JASDF F-4EJ; front cockpit parts reused to make a walk-in cockpit exhibit in the Gifu base PR room,F4EJ; Phantom; F4,JASDF Gifu Air Base,on_display
+Mitsubishi,F-104,J,76-8686,,JP,Starfighter,,fixed_wing,monoplane,military,fighter,,A JASDF designated preservation airframe held at Gifu,F104J; F104,JASDF Gifu Air Base,in_storage
+Mitsubishi,T-2,,29-5104,,JP,,,fixed_wing,monoplane,military,trainer,,Instrument panel only,T2,JASDF Gifu Air Base,in_storage

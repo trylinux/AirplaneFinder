@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,T-39,A,60-3495,Sabreliner,,fixed_wing,monoplane,military,transport,,Displayed about 1 km south of the Heritage Air Park inside the base perimeter; CT-39A configuration; OSM node current 2026 carries the serial,CT-39A; c/n 265-23; T39; T39A; CT39A,Scott Air Force Base,on_display
+Beech,C-45,H,52-10858,Expeditor,,fixed_wing,monoplane,military,transport,,Displayed inside the base perimeter south of the air park; NMUSAF loan register and a current OSM node agree on the serial,c/n AF-788; N7743C; C45; C45H,Scott Air Force Base,on_display

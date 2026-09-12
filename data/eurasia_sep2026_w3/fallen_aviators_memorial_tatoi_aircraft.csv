@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Northrop,F-5,A,38405,,GR,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,c/n N.6042; formerly in the museum collection and recorded there as Removed; now at the Fallen Aviators Memorial; last noted May 2026,F5A; F5; Freedom Fighter,Fallen Aviators Memorial -- Tatoi,on_display
+Dassault,Mirage F1,CG,121,,GR,Mirage F1,,fixed_wing,monoplane,military,fighter,,Last noted May 2026,Mirage F1CG; MirageF1,Fallen Aviators Memorial -- Tatoi,on_display

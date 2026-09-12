@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,F-104,G,FX-02,,BE,Starfighter,,fixed_wing,monoplane,military,fighter,,Displayed in a wooden-grey colour scheme per the International F-104 Society; shares the site with FX61,F104; F-104G; F104G,Kleine-Brogel Air Museum,on_display
+Lockheed,F-104,G,FX-61,,BE,Starfighter,,fixed_wing,monoplane,military,fighter,,Co-located with FX02 per the International F-104 Society,F104; F-104G; F104G,Kleine-Brogel Air Museum,on_display
+Lockheed,F-104,G,FX-86,,BE,Starfighter,,fixed_wing,monoplane,military,fighter,,Displayed at the museum since 2010 per the International F-104 Society,F104; F-104G; F104G,Kleine-Brogel Air Museum,on_display
+General Dynamics,F-16,A,,,BE,,,fixed_wing,monoplane,military,fighter,,Two F-16s are mapped in the museum's outdoor line by OSM and the museum's own site lists an F-16 Falcon; no serials published,F16; F-16A; F16A,Kleine-Brogel Air Museum,on_display
+Republic,F-84,G,,,BE,Thunderjet,,fixed_wing,monoplane,military,ground_attack,,Listed by the museum as an F-84E/G Thunderjet and mapped by OSM as an F-84 Thunderjet; no serial published,F84; F-84G; F-84E; Thunderjet; F84G; F84E,Kleine-Brogel Air Museum,on_display
+Republic,F-84,F,,,BE,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,Listed by the museum and mapped by OSM; no serial published,F84; F-84F; Thunderstreak; F84F,Kleine-Brogel Air Museum,on_display
+Fouga,CM-170,R,,,BE,Magister,,fixed_wing,monoplane,military,trainer,,Listed by the museum and mapped by OSM; no serial published,CM170; CM-170R; Magister; CM170R,Kleine-Brogel Air Museum,on_display

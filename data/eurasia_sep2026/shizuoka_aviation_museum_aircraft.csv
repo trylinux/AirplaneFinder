@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Kawasaki,T-33,A,71-5323,,JP,Shooting Star,,fixed_wing,monoplane,military,trainer,,Forward fuselage only; privately owned in southern Hamamatsu around 2004 and donated here about 2015,T33A; T33,Shizuoka Aviation Museum,on_display
+Cessna,172,M,JA3767,,JP,Skyhawk,,fixed_wing,monoplane,civilian,trainer,,Used for practical training,C172M; c/n 17267442,Shizuoka Aviation Museum,on_display
+Aero Commander,680,F,JA5075,,JP,,,fixed_wing,monoplane,civilian,private,,Formerly at the Osaka Modern Transportation Museum; wings and tail currently detached and stored beside the aircraft; being restored gradually,AeroCommander680F; c/n 1001-40,Shizuoka Aviation Museum,under_restoration
+Mita,Mita 3,Kai 1,JA2103,,JP,,,fixed_wing,monoplane,civilian,other,,The oldest of three gliders shown to illustrate glider development; steel tube and fabric,Mita3; c/n 69-17,Shizuoka Aviation Museum,on_display
+Let,L-23,,JA2480,,JP,Super Blanik,,fixed_wing,monoplane,civilian,other,,All-metal glider in the three-generation display,L23; L-23; Super Blanik; c/n 90-7622,Shizuoka Aviation Museum,on_display
+Grob,G-102,,JA2249,,JP,Speed Astir II,,fixed_wing,monoplane,civilian,other,,The most modern of the three gliders; largely moulded plastic,G102; Speed Astir II; c/n 4001,Shizuoka Aviation Museum,on_display

@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,,,,RO,,,fixed_wing,monoplane,military,fighter,,Monument to fallen airmen erected in 2011 per the start_date tag on OSM node 9806359025; no tactical number recorded,MiG21; Fishbed,Monumentul Eroilor Aviatori MiG-21 -- Moineşti,on_display

@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Martin,2-0-2,,N93204,,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 14074; the museum's signature exhibit and a Martin product built in nearby Maryland,N93204; 2-0-2; 202,Aviation Hall of Fame and Museum of New Jersey,on_display
+Convair,880,,,,,fixed_wing,monoplane,civilian,commercial_transport,,FLIGHT DECK and forward cabin section only per Wikipedia; no identity data found,,Aviation Hall of Fame and Museum of New Jersey,on_display
+Grumman,OV-1,A,60-3740,Mohawk,,fixed_wing,monoplane,military,recon,,Serial fits the FY1960 OV-1A block,OV-1A; OV1; OV1A,Aviation Hall of Fame and Museum of New Jersey,on_display
+Lockheed,L-402,,,Bushmaster,,fixed_wing,monoplane,civilian,utility,,Registration N1601L per Aerial Visuals; recorded in aliases because the type designation is unusual and unverified,N1601L; Bushmaster; L402,Aviation Hall of Fame and Museum of New Jersey,on_display
+Bell,AH-1,S,69-16437,Cobra,,rotary_wing,,military,ground_attack,,Serial fits the FY1969 AH-1 block,AH-1S; AH1; AH1S,Aviation Hall of Fame and Museum of New Jersey,on_display
+Bell,OH-13,E,51-14077,Sioux,,rotary_wing,,military,utility,,c/n 0827 later civil N606PD; Wikipedia calls it simply a Bell 47,Bell 47; OH-13E; OH13; OH13E,Aviation Hall of Fame and Museum of New Jersey,on_display
+Sikorsky,HH-52,A,,Seaguard,,rotary_wing,,military,search_rescue,,Listed by both Wikipedia and Aerial Visuals; no serial recorded by either,HH-52A; HH52; HH52A,Aviation Hall of Fame and Museum of New Jersey,on_display

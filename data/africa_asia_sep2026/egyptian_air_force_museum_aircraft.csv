@@ -1,0 +1,27 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Antonov,An-2,,950,,EG,,,fixed_wing,biplane,military,utility,,Egyptian Air Force An-2; c/n 113547319; logged on display at Almaza Aug 2026,An2; c/n 113547319,Egyptian Air Force Museum,on_display
+Vultee,BT-13,A,1,,EG,,,fixed_wing,monoplane,military,trainer,,US-supplied Valiant trainer; carried as serial 1 at Almaza; sighted Aug 2026,BT13; BT-13A; Valiant; BT13A,Egyptian Air Force Museum,on_display
+Heliopolis,Gomhouria,Mk.8,100,,EG,,,fixed_wing,monoplane,military,trainer,,Egyptian-built Bucker Bu 181 derivative; no serial actually carried on the airframe; sighted Aug 2026,Gomhouria Mk8; Bucker Bu 181,Egyptian Air Force Museum,on_display
+Heliopolis,Gomhouria,Mk.6,383,,EG,,,fixed_wing,monoplane,military,trainer,,Egyptian-built Bucker Bu 181 derivative; sighted Aug 2026,Gomhouria Mk6,Egyptian Air Force Museum,on_display
+McDonnell Douglas,F-4,E,7827,,EG,,,fixed_wing,monoplane,military,fighter,,c/n 3048; displayed wearing 67289; the true Egyptian serial is 7827; sighted Aug 2026,F4; F-4E; Phantom II; 67289; c/n 3048; F4E,Egyptian Air Force Museum,on_display
+General Dynamics,F-16,D,9873,,EG,,,fixed_wing,monoplane,military,fighter,,c/n BD-35; sighted Aug 2026,F16; F-16D; Fighting Falcon; c/n BD-35; F16D,Egyptian Air Force Museum,on_display
+Hiller,UH-12,E,3101,,EG,,,rotary_wing,,military,utility,,c/n 5189; sighted Aug 2026,UH12; UH-12E; Raven; c/n 5189; UH12E,Egyptian Air Force Museum,on_display
+Hispano Aviacion,HA-200,,,,EG,Saeta,,fixed_wing,monoplane,military,trainer,,Displayed as 200; Egypt licence-built the type as the Al Kahira; sighted Aug 2026,HA200; HA-200; Saeta; Al Kahira,Egyptian Air Force Museum,on_display
+Hispano Aviacion,HA-300,,,,EG,,,fixed_wing,monoplane,military,fighter,,Displayed as 300; the Messerschmitt-designed Egyptian lightweight fighter prototype; a genuinely rare airframe; sighted Aug 2026,HA300; HA-300,Egyptian Air Force Museum,on_display
+Ilyushin,Il-14,P,,,EG,,,fixed_wing,monoplane,military,transport,,Carries 1101; true serial not recorded; sighted Aug 2026,Il14; Il-14P; Crate; 1101; Il14P,Egyptian Air Force Museum,on_display
+Hongdu,K-8,,,,EG,Karakorum,,fixed_wing,monoplane,military,trainer,,Displayed as .../1; a K-8E of the Egyptian licence-assembly programme; sighted Aug 2026,K8; K-8E; JL-8; Karakorum; K8E; JL8,Egyptian Air Force Museum,on_display
+Aero,L-29,,1501,,EG,Delfin,,fixed_wing,monoplane,military,trainer,,c/n 691802; sighted Aug 2026,L29; L-29; Delfin; Maya; c/n 691802,Egyptian Air Force Museum,on_display
+Mil,Mi-4,,10,,EG,,,rotary_wing,,military,utility,,Sighted Aug 2026,Mi4; Mi-4; Hound,Egyptian Air Force Museum,on_display
+Mil,Mi-6,,801,,EG,,,rotary_wing,,military,transport,,c/n 720848; sighted Aug 2026,Mi6; Mi-6; Hook; c/n 720848,Egyptian Air Force Museum,on_display
+Mil,Mi-8,T,988,,EG,,,rotary_wing,,military,transport,,Sighted Aug 2026,Mi8; Mi-8T; Hip; Mi8T,Egyptian Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-15,UTI,1901,,EG,,,fixed_wing,monoplane,military,trainer,,Sighted Aug 2026,MiG15; MiG-15UTI; Midget; MiG15UTI,Egyptian Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-17,F,2001,,EG,,,fixed_wing,monoplane,military,fighter,,Sighted Aug 2026,MiG17; MiG-17F; Fresco; MiG17F,Egyptian Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-19,S,3024,,EG,,,fixed_wing,monoplane,military,fighter,,Sighted Aug 2026,MiG19; MiG-19S; Farmer; MiG19S,Egyptian Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-21,F-13,5001,,EG,,,fixed_wing,monoplane,military,fighter,,Sighted Aug 2026,MiG21; MiG-21F-13; Fishbed,Egyptian Air Force Museum,on_display
+Mikoyan-Gurevich,MiG-21,PFM,8301,,EG,,,fixed_wing,monoplane,military,fighter,,Sighted Aug 2026,MiG21; MiG-21PFM; Fishbed; MiG21PFM,Egyptian Air Force Museum,on_display
+Dassault,Mirage 5,E2,9170,,EG,,,fixed_wing,monoplane,military,ground_attack,,Sighted Aug 2026,Mirage 5E2; Mirage5,Egyptian Air Force Museum,on_display
+PZL,PZL-104,35A,,,EG,Wilga,,fixed_wing,monoplane,military,utility,,Carries 151; true serial not recorded; sighted Aug 2026,PZL104; PZL-104; Wilga 35A; 151,Egyptian Air Force Museum,on_display
+Aerospatiale,SA 342,L,3367,,EG,Gazelle,,rotary_wing,,military,ground_attack,,c/n 2057; sighted Aug 2026,SA342; SA.342L; Gazelle; c/n 2057,Egyptian Air Force Museum,on_display
+Sukhoi,Su-7,BMK,7001,,EG,,,fixed_wing,monoplane,military,ground_attack,,Sighted Aug 2026,Su7; Su-7BMK; Fitter; Su7BMK,Egyptian Air Force Museum,on_display
+Sukhoi,Su-17,K,7751,,EG,,,fixed_wing,monoplane,military,ground_attack,,Egyptian export Fitter; sighted Aug 2026,Su17; Su-17K; Fitter; Su17K,Egyptian Air Force Museum,on_display
+Tupolev,Tu-16,,,,EG,4012,,fixed_wing,monoplane,military,bomber,,c/n 63400704; the only preserved Egyptian Badger; sighted Aug 2026,Tu16; Tu-16; Badger; c/n 63400704,Egyptian Air Force Museum,on_display

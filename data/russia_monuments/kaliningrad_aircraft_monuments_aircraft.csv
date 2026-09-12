@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Sukhoi,Su-24,,72,,,,,fixed_wing,monoplane,military,ground_attack,,russianplanes.net monument point 23944,Su24,Kaliningrad Aircraft Monuments,on_display
+Mil,Mi-24,,,,,,,rotary_wing,,military,ground_attack,,russianplanes.net monument point 23945,Mi24,Kaliningrad Aircraft Monuments,on_display
+Sukhoi,Su-27,UB,689 Red,96310405011,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 23946; contributor note (ru): На день полка (689 гв. иап) 15.10.2020 установлен в качестве памятника у КПП а/д Чкаловск.; source records the bort as 689-красный,Su27; Su27UB,Kaliningrad Aircraft Monuments,on_display

@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Boeing Vertol,CH-47,D,92-00293,Chinook,,rotary_wing,,military,transport,,FY92 CH-47D block; c/n B043; Aerial Visuals fix 45.538131 -94.056150 at the Minnesota Army National Guard support facility at St Cloud Regional Airport,c/n B043; CH47; CH47D,Saint Cloud Army Aviation Support Facility -- Saint Cloud,on_display
+Bell,AH-1,S,83-24189,Cobra,,rotary_wing,,military,ground_attack,,FY83 AH-1S Modernized block; c/n 22337; Aerial Visuals fix 45.538197 -94.055786,c/n 22337; AH1; AH1S,Saint Cloud Army Aviation Support Facility -- Saint Cloud,on_display
+Bell,UH-1,H,70-16435,Iroquois,Huey,rotary_wing,,military,utility,,FY70 UH-1H block; c/n 12740; Aerial Visuals fix 45.538061 -94.055653,c/n 12740; UH1; UH1H,Saint Cloud Army Aviation Support Facility -- Saint Cloud,on_display

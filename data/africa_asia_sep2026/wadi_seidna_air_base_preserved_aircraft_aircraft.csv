@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Shenyang,F-5,,710,,SD,,,fixed_wing,monoplane,military,fighter,,Chinese-built MiG-17F equivalent supplied to Sudan; plinthed at Wadi Seidna; logged 30 Aug 2017,F5; Shenyang F-5; J-5; MiG-17F; J5; MiG17F,Wadi Seidna Air Base Preserved Aircraft,on_display
+Shenyang,FT-5,,719,,SD,,,fixed_wing,monoplane,military,trainer,,Chinese-built MiG-15UTI equivalent supplied to Sudan; plinthed at Wadi Seidna; logged 27 Apr 2019,FT5; Shenyang FT-5; JJ-5; JJ5,Wadi Seidna Air Base Preserved Aircraft,on_display

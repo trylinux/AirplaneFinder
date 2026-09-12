@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Avioane Craiova,IAR 93,A,205,,RO,,,fixed_wing,monoplane,military,ground_attack,1986,Single-seat MB-series airframe; left the factory 21 Apr 1986; year_built from the published factory roll-out date,IAR-93; IAR93; Vultur; SC 205,Arsenal Park Orăştie,on_display
+Avioane Craiova,IAR 93,A,207,,RO,,,fixed_wing,monoplane,military,ground_attack,1986,Single-seat MB-series airframe; left the factory in 1986; year_built from the published factory roll-out year,IAR-93; IAR93; Vultur; SC 207,Arsenal Park Orăştie,on_display
+Antonov,An-2,,,,RO,,,fixed_wing,biplane,civilian,utility,,OSM node 13342562610 inside the park; no registration recorded,An2; Colt,Arsenal Park Orăştie,on_display

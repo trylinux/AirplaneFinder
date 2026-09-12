@@ -1,0 +1,45 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Grumman,NF-14,D,161623,Tomcat,,fixed_wing,monoplane,military,test,,N-prefix denotes a permanently modified test airframe,NF-14D; NF14; NF14D,Patuxent River Naval Air Museum,on_display
+Grumman,EA-6,B,158033,Prowler,,fixed_wing,monoplane,military,electronic_warfare,,,EA-6B; EA6; EA6B,Patuxent River Naval Air Museum,on_display
+Grumman,NA-6,E,156997,Intruder,,fixed_wing,monoplane,military,ground_attack,,Permanently modified test Intruder,NA-6E; A-6E; NA6; NA6E; A6E,Patuxent River Naval Air Museum,on_display
+Grumman,E-2,B,152476,Hawkeye,,fixed_wing,monoplane,military,recon,,,E-2B; E2; E2B,Patuxent River Naval Air Museum,on_display
+Grumman,C-2,A,162142,Greyhound,,fixed_wing,monoplane,military,transport,,,C-2A; C2; C2A,Patuxent River Naval Air Museum,on_display
+Grumman,S-2,D,149240,Tracker,,fixed_wing,monoplane,military,other,,,S-2D; S2; S2D,Patuxent River Naval Air Museum,on_display
+Grumman,F9F,8B,,Cougar,,fixed_wing,monoplane,military,fighter,,BuNo 144275,F9F-8B,Patuxent River Naval Air Museum,on_display
+Lockheed,S-3,B,159770,Viking,,fixed_wing,monoplane,military,other,,,S-3B; S3; S3B,Patuxent River Naval Air Museum,on_display
+Lockheed,KC-130,F,148892,Hercules,,fixed_wing,monoplane,military,tanker,,COCKPIT SECTION only,KC-130F; KC130; KC130F,Patuxent River Naval Air Museum,on_display
+Lockheed Martin,X-35,C,300,,,fixed_wing,monoplane,military,experimental,,Joint Strike Fighter carrier demonstrator; the sister X-35B is at the Udvar-Hazy Center in Virginia and is NOT recorded here,X-35C; X35; X35C,Patuxent River Naval Air Museum,on_display
+Boeing,X-32,B,,,,fixed_wing,monoplane,military,experimental,,Joint Strike Fighter STOVL demonstrator,X-32B; X32; X32B,Patuxent River Naval Air Museum,on_display
+North American,RA-5,C,156643,Vigilante,,fixed_wing,monoplane,military,recon,,,RA-5C; RA5; RA5C,Patuxent River Naval Air Museum,on_display
+North American,T-2,C,158320,Buckeye,,fixed_wing,monoplane,military,trainer,,,T-2C; T2; T2C,Patuxent River Naval Air Museum,on_display
+North American,NT-39,D,150987,Sabreliner,,fixed_wing,monoplane,military,test,,Permanently modified test Sabreliner,NT-39D; NT39; NT39D,Patuxent River Naval Air Museum,on_display
+Northrop,T-38,A,623625,Talon,,fixed_wing,monoplane,military,trainer,,Rendered 623625 by Wikipedia — this is USAF 62-3625 written without the hyphen; serial fits the FY1962 T-38A block,T-38A; T38; T38A,Patuxent River Naval Air Museum,on_display
+LTV,NA-7,A,152658,Corsair II,,fixed_wing,monoplane,military,ground_attack,,Permanently modified test Corsair II,NA-7A; A-7A; NA7; NA7A; A7A,Patuxent River Naval Air Museum,on_display
+Douglas,NF-6,A,134764,Skyray,,fixed_wing,monoplane,military,fighter,,Wikipedia's NF-6A is the F4D-1/F-6A Skyray as a permanent test airframe,F-6A; F4D-1; NF6; NF6A; F6A,Patuxent River Naval Air Museum,on_display
+McDonnell Douglas,F-4,J,153071,Phantom II,,fixed_wing,monoplane,military,fighter,,,F-4J; F4; F4J,Patuxent River Naval Air Museum,on_display
+McDonnell Douglas,EF-4,B,153070,Phantom II,,fixed_wing,monoplane,military,electronic_warfare,,COCKPIT SECTION only,EF-4B; EF4; EF4B,Patuxent River Naval Air Museum,on_display
+McDonnell Douglas,F/A-18,B,162885,Hornet,,fixed_wing,monoplane,military,fighter,,Painted in Blue Angels markings — painted markings are not identity; the BuNo is the identity,F-18B; F/A18; F/A18B; F18B,Patuxent River Naval Air Museum,on_display
+McDonnell Douglas,NF/A-18,A,161353,Hornet,,fixed_wing,monoplane,military,test,,Permanently modified test Hornet,NF-18A; NF/A18; NF/A18A; NF18A,Patuxent River Naval Air Museum,on_display
+McDonnell Douglas,NA-4,M,155049,Skyhawk,,fixed_wing,monoplane,military,test,,Permanently modified test Skyhawk,NA-4M; NA4; NA4M,Patuxent River Naval Air Museum,on_display
+McDonnell Douglas,AV-8,B,161576,Harrier II,,fixed_wing,monoplane,military,ground_attack,,,AV-8B; AV8; AV8B,Patuxent River Naval Air Museum,on_display
+McDonnell Douglas,T-45,A,162788,Goshawk,,fixed_wing,monoplane,military,trainer,,COCKPIT SECTION only,T-45A; T45; T45A,Patuxent River Naval Air Museum,on_display
+Mikoyan-Gurevich,MiG-21,MF,,,,fixed_wing,monoplane,military,fighter,,COCKPIT SECTION only; painted 74 Red — painted markings are not identity and no true serial is recorded,74 Red; MiG-21MF; MiG21; MiG21MF,Patuxent River Naval Air Museum,on_display
+Beechcraft,T-34,B,140921,Mentor,,fixed_wing,monoplane,military,trainer,,,T-34B; T34; T34B,Patuxent River Naval Air Museum,on_display
+Beechcraft,PD-373,,N8284M,Texan II,,fixed_wing,monoplane,military,trainer,,Company demonstrator for the T-6 Texan II programme; civil registration,N8284M; PD-373; PD373,Patuxent River Naval Air Museum,on_display
+Curtiss,A-1,,,Triad,,fixed_wing,biplane,military,trainer,,REPLICA of the US Navy's first aeroplane,A-1 Triad; A1,Patuxent River Naval Air Museum,on_display
+NASC,TigerShark,XP,N947TS,,,fixed_wing,monoplane,civilian,experimental,,,N947TS; TigerShark,Patuxent River Naval Air Museum,on_display
+Bell-Boeing,MV-22,B,164940,Osprey,,fixed_wing,monoplane,military,transport,,Tiltrotor — recorded as fixed_wing because it takes off vertically but cruises on a fixed wing; flag for a project ruling,MV-22B; MV22; MV22B,Patuxent River Naval Air Museum,on_display
+Bell,TH-1,L,157842,Iroquois,,rotary_wing,,military,trainer,,,TH-1L; TH1; TH1L,Patuxent River Naval Air Museum,on_display
+Bell,OH-58,C,,Kiowa,,rotary_wing,,military,recon,,COCKPIT SECTION only,OH-58C; OH58; OH58C,Patuxent River Naval Air Museum,on_display
+Bell,TR911X,,,Eagle Eye,,rotary_wing,,military,drone,,Tiltrotor uncrewed demonstrator,Eagle Eye,Patuxent River Naval Air Museum,on_display
+Boeing Vertol,CH-46,E,152578,Sea Knight,,rotary_wing,,military,transport,,,CH-46E; CH46; CH46E,Patuxent River Naval Air Museum,on_display
+Sikorsky,UH-3,A,148038,Sea King,,rotary_wing,,military,transport,,,UH-3A; UH3; UH3A,Patuxent River Naval Air Museum,on_display
+Sikorsky,NCH-53,A,151686,Sea Stallion,,rotary_wing,,military,transport,,Permanently modified test Sea Stallion,NCH-53A; NCH53; NCH53A,Patuxent River Naval Air Museum,on_display
+Kaman,SH-2,G,161642,Seasprite,,rotary_wing,,military,other,,,SH-2G; SH2; SH2G,Patuxent River Naval Air Museum,on_display
+Kaman,CQ-24,A,169221,K-MAX,,rotary_wing,,military,drone,,Uncrewed cargo helicopter used in Afghanistan,K-MAX; CQ-24A; CQ24; CQ24A,Patuxent River Naval Air Museum,on_display
+Gyrodyne,QH-50,D,DS-1679,DASH,,rotary_wing,,military,drone,,Drone Anti-Submarine Helicopter,QH-50D; DASH; QH50; QH50D,Patuxent River Naval Air Museum,on_display
+Northrop Grumman,RQ-8,A,166414,Fire Scout,,rotary_wing,,military,drone,,,RQ-8A; RQ8; RQ8A,Patuxent River Naval Air Museum,on_display
+Northrop Grumman,X-47,A,,Pegasus,,fixed_wing,monoplane,military,drone,,MOCK-UP only per Wikipedia,X-47A; Pegasus; X47; X47A,Patuxent River Naval Air Museum,on_display
+AAI,RQ-2,,,Pioneer,,fixed_wing,monoplane,military,drone,,Vehicle number 101,RQ-2; Pioneer; RQ2,Patuxent River Naval Air Museum,on_display
+BAE Systems,Silver Fox,,,,,fixed_wing,monoplane,military,drone,,Vehicle number 103,Silver Fox,Patuxent River Naval Air Museum,on_display
+Honeywell,RQ-16,B,A11022,T-Hawk,,rotary_wing,,military,drone,,Ducted-fan micro air vehicle,T-Hawk; RQ-16B; RQ16; RQ16B,Patuxent River Naval Air Museum,on_display

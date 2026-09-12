@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mitsubishi,F-104,J,76-8688,,JP,Starfighter,,fixed_wing,monoplane,military,fighter,,A composite: the rear fuselage comes from 76-8683,F104J; c/n 3188; F104,JASDF Naha Air Base,on_display
+Mitsubishi,F-4,EJ Kai,37-8321,,JP,Phantom II,,fixed_wing,monoplane,military,fighter,,,F4EJ; Phantom; c/n M-021; F4,JASDF Naha Air Base,on_display
+Kawasaki,T-33,A,81-5327,,JP,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T33A; c/n 1127; ex USAF 56-6874; T33,JASDF Naha Air Base,on_display
+Beechcraft,B-65,,03-3095,,JP,Queen Air,,fixed_wing,monoplane,military,trainer,,One of five B-65s bought by the JASDF for instrument training and operated on loan by the JMSDF as 6728 at Tokushima; returned to the JASDF 5 Mar 1980; the leading zero of the serial denotes 1980 not 1970,B65; 6728; c/n LC-335; ex N3945A,JASDF Naha Air Base,on_display
+Boeing,F-15,J,,,JP,Eagle,,fixed_wing,monoplane,military,fighter,,Fin of the aircraft that crashed on 5 Jul 2011 killing the pilot; erected as a flight safety memorial,F15J; 72-8879; Eagle; F15,JASDF Naha Air Base,on_display

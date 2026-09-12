@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,OH-58,A,69-16262,Kiowa,,rotary_wing,,military,recon,,Gate guardian on the armory lawn; OpenStreetMap tags the node memorial=gate_guardian in the current extract; block check passes for OH-58A FY69 69-16058 to 69-16321,Kiowa; c/n 40483; OH58; OH58A,Kentucky Army National Guard Armory 1204th Aviation Support Battalion -- Independence,on_display

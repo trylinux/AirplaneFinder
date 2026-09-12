@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,PF,0404,,,,,fixed_wing,monoplane,military,fighter,,Mapped on the Pluimersdijk at Zelhem with the serial in the ref tag; 0404 has the shape of a Czechoslovak or Soviet block number and the operating air force is not recorded,MiG21; MiG-21PF; Fishbed; MiG21PF,MiG-21 and L-29 Display -- Zelhem,on_display
+Aero,L-29,,,,,Delfin,,fixed_wing,monoplane,military,trainer,,Mapped alongside the MiG-21 on the Pluimersdijk; no serial recorded,L29; L-29; Delfin; Maya,MiG-21 and L-29 Display -- Zelhem,on_display

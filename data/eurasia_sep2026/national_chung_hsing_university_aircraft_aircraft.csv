@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,F-100,A,0234,,TW,Super Sabre,,fixed_wing,monoplane,military,fighter,,Tactical number 0234 from OSM node 8882543519,F100A; 0234; F100,National Chung Hsing University Aircraft -- Taichung,on_display
+AIDC,PL-1,,5804,,TW,Chieh Shou,,fixed_wing,monoplane,military,trainer,,介壽號 primary trainer annotated 中興一號 (Chung Hsing No. 1) by the surveyor; tactical number 5804 from OSM node 8882543520,PL1; 5804; 介壽號; 中興一號,National Chung Hsing University Aircraft -- Taichung,on_display

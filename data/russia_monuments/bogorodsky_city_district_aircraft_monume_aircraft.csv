@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-15,,03,,,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 2754,MiG15,Bogorodsky city district Aircraft Monuments,on_display
+Yakovlev,Yak-25,M,01,,,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 2755,Yak25; Yak25M,Bogorodsky city district Aircraft Monuments,on_display
+Yakovlev,Yak-25,M,02,,,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 2756,Yak25; Yak25M,Bogorodsky city district Aircraft Monuments,on_display

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Kawasaki,OH-6,J,31091,,JP,Cayuse,,rotary_wing,,military,recon,,At 32.0449N 130.9143E; replaced 31042; serials painted out when seen in May 2017,OH6J; OH6,JGSDF Camp Ebino,on_display
+Fuji,UH-1,H,41628,,JP,Iroquois,,rotary_wing,,military,utility,,At 32.0448N 130.9144E; probably replaced a UH-1B; nose and door serials painted out when seen in 2017,UH1H; Huey; UH1,JGSDF Camp Ebino,on_display

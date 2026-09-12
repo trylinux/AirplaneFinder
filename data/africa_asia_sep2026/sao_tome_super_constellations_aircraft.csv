@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,L-1049,H,CF-NAL,,CA,Super Constellation,,fixed_wing,monoplane,civilian,freighter,,One of two Canadian Super Constellations left at São Tomé after the 1968-70 Biafran airlift; c/n 1049H-4831,L1049; L-1049H; Super Constellation; Connie; CFNAL,São Tomé Super Constellations,on_display
+Lockheed,L-1049,H,CF-NAM,,CA,Super Constellation,,fixed_wing,monoplane,civilian,freighter,,Second Biafran airlift Super Constellation; c/n 1049H-4832,L1049; L-1049H; Super Constellation; Connie; CFNAM,São Tomé Super Constellations,on_display

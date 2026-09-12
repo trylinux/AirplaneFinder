@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+CASA,C-212,,,,ES,Aviocar,,fixed_wing,monoplane,military,transport,,Mapped as a CASA C-212 Aviocar in the INTA settlement at Paracuellos de Jarama; serial not recorded,C212; Aviocar,Aeronaves del INTA y Base Príncipe -- Paracuellos de Jarama,on_display
+Unidentified,Aircraft,,,,,,,fixed_wing,monoplane,military,other,,Second airframe mapped nearby at Base Príncipe and surveyed in 2023; no type recorded,,Aeronaves del INTA y Base Príncipe -- Paracuellos de Jarama,on_display

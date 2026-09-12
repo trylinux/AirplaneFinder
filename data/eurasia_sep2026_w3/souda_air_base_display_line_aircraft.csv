@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+LTV,TA-7,C,156774,,GR,Corsair II,,fixed_wing,monoplane,military,trainer,,c/n E-041; displayed wearing the false serial 155774; last noted May 2025,TA7C; TA7; A-7; A7; Corsair II; 155774,Souda Air Base Display Line,on_display
+Republic,F-84,F,36745,,GR,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,Last noted September 2025,F84F; F84; Thunderstreak,Souda Air Base Display Line,on_display
+Lockheed,T-33,A,58683,,GR,Shooting Star,,fixed_wing,monoplane,military,trainer,,c/n 580-1652; carries the code TR-683,T33A; T33; TR-683; Shooting Star; TR683,Souda Air Base Display Line,on_display

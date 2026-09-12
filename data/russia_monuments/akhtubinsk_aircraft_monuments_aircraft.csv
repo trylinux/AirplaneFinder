@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Tupolev,Tu-16,R,12 Red,1881809,RU,,,fixed_wing,monoplane,military,bomber,,russianplanes.net monument point 91; source records the bort as 12-красный,Tu16; Tu16R,Akhtubinsk Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-21,PF,35,,,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 1852,MiG21; MiG21PF,Akhtubinsk Aircraft Monuments,on_display

@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+General Dynamics,F-16,A,,,NL,,,fixed_wing,monoplane,military,fighter,,Mapped on the Poortwachterslaan; no serial recorded in any source found,F16; F-16A; F16A,Vliegbasis Eindhoven Aircraft Displays,on_display
+Republic,F-84,G,,,NL,,,fixed_wing,monoplane,military,ground_attack,,Mapped on the Poortwachterslaan; no serial recorded,F84; F-84G; Thunderjet; F84G,Vliegbasis Eindhoven Aircraft Displays,on_display
+Republic,F-84,F,,,NL,,,fixed_wing,monoplane,military,ground_attack,,Mapped on the Poortwachterslaan; no serial recorded,F84; F-84F; Thunderstreak; F84F,Vliegbasis Eindhoven Aircraft Displays,on_display
+Transall,C-160,,,,NL,,,fixed_wing,monoplane,military,transport,,The Koninklijke Luchtmacht operated only two C-160s and flew them from Eindhoven which makes the location internally consistent; no serial recorded,C160; C-160; Transall,Vliegbasis Eindhoven Aircraft Displays,on_display
+Fokker,F.27,300M,,,NL,Troopship,,fixed_wing,monoplane,military,transport,,Mapped at Flight Forum on the north side of the base,F27; F-27; Troopship,Vliegbasis Eindhoven Aircraft Displays,on_display
+Canadair,NF-5,A,,,NL,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,Mapped on the Poortwachterslaan; no serial recorded,NF5; NF-5A; CF-5; Freedom Fighter; NF5A; CF5,Vliegbasis Eindhoven Aircraft Displays,on_display

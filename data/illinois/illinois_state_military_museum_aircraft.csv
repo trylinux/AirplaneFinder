@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Republic,F-84,F,52-7051,Thunderstreak,,fixed_wing,monoplane,military,fighter,,Displayed on the Camp Lincoln grounds in Springfield,F84; F84F,Illinois State Military Museum,on_display
+Bell,UH-1,A,59-1641,Iroquois,,rotary_wing,,military,utility,,Displayed on the Camp Lincoln grounds,UH1; UH1A,Illinois State Military Museum,on_display
+Bell,AH-1,S,67-15754,Cobra,,rotary_wing,,military,ground_attack,,Displayed on the Camp Lincoln grounds,AH1; AH1S,Illinois State Military Museum,on_display
+Bell,UH-1,,,Iroquois,,rotary_wing,,military,utility,,A second Huey recorded by Aerial Visuals at a separate site on the Camp Lincoln grounds; no serial recorded,UH1,Illinois State Military Museum,on_display
+Bell,UH-1,,,Iroquois,,rotary_wing,,military,utility,,Second Huey recorded at a separate Camp Lincoln pad by Aerial Visuals; no serial recovered,Huey; UH1,Illinois State Military Museum,on_display

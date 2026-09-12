@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Sukhoi,Su-22,,9103,,PL,Fitter,,fixed_wing,monoplane,military,ground_attack,,Tactical number 9103 recorded by the mapper. Variant deliberately BLANK: 9103 does not sit in the Polish single-seat Su-22M4 3xxx/4xxx block and may indicate a two-seat Su-22UM3K; do not assume M4,Su22; Su-17; Fitter; 9103; Su17,Su-22 9103 Monument -- Mielnica Duża,on_display

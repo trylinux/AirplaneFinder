@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-15,,,,RU,,,fixed_wing,monoplane,military,fighter,,OpenStreetMap node/3849708767. THE OSM LABEL «МіГ-15ВТЗ» IS NOT A REAL SUB-TYPE — the same garbling pattern as the Vaŭkavysk airframe — and is preserved in aliases; the model is left as a plain MiG-15 with no variant guessed,MiG-15; MiG15; Fagot; МіГ-15ВТЗ,Помнік МіГ-15 -- Слонім,on_display

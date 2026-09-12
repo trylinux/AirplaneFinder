@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-6,,606,,DZ,,,rotary_wing,,military,transport,,Also carried the civil registration 7T-WMA; plinthed at Blida; logged 12 Jan 2017,Mi6; Mi-6; Hook; 7T-WMA; 7TWMA,Blida Air Base Preserved Aircraft,on_display
+Sukhoi,Su-7,BMK,86,,DZ,,,fixed_wing,monoplane,military,ground_attack,,Plinthed at Blida; logged 27 Sep 2017,Su7; Su-7BMK; Fitter; Su7BMK,Blida Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-21,F-13,67,,DZ,,,fixed_wing,monoplane,military,fighter,,Recorded as 67/8325; plinthed at Blida; logged 20 Apr 2019,MiG21; MiG-21F-13; Fishbed; 8325,Blida Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-21,U,FC-90,,DZ,,,fixed_wing,monoplane,military,trainer,,c/n 665517; plinthed at Blida; logged 15 May 2025,MiG21; MiG-21U; Mongol; FC90; c/n 665517; MiG21U,Blida Air Base Preserved Aircraft,on_display

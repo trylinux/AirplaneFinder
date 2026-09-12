@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aermacchi,MB-326,KB,G-713,,GH,,,fixed_wing,monoplane,military,ground_attack,,Plinthed; c/n 6579,MB326; MB-326KB; G713; MB326KB,Ghana Air Force Base Tamale Displays,on_display
+Fokker,F.27,-400M,G-521,,GH,Troopship,,fixed_wing,monoplane,military,transport,,Instructional airframe; wears code B; c/n 10507,F27; F-27; Troopship; G521,Ghana Air Force Base Tamale Displays,in_storage

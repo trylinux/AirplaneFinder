@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Kawasaki,V-107,A,51805,,JP,,,rotary_wing,,military,transport,,At 33.2968N 131.4571E; on satellite imagery since 2004,V107A; KV107; V107,JGSDF Camp Beppu,on_display
+Fuji,UH-1,B,41503,,JP,Iroquois,,rotary_wing,,military,utility,,At 33.2963N 131.4576E; the UH-1B census flags that this airframe may have been replaced by an H model so the type attribution is not secure,UH1B; Huey; UH1,JGSDF Camp Beppu,on_display
+Fuji,UH-1,H,41657,,JP,Iroquois,,rotary_wing,,military,utility,,At 33.2963N 131.4575E; on satellite imagery since 2004; this and the UH-1B entry may refer to the same display position at different dates,UH1H; Huey; UH1,JGSDF Camp Beppu,on_display

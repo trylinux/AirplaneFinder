@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Vickers,Viscount,839,Z-WGB,,ZW,Viscount,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-Air Rhodesia Viscount; c/n 436,Viscount 839; V839; ZWGB,Viscount Memorial Airframes -- Chegutu,on_display
+Vickers,Viscount,838,Z-WGC,,ZW,Viscount,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-Air Rhodesia Viscount; c/n 446,Viscount 838; V838; ZWGC,Viscount Memorial Airframes -- Chegutu,on_display

@@ -1,0 +1,86 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Atlas Aircraft Corporation,Kudu,C4M,987,,ZA,Kudu,,fixed_wing,monoplane,military,utility,,Atlas-built light utility aircraft developed from the Aermacchi AL-60; c/n 29,C4M; C-4M; Kudu C4M,South African Air Force Museum Swartkop,on_display
+Avro,Anson,Mk I,4437,,ZA,Anson,,fixed_wing,monoplane,military,trainer,,SAAF Anson; construction number not recorded by the source,Anson I,South African Air Force Museum Swartkop,on_display
+Boeing,707,-328C,1417,,ZA,,,fixed_wing,monoplane,military,transport,,Ex-Air France airliner converted for SAAF long-range transport and tanking; c/n 19723,B707; B-707; 707-328C; c/n 19723,South African Air Force Museum Swartkop,on_display
+Boeing,707,-328C,1419,,ZA,,,fixed_wing,monoplane,military,tanker,,Second SAAF 707; c/n 19917,B707; B-707; 707-328C; c/n 19917,South African Air Force Museum Swartkop,on_display
+Blackburn,Buccaneer,S.50,414,,ZA,Buccaneer,,fixed_wing,monoplane,military,ground_attack,,SAAF-specific land-based Buccaneer variant with rocket-boost provision; c/n B3-14-63,Buccaneer S50; S.50; c/n B3-14-63,South African Air Force Museum Swartkop,on_display
+Blackburn,Buccaneer,S.50,421,,ZA,Buccaneer,,fixed_wing,monoplane,military,ground_attack,,c/n B3-06-64,Buccaneer S50; S.50; c/n B3-06-64,South African Air Force Museum Swartkop,on_display
+Transall,C-160,Z,337,,ZA,Transall,,fixed_wing,monoplane,military,transport,,SAAF Transall; c/n Z4,C160; C-160Z; C160Z; Transall,South African Air Force Museum Swartkop,on_display
+English Electric,Canberra,T.4,457,,ZA,Canberra,,fixed_wing,monoplane,military,bomber,,SAAF Canberra trainer; c/n R3/EA3/6616/71543,Canberra T4; T.4,South African Air Force Museum Swartkop,on_display
+Cessna,185,A,718,,ZA,Skywagon,,fixed_wing,monoplane,military,utility,,SAAF liaison aircraft; c/n 185-0350,Ce.185; Ce185; C-185; 185A; Skywagon; C185,South African Air Force Museum Swartkop,on_display
+Atlas Aircraft Corporation,Cheetah,C,342,,ZA,Cheetah,,fixed_wing,monoplane,military,fighter,,Cheetah is the Atlas rebuild of the Dassault Mirage III with canards; a new nose and Israeli-derived avionics; single-seat C model; c/n 004,Cheetah C; CheetahC; Mirage III rebuild,South African Air Force Museum Swartkop,on_display
+Atlas Aircraft Corporation,Cheetah,E,842,,ZA,Cheetah,,fixed_wing,monoplane,military,fighter,,Interim single-seat Cheetah E converted from Mirage IIIEZ airframes,Cheetah E; CheetahE,South African Air Force Museum Swartkop,on_display
+Atlas Aircraft Corporation,Cheetah,D2,847,,ZA,Cheetah,,fixed_wing,monoplane,military,fighter,,Two-seat Cheetah D second-batch conversion; c/n 205,Cheetah D2; CheetahD2; Cheetah D,South African Air Force Museum Swartkop,on_display
+CASA,CN-235,M,8026,,ZA,,,fixed_wing,monoplane,military,transport,,SAAF CN-235M; c/n P-003,CN235; CN-235M; CN235M,South African Air Force Museum Swartkop,on_display
+Douglas,C-47,A,6859,,ZA,Dakota,,fixed_wing,monoplane,military,transport,,c/n 12586,C47; C-47A; Dakota; c/n 12586; C47A,South African Air Force Museum Swartkop,on_display
+Douglas,DC-3,DST-144,ZS-DAK,,ZA,Dakota,,fixed_wing,monoplane,civilian,commercial_transport,,Douglas Sleeper Transport airframe; c/n 1498,DC3; DC-3; DST-144; ZSDAK; DST144,South African Air Force Museum Swartkop,on_display
+Edgar Percival,EP.9,Prospector,ZS-CHZ,,ZA,Prospector,,fixed_wing,monoplane,civilian,utility,,c/n 36,EP9; EP-9; Prospector; ZSCHZ,South African Air Force Museum Swartkop,on_display
+Canadair,Sabre,Mk 6,361,,ZA,Sabre,,fixed_wing,monoplane,military,fighter,,Canadair-built F-86; SAAF Sabre Mk 6; wears code F; c/n 1470,Sabre Mk.6; CL-13B; CL13B; F-86; F86,South African Air Force Museum Swartkop,on_display
+Canadair,Sabre,Mk 6,367,,ZA,Sabre,,fixed_wing,monoplane,military,fighter,,Wears code E; c/n 1476,Sabre Mk.6; CL-13B; CL13B; F-86; F86,South African Air Force Museum Swartkop,on_display
+Sikorsky,S-51,,A1,,ZA,,,rotary_wing,,military,search_rescue,,First SAAF helicopter type; c/n 51.102,S51; S-51; Dragonfly,South African Air Force Museum Swartkop,on_display
+de Havilland,DH.87,B,2007,,ZA,Hornet Moth,,fixed_wing,biplane,military,trainer,,c/n 8121,DH87; DH.87B; Hornet Moth,South African Air Force Museum Swartkop,on_display
+Piper,L-18,-08,ZS-ATL,,ZA,Super Cub,,fixed_wing,monoplane,civilian,private,,c/n 18-2058,L18; L-18; PA-18; Super Cub; ZSATL; PA18,South African Air Force Museum Swartkop,on_display
+Atlas Aircraft Corporation,Impala,Mk I,532,,ZA,Impala,,fixed_wing,monoplane,military,trainer,,Impala Mk I is the Atlas licence-built Aermacchi MB-326M; wears code 2; c/n A57,MB-326M; MB326M; MB-326; Impala Mk1; Impala I; MB326,South African Air Force Museum Swartkop,on_display
+Atlas Aircraft Corporation,Impala,Mk I,589,,ZA,Impala,,fixed_wing,monoplane,military,trainer,,Licence-built Aermacchi MB-326M; c/n A114,MB-326M; MB326M; Impala Mk1; Impala I,South African Air Force Museum Swartkop,on_display
+Atlas Aircraft Corporation,Impala,Mk II,1000,,ZA,Impala,,fixed_wing,monoplane,military,ground_attack,,Impala Mk II is the single-seat Atlas licence-built Aermacchi MB-326K; c/n 6555,MB-326K; MB326K; Impala Mk2; Impala II,South African Air Force Museum Swartkop,on_display
+Atlas Aircraft Corporation,Impala,Mk II,1065,,ZA,Impala,,fixed_wing,monoplane,military,ground_attack,,Licence-built Aermacchi MB-326K; c/n 66,MB-326K; MB326K; Impala Mk2; Impala II,South African Air Force Museum Swartkop,on_display
+Dassault,Mirage III,CZ,805,,ZA,Mirage III,,fixed_wing,monoplane,military,fighter,,SAAF interceptor variant; c/n 158,Mirage 3CZ; Mirage3CZ; MirageIII,South African Air Force Museum Swartkop,on_display
+Dassault,Mirage III,BZ,816,,ZA,Mirage III,,fixed_wing,monoplane,military,trainer,,Two-seat trainer variant; c/n 218,Mirage 3BZ; Mirage3BZ,South African Air Force Museum Swartkop,on_display
+Dassault,Mirage III,BZ,818,,ZA,Mirage III,,fixed_wing,monoplane,military,trainer,,c/n 230,Mirage 3BZ; Mirage3BZ,South African Air Force Museum Swartkop,on_display
+Dassault,Mirage III,RZ,835,,ZA,Mirage III,,fixed_wing,monoplane,military,recon,,Reconnaissance variant,Mirage 3RZ; Mirage3RZ,South African Air Force Museum Swartkop,on_display
+Dassault,Mirage III,RZ,838,,ZA,Mirage III,,fixed_wing,monoplane,military,recon,,,Mirage 3RZ; Mirage3RZ,South African Air Force Museum Swartkop,on_display
+Dassault,Mirage F1,CZ,203,,ZA,Mirage F1,,fixed_wing,monoplane,military,fighter,,Interceptor variant; c/n 63,Mirage F1CZ; MirageF1CZ; F1CZ,South African Air Force Museum Swartkop,on_display
+Dassault,Mirage F1,CZ,211,,ZA,Mirage F1,,fixed_wing,monoplane,military,fighter,,c/n 72,Mirage F1CZ; MirageF1CZ; F1CZ,South African Air Force Museum Swartkop,on_display
+Dassault,Mirage F1,AZ,235,,ZA,Mirage F1,,fixed_wing,monoplane,military,ground_attack,,Ground-attack variant; wears code K; c/n 143,Mirage F1AZ; MirageF1AZ; F1AZ,South African Air Force Museum Swartkop,on_display
+Lockheed,Ventura,Mk V,6487,,ZA,Ventura,,fixed_wing,monoplane,military,bomber,,c/n 237-6219,PV-1; Ventura V; Ventura GR.V; PV1,South African Air Force Museum Swartkop,on_display
+Lockheed,Ventura,Mk V,6498,,ZA,Ventura,,fixed_wing,monoplane,military,bomber,,c/n 237-6290,PV-1; Ventura V; Ventura GR.V; PV1,South African Air Force Museum Swartkop,on_display
+Atlas Aircraft Corporation,XH-2,Rooivalk demonstrator,683,,ZA,,,rotary_wing,,military,experimental,,Atlas XH-2 attack-helicopter technology demonstrator; c/n ADM-001,XH2; XH-2; ADM-001; ADM001,South African Air Force Museum Swartkop,on_display
+Aerospatiale,SA-321,L,309,,ZA,Super Frelon,,rotary_wing,,military,transport,,c/n 129,SA.321L; SA321L; Super Frelon; SA321,South African Air Force Museum Swartkop,on_display
+Aerospatiale,SA-330,C,129,,ZA,Puma,,rotary_wing,,military,transport,,c/n 1070,SA.330C; SA330C; Puma; SA330,South African Air Force Museum Swartkop,on_display
+Aerospatiale,SA-330,H,175,,ZA,Puma,,rotary_wing,,military,transport,,c/n 1468,SA.330H; SA330H; Puma; SA330,South African Air Force Museum Swartkop,on_display
+Atlas Aircraft Corporation,XTP-1,Beta,190,,ZA,Beta,,rotary_wing,,military,experimental,,Atlas XTP-1 Beta gunship testbed rebuilt from a Puma airframe; c/n 1561,XTP1; XTP-1; Beta,South African Air Force Museum Swartkop,on_display
+Atlas Aircraft Corporation,TP-1,,1221,,ZA,,,fixed_wing,monoplane,military,test,,Atlas TP-1 test airframe; c/n 022,TP1; TP-1,South African Air Force Museum Swartkop,on_display
+Sud Aviation,Alouette II,SE.3130,15,,ZA,Alouette II,,rotary_wing,,military,utility,,c/n 1452,SE.3130; SE3130; Alouette 2,South African Air Force Museum Swartkop,on_display
+Sud Aviation,Alouette III,SE.3160,29,,ZA,Alouette III,,rotary_wing,,military,utility,,c/n 1478,SE.3160; SE3160; Alouette 3,South African Air Force Museum Swartkop,on_display
+Avro,Shackleton,MR.3,1721,,ZA,Shackleton,,fixed_wing,monoplane,military,recon,,Wears code N; one of eight SAAF Shackleton MR.3s used for maritime patrol from Ysterplaat; c/n 1531,Shackleton MR3; MR.3,South African Air Force Museum Swartkop,on_display
+North American,Harvard,Mk III,7569,,ZA,Harvard,,fixed_wing,monoplane,military,trainer,,c/n 88-15277,AT-6; T-6; Harvard III; SNJ; AT6; T6,South African Air Force Museum Swartkop,on_display
+North American,Harvard,Mk III,7573,,ZA,Harvard,,fixed_wing,monoplane,military,trainer,,c/n 88-15336,AT-6; T-6; Harvard III; SNJ; AT6; T6,South African Air Force Museum Swartkop,on_display
+de Havilland,Vampire,FB.52,229,,ZA,Vampire,,fixed_wing,monoplane,military,fighter,,c/n V0581,Vampire FB52; FB.52,South African Air Force Museum Swartkop,on_display
+de Havilland,Vampire,T.55,276,,ZA,Vampire,,fixed_wing,monoplane,military,trainer,,c/n 15497,Vampire T55; T.55,South African Air Force Museum Swartkop,on_display
+Westland,Wasp,HAS.1,96,,ZA,Wasp,,rotary_wing,,military,search_rescue,,South African Navy shipborne helicopter flown from the President-class frigates; c/n F.9764; HAS.1,Wasp HAS1,South African Air Force Museum Swartkop,on_display
+Atlas Aircraft Corporation,XH-1,Alpha,001,,ZA,Alpha,,rotary_wing,,military,experimental,,Atlas XH-1 Alpha; the tandem-cockpit Alouette III conversion that began the Rooivalk programme; c/n 01,XH1; XH-1; Alpha,South African Air Force Museum Swartkop,on_display
+Mil,Mi-24,A,SU-97,,DZ,Hind,,rotary_wing,,military,ground_attack,,Ex-Algerian Air Force Hind; wears 34 yellow; c/n 4202034,Mi24; Mi-24A; Hind; 34 yellow; Mi24A,South African Air Force Museum Swartkop,on_display
+Fieseler,Fi 156,C-7,475099,,DE,Storch,,fixed_wing,monoplane,military,recon,,Luftwaffe Storch; wears the code VD+TD; c/n 475099,Fi156; Fi-156; Storch; VD+TD,South African Air Force Museum Swartkop,on_display
+Fairchild,Argus,Mk 3,KK476,,GB,Argus,,fixed_wing,monoplane,military,utility,,RAF Argus III; the military UC-61 development of the Fairchild 24; c/n 1094,UC-61; UC61; Argus III; Fairchild 24,South African Air Force Museum Swartkop,on_display
+Cessna,185,A,710,,ZA,Skywagon,,fixed_wing,monoplane,military,utility,,c/n 185-0312,Ce.185; Ce185; 185A,South African Air Force Museum Swartkop,in_storage
+Cessna,185,A,711,,ZA,Skywagon,,fixed_wing,monoplane,military,utility,,c/n 185-0314,Ce.185; Ce185; 185A,South African Air Force Museum Swartkop,in_storage
+Cessna,185,A,713,,ZA,Skywagon,,fixed_wing,monoplane,military,utility,,c/n 185-0338,Ce.185; Ce185; 185A,South African Air Force Museum Swartkop,in_storage
+Cessna,185,A,715,,ZA,Skywagon,,fixed_wing,monoplane,military,utility,,c/n 185-0344,Ce.185; Ce185; 185A,South African Air Force Museum Swartkop,in_storage
+Cessna,185,A,724,,ZA,Skywagon,,fixed_wing,monoplane,military,utility,,c/n 185-0370,Ce.185; Ce185; 185A,South African Air Force Museum Swartkop,in_storage
+Cessna,185,A,731,,ZA,Skywagon,,fixed_wing,monoplane,military,utility,,c/n 185-0390,Ce.185; Ce185; 185A,South African Air Force Museum Swartkop,in_storage
+Cessna,185,E,747,,ZA,Skywagon,,fixed_wing,monoplane,military,utility,,c/n 185-1178,Ce.185; Ce185; 185E,South African Air Force Museum Swartkop,in_storage
+Cessna,185,E,749,,ZA,Skywagon,,fixed_wing,monoplane,military,utility,,c/n 185-1183,Ce.185; Ce185; 185E,South African Air Force Museum Swartkop,in_storage
+Sikorsky,S-55,C,A4,,ZA,,,rotary_wing,,military,transport,,c/n 55.959,S55; S-55; H-19; Chickasaw; S55C; H19,South African Air Force Museum Swartkop,in_storage
+Atlas Aircraft Corporation,Impala,Mk I,562,,ZA,Impala,,fixed_wing,monoplane,military,trainer,,Licence-built Aermacchi MB-326M; c/n A87,MB-326M; MB326M; Impala Mk1,South African Air Force Museum Swartkop,in_storage
+Piaggio,P.166,S,881,,ZA,Albatross,,fixed_wing,monoplane,military,search_rescue,,SAAF maritime patrol Albatross; also carried the civil marks ZU-DFI; c/n 417,P166; P.166S; Albatross; ZU-DFI; ZUDFI,South African Air Force Museum Swartkop,in_storage
+Sud Aviation,Alouette III,SE.3160,57,,ZA,Alouette III,,rotary_wing,,military,utility,,c/n 1055,SE.3160; SE3160; Alouette 3,South African Air Force Museum Swartkop,in_storage
+Aerospatiale,SA-316,B,642,,ZA,Alouette III,,rotary_wing,,military,utility,,c/n 1250,SA.316B; SA316B; Alouette 3; SA316,South African Air Force Museum Swartkop,in_storage
+North American,Harvard,Mk IIA,7072,,ZA,Harvard,,fixed_wing,monoplane,military,trainer,,c/n 88-9868,AT-6; T-6; Harvard IIA; AT6; T6,South African Air Force Museum Swartkop,in_storage
+de Havilland,Vampire,T.11,257,,ZA,Vampire,,fixed_wing,monoplane,military,trainer,,c/n 15431,Vampire T11; T.11,South African Air Force Museum Swartkop,in_storage
+Atlas Aircraft Corporation,Kudu,C4M,ZS-WWP,,ZA,Kudu,,fixed_wing,monoplane,civilian,utility,,Civil-registered Kudu held in the museum's Swartkop storage area; c/n 22,C4M; C-4M; ZSWWP,South African Air Force Museum Swartkop,in_storage
+Dornier,Do 27,Q-1,ZS-CMA,,ZA,,,fixed_wing,monoplane,civilian,utility,,c/n 2034,Do27; Do.27Q1; Do-27; ZSCMA,South African Air Force Museum Swartkop,in_storage
+Dornier,Do 27,Q-4,ZS-FAH,,ZA,,,fixed_wing,monoplane,civilian,utility,,c/n 2035,Do27; Do.27Q4; Do-27; ZSFAH,South African Air Force Museum Swartkop,in_storage
+Westland,Whirlwind,HAS.22,ZS-HDN,,ZA,Whirlwind,,rotary_wing,,civilian,utility,,Ex-military Whirlwind on the South African civil register; c/n 55.476; HAS.22,Whirlwind HAS22; ZSHDN,South African Air Force Museum Swartkop,in_storage
+Westland,Whirlwind,HAS.22,ZS-HDO,,ZA,Whirlwind,,rotary_wing,,civilian,utility,,c/n 55.475; HAS.22,Whirlwind HAS22; ZSHDO,South African Air Force Museum Swartkop,in_storage
+Atlas Aircraft Corporation,Impala,Mk I,519,,ZA,Impala,,fixed_wing,monoplane,military,trainer,,Licence-built Aermacchi MB-326M; c/n A44,MB-326M; MB326M; Impala Mk1,South African Air Force Museum Swartkop,in_storage
+Dassault,Mirage III,CZ,809,,ZA,Mirage III,,fixed_wing,monoplane,military,fighter,,c/n 168,Mirage 3CZ; Mirage3CZ,South African Air Force Museum Swartkop,in_storage
+Lockheed,Ventura,Mk I,6066,,ZA,Ventura,,fixed_wing,monoplane,military,bomber,,c/n 137-4184,Ventura I; B-34; B34,South African Air Force Museum Swartkop,in_storage
+Lockheed,Ventura,Mk II,6120,,ZA,Ventura,,fixed_wing,monoplane,military,bomber,,c/n 137-4646,Ventura II; B-34; B34,South African Air Force Museum Swartkop,in_storage
+Lockheed,Ventura,GR.V,6534,,ZA,Ventura,,fixed_wing,monoplane,military,recon,,c/n 237-6011,Ventura GR5; GR.V; PV-1; PV1,South African Air Force Museum Swartkop,in_storage
+North American,SNJ,-4,7674,,ZA,Harvard,,fixed_wing,monoplane,military,trainer,,US Navy-pattern Harvard; c/n 88-13718,SNJ-4; SNJ4; T-6; Harvard; T6,South African Air Force Museum Swartkop,in_storage
+North American,Harvard,Mk IIA,7731,,ZA,Harvard,,fixed_wing,monoplane,military,trainer,,c/n 88-15774,AT-6; T-6; Harvard IIA; AT6; T6,South African Air Force Museum Swartkop,in_storage
+de Havilland,Vampire,FB.9,253,,ZA,Vampire,,fixed_wing,monoplane,military,fighter,,Construction number not recorded,Vampire FB9; FB.9,South African Air Force Museum Swartkop,in_storage
+de Havilland,Vampire,FB.9,254,,ZA,Vampire,,fixed_wing,monoplane,military,fighter,,c/n V0697,Vampire FB9; FB.9,South African Air Force Museum Swartkop,in_storage
+de Havilland,Vampire,T.55,272,,ZA,Vampire,,fixed_wing,monoplane,military,trainer,,c/n 15493,Vampire T55; T.55,South African Air Force Museum Swartkop,in_storage
+Douglas,AD-4,N,N92072,,US,Skyraider,,fixed_wing,monoplane,civilian,ground_attack,,Ex-French Skyraider on the US civil register held in the Swartkop storage area; c/n 7909,AD-4N; AD4N; A-1; Skyraider; AD4; A1,South African Air Force Museum Swartkop,in_storage
+de Havilland,Vampire,T.11,R4032,,ZW,Vampire,,fixed_wing,monoplane,military,trainer,,Rhodesian Air Force Vampire trainer held at Swartkop; construction number not recorded,Vampire T11; T.11; 4032,South African Air Force Museum Swartkop,in_storage

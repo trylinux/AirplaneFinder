@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Boeing,727,-22C,9Q-CGB,,CD,,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 19195,B727; B-727; 727-100; 9QCGB,Kingankati Airliner Display,on_display
+Boeing,737,-298C,9Q-CNK,,CD,,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 20795,B737; B-737; 737-200; 9QCNK,Kingankati Airliner Display,on_display
+Lockheed,L-1011,-500,9Q-CHC,,CD,TriStar,,fixed_wing,monoplane,civilian,commercial_transport,,c/n 193H-1209,L1011; L-1011; TriStar; 9QCHC,Kingankati Airliner Display,on_display

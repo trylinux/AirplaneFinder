@@ -1,0 +1,9 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mitsubishi,F-104,J,46-8656,,JP,Starfighter,,fixed_wing,monoplane,military,fighter,,Displayed marked 36-8535 which is the serial of the first F-104J flown into Nyutabaru on 14 Nov 1963; the real 36-8535 is at Matsushima,F104J; 36-8535; F104,JASDF Nyutabaru Air Base,on_display
+Mitsubishi,F-4,EJ Kai,57-8360,,JP,Phantom II,,fixed_wing,monoplane,military,fighter,,Displayed clean with no tanks or inboard pylons like the Chitose and Naha aircraft,F4EJ; Phantom; F4,JASDF Nyutabaru Air Base,on_display
+Mitsubishi,T-2,,89-5196,,JP,,,fixed_wing,monoplane,military,trainer,,The last T-2 built; struck off at Tsuiki 11 May 2006; repainted in aggressor-style colours and marked 69-5127 after an aircraft that actually served with the Nyutabaru aggressor unit,T2; 69-5127,JASDF Nyutabaru Air Base,on_display
+North American,T-6,G,72-0169,,JP,Texan,,fixed_wing,monoplane,military,trainer,,The second T-6G displayed here after 72-0178 was scrapped around 2000,T6G; T6,JASDF Nyutabaru Air Base,on_display
+Kawasaki,T-33,A,91-5410,,JP,Shooting Star,,fixed_wing,monoplane,military,trainer,,,T33A; T33,JASDF Nyutabaru Air Base,on_display
+Mitsubishi,MU-2,,63-3228,,JP,,,fixed_wing,monoplane,military,search_rescue,,Rescue variant retained as a base display,MU2,JASDF Nyutabaru Air Base,on_display
+Kawasaki,V-107,A,04-4852,,JP,,,rotary_wing,,military,search_rescue,,,V107A; KV107; V107,JASDF Nyutabaru Air Base,on_display
+Mitsubishi,Nike-J,,,,JP,Nike-J,,missile_rocket,,military,other,,surface_to_air Missile-body monument at 32.0875N 131.4596E,NikeJ,JASDF Nyutabaru Air Base,on_display

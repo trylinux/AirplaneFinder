@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,RF-104,G,4375,,TW,Starfighter,,fixed_wing,monoplane,military,recon,,Inside the base; open days only; from the Chinese Wikipedia F-104 survivor table,RF104G; 4375; RF104,Hualien Air Base Displays,on_display
+Fairchild,C-119,G,3126,,TW,Flying Boxcar,,fixed_wing,monoplane,military,transport,,ROCAF tactical number 3126; USAF construction serial 51-8091; formerly of the 103rd Squadron 10th Wing; from the Chinese Wikipedia C-119 survivor list,C119G; 3126; 51-8091; C119,Hualien Air Base Displays,on_display

@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Beechcraft,C-18,S,N64463,Expeditor,,fixed_wing,monoplane,military,transport,1943,FAA registry September 2026 shows N64463 current to Air Combat Museum of Springfield with serial 4534; collection is viewable by appointment,c/n 4534; C18; C18S,Air Combat Museum,on_display
+Piper,J-3,C-65,N24758,Cub,,fixed_wing,monoplane,civilian,private,,FAA registry September 2026 shows N24758 current to Air Combat Museum with serial 3427,c/n 3427; J3; J3C65,Air Combat Museum,on_display
+Travel Air,4000,,N8858,,,fixed_wing,biplane,civilian,private,,FAA registry September 2026 shows N8858 current to Air Combat Museum with serial 949,c/n 949,Air Combat Museum,on_display
+Cessna,150,J,N1058M,,,fixed_wing,monoplane,civilian,private,1969,FAA registry September 2026 shows N1058M current to Air Combat Museum with serial 15070998,c/n 15070998,Air Combat Museum,on_display

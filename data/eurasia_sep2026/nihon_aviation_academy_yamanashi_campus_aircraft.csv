@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mitsubishi,F-104,J,46-8560,,JP,Starfighter,,fixed_wing,monoplane,military,fighter,,JASDF free-loan airframe at about 35.6817N 138.4822E,F104J; F104,Nihon Aviation Academy Yamanashi Campus,on_display
+North American,F-86,D,04-8205,,JP,Sabre Dog,,fixed_wing,monoplane,military,fighter,,At about 35.6821N 138.4832E,F86D; F86,Nihon Aviation Academy Yamanashi Campus,on_display
+Kawasaki,T-33,A,61-5228,,JP,Shooting Star,,fixed_wing,monoplane,military,trainer,,JASDF free-loan airframe facing NNW beside the road north of the strip; the right side can be shot from outside at any time,T33A; T33,Nihon Aviation Academy Yamanashi Campus,on_display
+North American,T-6,G,52-0041,,JP,Texan,,fixed_wing,monoplane,military,trainer,,At about 35.6822N 138.4834E,T6G; T6,Nihon Aviation Academy Yamanashi Campus,on_display
+Kawasaki,OH-6,D,31151,,JP,Cayuse,,rotary_wing,,military,recon,,Confirmed when moved outdoors in April 2019,OH6D; OH6,Nihon Aviation Academy Yamanashi Campus,on_display
+Kawasaki,OH-6,D,31180,,JP,Cayuse,,rotary_wing,,military,recon,,Present from 2016 to 2019; the tail boom comes from 31174,OH6D; 31174; OH6,Nihon Aviation Academy Yamanashi Campus,on_display

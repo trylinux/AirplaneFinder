@@ -30,6 +30,11 @@ def _discover():
     """
     found = {}
     for path in sorted(DATA.rglob("*_aircraft.csv")):
+        # data/_to_delete/ holds superseded builds the bridge could not
+        # remove. They are not part of the project and must not be validated
+        # -- five stale copies of every Russian file were being collected.
+        if "_to_delete" in path.parts:
+            continue
         stem = path.stem[:-len("_aircraft")]
         with open(path, newline="", encoding="utf-8") as f:
             first = next(csv.DictReader(f), None)
@@ -155,6 +160,16 @@ class TestFieldHygiene:
                and (r["manufacturer"], r["model"]) not in self.WINGLESS_BY_DESIGN]
         assert not bad, f"{name}: fixed-wing rows missing wing_type: {bad}"
 
+    def test_tail_number_fits_the_column(self, dataset):
+        """`tail_number` is VARCHAR(20). A longer value passes every
+        validator and then dies inside the INSERT with a DataError that
+        takes the whole atomic batch with it -- a 400-row Russian batch was
+        lost to a single 24-character bort-plus-dedication string."""
+        name, rows, _ = dataset
+        bad = [(r["model"], r["tail_number"]) for r in rows
+               if len(r["tail_number"].strip()) > 20]
+        assert not bad, f"{name}: tail_number longer than the column: {bad}"
+
     def test_year_built_is_a_year_not_a_serial(self, dataset):
         """The most common research error is filing a serial as a year."""
         name, rows, _ = dataset
@@ -162,8 +177,13 @@ class TestFieldHygiene:
                if r["year_built"].strip()
                and not (r["year_built"].strip().isdigit()
                         # Le Bourget holds the only surviving original
-                        # Chanute glider, built 1896.
-                        and 1850 <= int(r["year_built"]) <= 2030)]
+                        # Chanute glider, built 1896. The floor is 1783 --
+                        # the Charles hydrogen balloon of December 1783 is
+                        # the first manned aircraft of any kind, so nothing
+                        # in this database can legitimately predate it, and
+                        # Vigna di Valle's 1804 hydrogen balloon sits in
+                        # between.
+                        and 1783 <= int(r["year_built"]) <= 2030)]
         assert not bad, f"{name}: year_built holds something that is not a year: {bad}"
 
     def test_model_does_not_swallow_the_variant(self, dataset):
@@ -199,12 +219,17 @@ class TestFieldHygiene:
         """'Unknown' and 'None' are how a blank arrives dressed as data."""
         name, rows, _ = dataset
         junk = {"unknown", "none", "n/a", "na", "tbd", "unk", "-", "null"}
+        # "NA" is Namibia's ISO 3166-1 alpha-2 code, so it is a real value in
+        # operator_country and a placeholder everywhere else. (The same trap
+        # waits for "NO" -- Norway.)
+        ISO_OK = {"operator_country"}
         # "NA" in the variant column is a designation, not "not applicable":
         # the Douglas AD-4NA is a real Skyraider variant. Only flag it there
         # when it is written as a placeholder would be (lowercase, or N/A).
         bad = [(r["model"], k, v) for r in rows for k, v in r.items()
                if isinstance(v, str) and v.strip().lower() in junk
                and not (k == "variant" and v.strip() == "NA")
+               and not (k in ISO_OK and v.strip().isupper() and len(v.strip()) == 2)
                # "TBD" is also the Douglas Devastator's designation. A model
                # of TBD with a model_name set is a designation, not a
                # placeholder — though see WASHINGTON_NOTES on the Midway row.

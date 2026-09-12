@@ -1,0 +1,47 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Hawker,Hunter,F.58,J-4001,,CH,,,fixed_wing,monoplane,military,fighter,,The first Hunter delivered to Switzerland; landed symbolically at Dübendorf when the type retired in December 1994 and was handed to the air force museum — the one Dübendorf serial confirmed by a second independent source,J4001; Hunter F58,Flieger-Flab-Museum Dübendorf,on_display
+Hawker,Hunter,T.68,,,CH,,,fixed_wing,monoplane,military,trainer,,Two-seat Swiss Hunter trainer; serial deliberately left blank because the only inventory found is column-shifted,Hunter T68,Flieger-Flab-Museum Dübendorf,on_display
+Dassault,Mirage III,S,,,CH,,,fixed_wing,monoplane,military,fighter,,Swiss-built Mirage IIIS interceptor; serial deliberately blank,Mirage 3S; Mirage IIIS,Flieger-Flab-Museum Dübendorf,on_display
+Dassault,Mirage III,RS,,,CH,,,fixed_wing,monoplane,military,recon,,Swiss reconnaissance Mirage; serial deliberately blank,Mirage 3RS; Mirage IIIRS,Flieger-Flab-Museum Dübendorf,on_display
+Dassault,Mirage III,DS,,,CH,,,fixed_wing,monoplane,military,trainer,,Two-seat Swiss Mirage; serial deliberately blank,Mirage 3DS; Mirage IIIDS,Flieger-Flab-Museum Dübendorf,on_display
+de Havilland,DH-100,Vampire FB.6,,,CH,,,fixed_wing,monoplane,military,fighter,,Serial deliberately blank,DH100; Vampire FB6,Flieger-Flab-Museum Dübendorf,on_display
+de Havilland,DH-115,Vampire T.55,,,CH,,,fixed_wing,monoplane,military,trainer,,Serial deliberately blank,DH115; Vampire Trainer,Flieger-Flab-Museum Dübendorf,on_display
+de Havilland,DH-112,Venom FB.50,,,CH,,,fixed_wing,monoplane,military,ground_attack,,Serial deliberately blank,DH112; Venom FB50,Flieger-Flab-Museum Dübendorf,on_display
+Northrop,F-5,E,,,CH,,Tiger II,fixed_wing,monoplane,military,fighter,,Serial deliberately blank,F5E; F-5E; Tiger 2; F5,Flieger-Flab-Museum Dübendorf,on_display
+Northrop,F-5,F,,,CH,,Tiger II,fixed_wing,monoplane,military,trainer,,Two-seat Tiger; serial deliberately blank,F5F; F-5F; Tiger 2; F5,Flieger-Flab-Museum Dübendorf,on_display
+McDonnell Douglas,F/A-18,C,,,CH,,Hornet,fixed_wing,monoplane,military,fighter,,Listed by en.wikipedia among the museum's exhibits; likely a structural-test or instructional airframe rather than a flown aircraft,FA-18; F18; Hornet; FA18,Flieger-Flab-Museum Dübendorf,on_display
+BAe,Hawk,T.66,,,CH,,,fixed_wing,monoplane,military,trainer,,Swiss Hawk trainer; the type served 1990-2002,Hawk T66; BAe Hawk,Flieger-Flab-Museum Dübendorf,on_display
+FFA,P-16,,,,CH,,,fixed_wing,monoplane,military,experimental,,Swiss ground-attack jet prototype of the 1950s; the programme was cancelled,P16; FFA P-16,Flieger-Flab-Museum Dübendorf,on_display
+EFW,N-20,Aiguillon,,,CH,,,fixed_wing,monoplane,military,experimental,,Swiss jet fighter research aircraft; the museum also holds the N-20.2 Arbalète scale glider,N20; N-20.10; Aiguillon; Arbalete,Flieger-Flab-Museum Dübendorf,on_display
+Messerschmitt,Bf 109,E-3,,,CH,,,fixed_wing,monoplane,military,fighter,,Swiss Air Force Emil; Switzerland bought 80 Bf 109E in 1939-40,Bf109; Me 109,Flieger-Flab-Museum Dübendorf,on_display
+Messerschmitt,Bf 108,B-2,,,CH,,Taifun,fixed_wing,monoplane,military,utility,,Swiss liaison aircraft,Bf108; Me 108; Taifun,Flieger-Flab-Museum Dübendorf,on_display
+North American,P-51,D,,,CH,,Mustang,fixed_wing,monoplane,military,fighter,,One of the 130 Mustangs Switzerland bought from US stocks in 1948,P51; P-51D; Mustang; P51D,Flieger-Flab-Museum Dübendorf,on_display
+North American,AT-16,,,,CH,,Harvard,fixed_wing,monoplane,military,trainer,,Swiss Harvard trainer,T-6; Harvard; Texan; AT16; T6,Flieger-Flab-Museum Dübendorf,on_display
+Morane-Saulnier,D-3801,,,,CH,,,fixed_wing,monoplane,military,fighter,,Swiss-built MS.406 derivative,MS406; D3801,Flieger-Flab-Museum Dübendorf,on_display
+Fieseler,Fi 156,C-3,,,CH,,Storch,fixed_wing,monoplane,military,utility,,Swiss liaison and observation aircraft,Fi156; Storch,Flieger-Flab-Museum Dübendorf,on_display
+Pilatus,P-2,,,,CH,,,fixed_wing,monoplane,military,trainer,,Swiss trainer,P2; Pilatus P2,Flieger-Flab-Museum Dübendorf,on_display
+Pilatus,P-3,,,,CH,,,fixed_wing,monoplane,military,trainer,,Swiss trainer,P3; Pilatus P3,Flieger-Flab-Museum Dübendorf,on_display
+Pilatus,PC-7,,,,CH,,,fixed_wing,monoplane,military,trainer,,Swiss turboprop trainer,PC7,Flieger-Flab-Museum Dübendorf,on_display
+Pilatus,PC-9,,,,CH,,,fixed_wing,monoplane,military,trainer,,Swiss target-towing and training aircraft,PC9,Flieger-Flab-Museum Dübendorf,on_display
+EKW,C-3603,1,,,CH,,,fixed_wing,monoplane,military,ground_attack,,"Swiss-built multi-role aircraft; the museum also holds the turboprop C-3605 ""Schlepp"" conversion",C3603; C-3605; Schlepp,Flieger-Flab-Museum Dübendorf,on_display
+EKW,C-35,,,,CH,,,fixed_wing,biplane,military,recon,,Swiss reconnaissance biplane of the 1930s,C35,Flieger-Flab-Museum Dübendorf,on_display
+Fokker,C.V,E,,,CH,,,fixed_wing,biplane,military,recon,,Swiss-operated Fokker reconnaissance biplane,C.VE; CVE,Flieger-Flab-Museum Dübendorf,on_display
+Fokker,D.VII,,,,CH,,,fixed_wing,biplane,military,fighter,,First World War fighter,D7; Fokker D7,Flieger-Flab-Museum Dübendorf,on_display
+Nieuport,28,C-1,,,CH,,,fixed_wing,biplane,military,fighter,,First World War fighter; Switzerland operated the type post-war,Nieuport 28C1,Flieger-Flab-Museum Dübendorf,on_display
+Hanriot,HD.1,,,,CH,,,fixed_wing,biplane,military,fighter,,First World War fighter; Swiss service,HD1; Hanriot HD1,Flieger-Flab-Museum Dübendorf,on_display
+Blériot,XI,,,,CH,,,fixed_wing,monoplane,civilian,private,,Pioneer-era monoplane,Bleriot 11; Bleriot XI,Flieger-Flab-Museum Dübendorf,on_display
+Häfeli,DH-1,,,,CH,,,fixed_wing,biplane,military,recon,,Swiss First World War design; displayed as a reconstruction along with DH-3 and DH-5 airframes,Haefeli DH-1; DH1,Flieger-Flab-Museum Dübendorf,on_display
+Häfeli,DH-5,,,,CH,,,fixed_wing,biplane,military,recon,,Swiss First World War design; reconstruction,Haefeli DH-5; DH5,Flieger-Flab-Museum Dübendorf,on_display
+Dewoitine,D.26,,,,CH,,,fixed_wing,monoplane,military,trainer,,Swiss parasol-wing fighter-trainer,D26,Flieger-Flab-Museum Dübendorf,on_display
+Dewoitine,D.27,,,,CH,,,fixed_wing,monoplane,military,fighter,,Swiss-built parasol-wing fighter,D27,Flieger-Flab-Museum Dübendorf,on_display
+Bücker,Bü 131,B,,,CH,,Jungmann,fixed_wing,biplane,military,trainer,,Swiss trainer,Bu131; Jungmann,Flieger-Flab-Museum Dübendorf,on_display
+Bücker,Bü 181,,,,CH,,Bestmann,fixed_wing,monoplane,military,trainer,,Swiss trainer,Bu181; Bestmann,Flieger-Flab-Museum Dübendorf,on_display
+CASA,1.131,E,,,ES,,,fixed_wing,biplane,civilian,trainer,,Spanish-built Bücker Jungmann,CASA 1131,Flieger-Flab-Museum Dübendorf,on_display
+CASA,352,L,,,ES,,,fixed_wing,monoplane,civilian,transport,,Spanish-built Junkers Ju 52,CASA 352L; Ju 52,Flieger-Flab-Museum Dübendorf,on_display
+Junkers,Ju 52,3m g3e,,,CH,,Tante Ju,fixed_wing,monoplane,military,transport,,Swiss Air Force Ju 52; three airframes are associated with the Dübendorf site through Ju-Air and the museum; HB-HOS left for a German museum and the remaining airframes have been grounded since the 2018 accident,Ju52; Ju 52/3m; Tante Ju,Flieger-Flab-Museum Dübendorf,on_display
+Aérospatiale,SE 3130,Alouette II,,,CH,,,rotary_wing,,military,utility,,Swiss Alouette II; several airframes are present,SE3130; Alouette 2,Flieger-Flab-Museum Dübendorf,on_display
+Aérospatiale,SE 3160,Alouette III,,,CH,,,rotary_wing,,military,utility,,Swiss Alouette III; several airframes are present,SE3160; Alouette 3,Flieger-Flab-Museum Dübendorf,on_display
+Sud-Ouest,SO.1221,Djinn,,,CH,,,rotary_wing,,military,utility,,Tip-jet driven light helicopter,SO1221; Djinn,Flieger-Flab-Museum Dübendorf,on_display
+Hiller,UH-12,B,,,CH,,,rotary_wing,,military,utility,,Early Swiss Air Force helicopter,UH12; Hiller 360; UH12B,Flieger-Flab-Museum Dübendorf,on_display
+Dornier,Do 27,H-2,,,CH,,,fixed_wing,monoplane,military,utility,,Swiss liaison aircraft,Do27,Flieger-Flab-Museum Dübendorf,on_display
+Oerlikon-Contraves,ADS-95,Ranger,,,CH,,,fixed_wing,monoplane,military,drone,,Swiss reconnaissance unmanned aircraft system,ADS95; Ranger,Flieger-Flab-Museum Dübendorf,on_display

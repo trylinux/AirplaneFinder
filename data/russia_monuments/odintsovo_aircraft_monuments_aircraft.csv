@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-29,,27 Blue,27-02/2960520592,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 1111; source records the bort as 27-синий,MiG29,Odintsovo Aircraft Monuments,on_display
+Mil,Mi-24,,59,3532434116201,,,,rotary_wing,,military,ground_attack,,russianplanes.net monument point 1113; contributor note (ru): установлен летом 2012 вместе с МиГ-29,Mi24,Odintsovo Aircraft Monuments,on_display
+Raduga,Kh-22,,,,,Burya,,missile_rocket,,military,air_to_surface,,russianplanes.net monument point 23723,Burya; Kh22,Odintsovo Aircraft Monuments,on_display
+Raduga,Kh-55,,,,,,,missile_rocket,,military,cruise,,russianplanes.net monument point 23724,Kh55,Odintsovo Aircraft Monuments,on_display

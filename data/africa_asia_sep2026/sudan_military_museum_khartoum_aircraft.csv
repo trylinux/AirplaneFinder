@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+BAC,167,Mk.90,142,,SD,Strikemaster,,fixed_wing,monoplane,military,ground_attack,,c/n PS370; museum record refreshed 27 Dec 2025,BAC167; Strikemaster Mk.90; c/n PS370,Sudan Military Museum -- Khartoum,on_display
+Mil,Mi-2,,ST-SAC,,SD,,,rotary_wing,,military,utility,,c/n 528919104; a civil-registered Sudanese Mi-2; museum record refreshed 27 Dec 2025,Mi2; Mi-2; Hoplite; STSAC; c/n 528919104,Sudan Military Museum -- Khartoum,on_display
+Mikoyan-Gurevich,MiG-21,US,300,,SD,,,fixed_wing,monoplane,military,trainer,,Museum record refreshed 27 Dec 2025,MiG21; MiG-21US; Mongol; MiG21US,Sudan Military Museum -- Khartoum,on_display
+Percival,Provost,T.53,101,,SD,,,fixed_wing,monoplane,military,trainer,,Sudanese Air Force piston Provost; museum record refreshed 27 Dec 2025,Provost T.53; Provost,Sudan Military Museum -- Khartoum,on_display

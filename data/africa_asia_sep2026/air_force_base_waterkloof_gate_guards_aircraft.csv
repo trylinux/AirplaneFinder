@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Blackburn,Buccaneer,S.50,412,,ZA,Buccaneer,,fixed_wing,monoplane,military,ground_attack,,Plinthed at AFB Waterkloof; c/n B3-12-63,Buccaneer S50; S.50,Air Force Base Waterkloof Gate Guards,on_display
+English Electric,Canberra,T.4,459,,ZA,Canberra,,fixed_wing,monoplane,military,bomber,,Plinthed 500 m from the Buccaneer; c/n HP-184B/71546,Canberra T4; T.4,Air Force Base Waterkloof Gate Guards,on_display
+Canadair,Sabre,Mk 6,369,,ZA,Sabre,,fixed_wing,monoplane,military,fighter,,Wears code H; c/n 1478,Sabre Mk.6; CL-13B; F-86; CL13B; F86,Air Force Base Waterkloof Gate Guards,on_display

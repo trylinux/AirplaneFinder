@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,,,,BG,,,fixed_wing,monoplane,military,fighter,,OSM node 7729004191 with aircraft:type=МиГ-21; no sub-variant and no tactical number recorded,MiG21; Fishbed,Омуртаг Aircraft Display,on_display
+Unidentified,Military aircraft,,,,BG,,,fixed_wing,monoplane,military,other,,OSM node 7729004190; no type recorded in any reachable source,,Омуртаг Aircraft Display,on_display
+Unidentified,Military aircraft,,,,BG,,,fixed_wing,monoplane,military,other,,OSM node 7729004192; no type recorded in any reachable source,,Омуртаг Aircraft Display,on_display

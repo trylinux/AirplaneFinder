@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Dassault,Mirage 5,DG2,204,,GA,Mirage 5,,fixed_wing,monoplane,military,trainer,,Ex-Gabonese Air Force two-seat Mirage 5,Mirage 5DG2; Mirage5DG2,Stellenbosch Jet Collection,on_display
+Dassault,Mirage 5,G,403,,GA,Mirage 5,,fixed_wing,monoplane,military,fighter,,Ex-Gabonese Air Force Mirage 5G,Mirage 5G; Mirage5G,Stellenbosch Jet Collection,on_display
+Blackburn,Buccaneer,S.2B,ZU-NIP,,ZA,Buccaneer,,fixed_wing,monoplane,civilian,ground_attack,,Ex-Royal Air Force Buccaneer sold to Thunder City Cape Town and now on the South African civil register; c/n B3-1-171,Buccaneer S2B; S.2B; ZUNIP,Stellenbosch Jet Collection,on_display
+Hawker,Hunter,F.6A,ZU-AUJ,,ZA,Hunter,,fixed_wing,monoplane,civilian,fighter,,Ex-RAF Hunter on the South African civil register; c/n 41H/674112,Hunter F6A; F.6A; ZUAUJ,Stellenbosch Jet Collection,on_display
+Hawker,Hunter,T.7,ZU-LEE,,ZA,Hunter,,fixed_wing,monoplane,civilian,trainer,,c/n 41H/695347,Hunter T7; T.7; ZULEE,Stellenbosch Jet Collection,on_display
+Dassault,Mirage F1,CZ,207,,ZA,Mirage F1,,fixed_wing,monoplane,military,fighter,,Recorded at a second Stellenbosch coordinate 900 m from the main group,Mirage F1CZ; MirageF1CZ,Stellenbosch Jet Collection,on_display
+de Havilland,Vampire,FB.9,241,,ZA,Vampire,,fixed_wing,monoplane,military,fighter,,c/n V0657,Vampire FB9; FB.9,Stellenbosch Jet Collection,on_display

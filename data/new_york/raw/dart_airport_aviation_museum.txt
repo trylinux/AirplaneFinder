@@ -1,0 +1,8 @@
+Piper|J-2|||Cub||fixed_wing|monoplane|civilian|private||Listed in the Aerial Visuals location dossier for Dart Airport Aviation Museum; presence not confirmed by a 2023-26 source||on_display
+Piper|J-3|||Cub||fixed_wing|monoplane|civilian|private||Listed in the Aerial Visuals location dossier for Dart Airport Aviation Museum; presence not confirmed by a 2023-26 source||on_display
+Curtiss-Wright|CW-1|||Junior||fixed_wing|monoplane|civilian|private||Listed in the Aerial Visuals location dossier for Dart Airport Aviation Museum; presence not confirmed by a 2023-26 source||on_display
+Erco|415|||Ercoupe||fixed_wing|monoplane|civilian|private||Listed as an Ercoupe 415 in the Aerial Visuals location dossier for Dart Airport Aviation Museum||on_display
+Fleet|16|B||||fixed_wing|biplane|civilian|trainer||Listed in the Aerial Visuals location dossier for Dart Airport Aviation Museum||on_display
+Heath|Parasol|||||fixed_wing|monoplane|civilian|private||Listed in the Aerial Visuals location dossier for Dart Airport Aviation Museum||on_display
+Mead|Primary|||||fixed_wing|monoplane|civilian|other||Mead primary glider listed in the Aerial Visuals location dossier for Dart Airport Aviation Museum||on_display
+Schweizer|SGU 1-19|||||fixed_wing|monoplane|civilian|trainer||Listed as a Schweizer I-19 in the Aerial Visuals location dossier for Dart Airport Aviation Museum||on_display

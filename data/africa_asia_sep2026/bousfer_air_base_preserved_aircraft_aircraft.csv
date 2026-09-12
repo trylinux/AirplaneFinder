@@ -1,0 +1,9 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Fouga,CM.170,,NT-92,,DZ,Magister,,fixed_wing,monoplane,military,trainer,,Plinthed at Bousfer; logged 17 Mar 2019,CM170; CM.170; Magister; NT92,Bousfer Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-17,,FR-16,,DZ,,,fixed_wing,monoplane,military,fighter,,Plinthed at Bousfer; logged 17 Oct 2016,MiG17; MiG-17; Fresco; FR16,Bousfer Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-21,bis,FA-84,,DZ,,,fixed_wing,monoplane,military,fighter,,Plinthed at Bousfer; logged 17 Mar 2019,MiG21; MiG-21bis; Fishbed; FA84; MiG21bis,Bousfer Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-21,MF,FD-15,,DZ,,,fixed_wing,monoplane,military,fighter,,Plinthed at Bousfer; logged 17 Mar 2019,MiG21; MiG-21MF; Fishbed; FD15; MiG21MF,Bousfer Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-21,MF,FD-35,,DZ,,,fixed_wing,monoplane,military,fighter,,Plinthed at Bousfer; logged 17 Oct 2016,MiG21; MiG-21MF; Fishbed; FD35; MiG21MF,Bousfer Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-21,MF,,,DZ,,,fixed_wing,monoplane,military,fighter,,One of two further unserialled MiG-21MFs plinthed at Bousfer; logged 17 Oct 2016,MiG21; MiG-21MF; Fishbed; MiG21MF,Bousfer Air Base Preserved Aircraft,on_display
+Mikoyan-Gurevich,MiG-21,MF,,,DZ,,,fixed_wing,monoplane,military,fighter,,Second of two further unserialled MiG-21MFs plinthed at Bousfer; logged 5 Jul 2018,MiG21; MiG-21MF; Fishbed; MiG21MF,Bousfer Air Base Preserved Aircraft,on_display
+Sukhoi,Su-7,BMK,KR-71,,DZ,,,fixed_wing,monoplane,military,ground_attack,,Plinthed at Bousfer; logged 17 Mar 2019,Su7; Su-7BMK; Fitter; KR71; Su7BMK,Bousfer Air Base Preserved Aircraft,on_display

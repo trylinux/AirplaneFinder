@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aero,L-39,,,,UA,Albatros,,fixed_wing,monoplane,military,trainer,,Mapped as OpenStreetMap node/7974555150 on вулиця Петра Юрченка; no serial recorded,L-39; L39; Albatros,Авіатехніка Полтавського авіамістечка -- Полтава (Юрченка),on_display
+Mil,Mi-2,,,,UA,,,rotary_wing,,military,utility,,Mapped as OpenStreetMap node/7109128328; no serial recorded,Mi-2; Mi2; Hoplite,Авіатехніка Полтавського авіамістечка -- Полтава (Юрченка),on_display
+Mil,Mi-8,T,,,UA,,,rotary_wing,,military,transport,,Mapped as OpenStreetMap node/7974555147; no serial recorded,Mi-8; Mi8; Mi-8T; Hip; Mi8T,Авіатехніка Полтавського авіамістечка -- Полтава (Юрченка),on_display

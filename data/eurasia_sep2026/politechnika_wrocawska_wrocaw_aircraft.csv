@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikojan-Guriewicz,MiG-29,,4108,,PL,,,fixed_wing,monoplane,military,fighter,,Delivered to the university in July 2011 as a teaching aid per pl.wikipedia,MiG29; MiG-29; Fulcrum,Politechnika Wrocławska -- Wrocław,on_display
+PZL,I-22,Iryda,,,PL,,,fixed_wing,monoplane,military,trainer,,Airframe ANA004-02 used as a teaching aid per the pl.wikipedia I-22 status list for 2025,I22; Iryda; ANA004-02,Politechnika Wrocławska -- Wrocław,on_display

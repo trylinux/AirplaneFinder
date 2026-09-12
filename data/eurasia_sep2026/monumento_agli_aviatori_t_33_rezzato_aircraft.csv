@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,T-33,A,,,IT,Shooting Star,T-Bird,fixed_wing,monoplane,military,trainer,,AAA section monument to airmen; alatricolore gives the US-derived serial 51-17484 and code 6-30; that serial is a USAF fiscal-year number rather than an MM number so tail_number is left blank,T33; T-33A; Shooting Star; 6-30; T33A,Monumento agli Aviatori T-33 -- Rezzato,on_display

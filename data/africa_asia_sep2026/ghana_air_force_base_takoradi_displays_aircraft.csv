@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aero,L-29,,G-950,,GH,Delfin,,fixed_wing,monoplane,military,trainer,,,L29; L-29; Delfin; G950,Ghana Air Force Base Takoradi Displays,on_display
+Aero,L-29,,G-955,,GH,Delfin,,fixed_wing,monoplane,military,trainer,,,L29; L-29; Delfin; G955,Ghana Air Force Base Takoradi Displays,on_display
+Mil,Mi-2,,G-660,,GH,Hoplite,,rotary_wing,,military,utility,,Instructional airframe; the source lists the same construction number as G-661 at Kumasi which is an evident source error; c/n given as 536824090,Mi2; Mi-2; Hoplite; G660,Ghana Air Force Base Takoradi Displays,in_storage

@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Antonov,An-2,R,,,,Colt,,fixed_wing,biplane,civilian,utility,,"Variant R is the agricultural sprayer; taken from the OpenStreetMap model tag ""Antonov An-2R"" with model:wikidata Q207700. No registration recorded",An2; An-2R; Colt; An2R,Antonov An-2R -- Duči (Limbaži),on_display

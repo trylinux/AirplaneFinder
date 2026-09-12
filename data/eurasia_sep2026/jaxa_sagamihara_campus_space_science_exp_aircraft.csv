@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+ISAS,M-V,,,,JP,M-V launch vehicle,,missile_rocket,,civilian,other,,launch_vehicle Full-scale airframe model displayed outdoors beside the M-3SII,M-V; MV rocket; M-Vロケット,JAXA Sagamihara Campus -- Space Science Exploration Field Center,on_display
+ISAS,M-3S,II,,,JP,M-3SII launch vehicle,,missile_rocket,,civilian,other,,launch_vehicle Full-scale model displayed outdoors beside the M-V,M-3SII; M3SII; M-3SIIロケット; M3S,JAXA Sagamihara Campus -- Space Science Exploration Field Center,on_display

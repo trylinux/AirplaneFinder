@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Kawasaki,OH-6,D,31130,,JP,Cayuse,,rotary_wing,,military,recon,,At 37.7128N 140.3819E,OH6D; OH6,JGSDF Camp Fukushima,on_display
+Fuji,UH-1,B,41586,,JP,Iroquois,,rotary_wing,,military,utility,,At 37.7127N 140.3817E,UH1B; Huey; UH1,JGSDF Camp Fukushima,on_display
+Fuji,UH-1,H,41731,,JP,Iroquois,,rotary_wing,,military,utility,,Training airframe at 37.7078N 140.3823E; appeared between the Nov 2015 and May 2016 satellite passes,UH1H; Huey; UH1,JGSDF Camp Fukushima,on_display

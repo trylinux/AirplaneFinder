@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-8,T(TV),RA-25984,7515,RU,,,rotary_wing,,military,utility,,russianplanes.net monument point 8802,Mi8,Покачи Aircraft Monuments,on_display
+Mil,Mi-2,,RF-01042,5310124037,RU,,,rotary_wing,,military,utility,,russianplanes.net monument point 8803,Mi2,Покачи Aircraft Monuments,on_display
+Yakovlev,Yak-28,PP,025,,,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 8807,Yak28; Yak28PP,Покачи Aircraft Monuments,on_display

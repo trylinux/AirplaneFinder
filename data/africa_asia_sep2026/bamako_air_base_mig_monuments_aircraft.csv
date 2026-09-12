@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-15,UTI,TZ-337,,ML,Midget,,fixed_wing,monoplane,military,trainer,,OpenStreetMap's ground survey records this airframe simply as a MiG-15; c/n 5001,MiG15; MiG-15UTI; Midget; TZ337; MiG15UTI,Bamako Air Base MiG Monuments,on_display
+Mikoyan-Gurevich,MiG-21,UM,TZ-376,,ML,Mongol,,fixed_wing,monoplane,military,trainer,,c/n 516997006,MiG21; MiG-21UM; Mongol; TZ376; MiG21UM,Bamako Air Base MiG Monuments,on_display

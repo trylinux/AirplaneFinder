@@ -1,0 +1,1 @@
+Bell|AH-1|F||Cobra||rotary_wing||military|ground_attack||An AH-1 Whiskey Cobra is displayed at the Eden Memorial VFW post and carries its own historical marker; WGRZ covered the unveiling; directories report 67-15506 but the US Army loan list does not carry an Eden entry so tail_number is left blank|67-15506|on_display

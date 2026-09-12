@@ -1,0 +1,21 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-15,,,,HU,Fagot,,fixed_wing,monoplane,military,fighter,,OSM maps four MiG-15 airframes in the park; no tactical numbers published,MiG15; Fagot,Pintér Művek Haditechnikai Park,on_display
+Mikoyan-Gurevich,MiG-17,PF,,,HU,Fresco,,fixed_wing,monoplane,military,fighter,,Radar-equipped night fighter,MiG17; MiG17PF; Fresco,Pintér Művek Haditechnikai Park,on_display
+Mikoyan-Gurevich,MiG-19,PM,,,HU,Farmer,,fixed_wing,monoplane,military,fighter,,hampage.hu calls it the Hungarian Air Force's first supersonic fighter; OSM maps two MiG-19 airframes,MiG19; MiG19PM; Farmer,Pintér Művek Haditechnikai Park,on_display
+Mikoyan-Gurevich,MiG-21,F-13,,,HU,Fishbed,,fixed_wing,monoplane,military,fighter,,OSM maps at least six single-seat MiG-21 airframes in the park in F-13 MF and bis versions,MiG21; MiG21F13; Fishbed,Pintér Művek Haditechnikai Park,on_display
+Mikoyan-Gurevich,MiG-21,MF,,,HU,Fishbed,,fixed_wing,monoplane,military,fighter,,No tactical number published,MiG21; MiG21MF; Fishbed,Pintér Művek Haditechnikai Park,on_display
+Mikoyan-Gurevich,MiG-21,bis,,,HU,Fishbed,,fixed_wing,monoplane,military,fighter,,No tactical number published,MiG21; MiG21bis; MiG-21bisz; Fishbed,Pintér Művek Haditechnikai Park,on_display
+Mikoyan-Gurevich,MiG-21,U,,,HU,Mongol,,fixed_wing,monoplane,military,trainer,,"Two-seat trainer; OSM tags it ""MiG-21U Fishbed 2 szem.""",MiG21U; Mongol; MiG21,Pintér Művek Haditechnikai Park,on_display
+Mikoyan-Gurevich,MiG-23,UB,16,,RU,Flogger,,fixed_wing,monoplane,military,trainer,,hampage.hu records that this two-seat MiG-23UB arrived in 1991 from the Soviet Air Force; the tactical number 16 is the only serial published for the park,MiG23; MiG23UB; Flogger,Pintér Művek Haditechnikai Park,on_display
+Mikoyan-Gurevich,MiG-23,MF,,,HU,Flogger,,fixed_wing,monoplane,military,fighter,,Single-seat MiG-23; OSM maps two MiG-23 airframes,MiG23; MiG23MF; Flogger,Pintér Művek Haditechnikai Park,on_display
+Sukhoi,Su-22,M-3,,,HU,Fitter,,fixed_wing,monoplane,military,ground_attack,,Described by hampage.hu as the author's favourite exhibit,Szu-22; Su22; Su-22M3; Fitter; Szu22,Pintér Művek Haditechnikai Park,on_display
+Saab,35,Öe Mk II,,,,Draken,,fixed_wing,monoplane,military,fighter,,"A Swedish-built Draken in the collection; OSM tags it ""Saab JAS-35 Draken"" which is not a real designation",J35; Draken,Pintér Művek Haditechnikai Park,on_display
+Antonov,An-24,V,,,HU,Coke,,fixed_wing,monoplane,civilian,commercial_transport,,The largest exhibit in the park; OSM records that it was originally a government aircraft and that János Kádár travelled on it,An24; Coke; An24V,Pintér Művek Haditechnikai Park,on_display
+Aero,L-29,,,,HU,,Delfín,fixed_wing,monoplane,military,trainer,,Czechoslovak jet trainer,L29; Delfin,Pintér Művek Haditechnikai Park,on_display
+Aero,L-39,,,,HU,,Albatros,fixed_wing,monoplane,military,trainer,,Czechoslovak jet trainer,L39; Albatros,Pintér Művek Haditechnikai Park,on_display
+Zlín,Z-43,,,,HU,,,fixed_wing,monoplane,civilian,trainer,,Czechoslovak four-seat trainer,Z43; Zlin 43,Pintér Művek Haditechnikai Park,on_display
+Yakovlev,Yak-11,,,,HU,,,fixed_wing,monoplane,military,trainer,,Tail section only per hampage.hu,Jak-11; Yak11; Jak11,Pintér Művek Haditechnikai Park,on_display
+Mil,Mi-1,,,,HU,Hare,,rotary_wing,,military,utility,,Liaison helicopter,Mi1; Hare,Pintér Művek Haditechnikai Park,on_display
+Mil,Mi-2,,,,HU,Hoplite,,rotary_wing,,military,utility,,PZL-built light helicopter,Mi2; Hoplite,Pintér Művek Haditechnikai Park,on_display
+Mil,Mi-8,,,,HU,Hip,,rotary_wing,,military,transport,,Transport helicopter,Mi8; Hip,Pintér Művek Haditechnikai Park,on_display
+Mil,Mi-24,,,,HU,Hind,,rotary_wing,,military,ground_attack,,hampage.hu notes it was in notably clean condition,Mi24; Hind,Pintér Művek Haditechnikai Park,on_display

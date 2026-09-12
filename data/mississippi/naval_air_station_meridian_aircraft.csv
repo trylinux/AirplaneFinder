@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,T-2,C,147522,Buckeye,,fixed_wing,monoplane,military,trainer,,Gate-area display at McCain Field; SERIAL BLOCK CHECK FAILS for the quoted variant - 147522 sits in early Buckeye BuNo territory rather than the T-2C range - recorded as sourced,Buckeye; T2; T2C,Naval Air Station Meridian,on_display
+Douglas,TA-4,J,158490,Skyhawk,,fixed_wing,monoplane,military,trainer,,Base display; BuNo within TA-4J block 158453-158722,Skyhawk; TA4; TA4J,Naval Air Station Meridian,on_display
+Douglas,TA-4,J,158526,Skyhawk,,fixed_wing,monoplane,military,trainer,,Second TA-4J on the base; BuNo within TA-4J block 158453-158722,Skyhawk; TA4; TA4J,Naval Air Station Meridian,on_display
+McDonnell Douglas,T-45,C,165485,Goshawk,,fixed_wing,monoplane,military,trainer,,Static test article displayed on base; block check passes for T-45C 165080 upward,Goshawk; T45; T45C,Naval Air Station Meridian,on_display
+North American,T-2,C,159727,Buckeye,,fixed_wing,monoplane,military,trainer,,Fourth Buckeye on the base; Aerial Visuals labels it T-2A but 159727 belongs to the T-2C production run so the variant has been corrected to C and the discrepancy flagged,Buckeye; T2; T2C,Naval Air Station Meridian,on_display

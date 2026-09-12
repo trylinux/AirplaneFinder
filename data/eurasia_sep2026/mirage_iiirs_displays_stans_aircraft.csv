@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Dassault,Mirage III,RS,R-2116,,CH,,,fixed_wing,monoplane,military,recon,,"OSM names the object ""Jagdflugzeug Mirage III RS R-2116""; R-21xx is the correct Swiss Mirage IIIRS block",R2116; Mirage 3RS,Mirage IIIRS Displays -- Stans,on_display
+Dassault,Mirage III,RS,R-2110,,CH,,,fixed_wing,monoplane,military,recon,,"OSM names the object ""Jagdflugzeug Mirage III RS R-2110""",R2110; Mirage 3RS,Mirage IIIRS Displays -- Stans,on_display

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Polikarpov,I-16,,51,,,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 6305,I16,Saint Petersburg Aircraft Monuments (2),on_display
+Raduga,P-15,,,,,Termit,,missile_rocket,,military,other,,anti_ship russianplanes.net monument point 10302; contributor note (ru): Противокорабельная крылатая ракета П-15; экспозиция Центрального военно-морского музея,Termit; P15,Saint Petersburg Aircraft Monuments (2),on_display

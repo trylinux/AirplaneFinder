@@ -1,0 +1,9 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Kawasaki,V-107,A,8607,,JP,,,rotary_wing,,military,search_rescue,,,V107A; KV107; V107,JMSDF Shimofusa Air Base,on_display
+Beechcraft,B-65,,6718,,JP,Queen Air,,fixed_wing,monoplane,military,trainer,,The newest of the base's display aircraft although it has stood for nearly thirty years,B65,JMSDF Shimofusa Air Base,on_display
+North American,SNJ,5,6175,,JP,Texan,,fixed_wing,monoplane,military,trainer,,,SNJ5; SNJ-5,JMSDF Shimofusa Air Base,on_display
+Beechcraft,JRB,4,6428,,JP,Expeditor,,fixed_wing,monoplane,military,transport,,,JRB4; JRB-4,JMSDF Shimofusa Air Base,on_display
+Lockheed,P-3,C,5020,,JP,Orion,,fixed_wing,monoplane,military,recon,,Instructional airframe at the 3rd Service School rather than a display aircraft,P3C; Orion; P3,JMSDF Shimofusa Air Base,in_storage
+Mitsubishi,SH-60,J,,,JP,,,rotary_wing,,military,other,,anti_ship Instructional airframe 8205 at the 3rd Service School,SH60J; 8205; SH60,JMSDF Shimofusa Air Base,in_storage
+Mitsubishi,SH-60,J,,,JP,,,rotary_wing,,military,other,,anti_ship Instructional airframe 8206 at the 3rd Service School,SH60J; 8206; SH60,JMSDF Shimofusa Air Base,in_storage
+Kawasaki,P-2,J,4774,,JP,,,fixed_wing,monoplane,military,recon,,Used at the 3rd Service School for large-aircraft handling and crashed-aircraft recovery training; the fin had to be shortened to get it into the hangar; probably now scrapped,P2J; P-2J; P2,JMSDF Shimofusa Air Base,in_storage

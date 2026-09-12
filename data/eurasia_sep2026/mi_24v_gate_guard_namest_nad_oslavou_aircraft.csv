@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-24,V,0705,,CZ,,,rotary_wing,,military,ground_attack,,"Mi-24V ""Hind"" tactical number 0705 preserved at the 22nd Helicopter Air Base; the type and number are both carried in OSM way 1484249878 and a Wikidata item (Q66499239) exists for this individual airframe",Mi-24V; Mi24V; Hind-E; Mi24,Mi-24V Gate Guard -- Náměšť nad Oslavou,on_display

@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,AH-1,F,67-15768,Cobra,,rotary_wing,,military,ground_attack,,On 16th Street in Greer; Aerial Visuals gives c/n 20432 and an OSM node fixes an AH-1 at the same spot with a Mapillary street-level image reference; the associated Greer Area Veterans Memorial has an HMdb marker,c/n 20432; AH1; AH1F,Greer Area Veterans Memorial -- Greer,on_display

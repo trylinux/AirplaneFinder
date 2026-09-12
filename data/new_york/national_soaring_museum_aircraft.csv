@@ -1,0 +1,78 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Backstrom,EPB-1,C,N19C,,,Flying Plank,,fixed_wing,monoplane,civilian,experimental,1964,From the museum's own published 77-glider collection list fetched Sept 2026,EPB1; EPB1C,National Soaring Museum,on_display
+Aviastroitel,AC-4,C,N4023Y,,,,,fixed_wing,monoplane,civilian,other,,From the museum's own published collection list Sept 2026,AC4; AC4C,National Soaring Museum,on_display
+Baker-McMillen,Cadet,,G10265,,,,,fixed_wing,monoplane,civilian,other,1929,From the museum's own published collection list Sept 2026; glider identification number G10265,G10265,National Soaring Museum,on_display
+Berkshire,Concept 70,,N6BM,,,,,fixed_wing,monoplane,civilian,other,1972,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Bowlus,BA-100,,,,,Baby Albatross,,fixed_wing,monoplane,civilian,other,1938,Museum records the airframe as 1938/44 with no registration,BA100,National Soaring Museum,on_display
+Bowlus,BA-102,,N33630,,,Baby Albatross,,fixed_wing,monoplane,civilian,other,1941,Two-place Baby Albatross from the museum's own collection list,BA102,National Soaring Museum,on_display
+Bowlus,BS-100,,N33658,,,Super Albatross,,fixed_wing,monoplane,civilian,other,1942,From the museum's own published collection list Sept 2026,BS100,National Soaring Museum,on_display
+Bowlus-DuPont,Senior Albatross,,NC219Y,,,Falcon,,fixed_wing,monoplane,civilian,other,1933,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Briegleb,BG-12,BD,N12RK,,,,,fixed_wing,monoplane,civilian,other,1972,From the museum's own published collection list Sept 2026,BG12; BG12BD,National Soaring Museum,on_display
+Briegleb,BG-6,,N25470,,,,,fixed_wing,monoplane,civilian,other,1940,Museum records the airframe as 1940/41,BG6,National Soaring Museum,on_display
+Chanute-Herring,Glider,,,,,,,fixed_wing,biplane,civilian,experimental,1896,Earliest airframe in the collection; no registration,,National Soaring Museum,on_display
+DFS,Olympia-Meise,,N74ZH,,,,,fixed_wing,monoplane,civilian,other,1947,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Elmira,Zoegling,,,,,Primary,,fixed_wing,monoplane,civilian,trainer,1929,Elmira-built Zoegling primary glider; no registration,,National Soaring Museum,on_display
+Franklin,PS-2,,G12185,,,,,fixed_wing,monoplane,civilian,trainer,1930,From the museum's own published collection list Sept 2026,G12185; PS2,National Soaring Museum,on_display
+Franklin,PS-2,,N451Y,,,,,fixed_wing,monoplane,civilian,trainer,1930,Second Franklin PS-2 in the collection,PS2,National Soaring Museum,on_display
+Glasflugel,H-301,,N25KD,,,Libelle,,fixed_wing,monoplane,civilian,other,1967,Schuemann Libelle; from the museum's own collection list,H301,National Soaring Museum,on_display
+Glasflugel,H-301,B,N260E,,,Libelle,,fixed_wing,monoplane,civilian,other,1966,From the museum's own published collection list Sept 2026,H301; H301B,National Soaring Museum,on_display
+Goppingen,Go 1,,N31635,,,Wolf,,fixed_wing,monoplane,civilian,other,1935,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Goppingen,Go 3,,G16923,,,Minimoa,,fixed_wing,monoplane,civilian,other,1935,From the museum's own published collection list Sept 2026,G16923,National Soaring Museum,on_display
+Gross,Sky Ghost,,G11348,,,,,fixed_wing,monoplane,civilian,other,1933,From the museum's own published collection list Sept 2026,G11348,National Soaring Museum,on_display
+Hall,Cherokee II,RM,N1658,,,,,fixed_wing,monoplane,civilian,other,1953,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Hall,Ibex,,N63P,,,,,fixed_wing,monoplane,civilian,other,1967,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Herring-Arnot,Glider,,,,,,,fixed_wing,biplane,civilian,experimental,1897,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Hutter,H-17,,CF-RCD,,,,,fixed_wing,monoplane,civilian,other,1934,Carries a Canadian registration; from the museum's own collection list,H17,National Soaring Museum,on_display
+Laister,LP-15,,N3MH,,,Nugget,,fixed_wing,monoplane,civilian,other,1970,From the museum's own published collection list Sept 2026,LP15,National Soaring Museum,on_display
+Laister-Kauffman,LP-49,,,,,,,fixed_wing,monoplane,civilian,other,,From the museum's own published collection list Sept 2026; no registration,LP49,National Soaring Museum,on_display
+Laister-Kauffman,LK-10,A,N54191,,,,,fixed_wing,monoplane,military,other,1942,Military TG-4 family transport glider trainer; N54191 is no longer in the current FAA registry,TG-4; LK10; LK10A; TG4,National Soaring Museum,on_display
+Marske,Genesis,I,N94GC,,,,,fixed_wing,monoplane,civilian,experimental,1994,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Mitchell,Nimbus,III,N7864,,,,,fixed_wing,monoplane,civilian,other,1956,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Nelson,BB-1,,N4ND,,,Dragonfly,,fixed_wing,monoplane,civilian,other,1946,From the museum's own published collection list Sept 2026,BB1,National Soaring Museum,on_display
+Niemi,Sisu,1-A,N1003,,,,,fixed_wing,monoplane,civilian,other,1964,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Peel,Glider Boat,,N255JB,,,,,fixed_wing,monoplane,civilian,other,1929,Peel flying-boat glider; from the museum's own collection list,Z-1; Z1,National Soaring Museum,on_display
+Perl,PG-130,,N8146H,,,Penetrator,,fixed_wing,monoplane,civilian,other,1953,From the museum's own published collection list Sept 2026,PG130,National Soaring Museum,on_display
+Pratt-Read,PR-G1,,N5346G,,,,,fixed_wing,monoplane,military,trainer,1942,Navy LNE-1 family training glider; from the museum's own collection list,,National Soaring Museum,on_display
+Prue,215,,,,,,,fixed_wing,monoplane,civilian,other,,Museum records the year only as 195x; no registration,,National Soaring Museum,on_display
+Prue,IIA,,N86671,,,,,fixed_wing,monoplane,civilian,other,1964,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+PZL-Swidnik,PW-5,,N737BS,,,Smyk,,fixed_wing,monoplane,civilian,other,,From the museum's own published collection list Sept 2026,PW5,National Soaring Museum,on_display
+Rogallo,Hang Glider,,,,,,,fixed_wing,monoplane,civilian,experimental,1972,Rogallo-type hang glider; no registration,,National Soaring Museum,on_display
+Ross,R-6,,N34H,,,,,fixed_wing,monoplane,civilian,other,1956,From the museum's own published collection list Sept 2026,R6,National Soaring Museum,on_display
+Ross,R-1,,N18134,,,Zanonia,,fixed_wing,monoplane,civilian,other,1937,From the museum's own published collection list Sept 2026,R1,National Soaring Museum,on_display
+Ross-Johnson,RJ-5,,N79T,,,,,fixed_wing,monoplane,civilian,other,1948,Museum records the build as 1948-50,RJ5,National Soaring Museum,on_display
+Schleicher,ASW-12,,N491V,,,,,fixed_wing,monoplane,civilian,other,1965,From the museum's own published collection list Sept 2026,ASW12,National Soaring Museum,on_display
+Schleicher,Ka-6,E,N139N,,,,,fixed_wing,monoplane,civilian,other,1965,From the museum's own published collection list Sept 2026,Ka6; Ka6E,National Soaring Museum,on_display
+Schleicher,Ka-6,E,N59256,,,,,fixed_wing,monoplane,civilian,other,1966,Second Ka-6E in the collection,Ka6; Ka6E,National Soaring Museum,on_display
+Schreder,HP-10,,N4718G,,,,,fixed_wing,monoplane,civilian,experimental,1961,From the museum's own published collection list Sept 2026,HP10,National Soaring Museum,on_display
+Schreder,HP-11,A,N4777G,,,Airmate,,fixed_wing,monoplane,civilian,experimental,1964,From the museum's own published collection list Sept 2026,HP11; HP11A,National Soaring Museum,on_display
+Schreder,HP-16,,N45HP,,,,,fixed_wing,monoplane,civilian,experimental,1971,From the museum's own published collection list Sept 2026,HP16,National Soaring Museum,on_display
+Schreder,HP-18,,N1YV,,,,,fixed_wing,monoplane,civilian,experimental,1976,Museum records the build as 1976-84,HP18,National Soaring Museum,on_display
+Schreder,HP-8,,N34Y,,,Airmate,,fixed_wing,monoplane,civilian,experimental,1958,From the museum's own published collection list Sept 2026,HP8,National Soaring Museum,on_display
+Schweizer,SGP 1-1,,N50SZ,,,Primary,,fixed_wing,monoplane,civilian,trainer,1989,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Schweizer,SGS 1-21,,N91856,,,,,fixed_wing,monoplane,civilian,other,1946,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Schweizer,SGS 1-23,D,N91899,,,,,fixed_wing,monoplane,civilian,other,1964,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Schweizer,SGS 1-23,HM,N94298,,,,,fixed_wing,monoplane,civilian,other,1954,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Schweizer,SGS 1-26,,N91889,,,,,fixed_wing,monoplane,civilian,other,1954,Prototype SGS 1-26 serial 001; N91889 is no longer in the current FAA registry,c/n 001,National Soaring Museum,on_display
+Schweizer,SGS 1-26,E,N36122,,,,,fixed_wing,monoplane,civilian,other,1971,Last SGS 1-26 built serial 700,c/n 700,National Soaring Museum,on_display
+Schweizer,SGS 1-29,,,,,,,fixed_wing,monoplane,civilian,other,1948,From the museum's own published collection list Sept 2026; no registration,,National Soaring Museum,on_display
+Schweizer,SGS 1-35,,N17900,,,,,fixed_wing,monoplane,civilian,other,1972,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Schweizer,SGS 1-36,,N502NA,,,Sprite,,fixed_wing,monoplane,civilian,test,1979,The NASA SGS 1-36 controlled-deep-stall research prototype,,National Soaring Museum,on_display
+Schweizer,SGS 2-22,,N91833,,,,,fixed_wing,monoplane,civilian,trainer,,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Schweizer,SGS 2-32,,N2767Z,,,,,fixed_wing,monoplane,civilian,other,1964,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Schweizer,SGS 2-32,,,,,,,fixed_wing,monoplane,civilian,other,1964,Second SGS 2-32 in the museum's own published collection list of September 2026; tail_number deliberately blank because the registration N8600R that the list gives is already recorded on an SGS 2-32 at the Evergreen Aviation Museum in Oregon and the conflict is unresolved,N8600R; SGS2-32,National Soaring Museum,on_display
+Schweizer,SGS 2-8,,N10VV,,,,,fixed_wing,monoplane,civilian,trainer,1941,Two-place Schweizer; civil counterpart of the Navy LNS-1,,National Soaring Museum,on_display
+Schweizer,SGU 1-19,,N91806,,,,,fixed_wing,monoplane,civilian,trainer,1946,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Schweizer,SGU 1-19,,,,,,,fixed_wing,monoplane,civilian,trainer,1945,Second SGU 1-19; no registration published,,National Soaring Museum,on_display
+Schweizer,SGU 1-19,,CF-ZBE,,,,,fixed_wing,monoplane,civilian,trainer,1945,Third SGU 1-19; carries a Canadian registration,,National Soaring Museum,on_display
+Schweizer,SGU 1-7,,NR23036,,,,,fixed_wing,monoplane,civilian,other,1937,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Schweizer,SGU 2-12,,N61279,,,,,fixed_wing,monoplane,military,trainer,1943,Army TG-3A training glider,TG-3; TG3,National Soaring Museum,on_display
+Schweizer,LNS,1,N53275,,,,,fixed_wing,monoplane,military,trainer,,Navy LNS-1 training glider; listed by the Wings of Eagles Discovery Center as on loan to the National Soaring Museum so it is recorded here; N53275 is no longer in the current FAA registry,LNS1,National Soaring Museum,on_display
+Slingsby,Kirby Gull,,N41829,,,,,fixed_wing,monoplane,civilian,other,1946,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Slingsby,UT-1,,N30422,,,Dawydoff Cadet,,fixed_wing,monoplane,civilian,trainer,1943,From the museum's own published collection list Sept 2026,UT1,National Soaring Museum,on_display
+Steinhauser,MU-1,,NC31680,,,Midwest Utility Glider,,fixed_wing,monoplane,civilian,trainer,1943,FAA registry confirms N31680 Midwest MU-1 Glider c/n 5 current to National Soaring Museum Elmira as of Sept 2026,N31680; c/n 5; MU1,National Soaring Museum,on_display
+Waco,CG-4,A,,,,,Hadrian,fixed_wing,monoplane,military,transport,1942,Wartime assault glider; museum records the airframe only as circa 1942 with no serial,CG4; CG4A,National Soaring Museum,on_display
+Warsztaty Szybowcowe,Orlik,II,N23727,,,,,fixed_wing,monoplane,civilian,other,1939,From the museum's own published collection list Sept 2026,,National Soaring Museum,on_display
+Windward Performance,SparrowHawk,,N899DC,,,,,fixed_wing,monoplane,civilian,other,2002,FAA registry confirms N899DC Windward Sparrow Hawk c/n SH-5 current to National Soaring Museum Elmira as of Sept 2026,c/n SH-5,National Soaring Museum,on_display
+Wright,1902 Glider,,,,,,,fixed_wing,biplane,civilian,experimental,,REPLICA of the Wright brothers' 1902 glider,,National Soaring Museum,on_display
+Wright,1911 Glider,,,,,,,fixed_wing,biplane,civilian,experimental,,REPLICA of the Wright brothers' 1911 glider,,National Soaring Museum,on_display
+Zoegling,Primary,,,,,,,fixed_wing,monoplane,civilian,trainer,1928,From the museum's own published collection list Sept 2026; no registration,,National Soaring Museum,on_display

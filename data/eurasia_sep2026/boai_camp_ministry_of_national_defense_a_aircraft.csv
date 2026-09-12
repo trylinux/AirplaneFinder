@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Unidentified,Aircraft,,,,TW,,,fixed_wing,monoplane,military,other,,One of three historic=aircraft nodes inside the Ministry of National Defense Boai Camp (OSM 7222758728 to 7222758730); no types recorded,,Boai Camp Ministry of National Defense Aircraft -- Taipei,on_display
+Unidentified,Aircraft,,,,TW,,,fixed_wing,monoplane,military,other,,Second of the three aircraft nodes inside Boai Camp,,Boai Camp Ministry of National Defense Aircraft -- Taipei,on_display
+Unidentified,Aircraft,,,,TW,,,fixed_wing,monoplane,military,other,,Third of the three aircraft nodes inside Boai Camp,,Boai Camp Ministry of National Defense Aircraft -- Taipei,on_display

@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+AIDC,PL-1,,,,TW,Chieh Shou,,fixed_wing,monoplane,military,trainer,,Surveyed as OSM node 2990500467 named PL-1; no tactical number recorded,PL1; 介壽號,Tamkang University Aircraft Display -- Tamsui,on_display
+North American,F-100,A,,,TW,Super Sabre,,fixed_wing,monoplane,military,fighter,,Surveyed as OSM node 2990500468 named F-100A; no tactical number recorded,F100A; Super Sabre; F100,Tamkang University Aircraft Display -- Tamsui,on_display
+Beechcraft,C-45,,,,TW,Expeditor,,fixed_wing,monoplane,military,transport,,Surveyed as OSM node 2997080743 named C-45; no serial recorded,C45; Expeditor; Beech 18,Tamkang University Aircraft Display -- Tamsui,on_display
+Cessna,206,,,,,Stationair,,fixed_wing,monoplane,civilian,private,,Surveyed as OSM node 2997081536 named CESSNA 206; no registration recorded,C206; Cessna 206; Stationair,Tamkang University Aircraft Display -- Tamsui,on_display

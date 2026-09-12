@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Grumman,F-14,A,160914,Tomcat,,fixed_wing,monoplane,military,fighter,,Tomcat at Willmar Municipal Airport; still mapped as an OSM historic=aircraft node in the current extract read September 2026 at 45.1143N 95.1323W which matches the Aerial Visuals fix; BuNo 160914 sits in the F-14A-105-GR block,BuNo 160914; c/n 343; F14; F14A,Willmar Municipal Airport Display -- Willmar,on_display

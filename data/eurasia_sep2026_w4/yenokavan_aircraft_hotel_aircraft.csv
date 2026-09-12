@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Unidentified,Airliner,,,,,,,fixed_wing,monoplane,civilian,commercial_transport,,An airframe converted into hotel accommodation beside highway H-26 at Yenokavan near Ijevan; OSM tags it building=transportation with building:use=hotel and historic=aircraft; type genuinely unknown from the source,,Yenokavan Aircraft Hotel,on_display

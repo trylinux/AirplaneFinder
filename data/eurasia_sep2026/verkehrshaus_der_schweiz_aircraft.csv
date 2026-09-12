@@ -1,0 +1,27 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Convair,CV-990,Coronado,HB-ICC,,CH,,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-Swissair Coronado; registration confirmed by the OSM node on the museum site,CV990; Convair 990; Coronado,Verkehrshaus der Schweiz,on_display
+Douglas,DC-3,,HB-IRN,,CH,,,fixed_wing,monoplane,civilian,commercial_transport,,Registration confirmed by the OSM node on the museum site,C-47; C47; DC3; Dakota,Verkehrshaus der Schweiz,on_display
+Bombardier,CL-600,Challenger 604,HB-JRA,,CH,,,fixed_wing,monoplane,civilian,search_rescue,,Rega air-ambulance jet; registration confirmed by the OSM node on the museum site,CL604; Challenger 604; CL600,Verkehrshaus der Schweiz,on_display
+Dufaux,4,,,,CH,,,fixed_wing,biplane,civilian,private,1909,The oldest preserved Swiss-built aircraft,Dufaux 4; Dufaux IV,Verkehrshaus der Schweiz,on_display
+Blériot,XI,b,,,CH,,,fixed_wing,monoplane,civilian,private,,The aircraft flown by the Swiss pioneer Oskar Bider,Bleriot 11; Bleriot XI-b,Verkehrshaus der Schweiz,on_display
+Northrop,F-5,E,,,CH,,Tiger II,fixed_wing,monoplane,military,fighter,,Displayed in Patrouille Suisse colours; serial not confirmed,F5E; Tiger 2; F5,Verkehrshaus der Schweiz,on_display
+Meteomatics,Meteodrone,,SUI-9999,,CH,,,fixed_wing,monoplane,civilian,drone,,Swiss weather-sounding drone,Meteodrone,Verkehrshaus der Schweiz,on_display
+Fokker,F.VII,a,,,CH,,,fixed_wing,monoplane,civilian,commercial_transport,,Early Swissair-era airliner; serial deliberately blank,F7; Fokker F7a,Verkehrshaus der Schweiz,on_display
+Lockheed,Model 9,C,,,CH,,Orion,fixed_wing,monoplane,civilian,commercial_transport,,Swissair's Lockheed Orion; serial deliberately blank,Lockheed 9C; Orion,Verkehrshaus der Schweiz,on_display
+EFW,N-20,2 Arbalète,,,CH,,,fixed_wing,monoplane,military,experimental,,Scale research glider for the Swiss N-20 jet fighter programme,N20; Arbalete,Verkehrshaus der Schweiz,on_display
+EKW,C-3603,1,,,CH,,,fixed_wing,monoplane,military,ground_attack,,Swiss multi-role aircraft; serial deliberately blank,C3603,Verkehrshaus der Schweiz,on_display
+Fieseler,Fi 156,,,,CH,,Storch,fixed_wing,monoplane,military,utility,,Swiss Storch; serial deliberately blank,Fi156; Storch,Verkehrshaus der Schweiz,on_display
+Pilatus,PC-12,,,,CH,,,fixed_wing,monoplane,civilian,utility,,Swiss single-turboprop; registration deliberately blank,PC12,Verkehrshaus der Schweiz,on_display
+FFA,AS 202,15 Bravo,,,CH,,,fixed_wing,monoplane,civilian,trainer,,Swiss trainer; registration deliberately blank,AS202; Bravo,Verkehrshaus der Schweiz,on_display
+Piper,PA-18,150,,,CH,,Super Cub,fixed_wing,monoplane,civilian,private,,Registration deliberately blank,PA18; Super Cub,Verkehrshaus der Schweiz,on_display
+Bücker,Bü 133,C,,,CH,,Jungmeister,fixed_wing,biplane,civilian,private,,Registration deliberately blank,Bu133; Jungmeister,Verkehrshaus der Schweiz,on_display
+Messerschmitt,Bf 108,B,,,CH,,Taifun,fixed_wing,monoplane,civilian,utility,,Registration deliberately blank,Bf108; Taifun,Verkehrshaus der Schweiz,on_display
+Mignet,HM-14,,,,CH,,Pou du Ciel,fixed_wing,monoplane,civilian,private,,Flying Flea; registration deliberately blank,HM14; Pou du Ciel; Flying Flea,Verkehrshaus der Schweiz,on_display
+Nieuport,28,C-1,,,CH,,,fixed_wing,biplane,military,fighter,,Serial deliberately blank,Nieuport 28C1,Verkehrshaus der Schweiz,on_display
+Aérospatiale,SE 3130,Alouette II,,,CH,,,rotary_wing,,civilian,utility,,Registration deliberately blank,SE3130; Alouette 2,Verkehrshaus der Schweiz,on_display
+Aérospatiale,SE 3160,Alouette III,,,CH,,,rotary_wing,,civilian,utility,,Registration deliberately blank,SE3160; Alouette 3,Verkehrshaus der Schweiz,on_display
+Agusta,A109,K2,,,CH,,,rotary_wing,,civilian,search_rescue,,Rega rescue helicopter; registration deliberately blank,A109K2,Verkehrshaus der Schweiz,on_display
+Bell,47,G-1,,,CH,,,rotary_wing,,civilian,utility,,Registration deliberately blank,Bell 47G1,Verkehrshaus der Schweiz,on_display
+Scottish Aviation,Twin Pioneer,,,,,,,fixed_wing,monoplane,civilian,utility,,Registration not recorded by the source,Twin Pioneer,Verkehrshaus der Schweiz,on_display
+Spalinger,S.21,H,,,CH,,,fixed_wing,monoplane,civilian,private,,Swiss glider,S21H; Spalinger S21,Verkehrshaus der Schweiz,on_display
+Farner,WF-7,,,,CH,,,fixed_wing,monoplane,civilian,experimental,,Swiss experimental light aircraft by Willi Farner of Grangeneuve,WF7,Verkehrshaus der Schweiz,on_display

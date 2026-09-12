@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Yakovlev,Yak-40,K,RA-87900,9720254,RU,,,fixed_wing,monoplane,military,commercial_transport,,russianplanes.net monument point 23282,Yak40; Yak40K,Borovsk Aircraft Monuments,on_display
+Tupolev,Tu-134,AK,RA-65935,66180,RU,,,fixed_wing,monoplane,military,commercial_transport,,russianplanes.net monument point 23735,Tu134; Tu134AK,Borovsk Aircraft Monuments,on_display
+Mil,Mi-2,,,545847108,,,,rotary_wing,,military,utility,,russianplanes.net monument point 23736; source records the bort as -,Mi2,Borovsk Aircraft Monuments,on_display

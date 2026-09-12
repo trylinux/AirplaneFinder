@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Fuji,L-19,E-2,11364,,JP,Bird Dog,,fixed_wing,monoplane,military,recon,,At 35.7054N 139.3995E,L19E; L-19E-2; Bird Dog; L19,JGSDF Camp Tachikawa,on_display
+Fuji,LR-1,,22003,,JP,,,fixed_wing,monoplane,military,recon,,At 35.7054N 139.3995E,LR1; LR-1; MU-2; MU2,JGSDF Camp Tachikawa,on_display
+Kawasaki,OH-6,D,31173,,JP,Cayuse,,rotary_wing,,military,recon,,At 35.7057N 139.3996E; stood in front of the archive building and was shown inside the hangar with the cockpit open at the 2 Nov 2025 camp festival,OH6D; OH6,JGSDF Camp Tachikawa,on_display
+Fuji,UH-1,H,41733,,JP,Iroquois,,rotary_wing,,military,utility,,The last UH-1H built; at 35.7057N 139.3996E since 2014,UH1H; Huey; UH1,JGSDF Camp Tachikawa,on_display
+Kawasaki,OH-6,D,31172,,JP,Cayuse,,rotary_wing,,military,recon,,Field maintenance unit instructional airframe frequently taken out to disaster-prevention events around Tachikawa and displayed outdoors at the 2 Nov 2025 camp festival,OH6D; OH6,JGSDF Camp Tachikawa,on_display
+Fuji,UH-1,H,41714,,JP,Iroquois,,rotary_wing,,military,utility,,Field maintenance unit training airframe; took part in the 2011 Narashino jump exercise and has carried EAAFM door markings since the 2012 camp festival,UH1H; Huey; UH1,JGSDF Camp Tachikawa,on_display
+Fuji,AH-1,S,,,JP,Cobra,,rotary_wing,,military,other,,anti_tank An AH-1S is recorded among the Tachikawa training airframes but its serial has not been established,AH1S; Cobra; AH1,JGSDF Camp Tachikawa,in_storage

@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,AH-1,F,,,,Cobra,,rotary_wing,,military,ground_attack,,An AH-1 Whiskey Cobra is displayed at the Eden Memorial VFW post and carries its own historical marker; WGRZ covered the unveiling; directories report 67-15506 but the US Army loan list does not carry an Eden entry so tail_number is left blank,67-15506; AH1; AH1F,VFW Post 8265 -- Eden,on_display

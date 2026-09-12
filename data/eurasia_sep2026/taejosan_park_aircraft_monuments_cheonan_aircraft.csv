@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+McDonnell Douglas,F-4,,,,KR,Phantom II,,fixed_wing,monoplane,military,fighter,,Monument on the Taejosan barrier-free trail; mapped as OSM way 545795932 named 'F-4 팬텀'; variant not stated and no serial recorded,F4; Phantom; 팬텀,Taejosan Park Aircraft Monuments -- Cheonan,on_display
+Northrop,F-5,,,,KR,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,Monument on the Taejosan trail; mapped as OSM way 545795933 named 'F-5'; variant not stated and no serial recorded,F5,Taejosan Park Aircraft Monuments -- Cheonan,on_display

@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,bis,71,75009475,,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 917; contributor note (ru): Иркутск.  ИВАТУ-ИВВАИУ(ВИ) 1931-2010 г.г.,MiG21; MiG21bis,Irkutsk Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-23,M,28 Red,0390201306,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 8048; contributor note (ru): перенесен с территории ИВВАИУ былid598; source records the bort as 28-красный,MiG23; MiG23M,Irkutsk Aircraft Monuments,on_display
+Mil,Mi-2,,RA-00960,548243073,RU,,,rotary_wing,,military,utility,,russianplanes.net monument point 23468,Mi2,Irkutsk Aircraft Monuments,on_display

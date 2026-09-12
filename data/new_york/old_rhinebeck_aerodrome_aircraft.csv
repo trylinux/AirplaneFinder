@@ -1,0 +1,86 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aeromarine,39,B,,,,,,fixed_wing,biplane,military,trainer,1917,ORIGINAL airframe; museum lists it as in storage,Aeromarine 39B,Old Rhinebeck Aerodrome,in_storage
+Aeromarine-Klemm,L-26,A,N320N,,,,,fixed_wing,monoplane,civilian,private,1929,ORIGINAL airframe; static exhibit; FAA c/n 2-59,c/n 2-59; L26; L26A,Old Rhinebeck Aerodrome,on_display
+Aeronca,65,TAC,N36967,,,Defender,,fixed_wing,monoplane,civilian,private,1941,ORIGINAL airframe; under restoration; FAA c/n C2711TA,Defender; c/n C2711TA,Old Rhinebeck Aerodrome,under_restoration
+Aeronca,C-3,,N17447,,,,,fixed_wing,monoplane,civilian,private,1936,ORIGINAL airframe; static exhibit; FAA c/n A-754,c/n A-754; C3,Old Rhinebeck Aerodrome,on_display
+Aeronca,7,AC,N8111N,,,Champion,,fixed_wing,monoplane,civilian,private,1946,ORIGINAL airframe; flown in the airshow; FAA c/n 7AC-3712,Champ; c/n 7AC-3712,Old Rhinebeck Aerodrome,on_display
+Albatros,D,Va,N12156,,,,,fixed_wing,biplane,military,fighter,,REPRODUCTION built by Cole Palen; under restoration; painted in the 2015 colours of Eduard Ritter von Schleich; FAA c/n 17-D-7517,c/n 17-D-7517,Old Rhinebeck Aerodrome,under_restoration
+Albree,Pigeon-Fraser,,,,,,Pursuit,fixed_wing,monoplane,military,fighter,1917,ORIGINAL airframe; only three were built; static exhibit,Pigeon Fraser Pursuit,Old Rhinebeck Aerodrome,on_display
+American Eagle,A-129,,N513H,,,,,fixed_wing,biplane,civilian,private,1929,ORIGINAL airframe; static exhibit; FAA c/n 534,c/n 534; A129,Old Rhinebeck Aerodrome,on_display
+Ansaldo,A,1,,,,Balilla,,fixed_wing,biplane,military,fighter,,REPRODUCTION; static exhibit,Balilla; A.1; A1,Old Rhinebeck Aerodrome,on_display
+Arup,S-2,,,,,,flying wing,fixed_wing,monoplane,civilian,experimental,1933,REPRODUCTION of the 1933 Arup S-2 lifting-body aircraft,Arup S-2; S2,Old Rhinebeck Aerodrome,on_display
+Avro,504,K,N4929,,,,,fixed_wing,biplane,military,trainer,,REPRODUCTION built by Cole Palen; under restoration; the museum auctioned surplus Avro 504K artifacts in early 2025; FAA c/n HAC1,c/n HAC1,Old Rhinebeck Aerodrome,under_restoration
+Brunner Winkle,Bird,CK,,,,,,fixed_wing,biplane,civilian,private,1931,ORIGINAL airframe; static exhibit,Bird Model CK,Old Rhinebeck Aerodrome,on_display
+Bleriot,XI,,N60094,,,,,fixed_wing,monoplane,civilian,private,1909,ORIGINAL 1909 airframe with its original Anzani engine; believed the second-oldest airworthy aeroplane in the world; under restoration; FAA c/n 56,c/n 56,Old Rhinebeck Aerodrome,under_restoration
+Bleriot,XI,,,,,Cross Country,,fixed_wing,monoplane,civilian,private,1911,ORIGINAL airframe; the long-span Cross Country variant; static exhibit,Type XI Cross Country,Old Rhinebeck Aerodrome,on_display
+Boeing,N2S,5,,,,Stearman,,fixed_wing,biplane,military,trainer,1943,ORIGINAL airframe; flown in the airshow,Kaydet; PT-17; Stearman; PT17,Old Rhinebeck Aerodrome,on_display
+Bristol,F.2,B,,,,Brisfit,,fixed_wing,biplane,military,fighter,,REPRODUCTION; flown in the airshow,Brisfit; F2B Fighter,Old Rhinebeck Aerodrome,on_display
+Burgess-Collier,Flying Boat,,,,,,flying boat,fixed_wing,biplane,civilian,private,1913,ORIGINAL airframe; museum lists it as in storage but visible to visitors,Burgess-Collier,Old Rhinebeck Aerodrome,in_storage
+Caudron,G,III,N3943P,,,,,fixed_wing,biplane,military,recon,,REPRODUCTION built by Cole Palen; static exhibit; FAA c/n 1914-2,G.3; c/n 1914-2,Old Rhinebeck Aerodrome,on_display
+Chanute,Glider,,,,,,hang glider,fixed_wing,biplane,civilian,experimental,1896,REPRODUCTION of an Octave Chanute glider; static exhibit,Chanute glider,Old Rhinebeck Aerodrome,on_display
+Curtiss,Fledgling,,N271Y,,,,,fixed_wing,biplane,civilian,trainer,1929,ORIGINAL airframe; in storage; FAA c/n B-52,c/n B-52,Old Rhinebeck Aerodrome,in_storage
+Curtiss,JN-4,H,N3918,,,Jenny,,fixed_wing,biplane,military,trainer,1917,ORIGINAL airframe; Navy trainer variant; flown in the airshow; FAA c/n 3919,Jenny; c/n 3919; JN4; JN4H,Old Rhinebeck Aerodrome,on_display
+Curtiss,Pusher,Model A,,,,,,fixed_wing,biplane,civilian,experimental,1909,REPRODUCTION; the museum lists it as on loan — confirm whether it is on loan to or from Old Rhinebeck before publishing,Curtiss Model A,Old Rhinebeck Aerodrome,on_display
+Curtiss,Pusher,Model D,,,,,,fixed_wing,biplane,civilian,experimental,1911,REPRODUCTION; flown in the airshow; two Curtiss pushers are FAA-registered to the museum as N4124A c/n 2 and N68014 c/n 1976 but which belongs to Model A and which to Model D is not established,N4124A; N68014,Old Rhinebeck Aerodrome,on_display
+Curtiss-Wright,CW-1,Junior,N605EB,,,,,fixed_wing,monoplane,civilian,private,1931,ORIGINAL airframe; static exhibit; FAA c/n 1025,Junior; c/n 1025; CW1,Old Rhinebeck Aerodrome,on_display
+Davis,D1,W,,,,,,fixed_wing,monoplane,civilian,private,1933,ORIGINAL airframe; flown in the airshow; one of two Davis machines in the collection,Davis D1-W,Old Rhinebeck Aerodrome,on_display
+De Havilland,DH.82,,,,,,Tiger Moth,fixed_wing,biplane,military,trainer,1934,ORIGINAL airframe; under restoration,Tiger Moth,Old Rhinebeck Aerodrome,under_restoration
+Santos-Dumont,Demoiselle,,,,,,Demoiselle,fixed_wing,monoplane,civilian,private,1909,REPRODUCTION of the Santos-Dumont Demoiselle; static exhibit,Demoiselle; No. 20,Old Rhinebeck Aerodrome,on_display
+Deperdussin,Racer,,,,,,Monocoque Racer,fixed_wing,monoplane,civilian,experimental,1913,REPRODUCTION of the 1913 Deperdussin monocoque racer; static exhibit,Deperdussin Monocoque,Old Rhinebeck Aerodrome,on_display
+Dickson,Primary Glider,,,,,,glider,fixed_wing,monoplane,civilian,experimental,1930,REPRODUCTION; designed in England by Roger Dickson; static exhibit,Dickson glider,Old Rhinebeck Aerodrome,on_display
+Etrich,Taube,Model F,N567JD,,,,,fixed_wing,monoplane,civilian,private,1912,REPRODUCTION; flown in the airshow; fitted with a De Havilland Gipsy Major in place of the original Daimler; FAA c/n 015,Taube; c/n 015,Old Rhinebeck Aerodrome,on_display
+Fairchild,24,H,N19129,,,,,fixed_wing,monoplane,civilian,private,1937,ORIGINAL airframe; static exhibit; FAA c/n 3224,c/n 3224,Old Rhinebeck Aerodrome,on_display
+Fleet,Finch,16-B,N24197,,,,,fixed_wing,biplane,military,trainer,1942,ORIGINAL airframe; in storage; FAA c/n 303,c/n 303,Old Rhinebeck Aerodrome,in_storage
+Fleet,Finch,16-B,N666J,,,,,fixed_wing,biplane,military,trainer,1942,ORIGINAL airframe; under restoration; FAA c/n 350,c/n 350,Old Rhinebeck Aerodrome,under_restoration
+Fleet,Model 1,,,,,,Fleet,fixed_wing,biplane,civilian,trainer,1930,ORIGINAL airframe; flown in the airshow,Fleet 1,Old Rhinebeck Aerodrome,on_display
+Fokker,D,VI,N1649,,,,,fixed_wing,biplane,military,fighter,,REPRODUCTION built by Charles Brady; flown in the airshow; FAA c/n 1649,c/n 1649,Old Rhinebeck Aerodrome,on_display
+Fokker,D,VII,N70814,,,,,fixed_wing,biplane,military,fighter,,REPRODUCTION built by James Palen; flown in the airshow; FAA c/n 1918-1989,c/n 1918-1989,Old Rhinebeck Aerodrome,on_display
+Fokker,Dr.I,,N220TP,,,,triplane,fixed_wing,triplane,military,fighter,,REPRODUCTION; museum lists this example as on loan; FAA registers a Palmer/Wilgus Fokker F1 c/n F1-103 as N220TP,Dr.1; Triplane; c/n F1-103,Old Rhinebeck Aerodrome,on_display
+Fokker,Dr.I,,N3221,,,,triplane,fixed_wing,triplane,military,fighter,,REPRODUCTION; static exhibit; FAA c/n 322,Dr.1; Triplane; c/n 322,Old Rhinebeck Aerodrome,on_display
+Fokker,Dr.I,,,,,,triplane,fixed_wing,triplane,military,fighter,,REPRODUCTION built by Cole Palen in the mid-1960s with a Le Rhone 9J; flown in the airshow,Dr.1; Triplane,Old Rhinebeck Aerodrome,on_display
+Fokker,E,I,,,,,Eindecker,fixed_wing,monoplane,military,fighter,,REPRODUCTION; static exhibit,Eindecker; E.I,Old Rhinebeck Aerodrome,on_display
+Great Lakes,2T-1,,N304Y,,,,,fixed_wing,biplane,civilian,private,1931,REPRODUCTION; flown in the airshow; FAA c/n 191,c/n 191,Old Rhinebeck Aerodrome,on_display
+Great Lakes,2T-1,E,,,,,Modified,fixed_wing,biplane,civilian,private,1931,ORIGINAL airframe modified with a Warner engine; flown in the airshow,2T-1E,Old Rhinebeck Aerodrome,on_display
+Great Lakes,2T-1,MS,,,,,,fixed_wing,biplane,civilian,private,1931,ORIGINAL airframe with a Menasco Pirate; static exhibit,2T-1MS,Old Rhinebeck Aerodrome,on_display
+Hanriot,Monoplane,,,,,,,fixed_wing,monoplane,civilian,private,1910,REPRODUCTION; under restoration; fitted with a 1939 Franklin in place of the original ENV,Hanriot monoplane,Old Rhinebeck Aerodrome,under_restoration
+Heath,Parasol,LNA-40,,,,,,fixed_wing,monoplane,civilian,private,1932,ORIGINAL airframe; static exhibit,Heath Parasol,Old Rhinebeck Aerodrome,on_display
+Monocoupe,113,,,,,,Monocoupe,fixed_wing,monoplane,civilian,private,1929,ORIGINAL airframe; under restoration,Monocoupe 113,Old Rhinebeck Aerodrome,under_restoration
+Monocoupe,90,,,,,,Monocoupe,fixed_wing,monoplane,civilian,private,1931,ORIGINAL airframe; static exhibit; the museum owns two FAA-registered Monocoupe 90s N116V c/n 625 and N429N c/n 618 — which is the 90 and which the 90-J is not established,N116V; N429N,Old Rhinebeck Aerodrome,on_display
+Monocoupe,90,J,,,,,Monocoupe,fixed_wing,monoplane,civilian,private,1931,ORIGINAL airframe with a Warner Scarab Jr; in storage,Monocoupe 90-J,Old Rhinebeck Aerodrome,in_storage
+Morane-Saulnier,A,I,N1379M,,,,,fixed_wing,monoplane,military,fighter,1917,ORIGINAL airframe; static exhibit; FAA c/n 417,MS.A-1; c/n 417,Old Rhinebeck Aerodrome,on_display
+Morane-Saulnier,MS.130,,N7MS,,,,,fixed_wing,monoplane,military,trainer,1927,ORIGINAL airframe; static exhibit; FAA c/n 001,MS 130 ET2; c/n 001,Old Rhinebeck Aerodrome,on_display
+Morane-Saulnier,N,,N5356J,,,Bullet,,fixed_wing,monoplane,military,fighter,,REPRODUCTION built by Cole Palen; static exhibit; FAA c/n 1915-84,Bullet; c/n 1915-84,Old Rhinebeck Aerodrome,on_display
+New Standard,D-25,,N176H,,,,,fixed_wing,biplane,civilian,transport,1929,ORIGINAL airframe; the barnstorming ride aircraft flown at every airshow; FAA c/n 138,c/n 138; D25,Old Rhinebeck Aerodrome,on_display
+New Standard,D-25,,N19157,,,,,fixed_wing,biplane,civilian,transport,1929,ORIGINAL airframe; under restoration; FAA c/n 162J; a third D-25 N31K c/n 150 is also registered to the museum and is not on the published collection list,c/n 162J; D25,Old Rhinebeck Aerodrome,under_restoration
+Nicholas-Beazley,NB-8,G,N576Y,,,,,fixed_wing,monoplane,civilian,private,1931,ORIGINAL airframe; static exhibit; FAA c/n K-18,c/n K-18; NB8; NB8G,Old Rhinebeck Aerodrome,on_display
+Nieuport,10,,,,,,Nieuport,fixed_wing,biplane,military,recon,1915,ORIGINAL airframe; static exhibit,Nieuport 10,Old Rhinebeck Aerodrome,on_display
+Nieuport,11,,,,,,Bebe,fixed_wing,biplane,military,fighter,1915,REPRODUCTION; under restoration,Bebe; Nieuport 11,Old Rhinebeck Aerodrome,under_restoration
+Nieuport,17,,,,,,Nieuport,fixed_wing,biplane,military,fighter,1916,REPRODUCTION; museum lists it as on loan,Nieuport 17,Old Rhinebeck Aerodrome,on_display
+Nieuport,2,N,,,,,Nieuport,fixed_wing,monoplane,civilian,private,1911,REPRODUCTION; static exhibit; the FAA registers a Nieuport 83E c/n 680 as N680CP to the museum which does not match any published collection entry,Nieuport 2N; N680CP,Old Rhinebeck Aerodrome,on_display
+Passat,Ornithopter,,,,,,ornithopter,fixed_wing,monoplane,civilian,experimental,1910,REPRODUCTION; static exhibit,Passat Ornithopter,Old Rhinebeck Aerodrome,on_display
+Pietenpol,Air Camper,,,,,,Air Camper,fixed_wing,monoplane,civilian,private,1928,REPRODUCTION homebuilt; in storage,Aircamper,Old Rhinebeck Aerodrome,in_storage
+Piper,J-3,,,,,,Cub,fixed_wing,monoplane,civilian,private,1941,ORIGINAL airframe; flown in the airshow,Cub; J3,Old Rhinebeck Aerodrome,on_display
+Pitcairn,PA-6,,,,,,Mailwing,fixed_wing,biplane,civilian,transport,1929,ORIGINAL airframe; static exhibit,Mailwing; PA6,Old Rhinebeck Aerodrome,on_display
+Porterfield,CP-65,,N37709,,,Collegiate,,fixed_wing,monoplane,civilian,private,1941,ORIGINAL airframe; static exhibit; FAA c/n 938,Collegiate; c/n 938; CP65,Old Rhinebeck Aerodrome,on_display
+Royal Aircraft Factory,F.E.8,,N17501,,,,,fixed_wing,biplane,military,fighter,1915,REPRODUCTION built by Cole Palen; museum lists it as on loan; FAA c/n 300,FE8; c/n 300,Old Rhinebeck Aerodrome,on_display
+Royal Aircraft Factory,S.E.5,a,,,,,,fixed_wing,biplane,military,fighter,1917,REPRODUCTION; under restoration,SE5a,Old Rhinebeck Aerodrome,under_restoration
+Ryan,NYP,,N211XC,,,,Spirit of St. Louis,fixed_wing,monoplane,civilian,private,,REPRODUCTION of Lindbergh's Spirit of St. Louis; first test flight December 2015; added to the airshow 2016; FAA c/n 30,Spirit of St. Louis; c/n 30,Old Rhinebeck Aerodrome,on_display
+Short,S.29,,N4275,,,,,fixed_wing,biplane,civilian,experimental,1910,REPRODUCTION built by Cole Palen and Jim Cole in 1971 with a 60 hp ENV V-8; static exhibit; FAA c/n 2,Short S-29; c/n 2,Old Rhinebeck Aerodrome,on_display
+Siemens-Schuckert,D,III,,,,,Siemens,fixed_wing,biplane,military,fighter,1918,REPRODUCTION; static exhibit,SSW D.III,Old Rhinebeck Aerodrome,on_display
+Sopwith,1 1/2 Strutter,,,,,,Strutter,fixed_wing,biplane,military,recon,1916,REPRODUCTION; under restoration,1.5 Strutter; Sopwith Strutter,Old Rhinebeck Aerodrome,under_restoration
+Sopwith,Camel,,N7157Q,,,,,fixed_wing,biplane,military,fighter,1917,REPRODUCTION built by James Palen; flown in the airshow; FAA c/n 1990,c/n 1990,Old Rhinebeck Aerodrome,on_display
+Sopwith,Dolphin,,N47166,,,,,fixed_wing,biplane,military,fighter,1917,REPRODUCTION built by Cole Palen — the first known airworthy Dolphin reproduction attempted; powered by a vintage Hispano-Suiza V-8; under restoration; FAA c/n 1533,c/n 1533,Old Rhinebeck Aerodrome,under_restoration
+Sopwith,Pup,,N5139,,,,,fixed_wing,biplane,military,fighter,1916,REPRODUCTION; the museum lists it as active but Wikipedia states Cole Palen's 1967 Pup is now at the Owls Head Transportation Museum — a second airframe or a stale Wikipedia claim; FAA registers a Sopwith Scout c/n 83213 as N5139 to the museum,c/n 83213,Old Rhinebeck Aerodrome,on_display
+SPAD,VII,,N8096L,,,,,fixed_wing,biplane,military,fighter,1917,REPRODUCTION built by Carl Swanson; flown in the airshow; FAA c/n 1999,SPAD S.VII; c/n 1999,Old Rhinebeck Aerodrome,on_display
+Spartan,C-3,,N285M,,,,,fixed_wing,biplane,civilian,private,1929,ORIGINAL airframe; static exhibit; FAA c/n 120,C3-165; c/n 120; C3,Old Rhinebeck Aerodrome,on_display
+Stinson,SM-1,B,N1517,,,Detroiter,,fixed_wing,monoplane,civilian,transport,1927,ORIGINAL airframe; flown in the airshow; FAA c/n M-267,Detroiter; c/n M-267; SM1; SM1B,Old Rhinebeck Aerodrome,on_display
+Taylor,E-2,,,,,,Cub,fixed_wing,monoplane,civilian,private,1934,ORIGINAL airframe; flown in the airshow,E-2 Cub; E2,Old Rhinebeck Aerodrome,on_display
+Taylor,J-2,,N17834,,,,Cub,fixed_wing,monoplane,civilian,private,1936,ORIGINAL airframe; flown in the airshow; FAA lists it as a Piper J-2 c/n 1269,J-2 Cub; c/n 1269; J2,Old Rhinebeck Aerodrome,on_display
+Thomas,Pusher,Model E,N4720G,,,,,fixed_wing,biplane,civilian,experimental,1912,ORIGINAL airframe restored by Cole Palen; static exhibit; FAA c/n 2,Thomas Model E; c/n 2,Old Rhinebeck Aerodrome,on_display
+Thomas-Morse,S-4,B,,,,Scout,,fixed_wing,biplane,military,trainer,1918,ORIGINAL airframe; static exhibit,Tommy; S4B; S4,Old Rhinebeck Aerodrome,on_display
+Voisin,Biplane,,,,,,Voisin,fixed_wing,biplane,civilian,private,1908,Museum calls it ORIGINAL; the FAA registers a Renik-built Voisin c/n 1 as N38933 to the museum which implies a reproduction — conflict unresolved,N38933; c/n 1,Old Rhinebeck Aerodrome,on_display
+Waco,10,,,,,,Waco 10,fixed_wing,biplane,civilian,private,1927,ORIGINAL airframe; static exhibit,Waco 10; GXE,Old Rhinebeck Aerodrome,on_display
+Wright,EX,,,,,Vin Fiz,,fixed_wing,biplane,civilian,private,1911,REPRODUCTION of the Wright EX Vin Fiz; static exhibit,Vin Fiz,Old Rhinebeck Aerodrome,on_display
+Wright,Flyer,,,,,,Wright Flyer,fixed_wing,biplane,civilian,experimental,1903,REPRODUCTION of the 1903 Wright Flyer; static exhibit,1903 Flyer,Old Rhinebeck Aerodrome,on_display
+Wright,Glider,,,,,,Wright Glider,fixed_wing,biplane,civilian,experimental,1902,REPRODUCTION of the 1902 Wright glider; static exhibit,1902 glider,Old Rhinebeck Aerodrome,on_display
+Piccard,AX3M,,N7132,,,,,lighter_than_air,,civilian,private,,Hot-air balloon registered to RHINEBECK AERODROME MUSEUM in the current FAA registry as c/n 23; not on the museum's published aircraft collection list — confirm before publishing,c/n 23; balloon,Old Rhinebeck Aerodrome,on_display

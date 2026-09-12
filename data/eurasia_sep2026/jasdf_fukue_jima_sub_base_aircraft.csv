@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mitsubishi,F-1,,10-8257,,JP,,,fixed_wing,monoplane,military,ground_attack,,On satellite imagery from 7 Feb 2011; repainted dark sea blue over light blue for the 60th anniversary in Sep 2014 and repainted overall light grey by the 69th anniversary in July 2023,F1,JASDF Fukue-jima Sub-Base,on_display
+Mitsubishi,Nike-J,,,,JP,Nike-J,,missile_rocket,,military,other,,surface_to_air Missile-body monument at 32.7599N 128.6687E,NikeJ,JASDF Fukue-jima Sub-Base,on_display

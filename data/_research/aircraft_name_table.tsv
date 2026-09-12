@@ -1,0 +1,1229 @@
+family	mfr_key	canonical	also_known_as	variant_rules	confidence	note
+1	fleet	NONE	Fleet 1; Model 1; Fawn		low	Fleet Model 1 has no reliable popular name; Fawn belongs to the Canadian Fleet 7 and is listed only for search.
+1 1/2 Strutter	sopwith	Strutter	1 1/2 Strutter; 1½ Strutter		high	
+1.131	casa	Jungmann	Bucker Jungmann; Bücker Jungmann		high	CASA licence-built Bucker Bu 131.
+10	lockheed	Electra	Electra 10		high	
+10	stinson	Voyager	HW-75		high	
+10	waco	NONE	GXE; Waco 10; Waco GXE		high	Known by designation; GXE is a model suffix, not a popular name.
+100	fokker	NONE			high	Fokker 100 has no popular name.
+1002	nord	Pingouin	Pingouin II; Pingouin 2; Taifun; Bf 108; Messerschmitt Bf 108		high	French-built Messerschmitt Bf 108 Taifun.
+105	saab	NONE	Sk 60		high	Sk 60 is the Swedish service designation, not a popular name.
+108	stinson	Voyager	Station Wagon; Flying Station Wagon		high	
+11	aeronca	Chief	Super Chief		high	
+11	nieuport	Bebe	Bébé; Baby; Nieuport Bebe; Nieuport Bébé		high	
+110	monocoupe	NONE	Clipwing; Monocoupe 110 Special		high	Clipwing and Special are variant descriptors, not popular names.
+1101	nord	Noralpha	Ramier; Me 208; Messerschmitt Me 208		high	Duplicate of the Nord Aviation 1101 family under a different manufacturer key.
+1101	nord aviation	Noralpha	Ramier; Me 208; Messerschmitt Me 208		high	Ramier is the French military version.
+120	cessna	NONE			high	No popular name.
+1300	nord aviation	NONE	Grunau Baby		low	Nord 1300 is understood to be the French-built Grunau Baby sailplane; verify before applying.
+14	breguet	NONE			high	
+14-13	bellanca	Cruisair Senior	Cruisair		high	
+14-bis	santos dumont	NONE	Oiseau de proie; Bird of Prey		high	Pioneer one-off known by designation; Oiseau de proie was a contemporary nickname.
+140	cessna	NONE			high	
+146	bae	NONE	Whisperjet; Avro RJ; Statesman		low	No official name; Whisperjet is a marketing nickname, Avro RJ the later designation.
+150	cessna	NONE	Commuter		high	'Commuter' is a Cessna trim label, not a popular name for the type.
+152	cessna	NONE	Commuter		high	No established popular name; 'Commuter' was only a trim level.
+16	fleet	Finch	Fleet Finch; Fleet 16		high	
+17	nieuport	NONE			high	Nieuport 17 has no popular name.
+170	bristol	Freighter	Wayfarer; Superfreighter		high	Wayfarer is the passenger version.
+170	cessna	NONE			high	
+171	bristol	Sycamore			high	
+172	cessna	Skyhawk	Mescalero; Hawk XP; Cutlass		high	T-41 Mescalero is the military version.
+18	beech	Twin Beech	Expeditor; Kansan; Navigator; Super 18		high	
+180	cessna	Skywagon	Cessna 180		high	Later Cessna 180s were marketed as the Skywagon.
+185	commonwealth	Skyranger			high	
+188	cessna	AgWagon	Ag Wagon; AgTruck; Ag Truck; AgHusky; Ag Husky; AgPickup		high	
+18A	air space	NONE	Flymobil		low	Air & Space 18A gyroplane (ex-Umbaugh); Flymobil was a marketing name.
+19	breguet	NONE	Super Bidon		high	No type name; Super Bidon was a specific long-range variant/record aircraft.
+1902 Glider	wright	NONE			high	
+195	cessna	Businessliner	Model 190; Model 195; LC-126		high	
+2.111	casa	NONE	Heinkel He 111; He 111; Pedro		low	CASA licence build of the Heinkel He 111, which has no popular name. "Pedro" is a Spanish service nickname of uncertain currency; listed for search only.
+2000	travel air	NONE			high	
+205	bell	Iroquois	Huey; UH-1; UH-1D; UH-1H		high	Bell 205 is the commercial designation of the UH-1D/H Iroquois. "Cheetah" in existing values looks wrong - that name belongs to the HAL (Aerospatiale Lama) Cheetah - so check that record.
+206	agusta bell	JetRanger	Jet Ranger; Bell 206		high	
+206	bell	JetRanger	Jet Ranger; JetRanger II; JetRanger III; Kiowa; Kiowa Warrior; LongRanger; Long Ranger; Creek; Sea Ranger		high	Single model string '206' covers civil JetRanger/LongRanger and military Kiowa; no variant rules possible.
+206	cessna	Stationair	Skywagon; Super Skywagon; Super Skylane; Turbo Stationair		high	Early 206s were Super Skywagon/Skywagon; later ones Stationair. Single model string so no rule.
+212	bell	Twin Huey	Huey; Iroquois		high	'Bell 212' in existing values is a manufacturer-prefixed designation.
+22	fairchild	NONE			high	
+23	learjet	NONE	Lear Jet; Lear Jet 23		high	Known by designation; Learjet is the manufacturer.
+24	fairchild	NONE	Forwarder; Argus		high	Civil Fairchild 24 has no popular name; Forwarder is the USAAF UC-61 name and Argus the RAF name.
+24	learjet	NONE	Learjet		high	
+25	learjet	NONE	Learjet		high	
+2501	nord aviation	Noratlas			high	
+269	hughes	Osage	Hughes 300; Model 300; Schweizer 300		high	Osage is the TH-55 military name; the civil aircraft is the Model 300.
+27	nieuport	NONE			high	
+28	nieuport	NONE			high	Nieuport 28 has no popular name.
+2T-1	great lakes	Sport Trainer			high	
+310	cessna	NONE	Blue Canoe		high	Blue Canoe is the U-3/L-27 military nickname.
+337	cessna	Skymaster	Super Skymaster; O-2; Push-pull		high	Civil counterpart of the O-2.
+340	saab	NONE	Saab 340B; S 100B; Argus		high	Airliner has no popular name; Argus is the Swedish AEW conversion (S 100B).
+3400	nord aviation	Norbarbe			high	
+35	beech	Bonanza	V-tail Bonanza		high	N80409 and N80418 in existing data are registrations, not names.
+35	porterfield	Flyabout			high	
+35	saab	Draken			high	
+352	casa	NONE	Ju 52; Junkers Ju 52; Tante Ju; Iron Annie		high	CASA 352 is the Spanish-built Ju 52/3m; the Ju 52 has only nicknames, no official name.
+36	beech	Bonanza	A36; Turbo Bonanza		high	N7710R in existing data is a registration, not a name.
+369	hughes	Cayuse	Loach; Model 500; Hughes 500; Defender; MD 500; OH-6		high	369 is the Hughes company model number for the OH-6 Cayuse / Model 500 family; "Loach" is the near-universal US Army nickname.
+369	kawasaki	NONE	Cayuse; Little Bird; Defender		high	Kawasaki-built Hughes 369/OH-6; no single Japanese-service popular name.
+4-0-4	martin	NONE	Skyliner; Silver Falcon; Martin 404		high	Skyliner (TWA) and Silver Falcon (Eastern) were airline fleet names, not the type's name.
+4-AT	ford	Trimotor	Tri-Motor; Tin Goose		high	
+4000	travel air	NONE			high	No popular name.
+402	cessna	NONE	Businessliner; Utiliner		high	Businessliner and Utiliner are interior/trim labels.
+412	bell	NONE	Griffon; Griffin; CH-146; Twin Huey; Bell 412		high	The Bell 412 itself has no popular name; Griffon/Griffin are military service names.
+415	erco	Ercoupe	Aircoupe; Air Coupe; Forney F-1; Alon A-2		high	
+421	cessna	Golden Eagle	Cessna 421; Executive Skyknight		high	
+45	aero	NONE			high	
+451	ikarus	NONE	Stršljen; Strsljen; Matica		low	Stršljen (451M) and Matica are variant names within the 451 series; accented and plain forms both listed.
+47	agusta bell	NONE	Sioux; Super Alpino; Alpino; Bell 47		low	Same type as the AB.47 rows; Sioux is a military service name only.
+47	bell	Sioux	Ranger; Bell 47		high	Sioux is the military (US Army/British) name; civil Bell 47s carry no name and the 47J is the Ranger.
+480	camair	Twin Navion	Navion; Camair Twin Navion; Riley Twin Navion		high	Twin-engine conversion of the Ryan Navion.
+5-AT	ford	Trimotor	Tri-Motor; Tin Goose; Ford Trimotor		high	
+500	aero commander	Commander	Shrike Commander; Aero Commander; Commander 500		low	500S is the Shrike Commander; the plain 500/500B carry no distinct name.
+500	hughes	NONE	Cayuse; Little Bird; Defender; Loach		high	One model string covers civil Model 500, OH-6 Cayuse, MD 500 Defender and Little Bird; no single canonical name is safe.
+504	avro	NONE			high	Known only by designation.
+504K	avro	NONE	Avro 504		high	Avro 504 has no popular name.
+56	beech	Baron	Turbo Baron; Model 56TC; Model 95		high	
+60	fleet	Fort	Fleet Fort		high	
+616	avro	Avian			high	
+65	aeronca	Chief	Super Chief; Defender		high	Model 65 covers Chief, Super Chief and Defender under one model string.
+66	utva	NONE			high	Yugoslav utility type with no popular name.
+680	aero commander	Commander	Super Commander; Grand Commander		high	
+7	aeronca	Champion	Champ; Tandem; Traveler		high	
+7	fleet	Fawn	Fleet Model 7		high	RCAF name for the Fleet Model 7.
+707	avro	NONE			high	Avro 707 research delta has no popular name.
+707	boeing	NONE	Intercontinental; Stratoliner; Re'em; Reem; Jet Stratoliner		low	The Boeing 707 has no popular name. "Stratoliner" properly belongs to the Model 307 and to the USAF C-137/VC-137, and is listed only for search. Zeus, Cóndor and El Al in existing values are individual aircraft or operator names, not model names.
+71	fairchild	NONE			high	
+720	boeing	NONE	Boeing 720B		high	No popular name; 'Chung Mei' is an individual airframe/operator name.
+727	boeing	NONE			high	Boeing 727 has no popular name. 'El Cuatro Vientos' in existing values is an individual aircraft name.
+737	boeing	NONE			high	No popular name. Pukeko and Jet Airliner in existing data are not model names.
+747	boeing	Jumbo Jet	Jumbo; Shuttle Carrier Aircraft; SCA		high	Jumbo Jet is the universal popular nickname; SCA is a role conversion, not a name.
+7AC	aeronca	Champion	Champ; Airknocker		high	
+8	luscombe	Silvaire			high	
+80	fleet	Canuck	Fleet Canuck		high	Unrelated to the Avro Canada CF-100 Canuck.
+880	convair	NONE			high	No popular name.
+90	monocoupe	NONE			high	
+95	beech	Travel Air	Baron; Model 95; Twin Bonanza		high	Beech Model 95 is the Travel Air; the Baron is the 95-55 development, and a bare "95" model string may cover both. Check individual records before applying Travel Air.
+A 50	junkers	Junior	Junkers Junior; A50		high	
+A-10	fairchild republic	Thunderbolt II	Thunderbolt; Warthog; Hog		high	
+A-12	lockheed	Blackbird	Oxcart; Article; Cygnus		high	Oxcart was the CIA programme codename rather than a type name; Blackbird is the family name shared with the SR-71 and YF-12.
+A-15	howard	NONE	Damn Good Airplane		high	DGA stands for Damn Good Airplane; the type carries no popular name.
+A-18	piper	Super Cub	Super Cub 95; L-18; L-21		high	
+A-20	douglas	Havoc	Boston; DB-7		high	Boston is the RAF name for the same aircraft.
+A-22	piper	Tri-Pacer	Colt; Caribbean; Pacer; TriPacer		high	PA-22-108 is the Colt; Caribbean is a trim of the PA-22-150.
+A-23	piper	Aztec	Apache		high	PA-23-150/160 are Apaches, PA-23-235/250 are Aztecs; one model string covers both, so no variant rule.
+A-24	douglas	Banshee	Dauntless		high	A-24 is the USAAF SBD Dauntless, officially named Banshee in Army service.
+A-24	piper	Comanche	Twin Comanche		high	
+A-26	douglas	Invader	Counter Invader		high	Not to be confused with the Martin B-26 Marauder, a different type.
+A-28	piper	Cherokee	Cherokee Cruiser; Warrior; Archer; Arrow; Dakota; Pathfinder; Charger; Challenger; Cadet		high	PA-28 marketing names vary by sub-model; the model string PA-28 covers all of them.
+A-30	wassmer	Bijave	WA-30; Bijave		high	
+A-31	piper	Navajo	Chieftain; Navajo Chieftain; Mojave; Pressurized Navajo		high	Chieftain is the PA-31-350; single model string so no variant rule.
+A-37	cessna	Dragonfly	Super Tweet; Tweety Bird; T-37; Tweet		high	Family also covers the OA-37 forward air control variant, same name.
+A-4	douglas	Skyhawk	Super Skyhawk; Skyhawk II; Ahit		high	Ahit is the Israeli service name.
+A-5	grumman american	Traveler	Cheetah; Tiger; AA-5A; AA-5B		high	AA-5 Traveler, AA-5A Cheetah, AA-5B Tiger all share one model string.
+A-5	north american	Vigilante			high	
+A-6	grumman	Intruder	Prowler; Electric Intruder	EA-6=Prowler	high	EA-6B Prowler dominates the EA-6 rows; a few EA-6A Electric Intruders may exist.
+A-6	northrop grumman	Prowler	Intruder; Electric Intruder; EA-6A; EA-6B		high	EA-6B is the Prowler; the EA-6A (Electric Intruder) shares the model string. The A-6 itself is the Intruder.
+A-66	north american	Harvard	Harvard II; Texan; SNJ; T-6; AT-6; NA-66		high	NA-66 is the North American company model number for the Harvard II.
+A-7	vought	Corsair II	SLUF		high	
+A.109	agusta	Hirundo	A109; Power; Grand		high	
+A.S.10	airspeed	Oxford	Ox-box		high	
+A109	agusta	Hirundo	A-109; AB109		high	
+A150	cessna	Aerobat			high	
+A300	airbus	NONE	Beluga; Super Transporter		high	A300 itself is unnamed; the A300-600ST is the Beluga. Zero-G is a mission nickname.
+A310	airbus	NONE	A310 MRTT		high	No popular name.
+A320	airbus	NONE			high	
+A340	airbus	NONE			high	
+A6M	mitsubishi	Zero	Reisen; Rei-sen; Zero-sen; Zeke; Hamp; Rufe		high	'12-shi Kanjo Sentoki' is the prototype specification, not a name.
+A75N1	boeing	Kaydet	Stearman; Stearman Kaydet; Model 75; PT-17		high	Kaydet is the military name; Stearman is the near-universal informal name.
+A75N1	boeing stearman	Kaydet	Stearman; PT-17; N2S; Yellow Peril; Model 75		high	
+AB 204	agusta bell	Iroquois	Huey; UH-1; Bell 204; Model 204		high	Agusta-built Bell 204/UH-1.
+AB 205	agusta bell	Iroquois	Huey; UH-1; Bell 205		high	Agusta licence build of the Bell 205 / UH-1D-H Iroquois.
+AB 206	agusta bell	JetRanger	Jet Ranger; Kiowa; Bell 206		high	Solid and spaced forms both listed.
+AB 47	agusta bell	Sioux	Bell 47; H-13; Ranger; Sioux Scout		high	Agusta-Bell licence-built Bell 47; Sioux is the British and Italian army name. Ranger is the Bell 47J.
+AB-204	agusta bell	Iroquois	Huey; Bell 204; UH-1		high	Agusta-built Bell 204/UH-1.
+AB.204	agusta bell	Iroquois	Huey		high	Agusta-Bell licence-built Bell 204/UH-1.
+AB.205	agusta bell	Iroquois	Huey; UH-1; Anafa; Model 205		high	Agusta-built UH-1; Anafa is the Israeli Air Force name.
+AB.212	agusta bell	Twin Huey	Huey; Iroquois; Bell 212; UH-1N; CH-135		low	Agusta licence build of the Bell 212. Twin Huey is widely used for the Bell 212/UH-1N but is not standard for Italian AB.212 naval aircraft, hence low.
+AB.47	agusta bell	NONE	Sioux; Super Alpino; Alpino; Bell 47		low	Agusta-built Bell 47. Sioux is the British/Commonwealth military name only; Super Alpino is the Italian AB.47J-3 name.
+AD	douglas	Skyraider			high	
+AIM-4	hughes	Falcon	Super Falcon; Nuclear Falcon		high	Air-to-air missile.
+AJSF 37	saab	Viggen			high	
+AMX	amx international	NONE	Ghibli; A-1		high	Ghibli is an Italian service nickname, not an official name; A-1 is the Brazilian designation.
+AOP	auster	NONE	Auster		high	Auster AOP series carries no popular name beyond the maker's name.
+AOP.6	auster	Auster	AOP.6; Auster AOP.6		high	The type name is simply Auster; AOP.6 is the mark.
+AS332	aerospatiale	Super Puma	Superpuma		high	
+AS350	aerospatiale	Écureuil	Ecureuil; Squirrel; AStar; A-Star		high	Accented and unaccented forms both listed for substring search.
+ATO	waco	Taperwing			high	
+ATR 42	atr	NONE			high	
+AW	cessna	NONE			high	Cessna AW has no popular name.
+Aerobee	aerojet	Aerobee	Aerobee-Hi		high	Sounding rocket.
+Aerodrome	langley	Aerodrome	Langley Aerodrome; Great Aerodrome		high	Aerodrome No. 5 in existing values names a specific machine.
+Air Camper	pietenpol	Air Camper	Sky Scout		high	Avion Pinocho in existing values appears to be an individual aircraft name, not a model name.
+Aircraft	unidentified	NONE			high	Placeholder rows for unidentified airframes; no name can be assigned.
+Airliner	unidentified	NONE			high	Placeholder record with no identified type.
+Airtourer	aesl	Airtourer	Victa Airtourer; CT/4 Airtrainer		high	'Miss Jacy' in existing values is an individual aircraft name.
+Airtourer	victa	Airtourer	AESL Airtourer; CT/4 Airtrainer		high	
+Ajeet	hal	Ajeet	Gnat; Folland Gnat		high	HAL development of the Folland Gnat.
+Alize	breguet	Alize	Alizé; Breguet Alize; Br.1050		high	Duplicate spelling of the accented Alizé family.
+Alizé	breguet	Alizé	Alize; Breguet Alize; Br.1050		high	
+Alouette II	sud aviation	Alouette II	Alouette; SE 3130; SA 318; Astazou Alouette		high	
+Alouette III	aerospatiale	Alouette III	Alouette; Chetak; SA 316; SA 319		high	HAL licence-built Alouette III is the Chetak.
+Alouette III	sud aviation	Alouette III	Chetak		high	Chetak is the HAL licence-built name.
+Alpha Jet	dassault breguet dornier	Alpha Jet	Alphajet		high	
+Alpha Jet	dassault dornier	Alpha Jet			high	
+An-12	antonov	NONE	Cub; Y-8; Shaanxi Y-8		high	No popular name; Cub is the NATO reporting name. Y-8 is the Chinese derivative.
+An-14	antonov	Pchelka	Clod; Pchyolka		high	Clod is the NATO reporting name.
+An-2	antonov	NONE	Colt; Y-5; Kukuruznik; PZL An-2		high	Soviet type known by designation; Colt is the NATO name. 'Fat Cat' in existing data is an individual aircraft name, not a model name.
+An-2	pzl	NONE	Colt; Kukuruznik; Antek; Annushka		high	No formal popular name; Colt is the NATO reporting name. PZL-Mielec built the type under licence as the An-2.
+An-24	antonov	Coke			high	
+An-26	antonov	NONE	Curl; Curl-A; Y-7H		high	Soviet type known by designation.
+An-26	antonow	NONE	Curl		high	
+An-30	antonov	Clank			high	
+An-8	antonov	NONE	Camp		high	Camp is the NATO reporting name.
+Anson	avro	Anson			high	
+Apollo	north american rockwell	Command Module	Apollo CSM; Command and Service Module; Apollo		low	'Apollo 7' in existing values is an individual spacecraft, not a model name.
+Apollo CM	north american rockwell	Apollo Command Module	Command Module; CSM; Apollo CSM		high	
+Apollo CSM	north american	NONE	Apollo Command Module; Apollo Command and Service Module; Command and Service Module; CSM; Block II		high	"Apollo Command and Service Module" is a description, not a popular name. Individual missions carried their own callsigns (Columbia, Charlie Brown, etc.), which are not model names.
+Apollo LM	grumman	Lunar Module	Apollo Lunar Module; Lunar Excursion Module; LEM; LM		high	
+Ar 196	arado	NONE			high	
+Ar 66	arado	NONE			high	
+Arava	iai	Arava	IAI 201; IAI 202		high	
+Argosy	armstrong whitworth	Argosy	Whistling Wheelbarrow; AW.650		high	Model string is the name.
+Argus	fairchild	Argus	Forwarder; UC-61; Fairchild 24		high	Argus is the RAF/RCAF name, Forwarder the USAAF name.
+Ascender	pterodactyl	Ascender			high	
+Atlantic	breguet	Atlantic	Atlantique; Atlantique 2; ATL2		high	
+Auster	auster	Auster			high	
+Auster	taylorcraft	Auster	Taylorcraft Auster; Auster AOP		high	
+B	funk	NONE			low	Funk Model B is known by designation. 'Bee' in existing data is unverified and looks wrong.
+B-1	ryan	Brougham			high	
+B-10	mitchell	Mitchell Wing	Mitchell Wing B-10; Superwing		high	Don Mitchell ultralight flying wing — NOT the Martin B-10 bomber. Motor Glider in existing data is a category, not a name.
+B-17	boeing	Flying Fortress	Fortress; Flying Fort		high	Shoo Shoo Baby in existing values is an individual aircraft name, not a model name.
+B-2	brantly	NONE			high	Brantly B-2 has no popular name.
+B-24	consolidated	Liberator	Liberator Express; Privateer		high	Liberator Express is the C-87 transport; PB4Y-2 Privateer is the same lineage.
+B-25	north american	Mitchell			high	
+B-26	douglas	Invader	Counter Invader; A-26		high	The Douglas B-26 Invader is unrelated to the Martin B-26 Marauder, which shares the designation.
+B-26	martin	Marauder	Widowmaker; Baltimore Whore; Flying Prostitute		high	Do not confuse with the post-1948 B-26 Invader (Douglas A-26), a different type.
+B-29	boeing	Superfortress	Super Fortress; Washington; Tu-4; Bull		high	Enola Gay and Bockscar in existing values are individual aircraft names. B-50 shares this name (modernised B-29).
+B-33	avia	NONE	Il-10; Ilyushin Il-10; Beast; Shturmovik		high	Avia licence build of the Ilyushin Il-10, which has no popular name.
+B-8	bensen	NONE	Gyrocopter; Gyro-Glider; Gyroglider; Gyro Copter		high	Gyrocopter (powered) and Gyro-Glider (unpowered) are Bensen trade names covering the same B-8 model string, so neither can serve as a single canonical.
+B-8M	bensen	Gyro-Copter	Gyrocopter; Gyro Copter		high	Solid, hyphenated and spaced forms all listed.
+B.E.2	royal aircraft factory	NONE			high	
+B5N	nakajima	NONE	Kate; Type 97 Carrier Attack Bomber		high	Kate is the Allied reporting name, kept as an alias only.
+BAe 146	bae	NONE	Avro RJ; Avro RJ85; Avro RJ100; Whisperjet; RJ		low	No settled popular name; Avro RJ is the later production designation of the same aircraft.
+BC-12	taylorcraft	NONE			high	Civil Taylorcraft BC-12 has no popular name; the military L-2 is the Grasshopper.
+BD-4	bede	NONE			high	Homebuilt known by designation only.
+BD-5	bede	Micro	Microjet; Micro Jet; BD-5J; Acrostar		high	
+BG-12	briegleb	NONE			high	Glider with no popular name.
+BGM-109	general dynamics	Tomahawk	Gryphon		high	BGM-109G ground-launched variant was the Gryphon.
+BI-1	bereznyak isayev	NONE			high	
+BL-65	taylorcraft	NONE	Model B; Taylorcraft B		high	No popular name.
+BN-2	britten norman	Islander	Trislander; Defender; Maritime Defender		high	Trislander is the three-engined BN-2A Mk III.
+BO 105	mbb	NONE	Bolkow 105; Bölkow 105; Bo 105		high	No popular name; known by designation.
+BQM-34	ryan	Firebee	Fire Bee; Firebee II		high	
+BQM-34	teledyne ryan	Firebee	Fire Bee; Firebee II		high	Same drone family as the Ryan BQM-34; Teledyne Ryan is the later company name.
+BT-13	vultee	Valiant	Vultee Vibrator; Vibrator; BT-15; SNV		high	Vibrator is the well-attested service nickname.
+Baby Ace	corben	Baby Ace	Corben Baby Ace; Junior Ace		high	
+Balliol	boulton paul	Balliol	Sea Balliol		high	
+Barracuda	jeffair	Barracuda			high	Jeffair Barracuda homebuilt; unrelated to the Fairey Barracuda.
+Bathtub	dormoy	Bathtub	Dormoy Bathtub		high	Model string is the name.
+Battle	fairey	Battle			high	
+Be-12	beriev	Mail	Chayka; Chaika; Чайка		high	Mail is the NATO reporting name; Chayka (Seagull) is the Soviet name.
+Be-6	beriev	Madge			high	
+Beaufighter	bristol	Beaufighter	Beau; Whispering Death		high	
+Beaufighter	department of aircraft production	Beaufighter	Whispering Death		high	Australian-built Bristol Beaufighter.
+Beaufort	department of aircraft production	Beaufort			high	Australian DAP-built Bristol Beaufort.
+Bell 47	kawasaki	Sioux	Bell 47; KH-4; Model 47		high	Kawasaki-built Bell 47; Sioux is the military name.
+Belvedere	bristol	Belvedere			high	
+Bergfalke	scheibe	Bergfalke			high	
+Beverley	blackburn	Beverley	Blackburn Beverley; General Aircraft GAL.60		high	
+Bf 108	messerschmitt	Taifun	Nord 1000; Pingouin		high	Nord 1000/1001 Pingouin is the French-built Bf 108.
+Bf 109	messerschmitt	NONE	Me 109; Emil; Gustav; Buchon; Buchón; Mezek; Avia S-199		high	The Bf 109 has no popular type name. Emil/Gustav are German phonetic variant nicknames (E/G) and are kept only as search aliases. Buchon = Hispano HA-1112, Mezek = Avia S-199.
+Bf 110	messerschmitt	NONE	Zerstörer; Zerstorer		high	Zerstorer is the role class, not a popular name; the Bf 110 had none.
+Bird	brunner winkle	Bird			high	
+Blenheim	bristol	Blenheim	Bolingbroke; Bisley		high	Bolingbroke is the Fairchild Canada-built version.
+Bloodhound	bristol	Bloodhound			high	
+Bo 102	bolkow	Helitrainer			high	
+Bo 105	mbb	NONE	BO-105; Bolkow 105; Boelkow 105		high	No popular name; type is known by designation only.
+Bolingbroke	bristol	Bolingbroke	Blenheim		high	Canadian-built Blenheim.
+Bolingbroke	fairchild aircraft ltd	Bolingbroke	Blenheim; Bristol Blenheim		high	Canadian-built Bristol Blenheim.
+Bonanza	beech	Bonanza			high	Model string is the name.
+Boripatra	royal thai air force	Boripatra			high	
+Boxkite	bristol	Boxkite			high	
+Britannia	bristol	Britannia	Whispering Giant		high	
+Bu 133	bucker	Jungmeister			high	
+Buccaneer	blackburn	Buccaneer			high	
+Buccaneer	hawker siddeley	Buccaneer	Blackburn Buccaneer; NA.39; Banana Jet		high	
+Bulldog	scottish aviation	Bulldog	Beagle Bulldog		high	
+Buran	npo molniya	Buran			high	BTS-002 is the atmospheric test airframe, not a name.
+Bü 131	bucker	Jungmann			high	
+Bü 133	bucker	Jungmeister	Bucker Jungmeister; Bücker Jungmeister		high	
+Bü 181	bucker	Bestmann	Bu 181; Zlin Z-181; Sk 25		high	Accented and plain forms both listed.
+C-1	grumman	Trader			high	
+C-117	douglas	Super DC-3	Skytrain; Skytrooper; Super Gooney; Super Gooneybird; Dakota; R4D-8		low	C-117D is the Super DC-3; earlier C-117A/B/C were VIP C-47 Skytrains and the model string does not separate them.
+C-119	fairchild	Flying Boxcar	Boxcar; Shadow; Stinger; Packet		high	AC-119G Shadow and AC-119K Stinger share the one model string 'AC-119', so no rule; Packet is the parent C-82.
+C-12	beech	Huron	Super King Air; King Air; Guardrail; Guardrail Common Sensor		high	Guardrail is the RC-12 mission system name. 'Kookiya' in existing data is unverified.
+C-121	lockheed	Constellation	Super Constellation; Connie; Warning Star; Columbine	EC-121=Warning Star	high	EC-121 radar aircraft is the Warning Star; Columbine was a presidential individual aircraft name.
+C-123	fairchild	Provider	Avitruc		high	
+C-130	lockheed	Hercules	Super Hercules; Spectre; Spooky; Spooky II; Combat Talon; Combat Talon II; Combat Shadow; Combat King; Hercules C.3; Herc		high	Gunship and special-mission names vary within single model strings (AC-130 covers both Spectre and Spooky), so no variant rules.
+C-131	convair	Samaritan	Convairliner; Metropolitan; Convair 240; Convair 340; Convair 440		high	'Total In-Flight Simulator' is the NC-131H research conversion's program name, not a model name.
+C-135	boeing	Stratotanker	Stratolifter	KC-135=Stratotanker; C-135=Stratolifter	high	Looking Glass and ARIA are mission nicknames, not model names. EC-135 left unruled: airframes came from both KC-135 and C-135 lines.
+C-137	boeing	NONE			high	SAM 970, SAM 26000 and SAM 27000 in existing values are individual aircraft identities, not model names; the VC-137 (Boeing 707) has no popular name.
+C-160	transall	Transall	Gabriel		high	Transall is the consortium name but is universally used as the aircraft's popular name. Gabriel is the French ELINT variant.
+C-2	aeronca	NONE	Flying Bathtub		high	Flying Bathtub is the period nickname; Collegian, Sport and Deluxe Scout are variant marketing names.
+C-25	castel	NONE			high	Castel C-25 glider carries only its designation.
+C-27	alenia	Spartan	G.222		high	Derived from the Aeritalia G.222.
+C-3	aeronca	NONE	Flying Bathtub; Master; Collegian; Razorback		low	Master and Collegian are C-3 sub-model labels; 'Flying Bathtub' is a nickname.
+C-3	republic	Seabee	Sea Bee		high	
+C-37	cessna	Airmaster	Cessna Airmaster; C-34; C-38; C-145; C-165		high	
+C-43	beech	Traveler	Traveller; Staggerwing; Model 17; GB-2; D17S		high	
+C-45	beech	Expeditor	Twin Beech; Model 18; Navigator; Kansan; Voyager; Expediter		high	Navigator (AT-7) and Kansan (AT-11) are sibling names on the same Beech Model 18 airframe.
+C-46	curtiss	Commando			high	
+C-46	curtiss wright	Commando			high	
+C-47	douglas	Skytrain	Sky Train; Dakota; Dak; Skytrooper; Sky Trooper; Gooney Bird; Spooky; Puff the Magic Dragon; Skytrain II	AC-47=Spooky	high	Dakota is the RAF/Commonwealth name for the same aircraft. AC-47 gunship is Spooky. "Mei-Ling" in existing values is an individual aircraft name, not a model name.
+C-49	douglas	Skytrain	Dakota; Skytrooper; DC-3		high	C-49 is an impressed DC-3.
+C-53	douglas	Skytrooper	Sky Trooper; Skytrain; Dakota; Gooney Bird		high	Troop-carrier variant of the C-47 family.
+C-54	douglas	Skymaster	DC-4; R5D		high	
+C-6	waco	NONE	Custom Cabin; Waco Custom Cabin		low	Waco cabin biplane series with no settled popular name.
+C-61	fairchild	Forwarder	Argus; Fairchild 24		high	Argus is the RAF/RCAF name for the UC-61.
+C-64	noorduyn	Norseman			high	
+C-78	cessna	Bobcat	Bamboo Bomber; Crane; Cessna T-50		high	Crane is the RCAF name.
+C-9	douglas	Nightingale	Skytrain II; DC-9		high	C-9A is the Nightingale, C-9B the Skytrain II; the single model string cannot separate them.
+C-9	mcdonnell	Nightingale	Skytrain II; DC-9		low	C-9A/C-9C are Nightingales; C-9B in Navy service is the Skytrain II, and the model strings do not separate them.
+C-97	boeing	Stratofreighter	Stratocruiser; Stratotanker; Anak; Model 377		high	Anak is the Israeli Air Force name for its Boeing 377/KC-97 fleet.
+C.30	cierva	NONE	Autogiro; Rota; Autogyro		high	Autogiro is Cierva's trade name for the class; Rota is the RAF name for the C.30A.
+C.800	caudron	Épervier	Epervier		high	Accented and unaccented forms both listed.
+C.V	fokker	NONE			high	No popular name.
+C3	stearman	NONE	Business Speedster		low	Business Speedster was a C3 variant marketing name, not a type name.
+CAP 10	mudry	NONE	CAP 10B		high	Aerobatic trainer with no popular name.
+CC-115	dhc	Buffalo	DHC-5		high	
+CC-129	douglas	Dakota	Skytrain; Skytrooper		high	Canadian designation for the C-47.
+CC-144	canadair	Challenger	CL-600; CL-601; Challenger 600; CE-144		high	
+CF-100	avro canada	Canuck	Clunk; Lead Sled		high	Distinct from the North American F-100 Super Sabre.
+CF-101	mcdonnell	Voodoo			high	Canadian-service F-101.
+CF-104	canadair	Starfighter			high	
+CF-104	lockheed	Starfighter			high	
+CF-105	avro canada	Arrow			high	
+CF-116	canadair	Freedom Fighter	Tiger; Tiger II; CF-5; NF-5		high	Canadair-built F-5A/B; CF-116 is the Canadian Forces designation for the CF-5.
+CF-188	mcdonnell	Hornet	CF-18; F/A-18		high	Canadian Forces F/A-18.
+CF-5	canadair	Freedom Fighter	Tiger; Tiger II; CF-116; NF-5		high	
+CG-4	waco	Hadrian			high	Hadrian is the British service name; the type had no US name.
+CIM-10	boeing	Bomarc	BOMARC		high	
+CL-13	canadair	Sabre	Canadair Sabre		high	Canadair licence-built F-86.
+CL-215	canadair	NONE	Scooper; Superscooper; Duck		low	No official popular name; Scooper/Superscooper are informal firefighting nicknames (Superscooper properly the CL-415).
+CL-41	canadair	Tutor	Tebuan; CT-114; Snowbird		high	CL-41G exported to Malaysia as the Tebuan.
+CL.IV	halberstadt	NONE			high	No popular name.
+CM-170	fouga	Magister	Super Magister; Tzukit; Zukit		high	Duplicate spelling of the CM.170 family; treat identically.
+CM.170	fouga	Magister	Super Magister; Tzukit; Zukit; Potez CM.170		high	Tzukit is the Israeli (IAI) upgraded Magister.
+CM.175	fouga	Zéphyr	Zephyr		high	Naval version of the Magister; carries its own name.
+CP-107	canadair	Argus			high	
+CP-121	dhc	Tracker	CS2F; Grumman Tracker; Turbo Tracker		high	de Havilland Canada licence-built Grumman S-2 Tracker; CP-121 is the post-1968 Canadian Forces designation.
+CP-121	grumman	Tracker	S-2; Trader; CS2F		high	Canadian designation for the S-2 Tracker.
+CS2F	dhc	Tracker	S-2 Tracker; CP-121; Grumman Tracker; Stoof		high	CS2F is the de Havilland Canada-built S-2 Tracker.
+CS2F	grumman	Tracker	S-2 Tracker; CP-121; Stoof; S2F		high	
+CSO	waco	NONE			low	Waco letter-code model; no reliable popular name.
+CT-114	canadair	Tutor			high	
+CT-133	canadair	Silver Star	Shooting Star; T-Bird; T-33; Silver Star Mk 3		high	Canadair-built T-33; Silver Star is the Canadian name.
+CT-134	beech	Musketeer	Sundowner; Model 23; Musketeer Sport		high	
+CT-39	north american	Sabreliner			high	
+CTO	waco	Taperwing	Waco Taperwing		high	
+Ca.100	caproni	NONE	Caproncino		high	Caproncino is the Italian service nickname.
+Cadet	culver	Cadet	Culver Cadet; LCA		high	
+Cadet	slingsby	Cadet			high	
+Camel	sopwith	Camel			high	
+Canberra	english electric	Canberra			high	
+Canberra	government aircraft factories	Canberra			high	GAF licence-built English Electric Canberra.
+Canso	canadian vickers	Canso	Catalina; PBY; Canso A		high	Canadian-built PBY Catalina.
+Cavalier	star	Cavalier	Star Cavalier; Cavalier SA102		high	Homebuilt; the model string is the name.
+Cheetah	atlas	Cheetah	Mirage III; Mirage		high	Atlas Cheetah is a South African rebuild of the Mirage III lineage.
+Cherokee II	hall	Cherokee II			high	Hall Cherokee II sailplane; the model string is the name.
+Chetak	hal	Chetak	Alouette III; SA 316; Lama; Cheetah		high	Chetak is the licence-built Alouette III.
+Chipmunk	dhc	Chipmunk	DHC-1		high	
+Chukar	northrop	Chukar	MQM-74; BQM-74; MQM-74A		high	
+Comet	de havilland	Comet	Nimrod		high	Hawker Siddeley Nimrod is the Comet-derived maritime patrol aircraft.
+Concorde	aerospatiale	Concorde			high	
+Concorde	aerospatiale bac	Concorde			high	
+Concorde	bac aerospatiale	Concorde			high	
+Condor	dittmar	Condor	Dittmar Condor		high	Glider; the model string is the name.
+Cricket	campbell	Cricket			high	
+D	curtiss	NONE	Pusher; Headless Pusher; Curtiss Model D		high	Pusher and Headless Pusher are descriptive nicknames, not a manufacturer's name.
+D-21	lockheed	NONE	Tagboard; Senior Bowl		high	Tagboard and Senior Bowl are program names, not aircraft names.
+D-22	szd	Mucha Standard	Mucha		high	
+D-25	new standard	NONE			high	
+D-30	pzl bielsko	Pirat			high	
+D-4	douglas	Skyraider			high	
+D-558	douglas	Skystreak	Skyrocket		high	One model string covers two different aircraft: D-558-1 Skystreak and D-558-2 Skyrocket. Check the variant before applying.
+D-9	pzl bielsko	Bocian	SZD-9 Bocian; Bocian bis		high	
+D-9	szd	Bocian	Stork		high	
+D.31	druine	Turbulent			high	
+D.9	jodel	Bebe	Bébé; Jodel Bebe; Jodel Bébé		high	
+D.H.82	de havilland	Tiger Moth	Menasco Moth		high	Menasco Moth is the Canadian DH.82C with the Menasco engine.
+D.VII	fokker	NONE			high	Fokker D.VII has no popular name; existing entries are just manufacturer-prefixed designations.
+D.VIII	fokker	NONE	Flying Razor; Rasiermesser; E.V		high	No official name; Flying Razor is the period nickname. E.V is the original designation.
+D.Va	albatros	NONE			high	
+D18	beech	Twin Beech	Expeditor; Navigator; Kansan; Model 18; C-45; AT-11		high	
+D18S	beech	Twin Beech	Beech 18; Model 18; Expeditor; Kansan; Bugsmasher		high	D18S is the civil postwar Beech 18.
+DC-10	mcdonnell	NONE	Extender; KC-10; KC-10 Extender		high	The airliner has no popular name; the KC-10 tanker is the Extender.
+DC-2	douglas	NONE			high	No popular name.
+DC-3	douglas	NONE	Dakota; Skytrain; Skytrooper; Gooney Bird; Dak		high	Civil DC-3 has no popular name; military derivatives are Skytrain (US) / Dakota (Commonwealth). N28341 and Odyssey in existing names are individual aircraft.
+DC-4	douglas	Skymaster	North Star; Argonaut		high	North Star/Argonaut are the Canadair DC-4M derivatives.
+DC-6	douglas	NONE	Liftmaster; Cloudmaster; C-118; R6D		low	Liftmaster is the USAF/USN name for the C-118/R6D; civil DC-6s carry no popular name. Cloudmaster is weakly attested.
+DC-7	douglas	NONE	Seven Seas		high	Seven Seas applies only to the DC-7C.
+DC-8	douglas	NONE			high	No popular name. 'Former Japan Air Lines airliner' in existing data is a description, not a name.
+DC-9	douglas	NONE	C-9; Nightingale; Skytrain II		high	The DC-9 has no popular name; Nightingale and Skytrain II are US military C-9 variant names on the same airframe.
+DC-9	mcdonnell	NONE			high	
+DFS 230	dfs	NONE			high	Assault glider with no popular name.
+DH-100	de havilland	Vampire	Sea Vampire		high	
+DH-112	de havilland	Venom	Sea Venom; Aquilon; DH.112		high	Aquilon is the French Navy licence-built Sea Venom.
+DH-115	de havilland	Vampire	Vampire Trainer; Sea Vampire; DH.115		high	Two-seat Vampire trainer; same name as the single-seaters.
+DH-4	dayton wright	Liberty Plane	Flaming Coffin		low	Both are period nicknames for the American-built DH-4; neither is an official name.
+DH-60	de havilland	Moth	Gipsy Moth; Gypsy Moth; Cirrus Moth; Genet Moth		high	
+DH.100	de havilland	Vampire	Sea Vampire		high	
+DH.104	de havilland	Dove	Devon; Sea Devon		high	Devon/Sea Devon are the RAF/RN names; single model string so no variant rule.
+DH.112	de havilland	Venom	Sea Venom; Aquilon		high	DH.112 covers both Venom night fighter and Sea Venom; the single model string cannot be split.
+DH.115	de havilland	Vampire	Vampire Trainer; Sea Vampire		high	DH.115 is the two-seat Vampire Trainer.
+DH.2	airco	NONE			high	
+DH.53	de havilland	Humming Bird	Hummingbird		high	Solid and spaced forms both listed.
+DH.60	de havilland	Moth	Gipsy Moth; Cirrus Moth; Genet Moth; Moth Major		high	
+DH.80	de havilland	Puss Moth	Moth		high	
+DH.82	de havilland	Tiger Moth	Jackaroo		high	
+DH.83	de havilland	Fox Moth			high	
+DH.87	de havilland	Hornet Moth			high	
+DH.89	de havilland	Dragon Rapide	Rapide; Dominie; DH.89A		high	
+DH.9	airco	NONE			high	Airco DH.9 has no popular name.
+DH.9	de havilland	NONE	DH.9A; Ninak		high	Known by designation; Ninak is a phonetic nickname for the DH.9A.
+DH.98	de havilland	Mosquito	Wooden Wonder; Mossie		high	
+DHC-1	dhc	Chipmunk			high	
+DHC-2	dhc	Beaver	Turbo Beaver; U-6; L-20		high	
+DHC-3	dhc	Otter			high	
+DHC-6	dhc	Twin Otter	Vistaliner; UV-18		high	
+Dagger	iai	Dagger	Finger; Finger IIIA; Finger IIIB; Nesher; Mirage 5		high	Argentine Daggers are exported Neshers; Finger is the later Argentine upgrade standard.
+Dakota	douglas	Dakota	Skytrain; Sky Train; Dak; Skytrooper; Gooney Bird		high	Same aircraft as the C-47; Dakota is the RAF/Commonwealth name and is used here as the model string.
+Dart	culver	Dart	Culver Dart; Dart G; Dart GK		high	
+Demoiselle	santos dumont	Demoiselle			high	
+Do 228	dornier	NONE			high	No popular name.
+Do 24	dornier	NONE			high	
+Do 27	casa	NONE	C-127; CASA C-127; Dornier Do 27		high	CASA licence build of the Dornier Do 27, which carried no popular name.
+Do 27	dornier	NONE			high	No popular name.
+Do 28	dornier	Skyservant	Sky Servant		high	Strictly the Do 28D onwards is the Skyservant; the earlier Do 28 A/B carried no name, and the model string does not distinguish them.
+Do 335	dornier	Pfeil	Arrow; Ameisenbär; Ameisenbar		high	Pfeil means arrow.
+Dominie	hawker siddeley	Dominie	HS.125; Hawker 125; DH.125		high	This is the HS.125 Dominie navigation trainer, not the de Havilland DH.89 Dominie of the same name.
+Doppelraab	raab	Doppelraab			high	
+Dove	de havilland	Dove	Devon; Sea Devon; DH.104		high	
+Dr.I	fokker	Dreidecker	Triplane; Fokker Triplane; Dr.I Triplane		high	
+Dragon Rapide	de havilland	Dragon Rapide	Rapide; Dominie; DH.89		high	Dominie is the RAF name.
+Dragonfly	viking	Dragonfly			high	Viking Dragonfly homebuilt.
+Dragonfly	westland	Dragonfly	S-51; Sikorsky S-51		high	Westland-built Sikorsky S-51.
+Duster	huff daland	Duster	Huff-Daland Duster; Petrel		high	Model string is the name.
+E-1	grumman	Tracer	Willy Fudd; Stoof with a Roof		high	
+E-2	grumman	Hawkeye			high	
+E-2	petlyakov	NONE	Buck; Peshka		high	No formal popular name; Buck is the NATO reporting name applied retrospectively, Peshka the Soviet crew nickname.
+E-2	taylor	Cub	Piper Cub; Taylor Cub		high	
+E-45	aero	NONE			high	Aero Ae-45 carries no popular name.
+E.III	fokker	Eindecker	Eindekker		high	
+E18	beech	Super 18	Twin Beech; Expeditor		high	
+EMB-110	embraer	Bandeirante	Bandit; C-95		high	
+EMB-312	embraer	Tucano			high	
+EMB-326	embraer	Xavante	MB-326; Impala; Atlas Impala		high	Licence-built Aermacchi MB-326; Impala is the South African name.
+EPB-1	backstrom	Flying Plank			high	
+EX	wright	NONE	Vin Fiz		high	The Wright EX has no model name; "Vin Fiz" is the individual name of Cal Rodgers' aircraft (and of the replicas of it). Listed as an alias for search only.
+Eagle	christen	Eagle			high	
+Eaglerock	alexander	Eaglerock	Long Wing; Long-Wing		high	
+Eaglet	american eagle	Eaglet			high	Model string is the name.
+Eindecker	grade	NONE			high	Eindecker is German for monoplane, a descriptive term rather than a popular name.
+Ercoupe	erco	Ercoupe	Aircoupe; Forney Aircoupe; Alon Aircoupe; Mooney Cadet		high	
+Europa	eldo	Europa	Coralie; Blue Streak; Astris		high	Launch vehicle; Coralie and Blue Streak are stages.
+Exec	rotorway	Exec	Executive; Exec 162F; Exec 90		high	
+Expeditor	beech	Expeditor	Twin Beech; C-45; Model 18; Kansan; Navigator		high	
+F 13	junkers	NONE			high	Junkers F 13 has no popular name.
+F-1	mcdonnell	Skyhawk	Sky Hawk; Falcão; Falcao; A-4; AF-1		high	AF-1 is the Brazilian Navy designation for the A-4KU Skyhawk, locally named Falcão.
+F-1	mitsubishi	NONE			high	Mitsubishi F-1 carries no popular name.
+F-100	north american	Super Sabre	Hun		high	Unrelated to the Avro Canada CF-100 Canuck, which is a separate family.
+F-101	mcdonnell	Voodoo	One-Oh-Wonder		high	
+F-102	convair	Delta Dagger	Deuce		high	
+F-104	lockheed	Starfighter	Eiko		high	
+F-104	sabca	Starfighter	Star Fighter; Zipper; Widowmaker		high	SABCA licence-built F-104G for the Belgian Air Force.
+F-105	republic	Thunderchief	Thud		high	
+F-106	convair	Delta Dart			high	
+F-11	grumman	Tiger	Super Tiger		high	
+F-111	general dynamics	Aardvark	Raven; Pig; Switchblade	EF-111=Raven	high	Pig is the Australian service nickname.
+F-14	grumman	Tomcat	Bombcat; Persian Cat		high	
+F-15	mcdonnell	Eagle	Strike Eagle; Baz; Ra'am; Raam		high	Baz and Ra'am are Israeli service names.
+F-16	general dynamics	Fighting Falcon	Viper; Netz; Barak; Sufa; Brakeet; Fighting Falcon		high	Netz/Barak/Sufa are Israeli service names; AFTI is a test-programme label, not a model name.
+F-2	mitsubishi	NONE			high	Mitsubishi F-2 has no official popular name.
+F-24	fairchild	NONE	Forwarder; Argus; UC-61; Fairchild 24		high	No single popular name: Forwarder (USAAF) and Argus (RAF) are service names.
+F-27	fairchild	Friendship	Fokker F27; FH-227		high	US licence-built Fokker F27 Friendship.
+F-28	enstrom	Falcon	Enstrom Falcon		high	
+F-33	lockheed	Shooting Star	T-Bird; Silver Star; Seastar; T-33; TV-2		low	Model string 'TF-33' is almost certainly a data error - there is no Lockheed TF-33 aircraft (TF33 is a P&W engine). These are T-33/TF-33-labelled Shooting Stars.
+F-4	mcdonnell	Phantom II	Phantom; Kurnass; Kurnass 2000		high	
+F-5	northrop	Freedom Fighter	Tiger II; Tiger III; Skoshi Tiger; Freedom-Fighter		high	Single model string 'F-5' covers both F-5A/B Freedom Fighter and F-5E/F Tiger II, so no variant rule is possible; NF-5 is the Dutch Freedom Fighter. 'Tigris' in existing values looks like an error.
+F-6	douglas	Skyray	F4D; Ford; Manta		high	F-6A is the 1962 redesignation of the F4D Skyray. Do not confuse with the North American F-6 photo-Mustang.
+F-8	vought	Crusader	Crusader II; F8U		high	
+F-84	republic	Thunderjet	Thunderstreak; Thunderflash	XF-84=Thunderjet; YRF-84=Thunderflash	high	Model string F-84 covers straight-wing Thunderjets (B/C/D/E/G) and swept-wing F-84F Thunderstreak, so no rule for it; rely on also_known_as.
+F-86	canadair	Sabre	Canadair Sabre; CL-13		high	
+F-86	north american	Sabre	Sabre Dog; Sabrejet; Sabre Jet; Canadair Sabre; Avon Sabre		high	F-86D/L widely called Sabre Dog; keep as alias, not canonical.
+F-89	northrop	Scorpion			high	
+F-9	grumman	Cougar	Panther		high	Post-1962 designation of the F9F-8/F9F-8T Cougar.
+F.1	sopwith	Camel			high	
+F.2	bristol	Fighter	Brisfit; Biff; Bristol Fighter; F.2B		high	The type's actual name is Fighter (Bristol F.2B Fighter); Brisfit is the universal nickname.
+F.27	fokker	Friendship	Troopship; Fairchild F-27; Fairchild FH-227		high	Troopship is the military F.27 variant name; the single model string does not separate the two.
+F.2B	bristol	Fighter	Bristol Fighter; Brisfit; Biff; F2B		high	
+F.VII	fokker	Trimotor	Fokker Trimotor		high	Applies to the three-engined F.VIIb/3m; the single-engined F.VIIa carries no name.
+F/A-18	mcdonnell	Hornet	Super Hornet		high	
+F11F	grumman	Tiger	Super Tiger; F-11		high	Super Tiger is the F11F-1F; the single model string does not separate it.
+F27	fokker	Friendship	Troopship; Fairchild F-27; FH-227		high	Troopship is the military F27M; single model string so no rule.
+F2H	mcdonnell	Banshee	Banjo		high	
+F3D	douglas	Skyknight	Sky Knight; F-10; Whale; Drut		high	
+F3F	grumman	NONE	Flying Barrel		high	No official name; Flying Barrel is an informal nickname.
+F4B	boeing	NONE			high	Boeing F4B/P-12 has no popular name.
+F4F	grumman	Wildcat	Martlet		high	Martlet is the Fleet Air Arm name.
+F4U	vought	Corsair			high	
+F6F	grumman	Hellcat			high	
+F9F	grumman	Panther	Cougar		high	F9F-2/-5 are Panthers, F9F-6/-8 swept-wing aircraft are Cougars; the single F9F model string covers both, so canonical is the earlier straight-wing name and Cougar is an alias.
+FB-111	general dynamics	Aardvark	Switchblade		high	Switchblade was the SAC nickname for the FB-111A.
+FC-1	chengdu	Thunder	JF-17; JF-17 Thunder; Xiaolong; Fierce Dragon		high	FC-1 Xiaolong is the Chinese designation; Thunder is the Pakistani service name.
+FC-2	fairchild	NONE	Fairchild FC-2W2; Razorback		low	The FC-2 has no established popular name. "Stars and Stripes" (Byrd Antarctic FC-2W2) is an individual aircraft name.
+FC-71	fairchild	NONE			high	No popular name.
+FH-1100	fairchild hiller	NONE	OH-5		high	Fairchild Hiller FH-1100 carries no popular name.
+FJ	north american	Fury	Sabre; FJ-1; FJ-4		high	FJ-2/3/4 are navalised F-86 Sabres.
+FL.3	avia	NONE			high	
+FR172	reims	Rocket	Reims Rocket; Skyhawk		high	Reims-built Cessna 172 derivative.
+Fa 330	focke achgelis	Bachstelze	Water Wagtail		high	
+Falcon 20	dassault	Falcon 20	Falcon; Mystère 20; Mystere 20; Guardian; HU-25		high	Originally the Mystère 20; HU-25 Guardian in US Coast Guard service.
+Fantrainer	rfb	Fantrainer	Fan Trainer; AT-400; AT-500		high	
+Fi 103	fieseler	V-1	Vergeltungswaffe 1; Buzz Bomb; Doodlebug; FZG 76; Kirschkern		high	
+Fi 156	fieseler	Storch	Criquet; Stork; MS.500		high	Criquet = licence-built Morane-Saulnier MS.500 series.
+Firefly	fairey	Firefly			high	
+Fledgling	curtiss	Fledgling	Curtiss Fledgling; N2C		high	Model string is the name.
+Fleet	consolidated	Fleet	Finch; Husky Junior		low	Finch is the RCAF name for the Fleet 16.
+Fly Baby	bowers	Fly Baby			high	
+Flyer	kitty hawk	Flyer	Wright Flyer		high	Model string is the name.
+Flyer	wright	Flyer	1903 Flyer; Kitty Hawk Flyer		high	
+Flyer	wright brothers	Flyer	Wright Flyer; Kitty Hawk Flyer		high	
+Fury	hawker	Fury	Sea Fury; Nimrod		high	Interwar Hawker Fury biplane; Sea Fury is the later unrelated-airframe namesake.
+Fw 190	focke wulf	Würger	Wurger; Butcher Bird; Shrike; Dora		high	Dora is the nickname for the Fw 190D; both accented and plain forms listed.
+Fw 200	focke wulf	Condor	Kondor; Scourge of the Atlantic		high	
+Fw 44	focke wulf	Stieglitz			high	
+G-1	goodyear	Corsair	Whistling Death; F4U		high	FG-1 is the Goodyear-built F4U Corsair.
+G-1159	grumman	Gulfstream II	Gulfstream		high	'Shuttle Training Aircraft' is a NASA role conversion of an individual airframe, not a model name.
+G-164	grumman	Ag-Cat	Ag Cat; AgCat		high	
+G-21	grumman	Goose	JRF; Super Goose; Turbo Goose		high	
+G-25	westland	NONE			low	Westland WG-25 is a small unmanned rotorcraft; no popular name confidently established.
+G-3	schweizer	NONE	SGS 2-12; TG-3A		high	Training glider known by designation only.
+G-4	laister kauffman	NONE			high	Training glider, no popular name. Yankee Doodle is an individual aircraft name, not a model name.
+G-44	grumman	Widgeon	Super Widgeon; Gosling; J4F; SCAN 30		high	Gosling is the RAF/FAA name.
+G-6	taylorcraft	NONE			high	Training glider with no popular name.
+G.222	aeritalia	NONE	Spartan		high	Spartan is the USAF C-27A name.
+G.3	caudron	NONE			high	No popular name.
+G.46	fiat	NONE			high	
+G.59	fiat	NONE			high	No popular name.
+G.91	aeritalia	NONE	Gina		high	Gina is the Italian service nickname; the type has no official popular name.
+G.91	fiat	Gina	Yankee		high	'Gina' is the universal Italian service nickname; G.91Y was nicknamed 'Yankee'.
+GXE	waco	NONE			high	No popular name.
+Gannet	fairey	Gannet			high	
+Gazelle	aerospatiale	Gazelle	SA 341; SA 342		high	Model string is the name.
+Gemini	mcdonnell	Gemini	Gemini spacecraft; Project Gemini		high	El Kabong, Gemini VI-A and Friendship-style entries are individual spacecraft names, not model names; MOL Spacecraft is a different programme.
+Gladiator	gloster	Gladiator	Sea Gladiator		high	
+Glasair	stoddard hamilton	Glasair			high	
+Glider	chanute	NONE	Chanute glider; Chanute biplane glider		high	Pioneer glider, no popular name.
+Glider	lilienthal	NONE	Normalsegelapparat		high	Generic model string; use Normalsegelapparat where the airframe is that type.
+Glider	wright	NONE			high	'1900 Glider'/'1902 Glider' are year designations for individual Wright airframes, not model names.
+Gnat	folland	Gnat	Ajeet; Sabre Slayer		high	Ajeet is the HAL-developed Indian development of the Gnat.
+Gnat	hal	Gnat	Ajeet		high	Ajeet is the HAL-developed Indian derivative.
+Grasshopper	cierva rotorcraft	Grasshopper			high	
+Grasshopper	slingsby	Grasshopper	T.38; Slingsby T.38		high	
+Grunau 9	schneider	NONE			low	Primary glider of the Zögling lineage; no confirmed popular name.
+Grunau Baby	schneider	Grunau Baby			high	
+Gull	slingsby	Gull	Gull I; Gull III; T.12		high	Glider; Gull is the type name.
+Gö 3	goppingen	Minimoa	Goppingen 3; Gö 3; Goeppingen		high	
+H 17	hutter	NONE	Hütter H 17; Hutter H 17		high	Glider with no popular name; both accented and unaccented manufacturer spellings occur.
+H-1	bell	Iroquois	Huey; Cobra; HueyCobra; Huey Cobra; SeaCobra; Sea Cobra; SuperCobra; Super Cobra; Twin Huey; King Cobra; Kingcobra	UH-1=Iroquois; TH-1=Iroquois; HH-1=Iroquois; EH-1=Iroquois; VH-1=Iroquois; YUH-1=Iroquois; AH-1=Cobra; TAH-1=Cobra	high	UH-1 series is Iroquois (universally Huey); AH-1 series is Cobra. 15623 and 65-9911 in existing names are serial numbers, not names.
+H-1	dornier	Iroquois	Huey; Bell 205; UH-1D		high	German licence-built UH-1D.
+H-1	fuji	Iroquois	Huey; Cobra; HueyCobra; Huey Cobra	UH-1=Iroquois; AH-1=Cobra	high	Fuji licence-built Bell types.
+H-113	boeing vertol	Labrador	Voyageur; Sea Knight; Boeing Vertol 107; Model 107		high	CH-113 is the Labrador and CH-113A the Voyageur; the single model string covers both.
+H-118	bell	Iroquois	Huey; UH-1; UH-1H; Bell 205		high	CH-118 is the Canadian Forces designation for the UH-1H Iroquois.
+H-12	hiller	Raven			high	Military H-23 Raven is the same aircraft.
+H-124	sikorsky	Sea King	Seaking; SH-3; S-61		high	Canadian-service Sea King.
+H-13	bell	Sioux	Model 47; Bell 47; HTL; HUL		high	'Ranger' in existing data is not a Bell 47 name.
+H-136	bell	Kiowa	JetRanger; Jet Ranger; OH-58; Bell 206		high	CH-136 is the Canadian OH-58A Kiowa.
+H-19	sikorsky	Chickasaw	Whirlwind		high	Whirlwind is the Westland licence-built version.
+H-2	kaman	Seasprite	Super Seasprite; Sea Sprite		high	
+H-2	shavrov	NONE	Shavrushka		low	No official name; Shavrushka is an informal Russian nickname.
+H-21	piasecki	Workhorse	Shawnee; Work Horse; Flying Banana	H-21=Workhorse; CH-21=Shawnee	high	USAF H-21 Workhorse, Army CH-21 Shawnee.
+H-21	vertol	Workhorse	Shawnee; Flying Banana		high	Workhorse is the USAF name, Shawnee the US Army name.
+H-22	raduga	NONE	Burya; Kitchen; AS-4		high	Air-launched missile, not an aircraft. Burya is the Russian name, Kitchen the NATO reporting name.
+H-3	agusta sikorsky	Sea King	Jolly Green Giant; Pelican; S-61; ASH-3		high	Agusta-built Sikorsky S-61; HH-3F in Italian and USCG service is called Pelican.
+H-3	sikorsky	Sea King	Jolly Green Giant; Pelican; S-61; Sea King	SH-3=Sea King; CH-3=Jolly Green Giant; UH-3=Sea King; VH-3=Sea King	high	HH-3 deliberately has no rule: HH-3E is Jolly Green Giant, HH-3F is the USCG Pelican.
+H-300	bellanca	Pacemaker	Bellanca Pacemaker		high	
+H-32	hiller	Hornet			high	Sally Rand in existing names is a nickname applied to an individual airframe, not the model.
+H-34	sikorsky	Choctaw	Seabat; Seahorse; Wessex	SH-34=Seabat; UH-34=Seahorse; CH-34=Choctaw	high	Wessex is the Westland licence-built development.
+H-37	sikorsky	Mojave	S-56; HR2S; Deuce		high	
+H-4	kawasaki	NONE	Sioux; Bell 47; KH-4		high	Kawasaki development of the Bell 47; the Bell 47's military name Sioux is listed for search but the KH-4 itself carried no popular name.
+H-43	kaman	Huskie			high	
+H-47	boeing	Chinook			high	
+H-5	harbin	NONE	Beagle; Il-28; Ilyushin Il-28; B-5		high	Harbin H-5 is the Chinese licence build of the Il-28 (NATO Beagle). Warning: the SH-5 row is almost certainly the Harbin SH-5 maritime flying boat, a completely unrelated aircraft that should not receive this family's names.
+H-5	sikorsky	Dragonfly	Westland Dragonfly; HO3S; S-51		high	Dragonfly is chiefly the British/Westland name but is applied throughout; the H-5 and S-51 are the same aircraft.
+H-50	gyrodyne	DASH	Drone Anti-Submarine Helicopter		high	DASH is the programme acronym, universally used as the type's name.
+H-500	breda nardi	NONE	Defender; Cayuse; MD 500; Model 500; Hughes 500		low	Breda Nardi licence-built Hughes/MD 500; the base type has no single popular name (Defender is the armed MD version, Cayuse the US Army OH-6).
+H-52	sikorsky	Seaguard	Sea Guard; S-62		high	Solid and spaced forms both listed.
+H-53	sikorsky	Sea Stallion	Super Stallion; Sea Dragon; Stallion; Yasur; Pave Low		high	CH-53E is the Super Stallion and MH-53E the Sea Dragon; the CH-53 model string covers several, so no variant rule. Yasur is the Israeli name.
+H-54	sikorsky	Tarhe	Skycrane; Sky Crane; S-64		high	S-64 Skycrane is the civil counterpart.
+H-55	raduga	NONE	Kent		high	Kh-55 cruise missile; Kent is the NATO reporting name.
+H-58	bell	Kiowa	Kiowa Warrior; JetRanger; Jet Ranger; Bell 206		high	OH-58D is the Kiowa Warrior; the single OH-58 model string covers both, so no variant rule.
+H-6	hughes	Cayuse	Little Bird; Loach	OH-6=Cayuse; YOH-6=Cayuse; AH-6=Little Bird	high	
+H-60	mitsubishi	Seahawk	Sea Hawk; Black Hawk; Blackhawk		high	Mitsubishi licence-built SH-60J/K.
+H-60	sikorsky	Black Hawk	Blackhawk; Seahawk; Pave Hawk; Jayhawk; Ocean Hawk	SH-60=Seahawk; UH-60=Black Hawk; EH-60=Black Hawk; YUH-60=Black Hawk	high	HH-60 left unruled: it covers Pave Hawk, Jayhawk and Rescue Hawk.
+HA-1112	hispano	Buchón	Buchon; Bf 109; Messerschmitt Bf 109; Me 109		high	Spanish licence-built Bf 109 with a Merlin engine; Buchón is the Spanish nickname and the standard name for the type.
+HA-1112	hispano aviacion	Buchon	Buchón; Tripala; Hispano Buchon; Me 109; Bf 109		high	Spanish-built Bf 109; Tripala refers to the earlier three-blade HA-1112-K1L.
+HA-200	hispano aviacion	Saeta	Al Kahira; Al-Kahira; Kahira		high	Al Kahira is the Egyptian licence-built HA-200.
+HD.1	hanriot	NONE			high	Scout in existing names is a generic class descriptor.
+HFB 320	hfb	Hansa Jet	Hansa; Hansajet		high	
+HM.14	mignet	Pou-du-Ciel	Pou du Ciel; Pou-du-ciel; Flying Flea; Sky Louse		high	Both hyphenated and spaced French forms listed for substring search.
+HM.14 Flying Flea	mignet	Flying Flea	Pou du Ciel; Pou-du-Ciel; Pou		high	Model string is the name.
+HM.8	mignet	NONE	Avionnette		low	No settled popular name; Pou-du-Ciel / Flying Flea belongs to the HM.14, not the HM.8.
+HO3S	sikorsky	Dragonfly	S-51; R-5; Horse		high	Dragonfly is the Westland/common name for the S-51.
+HO4S	sikorsky	Chickasaw	Whirlwind; Horse; S-55		high	Navy/Coast Guard S-55; Whirlwind is the British-built name.
+HO5S	sikorsky	NONE	S-52		high	Sikorsky S-52/HO5S has no popular name.
+HS 748	hawker siddeley	NONE	Andover; Avro 748; HAL 748		high	Civil 748 has no popular name; Andover is the RAF military version. 'Avro' entries in existing values are a manufacturer, not a name.
+HT-2	hal	NONE			high	Basic trainer, no popular name.
+HUP	piasecki	Retriever	Army Mule; H-25		high	H-25 Army Mule is the US Army version.
+Halifax	handley page	Halifax	Halibag		high	
+Hampden	handley page	Hampden	Hereford		high	Hereford is the Napier-engined variant of the same airframe.
+Harrier	bae	Harrier	Harrier II; Sea Harrier; Kestrel; Jump Jet		high	
+Harrier	hawker siddeley	Harrier	Matador		high	Matador is the Spanish Navy AV-8S name.
+Harvard	canadian car and foundry	Harvard	Texan; SNJ; T-6; AT-6; Mosquito		high	Harvard is the RAF/Commonwealth name for the North American T-6 Texan.
+Harvard	noorduyn	Harvard	Texan; SNJ; T-6		high	Canadian-built T-6; Harvard is the Commonwealth name.
+Harvard	north american	Harvard	Texan; T-6; SNJ; AT-6		high	
+Hastings	handley page	Hastings			high	
+Hawk	bae	Hawk	Goshawk		high	T-45 Goshawk is the US Navy derivative.
+Hawk	bae systems	Hawk	Goshawk		high	T-45 Goshawk is the US Navy derivative; 'T-59' is a designation.
+He 111	heinkel	NONE	CASA 2.111; Pedro		high	He 111 has no popular name; CASA 2.111 is the Spanish licence-built version, nicknamed Pedro.
+He 162	heinkel	Volksjäger	Volksjager; Salamander; Spatz		high	
+Helicopter	unidentified	NONE			high	Placeholder catch-all, not a type.
+Hind	hawker	Hind			high	
+Horsa	airspeed	Horsa	AS.51; AS.58		high	Model string is the name.
+Hudson	lockheed	Hudson			high	
+Hunter	hawker	Hunter			high	
+Hurricane	hawker	Hurricane	Sea Hurricane; Hurricat; Canadian Car and Foundry Hurricane		high	
+Hydravion	fabre	NONE	Canard; Le Canard; Fabre Hydravion		low	"Hydravion" is the generic French word for seaplane; the aircraft is often called Le Canard, but usage is not consistent enough to make it canonical.
+I-11	aisa	Peque	Vespa		low	AISA I-11B is generally recorded as the Peque; Vespa in existing values is unverified.
+I-15	polikarpov	NONE	Chato; Chaika; Curtiss; I-15bis; I-152		low	The I-15 has no formal popular name; Chato ("snub-nose") and Chaika ("gull", properly the I-153/I-15bis) are Spanish Civil War nicknames of inconsistent application.
+I-153	polikarpov	Chaika	Chayka; Gull		high	Chaika means gull.
+I-16	polikarpov	NONE	Rata; Mosca; Ishak		high	No official name; Rata/Mosca are Spanish Civil War nicknames, Ishak the Soviet one.
+I-22	pzl	Iryda			high	
+IA 58	fma	Pucará	Pucara		high	Accented and unaccented forms both listed.
+IAR 93	avioane craiova	Vultur	Orao; SOKO J-22; J-22		low	Vultur is the Romanian name; the aircraft is the Romanian half of the joint Romanian-Yugoslav programme whose Yugoslav counterpart is the SOKO J-22 Orao. Name usage is inconsistent in sources, hence low.
+INF	waco	NONE			high	
+IS-28	ica brasov	NONE	ICA Brasov; ICA Braşov		high	Sailplane with no popular name; manufacturer spelling varies with diacritics.
+Il-10	ilyushin	NONE	Beast; Shturmovik; Sturmovik; B-33; Avia B-33		high	No formal popular name; Beast is the NATO reporting name. Avia B-33 is the Czechoslovak licence build.
+Il-103	ilyushin	NONE			high	
+Il-12	ilyushin	Coach			high	
+Il-14	avia	Crate	Avia 14; Il-14		high	Avia 14 is the Czechoslovak licence-built Il-14.
+Il-14	ilyushin	Crate			high	
+Il-18	ilyushin	NONE	Coot		high	Coot is the NATO reporting name.
+Il-2	ilyushin	Shturmovik	Sturmovik; Stormovik; Shturmovik; Bark; Ilyusha; Flying Tank		high	Bark is the NATO reporting name applied retrospectively. Shturmovik/Sturmovik are transliteration variants of the same word.
+Il-28	ilyushin	NONE	Beagle; Mascot; Harbin H-5		high	Beagle is the NATO reporting name; Mascot is the Il-28U trainer.
+Il-38	ilyushin	May	Sea Dragon; Il-38SD		high	May is the NATO name; Sea Dragon is the Indian Navy name for the upgraded Il-38SD.
+Il-4	ilyushin	Bob	DB-3F		high	
+Il-62	ilyushin	NONE	Classic		high	Classic is the NATO reporting name.
+Il-76	ilyushin	Candid			high	
+Il-86	ilyushin	Camber			high	
+Ił-14	iliuszyn	NONE	Crate; Il-14; Ilyushin Il-14; Avia 14		high	Polish-spelled Ilyushin Il-14.
+Ił-28	iliuszyn	Beagle	Mascot; Il-28; Ilyushin Il-28; H-5; Ił-28		high	Mascot is the Il-28U trainer; H-5 is the Chinese-built version.
+J 35	saab	Draken			high	
+J-1	standard	NONE			high	
+J-1	standard aircraft	NONE			high	Trainer, no popular name.
+J-2	mcculloch	NONE	Super J-2; Super J2		high	
+J-2	taylor	Cub			high	
+J-3	piper	Cub	Piper Cub; Grasshopper; L-4; Flitfire		high	Flitfire was a 1941 fundraising scheme name, not a model name.
+J-4	north american	Fury			high	
+J-4	piper	Cub Coupe			high	
+J-5	piper	Cub Cruiser	Cub		high	
+J-5	shenyang	Fresco	MiG-17; JJ-5; FT-5; F-5; Midget		high	J-5 is the Chinese-built MiG-17; JJ-5 trainer is sometimes called Midget.
+J-6	nanchang	NONE	PT-6; CJ-6; Chujiao		high	CJ-6 has no popular name; the NATO name 'Max' belongs to the Yak-18, not this type.
+J-6	shenyang	NONE	Farmer; F-6; FT-6; JJ-6; MiG-19		high	Chinese-built MiG-19; Farmer is the NATO reporting name, F-6 the export designation.
+J-7	chengdu	NONE	Fishbed; MiG-21; F-7; F-7 Airguard; Skybolt		low	Chinese licence development of the MiG-21; no popular name, Fishbed is the NATO reporting name carried over from the MiG-21. Airguard/Skybolt are export marketing names of uncertain currency.
+J-8	shenyang	NONE	Finback		high	Finback is the NATO reporting name.
+J/1	auster	Autocrat	Alpha; Auster J/1N; Aiglet		high	J/1N is the Alpha.
+J/5G	auster	Autocar	Cirrus Autocar; Auster Autocar		high	J/5G is the Cirrus-engined Autocar.
+JA 37	saab	Viggen			high	
+JRF	grumman	Goose	G-21; JRF-5; OA-9		high	
+Jaguar	sepecat	Jaguar	Shamsher		high	Shamsher = Indian Air Force name.
+Javelin	gloster	Javelin			high	Model string is the name.
+Jet Provost	bac	Jet Provost	Strikemaster		high	
+Jet Provost	hunting	Jet Provost	Strikemaster; Provost		high	BAC Strikemaster is the armed development of the same airframe.
+Jet Provost	hunting percival	Jet Provost	Provost; Strikemaster		high	Strikemaster is the armed export development.
+JetStar	lockheed	JetStar	Jet Star; C-140		high	
+Jetstream	bae	Jetstream			high	
+Jetstream	scottish aviation	Jetstream			high	
+Jindivik	government aircraft factories	Jindivik			high	
+Ju 52	junkers	Tante Ju	Iron Annie; Auntie Ju; Toucan; CASA 352; AAC.1		high	Tante Ju is the near-universal German nickname; Toucan and CASA 352 are the French and Spanish licence-built aircraft.
+Ju 87	junkers	Stuka			high	
+Ju 88	junkers	NONE			high	The Ju 88 carried no popular name. "Baksheesh" in existing values is an individual aircraft name.
+Junior	stinson	Junior			high	
+K	aeronca	Scout			high	
+K 8	schleicher	NONE	K8; Ka 8		high	Schleicher K 8 glider has no popular name.
+K-10	laister kauffman	NONE			high	Glider, no popular name.
+K-23	jakowlew	Flora	Yak-23; Jak-23		high	German transliteration of Yak-23.
+K-40	jakowlew	Codling	Yak-40; Jak-40; Yakovlev Yak-40		high	
+K5Y	yokosuka	Akatombo	Willow; Red Dragonfly; Cureng		high	Willow is the Allied code name; Cureng the Indonesian service name.
+KD2R	northrop	Shelduck	Basic Training Target; BTT; OQ-19		high	
+KZ III	sai	NONE	KZ III		high	Danish SAI KZ III carries only its designation.
+Ka 4	schleicher	Rhönlerche	Rhonlerche; Rhoenlerche; Rhönlerche II; Rhonlerche II		high	
+Ka 6	schleicher	Rhönsegler	Rhonsegler; Rhoensegler; Ka-6		high	Accent and transliteration variants all listed for substring search.
+Ka-25	kamov	Hormone			high	
+Ka-26	kamov	NONE	Hoodlum; Hoodlum-A		high	Soviet type known by designation.
+Ka-27	kamov	Helix	Helix-A; Helix-B; Ka-28; Ka-29; Ka-32		high	
+Ka-50	kamov	Black Shark	Blackshark; Hokum; Chernaya Akula		high	Hokum is the NATO reporting name.
+Ka-6	schleicher	Rhönsegler	Rhonsegler; Rhoensegler		high	
+Kanpur	iaf aircraft manufacturing depot kanpur	Kanpur			high	
+Kfir	iai	Kfir	F-21		high	Model string is the name.
+Ki-27	nakajima	NONE	Nate; Type 97 Fighter; Abdul		high	Nate is the Allied reporting name; Type 97 Fighter is the Japanese designation.
+Ki-43	nakajima	Hayabusa	Oscar; Peregrine Falcon		high	Oscar is the Allied code name.
+Kitfox	denney	Kitfox	Denney Kitfox; Kitfox Classic		high	
+Kl 25	klemm	NONE	Swallow; BA Swallow; British Klemm Swallow; L 25		high	The Kl 25 carried no popular name; Swallow is the British licence-built (British Klemm / British Aircraft) version of the same design.
+Kl 35	klemm	NONE			high	
+L-1049	lockheed	Super Constellation	Constellation; Connie; Super Connie		high	
+L-13	convair	NONE	Grasshopper; Stinson L-13		low	No official popular name; Grasshopper is a generic US liaison-aircraft class nickname.
+L-13	let	Blaník	Blanik; Blanik L-13		high	"Blaník Jawa" in existing values is a sponsor/individual marking, not a model name.
+L-16	aeronca	Champion	Champ; Grasshopper; 7AC; Model 7		high	
+L-1649	lockheed	Starliner	Constellation; Super Constellation; Connie		high	
+L-19	cessna	Bird Dog	Birddog; O-1; Model 305		high	
+L-200	let	Morava			high	
+L-29	aero	Delfin	Delfín; Maya; Akrobat		high	Maya is the NATO reporting name. Akrobat/Oko are variants.
+L-3	aeronca	Grasshopper	Defender		high	Defender is the civil 65-TC name.
+L-39	aero	Albatros	Albatross		high	Albatros is the correct single-s spelling; Albatross listed for search only.
+L-4	piper	Grasshopper	Cub; J-3 Cub		high	L-4 is the militarised J-3 Cub; Grasshopper is the US Army name.
+L-410	let	Turbolet	Turbo Let		high	Matylda, Zuzka and Máňa in existing values are individual aircraft names, not model names.
+L-5	stinson	Sentinel	Flying Jeep; OY-1; Voyager		high	
+L-59	aero	Super Albatros	Albatros		high	Development of the L-39 Albatros.
+L-6	interstate	Grasshopper	Cadet; S-1 Cadet		high	Interstate S-1 Cadet in civil form; Grasshopper as the Army L-6.
+L-60	aero	Brigadýr	Brigadyr		high	Accented and unaccented forms both listed.
+L-610	let	NONE	Turbolet		low	Turbolet is properly the L-410; its application to the L-610 is inconsistent.
+L-Spatz	scheibe	L-Spatz	Spatz; L-Spatz 55		high	Model string is the name.
+LA-4	lake	Buccaneer	Skimmer; Colonial Skimmer; Lake Buccaneer; Renegade		high	Descended from the Colonial Skimmer.
+La-11	lavochkin	NONE	Fang		high	Fang is the NATO reporting name.
+La-17	lavochkin	NONE			high	Target drone with no popular name.
+La-5	lavochkin	NONE			high	No popular name and no NATO reporting name for the La-5.
+La-7	lavochkin	NONE	Fin		high	Fin is the NATO reporting name.
+Lancaster	avro	Lancaster			high	
+Li-2	lisunov	Cab			high	
+Light aircraft	unidentified	NONE			high	Placeholder catch-all, not a type.
+Lightning	english electric	Lightning	BAC Lightning		high	Model string is the name.
+Lim-1	pzl	Fagot	MiG-15; Lim-2; Midget		high	Polish licence-built MiG-15.
+Lim-2	pzl	NONE	Fagot; MiG-15; MiG-15bis		high	Polish licence-built MiG-15bis.
+Lim-5	pzl	NONE	Fresco; MiG-17; Lim-5P; Lim-6		high	Polish licence-built MiG-17; Fresco is the NATO name.
+Lim-6	pzl	Fresco	MiG-17; Lim-5; Lim-6		high	Polish licence-built MiG-17 derivative; Fresco is the NATO reporting name.
+Lincoln	avro	Lincoln			high	
+Lunar Module	grumman	NONE			high	'Challenger' is the individual call sign of the Apollo 17 LM, not a model name.
+Lynx	westland	Lynx	Super Lynx; Wildcat		high	
+Lysander	westland	Lysander	Lizzie		high	
+M-1	martin	Matador	Mauler	MGM-1=Matador; AM-1=Mauler	high	Two unrelated types share this base: MGM-1 Matador cruise missile and AM-1 Mauler attack aircraft. Canonical set for the dominant Matador.
+M-1	ryan	NONE			high	Ryan M-1 mailplane has no popular name.
+M-118	martin marietta	Peacekeeper	MX; Missile X		high	
+M-129	general dynamics	Advanced Cruise Missile	ACM; AGM-129		high	
+M-14	mignet	Pou du Ciel	Pou-du-Ciel; Flying Flea		high	
+M-15	pzl	Belphegor	Belphegore		high	
+M-18	mooney	Mite	Mooney Mite; Wee Scotsman		high	
+M-2	fuji	NONE			high	Fuji KM-2 has no popular name.
+M-2	general motors	Wildcat	Martlet		high	General Motors-built FM-2 Wildcat.
+M-25	martin marietta	Titan	Titan I; Titan II	LGM-25=Titan II; HGM-25=Titan I	high	
+M-28	north american	Hound Dog			high	AGM-28 missile.
+M-290	mignet	Flying Flea	Pou-du-Ciel; Pou du Ciel; Sky Louse		high	
+M-30	boeing	Minuteman	Minuteman II; Minuteman III		high	
+M-31	martin marietta	Pershing	Pershing I; Pershing 1a; Pershing II; Pershing 2		high	Ballistic missile; all variants share the Pershing name, and the single model string does not separate them.
+M-34	teledyne ryan	Firebee	Firebee II; Lightning Bug		high	
+M-5	firestone	Corporal	MGM-5		high	Surface-to-surface missile.
+M-61	martin	Matador			high	
+M.1	bristol	NONE	Bullet; Monoplane Scout		high	Bullet is the common nickname for the Bristol M.1C.
+M.38	miles	Messenger			high	
+M.39	macchi	NONE	Macchi M.39		high	Schneider Trophy racer with no popular name.
+M.416	macchi	NONE	Instructor; Fokker S.11; Nord 1002		low	Macchi-built version of the Fokker S.11 Instructor.
+M.65	miles	Gemini			high	
+M.C.205	macchi	Veltro	MC.205; C.205; Greyhound		high	
+M20	mooney	NONE	Mark 21; Master; Ranger; Chaparral; Executive; Statesman; Super 21; Mustang; Acclaim; Ovation; Bravo; Eagle		high	Mooney M20 sub-models each carry a different marketing name and the single model string does not distinguish them, so no one name can be canonical.
+MB-326	aermacchi	NONE	Impala; Xavante; Macchi		high	Italian type has no popular name; Impala is the South African licence build, Xavante the Brazilian.
+MB-339	aermacchi	NONE			high	No popular name. (MB-326 names Impala/Xavante do not apply to the MB-339.)
+MD 450	dassault	Ouragan	Toofani		high	Toofani is the Indian Air Force name.
+MD-82	mcdonnell	NONE	Super 80; Mad Dog; MD-80		high	No official name; Super 80 was the marketing name, Mad Dog the crew nickname.
+MD.450	dassault	Ouragan	Hurricane; Toofani		high	Toofani is the Indian Air Force name.
+MD.454	dassault	Mystere IV	Mystère IV; Mystère IVA; Mystere IVA; Mystere; Mystère		high	
+MH-53	sikorsky	Pave Low	Sea Dragon; Pave Low III; Pave Low IV; Super Stallion; Sea Stallion		high	MH-53J/M are Pave Low (USAF special operations); MH-53E is Sea Dragon (Navy mine countermeasures). Single model string covers both.
+MH-60	sikorsky	Seahawk	Black Hawk; Blackhawk; Sea Hawk; Pave Hawk; Pavehawk; Jayhawk; Knighthawk; Night Hawk		high	MH-60R/S are Seahawk (Navy), MH-60G is Pave Hawk (USAF), MH-60K/L are Black Hawk (Army). Single model string covers all.
+MH.1521	max holste	Broussard			high	
+MH2000	mitsubishi	NONE			high	'MuPAL-epsilon' in existing values is a JAXA research-airframe identity, not a model name.
+MIM-14	western electric	Nike Hercules	Nike; Hercules		high	
+MIM-3	western electric	Nike Ajax	Nike		high	
+MS 733	morane saulnier	Alcyon	Morane-Saulnier Alcyon		high	
+MS.317	morane saulnier	NONE			high	Trainer, no popular name.
+MS.500	morane saulnier	Criquet	Storch; Fieseler Fi 156 Storch; Fi 156		high	MS.500/501/502 are the French licence-built Fi 156; Storch entries reflect the German original. Criquet is the French name.
+MS.502	morane saulnier	Criquet	Storch; Fieseler Fi 156; Fieseler Fi 156 Storch; MS.500; MS.505		high	French licence/post-war build of the Fieseler Fi 156 Storch; Criquet is the French name.
+MS.505	morane saulnier	Criquet	Storch; Fieseler Storch		high	French licence-built Fi 156 Storch.
+MS.760	morane saulnier	Paris	Paris II		high	
+MS.880	morane saulnier	Rallye	Rallye Club; Rallye Commodore; Socata Rallye		high	
+Magister	miles	Magister	Maggie; M.14		high	
+Me 163	messerschmitt	Komet			high	
+Me 262	messerschmitt	Schwalbe	Sturmvogel; Swallow; Stormbird		high	Schwalbe is the fighter version, Sturmvogel the fighter-bomber; the model string does not separate them.
+Mercure	dassault	Mercure	Dassault-Breguet Mercure		high	
+Mercury	mcdonnell	Mercury	Mercury spacecraft; Project Mercury		high	Friendship 7 is an individual capsule name, not a model name.
+Messenger	sperry	Messenger	Verville-Sperry Messenger; M-1		high	
+Meteor	armstrong whitworth	Meteor	Meatbox		high	Armstrong Whitworth built Gloster-designed Meteors, mainly NF night fighters.
+Meteor	gloster	Meteor			high	
+Mi-1	mil	NONE	Hare; SM-1		high	Hare is the NATO reporting name; SM-1 is the Polish licence build.
+Mi-14	mil	NONE	Haze		high	Haze is the NATO reporting name.
+Mi-17	mil	NONE	Hip; Mi-8; Mi-171		high	
+Mi-2	mil	Hoplite	PZL Mi-2		high	
+Mi-2	pzl	Hoplite			high	
+Mi-24	mil	NONE	Hind; Mi-25; Mi-35; Krokodil; Crocodile		high	No Russian popular name; Hind is the NATO reporting name (Hind-A/D/E are subtype suffixes). Mi-25/Mi-35 are export designations of the same helicopter.
+Mi-26	mil	Halo			high	
+Mi-34	mil	Hermit			high	
+Mi-4	mil	NONE	Hound; Z-5		high	No popular name; Hound is the NATO reporting name. Z-5 is the Chinese licence build.
+Mi-6	mil	NONE	Hook		high	
+Mi-8	mil	Hip	Hip-C; Mi-17; Mi-171; Hip-H		high	
+Mi-9	mil	Hip	Hip-G; Mi-8IV		high	Mi-9 is the Mi-8IV airborne command post, NATO Hip-G.
+MiG-15	aero	Fagot	Midget; S-102; S-103; CS-102; Lim-1; Lim-2; MiG-15UTI		high	Czechoslovak-built MiG-15; Midget is the UTI two-seater.
+MiG-15	mikoyan	NONE	Fagot; Midget; Lim-1; Lim-2; S-102; JJ-2		high	No popular name; Fagot is the NATO reporting name for single-seaters, Midget for the MiG-15UTI trainer. Manufacturer-prefixed "Mikoyan-Gurevich MiG-15" entries are not names.
+MiG-15	pzl	NONE	Fagot; Midget; Lim-1; Lim-2; SBLim		high	Polish licence-built MiG-15; Midget is the NATO name for the MiG-15UTI trainer.
+MiG-17	mikoyan	NONE	Fresco; Lim-5; Lim-6; S-104; Shenyang J-5; Chengdu F-5		high	No Soviet popular name; Fresco is the NATO reporting name. Lim-5R is a Polish licence variant, not a name.
+MiG-17	pzl	Fresco	Lim-5; Lim-6		high	PZL-built MiG-17s are Lim-5/Lim-6; Fresco is the NATO name.
+MiG-19	mikoyan	NONE	Farmer; Shenyang J-6; J-6; F-6		high	No Soviet popular name; Farmer is the NATO reporting name. Chinese licence build is the J-6/F-6.
+MiG-21	hal	NONE	Fishbed; Mongol; Type 77; Type 96		high	Indian licence-built MiG-21; NATO names kept as aliases only.
+MiG-21	mikoyan	Fishbed	Mongol; Analog; Fishbed-C; Fishbed-D; Fishbed-J; Fishbed-N; Mongol-B; J-7; F-7; Chengdu J-7		high	Fishbed = fighter variants, Mongol = MiG-21U two-seat trainers; single model string so no rule.
+MiG-23	mikoyan	NONE	Flogger; Flogger-B; Flogger-E; Flogger-H; Flogger-K		high	Soviet type known by designation; Flogger is the NATO reporting name, kept as alias only.
+MiG-25	mikoyan	Foxbat	Foxbat-A; Foxbat-B; Foxbat-D		high	
+MiG-27	mikoyan	NONE	Flogger; Flogger-D; Flogger-J; Bahadur		high	Flogger is the NATO reporting name; Bahadur is the Indian (HAL) service name.
+MiG-29	mikoyan	NONE	Fulcrum; Fulcrum-A; Fulcrum-C; Fulcrum-D; Baaz		high	Baaz is the Indian Air Force service name. NATO name Fulcrum only.
+MiG-3	mikoyan	NONE			high	Pre-war type, no popular or NATO reporting name.
+MiG-31	mikoyan	Foxhound			high	
+MiG-9	mikoyan	NONE	Fargo		high	Fargo is the NATO reporting name.
+Military aircraft	unidentified	NONE			high	Placeholder catch-all, not a type.
+Mir	npo energia	Mir			high	Space station.
+Mirage 2000	dassault	Mirage 2000	Mirage; Vajra		high	Vajra is the Indian Air Force name.
+Mirage 5	dassault	Mirage 5	Elkan; Mara		high	Elkan is the Chilean upgrade, Mara the Argentine service name.
+Mirage 50	dassault	NONE	Pantera; ENAER Pantera; Mirage		high	The Mirage 50 has no name beyond Mirage; Pantera is the Chilean ENAER upgrade of the same aircraft.
+Mirage F1	dassault	Mirage F1	Mirage		high	Model string is the name.
+Mirage III	dassault	Mirage III	Mirage; Shahak		high	Shahak is the Israeli name for the Mirage IIICJ.
+Mirage III	government aircraft factories	Mirage III	Mirage		high	
+Mirage IV	dassault	Mirage IV	Mirage IVA; Mirage IVP		high	Model string is the name.
+Model 1	fleet	NONE	Fleet Model 1		high	No popular name.
+Model 17	beech	Staggerwing	Traveller		high	Traveller is the British service name.
+Model 18	beech	Twin Beech	Beech 18; Expeditor; Kansan; Navigator; Bugsmasher; C-45		high	
+Model 18	lockheed	Lodestar	Learstar; PV-1		low	Lockheed Model 18 is the Lodestar; Learstar is the postwar conversion.
+Model 2	fleet	NONE	Fleet Model 2; Fawn; Finch		high	Fawn and Finch are other Fleet models, not the Model 2.
+Model 35	beech	Bonanza			high	
+Model 47	bell	Sioux	H-13; Bell 47; HTL; HUL		high	Sioux is the military service name; civil Model 47s carry no popular name.
+Model A	wright	Flyer	Wright Flyer; Model A		high	
+Model B	wright	NONE			high	Bergdoll Flyer is the name of one individual airframe, not the model.
+Model D	curtiss	Pusher	Curtiss Pusher; Headless Pusher		high	
+Monerai	monnett	Monerai			high	
+Monocoque	deperdussin	Monocoque			high	
+Monoplane	richard pearse	NONE			high	Pioneer one-off, no popular name.
+Mosquito	de havilland	Mosquito	Wooden Wonder; Mossie		high	
+Mustang	bushby	Mustang	Mustang II; Midget Mustang		high	Bushby homebuilt; unrelated to the North American P-51 Mustang.
+Mystere	dassault	Mystere	Mystère		high	Accented and unaccented forms both listed for substring search.
+Mystere IV	dassault	Mystere IV	Mystère IV; Mystere; Mystère		high	Accented and unaccented forms both listed for substring search.
+Mystère 20	dassault	Falcon 20	Mystère 20; Mystere 20; Fan Jet Falcon; Falcon		high	Marketed as Falcon 20 outside France.
+Mystère IV	dassault	Mystère IV	Mystere IV; Mystere; Mystère		high	Accented and plain forms both listed.
+Mü 13	scheibe	Bergfalke	Mu 13; Mue 13; Merlin; Atalante		low	Mu 13E-Bergfalke is the Scheibe development; earlier Akaflieg Munchen Mu 13 variants were Merlin and Atalante.
+N-4	curtiss	Jenny	Canuck; JN-4Can; Curtiss Jenny		high	Canuck is the Canadian Aeroplanes-built JN-4(Can).
+N1K2	kawanishi	Shiden Kai	Shiden; George; Violet Lightning		high	George is the Allied reporting name; N1K2 is specifically the Shiden Kai.
+N2S	boeing	Kaydet	Stearman		high	
+N3N	naval aircraft factory	Yellow Peril	Canary		high	Both are service nicknames; the type had no official name.
+NB-8	nicholas beazley	NONE			high	
+NYP	ryan	NONE	Spirit of St. Louis; Spirit of Saint Louis		high	The Ryan NYP has no model name; "Spirit of St. Louis" is the individual name of Lindbergh's aircraft, universally applied to it and to the replicas in this family. Listed as an alias for search but not made canonical.
+Navion	north american	Navion	Rangemaster; L-17		high	
+Navion	ryan	Navion	Rangemaster; Super Navion		high	
+Nimrod	hawker siddeley	Nimrod			high	
+Noratlas	nord	Noratlas			high	
+Noratlas	nord aviation	Noratlas			high	
+Normalsegelapparat	lilienthal	Normalsegelapparat	Normal Soaring Apparatus; Normal Glider; Lilienthal Glider		high	
+Norseman	noorduyn	Norseman			high	
+O-2	cessna	Skymaster	Super Skymaster; Oscar Deuce; Cessna 337		high	
+O-2	polikarpov	Mule	Kukuruznik; U-2; Po-2; Mule		high	Mule is the NATO reporting name; Kukuruznik is the Russian nickname.
+O-58	aeronca	Grasshopper	Defender; Tandem; L-3; Model 65		high	
+OTW	meyers	NONE	Out To Win		high	OTW is an initialism for Out To Win, not a popular name.
+Olympia	elliotts of newbury	Olympia	EoN Olympia		high	
+Olympia Meise	dfs	Olympia Meise	Meise; Olympia		high	Model string is the name.
+One-Eleven	bac	One-Eleven	One Eleven; BAC 1-11; 1-11		high	
+Osprey	pereira	Osprey	Osprey II		high	Model string is the name. Unrelated to the Bell-Boeing V-22 Osprey.
+P-1	evans	Volksplane	Volks Plane; VP-1		high	
+P-11	schreder	NONE	Airmate		low	Schreder HP-11 sailplane; Airmate was the kit marketer, not a type name.
+P-12	boeing	NONE	F4B; Model 100		high	No popular name; F4B is the Navy designation of the same airframe.
+P-15	raduga	Termit	Styx; Termit; P-15M; Rubezh		high	Anti-ship missile. Termit is the Soviet name, Styx the NATO reporting name.
+P-2	evans	Volksplane	Volks Plane; VP-2		high	
+P-2	kawasaki	Neptune	P-2J; Kai		high	Kawasaki-built and Kawasaki-developed derivative of the Lockheed P2V Neptune.
+P-2	lockheed	Neptune			high	
+P-2	pilatus	NONE			high	Pilatus P-2 trainer has no popular name.
+P-26	boeing	Peashooter			high	
+P-3	lockheed	Orion	Aurora; Arcturus; Electra		high	CP-140 Aurora is the closely related Canadian development.
+P-3	pilatus	NONE			high	Swiss trainer with no popular name; unrelated to the Lockheed P-3 Orion.
+P-39	bell	Airacobra	Kobrushka; P-400		high	
+P-40	curtiss	Warhawk	Kittyhawk; Tomahawk		high	Warhawk is the US name; Tomahawk (early) and Kittyhawk (later) are the Commonwealth names.
+P-40	curtiss wright	Warhawk	War Hawk; Kittyhawk; Kitty Hawk; Tomahawk; Hawk 81; Hawk 87		high	Kittyhawk and Tomahawk are the RAF/Commonwealth names for the same aircraft.
+P-47	republic	Thunderbolt	Jug		high	
+P-51	north american	Mustang			high	'North American Mustang' in existing values is a manufacturer-prefixed string, not a name.
+P-61	northrop	Black Widow			high	Black Widow night fighter in existing values is a description, not a separate name.
+P-63	bell	Kingcobra	King Cobra		high	
+P.1	english electric	Lightning	EE Lightning; P.1A; P.1B		high	P.1A/P.1B are the Lightning prototypes.
+P.1127	hawker siddeley	Kestrel	Harrier		high	P.1127 (RAF) was the Kestrel FGA.1, direct ancestor of the Harrier.
+P.149	focke wulf	NONE			high	Focke-Wulf P.149 has no popular name.
+P.149	piaggio	NONE			high	Trainer with no popular name.
+P.166	piaggio	NONE	Albatross; Portofino		low	Albatross is the South African Air Force service name; Portofino a civil variant name. Neither is a universal type name.
+P2V	lockheed	Neptune			high	
+PA-31P	piper	Pressurized Navajo	Navajo; Mojave; Pressurised Navajo		high	PA-31P-350 is the Mojave; the single model string cannot separate them.
+PBY	consolidated	Catalina	Canso; Nomad		high	Canso is the Canadian amphibian designation/name.
+PC-6	pilatus	Turbo Porter	Porter; Peacemaker; AU-23		high	AU-23A in US service was the Peacemaker.
+PC-7	pilatus	Turbo Trainer			high	
+PC-9	pilatus	NONE			high	No popular name; known by designation.
+PIK-7	pik	Harakka	Harakka II; Harakka III		high	
+PZL-104	pzl	Wilga	Gelatik		high	
+PZL-104	pzl okecie	Wilga	Gelatik		high	Gelatik is the Indonesian licence-built version.
+PZL-104	pzl warszawa	Wilga			high	
+PZL-106	pzl	Kruk			high	
+PZL-130	pzl	Orlik	Turbo Orlik; PZL-130TC		high	
+Parasol	heath	Parasol	Heath Parasol		high	
+Pchela-1	yakovlev	NONE	Shmel		high	Reconnaissance UAV, no popular name; Shmel is the parent system.
+Pembroke	percival	Pembroke	President; Sea Prince		high	President is the civil version; Sea Prince the naval sibling of the same lineage.
+Phantom	mcdonnell	Phantom II	Phantom; Kurnass; Rhino; Spook		high	'F-4M' in existing values is a designation (RAF FGR.2), not a name.
+Phoenix	bae systems	Phoenix			high	Model string is the name (UAV).
+Pioneer	scottish aviation	Pioneer	Twin Pioneer		high	
+Prentice	percival	Prentice			high	
+Proctor	percival	Proctor	Percival Proctor; Vega Gull		high	
+Provost	hunting percival	Provost	Jet Provost; Strikemaster		high	Jet Provost and Strikemaster are the jet-powered developments.
+Provost	percival	Provost			high	'P.56' in existing values is a designation.
+Puma	aerospatiale	Puma	Super Puma; Oryx; SA 330		high	
+Pup	sopwith	Pup			high	Model string is the name.
+Pusher	curtiss	Pusher	Curtiss Pusher; Model D; Headless Pusher		high	
+Q-1	general atomics	Predator	Gray Eagle; Grey Eagle; Warrior; Predator A		high	Gray Eagle/Warrior belong to the MQ-1C; MQ-1/RQ-1 are both Predator.
+Q-10	mmist	Snow Goose	Snowgoose; SnowGoose		high	Spelling should be normalised to Snow Goose; solid forms listed for search.
+Q-14	culver	Cadet	Culver Cadet; PQ-14		high	
+Q-19	radioplane	Shelduck	Basic Training Target; BTT; KD2R		high	OQ-19/KD2R family target drone.
+Q-2	radioplane	NONE	Denny Radioplane		high	Target drone with no popular name. Shelduck in existing values belongs to the OQ-19/KD2R family, not the OQ-2.
+Q-3	radioplane	NONE			high	Target drone with no popular name.
+Q-5	iai	Hunter	MQ-5B Hunter; RQ-5A Hunter		high	IAI/TRW Hunter UAV — unrelated to the Hawker Hunter.
+Q-5	nanchang	NONE	Fantan; A-5		high	Fantan is the NATO reporting name; A-5 the export designation.
+Q-9	general atomics	Reaper	Predator B; Guardian; SkyGuardian; Sky Guardian; Protector		high	
+Queen Air	beech	Queen Air			high	
+Quickie	rutan	Quickie	Q1; Q2; Quickie Q2		high	
+Quicksilver	eipper	Quicksilver	Quicksilver MX		high	Model string is the name.
+R-1	fuji	NONE			low	LR-1 is the JGSDF liaison aircraft based on the Mitsubishi MU-2; the Fuji attribution in these records should be verified. No popular name either way.
+R-1	rand robinson	NONE	KR-1		high	Homebuilt with no popular name.
+R-2	raduga	NONE	Kelt; Kh-11; KSR-2		high	Soviet air-launched missile; Kelt is the NATO reporting name.
+R-2	rand	NONE	KR-2; Rand Robinson KR-2		high	Homebuilt with no popular name.
+R-2	rand robinson	NONE			high	Homebuilt, no popular name.
+R-21	fairchild	NONE	Kreider-Reisner KR-21		high	
+R-26	rubik	Góbé	Gobe; Gobé; Gobo; R-26S		low	Rubik R-26 Góbé; accent forms listed for substring search.
+R-31	fairchild	NONE	KR-31; Kreider-Reisner Challenger; Challenger		low	Kreider-Reisner marketed the C-31 as Challenger; the Fairchild KR-31 is usually cited by designation only.
+R-4	sikorsky	Hoverfly			high	
+R-5	stinson	Reliant	Stinson Reliant; Gullwing Stinson		high	SR-5 is an early straight-wing Reliant.
+R-9	stinson	Reliant	Gullwing Stinson; V-77; AT-19		high	
+R.E.8	royal aircraft factory	NONE	Harry Tate		high	Harry Tate is the wartime rhyming-slang nickname.
+R22	robinson	NONE	Beta; Mariner		high	R22 variants (Alpha, Beta, Mariner) are suffixes, not a popular name.
+R44	robinson	NONE	Raven; Astro; Clipper; Cadet		high	Raven/Astro/Clipper are sub-model names, not a popular name for the type.
+R4D	douglas	Skytrain	Skytrooper; Dakota; Gooney Bird; Gooneybird; Super Gooney Bird; Super Gooneybird; C-47; DC-3; Super DC-3		high	Navy designation for the C-47/DC-3 family; R4D-8 is the Super DC-3.
+RAF 2000	rotary air force	NONE			high	
+RB-57	martin	Canberra	B-57; English Electric Canberra; Night Intruder		high	
+RF-4	mcdonnell	Phantom II	Phantom; Kurnass; Orev; Shablul		high	Orev and Shablul are Israeli names for RF-4E and RF-4E(S).
+RF-5	northrop	Freedom Fighter	Tigereye; Tiger Eye; Tiger II; Tiger		high	RF-5A is the recon Freedom Fighter; RF-5E is the Tigereye. The single model string does not separate them.
+RF-84	republic	Thunderflash	Thunderjet; Thunderstreak		high	
+RF-86	north american	Sabre	Sabrejet; Sabre Jet; Haymaker; Ashtray		high	Reconnaissance conversion of the F-86 Sabre; Haymaker and Ashtray were the conversion programme names.
+RNF	waco	NONE			high	Waco letter-series biplane with no popular name.
+Rafale	dassault	Rafale			high	
+Rallye	socata	Rallye	Koliber; PZL Koliber; Minerva; Gabier; Guerrier		high	Koliber is the PZL licence build of the Rallye.
+Reliant	stinson	Reliant	Stinson Reliant; Gullwing; Gull-wing Reliant; V-77; AT-19		high	
+Robin	curtiss	Robin			high	
+Robin	curtiss robertson	Robin	Curtiss Robin		high	
+Robin	curtiss wright	Robin			high	
+S-1	mikoyan	Kometa	Kennel; Komet; KS-1; AS-1		high	Air-launched anti-ship missile. Kometa is the Soviet name, Kennel the NATO reporting name.
+S-1	pitts	Special	Pitts Special		high	
+S-1	shinmaywa	NONE	US-1; PS-1		high	ShinMaywa PS-1/US-1 carry no popular name.
+S-1	sikorsky	Seabat	Hoverfly; Choctaw; Seahorse	HSS-1=Seabat; HNS-1=Hoverfly	high	Two unrelated types merged: HSS-1 is the S-58 (Seabat), HNS-1 is the R-4 (Hoverfly).
+S-1	sud aviation	Seabat	Choctaw; Seahorse; S-58; H-34; Wessex		low	HSS-1 is the licence-built Sikorsky S-58; Seabat was the USN HSS-1 name, but French-service HSS-1s were generally known by designation.
+S-121	hawker siddeley	Trident	DH.121		high	Existing 'Trident in Air China livery' is a description, not a name.
+S-125	almaz	Neva	Нева; Pechora; Печора; Goa; SA-3		high	Goa is the NATO reporting name; Neva is the Soviet-service name and Pechora the export name. Cyrillic form listed for search.
+S-2	ayres	Thrush	Turbo Thrush; Bull Thrush; Snow Thrush; Thrush Commander		high	
+S-2	franklin	Eaglet	Texaco Eaglet		high	
+S-2	grumman	Tracker	Turbo Tracker; Firecat; Turbo Firecat; Conair Firecat; CS2F; Trader; Tracer		high	Firecat/Turbo Firecat are the Conair firebomber conversions. Trader (C-1) and Tracer (E-1) are the same lineage.
+S-2	pitts	Special	Pitts Special		high	
+S-211	siai marchetti	NONE	M-311; M-345		high	The S-211 jet trainer carried no popular name.
+S-3	lockheed	Viking			high	
+S-4	thomas morse	Scout	Tommy		high	
+S-51	sikorsky	Dragonfly	Westland Dragonfly; HO3S; H-5; R-5		high	US Navy HO3S and USAF H-5 are the same aircraft.
+S-55	sikorsky	Chickasaw	Whirlwind		high	Civil designation of the H-19.
+S-55	westland	Whirlwind	Chickasaw; H-19; S-55; Westland Whirlwind		high	Westland-built S-55; do not confuse with the WWII Westland Whirlwind fighter.
+S-58	sikorsky	Choctaw	Seabat; Seahorse; Wessex		high	Civil designation of the H-34.
+S-61	sikorsky	Sea King	Seaking; Pelican; Jolly Green Giant; S-61R		high	Pelican is the USCG HH-3F; Jolly Green Giant the HH-3E, both S-61R.
+S-62	mitsubishi	NONE	Seaguard; HH-52		high	Mitsubishi licence-built Sikorsky S-62; Seaguard is the USCG HH-52A name only.
+S-62	sikorsky	NONE	Seaguard; Sea Guard; HH-52		low	Civil/export designation of the HH-52A Seaguard; Sea Guardian in existing values is likely an error.
+S-7	waco	NONE	Waco Custom Cabin		high	Waco letter-coded cabin types carry no popular names.
+S-70	sikorsky	Black Hawk	Seahawk; Blackhawk; Sea Hawk; Jayhawk; Firehawk		high	S-70A is the Black Hawk; S-70B/S-70L export naval variants are Seahawk. Existing records skew to Seahawk exports.
+S-75	almaz	Dvina	Двина; Dwina; Guideline; SA-2 Guideline; SA-2; Volkhov; Desna		high	Surface-to-air missile system; Cyrillic and transliterated forms both listed.
+S-75	isayev	Dvina	Двина; Dwina; Guideline; SA-2 Guideline; SA-2; Volkhov; Desna		high	Same missile system as the Almaz S-75 rows; Isayev built the sustainer engine.
+S-76	sikorsky	Spirit	Eagle		high	Marketed as the S-76 Spirit.
+S.211	siai marchetti	NONE	M-311; M-345		high	Trainer known by designation only.
+S.E.5	royal aircraft factory	NONE	S.E.5a; SE5a; SE-5		high	Known only by designation.
+S.E.5a	royal aircraft factory	NONE	S.E.5; SE5a; SE-5a		high	Known only by designation.
+S.V.A.	ansaldo	NONE	SVA; Savoia-Verduzio-Ansaldo		high	Ansaldo SVA has no popular name; the letters are the designers' initials.
+S.VII	spad	NONE	SPAD VII; S.7		high	Known only by designation.
+S.XIII	spad	NONE			high	SPAD S.XIII has no popular name.
+SA 103	arsenal	Émouchet	Emouchet; Air 100		high	
+SA 316	aerospatiale	Alouette III	Alouette; Chetak; SA 319		high	
+SA 318	sud aviation	Alouette II	Alouette		high	
+SA 330	aerospatiale	Puma	Oryx		high	Atlas Oryx is the South African rebuild of the same airframe.
+SA 341	aerospatiale	Gazelle	SA 342; Gazelle AH.1		high	
+SA 365	aerospatiale	Dauphin 2	Dauphin; Dolphin		high	Dolphin is the US Coast Guard HH-65 name.
+SA365	aerospatiale	Dauphin 2	Dauphin; Dolphin		high	Dolphin is the US Coast Guard HH-65 name.
+SBD	douglas	Dauntless	Slow But Deadly; A-24 Banshee		high	A-24 was the USAAF version, named Banshee.
+SBLim-2	pzl	Midget	MiG-15UTI; Lim-2; SBLim; Fagot		high	Polish-built MiG-15UTI two-seater.
+SD3-30	short	NONE	Short 330; Sherpa; C-23 Sherpa; Shorts 330		high	The Short 330 airliner has no popular name; Sherpa is the name of the C-23 military freighter version.
+SE 210	sud aviation	Caravelle			high	
+SE 3130	aerospatiale	Alouette II	Alouette		high	
+SE 3130	sud aviation	Alouette II	Alouette		high	
+SE 3160	aerospatiale	Alouette III	Alouette; SA 316; SA 319		high	
+SF-260	siai marchetti	NONE	Warrior; SF-260W Warrior		high	Trainer known by designation; Warrior is the armed SF-260W only.
+SF.260	siai marchetti	NONE	Warrior		high	SF.260 has no general popular name; Warrior is the armed SF.260W.
+SG 38	dfs	Schulgleiter	SG 38; Schulgleiter SG 38		high	
+SG 38	schneider	Schulgleiter	Schulgleiter SG 38; Schulgleiter 38		high	
+SGS 1-26	schweizer	NONE			high	Glider, no popular name.
+SGS 2-32	schweizer	NONE			high	Schweizer sailplanes carry no popular names.
+SGS 2-33	schweizer	NONE	TG-4		high	Training glider with no popular name; TG-4A in existing values is a military designation, not a name.
+SGU 1-19	schweizer	NONE			high	Glider with no popular name.
+SGU 2-22	schweizer	NONE			high	
+SK 60	saab	NONE	Saab 105		high	Saab 105 / SK 60 has no popular name.
+SM-1	wsk pzl swidnik	Hare	Mi-1; SM-2		high	Polish-built Mil Mi-1; Hare is the NATO name.
+SM-2	wsk pzl swidnik	NONE			high	Polish development of the Mi-1; no popular name.
+SM-65	convair	Atlas	Atlas D; Atlas ICBM		high	
+SM.1019	siai marchetti	NONE	Bird Dog; O-1		low	The SM.1019 carried no popular name; it is a turbine redevelopment of the Cessna O-1 Bird Dog, whose name is listed for search only.
+SNB	beech	Expeditor	Twin Beech; Kansan; Navigator		high	Navy designation for the Beech Model 18 family.
+SNJ	north american	Texan	Harvard; T-6; SNJ; AT-6		high	
+SO.1221	sncaso	Djinn			high	
+SO.1221	sud ouest	Djinn			high	
+SO.4050	sncaso	Vautour	Vautour II		high	
+SR	stinson	Reliant	Stinson Reliant; Gullwing; Gull-wing Reliant		high	SR is the Stinson model prefix for the Reliant series.
+STM	ryan	Sport Trainer	Recruit; ST; ST-A; PT-22		low	ST stood for Sport Trainer; Recruit is the PT-22 military name. STM is the military export model.
+SV.4	stampe et vertongen	NONE	Stampe; Stampe SV.4		high	Known simply as the Stampe; no popular type name.
+Sabre	canadair	Sabre			high	Canadair-built F-86 Sabre.
+Saturn V	boeing	Saturn V			high	'boattail' in existing values is a component, not a name.
+Scimitar	supermarine	Scimitar			high	
+Scorpion	rotorway	Scorpion	Scorpion Too; RotorWay Scorpion		high	
+Scout	bristol	Scout	Bristol Scout; Baby Biplane		high	
+Scout	westland	Scout	Wasp		high	Wasp is the naval sibling of the same lineage.
+Sea Fury	hawker	Sea Fury	Fury		high	
+Sea Harrier	bae	Sea Harrier	Harrier		high	
+Sea Hawk	armstrong whitworth	Sea Hawk	Hawker Sea Hawk		high	Design originated with Hawker; production was transferred to Armstrong Whitworth.
+Sea Hawk	hawker	Sea Hawk	Seahawk		high	Solid form listed for search.
+Sea Hurricane	hawker	Sea Hurricane	Hurricane; Hurricat		high	
+Sea King	westland	Sea King	Commando		high	Westland Commando is the land-based derivative.
+Sea Prince	percival	Sea Prince	Prince; Pembroke; P.57		high	
+Sea Vampire	de havilland	Sea Vampire	Vampire		high	Model string is the name.
+Sea Venom	de havilland	Sea Venom	Venom; Aquilon		high	Aquilon is the French Navy licence-built Sea Venom.
+Sea Vixen	de havilland	Sea Vixen			high	
+Seafire	supermarine	Seafire	Spitfire; Sea Fire		high	Navalised Spitfire, same lineage.
+Sedbergh	slingsby	Sedbergh	T.21		high	
+Shackleton	avro	Shackleton			high	
+Shelduck	northrop	Shelduck			high	
+Silver Dart	aerial experiment association	Silver Dart			high	
+Sioux	westland	Sioux	Bell 47; Sioux AH.1		high	Westland-built Bell 47.
+Skeeter	saro	Skeeter			high	
+Skeeter	saunders roe	Skeeter			high	
+Skybolt	steen	Skybolt	Sky Bolt; Steen Skybolt		high	
+Soyuz	npo energia	Soyuz	Soyuz TM; Soyuz TMA		high	Model string is the name.
+Soyuz	rkk energiya	Soyuz	Sojus; Soiuz		high	
+Space Shuttle	rockwell	Space Shuttle	Orbiter; Space Shuttle orbiter; STS; Space Transportation System		high	
+SpaceShipOne	scaled composites	SpaceShipOne	Space Ship One; SpaceShip One		high	
+Specht	scheibe	Specht	Scheibe Specht; L-Spatz		high	Model string is the name; L-Spatz is a different Scheibe glider.
+Special	pitts	Special	Pitts Special		high	
+Spitfire	supermarine	Spitfire			high	
+Sport	arrow	Sport	Arrow Sport		high	
+Sport	franklin	Sport			low	Model string is the name; little corroborating evidence in the data.
+Sport	lincoln	Sport	Lincoln-Page		low	Model string is the name; little independent corroboration.
+Sportster	rearwin	Sportster			high	
+Sputnik	okb 1	Sputnik			high	Satellite; Sputnik 1/2 are individual spacecraft.
+Stearman	boeing	Kaydet	Stearman		high	
+Strikemaster	bac	Strikemaster	Jet Provost		high	Developed from the BAC Jet Provost T.5; same lineage.
+Su-15	sukhoi	NONE	Flagon		high	No popular name; Flagon is the NATO reporting name.
+Su-17	sukhoi	Fitter	Fitter-C; Fitter-G; Fitter-H; Fitter-K; Su-20; Su-22		high	
+Su-2	sukhoi	NONE			high	Su-2 has no NATO name (pre-war type) and no popular name.
+Su-20	sukhoi	NONE	Fitter; Fitter-C		high	Export version of the Su-17.
+Su-22	sukhoi	NONE	Fitter; Fitter-F; Fitter-J; Fitter-K		high	Export designation of the Su-17 family.
+Su-24	sukhoi	Fencer			high	
+Su-25	sukhoi	NONE	Frogfoot; Grach		high	Grach ('Rook') is the Russian service nickname.
+Su-27	sukhoi	Flanker			high	Flanker-C is a NATO sub-variant suffix, not a separate name.
+Su-30	sukhoi	NONE	Flanker; Flanker-C; Flanker-H; MKI		high	No popular name; Flanker is the NATO reporting name for the Su-27 family.
+Su-33	sukhoi	Flanker	Flanker-D; Su-27K		high	
+Su-7	sukhoi	NONE	Fitter; Fitter-A; Moujik		high	Moujik is the NATO name for the Su-7U two-seat trainer.
+Su-9	sukhoi	Fishpot			high	Refers to the 1956 Su-9 interceptor; the unrelated 1946 Su-9 jet prototype has no NATO name.
+Super Frelon	aerospatiale	Super Frelon	Frelon; SA 321		high	
+Super Mystère	dassault	Super Mystère	Super Mystere; Sa'ar; Saar; Mystere; Mystère		high	Sa'ar is the re-engined Israeli version.
+Super Parasol	heath	Super Parasol	Parasol		high	
+Super Étendard	dassault	Super Étendard	Super Etendard; Etendard; Étendard; Super Etendard Modernise; Super Étendard Modernisé		high	Accented and unaccented forms both listed because search is substring-based.
+Swallow	swallow	Swallow	New Swallow; OX-5 Swallow		high	Model string is the name.
+Swift	supermarine	Swift			high	
+Swordfish	fairey	Swordfish	Stringbag		high	
+Sycamore	bristol	Sycamore			high	
+T-04	letov	NONE			low	Letov KT-04 not confidently identified; no popular name assigned.
+T-1	consolidated	Trusty	Husky; PT-1; PT-3		high	PT-1 is the Trusty; the related PT-3 is the Husky.
+T-1	fuji	Hatsutaka			high	
+T-11	beech	Kansan	Twin Beech; Expeditor; Beech 18		high	AT-11 is the bombing/gunnery trainer version of the Beech Model 18.
+T-13	boeing	Kaydet	Stearman; Boeing-Stearman; PT-17; N2S; Yellow Peril; Model 75		high	
+T-16	noorduyn	Harvard	Harvard II; Texan; SNJ; T-6; AT-6		high	Noorduyn-built Harvard II for the RAF/RCAF.
+T-16	north american	Harvard	Texan; T-6; SNJ; Harvard II; Harvard IIB; Harvard III		high	AT-16 is the US designation for Canadian-built Harvards.
+T-17	boeing	Kaydet	Stearman; Boeing-Stearman; Model 75		high	
+T-18	thorp	Tiger	Thorp T-18; Sky Skooter		low	The Thorp T-18 is generally called the T-18 Tiger, but usage is inconsistent among homebuilders.
+T-19	fairchild	Cornell	Fairchild M-62; Cornell		high	PT-19/PT-23/PT-26 family; Cornell is the name, used especially for the Canadian PT-26.
+T-2	mitsubishi	NONE			high	The Mitsubishi T-2 supersonic trainer carried no popular name.
+T-2	north american	Buckeye			high	
+T-22	ryan	Recruit			high	
+T-23	fairchild	Cornell	PT-23; Cornell II		high	
+T-26	fairchild	Cornell			high	
+T-26	fairchild aircraft ltd	Cornell	PT-19; PT-23; M-62		high	Canadian-built PT-26 Cornell.
+T-28	north american	Trojan	Fennec; Nomair		high	Fennec is the French Sud Aviation counter-insurgency conversion of the T-28A; same airframe family.
+T-29	convair	Flying Classroom	Samaritan; Convairliner; Convair 240; Convair 340		high	Samaritan properly belongs to the C-131, a close relative, so it is kept only as an alias.
+T-3	fuji	NONE			high	Fuji T-3 primary trainer carries no popular name.
+T-32	hal	Deepak			high	
+T-33	canadair	Silver Star	Shooting Star; T-Bird; CT-133		high	
+T-33	lockheed	Shooting Star	T-Bird; Silver Star; CT-133; Shooting-Star		high	AT/RT/NT/QT-33 are all Shooting Star; Canadair-built aircraft are Silver Star.
+T-34	beech	Mentor	Turbo Mentor; Turbo-Mentor		high	T-34C is the Turbo Mentor but shares the model string, so no variant rule.
+T-37	cessna	Tweet	Tweety Bird; Dragonfly; Super Tweet		high	Dragonfly is the A-37 attack derivative of the same airframe.
+T-38	northrop	Talon	White Rocket		high	
+T-4	kawasaki	NONE			high	No official popular name.
+T-5	shenyang	NONE	Midget		low	FT-5/JJ-5 trainer derived from the MiG-17; NATO reporting name attribution uncertain.
+T-50	cessna	Bobcat	Crane; Bamboo Bomber; AT-17; UC-78		high	Crane is the RCAF service name.
+T-6	north american	Texan	Harvard; SNJ; Mosquito; Wirraway	LT-6=Mosquito	high	LT-6G forward air control aircraft were nicknamed Mosquito in Korea. Harvard is the Commonwealth name.
+T8P-1	barkley grow	NONE	Barkley-Grow T8P-1		high	No popular name.
+TB-30	socata	Epsilon			high	
+TBM	general motors	Avenger	Tarpon; TBF; Grumman Avenger; Turkey		high	GM/Eastern Aircraft-built Grumman design.
+TBM	grumman	Avenger	Tarpon; TBF; Turkey		high	Tarpon was the initial Fleet Air Arm name.
+TP	swallow	NONE			high	No popular name.
+TS-11	pzl	Iskra			high	
+TS-8	pzl	Bies			high	
+Taube	etrich	Taube			high	
+Tempest	hawker	Tempest			high	
+Terrier	beagle	Terrier			high	
+Thunderbird	english electric	Thunderbird			high	Surface-to-air missile; the designation is the name.
+Tiger Moth	de havilland	Tiger Moth			high	
+Tornado	panavia	Tornado	Tornado ADV; Tornado IDS; Tornado ECR		high	
+Trainer	link	NONE	Blue Box; Link Trainer; ANT-18		high	Ground flight simulator, not an aircraft; universally called the Blue Box.
+Trident	hawker siddeley	Trident	HS.121; DH.121; de Havilland Trident		high	HS.121 in existing values is a designation, not a name.
+Triplane	sopwith	Triplane	Tripehound; Tripe		high	
+Tu-104	tupolev	Camel			high	
+Tu-114	tupolev	Cleat	Rossiya		high	
+Tu-124	tupolev	NONE	Cookpot		high	Cookpot is the NATO reporting name.
+Tu-128	tupolev	NONE	Fiddler; Fiddler-B		high	Soviet type known by designation.
+Tu-134	tupolev	Crusty			high	'Tupolev Tu-134A/B-3' in existing values are manufacturer-prefixed designations.
+Tu-141	tupolev	Strizh	Swift; VR-2		high	
+Tu-142	tupolev	NONE	Bear; Bear-F; Bear-J		high	Soviet type known by designation.
+Tu-143	tupolev	Reys	Rejs; Reis; VR-3		high	
+Tu-144	tupolev	NONE	Charger; Concordski		high	No Soviet popular name; Charger is the NATO reporting name and Concordski a press nickname.
+Tu-154	tupolev	Careless			high	'Nagansky expres' / 'Naganskyy expres' in existing values is an individual airframe nickname.
+Tu-16	tupolev	NONE	Badger; H-6; Xian H-6		high	Soviet type known by designation.
+Tu-2	tupolev	NONE	Bat		high	Bat is the NATO reporting name.
+Tu-22	tupolev	Blinder			high	Do not merge with Tu-22M Backfire, which is a different aircraft.
+Tu-22M	tupolev	NONE	Backfire		high	No popular name; Backfire is the NATO reporting name. Not the same aircraft as the Tu-22 Blinder despite the designation.
+Tu-95	tupolev	Bear	Bear-H; Tu-142		high	
+Tucano	short	Tucano	EMB-312		high	Short-built licence version of the Embraer Tucano.
+Twin Pioneer	scottish aviation	Twin Pioneer	Twin Pin; Pioneer		high	Model string is the name.
+Type A	deperdussin	NONE			high	Deperdussin Type A has no popular name.
+Type A	donnet leveque	NONE			low	Donnet-Leveque Type A flying boat. 'Maagen 2' in existing data is unverified and may be an individual aircraft name.
+Typhoon	eurofighter	Typhoon	Eurofighter		high	
+Typhoon	hawker	Typhoon	Tiffie; Tiffy		high	Do not confuse with the Eurofighter Typhoon.
+U-16	grumman	Albatross			high	
+U-161	sagem	Sperwer	CU-161; Sperwer B		high	Canadian CU-161 Sperwer UAV.
+U-17	cessna	Skywagon	Skywagon 185; Cessna 185		high	Military designation for the Cessna 185.
+U-2	lockheed	Dragon Lady			high	
+U-2	mitchell	Superwing	Mitchell Wing; Mitchell U-2 Superwing		high	Don Mitchell ultralight flying wing — NOT the Lockheed U-2.
+U-2	mitsubishi	NONE	Marquise; Solitaire; LR-1		high	MU-2 has no single popular name; Marquise/Solitaire are US marketing names for later variants.
+U-3	cessna	Blue Canoe	Administrator; 310		high	Blue Canoe is the universal service nickname for the military Cessna 310.
+U-9	aero commander	NONE	Aero Commander; Commander; L-26; Model 560		high	The Aero Commander 560 family has no popular name beyond the company name.
+U-93	hawker siddeley	NONE	HS 125; HS-125; DH.125; Dominie; Hawker 125; C-29		high	Brazilian VU-93/EU-93 designations for the HS 125; the type has no popular name (Dominie is the RAF name).
+U206	cessna	Stationair	Super Skywagon; Skywagon; Cessna 206		high	Early U206s were Super Skywagons, later ones Stationairs; the single model string covers both.
+UAV	tasuma	NONE			high	Generic placeholder record.
+UBF	waco	NONE	Waco UBF; Waco F series		high	Known by model letters only.
+UIC	waco	NONE	Custom Cabin; Waco Cabin		low	Waco's letter designations are not names; the UIC belongs to the Custom Cabin series, which is a series label rather than a popular name.
+UPF	waco	NONE			high	Waco letter-series biplane with no popular name.
+Universal	fokker	Universal	Fokker Universal		high	
+V-1	grumman	Mohawk			high	OV-1 Mohawk.
+V-1	lockheed	Ventura	Shooting Star; Harpoon; T-Bird; Seastar; Lodestar; T-33	PV-1=Ventura; TV-1=Shooting Star	high	MERGED FAMILY: PV-1 is the Lockheed Ventura patrol bomber; TV-1 is the Navy P-80/T-33 Shooting Star. Unrelated types under one key.
+V-10	north american	Bronco			high	
+V-10	north american rockwell	Bronco			high	
+V-107	kawasaki	NONE	Sea Knight; Boeing Vertol 107; Vertol 107; KV-107		high	Kawasaki licence build of the Boeing Vertol 107; the US military version of the same aircraft is the H-46 Sea Knight, but the Japanese KV-107 carried no popular name of its own.
+V-2	lockheed	Harpoon	Shooting Star; T-33; T-Bird; Ventura; Silver Star	PV-2=Harpoon; TV-2=Shooting Star	high	Two unrelated types share this base: PV-2 Harpoon (patrol bomber) and TV-2, the Navy T-33 Shooting Star trainer.
+V-2	mittelwerk	V-2	A-4; Aggregat 4; Vergeltungswaffe 2		high	
+V-240	convair	NONE	Convairliner; Convair-Liner; Convair Liner; Samaritan		low	Convair-Liner was a marketing name; Samaritan belongs to the military C-131 development.
+V-36	fauvel	NONE			high	Flying-wing glider, no popular name.
+V-4	stampe vertongen	NONE	Stampe SV-4		high	
+V-580	convair	NONE	Convairliner; Metropolitan; Convair 580; Allison Convair		high	Turboprop conversion of the Convair 340/440; Metropolitan properly belongs to the 440.
+V-6	hawker siddeley	Kestrel	Kestrel FGA.1; P.1127; Harrier		high	XV-6A Kestrel, the Harrier's direct ancestor.
+V-77	stinson	Reliant	Gullwing Stinson		high	
+V-8	hawker siddeley	Harrier	Matador; Harrier II		high	Spanish Navy AV-8S/TAV-8S were named Matador; the model strings do not separate them.
+V-8	mcdonnell	Harrier II	Harrier; Harrier II Plus; Matador; Matador II; AV-8S		high	AV-8S/TAV-8S in Spanish service are Matadors.
+VC10	vickers	VC10	Super VC10		high	Type has no popular name beyond its designation.
+VFW 614	vfw fokker	NONE	ATTAS		high	No popular name. ATTAS was the DLR research conversion.
+VII	spad	NONE			high	SPAD VII has no popular name.
+Valetta	vickers	Valetta	Flying Pig; Pig		high	Model string is the name.
+Valiant	vickers	Valiant			high	Model string is the name.
+Vampire	de havilland	Vampire	Sea Vampire; Vampire Trainer; DH.100; DH.113; DH.115		high	
+VariEze	rutan	VariEze	Vari-Eze; Vari Eze		high	
+VariViggen	rutan	VariViggen	Vari-Viggen; Vari Viggen		high	
+Varsity	vickers	Varsity			high	
+Vautour	sncaso	Vautour	Vautour II; SO.4050		high	
+Vega	lockheed	Vega			high	
+Venom	de havilland	Venom	Sea Venom; Aquilon		high	Aquilon is the French-built Sea Venom.
+Ventura	lockheed	Ventura	Harpoon; B-34; PV-1; Lexington		high	Same lineage as the PV-2 Harpoon.
+Victor	handley page	Victor			high	
+Vigilant	grob	Vigilant	Grob G 109		high	RAF name for the Grob G 109B motor glider.
+Viking	grob	Viking	Twin Astir; Twin II; G 103		high	Viking T1 is the RAF name for the G 103 Twin II.
+Viking	vickers	Viking			high	
+Vimy	vickers	Vimy			high	
+Viscount	vickers	Viscount			high	
+Viscount	vickers armstrongs	Viscount			high	
+Vostok	okb 1	Vostok			high	Spacecraft.
+Vulcan	avro	Vulcan			high	
+W-1	curtiss wright	Junior			high	
+W-12	curtiss wright	Sport Trainer	Travel Air Sport Trainer; Travel Air 12; CW-12		high	
+Wapiti	westland	Wapiti	Westland Wapiti; Wallace		high	Wallace is the direct development of the Wapiti.
+Wasp	westland	Wasp	Scout		high	Westland Scout is the army sibling of the same airframe.
+Weihe	dfs	Weihe			high	
+Wellington	vickers	Wellington	Wimpy		high	
+Wessex	westland	Wessex			high	
+Wessex	westland aircraft	Wessex	S-58; Sea Wessex		high	Westland-built Sikorsky S-58.
+Westland 30	westland	NONE	Lynx		high	Civil development of the Lynx airframe; the Westland 30 itself was unnamed.
+Whirlwind	westland	Whirlwind	S-55; Chickasaw; Sikorsky S-55		high	These are Westland-built S-55 helicopters. Unrelated to the WWII Westland Whirlwind fighter, which shares the name.
+Widgeon	westland	Widgeon	Westland Widgeon		high	Model string is the name; unrelated to the Grumman Widgeon.
+World Cruiser	douglas	World Cruiser	Douglas World Cruiser		high	Chicago, New Orleans, Boston and Seattle are individual aircraft names, not model names.
+X-1	bell	NONE			high	Research aircraft with no type name. Glamorous Glennis is an individual aircraft name, not a model name.
+X-15	north american	NONE			high	Research aircraft with no popular name.
+XI	bleriot	NONE			high	Bleriot XI is known only by its designation; 'Cross Country' in existing values is an individual airframe/event label, not a model name.
+XIII	spad	NONE			high	SPAD S.XIII has no popular name.
+XRON	gyrodyne	Rotorcycle			high	
+Y-11	harbin	NONE			high	
+Y-5	shijiazhuang	Colt	An-2; Antonov An-2; Kukuruznik		high	Y-5 is the Chinese-built An-2; Colt is the An-2 NATO name.
+Y-7	yokosuka	Ohka	Oka; Ōka; Baka; Cherry Blossom		high	MXY-7. Baka is the Allied code name.
+YKS	waco	NONE			high	No popular name.
+YS-11	namc	NONE			high	No popular name.
+Yak-1	yakovlev	NONE			high	No popular name and no NATO reporting name.
+Yak-11	yakovlev	NONE	Moose; C-11; Let C-11		high	C-11 is the Czech licence-built version.
+Yak-12	yakovlev	NONE	Creek; Gawron; PZL-101 Gawron		high	
+Yak-17	yakovlev	NONE	Feather; Magnet		high	Feather is the NATO reporting name; Magnet is the Yak-17UTI trainer.
+Yak-18	yakovlev	Max	Moose; Yak-18T		high	Max is the NATO reporting name for the Yak-18 series; the Yak-52 derivative has no separate one.
+Yak-23	yakovlev	Flora			high	
+Yak-25	yakovlev	NONE	Flashlight; Mandrake		high	Flashlight is the NATO reporting name; Mandrake is the Yak-25RV high-altitude version.
+Yak-27	yakovlev	NONE	Mangrove; Flashlight-C		high	Mangrove is the NATO reporting name for the Yak-27R.
+Yak-28	yakovlev	NONE	Brewer; Firebar; Maestro		high	No popular name; Brewer (bomber/recon), Firebar (Yak-28P interceptor) and Maestro (Yak-28U trainer) are NATO reporting names for subtypes that the single model string does not separate.
+Yak-3	yakovlev	NONE			high	No popular name and no NATO reporting name for the Yak-3. "Full Noise" in existing values is an individual aircraft name.
+Yak-38	yakovlev	NONE	Forger		high	
+Yak-40	yakovlev	NONE	Codling		high	Soviet airliner known only by designation; Codling is the NATO reporting name.
+Yak-42	yakovlev	NONE	Clobber		high	No popular name; Clobber is the NATO reporting name.
+Yak-50	yakovlev	NONE			high	1970s aerobatic Yak-50 has no popular or NATO name. Do not confuse with the 1949 Yak-50 'Blowlamp' interceptor.
+Yak-52	yakovlev	NONE			high	No popular name; known by designation.
+Yak-9	yakovlev	Frank			high	NATO reporting name.
+Z-126	zlin	Trenér	Trener; Trenér II; Trener II; Akrobat; Z-26; Zlin Trainer		high	
+Z-326	zlin	Trenér Master	Trener Master; Trener-Master; Trenér-Master; Trenér; Trener; Akrobat		high	Accented and unaccented Czech forms both listed.
+Z-37	let	Čmelák	Cmelak; Cmelák; Čmelak; Bumblebee		high	Accented and unaccented forms both listed because search is substring-based.
+Z-37	zlin	Čmelák	Cmelak; Agro Turbo; Z-37 Cmelak		high	Accented and unaccented forms both listed for substring search.
+Z-42	zlin	NONE	Zlin 42; Zlín 42		high	No popular name.
+Z-43	zlin	NONE	Zlin 43; Zlín 43		high	No popular name.
+Z-5	harbin	NONE	Hound; Mi-4		high	Chinese licence-built Mil Mi-4; Hound is the NATO name.
+Z-526	zlin	Trenér	Trener; Trenér Master; Trener Master; Akrobat		high	Z-526A is the Akrobat; accented and unaccented forms both listed.
+Z-6	harbin	NONE	Z-5; Mi-4		high	Chinese development of the Z-5 (Mi-4); no reporting or popular name of its own.
+Z-9	avro canada	Avrocar			high	
+Étendard IV	dassault	Étendard IV	Etendard IV; Étendard; Etendard; Super Étendard; Super Etendard		high	Accented and plain forms both listed.

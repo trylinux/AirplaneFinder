@@ -1,0 +1,26 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Caproni,Ca.6,,,,IT,,,fixed_wing,biplane,civilian,experimental,1911,Built 1911; one of the founding pieces of the Caproni collection,Ca6; Ca.6,Museo dell'Aeronautica Gianni Caproni,on_display
+Caproni,Ca.9,,,,IT,,,fixed_wing,monoplane,civilian,experimental,,Early Caproni monoplane from the founding collection,Ca9; Ca.9,Museo dell'Aeronautica Gianni Caproni,on_display
+Caproni,Ca.100,,,,IT,,,fixed_wing,biplane,civilian,trainer,,Floatplane configuration,Ca100; Ca.100,Museo dell'Aeronautica Gianni Caproni,on_display
+Caproni,Ca.163,,,,IT,,,fixed_wing,biplane,civilian,trainer,,From the Caproni family collection,Ca163; Ca.163,Museo dell'Aeronautica Gianni Caproni,on_display
+Caproni,Ca.193,,,,IT,,,fixed_wing,monoplane,civilian,private,,Post-war Caproni light twin,Ca193; Ca.193,Museo dell'Aeronautica Gianni Caproni,on_display
+Caproni,Ca.60,,,,IT,,Transaereo Noviplano,fixed_wing,triplane,civilian,experimental,,Surviving hull and structural fragments of the nine-wing Transaereo flying boat of 1921 including the front hull section and engine control panel; not a complete airframe,Ca60; Ca.60; Transaereo; Noviplano,Museo dell'Aeronautica Gianni Caproni,on_display
+Caproni,Bristol,,,,IT,,,fixed_wing,monoplane,civilian,experimental,,Caproni-built Bristol monoplane from the founding collection,Caproni Bristol,Museo dell'Aeronautica Gianni Caproni,on_display
+Caproni,Trento F.5,,,,IT,,,fixed_wing,monoplane,civilian,experimental,,Post-war Caproni Trento jet trainer project,F5; Trento F.5; Caproni Trento F-5,Museo dell'Aeronautica Gianni Caproni,on_display
+Caproni Vizzola,C-22,J,,,IT,,,fixed_wing,monoplane,civilian,trainer,,Registration not published by the museum,C22J; C-22J; C22,Museo dell'Aeronautica Gianni Caproni,on_display
+Ansaldo,S.V.A.,5,,,IT,,,fixed_wing,biplane,military,recon,,Serial not published by the museum,SVA.5; SVA5; S.V.A.5,Museo dell'Aeronautica Gianni Caproni,on_display
+Ansaldo,A.1,,,,IT,,Balilla,fixed_wing,biplane,military,fighter,,Displayed with fuselage and wings; serial not published,A1; A.1; Balilla,Museo dell'Aeronautica Gianni Caproni,on_display
+Fokker,D.VIII,,,,DE,,,fixed_wing,monoplane,military,fighter,,Fuselage with cockpit; serial not published,DVIII; D.VIII; E.V,Museo dell'Aeronautica Gianni Caproni,on_display
+Gabardini,G.51,bis,,,IT,,,fixed_wing,biplane,military,trainer,,Serial not published by the museum,G51; G.51bis,Museo dell'Aeronautica Gianni Caproni,on_display
+Breda,Ba.19,,,,IT,,,fixed_wing,biplane,civilian,private,,Aerobatic biplane; serial not published,Ba19; Ba.19,Museo dell'Aeronautica Gianni Caproni,on_display
+Macchi,M.20,,,,IT,,,fixed_wing,biplane,civilian,private,,Serial not published by the museum,M20; M.20,Museo dell'Aeronautica Gianni Caproni,on_display
+Macchi,M.C.200,,,,IT,,Saetta,fixed_wing,monoplane,military,fighter,,Reconstruction around surviving fuselage sections; the individual airframe identity is not established; recorded by survivor surveys as identity unknown,MC200; M.C.200; C.200; Saetta,Museo dell'Aeronautica Gianni Caproni,on_display
+Reggiane,Re.2005,,,,IT,,Sagittario,fixed_wing,monoplane,military,fighter,,Full-scale reproduction; no original Re.2005 survives,Re2005; Re.2005; Sagittario,Museo dell'Aeronautica Gianni Caproni,on_display
+Savoia-Marchetti,S.M.79,,,,IT,,Sparviero,fixed_wing,monoplane,military,bomber,,Remains of an S.M.79 shot down near Tobruk are displayed alongside a reconstructed airframe; the museum does not publish an MM serial,SM79; S.M.79; SM.79; Sparviero,Museo dell'Aeronautica Gianni Caproni,on_display
+Saiman,202,M,,,IT,,,fixed_wing,monoplane,civilian,trainer,,Serial not published by the museum,Saiman 202; 202M,Museo dell'Aeronautica Gianni Caproni,on_display
+Avia,FL.3,,,,IT,,,fixed_wing,monoplane,civilian,trainer,,Serial not published by the museum,FL3; FL.3,Museo dell'Aeronautica Gianni Caproni,on_display
+Bucker,Bu 131,,,,,,Jungmann,fixed_wing,biplane,civilian,trainer,,Serial not published by the museum,Bu131; Bu 131; Jungmann,Museo dell'Aeronautica Gianni Caproni,on_display
+Agusta-Bell,AB.47,G,,,IT,,,rotary_wing,,military,utility,,Serial not published by the museum,AB47; AB-47G; Bell 47; AB47G,Museo dell'Aeronautica Gianni Caproni,on_display
+Manzolini,Libellula,II,,,IT,,,rotary_wing,,civilian,experimental,,Coaxial experimental helicopter by Ettore Manzolini,Libellula; Libellula II,Museo dell'Aeronautica Gianni Caproni,on_display
+Lockheed,F-104,G,,,IT,Starfighter,,fixed_wing,monoplane,military,fighter,,Displayed at the museum entrance on the Trento-Mattarello airport approach as a gate guardian within the museum perimeter; MM serial not published,F104; F-104G; Starfighter; F104G,Museo dell'Aeronautica Gianni Caproni,on_display
+Leonardo da Vinci,Glider,,,,,,,fixed_wing,monoplane,civilian,experimental,,Full-scale reconstruction of a Leonardo glider design,Leonardo glider; aliante di Leonardo,Museo dell'Aeronautica Gianni Caproni,on_display

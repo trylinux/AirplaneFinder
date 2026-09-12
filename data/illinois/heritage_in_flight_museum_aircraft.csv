@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+McDonnell,F-4,B,148412,Phantom II,,fixed_wing,monoplane,military,fighter,,Recorded by Aerial Visuals as GF-4B ground instructional airframe; displayed at Logan County Airport,c/n 0097; F4; F4B,Heritage in Flight Museum,on_display
+Vought,A-7,E,158026,Corsair II,,fixed_wing,monoplane,military,ground_attack,,Outdoor display at Logan County Airport,c/n E342; A7; A7E,Heritage in Flight Museum,on_display
+Lockheed,T-33,A,51-6680,Shooting Star,,fixed_wing,monoplane,military,trainer,,Outdoor display,c/n 580-6012; T33; T33A,Heritage in Flight Museum,on_display
+Beechcraft,C-45,F,44-47139,Expeditor,,fixed_wing,monoplane,military,transport,,Recorded as UC-45F,N44569; c/n 7044; C45; C45F,Heritage in Flight Museum,on_display
+Bell,UH-1,H,65-10030,Iroquois,,rotary_wing,,military,utility,,Outdoor display,c/n 5074; UH1; UH1H,Heritage in Flight Museum,on_display
+Bell,TH-13,T,67-15962,Sioux,,rotary_wing,,military,trainer,,Outdoor display,N67124; c/n 3681; TH13; TH13T,Heritage in Flight Museum,on_display
+Ryan,L-17,,,Navion,,fixed_wing,monoplane,military,utility,,Reported at the site by Aerial Visuals; no serial recorded,L17,Heritage in Flight Museum,on_display

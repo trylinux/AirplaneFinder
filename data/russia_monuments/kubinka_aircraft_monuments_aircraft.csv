@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-29,,,2960509182,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 23825; source records the bort as 14-красный; wears bort 14 Red -- an airframe already in the database elsewhere carries that same number so it is recorded here as a marking rather than as an identity,MiG29,Kubinka Aircraft Monuments,on_display
+Mil,Mi-24,,45,,,,,rotary_wing,,military,ground_attack,,russianplanes.net monument point 23827,Mi24,Kubinka Aircraft Monuments,on_display

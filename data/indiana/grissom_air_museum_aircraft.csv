@@ -1,0 +1,28 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Convair,B-58,A,55-0663,Hustler,,fixed_wing,monoplane,military,bomber,,TB-58A trainer conversion; one of only eight surviving Hustlers; serial matches on both the museum list and Aerial Visuals,TB-58A; c/n 4; B58; B58A; TB58A,Grissom Air Museum,on_display
+Boeing,B-47,B,51-2315,Stratojet,,fixed_wing,monoplane,military,bomber,,Air park display outside the Grissom ARB perimeter,c/n 450-368; B47; B47B,Grissom Air Museum,on_display
+Boeing,KC-97,L,52-2697,Stratofreighter,,fixed_wing,monoplane,military,tanker,,Air park display,c/n 16728; KC97; KC97L,Grissom Air Museum,on_display
+Boeing,EC-135,L,61-0269,,,fixed_wing,monoplane,military,transport,,Airborne relay aircraft; air park display,c/n 18176; EC135; EC135L,Grissom Air Museum,on_display
+Fairchild,C-119,G,52-5850,Flying Boxcar,,fixed_wing,monoplane,military,transport,,Air park display,c/n 11009; C119; C119G,Grissom Air Museum,on_display
+Douglas,C-47,D,43-49270,Skytrain,,fixed_wing,monoplane,military,transport,,Air park display,c/n 15086; C47; C47D,Grissom Air Museum,on_display
+North American,B-25,J,44-86843,Mitchell,,fixed_wing,monoplane,military,bomber,,Recorded by Aerial Visuals as TB-25N conversion; air park display,N3507G; c/n 108-47597; B25; B25J,Grissom Air Museum,on_display
+Republic,F-105,D,61-0088,Thunderchief,,fixed_wing,monoplane,military,ground_attack,,Air park display,c/n D283; F105; F105D,Grissom Air Museum,on_display
+Republic,F-84,F,51-9456,Thunderstreak,,fixed_wing,monoplane,military,fighter,,Fisher Body built F-84F-35-GK; air park display,F84; F84F,Grissom Air Museum,on_display
+North American,F-100,C,53-1712,Super Sabre,,fixed_wing,monoplane,military,fighter,,Former NACA research aircraft recorded by Aerial Visuals as JF-100C; the museum list gives it as F-100C,c/n 214-4; F100; F100C,Grissom Air Museum,on_display
+McDonnell,F-101,B,58-0321,Voodoo,,fixed_wing,monoplane,military,fighter,,Air park display,c/n 693; F101; F101B,Grissom Air Museum,on_display
+McDonnell,F-4,C,64-0783,Phantom II,,fixed_wing,monoplane,military,fighter,,Air park display,c/n 1091; F4; F4C,Grissom Air Museum,on_display
+Convair,F-102,A,56-2317,Delta Dagger,,fixed_wing,monoplane,military,fighter,,Converted to a PQM-102A full-scale target drone; the museum list labels it TF-102A,PQM-102A; c/n 8-12-049; F102; F102A; PQM102A,Grissom Air Museum,on_display
+Grumman,F-14,B,162912,Tomcat,,fixed_wing,monoplane,military,fighter,,Air park display,c/n 560; F14; F14B,Grissom Air Museum,on_display
+Grumman,F11F,1,141790,Tiger,,fixed_wing,monoplane,military,fighter,,Recorded as F-11A; air park display,c/n 107,Grissom Air Museum,on_display
+Grumman,C-1,A,136790,Trader,,fixed_wing,monoplane,military,transport,,Carrier onboard delivery aircraft; air park display,c/n G-96-043; C1; C1A,Grissom Air Museum,on_display
+Douglas,TA-4,J,153671,Skyhawk,,fixed_wing,monoplane,military,trainer,,Air park display,c/n 13609; TA4; TA4J,Grissom Air Museum,on_display
+North American,T-2,C,158583,Buckeye,,fixed_wing,monoplane,military,trainer,,Air park display,c/n 346-09; T2; T2C,Grissom Air Museum,on_display
+Lockheed,T-33,A,52-9563,Shooting Star,,fixed_wing,monoplane,military,trainer,,Air park display,c/n 580-7723; T33; T33A,Grissom Air Museum,on_display
+Cessna,T-37,B,54-2736,Tweet,,fixed_wing,monoplane,military,trainer,,Recorded by Aerial Visuals as GT-37B ground instructional airframe,c/n 40012; T37; T37B,Grissom Air Museum,on_display
+Cessna,U-3,A,57-5922,Blue Canoe,,fixed_wing,monoplane,military,utility,,Air park display,c/n 38077; U3; U3A,Grissom Air Museum,on_display
+Cessna,O-2,A,68-6871,Skymaster,,fixed_wing,monoplane,military,recon,,Air park display,c/n 337M-0160; O2; O2A,Grissom Air Museum,on_display
+Fairchild Republic,A-10,A,77-0228,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,,Air park display,c/n A10-153; A10; A10A,Grissom Air Museum,on_display
+Bell,UH-1,H,68-16256,Iroquois,,rotary_wing,,military,utility,,Air park display,c/n 10915; UH1; UH1H,Grissom Air Museum,on_display
+NAMC,YS-11,A,P4-KFD,,,fixed_wing,monoplane,civilian,commercial_transport,,Japanese-built turboprop airliner parked at the museum; registration recorded by Aerial Visuals as an Aruban mark,c/n unknown; YS11; YS11A,Grissom Air Museum,on_display
+Bell,HH-1,K,157193,Iroquois,,rotary_wing,,military,search_rescue,,Cabin section only; displayed indoors as a walk-through exhibit,c/n 6317; HH1; HH1K,Grissom Air Museum,on_display
+McDonnell,F-4,C,64-0889,Phantom II,,fixed_wing,monoplane,military,fighter,,Cockpit section only; displayed indoors as a sit-in exhibit,GF-4C; c/n 1301; F4; F4C; GF4C,Grissom Air Museum,on_display

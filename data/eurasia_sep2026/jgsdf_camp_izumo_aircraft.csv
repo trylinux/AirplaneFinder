@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Kawasaki,OH-6,D,31164,,JP,Cayuse,,rotary_wing,,military,recon,,At 35.3684N 132.7075E; installed between 2012 and 2014 and confirmed at the FY2022 camp festival,OH6D; OH6,JGSDF Camp Izumo,on_display
+Fuji,UH-1,H,,,JP,Iroquois,,rotary_wing,,military,utility,,Unidentified training airframe at 35.3688N 132.7115E on satellite imagery since 2012; serial never read,UH1H; Huey; UH1,JGSDF Camp Izumo,on_display

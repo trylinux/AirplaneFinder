@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Grumman,G-164,,,Ag Cat,,fixed_wing,monoplane,civilian,other,,c/n X-1 registered N74054 - the Ag Cat prototype; the single most significant airframe in the collection. Housed within the Mississippi Agriculture and Forestry Museum,c/n X-1; N74054; G164,National Agricultural Aviation Museum,on_display
+Piper,PA-25,B,N6755Z,Pawnee,,fixed_wing,monoplane,civilian,other,,c/n 25-2375,c/n 25-2375; PA25; PA25B,National Agricultural Aviation Museum,on_display
+Ayres,S-2,A,N4982C,,,fixed_wing,monoplane,civilian,other,,Snow-Ayres S2A c/n 1025,c/n 1025; Snow S-2; S2; S2A,National Agricultural Aviation Museum,on_display
+Boeing,PT-13,D,N3998B,Kaydet,,fixed_wing,monoplane,military,trainer,,Stearman c/n 75-5292; Aerial Visuals ties it to USAAF 42-17129; a Stearman of the type widely converted to crop dusting after the war,c/n 75-5292; 42-17129; PT13; PT13D,National Agricultural Aviation Museum,on_display
+Piper,J-3,C,N78423,Cub,,fixed_wing,monoplane,civilian,private,,Taylorcraft-Piper J-3C-65 c/n 23164,c/n 23164; J3; J3C,National Agricultural Aviation Museum,on_display

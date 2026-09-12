@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Cessna,A-37,A,70-1294,Dragonfly,,fixed_wing,monoplane,military,ground_attack,,Kokomo memorial display; serial from Aerial Visuals; the site has no recorded formal name - see NOTES,Dragonfly; A37; A37A,Kokomo Veterans Memorial -- Kokomo,on_display
+North American,F-100,D,56-3265,Super Sabre,,fixed_wing,monoplane,military,fighter,,Kokomo memorial display; serial from Aerial Visuals; not on the NMUSAF loan register,Super Sabre; F100; F100D,Kokomo Veterans Memorial -- Kokomo,on_display

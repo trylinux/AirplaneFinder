@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Agusta-Bell,AB 205,A-1,AF-768,,ZM,,,rotary_wing,,military,utility,,c/n 4177; logged 11 Oct 2016,AB205; AB.205A1; Huey; AF768; c/n 4177,Zambia Air Force Chongwe Display -- Lusaka,on_display
+Dornier,Do 28,D-1,AF-204,,ZM,Skyservant,,fixed_wing,monoplane,military,utility,,c/n 4040; logged 22 Nov 2018,Do28; Do.28D1; Skyservant; AF204; c/n 4040,Zambia Air Force Chongwe Display -- Lusaka,on_display
+Dornier,Do 28,D-1,AF-207,,ZM,Skyservant,,fixed_wing,monoplane,military,utility,,c/n 4041; logged 22 Nov 2018,Do28; Do.28D1; Skyservant; AF207; c/n 4041,Zambia Air Force Chongwe Display -- Lusaka,on_display
+Mil,Mi-8,T,AF-755,,ZM,,,rotary_wing,,military,transport,,Zambian Air Force Mi-8T; logged 22 Nov 2018,Mi8; Mi-8T; Hip; AF755; Mi8T,Zambia Air Force Chongwe Display -- Lusaka,on_display

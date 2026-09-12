@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Fuji,UH-1,H,41723,,JP,Iroquois,,rotary_wing,,military,utility,,At 35.9200N 139.5980E facing east at the west end of the parade ground; marked VI; present since 2013,UH1H; Huey; UH1,JGSDF Camp Omiya,on_display
+Kawasaki,OH-6,D,31219,,JP,Cayuse,,rotary_wing,,military,recon,,Indoors somewhere in the camp with the rotors removed; used for decontamination training; recorded present in 2018 and again in 2025 but the exact building is unknown,OH6D; OH6,JGSDF Camp Omiya,in_storage

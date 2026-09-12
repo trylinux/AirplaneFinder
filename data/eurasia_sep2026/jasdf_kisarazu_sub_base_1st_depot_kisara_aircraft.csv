@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mitsubishi,F-104,J,36-8532,,JP,Starfighter,,fixed_wing,monoplane,military,fighter,,,F104J; F104,JASDF Kisarazu Sub-Base -- 1st Depot Kisarazu Branch,on_display
+Fuji,T-1,B,35-5867,,JP,,,fixed_wing,monoplane,military,trainer,,Wears 1st Technical School markings; damaged in a minor accident 28 Sep 1965 and repaired; partly visible from the perimeter road but inside a zone closed even on the Bon festival open day,T1B; c/n JT-66; T1,JASDF Kisarazu Sub-Base -- 1st Depot Kisarazu Branch,on_display

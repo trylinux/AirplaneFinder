@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Northrop,F-5,A,689077,,GR,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,c/n N.6448,F5A; F5; Freedom Fighter,Nea Anchialos Air Base Display Line,on_display
+Republic,F-84,F,26831,,GR,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,,F84F; F84; Thunderstreak,Nea Anchialos Air Base Display Line,on_display
+Canadair,CL-13,Sabre Mk.2,19448,,GR,Sabre,,fixed_wing,monoplane,military,fighter,,c/n 348,CL13; Sabre Mk 2; F-86E; F86E,Nea Anchialos Air Base Display Line,on_display
+Lockheed,T-33,A,34916,,GR,Shooting Star,,fixed_wing,monoplane,military,trainer,,c/n 580-8255; carries the code TR-916,T33A; T33; TR-916; Shooting Star; TR916,Nea Anchialos Air Base Display Line,on_display

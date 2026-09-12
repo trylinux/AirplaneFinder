@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-15,UTI,U-618,,UG,,,fixed_wing,monoplane,military,trainer,,Plinthed on the old Entebbe airfield perimeter; logged 14 Apr 2013,MiG15; MiG-15UTI; Midget; U618; MiG15UTI,Entebbe Air Base Gate Guards,on_display
+Mikoyan-Gurevich,MiG-17,F,U-614,,UG,,,fixed_wing,monoplane,military,fighter,,Plinthed about 240 m from the MiG-15UTI; logged Nov 2018,MiG17; MiG-17F; Fresco; U614; MiG17F,Entebbe Air Base Gate Guards,on_display
+Fouga,CM.170,,,,UG,Magister,,fixed_wing,monoplane,military,trainer,,Plinthed on the same perimeter line; serial not recorded; logged Nov 2018,CM170; CM.170; Magister; Fouga,Entebbe Air Base Gate Guards,on_display

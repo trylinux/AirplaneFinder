@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Atlas Aircraft Corporation,Impala,Mk I,576,,ZA,Impala,,fixed_wing,monoplane,military,trainer,,Licence-built Aermacchi MB-326M; the type the Central Flying School taught on until 2005; c/n A101,MB-326M; MB326M; Impala Mk1,Air Force Base Langebaanweg Gate Guards,on_display
+North American,Harvard,Mk IIA,7449,,ZA,Harvard,,fixed_wing,monoplane,military,trainer,,c/n 88-14483,AT-6; T-6; Harvard IIA; AT6; T6,Air Force Base Langebaanweg Gate Guards,on_display
+de Havilland,Vampire,FB.9,235,,ZA,Vampire,,fixed_wing,monoplane,military,fighter,,,Vampire FB9; FB.9,Air Force Base Langebaanweg Gate Guards,on_display

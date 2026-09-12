@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+NAMC,YS-11,A-500R,JA8734,,JP,,,fixed_wing,monoplane,civilian,commercial_transport,,Its last flight was the ferry from Itami to Tajima on 12 Feb 1999; the cabin is sometimes opened,YS11; YS-11A-500R,Tajima Airport,on_display
+Aero Commander,680,FL,JA5197,,JP,,,fixed_wing,monoplane,civilian,private,,,AeroCommander680FL,Tajima Airport,on_display

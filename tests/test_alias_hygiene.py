@@ -18,7 +18,12 @@ import pytest
 import models
 
 DATA = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
-FILES = sorted(glob.glob(os.path.join(DATA, "**", "*_aircraft.csv"), recursive=True))
+FILES = sorted(f for f in glob.glob(os.path.join(DATA, "**", "*_aircraft.csv"),
+                                    recursive=True)
+               # data/_to_delete/ holds superseded builds the bridge cannot
+               # remove. Validating them fails the suite on data that is not
+               # part of the project any more.
+               if "_to_delete" not in f.split(os.sep))
 
 # A verb in an alias means it is a sentence, not a name.
 PROSE = re.compile(
@@ -56,6 +61,12 @@ def test_aliases_contain_no_prose(path):
     bad = []
     for row in _rows(path):
         for alias in _aliases(row):
+            # Royal Navy mark prefixes -- HAS, HAR, HU, AEW -- are
+            # designations, not prose. "Wasp HAS.1" is a name; the detector
+            # sees the verb "has".
+            if re.match(r"^[A-Za-z][A-Za-z0-9 .\-]*\bHAS[.\-]?\d", alias, re.I) \
+                    or re.match(r"^HAS[.\-]?\d", alias, re.I):
+                continue
             if PROSE.search(alias):
                 bad.append((row.get("model"), alias, "reads as a sentence"))
             elif len(alias.split()) > MAX_WORDS or len(alias) > MAX_CHARS:

@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-2,,80 Red,,RU,,,rotary_wing,,military,utility,,russianplanes.net monument point 116; contributor note (ru): http://www.aviamonuments.ru/planes/Rossiya/Saratovskaya+obl./36; source records the bort as 80-красный,Mi2,Engels Aircraft Monuments (2),on_display
+Mil,Mi-8,MT,70 Red,,RU,,,rotary_wing,,military,utility,,russianplanes.net monument point 117; source records the bort as 70-красный,Mi8; Mi8MT,Engels Aircraft Monuments (2),on_display

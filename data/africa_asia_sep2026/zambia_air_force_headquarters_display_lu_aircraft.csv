@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aermacchi,MB-326,GB,AF-801,,ZM,,,fixed_wing,monoplane,military,ground_attack,,c/n 6479; Zambian Air Force Impala/MB-326GB; logged 25 Jun 2025,MB326; MB-326GB; AF801; c/n 6479; MB326GB,Zambia Air Force Headquarters Display -- Lusaka,on_display
+Mikoyan-Gurevich,MiG-21,bis,AF-929,,ZM,,,fixed_wing,monoplane,military,fighter,,Zambian Air Force MiG-21bis; logged 25 Jun 2025,MiG21; MiG-21bis; Fishbed; AF929; MiG21bis,Zambia Air Force Headquarters Display -- Lusaka,on_display
+Hongdu,K-8,,AF-831,,ZM,Karakorum,,fixed_wing,monoplane,military,trainer,,Zambian Air Force K-8; logged 23 Jun 2025,K8; K-8; JL-8; Karakorum; AF831; JL8,Zambia Air Force Headquarters Display -- Lusaka,on_display

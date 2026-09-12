@@ -1,0 +1,9 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Republic,F-84,E,,,BE,Thunderjet,,fixed_wing,monoplane,military,ground_attack,,Presented by the museum as the first jet aircraft at Florennes; no serial published,F84; F-84E; Thunderjet; F84E,Musee Spitfire -- Florennes,on_display
+Republic,F-84,F,,,BE,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,Presented by the museum as the first supersonic aircraft of the Belgian Air Force; no serial published,F84; F-84F; Thunderstreak; F84F,Musee Spitfire -- Florennes,on_display
+Dassault,Mirage 5,BR,,,BE,,,fixed_wing,monoplane,military,recon,,The tactical reconnaissance version; no serial published,Mirage 5; Mirage 5BR,Musee Spitfire -- Florennes,on_display
+General Dynamics,F-16,A,,,BE,,,fixed_wing,monoplane,military,fighter,,The museum also operates an interactive F-16 cockpit which is a separate item; no serial published,F16; F-16A; F16A,Musee Spitfire -- Florennes,on_display
+Fouga,CM-170,R,,,BE,Magister,,fixed_wing,monoplane,military,trainer,,No serial published,CM170; CM-170R; Magister; CM170R,Musee Spitfire -- Florennes,on_display
+de Havilland,DH.82,A,,,BE,Tiger Moth,,fixed_wing,biplane,military,trainer,,No serial published,DH82; DH.82A; Tiger Moth,Musee Spitfire -- Florennes,on_display
+IAI,B-Hunter,,,,BE,,,fixed_wing,monoplane,military,drone,,The Belgian Air Component's B-Hunter reconnaissance UAV,B Hunter; RQ-5; Hunter UAV; RQ5,Musee Spitfire -- Florennes,on_display
+General Dynamics,BGM-109,,,,US,Tomahawk,,missile_rocket,,military,cruise,,Displayed complete with its transport trailer; described by the museum as unique in Europe; a legacy of the 485th Tactical Missile Wing which deployed GLCM at Florennes,BGM109; BGM-109; Tomahawk; GLCM,Musee Spitfire -- Florennes,on_display

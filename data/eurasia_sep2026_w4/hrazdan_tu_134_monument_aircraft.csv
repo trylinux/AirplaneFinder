@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Tupolev,Tu-134,A,,,,Tupolev Tu-134A,,fixed_wing,monoplane,civilian,commercial_transport,,OSM records model Tu-134A with the matching Wikidata identifier and aircraft:type=airliner; stands beside the Nor Geghi-Hrazdan highway at Verin Aghbyurak; no registration known,Tu134A; Tu-134A; Crusty; Tu134,Hrazdan Tu-134 Monument,on_display

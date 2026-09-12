@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-23,MLD,02 White,152-25 / 039032027х,RU,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 491; source records the bort as 02-белый,MiG23; MiG23MLD,Artyom Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-23,MLD,02,,,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 7605; contributor note (ru): Находится на возле КП а/д Владивосток-Угловое; около автодороги,MiG23; MiG23MLD,Artyom Aircraft Monuments,on_display

@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aeritalia,F-104,S,,,IT,Starfighter,Spillone,fixed_wing,monoplane,military,fighter,,Roadside display on Via Adriatica; the International F-104 Society lists MM6647 in 3-22 markings here but the OSM mapper's own fixme note asks for the serial to be verified so tail_number is left blank,F104; F-104S; Starfighter; 3-22; F104S,F-104 Monument -- Misano Adriatico,on_display

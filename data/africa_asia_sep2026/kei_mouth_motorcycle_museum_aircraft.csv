@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Convair,CV-880,-22M-22,N88CH,,US,,,fixed_wing,monoplane,civilian,commercial_transport,,A complete Convair 880 in an Eastern Cape village; c/n 22-00-58,CV880; CV-880; Convair 880; N88CH,Kei Mouth Motorcycle Museum,on_display
+Cessna,310,P,ZS-FUS,,ZA,,,fixed_wing,monoplane,civilian,private,,c/n 310P-0208,Ce.310; Ce310; C-310; ZSFUS; C310,Kei Mouth Motorcycle Museum,on_display
+Revolution Helicopter,Mini 500,,ZU-BHO,,ZA,Mini 500,,rotary_wing,,civilian,private,,Kit-built single-seat helicopter,Mini500; ZUBHO,Kei Mouth Motorcycle Museum,on_display
+Piper,PA-23,-250,ZS-MLM,,ZA,Aztec,,fixed_wing,monoplane,civilian,private,,,PA23; PA-23-250; Aztec; ZSMLM,Kei Mouth Motorcycle Museum,on_display
+Bolkow,Phoebus,B,ZS-GIM,,ZA,Phoebus,,fixed_wing,monoplane,civilian,private,,Single-seat glider; c/n 772,Phoebus B; PhoebusB; ZSGIM,Kei Mouth Motorcycle Museum,on_display

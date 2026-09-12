@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,F-104,G,22304,,GR,Starfighter,,fixed_wing,monoplane,military,fighter,,c/n 683D-6003; ex-USAF 62-12304; carries the code FG-304; displayed at the headquarters gate; last noted June 2026,F104G; F104; Starfighter; 62-12304; FG-304; FG304,Andravida Air Base Display Line,on_display
+Northrop,F-5,A,89053,,GR,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,c/n N.6424; last noted June 2026,F5A; F5; Freedom Fighter,Andravida Air Base Display Line,on_display
+Republic,F-84,F,37145,,GR,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,Last noted June 2026,F84F; F84; Thunderstreak,Andravida Air Base Display Line,on_display
+Canadair,CL-13,Sabre Mk.2,19243,,GR,Sabre,,fixed_wing,monoplane,military,fighter,,c/n 143; last noted June 2026,CL13; Sabre Mk 2; F-86E; F86E,Andravida Air Base Display Line,on_display

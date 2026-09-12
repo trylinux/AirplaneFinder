@@ -1,0 +1,2 @@
+Grumman|F-14|A|160902||Tomcat|fixed_wing|monoplane|military|fighter||Mounted outdoors at the entrance to the former Naval Weapons Industrial Reserve Plant Calverton where every F-14 was flight-tested; BuNo checks against the F-14A block 160887-160930; wears 134; the airframe has weathered badly and press coverage has repeatedly called for restoration|Tomcat; 134|on_display
+Grumman|A-6|E|164384||Intruder|fixed_wing|monoplane|military|ground_attack||Outdoor display beside the F-14; wears AA-505; BuNo sits at the top of the final A-6E block|Intruder; AA-505|on_display

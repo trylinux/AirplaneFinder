@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+McDonnell,F-4,E,66-0286,Phantom II,,fixed_wing,monoplane,military,fighter,,NMUSAF loan register lists an F-4E(NF) with this serial to Hamilton Township; Aerial Visuals fix 40.216047 -74.666378; c/n 2265,c/n 2265; F4; F4E,Veterans Park -- Hamilton Township,on_display
+Bell,AH-1,F,83-24193,Cobra,,rotary_wing,,military,ground_attack,,Second airframe in the same municipal park; Aerial Visuals fix 40.210806 -74.662067,AH1; AH1F,Veterans Park -- Hamilton Township,on_display

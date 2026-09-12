@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,OH-58,A,HR.12B-17,,ES,Kiowa,,rotary_wing,,military,recon,,The source states the true identity is HR.12B-17 but that the helicopter is displayed as HR.12-12 with the army code ET-126; the false displayed serial is carried as an alias,HR.12-12; ET-126; OH58; Kiowa; OH58A; ET126,Bell OH-58A del Museo Histórico Militar -- Valencia,on_display

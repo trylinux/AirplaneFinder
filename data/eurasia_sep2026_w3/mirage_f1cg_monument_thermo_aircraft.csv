@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Dassault,Mirage F1,CG,124,,GR,Mirage F1,,fixed_wing,monoplane,military,fighter,,Displayed wearing the false serial 115; aviationmuseum.eu lists both 115 and 124 among the Tanagra collection which is the likely origin of the confusion,Mirage F1CG; MirageF1; 115,Mirage F1CG Monument -- Thermo,on_display

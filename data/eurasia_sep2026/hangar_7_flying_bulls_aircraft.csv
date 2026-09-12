@@ -1,0 +1,27 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Douglas,DC-6,B,OE-LDM,,AT,,,fixed_wing,monoplane,civilian,commercial_transport,1958,Kept in AIRWORTHY condition and flown; recorded on_display because Hangar-7 is a permanent ticket-free public exhibition hall and the aircraft normally sits in it,DC6; DC-6B; DC6B,Hangar-7 Flying Bulls,on_display
+North American,B-25,J,N6123C,,US,Mitchell,,fixed_wing,monoplane,military,bomber,1945,Airworthy; US registration retained,B25; B-25J; Mitchell; B25J,Hangar-7 Flying Bulls,on_display
+Lockheed,P-38,L,N25Y,,US,Lightning,,fixed_wing,monoplane,military,fighter,1944,Airworthy; US registration retained,P38; P-38L; Lightning; P38L,Hangar-7 Flying Bulls,on_display
+North American,P-51,D,OE-EFB,,US,Mustang,,fixed_wing,monoplane,military,fighter,1944,Airworthy,P51; P-51D; Mustang; P51D,Hangar-7 Flying Bulls,on_display
+Vought,F4U,4,OE-EAS,,US,Corsair,,fixed_wing,monoplane,military,fighter,1945,Airworthy,F4U-4; F4U4; Corsair,Hangar-7 Flying Bulls,on_display
+Grumman,F8F,2,N68RW,,US,Bearcat,,fixed_wing,monoplane,military,fighter,1947,Airworthy,F8F-2; F8F2; Bearcat,Hangar-7 Flying Bulls,on_display
+North American,T-28,B,OE-EMM,,US,Trojan,,fixed_wing,monoplane,military,trainer,1955,Airworthy,T28; T-28B; Trojan; T28B,Hangar-7 Flying Bulls,on_display
+Canadair,CL-13,Sabre Mk.6,F-AYSB,,,Sabre,,fixed_wing,monoplane,military,fighter,1956,Airworthy; French permit-to-fly registration,F86; Sabre Mk6; CL-13; CL13,Hangar-7 Flying Bulls,on_display
+North American,T-6,,OE-ERB,,US,Texan,,fixed_wing,monoplane,military,trainer,1942,Airworthy,T6; Harvard; Texan,Hangar-7 Flying Bulls,on_display
+Boeing,PT-17,,OE-AMM,,US,Stearman,,fixed_wing,biplane,military,trainer,1943,Airworthy,PT17; Stearman; Kaydet,Hangar-7 Flying Bulls,on_display
+Fairchild,PT-19,,N50429,,US,Cornell,,fixed_wing,monoplane,military,trainer,1943,Airworthy,PT19; Cornell,Hangar-7 Flying Bulls,on_display
+Beechcraft,T-34,,OE-ADM,,US,Mentor,,fixed_wing,monoplane,military,trainer,1955,Airworthy,T34; Mentor,Hangar-7 Flying Bulls,on_display
+Pilatus,PC-6,,OE-EMD,,AT,Porter,,fixed_wing,monoplane,civilian,utility,1998,Airworthy,PC6; Turbo Porter,Hangar-7 Flying Bulls,on_display
+Cessna,337,,N991DM,,US,Skymaster,,fixed_wing,monoplane,civilian,private,1969,"Airworthy; the ""Push Pull""",C337; Skymaster; Push Pull,Hangar-7 Flying Bulls,on_display
+Cessna,208,,OE-EDM,,AT,Caravan Amphibian,,fixed_wing,monoplane,civilian,utility,1996,Airworthy amphibian,C208; Caravan,Hangar-7 Flying Bulls,on_display
+Aviat,Husky,,OE-CKW,,AT,,,fixed_wing,monoplane,civilian,private,2006,Airworthy,A-1 Husky; Husky,Hangar-7 Flying Bulls,on_display
+Extra,EA-300,LX,OE-ARN,,AT,,,fixed_wing,monoplane,civilian,private,2013,Airworthy aerobatic aircraft; a second example OE-ARO is also on strength,Extra 300LX; EA300; EA300LX,Hangar-7 Flying Bulls,on_display
+Vulcanair,P.68,TC Observer,OE-FSE,,AT,,,fixed_wing,monoplane,civilian,private,2022,Airworthy camera platform,P68; P.68TC; Observer,Hangar-7 Flying Bulls,on_display
+Dassault-Dornier,Alpha Jet,,OE-FDM,,AT,,,fixed_wing,monoplane,civilian,trainer,1980,Withdrawn from use on 22 August 2025; two further Alpha Jets OE-FAS and OE-FRB remain on strength,Alphajet; Alpha Jet A,Hangar-7 Flying Bulls,on_display
+Bell,AH-1,F,N11FX,,US,Cobra,,rotary_wing,,civilian,ground_attack,1967,Airworthy ex-US Army Cobra operated on the US civil register,AH1F; Bell 209; Cobra; AH1,Hangar-7 Flying Bulls,on_display
+MBB,BO 105,C,D-HSDM,,DE,,,rotary_wing,,civilian,utility,1974,Airworthy aerobatic helicopter on the German register; a second BO 105C D-HTDM is also on strength,BO105; Bo 105C,Hangar-7 Flying Bulls,on_display
+MBB,BO 105,S,D-HUDM,,DE,,,rotary_wing,,civilian,utility,1993,Airworthy media helicopter,BO105; Bo 105S,Hangar-7 Flying Bulls,on_display
+Eurocopter,EC135,,OE-XFB,,AT,,,rotary_wing,,civilian,utility,2006,Airworthy,EC-135; EC135,Hangar-7 Flying Bulls,on_display
+Bristol,171,Sycamore,OE-XSY,,AT,,,rotary_wing,,civilian,utility,1957,Airworthy; one of very few flying Sycamores,Bristol 171; Sycamore,Hangar-7 Flying Bulls,on_display
+Airbus Helicopters,AS 350,B3+,OE-XTV,,AT,Écureuil,,rotary_wing,,civilian,utility,2009,Airworthy,AS350; Ecureuil; Squirrel,Hangar-7 Flying Bulls,on_display
+Bell,47,G-3B-1,OE-XDM,,AT,Soloy,,rotary_wing,,civilian,utility,1966,Airworthy,Bell 47G; Soloy,Hangar-7 Flying Bulls,on_display

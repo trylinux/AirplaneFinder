@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+PZL Warszawa-Okęcie,PZL-110,,SP-TKA,,PL,,Koliber,fixed_wing,monoplane,civilian,private,,Displayed at Podzwierzyniec in Łańcut carrying the civil registration SP-TKA; manufacturer and model tagged explicitly by the mapper,PZL110; Koliber; SP-TKA; SPTKA,PZL-110 Koliber SP-TKA -- Łańcut,on_display

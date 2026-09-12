@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Fairchild,C-119,G,862,,MA,Flying Boxcar,,fixed_wing,monoplane,military,transport,,Also carried CNA-MH; c/n 11283; plinthed at Marrakech; last sighting Oct 2018,C119; C-119G; Flying Boxcar; CNA-MH; CNAMH; c/n 11283; C119G,Marrakech Air Base Preserved Aircraft,on_display
+Fouga,CM.170,,226,,MA,Magister,,fixed_wing,monoplane,military,trainer,,c/n D226; preserved at Marrakech,CM170; CM.170; Magister; c/n D226,Marrakech Air Base Preserved Aircraft,on_display
+Diamond,DV20,,CN-TAZ,,MA,Katana,,fixed_wing,monoplane,civilian,trainer,,c/n 20079; preserved on the Marrakech field; logged 20 Oct 2025,DV20; DA20; Katana; CNTAZ; c/n 20079,Marrakech Air Base Preserved Aircraft,on_display

@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-24,,,,SK,,,rotary_wing,,military,ground_attack,,Mi-24 displayed at the Prešov helicopter base at Vranovská 68; no tactical number recorded,Mi-24; Mi24; Hind,Letecká základňa Prešov Aircraft Display,on_display
+Aero,L-29,,,,SK,Delfín,,fixed_wing,monoplane,military,trainer,,Aero L-29 Delfín displayed at the Prešov helicopter base; no tactical number recorded,L-29; L29; Delfin; Delfín; Maya,Letecká základňa Prešov Aircraft Display,on_display
+Unidentified,Helicopter,,,,SK,,,rotary_wing,,military,other,,One of three further helicopters mapped inside the Prešov base (OSM nodes 13718369159/13718369160/13718369168) with no type recorded; entered as unidentified rather than guessed,,Letecká základňa Prešov Aircraft Display,on_display

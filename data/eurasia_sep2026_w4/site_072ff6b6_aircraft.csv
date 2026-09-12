@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Sukhoi,Su-24,M,,,BY,,,fixed_wing,monoplane,military,bomber,,OpenStreetMap node/4357116589. Mapped 290 m from the node describing an open-air aviation museum at Babruisk,Su-24; Su24; Su-24M; Fencer-D; Su24M,Музей авіяцыі пад адкрытым небам -- Бабруйск,on_display
+Unidentified,Aircraft,,,,,,,fixed_wing,monoplane,military,other,,OpenStreetMap node/11025845481. The node that carries the description «Музей авиации под открытым небом»; NO TYPE RECORDED so the airframe is Unidentified,,Музей авіяцыі пад адкрытым небам -- Бабруйск,on_display

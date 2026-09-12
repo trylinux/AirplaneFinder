@@ -1,0 +1,1 @@
+Bell|UH-1|H|66-17019|Iroquois|Huey|rotary_wing||military|utility||Serial checks against the FY66 UH-1H block 66-16000 to 66-17138; Aerial Visuals records the operator as USAF which is wrong - this is a US Army airframe; arc-second fix at 202 Geneva Street|c/n 9213; Huey|on_display

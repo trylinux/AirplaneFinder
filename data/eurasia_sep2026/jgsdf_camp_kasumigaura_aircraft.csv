@@ -1,0 +1,11 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Kawasaki,OH-6,D,31311,,JP,Cayuse,,rotary_wing,,military,recon,,The airframe that made the last JGSDF OH-6D flight from Tachikawa to Kasumigaura; fitted with IR light and FLIR mount; at 36.0382N 140.1906E replacing 31265 in 2021,OH6D; OH6,JGSDF Camp Kasumigaura,on_display
+Fuji,UH-1,J,41865,,JP,Iroquois,,rotary_wing,,military,utility,,Marked SU; shown outdoors at the 2024 open day when it had just been struck off and installed as the display airframe replacing a UH-1H by the 23 May 2026 open day,UH1J; Huey; UH1,JGSDF Camp Kasumigaura,on_display
+Kawasaki,V-107,A,51815,,JP,,,rotary_wing,,military,transport,,At 36.0383N 140.1909E; present since 2002; fitted with the large winch,V107A; KV107; V107,JGSDF Camp Kasumigaura,on_display
+Bell,412,,JA6714,,JP,,,rotary_wing,,military,utility,,Ex-Japan Coast Guard airframe deregistered 12 Nov 2021 and transferred to the Ministry of Defense the same day; used as a UH-2 maintenance trainer; the registration and name have been painted out,Bell412; c/n 36053,JGSDF Camp Kasumigaura,in_storage
+Kawasaki,OH-6,D,31187,,JP,Cayuse,,rotary_wing,,military,recon,,Stored instructional airframe,OH6D; OH6,JGSDF Camp Kasumigaura,in_storage
+Kawasaki,OH-6,D,31212,,JP,Cayuse,,rotary_wing,,military,recon,,Stored instructional airframe,OH6D; OH6,JGSDF Camp Kasumigaura,in_storage
+Kawasaki,OH-6,D,31265,,JP,Cayuse,,rotary_wing,,military,recon,,The previous display airframe replaced by 31311 in 2021,OH6D; OH6,JGSDF Camp Kasumigaura,in_storage
+Fuji,UH-1,H,41685,,JP,Iroquois,,rotary_wing,,military,utility,,At 36.0382N 140.1904E; the display airframe from 2008 until it was replaced by UH-1J 41865 between the 2025 and 2026 open days,UH1H; Huey; UH1,JGSDF Camp Kasumigaura,in_storage
+Fuji,UH-1,J,41806,,JP,Iroquois,,rotary_wing,,military,utility,,Hangar instructional airframe marked V,UH1J; Huey; UH1,JGSDF Camp Kasumigaura,in_storage
+Mitsubishi,Nike-J,,,,JP,Nike-J,,missile_rocket,,military,other,,surface_to_air Warhead section monument beside the JASDF 3rd Air Defence Missile Group building inside the camp,NikeJ,JGSDF Camp Kasumigaura,on_display

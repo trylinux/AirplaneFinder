@@ -1,0 +1,50 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Boeing,747,-206SUD,PH-BUK,,NL,,Louis Bleriot,fixed_wing,monoplane,civilian,commercial_transport,,The last KLM Boeing 747-206BM SUD; sold to the museum in 2004 for one symbolic euro; still airworthy at the time but dismantled and moved to Lelystad by pontoon and road then reassembled; walk-through exhibit,747-200; B747; PH BUK,Luchtvaartmuseum Aviodrome,on_display
+Lockheed,L-749,,N749NL,,US,Constellation,,fixed_wing,monoplane,civilian,commercial_transport,,"Former USAF VC-121B; flown to the Netherlands in 2002 after a restoration lasting nearly ten years; repainted in 1950s KLM colours; grounded since engine problems in 2004; the museum's showpiece ""Connie""",L749; L-749; VC-121B; Constellation; Connie; VC121B,Luchtvaartmuseum Aviodrome,on_display
+Douglas,DC-2,,PH-AJU,,NL,,Uiver,fixed_wing,monoplane,civilian,commercial_transport,,"A former US Navy aircraft painted as the 1934 MacRobertson race DC-2 ""Uiver""; the original Uiver crashed in Syria in December 1934; this aircraft is maintained airworthy by the museum and is recorded here because the museum presents it as a collection exhibit",DC2; DC-2; Uiver,Luchtvaartmuseum Aviodrome,on_display
+Douglas,C-47,A,PH-TCB,,NL,Skytrain,Iwan W. Smirnoff,fixed_wing,monoplane,civilian,transport,,Displayed in the museum in KLM markings,C47; C-47A; DC-3; Dakota; C47A; DC3,Luchtvaartmuseum Aviodrome,on_display
+Douglas,C-47,A,PH-DDZ,,NL,Dakota,,fixed_wing,monoplane,civilian,transport,,Kept in the T2 hangar with the flying collection; visitor access to that hangar is limited,C47; C-47A; DC-3; Dakota; C47A; DC3,Luchtvaartmuseum Aviodrome,in_storage
+Consolidated,PBY,-5A,PH-PBA,,NL,Catalina,,fixed_wing,monoplane,civilian,search_rescue,,Amphibian kept in the T2 hangar with the flying collection,PBY; PBY-5A; Catalina; PBY5A,Luchtvaartmuseum Aviodrome,in_storage
+Douglas,C-54,A,PH-TAR,,NL,Skymaster,,fixed_wing,monoplane,civilian,transport,,Listed in the museum collection by the Dutch Wikipedia article and by aviationmuseum.eu,C54; C-54A; DC-4; Skymaster; C54A; DC4,Luchtvaartmuseum Aviodrome,on_display
+Fokker,F.27,-100,PH-FHF,,NL,Friendship,,fixed_wing,monoplane,civilian,commercial_transport,,Bought in 2004 from an Australian owner as the oldest still-flying series production F27 and painted in NLM colours; flew a memorial flight for the type's fiftieth anniversary,F27; F-27; Friendship,Luchtvaartmuseum Aviodrome,on_display
+Fokker,50,,PH-OSI,,NL,,,fixed_wing,monoplane,civilian,commercial_transport,,The Dutch Wikipedia collection list records an F27-050 which was the F-50 prototype built on a modified F27 airframe,F50; F-50; F27-050,Luchtvaartmuseum Aviodrome,on_display
+Fokker,70,,PH-MKC,,NL,,,fixed_wing,monoplane,civilian,commercial_transport,,Registration from aviationmuseum.eu only; the Dutch Wikipedia collection list does not name an F70 so this entry is the weakest in the Aviodrome set,F70; F-70,Luchtvaartmuseum Aviodrome,on_display
+Fokker,100,,PH-OFA,,NL,,,fixed_wing,monoplane,civilian,commercial_transport,,Ex KLM Cityhopper,F100; F-100; Fokker 100,Luchtvaartmuseum Aviodrome,on_display
+Lockheed,F-104,G,D-8061,,NL,,,fixed_wing,monoplane,military,fighter,,Listed by the International F-104 Society as preserved at the Aviodrome,F104; F-104G; F104G,Luchtvaartmuseum Aviodrome,on_display
+Lockheed,F-104,G,22+90,,DE,,,fixed_wing,monoplane,military,fighter,,Ex Luftwaffe airframe; listed by the International F-104 Society as the gate guard at the Aviodrome,F104; F-104G; F104G,Luchtvaartmuseum Aviodrome,on_display
+Lockheed,SP-2,H,210,,NL,Neptune,,fixed_wing,monoplane,military,recon,,Marine Luchtvaartdienst maritime patrol aircraft,SP2H; SP-2H; P-2; Neptune; SP2; P2,Luchtvaartmuseum Aviodrome,on_display
+Hawker,Hunter,F.4,WV395,,GB,,,fixed_wing,monoplane,military,fighter,,Wears an RAF serial; the Dutch Wikipedia collection list records a Hawker Hunter Mk.4 in the collection,Hunter F4; Hunter Mk.4,Luchtvaartmuseum Aviodrome,on_display
+Gloster,Meteor,F.8,I-187,,NL,,,fixed_wing,monoplane,military,fighter,,,Meteor F8,Luchtvaartmuseum Aviodrome,on_display
+Grumman,S-2,N,151,,NL,Tracker,,fixed_wing,monoplane,military,recon,,The Dutch Wikipedia collection list records two Grumman S2N Trackers in the collection,S2; S-2N; Tracker; S2N,Luchtvaartmuseum Aviodrome,on_display
+Fokker,S.11,,E-9,,NL,Instructor,,fixed_wing,monoplane,military,trainer,,,S11; S-11; Instructor,Luchtvaartmuseum Aviodrome,on_display
+Fokker,S.14,,PH-XIV,,NL,Machtrainer,,fixed_wing,monoplane,military,trainer,,,S14; S-14; Machtrainer,Luchtvaartmuseum Aviodrome,on_display
+de Havilland,DH.9,,H-NABO,,NL,,,fixed_wing,biplane,civilian,transport,,Early Dutch civil registration H-NABO,DH9; DH.9; DH-9,Luchtvaartmuseum Aviodrome,on_display
+de Havilland,DH.82,A,A-38,,NL,Tiger Moth,,fixed_wing,biplane,military,trainer,,,DH82; DH.82A; Tiger Moth,Luchtvaartmuseum Aviodrome,on_display
+de Havilland,DH.104,,PH-MAD,,NL,Dove,,fixed_wing,monoplane,civilian,transport,,The Wikipedia list records two Doves — one complete and one cockpit section,DH104; DH.104; Dove,Luchtvaartmuseum Aviodrome,on_display
+Aerospatiale,SA 365,C-1,PH-SAW,,NL,Dauphin 2,,rotary_wing,,civilian,utility,,,SA365; SA-365C; Dauphin; SA365C,Luchtvaartmuseum Aviodrome,on_display
+Agusta-Bell,AB 204,B,PH-308,,NL,,,rotary_wing,,civilian,utility,,,AB204; AB-204B; UH-1; AB204B; UH1,Luchtvaartmuseum Aviodrome,on_display
+Antonov,An-2,R,562,,,,,fixed_wing,biplane,military,utility,,,An2; An-2; Colt; An2R,Luchtvaartmuseum Aviodrome,on_display
+Auster,J.1,,PH-NFH,,NL,Autocrat,,fixed_wing,monoplane,civilian,private,,,J1; J.1; Autocrat,Luchtvaartmuseum Aviodrome,on_display
+BAC,Jet Provost,T.3A,XN600,,GB,,,fixed_wing,monoplane,military,trainer,,The Dutch Wikipedia collection list states that only the cockpit section is held,Jet Provost; T3A; T.3A,Luchtvaartmuseum Aviodrome,on_display
+Blackburn,Buccaneer,,,,GB,,,fixed_wing,monoplane,military,ground_attack,,Cockpit section only per the museum collection list,Buccaneer,Luchtvaartmuseum Aviodrome,on_display
+Bleriot,XI,,,,,,,fixed_wing,monoplane,civilian,experimental,,,Bleriot 11,Luchtvaartmuseum Aviodrome,on_display
+Cierva,C.30,A,,,,Autogiro,,rotary_wing,,civilian,experimental,,,C30; C.30A; Autogiro,Luchtvaartmuseum Aviodrome,on_display
+Fokker,Spin,,,,NL,,,fixed_wing,monoplane,civilian,experimental,,Two examples are recorded in the collection,Spin; Fokker Spider,Luchtvaartmuseum Aviodrome,on_display
+Fokker,Dr.I,,,,DE,,,fixed_wing,triplane,military,fighter,,Replica,Dr1; Dr.I; Dreidecker,Luchtvaartmuseum Aviodrome,on_display
+Fokker,F.II,,,,NL,,,fixed_wing,monoplane,civilian,commercial_transport,,,F2; F.II; F-II,Luchtvaartmuseum Aviodrome,on_display
+Fokker,C.V,,,,NL,,,fixed_wing,biplane,military,recon,,,CV; C.V; C-5; C5,Luchtvaartmuseum Aviodrome,on_display
+Fokker,F.VII,,,,NL,,,fixed_wing,monoplane,civilian,commercial_transport,,,F7; F.VII; F-VII,Luchtvaartmuseum Aviodrome,on_display
+Fokker,F.VIII,,,,NL,,Duif,fixed_wing,monoplane,civilian,commercial_transport,,,F8; F.VIII; F-VIII,Luchtvaartmuseum Aviodrome,on_display
+Junkers,Ju 52,3m,,,,,,fixed_wing,monoplane,military,transport,,Licence-built by CASA in Spain,Ju52; Ju-52; CASA 352,Luchtvaartmuseum Aviodrome,on_display
+Mikoyan-Gurevich,MiG-21,PFM,,,,,,fixed_wing,monoplane,military,fighter,,Recorded in the museum collection list as a MiG-21 PFM Fishbed-F; no serial published,MiG21; MiG-21PFM; Fishbed; MiG21PFM,Luchtvaartmuseum Aviodrome,on_display
+Noorduyn,C-64,,,,,Norseman,,fixed_wing,monoplane,military,transport,,,C64; C-64; Norseman,Luchtvaartmuseum Aviodrome,on_display
+Saab,91,D,,,,Safir,,fixed_wing,monoplane,civilian,trainer,,,Safir; Saab 91D,Luchtvaartmuseum Aviodrome,on_display
+Saab,37,,,,SE,Viggen,,fixed_wing,monoplane,military,fighter,,,J37; JA37; Viggen,Luchtvaartmuseum Aviodrome,on_display
+Sikorsky,S-51,,,,,,,rotary_wing,,civilian,utility,,,S51; S-51; Dragonfly,Luchtvaartmuseum Aviodrome,on_display
+Sikorsky,S-55,,076,,NL,,Salome,rotary_wing,,military,utility,,,S55; S-55; H-19; H19,Luchtvaartmuseum Aviodrome,on_display
+Westland,WS-51,,,,,Dragonfly,,rotary_wing,,military,search_rescue,,Licence-built Sikorsky S-51,WS51; WS-51; Dragonfly,Luchtvaartmuseum Aviodrome,on_display
+NHI,H-2,,,,NL,Kolibri,,rotary_wing,,civilian,experimental,,Nederlandse Helikopter Industrie,H2; H-2; Kolibrie,Luchtvaartmuseum Aviodrome,on_display
+NHI,H-3,,,,NL,Kolibri,,rotary_wing,,civilian,experimental,,Nederlandse Helikopter Industrie,H3; H-3; Kolibrie,Luchtvaartmuseum Aviodrome,on_display
+Sud-Aviation,SE 210,,,,,Caravelle,,fixed_wing,monoplane,civilian,commercial_transport,,Cockpit section only per the museum collection list,SE210; SE-210; Caravelle,Luchtvaartmuseum Aviodrome,on_display
+Fieseler,Fi 103,,,,DE,V-1,,fixed_wing,monoplane,military,cruise,,Replica flying bomb,Fi103; V1; V-1; Vergeltungswaffe 1,Luchtvaartmuseum Aviodrome,on_display
+Raytheon,MIM-23,,,,NL,Hawk,,missile_rocket,,military,other,,surface_to_air Surface to air missile displayed in the collection,MIM23; MIM-23; Hawk,Luchtvaartmuseum Aviodrome,on_display

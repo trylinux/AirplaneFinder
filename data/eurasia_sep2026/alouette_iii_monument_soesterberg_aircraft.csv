@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Sud Aviation,SE 3160,,,,NL,Alouette III,,rotary_wing,,military,utility,,Aircraft memorial on the Amersfoortsestraat at Soesterberg tagged in OpenStreetMap with operator=Koninklijke Luchtmacht; no serial is recorded in any source I found so the tail number is deliberately blank,SE3160; Alouette III; SA316,Alouette III Monument -- Soesterberg,on_display

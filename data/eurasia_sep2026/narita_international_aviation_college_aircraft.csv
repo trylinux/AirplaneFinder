@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Cessna,152,,JA3861,,JP,,,fixed_wing,monoplane,civilian,trainer,,,C152; c/n 15283611,Narita International Aviation College,on_display
+Cessna,152,,JA3869,,JP,,,fixed_wing,monoplane,civilian,trainer,,,C152; c/n 15284470,Narita International Aviation College,on_display
+Cessna,172,P,JA3913,,JP,Skyhawk,,fixed_wing,monoplane,civilian,trainer,,,C172P; c/n 17275572,Narita International Aviation College,on_display
+Cessna,172,P,JA4085,,JP,Skyhawk,,fixed_wing,monoplane,civilian,trainer,,,C172P; c/n 17276360,Narita International Aviation College,on_display
+Cessna,172,P,JA4086,,JP,Skyhawk,,fixed_wing,monoplane,civilian,trainer,,,C172P; c/n 17276120,Narita International Aviation College,on_display

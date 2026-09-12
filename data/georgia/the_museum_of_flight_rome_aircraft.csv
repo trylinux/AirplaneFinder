@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+North American,T-28,A,,,,Trojan,,fixed_wing,monoplane,military,trainer,,Airworthy; the museum's own 2026 site lists an Alpha model and a Bravo model among the flying aircraft kept in the Rome hangar; viewable by appointment tour only,Trojan; T28; T28A,The Museum of Flight -- Rome,on_display
+North American,T-28,B,,,,Trojan,,fixed_wing,monoplane,military,trainer,,Airworthy; Bravo model in the Rome hangar per the museum's own 2026 site,Trojan; T28; T28B,The Museum of Flight -- Rome,on_display
+Beech,C-45,,,,,Expeditor,,fixed_wing,monoplane,military,transport,,Airworthy; kept in the Rome hangar per the museum's own 2026 site; no identity published,Expeditor; Beech 18; UC-45; C45; UC45,The Museum of Flight -- Rome,on_display

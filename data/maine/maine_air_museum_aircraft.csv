@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,UH-1,H,66-0941,Iroquois,,rotary_wing,,military,utility,,The museum's principal airframe; corroborated by both Wikipedia and the SilverHawk lead list; block check passes within the UH-1H FY66 block,Huey; UH1; UH1H,Maine Air Museum,on_display
+Stinson,10,A,,,,fixed_wing,monoplane,civilian,private,,Acquired from the Quonset Air Museum in 1999 - a documented Quonset dispersal that predates the closure; registration not established,,Maine Air Museum,on_display
+Luscombe,8,A,N72025,Silvaire,,fixed_wing,monoplane,civilian,private,,On Wikipedia's collection list,,Maine Air Museum,on_display
+Rotorway,Scorpion,,,,,rotary_wing,,civilian,experimental,,Named in the Aerial Visuals collection summary for this museum; presence in 2025-26 unconfirmed,,Maine Air Museum,on_display

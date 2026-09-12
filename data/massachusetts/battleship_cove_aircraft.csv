@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,UH-1,M,66-00609,Iroquois,,rotary_wing,,military,utility,,Vietnam combat veteran; the museum's own 2026 aircraft page shows it as Huey 609; the Vietnam - The Helicopter War exhibit opened around it,Huey 609; UH1; UH1M,Battleship Cove,on_display
+Bell,AH-1,S,70-16038,Cobra,,rotary_wing,,military,ground_attack,,Vietnam combat veteran; the museum's own 2026 aircraft page shows it as Cobra 038,Cobra 038; AH1; AH1S,Battleship Cove,on_display
+North American,T-28,C,140454,Trojan,,fixed_wing,monoplane,military,trainer,,Recorded by Aerial Visuals at the Heritage Park site; not named on the museum's own 2026 aircraft page so presence needs a check,BuNo 140454; T28; T28C,Battleship Cove,on_display
+Gyrodyne,QH-50,C,DS-1284,DASH,,rotary_wing,,military,drone,,The museum's own 2026 page says two QH-50 drones are displayed; Aerial Visuals supplies this identity for one of them,DS-1284; QH50; QH50C,Battleship Cove,on_display
+Gyrodyne,QH-50,C,,DASH,,rotary_wing,,military,drone,,Second of the two drones the museum's own 2026 page describes; identity not established,QH50; QH50C,Battleship Cove,on_display

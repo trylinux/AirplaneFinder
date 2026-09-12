@@ -1,0 +1,6 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Lockheed,F-104,G,7088,,GR,Starfighter,,fixed_wing,monoplane,military,fighter,,c/n 683D-7088; was the Maleme gate guard until replaced by an F-5 and moved to the apron; last noted September 2025,F104G; F104; Starfighter,Maleme Airfield Display Line,on_display
+Northrop,F-5,A,13366,,GR,Freedom Fighter,,fixed_wing,monoplane,military,fighter,,c/n N.6135; replaced the F-104G as gate guard; last noted September 2025,F5A; F5; Freedom Fighter,Maleme Airfield Display Line,on_display
+Republic,F-84,F,37218,,GR,Thunderstreak,,fixed_wing,monoplane,military,ground_attack,,Last noted September 2025,F84F; F84; Thunderstreak,Maleme Airfield Display Line,on_display
+Republic,RF-84,F,28740,,GR,Thunderflash,,fixed_wing,monoplane,military,recon,,Last noted September 2025,RF84F; RF84; Thunderflash,Maleme Airfield Display Line,on_display
+Lockheed,T-33,A,517549,,GR,Shooting Star,,fixed_wing,monoplane,military,trainer,,c/n 580-7694; carries the code TR-549; last noted September 2025,T33A; T33; TR-549; Shooting Star; TR549,Maleme Airfield Display Line,on_display

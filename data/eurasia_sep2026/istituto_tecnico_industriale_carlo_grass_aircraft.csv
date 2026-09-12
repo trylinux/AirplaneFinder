@@ -1,0 +1,8 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Aermacchi,MB-326,,MM54177,,IT,,,fixed_wing,monoplane,military,trainer,,Instructional airframe wearing code 53,MB326,Istituto Tecnico Industriale Carlo Grassi Aircraft -- Torino,on_display
+Aermacchi,MB-326,,MM54191,,IT,,,fixed_wing,monoplane,military,trainer,,Instructional airframe wearing 36-71,MB326; 36-71,Istituto Tecnico Industriale Carlo Grassi Aircraft -- Torino,on_display
+Beechcraft,C-45,,MM61714,,IT,Expeditor,,fixed_wing,monoplane,military,transport,,Instructional airframe wearing RR-18; recorded as the property of the Gruppo Amici Velivoli Storici,C45; C-45; Expeditor; RR-18; GAVS; RR18,Istituto Tecnico Industriale Carlo Grassi Aircraft -- Torino,on_display
+Fiat,G.49,,,,IT,,,fixed_wing,monoplane,military,trainer,,Rare Fiat G.49 trainer held at the school; no serial recorded,G49; G.49,Istituto Tecnico Industriale Carlo Grassi Aircraft -- Torino,on_display
+Fiat,G.91,R,MM6265,,IT,Gina,,fixed_wing,monoplane,military,ground_attack,,Ex-Frecce Tricolori G.91 PAN held at the school,G91; G-91; G.91 PAN,Istituto Tecnico Industriale Carlo Grassi Aircraft -- Torino,on_display
+Macchi,M.416,,MM53154,,IT,,,fixed_wing,monoplane,military,trainer,,Licence-built Fokker S.11; alatricolore gives the civil registration I-AEPM,M416; M.416; S.11; I-AEPM,Istituto Tecnico Industriale Carlo Grassi Aircraft -- Torino,on_display
+Piaggio,P.166,M,MM61929,,IT,,,fixed_wing,monoplane,military,utility,,Instructional airframe wearing VV-33,P166; P.166M; VV-33; VV33,Istituto Tecnico Industriale Carlo Grassi Aircraft -- Torino,on_display

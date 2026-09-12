@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-29,,,,,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 6966; wears bort 07 -- that number recurs at other Russian sites so it is recorded here as a marking rather than as an identity,MiG29,Рязанский муниципальный округ Aircraft Monuments,on_display
+Aero,L-39,C,99,,,Albatros,,fixed_wing,monoplane,military,trainer,,russianplanes.net monument point 6967,Albatros; L39; L39C,Рязанский муниципальный округ Aircraft Monuments,on_display
+Mil,Mi-24,V,57,,,,,rotary_wing,,military,ground_attack,,russianplanes.net monument point 6968,Mi24; Mi24V,Рязанский муниципальный округ Aircraft Monuments,on_display
+Mikoyan-Gurevich,MiG-29,UB,01,,,,,fixed_wing,monoplane,military,fighter,,russianplanes.net monument point 6969,MiG29; MiG29UB,Рязанский муниципальный округ Aircraft Monuments,on_display

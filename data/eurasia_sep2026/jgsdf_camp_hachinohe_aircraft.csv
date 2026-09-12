@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Kawasaki,OH-6,D,31178,,JP,Cayuse,,rotary_wing,,military,recon,,At 40.5520N 141.4516E; a composite whose tail boom comes from 31201; the mismatch in serials between the engine mount and the tail boom is visible on the left side,OH6D; 31201; OH6,JGSDF Camp Hachinohe,on_display
+Kawasaki,TH-55,J,61336,,JP,Osage,,rotary_wing,,military,trainer,,At 40.5519N 141.4516E; the only TH-55J left in Japan after every other camp airframe was scrapped in the 2018-2022 asbestos programme; encapsulated in FY2019 but in poor outdoor condition,TH55J; TH-55J; TH55,JGSDF Camp Hachinohe,on_display
+Fuji,UH-1,H,41662,,JP,Iroquois,,rotary_wing,,military,utility,,At 40.5518N 141.4516E; the data plate survives and confirms the serial,UH1H; Huey; UH1,JGSDF Camp Hachinohe,on_display
+Fuji,UH-1,H,41718,,JP,Iroquois,,rotary_wing,,military,utility,,Training airframe at 40.5486N 141.4514E in an area not opened even on public days,UH1H; Huey; UH1,JGSDF Camp Hachinohe,in_storage

@@ -1,0 +1,14 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+de Havilland,DH-100,Vampire,J-1157,,CH,,,fixed_wing,monoplane,military,fighter,,Swiss Vampire; serial from the French Wikipedia inventory table,J1157; DH100; Vampire,Musée de l'Aviation Militaire de Payerne (Clin d'Ailes),on_display
+de Havilland,DH-100,Vampire,J-1156,,CH,,,fixed_wing,monoplane,military,fighter,,Swiss Vampire,J1156; DH100; Vampire,Musée de l'Aviation Militaire de Payerne (Clin d'Ailes),on_display
+de Havilland,DH-115,Vampire Trainer,U-1211,,CH,,,fixed_wing,monoplane,military,trainer,,Two-seat Swiss Vampire trainer; U-12xx is the correct Swiss block,U1211; DH115; Vampire T55,Musée de l'Aviation Militaire de Payerne (Clin d'Ailes),on_display
+de Havilland,DH-112,Venom,J-1584,,CH,,,fixed_wing,monoplane,military,ground_attack,,Swiss Venom,J1584; DH112; Venom,Musée de l'Aviation Militaire de Payerne (Clin d'Ailes),on_display
+Hawker,Hunter,Mk.58,J-4078,,CH,,,fixed_wing,monoplane,military,fighter,,Swiss Hunter,J4078; Hunter F58,Musée de l'Aviation Militaire de Payerne (Clin d'Ailes),on_display
+Hawker,Hunter,T.Mk.68,J-4203,,CH,,,fixed_wing,monoplane,military,trainer,,Two-seat Hunter; also known on the Swiss civil register as HB-RVW and kept in flying condition by the museum,J4203; HB-RVW; Hunter T68,Musée de l'Aviation Militaire de Payerne (Clin d'Ailes),on_display
+Dassault,Mirage III,S,J-2301,,CH,,,fixed_wing,monoplane,military,fighter,,The first Swiss Mirage IIIS,J2301; Mirage 3S,Musée de l'Aviation Militaire de Payerne (Clin d'Ailes),on_display
+Dassault,Mirage III,RS,R-2117,,CH,,,fixed_wing,monoplane,military,recon,,Swiss reconnaissance Mirage,R2117; Mirage 3RS,Musée de l'Aviation Militaire de Payerne (Clin d'Ailes),on_display
+Dassault,Mirage III,DS,J-2012,,CH,,,fixed_wing,monoplane,military,trainer,,Kept in flying condition and operated for two to three weeks a year between May and September,J2012; Mirage 3DS,Musée de l'Aviation Militaire de Payerne (Clin d'Ailes),on_display
+Northrop,F-5,E,J-3057,,CH,,Tiger II,fixed_wing,monoplane,military,fighter,,First-series Swiss Tiger II,J3057; F5E; Tiger 2; F5,Musée de l'Aviation Militaire de Payerne (Clin d'Ailes),on_display
+Pilatus,PC-7,,A-908,,CH,,,fixed_wing,monoplane,military,trainer,,Swiss turboprop trainer; A-9xx is the correct Swiss PC-7 block,A908; PC7,Musée de l'Aviation Militaire de Payerne (Clin d'Ailes),on_display
+Aérospatiale,SE 3130,Alouette II,V-43,,CH,,,rotary_wing,,military,utility,,Swiss Alouette II,V43; SE3130; Alouette 2,Musée de l'Aviation Militaire de Payerne (Clin d'Ailes),on_display
+Aérospatiale,SE 3130,Alouette II,V-282,,CH,,,rotary_wing,,military,utility,,Swiss Alouette II,V282; SE3130; Alouette 2,Musée de l'Aviation Militaire de Payerne (Clin d'Ailes),on_display

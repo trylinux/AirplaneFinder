@@ -1,0 +1,7 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Messerschmitt-Bolkow-Blohm,BO.105,S,JA9987,,JP,,,rotary_wing,,civilian,utility,,,BO105; BO.105S; c/n S-825,Kokusai Aviation College,on_display
+Bell,206,B,JA9130,,JP,Jet Ranger,,rotary_wing,,civilian,utility,,,Bell206; 206B; c/n 1343,Kokusai Aviation College,on_display
+Bell,206,B,JA9159,,JP,Jet Ranger,,rotary_wing,,civilian,utility,,,Bell206; 206B; c/n 2006,Kokusai Aviation College,on_display
+Bell,206,B,JA9406,,JP,Jet Ranger,,rotary_wing,,civilian,utility,,,Bell206; 206B; c/n 3008,Kokusai Aviation College,on_display
+Cessna,172,E,JA3197,,JP,Skyhawk,,fixed_wing,monoplane,civilian,trainer,,,C172E; c/n 17251814,Kokusai Aviation College,on_display
+Cessna,172,N,JA3845,,JP,Skyhawk,,fixed_wing,monoplane,civilian,trainer,,Ram conversion,C172N; c/n 17272778,Kokusai Aviation College,on_display

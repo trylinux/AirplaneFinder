@@ -1,0 +1,49 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Santos-Dumont,14-bis,,,,,,,fixed_wing,biplane,civilian,experimental,,Full-scale replica built for the museum,14 bis; 14bis,Museu do Ar -- Sintra,on_display
+Santos-Dumont,Demoiselle,XX,,,,,,fixed_wing,monoplane,civilian,experimental,,Full-scale replica built for the museum,Demoiselle 20,Museu do Ar -- Sintra,on_display
+de Havilland,DH.87,B,CR-AAC,,PT,Hornet Moth,,fixed_wing,biplane,civilian,private,,Also carries the Portuguese military serial 111,111; DH87; Hornet Moth; CRAAC,Museu do Ar -- Sintra,on_display
+Blériot,XI,,,,,,,fixed_wing,monoplane,civilian,other,,Pioneer-era aeroplane; the museum also holds a full-scale Blériot XI replica so which of the two is displayed at Sintra should be checked,Bleriot XI,Museu do Ar -- Sintra,on_display
+de Havilland,DH.89,A,2307,,PT,Dragon Rapide,,fixed_wing,biplane,military,transport,,Portuguese Air Force serial 2307,DH89; Dragon Rapide,Museu do Ar -- Sintra,on_display
+Sikorsky,H-19,,9101,,PT,Chickasaw,,rotary_wing,,military,utility,,Listed as a Sikorsky UH-19; Portuguese serial 9101,UH-19; S-55; H19; UH19; S55,Museu do Ar -- Sintra,on_display
+Beechcraft,AT-11,,2504,,PT,Kansan,,fixed_wing,monoplane,military,trainer,,Beech Model 18 derivative; Portuguese serial 2504,AT11; Kansan; Beech 18,Museu do Ar -- Sintra,on_display
+Supermarine,Spitfire,HF IXc,ML255,,GB,,,fixed_wing,monoplane,military,fighter,,Displayed as ML255 with the code MR-Z; ML255 is a Royal Air Force serial so the operator is recorded as the United Kingdom,MR-Z; Spitfire IX,Museu do Ar -- Sintra,on_display
+North American,F-86,F,5320,,PT,Sabre,,fixed_wing,monoplane,military,fighter,,Portuguese Air Force serial 5320,F86; Sabre; F86F,Museu do Ar -- Sintra,on_display
+North American,F-86,F,5361,,PT,Sabre,,fixed_wing,monoplane,military,fighter,,Portuguese Air Force serial 5361,F86; Sabre; F86F,Museu do Ar -- Sintra,on_display
+Fiat,G.91,R/3,5445,,PT,,,fixed_wing,monoplane,military,ground_attack,,Portuguese Air Force serial 5445; the FAP G.91R/3 fleet was acquired second-hand from the Luftwaffe,G91; Gina,Museu do Ar -- Sintra,on_display
+Fiat,G.91,R/4,5407,,PT,,,fixed_wing,monoplane,military,ground_attack,,Portuguese Air Force serial 5407,G91; Gina,Museu do Ar -- Sintra,on_display
+Douglas,C-47,A,6157,,PT,Dakota,,fixed_wing,monoplane,military,transport,,Portuguese Air Force serial 6157,C47; Dakota; DC-3; DC3; C47A,Museu do Ar -- Sintra,on_display
+Douglas,C-47,A,CS-TDA,,PT,Dakota,,fixed_wing,monoplane,civilian,commercial_transport,,Displayed on the Portuguese civil registration CS-TDA,C47; Dakota; DC-3; DC3; CSTDA; C47A,Museu do Ar -- Sintra,on_display
+Dornier,Do 27,A4,3357,,PT,,,fixed_wing,monoplane,military,utility,,Portuguese Air Force serial 3357,Do27,Museu do Ar -- Sintra,on_display
+Dornier,Do 27,A4,3487,,PT,,,fixed_wing,monoplane,military,utility,,Portuguese Air Force serial 3487,Do27,Museu do Ar -- Sintra,on_display
+Jurca,MJ-2,,,,,Tempête,,fixed_wing,monoplane,civilian,private,,Homebuilt design; registration not published,MJ2; Tempete,Museu do Ar -- Sintra,on_display
+Dassault/Dornier,Alpha Jet,A,15209,,PT,,,fixed_wing,monoplane,military,trainer,,Portuguese Air Force serial 15209; the FAP Alpha Jet A fleet came from the Luftwaffe,Alpha Jet; AlphaJet,Museu do Ar -- Sintra,on_display
+Dassault/Dornier,Alpha Jet,A,15224,,PT,,,fixed_wing,monoplane,military,trainer,,Portuguese Air Force serial 15224,Alpha Jet; AlphaJet,Museu do Ar -- Sintra,on_display
+Caudron,G.3,,,,,,,fixed_wing,biplane,military,trainer,,Early type; the museum also holds a full-scale Caudron G.3 replica so which is displayed should be checked,Caudron G3,Museu do Ar -- Sintra,on_display
+de Havilland,DH.82,A,102,,PT,Tiger Moth,,fixed_wing,biplane,military,trainer,,Portuguese Air Force serial 102,DH82; Tiger Moth,Museu do Ar -- Sintra,on_display
+de Havilland,DH.82,A,111,,PT,Tiger Moth,,fixed_wing,biplane,military,trainer,,Portuguese Air Force serial 111; note that the same number 111 is also quoted as the military serial of the museum's Hornet Moth,DH82; Tiger Moth,Museu do Ar -- Sintra,on_display
+de Havilland Canada,DHC-1,Mk.20,1305,,PT,Chipmunk,,fixed_wing,monoplane,military,trainer,,Portuguese Air Force serial 1305,DHC1; Chipmunk,Museu do Ar -- Sintra,on_display
+CASA,C-212,100,16508,,PT,Aviocar,,fixed_wing,monoplane,military,transport,,Portuguese Air Force serial 16508,C212; Aviocar,Museu do Ar -- Sintra,on_display
+CASA,C-212,100,16524,,PT,Aviocar,,fixed_wing,monoplane,military,transport,,Portuguese Air Force serial 16524,C212; Aviocar,Museu do Ar -- Sintra,on_display
+Cessna,T-37,C,2420,,PT,Tweety Bird,,fixed_wing,monoplane,military,trainer,,Portuguese Air Force serial 2420; the published lists place the same serial at both Sintra and Alverca which is an internal contradiction in that source,T37; Tweet; T37C,Museu do Ar -- Sintra,on_display
+Cessna,T-37,C,2424,,PT,Tweety Bird,,fixed_wing,monoplane,military,trainer,,Portuguese Air Force serial 2424; recorded as the gate guard,T37; Tweet; T37C,Museu do Ar -- Sintra,on_display
+Cessna,T-37,C,2430,,PT,Tweety Bird,,fixed_wing,monoplane,military,trainer,,Portuguese Air Force serial 2430,T37; Tweet; T37C,Museu do Ar -- Sintra,on_display
+Lockheed,P-2,V-5,4711,,PT,Neptune,,fixed_wing,monoplane,military,recon,,Portuguese Air Force maritime patrol Neptune; serial 4711,P2V; Neptune; P2,Museu do Ar -- Sintra,on_display
+Lockheed,RT-33,A,1916,,PT,T-Bird,,fixed_wing,monoplane,military,recon,,Reconnaissance T-33; Portuguese serial 1916,RT33; T-33; T33; RT33A,Museu do Ar -- Sintra,on_display
+Lockheed,T-33,A,1923,,PT,Silver Star,,fixed_wing,monoplane,military,trainer,,Portuguese Air Force serial 1923,T33; Silver Star; T33A,Museu do Ar -- Sintra,on_display
+Lockheed,T-33,A,1926,,PT,Silver Star,,fixed_wing,monoplane,military,trainer,,Portuguese Air Force serial 1926,T33; Silver Star; T33A,Museu do Ar -- Sintra,on_display
+Northrop,T-38,A,2605,,PT,Talon,,fixed_wing,monoplane,military,trainer,,Portuguese Air Force serial 2605,T38; Talon; T38A,Museu do Ar -- Sintra,on_display
+Sud Aviation,SE 3130,,9217,,PT,Alouette II,,rotary_wing,,military,utility,,Portuguese Air Force serial 9217,Alouette II; SE3130,Museu do Ar -- Sintra,on_display
+Sud Aviation,SE 3160,,19384,,PT,Alouette III,,rotary_wing,,military,utility,,Portuguese Air Force serial 19384,Alouette III; SE3160,Museu do Ar -- Sintra,on_display
+Avro,631,,,,PT,Cadet,,fixed_wing,biplane,military,trainer,,Highlighted by the museum as one of the rarities in the main hangar; serial not published,Avro Cadet; Avro 631,Museu do Ar -- Sintra,on_display
+North American,AT-16,,1517,,PT,Harvard III,,fixed_wing,monoplane,military,trainer,,Canadian-built Harvard; Portuguese Air Force serial 1517,AT16; Harvard; T-6; T6,Museu do Ar -- Sintra,on_display
+North American,T-6,J,1737,,PT,Texan,,fixed_wing,monoplane,military,trainer,,Portuguese Air Force serial 1737,T6; Texan; Harvard; T6J,Museu do Ar -- Sintra,on_display
+Aérospatiale,SA 330,S-1,19512,,PT,Puma,,rotary_wing,,military,search_rescue,,Portuguese Air Force serial 19512,SA330; Puma,Museu do Ar -- Sintra,on_display
+Beechcraft,F33,A,CS-A7L,,PT,Bonanza,,fixed_wing,monoplane,civilian,private,,Portuguese civil registration,Bonanza; F33A; CSA7L,Museu do Ar -- Sintra,on_display
+Boeing,707,382B,9T-MSS,,,,,fixed_wing,monoplane,civilian,commercial_transport,,Cockpit section only; carries a Zaire registration,707-382B; 9TMSS,Museu do Ar -- Sintra,on_display
+Junkers,Ju 52,3m g3e,6304,,PT,,,fixed_wing,monoplane,military,transport,,German-built Ju 52 as distinct from the Spanish CASA 352; Portuguese Air Force serial 6304; highlighted by the museum as one of its rarities,Ju52; Ju 52/3m,Museu do Ar -- Sintra,on_display
+Nord,2502,A,6403,,PT,Noratlas,,fixed_wing,monoplane,military,transport,,Portuguese Air Force serial 6403,Noratlas; N2502,Museu do Ar -- Sintra,on_display
+Cessna,337,FTB-337G,13701,,PT,Skymaster,,fixed_wing,monoplane,military,recon,,Portuguese Air Force serial 13701,FTB-337; Skymaster; O-2; FTB337; O2,Museu do Ar -- Sintra,on_display
+Lockheed,P-3,P,14806,,PT,Orion,,fixed_wing,monoplane,military,recon,,Portuguese Air Force serial 14806,P3; Orion; P-3P; P3P,Museu do Ar -- Sintra,on_display
+Max Holste,MH.1521,,3304,,PT,Broussard,,fixed_wing,monoplane,military,utility,,Portuguese Air Force serial 3304,Broussard; MH1521,Museu do Ar -- Sintra,on_display
+Piper,PA-18,,3218,,PT,Super Cub,,fixed_wing,monoplane,military,utility,,Portuguese L-21B; serial 3218,L-21B; Super Cub; PA18; L21B,Museu do Ar -- Sintra,on_display
+Dassault,Falcon 20,,,,PT,,,fixed_wing,monoplane,military,transport,,Named on the museum's own site as displayed in the historic hangars; used first for VIP transport and later for navigation-aid calibration flights; serial not published,Falcon 20; Mystere 20,Museu do Ar -- Sintra,on_display

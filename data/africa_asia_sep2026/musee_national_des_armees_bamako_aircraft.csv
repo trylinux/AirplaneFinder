@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mikoyan-Gurevich,MiG-21,bis,TZ-372,,ML,Fishbed,,fixed_wing,monoplane,military,fighter,,,MiG21; MiG-21bis; Fishbed; TZ372; MiG21bis,Musée National des Armées Bamako,on_display
+Antonov,An-2,,TZ-W12,,ML,Colt,,fixed_wing,biplane,military,utility,,Recorded 250 m from the museum; c/n 1G41-17,An2; An-2; Colt; TZW12,Musée National des Armées Bamako,on_display
+Mikoyan-Gurevich,MiG-17,F,TZ-367,,ML,Fresco,,fixed_wing,monoplane,military,fighter,,Recorded 250 m from the museum; c/n 7406,MiG17; MiG-17F; Fresco; TZ367; MiG17F,Musée National des Armées Bamako,on_display

@@ -1,0 +1,95 @@
+manufacturer,model,variant,tail_number,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Boeing,B-29,A,44-61975,Superfortress,Jack's Hack,fixed_wing,monoplane,military,bomber,,Centrepiece of the B-29 hangar; restored over decades by museum volunteers; listed on the museum's own current on-display page 2026 and fixed by Aerial Visuals to hangar site C,c/n 11452; B29; B29A,New England Air Museum,on_display
+Sikorsky,VS-44,A,NC41881,Excambian,,fixed_wing,monoplane,civilian,commercial_transport,,Sole surviving American-built four-engine commercial trans-oceanic flying boat; ex-USN BuNo 12391; museum's own 2026 featured-aircraft page confirms display,c/n 4402; N41881; BuNo 12391; VS44; VS44A,New England Air Museum,on_display
+Burnelli,CBY,3,N17N,Loadmaster,,fixed_wing,monoplane,civilian,transport,,Unique lifting-fuselage transport built by Canadian Car and Foundry; sole survivor; on museum's 2026 featured list,c/n CAM-1; CBY3,New England Air Museum,on_display
+Lockheed,Model 10,A,N57573,Electra,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-US Navy XR2O-1 BuNo 0267; museum's own 2026 featured list confirms display,c/n 1052; BuNo 0267,New England Air Museum,on_display
+Goodyear,ZNP,K-28,04378,Blimp Control Car,,lighter_than_air,,military,utility,,Control car only of a K-class patrol blimp; one of two surviving K-car; museum featured list 2026,K-28; BuNo 04378; ZNPK28; K28,New England Air Museum,on_display
+Kaman,K-225,,N401A,,,rotary_wing,,civilian,experimental,,Early Kaman intermeshing-rotor servo-flap helicopter; museum featured list 2026,c/n 3; K225,New England Air Museum,on_display
+Vought,XF4U,4,80759,Corsair,,fixed_wing,monoplane,military,fighter,,XF4U-4 prototype; Aerial Visuals fixes it in the military hangar; still on the museum's own on-display page 2026,BuNo 80759,New England Air Museum,on_display
+Republic,P-47,D,45-49458,Thunderbolt,Norma,fixed_wing,monoplane,military,fighter,,Ex-Peruvian Air Force airframe; Aerial Visuals records the Peruvian serial 451 while the museum and Wikipedia give the USAAF serial; painted as Norma,FAP 451; P47; P47D,New England Air Museum,on_display
+North American,P-51,D,44-72400,Mustang,,fixed_wing,monoplane,military,fighter,,Displayed in post-war air-racer configuration as N913Y; civil hangar per Aerial Visuals; museum on-display page 2026,N913Y; c/n 122-38859; P51; P51D,New England Air Museum,on_display
+North American,F-100,A,52-5761,Super Sabre,,fixed_wing,monoplane,military,fighter,,Early F-100A; on the museum's own 2026 on-display list; Aerial Visuals fixes it in the military hangar,c/n 192-6; F100; F100A,New England Air Museum,on_display
+Fairchild Republic,A-10,A,79-0173,Thunderbolt II,,fixed_wing,monoplane,military,ground_attack,,Military hangar; museum on-display page 2026,Warthog; A10; A10A,New England Air Museum,on_display
+Douglas,A-3,B,142246,Skywarrior,,fixed_wing,monoplane,military,bomber,,Outdoor display; confirmed by an OpenStreetMap historic=aircraft way at 41.94839/-72.69251 in the 2026 extract,c/n 11572; BuNo 142246; A3; A3B,New England Air Museum,on_display
+Douglas,A-26,C,43-22499,Invader,Reida Rae,fixed_wing,monoplane,military,bomber,,Carried civil registration N86481; military hangar; museum on-display page 2026,N86481; c/n 18584; B-26C; A26; A26C; B26C,New England Air Museum,on_display
+de Havilland Canada,C-7,B,62-4188,Caribou,,fixed_wing,monoplane,military,transport,,Outdoor display; confirmed by an OpenStreetMap historic=aircraft way at 41.94815/-72.69258 in the 2026 extract,c/n 130; CV-2B; C7; C7B; CV2B,New England Air Museum,on_display
+Grumman,HU-16,E,7228,Albatross,,fixed_wing,monoplane,military,search_rescue,,US Coast Guard airframe; confirmed by an OpenStreetMap historic=aircraft way at 41.94824/-72.69223 in the 2026 extract,c/n G-310; CG-7228; HU16; HU16E,New England Air Museum,on_display
+Glenn L. Martin,RB-57,A,52-1488,Canberra,,fixed_wing,monoplane,military,recon,,English Electric design built by Martin; museum on-display page 2026,c/n 071; RB57; RB57A,New England Air Museum,on_display
+Lockheed,TV-2,,138048,Shooting Star,,fixed_wing,monoplane,military,trainer,,US Navy TV-2; museum on-display page 2026,BuNo 138048; T-33B; TV2; T33B,New England Air Museum,on_display
+Lockheed,F-104,C,56-0901,Starfighter,,fixed_wing,monoplane,military,fighter,,Aerial Visuals calls it an F-104D-5-LO; Wikipedia and the block 56-0883/56-0938 both make it an F-104C - variant recorded as C and the conflict flagged,c/n 383-1189; F104; F104C,New England Air Museum,on_display
+Northrop,F-89,J,52-1896,Scorpion,,fixed_wing,monoplane,military,fighter,,Outdoor display site M per Aerial Visuals; built as an F-89D and converted,Scorpion; F89; F89J,New England Air Museum,on_display
+Grumman,E-1,B,147217,Tracer,,fixed_wing,monoplane,military,recon,,Outdoor display site J per Aerial Visuals; not named on the museum's own summary page - presence needs a 2025-26 photo,c/n G-117-016; BuNo 147217; E1; E1B,New England Air Museum,on_display
+Grumman,F6F,5K,79192,Hellcat,,fixed_wing,monoplane,military,fighter,,B-29 hangar; drone-conversion K suffix; museum on-display page 2026,c/n A-10337; BuNo 79192,New England Air Museum,on_display
+Grumman,FM-2,,74120,Wildcat,,fixed_wing,monoplane,military,fighter,,Eastern Aircraft-built Wildcat; B-29 hangar; museum on-display page 2026,c/n 4312; BuNo 74120; FM2,New England Air Museum,on_display
+Boeing,PT-17,,N374RA,Kaydet,,fixed_wing,monoplane,military,trainer,1941,USAAF 41-8786; FAA registry September 2026 still shows N374RA to Connecticut Aeronautical Historical Assn at Windsor Locks - strong currency evidence,41-8786; c/n 75-2345; PT17,New England Air Museum,on_display
+Bell,UH-1,B,62-12550,Iroquois,,rotary_wing,,military,utility,,Military hangar; Wikipedia gives 62-02550 which fails the UH-1B block check - the Aerial Visuals reading 62-12550 sits in the valid 62-12515/62-12556 block and is used here,c/n 0708; Huey; UH1; UH1B,New England Air Museum,on_display
+Bell,AH-1,S,70-15981,Cobra,,rotary_wing,,military,ground_attack,,Military hangar; museum on-display page 2026 calls it a TowCobra,TowCobra; AH1; AH1S,New England Air Museum,on_display
+Hughes,OH-6,A,67-16127,Cayuse,,rotary_wing,,military,utility,,Military hangar; museum on-display page 2026,c/n 0512; Loach; OH6; OH6A,New England Air Museum,on_display
+Kaman,SH-2,F,161905,Seasprite,,rotary_wing,,military,search_rescue,,Military hangar; Kaman was a Connecticut manufacturer,c/n 216; BuNo 161905; SH2; SH2F,New England Air Museum,on_display
+Kaman,HH-43,F,,Huskie,,rotary_wing,,military,search_rescue,,Military hangar; serial not recovered from any source consulted - deliberately blank,HH43; HH43F,New England Air Museum,on_display
+Kaman,HOK,1,129801,Huskie,,rotary_wing,,military,utility,,Aerial Visuals reads the type as OH-43D; the museum's own 2026 page calls it a HOK-1 - same airframe,BuNo 129801; OH-43D; HOK1; OH43D,New England Air Museum,on_display
+Sikorsky,R-4,B,43-46503,Hoverfly,,rotary_wing,,military,utility,,World's first production helicopter type; civil hangar; museum on-display page 2026,c/n 47; N92820; R4; R4B,New England Air Museum,on_display
+Sikorsky,S-51,,N5219,,,rotary_wing,,civilian,transport,,Ex-RCAF 9602; presented as an executive transport; civil hangar,c/n 51-019; RCAF 9602; S51,New England Air Museum,on_display
+Sikorsky,S-39,B,N803W,,,fixed_wing,monoplane,civilian,private,,Amphibian displayed as Jungle Gym; civil hangar; museum on-display page 2026,c/n 904; Jungle Gym; S39; S39B,New England Air Museum,on_display
+Sikorsky,XH-39,,N74150,,,rotary_wing,,military,experimental,,Turbine-powered S-52 derivative; civil hangar per Aerial Visuals,c/n 52.004; XH39,New England Air Museum,on_display
+Sikorsky,HH-52,A,1428,Seaguard,,rotary_wing,,military,search_rescue,,US Coast Guard; civil hangar; museum on-display page 2026,c/n 62-116; S-62A; CG-1428; HH52; HH52A; S62A,New England Air Museum,on_display
+Sikorsky,CH-54,B,69-18465,Tarhe,,rotary_wing,,military,transport,,Skycrane; military hangar; museum on-display page 2026,c/n 64-072; S-64; Skycrane; CH54; CH54B; S64,New England Air Museum,on_display
+Doman,LZ,1A,43-45480,,,rotary_wing,,civilian,experimental,,Doman rebuild of a Sikorsky-Nash-Kelvinator R-6A; Aerial Visuals records the airframe under its R-6A identity,c/n 165; N74146; R-6A; LZ1A; R6A,New England Air Museum,on_display
+Doman,LZ,5,52-5780,,,rotary_wing,,military,experimental,,Also carried the USAF designation VH-31; civil hangar,c/n IF003; N812; VH-31; LZ5; VH31,New England Air Museum,on_display
+Douglas,DC-3,,N165LG,,,fixed_wing,monoplane,civilian,commercial_transport,,Ex-USAAF C-49J 43-1973; civil hangar per Aerial Visuals; on the museum's 2026 on-display list,c/n 6314; C-49J; 43-1973; DC3; C49J,New England Air Museum,on_display
+Bleriot,XI,,N9781,,,fixed_wing,monoplane,civilian,private,,Civil hangar; on the museum's own 2026 on-display list,c/n 9,New England Air Museum,on_display
+Curtiss,Model D,,,,,fixed_wing,monoplane,civilian,private,,Replica pusher; the museum's 2026 page lists it as the Curtiss Bunce Pusher associated with Connecticut aviator Charles Bunce,,New England Air Museum,on_display
+Chanute,Herring Glider,,,,,fixed_wing,monoplane,civilian,experimental,,Replica hang glider; on the museum's own 2026 on-display list,,New England Air Museum,on_display
+Granville Brothers,Model R,1,,Super Sportster,,fixed_wing,monoplane,civilian,private,,Replica Gee Bee racer; the Granville brothers built in Springfield Massachusetts; museum 2026 on-display list,Gee Bee R-1,New England Air Museum,on_display
+Laird,LC-DW,300,N10538,Super Solution,,fixed_wing,monoplane,civilian,private,,Racing biplane; civil hangar per Aerial Visuals; museum 2026 on-display list,c/n 192; Solution; LCDW; LCDW300,New England Air Museum,on_display
+Rider,R-3,,N14215,Marcoux-Bromberg Special,,fixed_wing,monoplane,civilian,private,,Air racer; museum lists it as Marcoux-Bromberg R-3,c/n A1; Nixon Special; R3,New England Air Museum,on_display
+Heath,LNB,4,,Parasol,,fixed_wing,monoplane,civilian,private,,Light parasol monoplane; on the museum's 2026 on-display list,LNB4,New England Air Museum,on_display
+Pratt-Read,LNE,1,31561,,,fixed_wing,monoplane,military,trainer,,US Navy training glider built in Deep River Connecticut; museum 2026 on-display list,c/n PRG-01-56; N5346G; BuNo 31561; LNE1,New England Air Museum,on_display
+Flightstar,Flightstar,MC,N54209,,,fixed_wing,monoplane,civilian,private,,Ultralight; museum 2026 on-display list,c/n MC658,New England Air Museum,on_display
+AeroVelo,Atlas,,,,,rotary_wing,,civilian,experimental,,Human-powered helicopter that won the Sikorsky Prize in 2013; partial airframe; museum 2026 on-display list,,New England Air Museum,on_display
+Vought,A-7,D,69-6201,Corsair II,,fixed_wing,monoplane,military,ground_attack,,In the restoration hangar per Aerial Visuals site F; not on the museum's public on-display list,A7; A7D,New England Air Museum,under_restoration
+Kaman,K-16,B,04351,,,fixed_wing,monoplane,military,experimental,,Tilt-wing research aircraft based on a Grumman Goose hull; the Aerial Visuals BuNo 04351 does not match any known Navy Kaman block and is flagged rather than corrected,N1523V; c/n 1178; K16; K16B,New England Air Museum,on_display
+North American,B-25,H,43-4999,Mitchell,Dog Daze,fixed_wing,monoplane,military,bomber,,Held in storage; carried civil registration N3970C,N3970C; c/n 98-22000; B25; B25H,New England Air Museum,in_storage
+North American,F-86,F,51-13371,Sabre,,fixed_wing,monoplane,military,fighter,,Storage hangar site G per Aerial Visuals,c/n 176-302; F86; F86F,New England Air Museum,in_storage
+Mikoyan-Gurevich,MiG-15,bis,N2276H,,,fixed_wing,monoplane,military,fighter,,Chinese-built J-2; storage hangar,c/n 83277; J-2; MiG15; MiG15bis; J2,New England Air Museum,in_storage
+Republic,F-105,B,57-5778,Thunderchief,,fixed_wing,monoplane,military,ground_attack,,Storage hangar site G per Aerial Visuals,c/n B15; F105; F105B,New England Air Museum,in_storage
+McDonnell Douglas,F-4,D,66-0269,Phantom II,,fixed_wing,monoplane,military,fighter,,Storage hangar site G,c/n 1936; F4; F4D,New England Air Museum,in_storage
+Grumman,F-14,B,162926,Tomcat,,fixed_wing,monoplane,military,fighter,,Storage hangar site G,c/n 574; BuNo 162926; F14; F14B,New England Air Museum,in_storage
+Douglas,A-4,A,142219,Skyhawk,,fixed_wing,monoplane,military,ground_attack,,Storage hangar site G,c/n 11473; BuNo 142219; A4; A4A,New England Air Museum,in_storage
+Hiller,OH-23,G,62-3812,Raven,,rotary_wing,,military,utility,,Storage hangar site G,c/n 1460; OH23; OH23G,New England Air Museum,in_storage
+de Havilland Canada,U-6,A,57-2570,Beaver,,fixed_wing,monoplane,military,utility,,Storage hangar site G; carried Canadian registration C-GDQR,c/n 1222; C-GDQR; U6; U6A,New England Air Museum,in_storage
+Sikorsky,LH-34,D,145717,Seahorse,,rotary_wing,,military,utility,,Storage hangar site G,c/n 58-0804; BuNo 145717; LH34; LH34D,New England Air Museum,in_storage
+Gyrodyne,QH-50,C,DS-1320,DASH,,rotary_wing,,military,drone,,Anti-submarine drone helicopter; storage hangar,DS-1320; QH50; QH50C,New England Air Museum,in_storage
+Gyrodyne,XRON,1,,Rotorcycle,,rotary_wing,,military,utility,,Storage hangar site G,c/n 4005; XRON1,New England Air Museum,in_storage
+Convair,F-102,A,56-1221,Delta Dagger,,fixed_wing,monoplane,military,fighter,,Outdoor storage compound N - explicitly not accessible to the public per Aerial Visuals,F102; F102A,New England Air Museum,in_storage
+Convair,F-102,A,55-3450,Delta Dagger,,fixed_wing,monoplane,military,fighter,,Outdoor storage compound O - not accessible to the public,F102; F102A,New England Air Museum,in_storage
+Piasecki,HUP,2,128598,Retriever,,rotary_wing,,military,utility,,Outdoor storage compound N; Aerial Visuals lists it as UH-25B,BuNo 128598; UH-25B; HUP2; UH25B,New England Air Museum,in_storage
+Piasecki,HUP,2,130063,Retriever,,rotary_wing,,military,utility,,Outdoor storage compound N; Aerial Visuals lists it as UH-25B,BuNo 130063; UH-25B; HUP2; UH25B,New England Air Museum,in_storage
+Piasecki,HRP,1,111809,Rescuer,,rotary_wing,,military,search_rescue,,Outdoor storage compound N,BuNo 111809; HRP1,New England Air Museum,in_storage
+Vought,F-8,C,146687,Crusader,,fixed_wing,monoplane,military,fighter,,Outdoor storage compound N,c/n A35-58; BuNo 146687; F8; F8C,New England Air Museum,in_storage
+Grumman,F9F,2,125155,Panther,,fixed_wing,monoplane,military,fighter,,Outdoor storage compound O,BuNo 125155,New England Air Museum,in_storage
+Kaman,TH-43,E,129308,Huskie,,rotary_wing,,military,trainer,,Outdoor storage compound O,c/n 4-17; BuNo 129308; TH43; TH43E,New England Air Museum,in_storage
+Kaman,TH-43,E,128654,Huskie,,rotary_wing,,military,trainer,,Outdoor storage compound O,BuNo 128654; TH43; TH43E,New England Air Museum,in_storage
+Kaman,TH-43,E,129309,Huskie,,rotary_wing,,military,trainer,,Outdoor storage compound O,BuNo 129309; TH43; TH43E,New England Air Museum,in_storage
+Kaman,TH-43,E,137835,Huskie,,rotary_wing,,military,trainer,,Outdoor storage compound O,BuNo 137835; TH43; TH43E,New England Air Museum,in_storage
+Sikorsky,H-19,D,56-4257,Chickasaw,,rotary_wing,,military,utility,,Outdoor storage compound O,c/n 56-4257; H19; H19D,New England Air Museum,in_storage
+Douglas,C-133,B,59-0529,Cargomaster,,fixed_wing,monoplane,military,transport,,Aerial Visuals site P - a collection whose presence it could not confirm; needs a 2025-26 check,c/n 45580; C133; C133B,New England Air Museum,in_storage
+Cessna,UC-78,B,43-32275,Bobcat,,fixed_wing,monoplane,military,trainer,,Aerial Visuals site P - presence unconfirmed,c/n 6213; N52685; UC78; UC78B,New England Air Museum,in_storage
+Grumman,TBM,1E,23602,Avenger,,fixed_wing,monoplane,military,bomber,,Aerial Visuals site P - presence unconfirmed,c/n 746; BuNo 23602; TBM1E,New England Air Museum,in_storage
+Ryan,PT-22,A,42-57492,Recruit,,fixed_wing,monoplane,military,trainer,,Aerial Visuals site P - presence unconfirmed,c/n 1788; N51707; PT22; PT22A,New England Air Museum,in_storage
+Rearwin,8135,,N25549,Cloudster,,fixed_wing,monoplane,civilian,private,,Aerial Visuals site P - presence unconfirmed,c/n 825,New England Air Museum,in_storage
+Weaver Aircraft Company,YKC,S,N14614,,,fixed_wing,monoplane,civilian,private,,FAA registry September 2026 still shows N14614 to Connecticut Aeronautical Historical Assn - current,c/n 4236; WACO YKC-S,New England Air Museum,in_storage
+Republic,RC-3,,N6705K,Seabee,,fixed_wing,monoplane,civilian,private,,Storage; on Wikipedia's collection list,c/n 0988; RC3,New England Air Museum,in_storage
+Viking,B-8,,N13250,Kitty Hawk,,fixed_wing,monoplane,civilian,private,,Storage hangar site G,c/n 30; B8,New England Air Museum,in_storage
+Stinson,10,A,N34645,,,fixed_wing,monoplane,civilian,private,,Storage hangar site G,c/n 8045,New England Air Museum,in_storage
+Aeronca,50,C,N21070,Chief,,fixed_wing,monoplane,civilian,private,,Storage hangar site G,c/n C-1018,New England Air Museum,in_storage
+Great Lakes,2T-1,A,N625CJ,Sport Trainer,,fixed_wing,monoplane,civilian,private,,Storage hangar site G; Wikipedia flags this airframe as a replica,c/n 6931K-420; 2T1; 2T1A,New England Air Museum,in_storage
+Granville Brothers,Model A,,N901K,Sportster,,fixed_wing,monoplane,civilian,private,,Storage hangar site G,c/n P-8; Gee Bee A,New England Air Museum,in_storage
+Rutan,Quickie,,N175HM,,,fixed_wing,monoplane,civilian,experimental,,Storage hangar site G,c/n 175,New England Air Museum,in_storage
+Rutan,VariEze,,N477CM,,,fixed_wing,monoplane,civilian,experimental,,Storage hangar site G,c/n 0003,New England Air Museum,in_storage
+Fokker,Dr.I,,,,,fixed_wing,monoplane,military,fighter,,Replica triplane in the storage hangar,,New England Air Museum,in_storage
+Fairchild,XSM-73,,,,Bull Goose,missile_rocket,,military,cruise,,Decoy cruise missile; on Wikipedia's collection list; serial not established,XSM73,New England Air Museum,in_storage
+North American,AGM-28,,,,Hound Dog,missile_rocket,,military,cruise,,Air-launched cruise missile; on Wikipedia's collection list; serial not established,AGM28,New England Air Museum,in_storage
+Vought,SSM-N-8,,,,Regulus I,missile_rocket,,military,cruise,,On Wikipedia's collection list; serial not established,SSMN8,New England Air Museum,in_storage
+Radioplane,OQ-2,,,Shelduck,,fixed_wing,monoplane,military,drone,,Target drone; Wikipedia attributes it to Northrop,OQ2,New England Air Museum,in_storage
+Radioplane,YOQ-19,,,,,fixed_wing,monoplane,military,drone,,Target drone; on Wikipedia's collection list,YOQ19,New England Air Museum,in_storage

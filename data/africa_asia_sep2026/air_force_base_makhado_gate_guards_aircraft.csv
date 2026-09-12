@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Atlas Aircraft Corporation,Cheetah,C,348,,ZA,Cheetah,,fixed_wing,monoplane,military,fighter,,Preserved at the base that flew the Cheetah C operationally until 2008,Cheetah C; CheetahC,Air Force Base Makhado Gate Guards,on_display
+Atlas Aircraft Corporation,Cheetah,D2,846,,ZA,Cheetah,,fixed_wing,monoplane,military,fighter,,Two-seat Cheetah D second-batch conversion,Cheetah D2; CheetahD2; Cheetah D,Air Force Base Makhado Gate Guards,on_display

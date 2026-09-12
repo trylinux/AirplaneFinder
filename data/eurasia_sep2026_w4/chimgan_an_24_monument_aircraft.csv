@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Unidentified,Twin-engine turboprop transport,,,,,,,fixed_wing,monoplane,military,transport,,The OSM node is named An-24 but carries a competing proposed name of An-12; the two types are not confusable in the field so one of the two entries is wrong and neither is asserted here; a photograph would settle it in seconds,An24; An12,Chimgan An-24 Monument,on_display

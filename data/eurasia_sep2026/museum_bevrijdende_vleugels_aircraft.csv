@@ -1,0 +1,5 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Airspeed,AS.51,,,,GB,Horsa,,fixed_wing,monoplane,military,transport,,Full-size glider replica displayed in the markings 2100847/UA-D,Horsa; AS.51; AS51; 2100847,Museum Bevrijdende Vleugels,on_display
+Douglas,C-53,C,,,US,Skytrooper,,fixed_wing,monoplane,military,transport,,Displayed in the D-Day markings 290321/UA-D; the source lists the several civil registrations the airframe has carried including N32MS D-HEFO and OO-GEI but its column layout is unreliable so no single registration is asserted here,C53; C-53C; Skytrooper; DC-3; 290321; C53C; DC3,Museum Bevrijdende Vleugels,on_display
+Piper,L-4,J,,,US,Grasshopper,,fixed_wing,monoplane,military,utility,,No serial published,L4; L-4J; Grasshopper; J-3 Cub; L4J,Museum Bevrijdende Vleugels,on_display
+Brantly,B-2,B,,,,,,rotary_wing,,civilian,private,,No registration published,B2; B-2B; B2B,Museum Bevrijdende Vleugels,on_display

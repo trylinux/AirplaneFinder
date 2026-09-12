@@ -1,0 +1,3 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Avioane Craiova,IAR 93,B,229,,RO,,,fixed_wing,monoplane,military,ground_attack,1989,Single-seat afterburning B-series airframe; left the factory 22 Mar 1989; year_built from the published factory roll-out date,IAR-93; IAR93; Vultur; SC 229,Aerodromul Aerial Club Vădeni Aircraft Display,on_display
+Mikoyan-Gurevich,MiG-21,,,,RO,,,fixed_wing,monoplane,military,fighter,,OSM node 13342683774 standing 25 m from the IAR-93; no sub-variant and no tactical number recorded,MiG21; Fishbed,Aerodromul Aerial Club Vădeni Aircraft Display,on_display

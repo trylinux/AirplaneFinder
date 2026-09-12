@@ -1,0 +1,2 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Bell,OH-58,A,,,ES,Kiowa,,rotary_wing,,military,recon,,Displayed on the Glorieta del Sargento Joga wearing the Spanish Army code ET-123; the ET code is a unit code rather than the type serial so it is carried as an alias and the tail number is left blank,ET-123; OH58; Kiowa; OH58A; ET123,Bell OH-58A ET-123 Glorieta del Sargento Joga -- Colmenar Viejo,on_display

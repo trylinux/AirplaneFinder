@@ -1,0 +1,4 @@
+manufacturer,model,variant,tail_number,construction_number,operator_country,model_name,aircraft_name,aircraft_type,wing_type,military_civilian,role_type,year_built,description,aliases,museum_name,display_status
+Mil,Mi-24,,01,,,,,rotary_wing,,military,ground_attack,,russianplanes.net monument point 6717; contributor note (ru): http://kalabinsergey.livejournal.com/684.html,Mi24,Chernigovka Aircraft Monuments,on_display
+Mil,Mi-8,,,,,,,rotary_wing,,military,utility,,russianplanes.net monument point 6718,Mi8,Chernigovka Aircraft Monuments,on_display
+Mil,Mi-2,,,,,,,rotary_wing,,military,utility,,russianplanes.net monument point 6719; contributor note (ru): http://kalabinsergey.livejournal.com/684.html; wears bort 03 -- an airframe already in the database at a different site carries that same number so it is recorded here as a marking rather than as an identity,Mi2,Chernigovka Aircraft Monuments,on_display
