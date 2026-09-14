@@ -250,6 +250,12 @@ CREATE TABLE IF NOT EXISTS aircraft_types (
     -- as Python (type_match_key() in models.py, which is authoritative).
     match_key         VARCHAR(120) NOT NULL,
     slug              VARCHAR(120) NOT NULL,
+    -- Normally NULL. Set only where a designation STRING is reused by
+    -- unrelated aircraft (S-2 is Grumman Trackers AND Pitts biplanes; 47 and
+    -- 737 are bare numbers), which restricts the type to matching builders.
+    -- A scoped type never applies to an airframe it does not match. See
+    -- migrate_aircraft_types_scope.sql and manufacturer_matches() in models.py.
+    manufacturer_scope VARCHAR(100) NOT NULL DEFAULT '',
 
     -- manufacturer here is the ORIGINAL designer, shown as provenance.
     -- The airframe keeps its own builder, so a Fuji-built UH-1H still
@@ -295,10 +301,13 @@ CREATE TABLE IF NOT EXISTS aircraft_types (
     updated_at        TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 
     FOREIGN KEY (created_by) REFERENCES users(id) ON DELETE SET NULL,
-    -- One write-up per designation. This is the constraint that makes the
-    -- whole feature work: it is what stops two half-finished F-104
-    -- descriptions from both existing and the page picking arbitrarily.
-    UNIQUE KEY uq_type_match (match_key),
+    -- One write-up per designation PER SCOPE. This is the constraint that
+    -- makes the whole feature work: it stops two half-finished F-104
+    -- descriptions from both existing and the page picking arbitrarily,
+    -- while still allowing a Grumman S-2 and a Pitts S-2 to coexist.
+    -- manufacturer_scope is NOT NULL because MySQL counts NULLs as distinct
+    -- in a UNIQUE index, which would defeat exactly that.
+    UNIQUE KEY uq_type_match (match_key, manufacturer_scope),
     UNIQUE KEY uq_type_slug  (slug),
     INDEX idx_type_model     (model),
     INDEX idx_type_published (is_published)

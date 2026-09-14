@@ -561,6 +561,29 @@ def type_match_key(model, variant=None):
     return _TYPE_KEY_NOISE.sub("", joined) or None
 
 
+def manufacturer_matches(scope, manufacturer):
+    """Does an airframe's manufacturer satisfy a type's manufacturer_scope?
+
+    Deliberately loose at the edges: the same company is written several ways
+    in this collection ("Bell" / "Bell Helicopter", "North American" /
+    "North American Aviation"), so a scope matches when either normalized
+    string starts with the other. That admits "Bell Helicopter" for scope
+    "Bell" while still refusing "Pitts" for scope "Grumman", which is the
+    only distinction this guard exists to make.
+
+    An empty scope matches everything -- that is the unscoped default. An
+    empty manufacturer against a non-empty scope does NOT match: an airframe
+    with no recorded builder cannot be shown to be the right one.
+    """
+    scope_key = _TYPE_KEY_NOISE.sub("", (scope or "").upper())
+    if not scope_key:
+        return True
+    mfr_key = _TYPE_KEY_NOISE.sub("", (manufacturer or "").upper())
+    if not mfr_key:
+        return False
+    return mfr_key.startswith(scope_key) or scope_key.startswith(mfr_key)
+
+
 class AircraftType(db.Model):
     """Type-level information shared by every airframe of a designation.
 
@@ -586,8 +609,31 @@ class AircraftType(db.Model):
     # generated column) because the test suite runs on SQLite and the
     # normalization is easier to read in Python. Unique: one write-up per
     # designation.
-    match_key = db.Column(db.String(120), nullable=False, unique=True)
+    match_key = db.Column(db.String(120), nullable=False)
     slug = db.Column(db.String(120), nullable=False, unique=True)
+    # Normally NULL, and normally that is right: a designation identifies a
+    # type regardless of who bent the metal, which is what lets a Fuji UH-1H
+    # inherit Bell's write-up. But a few designation STRINGS are reused by
+    # unrelated aircraft -- "S-2" is 52 Grumman Trackers, 10 Pitts biplanes
+    # and 3 Ayres cropdusters; "47", "737" and "T-38" have the same problem.
+    # Setting this restricts the type to airframes whose manufacturer
+    # matches, and a scoped type NEVER applies to an airframe it does not
+    # match. See manufacturer_matches().
+    #
+    # Empty string, not NULL, is "unscoped". That is not fussiness: the
+    # uniqueness rule is (match_key, manufacturer_scope), and MySQL counts
+    # every NULL as distinct in a UNIQUE index -- so a nullable column would
+    # happily accept two unscoped F-104 write-ups and leave the page picking
+    # between them arbitrarily, which is the one thing this table must never
+    # do. With '' the key bites: one unscoped record per designation, plus
+    # one per distinct scope, so a Grumman S-2 and a Pitts S-2 can coexist.
+    manufacturer_scope = db.Column(db.String(100), nullable=False, default="",
+                                   server_default="")
+
+    __table_args__ = (
+        db.UniqueConstraint("match_key", "manufacturer_scope",
+                            name="uq_type_match"),
+    )
 
     # Display metadata. manufacturer here is the ORIGINAL designer, shown as
     # provenance; an individual airframe keeps its own builder, so a Fuji
@@ -643,17 +689,32 @@ class AircraftType(db.Model):
         return not (self.variant or "").strip()
 
     def sync_key(self):
-        """Recompute match_key from model/variant. Call after either changes."""
+        """Recompute match_key from model/variant, and normalize the scope.
+
+        Both halves of the uniqueness rule are set here so no caller can
+        leave a NULL scope behind and quietly defeat the unique key.
+        """
         self.match_key = type_match_key(self.model, self.variant)
+        self.manufacturer_scope = (self.manufacturer_scope or "").strip()
         return self.match_key
 
     @classmethod
-    def resolve_for(cls, model, variant=None, published_only=True):
+    def resolve_for(cls, model, variant=None, manufacturer=None, published_only=True):
         """Return the best type for a designation, or None.
 
-        Exact (model+variant) beats base (model alone). Both lookups are a
-        single indexed equality on match_key, so the page costs at most two
-        cheap queries and usually one.
+        Priority, highest first:
+          1. exact model+variant, scoped to this manufacturer
+          2. exact model+variant, unscoped
+          3. base model, scoped to this manufacturer
+          4. base model, unscoped
+
+        A type whose manufacturer_scope does not match is excluded outright
+        rather than demoted -- that is the whole point of scoping it, and
+        without the exclusion a Pitts S-2 would still fall through to the
+        Grumman write-up.
+
+        One indexed IN() over at most two keys, so the page costs a single
+        cheap query.
         """
         keys = []
         exact = type_match_key(model, variant)
@@ -668,11 +729,16 @@ class AircraftType(db.Model):
         q = cls.query.filter(cls.match_key.in_(keys))
         if published_only:
             q = q.filter(cls.is_published.is_(True))
-        found = {t.match_key: t for t in q.all()}
-        for key in keys:                      # keys are already in priority order
-            if key in found:
-                return found[key]
-        return None
+
+        best, best_rank = None, None
+        for t in q.all():
+            if not manufacturer_matches(t.manufacturer_scope, manufacturer):
+                continue
+            # Lower sorts better: key position first, then scoped over unscoped.
+            rank = (keys.index(t.match_key), 0 if t.manufacturer_scope else 1)
+            if best_rank is None or rank < best_rank:
+                best, best_rank = t, rank
+        return best
 
     def to_dict(self):
         def _num(v):
@@ -685,6 +751,7 @@ class AircraftType(db.Model):
             "designation": self.designation,
             "match_key": self.match_key,
             "is_base_type": self.is_base_type,
+            "manufacturer_scope": self.manufacturer_scope or None,
             "display_name": self.display_name,
             "manufacturer": self.manufacturer,
             "model_name": self.model_name,

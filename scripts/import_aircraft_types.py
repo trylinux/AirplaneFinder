@@ -50,7 +50,7 @@ from airplane_api import AirplaneClient, ApiError  # noqa: E402
 # Mirrors _AIRCRAFT_TYPE_FIELDS in app.py plus model/variant. Kept explicit
 # so a stray key in a hand-edited JSON file is reported rather than posted.
 _FIELDS = {
-    "model", "variant", "display_name", "manufacturer", "model_name",
+    "model", "variant", "display_name", "manufacturer", "manufacturer_scope", "model_name",
     "also_built_by", "origin_country", "description", "aircraft_type",
     "role_type", "wing_type", "military_civilian", "first_flight_year",
     "introduced_year", "retired_year", "number_built", "spec_basis", "crew",
@@ -99,12 +99,14 @@ def _validate(records):
         key = match_key(rec.get("model"), rec.get("variant"))
         if not key:
             problems.append((i, "model has no letters or digits"))
-        elif key in seen:
-            # Two records for one designation would silently fight over the
-            # unique key, and which one won would depend on file order.
-            problems.append((i, f"duplicate designation, already at index {seen[key]}"))
+            continue
+        # Uniqueness is (designation, manufacturer_scope): a Grumman S-2 and a
+        # Pitts S-2 are two legitimate records, two unscoped S-2s are not.
+        scoped_key = (key, (rec.get("manufacturer_scope") or "").strip())
+        if scoped_key in seen:
+            problems.append((i, f"duplicate designation and scope, already at index {seen[scoped_key]}"))
         else:
-            seen[key] = i
+            seen[scoped_key] = i
     return problems
 
 
@@ -149,7 +151,8 @@ def main():
 
     try:
         # One read of the whole library; it is a few hundred rows at most.
-        existing = {t["match_key"]: t for t in client.get("/api/v1/aircraft-types")}
+        existing = {(t["match_key"], t.get("manufacturer_scope") or ""): t
+                    for t in client.get("/api/v1/aircraft-types")}
     except ApiError as exc:
         print(f"error: could not list existing types: {exc}", file=sys.stderr)
         raise SystemExit(2)
@@ -159,8 +162,11 @@ def main():
         payload = {k: v for k, v in rec.items() if k in _FIELDS}
         if args.publish:
             payload["is_published"] = True
-        key = match_key(rec.get("model"), rec.get("variant"))
+        scope = (rec.get("manufacturer_scope") or "").strip()
+        key = (match_key(rec.get("model"), rec.get("variant")), scope)
         designation = rec.get("model") + (f" {rec['variant']}" if rec.get("variant") else "")
+        if scope:
+            designation += f" [{scope} only]"
         current = existing.get(key)
 
         try:

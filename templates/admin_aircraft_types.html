@@ -120,7 +120,9 @@ $(function() {
                     '<td>' + t.id + '</td>' +
                     '<td><strong>' + escHtml(t.designation) + '</strong></td>' +
                     '<td>' + escHtml(t.display_name) + '</td>' +
-                    '<td>' + escHtml(t.manufacturer || '—') + '</td>' +
+                    '<td>' + escHtml(t.manufacturer || '—') +
+                        (t.manufacturer_scope ? ' <span class="badge">only ' +
+                            escHtml(t.manufacturer_scope) + '</span>' : '') + '</td>' +
                     '<td>' + (t.is_base_type
                         ? '<span class="badge">All variants</span>'
                         : '<span class="badge status-on_display">This variant</span>') + '</td>' +
@@ -196,6 +198,9 @@ $(function() {
                 placeholder: 'e.g. Lockheed T-33A Shooting Star'},
             {name:'manufacturer', label:'Original Designer', val: t.manufacturer || '',
                 hint: 'Provenance only — each airframe keeps its own builder.'},
+            {name:'manufacturer_scope', label:'Restrict To Manufacturer', val: t.manufacturer_scope || '',
+                placeholder: 'usually blank',
+                hint: 'Leave blank almost always. Only set it when another, unrelated aircraft shares this designation string (e.g. S-2 is both a Grumman Tracker and a Pitts biplane). Scoping a type hides it from every licence-built airframe.'},
             {name:'model_name', label:'Type Name', val: t.model_name || '', placeholder: 'e.g. Shooting Star'},
             {name:'also_built_by', label:'Also Built By', val: t.also_built_by || '',
                 placeholder: 'e.g. Kawasaki, Canadair'},

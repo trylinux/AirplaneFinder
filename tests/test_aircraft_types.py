@@ -23,7 +23,7 @@ The contract these tests hold:
 
 import pytest
 
-from models import AircraftType, type_match_key
+from models import AircraftType, manufacturer_matches, type_match_key
 
 
 # ─────────────────────────────────────────────────────────────────────
@@ -72,6 +72,7 @@ def make_type(db_session):
             manufacturer="Lockheed",
             aircraft_type="fixed_wing",
             military_civilian="military",
+            manufacturer_scope="",
             is_published=True,
         )
         defaults.update(kwargs)
@@ -399,19 +400,30 @@ def test_admin_page_renders(manager_client):
 # The seeded library
 # ─────────────────────────────────────────────────────────────────────
 
-def test_seed_file_imports_cleanly_and_covers_its_designations(admin_client, make_aircraft):
-    """The shipped seed file must survive the real API's validation, and each
-    record must actually attach to airframes spelled the way the importer
-    writes them — including licence builders, which is the whole point."""
+SEED_FILES = ("seed_top25.json", "seed_next50.json")
+
+
+def _seed_records(*names):
     import json
     from pathlib import Path
+    root = Path(__file__).resolve().parent.parent / "data" / "aircraft_types"
+    out = []
+    for name in (names or SEED_FILES):
+        out += json.loads((root / name).read_text(encoding="utf-8"))
+    return out
 
-    seed_path = Path(__file__).resolve().parent.parent / "data" / "aircraft_types" / "seed_top25.json"
-    records = json.loads(seed_path.read_text(encoding="utf-8"))
-    assert len(records) >= 25
 
-    keys = [type_match_key(r["model"], r.get("variant")) for r in records]
-    assert len(set(keys)) == len(keys), "seed file has two records for one designation"
+def test_seed_file_imports_cleanly_and_covers_its_designations(admin_client, make_aircraft):
+    """The shipped seed files must survive the real API's validation, and each
+    record must actually attach to airframes spelled the way the importer
+    writes them — including licence builders, which is the whole point."""
+    records = _seed_records()
+    assert len(records) >= 75
+
+    # Uniqueness is (designation, scope) — the same key the database enforces.
+    keys = [(type_match_key(r["model"], r.get("variant")),
+             (r.get("manufacturer_scope") or "").strip()) for r in records]
+    assert len(set(keys)) == len(keys), "seed files collide on (designation, scope)"
 
     for rec in records:
         r = admin_client.post("/api/v1/aircraft-types", json=rec)
@@ -426,9 +438,25 @@ def test_seed_file_imports_cleanly_and_covers_its_designations(admin_client, mak
         ("Aeritalia", "F-104", "S"),
         ("Mikojan-Guriewicz", "MiG-17", None),
         ("WSK PZL-Mielec", "An-2", None),
+        # ...and the second batch, including its scoped records.
+        ("Kawasaki", "T-6", None),
+        ("North American", "T-6", "G"),
+        ("Grumman", "S-2", "E"),
+        ("Bell", "47", "G"),
+        ("HAL", "Gnat", None),
+        ("Aeritalia", "G.91", "R"),
+        ("Armstrong Whitworth", "Meteor", "NF.11"),
+        ("de Havilland Australia", "DH.82", "A"),
     ]:
         a = make_aircraft(manufacturer=manufacturer, model=model, variant=variant)
-        assert AircraftType.resolve_for(a.model, a.variant) is not None, \
+        got = AircraftType.resolve_for(a.model, a.variant, a.manufacturer)
+        if manufacturer == "Kawasaki" and model == "T-6":
+            # The T-6 record is scoped to North American precisely so that
+            # unrelated aircraft sharing the designation string inherit
+            # nothing. Kawasaki never built one; this must NOT resolve.
+            assert got is None, "scoped T-6 leaked to an unrelated builder"
+            continue
+        assert got is not None, \
             f"{manufacturer} {model} {variant or ''} inherited nothing"
 
 
@@ -436,14 +464,182 @@ def test_seed_records_declare_which_variant_their_figures_describe(admin_client)
     """A base type covers every variant; its numbers cannot. Any seeded
     record carrying performance figures has to name the variant they are
     for, or the spec block is quietly wrong on most of the pages showing it."""
-    import json
-    from pathlib import Path
-
-    seed_path = Path(__file__).resolve().parent.parent / "data" / "aircraft_types" / "seed_top25.json"
-    for rec in json.loads(seed_path.read_text(encoding="utf-8")):
+    for rec in _seed_records():
         has_figures = any(rec.get(f) for f in
                           ("max_speed_kmh", "range_km", "ceiling_m", "length_m", "engines"))
         if has_figures:
             assert (rec.get("spec_basis") or "").strip(), \
                 f"{rec['model']} publishes figures with no spec_basis"
             assert len(rec["spec_basis"]) <= 100, f"{rec['model']} spec_basis too long for the column"
+
+
+# ─────────────────────────────────────────────────────────────────────
+# manufacturer_scope — the escape hatch for reused designation strings
+# ─────────────────────────────────────────────────────────────────────
+
+@pytest.mark.parametrize("scope,manufacturer,expected", [
+    (None, "Grumman", True),            # unscoped matches anything
+    ("", "Grumman", True),
+    (None, None, True),
+    ("Grumman", "Grumman", True),
+    ("Grumman", "grumman", True),        # case
+    ("Bell", "Bell Helicopter", True),   # the same firm, spelled longer
+    ("Bell Helicopter", "Bell", True),   # ...and the other way round
+    ("North American", "North American Aviation", True),
+    ("Grumman", "Pitts", False),         # the distinction that matters
+    ("Grumman", "Ayres", False),
+    ("Northrop", "Slingsby", False),
+    ("Grumman", None, False),            # unknown builder can't be proven right
+    ("Grumman", "", False),
+])
+def test_manufacturer_matches(scope, manufacturer, expected):
+    assert manufacturer_matches(scope, manufacturer) is expected
+
+
+def test_scoped_type_reaches_only_its_own_manufacturer(make_type, make_aircraft, client):
+    """The S-2 case. 52 Grumman Trackers, 10 Pitts biplanes and 3 Ayres
+    cropdusters share the designation string. Without the scope the Tracker
+    write-up lands on 13 wrong pages."""
+    make_type(model="S-2", variant=None, slug="s-2", manufacturer="Grumman",
+              manufacturer_scope="Grumman",
+              display_name="Grumman S-2 Tracker",
+              description="A carrier-borne anti-submarine aircraft.")
+
+    tracker = make_aircraft(manufacturer="Grumman", model="S-2", variant="E")
+    assert "carrier-borne anti-submarine" in client.get(f"/aircraft/{tracker.id}").get_data(as_text=True)
+
+    for other in ("Pitts", "Ayres", "Snow"):
+        wrong = make_aircraft(manufacturer=other, model="S-2", variant="B")
+        body = client.get(f"/aircraft/{wrong.id}").get_data(as_text=True)
+        assert "carrier-borne anti-submarine" not in body, f"{other} S-2 inherited the Tracker text"
+        assert "About the" not in body
+
+
+def test_scoped_type_is_excluded_not_merely_demoted(make_type, make_aircraft):
+    """A non-matching scoped type must not fall through to itself by another
+    route. There is no unscoped S-2, so a Pitts resolves to nothing."""
+    make_type(model="S-2", variant=None, slug="s-2", manufacturer_scope="Grumman")
+    assert AircraftType.resolve_for("S-2", "B", "Pitts") is None
+    assert AircraftType.resolve_for("S-2", "B", "Grumman") is not None
+
+
+def test_scope_tolerates_the_longer_company_spelling(make_type, make_aircraft, client):
+    """"Bell" and "Bell Helicopter" are the same firm and both occur in the
+    collection; a scope of "Bell" has to accept both."""
+    make_type(model="47", variant=None, slug="bell-47", manufacturer="Bell",
+              manufacturer_scope="Bell", display_name="Bell 47",
+              aircraft_type="rotary_wing",
+              description="A light piston helicopter.")
+    for spelling in ("Bell", "Bell Helicopter", "Agusta-Bell", "Kawasaki-Bell"):
+        a = make_aircraft(manufacturer=spelling, model="47", variant="G",
+                          aircraft_type="rotary_wing")
+        got = AircraftType.resolve_for(a.model, a.variant, a.manufacturer)
+        if spelling in ("Bell", "Bell Helicopter"):
+            assert got is not None, f"{spelling} should inherit"
+        # Agusta-Bell / Kawasaki-Bell do not prefix-match "Bell" and are
+        # deliberately left out rather than guessed at.
+
+
+def test_scoped_beats_unscoped_at_the_same_designation(make_type, make_aircraft):
+    """Two records may share a designation when their scopes differ — that is
+    what the (match_key, manufacturer_scope) key permits. The scoped one wins
+    for its own builder; everyone else falls through to the general record."""
+    general = make_type(model="T-6", variant=None, slug="t-6",
+                        description="general T-6 text")
+    texan = make_type(model="T-6", variant=None, slug="t-6-north-american",
+                      manufacturer_scope="North American",
+                      description="North American Texan text")
+    assert AircraftType.resolve_for("T-6", "G", "North American Aviation") is texan
+    assert AircraftType.resolve_for("T-6", "G", "Sukhoi") is general
+
+
+def test_two_unscoped_records_for_one_designation_are_refused(manager_client):
+    """The other half of the key: differing scopes are allowed, duplicate
+    unscoped records are not."""
+    first = manager_client.post("/api/v1/aircraft-types", json={
+        "model": "S-2", "display_name": "Grumman S-2 Tracker",
+        "manufacturer_scope": "Grumman", "description": "tracker"}).get_json()
+    # Same designation, different scope — allowed.
+    pitts = manager_client.post("/api/v1/aircraft-types", json={
+        "model": "S-2", "display_name": "Pitts S-2", "manufacturer_scope": "Pitts",
+        "description": "aerobatic biplane"})
+    assert pitts.status_code == 201, pitts.get_data(as_text=True)
+    assert pitts.get_json()["slug"] != first["slug"]
+
+    # Same designation, same (empty) scope twice — refused the second time.
+    assert manager_client.post("/api/v1/aircraft-types", json={
+        "model": "S-2", "display_name": "unscoped S-2", "description": "x"}).status_code == 201
+    dupe = manager_client.post("/api/v1/aircraft-types", json={
+        "model": "s 2", "display_name": "another unscoped S-2", "description": "y"})
+    assert dupe.status_code == 409
+
+
+def test_scoped_variant_beats_unscoped_base(make_type, make_aircraft):
+    base = make_type(model="F-4", variant=None, slug="f-4", description="base")
+    scoped = make_type(model="F-4", variant="J", slug="f-4j",
+                       manufacturer_scope="McDonnell", description="variant")
+    assert AircraftType.resolve_for("F-4", "J", "McDonnell Douglas") is scoped
+    # A different builder's F-4J still gets the base type, which is unscoped.
+    assert AircraftType.resolve_for("F-4", "J", "Mitsubishi") is base
+
+
+def test_scope_is_writable_through_the_api(manager_client, make_aircraft):
+    r = manager_client.post("/api/v1/aircraft-types", json={
+        "model": "737", "display_name": "Boeing 737", "manufacturer": "Boeing",
+        "manufacturer_scope": "Boeing", "description": "A short-haul airliner.",
+        "military_civilian": "civilian", "role_type": "transport",
+    })
+    assert r.status_code == 201
+    assert r.get_json()["manufacturer_scope"] == "Boeing"
+
+    boeing = make_aircraft(manufacturer="Boeing", model="737", variant="200")
+    other = make_aircraft(manufacturer="Some Kitplane Co", model="737")
+    assert AircraftType.resolve_for(boeing.model, boeing.variant, boeing.manufacturer) is not None
+    assert AircraftType.resolve_for(other.model, other.variant, other.manufacturer) is None
+
+
+def test_resolve_endpoint_honours_manufacturer(make_type, client):
+    make_type(model="S-2", variant=None, slug="s-2", manufacturer_scope="Grumman")
+    grumman = client.get("/api/v1/aircraft-types/resolve?model=S-2&manufacturer=Grumman").get_json()
+    pitts = client.get("/api/v1/aircraft-types/resolve?model=S-2&manufacturer=Pitts").get_json()
+    assert grumman["resolved"] is not None and grumman["scoped"] is True
+    assert pitts["resolved"] is None
+
+
+def test_inherits_count_respects_scope(manager_client, make_aircraft):
+    t = manager_client.post("/api/v1/aircraft-types", json={
+        "model": "S-2", "display_name": "Grumman S-2 Tracker",
+        "manufacturer_scope": "Grumman", "description": "x"}).get_json()
+    for _ in range(3):
+        make_aircraft(manufacturer="Grumman", model="S-2", variant="E")
+    make_aircraft(manufacturer="Pitts", model="S-2", variant="B")
+    make_aircraft(manufacturer="Ayres", model="S-2", variant="R")
+    assert manager_client.get(f"/api/v1/aircraft-types/{t['id']}").get_json()["inherits_count"] == 3
+
+
+def test_seed_records_use_the_documented_vocabularies():
+    """role_type and military_civilian are closed sets in the schema. A seed
+    record carrying something outside them imports as a silent MySQL
+    truncation rather than an error, so catch it here."""
+    roles = {"bomber", "transport", "recon", "electronic_warfare", "fighter",
+             "tanker", "search_rescue", "ground_attack", "utility", "trainer",
+             "test", "drone"}
+    kinds = {"fixed_wing", "rotary_wing", "lighter_than_air", "spacecraft",
+             "missile_rocket"}
+    for rec in _seed_records():
+        assert rec["role_type"] in roles, (rec["model"], rec["role_type"])
+        assert rec["military_civilian"] in ("military", "civilian"), rec["model"]
+        assert rec["aircraft_type"] in kinds, rec["model"]
+        if rec["aircraft_type"] == "rotary_wing":
+            assert not rec.get("wing_type"), f"{rec['model']} is a helicopter with a wing_type"
+        if rec.get("origin_country"):
+            assert len(rec["origin_country"]) == 2, rec["model"]
+
+
+def test_only_the_colliding_designations_are_scoped():
+    """Scoping is a targeted fix, not a default. A scope on an ordinary type
+    silently strips the write-up from every licence-built airframe — the exact
+    failure the manufacturer-agnostic key exists to prevent — so the set of
+    scoped records is pinned."""
+    scoped = {r["model"] for r in _seed_records() if (r.get("manufacturer_scope") or "").strip()}
+    assert scoped == {"T-6", "S-2", "T-38", "47", "737"}, scoped

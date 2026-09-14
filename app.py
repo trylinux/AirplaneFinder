@@ -681,7 +681,9 @@ def aircraft_detail_page(aircraft_id):
     # see AircraftType.resolve_for(). None is the normal case until the
     # type library covers this designation, and the template just omits
     # the card.
-    aircraft_type_info = AircraftType.resolve_for(aircraft.model, aircraft.variant)
+    aircraft_type_info = AircraftType.resolve_for(
+        aircraft.model, aircraft.variant, aircraft.manufacturer
+    )
     return render_template(
         "aircraft_detail.html",
         aircraft=aircraft,
@@ -1124,7 +1126,9 @@ def api_aircraft_detail(aircraft_id):
     # Inherited type information, resolved from the designation. Clients get
     # it as a sibling key rather than merged into `aircraft` so it stays
     # obvious which fields describe THIS airframe and which describe the type.
-    type_info = AircraftType.resolve_for(aircraft.model, aircraft.variant)
+    type_info = AircraftType.resolve_for(
+        aircraft.model, aircraft.variant, aircraft.manufacturer
+    )
     return jsonify({
         "aircraft": aircraft.to_dict(),
         "museums": museums,
@@ -3033,7 +3037,7 @@ def _can_see_unpublished_types():
 # separately because changing either has to resync match_key, and match_key
 # / slug are derived rather than accepted from the client.
 _AIRCRAFT_TYPE_FIELDS = (
-    "display_name", "manufacturer", "model_name", "also_built_by",
+    "display_name", "manufacturer", "manufacturer_scope", "model_name", "also_built_by",
     "origin_country", "description", "aircraft_type", "role_type",
     "wing_type", "military_civilian", "first_flight_year", "introduced_year",
     "retired_year", "number_built", "spec_basis", "crew", "engines", "length_m",
@@ -3055,14 +3059,19 @@ def _type_slug(model, variant=None):
     return slug or None
 
 
-def _unique_type_slug(model, variant=None, exclude_id=None):
-    """_type_slug with a numeric suffix if something already holds it.
+def _unique_type_slug(model, variant=None, exclude_id=None, scope=None):
+    """_type_slug, disambiguated by scope and then by a numeric suffix.
 
-    Collisions should be rare — match_key is unique and slug is derived from
-    the same two columns — but "F-4 C" and "F-4C" normalize to the same slug
-    while being distinct strings, so the suffix is the cheap insurance.
+    Two records can now share a designation when they are scoped to
+    different manufacturers, so the scope goes into the slug first — that
+    yields the readable "s-2-grumman" and "s-2-pitts" rather than
+    "s-2" and "s-2-2". The numeric suffix stays as the backstop for the
+    cases the scope does not separate, such as "F-4 C" and "F-4C"
+    normalizing to the same string.
     """
     base = _type_slug(model, variant)
+    if base and (scope or "").strip():
+        base = f"{base}-{re.sub(r'[^a-z0-9]+', '-', scope.lower()).strip('-')}"
     if not base:
         return None
     candidate, n = base, 1
@@ -3122,19 +3131,23 @@ def _count_inheriting_airframes(t):
     """
     candidates = (
         Aircraft.query
-        .with_entities(Aircraft.id, Aircraft.model, Aircraft.variant)
+        .with_entities(Aircraft.id, Aircraft.model, Aircraft.variant,
+                       Aircraft.manufacturer)
         .filter(Aircraft.model.ilike(t.model))
         .all()
     )
     if not candidates:
         return 0
-    # Resolve once per distinct designation rather than once per airframe.
+    # Resolve once per distinct designation+manufacturer rather than once per
+    # airframe. Manufacturer is part of the key because a scoped type answers
+    # differently for a Grumman S-2 than for a Pitts one.
     resolved = {}
     count = 0
-    for _id, model, variant in candidates:
-        key = (model, variant)
+    for _id, model, variant, manufacturer in candidates:
+        key = (model, variant, manufacturer)
         if key not in resolved:
-            winner = AircraftType.resolve_for(model, variant, published_only=False)
+            winner = AircraftType.resolve_for(model, variant, manufacturer,
+                                              published_only=False)
             resolved[key] = winner.id if winner else None
         if resolved[key] == t.id:
             count += 1
@@ -3192,13 +3205,18 @@ def api_aircraft_type_resolve():
     if not model:
         return jsonify({"error": "model is required"}), 400
     variant = request.args.get("variant", "").strip() or None
-    t = AircraftType.resolve_for(model, variant)
+    # Optional, but a scoped type cannot be resolved without it -- so the
+    # admin preview should always pass the manufacturer it has.
+    manufacturer = request.args.get("manufacturer", "").strip() or None
+    t = AircraftType.resolve_for(model, variant, manufacturer)
     return jsonify({
         "model": model,
         "variant": variant,
+        "manufacturer": manufacturer,
         "match_key": type_match_key(model, variant),
         "resolved": t.to_dict() if t else None,
         "matched_on": (None if not t else ("base" if t.is_base_type else "variant")),
+        "scoped": bool(t and t.manufacturer_scope),
     })
 
 
@@ -3223,20 +3241,25 @@ def api_create_aircraft_type():
     if not key:
         return jsonify({"error": "model must contain at least one letter or digit."}), 400
 
-    existing = AircraftType.query.filter_by(match_key=key).first()
+    # Uniqueness is (designation, manufacturer_scope): a Grumman S-2 and a
+    # Pitts S-2 are two legitimate records, two unscoped S-2s are not.
+    scope = (data.get("manufacturer_scope") or "").strip()
+    existing = AircraftType.query.filter_by(match_key=key, manufacturer_scope=scope).first()
     if existing:
+        scope_note = f" scoped to {scope}" if scope else ""
         return jsonify({
-            "error": f"A type for '{join_designation(model, variant)}' already exists "
-                     f"(id {existing.id}, {existing.display_name}).",
+            "error": f"A type for '{join_designation(model, variant)}'{scope_note} already "
+                     f"exists (id {existing.id}, {existing.display_name}).",
             "existing_id": existing.id,
         }), 409
 
     values, err = _coerce_type_payload(data)
     if err:
         return jsonify({"error": err}), 400
+    values["manufacturer_scope"] = scope
 
     t = AircraftType(model=model, variant=variant, match_key=key,
-                     slug=_unique_type_slug(model, variant), **values)
+                     slug=_unique_type_slug(model, variant, scope=scope), **values)
     t.created_by = _get_effective_user().id
     db.session.add(t)
     _increment_contribution()
@@ -3258,7 +3281,7 @@ def api_update_aircraft_type(type_id):
         if field in data and not (data[field] or "").strip():
             return jsonify({"error": f"{field} cannot be empty."}), 400
 
-    redesignated = False
+    redesignated = "manufacturer_scope" in data
     if "model" in data:
         model = (data["model"] or "").strip()
         if not model:
@@ -3269,27 +3292,34 @@ def api_update_aircraft_type(type_id):
         t.variant = (data["variant"] or "").strip() or None
         redesignated = True
 
+    values, err = _coerce_type_payload(data)
+    if err:
+        return jsonify({"error": err}), 400
+    if "manufacturer_scope" in values:
+        values["manufacturer_scope"] = (values["manufacturer_scope"] or "").strip()
+    for field, val in values.items():
+        setattr(t, field, val)
+
     if redesignated:
         key = type_match_key(t.model, t.variant)
         if not key:
             return jsonify({"error": "model must contain at least one letter or digit."}), 400
+        scope = (t.manufacturer_scope or "").strip()
         clash = AircraftType.query.filter(
-            AircraftType.match_key == key, AircraftType.id != type_id
+            AircraftType.match_key == key,
+            AircraftType.manufacturer_scope == scope,
+            AircraftType.id != type_id,
         ).first()
         if clash:
+            scope_note = f" scoped to {scope}" if scope else ""
             return jsonify({
-                "error": f"A type for '{join_designation(t.model, t.variant)}' already exists "
-                         f"(id {clash.id}).",
+                "error": f"A type for '{join_designation(t.model, t.variant)}'{scope_note} "
+                         f"already exists (id {clash.id}).",
                 "existing_id": clash.id,
             }), 409
         t.match_key = key
-        t.slug = _unique_type_slug(t.model, t.variant, exclude_id=type_id)
-
-    values, err = _coerce_type_payload(data)
-    if err:
-        return jsonify({"error": err}), 400
-    for field, val in values.items():
-        setattr(t, field, val)
+        t.manufacturer_scope = scope
+        t.slug = _unique_type_slug(t.model, t.variant, exclude_id=type_id, scope=scope)
 
     _increment_contribution()
     db.session.commit()
