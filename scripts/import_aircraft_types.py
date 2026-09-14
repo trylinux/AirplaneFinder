@@ -93,7 +93,9 @@ def _validate(records):
         for field in _REQUIRED:
             if not str(rec.get(field) or "").strip():
                 problems.append((i, f"missing required field '{field}'"))
-        unknown = set(rec) - _FIELDS
+        # Keys beginning with "_" are notes to a human editor -- TEMPLATE.json
+        # ships with one -- and are dropped rather than posted.
+        unknown = {k for k in rec if k not in _FIELDS and not k.startswith("_")}
         if unknown:
             problems.append((i, f"unknown field(s): {', '.join(sorted(unknown))}"))
         key = match_key(rec.get("model"), rec.get("variant"))
@@ -159,7 +161,7 @@ def main():
 
     created = updated = unchanged = failed = 0
     for rec in records:
-        payload = {k: v for k, v in rec.items() if k in _FIELDS}
+        payload = {k: v for k, v in rec.items() if k in _FIELDS and not k.startswith("_")}
         if args.publish:
             payload["is_published"] = True
         scope = (rec.get("manufacturer_scope") or "").strip()

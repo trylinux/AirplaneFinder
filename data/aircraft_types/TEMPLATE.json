@@ -1,0 +1,40 @@
+[
+ {
+  "_comment": "Blank type record. Delete this key and any field you are not filling. model, display_name and description are required; everything else is optional and omitting a field is better than guessing at it. See scripts/README_aircraft_types.md.",
+
+  "model": "",
+  "variant": null,
+  "display_name": "",
+  "description": "First paragraph: what the aircraft is - role, era, designer, the problem it was built for.\n\nSecond paragraph: service history, operators, production and export scale.\n\nOptional third: what a visitor can notice standing in front of it.",
+
+  "manufacturer": null,
+  "manufacturer_scope": null,
+  "model_name": null,
+  "also_built_by": null,
+  "origin_country": null,
+
+  "aircraft_type": "fixed_wing",
+  "role_type": null,
+  "wing_type": null,
+  "military_civilian": "military",
+
+  "spec_basis": null,
+  "first_flight_year": null,
+  "introduced_year": null,
+  "retired_year": null,
+  "number_built": null,
+  "crew": null,
+  "engines": null,
+  "length_m": null,
+  "wingspan_m": null,
+  "height_m": null,
+  "max_speed_kmh": null,
+  "range_km": null,
+  "ceiling_m": null,
+
+  "source_name": null,
+  "source_url": null,
+  "wikipedia_url": null,
+  "is_published": true
+ }
+]

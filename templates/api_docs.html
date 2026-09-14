@@ -252,6 +252,116 @@
     </div>
 
     <div class="endpoint-group">
+        <h3>Aircraft Types (shared type information)</h3>
+
+        <p class="doc-text">A type is one write-up per designation, inherited at render time by every
+        airframe whose normalized <code>model</code> + <code>variant</code> matches. Editing one record changes
+        every matching aircraft page at once. Nothing is stored on the aircraft row and there is no backfill:
+        a newly imported airframe inherits on its next page load.</p>
+
+        <p class="doc-text"><strong>Matching.</strong> The key is <code>model</code> + <code>variant</code>
+        uppercased with every non-alphanumeric character dropped, so <code>("F-4","C")</code> and
+        <code>("F-4C",null)</code> both resolve to the same record. It is <em>not</em> scoped by manufacturer,
+        which is deliberate: a Fuji-built UH-1H is still a UH-1H and inherits Bell's write-up.
+        Resolution prefers an exact <code>model</code>+<code>variant</code> record, then falls back to a
+        <code>variant</code>-less <strong>base</strong> record. Most entries should be base records — one
+        <code>UH-1</code> serves every UH-1 — and a variant record is worth adding only when that variant
+        genuinely needs its own text.</p>
+
+        <p class="doc-text"><strong>manufacturer_scope</strong> restricts a type to airframes whose
+        manufacturer matches, and a scoped type never applies to one it does not. Set it only where an
+        unrelated aircraft shares the designation string (<code>S-2</code> is both a Grumman Tracker and a
+        Pitts biplane; <code>47</code> and <code>737</code> are bare numbers). Matching is normalized prefix
+        in either direction, so <code>Bell</code> accepts <code>Bell Helicopter</code>. Scoping an ordinary
+        type is a mistake — it strips the write-up from every licence-built airframe.</p>
+
+        <p class="doc-text">Uniqueness is <code>(designation, manufacturer_scope)</code>. A second record for
+        the same pair returns <code>409</code> with <code>existing_id</code>, so a repeated POST is safe to
+        retry as a PUT.</p>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method get">GET</span>
+                <code>/api/v1/aircraft-types</code>
+                <span class="badge status-in_storage">public</span>
+            </div>
+            <p>List types, ordered by model then variant. Anonymous callers see published records only; any authenticated identity also sees drafts.</p>
+            <table class="param-table">
+                <tr><td><code>q</code></td><td>Fuzzy match on display name, model, type name or manufacturer. A designation typed without punctuation (<code>mig21</code>) also matches (optional)</td></tr>
+            </table>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method get">GET</span>
+                <code>/api/v1/aircraft-types/{id}</code>
+                <span class="badge status-in_storage">public</span>
+            </div>
+            <p>One type, plus <code>inherits_count</code> — how many airframes currently show this write-up. Check it before editing a base record. An unpublished type returns 404 to anonymous callers.</p>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method get">GET</span>
+                <code>/api/v1/aircraft-types/resolve</code>
+                <span class="badge status-in_storage">public</span>
+            </div>
+            <p>Ask what a designation would inherit, without writing anything. Returns <code>resolved</code> (the type or null), <code>matched_on</code> (<code>variant</code>, <code>base</code> or null), <code>match_key</code> and <code>scoped</code>.</p>
+            <table class="param-table">
+                <tr><td><code>model</code></td><td>Designation, e.g. <code>T-33</code> (required)</td></tr>
+                <tr><td><code>variant</code></td><td>e.g. <code>A</code> (optional)</td></tr>
+                <tr><td><code>manufacturer</code></td><td>Needed to resolve a scoped type; pass it whenever you have it (optional)</td></tr>
+            </table>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method post">POST</span>
+                <code>/api/v1/aircraft-types</code>
+                <span class="badge status-on_display">readwrite</span>
+            </div>
+            <p>Create a type. Required: <code>model</code>, <code>display_name</code>, <code>description</code>. Omit <code>variant</code> for a base record.</p>
+            <table class="param-table">
+                <tr><td><code>model</code></td><td>Designation exactly as the catalog records it, e.g. <code>T-33</code> (required)</td></tr>
+                <tr><td><code>variant</code></td><td>Omit for a base type that serves every variant</td></tr>
+                <tr><td><code>display_name</code></td><td>Heading, e.g. <code>Lockheed T-33 Shooting Star</code> (required)</td></tr>
+                <tr><td><code>description</code></td><td>The write-up. Separate paragraphs with a blank line (<code>\n\n</code>) (required)</td></tr>
+                <tr><td><code>manufacturer_scope</code></td><td>Restrict to one builder. Leave unset unless the designation string is genuinely ambiguous</td></tr>
+                <tr><td><code>manufacturer</code></td><td>Original designer, shown as provenance only</td></tr>
+                <tr><td><code>model_name</code>, <code>also_built_by</code>, <code>origin_country</code></td><td>Type name (<code>Shooting Star</code>), licence builders, ISO 3166-1 alpha-2 country of design</td></tr>
+                <tr><td><code>aircraft_type</code></td><td><code>fixed_wing</code> (default), <code>rotary_wing</code>, <code>lighter_than_air</code>, <code>spacecraft</code>, <code>missile_rocket</code></td></tr>
+                <tr><td><code>role_type</code>, <code>wing_type</code>, <code>military_civilian</code></td><td>Same vocabularies as an aircraft record</td></tr>
+                <tr><td><code>spec_basis</code></td><td>Which variant the figures below describe, e.g. <code>T-33A</code>. Set it whenever you publish any figure — a base type covers every variant but its numbers cannot</td></tr>
+                <tr><td><code>first_flight_year</code>, <code>introduced_year</code>, <code>retired_year</code>, <code>number_built</code></td><td>Integers. Leave <code>retired_year</code> null if still in service anywhere</td></tr>
+                <tr><td><code>crew</code>, <code>engines</code></td><td>Free text, e.g. <code>2</code> and <code>1 x Allison J33-A-35 turbojet</code></td></tr>
+                <tr><td><code>length_m</code>, <code>wingspan_m</code>, <code>height_m</code></td><td>Metres. For a helicopter put main rotor diameter in <code>wingspan_m</code></td></tr>
+                <tr><td><code>max_speed_kmh</code>, <code>range_km</code>, <code>ceiling_m</code></td><td>Integers, metric</td></tr>
+                <tr><td><code>source_name</code>, <code>source_url</code>, <code>wikipedia_url</code></td><td>Attribution shown under the card</td></tr>
+                <tr><td><code>is_published</code></td><td>Boolean, default true. False keeps the record editable in admin and off every public page</td></tr>
+            </table>
+            <p>Returns 400 for a missing required field or an unparseable number, and 409 with <code>existing_id</code> if this designation and scope already exist.</p>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method put">PUT</span>
+                <code>/api/v1/aircraft-types/{id}</code>
+                <span class="badge status-on_display">readwrite</span>
+            </div>
+            <p>Partial update — send only the fields you are changing, which is the normal way to revise a description. Changing <code>model</code>, <code>variant</code> or <code>manufacturer_scope</code> moves the whole inheriting set and rebuilds the slug.</p>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method delete">DELETE</span>
+                <code>/api/v1/aircraft-types/{id}</code>
+                <span class="badge status-under_restoration">admin</span>
+            </div>
+            <p>Delete a type. No aircraft record is touched; matching airframes simply stop showing the card. To hide a write-up reversibly, PUT <code>is_published: false</code> instead.</p>
+        </div>
+    </div>
+
+    <div class="endpoint-group">
         <h3>Aviation Facts</h3>
 
         <div class="endpoint">
