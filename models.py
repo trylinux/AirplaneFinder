@@ -1,5 +1,6 @@
 """SQLAlchemy models."""
 
+import re
 import secrets
 import hashlib
 from datetime import datetime, timezone
@@ -528,6 +529,190 @@ class AircraftTemplateAlias(db.Model):
     alias = db.Column(db.String(200), nullable=False)
 
     template = db.relationship("AircraftTemplate", back_populates="aliases")
+
+
+# ──────────────────────────────────────────────
+# Aircraft types (shared, inherited type information)
+# ──────────────────────────────────────────────
+
+# Everything that isn't a letter or a digit is noise for matching purposes:
+# sources write "MiG-21", "MIG 21" and "Mig21" for the same aeroplane.
+_TYPE_KEY_NOISE = re.compile(r"[^A-Z0-9]+")
+
+
+def type_match_key(model, variant=None):
+    """Normalized join key used to attach an Aircraft to an AircraftType.
+
+    Deliberately NOT manufacturer-scoped. A licence-built airframe is still
+    the same type: Fuji built 89 of the UH-1s in this database, Kawasaki 36
+    of the T-33s, HAL 38 of the MiG-21s, and all of them want the Bell /
+    Lockheed / Mikoyan-Gurevich write-up. 791 of 4,877 designations in the
+    collection carry more than one manufacturer spelling, so putting
+    manufacturer in the key would fragment the very thing this table exists
+    to share.
+
+    Punctuation and case are dropped, so ("F-4", "C") and ("F-4C", None)
+    both produce "F4C" — which is correct, they are the same aircraft, and
+    the importer has recorded it both ways.
+
+    Returns None for an empty model, which callers treat as "no match".
+    """
+    joined = f"{(model or '').strip()}{(variant or '').strip()}".upper()
+    return _TYPE_KEY_NOISE.sub("", joined) or None
+
+
+class AircraftType(db.Model):
+    """Type-level information shared by every airframe of a designation.
+
+    This is the answer to "what IS a T-33A", written once and inherited by
+    all 372 of them, as opposed to Aircraft.description which is the answer
+    to "what is the story of THIS airframe" and stays per-record.
+
+    Resolution is two-tier and happens at render time rather than through a
+    foreign key on Aircraft (see resolve_for()): an exact model+variant type
+    wins, and a base model-only type catches everything else. That means a
+    newly imported F-104G inherits the F-104 write-up the moment it lands,
+    with no backfill step and nothing to drift out of sync.
+    """
+    __tablename__ = "aircraft_types"
+
+    id = db.Column(db.Integer, primary_key=True)
+
+    # The designation this type describes. variant NULL = the base type,
+    # which is the fallback for every variant without its own record.
+    model = db.Column(db.String(50), nullable=False)
+    variant = db.Column(db.String(50))
+    # Normalized model+variant. Maintained by the application (not a
+    # generated column) because the test suite runs on SQLite and the
+    # normalization is easier to read in Python. Unique: one write-up per
+    # designation.
+    match_key = db.Column(db.String(120), nullable=False, unique=True)
+    slug = db.Column(db.String(120), nullable=False, unique=True)
+
+    # Display metadata. manufacturer here is the ORIGINAL designer, shown as
+    # provenance; an individual airframe keeps its own builder, so a Fuji
+    # UH-1H still reads "Fuji" in its own spec table.
+    display_name = db.Column(db.String(200), nullable=False)   # "Lockheed T-33A Shooting Star"
+    manufacturer = db.Column(db.String(100))
+    model_name = db.Column(db.String(200))                     # "Shooting Star"
+    also_built_by = db.Column(db.String(300))                  # "Kawasaki, Canadair"
+    origin_country = db.Column(db.String(2))                   # ISO 3166-1 alpha-2
+
+    description = db.Column(db.Text, nullable=False)
+
+    aircraft_type = db.Column(db.String(20), nullable=False, default="fixed_wing")
+    role_type = db.Column(db.String(30))
+    wing_type = db.Column(db.String(20))
+    military_civilian = db.Column(db.String(10), nullable=False, default="military")
+
+    first_flight_year = db.Column(db.Integer)
+    introduced_year = db.Column(db.Integer)
+    retired_year = db.Column(db.Integer)
+    number_built = db.Column(db.Integer)
+    # Which variant the figures below describe. A base type covers every
+    # variant but its numbers cannot: a T-33A and a T-33SF are not the
+    # same aeroplane on paper. Naming the basis is the honest way to
+    # publish one spec block for a whole family.
+    spec_basis = db.Column(db.String(100))
+    crew = db.Column(db.String(60))
+    engines = db.Column(db.String(200))
+    length_m = db.Column(db.Numeric(6, 2))
+    wingspan_m = db.Column(db.Numeric(6, 2))
+    height_m = db.Column(db.Numeric(6, 2))
+    max_speed_kmh = db.Column(db.Integer)
+    range_km = db.Column(db.Integer)
+    ceiling_m = db.Column(db.Integer)
+
+    source_name = db.Column(db.String(300))
+    source_url = db.Column(db.String(1000))
+    wikipedia_url = db.Column(db.String(1000))
+
+    # Unpublished types are editable in admin but never reach a public page.
+    is_published = db.Column(db.Boolean, nullable=False, default=True)
+    created_by = db.Column(db.Integer, db.ForeignKey("users.id", ondelete="SET NULL"))
+    created_at = db.Column(db.DateTime, server_default=db.func.now())
+    updated_at = db.Column(db.DateTime, server_default=db.func.now(), onupdate=db.func.now())
+
+    @property
+    def designation(self):
+        """The designation as aviation writes it — same rule as Aircraft."""
+        return join_designation(self.model, self.variant)
+
+    @property
+    def is_base_type(self):
+        return not (self.variant or "").strip()
+
+    def sync_key(self):
+        """Recompute match_key from model/variant. Call after either changes."""
+        self.match_key = type_match_key(self.model, self.variant)
+        return self.match_key
+
+    @classmethod
+    def resolve_for(cls, model, variant=None, published_only=True):
+        """Return the best type for a designation, or None.
+
+        Exact (model+variant) beats base (model alone). Both lookups are a
+        single indexed equality on match_key, so the page costs at most two
+        cheap queries and usually one.
+        """
+        keys = []
+        exact = type_match_key(model, variant)
+        base = type_match_key(model, None)
+        if exact:
+            keys.append(exact)
+        if base and base not in keys:
+            keys.append(base)
+        if not keys:
+            return None
+
+        q = cls.query.filter(cls.match_key.in_(keys))
+        if published_only:
+            q = q.filter(cls.is_published.is_(True))
+        found = {t.match_key: t for t in q.all()}
+        for key in keys:                      # keys are already in priority order
+            if key in found:
+                return found[key]
+        return None
+
+    def to_dict(self):
+        def _num(v):
+            return float(v) if v is not None else None
+        return {
+            "id": self.id,
+            "slug": self.slug,
+            "model": self.model,
+            "variant": self.variant,
+            "designation": self.designation,
+            "match_key": self.match_key,
+            "is_base_type": self.is_base_type,
+            "display_name": self.display_name,
+            "manufacturer": self.manufacturer,
+            "model_name": self.model_name,
+            "also_built_by": self.also_built_by,
+            "origin_country": self.origin_country,
+            "description": self.description,
+            "aircraft_type": self.aircraft_type,
+            "role_type": self.role_type,
+            "wing_type": self.wing_type,
+            "military_civilian": self.military_civilian,
+            "first_flight_year": self.first_flight_year,
+            "introduced_year": self.introduced_year,
+            "retired_year": self.retired_year,
+            "number_built": self.number_built,
+            "spec_basis": self.spec_basis,
+            "crew": self.crew,
+            "engines": self.engines,
+            "length_m": _num(self.length_m),
+            "wingspan_m": _num(self.wingspan_m),
+            "height_m": _num(self.height_m),
+            "max_speed_kmh": self.max_speed_kmh,
+            "range_km": self.range_km,
+            "ceiling_m": self.ceiling_m,
+            "source_name": self.source_name,
+            "source_url": self.source_url,
+            "wikipedia_url": self.wikipedia_url,
+            "is_published": bool(self.is_published),
+        }
 
 
 class AircraftFact(db.Model):

@@ -736,3 +736,8 @@ pre code {
     .link-editor-row .le-status, .link-editor-row .le-notes,
     .link-editor-add select, .link-editor-add textarea { font-size: 16px; }
 }
+
+/* Inline field help under an admin form input. Used by the aircraft-types
+   editor, where the matching rules (blank variant = base type, manufacturer
+   ignored) are not guessable from the label alone. */
+.form-hint { display: block; margin-top: .25rem; color: var(--text-dim); font-size: .8rem; line-height: 1.35; }

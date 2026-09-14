@@ -41,6 +41,7 @@ from models import (
     Museum, Aircraft, AircraftAlias, AircraftMuseum, AircraftFact, ZipCode, haversine,
     UserMuseumAssignment, UserCountryAssignment,
     AircraftTemplate, AircraftTemplateAlias,
+    AircraftType, type_match_key,
     join_designation,
 )
 from geocoder import resolve_location
@@ -675,8 +676,18 @@ def aircraft_detail_page(aircraft_id):
         .order_by(AircraftFact.id.desc())
         .all()
     )
+    # Type-level write-up, inherited rather than stored per airframe. An
+    # exact variant record wins, a base model record catches the rest --
+    # see AircraftType.resolve_for(). None is the normal case until the
+    # type library covers this designation, and the template just omits
+    # the card.
+    aircraft_type_info = AircraftType.resolve_for(aircraft.model, aircraft.variant)
     return render_template(
-        "aircraft_detail.html", aircraft=aircraft, links=links, facts=facts
+        "aircraft_detail.html",
+        aircraft=aircraft,
+        links=links,
+        facts=facts,
+        type_info=aircraft_type_info,
     )
 
 
@@ -911,6 +922,14 @@ def admin_templates_page():
     return render_template("admin_templates.html")
 
 
+@app.route("/admin/aircraft-types")
+@login_required
+def admin_aircraft_types_page():
+    """Manage the shared type library. Writes go through
+    /api/v1/aircraft-types, which enforces the real permissions."""
+    return render_template("admin_aircraft_types.html")
+
+
 @app.route("/admin/facts")
 @login_required
 def admin_facts_page():
@@ -1102,7 +1121,15 @@ def api_aircraft_detail(aircraft_id):
         }
         for lnk in links
     ]
-    return jsonify({"aircraft": aircraft.to_dict(), "museums": museums})
+    # Inherited type information, resolved from the designation. Clients get
+    # it as a sibling key rather than merged into `aircraft` so it stays
+    # obvious which fields describe THIS airframe and which describe the type.
+    type_info = AircraftType.resolve_for(aircraft.model, aircraft.variant)
+    return jsonify({
+        "aircraft": aircraft.to_dict(),
+        "museums": museums,
+        "type": type_info.to_dict() if type_info else None,
+    })
 
 
 @app.route("/api/v1/museums/search")
@@ -2991,6 +3018,300 @@ def api_delete_template(template_id):
     user = _get_effective_user()
     change_log.info(f"TEMPLATE_DELETE id={template_id} name={name} by={user.username}")
     return jsonify({"deleted": True, "id": template_id})
+
+
+# ── Aircraft types (shared, inherited type information) ──
+
+def _can_see_unpublished_types():
+    """Unpublished types are drafts. Any authenticated identity (web session
+    or API key) may see them; anonymous callers get the published set only.
+    Same bar the admin pages use — they are login_required, not role-gated."""
+    return _get_effective_user() is not None
+
+
+# Fields an API caller may set on a type. model/variant are handled
+# separately because changing either has to resync match_key, and match_key
+# / slug are derived rather than accepted from the client.
+_AIRCRAFT_TYPE_FIELDS = (
+    "display_name", "manufacturer", "model_name", "also_built_by",
+    "origin_country", "description", "aircraft_type", "role_type",
+    "wing_type", "military_civilian", "first_flight_year", "introduced_year",
+    "retired_year", "number_built", "spec_basis", "crew", "engines", "length_m",
+    "wingspan_m", "height_m", "max_speed_kmh", "range_km", "ceiling_m",
+    "source_name", "source_url", "wikipedia_url", "is_published",
+)
+
+_AIRCRAFT_TYPE_INT_FIELDS = (
+    "first_flight_year", "introduced_year", "retired_year", "number_built",
+    "max_speed_kmh", "range_km", "ceiling_m",
+)
+_AIRCRAFT_TYPE_DECIMAL_FIELDS = ("length_m", "wingspan_m", "height_m")
+
+
+def _type_slug(model, variant=None):
+    """URL slug for a designation: "T-33" + "A" -> "t-33a"."""
+    text = join_designation((model or "").strip(), (variant or "").strip())
+    slug = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+    return slug or None
+
+
+def _unique_type_slug(model, variant=None, exclude_id=None):
+    """_type_slug with a numeric suffix if something already holds it.
+
+    Collisions should be rare — match_key is unique and slug is derived from
+    the same two columns — but "F-4 C" and "F-4C" normalize to the same slug
+    while being distinct strings, so the suffix is the cheap insurance.
+    """
+    base = _type_slug(model, variant)
+    if not base:
+        return None
+    candidate, n = base, 1
+    while True:
+        q = AircraftType.query.filter_by(slug=candidate)
+        if exclude_id is not None:
+            q = q.filter(AircraftType.id != exclude_id)
+        if not q.first():
+            return candidate
+        n += 1
+        candidate = f"{base}-{n}"
+
+
+def _coerce_type_payload(data):
+    """Normalize numeric fields from JSON. Returns (values, error)."""
+    values = {}
+    for field in _AIRCRAFT_TYPE_FIELDS:
+        if field not in data:
+            continue
+        raw = data[field]
+        if field == "is_published":
+            values[field] = bool(raw)
+            continue
+        if raw in ("", None):
+            values[field] = None
+            continue
+        if field in _AIRCRAFT_TYPE_INT_FIELDS:
+            try:
+                values[field] = int(raw)
+            except (TypeError, ValueError):
+                return None, f"{field} must be a whole number."
+        elif field in _AIRCRAFT_TYPE_DECIMAL_FIELDS:
+            try:
+                values[field] = float(raw)
+            except (TypeError, ValueError):
+                return None, f"{field} must be a number."
+        elif field == "origin_country":
+            code = str(raw).strip().upper()
+            if len(code) != 2 or not code.isalpha():
+                return None, "origin_country must be a two-letter ISO 3166-1 code."
+            values[field] = code
+        else:
+            values[field] = str(raw).strip() or None
+    return values, None
+
+
+def _count_inheriting_airframes(t):
+    """How many airframes currently inherit this type's write-up.
+
+    The match is normalized (punctuation and case dropped), which no index
+    can express, so this narrows on the indexed `model` column first and
+    settles the rest in Python. That candidate set is small even for the
+    worst case -- the largest model in the collection is UH-1 at ~700 rows
+    -- and this runs on one admin detail view, never on a list or a public
+    page. A more exact type must not steal the count: an airframe resolves
+    to its variant record when one exists, so ask the resolver.
+    """
+    candidates = (
+        Aircraft.query
+        .with_entities(Aircraft.id, Aircraft.model, Aircraft.variant)
+        .filter(Aircraft.model.ilike(t.model))
+        .all()
+    )
+    if not candidates:
+        return 0
+    # Resolve once per distinct designation rather than once per airframe.
+    resolved = {}
+    count = 0
+    for _id, model, variant in candidates:
+        key = (model, variant)
+        if key not in resolved:
+            winner = AircraftType.resolve_for(model, variant, published_only=False)
+            resolved[key] = winner.id if winner else None
+        if resolved[key] == t.id:
+            count += 1
+    return count
+
+
+@app.route("/api/v1/aircraft-types")
+def api_aircraft_type_list():
+    """Public: list types. ``q`` fuzzy-matches designation / name /
+    manufacturer. Unpublished types are admin-only, so an anonymous caller
+    never sees a half-written write-up."""
+    q = request.args.get("q", "").strip()
+    query = AircraftType.query
+    if not _can_see_unpublished_types():
+        query = query.filter(AircraftType.is_published.is_(True))
+    if q:
+        like = f"%{q}%"
+        query = query.filter(or_(
+            AircraftType.display_name.ilike(like),
+            AircraftType.model.ilike(like),
+            AircraftType.model_name.ilike(like),
+            AircraftType.manufacturer.ilike(like),
+        ))
+        # A designation typed without punctuation ("mig21") should still
+        # find the type — that is exactly what match_key is for.
+        key = type_match_key(q)
+        if key:
+            query = query.union(
+                AircraftType.query.filter(AircraftType.match_key.like(f"{key}%"))
+            )
+    types = query.order_by(AircraftType.model, AircraftType.variant).all()
+    return jsonify([t.to_dict() for t in types])
+
+
+@app.route("/api/v1/aircraft-types/<int:type_id>")
+def api_aircraft_type_detail(type_id):
+    """Public: a single type, with the airframes that inherit from it."""
+    t = AircraftType.query.get_or_404(type_id)
+    if not t.is_published and not _can_see_unpublished_types():
+        abort(404)
+    payload = t.to_dict()
+    payload["inherits_count"] = _count_inheriting_airframes(t)
+    return jsonify(payload)
+
+
+@app.route("/api/v1/aircraft-types/resolve")
+def api_aircraft_type_resolve():
+    """Public: what type would an airframe with this designation inherit?
+
+    ``?model=T-33&variant=A``. This is the same call the detail page makes,
+    exposed so the admin UI can show an editor which write-up a designation
+    lands on before anything is saved.
+    """
+    model = request.args.get("model", "").strip()
+    if not model:
+        return jsonify({"error": "model is required"}), 400
+    variant = request.args.get("variant", "").strip() or None
+    t = AircraftType.resolve_for(model, variant)
+    return jsonify({
+        "model": model,
+        "variant": variant,
+        "match_key": type_match_key(model, variant),
+        "resolved": t.to_dict() if t else None,
+        "matched_on": (None if not t else ("base" if t.is_base_type else "variant")),
+    })
+
+
+@app.route("/api/v1/aircraft-types", methods=["POST"])
+@api_auth_required("readwrite")
+def api_create_aircraft_type():
+    """Create a type. Required: model, display_name, description.
+
+    variant omitted = a base type, which is what most entries should be:
+    one UH-1 write-up serves every UH-1 in the collection regardless of
+    suffix, and a UH-1H record is only worth adding when the H genuinely
+    needs its own text.
+    """
+    data = request.get_json() or {}
+    model = (data.get("model") or "").strip()
+    variant = (data.get("variant") or "").strip() or None
+    missing = [f for f in ("model", "display_name", "description") if not (data.get(f) or "").strip()]
+    if missing:
+        return jsonify({"error": f"Missing required fields: {', '.join(missing)}"}), 400
+
+    key = type_match_key(model, variant)
+    if not key:
+        return jsonify({"error": "model must contain at least one letter or digit."}), 400
+
+    existing = AircraftType.query.filter_by(match_key=key).first()
+    if existing:
+        return jsonify({
+            "error": f"A type for '{join_designation(model, variant)}' already exists "
+                     f"(id {existing.id}, {existing.display_name}).",
+            "existing_id": existing.id,
+        }), 409
+
+    values, err = _coerce_type_payload(data)
+    if err:
+        return jsonify({"error": err}), 400
+
+    t = AircraftType(model=model, variant=variant, match_key=key,
+                     slug=_unique_type_slug(model, variant), **values)
+    t.created_by = _get_effective_user().id
+    db.session.add(t)
+    _increment_contribution()
+    db.session.commit()
+    user = _get_effective_user()
+    change_log.info(f"TYPE_CREATE id={t.id} key={t.match_key} by={user.username}")
+    return jsonify(t.to_dict()), 201
+
+
+@app.route("/api/v1/aircraft-types/<int:type_id>", methods=["PUT", "PATCH"])
+@api_auth_required("readwrite")
+def api_update_aircraft_type(type_id):
+    """Update a type. Changing model or variant resyncs match_key and slug,
+    so the set of airframes inheriting this write-up moves with it."""
+    t = AircraftType.query.get_or_404(type_id)
+    data = request.get_json() or {}
+
+    for field in ("display_name", "description"):
+        if field in data and not (data[field] or "").strip():
+            return jsonify({"error": f"{field} cannot be empty."}), 400
+
+    redesignated = False
+    if "model" in data:
+        model = (data["model"] or "").strip()
+        if not model:
+            return jsonify({"error": "model cannot be empty."}), 400
+        t.model = model
+        redesignated = True
+    if "variant" in data:
+        t.variant = (data["variant"] or "").strip() or None
+        redesignated = True
+
+    if redesignated:
+        key = type_match_key(t.model, t.variant)
+        if not key:
+            return jsonify({"error": "model must contain at least one letter or digit."}), 400
+        clash = AircraftType.query.filter(
+            AircraftType.match_key == key, AircraftType.id != type_id
+        ).first()
+        if clash:
+            return jsonify({
+                "error": f"A type for '{join_designation(t.model, t.variant)}' already exists "
+                         f"(id {clash.id}).",
+                "existing_id": clash.id,
+            }), 409
+        t.match_key = key
+        t.slug = _unique_type_slug(t.model, t.variant, exclude_id=type_id)
+
+    values, err = _coerce_type_payload(data)
+    if err:
+        return jsonify({"error": err}), 400
+    for field, val in values.items():
+        setattr(t, field, val)
+
+    _increment_contribution()
+    db.session.commit()
+    user = _get_effective_user()
+    change_log.info(f"TYPE_UPDATE id={type_id} key={t.match_key} by={user.username}")
+    return jsonify(t.to_dict())
+
+
+@app.route("/api/v1/aircraft-types/<int:type_id>", methods=["DELETE"])
+@api_auth_required("admin")
+def api_delete_aircraft_type(type_id):
+    """Delete a type (admin only). No aircraft row is touched: airframes
+    inherit by designation lookup, so they simply stop showing the type
+    card. Unpublishing is the reversible way to do the same thing."""
+    t = AircraftType.query.get_or_404(type_id)
+    key = t.match_key
+    db.session.delete(t)
+    _increment_contribution()
+    db.session.commit()
+    user = _get_effective_user()
+    change_log.info(f"TYPE_DELETE id={type_id} key={key} by={user.username}")
+    return jsonify({"deleted": True, "id": type_id})
 
 
 # ── Backward-compat write aliases ──

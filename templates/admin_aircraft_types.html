@@ -1,0 +1,334 @@
+{% extends "base.html" %}
+{% block title %}Aircraft Types — Admin — Aircraft Finder{% endblock %}
+{% block nav_admin %}active{% endblock %}
+
+{% set admin_section = 'aircraft_types' %}
+
+{% block content %}
+{% include "_admin_nav.html" %}
+
+<div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;">
+        <h2><i class="fa-solid fa-plane-circle-check"></i> Aircraft Types</h2>
+        <button class="btn btn-primary" id="new-type-btn"><i class="fa-solid fa-plus"></i> Add Type</button>
+    </div>
+    <p class="card-subtitle" style="margin-top:.35rem;">
+        One write-up per designation, shown on every matching aircraft page. Leave
+        <strong>Variant</strong> blank for a base type — a single <code>UH-1</code> record serves
+        every UH-1 in the collection. Add a variant record only when that variant needs
+        its own text; it then wins over the base type for those airframes.
+        Matching ignores punctuation, case <em>and manufacturer</em>, so a Fuji-built
+        UH-1H inherits the Bell write-up.
+    </p>
+    <div class="search-bar" style="margin-top:.75rem;">
+        <input type="text" id="type-search" placeholder="Filter by designation, name or manufacturer..." autocomplete="off">
+        <button class="btn btn-primary" id="type-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div id="types-results"></div>
+</div>
+
+<!-- Edit / Create Modal -->
+<div id="type-modal" class="modal" style="display:none;">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+        <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+        <h2 id="type-modal-title">Edit Type</h2>
+        <div id="type-inherit-note" class="card-subtitle" style="display:none;margin-bottom:.5rem;"></div>
+        <form id="type-form" class="admin-form">
+            <div id="type-form-fields"></div>
+            <div class="edit-modal-actions">
+                <button type="submit" class="btn btn-primary"><i class="fa-solid fa-save"></i> Save</button>
+                <button type="button" class="btn btn-danger" id="type-delete-btn" style="display:none;">
+                    <i class="fa-solid fa-trash"></i> Delete
+                </button>
+            </div>
+        </form>
+        <div id="type-msg" class="form-message" style="display:none;"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script nonce="{{ csp_nonce }}">
+// Role options mirror the aircraft and template forms so a type's role
+// vocabulary matches what an airframe can carry.
+var TYPE_ROLE_OPTIONS = {
+    military: [
+        {v:'', l:'— Select —'},
+        {v:'bomber', l:'Bomber'}, {v:'transport', l:'Transport'},
+        {v:'recon', l:'Recon'}, {v:'electronic_warfare', l:'Electronic Warfare'},
+        {v:'fighter', l:'Fighter'}, {v:'tanker', l:'Tanker'},
+        {v:'search_rescue', l:'Search & Rescue'}, {v:'ground_attack', l:'Ground Attack'},
+        {v:'utility', l:'Utility'}, {v:'trainer', l:'Trainer'}, {v:'test', l:'Test'}, {v:'drone', l:'Drone'}
+    ],
+    civilian: [
+        {v:'', l:'— Select —'},
+        {v:'commercial_transport', l:'Commercial Transport'},
+        {v:'freighter', l:'Freighter'}, {v:'private', l:'Private'},
+        {v:'experimental', l:'Experimental'}, {v:'utility', l:'Utility'},
+        {v:'space', l:'Space'}, {v:'other', l:'Other'}
+    ],
+    missile_rocket: [
+        {v:'', l:'— Select —'},
+        {v:'air_to_air', l:'Air-to-Air'}, {v:'surface_to_air', l:'Surface-to-Air'},
+        {v:'air_to_surface', l:'Air-to-Surface'}, {v:'anti_ship', l:'Anti-Ship'},
+        {v:'ballistic', l:'Ballistic'}, {v:'cruise', l:'Cruise'},
+        {v:'sounding', l:'Sounding'}, {v:'launch_vehicle', l:'Launch Vehicle'}
+    ]
+};
+function typeRoleOptions(mc, type) {
+    if (type === 'missile_rocket') return TYPE_ROLE_OPTIONS.missile_rocket;
+    return TYPE_ROLE_OPTIONS[mc] || TYPE_ROLE_OPTIONS.military;
+}
+
+$(function() {
+    var editId = 0;                       // 0 = create mode
+    var sortState = {sort_by: '', sort_dir: 'asc'};
+    var _typesCache = [];
+
+    function sortInPlace(rows) {
+        if (!sortState.sort_by) return rows;
+        var key = sortState.sort_by, dir = sortState.sort_dir === 'desc' ? -1 : 1;
+        return rows.slice().sort(function(a, b) {
+            var x = a[key], y = b[key];
+            if (x == null && y == null) return 0;
+            if (x == null) return  1 * dir;
+            if (y == null) return -1 * dir;
+            if (typeof x === 'number' && typeof y === 'number') return (x - y) * dir;
+            return String(x).localeCompare(String(y), undefined, {sensitivity: 'base'}) * dir;
+        });
+    }
+
+    function renderTypes(rows) {
+        var html;
+        if (!rows.length) {
+            html = '<p class="no-results">No types yet. Click <strong>Add Type</strong> to write the first one.</p>';
+        } else {
+            html = '<table class="result-table"><thead><tr>'
+                 +   '<th data-sort="id">ID</th>'
+                 +   '<th data-sort="designation">Designation</th>'
+                 +   '<th data-sort="display_name">Name</th>'
+                 +   '<th data-sort="manufacturer">Designer</th>'
+                 +   '<th data-sort="is_base_type">Scope</th>'
+                 +   '<th data-sort="aircraft_type">Type</th>'
+                 +   '<th data-sort="role_type">Role</th>'
+                 +   '<th data-sort="is_published">Published</th>'
+                 +   '<th>Actions</th>'
+                 + '</tr></thead><tbody>';
+            rows.forEach(function(t) {
+                html += '<tr>' +
+                    '<td>' + t.id + '</td>' +
+                    '<td><strong>' + escHtml(t.designation) + '</strong></td>' +
+                    '<td>' + escHtml(t.display_name) + '</td>' +
+                    '<td>' + escHtml(t.manufacturer || '—') + '</td>' +
+                    '<td>' + (t.is_base_type
+                        ? '<span class="badge">All variants</span>'
+                        : '<span class="badge status-on_display">This variant</span>') + '</td>' +
+                    '<td>' + escHtml(prettyEnum(t.aircraft_type || 'fixed_wing')) + '</td>' +
+                    '<td>' + escHtml(prettyEnum(t.role_type)) + '</td>' +
+                    '<td>' + (t.is_published
+                        ? '<span class="badge status-on_display">Live</span>'
+                        : '<span class="badge status-in_storage">Draft</span>') + '</td>' +
+                    '<td><button class="btn-icon edit-type-btn" data-id="' + t.id + '" title="Edit">' +
+                        '<i class="fa-solid fa-pen"></i></button></td>' +
+                '</tr>';
+            });
+            html += '</tbody></table>';
+        }
+        var $c = $('#types-results');
+        $c.html(html);
+        attachSortableHeaders($c, {
+            getState: function() { return sortState; },
+            setState: function(next) { sortState = next; renderTypes(sortInPlace(_typesCache)); }
+        });
+    }
+
+    function loadTypes() {
+        var q = $('#type-search').val() || '';
+        $.getJSON('/api/v1/aircraft-types', {q: q}, function(data) {
+            _typesCache = data;
+            renderTypes(sortInPlace(_typesCache));
+        });
+    }
+    loadTypes();
+    $('#type-search-btn').on('click', loadTypes);
+    $('#type-search').on('keypress', function(e) { if (e.which === 13) loadTypes(); });
+
+    $('#new-type-btn').on('click', function() {
+        editId = 0;
+        $('#type-modal-title').text('New Type');
+        $('#type-delete-btn').hide();
+        $('#type-inherit-note').hide();
+        renderTypeFields({});
+        $('#type-modal').fadeIn(200);
+    });
+
+    $(document).on('click', '.edit-type-btn', function() {
+        var id = $(this).data('id');
+        $.getJSON('/api/v1/aircraft-types/' + id, function(t) {
+            editId = id;
+            $('#type-modal-title').text('Edit ' + t.designation);
+            $('#type-delete-btn').show();
+            // Say plainly how many pages this text is about to change --
+            // editing a base type is not a small edit.
+            if (typeof t.inherits_count === 'number') {
+                $('#type-inherit-note')
+                    .html('<i class="fa-solid fa-circle-info"></i> Shown on <strong>' +
+                          t.inherits_count + '</strong> aircraft page' +
+                          (t.inherits_count === 1 ? '' : 's') + '.')
+                    .show();
+            } else {
+                $('#type-inherit-note').hide();
+            }
+            renderTypeFields(t);
+            $('#type-modal').fadeIn(200);
+        });
+    });
+
+    function renderTypeFields(t) {
+        var fields = [
+            {name:'model',    label:'Model (designation)', val: t.model || '', req: true,
+                placeholder: 'e.g. T-33', hint: 'Matched without punctuation or case.'},
+            {name:'variant',  label:'Variant', val: t.variant || '',
+                placeholder: 'blank = applies to all variants',
+                hint: 'Leave blank for a base type. A variant record wins over the base for its own airframes.'},
+            {name:'display_name', label:'Display Name', val: t.display_name || '', req: true,
+                placeholder: 'e.g. Lockheed T-33A Shooting Star'},
+            {name:'manufacturer', label:'Original Designer', val: t.manufacturer || '',
+                hint: 'Provenance only — each airframe keeps its own builder.'},
+            {name:'model_name', label:'Type Name', val: t.model_name || '', placeholder: 'e.g. Shooting Star'},
+            {name:'also_built_by', label:'Also Built By', val: t.also_built_by || '',
+                placeholder: 'e.g. Kawasaki, Canadair'},
+            {name:'origin_country', label:'Origin (ISO-2)', val: t.origin_country || '', placeholder: 'US'},
+            {name:'aircraft_type', label:'Aircraft Type', val: t.aircraft_type || 'fixed_wing', select: [
+                {v:'fixed_wing', l:'Fixed Wing'}, {v:'rotary_wing', l:'Rotary Wing'},
+                {v:'lighter_than_air', l:'Lighter Than Air'}, {v:'spacecraft', l:'Spacecraft'},
+                {v:'missile_rocket', l:'Missile / Rocket'}
+            ], cssClass: 'aircraft-type-select'},
+            {name:'wing_type', label:'Wing Type', val: t.wing_type || '', select: [
+                {v:'', l:'— N/A —'}, {v:'monoplane', l:'Monoplane'},
+                {v:'biplane', l:'Biplane'}, {v:'triplane', l:'Triplane'}
+            ]},
+            {name:'military_civilian', label:'Military / Civilian', val: t.military_civilian || 'military', select: [
+                {v:'military', l:'Military'}, {v:'civilian', l:'Civilian'}
+            ], cssClass: 'mil-civ-select'},
+            {name:'role_type', label:'Role', val: t.role_type || '',
+                select: typeRoleOptions(t.military_civilian || 'military', t.aircraft_type),
+                cssClass: 'role-type-select'},
+            {name:'first_flight_year', label:'First Flight (year)', val: t.first_flight_year || ''},
+            {name:'introduced_year',   label:'Introduced (year)',   val: t.introduced_year || ''},
+            {name:'retired_year',      label:'Retired (year)',      val: t.retired_year || ''},
+            {name:'number_built',      label:'Number Built',        val: t.number_built || ''},
+            {name:'spec_basis', label:'Figures Describe', val: t.spec_basis || '',
+                placeholder: 'e.g. T-33A', hint: 'Which variant the specs below are for. Shown above the spec block.'},
+            {name:'crew',              label:'Crew',                val: t.crew || '', placeholder: 'e.g. 2 (pilot, instructor)'},
+            {name:'engines',           label:'Powerplant',          val: t.engines || ''},
+            {name:'length_m',          label:'Length (m)',          val: t.length_m || ''},
+            {name:'wingspan_m',        label:'Wingspan (m)',        val: t.wingspan_m || ''},
+            {name:'height_m',          label:'Height (m)',          val: t.height_m || ''},
+            {name:'max_speed_kmh',     label:'Max Speed (km/h)',    val: t.max_speed_kmh || ''},
+            {name:'range_km',          label:'Range (km)',          val: t.range_km || ''},
+            {name:'ceiling_m',         label:'Ceiling (m)',         val: t.ceiling_m || ''},
+            {name:'source_name',       label:'Source Name',         val: t.source_name || ''},
+            {name:'source_url',        label:'Source URL',          val: t.source_url || ''},
+            {name:'wikipedia_url',     label:'Wikipedia URL',       val: t.wikipedia_url || ''},
+            {name:'is_published',      label:'Published',
+                val: (t.is_published === false ? '0' : '1'), select: [
+                {v:'1', l:'Live — visible on aircraft pages'},
+                {v:'0', l:'Draft — admin only'}
+            ]},
+            {name:'description', label:'Description', val: t.description || '', textarea: true, req: true,
+                hint: 'Blank line between paragraphs. This is the type, not this airframe.'}
+        ];
+
+        var html = '<div class="form-grid">';
+        fields.forEach(function(f) {
+            var wide = f.textarea ? ' form-group-wide' : '';
+            html += '<div class="form-group' + wide + '">';
+            html += '<label>' + f.label + (f.req ? ' *' : '') + '</label>';
+            if (f.textarea) {
+                html += '<textarea name="' + f.name + '" rows="8"' + (f.req ? ' required' : '') + '>' +
+                    escHtml(f.val) + '</textarea>';
+            } else if (f.select) {
+                var cls = f.cssClass ? ' class="' + f.cssClass + '"' : '';
+                html += '<select name="' + f.name + '"' + (f.req ? ' required' : '') + cls + '>';
+                f.select.forEach(function(opt) {
+                    html += '<option value="' + opt.v + '"' + (opt.v === String(f.val) ? ' selected' : '') + '>' +
+                        escHtml(opt.l) + '</option>';
+                });
+                html += '</select>';
+            } else {
+                html += '<input type="text" name="' + f.name + '" value="' + escHtml(String(f.val)) + '"' +
+                    (f.req ? ' required' : '') + (f.placeholder ? ' placeholder="' + escHtml(f.placeholder) + '"' : '') + '>';
+            }
+            if (f.hint) { html += '<small class="form-hint">' + escHtml(f.hint) + '</small>'; }
+            html += '</div>';
+        });
+        html += '</div>';
+        $('#type-form-fields').html(html);
+        $('#type-msg').hide();
+    }
+
+    $(document).on('change', '.mil-civ-select, .aircraft-type-select', function() {
+        var $form = $(this).closest('form');
+        var $role = $form.find('.role-type-select');
+        var opts  = typeRoleOptions($form.find('.mil-civ-select').val(),
+                                    $form.find('.aircraft-type-select').val());
+        var current = $role.val();
+        $role.empty();
+        opts.forEach(function(o) {
+            $role.append('<option value="' + o.v + '"' + (o.v === current ? ' selected' : '') + '>' +
+                escHtml(o.l) + '</option>');
+        });
+    });
+
+    $('#type-form').on('submit', function(e) {
+        e.preventDefault();
+        var data = {};
+        $(this).serializeArray().forEach(function(item) { data[item.name] = item.value; });
+        // The select carries '1'/'0'; the API wants a real boolean.
+        data.is_published = (data.is_published === '1');
+
+        var isCreate = (editId === 0);
+        $.ajax({
+            url: isCreate ? '/api/v1/aircraft-types' : '/api/v1/aircraft-types/' + editId,
+            method: isCreate ? 'POST' : 'PUT',
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function() {
+                $('#type-msg')
+                    .html('<div class="alert alert-success"><i class="fa-solid fa-circle-check"></i> Saved!</div>')
+                    .show();
+                loadTypes();
+                if (isCreate) { $('#type-modal').fadeOut(200); }
+            },
+            error: function(xhr) {
+                $('#type-msg')
+                    .html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' +
+                        (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText) + '</div>')
+                    .show();
+            }
+        });
+    });
+
+    $('#type-delete-btn').on('click', function() {
+        if (!editId) return;
+        if (!confirm('Delete this type? Every aircraft page inheriting it loses the write-up. ' +
+                     'No aircraft record is changed — set it to Draft instead if you want this reversible.')) return;
+        $.ajax({
+            url: '/api/v1/aircraft-types/' + editId, method: 'DELETE',
+            success: function() { $('#type-modal').fadeOut(200); loadTypes(); },
+            error: function(xhr) {
+                $('#type-msg')
+                    .html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' +
+                        (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText) + '</div>')
+                    .show();
+            }
+        });
+    });
+
+    $('.modal-backdrop, .modal-close').on('click', function() { $('#type-modal').fadeOut(200); });
+    $(document).on('keydown', function(e) { if (e.key === 'Escape') $('#type-modal').fadeOut(200); });
+});
+</script>
+{% endblock %}

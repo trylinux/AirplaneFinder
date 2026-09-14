@@ -5,7 +5,7 @@
 
 {% block head %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/exploration.css') }}?v=explore-1">
-<meta name="description" content="{{ (aircraft.description or (aircraft.full_designation ~ ' at ' ~ (links|length) ~ ' museum(s)'))|striptags|truncate(180) }}">
+<meta name="description" content="{{ (aircraft.description or (type_info.description if type_info else None) or (aircraft.full_designation ~ ' at ' ~ (links|length) ~ ' museum(s)'))|striptags|truncate(180) }}">
 {% endblock %}
 
 {% block content %}
@@ -45,6 +45,61 @@
             {% if aircraft.aircraft_name %}<div><span class="d-spec-label">Name</span><span class="d-spec-value">{{ aircraft.aircraft_name }}</span></div>{% endif %}
         </div>
     </div>
+
+    {% if type_info %}
+    {# Type-level write-up, inherited from aircraft_types by designation --
+       one record serves every airframe of the type. Deliberately placed
+       ABOVE "About this airframe": the visitor standing in front of a
+       T-33 wants to know what a T-33 is before they want this one's
+       individual story. #}
+    <div class="d-card">
+        <h2><i class="fa-solid fa-plane-circle-check"></i> About the {{ type_info.designation }}</h2>
+        {% if type_info.display_name and type_info.display_name != type_info.designation %}
+        <p class="d-sub">{{ type_info.display_name }}</p>
+        {% endif %}
+        {% for para in type_info.description.split('\n\n') if para.strip() %}
+        <p class="d-prose">{{ para.strip() }}</p>
+        {% endfor %}
+
+        {% set type_specs = [
+            ('First flight', type_info.first_flight_year),
+            ('Introduced', type_info.introduced_year),
+            ('Retired', type_info.retired_year),
+            ('Number built', '{:,}'.format(type_info.number_built) if type_info.number_built else None),
+            ('Crew', type_info.crew),
+            ('Powerplant', type_info.engines),
+            ('Length', (type_info.length_m ~ ' m') if type_info.length_m else None),
+            ('Wingspan', (type_info.wingspan_m ~ ' m') if type_info.wingspan_m else None),
+            ('Height', (type_info.height_m ~ ' m') if type_info.height_m else None),
+            ('Max speed', ('{:,} km/h'.format(type_info.max_speed_kmh)) if type_info.max_speed_kmh else None),
+            ('Range', ('{:,} km'.format(type_info.range_km)) if type_info.range_km else None),
+            ('Ceiling', ('{:,} m'.format(type_info.ceiling_m)) if type_info.ceiling_m else None),
+        ] | rejectattr('1', 'none') | list %}
+        {% if type_specs %}
+        {% if type_info.spec_basis %}
+        <p class="d-item-meta" style="margin-top:1rem;margin-bottom:-.25rem;">Figures below describe the {{ type_info.spec_basis }}.</p>
+        {% endif %}
+        <div class="d-specs" style="margin-top:1rem;">
+            {% for label, value in type_specs %}
+            <div><span class="d-spec-label">{{ label }}</span><span class="d-spec-value">{{ value }}</span></div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if type_info.also_built_by %}
+        <p class="d-item-meta" style="margin-top:.75rem;">Also built under licence by {{ type_info.also_built_by }}.</p>
+        {% endif %}
+
+        <div class="d-item-meta" style="margin-top:.75rem;">
+            <span>Type information, shared across every {{ type_info.designation }} on this site.</span>
+            {% if type_info.wikipedia_url %}
+            <a href="{{ type_info.wikipedia_url }}" target="_blank" rel="noopener noreferrer">Wikipedia <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            {% elif type_info.source_url %}
+            <a href="{{ type_info.source_url }}" target="_blank" rel="noopener noreferrer">{{ type_info.source_name or 'Source' }} <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
 
     {% if aircraft.description %}
     <div class="d-card">
