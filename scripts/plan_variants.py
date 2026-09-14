@@ -62,14 +62,47 @@ def is_mark_token(tok: str) -> bool:
     so only clearly word-like tokens fall through to the name classes. Being
     wrong in this direction leaves a row alone; being wrong the other way
     edits a correct record.
+
+    The all-caps clause is what keeps real variant CODES out of the name
+    classes -- AJSF on a Saab 37, GCBC on a Citabria 7, SIGINT on an
+    Atlantic. Aircraft names in this catalog are written Title Case
+    (Magister, Caravelle, Musketeer), so requiring upper case costs nothing
+    and rescues 61 rows that an earlier version wrongly called names.
     """
-    return bool(
-        _MARK_WORD.match(tok)
-        or _ROMAN.match(tok)
-        or re.fullmatch(r"[0-9]{1,3}[A-Za-z]{0,3}", tok)
-        or re.fullmatch(r"[A-Za-z]{1,3}[0-9.\-]*", tok)
-        or tok.lower() in _SUFFIX_WORDS
-    )
+    core = tok.strip(".-")
+    if not core:
+        return True
+    if _MARK_WORD.match(core) or _ROMAN.match(core):
+        return True
+    if core.lower() in _SUFFIX_WORDS:
+        return True
+    if any(ch.isdigit() for ch in core):        # C8E, B55, J-3B1, F.6, 108-2
+        return True
+    if core.isupper() and len(core) <= 6:       # AJSF, GCBC, TF, KC, SIGINT
+        return True
+    return len(core) <= 3                       # A, EJ, bis-length suffixes
+
+
+def split_mark_and_name(variant):
+    """Split "A Senior Skyrocket" into ("A", "Senior Skyrocket").
+
+    Marks are taken from BOTH ends: "Silver Star 3" is the Silver Star,
+    mark 3 -- the trailing number is a mark that happens to sit last. The
+    middle is the name, and it must contain at least one word-like token or
+    there is no name here at all.
+    """
+    toks = variant.split()
+    i = 0
+    while i < len(toks) and is_mark_token(toks[i]):
+        i += 1
+    j = len(toks)
+    while j > i and is_mark_token(toks[j - 1]):
+        j -= 1
+    name_toks = toks[i:j]
+    if not any(_NAMEY.match(t) and not is_mark_token(t) for t in name_toks):
+        return "", ""
+    mark = " ".join(toks[:i] + toks[j:])
+    return mark, " ".join(name_toks)
 
 
 def classify(model, variant, model_name):
@@ -115,7 +148,26 @@ def classify(model, variant, model_name):
             f"name {' '.join(namey)!r} already in model_name {model_name!r}"
             f" -> variant {rest or '(blank)'!r}")
 
-    # A -- a name we cannot account for. Never automatic.
+    # E -- the variant is a mark plus a NAME, and model_name is empty, so the
+    # split is lossless: the mark stays on the variant and the name moves to
+    # the column it belongs in. "31-55" + "A Senior Skyrocket" becomes
+    # variant "A", model_name "Senior Skyrocket".
+    mark, name = split_mark_and_name(variant)
+    # A generic designator disqualifies the split for the same reason it
+    # disqualifies A+: "Model A" on a Pusher is a whole designation, and
+    # moving "Model" into model_name would be nonsense.
+    if name and any(t.lower() in _GENERIC for t in name.split()):
+        return "A", None, f"generic designator in variant {variant!r}"
+    if name and not model_name:
+        return "E", {"variant": mark or None, "model_name": name}, (
+            f"name {name!r} moved to model_name; variant {mark or '(blank)'!r}")
+
+    # A -- a name we cannot account for, or one that would overwrite an
+    # existing model_name. Never automatic: a Bell 47 is a Sioux in military
+    # service and a Ranger as the civil J-2, and both spellings are right.
+    if name and model_name:
+        return "A", None, (f"variant holds the name {name!r} but model_name "
+                           f"already says {model_name!r}")
     return "A", None, f"word-like token(s) {' '.join(namey)!r} in variant"
 
 
@@ -161,17 +213,24 @@ def main():
         json.dumps(plan, indent=1, ensure_ascii=False), encoding="utf-8")
 
     with (args.out_dir / "variant_review.tsv").open("w", encoding="utf-8") as f:
-        f.write("id\tmanufacturer\tmodel\tvariant\tmodel_name\ttail_number\tnote\n")
+        f.write("id\tmanufacturer\tmodel\tvariant\tmodel_name\t"
+                "candidate_mark\tcandidate_name\ttail_number\tnote\n")
         for r in sorted(review, key=lambda r: ((r["model"] or ""), (r["variant"] or ""))):
+            # Show the split this row WOULD get, so the decision is between
+            # two named candidates rather than a judgement in the abstract.
+            mark, name = split_mark_and_name((r["variant"] or "").strip())
             f.write("\t".join(str(r.get(k) or "") for k in
-                    ("_id", "manufacturer", "model", "variant", "model_name",
-                     "tail_number", "note")) + "\n")
+                    ("_id", "manufacturer", "model", "variant", "model_name"))
+                    + f"\t{mark}\t{name}\t"
+                    + "\t".join(str(r.get(k) or "") for k in ("tail_number", "note"))
+                    + "\n")
 
     lines = [f"{len(aircraft):,} airframes examined", ""]
     for cls, label in (("C", "whitespace"),
                        ("B", "variant repeated the model"),
                        ("D", "variant duplicated model_name"),
-                       ("A+", "name already in model_name")):
+                       ("A+", "name already in model_name"),
+                       ("E", "name moved out to model_name")):
         lines.append(f"  {cls:3s} {counts[cls]:6,}  {label}")
     lines += ["", f"  plan   {len(plan):6,}  mechanical, ready to apply",
               f"  A      {len(review):6,}  needs a person -> variant_review.tsv",

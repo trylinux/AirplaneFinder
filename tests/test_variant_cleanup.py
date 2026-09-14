@@ -83,11 +83,11 @@ def test_whitespace_is_tidied():
 # ── the judgement calls, which must never be automatic ───────────────
 
 @pytest.mark.parametrize("model,variant,model_name", [
-    ("Pusher", "Model A", None),
-    ("CW-1", "Junior", None),
+    ("Pusher", "Model A", None),             # "Model" is a generic designator
     ("Taube", "Model F", None),
-    ("CT-133", "Silver Star 3", None),
-    ("CM.170", "Magister", None),            # no model_name to vouch for it
+    ("47", "J-2 Ranger", "Sioux"),           # would overwrite a real model_name
+    ("108", "2 Flying Station Wagon", "Voyager"),
+    ("95", "B55 Baron", "Travel Air"),
 ])
 def test_unaccounted_names_go_to_review_not_to_the_plan(model, variant, model_name):
     cls, patch, _ = classify(model, variant, model_name)
@@ -116,8 +116,9 @@ def test_review_rows_carry_no_patch_at_all():
     """Belt and braces: apply_variants.py only ever writes keys that do not
     start with underscore, so a review row leaking into the plan with a
     stray field would PATCH something. It must produce None."""
-    for variant in ("Junior", "Silver Star 3", "Model A"):
-        assert classify("Whatever", variant, None)[1] is None
+    for variant, model_name in (("J-2 Ranger", "Sioux"), ("Model A", None),
+                                ("B55 Baron", "Travel Air")):
+        assert classify("Whatever", variant, model_name)[1] is None
 
 
 # ── the token test the classes are built on ──────────────────────────
@@ -130,3 +131,80 @@ def test_review_rows_carry_no_patch_at_all():
 ])
 def test_is_mark_token(tok, expected):
     assert is_mark_token(tok) is expected
+
+
+# ── all-caps variant CODES are marks, not names ──────────────────────
+
+@pytest.mark.parametrize("model,variant,model_name", [
+    ("37", "AJSF", "Viggen"),          # a real Saab 37 variant designation
+    ("7", "GCBC", "Citabria"),         # Citabria 7GCBC
+    ("A.109", "A-II", "Hirundo"),
+    ("Atlantic", "BR 1150 SIGINT", "Atlantic"),
+    ("451", "T-MM Stršljen II", "Stršljen II"),
+])
+def test_uppercase_designation_codes_are_not_treated_as_names(model, variant, model_name):
+    """An earlier version read these as type names and routed 61 correct rows
+    to review. Names in this catalog are Title Case, so requiring upper case
+    costs nothing and rescues all of them."""
+    cls, patch, _ = classify(model, variant, model_name)
+    assert cls in (None, "A+", "D"), f"{variant!r} was classified {cls}"
+    if patch:
+        assert patch.get("model_name") is None, "a code must never become a model_name"
+
+
+# ── class E: move the name to the column it belongs in ───────────────
+
+@pytest.mark.parametrize("model,variant,mark,name", [
+    ("31-55", "A Senior Skyrocket", "A", "Senior Skyrocket"),
+    ("19", "TF Super Bidon", "TF", "Super Bidon"),
+    ("18", "A Flymobil", "A", "Flymobil"),
+    ("24", "C8E Argus", "C8E", "Argus"),          # digit makes C8E a mark
+    ("47", "J-3B1 Ranger", "J-3B1", "Ranger"),
+    ("1002", "Pingouin", None, "Pingouin"),        # no mark at all
+    ("757", "Viscount", None, "Viscount"),
+])
+def test_class_E_splits_mark_from_name_when_model_name_is_empty(model, variant, mark, name):
+    cls, patch, _ = classify(model, variant, None)
+    assert cls == "E"
+    assert patch == {"variant": mark, "model_name": name}
+
+
+@pytest.mark.parametrize("model,variant,mark,name", [
+    ("CW-1", "Junior", None, "Junior"),          # Curtiss-Wright CW-1 Junior
+    ("CM.170", "Magister", None, "Magister"),
+])
+def test_names_with_no_model_name_to_vouch_for_them_are_now_moved(model, variant, mark, name):
+    """These used to go to review because nothing could confirm the name. With
+    model_name empty there is nothing to lose: moving it is strictly better
+    than leaving a name in the variant column."""
+    cls, patch, _ = classify(model, variant, None)
+    assert cls == "E" and patch == {"variant": mark, "model_name": name}
+
+
+def test_class_E_takes_marks_from_both_ends():
+    """"Silver Star 3" is the Silver Star, mark 3 — the trailing number is a
+    mark that happens to sit last."""
+    cls, patch, _ = classify("CT-133", "Silver Star 3", None)
+    assert cls == "E" and patch == {"variant": "3", "model_name": "Silver Star"}
+
+
+def test_class_E_never_overwrites_an_existing_model_name():
+    """A Bell 47 is a Sioux in military service and a Ranger as the civil
+    J-2. Both are right, so the script must not pick one."""
+    cls, patch, note = classify("47", "J-2 Ranger", "Sioux")
+    assert cls == "A" and patch is None
+    assert "Sioux" in note and "Ranger" in note
+
+
+def test_class_E_does_not_fire_when_there_is_no_name():
+    """All marks and no name is an ordinary variant, not a split."""
+    for variant in ("Mk I", "F.6", "A", "Mk 20"):
+        cls, _, _ = classify("Whatever", variant, None)
+        assert cls != "E", f"{variant!r} was split"
+
+
+def test_split_helper_reports_no_name_for_pure_marks():
+    from plan_variants import split_mark_and_name
+    assert split_mark_and_name("Mk I") == ("", "")
+    assert split_mark_and_name("AJSF") == ("", "")
+    assert split_mark_and_name("A Senior Skyrocket") == ("A", "Senior Skyrocket")

@@ -33,15 +33,28 @@ and never rewrites a row. `--only D` restricts a run to one class.
 | `B` | variant restates the model | `A-4` + `A-4KU` → `KU` | yes |
 | `D` | variant duplicates `model_name` | `SE 210` + `Caravelle`, name `Caravelle` → blank | yes |
 | `A+` | variant carries a name **already in** `model_name` | `CL-13` + `Sabre Mk.6`, name `Sabre` → `Mk.6` | yes |
-| `A` | variant carries some other word | `CW-1` + `Junior` | **no — review** |
+| `E` | variant is `[mark] + name` and `model_name` is **empty** | `31-55` + `A Senior Skyrocket` → variant `A`, model_name `Senior Skyrocket` | yes |
+| `A` | the name would overwrite a different `model_name` | `47` + `J-2 Ranger`, model_name `Sioux` | **no — review** |
 
-Roughly 560 rows fall in the automatic classes and 1,020 in `A`.
+Against the live catalog: **250 rows in the plan, 154 to review.**
 
-Class `A` is not automatable and the script does not try. The distinction it
-would have to make is one a regex cannot: a **Spitfire Mk IX** and a **Canberra
-Mk 20** are correctly written that way, while a **CM.170 Magister** is a name in
-the wrong column. Only `model_name` vouching for the word makes it safe, which
-is exactly what separates `A+` from `A`.
+Class `E` is the one that actually moves a name out of the variant column. `A+`
+and `D` only work when `model_name` already holds the name, so on their own they
+never populate it — `E` is what fixes `CT-133` + `Silver Star 3` into variant
+`3`, model_name `Silver Star`. Marks are taken from **both ends** of the string,
+which is how the trailing `3` there ends up in the right place.
+
+Class `A` is what is left, and it is not automatable. A **Spitfire Mk IX** and a
+**Canberra Mk 20** are correctly written as they are, and where a name really is
+in the wrong column the existing `model_name` is often equally right: a Bell 47
+is a **Sioux** in military service and a **Ranger** as the civil J-2; a Stinson
+108-1 is a **Voyager** and a 108-2 a **Flying Station Wagon**. The review file
+prints `candidate_mark` and `candidate_name` next to the existing `model_name`,
+so the decision is between two named options rather than an abstraction.
+
+Some of those 154 are plain errors worth fixing: `95` + `B55 Baron` with
+`model_name` `Travel Air` is a Beech 95-B55 Baron, and the Travel Air is a
+different aeroplane.
 
 ## Two things to keep in mind
 
@@ -60,6 +73,12 @@ way, deciding which site actually holds the airframe.
 `91`, which is worse than doing nothing. `type`, `model`, `series`, `mark`,
 `variant`, `version`, `class` and `number` disqualify a row from `A+` and send
 it to review.
+
+**Upper-case tokens are variant CODES, not names.** `AJSF` on a Saab 37, `GCBC`
+on a Citabria 7, `A-II`, `SIGINT` on an Atlantic — an earlier version of this
+script read those as type names and sent 61 correct rows to review. Names in
+this catalog are Title Case, so requiring upper case costs nothing and rescues
+all of them.
 
 ## Known limitation
 
