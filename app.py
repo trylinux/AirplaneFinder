@@ -1667,6 +1667,19 @@ def _validate_text_fields(row, fields, errors):
 _OPERATOR_COUNTRY_RE = re.compile(r"^[A-Z]{2}$")
 
 
+# A construction number is an identifier, not a note. These strings were being
+# stored in the column and then used as a join key: one record carrying the
+# literal "unknown" collided against four different F-84F serials at once.
+_CN_PLACEHOLDERS = {"unknown", "unk", "n/a", "na", "none", "nil", "-", "--",
+                    "?", "??", "tbd", "x", "xx"}
+
+
+def is_usable_construction_number(value):
+    """True when a c/n can identify an airframe. Placeholders cannot."""
+    v = (value or "").strip()
+    return bool(v) and v.lower() not in _CN_PLACEHOLDERS
+
+
 def _validate_aircraft_row(row):
     """Return (clean_dict, errors). clean_dict is None if errors is non-empty."""
     errors = []
@@ -1739,7 +1752,9 @@ def _validate_aircraft_row(row):
         "manufacturer": manufacturer,
         "model": model,
         "variant": g("variant") or None,
-        "construction_number": g("construction_number") or None,
+        "construction_number": (g("construction_number")
+                                if is_usable_construction_number(g("construction_number"))
+                                else None),
         "operator_country": operator_country,
         "tail_number": _normalize_tail_number(g("tail_number")),
         "model_name": g("model_name") or None,
@@ -1872,6 +1887,19 @@ def _warn_near_duplicate(report, i, clean):
     """Note, without blocking, a row that shares designation + tail with an
     airframe recorded under a different operator. See
     _find_aircraft_near_duplicate for why this is a warning and not an error."""
+    other = _find_cn_other_model(
+        clean.get("manufacturer"), clean["model"], clean.get("construction_number"))
+    if other is not None:
+        report["warnings"].append({
+            "row": i,
+            "field": "construction_number",
+            "message": (
+                f"id={other.id} is the same manufacturer and construction number "
+                f"under model {other.model!r}. A c/n is unique only within a type "
+                f"series, so this is probably two aircraft - but check whether one "
+                f"of them has the wrong type."
+            ),
+        })
     near = _find_aircraft_near_duplicate(
         clean["model"], clean["tail_number"],
         variant=clean.get("variant"),
@@ -2216,9 +2244,20 @@ def _find_aircraft_duplicate(model, tail_number, exclude_id=None, variant=None,
     Callers that don't pass variant/operator_country get the old, narrower
     behaviour, which is a subset of this one.
     """
-    if manufacturer and construction_number:
+    if manufacturer and is_usable_construction_number(construction_number):
+        # Scoped by MODEL as well as manufacturer. A construction number is only
+        # unique within a type series, not across a manufacturer's whole output:
+        # Bell model 47 c/n 1090 and Bell model 204 c/n 1090 are different
+        # helicopters, as are Grumman G-63 and G-1159 c/n 1, Fairchild PT-26 and
+        # C-119 c/n 10846, and FMA IA-50 and IA-35 c/n 22. Matching on
+        # manufacturer alone reported all four as the same airframe.
+        #
+        # The variant is deliberately NOT part of this: the whole reason the c/n
+        # is worth having is that it follows one airframe across a change of
+        # registration and of sub-mark.
         q = Aircraft.query.filter(
             Aircraft.manufacturer == manufacturer,
+            Aircraft.model == model,
             Aircraft.construction_number == construction_number,
         )
         if exclude_id is not None:
@@ -2237,6 +2276,28 @@ def _find_aircraft_duplicate(model, tail_number, exclude_id=None, variant=None,
         q = q.filter(Aircraft.operator_country == operator_country)
     else:
         q = q.filter(Aircraft.operator_country.is_(None))
+    if exclude_id is not None:
+        q = q.filter(Aircraft.id != exclude_id)
+    return q.first()
+
+
+def _find_cn_other_model(manufacturer, model, construction_number, exclude_id=None):
+    """Return an Aircraft with the same manufacturer and construction number but
+    a DIFFERENT model, or None.
+
+    Not a duplicate - c/n is only unique within a type series - but worth
+    saying out loud, because the other possibility is that one of the two rows
+    has its type wrong. Adjudicating these in September 2026 turned up exactly
+    that: a record filed as an Il-86 was really an Il-103, and one filed as a
+    Grumman G-63 was the first G-1159 Gulfstream II.
+    """
+    if not (manufacturer and is_usable_construction_number(construction_number)):
+        return None
+    q = Aircraft.query.filter(
+        Aircraft.manufacturer == manufacturer,
+        Aircraft.construction_number == construction_number,
+        Aircraft.model != model,
+    )
     if exclude_id is not None:
         q = q.filter(Aircraft.id != exclude_id)
     return q.first()

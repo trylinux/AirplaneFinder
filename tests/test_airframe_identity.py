@@ -248,3 +248,117 @@ class TestSingleRecordEndpoints:
         got = admin_client.get(f"/api/v1/aircraft/{created['id']}").get_json()["aircraft"]
         assert got["operator_country"] == "IR"
         assert got["construction_number"] == "V.1034"
+
+
+class TestConstructionNumberIsScopedByTypeSeries:
+    """A c/n identifies one airframe only WITHIN a type series.
+
+    Scoping the match by manufacturer alone reported four pairs of genuinely
+    different aircraft as the same airframe. All four are real records that the
+    September 2026 adjudication had to untangle:
+
+        Bell model 47   c/n 1090   vs  Bell model 204  c/n 1090
+        Grumman G-63    c/n 1      vs  Grumman G-1159  c/n 1
+        Fairchild PT-26 c/n 10846  vs  Fairchild C-119 c/n 10846
+        FMA IA-50       c/n 22     vs  FMA IA-35       c/n 22
+    """
+
+    def test_two_bell_types_sharing_a_cn_are_two_aircraft(self, admin_client, db_session):
+        code, rep = _import(admin_client, [
+            {"manufacturer": "Bell", "model": "47", "variant": "G-3B-1",
+             "tail_number": "N1090H", "construction_number": "1090"},
+            {"manufacturer": "Bell", "model": "204", "tail_number": "966",
+             "construction_number": "1090"},
+        ])
+        assert code == 200, rep
+        assert rep["created"] == 2, rep
+        assert rep["errors"] == []
+
+    def test_the_grumman_kitten_is_not_the_first_gulfstream(self, admin_client, db_session):
+        code, rep = _import(admin_client, [
+            {"manufacturer": "Grumman", "model": "G-63", "tail_number": "NX41858",
+             "construction_number": "1"},
+            {"manufacturer": "Grumman", "model": "G-1159", "tail_number": "N801GA",
+             "construction_number": "1"},
+        ])
+        assert code == 200, rep
+        assert rep["created"] == 2, rep
+
+    def test_the_same_type_series_still_collides(self, admin_client, db_session):
+        """The fix must not cost the behaviour the c/n exists for: one airframe
+        under two registrations is still caught."""
+        code, rep = _import(admin_client, [
+            {"manufacturer": "de Havilland", "model": "Sea Heron",
+             "tail_number": "XR443", "construction_number": "14072"},
+        ])
+        assert code == 200, rep
+        code, rep = _import(admin_client, [
+            {"manufacturer": "de Havilland", "model": "Sea Heron",
+             "tail_number": "VH-NJP", "construction_number": "14072"},
+        ])
+        assert rep["created"] == 0, rep
+        assert any("already exists" in e["message"] for e in rep["errors"])
+
+    def test_a_cross_type_match_is_reported_as_a_warning(self, admin_client, db_session):
+        """Two aircraft, not one — but one of them may have the wrong type, so
+        say so rather than staying silent."""
+        code, rep = _import(admin_client, [
+            {"manufacturer": "Fairchild", "model": "PT-26", "tail_number": "N4732G",
+             "construction_number": "10846"},
+        ])
+        assert code == 200, rep
+        code, rep = _import(admin_client, [
+            {"manufacturer": "Fairchild", "model": "C-119", "variant": "F",
+             "tail_number": "131679", "construction_number": "10846"},
+        ])
+        assert code == 200, rep
+        assert rep["created"] == 1, rep
+        assert any(w["field"] == "construction_number" for w in rep["warnings"]), rep
+
+
+class TestPlaceholderConstructionNumbers:
+    """The literal string "unknown" was being stored in the column and then used
+    as a join key. One record carrying it collided against four different F-84F
+    serials at once, purely because both sides read "unknown"."""
+
+    def test_unknown_is_not_stored(self, admin_client, db_session):
+        import models
+        code, rep = _import(admin_client, [
+            {"manufacturer": "Republic", "model": "F-84", "variant": "F",
+             "tail_number": "51-1735", "construction_number": "unknown"},
+        ])
+        assert code == 200, rep
+        ac = models.Aircraft.query.filter_by(tail_number="51-1735").one()
+        assert ac.construction_number is None
+
+    def test_two_unknowns_do_not_collide(self, admin_client, db_session):
+        code, rep = _import(admin_client, [
+            {"manufacturer": "Republic", "model": "F-84", "variant": "F",
+             "tail_number": "51-1818", "construction_number": "unknown"},
+            {"manufacturer": "Republic", "model": "F-84", "variant": "F",
+             "tail_number": "51-1948", "construction_number": "UNKNOWN"},
+        ])
+        assert code == 200, rep
+        assert rep["created"] == 2, rep
+        assert rep["errors"] == []
+
+    def test_the_other_placeholder_spellings_too(self, admin_client, db_session):
+        import models
+        for i, v in enumerate(("?", "n/a", "none", "-", "TBD")):
+            code, rep = _import(admin_client, [
+                {"manufacturer": "Aero", "model": "L-29", "tail_number": f"TEST{i}",
+                 "construction_number": v},
+            ])
+            assert code == 200, rep
+            ac = models.Aircraft.query.filter_by(tail_number=f"TEST{i}").one()
+            assert ac.construction_number is None, f"{v!r} was stored"
+
+    def test_a_real_cn_is_untouched(self, admin_client, db_session):
+        import models
+        code, rep = _import(admin_client, [
+            {"manufacturer": "Aérospatiale", "model": "SA.330", "tail_number": "TU-VAR",
+             "construction_number": "1044"},
+        ])
+        assert code == 200, rep
+        ac = models.Aircraft.query.filter_by(tail_number="TU-VAR").one()
+        assert ac.construction_number == "1044"
