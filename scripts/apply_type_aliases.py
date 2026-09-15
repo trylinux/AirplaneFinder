@@ -43,7 +43,17 @@ def main():
     ap.add_argument("--base-url", default=None)
     args = ap.parse_args()
 
-    plan = json.loads(Path(args.plan).read_text(encoding="utf-8"))
+    # The plan is generated, not committed (it holds live counts that go
+    # stale), so a missing one means "run the plan step", not a crash.
+    plan_path = Path(args.plan)
+    if not plan_path.exists():
+        print(f"no plan at {plan_path}. Run it first:\n"
+              f"    python3 scripts/plan_type_aliases.py\n"
+              f"It writes nothing to the catalogue and prints what this pass "
+              f"would gain.", file=sys.stderr)
+        raise SystemExit(2)
+
+    plan = json.loads(plan_path.read_text(encoding="utf-8"))
     rows = plan["aliases"]
     if not rows:
         print("nothing to apply")
