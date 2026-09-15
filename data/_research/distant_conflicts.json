@@ -1,0 +1,264 @@
+[
+ {
+  "match_basis": "distant",
+  "distance_m": 940,
+  "keep_reason": "more complete record",
+  "proven": true,
+  "type_only": false,
+  "shared_count": 4,
+  "keep": {
+   "id": 807,
+   "name": "Ecole Nationale des Techniques Aeronautiques Blida",
+   "city": "Blida",
+   "country": "Algeria",
+   "aircraft": 4
+  },
+  "drop": {
+   "id": 6056,
+   "name": "Blida Air Base Preserved Aircraft",
+   "city": "Blida",
+   "aircraft": 4
+  },
+  "delete_aircraft": [
+   37679,
+   37680,
+   37681,
+   37682
+  ],
+  "matched": [
+   {
+    "keep_aircraft": 10723,
+    "drop_aircraft": 37679
+   },
+   {
+    "keep_aircraft": 10725,
+    "drop_aircraft": 37681
+   },
+   {
+    "keep_aircraft": 10726,
+    "drop_aircraft": 37682
+   },
+   {
+    "keep_aircraft": 10724,
+    "drop_aircraft": 37680
+   }
+  ],
+  "relink_links": [],
+  "relink_aircraft": [],
+  "shared_examples": [
+   "Mi-6 606",
+   "MiG-21F-13 67",
+   "MiG-21U FC-90",
+   "Su-7BMK 86"
+  ]
+ },
+ {
+  "match_basis": "distant",
+  "distance_m": 3140,
+  "keep_reason": "more complete record",
+  "proven": true,
+  "type_only": false,
+  "shared_count": 2,
+  "keep": {
+   "id": 6040,
+   "name": "Cairo West Air Base Preserved Aircraft",
+   "city": "Cairo West",
+   "country": "Egypt",
+   "aircraft": 2
+  },
+  "drop": {
+   "id": 814,
+   "name": "Cairo West Air Base Displays",
+   "city": "Cairo West",
+   "aircraft": 2
+  },
+  "delete_aircraft": [
+   10716,
+   10717
+  ],
+  "matched": [
+   {
+    "keep_aircraft": 37708,
+    "drop_aircraft": 10716
+   },
+   {
+    "keep_aircraft": 37707,
+    "drop_aircraft": 10717
+   }
+  ],
+  "relink_links": [],
+  "relink_aircraft": [],
+  "shared_examples": [
+   "F-4E 7808",
+   "Il-28 1772"
+  ]
+ },
+ {
+  "match_basis": "distant",
+  "distance_m": 3632,
+  "keep_reason": "more complete record",
+  "proven": true,
+  "type_only": false,
+  "shared_count": 1,
+  "keep": {
+   "id": 6088,
+   "name": "Wadi Seidna Air Base Preserved Aircraft",
+   "city": "Wadi Seidna",
+   "country": "Sudan",
+   "aircraft": 2
+  },
+  "drop": {
+   "id": 840,
+   "name": "Wadi Seidna Air Base Displays",
+   "city": "Wadi Seidna",
+   "aircraft": 2
+  },
+  "delete_aircraft": [
+   10807
+  ],
+  "matched": [
+   {
+    "keep_aircraft": 38329,
+    "drop_aircraft": 10807
+   }
+  ],
+  "relink_links": [
+   {
+    "aircraft_id": 10806,
+    "link_id": 10818,
+    "display_status": "on_display"
+   }
+  ],
+  "relink_aircraft": [
+   10806
+  ],
+  "shared_examples": [
+   "FT-5 719"
+  ]
+ },
+ {
+  "match_basis": "distant",
+  "distance_m": 3861,
+  "keep_reason": "more airframes",
+  "proven": true,
+  "type_only": false,
+  "shared_count": 1,
+  "keep": {
+   "id": 6043,
+   "name": "Ismailia Air Base Preserved Aircraft",
+   "city": "Ismailia",
+   "country": "Egypt",
+   "aircraft": 2
+  },
+  "drop": {
+   "id": 825,
+   "name": "Ismailia MiG-21 Monument",
+   "city": "Ismailia",
+   "aircraft": 1
+  },
+  "delete_aircraft": [
+   10771
+  ],
+  "matched": [
+   {
+    "keep_aircraft": 37859,
+    "drop_aircraft": 10771
+   }
+  ],
+  "relink_links": [],
+  "relink_aircraft": [],
+  "shared_examples": [
+   "MiG-21MF 8620"
+  ]
+ },
+ {
+  "match_basis": "distant",
+  "distance_m": 5084,
+  "keep_reason": "more airframes",
+  "proven": true,
+  "type_only": false,
+  "shared_count": 1,
+  "keep": {
+   "id": 691,
+   "name": "South African Air Force Museum Swartkop",
+   "city": "Centurion",
+   "country": "South Africa",
+   "aircraft": 140
+  },
+  "drop": {
+   "id": 667,
+   "name": "AFB Waterkloof Gate Guards",
+   "city": "Centurion",
+   "aircraft": 4
+  },
+  "delete_aircraft": [
+   9938
+  ],
+  "matched": [
+   {
+    "keep_aircraft": 38212,
+    "drop_aircraft": 9938
+   }
+  ],
+  "relink_links": [
+   {
+    "aircraft_id": 9935,
+    "link_id": 9947,
+    "display_status": "on_display"
+   },
+   {
+    "aircraft_id": 9936,
+    "link_id": 9948,
+    "display_status": "on_display"
+   },
+   {
+    "aircraft_id": 9937,
+    "link_id": 9949,
+    "display_status": "on_display"
+   }
+  ],
+  "relink_aircraft": [
+   9935,
+   9936,
+   9937
+  ],
+  "shared_examples": [
+   "Mirage F1CZ 211"
+  ]
+ },
+ {
+  "match_basis": "distant",
+  "distance_m": 333393,
+  "keep_reason": "more airframes",
+  "proven": true,
+  "type_only": false,
+  "shared_count": 1,
+  "keep": {
+   "id": 691,
+   "name": "South African Air Force Museum Swartkop",
+   "city": "Centurion",
+   "country": "South Africa",
+   "aircraft": 140
+  },
+  "drop": {
+   "id": 665,
+   "name": "AFB Hoedspruit Gate Guard",
+   "city": "Hoedspruit",
+   "aircraft": 1
+  },
+  "delete_aircraft": [
+   9931
+  ],
+  "matched": [
+   {
+    "keep_aircraft": 38248,
+    "drop_aircraft": 9931
+   }
+  ],
+  "relink_links": [],
+  "relink_aircraft": [],
+  "shared_examples": [
+   "Impala Mk I 519"
+  ]
+ }
+]

@@ -84,8 +84,87 @@ def merge_fields(keep_id, drop_id):
     LOG.write(f"FOLD {drop_id}->{keep_id} {s} {json.dumps(body)[:200]}\n")
 
 
+# ── Museum-level fold ────────────────────────────────────────────────
+# The aircraft fold below has always existed; this one did not, and its
+# absence was destructive. Deleting the losing museum record deleted
+# everything only that record held. On the 13 pairs this was first run
+# against that was 15 fields, including COORDINATES for four museums --
+# which would have removed them from the map and from proximity search --
+# and four websites.
+MUSEUM_FOLD = ["postal_code", "latitude", "longitude", "website", "address",
+               "state_province", "region", "access_type"]
+
+# Which name survives is a judgement, not a field count. plan_merge picks the
+# survivor on record completeness, and the better-populated record is often
+# the one a later geographic import created: "Impala Gate Guard -- Muizenberg"
+# beats "Chrysalis Academy Impala" on fields while being the less useful name
+# to a visitor, who is looking for the academy. Keeping the survivor's ID (so
+# every link and coordinate stays put) and taking the better NAME is the
+# resolution; it is one PATCH.
+#
+# Keyed by surviving museum id. Verified pair by pair -- do not extend this
+# with a heuristic.
+NAME_OVERRIDES = {
+    6143: "43 Air School Impala Gate Guard -- Port Alfred",
+    6144: "Caprivi MOTH Shellhole Impala -- Randfontein",
+    6146: "SANDF Military Academy Impala Display -- Saldanha",
+    6150: "Chrysalis Academy Impala -- Muizenberg",
+    6151: "Lowveld Aero Club Mirage -- Nelspruit",
+    6224: "Denel Aviation Campus Cheetah Display -- Kempton Park",
+    6275: "Royal Malaysian Air Force Museum -- Sendayan",
+}
+
+
+def get_mus(i):
+    s, d = call("GET", f"/museums/{i}")
+    return (d.get("museum") or d) if s == 200 else None
+
+
+def merge_museum_fields(keep_id, drop_id):
+    """Anything the surviving SITE is missing and the duplicate has, move
+    across, then apply a curated name override if one is set. Runs BEFORE the
+    museum delete, or the data it rescues is already gone."""
+    k, d = get_mus(keep_id), get_mus(drop_id)
+    if not k or not d:
+        return
+    body = {}
+    for f in MUSEUM_FOLD:
+        kv = str(k.get(f) or "").strip()
+        dv = str(d.get(f) or "").strip()
+        # access_type defaults to 'public', so an explicit non-default on the
+        # duplicate is real information the survivor's default is not.
+        if f == "access_type":
+            if dv and dv != "public" and kv == "public":
+                body[f] = d[f]
+            continue
+        if dv and not kv:
+            body[f] = d[f]
+    if keep_id in NAME_OVERRIDES and k.get("name") != NAME_OVERRIDES[keep_id]:
+        body["name"] = NAME_OVERRIDES[keep_id]
+    if not body:
+        return
+    s, r = call("PATCH", f"/museums/{keep_id}", body)
+    LOG.write(f"FOLD_MUS {drop_id}->{keep_id} {s} {json.dumps(body)[:200]}\n")
+    if s != 200:
+        print(f"  museum fold failed {keep_id} {s} {r}", flush=True)
+
+
+def merge_museum_preview(keep_id, drop_id):
+    k, d = get_mus(keep_id), get_mus(drop_id)
+    if not k or not d:
+        print("       (could not read one of the pair)")
+        return
+    for f in MUSEUM_FOLD:
+        kv, dv = str(k.get(f) or "").strip(), str(d.get(f) or "").strip()
+        if dv and not kv and f != "access_type":
+            print(f"       fold {f}: {dv[:60]}")
+    if keep_id in NAME_OVERRIDES:
+        print(f"       rename: {k.get('name')!r} -> {NAME_OVERRIDES[keep_id]!r}")
+
+
 plan = [p for p in json.load(open(PLAN)) if p["proven"]]
-picked = [a for a in sys.argv[1:] if a != "--all"]
+DRY = "--dry-run" in sys.argv
+picked = [a for a in sys.argv[1:] if a not in ("--all", "--dry-run")]
 sel = [p for p in plan if str(p["drop"]["id"]) in picked] if picked else plan
 print(f"pairs to merge: {len(sel)}", flush=True)
 
@@ -94,6 +173,13 @@ for p in sel:
     tag = f"{p['keep']['id']}<-{p['drop']['id']}"
     if tag in done:
         continue
+    if DRY:
+        print(f"  [dry] {p['drop']['name'][:38]} -> {p['keep']['name'][:38]}  "
+              f"del={len(p['delete_aircraft'])} relink="
+              f"{len(p['relink_links'])}", flush=True)
+        merge_museum_preview(p["keep"]["id"], p["drop"]["id"])
+        continue
+    merge_museum_fields(p["keep"]["id"], p["drop"]["id"])
     for m in p["matched"]:
         merge_fields(m["keep_aircraft"], m["drop_aircraft"])
     bad = False

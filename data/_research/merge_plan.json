@@ -1,2146 +1,6 @@
 [
  {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 791,
-   "name": "Addis Ababa Bole International Airport DC-3 Display",
-   "city": "Addis Ababa",
-   "country": "Ethiopia",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 6094,
-   "name": "Ethiopian Airlines DC-3 Display -- Addis Ababa",
-   "city": "Addis Ababa",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   37793
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 10664,
-    "drop_aircraft": 37793
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "C-47A ET-AIA"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more airframes",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 8,
-  "keep": {
-   "id": 805,
-   "name": "Aero Beach",
-   "city": "Entebbe",
-   "country": "Uganda",
-   "aircraft": 15
-  },
-  "drop": {
-   "id": 6107,
-   "name": "Aero Beach Entebbe",
-   "city": "Entebbe",
-   "aircraft": 10
-  },
-  "delete_aircraft": [
-   37564,
-   37565,
-   37566,
-   37568,
-   37569,
-   37570,
-   37571,
-   37572
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 10666,
-    "drop_aircraft": 37564
-   },
-   {
-    "keep_aircraft": 10669,
-    "drop_aircraft": 37566
-   },
-   {
-    "keep_aircraft": 10671,
-    "drop_aircraft": 37568
-   },
-   {
-    "keep_aircraft": 10668,
-    "drop_aircraft": 37565
-   },
-   {
-    "keep_aircraft": 10677,
-    "drop_aircraft": 37569
-   },
-   {
-    "keep_aircraft": 10678,
-    "drop_aircraft": 37570
-   },
-   {
-    "keep_aircraft": 10679,
-    "drop_aircraft": 37571
-   },
-   {
-    "keep_aircraft": 10680,
-    "drop_aircraft": 37572
-   }
-  ],
-  "relink_links": [
-   {
-    "aircraft_id": 37567,
-    "link_id": 37553,
-    "display_status": "on_display"
-   },
-   {
-    "aircraft_id": 37563,
-    "link_id": 37549,
-    "display_status": "on_display"
-   }
-  ],
-  "relink_aircraft": [
-   37563,
-   37567
-  ],
-  "shared_examples": [
-   "707-436 5X-CAU",
-   "AS-202-18A1 AF-104",
-   "L-29 U-511",
-   "Mi-26T RA-06019"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 1789,
-   "name": "A\u00e9roport de Kinshasa-N'Dolo",
-   "city": "Kinshasa",
-   "country": "Democratic Republic of the Congo",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 6219,
-   "name": "Kinshasa N'Dolo Dakota",
-   "city": "Kinshasa",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   37879
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 14121,
-    "drop_aircraft": 37879
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "C-47A 9Q-CTR"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 2,
-  "keep": {
-   "id": 6223,
-   "name": "S\u00e3o Tom\u00e9 Super Constellations",
-   "city": "S\u00e3o Tom\u00e9",
-   "country": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
-   "aircraft": 2
-  },
-  "drop": {
-   "id": 1796,
-   "name": "Asas d'Avi\u00e3o",
-   "city": "S\u00e3o Tom\u00e9",
-   "aircraft": 2
-  },
-  "delete_aircraft": [
-   14122,
-   14123
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 38180,
-    "drop_aircraft": 14122
-   },
-   {
-    "keep_aircraft": 38181,
-    "drop_aircraft": 14123
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "L-1049H CF-NAL",
-   "L-1049H CF-NAM"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6215,
-   "name": "N'Djamena Broussard Display",
-   "city": "N'Djamena",
-   "country": "Chad",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 1788,
-   "name": "Base A\u00e9rienne Adji Kosse\u00ef",
-   "city": "N'Djam\u00e9na",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   14124
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 38072,
-    "drop_aircraft": 14124
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "MH.1521M TT-KAB"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 1799,
-   "name": "Base A\u00e9rienne de Ouagadougou",
-   "city": "Ouagadougou",
-   "country": "Burkina Faso",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 6211,
-   "name": "Ouagadougou MiG-17 Monument",
-   "city": "Ouagadougou",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   38104
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 14148,
-    "drop_aircraft": 38104
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "MiG-17F BF8401"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6216,
-   "name": "Pointe-Noire Air Base Displays",
-   "city": "Pointe-Noire",
-   "country": "Republic of the Congo",
-   "aircraft": 2
-  },
-  "drop": {
-   "id": 1795,
-   "name": "Base A\u00e9rienne de Pointe-Noire",
-   "city": "Pointe-Noire",
-   "aircraft": 2
-  },
-  "delete_aircraft": [
-   14128
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 38130,
-    "drop_aircraft": 14128
-   }
-  ],
-  "relink_links": [
-   {
-    "aircraft_id": 14129,
-    "link_id": 14141,
-    "display_status": "on_display"
-   }
-  ],
-  "relink_aircraft": [
-   14129
-  ],
-  "shared_examples": [
-   "MiG-15UTI 102"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 841,
-   "name": "Cite des Sciences a Tunis",
-   "city": "Tunis",
-   "country": "Tunisia",
-   "aircraft": 3
-  },
-  "drop": {
-   "id": 6077,
-   "name": "Cite des Sciences a Tunis Aircraft Display",
-   "city": "Tunis",
-   "aircraft": 3
-  },
-  "delete_aircraft": [
-   37718
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 10720,
-    "drop_aircraft": 37718
-   }
-  ],
-  "relink_links": [
-   {
-    "aircraft_id": 37717,
-    "link_id": 37703,
-    "display_status": "on_display"
-   },
-   {
-    "aircraft_id": 37719,
-    "link_id": 37705,
-    "display_status": "on_display"
-   }
-  ],
-  "relink_aircraft": [
-   37717,
-   37719
-  ],
-  "shared_examples": [
-   "91D Y31001"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 6,
-  "keep": {
-   "id": 6033,
-   "name": "Egyptian National Military Museum -- Cairo Citadel",
-   "city": "Cairo",
-   "country": "Egypt",
-   "aircraft": 6
-  },
-  "drop": {
-   "id": 817,
-   "name": "Egyptian National Military Museum",
-   "city": "Cairo",
-   "aircraft": 6
-  },
-  "delete_aircraft": [
-   10755,
-   10756,
-   10757,
-   10758,
-   10759,
-   10760
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37780,
-    "drop_aircraft": 10755
-   },
-   {
-    "keep_aircraft": 37781,
-    "drop_aircraft": 10756
-   },
-   {
-    "keep_aircraft": 37782,
-    "drop_aircraft": 10757
-   },
-   {
-    "keep_aircraft": 37783,
-    "drop_aircraft": 10758
-   },
-   {
-    "keep_aircraft": 37784,
-    "drop_aircraft": 10759
-   },
-   {
-    "keep_aircraft": 37785,
-    "drop_aircraft": 10760
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "MiG-17F 2481",
-   "MiG-21F-13 5908",
-   "PZL-104-35A 254",
-   "Su-7BMK 7320"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6096,
-   "name": "Guluf Airline Restaurant Ilyushin Il-18 -- Hargeisa",
-   "city": "Hargeisa",
-   "country": "Somalia",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 803,
-   "name": "Guluf Airline Restaurant",
-   "city": "Hargeisa",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   10695
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37826,
-    "drop_aircraft": 10695
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "Il-18V EX-011"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 4,
-  "keep": {
-   "id": 6091,
-   "name": "Hawulti Museum Aircraft Park -- Mekelle",
-   "city": "Mekelle",
-   "country": "Ethiopia",
-   "aircraft": 4
-  },
-  "drop": {
-   "id": 794,
-   "name": "Tigray Martyrs' Memorial Monument",
-   "city": "Mekelle",
-   "aircraft": 4
-  },
-  "delete_aircraft": [
-   10705,
-   10706,
-   10707,
-   10708
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37832,
-    "drop_aircraft": 10708
-   },
-   {
-    "keep_aircraft": 37829,
-    "drop_aircraft": 10705
-   },
-   {
-    "keep_aircraft": 37830,
-    "drop_aircraft": 10706
-   },
-   {
-    "keep_aircraft": 37831,
-    "drop_aircraft": 10707
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "421 ST-PRC",
-   "Mi-24A 1621",
-   "MiG-21bis 1113"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6080,
-   "name": "Houmt Souk T-6 Display -- Djerba",
-   "city": "Houmt Souk",
-   "country": "Tunisia",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 843,
-   "name": "Houmt Souk T-6 Display",
-   "city": "Houmt Souk",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   10767
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37837,
-    "drop_aircraft": 10767
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "T-6G TS-APF"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6041,
-   "name": "Hurghada Air Base MiG-21 Gate Guard",
-   "city": "Hurghada",
-   "country": "Egypt",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 822,
-   "name": "Hurghada MiG-21 Monument",
-   "city": "Hurghada",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   10768
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37840,
-    "drop_aircraft": 10768
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "MiG-21PFS 8047"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more airframes",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6043,
-   "name": "Ismailia Air Base Preserved Aircraft",
-   "city": "Ismailia",
-   "country": "Egypt",
-   "aircraft": 2
-  },
-  "drop": {
-   "id": 824,
-   "name": "Ismailia MiG-17 Monument",
-   "city": "Ismailia",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   10770
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37858,
-    "drop_aircraft": 10770
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "MiG-17F 2034"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6087,
-   "name": "Khartoum Air Base MiG-21 Gate Guard",
-   "city": "Khartoum",
-   "country": "Sudan",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 838,
-   "name": "Khartoum MiG-21 Monument",
-   "city": "Khartoum",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   10773
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37871,
-    "drop_aircraft": 10773
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "MiG-21M 344"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 3,
-  "keep": {
-   "id": 1791,
-   "name": "Parc de la Vall\u00e9e de la N'Sele",
-   "city": "Kinshasa",
-   "country": "Democratic Republic of the Congo",
-   "aircraft": 3
-  },
-  "drop": {
-   "id": 6221,
-   "name": "Kingankati Airliner Display",
-   "city": "Kingankati",
-   "aircraft": 3
-  },
-  "delete_aircraft": [
-   37876,
-   37877,
-   37878
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 14131,
-    "drop_aircraft": 37876
-   },
-   {
-    "keep_aircraft": 14132,
-    "drop_aircraft": 37877
-   },
-   {
-    "keep_aircraft": 14133,
-    "drop_aircraft": 37878
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "727-22C 9Q-CGB",
-   "737-298C 9Q-CNK",
-   "L-1011-500 9Q-CHC"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 790,
-   "name": "Massawa An-12 Roadside Display",
-   "city": "Massawa",
-   "country": "Eritrea",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 6090,
-   "name": "Massawa Antonov An-12 Display",
-   "city": "Massawa",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   37951
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 10700,
-    "drop_aircraft": 37951
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "An-12BP CCCP-11815"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 3,
-  "keep": {
-   "id": 6072,
-   "name": "Meknes Air Base Preserved Aircraft",
-   "city": "Meknes",
-   "country": "Morocco",
-   "aircraft": 3
-  },
-  "drop": {
-   "id": 835,
-   "name": "Meknes Air Base Displays",
-   "city": "Meknes",
-   "aircraft": 3
-  },
-  "delete_aircraft": [
-   10781,
-   10782,
-   10783
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37961,
-    "drop_aircraft": 10781
-   },
-   {
-    "keep_aircraft": 37962,
-    "drop_aircraft": 10783
-   },
-   {
-    "keep_aircraft": 37963,
-    "drop_aircraft": 10782
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "F-5A 97108",
-   "F-5A 69119",
-   "MiG-17 CNA-FE"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 799,
-   "name": "Moi Air Base",
-   "city": "Nairobi",
-   "country": "Kenya",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 6105,
-   "name": "Moi Air Base Provost Gate Guard -- Eastleigh",
-   "city": "Nairobi",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   37979
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 10701,
-    "drop_aircraft": 37979
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "Provost T.1 969"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6099,
-   "name": "Moi Forces Academy Bulldog Display -- Nakuru",
-   "city": "Nakuru",
-   "country": "Kenya",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 800,
-   "name": "Moi Forces Academy Lanet",
-   "city": "Nakuru",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   10702
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37980,
-    "drop_aircraft": 10702
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "Bulldog-127 711"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 809,
-   "name": "Musee de l Armee Populaire de Liberation Sahraouie",
-   "city": "Rabuni",
-   "country": "Algeria",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 6055,
-   "name": "Mus\u00e9e de l'Arm\u00e9e de Lib\u00e9ration Populaire -- Rabuni",
-   "city": "Rabuni",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   37983
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 10787,
-    "drop_aircraft": 37983
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "Mirage F1EH 167"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 2,
-  "keep": {
-   "id": 836,
-   "name": "Musee Royal Air Maroc",
-   "city": "Casablanca",
-   "country": "Morocco",
-   "aircraft": 5
-  },
-  "drop": {
-   "id": 6071,
-   "name": "Mus\u00e9e Royal Air Maroc -- Casablanca",
-   "city": "Casablanca",
-   "aircraft": 5
-  },
-  "delete_aircraft": [
-   37995,
-   37996
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 10793,
-    "drop_aircraft": 37995
-   },
-   {
-    "keep_aircraft": 10797,
-    "drop_aircraft": 37996
-   }
-  ],
-  "relink_links": [
-   {
-    "aircraft_id": 37992,
-    "link_id": 37978,
-    "display_status": "on_display"
-   },
-   {
-    "aircraft_id": 37993,
-    "link_id": 37979,
-    "display_status": "on_display"
-   },
-   {
-    "aircraft_id": 37994,
-    "link_id": 37980,
-    "display_status": "on_display"
-   }
-  ],
-  "relink_aircraft": [
-   37992,
-   37993,
-   37994
-  ],
-  "shared_examples": [
-   "L-749A CN-CCN",
-   "SV.4C CN-TUJ"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more airframes",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6074,
-   "name": "Rabat-Sale Air Base Preserved Aircraft",
-   "city": "Sale",
-   "country": "Morocco",
-   "aircraft": 2
-  },
-  "drop": {
-   "id": 837,
-   "name": "Rabat-Sale Air Base Dornier Display",
-   "city": "Sale",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   10798
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 38143,
-    "drop_aircraft": 10798
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "Do 28D-2 CNA-NQ"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6153,
-   "name": "Shackleton MR.3 -- Vereeniging Road Johannesburg",
-   "city": "Johannesburg",
-   "country": "South Africa",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 698,
-   "name": "Vic's Viking Garage Shackleton",
-   "city": "Johannesburg",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   10123
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 38186,
-    "drop_aircraft": 10123
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "Shackleton MR.3 1723"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6078,
-   "name": "Sousse Military Display -- Saab 91 and Alouette II",
-   "city": "Sousse",
-   "country": "Tunisia",
-   "aircraft": 2
-  },
-  "drop": {
-   "id": 846,
-   "name": "Sousse Military Aircraft Display",
-   "city": "Sousse",
-   "aircraft": 2
-  },
-  "delete_aircraft": [
-   10799
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 38190,
-    "drop_aircraft": 10799
-   }
-  ],
-  "relink_links": [
-   {
-    "aircraft_id": 10800,
-    "link_id": 10812,
-    "display_status": "on_display"
-   }
-  ],
-  "relink_aircraft": [
-   10800
-  ],
-  "shared_examples": [
-   "91D Y31006"
-  ]
- },
- {
-  "distance_m": 0,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 3,
-  "keep": {
-   "id": 839,
-   "name": "Sudan Military Museum",
-   "city": "Khartoum North",
-   "country": "Sudan",
-   "aircraft": 4
-  },
-  "drop": {
-   "id": 6086,
-   "name": "Sudan Military Museum -- Khartoum",
-   "city": "Khartoum",
-   "aircraft": 4
-  },
-  "delete_aircraft": [
-   38279,
-   38280,
-   38281
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 10802,
-    "drop_aircraft": 38279
-   },
-   {
-    "keep_aircraft": 10803,
-    "drop_aircraft": 38280
-   },
-   {
-    "keep_aircraft": 10804,
-    "drop_aircraft": 38281
-   }
-  ],
-  "relink_links": [
-   {
-    "aircraft_id": 38278,
-    "link_id": 38264,
-    "display_status": "on_display"
-   }
-  ],
-  "relink_aircraft": [
-   38278
-  ],
-  "shared_examples": [
-   "Mi-2 ST-SAC",
-   "MiG-21US 300",
-   "Provost T.53 101"
-  ]
- },
- {
-  "distance_m": 1,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 3,
-  "keep": {
-   "id": 793,
-   "name": "Amhara People's Martyrs' Memorial Monument",
-   "city": "Bahir Dar",
-   "country": "Ethiopia",
-   "aircraft": 3
-  },
-  "drop": {
-   "id": 6092,
-   "name": "Bahir Dar Air Base Preserved Aircraft",
-   "city": "Bahir Dar",
-   "aircraft": 3
-  },
-  "delete_aircraft": [
-   37603,
-   37604,
-   37605
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 10682,
-    "drop_aircraft": 37603
-   },
-   {
-    "keep_aircraft": 10683,
-    "drop_aircraft": 37604
-   },
-   {
-    "keep_aircraft": 10684,
-    "drop_aircraft": 37605
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "MiG-21UM 1005",
-   "MiG-23BN 1277"
-  ]
- },
- {
-  "distance_m": 1,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 2,
-  "keep": {
-   "id": 6089,
-   "name": "Asmara Expo Park Aircraft Display",
-   "city": "Asmara",
-   "country": "Eritrea",
-   "aircraft": 3
-  },
-  "drop": {
-   "id": 789,
-   "name": "Asmara Expo Park",
-   "city": "Asmara",
-   "aircraft": 3
-  },
-  "delete_aircraft": [
-   10685,
-   10686
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37601,
-    "drop_aircraft": 10686
-   },
-   {
-    "keep_aircraft": 37600,
-    "drop_aircraft": 10685
-   }
-  ],
-  "relink_links": [
-   {
-    "aircraft_id": 10687,
-    "link_id": 10699,
-    "display_status": "on_display"
-   }
-  ],
-  "relink_aircraft": [
-   10687
-  ],
-  "shared_examples": [
-   "727-25F 5Y-BMW",
-   "C-47A ET-AJH"
-  ]
- },
- {
-  "distance_m": 1,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6210,
-   "name": "Niamey Air Base Dornier Display",
-   "city": "Niamey",
-   "country": "Niger",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 1804,
-   "name": "Base A\u00e9rienne 101 de Niamey",
-   "city": "Niamey",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   14140
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 38079,
-    "drop_aircraft": 14140
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "Do 28D-2 5U-MBA"
-  ]
- },
- {
-  "distance_m": 1,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 1798,
-   "name": "Base A\u00e9rienne 210 de Bobo-Dioulasso",
-   "city": "Bobo-Dioulasso",
-   "country": "Burkina Faso",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 6212,
-   "name": "Bobo-Dioulasso SF.260 Display",
-   "city": "Bobo-Dioulasso",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   37685
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 14141,
-    "drop_aircraft": 37685
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "SF.260WL BF8423"
-  ]
- },
- {
-  "distance_m": 1,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 2,
-  "keep": {
-   "id": 6217,
-   "name": "Libreville Air Base Displays",
-   "city": "Libreville",
-   "country": "Gabon",
-   "aircraft": 2
-  },
-  "drop": {
-   "id": 1793,
-   "name": "Base A\u00e9rienne de Libreville",
-   "city": "Libreville",
-   "aircraft": 2
-  },
-  "delete_aircraft": [
-   14125,
-   14126
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37902,
-    "drop_aircraft": 14126
-   },
-   {
-    "keep_aircraft": 37901,
-    "drop_aircraft": 14125
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "EMB-110P TR-KNC",
-   "MH.1521M TR-KAB"
-  ]
- },
- {
-  "distance_m": 1,
-  "keep_reason": "more airframes",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6054,
-   "name": "Centre d'Information Territorial Chahid Mohamed Boubarnasse -- Oran",
-   "city": "Oran",
-   "country": "Algeria",
-   "aircraft": 2
-  },
-  "drop": {
-   "id": 806,
-   "name": "Centre d Information Territorial Chahid Mohamed Boubarnasse",
-   "city": "Oran",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   10718
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37712,
-    "drop_aircraft": 10718
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "MiG-17 FR-77"
-  ]
- },
- {
-  "distance_m": 1,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6098,
-   "name": "Kitengela Boeing 720 Restaurant",
-   "city": "Kitengela",
-   "country": "Kenya",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 796,
-   "name": "Club 034 Kitengela",
-   "city": "Kitengela",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   10694
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37880,
-    "drop_aircraft": 10694
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "720-047B 5Y-BBX"
-  ]
- },
- {
-  "distance_m": 1,
-  "keep_reason": "more airframes",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6073,
-   "name": "Marrakech Air Base Preserved Aircraft",
-   "city": "Marrakech",
-   "country": "Morocco",
-   "aircraft": 3
-  },
-  "drop": {
-   "id": 833,
-   "name": "Ecole Royale de l Air Marrakech C-119 Display",
-   "city": "Marrakech",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   10727
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37948,
-    "drop_aircraft": 10727
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "C-119G 862"
-  ]
- },
- {
-  "distance_m": 1,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6046,
-   "name": "Helwan MiG-21 Monument",
-   "city": "Helwan",
-   "country": "Egypt",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 821,
-   "name": "Helwan MiG-21 Gate Guard",
-   "city": "Helwan",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   10766
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37833,
-    "drop_aircraft": 10766
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "MiG-21F-13 5617"
-  ]
- },
- {
-  "distance_m": 1,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6052,
-   "name": "Mus\u00e9e central de l'Arm\u00e9e -- Alger",
-   "city": "Algiers",
-   "country": "Algeria",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 808,
-   "name": "Musee Central de l Armee",
-   "city": "Algiers",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   10786
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37982,
-    "drop_aircraft": 10786
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "MiG-17 2523"
-  ]
- },
- {
-  "distance_m": 1,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 3,
-  "keep": {
-   "id": 6076,
-   "name": "Musee Militaire National du Palais de la Rose -- Manouba",
-   "city": "Manouba",
-   "country": "Tunisia",
-   "aircraft": 4
-  },
-  "drop": {
-   "id": 845,
-   "name": "Musee Militaire National Palais de la Rose",
-   "city": "Manouba",
-   "aircraft": 4
-  },
-  "delete_aircraft": [
-   10789,
-   10790,
-   10791
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37985,
-    "drop_aircraft": 10789
-   },
-   {
-    "keep_aircraft": 37986,
-    "drop_aircraft": 10790
-   },
-   {
-    "keep_aircraft": 37987,
-    "drop_aircraft": 10791
-   }
-  ],
-  "relink_links": [
-   {
-    "aircraft_id": 10792,
-    "link_id": 10804,
-    "display_status": "on_display"
-   }
-  ],
-  "relink_aircraft": [
-   10792
-  ],
-  "shared_examples": [
-   "F-5E Y92517",
-   "F-86F Y91602",
-   "L-59T Y95073"
-  ]
- },
- {
-  "distance_m": 1,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6122,
-   "name": "Tobruk Museum Lady Be Good Remains",
-   "city": "Tobruk",
-   "country": "Libya",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 832,
-   "name": "Tobruk Museum",
-   "city": "Tobruk",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   10805
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 38304,
-    "drop_aircraft": 10805
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "B-24D 41-24301"
-  ]
- },
- {
-  "distance_m": 3,
-  "keep_reason": "more airframes",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 3,
-  "keep": {
-   "id": 667,
-   "name": "AFB Waterkloof Gate Guards",
-   "city": "Centurion",
-   "country": "South Africa",
-   "aircraft": 4
-  },
-  "drop": {
-   "id": 6132,
-   "name": "Air Force Base Waterkloof Gate Guards",
-   "city": "Centurion",
-   "aircraft": 3
-  },
-  "delete_aircraft": [
-   37587,
-   37588,
-   37589
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 9935,
-    "drop_aircraft": 37587
-   },
-   {
-    "keep_aircraft": 9936,
-    "drop_aircraft": 37588
-   },
-   {
-    "keep_aircraft": 9937,
-    "drop_aircraft": 37589
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "Buccaneer S.50 412",
-   "Canberra T.4 459",
-   "Sabre Mk 6 369"
-  ]
- },
- {
-  "distance_m": 4,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6135,
-   "name": "Air Force Base Bloemspruit Gate Guard",
-   "city": "Bloemfontein",
-   "country": "South Africa",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 664,
-   "name": "AFB Bloemspruit Gate Guard",
-   "city": "Bloemfontein",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   9930
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37579,
-    "drop_aircraft": 9930
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "Impala Mk I 461"
-  ]
- },
- {
-  "distance_m": 9,
-  "keep_reason": "more airframes",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6189,
-   "name": "Nigerian Air Force Displays -- Jos",
-   "city": "Jos",
-   "country": "Nigeria",
-   "aircraft": 2
-  },
-  "drop": {
-   "id": 1805,
-   "name": "Air Force Roundabout Jos",
-   "city": "Jos",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   14138
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 38101,
-    "drop_aircraft": 14138
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "L-29 NAF420"
-  ]
- },
- {
-  "distance_m": 19,
-  "keep_reason": "more airframes",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 688,
-   "name": "Sci-Bono Discovery Centre",
-   "city": "Johannesburg",
-   "country": "South Africa",
-   "aircraft": 2
-  },
-  "drop": {
-   "id": 6128,
-   "name": "Sci-Bono Discovery Centre -- Johannesburg",
-   "city": "Johannesburg",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   38182
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 9981,
-    "drop_aircraft": 38182
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "Cheetah E 826"
-  ]
- },
- {
-  "distance_m": 25,
-  "keep_reason": "more airframes",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 7,
-  "keep": {
-   "id": 6165,
-   "name": "Zimbabwe Military Museum",
-   "city": "Gweru",
-   "country": "Zimbabwe",
-   "aircraft": 13
-  },
-  "drop": {
-   "id": 850,
-   "name": "Trim Park Aviation Museum",
-   "city": "Gweru",
-   "aircraft": 12
-  },
-  "delete_aircraft": [
-   10812,
-   10813,
-   10814,
-   10817,
-   10818,
-   10821,
-   10822
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 38355,
-    "drop_aircraft": 10822
-   },
-   {
-    "keep_aircraft": 38347,
-    "drop_aircraft": 10817
-   },
-   {
-    "keep_aircraft": 38349,
-    "drop_aircraft": 10818
-   },
-   {
-    "keep_aircraft": 38350,
-    "drop_aircraft": 10812
-   },
-   {
-    "keep_aircraft": 38351,
-    "drop_aircraft": 10814
-   },
-   {
-    "keep_aircraft": 38353,
-    "drop_aircraft": 10813
-   },
-   {
-    "keep_aircraft": 38354,
-    "drop_aircraft": 10821
-   }
-  ],
-  "relink_links": [
-   {
-    "aircraft_id": 10823,
-    "link_id": 10835,
-    "display_status": "on_display"
-   },
-   {
-    "aircraft_id": 10816,
-    "link_id": 10828,
-    "display_status": "on_display"
-   },
-   {
-    "aircraft_id": 10819,
-    "link_id": 10831,
-    "display_status": "on_display"
-   },
-   {
-    "aircraft_id": 10820,
-    "link_id": 10832,
-    "display_status": "on_display"
-   },
-   {
-    "aircraft_id": 10815,
-    "link_id": 10827,
-    "display_status": "on_display"
-   }
-  ],
-  "relink_aircraft": [
-   10815,
-   10816,
-   10819,
-   10820,
-   10823
-  ],
-  "shared_examples": [
-   "Hunter FGA.9 1188",
-   "Provost T.52 3614",
-   "Spitfire F.22 PK355",
-   "Vampire FB.52 1380"
-  ]
- },
- {
-  "distance_m": 28,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6136,
-   "name": "Air Force Base Hoedspruit Airframes",
-   "city": "Hoedspruit",
-   "country": "South Africa",
-   "aircraft": 2
-  },
-  "drop": {
-   "id": 668,
-   "name": "Aerotel Hoedspruit",
-   "city": "Hoedspruit",
-   "aircraft": 2
-  },
-  "delete_aircraft": [
-   9928
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37581,
-    "drop_aircraft": 9928
-   }
-  ],
-  "relink_links": [
-   {
-    "aircraft_id": 9929,
-    "link_id": 9941,
-    "display_status": "on_display"
-   }
-  ],
-  "relink_aircraft": [
-   9929
-  ],
-  "shared_examples": [
-   "737-277 ZS-BIL"
-  ]
- },
- {
-  "distance_m": 40,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6149,
-   "name": "Impala Gate Guard -- Kempton Park",
-   "city": "Kempton Park",
-   "country": "South Africa",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 678,
-   "name": "Laerskool Impala Gate Guard",
-   "city": "Kempton Park",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   9968
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37847,
-    "drop_aircraft": 9968
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "Impala Mk I 494"
-  ]
- },
- {
-  "distance_m": 40,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6152,
-   "name": "Mirage III Plinth -- Bonaero Park",
-   "city": "Kempton Park",
-   "country": "South Africa",
-   "aircraft": 1
-  },
-  "drop": {
-   "id": 689,
-   "name": "Sir Pierre van Ryneveld High School Mirage",
-   "city": "Kempton Park",
-   "aircraft": 1
-  },
-  "delete_aircraft": [
-   9983
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37976,
-    "drop_aircraft": 9983
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "Mirage III CZ 807"
-  ]
- },
- {
-  "distance_m": 45,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 6134,
-   "name": "Air Force Base Langebaanweg Gate Guards",
-   "city": "Langebaanweg",
-   "country": "South Africa",
-   "aircraft": 3
-  },
-  "drop": {
-   "id": 666,
-   "name": "AFB Langebaanweg Heritage Displays",
-   "city": "Langebaanweg",
-   "aircraft": 3
-  },
-  "delete_aircraft": [
-   9933
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37582,
-    "drop_aircraft": 9933
-   }
-  ],
-  "relink_links": [
-   {
-    "aircraft_id": 9934,
-    "link_id": 9946,
-    "display_status": "on_display"
-   },
-   {
-    "aircraft_id": 9932,
-    "link_id": 9944,
-    "display_status": "on_display"
-   }
-  ],
-  "relink_aircraft": [
-   9932,
-   9934
-  ],
-  "shared_examples": [
-   "Impala Mk I 576"
-  ]
- },
- {
-  "distance_m": 62,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 6,
-  "keep": {
-   "id": 6097,
-   "name": "Djibouti Air Base Gate Guards",
-   "city": "Djibouti",
-   "country": "Djibouti",
-   "aircraft": 6
-  },
-  "drop": {
-   "id": 788,
-   "name": "Base Aerienne 188 Djibouti",
-   "city": "Djibouti",
-   "aircraft": 6
-  },
-  "delete_aircraft": [
-   10688,
-   10689,
-   10690,
-   10691,
-   10692,
-   10693
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 37771,
-    "drop_aircraft": 10688
-   },
-   {
-    "keep_aircraft": 37772,
-    "drop_aircraft": 10693
-   },
-   {
-    "keep_aircraft": 37767,
-    "drop_aircraft": 10689
-   },
-   {
-    "keep_aircraft": 37770,
-    "drop_aircraft": 10692
-   },
-   {
-    "keep_aircraft": 37768,
-    "drop_aircraft": 10690
-   },
-   {
-    "keep_aircraft": 37769,
-    "drop_aircraft": 10691
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "AD-4N 125741",
-   "D18S F-BEHI",
-   "F-100D 42293",
-   "Mirage F1C-200 214"
-  ]
- },
- {
-  "distance_m": 123,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 1,
-  "keep": {
-   "id": 848,
-   "name": "Museu Nacional de Historia Militar",
-   "city": "Luanda",
-   "country": "Angola",
-   "aircraft": 2
-  },
-  "drop": {
-   "id": 6178,
-   "name": "Fortaleza de S\u00e3o Miguel Harvards",
-   "city": "Luanda",
-   "aircraft": 2
-  },
-  "delete_aircraft": [
-   37797
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 10811,
-    "drop_aircraft": 37797
-   }
-  ],
-  "relink_links": [
-   {
-    "aircraft_id": 37796,
-    "link_id": 37782,
-    "display_status": "on_display"
-   }
-  ],
-  "relink_aircraft": [
-   37796
-  ],
-  "shared_examples": [
-   "T-6G 1685"
-  ]
- },
- {
-  "distance_m": 137,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 3,
-  "keep": {
-   "id": 6129,
-   "name": "Queens Fort Military Museum -- Bloemfontein",
-   "city": "Bloemfontein",
-   "country": "South Africa",
-   "aircraft": 3
-  },
-  "drop": {
-   "id": 684,
-   "name": "Queen's Fort Military Museum",
-   "city": "Bloemfontein",
-   "aircraft": 3
-  },
-  "delete_aircraft": [
-   9974,
-   9975,
-   9976
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 38140,
-    "drop_aircraft": 9974
-   },
-   {
-    "keep_aircraft": 38141,
-    "drop_aircraft": 9975
-   },
-   {
-    "keep_aircraft": 38142,
-    "drop_aircraft": 9976
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "Impala Mk I 591",
-   "Impala Mk II 1032",
-   "Mirage III RZ 837"
-  ]
- },
- {
-  "distance_m": 161,
-  "keep_reason": "more complete record",
-  "proven": true,
-  "type_only": false,
-  "shared_count": 2,
-  "keep": {
-   "id": 6138,
-   "name": "Thaba Tshwane Military Displays -- Pretoria",
-   "city": "Pretoria",
-   "country": "South Africa",
-   "aircraft": 2
-  },
-  "drop": {
-   "id": 685,
-   "name": "SA Air Force Headquarters Aircraft Display",
-   "city": "Pretoria",
-   "aircraft": 2
-  },
-  "delete_aircraft": [
-   9977,
-   9978
-  ],
-  "matched": [
-   {
-    "keep_aircraft": 38300,
-    "drop_aircraft": 9978
-   },
-   {
-    "keep_aircraft": 38301,
-    "drop_aircraft": 9977
-   }
-  ],
-  "relink_links": [],
-  "relink_aircraft": [],
-  "shared_examples": [
-   "Impala Mk I 524",
-   "Mirage F1CZ 202"
-  ]
- },
- {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -2174,6 +34,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -2207,6 +68,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -2240,6 +102,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -2273,6 +136,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -2306,6 +170,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -2338,6 +203,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -2371,6 +237,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -2404,6 +271,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -2437,6 +305,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -2470,6 +339,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -2503,6 +373,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -2536,6 +407,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -2569,6 +441,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -2602,6 +475,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -2635,6 +509,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -2674,6 +549,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -2707,6 +583,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -2752,6 +629,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -2791,6 +669,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -2830,6 +709,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -2869,6 +749,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -2908,6 +789,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -2953,6 +835,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -2986,6 +869,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -3019,6 +903,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -3052,6 +937,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -3085,6 +971,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -3118,6 +1005,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -3151,6 +1039,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -3184,6 +1073,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -3223,6 +1113,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -3256,6 +1147,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -3295,6 +1187,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -3328,6 +1221,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -3499,6 +1393,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -3532,6 +1427,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -3565,6 +1461,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -3604,6 +1501,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -3637,6 +1535,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -3688,6 +1587,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -3720,6 +1620,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -3757,6 +1658,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -3796,6 +1698,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -3828,6 +1731,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -3861,6 +1765,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -3906,6 +1811,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -3939,6 +1845,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -3972,6 +1879,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -4005,6 +1913,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -4038,6 +1947,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -4071,6 +1981,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -4104,6 +2015,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -4143,6 +2055,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -4176,6 +2089,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -4209,6 +2123,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -4242,6 +2157,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -4275,6 +2191,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -4308,6 +2225,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -4341,6 +2259,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -4374,6 +2293,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -4407,6 +2327,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -4440,6 +2361,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -4473,6 +2395,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -4506,6 +2429,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -4539,6 +2463,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -4572,6 +2497,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -4605,6 +2531,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -4638,6 +2565,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -4671,6 +2599,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -4704,6 +2633,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -4737,6 +2667,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -4769,6 +2700,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -4802,6 +2734,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -4835,6 +2768,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -5091,6 +3025,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -5124,6 +3059,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -5157,6 +3093,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -5190,6 +3127,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -5223,6 +3161,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -5262,6 +3201,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -5301,6 +3241,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -5358,6 +3299,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -5469,6 +3411,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -5514,6 +3457,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -5559,6 +3503,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -5604,6 +3549,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -5649,6 +3595,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -5694,6 +3641,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -5727,6 +3675,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -5784,6 +3733,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -5817,6 +3767,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -5850,6 +3801,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -5883,6 +3835,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -5916,6 +3869,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -5949,6 +3903,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -5982,6 +3937,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -6015,6 +3971,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -6048,6 +4005,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -6081,6 +4039,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -6114,6 +4073,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -6147,6 +4107,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -6180,6 +4141,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -6213,6 +4175,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -6246,6 +4209,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -6279,6 +4243,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -6324,6 +4289,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -6363,6 +4329,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -6396,6 +4363,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -6429,6 +4397,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -6462,6 +4431,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -6504,6 +4474,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -6536,6 +4507,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -6569,6 +4541,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -6602,6 +4575,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -6635,6 +4609,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -6667,6 +4642,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -6699,6 +4675,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -6732,6 +4709,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -6765,6 +4743,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -6798,6 +4777,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -6831,6 +4811,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -6864,6 +4845,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -6897,6 +4879,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -6930,6 +4913,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -6963,6 +4947,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -7002,6 +4987,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -7035,6 +5021,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -7170,6 +5157,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -7203,6 +5191,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -7235,6 +5224,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -7274,6 +5264,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -7319,6 +5310,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more airframes",
   "proven": false,
@@ -7352,6 +5344,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 0,
   "keep_reason": "more complete record",
   "proven": false,
@@ -7385,6 +5378,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 1,
   "keep_reason": "more complete record",
   "proven": false,
@@ -7418,6 +5412,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 1,
   "keep_reason": "more complete record",
   "proven": false,
@@ -7451,6 +5446,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 1,
   "keep_reason": "more complete record",
   "proven": false,
@@ -7483,6 +5479,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 1,
   "keep_reason": "more complete record",
   "proven": false,
@@ -7522,6 +5519,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 4,
   "keep_reason": "more complete record",
   "proven": false,
@@ -7555,6 +5553,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 4,
   "keep_reason": "more airframes",
   "proven": false,
@@ -7643,6 +5642,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 4,
   "keep_reason": "more complete record",
   "proven": false,
@@ -7676,6 +5676,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 5,
   "keep_reason": "more airframes",
   "proven": false,
@@ -7708,6 +5709,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 5,
   "keep_reason": "more complete record",
   "proven": false,
@@ -7741,6 +5743,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 6,
   "keep_reason": "more complete record",
   "proven": false,
@@ -7780,6 +5783,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 6,
   "keep_reason": "more complete record",
   "proven": false,
@@ -7813,6 +5817,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 8,
   "keep_reason": "more complete record",
   "proven": false,
@@ -7846,6 +5851,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 9,
   "keep_reason": "more airframes",
   "proven": false,
@@ -7903,6 +5909,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 11,
   "keep_reason": "more complete record",
   "proven": false,
@@ -7940,6 +5947,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 12,
   "keep_reason": "more airframes",
   "proven": false,
@@ -7998,6 +6006,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 12,
   "keep_reason": "more complete record",
   "proven": false,
@@ -8031,6 +6040,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 13,
   "keep_reason": "more complete record",
   "proven": false,
@@ -8064,6 +6074,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 14,
   "keep_reason": "more airframes",
   "proven": false,
@@ -8097,6 +6108,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 14,
   "keep_reason": "more airframes",
   "proven": false,
@@ -8136,6 +6148,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 23,
   "keep_reason": "more complete record",
   "proven": false,
@@ -8169,6 +6182,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 25,
   "keep_reason": "more airframes",
   "proven": false,
@@ -8290,6 +6304,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 28,
   "keep_reason": "more airframes",
   "proven": false,
@@ -8329,6 +6344,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 30,
   "keep_reason": "more airframes",
   "proven": false,
@@ -8368,6 +6384,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 30,
   "keep_reason": "more airframes",
   "proven": false,
@@ -8408,6 +6425,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 34,
   "keep_reason": "more airframes",
   "proven": false,
@@ -8441,6 +6459,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 35,
   "keep_reason": "more complete record",
   "proven": false,
@@ -8474,6 +6493,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 39,
   "keep_reason": "more complete record",
   "proven": false,
@@ -8519,6 +6539,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 40,
   "keep_reason": "more airframes",
   "proven": false,
@@ -8552,6 +6573,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 41,
   "keep_reason": "more complete record",
   "proven": false,
@@ -8585,6 +6607,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 44,
   "keep_reason": "more airframes",
   "proven": false,
@@ -8618,6 +6641,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 44,
   "keep_reason": "more complete record",
   "proven": false,
@@ -8651,6 +6675,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 47,
   "keep_reason": "more airframes",
   "proven": false,
@@ -8690,6 +6715,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 47,
   "keep_reason": "more airframes",
   "proven": false,
@@ -8723,6 +6749,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 47,
   "keep_reason": "more airframes",
   "proven": false,
@@ -8768,6 +6795,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 52,
   "keep_reason": "more airframes",
   "proven": false,
@@ -8801,6 +6829,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 54,
   "keep_reason": "more complete record",
   "proven": false,
@@ -8834,6 +6863,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 58,
   "keep_reason": "more complete record",
   "proven": false,
@@ -8867,6 +6897,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 68,
   "keep_reason": "more complete record",
   "proven": false,
@@ -8900,6 +6931,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 68,
   "keep_reason": "more airframes",
   "proven": false,
@@ -8933,6 +6965,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 70,
   "keep_reason": "more complete record",
   "proven": false,
@@ -8966,6 +6999,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 74,
   "keep_reason": "more airframes",
   "proven": false,
@@ -9011,6 +7045,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 78,
   "keep_reason": "more complete record",
   "proven": false,
@@ -9044,6 +7079,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 79,
   "keep_reason": "more complete record",
   "proven": false,
@@ -9077,6 +7113,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 82,
   "keep_reason": "more complete record",
   "proven": false,
@@ -9110,6 +7147,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 85,
   "keep_reason": "more airframes",
   "proven": false,
@@ -9143,6 +7181,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 87,
   "keep_reason": "more complete record",
   "proven": false,
@@ -9182,6 +7221,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 88,
   "keep_reason": "more complete record",
   "proven": false,
@@ -9215,6 +7255,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 91,
   "keep_reason": "more complete record",
   "proven": false,
@@ -9248,6 +7289,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 98,
   "keep_reason": "more complete record",
   "proven": false,
@@ -9281,6 +7323,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 104,
   "keep_reason": "more airframes",
   "proven": false,
@@ -9314,6 +7357,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 104,
   "keep_reason": "more airframes",
   "proven": false,
@@ -9347,6 +7391,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 110,
   "keep_reason": "more airframes",
   "proven": false,
@@ -9380,6 +7425,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 118,
   "keep_reason": "more airframes",
   "proven": false,
@@ -9431,6 +7477,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 120,
   "keep_reason": "more complete record",
   "proven": false,
@@ -9464,6 +7511,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 130,
   "keep_reason": "more complete record",
   "proven": false,
@@ -9515,6 +7563,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 132,
   "keep_reason": "more complete record",
   "proven": false,
@@ -9548,6 +7597,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 133,
   "keep_reason": "more complete record",
   "proven": false,
@@ -9581,6 +7631,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 134,
   "keep_reason": "more complete record",
   "proven": false,
@@ -9614,6 +7665,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 137,
   "keep_reason": "more complete record",
   "proven": false,
@@ -9647,6 +7699,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 140,
   "keep_reason": "more airframes",
   "proven": false,
@@ -9686,6 +7739,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 145,
   "keep_reason": "more airframes",
   "proven": false,
@@ -9719,6 +7773,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 146,
   "keep_reason": "more airframes",
   "proven": false,
@@ -9764,6 +7819,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 146,
   "keep_reason": "more airframes",
   "proven": false,
@@ -9797,6 +7853,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 156,
   "keep_reason": "more complete record",
   "proven": false,
@@ -9830,6 +7887,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 156,
   "keep_reason": "more complete record",
   "proven": false,
@@ -9863,6 +7921,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 157,
   "keep_reason": "more complete record",
   "proven": false,
@@ -9896,6 +7955,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 172,
   "keep_reason": "more airframes",
   "proven": false,
@@ -9929,6 +7989,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 173,
   "keep_reason": "more airframes",
   "proven": false,
@@ -9962,6 +8023,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 178,
   "keep_reason": "more complete record",
   "proven": false,
@@ -9995,6 +8057,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 182,
   "keep_reason": "more airframes",
   "proven": false,
@@ -10028,6 +8091,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 192,
   "keep_reason": "more complete record",
   "proven": false,
@@ -10061,6 +8125,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 195,
   "keep_reason": "more airframes",
   "proven": false,
@@ -10100,6 +8165,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 199,
   "keep_reason": "more airframes",
   "proven": false,
@@ -10133,6 +8199,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 200,
   "keep_reason": "more complete record",
   "proven": false,
@@ -10166,6 +8233,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 205,
   "keep_reason": "more complete record",
   "proven": false,
@@ -10199,6 +8267,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 209,
   "keep_reason": "more airframes",
   "proven": false,
@@ -10232,6 +8301,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 211,
   "keep_reason": "more airframes",
   "proven": false,
@@ -10265,6 +8335,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 216,
   "keep_reason": "more airframes",
   "proven": false,
@@ -10298,6 +8369,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 217,
   "keep_reason": "more airframes",
   "proven": false,
@@ -10337,6 +8409,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 220,
   "keep_reason": "more complete record",
   "proven": false,
@@ -10370,6 +8443,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 221,
   "keep_reason": "more airframes",
   "proven": false,
@@ -10421,6 +8495,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 222,
   "keep_reason": "more complete record",
   "proven": false,
@@ -10454,6 +8529,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 226,
   "keep_reason": "more complete record",
   "proven": false,
@@ -10487,6 +8563,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 229,
   "keep_reason": "more airframes",
   "proven": false,
@@ -10532,6 +8609,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 230,
   "keep_reason": "more complete record",
   "proven": false,
@@ -10565,6 +8643,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 231,
   "keep_reason": "more airframes",
   "proven": false,
@@ -10598,6 +8677,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 241,
   "keep_reason": "more complete record",
   "proven": false,
@@ -10631,6 +8711,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 250,
   "keep_reason": "more complete record",
   "proven": false,
@@ -10664,6 +8745,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 251,
   "keep_reason": "more airframes",
   "proven": false,
@@ -10697,6 +8779,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 252,
   "keep_reason": "more airframes",
   "proven": false,
@@ -10730,6 +8813,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 255,
   "keep_reason": "more complete record",
   "proven": false,
@@ -10763,6 +8847,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 260,
   "keep_reason": "more airframes",
   "proven": false,
@@ -11006,6 +9091,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 268,
   "keep_reason": "more airframes",
   "proven": false,
@@ -11039,6 +9125,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 269,
   "keep_reason": "more airframes",
   "proven": false,
@@ -11072,6 +9159,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 271,
   "keep_reason": "more airframes",
   "proven": false,
@@ -11148,6 +9236,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 281,
   "keep_reason": "more airframes",
   "proven": false,
@@ -11180,6 +9269,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 284,
   "keep_reason": "more airframes",
   "proven": false,
@@ -11213,6 +9303,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 285,
   "keep_reason": "more airframes",
   "proven": false,
@@ -11246,6 +9337,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 286,
   "keep_reason": "more airframes",
   "proven": false,
@@ -11278,6 +9370,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 290,
   "keep_reason": "more airframes",
   "proven": false,
@@ -11311,6 +9404,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 293,
   "keep_reason": "more airframes",
   "proven": false,
@@ -11356,6 +9450,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 297,
   "keep_reason": "more airframes",
   "proven": false,
@@ -11389,6 +9484,7 @@
   "shared_examples": []
  },
  {
+  "match_basis": "proximity",
   "distance_m": 297,
   "keep_reason": "more complete record",
   "proven": false,

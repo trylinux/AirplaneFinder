@@ -24,3 +24,146 @@ RELINK 37717->841 201
 DEL_LINK 37703 400
 RELINK 37719->841 201
 DEL_LINK 37705 400
+FOLD 37620->9560 409 {"operator_country": "VN", "aliases": ["A37", "A 37", "Dragonfly", "0475", "A37B", "Super Tweet", "SuperTweet", "T-37", "Tweet", "Tweety Bird", "TweetyBird", "A-37B"]}
+FOLD 37619->9563 409 {"operator_country": "VN"}
+FOLD 37617->9566 200 {"operator_country": "VN"}
+FOLD 37623->9562 409 {"operator_country": "US", "aliases": ["UH1", "UH 1", "Huey", "0372", "UH1H", "Cobra", "Huey Cobra", "HueyCobra", "Iroquois", "King Cobra", "KingCobra", "Sea Cobra", "SeaCobra", "Super Cobra", "SuperC
+DEL_AC 37617 200
+DEL_AC 37619 200
+DEL_AC 37620 200
+DEL_AC 37623 200
+RELINK 37621->646 201
+DEL_LINK 37607 200
+RELINK 37618->646 201
+DEL_LINK 37604 200
+RELINK 37616->646 201
+DEL_LINK 37602 200
+RELINK 37622->646 201
+DEL_LINK 37608 200
+DEL_MUS 6250 200
+FOLD_MUS 6239->103 200 {"access_type": "restricted"}
+FOLD 38120->5624 409 {"operator_country": "DO", "aliases": ["Super Tweet", "A37", "A37B", "Dragonfly", "SuperTweet", "T-37", "Tweet", "Tweety Bird", "TweetyBird", "A-37B", "FAD 3702", "FAD3702"], "description": "Dominican
+DEL_AC 38120 200
+RELINK 38119->103 201
+DEL_LINK 38105 200
+RELINK 38121->103 201
+DEL_LINK 38107 200
+DEL_MUS 6239 200
+FOLD_MUS 663->6143 200 {"website": "https://www.43airschool.com", "access_type": "appointment", "name": "43 Air School Impala Gate Guard -- Port Alfred"}
+FOLD 9927->37850 200 {"aliases": ["MB-326M", "MB326M", "Impala Mk1", "Impala", "Impala Mk I", "Impala Mk 1", "Atlas Impala", "Aermacchi MB-326M"], "description": "Ex-SAAF Impala on display at 43 Air School, a civilian fli
+DEL_AC 9927 200
+DEL_MUS 663 200
+FOLD_MUS 6222->1803 200 {"access_type": "restricted"}
+FOLD 37677->14137 409 {"operator_country": "GW", "aliases": ["Do28", "Do 28D-1", "Do28D1", "Skyservant", "Sky Servant", "Do.28D1", "J5AAC"]}
+DEL_AC 37677 200
+DEL_MUS 6222 200
+FOLD_MUS 6145->669 200 {"postal_code": "1961", "latitude": -26.348324, "longitude": 27.772903}
+FOLD 37845->9939 409 {"operator_country": "ZA", "aliases": ["Impala Mk I", "Impala Mk 1", "Impala Mk1", "Atlas Impala", "Aermacchi MB-326M", "Silver Falcons", "Impala", "MB-326M", "MB326M"]}
+DEL_AC 37845 200
+RELINK 37846->669 201
+DEL_LINK 37832 200
+DEL_MUS 6145 200
+FOLD_MUS 671->6144 200 {"website": "https://moth.org.za", "name": "Caprivi MOTH Shellhole Impala -- Randfontein"}
+FOLD 9942->37851 200 {"aliases": ["MB-326M", "MB326M", "Impala Mk1", "Impala", "Impala Mk I", "Impala Mk 1", "Atlas Impala", "Aermacchi MB-326M", "Aermacchi MB326M"], "description": "Pole-mounted at the Caprivi MOTH Shell
+DEL_AC 9942 200
+DEL_MUS 671 200
+FOLD_MUS 673->6224 200 {"name": "Denel Aviation Campus Cheetah Display -- Kempton Park"}
+FOLD 9945->37716 200 {"aliases": ["Cheetah R", "CheetahR", "Mirage III rebuild", "Cheetah", "Atlas Cheetah R", "Mirage", "Mirage III", "MirageIII"], "description": "The only reconnaissance Cheetah ever built, an Atlas Fli
+DEL_AC 9945 200
+DEL_MUS 673 200
+FOLD_MUS 672->6150 200 {"website": "https://chrysalisacademy.org.za", "access_type": "restricted", "name": "Chrysalis Academy Impala -- Muizenberg"}
+FOLD 9943->37849 200 {"aliases": ["MB-326M", "MB326M", "Impala Mk1", "Impala", "Impala Mk I", "Impala Mk 1", "Atlas Impala", "Aermacchi MB-326M"], "description": "Ex-SAAF Impala acquired privately and standing on the grou
+DEL_AC 9943 200
+DEL_MUS 672 200
+FOLD_MUS 6147->680 200 {"latitude": -28.752192, "longitude": 24.768988}
+FOLD 37848->9971 409 {"operator_country": "ZA", "aliases": ["Impala Mk I", "Impala Mk 1", "Impala Mk1", "Atlas Impala", "Aermacchi MB-326M", "Impala", "MB-326M", "MB326M"]}
+DEL_AC 37848 200
+DEL_MUS 6147 200
+FOLD_MUS 686->6146 200 {"access_type": "restricted", "name": "SANDF Military Academy Impala Display -- Saldanha"}
+FOLD 9979->37852 200 {"aliases": ["MB-326M", "MB326M", "Impala Mk1", "Impala", "Impala Mk I", "Impala Mk 1", "Atlas Impala", "Aermacchi MB-326M", "Aermacchi MB326M"], "description": "Displayed at the SANDF Military Academ
+DEL_AC 9979 200
+DEL_MUS 686 200
+FOLD_MUS 679->6151 200 {"website": "https://flylowveldaeroclub.co.za", "access_type": "appointment", "name": "Lowveld Aero Club Mirage -- Nelspruit"}
+FOLD 9969->37977 200 {"aliases": ["Mirage 3CZ", "Mirage3CZ", "Mirage", "Mirage III", "MirageIII", "Shahak", "Mirage IIICZ", "MirageIIICZ", "Mirage III CZ"], "description": "Ex-SAAF interceptor displayed at the Lowveld Aer
+DEL_AC 9969 200
+DEL_MUS 679 200
+FOLD_MUS 6139->697 200 {"postal_code": "0181", "latitude": -25.752041, "longitude": 28.23172, "access_type": "restricted"}
+FOLD 37975->10122 409 {"operator_country": "ZA"}
+DEL_AC 37975 200
+DEL_MUS 6139 200
+FOLD_MUS 511->6275 200 {"postal_code": "71950", "latitude": 2.6853, "longitude": 101.844, "name": "Royal Malaysian Air Force Museum -- Sendayan"}
+FOLD 8873->38052 200 {"description": "Collection of the former Muzium TUDM at RMAF Kuala Lumpur (Sungai Besi), which closed to the public in 2017 when the base was handed over for the Bandar Malaysia redevelopment. The ai
+FOLD 8891->38048 200 {"aliases": ["Twin Pioneer", "Twin Pin", "FM1001", "Pioneer", "TwinPin", "TwinPioneer", "Twin Pioneer CC.1"], "description": "Collection of the former Muzium TUDM at RMAF Kuala Lumpur (Sungai Besi), w
+DEL_AC 8873 200
+DEL_AC 8891 200
+RELINK 8864->6275 201
+DEL_LINK 8876 200
+RELINK 8865->6275 201
+DEL_LINK 8877 200
+RELINK 8866->6275 201
+DEL_LINK 8878 200
+RELINK 8861->6275 201
+DEL_LINK 8873 200
+RELINK 8875->6275 201
+DEL_LINK 8887 200
+RELINK 8876->6275 201
+DEL_LINK 8888 200
+RELINK 8878->6275 201
+DEL_LINK 8890 200
+RELINK 8880->6275 201
+DEL_LINK 8892 200
+RELINK 8888->6275 201
+DEL_LINK 8900 200
+RELINK 8889->6275 201
+DEL_LINK 8901 200
+RELINK 8867->6275 201
+DEL_LINK 8879 200
+RELINK 8868->6275 201
+DEL_LINK 8880 200
+RELINK 8862->6275 201
+DEL_LINK 8874 200
+RELINK 8863->6275 201
+DEL_LINK 8875 200
+RELINK 8879->6275 201
+DEL_LINK 8891 200
+RELINK 8871->6275 201
+DEL_LINK 8883 200
+RELINK 8872->6275 201
+DEL_LINK 8884 200
+RELINK 8870->6275 201
+DEL_LINK 8882 200
+RELINK 8874->6275 201
+DEL_LINK 8886 200
+RELINK 8877->6275 201
+DEL_LINK 8889 200
+RELINK 8886->6275 201
+DEL_LINK 8898 200
+RELINK 8881->6275 201
+DEL_LINK 8893 200
+RELINK 8885->6275 201
+DEL_LINK 8897 200
+RELINK 8860->6275 201
+DEL_LINK 8872 200
+RELINK 8869->6275 201
+DEL_LINK 8881 200
+RELINK 8892->6275 201
+DEL_LINK 8904 200
+RELINK 8893->6275 201
+DEL_LINK 8905 200
+RELINK 8890->6275 201
+DEL_LINK 8902 200
+RELINK 8882->6275 201
+DEL_LINK 8894 200
+RELINK 8883->6275 201
+DEL_LINK 8895 200
+RELINK 8884->6275 201
+DEL_LINK 8896 200
+RELINK 8887->6275 201
+DEL_LINK 8899 200
+RELINK 8894->6275 201
+DEL_LINK 8906 200
+RELINK 8895->6275 201
+DEL_LINK 8907 200
+RELINK 8896->6275 201
+DEL_LINK 8908 200
+DEL_MUS 511 200
