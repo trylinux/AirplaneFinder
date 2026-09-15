@@ -56,6 +56,85 @@ TRANSLITERATION = {
 # surname carries an accent, but the AIRCRAFT COMPANY wrote itself Breguet
 # — Breguet 19, Breguet Atlantic — and every aviation reference follows it.
 # An exception list is the honest way to hold that; a rule cannot infer it.
+# ── Class P: punctuation and spacing variants of ONE name ──────────────
+# The grouping below folds case and accents, which is what catches
+# "de Havilland" / "De Havilland". It does not fold punctuation, so
+# "Sud Aviation" and "Sud-Aviation" look like two companies to it.
+#
+# Curated rather than derived, because folding punctuation automatically
+# would merge two names that only look alike. In this catalogue:
+#
+#   Kitty Hawk (4)  builds Wright Flyer replicas
+#   Kittyhawk  (1)  is Kitty Hawk Corporation, whose Heaviside H2 is an eVTOL
+#   Skycraft   (2)  built the Scout ultralight
+#   Sky Craft  (1)  built the 446
+#
+# Those are four companies, not two. See REJECTED below.
+PUNCTUATION = {
+    "A.E.A.": "AEA",                    # Aerial Experiment Association
+    "R.E.P.": "REP",                    # Robert Esnault-Pelterie
+    "Bell Boeing": "Bell-Boeing",
+    "Boeing Stearman": "Boeing-Stearman",
+    "Brunner Winkle": "Brunner-Winkle",
+    "Call-Air": "CallAir",
+    "Lear Jet": "Learjet",
+    "PZL Bielsko": "PZL-Bielsko",
+    "PZL Mielec": "PZL-Mielec",
+    "PZL \u015awidnik": "PZL-\u015awidnik",
+    "Rand-Robinson": "Rand Robinson",
+    "Sud-Aviation": "Sud Aviation",
+    "TL Ultralight": "TL-Ultralight",
+    "WSK Mielec": "WSK-Mielec",
+    "WSK-PZL Mielec": "WSK PZL-Mielec",
+    # One genuine typo. Laister-Kauffman built the TG-4; the double-n is a
+    # slip on a single row. Every other near-spelling this catalogue holds
+    # turned out to be a real company -- see REJECTED.
+    "Laister-Kauffmann": "Laister-Kauffman",
+}
+
+# ── Class K: the case-only decisions, resolved ─────────────────────────
+# These are what the C review list asks a human for. The majority spelling
+# is the suggestion, and on acronyms the majority is simply wrong:
+#
+#   ERCO    Engineering and Research Corporation -- 18 "Erco" to 9 "ERCO"
+#   SOCATA  Societe de Construction d'Avions de Tourisme et d'Affaires
+#           -- 16 "Socata" to 10 "SOCATA"
+#   SAGEM   Societe d'Applications Generales d'Electricite et de Mecanique
+#
+# The rest keep the majority because the majority is also correct: Saab and
+# Soko are words rather than initials, "de Havilland" is the man's name, and
+# Let Kunovice is written as a word.
+CASE_DECISIONS = {
+    "De Havilland": "de Havilland",
+    "De Havilland Canada": "de Havilland Canada",
+    "Erco": "ERCO",
+    "Socata": "SOCATA",
+    "Sagem": "SAGEM",
+    "LET": "Let",
+    "Rotorway": "RotorWay",
+    "SAAB": "Saab",
+    "SOKO": "Soko",
+}
+
+# ── Deliberately NOT merged ────────────────────────────────────────────
+# Kept with reasons so the next pass does not re-derive them, and so an
+# edit-distance sweep is never trusted on its own. A naive one over this
+# catalogue proposes three merges and two of them destroy a real company.
+REJECTED = {
+    ("Convair", "Conair"): "Conair Aviation converted Trackers into Firecat "
+                           "water bombers. A real Canadian company, not a typo",
+    ("Beagle", "Eagle"): "Eagle Aircraft built the Delta Wing and EA-100. "
+                         "Beagle built the 206 and the A.61 Terrier",
+    ("Beechcraft", "Beecraft"): "Beecraft Inc. built the Honey Bee",
+    ("Kitty Hawk", "Kittyhawk"): "Kitty Hawk builds Wright Flyer replicas; "
+                                 "Kittyhawk Corporation built the Heaviside H2 eVTOL",
+    ("Skycraft", "Sky Craft"): "Skycraft built the Scout, Sky Craft the 446",
+    ("PZL-Mielec", "WSK-Mielec"): "the same factory under its names across "
+                                  "eras. Both are correct for the airframes "
+                                  "filed under them; collapsing them would "
+                                  "erase when each was built",
+}
+
 ACCENT_EXCEPTIONS = {
     "breguet": "Breguet",
 }
@@ -122,6 +201,8 @@ def main():
         form_list = list(forms)
         if len({f.lower() for f in form_list}) == 1:
             # C -- case only. Never automatic.
+            if any(f in CASE_DECISIONS for f in form_list):
+                continue        # settled in CASE_DECISIONS; emitted below
             majority = forms.most_common(1)[0][0]
             review.append((key, dict(forms), majority,
                            "case only: acronym or name? majority shown as a suggestion"))
@@ -137,6 +218,14 @@ def main():
     for wrong, right in TRANSLITERATION.items():
         if counts.get(wrong):
             canonical[wrong] = (right, "T", "German/Polish rendering of a Russian bureau name")
+
+    for wrong, right in PUNCTUATION.items():
+        if counts.get(wrong):
+            canonical[wrong] = (right, "P", "punctuation or spacing variant of one name")
+
+    for wrong, right in CASE_DECISIONS.items():
+        if counts.get(wrong):
+            canonical[wrong] = (right, "K", "resolved case decision")
 
     plan = []
     for a in aircraft:
@@ -164,8 +253,11 @@ def main():
         "",
         f"  T  {by_class['T']:4,}  transliteration of a Russian bureau name",
         f"  D  {by_class['D']:4,}  accents restored",
+        f"  P  {by_class['P']:4,}  punctuation or spacing variant of one name",
+        f"  K  {by_class['K']:4,}  resolved case decision",
         f"     {len(plan):4,}  rows in the plan",
         f"  C  {len(review):4,}  names needing a decision -> manufacturer_review.tsv",
+        f"  -  {len(REJECTED):4,}  lookalikes deliberately NOT merged (see REJECTED)",
     ])
     (args.out_dir / "manufacturer_summary.txt").write_text(summary + "\n", encoding="utf-8")
     print(summary)
