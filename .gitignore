@@ -13,3 +13,6 @@ scripts/*_review.tsv
 scripts/*_summary.txt
 scripts/*_conflicts.tsv
 scripts/applied_*_ids.txt
+
+# Cached API payloads pulled by the planning scripts.
+scripts/cache/
