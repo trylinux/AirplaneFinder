@@ -152,9 +152,21 @@ Reports the share of airframes currently inheriting a write-up and ranks the
 uncovered designations by how many pages each would light up. `--json` emits the
 worklist ready to seed a research run.
 
-Two cautions on that list. It does not yet model `manufacturer_scope`, so its
-number reads slightly high where a scoped type exists. And a designation near the
-top may be an **alias of something already written** rather than a gap: `AT-6` and
-`SNJ` are the T-6, `CL-13` is the Canadair F-86, `Su-17` is the Su-22, and a Bell
-`205` is a commercial UH-1. Resolve it first before writing a fourth description
-of the same aeroplane.
+That list ranks **designation strings**, not aircraft, and the difference is
+expensive. Run every candidate through `type_family.py` before researching it:
+
+    python3 scripts/type_family.py --worklist 40
+    python3 scripts/type_family.py --family C-45 AT-11 Expeditor SNB
+
+It flags three things the raw worklist cannot. A designation already covered
+through an alias (`AT-6` is the T-6; `CL-13` is the Canadair F-86; `Su-17` is
+the Su-22; a Bell `205` is a commercial UH-1). A **placeholder** — `Aircraft`
+(130 airframes) and `Light aircraft` (72) are rows recording that nobody knew
+what the aircraft was, and want a data pass, not a write-up. And a **family
+split across several designations**: `DHC-1` (55) and `Chipmunk` (46) are one
+trainer; `C-45`, `AT-11`, `Expeditor` and `SNB` are 111 Beech Model 18s. One
+record plus aliases covers each of those. Writing them one designation at a
+time is the same description three and four times over.
+
+It also prints the builder histogram, which is where the `manufacturer_scope`
+decision actually lives — see rule 3 above.
