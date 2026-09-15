@@ -36,7 +36,9 @@ and never rewrites a row. `--only D` restricts a run to one class.
 | `E` | variant is `[mark] + name` and `model_name` is **empty** | `31-55` + `A Senior Skyrocket` → variant `A`, model_name `Senior Skyrocket` | yes |
 | `A` | the name would overwrite a different `model_name` | `47` + `J-2 Ranger`, model_name `Sioux` | **no — review** |
 
-Against the live catalog: **250 rows in the plan, 154 to review.**
+Against the live catalog the plan is now empty and **103 rows remain for
+review**, down from 463 — the classes below plus two classifier fixes and one
+round of factual corrections took care of the rest.
 
 Class `E` is the one that actually moves a name out of the variant column. `A+`
 and `D` only work when `model_name` already holds the name, so on their own they
@@ -73,6 +75,20 @@ way, deciding which site actually holds the airframe.
 `91`, which is worse than doing nothing. `type`, `model`, `series`, `mark`,
 `variant`, `version`, `class` and `number` disqualify a row from `A+` and send
 it to review.
+
+**A roman numeral can carry a mark suffix.** `XVIe`, `VIIIc`, `IIIa`, `XIIa`,
+`Vc` — the first version matched `XVI` but not `XVIe`, so 15 correct Spitfire,
+Hurricane and Ki-43 rows went to review. The fix has to validate the numeral
+and cap the suffix at two letters: the obvious `^[IVXLC]+[a-z]*$` reads
+**Crane** as roman `C` plus "rane", **Champ** as `C` plus "hamp" and **Moth**
+as `M` plus "oth", quietly demoting three real type names to marks.
+
+**Names are compared accent- and punctuation-insensitively.** `Cmelak` and
+`Čmelák` are one name, as are `Hummingbird` / `Humming Bird` and `Gyrocopter` /
+`Gyro-Copter`. Unfolded, each pair reads as a name `model_name` cannot vouch
+for and lands in review — 24 rows of pure noise. Folding is only ever used to
+recognise the SAME name; it never merges two different ones, so `Crane` vs
+`Bobcat` still needs a person.
 
 **Upper-case tokens are variant CODES, not names.** `AJSF` on a Saab 37, `GCBC`
 on a Citabria 7, `A-II`, `SIGINT` on an Atlantic — an earlier version of this

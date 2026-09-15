@@ -208,3 +208,69 @@ def test_split_helper_reports_no_name_for_pure_marks():
     assert split_mark_and_name("Mk I") == ("", "")
     assert split_mark_and_name("AJSF") == ("", "")
     assert split_mark_and_name("A Senior Skyrocket") == ("A", "Senior Skyrocket")
+
+
+# ── roman marks with a lowercase suffix ──────────────────────────────
+
+@pytest.mark.parametrize("tok", ["XVIe", "VIIIc", "IIIa", "XIIa", "Vc", "XIVe", "trop"])
+def test_british_mark_suffixes_are_marks(tok):
+    """A Spitfire LF Mk XVIe and a Hurricane XIIa are correctly written. The
+    first version's roman test matched XVI but not XVIe, so 15 correct rows
+    were routed to review."""
+    assert is_mark_token(tok) is True
+
+
+@pytest.mark.parametrize("tok", ["Crane", "Champ", "Moth", "Iskra", "Delfin",
+                                 "Cirrus", "Magister", "Caravelle", "Ranger", "Dakota"])
+def test_type_names_are_not_read_as_roman_numerals(tok):
+    """The trap in the obvious fix. "^[IVXLC]+[a-z]*$" reads Crane as roman C
+    plus "rane", Champ as C plus "hamp", Moth as M plus "oth" — three real
+    names silently demoted to marks. The numeral must validate and the
+    suffix cap at two letters."""
+    assert is_mark_token(tok) is False
+
+
+@pytest.mark.parametrize("model,variant,model_name", [
+    ("Spitfire", "LF Mk XVIe", "Spitfire"),
+    ("Spitfire", "FR Mk XIVe", "Spitfire"),
+    ("Spitfire", "LF Mk Vc trop", "Spitfire"),
+    ("Hurricane", "XIIa", "Hurricane"),
+    ("Ki-43", "IIIa", "Hayabusa"),
+])
+def test_mark_only_variants_are_left_alone(model, variant, model_name):
+    assert classify(model, variant, model_name)[0] is None
+
+
+# ── accent- and punctuation-insensitive name comparison ──────────────
+
+@pytest.mark.parametrize("variant,model_name", [
+    ("Cmelak", "Čmelák"),
+    ("Pucara", "Pucará"),
+    ("Blanik", "Blaník"),
+    ("Brigadyr", "Brigadýr"),
+    ("Hummingbird", "Humming Bird"),
+    ("Gyrocopter", "Gyro-Copter"),
+])
+def test_a_respelled_name_is_a_duplicate_not_a_decision(variant, model_name):
+    """These need no judgement: the variant is the same name as model_name,
+    just unaccented or re-spaced. Unfolded they read as an unvouched-for name
+    and land in the review file — 24 rows of pure noise."""
+    cls, patch, _ = classify("X-1", variant, model_name)
+    assert cls == "D" and patch == {"variant": None}
+
+
+@pytest.mark.parametrize("variant,model_name,rest", [
+    ("A Cmelak", "Čmelák", "A"),
+    ("Rhonlerche II", "Rhönlerche", "II"),
+    ("G Gyrocopter", "Gyro-Copter", "G"),
+])
+def test_a_respelled_name_beside_a_mark_keeps_the_mark(variant, model_name, rest):
+    cls, patch, _ = classify("X-1", variant, model_name)
+    assert cls == "A+" and patch == {"variant": rest}
+
+
+def test_folding_does_not_merge_two_different_names():
+    """Folding must not become a fuzzy match. Crane and Bobcat are both real
+    names for the T-50 and the row still needs a person."""
+    assert classify("T-50", "Crane", "Bobcat")[0] == "A"
+    assert classify("47", "J-2 Ranger", "Sioux")[0] == "A"

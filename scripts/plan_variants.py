@@ -37,6 +37,7 @@ import argparse
 import json
 import re
 import sys
+import unicodedata
 from collections import Counter
 from pathlib import Path
 
@@ -44,9 +45,22 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from airplane_api import AirplaneClient, ApiError  # noqa: E402
 
 _MARK_WORD = re.compile(r"^(?:mk|mark|srs|series|ser)\.?$", re.I)
-_ROMAN = re.compile(r"^[IVXLC]+$")
+# A STRICT roman numeral, optionally carrying the one or two lowercase letters
+# British marks append: XVIe, VIIIc, IIIa, XIIa, Vc.
+#
+# Strictness is the whole point. "^[IVXLC]+[a-z]*$" reads "Crane" as roman C
+# plus "rane", "Champ" as C plus "hamp" and "Moth" as M plus "oth" -- turning
+# three real type names into marks. Validating the numeral and capping the
+# suffix at two letters keeps those out.
+_ROMAN = re.compile(r"^M{0,3}(?:CM|CD|D?C{0,3})(?:XC|XL|L?X{0,3})(?:IX|IV|V?I{0,3})[a-z]{0,2}$")
+
+
+def _is_roman(tok):
+    """True for a real roman numeral, with or without a mark suffix."""
+    head = tok.rstrip("abcdefghijklmnopqrstuvwxyz")
+    return bool(head) and bool(_ROMAN.fullmatch(tok))
 _NAMEY = re.compile(r"^[A-Za-z][A-Za-z\-]{3,}$")
-_SUFFIX_WORDS = {"bis", "ter", "uti", "utl", "kai"}
+_SUFFIX_WORDS = {"bis", "ter", "uti", "utl", "kai", "trop"}
 
 # Generic designator words. These look like names and often DO appear in
 # model_name, which makes the A+ rule fire and strip them -- turning
@@ -72,7 +86,7 @@ def is_mark_token(tok: str) -> bool:
     core = tok.strip(".-")
     if not core:
         return True
-    if _MARK_WORD.match(core) or _ROMAN.match(core):
+    if _MARK_WORD.match(core) or _is_roman(core):
         return True
     if core.lower() in _SUFFIX_WORDS:
         return True
@@ -81,6 +95,18 @@ def is_mark_token(tok: str) -> bool:
     if core.isupper() and len(core) <= 6:       # AJSF, GCBC, TF, KC, SIGINT
         return True
     return len(core) <= 3                       # A, EJ, bis-length suffixes
+
+
+def fold_name(s):
+    """Compare names without being defeated by an accent, a space or a hyphen.
+
+    "Cmelak" and "Čmelák" are one name; so are "Hummingbird" and "Humming
+    Bird", "Gyrocopter" and "Gyro-Copter". Unfolded, each pair reads as a name
+    in the variant that model_name cannot vouch for, and 24 rows needing no
+    decision at all end up in the review file.
+    """
+    s = unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z0-9]+", "", s.lower())
 
 
 def split_mark_and_name(variant):
@@ -122,7 +148,7 @@ def classify(model, variant, model_name):
     variant = tidy
 
     # D -- the variant IS the type name, and model_name already holds it.
-    if model_name and variant.lower() == model_name.lower():
+    if model_name and fold_name(variant) == fold_name(model_name):
         return "D", {"variant": None}, f"variant duplicates model_name {model_name!r}"
 
     # B -- the variant restates the model. "A-4" + "A-4KU" -> "KU".
@@ -142,7 +168,7 @@ def classify(model, variant, model_name):
     # not a name plus a mark.
     if (model_name
             and not any(t.lower() in _GENERIC for t in namey)
-            and all(t.lower() in model_name.lower() for t in namey)):
+            and all(fold_name(t) in fold_name(model_name) for t in namey)):
         rest = " ".join(t for t in toks if t not in namey).strip()
         return "A+", {"variant": rest or None}, (
             f"name {' '.join(namey)!r} already in model_name {model_name!r}"
