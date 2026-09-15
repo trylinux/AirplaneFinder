@@ -94,6 +94,51 @@ CONFIRMED = [
     ("205", "Bell", "UH-1", "", "Bell's commercial number for the UH-1D/H"),
     ("214", "Bell", "UH-1", "", "Bell's enlarged single-engine Huey"),
     ("HU-1", "", "UH-1", "", "the Huey's original designation, and where the nickname came from"),
+
+    # ── Batch families 01 (Sept 2026). Each of these designations was near
+    # the top of the coverage worklist in its own right, and each is another
+    # name for the aeroplane written alongside it. See
+    # data/aircraft_types/BATCH_FAMILIES_01_NOTES.md. ──
+
+    # Beech Model 18. The AT-11's glazed bombardier nose and bomb bay make it
+    # look unlike a C-45, but it is the same airframe and the write-up says so.
+    ("AT-11",     "", "C-45", "", "the Kansan bombing and navigation trainer"),
+    ("Expeditor", "", "C-45", "", "the C-45's name, recorded as the model"),
+    ("SNB",       "", "C-45", "", "US Navy designation for the Model 18"),
+    # Scoped because "Model 18" is also the Lockheed Lodestar, and there are
+    # 6 of those in the collection to 5 Beeches. "Beech" prefix-matches both
+    # "Beechcraft" and "Beech Aircraft".
+    ("Model 18",  "Beech", "C-45", "", "the civil designation of the C-45"),
+
+    # Stearman Kaydet. One aeroplane, Army and Navy designations, differing
+    # mainly in engine. Left unscoped on purpose: Boeing, Boeing-Stearman and
+    # Stearman all appear in the data for the same aircraft.
+    ("N2S",   "", "PT-17", "", "US Navy designation for the Kaydet"),
+    ("PT-13", "", "PT-17", "", "the Lycoming-engined Kaydet"),
+
+    ("Chipmunk", "", "DHC-1", "", "the DHC-1's name, recorded as the model"),
+
+    # Sikorsky S-55. The Westland Whirlwind is the largest group of the six
+    # and is the British licence-built S-55, re-engined to a turbine in the
+    # later marks -- the write-up covers that explicitly.
+    ("Whirlwind", "", "H-19", "", "Westland's licence-built S-55"),
+    ("S-55",  "Sikorsky", "H-19", "", "Sikorsky's own number for the H-19"),
+    ("UH-19", "", "H-19", "", "the 1962 redesignation"),
+    ("HO4S",  "", "H-19", "", "US Navy designation for the S-55"),
+    ("WS-55", "", "H-19", "", "Westland's own number for the Whirlwind"),
+    ("HRS",   "", "H-19", "", "US Marine Corps designation for the S-55"),
+
+    # Bell 206. Two scoped rows for one designation: the unique key is
+    # (match_key, scope), so Bell and Agusta-Bell can each have their own,
+    # and "Agusta-Bell" does not prefix-match "Bell". Unscoped "206" would
+    # take in 5 Cessna 206s and 2 Beagle 206s.
+    ("206", "Bell",        "OH-58", "", "the civil JetRanger"),
+    ("206", "Agusta-Bell", "OH-58", "", "Agusta's licence-built JetRanger"),
+
+    # Sea King. Sikorsky designed it, Westland built most of the ones in
+    # this collection.
+    ("SH-3", "", "Sea King", "", "the US Navy Sea King"),
+    ("S-61", "", "Sea King", "", "Sikorsky's own number for the Sea King"),
 ]
 
 # Real relationships that are NOT the same aeroplane. Each of these would
