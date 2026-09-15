@@ -266,7 +266,8 @@
         Resolution prefers an exact <code>model</code>+<code>variant</code> record, then falls back to a
         <code>variant</code>-less <strong>base</strong> record. Most entries should be base records — one
         <code>UH-1</code> serves every UH-1 — and a variant record is worth adding only when that variant
-        genuinely needs its own text.</p>
+        genuinely needs its own text. Below both tiers sits the alias tier described next, so a real record
+        always wins over an alias of the same specificity.</p>
 
         <p class="doc-text"><strong>manufacturer_scope</strong> restricts a type to airframes whose
         manufacturer matches, and a scoped type never applies to one it does not. Set it only where an
@@ -274,6 +275,19 @@
         Pitts biplane; <code>47</code> and <code>737</code> are bare numbers). Matching is normalized prefix
         in either direction, so <code>Bell</code> accepts <code>Bell Helicopter</code>. Scoping an ordinary
         type is a mistake — it strips the write-up from every licence-built airframe.</p>
+
+        <p class="doc-text"><strong>aliases</strong> are alternate designations that reach the same record.
+        Aviation gives one aeroplane several names — a T-6 Texan is also an <code>AT-6</code> and an
+        <code>SNJ</code>, a Canadair F-104 is a <code>CF-104</code>, a Polish MiG-15 is a <code>Lim-2</code> —
+        and the catalog records whichever one is painted on the airframe. An alias is a second match key
+        pointing at an existing type: no aircraft row changes and no text is duplicated. Send
+        <code>aliases</code> as a list of strings, or of
+        <code>{"designation": "204", "manufacturer_scope": "Bell"}</code> objects. The list you send
+        <em>replaces</em> the current one, so drop an alias by PATCHing the list without it.
+        A bare-number alias without a scope is refused — unscoped <code>204</code> would attach the UH-1
+        write-up to every airframe spelled 204. An alias may not shadow a real type or another type's alias,
+        and ranks below a real record of the same specificity, so writing an actual <code>Su-17</code> type
+        later supersedes the alias pointing Su-17 at the Su-22 without anyone deleting it.</p>
 
         <p class="doc-text">Uniqueness is <code>(designation, manufacturer_scope)</code>. A second record for
         the same pair returns <code>409</code> with <code>existing_id</code>, so a repeated POST is safe to
@@ -306,7 +320,7 @@
                 <code>/api/v1/aircraft-types/resolve</code>
                 <span class="badge status-in_storage">public</span>
             </div>
-            <p>Ask what a designation would inherit, without writing anything. Returns <code>resolved</code> (the type or null), <code>matched_on</code> (<code>variant</code>, <code>base</code> or null), <code>match_key</code> and <code>scoped</code>.</p>
+            <p>Ask what a designation would inherit, without writing anything. Returns <code>resolved</code> (the type or null), <code>matched_on</code> (<code>variant</code>, <code>base</code> or null), <code>matched_via_alias</code> (the alias it came in by, or null), <code>match_key</code> and <code>scoped</code>.</p>
             <table class="param-table">
                 <tr><td><code>model</code></td><td>Designation, e.g. <code>T-33</code> (required)</td></tr>
                 <tr><td><code>variant</code></td><td>e.g. <code>A</code> (optional)</td></tr>
@@ -327,6 +341,7 @@
                 <tr><td><code>display_name</code></td><td>Heading, e.g. <code>Lockheed T-33 Shooting Star</code> (required)</td></tr>
                 <tr><td><code>description</code></td><td>The write-up. Separate paragraphs with a blank line (<code>\n\n</code>) (required)</td></tr>
                 <tr><td><code>manufacturer_scope</code></td><td>Restrict to one builder. Leave unset unless the designation string is genuinely ambiguous</td></tr>
+                <tr><td><code>aliases</code></td><td>Alternate designations reaching this same write-up, e.g. <code>["AT-6", "SNJ"]</code>. Replaces the current list</td></tr>
                 <tr><td><code>manufacturer</code></td><td>Original designer, shown as provenance only</td></tr>
                 <tr><td><code>model_name</code>, <code>also_built_by</code>, <code>origin_country</code></td><td>Type name (<code>Shooting Star</code>), licence builders, ISO 3166-1 alpha-2 country of design</td></tr>
                 <tr><td><code>aircraft_type</code></td><td><code>fixed_wing</code> (default), <code>rotary_wing</code>, <code>lighter_than_air</code>, <code>spacecraft</code>, <code>missile_rocket</code></td></tr>

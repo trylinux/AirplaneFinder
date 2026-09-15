@@ -41,7 +41,7 @@ from models import (
     Museum, Aircraft, AircraftAlias, AircraftMuseum, AircraftFact, ZipCode, haversine,
     UserMuseumAssignment, UserCountryAssignment,
     AircraftTemplate, AircraftTemplateAlias,
-    AircraftType, type_match_key,
+    AircraftType, AircraftTypeAlias, type_match_key,
     join_designation,
 )
 from geocoder import resolve_location
@@ -3118,6 +3118,67 @@ def _coerce_type_payload(data):
     return values, None
 
 
+def _apply_type_aliases(t, raw):
+    """Replace a type's alias set from an API payload. Returns an error
+    string, or None.
+
+    Replace rather than merge, matching how aircraft aliases already behave
+    on this API: a caller that sends the list owns the list, so removing an
+    alias is a PATCH with it left out rather than a second endpoint.
+
+    Accepts plain strings ("AT-6") or objects
+    ({"designation": "204", "manufacturer_scope": "Bell"}). A bare-number
+    alias without a scope is refused outright -- "204" unscoped would
+    silently attach the UH-1 write-up to every airframe in the collection
+    whose model is spelled 204, and that failure is invisible on the page
+    that suffers it.
+    """
+    if not isinstance(raw, list):
+        return "aliases must be a list."
+    parsed = []
+    seen = set()
+    for entry in raw:
+        if isinstance(entry, str):
+            designation, scope = entry.strip(), ""
+        elif isinstance(entry, dict):
+            designation = str(entry.get("designation") or "").strip()
+            scope = str(entry.get("manufacturer_scope") or "").strip()
+        else:
+            return "each alias must be a string or an object with a designation."
+        key = type_match_key(designation)
+        if not key:
+            return "each alias needs a designation with at least one letter or digit."
+        if key.isdigit() and not scope:
+            return (f"alias '{designation}' is a bare number and needs a "
+                    f"manufacturer_scope, or it will match unrelated aircraft.")
+        if (key, scope) in seen:
+            continue
+        seen.add((key, scope))
+        parsed.append((designation, key, scope))
+
+    # An alias may not shadow a real type, nor another type's alias. Both
+    # would leave resolution picking between two answers for one string.
+    for designation, key, scope in parsed:
+        clash = AircraftType.query.filter_by(match_key=key,
+                                             manufacturer_scope=scope).first()
+        if clash and clash.id != t.id:
+            return (f"alias '{designation}' is already a type of its own "
+                    f"(id {clash.id}, {clash.display_name}).")
+        owned = AircraftTypeAlias.query.filter_by(match_key=key,
+                                                  manufacturer_scope=scope).first()
+        if owned and owned.type_id != t.id:
+            return (f"alias '{designation}' already points at type "
+                    f"{owned.type_id}.")
+
+    t.aliases.clear()
+    db.session.flush()
+    for designation, key, scope in parsed:
+        a = AircraftTypeAlias(designation=designation, match_key=key,
+                              manufacturer_scope=scope)
+        t.aliases.append(a)
+    return None
+
+
 def _count_inheriting_airframes(t):
     """How many airframes currently inherit this type's write-up.
 
@@ -3208,7 +3269,7 @@ def api_aircraft_type_resolve():
     # Optional, but a scoped type cannot be resolved without it -- so the
     # admin preview should always pass the manufacturer it has.
     manufacturer = request.args.get("manufacturer", "").strip() or None
-    t = AircraftType.resolve_for(model, variant, manufacturer)
+    t, alias = AircraftType.resolve_detail_for(model, variant, manufacturer)
     return jsonify({
         "model": model,
         "variant": variant,
@@ -3216,6 +3277,9 @@ def api_aircraft_type_resolve():
         "match_key": type_match_key(model, variant),
         "resolved": t.to_dict() if t else None,
         "matched_on": (None if not t else ("base" if t.is_base_type else "variant")),
+        # Which door it came in by. An editor checking why a CF-104 shows
+        # the F-104 write-up needs to see the alias, not just the winner.
+        "matched_via_alias": alias.to_dict() if alias else None,
         "scoped": bool(t and t.manufacturer_scope),
     })
 
@@ -3262,6 +3326,12 @@ def api_create_aircraft_type():
                      slug=_unique_type_slug(model, variant, scope=scope), **values)
     t.created_by = _get_effective_user().id
     db.session.add(t)
+    if "aliases" in data:
+        db.session.flush()
+        err = _apply_type_aliases(t, data["aliases"])
+        if err:
+            db.session.rollback()
+            return jsonify({"error": err}), 400
     _increment_contribution()
     db.session.commit()
     user = _get_effective_user()
@@ -3320,6 +3390,12 @@ def api_update_aircraft_type(type_id):
         t.match_key = key
         t.manufacturer_scope = scope
         t.slug = _unique_type_slug(t.model, t.variant, exclude_id=type_id, scope=scope)
+
+    if "aliases" in data:
+        err = _apply_type_aliases(t, data["aliases"])
+        if err:
+            db.session.rollback()
+            return jsonify({"error": err}), 400
 
     _increment_contribution()
     db.session.commit()

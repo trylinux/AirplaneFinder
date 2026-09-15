@@ -635,6 +635,12 @@ class AircraftType(db.Model):
                             name="uq_type_match"),
     )
 
+    # Alternate designations that reach this same write-up. See
+    # AircraftTypeAlias -- the T-6 record answers to AT-6 and SNJ through
+    # these, without 45 near-duplicate write-ups existing to say so.
+    aliases = db.relationship("AircraftTypeAlias", back_populates="aircraft_type_record",
+                              cascade="all, delete-orphan", lazy="selectin")
+
     # Display metadata. manufacturer here is the ORIGINAL designer, shown as
     # provenance; an individual airframe keeps its own builder, so a Fuji
     # UH-1H still reads "Fuji" in its own spec table.
@@ -705,17 +711,42 @@ class AircraftType(db.Model):
         Priority, highest first:
           1. exact model+variant, scoped to this manufacturer
           2. exact model+variant, unscoped
-          3. base model, scoped to this manufacturer
-          4. base model, unscoped
+          3. exact model+variant reached through an ALIAS (scoped, then not)
+          4. base model, scoped to this manufacturer
+          5. base model, unscoped
+          6. base model reached through an ALIAS (scoped, then not)
+
+        Two rules shape that order. A more specific designation always
+        beats a less specific one, because an F-104G write-up is a better
+        answer than the F-104 one. And at the same specificity a real
+        record beats an alias, so writing an actual "Su-17" type later
+        quietly supersedes the alias pointing Su-17 at the Su-22 without
+        anyone having to delete it.
 
         A type whose manufacturer_scope does not match is excluded outright
         rather than demoted -- that is the whole point of scoping it, and
         without the exclusion a Pitts S-2 would still fall through to the
-        Grumman write-up.
+        Grumman write-up. An alias carries its own scope for the same
+        reason (alias "204" means a Bell, not any airframe spelled 204),
+        AND the type it points at must still admit the manufacturer: an
+        alias is a second door into a type, never a way around its scope.
 
-        One indexed IN() over at most two keys, so the page costs a single
-        cheap query.
+        Two indexed IN() queries over at most two keys each, so the page
+        still costs a pair of cheap lookups.
         """
+        best = cls._resolve_candidates(model, variant, manufacturer,
+                                       published_only)
+        if not best:
+            return None
+        return min(best, key=lambda triple: triple[0])[1]
+
+    @classmethod
+    def _resolve_candidates(cls, model, variant=None, manufacturer=None,
+                            published_only=True):
+        """Every type that could answer for this designation, as
+        (rank, type, alias_or_None). Shared by resolve_for() and
+        resolve_detail_for() so the ranking rule lives in exactly one
+        place."""
         keys = []
         exact = type_match_key(model, variant)
         base = type_match_key(model, None)
@@ -724,21 +755,54 @@ class AircraftType(db.Model):
         if base and base not in keys:
             keys.append(base)
         if not keys:
-            return None
+            return []
 
         q = cls.query.filter(cls.match_key.in_(keys))
         if published_only:
             q = q.filter(cls.is_published.is_(True))
 
-        best, best_rank = None, None
+        # (key position, alias?, unscoped?) -- lower sorts better.
+        candidates = []
         for t in q.all():
             if not manufacturer_matches(t.manufacturer_scope, manufacturer):
                 continue
-            # Lower sorts better: key position first, then scoped over unscoped.
-            rank = (keys.index(t.match_key), 0 if t.manufacturer_scope else 1)
-            if best_rank is None or rank < best_rank:
-                best, best_rank = t, rank
-        return best
+            candidates.append(((keys.index(t.match_key), 0,
+                                0 if t.manufacturer_scope else 1), t, None))
+
+        aq = (AircraftTypeAlias.query
+              .filter(AircraftTypeAlias.match_key.in_(keys))
+              .join(cls, AircraftTypeAlias.type_id == cls.id))
+        if published_only:
+            aq = aq.filter(cls.is_published.is_(True))
+        for a in aq.all():
+            if not manufacturer_matches(a.manufacturer_scope, manufacturer):
+                continue
+            target = a.aircraft_type_record
+            if target is None:
+                continue
+            if not manufacturer_matches(target.manufacturer_scope, manufacturer):
+                continue
+            candidates.append(((keys.index(a.match_key), 1,
+                                0 if a.manufacturer_scope else 1), target, a))
+
+        return candidates
+
+    @classmethod
+    def resolve_detail_for(cls, model, variant=None, manufacturer=None,
+                           published_only=True):
+        """resolve_for, plus HOW it matched: (type, alias_or_None).
+
+        The admin preview and the API's /resolve need to say "this landed
+        on the T-6 write-up *through the AT-6 alias*", which is the one
+        thing a bare type object cannot tell you -- and the thing an editor
+        most needs to see before trusting the match.
+        """
+        best = cls._resolve_candidates(model, variant, manufacturer,
+                                       published_only)
+        if not best:
+            return None, None
+        _rank, t, alias = min(best, key=lambda triple: triple[0])
+        return t, alias
 
     def to_dict(self):
         def _num(v):
@@ -752,6 +816,7 @@ class AircraftType(db.Model):
             "match_key": self.match_key,
             "is_base_type": self.is_base_type,
             "manufacturer_scope": self.manufacturer_scope or None,
+            "aliases": [a.to_dict() for a in sorted(self.aliases, key=lambda a: a.designation)],
             "display_name": self.display_name,
             "manufacturer": self.manufacturer,
             "model_name": self.model_name,
@@ -779,6 +844,71 @@ class AircraftType(db.Model):
             "source_url": self.source_url,
             "wikipedia_url": self.wikipedia_url,
             "is_published": bool(self.is_published),
+        }
+
+
+
+class AircraftTypeAlias(db.Model):
+    """An alternate designation that resolves to an existing AircraftType.
+
+    The same aeroplane is catalogued under several names, and the catalogue
+    records whichever one is painted on the airframe: 129 Texans are "T-6",
+    but the Navy's are "SNJ" and the trainer command's are "AT-6"; a
+    Canadair-built F-104 is a "CF-104"; a licence-built MiG-15 in Poland is
+    a "Lim-2". Those are not different aircraft, so they should not want
+    different write-ups -- but they are different designation STRINGS, so
+    match_key cannot see through them.
+
+    An alias is simply a second match_key pointing at a type. It changes no
+    aircraft record and adds no text; it widens what one write-up answers
+    to. That is far cheaper than the alternative: 45 aliases reach ~850
+    airframes that 45 newly researched type records would otherwise have to
+    cover one by one.
+
+    It carries its own manufacturer_scope for the same reason a type does.
+    Alias "204" for the Bell UH-1 is a bare number that would otherwise
+    match any airframe spelled 204, so it is scoped to Bell; the alias is
+    excluded outright for anyone else rather than demoted.
+    """
+
+    __tablename__ = "aircraft_type_aliases"
+
+    id = db.Column(db.Integer, primary_key=True)
+    type_id = db.Column(db.Integer, db.ForeignKey("aircraft_types.id", ondelete="CASCADE"),
+                        nullable=False)
+
+    # The alternate designation as written ("AT-6", "CF-104", "Lim-2").
+    # Stored whole rather than split into model/variant: an alias only ever
+    # needs to produce a match_key, and the split would be a second place
+    # for the join rule to drift from Aircraft's.
+    designation = db.Column(db.String(100), nullable=False)
+    match_key = db.Column(db.String(120), nullable=False)
+    # '' not NULL, for the same reason as AircraftType.manufacturer_scope:
+    # MySQL counts NULLs as distinct in a UNIQUE index, which would let two
+    # unscoped aliases for one designation point at two different types and
+    # leave the page choosing arbitrarily.
+    manufacturer_scope = db.Column(db.String(100), nullable=False, default="",
+                                   server_default="")
+
+    aircraft_type_record = db.relationship("AircraftType", back_populates="aliases")
+
+    __table_args__ = (
+        db.UniqueConstraint("match_key", "manufacturer_scope",
+                            name="uq_type_alias_match"),
+    )
+
+    def sync_key(self):
+        self.designation = (self.designation or "").strip()
+        self.match_key = type_match_key(self.designation)
+        self.manufacturer_scope = (self.manufacturer_scope or "").strip()
+        return self.match_key
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "designation": self.designation,
+            "match_key": self.match_key,
+            "manufacturer_scope": self.manufacturer_scope or None,
         }
 
 

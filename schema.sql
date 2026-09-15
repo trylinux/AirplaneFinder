@@ -314,6 +314,35 @@ CREATE TABLE IF NOT EXISTS aircraft_types (
 ) ENGINE=InnoDB;
 
 -- ─────────────────────────────────────────────
+-- Aircraft type aliases — alternate designations for one write-up
+-- Aviation gives one aeroplane several names: a T-6 is also an AT-6 and an
+-- SNJ, an F-104 built by Canadair is a CF-104, a Polish MiG-15 is a Lim-2.
+-- They are catalogued under whatever is painted on them, so match_key alone
+-- misses them. An alias is a second match_key pointing at an existing type:
+-- no aircraft row changes, no text is duplicated, and a real type written
+-- later for that designation automatically supersedes the alias.
+-- See migrate_aircraft_type_aliases.sql and resolve_for() in models.py.
+-- ─────────────────────────────────────────────
+CREATE TABLE IF NOT EXISTS aircraft_type_aliases (
+    id                 INT AUTO_INCREMENT PRIMARY KEY,
+    type_id            INT          NOT NULL,
+    -- Stored whole rather than split into model/variant: an alias only ever
+    -- needs to produce a match_key, and a split would be a second place for
+    -- the join rule to drift from the one aircraft rows use.
+    designation        VARCHAR(100) NOT NULL,
+    match_key          VARCHAR(120) NOT NULL,
+    -- As on aircraft_types, and it matters more here: several aliases are
+    -- bare numbers ("204" is Bell's name for the UH-1), which would otherwise
+    -- land on anything spelled the same. An alias must also satisfy the scope
+    -- of the type it points at.
+    manufacturer_scope VARCHAR(100) NOT NULL DEFAULT '',
+
+    FOREIGN KEY (type_id) REFERENCES aircraft_types(id) ON DELETE CASCADE,
+    UNIQUE KEY uq_type_alias_match (match_key, manufacturer_scope),
+    INDEX idx_type_alias_type (type_id)
+) ENGINE=InnoDB;
+
+-- ─────────────────────────────────────────────
 -- Aviation facts / trivia
 -- aircraft_id is nullable: most facts are general, but one tied to an
 -- airframe can also surface on that aircraft's detail page. SET NULL
