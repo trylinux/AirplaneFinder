@@ -16,3 +16,5 @@ scripts/applied_*_ids.txt
 
 # Cached API payloads pulled by the planning scripts.
 scripts/cache/
+scripts/type_alias_plan.json
+scripts/applied_type_alias_ids.txt
