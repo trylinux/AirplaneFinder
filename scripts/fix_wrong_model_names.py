@@ -54,6 +54,16 @@ FIXES = {
     # The Aeronca 7AC is the Champion. "Champ" is the nickname, not the name.
     21443: (None, "Champion", "Aeronca 7AC is the Champion; Champ is the nickname"),
     21473: (None, "Champion", "Aeronca 7AC is the Champion; Champ is the nickname"),
+
+    # The Bellanca J is the Skyrocket. "Miss Veedol" is the name of THIS
+    # individual aircraft -- the one flown across the Pacific in 1931 -- and
+    # belongs in aircraft_name, not model_name.
+    # model is already "Model J", so the variant must be blank or the
+    # generated full_designation reads "Model J J".
+    29412: (None, "Skyrocket", "Bellanca J Skyrocket; Miss Veedol names the airframe, not the type"),
+
+    # Heath H-10: Red Pheasant is the name, Type 36 the designation.
+    21500: ("Type 36", "Red Pheasant", "Heath H-10 Type 36 Red Pheasant"),
 }
 
 

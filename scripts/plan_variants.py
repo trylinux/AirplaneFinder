@@ -60,13 +60,30 @@ def _is_roman(tok):
     head = tok.rstrip("abcdefghijklmnopqrstuvwxyz")
     return bool(head) and bool(_ROMAN.fullmatch(tok))
 _NAMEY = re.compile(r"^[A-Za-z][A-Za-z\-]{3,}$")
-_SUFFIX_WORDS = {"bis", "ter", "uti", "utl", "kai", "trop"}
+_SUFFIX_WORDS = {"bis", "ter", "uti", "utl", "kai", "trop",
+                 # Japanese sub-variant markers: Ko, Otsu, Hei, Tei (甲乙丙丁).
+                 # A Ki-43 II Otsu is a sub-variant, not a named type.
+                 "ko", "otsu", "hei", "tei"}
+
+# A variant CODE rather than a word: an internal capital (BShZ on a Ka-25,
+# KAIc on a Ki-45) or a -bis form (Rbis, bis-SAU, bis-B). The bis test is
+# written narrowly on purpose -- a loose "contains bis" would swallow Bison.
+_INTERNAL_CAP = re.compile(r"^[A-Za-z][A-Za-z0-9./-]*[A-Z]")
+_BIS_FORM = re.compile(r"^[A-Z]?bis$")
 
 # Generic designator words. These look like names and often DO appear in
 # model_name, which makes the A+ rule fire and strip them -- turning
 # "Ki-11" + "Type 91" into variant "91", which is worse than leaving it
 # alone. Any of these in the variant sends the row to review instead.
-_GENERIC = {"type", "model", "series", "mark", "variant", "version", "class", "number"}
+_GENERIC = {"type", "model", "series", "mark", "variant", "version", "class", "number",
+            "block"}
+
+# Words that describe WHAT THE OBJECT IS rather than naming a type. A Gemini
+# "Boilerplate", a Mosquito "Prototype" and a Wright Flyer "replica" all belong
+# in the variant: they distinguish this article from the production aircraft,
+# and there is no other column for them.
+_DESCRIPTOR = {"boilerplate", "capsule", "prototype", "replica", "mockup",
+               "mock-up", "reproduction", "airframe"}
 
 
 def is_mark_token(tok: str) -> bool:
@@ -91,6 +108,11 @@ def is_mark_token(tok: str) -> bool:
     if core.lower() in _SUFFIX_WORDS:
         return True
     if any(ch.isdigit() for ch in core):        # C8E, B55, J-3B1, F.6, 108-2
+        return True
+    if any(_BIS_FORM.match(part) or part.lower() in _SUFFIX_WORDS
+           for part in core.split("-")):         # bis-SAU, bis-B, Rbis
+        return True
+    if _INTERNAL_CAP.match(core):                # BShZ, KAIc
         return True
     if core.isupper() and len(core) <= 6:       # AJSF, GCBC, TF, KC, SIGINT
         return True
@@ -131,8 +153,12 @@ def split_mark_and_name(variant):
     return mark, " ".join(name_toks)
 
 
-def classify(model, variant, model_name):
-    """Return (class, patch, note). patch is None for review-only rows."""
+def classify(model, variant, model_name, aliases=None):
+    """Return (class, patch, note). patch is None for review-only rows.
+
+    ``aliases`` is the airframe's existing alias list. A name already recorded
+    there is accounted for, so the row stops asking for a decision.
+    """
     model = (model or "").strip()
     model_name = (model_name or "").strip()
     raw = variant or ""
@@ -162,6 +188,34 @@ def classify(model, variant, model_name):
     if not namey:
         return None, None, ""            # a plain mark -- leave it alone
 
+    # Set aside generic designators and descriptors. What remains is the only
+    # thing that could be a type NAME.
+    substantive = [t for t in namey
+                   if t.lower() not in _GENERIC and t.lower() not in _DESCRIPTOR]
+    if not substantive:
+        # A pure designation, correctly written, needing no decision from
+        # anyone: "A6M 2 Model 21", "I-16 type 24", "Apollo CSM Block II",
+        # "Gemini Boilerplate", "Flyer I replica".
+        return None, None, ""
+
+    # The name is already recorded as an alias, so nothing is lost by leaving
+    # the variant alone. This is what retires a row once it has been
+    # adjudicated: the second name is captured and searchable, and the variant
+    # keeps the distinction it was drawing (a Dakota C.4 is not just a
+    # Skytrain).
+    if aliases:
+        known = {fold_name(a) for a in aliases}
+        # Check the whole name as well as its tokens. "Cirrus Moth" is recorded
+        # as one alias, but its tokens "Cirrus" and "Moth" are not aliases
+        # individually -- a token-only test leaves the row asking for a
+        # decision forever while the alias pass correctly declines to add a
+        # duplicate.
+        _, whole = split_mark_and_name(variant)
+        if (fold_name(variant) in known
+                or (whole and fold_name(whole) in known)
+                or all(fold_name(t) in known for t in substantive)):
+            return None, None, ""
+
     # A+ -- every word-like token is already in model_name, so dropping them
     # loses nothing and the remaining mark is the real variant. A generic
     # designator word disqualifies the row: "Type 91" is a whole designation,
@@ -188,13 +242,13 @@ def classify(model, variant, model_name):
         return "E", {"variant": mark or None, "model_name": name}, (
             f"name {name!r} moved to model_name; variant {mark or '(blank)'!r}")
 
-    # A -- a name we cannot account for, or one that would overwrite an
-    # existing model_name. Never automatic: a Bell 47 is a Sioux in military
-    # service and a Ranger as the civil J-2, and both spellings are right.
+    # A -- a real second name with nowhere else recorded. Never automatic: a
+    # Bell 47 is a Sioux in military service and a Ranger as the civil J-2,
+    # and both names are right.
     if name and model_name:
         return "A", None, (f"variant holds the name {name!r} but model_name "
                            f"already says {model_name!r}")
-    return "A", None, f"word-like token(s) {' '.join(namey)!r} in variant"
+    return "A", None, f"word-like token(s) {' '.join(substantive)!r} in variant"
 
 
 def main():
@@ -213,7 +267,8 @@ def main():
 
     plan, review, counts = [], [], Counter()
     for a in aircraft:
-        cls, patch, note = classify(a.get("model"), a.get("variant"), a.get("model_name"))
+        cls, patch, note = classify(a.get("model"), a.get("variant"),
+                                    a.get("model_name"), a.get("aliases"))
         if cls is None:
             counts["leave alone"] += 1
             continue

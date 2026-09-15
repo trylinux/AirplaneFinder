@@ -83,8 +83,6 @@ def test_whitespace_is_tidied():
 # ── the judgement calls, which must never be automatic ───────────────
 
 @pytest.mark.parametrize("model,variant,model_name", [
-    ("Pusher", "Model A", None),             # "Model" is a generic designator
-    ("Taube", "Model F", None),
     ("47", "J-2 Ranger", "Sioux"),           # would overwrite a real model_name
     ("108", "2 Flying Station Wagon", "Voyager"),
     ("95", "B55 Baron", "Travel Air"),
@@ -92,6 +90,25 @@ def test_whitespace_is_tidied():
 def test_unaccounted_names_go_to_review_not_to_the_plan(model, variant, model_name):
     cls, patch, _ = classify(model, variant, model_name)
     assert cls == "A" and patch is None, "a name we cannot vouch for must not be auto-applied"
+
+
+@pytest.mark.parametrize("model,variant,model_name", [
+    ("Pusher", "Model A", None),
+    ("Taube", "Model F", None),
+    ("A6M", "2 Model 21", "Zero"),
+    ("I-16", "type 24", "Rata"),
+    ("Apollo CSM", "Block II", "Command Module"),
+    ("Gemini", "Boilerplate", "Gemini"),
+    ("Flyer", "I replica", "Flyer"),
+    ("Mosquito", "Prototype", "Mosquito"),
+])
+def test_a_pure_designation_needs_no_decision_at_all(model, variant, model_name):
+    """Once generic designators (Type, Model, Block) and descriptors
+    (Boilerplate, Prototype, replica) are set aside, nothing name-like is
+    left — the variant is a complete designation, correctly written. These
+    used to sit in the review file asking a question with no answer."""
+    cls, patch, _ = classify(model, variant, model_name)
+    assert cls is None and patch is None
 
 
 def test_known_limitation_a_designation_with_no_word_in_it_is_invisible():
@@ -107,9 +124,10 @@ def test_known_limitation_a_designation_with_no_word_in_it_is_invisible():
 def test_generic_designator_words_are_never_stripped():
     """"Type 91" is a whole designation. The A+ rule would otherwise see
     "Type" inside model_name "Type 91 Fighter", strip it, and leave the
-    variant as the bare number "91" — worse than doing nothing."""
+    variant as the bare number "91" — worse than doing nothing. It is now
+    left alone outright rather than sent to review."""
     cls, patch, _ = classify("Ki-11", "Type 91", "Type 91 Fighter")
-    assert cls == "A" and patch is None
+    assert cls is None and patch is None
 
 
 def test_review_rows_carry_no_patch_at_all():
@@ -274,3 +292,34 @@ def test_folding_does_not_merge_two_different_names():
     names for the T-50 and the row still needs a person."""
     assert classify("T-50", "Crane", "Bobcat")[0] == "A"
     assert classify("47", "J-2 Ranger", "Sioux")[0] == "A"
+
+
+# ── variant codes, and retirement by alias ───────────────────────────
+
+@pytest.mark.parametrize("tok", ["BShZ", "KAIc", "Rbis", "bis-SAU", "bis-B", "Otsu"])
+def test_variant_codes_are_marks(tok):
+    """An internal capital or a -bis form is a designation code, not a name.
+    Otsu, Ko, Hei and Tei are Japanese sub-variant markers."""
+    assert is_mark_token(tok) is True
+
+
+def test_the_bis_test_does_not_swallow_bison():
+    """A loose "contains bis" would make Bison — the Indian MiG-21 upgrade —
+    a mark, and the row would lose a real name."""
+    assert is_mark_token("Bison") is False
+
+
+def test_a_name_already_recorded_as_an_alias_retires_the_row():
+    """Nothing is lost by leaving the variant alone once the second name is
+    searchable, so the row stops asking for a decision. This is what keeps
+    the review file from filling up with rows that were already settled."""
+    assert classify("C-47", "Dakota C.4", "Skytrain")[0] == "A"
+    assert classify("C-47", "Dakota C.4", "Skytrain", ["Dakota"])[0] is None
+
+
+def test_a_multi_word_alias_retires_the_row_too():
+    """"Cirrus Moth" is one alias; its tokens are not aliases individually.
+    A token-only test left the row asking forever while the alias pass
+    correctly declined to add a duplicate."""
+    assert classify("DH.60", "Cirrus Moth", "Moth", ["Cirrus Moth"])[0] is None
+    assert classify("HM-14", "Pou du Ciel", "Flying Flea", ["Pou du Ciel"])[0] is None

@@ -36,9 +36,13 @@ and never rewrites a row. `--only D` restricts a run to one class.
 | `E` | variant is `[mark] + name` and `model_name` is **empty** | `31-55` + `A Senior Skyrocket` → variant `A`, model_name `Senior Skyrocket` | yes |
 | `A` | the name would overwrite a different `model_name` | `47` + `J-2 Ranger`, model_name `Sioux` | **no — review** |
 
-Against the live catalog the plan is now empty and **103 rows remain for
-review**, down from 463 — the classes below plus two classifier fixes and one
-round of factual corrections took care of the rest.
+**The variant column is clean: 0 rows in the plan and 0 in review**, from 463
+at the start. All 31,186 airframes are left alone by the planner.
+
+Getting there took the classes below, three classifier fixes, 17 hand-curated
+`model_name` corrections (`scripts/fix_wrong_model_names.py`) and one alias
+pass (`scripts/alias_variant_names.py`). Re-running the planner is the
+regression test: anything it surfaces again is new data, not old debt.
 
 Class `E` is the one that actually moves a name out of the variant column. `A+`
 and `D` only work when `model_name` already holds the name, so on their own they
@@ -89,6 +93,28 @@ as `M` plus "oth", quietly demoting three real type names to marks.
 for and lands in review — 24 rows of pure noise. Folding is only ever used to
 recognise the SAME name; it never merges two different ones, so `Crane` vs
 `Bobcat` still needs a person.
+
+**A second real name goes to `aliases`, not into a fight over `model_name`.**
+A C-47 can be a Dakota or a Skytrain, a T-50 a Crane or a Bobcat, an AT-6 a
+Harvard or a Texan — which is primary depends on who flew it, and picking one
+throws the other away. `scripts/alias_variant_names.py` copies the second name
+into `aircraft_aliases` (which the schema already calls "alternate names /
+search terms") and touches neither `variant` nor `model_name`. A name recorded
+there is accounted for, so the planner retires the row without an allowlist to
+maintain — match on the whole alias as well as its tokens, or "Cirrus Moth"
+never retires because "Cirrus" alone is not an alias.
+
+**A pure designation needs no decision.** Once generic designators (`Type`,
+`Model`, `Block`) and descriptors (`Boilerplate`, `Prototype`, `replica`) are
+set aside, `A6M 2 Model 21`, `I-16 type 24` and `Apollo CSM Block II` have
+nothing name-like left. They are correctly written and are left alone outright
+rather than asking a question with no answer.
+
+**Variant codes are marks.** An internal capital (`BShZ`, `KAIc`) or a -bis
+form (`Rbis`, `bis-SAU`, `bis-B`), plus the Japanese sub-variant markers Ko,
+Otsu, Hei and Tei. The -bis test is written narrowly on purpose: a loose
+"contains bis" swallows **Bison**, the Indian MiG-21 upgrade, and loses a real
+name.
 
 **Upper-case tokens are variant CODES, not names.** `AJSF` on a Saab 37, `GCBC`
 on a Citabria 7, `A-II`, `SIGINT` on an Atlantic — an earlier version of this
