@@ -17,8 +17,8 @@
                 <input type="text" id="username" name="username" required autofocus placeholder="Choose a username">
             </div>
             <div class="form-group">
-                <label for="email">Email (optional)</label>
-                <input type="email" id="email" name="email" placeholder="your@email.com">
+                <label for="email">Email{% if transactional_email_enabled %} *{% else %} (optional){% endif %}</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email"{% if transactional_email_enabled %} required{% endif %}>
             </div>
             <div class="form-group">
                 <label for="password">Password *</label>
@@ -35,6 +35,7 @@
 
         <div class="auth-footer">
             <p>Already have an account? <a href="/login">Sign in</a></p>
+            {% if transactional_email_enabled %}<p><a href="{{ url_for('resend_verification') }}">Resend verification email</a></p>{% endif %}
         </div>
     </div>
 </div>

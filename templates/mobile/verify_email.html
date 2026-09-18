@@ -1,0 +1,13 @@
+{% extends "mobile/base.html" %}
+{% block title %}Verify Email — Aircraft Finder{% endblock %}
+{% block content %}
+<div class="m-page-header"><h1><i class="fa-solid fa-envelope-circle-check"></i> Verify email</h1></div>
+<div class="m-card">
+    <p>Confirm <strong>{{ email }}</strong> to activate your account.</p>
+    <form method="POST">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <input type="hidden" name="token" value="{{ token }}">
+        <button type="submit" class="m-btn">Verify email</button>
+    </form>
+</div>
+{% endblock %}

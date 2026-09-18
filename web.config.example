@@ -16,8 +16,21 @@ database = airplane_museum_tracker
 
 [app]
 secret_key = change-me-in-production
+# Canonical HTTPS origin used in verification/reset links. Prefer setting the
+# PUBLIC_BASE_URL environment variable in production.
+# public_base_url = https://airplane.example.com
 results_per_page = 20
 log_dir = logs
+
+[email]
+# Prefer BREVO_API_KEY and EMAIL_SENDER environment variables so credentials do
+# not need to be stored here.
+# brevo_api_key = xkeysib-...
+# sender_email = no-reply@airplane.example.com
+sender_name = Aircraft Finder
+timeout = 8
+verify_max_age = 86400
+reset_max_age = 3600
 
 [map]
 # Keep provider attribution visible. Do not prefetch OpenStreetMap tiles.

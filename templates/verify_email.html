@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Verify Email — Aircraft Finder{% endblock %}
+{% block content %}
+<div class="auth-container"><div class="auth-card card">
+    <div class="auth-header"><i class="fa-solid fa-envelope-circle-check"></i><h1>Verify Email</h1>
+        <p class="subtitle">Confirm {{ email }} to activate your account.</p></div>
+    <form method="POST" class="auth-form">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <input type="hidden" name="token" value="{{ token }}">
+        <button type="submit" class="btn btn-primary btn-full">Verify email</button>
+    </form>
+</div></div>
+{% endblock %}

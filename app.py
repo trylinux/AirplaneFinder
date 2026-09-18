@@ -12,6 +12,7 @@ Features:
 """
 
 import csv
+import hashlib
 import io
 import json
 import re
@@ -31,9 +32,11 @@ from flask_login import (
 from flask_wtf.csrf import CSRFProtect, CSRFError
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
+from itsdangerous import BadSignature, SignatureExpired, URLSafeTimedSerializer
 from math import isfinite
 
 from sqlalchemy import or_, and_, func
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import joinedload, selectinload, contains_eager
 
 from models import (
@@ -47,6 +50,11 @@ from models import (
 from geocoder import resolve_location
 from config import Config
 from logger import auth_log, change_log, access_log
+from email_service import (
+    EmailDeliveryError,
+    email_is_configured,
+    send_transactional_email,
+)
 
 
 # ══════════════════════════════════════════════
@@ -115,8 +123,16 @@ def create_app():
 
     @login_manager.user_loader
     def load_user(user_id):
-        user = User.query.get(int(user_id))
-        return user if user and user.is_active else None
+        # Versioned identifiers let a password reset invalidate all existing
+        # sessions and remember cookies. Old numeric-only cookies expire once
+        # when this feature is deployed.
+        try:
+            numeric_id, version = user_id.split(":", 1)
+            numeric_id, version = int(numeric_id), int(version)
+        except (AttributeError, TypeError, ValueError):
+            return None
+        user = db.session.get(User, numeric_id)
+        return user if user and user.is_active and (user.auth_version or 0) == version else None
 
     return app
 
@@ -171,7 +187,8 @@ def _log_response(response):
 # timed out — otherwise we can't render the login page or process the logout.
 _TIMEOUT_EXEMPT_ENDPOINTS = {
     "login_page", "logout", "register_page", "static",
-    "desktop_only_page",
+    "desktop_only_page", "verify_email", "resend_verification",
+    "forgot_password", "reset_password",
 }
 
 
@@ -295,6 +312,125 @@ def _validate_password_strength(password):
 
 
 # ══════════════════════════════════════════════
+# Transactional email tokens + delivery
+# ══════════════════════════════════════════════
+
+_EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
+_VERIFY_EMAIL_SALT = "aircraft-finder-email-verification-v1"
+_RESET_TOKEN_SALT = "aircraft-finder-password-reset-v1"
+
+
+def _normalize_email(value):
+    """Return a stable lowercase address, or ``None`` when invalid."""
+    if not isinstance(value, str):
+        return None
+    address = value.strip().lower()
+    if not address or len(address) > 200 or not _EMAIL_RE.fullmatch(address):
+        return None
+    return address
+
+
+def _email_serializer():
+    return URLSafeTimedSerializer(current_app.config["SECRET_KEY"])
+
+
+def _password_marker(user):
+    """Non-secret marker that invalidates a reset link after password change."""
+    return hashlib.sha256(user.password_hash.encode("utf-8")).hexdigest()
+
+
+def _make_email_token(user, purpose):
+    payload = {"user_id": user.id, "email": user.email}
+    if purpose == "verify":
+        salt = _VERIFY_EMAIL_SALT
+    elif purpose == "reset":
+        salt = _RESET_TOKEN_SALT
+        payload["password"] = _password_marker(user)
+    else:  # pragma: no cover - internal programming error
+        raise ValueError("Unknown email-token purpose.")
+    return _email_serializer().dumps(payload, salt=salt)
+
+
+def _load_email_token(token, purpose):
+    if not isinstance(token, str) or not token:
+        return None
+    if purpose == "verify":
+        salt, max_age = _VERIFY_EMAIL_SALT, Config.EMAIL_VERIFY_MAX_AGE
+    elif purpose == "reset":
+        salt, max_age = _RESET_TOKEN_SALT, Config.PASSWORD_RESET_MAX_AGE
+    else:  # pragma: no cover - internal programming error
+        return None
+    try:
+        payload = _email_serializer().loads(token, salt=salt, max_age=max_age)
+        user_id = int(payload["user_id"])
+        email = str(payload["email"])
+    except (BadSignature, SignatureExpired, KeyError, TypeError, ValueError):
+        return None
+    user = db.session.get(User, user_id)
+    if not user or not user.email or not secrets.compare_digest(user.email, email):
+        return None
+    if purpose == "reset":
+        marker = str(payload.get("password", ""))
+        if not secrets.compare_digest(_password_marker(user), marker):
+            return None
+    return user
+
+
+def _public_email_url(endpoint, **values):
+    # The explicit public origin prevents Host-header poisoning of emailed
+    # account links when nginx proxies requests to Flask.
+    return f"{Config.PUBLIC_BASE_URL}{url_for(endpoint, _external=False, **values)}"
+
+
+def _duration_label(seconds):
+    if seconds % 3600 == 0:
+        hours = seconds // 3600
+        return f"{hours} hour" + ("" if hours == 1 else "s")
+    minutes = max(1, seconds // 60)
+    return f"{minutes} minute" + ("" if minutes == 1 else "s")
+
+
+def _send_verification_email(user):
+    link = _public_email_url(
+        "verify_email", token=_make_email_token(user, "verify")
+    )
+    context = {
+        "user": user,
+        "verification_url": link,
+        "expires_in": _duration_label(Config.EMAIL_VERIFY_MAX_AGE),
+    }
+    message_id = send_transactional_email(
+        to_email=user.email,
+        to_name=user.username,
+        subject="Verify your Aircraft Finder email",
+        html_content=render_template("emails/verify_email.html", **context),
+        text_content=render_template("emails/verify_email.txt", **context),
+        tag="email-verification",
+    )
+    auth_log.info(f"EMAIL_VERIFY_SENT user={user.username} message_id={message_id}")
+
+
+def _send_password_reset_email(user):
+    link = _public_email_url(
+        "reset_password", token=_make_email_token(user, "reset")
+    )
+    context = {
+        "user": user,
+        "reset_url": link,
+        "expires_in": _duration_label(Config.PASSWORD_RESET_MAX_AGE),
+    }
+    message_id = send_transactional_email(
+        to_email=user.email,
+        to_name=user.username,
+        subject="Reset your Aircraft Finder password",
+        html_content=render_template("emails/reset_password.html", **context),
+        text_content=render_template("emails/reset_password.txt", **context),
+        tag="password-reset",
+    )
+    auth_log.info(f"PASSWORD_RESET_SENT user={user.username} message_id={message_id}")
+
+
+# ══════════════════════════════════════════════
 # Security headers + safe-redirect helper
 # ══════════════════════════════════════════════
 
@@ -394,6 +530,15 @@ def _add_security_headers(response):
     All gated by SECURITY_HEADERS_ENABLED so local HTTP dev isn't disrupted
     (HSTS over HTTP is wasted; some browsers also bicker about it).
     """
+    if request.endpoint in {
+        "forgot_password", "reset_password", "verify_email",
+        "resend_verification",
+    }:
+        # Tokens can arrive in the query string. Keep them out of caches and
+        # Referer headers emitted from the confirmation page.
+        response.headers["Cache-Control"] = "no-store"
+        response.headers["Referrer-Policy"] = "no-referrer"
+
     if not Config.SECURITY_HEADERS_ENABLED:
         return response
 
@@ -496,7 +641,10 @@ def _detect_mobile():
 @app.context_processor
 def _inject_mobile_flag():
     """Make ``is_mobile`` available inside every Jinja template."""
-    return {"is_mobile": getattr(g, "is_mobile", False)}
+    return {
+        "is_mobile": getattr(g, "is_mobile", False),
+        "transactional_email_enabled": email_is_configured(),
+    }
 
 
 def mobile_render(name, **context):
@@ -723,6 +871,10 @@ def _login_username_key():
     return (request.form.get("username") or "").strip().lower() or get_remote_address()
 
 
+def _email_form_key():
+    return (request.form.get("email") or "").strip().lower() or get_remote_address()
+
+
 @app.route("/login", methods=["GET", "POST"])
 @limiter.limit("5 per minute", methods=["POST"])
 @limiter.limit("10 per hour", key_func=_login_username_key, methods=["POST"])
@@ -751,6 +903,17 @@ def login_page():
             return mobile_render("login.html")
 
         if user and user.check_password(password) and user.is_active:
+            if user.email_verification_required:
+                auth_log.info(
+                    f"LOGIN_BLOCKED_UNVERIFIED user={username} ip={request.remote_addr}"
+                )
+                flash(
+                    "Please verify your email before signing in. "
+                    "You can request another verification message below.",
+                    "warning",
+                )
+                return mobile_render("login.html")
+
             user.last_login = datetime.now(timezone.utc)
             user.last_login_ip = request.headers.get("X-Forwarded-For", request.remote_addr)
             user.reset_failed_logins()
@@ -833,33 +996,176 @@ def register_page():
 
     if request.method == "POST":
         username = request.form.get("username", "").strip()
-        email = request.form.get("email", "").strip() or None
+        raw_email = request.form.get("email", "").strip()
+        email = _normalize_email(raw_email) if raw_email else None
         password = request.form.get("password", "")
         password2 = request.form.get("password2", "")
+        verification_enabled = email_is_configured()
 
         password_error = _validate_password_strength(password) if password else None
         if not username or not password:
             flash("Username and password are required.", "error")
+        elif verification_enabled and not raw_email:
+            flash("Email is required so you can verify your account.", "error")
+        elif raw_email and not email:
+            flash("Enter a valid email address.", "error")
         elif password != password2:
             flash("Passwords do not match.", "error")
         elif password_error:
             flash(password_error, "error")
         elif User.query.filter_by(username=username).first():
             flash("Username already taken.", "error")
+        elif email and User.query.filter(func.lower(User.email) == email).first():
+            flash("An account with that email already exists.", "error")
         else:
             # First user is automatically admin
             is_first = User.query.count() == 0
             role = "admin" if is_first else "viewer"
-            user = User(username=username, email=email, role=role)
+            user = User(
+                username=username,
+                email=email,
+                role=role,
+                email_verification_required=verification_enabled,
+            )
             user.set_password(password)
             db.session.add(user)
-            db.session.commit()
-            login_user(user)
+            try:
+                db.session.commit()
+            except IntegrityError:
+                db.session.rollback()
+                flash("That username or email is already registered.", "error")
+                return mobile_render("register.html")
             auth_log.info(f"REGISTER user={username} role={role} ip={request.remote_addr}")
+            if verification_enabled:
+                try:
+                    _send_verification_email(user)
+                    flash(
+                        "Account created. Check your email to verify it before signing in.",
+                        "success",
+                    )
+                except EmailDeliveryError as exc:
+                    auth_log.error(f"EMAIL_VERIFY_FAILED user={username} error={exc}")
+                    flash(
+                        "Account created, but the verification message could not be sent. "
+                        "Use the resend link below in a few minutes.",
+                        "warning",
+                    )
+                return redirect(url_for("login_page"))
+
+            # Preserve local/unconfigured behavior without claiming mail sent.
+            login_user(user)
             flash("Account created!" + (" You are the first user, so you have admin rights." if is_first else ""), "success")
             return redirect(url_for("admin_page"))
 
     return mobile_render("register.html")
+
+
+@app.route("/verify-email", methods=["GET", "POST"])
+@limiter.limit("10 per hour")
+def verify_email():
+    token = request.values.get("token", "")
+    user = _load_email_token(token, "verify")
+    if not user:
+        flash("That verification link is invalid or has expired.", "error")
+        return redirect(url_for("resend_verification"))
+
+    # GET only renders a confirmation. Some email scanners follow links, so
+    # the account state changes only after the user submits the POST form.
+    if request.method == "POST":
+        if user.email_verification_required or user.email_verified_at is None:
+            user.email_verified_at = datetime.now(timezone.utc)
+            user.email_verification_required = False
+            db.session.commit()
+            auth_log.info(
+                f"EMAIL_VERIFIED user={user.username} ip={request.remote_addr}"
+            )
+        flash("Email verified. You can now sign in.", "success")
+        return redirect(url_for("login_page"))
+
+    return mobile_render("verify_email.html", token=token, email=user.email)
+
+
+@app.route("/resend-verification", methods=["GET", "POST"])
+@limiter.limit("5 per hour")
+@limiter.limit("3 per hour", key_func=_email_form_key, methods=["POST"])
+def resend_verification():
+    if request.method == "POST":
+        email = _normalize_email(request.form.get("email", ""))
+        user = (
+            User.query.filter(func.lower(User.email) == email).first()
+            if email else None
+        )
+        if email_is_configured() and user and user.email_verification_required:
+            try:
+                _send_verification_email(user)
+            except EmailDeliveryError as exc:
+                auth_log.error(
+                    f"EMAIL_VERIFY_RESEND_FAILED user={user.username} error={exc}"
+                )
+        flash(
+            "If that address has an unverified account, a verification message is on its way.",
+            "info",
+        )
+        return redirect(url_for("login_page"))
+    return mobile_render("resend_verification.html")
+
+
+@app.route("/forgot-password", methods=["GET", "POST"])
+@limiter.limit("5 per hour")
+@limiter.limit("3 per hour", key_func=_email_form_key, methods=["POST"])
+def forgot_password():
+    if request.method == "POST":
+        email = _normalize_email(request.form.get("email", ""))
+        user = (
+            User.query.filter(func.lower(User.email) == email).first()
+            if email else None
+        )
+        if email_is_configured() and user and user.is_active:
+            try:
+                _send_password_reset_email(user)
+            except EmailDeliveryError as exc:
+                auth_log.error(
+                    f"PASSWORD_RESET_EMAIL_FAILED user={user.username} error={exc}"
+                )
+        flash(
+            "If an active account uses that address, a password-reset message is on its way.",
+            "info",
+        )
+        return redirect(url_for("login_page"))
+    return mobile_render("forgot_password.html")
+
+
+@app.route("/reset-password", methods=["GET", "POST"])
+@limiter.limit("10 per hour")
+def reset_password():
+    token = request.values.get("token", "")
+    user = _load_email_token(token, "reset")
+    if not user:
+        flash("That password-reset link is invalid or has expired.", "error")
+        return redirect(url_for("forgot_password"))
+
+    if request.method == "POST":
+        password = request.form.get("password", "")
+        password2 = request.form.get("password2", "")
+        error = _validate_password_strength(password)
+        if password != password2:
+            flash("Passwords do not match.", "error")
+        elif error:
+            flash(error, "error")
+        else:
+            user.set_password(password)
+            user.auth_version = (user.auth_version or 0) + 1
+            user.reset_failed_logins()
+            db.session.commit()
+            if current_user.is_authenticated:
+                _full_logout()
+            auth_log.info(
+                f"PASSWORD_RESET_COMPLETE user={user.username} ip={request.remote_addr}"
+            )
+            flash("Password updated. Sign in with your new password.", "success")
+            return redirect(url_for("login_page"))
+
+    return mobile_render("reset_password.html", token=token)
 
 
 # ══════════════════════════════════════════════
@@ -3624,11 +3930,14 @@ def api_create_user():
     data = request.get_json() or {}
     username = (data.get("username") or "").strip()
     password = data.get("password", "")
-    email = (data.get("email") or "").strip() or None
+    raw_email = data.get("email") or ""
+    email = _normalize_email(raw_email) if raw_email else None
     role = data.get("role", "viewer")
 
     if not username or not password:
         return jsonify({"error": "username and password are required."}), 400
+    if raw_email and not email:
+        return jsonify({"error": "Enter a valid email address."}), 400
     if role not in ("admin", "aircraft_admin", "manager", "viewer"):
         return jsonify({"error": "role must be 'admin', 'aircraft_admin', 'manager', or 'viewer'."}), 400
     pw_error = _validate_password_strength(password)
@@ -3636,6 +3945,8 @@ def api_create_user():
         return jsonify({"error": pw_error}), 400
     if User.query.filter_by(username=username).first():
         return jsonify({"error": "Username already taken."}), 409
+    if email and User.query.filter(func.lower(User.email) == email).first():
+        return jsonify({"error": "Email already registered."}), 409
 
     user = User(username=username, email=email, role=role)
     user.set_password(password)
@@ -3660,7 +3971,11 @@ def api_create_user():
     api_key_obj, raw_key = ApiKey.generate(user_id=user.id, label="auto", permissions=auto_perms)
     db.session.add(api_key_obj)
 
-    db.session.commit()
+    try:
+        db.session.commit()
+    except IntegrityError:
+        db.session.rollback()
+        return jsonify({"error": "Username or email already registered."}), 409
     auth_log.info(f"USER_CREATE user={username} role={role} by={current_user.username}")
     change_log.info(f"USER_CREATE id={user.id} user={username} role={role} by={current_user.username}")
     resp = user.to_dict()
@@ -3688,7 +4003,19 @@ def api_update_user(user_id):
         return jsonify({"error": "is_active must be a JSON boolean."}), 400
 
     if "email" in data:
-        user.email = data["email"] or None
+        raw_email = data["email"] or ""
+        email = _normalize_email(raw_email) if raw_email else None
+        if raw_email and not email:
+            return jsonify({"error": "Enter a valid email address."}), 400
+        duplicate = (
+            User.query.filter(func.lower(User.email) == email, User.id != user_id).first()
+            if email else None
+        )
+        if duplicate:
+            return jsonify({"error": "Email already registered."}), 409
+        if user.email != email:
+            user.email = email
+            user.email_verified_at = None
     if "role" in data and data["role"] in ("admin", "aircraft_admin", "manager", "viewer"):
         user.role = data["role"]
     if "is_active" in data:
@@ -3698,6 +4025,7 @@ def api_update_user(user_id):
         if pw_error:
             return jsonify({"error": pw_error}), 400
         user.set_password(data["password"])
+        user.auth_version = (user.auth_version or 0) + 1
         # New password = clean slate, drop any pending lockout.
         user.reset_failed_logins()
 

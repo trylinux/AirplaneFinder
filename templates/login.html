@@ -28,6 +28,10 @@
 
         <div class="auth-footer">
             <p>Don't have an account? <a href="/register">Create one</a></p>
+            {% if transactional_email_enabled %}
+            <p><a href="{{ url_for('forgot_password') }}">Forgot your password?</a></p>
+            <p><a href="{{ url_for('resend_verification') }}">Resend verification email</a></p>
+            {% endif %}
         </div>
     </div>
 </div>
