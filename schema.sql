@@ -13,7 +13,10 @@ CREATE TABLE IF NOT EXISTS users (
     id              INT AUTO_INCREMENT PRIMARY KEY,
     username        VARCHAR(80)  NOT NULL UNIQUE,
     email           VARCHAR(200) DEFAULT NULL,
+    email_verified_at TIMESTAMP  NULL DEFAULT NULL,
+    email_verification_required BOOLEAN NOT NULL DEFAULT FALSE,
     password_hash   VARCHAR(256) NOT NULL,
+    auth_version    INT          NOT NULL DEFAULT 0,
     role            ENUM('admin','aircraft_admin','manager','viewer') NOT NULL DEFAULT 'viewer',
     is_active       BOOLEAN      DEFAULT TRUE,
     last_login      TIMESTAMP    NULL DEFAULT NULL,
@@ -23,7 +26,8 @@ CREATE TABLE IF NOT EXISTS users (
     failed_login_count INT       NOT NULL DEFAULT 0,
     locked_until    TIMESTAMP    NULL DEFAULT NULL,
     created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    updated_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    UNIQUE KEY uq_users_email (email)
 ) ENGINE=InnoDB;
 
 -- ─────────────────────────────────────────────

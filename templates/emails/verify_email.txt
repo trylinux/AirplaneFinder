@@ -1,0 +1,7 @@
+Hello {{ user.username }},
+
+Confirm your email address to finish creating your Aircraft Finder account:
+
+{{ verification_url }}
+
+This link expires in {{ expires_in }}. If you did not create this account, you can ignore this message.

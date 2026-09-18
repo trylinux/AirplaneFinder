@@ -1,0 +1,9 @@
+<!doctype html>
+<html><body style="font-family:Arial,sans-serif;color:#172033;line-height:1.5">
+<h1>Verify your email</h1>
+<p>Hello {{ user.username }},</p>
+<p>Confirm your email address to finish creating your Aircraft Finder account.</p>
+<p><a href="{{ verification_url }}" style="display:inline-block;padding:12px 18px;background:#2563eb;color:#fff;text-decoration:none;border-radius:6px">Verify email</a></p>
+<p>This link expires in {{ expires_in }}. If you did not create this account, you can ignore this message.</p>
+<p>If the button does not work, copy this URL:<br><a href="{{ verification_url }}">{{ verification_url }}</a></p>
+</body></html>

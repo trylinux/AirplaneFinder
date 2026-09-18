@@ -35,6 +35,19 @@ class Config:
 
     SECRET_KEY = _get("app", "secret_key", "SECRET_KEY", "change-me-in-production")
 
+    # Canonical public origin used in emailed links. Requiring an explicit
+    # value avoids building security-sensitive links from a Host header.
+    PUBLIC_BASE_URL = _get("app", "public_base_url", "PUBLIC_BASE_URL", "").strip().rstrip("/")
+
+    # Brevo transactional email. Verification becomes active only when the
+    # API key, sender address, and public URL are all configured.
+    BREVO_API_KEY = _get("email", "brevo_api_key", "BREVO_API_KEY", "").strip()
+    EMAIL_SENDER = _get("email", "sender_email", "EMAIL_SENDER", "").strip().lower()
+    EMAIL_SENDER_NAME = _get("email", "sender_name", "EMAIL_SENDER_NAME", "Aircraft Finder").strip()
+    EMAIL_TIMEOUT = float(_get("email", "timeout", "EMAIL_TIMEOUT", "8"))
+    EMAIL_VERIFY_MAX_AGE = int(_get("email", "verify_max_age", "EMAIL_VERIFY_MAX_AGE", str(24 * 60 * 60)))
+    PASSWORD_RESET_MAX_AGE = int(_get("email", "reset_max_age", "PASSWORD_RESET_MAX_AGE", str(60 * 60)))
+
     # Server (used by app.run in __main__)
     SERVER_HOST = _get("server", "host", "SERVER_HOST", "0.0.0.0")
     SERVER_PORT = int(_get("server", "port", "SERVER_PORT", "5000"))

@@ -15,8 +15,8 @@
             <input type="text" name="username" required autocomplete="username" autocapitalize="none">
         </div>
         <div class="m-field">
-            <label>Email (optional)</label>
-            <input type="email" name="email" autocomplete="email" autocapitalize="none">
+            <label>Email{% if transactional_email_enabled %} *{% else %} (optional){% endif %}</label>
+            <input type="email" name="email" autocomplete="email" autocapitalize="none"{% if transactional_email_enabled %} required{% endif %}>
         </div>
         <div class="m-field">
             <label>Password</label>
@@ -36,4 +36,7 @@
 <p style="text-align:center; font-size:.85rem; color:var(--text-dim); margin-top:.6rem;">
     Already have one? <a href="{{ url_for('login_page') }}">Sign in</a>
 </p>
+{% if transactional_email_enabled %}
+<p style="text-align:center; font-size:.85rem;"><a href="{{ url_for('resend_verification') }}">Resend verification email</a></p>
+{% endif %}
 {% endblock %}

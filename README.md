@@ -96,6 +96,9 @@ migration files for an older installation:
   deploying the matching code**, which writes both columns. It is guarded and
   re-runnable, and it adds the new unique key before dropping the old one, so a
   failure leaves the database untouched.
+- `migrate_transactional_email.sql` — adds unique account emails, verification
+  state, and the session version used to revoke sessions after password changes.
+  Apply this before deploying the matching code.
 
 Apply one with, for example:
 
@@ -185,6 +188,28 @@ expiration. Session idle timeouts default to 15 minutes for admins, 30 for manag
 and aircraft admins, and 60 for viewers; the absolute timeout is 12 hours. Login
 lockout defaults to five failed attempts for 15 minutes. Password policy defaults
 to eight characters including a letter and a digit.
+
+### Registration and password-reset email
+
+Transactional email uses Brevo's HTTPS API and activates when all three required
+settings are present:
+
+```bash
+export BREVO_API_KEY='xkeysib-...'
+export EMAIL_SENDER='no-reply@your-domain.example'
+export PUBLIC_BASE_URL='https://your-public-site.example'
+```
+
+Optional settings are `EMAIL_SENDER_NAME`, `EMAIL_TIMEOUT`,
+`EMAIL_VERIFY_MAX_AGE` (default 24 hours), and `PASSWORD_RESET_MAX_AGE`
+(default one hour). Authenticate the sender domain in Brevo with DKIM and DMARC
+before enabling production delivery.
+
+Apply `migrate_transactional_email.sql` before enabling email on an existing
+installation. Its duplicate-address query must return no rows before the unique
+email index can be added. Existing and administrator-created accounts are not
+retroactively forced through verification; newly self-registered accounts are.
+Deploying this change invalidates older numeric Flask-Login cookies once.
 
 ## API overview
 

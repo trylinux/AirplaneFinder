@@ -1,0 +1,14 @@
+{% extends "mobile/base.html" %}
+{% block title %}Resend Verification — Aircraft Finder{% endblock %}
+{% block content %}
+<div class="m-page-header"><h1><i class="fa-solid fa-envelope"></i> Resend verification</h1></div>
+<div class="m-card">
+    <p style="color:var(--text-dim);">Enter the email address used for your account.</p>
+    <form method="POST">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <div class="m-field"><label>Email</label><input type="email" name="email" required autofocus autocomplete="email"></div>
+        <button type="submit" class="m-btn">Send verification link</button>
+    </form>
+</div>
+<a href="{{ url_for('login_page') }}" class="m-btn m-btn-secondary">Back to sign in</a>
+{% endblock %}

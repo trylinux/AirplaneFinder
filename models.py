@@ -23,8 +23,14 @@ class User(UserMixin, db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
-    email = db.Column(db.String(200))
+    email = db.Column(db.String(200), unique=True)
+    email_verified_at = db.Column(db.DateTime, nullable=True)
+    # Existing and administrator-created users remain usable. Only accounts
+    # registered through the public flow while email is enabled set this true.
+    email_verification_required = db.Column(db.Boolean, nullable=False, default=False)
     password_hash = db.Column(db.String(256), nullable=False)
+    # Incrementing this invalidates every Flask-Login session/remember cookie.
+    auth_version = db.Column(db.Integer, nullable=False, default=0)
     role = db.Column(db.String(20), nullable=False, default="viewer")  # admin, aircraft_admin, manager, viewer
     is_active_user = db.Column("is_active", db.Boolean, default=True)
     last_login = db.Column(db.DateTime, nullable=True)
@@ -54,6 +60,9 @@ class User(UserMixin, db.Model):
 
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
+
+    def get_id(self):
+        return f"{self.id}:{self.auth_version or 0}"
 
     @property
     def is_active(self):
@@ -152,6 +161,8 @@ class User(UserMixin, db.Model):
             "id": self.id,
             "username": self.username,
             "email": self.email,
+            "email_verified": self.email_verified_at is not None,
+            "email_verified_at": self.email_verified_at.isoformat() if self.email_verified_at else None,
             "role": self.role,
             "is_admin": self.is_admin,
             "is_active": self.is_active,
