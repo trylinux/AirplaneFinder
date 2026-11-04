@@ -96,7 +96,15 @@ def app():
     config.Config.SESSION_COOKIE_SECURE = False
     config.Config.REMEMBER_COOKIE_SECURE = False
 
+    # db_session holds an app context across requests. Flask-Login caches its
+    # user on g, so clear that cache as a real per-request app context would.
+    # Otherwise two different test clients can silently share an identity.
+    from flask import g, request_started
+    def clear_request_user(sender, **extra):
+        g.pop('_login_user', None)
+    request_started.connect(clear_request_user, flask_app)
     yield flask_app
+    request_started.disconnect(clear_request_user, flask_app)
 
     # Best-effort cleanup so a test that flips Config back on doesn't
     # leak headers into the next test.

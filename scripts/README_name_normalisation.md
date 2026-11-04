@@ -28,13 +28,13 @@ stored form was solid.
 
     python3 scripts/snapshot.py            # pull the live database to a local cache
     python3 scripts/plan_names.py          # diff the cache against the table
-    AIRPLANE_KEY=amt_... python3 scripts/apply_names.py
+    AIRPLANE_KEY=amt_... python3 scripts/apply_names.py --plan /path/to/name_plan.json --base-url https://airplane.museum --apply
 
 `plan_names.py` writes `name_plan.json` and changes nothing. `apply_names.py`
-PATCHes only what the plan lists, logs every id it lands to `applied_ids.txt`,
-and is resumable — re-run it until it reports zero errors. It never removes an
-existing alias: the alias list it sends is the old list plus additions, because
-`PATCH /api/v1/aircraft/<id>` **replaces** aliases wholesale.
+PATCHes only the allowed name fields in the plan and skips values already equal
+on the server. The planner includes existing aliases plus additions because
+`PATCH /api/v1/aircraft/<id>` **replaces** aliases wholesale. Refresh stale plans
+to avoid overwriting aliases added since the snapshot.
 
 `overrides.py` holds the hand-adjudicated records: `MOVE` for genuine individual
 airframe names that belong in `aircraft_name` (Enola Gay, Bockscar, Shoo Shoo
@@ -45,12 +45,16 @@ Re-run the whole thing after any large import; it is idempotent.
 
 ## Things to know
 
-- The API returns HTTP 500 on a minority of concurrent alias writes. They are
-  transient — the applier retries, and a second run clears the rest. Two worker
-  threads is about the useful limit.
+- The applier writes sequentially and stops on a failed request. Resolve a
+  conflict and review the remaining plan before rerunning it.
 - `variants()` in `plan_names.py` generates the spelling forms a substring search
   would otherwise miss: accent-stripped (`Delfín` → `Delfin`), camel-split
   (`SeaCobra` → `Sea Cobra`), solid (`Sea Cobra` → `SeaCobra`), and a hand list
   for solid compounds that are not camel-cased (`Superfortress` →
   `Super Fortress`). It deliberately does not de-space names with digits or
   three words, which only produced unreadable noise.
+
+The apply runner previews by default. `--apply` enables writes; current values
+are checked on each rerun, replacing the old workspace-specific applied-ID log.
+Plans are data: unexpected fields are rejected, and failures return a nonzero
+exit status. Rebuild/review stale plans before applying them.

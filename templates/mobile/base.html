@@ -34,7 +34,7 @@
     <div class="m-topbar-actions">
         {% if current_user.is_authenticated %}
             <a href="/account" class="m-topbar-btn" aria-label="Account"><i class="fa-solid fa-user"></i></a>
-            <a href="/logout"  class="m-topbar-btn" aria-label="Logout"><i class="fa-solid fa-right-from-bracket"></i></a>
+            <form method="post" action="/logout" style="display:contents"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit"  class="m-topbar-btn" aria-label="Logout"><i class="fa-solid fa-right-from-bracket"></i></button></form>
         {% else %}
             <a href="/login" class="m-topbar-btn" aria-label="Login"><i class="fa-solid fa-right-to-bracket"></i></a>
         {% endif %}

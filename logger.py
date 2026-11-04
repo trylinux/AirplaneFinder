@@ -9,13 +9,23 @@ Three dedicated log files under ``logs/``:
 import os
 import sys
 import logging
+import re
 from logging.handlers import RotatingFileHandler
 
 _LOG_DIR = os.path.join(os.path.dirname(__file__), "logs")
 _MAX_BYTES = 5 * 1024 * 1024   # 5 MB per file
 _BACKUP_COUNT = 5               # keep 5 rotated copies
 
-_FMT = logging.Formatter(
+class SingleLineFormatter(logging.Formatter):
+    """Keep attacker-controlled names, paths and upstream errors on one line."""
+
+    def format(self, record):
+        rendered = super().format(record)
+        return re.sub(r'[\x00-\x1f\x7f\u2028\u2029]',
+                      lambda match: repr(match.group(0))[1:-1], rendered)
+
+
+_FMT = SingleLineFormatter(
     "[%(asctime)s] %(levelname)s  %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
 )

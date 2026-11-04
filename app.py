@@ -34,6 +34,8 @@ from flask_limiter.util import get_remote_address
 from math import isfinite
 
 from sqlalchemy import or_, and_, func
+from sqlalchemy.exc import IntegrityError, DataError
+from werkzeug.exceptions import HTTPException
 from sqlalchemy.orm import joinedload, selectinload, contains_eager
 
 from models import (
@@ -47,6 +49,8 @@ from models import (
 from geocoder import resolve_location
 from config import Config
 from logger import auth_log, change_log, access_log
+from validation import safe_http_url, model_text_errors, alias_errors
+from catalog_identity import is_usable_construction_number
 
 
 # ══════════════════════════════════════════════
@@ -77,7 +81,8 @@ class _BearerAwareCSRF(CSRFProtect):
 
 
 csrf = _BearerAwareCSRF()
-limiter = Limiter(key_func=get_remote_address, default_limits=[])
+limiter = Limiter(key_func=get_remote_address, default_limits=[Config.API_RATE_LIMIT],
+                  default_limits_exempt_when=lambda: not request.path.startswith('/api/'))
 
 
 _DEFAULT_SECRET_KEY = "change-me-in-production"
@@ -90,10 +95,10 @@ def create_app():
     # Refuse to boot in production with the placeholder SECRET_KEY. Sessions
     # are signed with this key — a known value means anyone can forge a
     # session cookie and impersonate any user.
-    if Config.SECRET_KEY == _DEFAULT_SECRET_KEY:
+    if not Config.SECRET_KEY or Config.SECRET_KEY == _DEFAULT_SECRET_KEY:
         if not Config.SERVER_DEBUG:
             raise RuntimeError(
-                "SECRET_KEY is the default placeholder. Set the SECRET_KEY env var "
+                "SECRET_KEY is missing or the default placeholder. Set the SECRET_KEY env var "
                 "(or [app] secret_key in web.config) before running outside debug mode."
             )
         # Dev mode: still loud about it.
@@ -115,13 +120,49 @@ def create_app():
 
     @login_manager.user_loader
     def load_user(user_id):
-        user = User.query.get(int(user_id))
-        return user if user and user.is_active else None
+        try:
+            identity, _fingerprint = user_id.split(':', 1)
+            user = db.session.get(User, int(identity))
+        except (ValueError, TypeError, AttributeError):
+            return None
+        return user if (user and user.is_active and
+                        secrets.compare_digest(user.get_id(), user_id)) else None
 
     return app
 
 
 app = create_app()
+app.jinja_env.filters['safe_http_url'] = safe_http_url
+
+
+@app.errorhandler(HTTPException)
+def _http_error(error):
+    if request.path.startswith('/api/'):
+        response = error.get_response()
+        response.data = app.json.dumps({'error': error.description})
+        response.content_type = 'application/json'
+        return response
+    return error
+
+
+@app.errorhandler(IntegrityError)
+@app.errorhandler(DataError)
+def _database_write_error(error):
+    db.session.rollback()
+    # Do not expose SQL, bound values, password hashes, or keys in a response.
+    app.logger.warning('Database write rejected: %s', type(error).__name__)
+    status = 409 if isinstance(error, IntegrityError) else 400
+    return jsonify(error='The record conflicts with existing data or contains invalid values.'), status
+
+
+@app.after_request
+def _private_response(response):
+    if (current_user.is_authenticated or request.headers.get('Authorization')
+            or request.path.startswith(('/account', '/admin', '/api/v1/keys', '/api/v1/users'))):
+        response.headers['Cache-Control'] = 'no-store'
+    if response.status_code >= 400:
+        db.session.rollback()
+    return response
 
 
 # ══════════════════════════════════════════════
@@ -282,8 +323,10 @@ def _validate_password_strength(password):
     Returns ``None`` if valid; otherwise returns a human-readable error
     string suitable for showing to the user.
     """
-    if password is None:
+    if not isinstance(password, str):
         return "Password is required."
+    if len(password) > 1024:
+        return "Password must be at most 1024 characters."
     if len(password) < Config.PASSWORD_MIN_LENGTH:
         return f"Password must be at least {Config.PASSWORD_MIN_LENGTH} characters."
     if Config.PASSWORD_REQUIRE_MIXED:
@@ -439,9 +482,14 @@ def _safe_next_url(target):
     """
     if not target:
         return None
+    if any(ord(c) < 32 for c in target) or '\\' in target:
+        return None
     # urljoin resolves a relative target against the current URL; absolute
     # targets pass through unchanged. urlparse then lets us inspect them.
-    test_url = urlparse(urljoin(request.host_url, target))
+    try:
+        test_url = urlparse(urljoin(request.host_url, target))
+    except ValueError:
+        return None
     ref_url = urlparse(request.host_url)
     same_scheme = test_url.scheme in ("http", "https")
     same_host = test_url.netloc == ref_url.netloc
@@ -586,10 +634,24 @@ def api_auth_required(min_permission="read"):
 
             # Store the resolved user on g for scope checks
             g.api_user = user
+            g.log_user = user.username
             return fn(*args, **kwargs)
         wrapper.required_api_permission = min_permission
         return wrapper
     return decorator
+
+
+def catalog_fields(model):
+    """Validate supplied catalog fields before a create/update handler runs."""
+    def decorate(fn):
+        @wraps(fn)
+        def wrapped(*args, **kwargs):
+            errors = _catalog_payload_errors(request.get_json() or {}, model)
+            if errors:
+                return jsonify(error='Invalid fields.', errors=errors), 400
+            return fn(*args, **kwargs)
+        return wrapped
+    return decorate
 
 
 def admin_required(fn):
@@ -752,7 +814,7 @@ def login_page():
 
         if user and user.check_password(password) and user.is_active:
             user.last_login = datetime.now(timezone.utc)
-            user.last_login_ip = request.headers.get("X-Forwarded-For", request.remote_addr)
+            user.last_login_ip = request.remote_addr
             user.reset_failed_logins()
             db.session.commit()
 
@@ -796,7 +858,7 @@ def login_page():
     return mobile_render("login.html")
 
 
-@app.route("/logout")
+@app.route("/logout", methods=['POST'])
 @login_required
 def logout():
     # Capture identity BEFORE we tear the session down — current_user
@@ -840,6 +902,8 @@ def register_page():
         password_error = _validate_password_strength(password) if password else None
         if not username or not password:
             flash("Username and password are required.", "error")
+        elif len(username) > 80 or (email and len(email) > 200) or any(ord(c) < 32 for c in username):
+            flash("Username or email is invalid or too long.", "error")
         elif password != password2:
             flash("Passwords do not match.", "error")
         elif password_error:
@@ -847,16 +911,18 @@ def register_page():
         elif User.query.filter_by(username=username).first():
             flash("Username already taken.", "error")
         else:
-            # First user is automatically admin
-            is_first = User.query.count() == 0
-            role = "admin" if is_first else "viewer"
+            # Administrator bootstrap is an explicit local operation (README).
+            role = "viewer"
             user = User(username=username, email=email, role=role)
             user.set_password(password)
             db.session.add(user)
             db.session.commit()
+            session.clear()
             login_user(user)
+            now_iso = datetime.now(timezone.utc).isoformat()
+            session['login_time'] = session['last_activity'] = now_iso
             auth_log.info(f"REGISTER user={username} role={role} ip={request.remote_addr}")
-            flash("Account created!" + (" You are the first user, so you have admin rights." if is_first else ""), "success")
+            flash("Account created!", "success")
             return redirect(url_for("admin_page"))
 
     return mobile_render("register.html")
@@ -1201,6 +1267,7 @@ def api_museum_detail(museum_id):
 
 
 @app.route("/api/v1/museums/nearest")
+@limiter.shared_limit(lambda: Config.GEOCODE_RATE_LIMIT, scope='proximity')
 def api_museums_nearest():
     """Museums near a point, closest first — no aircraft filter.
 
@@ -1263,7 +1330,7 @@ def api_museums_nearest():
         rows = rows.filter(Museum.access_type != _ACCESS_TYPE_HIDDEN)
     rows = (
         rows
-        .group_by(Museum.id)
+        .group_by(*Museum.__table__.columns)
         .all()
     )
 
@@ -1358,6 +1425,7 @@ def api_museum_countries():
 
 
 @app.route("/api/v1/nearest")
+@limiter.shared_limit(lambda: Config.GEOCODE_RATE_LIMIT, scope='proximity')
 def api_nearest_museum():
     """Find nearest museum(s) with a specific aircraft to a location.
 
@@ -1450,6 +1518,7 @@ def api_nearest_museum():
 
 
 @app.route("/api/v1/museums/nearby")
+@limiter.shared_limit(lambda: Config.GEOCODE_RATE_LIMIT, scope='proximity')
 def api_nearby_museums():
     """Find museums nearest to a given location.
 
@@ -1666,7 +1735,10 @@ def _coerce_int(value, field_name, errors):
     if value is None or value == "":
         return None
     try:
-        return int(str(value).strip())
+        result = int(str(value).strip())
+        if not -2147483648 <= result <= 2147483647:
+            raise ValueError('outside database integer range')
+        return result
     except (ValueError, TypeError):
         errors.append({"field": field_name, "message": f"must be an integer (got {value!r})"})
         return None
@@ -1695,25 +1767,32 @@ def _validate_text_fields(row, fields, errors):
     return row
 
 
+def _catalog_payload_errors(data, model):
+    errors = model_text_errors(data, model)
+    for field in ('website', 'source_url', 'wikipedia_url'):
+        if field in data and data[field] not in (None, '') and not safe_http_url(data[field]):
+            errors.append({'field': field, 'message': 'must be an absolute HTTP or HTTPS URL without credentials or control characters'})
+    for field, allowed in (
+        ('aircraft_type', _AIRCRAFT_TYPE_VALUES), ('wing_type', _WING_TYPE_VALUES),
+        ('military_civilian', _MILITARY_CIVILIAN_VALUES), ('access_type', _ACCESS_TYPE_VALUES),
+    ):
+        value = data.get(field)
+        if value not in (None, '') and (not isinstance(value, str) or value.strip() and value.strip().lower() not in allowed):
+            errors.append({'field': field, 'message': f'must be one of {sorted(allowed)}'})
+    if model in (Aircraft, AircraftTemplate) and 'aliases' in data:
+        errors.extend(alias_errors(data['aliases']))
+    for field in ('is_active', 'is_published'):
+        if field in data and not isinstance(data[field], bool):
+            errors.append({'field': field, 'message': 'must be a JSON boolean'})
+    return errors
+
+
 _OPERATOR_COUNTRY_RE = re.compile(r"^[A-Z]{2}$")
-
-
-# A construction number is an identifier, not a note. These strings were being
-# stored in the column and then used as a join key: one record carrying the
-# literal "unknown" collided against four different F-84F serials at once.
-_CN_PLACEHOLDERS = {"unknown", "unk", "n/a", "na", "none", "nil", "-", "--",
-                    "?", "??", "tbd", "x", "xx"}
-
-
-def is_usable_construction_number(value):
-    """True when a c/n can identify an airframe. Placeholders cannot."""
-    v = (value or "").strip()
-    return bool(v) and v.lower() not in _CN_PLACEHOLDERS
 
 
 def _validate_aircraft_row(row):
     """Return (clean_dict, errors). clean_dict is None if errors is non-empty."""
-    errors = []
+    errors = _catalog_payload_errors(row, Aircraft)
     row = _validate_text_fields(row, (
         "manufacturer", "model", "variant", "model_name", "aircraft_name",
         "aircraft_type", "wing_type", "military_civilian", "role_type",
@@ -1806,9 +1885,9 @@ def _validate_aircraft_row(row):
 
 def _validate_museum_row(row):
     """Return (clean_dict, errors). clean_dict is None if errors is non-empty."""
-    errors = []
+    errors = _catalog_payload_errors(row, Museum)
     row = _validate_text_fields(row, (
-        "name", "city", "country", "region", "state_province", "postal_code", "address", "website",
+        "name", "city", "country", "region", "state_province", "postal_code", "address", "website", "access_type",
     ), errors)
     g = lambda k: (row.get(k) or "").strip() if isinstance(row.get(k), str) else row.get(k)
 
@@ -2067,7 +2146,8 @@ def _bulk_import_aircraft(rows, dry_run):
             db.session.commit()
     except Exception as exc:
         db.session.rollback()
-        report["errors"].append({"row": -1, "field": "_db", "message": str(exc)})
+        app.logger.warning("Bulk import rolled back: %s", type(exc).__name__)
+        report["errors"].append({"row": -1, "field": "_db", "message": "Database write failed; no rows were imported."})
         report["created"] = 0
         report["linked"] = 0
     return report
@@ -2138,7 +2218,8 @@ def _bulk_import_museums(rows, dry_run):
             db.session.commit()
     except Exception as exc:
         db.session.rollback()
-        report["errors"].append({"row": -1, "field": "_db", "message": str(exc)})
+        app.logger.warning("Bulk import rolled back: %s", type(exc).__name__)
+        report["errors"].append({"row": -1, "field": "_db", "message": "Database write failed; no rows were imported."})
         report["created"] = 0
     return report
 
@@ -2362,6 +2443,7 @@ def _find_aircraft_near_duplicate(model, tail_number, variant=None,
 
 @app.route("/api/v1/aircraft", methods=["POST"])
 @api_auth_required("readwrite")
+@catalog_fields(Aircraft)
 def api_create_aircraft():
     """Create a new aircraft record.
 
@@ -2458,6 +2540,7 @@ def api_create_aircraft():
 
 @app.route("/api/v1/aircraft/<int:aircraft_id>", methods=["PUT", "PATCH"])
 @api_auth_required("readwrite")
+@catalog_fields(Aircraft)
 def api_update_aircraft(aircraft_id):
     """Update an existing aircraft record. Include 'aliases' array to replace all aliases."""
     aircraft = Aircraft.query.get_or_404(aircraft_id)
@@ -2542,6 +2625,7 @@ def api_delete_aircraft(aircraft_id):
 
 @app.route("/api/v1/museums", methods=["POST"])
 @api_auth_required("readwrite")
+@catalog_fields(Museum)
 def api_create_museum():
     """Create a new museum record.
 
@@ -2581,6 +2665,7 @@ def api_create_museum():
 
 @app.route("/api/v1/museums/<int:museum_id>", methods=["PUT", "PATCH"])
 @api_auth_required("readwrite")
+@catalog_fields(Museum)
 def api_update_museum(museum_id):
     """Update an existing museum record. Scoped users can only edit assigned museums."""
     museum = Museum.query.get_or_404(museum_id)
@@ -2689,6 +2774,7 @@ def api_list_exhibits():
 
 @app.route("/api/v1/exhibits", methods=["POST"])
 @api_auth_required("readwrite")
+@catalog_fields(AircraftMuseum)
 def api_create_exhibit():
     """Link an aircraft to a museum. Scoped users can only link to assigned museums."""
     data = request.get_json() or {}
@@ -2706,6 +2792,8 @@ def api_create_exhibit():
     # Scope check
     if not _user_can_write_museum(int(data["museum_id"])):
         return jsonify({"error": "You do not have access to that museum."}), 403
+    if AircraftMuseum.query.filter_by(aircraft_id=data['aircraft_id'], museum_id=data['museum_id']).first():
+        return jsonify(error='This aircraft is already linked to this museum.'), 409
 
     status = data.get("display_status", "on_display")
     if not isinstance(status, str) or status not in _DISPLAY_STATUS_VALUES:
@@ -2730,6 +2818,7 @@ def api_create_exhibit():
 
 @app.route("/api/v1/exhibits/<int:link_id>", methods=["PUT", "PATCH"])
 @api_auth_required("readwrite")
+@catalog_fields(AircraftMuseum)
 def api_update_exhibit(link_id):
     """Update an exhibit link (status, notes)."""
     link = AircraftMuseum.query.get_or_404(link_id)
@@ -2775,6 +2864,9 @@ def _fact_or_404(fact_id):
 
 def _validate_fact_payload(data, require_text=True):
     """Return (clean, error_response). Shared by POST and PUT."""
+    errors = _catalog_payload_errors(data, AircraftFact)
+    if errors:
+        return None, (jsonify(error='Invalid fact fields.', errors=errors), 400)
     text = (data.get("fact") or "").strip()
     if require_text and not text:
         return None, (jsonify({"error": "'fact' is required and cannot be empty."}), 400)
@@ -2783,9 +2875,9 @@ def _validate_fact_payload(data, require_text=True):
 
     aircraft_id = data.get("aircraft_id")
     if aircraft_id not in (None, ""):
-        try:
-            aircraft_id = int(aircraft_id)
-        except (TypeError, ValueError):
+        id_errors = []
+        aircraft_id = _coerce_int(aircraft_id, 'aircraft_id', id_errors)
+        if id_errors or aircraft_id is None or aircraft_id < 1:
             return None, (jsonify({"error": "'aircraft_id' must be an integer."}), 400)
         if Aircraft.query.get(aircraft_id) is None:
             return None, (jsonify({"error": f"No aircraft with id={aircraft_id}."}), 404)
@@ -2837,6 +2929,7 @@ def api_random_fact():
 
 @app.route("/api/v1/facts", methods=["POST"])
 @api_auth_required("readwrite")
+@catalog_fields(AircraftFact)
 def api_create_fact():
     """Add a fact. Optionally attach it to an aircraft via aircraft_id."""
     clean, err = _validate_fact_payload(request.get_json() or {})
@@ -2853,6 +2946,7 @@ def api_create_fact():
 
 @app.route("/api/v1/facts/<int:fact_id>", methods=["PUT", "PATCH"])
 @api_auth_required("readwrite")
+@catalog_fields(AircraftFact)
 def api_update_fact(fact_id):
     """Update a fact's text, source, aircraft link, or active flag."""
     fact = _fact_or_404(fact_id)
@@ -2928,6 +3022,7 @@ def api_template_detail(template_id):
 
 @app.route("/api/v1/templates", methods=["POST"])
 @api_auth_required("readwrite")
+@catalog_fields(AircraftTemplate)
 def api_create_template():
     """Create a new aircraft template.
 
@@ -2936,32 +3031,15 @@ def api_create_template():
               military_civilian, role_type, description, aliases[].
     """
     data = request.get_json() or {}
-    missing = [f for f in ("name", "manufacturer", "model") if not data.get(f)]
-    if missing:
-        return jsonify({"error": f"Missing required fields: {', '.join(missing)}"}), 400
-
-    if AircraftTemplate.query.filter_by(name=data["name"]).first():
-        return jsonify({"error": f"A template named '{data['name']}' already exists."}), 409
-
-    t = AircraftTemplate(
-        name=data["name"],
-        manufacturer=data["manufacturer"],
-        model=data["model"],
-        variant=data.get("variant") or None,
-        model_name=data.get("model_name") or None,
-        aircraft_type=data.get("aircraft_type", "fixed_wing"),
-        wing_type=data.get("wing_type") or None,
-        military_civilian=data.get("military_civilian", "military"),
-        role_type=data.get("role_type") or None,
-        description=data.get("description") or None,
-    )
+    name = (data.get('name') or '').strip()
+    clean, errors = _validate_aircraft_row(data)
+    if not name or errors:
+        return jsonify(error='Template name, manufacturer, and model must be valid.', errors=errors), 400
+    if AircraftTemplate.query.filter_by(name=name).first():
+        return jsonify(error=f"A template named '{name}' already exists."), 409
+    t = AircraftTemplate(name=name, **{f: clean[f] for f in _TEMPLATE_FIELDS if f != 'name'})
+    t.aliases = [AircraftTemplateAlias(alias=value) for value in clean['aliases']]
     db.session.add(t)
-    db.session.flush()
-
-    for alias_str in data.get("aliases", []):
-        alias_str = (alias_str or "").strip()
-        if alias_str:
-            db.session.add(AircraftTemplateAlias(template_id=t.id, alias=alias_str))
 
     _increment_contribution()
     db.session.commit()
@@ -2972,34 +3050,25 @@ def api_create_template():
 
 @app.route("/api/v1/templates/<int:template_id>", methods=["PUT", "PATCH"])
 @api_auth_required("readwrite")
+@catalog_fields(AircraftTemplate)
 def api_update_template(template_id):
     """Update a template. Include 'aliases' to replace the full alias set."""
     t = AircraftTemplate.query.get_or_404(template_id)
     data = request.get_json() or {}
 
-    for field in ("name", "manufacturer", "model"):
-        if field in data and (not isinstance(data[field], str) or not data[field].strip()):
-            return jsonify({"error": f"Template {field} cannot be empty."}), 400
-
-    # Unique-name check only fires when the caller actually changes the name.
-    if "name" in data and data["name"] and data["name"] != t.name:
-        if AircraftTemplate.query.filter_by(name=data["name"]).first():
-            return jsonify({"error": f"A template named '{data['name']}' already exists."}), 409
-
+    merged = {**t.to_dict(), **data}
+    name = (merged.get('name') or '').strip()
+    clean, errors = _validate_aircraft_row(merged)
+    if not name or errors:
+        return jsonify(error='Template name, manufacturer, and model must be valid.', errors=errors), 400
+    if AircraftTemplate.query.filter(AircraftTemplate.name == name, AircraftTemplate.id != template_id).first():
+        return jsonify(error=f"A template named '{name}' already exists."), 409
+    t.name = name
     for field in _TEMPLATE_FIELDS:
-        if field in data:
-            val = data[field] if data[field] not in ("", None) else None
-            # name is NOT NULL; refuse to blank it
-            if field == "name" and not val:
-                return jsonify({"error": "Template name cannot be empty."}), 400
-            setattr(t, field, val)
-
-    if "aliases" in data:
-        AircraftTemplateAlias.query.filter_by(template_id=template_id).delete()
-        for alias_str in data["aliases"]:
-            alias_str = (alias_str or "").strip()
-            if alias_str:
-                db.session.add(AircraftTemplateAlias(template_id=template_id, alias=alias_str))
+        if field != 'name':
+            setattr(t, field, clean[field])
+    if 'aliases' in data:
+        t.aliases = [AircraftTemplateAlias(alias=value) for value in clean['aliases']]
 
     _increment_contribution()
     db.session.commit()
@@ -3027,10 +3096,11 @@ def api_delete_template(template_id):
 # ── Aircraft types (shared, inherited type information) ──
 
 def _can_see_unpublished_types():
-    """Unpublished types are drafts. Any authenticated identity (web session
-    or API key) may see them; anonymous callers get the published set only.
-    Same bar the admin pages use — they are login_required, not role-gated."""
-    return _get_effective_user() is not None
+    """Drafts require a catalog editor; explicit credentials never fall back."""
+    if request.headers.get('Authorization'):
+        user, key = _get_api_user()
+        return bool(user and user.is_manager and key.permissions in ('readwrite', 'admin'))
+    return bool(current_user.is_authenticated and current_user.is_manager)
 
 
 # Fields an API caller may set on a type. model/variant are handled
@@ -3093,20 +3163,26 @@ def _coerce_type_payload(data):
             continue
         raw = data[field]
         if field == "is_published":
-            values[field] = bool(raw)
+            if not isinstance(raw, bool):
+                return None, 'is_published must be a JSON boolean.'
+            values[field] = raw
             continue
         if raw in ("", None):
             values[field] = None
             continue
         if field in _AIRCRAFT_TYPE_INT_FIELDS:
             try:
-                values[field] = int(raw)
-            except (TypeError, ValueError):
+                values[field] = int(str(raw).strip())
+                if not 0 <= values[field] <= 2147483647:
+                    raise ValueError()
+            except (TypeError, ValueError, OverflowError):
                 return None, f"{field} must be a whole number."
         elif field in _AIRCRAFT_TYPE_DECIMAL_FIELDS:
             try:
                 values[field] = float(raw)
-            except (TypeError, ValueError):
+                if isinstance(raw, bool) or not isfinite(values[field]) or not 0 <= values[field] <= 9999.99:
+                    raise ValueError()
+            except (TypeError, ValueError, OverflowError):
                 return None, f"{field} must be a number."
         elif field == "origin_country":
             code = str(raw).strip().upper()
@@ -3135,16 +3211,22 @@ def _apply_type_aliases(t, raw):
     """
     if not isinstance(raw, list):
         return "aliases must be a list."
+    if len(raw) > 500:
+        return 'At most 500 aliases are allowed.'
     parsed = []
     seen = set()
     for entry in raw:
         if isinstance(entry, str):
             designation, scope = entry.strip(), ""
         elif isinstance(entry, dict):
-            designation = str(entry.get("designation") or "").strip()
-            scope = str(entry.get("manufacturer_scope") or "").strip()
+            if model_text_errors(entry, AircraftTypeAlias):
+                return 'Alias designation and scope must be bounded text.'
+            designation = (entry.get("designation") or "").strip()
+            scope = (entry.get("manufacturer_scope") or "").strip()
         else:
             return "each alias must be a string or an object with a designation."
+        if len(designation) > 100 or len(scope) > 100:
+            return 'Alias designation and scope must be at most 100 characters.'
         key = type_match_key(designation)
         if not key:
             return "each alias needs a designation with at least one letter or digit."
@@ -3226,19 +3308,18 @@ def api_aircraft_type_list():
         query = query.filter(AircraftType.is_published.is_(True))
     if q:
         like = f"%{q}%"
-        query = query.filter(or_(
+        clauses = [
             AircraftType.display_name.ilike(like),
             AircraftType.model.ilike(like),
             AircraftType.model_name.ilike(like),
             AircraftType.manufacturer.ilike(like),
-        ))
+        ]
         # A designation typed without punctuation ("mig21") should still
         # find the type — that is exactly what match_key is for.
         key = type_match_key(q)
         if key:
-            query = query.union(
-                AircraftType.query.filter(AircraftType.match_key.like(f"{key}%"))
-            )
+            clauses.append(AircraftType.match_key.like(f'{key}%'))
+        query = query.filter(or_(*clauses))
     types = query.order_by(AircraftType.model, AircraftType.variant).all()
     return jsonify([t.to_dict() for t in types])
 
@@ -3286,6 +3367,7 @@ def api_aircraft_type_resolve():
 
 @app.route("/api/v1/aircraft-types", methods=["POST"])
 @api_auth_required("readwrite")
+@catalog_fields(AircraftType)
 def api_create_aircraft_type():
     """Create a type. Required: model, display_name, description.
 
@@ -3341,6 +3423,7 @@ def api_create_aircraft_type():
 
 @app.route("/api/v1/aircraft-types/<int:type_id>", methods=["PUT", "PATCH"])
 @api_auth_required("readwrite")
+@catalog_fields(AircraftType)
 def api_update_aircraft_type(type_id):
     """Update a type. Changing model or variant resyncs match_key and slug,
     so the set of airframes inheriting this write-up moves with it."""
@@ -3467,6 +3550,24 @@ def unlink_compat(lid):
 # API: Key management (session-auth only)
 # ══════════════════════════════════════════════
 
+def _key_options(data):
+    label = data.get('label', 'default')
+    if not isinstance(label, str) or not label.strip() or len(label) > 100:
+        raise ValueError('label must be text between 1 and 100 characters.')
+    days = data.get('expires_in_days')
+    expires_at = None
+    if days is not None:
+        if isinstance(days, bool) or not isinstance(days, int) or not 1 <= days <= 36500:
+            raise ValueError('expires_in_days must be an integer between 1 and 36500.')
+        expires_at = datetime.now(timezone.utc) + timedelta(days=days)
+    return label.strip(), expires_at
+
+
+_key_creation_limit = limiter.shared_limit(
+    '10 per hour', scope='key-creation', key_func=lambda: str(current_user.id),
+)
+
+
 @app.route("/api/v1/keys", methods=["GET"])
 @login_required
 def api_list_keys():
@@ -3477,7 +3578,7 @@ def api_list_keys():
 
 @app.route("/api/v1/keys", methods=["POST"])
 @login_required
-@limiter.limit("10 per hour")
+@_key_creation_limit
 def api_create_key():
     """Generate a new API key for the current user.
 
@@ -3485,7 +3586,10 @@ def api_create_key():
     key after that many days.  Omit or pass ``null`` for a key that never expires.
     """
     data = request.get_json() or {}
-    label = data.get("label", "default")
+    try:
+        label, expires_at = _key_options(data)
+    except ValueError as exc:
+        return jsonify(error=str(exc)), 400
     permissions = data.get("permissions", "read")
     if permissions not in ("read", "readwrite", "admin"):
         return jsonify({"error": "permissions must be 'read', 'readwrite', or 'admin'."}), 400
@@ -3493,17 +3597,6 @@ def api_create_key():
         return jsonify({"error": "Only data admins can create admin-level keys."}), 403
     if permissions == "readwrite" and not current_user.is_manager:
         return jsonify({"error": "Your role cannot create readwrite keys."}), 403
-
-    expires_at = None
-    expires_in = data.get("expires_in_days")
-    if expires_in is not None:
-        try:
-            days = int(expires_in)
-            if days < 1:
-                return jsonify({"error": "expires_in_days must be a positive integer."}), 400
-            expires_at = datetime.now(timezone.utc) + timedelta(days=days)
-        except (ValueError, TypeError, OverflowError):
-            return jsonify({"error": "expires_in_days must be a positive integer."}), 400
 
     api_key, raw_key = ApiKey.generate(current_user.id, label=label, permissions=permissions, expires_at=expires_at)
     db.session.add(api_key)
@@ -3540,6 +3633,7 @@ def api_list_user_keys(user_id):
 
 @app.route("/api/v1/users/<int:user_id>/keys", methods=["POST"])
 @login_required
+@_key_creation_limit
 def api_create_user_key(user_id):
     """Create an API key for a user. Admins can create for anyone; users can create for themselves.
 
@@ -3550,7 +3644,10 @@ def api_create_user_key(user_id):
         abort(403)
     target_user = User.query.get_or_404(user_id)
     data = request.get_json() or {}
-    label = data.get("label", "default")
+    try:
+        label, expires_at = _key_options(data)
+    except ValueError as exc:
+        return jsonify(error=str(exc)), 400
 
     # Default permissions based on user role
     # aircraft_admin gets admin-level keys (full data CRUD); only the strict
@@ -3573,7 +3670,7 @@ def api_create_user_key(user_id):
     if permissions == "readwrite" and target_user.role == "viewer":
         return jsonify({"error": "Cannot create readwrite keys for viewer users."}), 400
 
-    api_key, raw_key = ApiKey.generate(user_id, label=label, permissions=permissions)
+    api_key, raw_key = ApiKey.generate(user_id, label=label, permissions=permissions, expires_at=expires_at)
     db.session.add(api_key)
     db.session.commit()
     auth_log.info(f"API_KEY_CREATE for_user={target_user.username} label={label} perms={permissions} by={current_user.username}")
@@ -3613,6 +3710,36 @@ def api_list_users():
     return jsonify([u.to_dict() for u in users])
 
 
+def _user_payload_errors(data):
+    errors = model_text_errors(data, User)
+    for field in ('username', 'email'):
+        value = data.get(field)
+        if isinstance(value, str) and any(ord(c) < 32 for c in value):
+            errors.append({'field': field, 'message': 'must not contain control characters'})
+    if 'role' in data and data['role'] not in ('admin', 'aircraft_admin', 'manager', 'viewer'):
+        errors.append({'field': 'role', 'message': 'invalid role'})
+    if 'password' in data and data['password']:
+        error = _validate_password_strength(data['password'])
+        if error:
+            errors.append({'field': 'password', 'message': error})
+    for field in ('assigned_museums', 'assigned_countries'):
+        if field not in data:
+            continue
+        values = data[field]
+        if not isinstance(values, list) or len(values) > 1000:
+            errors.append({'field': field, 'message': 'must be an array of at most 1000 entries'})
+            continue
+        if field == 'assigned_museums':
+            valid = all(type(v) is int and 0 < v <= 2147483647 for v in values)
+        else:
+            valid = all(isinstance(v, str) and 0 < len(v.strip()) <= 100 for v in values)
+        if not valid:
+            errors.append({'field': field, 'message': 'invalid assignment values'})
+        else:
+            data[field] = list(dict.fromkeys(v.strip() if isinstance(v, str) else v for v in values))
+    return errors
+
+
 @app.route("/api/v1/users", methods=["POST"])
 @admin_required
 def api_create_user():
@@ -3622,6 +3749,9 @@ def api_create_user():
     Optional: email, role (admin/aircraft_admin/manager/viewer).
     """
     data = request.get_json() or {}
+    errors = _user_payload_errors(data)
+    if errors:
+        return jsonify(error='Invalid user fields.', errors=errors), 400
     username = (data.get("username") or "").strip()
     password = data.get("password", "")
     email = (data.get("email") or "").strip() or None
@@ -3684,6 +3814,9 @@ def api_update_user(user_id):
     """Update a user (admin only). Can change role, email, active status, and assignments."""
     user = User.query.get_or_404(user_id)
     data = request.get_json() or {}
+    errors = _user_payload_errors(data)
+    if errors:
+        return jsonify(error='Invalid user fields.', errors=errors), 400
     if "is_active" in data and not isinstance(data["is_active"], bool):
         return jsonify({"error": "is_active must be a JSON boolean."}), 400
 
@@ -3759,6 +3892,7 @@ def api_docs():
 # Helper
 # ══════════════════════════════════════════════
 
+@limiter.shared_limit(lambda: Config.GEOCODE_RATE_LIMIT, scope='geocoding')
 def _resolve_location(location_str):
     """Return (lat, lon) for a zip/postal code or city name.
 
@@ -3773,6 +3907,39 @@ def _resolve_location(location_str):
 
 
 from exploration import register_exploration
+
+
+@app.route('/api/v1/aircraft/<int:keep_id>/merge', methods=['POST'])
+@api_auth_required('admin')
+def api_merge_aircraft(keep_id):
+    from merging import merge_aircraft
+    try:
+        keep = merge_aircraft(keep_id, (request.get_json() or {}).get('drop_id'))
+        db.session.commit()
+    except ValueError as exc:
+        db.session.rollback()
+        return jsonify(error=str(exc)), 409
+    change_log.info('AIRCRAFT_MERGE keep=%s drop=%s by=%s', keep_id,
+                    request.json.get('drop_id'), _get_effective_user().username)
+    return jsonify(keep.to_dict())
+
+
+@app.route('/api/v1/museums/<int:keep_id>/merge', methods=['POST'])
+@api_auth_required('admin')
+def api_merge_museums(keep_id):
+    from merging import merge_museums
+    data = request.get_json() or {}
+    try:
+        keep = merge_museums(keep_id, data.get('drop_id'), data.get('expected_aircraft_ids'))
+        db.session.commit()
+    except ValueError as exc:
+        db.session.rollback()
+        return jsonify(error=str(exc)), 409
+    change_log.info('MUSEUM_MERGE keep=%s drop=%s by=%s', keep_id,
+                    data.get('drop_id'), _get_effective_user().username)
+    return jsonify(keep.to_dict())
+
+
 register_exploration(app, api_auth_required, _get_effective_user, _increment_contribution,
                      lambda location: _resolve_location(location), limiter)
 

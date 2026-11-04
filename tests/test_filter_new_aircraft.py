@@ -94,7 +94,7 @@ class TestTailMatching:
         client = FakeClient(exhibits=[
             exhibit("Test Museum", "Grumman", "F-14", "A", "160694")])
         code, out = run(mod, monkeypatch, tmp_path, [
-            {"manufacturer": "grumman", "model": "f-14", "tail_number": "160694"},
+            {"manufacturer": "grumman", "model": "f-14", "variant": "a", "tail_number": "160694"},
         ], client)
         assert code == 3          # nothing new
 

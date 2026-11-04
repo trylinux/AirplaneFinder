@@ -351,7 +351,7 @@ $(function() {
                 loadMuseums();
             },
             error: function(xhr) {
-                $('#edit-msg').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText) + '</div>').show();
+                $('#edit-msg').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + escHtml((xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText)) + '</div>').show();
             }
         });
     });
@@ -362,7 +362,7 @@ $(function() {
             url: '/api/v1/museums/' + editId, method: 'DELETE',
             success: function() { $('#edit-modal').fadeOut(200); loadMuseums(); },
             error: function(xhr) {
-                $('#edit-msg').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText) + '</div>').show();
+                $('#edit-msg').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + escHtml((xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText)) + '</div>').show();
             }
         });
     });

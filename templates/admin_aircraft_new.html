@@ -291,7 +291,7 @@ $(function() {
             // leaves the form in a broken state again.
             console.error('Template prefill failed:', err);
             $('#msg-aircraft')
-                .html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> Could not apply template: ' + (err && err.message ? err.message : err) + '</div>')
+                .html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> Could not apply template: ' + escHtml((err && err.message ? err.message : err)) + '</div>')
                 .show();
         }
     });
@@ -455,7 +455,7 @@ $(function() {
                 $('#template-picker').val('');
             },
             error: function(xhr) {
-                $('#msg-aircraft').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + (xhr.responseJSON ? JSON.stringify(xhr.responseJSON) : xhr.statusText) + '</div>').show();
+                $('#msg-aircraft').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + escHtml((xhr.responseJSON ? JSON.stringify(xhr.responseJSON) : xhr.statusText)) + '</div>').show();
             }
         });
     });

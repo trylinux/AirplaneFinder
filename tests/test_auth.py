@@ -57,7 +57,7 @@ class TestLogin:
 class TestLogout:
 
     def test_logout_redirects_to_login(self, admin_client):
-        r = admin_client.get("/logout", follow_redirects=False)
+        r = admin_client.post("/logout", follow_redirects=False)
         assert r.status_code in (301, 302)
         assert "/login" in r.headers["Location"]
 
@@ -65,7 +65,7 @@ class TestLogout:
         """The Set-Cookie that expires the remember token must reach the
         browser. Without this, Flask-Login auto-re-authenticates from the
         still-valid cookie on the next request."""
-        r = admin_client.get("/logout", follow_redirects=False)
+        r = admin_client.post("/logout", follow_redirects=False)
         set_cookies = r.headers.get_all("Set-Cookie")
         delete_remember = any(
             "remember_token=" in v
@@ -80,7 +80,7 @@ class TestLogout:
     def test_logout_actually_logs_out_with_remember_cookie(self, admin_client):
         """THE regression test. Logout, then hit a @login_required endpoint
         — must redirect to /login, NOT silently return 200."""
-        admin_client.get("/logout")
+        admin_client.post("/logout")
         r = admin_client.get("/account", follow_redirects=False)
         assert r.status_code in (301, 302), (
             f"post-logout /account expected redirect, got {r.status_code}; "
@@ -89,7 +89,7 @@ class TestLogout:
         assert "/login" in r.headers["Location"]
 
     def test_logout_clears_session_keys(self, admin_client):
-        admin_client.get("/logout")
+        admin_client.post("/logout")
         with admin_client.session_transaction() as s:
             assert "_user_id" not in s
             assert "login_time" not in s

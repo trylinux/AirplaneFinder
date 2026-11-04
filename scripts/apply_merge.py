@@ -1,226 +1,72 @@
-# -*- coding: utf-8 -*-
-"""Execute the PROVEN site merges in merge_plan.json.
+"""Apply reviewed site plans through transactional merge APIs.
 
-Per pair, in this order:
-  1. fold any field the surviving airframe lacks in from its duplicate
-  2. delete the duplicate airframe row
-  3. relink the losing site's unique aircraft to the survivor, then drop the
-     old link
-  4. delete the losing museum record
-Every step is logged so it can be replayed against rollback_site_merge.json.
+Defaults to a read-only preview. Use --apply with an explicit --base-url.
+No module-import side effects, implicit production target, or DELETE fallback.
 """
-import json, os, sys, time, urllib.request, urllib.error
+import argparse
+import json
+from pathlib import Path
 
-KEY = os.environ["AIRPLANE_KEY"]
-H = "https://airplane.museum/api/v1"
-HERE = os.path.dirname(os.path.abspath(__file__))
-PLAN = os.path.join(HERE, "..", "data", "_research", "merge_plan.json")
-LOG = open(os.path.join(HERE, "..", "merge_actions.log"), "a")
-DONE = os.path.join(HERE, "..", "merged_pairs.txt")
-done = set()
-if os.path.exists(DONE):
-    done = {l.strip() for l in open(DONE) if l.strip()}
+if __package__:
+    from .airplane_api import AirplaneClient, ApiError
+else:
+    from airplane_api import AirplaneClient, ApiError
 
 
-def call(method, path, body=None):
-    # Content-Type is set ONLY when there is a body. Werkzeug rejects a request
-    # that declares application/json and carries nothing to parse, so sending
-    # the header on a bodyless DELETE returns 400 before the view ever runs.
-    data = json.dumps(body).encode() if body is not None else None
-    headers = {"Authorization": f"Bearer {KEY}"}
-    if data is not None:
-        headers["Content-Type"] = "application/json"
-    r = urllib.request.Request(H + path, data=data, method=method, headers=headers)
-    for a in range(5):
-        try:
-            with urllib.request.urlopen(r, timeout=90) as f:
-                return f.status, json.loads(f.read() or b"{}")
-        except urllib.error.HTTPError as e:
-            b = e.read().decode()[:200]
-            if e.code in (429, 500, 502, 503, 504) and a < 4:
-                time.sleep(3 * (a + 1)); continue
-            return e.code, {"error": b}
-        except Exception as e:
-            if a < 4:
-                time.sleep(3); continue
-            return 0, {"error": str(e)}
+def apply_pair(client, plan):
+    """Stop on the first failed preservation step. Each API merge is atomic."""
+    keep_id, drop_id = plan['keep']['id'], plan['drop']['id']
+    if any(type(value) is not int or value <= 0 for value in (keep_id, drop_id)) or keep_id == drop_id:
+        raise ValueError('Invalid museum IDs in merge plan.')
+    if plan.get('proven') is not True or plan.get('type_only'):
+        raise ValueError('The pair needs a reviewed airframe identity match.')
+    aircraft_ids = list(plan['delete_aircraft']) + [row['aircraft_id'] for row in plan['relink_links']]
+    aircraft_ids += [row[field] for row in plan['matched'] for field in ('drop_aircraft', 'keep_aircraft')]
+    if any(type(value) is not int or value <= 0 for value in aircraft_ids):
+        raise ValueError('Invalid aircraft IDs in merge plan.')
+    expected = set(plan['delete_aircraft']) | {row['aircraft_id'] for row in plan['relink_links']}
+    matches = {row['drop_aircraft']: row['keep_aircraft'] for row in plan['matched']}
+    if (set(matches) != set(plan['delete_aircraft']) or len(matches) != len(plan['matched'])
+            or set(matches) & set(matches.values())):
+        raise ValueError('Ambiguous aircraft matches; review the plan.')
+    current = client.get_museum(drop_id)
+    actual = {row['id'] for row in current['aircraft']}
+    if actual != expected:
+        raise ValueError('Collection changed since the plan; regenerate and review it.')
+    for losing_id, surviving_id in matches.items():
+        client.post(f'/api/v1/aircraft/{surviving_id}/merge', json={'drop_id': losing_id})
+    client.post(f'/api/v1/museums/{keep_id}/merge', json={
+        'drop_id': drop_id,
+        # Aircraft merges preserve the losing museum's links under KEEP IDs.
+        'expected_aircraft_ids': sorted({matches.get(value, value) for value in expected}),
+    })
 
 
-def get_ac(i):
-    s, d = call("GET", f"/aircraft/{i}")
-    return d.get("aircraft") if s == 200 else None
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--plan', type=Path, default=Path(__file__).resolve().parents[1] / 'data/_research/merge_plan.json')
+    parser.add_argument('--base-url', required=True)
+    parser.add_argument('--apply', action='store_true')
+    parser.add_argument('--dry-run', action='store_true')
+    parser.add_argument('--all', action='store_true')
+    parser.add_argument('drop_ids', nargs='*', type=int)
+    args = parser.parse_args(argv)
+    if args.apply and not args.all and not args.drop_ids:
+        parser.error('--apply needs explicit losing museum IDs or --all')
+    try:
+        plans = json.loads(args.plan.read_text())
+        client = AirplaneClient(base_url=args.base_url)
+        for plan in plans:
+            if not plan.get('proven') or (args.drop_ids and plan['drop']['id'] not in args.drop_ids):
+                continue
+            print(f"{plan['drop']['id']} -> {plan['keep']['id']}")
+            if args.apply and not args.dry_run:
+                apply_pair(client, plan)
+        return 0
+    except (OSError, ValueError, KeyError, TypeError, ApiError) as exc:
+        print(f'Merge stopped: {exc}')
+        return 1
 
 
-FOLD = ["tail_number", "construction_number", "operator_country", "year_built",
-        "aircraft_name", "model_name", "variant"]
-
-
-def merge_fields(keep_id, drop_id):
-    """Anything the survivor is missing and the duplicate has, move across."""
-    k, d = get_ac(keep_id), get_ac(drop_id)
-    if not k or not d:
-        return
-    body = {}
-    for f in FOLD:
-        if not str(k.get(f) or "").strip() and str(d.get(f) or "").strip():
-            body[f] = d[f]
-    al = list(k.get("aliases") or [])
-    have = {s.lower() for s in al}
-    for s in (d.get("aliases") or []):
-        if s.lower() not in have:
-            al.append(s); have.add(s.lower())
-    if len(al) != len(k.get("aliases") or []):
-        body["aliases"] = al
-    dd = (d.get("description") or "").strip()
-    kd = (k.get("description") or "").strip()
-    if dd and len(dd) > len(kd) + 40:
-        body["description"] = dd
-    if not body:
-        return
-    s, r = call("PATCH", f"/aircraft/{keep_id}", body)
-    if s != 200 and "tail_number" in body:      # a collision on the tail alone
-        body.pop("tail_number")
-        s, r = call("PATCH", f"/aircraft/{keep_id}", body) if body else (200, {})
-    LOG.write(f"FOLD {drop_id}->{keep_id} {s} {json.dumps(body)[:200]}\n")
-
-
-# ── Museum-level fold ────────────────────────────────────────────────
-# The aircraft fold below has always existed; this one did not, and its
-# absence was destructive. Deleting the losing museum record deleted
-# everything only that record held. On the 13 pairs this was first run
-# against that was 15 fields, including COORDINATES for four museums --
-# which would have removed them from the map and from proximity search --
-# and four websites.
-MUSEUM_FOLD = ["postal_code", "latitude", "longitude", "website", "address",
-               "state_province", "region", "access_type"]
-
-# Which name survives is a judgement, not a field count. plan_merge picks the
-# survivor on record completeness, and the better-populated record is often
-# the one a later geographic import created: "Impala Gate Guard -- Muizenberg"
-# beats "Chrysalis Academy Impala" on fields while being the less useful name
-# to a visitor, who is looking for the academy. Keeping the survivor's ID (so
-# every link and coordinate stays put) and taking the better NAME is the
-# resolution; it is one PATCH.
-#
-# Keyed by surviving museum id. Verified pair by pair -- do not extend this
-# with a heuristic.
-NAME_OVERRIDES = {
-    6143: "43 Air School Impala Gate Guard -- Port Alfred",
-    6144: "Caprivi MOTH Shellhole Impala -- Randfontein",
-    6146: "SANDF Military Academy Impala Display -- Saldanha",
-    6150: "Chrysalis Academy Impala -- Muizenberg",
-    6151: "Lowveld Aero Club Mirage -- Nelspruit",
-    6224: "Denel Aviation Campus Cheetah Display -- Kempton Park",
-    6275: "Royal Malaysian Air Force Museum -- Sendayan",
-}
-
-
-def get_mus(i):
-    s, d = call("GET", f"/museums/{i}")
-    return (d.get("museum") or d) if s == 200 else None
-
-
-def merge_museum_fields(keep_id, drop_id):
-    """Anything the surviving SITE is missing and the duplicate has, move
-    across, then apply a curated name override if one is set. Runs BEFORE the
-    museum delete, or the data it rescues is already gone."""
-    k, d = get_mus(keep_id), get_mus(drop_id)
-    if not k or not d:
-        return
-    body = {}
-    for f in MUSEUM_FOLD:
-        kv = str(k.get(f) or "").strip()
-        dv = str(d.get(f) or "").strip()
-        # access_type defaults to 'public', so an explicit non-default on the
-        # duplicate is real information the survivor's default is not.
-        if f == "access_type":
-            if dv and dv != "public" and kv == "public":
-                body[f] = d[f]
-            continue
-        if dv and not kv:
-            body[f] = d[f]
-    if keep_id in NAME_OVERRIDES and k.get("name") != NAME_OVERRIDES[keep_id]:
-        body["name"] = NAME_OVERRIDES[keep_id]
-    if not body:
-        return
-    s, r = call("PATCH", f"/museums/{keep_id}", body)
-    LOG.write(f"FOLD_MUS {drop_id}->{keep_id} {s} {json.dumps(body)[:200]}\n")
-    if s != 200:
-        print(f"  museum fold failed {keep_id} {s} {r}", flush=True)
-
-
-def merge_museum_preview(keep_id, drop_id):
-    k, d = get_mus(keep_id), get_mus(drop_id)
-    if not k or not d:
-        print("       (could not read one of the pair)")
-        return
-    for f in MUSEUM_FOLD:
-        kv, dv = str(k.get(f) or "").strip(), str(d.get(f) or "").strip()
-        if dv and not kv and f != "access_type":
-            print(f"       fold {f}: {dv[:60]}")
-    if keep_id in NAME_OVERRIDES:
-        print(f"       rename: {k.get('name')!r} -> {NAME_OVERRIDES[keep_id]!r}")
-
-
-plan = [p for p in json.load(open(PLAN)) if p["proven"]]
-DRY = "--dry-run" in sys.argv
-picked = [a for a in sys.argv[1:] if a not in ("--all", "--dry-run")]
-sel = [p for p in plan if str(p["drop"]["id"]) in picked] if picked else plan
-print(f"pairs to merge: {len(sel)}", flush=True)
-
-ok = fail = 0
-for p in sel:
-    tag = f"{p['keep']['id']}<-{p['drop']['id']}"
-    if tag in done:
-        continue
-    if DRY:
-        print(f"  [dry] {p['drop']['name'][:38]} -> {p['keep']['name'][:38]}  "
-              f"del={len(p['delete_aircraft'])} relink="
-              f"{len(p['relink_links'])}", flush=True)
-        merge_museum_preview(p["keep"]["id"], p["drop"]["id"])
-        continue
-    merge_museum_fields(p["keep"]["id"], p["drop"]["id"])
-    for m in p["matched"]:
-        merge_fields(m["keep_aircraft"], m["drop_aircraft"])
-    bad = False
-    for i in p["delete_aircraft"]:
-        s, r = call("DELETE", f"/aircraft/{i}")
-        LOG.write(f"DEL_AC {i} {s}\n")
-        if s not in (200, 204, 404):
-            bad = True
-            print("  delete aircraft failed", i, s, r, flush=True)
-    for rl in p["relink_links"]:
-        # Idempotent: an earlier run may have created the new link and then
-        # failed to drop the old one, leaving the aircraft at both sites.
-        sa, da = call("GET", f"/aircraft/{rl['aircraft_id']}")
-        already = (sa == 200 and any(m.get("id") == p["keep"]["id"]
-                                     for m in (da.get("museums") or [])))
-        if already:
-            s, r = 201, {"note": "link already present"}
-        else:
-            s, r = call("POST", "/exhibits", {"aircraft_id": rl["aircraft_id"],
-                                              "museum_id": p["keep"]["id"],
-                                              "display_status": rl.get("display_status") or "on_display"})
-        LOG.write(f"RELINK {rl['aircraft_id']}->{p['keep']['id']} {s}{' (already)' if already else ''}\n")
-        if s in (200, 201):
-            s2, _ = call("DELETE", f"/exhibits/{rl['link_id']}")
-            LOG.write(f"DEL_LINK {rl['link_id']} {s2}\n")
-        else:
-            bad = True
-            print("  relink failed", rl, s, r, flush=True)
-    if bad:
-        fail += 1
-        continue
-    s, r = call("DELETE", f"/museums/{p['drop']['id']}")
-    LOG.write(f"DEL_MUS {p['drop']['id']} {s}\n")
-    if s in (200, 204, 404):
-        ok += 1
-        with open(DONE, "a") as f:
-            f.write(tag + "\n")
-        print(f"  merged {p['drop']['name'][:34]} -> {p['keep']['name'][:34]}", flush=True)
-    else:
-        fail += 1
-        print("  museum delete failed", p["drop"]["id"], s, r, flush=True)
-
-LOG.flush()
-print(f"\nDONE merged {ok}  failed {fail}")
+if __name__ == '__main__':
+    raise SystemExit(main())

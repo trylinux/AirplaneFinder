@@ -93,9 +93,9 @@
         <div class="d-item-meta" style="margin-top:.75rem;">
             <span>Type information, shared across every {{ type_info.designation }} on this site.</span>
             {% if type_info.wikipedia_url %}
-            <a href="{{ type_info.wikipedia_url }}" target="_blank" rel="noopener noreferrer">Wikipedia <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="{{ type_info.wikipedia_url | safe_http_url or '#' }}" target="_blank" rel="noopener noreferrer">Wikipedia <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             {% elif type_info.source_url %}
-            <a href="{{ type_info.source_url }}" target="_blank" rel="noopener noreferrer">{{ type_info.source_name or 'Source' }} <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="{{ type_info.source_url | safe_http_url or '#' }}" target="_blank" rel="noopener noreferrer">{{ type_info.source_name or 'Source' }} <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             {% endif %}
         </div>
     </div>
@@ -119,7 +119,7 @@
             <div class="d-item">
                 <p class="d-prose">{{ fact.fact }}</p>
                 {% if fact.source_url %}
-                <div class="d-item-meta"><a href="{{ fact.source_url }}" target="_blank" rel="noopener noreferrer">Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                <div class="d-item-meta"><a href="{{ fact.source_url | safe_http_url or '#' }}" target="_blank" rel="noopener noreferrer">Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
                 {% endif %}
             </div>
             {% endfor %}

@@ -1,4 +1,5 @@
 .idea
+web.config
 __pycache__
 .*
 logs/*

@@ -71,7 +71,7 @@
 
     <div class="d-actions">
         {% if museum.website %}
-        <a class="d-btn" href="{{ museum.website }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Official site</a>
+        <a class="d-btn" href="{{ museum.website | safe_http_url or '#' }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Official site</a>
         {% endif %}
         {% if museum.latitude is not none and museum.longitude is not none %}
         <a class="d-btn secondary" href="https://www.google.com/maps/search/?api=1&query={{ museum.latitude }},{{ museum.longitude }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-map-location-dot"></i> Directions</a>

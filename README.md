@@ -5,7 +5,7 @@ with searchable directories, museum collections, and proximity searches.
 
 ## Requirements and setup
 
-- Python 3.9+ and MySQL 8.0+ (or MariaDB 10.6+).
+- Python 3.9.2+ and MySQL 8.0+ (or MariaDB 10.6+).
 - Browser access to the configured public CDNs for jQuery, Three.js, fonts,
   icons, and globe boundary data. Geolocation requires HTTPS or localhost.
 
@@ -29,10 +29,11 @@ export MYSQL_DB=airplane_museum_tracker
 export SECRET_KEY=replace-with-a-long-random-secret
 ```
 
-For local development, debug defaults to true and the server uses port 5000:
+Debug is off by default and the development server binds to localhost on port 5000.
+For local development, explicitly enable debug:
 
 ```bash
-.venv/bin/python app.py
+SERVER_DEBUG=true .venv/bin/python app.py
 ```
 
 Open [the local app](http://localhost:5000). For production set `SERVER_DEBUG=false`,
@@ -94,8 +95,16 @@ migration files for an older installation:
   `uq_airframe (full_designation, tail_number, operator_country)` and adds the
   `construction_number` and `operator_country` columns. **Apply this one before
   deploying the matching code**, which writes both columns. It is guarded and
-  re-runnable, and it adds the new unique key before dropping the old one, so a
-  failure leaves the database untouched.
+  re-runnable, and it adds the new unique key before dropping the old one. MySQL DDL
+  commits implicitly: a failure can leave earlier column additions in place,
+  while preserving the old unique index until the replacement succeeds.
+
+Also apply these upgrades when the corresponding tables/columns are absent:
+
+- `migrate_museum_access.sql`
+- `migrate_aircraft_types.sql`
+- `migrate_aircraft_types_scope.sql` (after aircraft types)
+- `migrate_aircraft_type_aliases.sql` (after aircraft types and scope)
 
 Apply one with, for example:
 
@@ -153,7 +162,9 @@ for commands, map provider configuration, API fields, permissions, and limitatio
 ## Authentication and permissions
 
 Web sessions use Flask-Login. Registration creates a viewer account. Management
-pages require login; the write APIs enforce role and museum scope. Session writes
+pages require login; the write APIs enforce role and museum scope. Logout uses `POST /logout`; changing a password invalidates existing session
+and remember cookies. Public registration always creates a viewer, including on
+an empty database; use the local administrator bootstrap above. Session writes
 need a CSRF token, sent as `X-CSRFToken` by the UI.
 
 | User role | Capabilities |
@@ -180,7 +191,8 @@ A supplied invalid Authorization header does not fall back to a logged-in sessio
 User and key management endpoints require sessions rather than Bearer auth.
 
 Create/revoke your keys at `/account` or `/admin/api-keys`. Raw keys are returned
-only at creation. `POST /api/v1/keys` supports `expires_in_days`; omit it for no
+only at creation. `POST /api/v1/keys` and `/api/v1/users/{id}/keys` support `expires_in_days`
+(an integer from 1 to 36500); omit it for no
 expiration. Session idle timeouts default to 15 minutes for admins, 30 for managers
 and aircraft admins, and 60 for viewers; the absolute timeout is 12 hours. Login
 lockout defaults to five failed attempts for 15 minutes. Password policy defaults
@@ -300,8 +312,9 @@ link columns below).
   `BULK_IMPORT_RATE_LIMIT` env var if you need more.
 - Atomic: any validation error rolls back the whole batch — partial
   imports are too painful to debug after the fact.
-- Both dry runs and imports check existing duplicates: `(model, tail_number)`
-  for aircraft with known tail numbers, and `(name, city, country)` for museums.
+- Both dry runs and imports check existing duplicates: `(full_designation, tail_number, operator_country)`
+  for aircraft with known tail numbers, or manufacturer + base model + usable
+  construction number, and `(name, city, country)` for museums.
   Duplicates are reported as skipped and prevent the batch from being written.
   Remove them before importing again.
 
@@ -360,7 +373,7 @@ AIRPLANE_API_KEY     # needed for writes; bulk import requires admin-level data 
 **Common workflows**
 
 ```bash
-# Backup the catalog (no API key needed; reads are public)
+# Export aircraft and museum fields (no API key needed; reads are public)
 python3 scripts/export_aircraft.py --format json --out aircraft_backup.json
 python3 scripts/export_museums.py  --format json --out museum_backup.json
 
@@ -380,6 +393,13 @@ python3 scripts/find_nearest.py "C-130" "Dayton, OH"
 * * * * *  python3 /opt/AirplaneFinder/scripts/health_check.py --quiet \
               || curl -s https://status-collector.example.com/airplane-down
 ```
+
+These exports are not full database backups: they omit accounts, exhibit
+relationships, facts, and history. Aircraft exports include construction numbers
+and operator countries. Default CSV output prefixes potential spreadsheet
+formulas with an apostrophe. Use JSON or `--raw-csv` for lossless machine
+interchange; raw CSV containing untrusted text should not be opened in a
+spreadsheet. Review any prefixed cells before reimporting spreadsheet output.
 
 ## Maintenance
 
@@ -535,3 +555,40 @@ or a deploy script — wire it in as the first step of whatever you use.
 - `data/`: catalog CSVs and historical research/source notes; see
   [data/METHODOLOGY.md](data/METHODOLOGY.md).
 - `tests/`: pytest regressions and optional Playwright browser checks.
+
+
+## Security review and maintenance safeguards
+
+See [the November 2026 review](docs/code-review-2026-11-04.md) for findings,
+OWASP coverage, validation evidence, deployment changes, and remaining work.
+
+Catalog website/source links must be absolute HTTP(S) URLs without credentials
+or control characters. Invalid legacy links are suppressed when rendered.
+Text lengths are validated against the production schema, and publish flags
+require JSON booleans. Aircraft-type drafts require a manager or data admin;
+Bearer access additionally requires a readwrite/admin key.
+
+API reads default to `API_RATE_LIMIT=120 per minute`; proximity/geocoding uses
+`GEOCODE_RATE_LIMIT=20 per minute`, including legacy endpoint aliases. Configure
+`RATELIMIT_STORAGE_URI` with a shared supported backend for multiple workers;
+`memory://` is a per-process development fallback. Install the backend's driver
+when configuring it. Terminate TLS at a trusted proxy, overwrite forwarded
+headers there, and keep the application port private. Configure upstream request
+and billing budgets as well as application limits.
+
+Both `POST /api/v1/aircraft/{keep_id}/merge` and
+`POST /api/v1/museums/{keep_id}/merge` require admin-level catalog access.
+Pass `drop_id`; museum merges also require `expected_aircraft_ids`, the losing
+collection reviewed by the caller. Each operation is transactional, preserves
+related history/facts/notes/assignments, and refuses conflicting fields or stale
+collections. Reconcile conflicts explicitly before retrying. A multi-pair script
+run is not one transaction; refresh the plan after a partially completed run.
+
+`apply_merge.py` now previews by default and requires `--base-url`; writes need
+`--apply` plus losing museum IDs or `--all`. It uses the merge APIs and never
+falls back to client-side deletion. Deploy the API changes before using it.
+The name, construction-number, and operator-country apply scripts likewise
+require `--plan`, `--base-url`, and `--apply` for writes. They share a bounded-field
+plan runner, check current values on reruns, and stop on failures. Old one-off
+research planners still contain historical workspace paths; inspect their
+inputs/outputs before generating a new plan.

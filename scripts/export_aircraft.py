@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Export every aircraft to CSV or JSON.
 
-The output is in the same shape ``/api/v1/aircraft/bulk_import`` accepts,
-so you can export → edit in a spreadsheet → re-import without touching
-the format. (Aliases get joined into ``Herc;Hercules`` for CSV; JSON keeps
-them as a list.)
+The columns match ``/api/v1/aircraft/bulk_import``. CSV prefixes potentially
+active spreadsheet formulas with an apostrophe. Use JSON or ``--raw-csv`` for
+lossless machine interchange; do not open untrusted raw CSV in a spreadsheet.
+Aliases get joined into ``Herc;Hercules`` for CSV; JSON keeps them as a list.
+Imports insert new records; use PATCH to edit existing records.
 
 Usage
 -----
@@ -33,12 +34,14 @@ from pathlib import Path
 # this script's directory to sys.path so ``import airplane_api`` works.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from airplane_api import AirplaneClient, ApiError  # noqa: E402
+from csv_safety import spreadsheet_row
 
 
 # Column order that round-trips through bulk_import. Must match what the
 # server's _validate_aircraft_row accepts.
 AIRCRAFT_COLUMNS = [
     "manufacturer", "model", "variant", "tail_number",
+    "construction_number", "operator_country",
     "model_name", "aircraft_name",
     "aircraft_type", "wing_type", "military_civilian", "role_type",
     "year_built", "description", "aliases",
@@ -67,6 +70,8 @@ def main():
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--format", choices=("csv", "json"), default="csv",
                    help="Output format (default: csv)")
+    p.add_argument('--raw-csv', action='store_true',
+                   help='Lossless machine CSV; may contain spreadsheet formulas. JSON is also lossless.')
     p.add_argument("--out", "-o", default="-",
                    help="Output file path (default: stdout)")
     p.add_argument("--query", "-q", default="",
@@ -96,7 +101,7 @@ def main():
                                     extrasaction="ignore")
             writer.writeheader()
             for a in rows:
-                writer.writerow(_row_for_csv(a))
+                writer.writerow(spreadsheet_row(_row_for_csv(a), raw=args.raw_csv))
     finally:
         if args.out != "-":
             out_stream.close()

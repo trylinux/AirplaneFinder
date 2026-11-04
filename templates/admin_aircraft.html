@@ -446,7 +446,7 @@ $(function() {
                 loadAircraft();
             },
             error: function(xhr) {
-                $('#edit-msg').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText) + '</div>').show();
+                $('#edit-msg').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + escHtml((xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText)) + '</div>').show();
             }
         });
     });
@@ -457,7 +457,7 @@ $(function() {
             url: '/api/v1/aircraft/' + editId, method: 'DELETE',
             success: function() { $('#edit-modal').fadeOut(200); loadAircraft(); },
             error: function(xhr) {
-                $('#edit-msg').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText) + '</div>').show();
+                $('#edit-msg').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + escHtml((xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText)) + '</div>').show();
             }
         });
     });

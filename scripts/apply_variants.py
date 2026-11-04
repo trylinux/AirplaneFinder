@@ -28,6 +28,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from airplane_api import AirplaneClient, ApiError  # noqa: E402
+from patch_plans import patch_body
 
 _HERE = Path(__file__).resolve().parent
 
@@ -50,6 +51,13 @@ def main():
         plan = json.loads(args.plan.read_text(encoding="utf-8"))
     except OSError as exc:
         print(f"error: {exc}. Run plan_variants.py first.", file=sys.stderr)
+        raise SystemExit(2)
+
+    try:
+        for entry in plan:
+            patch_body(entry, ('variant', 'model_name'))
+    except ValueError as exc:
+        print(f"error: {exc}", file=sys.stderr)
         raise SystemExit(2)
 
     if args.only:
@@ -76,7 +84,7 @@ def main():
     conflicts, errors, applied = [], 0, 0
     with args.done.open("a", encoding="utf-8") as fh:
         for p in todo:
-            body = {k: v for k, v in p.items() if not k.startswith("_")}
+            body = patch_body(p, ('variant', 'model_name'))
             try:
                 client.patch(f"/api/v1/aircraft/{p['_id']}", json=body)
             except ApiError as exc:
@@ -104,7 +112,7 @@ def main():
     if conflicts:
         print(f"{len(conflicts):,} conflicts in {args.conflicts} -- each one is a pair of rows "
               f"for the SAME airframe, not a bug in the plan. Adjudicate before re-running.")
-    raise SystemExit(1 if errors else 0)
+    raise SystemExit(1 if errors or conflicts else 0)
 
 
 if __name__ == "__main__":

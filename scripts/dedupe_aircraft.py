@@ -207,56 +207,21 @@ def merge(keep_id, drop_id, assume_yes=False):
             print("  Aborted.")
             return None
 
-    # We use bulk SQL UPDATEs/DELETEs here rather than touching the ORM
-    # relationships. The Aircraft.aliases relationship has
-    # cascade="all, delete-orphan", which would helpfully (but
-    # incorrectly) delete the moved aliases when we eventually
-    # session.delete(drop) — the in-memory collection still has them.
-    # Going through the SQL layer sidesteps that entirely.
-
-    # ── Links: re-point what we can, delete the rest ──
-    keep_museum_ids = {
-        mid for (mid,) in db.session.query(AircraftMuseum.museum_id)
-        .filter_by(aircraft_id=keep.id).all()
-    }
-    # Duplicate links (DROP linked to a museum KEEP is already linked to)
-    # have to be deleted before the re-point, otherwise the
-    # (aircraft_id, museum_id) UNIQUE index trips.
-    links_dropped = db.session.execute(
-        AircraftMuseum.__table__.delete().where(
-            AircraftMuseum.aircraft_id == drop.id,
-            AircraftMuseum.museum_id.in_(keep_museum_ids) if keep_museum_ids else False,
-        )
-    ).rowcount if keep_museum_ids else 0
-    links_moved = db.session.execute(
-        AircraftMuseum.__table__.update()
-        .where(AircraftMuseum.aircraft_id == drop.id)
-        .values(aircraft_id=keep.id)
-    ).rowcount
-
-    # ── Aliases: re-point unique ones, delete duplicates ──
-    keep_alias_set = {
-        a for (a,) in db.session.query(AircraftAlias.alias)
-        .filter_by(aircraft_id=keep.id).all()
-    }
-    aliases_dropped = db.session.execute(
-        AircraftAlias.__table__.delete().where(
-            AircraftAlias.aircraft_id == drop.id,
-            AircraftAlias.alias.in_(keep_alias_set) if keep_alias_set else False,
-        )
-    ).rowcount if keep_alias_set else 0
-    aliases_moved = db.session.execute(
-        AircraftAlias.__table__.update()
-        .where(AircraftAlias.aircraft_id == drop.id)
-        .values(aircraft_id=keep.id)
-    ).rowcount
-
-    # ── Delete DROP. By now it owns no links or aliases, so cascade has
-    # nothing left to do. Expire identity-map state so SA doesn't try to
-    # re-process drop.aliases / drop.museum_links from a stale snapshot. ──
-    db.session.expire(drop)
-    db.session.delete(drop)
-    db.session.commit()
+    # Use the same transactional merge as the HTTP API, including histories,
+    # facts, and notes that the original link/alias-only merge lost.
+    from merging import merge_aircraft
+    keep_museum_ids = {link.museum_id for link in keep.museum_links.all()}
+    drop_links = drop.museum_links.all()
+    links_dropped = sum(link.museum_id in keep_museum_ids for link in drop_links)
+    links_moved = len(drop_links) - links_dropped
+    aliases_dropped = sum(alias in keep_aliases for alias in drop_aliases)
+    aliases_moved = len(drop_aliases) - aliases_dropped
+    try:
+        merge_aircraft(keep_id, drop_id)
+        db.session.commit()
+    except Exception:
+        db.session.rollback()
+        raise
 
     print(f"  Done. links moved={links_moved}, links dropped (already on "
           f"KEEP)={links_dropped}, aliases moved={aliases_moved}, "

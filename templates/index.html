@@ -153,7 +153,7 @@ $(function() {
     });
 
     function showProxError(msg) {
-        $('#prox-error').html('<i class="fa-solid fa-circle-exclamation"></i> ' + msg).show();
+        $('#prox-error').html('<i class="fa-solid fa-circle-exclamation"></i> ' + escHtml(msg)).show();
     }
 
     function renderProximityResults(data) {
