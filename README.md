@@ -557,6 +557,14 @@ or a deploy script — wire it in as the first step of whatever you use.
 - `tests/`: pytest regressions and optional Playwright browser checks.
 
 
+## Android app
+
+The offline Android companion lives in [`android/`](android/README.md). It shares
+the mobile website's styling and globe, keeps a local catalog and saved trips,
+and refreshes from public catalog snapshots. Its README covers Android Studio,
+builds, emulator tests, snapshot publication, and the distinction between the
+bundled research seed and an authoritative production export.
+
 ## Security review and maintenance safeguards
 
 See [the November 2026 review](docs/code-review-2026-11-04.md) for findings,

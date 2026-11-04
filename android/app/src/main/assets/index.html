@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="theme-color" content="#0f172a">
+  <title>Aircraft Finder</title>
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="/static/css/mobile.css">
+  <link rel="stylesheet" href="/static/css/mobile-nav.css">
+  <link rel="stylesheet" href="/static/css/detail.css">
+  <link rel="stylesheet" href="offline.css">
+  <script defer src="vendor/three.min.js"></script>
+  <script defer src="/static/js/museum-globe.js"></script>
+  <script defer src="catalog.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body class="mobile-layout">
+  <header class="m-topbar">
+    <a class="m-brand" href="#/"><i class="fa-solid fa-plane" aria-hidden="true"></i> Aircraft Finder</a>
+    <div class="m-topbar-actions">
+      <a class="m-topbar-btn" href="#/trips" aria-label="Trip planner"><i class="fa-solid fa-route" aria-hidden="true"></i></a>
+      <a class="m-topbar-btn" href="#/settings" aria-label="Offline data and updates"><i class="fa-solid fa-cloud-arrow-down" aria-hidden="true"></i></a>
+    </div>
+  </header>
+  <main class="m-main" id="content"><div class="m-card"><h1>Opening your offline catalog…</h1><p>This first launch may take a moment.</p></div></main>
+  <section class="m-main" id="globe-page" hidden aria-label="Museum globe">
+    <div class="m-page-header"><h1><i class="fa-solid fa-globe" aria-hidden="true"></i> Discovery</h1><p class="m-subtitle">Explore museums offline. Tap a marker to open its collection.</p></div>
+    <a class="m-btn secondary" href="#/museums">Museum directory</a>
+    <div class="m-globe-wrap" id="m-globe-wrap">
+      <canvas id="m-globe-canvas" aria-label="Interactive museum globe"></canvas>
+      <div class="m-globe-controls">
+        <button id="m-globe-zoom-in" aria-label="Zoom in"><i class="fa-solid fa-plus"></i></button>
+        <button id="m-globe-zoom-out" aria-label="Zoom out"><i class="fa-solid fa-minus"></i></button>
+        <button id="m-globe-zoom-reset" aria-label="Reset zoom"><i class="fa-solid fa-expand"></i></button>
+        <button id="m-globe-spin-toggle" aria-label="Pause or resume globe"><i class="fa-solid fa-pause"></i></button>
+      </div>
+      <div class="m-globe-pin-info" id="m-globe-tooltip"></div>
+      <div class="m-globe-loading" id="m-globe-loading">Loading local museum locations…</div>
+    </div>
+  </section>
+  <div id="notice" role="status" aria-live="polite" hidden></div>
+  <nav class="m-bottomnav" aria-label="Explore">
+    <a class="m-tab" href="#/" data-tab="home"><i class="fa-solid fa-house"></i><span>Home</span></a>
+    <a class="m-tab" href="#/aircraft" data-tab="aircraft"><i class="fa-solid fa-jet-fighter"></i><span>Aircraft</span></a>
+    <a class="m-tab" href="#/museums" data-tab="museums"><i class="fa-solid fa-building-columns"></i><span>Museums</span></a>
+    <a class="m-tab" href="#/near-me" data-tab="near-me"><i class="fa-solid fa-location-dot"></i><span>Near Me</span></a>
+    <a class="m-tab" href="#/facts" data-tab="facts"><i class="fa-solid fa-lightbulb"></i><span>Facts</span></a>
+  </nav>
+</body>
+</html>

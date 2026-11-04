@@ -21,6 +21,8 @@ def _get(section, key, env_var, default):
 
 
 class Config:
+    OFFLINE_CATALOG_DIR = _get('app', 'offline_catalog_dir', 'OFFLINE_CATALOG_DIR',
+                               os.path.join(os.path.dirname(__file__), 'instance', 'offline-catalog'))
     # Public map tiles; keep provider attribution visible when changing providers.
     MAP_TILE_URL = _get("map", "tile_url", "MAP_TILE_URL", "https://tile.openstreetmap.org/{z}/{x}/{y}.png")
     MAP_ATTRIBUTION = _get("map", "attribution", "MAP_ATTRIBUTION", '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors')
