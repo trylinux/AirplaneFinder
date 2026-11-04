@@ -3943,6 +3943,9 @@ def api_merge_museums(keep_id):
 register_exploration(app, api_auth_required, _get_effective_user, _increment_contribution,
                      lambda location: _resolve_location(location), limiter)
 
+from offline_catalog import register_offline
+register_offline(app)
+
 if __name__ == "__main__":
     app.run(
         host=Config.SERVER_HOST,

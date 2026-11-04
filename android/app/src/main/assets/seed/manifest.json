@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "catalog_id": "airplane-repository-seed-v1",
+  "generated_at": "2026-11-04T18:40:53.947292+00:00",
+  "source": "Bundled repository research \u2014 not a live website export",
+  "revision": "265ecf1158905acc08df4f6aee8c1947d6f1510cf4e0db03cc2059f480073b14",
+  "sha256": "265ecf1158905acc08df4f6aee8c1947d6f1510cf4e0db03cc2059f480073b14",
+  "byte_size": 2949833,
+  "uncompressed_size": 23071424,
+  "counts": {
+    "aircraft": 30888,
+    "museums": 6230,
+    "exhibits": 27849,
+    "types": 81,
+    "facts": 0,
+    "history": 0
+  },
+  "download_path": "/api/v1/offline/snapshots/265ecf1158905acc08df4f6aee8c1947d6f1510cf4e0db03cc2059f480073b14.json.gz"
+}

@@ -21,3 +21,11 @@ scripts/applied_*_ids.txt
 scripts/cache/
 scripts/type_alias_plan.json
 scripts/applied_type_alias_ids.txt
+
+# Android build output and private signing/machine configuration
+android/**/build/
+android/local.properties
+android/keystore.properties
+*.jks
+*.keystore
+instance/offline-catalog/

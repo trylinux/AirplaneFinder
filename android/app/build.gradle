@@ -1,0 +1,53 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.devtools.ksp'
+}
+
+def catalogUrl = providers.gradleProperty('catalogBaseUrl').getOrElse('https://airplane.museum')
+if (!(catalogUrl ==~ /https:\/\/[a-zA-Z0-9.-]+(:[0-9]+)?/ || catalogUrl == 'http://10.0.2.2:5058')) {
+    throw new GradleException('catalogBaseUrl must be an HTTPS origin or the local emulator fixture.')
+}
+android {
+    namespace 'org.airplanemuseum.finder'
+    compileSdk 37
+    defaultConfig {
+        applicationId 'org.airplanemuseum.finder'
+        minSdk 26
+        targetSdk 36
+        versionCode 1
+        versionName '0.1.0'
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        buildConfigField 'String', 'CATALOG_BASE_URL', '"' + catalogUrl + '"'
+    }
+    buildFeatures { buildConfig true }
+    buildTypes {
+        debug { applicationIdSuffix '.debug' }
+        release {
+            buildConfigField 'String', 'CATALOG_BASE_URL', '"https://airplane.museum"'
+            minifyEnabled false
+        }
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    sourceSets.main.assets.srcDir "$buildDir/generated/sharedAssets"
+}
+ksp { arg('room.schemaLocation', "$projectDir/schemas") }
+
+tasks.register('prepareSharedAssets', Sync) {
+    into layout.buildDirectory.dir('generated/sharedAssets')
+    from('../../static') {
+        into 'static'
+        include 'css/mobile.css', 'css/mobile-nav.css', 'css/detail.css', 'css/exploration.css'
+        include 'data/*.geo.json', 'js/museum-globe.js'
+    }
+}
+tasks.named('preBuild').configure { dependsOn 'prepareSharedAssets' }
+
+dependencies {
+    implementation 'androidx.activity:activity:1.13.0'
+    implementation 'androidx.webkit:webkit:1.14.0'
+    implementation 'androidx.room:room-runtime:2.8.5'
+    ksp 'androidx.room:room-compiler:2.8.5'
+    implementation 'androidx.work:work-runtime-ktx:2.11.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.3.0'
+    androidTestImplementation 'androidx.test:runner:1.7.0'
+}
