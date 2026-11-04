@@ -21,6 +21,7 @@ import json
 import logging
 import threading
 import time
+from math import isfinite
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
@@ -65,6 +66,8 @@ def decode_polyline(encoded, precision=5):
     Standard algorithm: each coordinate is a zig-zag/varint-encoded delta
     from the previous one, in base-64-ish 5-bit chunks offset by 63.
     """
+    if not isinstance(encoded, str) or len(encoded) > 200000:
+        raise ValueError('Invalid polyline.')
     factor = 10 ** precision
     points, index, lat, lon = [], 0, 0, 0
     length = len(encoded)
@@ -75,6 +78,8 @@ def decode_polyline(encoded, precision=5):
                 if index >= length:
                     raise ValueError("Truncated polyline.")
                 byte = ord(encoded[index]) - 63
+                if not 0 <= byte <= 63 or shift > 30:
+                    raise ValueError('Invalid polyline coordinate.')
                 index += 1
                 result |= (byte & 0x1F) << shift
                 shift += 5
@@ -85,6 +90,8 @@ def decode_polyline(encoded, precision=5):
                 lat += delta
             else:
                 lon += delta
+        if not -90 <= lat / factor <= 90 or not -180 <= lon / factor <= 180:
+            raise ValueError('Polyline coordinate out of range.')
         points.append([round(lat / factor, precision), round(lon / factor, precision)])
     return points
 
@@ -131,11 +138,14 @@ def _waypoint(point):
 
 
 def _parse_duration(value):
-    # Routes API durations are protobuf-style strings like "5432s".
-    try:
-        return float(str(value).rstrip("s"))
-    except (TypeError, ValueError):
-        return 0.0
+    return _nonnegative_number(str(value).removesuffix('s'))
+
+
+def _nonnegative_number(value):
+    result = float(value)
+    if isinstance(value, bool) or not isfinite(result) or result < 0:
+        raise ValueError('Invalid route measurement.')
+    return result
 
 
 def _post(body, api_key, timeout):
@@ -150,7 +160,10 @@ def _post(body, api_key, timeout):
         method="POST",
     )
     with urlopen(request, timeout=timeout) as response:   # noqa: S310 — fixed HTTPS URL
-        return json.loads(response.read().decode("utf-8"))
+        payload = response.read(2 * 1024 * 1024 + 1)
+        if len(payload) > 2 * 1024 * 1024:
+            raise ValueError('Routing response too large.')
+        return json.loads(payload.decode('utf-8'))
 
 
 def validate_points(points):
@@ -248,6 +261,16 @@ def compute_route(points, *, fetch=None):
         log.warning("Routes API request failed: %r", exc)
         raise RoutingError("Road routing is unavailable right now.") from exc
 
+    try:
+        result = _parse_route(data, len(points) - 1)
+    except (ValueError, TypeError, AttributeError, KeyError, IndexError, OverflowError) as exc:
+        log.warning('Invalid Routes API response: %s', type(exc).__name__)
+        raise RoutingError('Road routing returned an invalid response.') from exc
+    _cache_put(key, result)
+    return result
+
+
+def _parse_route(data, expected_legs):
     routes = data.get("routes") if isinstance(data, dict) else None
     if not routes:
         raise RoutingError("No drivable route was found between these stops.")
@@ -256,19 +279,18 @@ def compute_route(points, *, fetch=None):
     for leg in route.get("legs") or []:
         encoded = (leg.get("polyline") or {}).get("encodedPolyline") or ""
         legs.append({
-            "distance_miles": round(float(leg.get("distanceMeters", 0)) / METERS_PER_MILE, 1),
+            "distance_miles": round(_nonnegative_number(leg.get("distanceMeters", 0)) / METERS_PER_MILE, 1),
             "duration_minutes": int(round(_parse_duration(leg.get("duration")) / 60)),
             "points": decode_polyline(encoded) if encoded else [],
         })
-    if len(legs) != len(points) - 1:
+    if len(legs) != expected_legs:
         raise RoutingError("Road routing returned an unexpected number of legs.")
     encoded = (route.get("polyline") or {}).get("encodedPolyline") or ""
     result = {
         "provider": "google",
-        "total_miles": round(float(route.get("distanceMeters", 0)) / METERS_PER_MILE, 1),
+        "total_miles": round(_nonnegative_number(route.get("distanceMeters", 0)) / METERS_PER_MILE, 1),
         "total_minutes": int(round(_parse_duration(route.get("duration")) / 60)),
         "legs": legs,
         "points": decode_polyline(encoded) if encoded else [p for leg in legs for p in leg["points"]],
     }
-    _cache_put(key, result)
     return result

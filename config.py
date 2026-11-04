@@ -36,9 +36,12 @@ class Config:
     SECRET_KEY = _get("app", "secret_key", "SECRET_KEY", "change-me-in-production")
 
     # Server (used by app.run in __main__)
-    SERVER_HOST = _get("server", "host", "SERVER_HOST", "0.0.0.0")
+    SERVER_HOST = _get("server", "host", "SERVER_HOST", "127.0.0.1")
     SERVER_PORT = int(_get("server", "port", "SERVER_PORT", "5000"))
-    SERVER_DEBUG = _get("server", "debug", "SERVER_DEBUG", "true").lower() in ("1", "true", "yes")
+    SERVER_DEBUG = _get("server", "debug", "SERVER_DEBUG", "false").lower() in ("1", "true", "yes")
+    RATELIMIT_STORAGE_URI = _get('security', 'ratelimit_storage_uri', 'RATELIMIT_STORAGE_URI', 'memory://')
+    API_RATE_LIMIT = _get('security', 'api_rate_limit', 'API_RATE_LIMIT', '120 per minute')
+    GEOCODE_RATE_LIMIT = _get('security', 'geocode_rate_limit', 'GEOCODE_RATE_LIMIT', '20 per minute')
 
     # MySQL connection
     MYSQL_HOST = _get("database", "host", "MYSQL_HOST", "127.0.0.1")

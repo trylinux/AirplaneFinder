@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Export every museum to CSV or JSON in the bulk_import-accepted shape.
 
+CSV escapes potential spreadsheet formulas. JSON or ``--raw-csv`` preserves
+text for machine interchange; do not open untrusted raw CSV in a spreadsheet.
+
 Usage
 -----
     python3 scripts/export_museums.py
@@ -19,6 +22,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from airplane_api import AirplaneClient, ApiError  # noqa: E402
+from csv_safety import spreadsheet_row
 
 
 MUSEUM_COLUMNS = [
@@ -38,6 +42,8 @@ def main():
     p = argparse.ArgumentParser(description=__doc__.split("\n\n")[0],
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--format", choices=("csv", "json"), default="csv")
+    p.add_argument('--raw-csv', action='store_true',
+                   help='Lossless machine CSV; may contain spreadsheet formulas. JSON is also lossless.')
     p.add_argument("--out", "-o", default="-")
     p.add_argument("--query", "-q", default="",
                    help="Filter by free-text search")
@@ -68,7 +74,7 @@ def main():
                                     extrasaction="ignore")
             writer.writeheader()
             for m in rows:
-                writer.writerow(_row(m))
+                writer.writerow(spreadsheet_row(_row(m), raw=args.raw_csv))
     finally:
         if args.out != "-":
             out_stream.close()

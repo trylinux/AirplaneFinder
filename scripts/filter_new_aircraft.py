@@ -12,7 +12,7 @@ The museum-level guard in import_data_dir.sh can't help here. It asks
 "does this museum already have aircraft?", which is true for every top-up
 by definition. So top-ups bypass it, and then collide instead.
 
-This filters at the row level: drop rows whose (model, tail_number) is
+This filters at the row level: drop rows whose (full_designation, tail_number, operator_country) is
 already present, keep everything else. That makes any aircraft file safely
 idempotent.
 
@@ -44,6 +44,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from airplane_api import AirplaneClient  # noqa: E402
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from catalog_identity import identity_keys
 
 
 def norm(s):
@@ -51,18 +53,16 @@ def norm(s):
 
 
 def build_indexes(client):
-    """(model, tail) pairs, and (museum, manufacturer, model, variant) keys."""
+    """(full designation, tail, operator country) pairs, and (museum, manufacturer, model, variant) keys."""
     by_tail, by_type_at_museum = set(), set()
     for row in client.get("/api/v1/exhibits")["results"]:
         ac, mus = row["aircraft"], row["museum"]
-        if ac.get("tail_number"):
-            by_tail.add((norm(ac["model"]), norm(ac["tail_number"])))
+        by_tail.update(identity_keys(ac))
         by_type_at_museum.add((norm(mus["name"]), norm(ac.get("manufacturer")),
                                norm(ac["model"]), norm(ac.get("variant"))))
-    # aircraft with no museum link at all still occupy a (model, tail)
+    # aircraft with no museum link at all still occupy a (full designation, tail, operator country)
     for ac in client.iter_aircraft():
-        if ac.get("tail_number"):
-            by_tail.add((norm(ac["model"]), norm(ac["tail_number"])))
+        by_tail.update(identity_keys(ac))
     return by_tail, by_type_at_museum
 
 
@@ -97,11 +97,10 @@ def main():
     new, dropped_tail, dropped_type = [], 0, 0
     for r in rows:
         tail = (r.get("tail_number") or "").strip()
-        if tail:
-            if (norm(r["model"]), norm(tail)) in by_tail:
-                dropped_tail += 1
-                continue
-        elif not args.keep_untailed:
+        if identity_keys(r) & by_tail:
+            dropped_tail += 1
+            continue
+        if not tail and not args.keep_untailed:
             key = (norm(r.get("museum_name")), norm(r.get("manufacturer")),
                    norm(r["model"]), norm(r.get("variant")))
             if key in by_type:

@@ -76,7 +76,7 @@ $(function() {
                 $('#form-museum')[0].reset();
             },
             error: function(xhr) {
-                $('#msg-museum').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + (xhr.responseJSON ? JSON.stringify(xhr.responseJSON) : xhr.statusText) + '</div>').show();
+                $('#msg-museum').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + escHtml((xhr.responseJSON ? JSON.stringify(xhr.responseJSON) : xhr.statusText)) + '</div>').show();
             }
         });
     });

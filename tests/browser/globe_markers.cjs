@@ -35,18 +35,18 @@ const {chromium, devices} = require('playwright');
                 return page.evaluate(prefix => {
                     const {scene,camera}=testGlobe;
                     let pin;
-                    scene.traverse(o => {if(o.userData.id===1) pin=o;});
-                    const p = pin.getWorldPosition(new THREE.Vector3());
+                    scene.traverse(o => {if(o.isPoints && o.geometry.getAttribute('position').count===9) pin=o;});
+                    const p = new THREE.Vector3().fromBufferAttribute(pin.geometry.getAttribute('position'),0).applyMatrix4(pin.matrixWorld);
                     const a = p.clone().project(camera);
-                    const b = p.clone().add(new THREE.Vector3(0,pin.scale.y,0)).project(camera);
                     const rect = document.querySelector('#'+prefix+'globe-canvas').getBoundingClientRect();
-                    return {pixels:Math.abs(b.y-a.y)*rect.height/2, opacity:pin.material.opacity,
+                    return {pixels:pin.material.size, opacity:pin.material.opacity,
                         x:rect.left+(a.x+1)*rect.width/2, y:rect.top+(1-a.y)*rect.height/2,
-                        z:camera.position.z, near:camera.near, sprite:pin.isSprite};
+                        z:camera.position.z, near:camera.near, points:pin.isPoints, sizeAttenuation:pin.material.sizeAttenuation};
                 }, prefix);
             }
             const initial=await marker();
-            assert(initial.sprite);
+            assert(initial.points);
+            assert.equal(initial.sizeAttenuation,false);
             assert(Math.abs(initial.pixels-6)<0.1, 'Overview marker should be six CSS pixels');
             await page.evaluate(() => new Promise(resolve => {
                 let frames=0; function step(){if(++frames===30) resolve(); else requestAnimationFrame(step);} step();
@@ -59,17 +59,6 @@ const {chromium, devices} = require('playwright');
             assert(Math.abs(close.pixels-initial.pixels)<0.1, 'Close markers must not grow');
             await page.locator('#'+prefix+'globe-wrap').scrollIntoViewIfNeeded();
             await page.screenshot({path:'/private/tmp/airplanefinder-dots-'+(mobile?'mobile':'desktop')+'.png'});
-            const tap=await marker();
-            if(mobile) {
-                // Tap slightly beside a six-pixel dot: retain a forgiving hit area.
-                await page.touchscreen.tap(tap.x+7,tap.y+7);
-                await page.locator('#m-globe-tooltip.show').waitFor({state:'visible'});
-                assert((await page.locator('#m-globe-tooltip').innerText()).includes('Museum 1'));
-            } else {
-                await page.mouse.click(tap.x,tap.y);
-                await page.locator('#museum-modal').waitFor({state:'visible'});
-                await page.locator('#museum-modal .modal-close').click();
-            }
             await page.click('#'+prefix+'globe-zoom-reset');
             assert.equal((await marker()).z,3.2);
             if(mobile) {
@@ -85,6 +74,18 @@ const {chromium, devices} = require('playwright');
                 await page.mouse.move(rect.x+rect.width/2,rect.y+rect.height/2);
                 await page.mouse.wheel(0,-5000);
                 await page.waitForFunction(()=>Math.abs(testGlobe.camera.position.z-1.04)<0.0001);
+            }
+            // Selection now navigates to a dedicated page on desktop. Exercise
+            // gestures first so navigation does not discard the observed scene.
+            const tap=await marker();
+            if(mobile) {
+                await page.touchscreen.tap(tap.x+7,tap.y+7);
+                await page.locator('#m-globe-tooltip.show').waitFor({state:'visible'});
+                assert((await page.locator('#m-globe-tooltip').innerText()).includes('Museum 1'));
+            } else {
+                await page.mouse.click(tap.x,tap.y);
+                await page.waitForURL('**/museums/1');
+                await page.locator('.d-head h1').filter({hasText:'Alpha Aviation Museum'}).waitFor();
             }
             assert.deepEqual(errors,[]);
             await context.close();

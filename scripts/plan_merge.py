@@ -40,6 +40,8 @@ hand; scripts/plan_variants.py surfaces them as 409s.
 import argparse,json,collections,math,os,re,unicodedata,sys,urllib.request
 
 _HERE=os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.dirname(_HERE))
+from catalog_identity import is_usable_construction_number
 _ap=argparse.ArgumentParser(description=__doc__,
     formatter_class=argparse.RawDescriptionHelpFormatter)
 _ap.add_argument("--exhibits",default=os.path.join(_HERE,"cache","exhibits.json"),
@@ -73,13 +75,16 @@ def dist(a,b):
 def ident(ac):
     t=(ac.get("tail_number") or "").strip().upper() or None
     c=(ac.get("construction_number") or "").strip().upper() or None
-    return ac.get("full_designation"), t, c
+    return ac.get("full_designation"), t, c if is_usable_construction_number(c) else None
 
 def same_airframe(x,y):
     dx,tx,cx=ident(x); dy,ty,cy=ident(y)
     if dx!=dy: return False
-    if cx and cy: return cx==cy
-    if tx and ty: return tx==ty
+    if cx and cy:
+        return (cx==cy and bool(x.get('manufacturer')) and
+                x['manufacturer'].strip().casefold()==(y.get('manufacturer') or '').strip().casefold())
+    if tx and ty:
+        return tx==ty and (x.get('operator_country') or '').upper()==(y.get('operator_country') or '').upper()
     if not tx and not ty:
         return (x.get("manufacturer")==y.get("manufacturer") and x.get("variant")==y.get("variant"))
     return False

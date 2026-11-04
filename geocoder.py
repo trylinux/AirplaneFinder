@@ -12,6 +12,7 @@ future use so the same query never hits external services twice.
 import math
 import logging
 import re
+import hashlib
 
 from sqlalchemy import and_ as db_and_
 
@@ -149,6 +150,8 @@ def resolve_location(location_str, db=None, ZipCode=None):
     Returns:
         (lat, lon) tuple of floats, or (None, None) if unresolvable.
     """
+    if not isinstance(location_str, str) or len(location_str) > 200:
+        return None, None
     location_str = location_str.strip()
     if not location_str:
         return None, None
@@ -156,24 +159,24 @@ def resolve_location(location_str, db=None, ZipCode=None):
     # ── Layer 1: Database cache ──
 
     if ZipCode is not None:
-        from sqlalchemy import or_
+        from sqlalchemy import or_, func
 
         # Build one OR query covering every cache-hit shape: exact postal code,
         # exact city name, and "city, state/country" variants. A single round
         # trip replaces the three serial queries this used to do.
         clauses = [
-            ZipCode.zip_code == location_str,
-            ZipCode.city.ilike(location_str),
+            ZipCode.zip_code == _cache_key(location_str),
+            func.lower(ZipCode.city) == location_str.lower(),
         ]
         if "," in location_str:
             parts = [p.strip() for p in location_str.split(",")]
             if len(parts) >= 2 and parts[0] and parts[1]:
                 clauses.append(
                     db_and_(
-                        ZipCode.city.ilike(parts[0]),
+                        func.lower(ZipCode.city) == parts[0].lower(),
                         or_(
-                            ZipCode.state.ilike(f"%{parts[1]}%"),
-                            ZipCode.country.ilike(f"%{parts[1]}%"),
+                            ZipCode.state.icontains(parts[1], autoescape=True),
+                            ZipCode.country.icontains(parts[1], autoescape=True),
                         ),
                     )
                 )
@@ -218,19 +221,24 @@ def resolve_location(location_str, db=None, ZipCode=None):
     return None, None
 
 
+def _cache_key(query):
+    # zip_codes.zip_code is VARCHAR(20), including in existing deployments.
+    return query if len(query) <= 20 else 'q:' + hashlib.sha256(query.lower().encode()).hexdigest()[:18]
+
+
 def _cache_result(key, lat, lon, country_code, db, ZipCode):
     """Cache a geocoding result in the zip_codes table."""
     if db is None or ZipCode is None:
         return
     try:
         # Don't overwrite existing entries
-        existing = ZipCode.query.get(key)
+        existing = ZipCode.query.get(_cache_key(key))
         if existing:
             return
         country_name = next((name for name, code in _COUNTRY_CODES.items() if code == country_code), country_code).title()
         entry = ZipCode(
-            zip_code=key,
-            city=key,  # best guess; will be refined on future queries
+            zip_code=_cache_key(key),
+            city=key[:100],
             state="",
             country=country_name,
             latitude=lat,

@@ -331,7 +331,7 @@ $(document).on('submit', '#edit-user-form', function(e) {
             loadUserList();
         },
         error: function(xhr) {
-            $('#edit-user-msg').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText) + '</div>');
+            $('#edit-user-msg').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + escHtml((xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText)) + '</div>');
         }
     });
 });
@@ -358,7 +358,7 @@ $(document).on('click', '#create-key-btn', function() {
             loadUserList();
         },
         error: function(xhr) {
-            $('#new-key-result').html('<div class="alert alert-error">' + (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText) + '</div>');
+            $('#new-key-result').html('<div class="alert alert-error">' + escHtml((xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText)) + '</div>');
         }
     });
 });
@@ -414,7 +414,7 @@ $('#form-create-user').on('submit', function(e) {
             loadUserList();
         },
         error: function(xhr) {
-            $('#msg-user').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + (xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText) + '</div>').show();
+            $('#msg-user').html('<div class="alert alert-error"><i class="fa-solid fa-circle-exclamation"></i> ' + escHtml((xhr.responseJSON ? xhr.responseJSON.error : xhr.statusText)) + '</div>').show();
         }
     });
 });

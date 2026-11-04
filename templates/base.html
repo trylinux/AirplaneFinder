@@ -90,9 +90,9 @@
                     <a href="/admin" class="nav-link {% block nav_admin %}{% endblock %}">
                         <i class="fa-solid fa-gear"></i><span>Admin</span>
                     </a>
-                    <a href="/logout" class="nav-link">
+                    <form method="post" action="/logout" style="display:contents"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit" class="nav-link">
                         <i class="fa-solid fa-right-from-bracket"></i><span>Logout</span>
-                    </a>
+                    </button></form>
                 </div>
                 {% else %}
                 <div class="nav-section">

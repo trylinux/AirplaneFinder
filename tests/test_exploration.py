@@ -4,7 +4,7 @@ from models import AircraftHistoryEvent, db
 
 
 def login_as(client, user):
-    client.get('/logout')
+    client.post('/logout')
     response = client.post('/login', data={'username':user.username,'password':'Tester-1234'})
     assert response.status_code == 302
 

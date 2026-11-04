@@ -10,6 +10,7 @@ from sqlalchemy.orm import joinedload
 
 from models import db, Aircraft, AircraftMuseum, AircraftHistoryEvent, Museum, haversine
 from logger import change_log
+from validation import safe_http_url
 import routing
 
 HISTORY_TYPES = ('built', 'delivered', 'service', 'registration', 'transfer',
@@ -35,8 +36,7 @@ def history_fields(data):
     if clean['event_type'] not in HISTORY_TYPES:
         raise ValueError('Unknown event type.')
     if clean['source_url']:
-        parsed = urlparse(clean['source_url'])
-        if parsed.scheme not in ('http', 'https') or not parsed.netloc or parsed.username or parsed.password:
+        if not safe_http_url(clean['source_url']):
             raise ValueError('Source URL must be an HTTP or HTTPS link without credentials.')
     if not (clean['source_name'] or clean['source_url']):
         raise ValueError('Add a source URL or a source citation (such as a book and page).')
@@ -156,6 +156,7 @@ def plan_trip(data, resolve_location):
         normalized.append(entry)
     aircraft_ids = set().union(*matches.values())
     links = (AircraftMuseum.query.options(joinedload(AircraftMuseum.museum), joinedload(AircraftMuseum.aircraft))
+             .join(AircraftMuseum.museum).filter(Museum.access_type != 'restricted')
              .filter(AircraftMuseum.aircraft_id.in_(aircraft_ids), AircraftMuseum.display_status == 'on_display').all()) if aircraft_ids else []
     candidates, reasons, missing_coordinates = {}, {}, {}
     for index, ids in matches.items():

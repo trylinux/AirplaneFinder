@@ -105,9 +105,13 @@ class TestValidation:
 # ─────────────────────────────────────────────────────────────────────
 
 @pytest.fixture
-def near_reno(make_museum, make_aircraft, make_link):
+def near_reno(make_museum, make_aircraft, make_link, db_session):
     """Two museums a few miles apart holding the same type. The nearer one
     is on a base; the farther one is public."""
+    from models import ZipCode
+    db_session.add(ZipCode(zip_code='89502', city='Reno', state='Nevada',
+                           country='United States', latitude=39.50, longitude=-119.80))
+    db_session.commit()
     base = make_museum(name="Base Air Park", city="Fallon",
                        state_province="Nevada", region="North America",
                        latitude=39.50, longitude=-119.80,
@@ -146,8 +150,6 @@ class TestNearestAircraft:
         """The base is nearer, but it must not be the answer to
         'where can I go and see an F-4'."""
         r = client.get("/api/v1/nearest?aircraft=F-4&location=89502")
-        if r.status_code == 404:
-            pytest.skip("geocoder unavailable in this environment")
         assert r.status_code == 200, r.get_data(as_text=True)
         names = [x["museum"]["name"] for x in r.get_json().get("results", [])]
         assert "Base Air Park" not in names
@@ -155,8 +157,6 @@ class TestNearestAircraft:
     def test_include_restricted_shows_it(self, client, near_reno):
         r = client.get(
             "/api/v1/nearest?aircraft=F-4&location=89502&include_restricted=1")
-        if r.status_code == 404:
-            pytest.skip("geocoder unavailable in this environment")
         assert r.status_code == 200
         names = [x["museum"]["name"] for x in r.get_json().get("results", [])]
         assert "Base Air Park" in names

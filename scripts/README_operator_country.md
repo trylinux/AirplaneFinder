@@ -22,12 +22,12 @@ prevent.
     python3 scripts/snapshot.py            # live database -> local cache
     python3 scripts/map_sites.py           # aircraft id -> site country
     python3 scripts/plan_country.py        # writes country_plan.json + country_audit.tsv
-    AIRPLANE_KEY=amt_... python3 scripts/apply_country.py
+    AIRPLANE_KEY=amt_... python3 scripts/apply_country.py --plan /path/to/country_plan.json --base-url https://airplane.museum --apply
 
 `plan_country.py` changes nothing and writes an audit row for every proposed
 assignment: id, country, the rule that fired, tail, manufacturer, designation and
-site country. **Read `country_audit.tsv` before applying.** `apply_country.py` is
-resumable and logs each id it lands.
+site country. **Read `country_audit.tsv` before applying.** `apply_country.py`
+skips already-equal values on rerun and stops on a failed request.
 
 `regs.py` holds the civil-registration table; `mil.py` the military serial
 systems. Both refuse rather than guess: a shape shared by two national systems
@@ -75,7 +75,12 @@ numbers and resolve only against russianplanes.
 
 ## What a 409 means here
 
-A conflict on apply is not a failure. It means setting the country revealed that
-two rows are **the same airframe recorded twice**, one of which already carried a
-code. Those are listed in `OPERATOR_COUNTRY_CONFLICTS.md` as duplicate candidates
+A conflict on apply stops the runner and requires review. It can mean setting
+the country revealed two candidate records for the same airframe, one of which
+already carried a code. Historical candidates are listed in `OPERATOR_COUNTRY_CONFLICTS.md`
 — the key doing exactly the job it was added for.
+
+The apply runner previews by default. `--apply` enables writes; current values
+are checked on each rerun, replacing the old workspace-specific applied-ID log.
+Plans are data: unexpected fields are rejected, and failures return a nonzero
+exit status. Rebuild/review stale plans before applying them.

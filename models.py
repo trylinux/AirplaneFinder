@@ -10,6 +10,8 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin
 from sqlalchemy import Computed
 from werkzeug.security import generate_password_hash, check_password_hash
+from validation import safe_http_url
+from catalog_identity import join_designation
 
 db = SQLAlchemy()
 
@@ -51,6 +53,11 @@ class User(UserMixin, db.Model):
 
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
+
+    def get_id(self):
+        """Changing a password invalidates both session and remember cookies."""
+        fingerprint = hashlib.sha256(self.password_hash.encode()).hexdigest()
+        return f'{self.id}:{fingerprint}'
 
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
@@ -305,7 +312,7 @@ class Museum(db.Model):
             "postal_code": self.postal_code,
             "region": self.region,
             "address": self.address,
-            "website": self.website,
+            "website": safe_http_url(self.website),
             "access_type": self.access_type or "public",
             "latitude": float(self.latitude) if self.latitude is not None else None,
             "longitude": float(self.longitude) if self.longitude is not None else None,
@@ -339,23 +346,7 @@ class Museum(db.Model):
 # tests/conftest.py (SQLite). All three must agree — test_designation.py
 # checks the Python one against the SQLite one on real pairs.
 
-_DIGITS = "0123456789"
-
-
-def join_designation(model, variant):
-    """Join a model and variant the way the generated column does."""
-    model = (model or "").strip()
-    variant = (variant or "").strip()
-    if not variant:
-        return model
-    if variant[0] in _DIGITS:
-        return f"{model}-{variant}"
-    if model and model[-1] in _DIGITS:
-        return f"{model}{variant}"
-    return f"{model} {variant}"
-
-
-# Kept next to join_designation() so the two are edited together. Mirrored in
+# Mirrors catalog_identity.join_designation(). Also mirrored in
 # schema.sql; changing either means writing a migration (see
 # migrate_full_designation.sql).
 _FULL_DESIGNATION_SQL = (
@@ -370,6 +361,7 @@ _FULL_DESIGNATION_SQL = (
 
 class Aircraft(db.Model):
     __tablename__ = "aircraft"
+    __table_args__ = (db.UniqueConstraint('full_designation', 'tail_number', 'operator_country', name='uq_airframe'),)
 
     id = db.Column(db.Integer, primary_key=True)
     tail_number = db.Column(db.String(20))
@@ -453,6 +445,7 @@ class AircraftAlias(db.Model):
 
 class AircraftMuseum(db.Model):
     __tablename__ = "aircraft_museum"
+    __table_args__ = (db.UniqueConstraint('aircraft_id', 'museum_id', name='uq_aircraft_museum'),)
 
     id = db.Column(db.Integer, primary_key=True)
     aircraft_id = db.Column(db.Integer, db.ForeignKey("aircraft.id", ondelete="CASCADE"), nullable=False)
@@ -841,8 +834,8 @@ class AircraftType(db.Model):
             "range_km": self.range_km,
             "ceiling_m": self.ceiling_m,
             "source_name": self.source_name,
-            "source_url": self.source_url,
-            "wikipedia_url": self.wikipedia_url,
+            "source_url": safe_http_url(self.source_url),
+            "wikipedia_url": safe_http_url(self.wikipedia_url),
             "is_published": bool(self.is_published),
         }
 
@@ -944,7 +937,7 @@ class AircraftFact(db.Model):
         return {
             "id": self.id,
             "fact": self.fact,
-            "source_url": self.source_url,
+            "source_url": safe_http_url(self.source_url),
             "aircraft_id": self.aircraft_id,
             "aircraft": self.aircraft.to_dict() if self.aircraft else None,
             "is_active": bool(self.is_active),
@@ -981,6 +974,7 @@ class AircraftHistoryEvent(db.Model):
                   "event_month", "event_day", "is_approximate", "operator", "location",
                   "registration", "source_name", "source_url", "is_published")
         result = {field: getattr(self, field) for field in fields}
+        result["source_url"] = safe_http_url(self.source_url)
         result["updated_at"] = self.updated_at.isoformat() if self.updated_at else None
         return result
 
@@ -1003,4 +997,5 @@ def haversine(lat1, lon1, lat2, lon2):
     dlat = lat2 - lat1
     dlon = lon2 - lon1
     a = sin(dlat / 2) ** 2 + cos(lat1) * cos(lat2) * sin(dlon / 2) ** 2
+    a = min(1.0, max(0.0, a))  # rounding near antipodal points
     return R * 2 * atan2(sqrt(a), sqrt(1 - a))

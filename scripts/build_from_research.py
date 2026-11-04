@@ -406,7 +406,7 @@ def main():
         for name, subset in by_museum.items():
             slug = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
             slug = re.sub(r"[^a-z0-9]+", "_", slug.lower()).strip("_")[:40]
-            digest = hashlib.sha1(name.encode("utf-8")).hexdigest()[:8]
+            digest = hashlib.sha1(name.encode("utf-8"), usedforsecurity=False).hexdigest()[:8]
             if not slug:
                 slug = f"site_{digest}"
             if used.get(slug, name) != name:

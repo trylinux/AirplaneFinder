@@ -3,9 +3,9 @@
 # web.config is gitignored and will not be committed.
 
 [server]
-host = 0.0.0.0
+host = 127.0.0.1
 port = 5000
-debug = true
+debug = false
 
 [database]
 host = 127.0.0.1
